@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"dd/ddb/class_schur_ring_a1715ca804738993597604df68b50bfd2.html#a1715ca804738993597604df68b50bfd2":[6,0,313,5],
 "dd/ddb/class_schur_ring_a1842c11614e0148736fc1acf75f7e873.html#a1842c11614e0148736fc1acf75f7e873":[6,0,313,25],
 "dd/ddb/class_schur_ring_a1f8c4f327ba8a636310d23884ae88cf2.html#a1f8c4f327ba8a636310d23884ae88cf2":[6,0,313,15],
 "dd/ddb/class_schur_ring_a2dc67f387dbccdb3ddf7a76544f5a65d.html#a2dc67f387dbccdb3ddf7a76544f5a65d":[6,0,313,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "de/d06/factory_8h_ae451a27e264d7a8f5a803e60d9ba0beb.html#ae451a27e264d7a8f5a803e60d9ba0beb":[7,0,0,0,2,6,2],
 "de/d06/factory_8h_af398220751b6402752ad6ef0fcfc3f3d.html#af398220751b6402752ad6ef0fcfc3f3d":[7,0,0,0,2,6,3],
 "de/d06/factory_8h_source.html":[7,0,0,0,2,6],
-"de/d10/_s_l_p_8hpp.html":[7,0,0,0,294],
-"de/d10/_s_l_p_8hpp_source.html":[7,0,0,0,294]
+"de/d10/_s_l_p_8hpp.html":[7,0,0,0,294]
 };

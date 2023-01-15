@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4.html":[6,0,45],
 "d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a0ebdb7f018d67ff94b45fd7b05f78c30.html#a0ebdb7f018d67ff94b45fd7b05f78c30":[6,0,45,9],
 "d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a150f4748829910ace01c6d9632561ce0.html#a150f4748829910ace01c6d9632561ce0":[6,0,45,0],
 "d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a1961a06fc4adab184002aed6689540ea.html#a1961a06fc4adab184002aed6689540ea":[6,0,45,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "d3/d43/class_monomial_memory_space.html":[6,0,197],
 "d3/d43/class_monomial_memory_space_a0a3229764605433f6291e9c95feb3d01.html#a0a3229764605433f6291e9c95feb3d01":[6,0,197,1],
 "d3/d43/class_monomial_memory_space_a0ad272aa353399ef786ba2054ad0ab80.html#a0ad272aa353399ef786ba2054ad0ab80":[6,0,197,4],
-"d3/d43/class_monomial_memory_space_a66040895076fb7e1e06fb85300597193.html#a66040895076fb7e1e06fb85300597193":[6,0,197,7],
-"d3/d43/class_monomial_memory_space_a68fb0864499c83fe5e6da347826d695d.html#a68fb0864499c83fe5e6da347826d695d":[6,0,197,9]
+"d3/d43/class_monomial_memory_space_a66040895076fb7e1e06fb85300597193.html#a66040895076fb7e1e06fb85300597193":[6,0,197,7]
 };

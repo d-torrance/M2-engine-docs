@@ -1,5 +1,6 @@
 var NAVTREEINDEX40 =
 {
+"da/dc4/classntuple_a855fb05fc452de210f28e3d22b3ab8fc.html#a855fb05fc452de210f28e3d22b3ab8fc":[6,0,226,12],
 "da/dc4/classntuple_a9a279dd0b3be97fbfdb33e2b2a50658f.html#a9a279dd0b3be97fbfdb33e2b2a50658f":[6,0,226,5],
 "da/dc4/classntuple_aaac17e7e08380a594cf186c12ffd7668.html#aaac17e7e08380a594cf186c12ffd7668":[6,0,226,9],
 "da/dc4/classntuple_ab3a3b8b7c5d786e5f5c1efdf8e6c26c0.html#ab3a3b8b7c5d786e5f5c1efdf8e6c26c0":[6,0,226,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX40 =
 "db/d22/class_m2_free_algebra_quotient_aecec8c76d8689173f5577284ff400c06.html#aecec8c76d8689173f5577284ff400c06":[6,0,155,12],
 "db/d22/class_m2_free_algebra_quotient_aedd0a67068c00c46b20474f612eae10a.html#aedd0a67068c00c46b20474f612eae10a":[6,0,155,16],
 "db/d22/class_m2_free_algebra_quotient_af75832fcd6b9fd3ac54e0f263e4815f1.html#af75832fcd6b9fd3ac54e0f263e4815f1":[6,0,155,55],
-"db/d22/class_m2_free_algebra_quotient_af7f4c33378f08e2551f4fa344471b411.html#af7f4c33378f08e2551f4fa344471b411":[6,0,155,27],
-"db/d22/class_m2_free_algebra_quotient_af9dff98728e711c2dba3f78a6ace8d0a.html#af9dff98728e711c2dba3f78a6ace8d0a":[6,0,155,41]
+"db/d22/class_m2_free_algebra_quotient_af7f4c33378f08e2551f4fa344471b411.html#af7f4c33378f08e2551f4fa344471b411":[6,0,155,27]
 };

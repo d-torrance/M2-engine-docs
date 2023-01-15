@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"d1/d4c/class_res_poly_ring_a237f1044108c2e4477a4840628540857.html#a237f1044108c2e4477a4840628540857":[6,0,294,4],
 "d1/d4c/class_res_poly_ring_a4da134dce9c01bb6afeaf934b56eee84.html#a4da134dce9c01bb6afeaf934b56eee84":[6,0,294,7],
 "d1/d4c/class_res_poly_ring_a4f09c213eaa31b37744a3ca90152ed97.html#a4f09c213eaa31b37744a3ca90152ed97":[6,0,294,1],
 "d1/d4c/class_res_poly_ring_a549853cfe7a2881fb7568bab5fa051a3.html#a549853cfe7a2881fb7568bab5fa051a3":[6,0,294,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "d1/d81/complex_8c_afdc43f6d3d72f797b905a46ba1e1d769.html#afdc43f6d3d72f797b905a46ba1e1d769":[7,0,0,0,69,12],
 "d1/d81/complex_8c_source.html":[7,0,0,0,69],
 "d1/d91/gb-sugarless_8hpp.html":[7,0,0,0,128],
-"d1/d91/gb-sugarless_8hpp_source.html":[7,0,0,0,128],
-"d1/d91/structexc_1_1internal__error.html":[6,0,1,3]
+"d1/d91/gb-sugarless_8hpp_source.html":[7,0,0,0,128]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"d5/dab/class_m2_1_1_galois_field_table_ae7da55408407bd58f19cbbf9facd8d11.html#ae7da55408407bd58f19cbbf9facd8d11":[6,0,2,7,26],
 "d5/dab/class_m2_1_1_galois_field_table_aedae07d66a491a632469c25603904234.html#aedae07d66a491a632469c25603904234":[6,0,2,7,4],
 "d5/db7/res-moninfo_8hpp.html":[7,0,0,0,5,22],
 "d5/db7/res-moninfo_8hpp_a7bc93e1c6a618d8b5a83f61057c445dd.html#a7bc93e1c6a618d8b5a83f61057c445dd":[7,0,0,0,5,22,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "d6/d05/classbinomial_g_b_ad2e317194e45de767911f5a7a7a1d66d.html#ad2e317194e45de767911f5a7a7a1d66d":[6,0,20,21],
 "d6/d05/classbinomial_g_b_ad65f14278524f1b91e52e04d7c293391.html#ad65f14278524f1b91e52e04d7c293391":[6,0,20,18],
 "d6/d05/classbinomial_g_b_ae1885eed854eccb80bc7fb5efc3adf9a.html#ae1885eed854eccb80bc7fb5efc3adf9a":[6,0,20,19],
-"d6/d05/classbinomial_g_b_af9eef7673c48c15fab53b12f53daad49.html#af9eef7673c48c15fab53b12f53daad49":[6,0,20,12],
-"d6/d05/classbinomial_g_b_afc740f3bbbb25e1f2ac2bfae4c3eda0f.html#afc740f3bbbb25e1f2ac2bfae4c3eda0f":[6,0,20,7]
+"d6/d05/classbinomial_g_b_af9eef7673c48c15fab53b12f53daad49.html#af9eef7673c48c15fab53b12f53daad49":[6,0,20,12]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX41 =
 {
+"db/d22/class_m2_free_algebra_quotient_af9dff98728e711c2dba3f78a6ace8d0a.html#af9dff98728e711c2dba3f78a6ace8d0a":[6,0,155,41],
 "db/d22/class_m2_free_algebra_quotient_afdcdf2d3a1b6d5220fc0bf053168a4f2.html#afdcdf2d3a1b6d5220fc0bf053168a4f2":[6,0,155,49],
 "db/d23/gausser_8cpp.html":[7,0,0,0,1,13],
 "db/d23/gausser_8cpp_source.html":[7,0,0,0,1,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX41 =
 "db/d86/structenter__factory_a2a0c83d310d5a32b5c24354b9dd889ba.html#a2a0c83d310d5a32b5c24354b9dd889ba":[6,0,68,10],
 "db/d86/structenter__factory_a305a69d09cbe69888cf060654cf6ef34.html#a305a69d09cbe69888cf060654cf6ef34":[6,0,68,6],
 "db/d86/structenter__factory_a487efd951336ed3a1f56f9dbeeab351e.html#a487efd951336ed3a1f56f9dbeeab351e":[6,0,68,4],
-"db/d86/structenter__factory_a50fa5356f9aa6c79b7986936fee238a5.html#a50fa5356f9aa6c79b7986936fee238a5":[6,0,68,8],
-"db/d86/structenter__factory_a65cde55dc40fe3aeeee6e19f261e9b85.html#a65cde55dc40fe3aeeee6e19f261e9b85":[6,0,68,9]
+"db/d86/structenter__factory_a50fa5356f9aa6c79b7986936fee238a5.html#a50fa5356f9aa6c79b7986936fee238a5":[6,0,68,8]
 };

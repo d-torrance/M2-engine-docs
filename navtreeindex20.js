@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"d6/d05/classbinomial_g_b_afc740f3bbbb25e1f2ac2bfae4c3eda0f.html#afc740f3bbbb25e1f2ac2bfae4c3eda0f":[6,0,20,7],
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node.html":[6,0,0,4,0],
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_a27e6ebbc6d73553e4cc3ab65c46c45af.html#a27e6ebbc6d73553e4cc3ab65c46c45af":[6,0,0,4,0,6],
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_a330bcff247e54e61673a29de38bedfed.html#a330bcff247e54e61673a29de38bedfed":[6,0,0,4,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "d6/d3f/class_matrix_ae194fcc73edeec7c305d3e1b9f0e502d.html#ae194fcc73edeec7c305d3e1b9f0e502d":[4,2,2,67],
 "d6/d3f/class_matrix_ae4235e2647a7ed51e83d455a8eae9cbf.html#ae4235e2647a7ed51e83d455a8eae9cbf":[4,2,2,12],
 "d6/d3f/class_matrix_ae50f6a2e816d7a9a4f92ab92415f0826.html#ae50f6a2e816d7a9a4f92ab92415f0826":[4,2,2,4],
-"d6/d3f/class_matrix_aeddedfb471f985a3781514378848cd85.html#aeddedfb471f985a3781514378848cd85":[4,2,2,17],
-"d6/d3f/class_matrix_aee2259e72a041f3b6d54124c6047b80e.html#aee2259e72a041f3b6d54124c6047b80e":[4,2,2,69]
+"d6/d3f/class_matrix_aeddedfb471f985a3781514378848cd85.html#aeddedfb471f985a3781514378848cd85":[4,2,2,17]
 };

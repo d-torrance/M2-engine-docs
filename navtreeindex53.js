@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"de/df6/_a_ring_c_c_test_8cpp_a202ffae5059a51b8d354495ae0ad38cc.html#a202ffae5059a51b8d354495ae0ad38cc":[7,0,0,0,6,1,4],
 "de/df6/_a_ring_c_c_test_8cpp_a37eedcea884a93011677fd31e2ae5232.html#a37eedcea884a93011677fd31e2ae5232":[7,0,0,0,6,1,0],
 "de/df6/_a_ring_c_c_test_8cpp_a6526815c9265a72553a73e89e1648c62.html#a6526815c9265a72553a73e89e1648c62":[7,0,0,0,6,1,8],
 "de/df6/_a_ring_c_c_test_8cpp_a969f674988d165592856067d4889b825.html#a969f674988d165592856067d4889b825":[7,0,0,0,6,1,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "df/d3c/mutable-matrix_8h_afda0f5481110df9eabc858eafc92d926.html#afda0f5481110df9eabc858eafc92d926":[7,0,0,0,2,23,62],
 "df/d3c/mutable-matrix_8h_aff9554e49022769a9a779c83e1b25fe2.html#aff9554e49022769a9a779c83e1b25fe2":[7,0,0,0,2,23,18],
 "df/d3c/mutable-matrix_8h_source.html":[7,0,0,0,2,23],
-"df/d3f/class_b_i_basis_1_1_q_set.html":[6,0,0,11],
-"df/d3f/class_b_i_basis_1_1_q_set_a1b45ab6289868ead20d8000268d96dc0.html#a1b45ab6289868ead20d8000268d96dc0":[6,0,0,11,9]
+"df/d3f/class_b_i_basis_1_1_q_set.html":[6,0,0,11]
 };

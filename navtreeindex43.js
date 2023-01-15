@@ -1,5 +1,6 @@
 var NAVTREEINDEX43 =
 {
+"dc/d0d/class_res_monoid_dense_aafaadd9e487a17c8b50b55d67c5b2284.html#aafaadd9e487a17c8b50b55d67c5b2284":[6,0,285,12],
 "dc/d0d/class_res_monoid_dense_ab3c4c5765aa8998db51a6acdd82db0be.html#ab3c4c5765aa8998db51a6acdd82db0be":[6,0,285,26],
 "dc/d0d/class_res_monoid_dense_ab46270cb60d3d277c5c09e343ab4959a.html#ab46270cb60d3d277c5c09e343ab4959a":[6,0,285,55],
 "dc/d0d/class_res_monoid_dense_ab578a871869b60d6879bba687201e629.html#ab578a871869b60d6879bba687201e629":[6,0,285,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX43 =
 "dc/d71/_ring_tower_test_8cpp.html":[7,0,0,0,6,28],
 "dc/d71/_ring_tower_test_8cpp_a2dd08084166c92a9ca1284aa0cd529e6.html#a2dd08084166c92a9ca1284aa0cd529e6":[7,0,0,0,6,28,1],
 "dc/d71/_ring_tower_test_8cpp_a8f58b859896216f70347fdee7b8d3f50.html#a8f58b859896216f70347fdee7b8d3f50":[7,0,0,0,6,28,2],
-"dc/d71/_ring_tower_test_8cpp_acdae92507d4dbc2c0b00898c7a743f26.html#acdae92507d4dbc2c0b00898c7a743f26":[7,0,0,0,6,28,0],
-"dc/d71/_ring_tower_test_8cpp_source.html":[7,0,0,0,6,28]
+"dc/d71/_ring_tower_test_8cpp_acdae92507d4dbc2c0b00898c7a743f26.html#acdae92507d4dbc2c0b00898c7a743f26":[7,0,0,0,6,28,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"df/d3f/class_b_i_basis_1_1_q_set_a1b45ab6289868ead20d8000268d96dc0.html#a1b45ab6289868ead20d8000268d96dc0":[6,0,0,11,9],
 "df/d3f/class_b_i_basis_1_1_q_set_a35fb7d6717a1db24a1e3f5b4b0727407.html#a35fb7d6717a1db24a1e3f5b4b0727407":[6,0,0,11,3],
 "df/d3f/class_b_i_basis_1_1_q_set_a4d60cdedd52a60371ea01b17ae00129e.html#a4d60cdedd52a60371ea01b17ae00129e":[6,0,0,11,5],
 "df/d3f/class_b_i_basis_1_1_q_set_aa272d2a08884dbdb07a66ab5d8f9f077.html#aa272d2a08884dbdb07a66ab5d8f9f077":[6,0,0,11,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "df/dab/class_g_b_walker_a9a726250007c7c588b27ff024dc5b0f0.html#a9a726250007c7c588b27ff024dc5b0f0":[4,3,0,8,5],
 "df/dab/class_g_b_walker_a9d691a920126b25aa29668554bf9160a.html#a9d691a920126b25aa29668554bf9160a":[4,3,0,8,19],
 "df/dab/class_g_b_walker_aa33bf94fccac102946c200fee868a2d6.html#aa33bf94fccac102946c200fee868a2d6":[4,3,0,8,40],
-"df/dab/class_g_b_walker_ab52be29c69fc2151f11fc1c5c1730daa.html#ab52be29c69fc2151f11fc1c5c1730daa":[4,3,0,8,18],
-"df/dab/class_g_b_walker_ababd89937495566d892d97aea0673b0d.html#ababd89937495566d892d97aea0673b0d":[4,3,0,8,4]
+"df/dab/class_g_b_walker_ab52be29c69fc2151f11fc1c5c1730daa.html#ab52be29c69fc2151f11fc1c5c1730daa":[4,3,0,8,18]
 };

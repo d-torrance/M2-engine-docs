@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"d1/dfa/class_m2_1_1_a_ring_c_c_a2d533977345dab0008e8c79b006cc41d.html#a2d533977345dab0008e8c79b006cc41d":[4,0,3,24],
 "d1/dfa/class_m2_1_1_a_ring_c_c_a2df8bea63e6218a9aeeaa2b074e640d9.html#a2df8bea63e6218a9aeeaa2b074e640d9":[4,0,3,0],
 "d1/dfa/class_m2_1_1_a_ring_c_c_a2e894a4d63b23729d491e998ad66b44a.html#a2e894a4d63b23729d491e998ad66b44a":[4,0,3,35],
 "d1/dfa/class_m2_1_1_a_ring_c_c_a3147d9a507f38b38f8b28f5d9e50606e.html#a3147d9a507f38b38f8b28f5d9e50606e":[4,0,3,54],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "d2/d49/class_pair_affb8bd419fe581fdb84ae0d545fce302.html#affb8bd419fe581fdb84ae0d545fce302":[6,0,234,5],
 "d2/d4d/gb-walk_8cpp.html":[7,0,0,0,131],
 "d2/d4d/gb-walk_8cpp_source.html":[7,0,0,0,131],
-"d2/d54/class_matrix_1_1iterator.html":[4,2,2,1],
-"d2/d54/class_matrix_1_1iterator_a00767089fe31894f9eb6a59cf8850523.html#a00767089fe31894f9eb6a59cf8850523":[4,2,2,1,3]
+"d2/d54/class_matrix_1_1iterator.html":[4,2,2,1]
 };

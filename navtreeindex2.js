@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"d0/d91/classgb_a_a9a10ed7a4baae69dd294fea9284a2ea9.html#a9a10ed7a4baae69dd294fea9284a2ea9":[4,3,0,4,152],
 "d0/d91/classgb_a_a9a4a331e2d2a7b5a1ae53f986b69808f.html#a9a4a331e2d2a7b5a1ae53f986b69808f":[4,3,0,4,4],
 "d0/d91/classgb_a_a9b9ecd89b87835c4ec5c493eaf097021.html#a9b9ecd89b87835c4ec5c493eaf097021":[4,3,0,4,98],
 "d0/d91/classgb_a_a9d233579fcad54c428ec2d9c8646e53d.html#a9d233579fcad54c428ec2d9c8646e53d":[4,3,0,4,99],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "d0/d99/class_m2_1_1_concrete_ring_aff922aace7d03b54f8c6a86174e6d5d4.html#aff922aace7d03b54f8c6a86174e6d5d4":[4,0,8,57],
 "d0/d99/class_m2_1_1_concrete_ring_affe2d4e6f6ad2874888719f716c3abd1.html#affe2d4e6f6ad2874888719f716c3abd1":[4,0,8,50],
 "d0/d99/pfaff_8hpp.html":[7,0,0,0,231],
-"d0/d99/pfaff_8hpp_source.html":[7,0,0,0,231],
-"d0/da2/monomial-collection_8cpp.html":[7,0,0,0,197]
+"d0/d99/pfaff_8hpp_source.html":[7,0,0,0,231]
 };
