@@ -88,11 +88,25 @@ $(document).ready(function(){initNavTree('d6/d31/matrix-kbasis_8cpp.html','../..
 <div class="title">matrix-kbasis.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../de/d6c/polyring_8hpp_source.html">polyring.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d2/d80/matrix-con_8hpp_source.html">matrix-con.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/da7/ntuple_8hpp_source.html">ntuple.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../da/db0/_exponent_vector_8hpp_source.html">ExponentVector.hpp</a>&quot;</code><br />
+<code>#include &quot;M2mem.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/db4/engine-includes_8hpp_source.html">engine-includes.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d41/error_8h_source.html">error.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/dcb/freemod_8hpp_source.html">freemod.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/db6/int-bag_8hpp_source.html">int-bag.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d2/d87/interrupted_8hpp_source.html">interrupted.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d80/matrix-con_8hpp_source.html">matrix-con.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d4f/monideal_8hpp_source.html">monideal.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/dd0/monoid_8hpp_source.html">monoid.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d94/newdelete_8hpp_source.html">newdelete.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d6c/polyring_8hpp_source.html">polyring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d10/ring_8hpp_source.html">ring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/dc9/ringelem_8hpp_source.html">ringelem.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d6f/style_8hpp_source.html">style.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d3f/util_8hpp_source.html">util.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../d6/d31/matrix-kbasis_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -103,8 +117,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a36b9335466dfb233535c47a35b6d8e59"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d31/matrix-kbasis_8cpp_a36b9335466dfb233535c47a35b6d8e59.html#a36b9335466dfb233535c47a35b6d8e59">all_have_pure_powers</a> (const <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *M, M2_arrayint vars)</td></tr>
-<tr class="separator:a36b9335466dfb233535c47a35b6d8e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af718fb40f411f2709d8147c31510c1e2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d31/matrix-kbasis_8cpp_af718fb40f411f2709d8147c31510c1e2.html#af718fb40f411f2709d8147c31510c1e2">all_have_pure_powers</a> (const <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *M, std::vector&lt; int &gt; varlist)</td></tr>
+<tr class="separator:af718fb40f411f2709d8147c31510c1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -112,7 +126,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d6/d31/matrix-kbasis_8cpp.html">matrix-kbasis.cpp</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

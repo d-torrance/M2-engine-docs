@@ -113,23 +113,23 @@ $(document).ready(function(){initNavTree('dc/dc0/class_m2_free_algebra_ac87dff79
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d52/_m2_free_algebra_8cpp_source.html#l00396">396</a> of file <a class="el" href="../../df/d52/_m2_free_algebra_8cpp_source.html">M2FreeAlgebra.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;{</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <span class="keyword">auto</span> result = <span class="keyword">new</span> <a class="code" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  <span class="keyword">auto</span>&amp; outcoeff = result-&gt;getCoeffInserter();</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <span class="keyword">auto</span>&amp; outmonom = result-&gt;getMonomInserter();</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  <span class="keywordtype">int</span> which = 0;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> i=f-&gt;cbegin(); i != f-&gt;cend() and which &lt;= hi; ++i, ++which)</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    {</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      <span class="keywordflow">if</span> (which &lt; lo) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      outcoeff.push_back(i.coeff());</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      <a class="code" href="../../dc/dc0/class_m2_free_algebra_a34d45696b72b50ecab2806d6e06271ad.html#a34d45696b72b50ecab2806d6e06271ad">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a804fd50c9851b312e78eb1c0981f9b0e.html#a804fd50c9851b312e78eb1c0981f9b0e">copy</a>(i.monom(), outmonom);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    }</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d52/_m2_free_algebra_8cpp_source.html#l00392">392</a> of file <a class="el" href="../../df/d52/_m2_free_algebra_8cpp_source.html">M2FreeAlgebra.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;{</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <span class="keyword">auto</span> result = <span class="keyword">new</span> <a class="code" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  <span class="keyword">auto</span>&amp; outcoeff = result-&gt;getCoeffInserter();</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  <span class="keyword">auto</span>&amp; outmonom = result-&gt;getMonomInserter();</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  <span class="keywordtype">int</span> which = 0;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> i=f-&gt;cbegin(); i != f-&gt;cend() and which &lt;= hi; ++i, ++which)</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <span class="keywordflow">if</span> (which &lt; lo) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      outcoeff.push_back(i.coeff());</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      <a class="code" href="../../dc/dc0/class_m2_free_algebra_a34d45696b72b50ecab2806d6e06271ad.html#a34d45696b72b50ecab2806d6e06271ad">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a804fd50c9851b312e78eb1c0981f9b0e.html#a804fd50c9851b312e78eb1c0981f9b0e">copy</a>(i.monom(), outmonom);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;}</div>
 <div class="ttc" id="a_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30_html_aa2e1f459d90ab6e50fc0b8c642dceb30"><div class="ttname"><a href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a></div><div class="ttdeci">Polynomial&lt; CoefficientRingType &gt; Poly</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00263">Polynomial.hpp:263</a></div></div>
 <div class="ttc" id="aclass_free_monoid_a804fd50c9851b312e78eb1c0981f9b0e_html_a804fd50c9851b312e78eb1c0981f9b0e"><div class="ttname"><a href="../../dc/da6/class_free_monoid_a804fd50c9851b312e78eb1c0981f9b0e.html#a804fd50c9851b312e78eb1c0981f9b0e">FreeMonoid::copy</a></div><div class="ttdeci">void copy(const Monom &amp;m, MonomialInserter &amp;result) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d5e/_free_monoid_8cpp_source.html#l00073">FreeMonoid.cpp:73</a></div></div>
-<div class="ttc" id="aclass_m2_free_algebra_a34d45696b72b50ecab2806d6e06271ad_html_a34d45696b72b50ecab2806d6e06271ad"><div class="ttname"><a href="../../dc/dc0/class_m2_free_algebra_a34d45696b72b50ecab2806d6e06271ad.html#a34d45696b72b50ecab2806d6e06271ad">M2FreeAlgebra::monoid</a></div><div class="ttdeci">const FreeMonoid &amp; monoid() const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d34/_m2_free_algebra_8hpp_source.html#l00074">M2FreeAlgebra.hpp:74</a></div></div>
+<div class="ttc" id="aclass_m2_free_algebra_a34d45696b72b50ecab2806d6e06271ad_html_a34d45696b72b50ecab2806d6e06271ad"><div class="ttname"><a href="../../dc/dc0/class_m2_free_algebra_a34d45696b72b50ecab2806d6e06271ad.html#a34d45696b72b50ecab2806d6e06271ad">M2FreeAlgebra::monoid</a></div><div class="ttdeci">const FreeMonoid &amp; monoid() const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d34/_m2_free_algebra_8hpp_source.html#l00072">M2FreeAlgebra.hpp:72</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../dc/da6/class_free_monoid_a804fd50c9851b312e78eb1c0981f9b0e.html#a804fd50c9851b312e78eb1c0981f9b0e">FreeMonoid::copy()</a>, and <a class="el" href="../../dc/dc0/class_m2_free_algebra_a34d45696b72b50ecab2806d6e06271ad.html#a34d45696b72b50ecab2806d6e06271ad">monoid()</a>.</p>
 
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('dc/dc0/class_m2_free_algebra_ac87dff79
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/dc0/class_m2_free_algebra.html">M2FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -113,39 +113,39 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a3ac84662e7b
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00505">505</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;{</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  <a class="code" href="../../d4/d31/class_free_algebra_heap.html">FreeAlgebraHeap</a> H {*<span class="keyword">this</span>};</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  <a class="code" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a> tmp;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  <a class="code" href="../../de/dbd/class_free_algebra_a280690ad8b930f5df42d707fdaa42456.html#a280690ad8b930f5df42d707fdaa42456">init</a>(tmp);</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  <span class="keywordflow">if</span> (f.numTerms() &lt;= g.numTerms())</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    {</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> fIt = f.cbegin(); fIt != f.cend(); fIt++)</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        {</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;          <a class="code" href="../../de/dbd/class_free_algebra_a22488cdb33d05933350e82d32fa66a7b.html#a22488cdb33d05933350e82d32fa66a7b">mult_by_term_left</a>(tmp, g, fIt.coeff(), fIt.monom());</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;          H.add(tmp);</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;          <a class="code" href="../../de/dbd/class_free_algebra_ae50166c0e0d23487d7cb6e72ade791b6.html#ae50166c0e0d23487d7cb6e72ade791b6">setZero</a>(tmp);</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        }</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    }</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    {</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> gIt = g.cbegin(); gIt != g.cend(); gIt++)</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        {</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;          <a class="code" href="../../de/dbd/class_free_algebra_a1ac7019aab57a7d294708e14db20406d.html#a1ac7019aab57a7d294708e14db20406d">mult_by_term_right</a>(tmp,f, gIt.coeff(), gIt.monom());</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;          H.add(tmp);</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;          <a class="code" href="../../de/dbd/class_free_algebra_ae50166c0e0d23487d7cb6e72ade791b6.html#ae50166c0e0d23487d7cb6e72ade791b6">setZero</a>(tmp);</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        }</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    }</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  H.value(result);</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <a class="code" href="../../de/dbd/class_free_algebra_a48da1b9447ee94cd049989ae16f19a9f.html#a48da1b9447ee94cd049989ae16f19a9f">clear</a>(tmp);</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00503">503</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;{</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <a class="code" href="../../d4/d31/class_free_algebra_heap.html">FreeAlgebraHeap</a> H {*<span class="keyword">this</span>};</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;  <a class="code" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a> tmp;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  <a class="code" href="../../de/dbd/class_free_algebra_a280690ad8b930f5df42d707fdaa42456.html#a280690ad8b930f5df42d707fdaa42456">init</a>(tmp);</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  <span class="keywordflow">if</span> (f.numTerms() &lt;= g.numTerms())</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    {</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> fIt = f.cbegin(); fIt != f.cend(); fIt++)</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        {</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;          <a class="code" href="../../de/dbd/class_free_algebra_a22488cdb33d05933350e82d32fa66a7b.html#a22488cdb33d05933350e82d32fa66a7b">mult_by_term_left</a>(tmp, g, fIt.coeff(), fIt.monom());</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;          H.add(tmp);</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;          <a class="code" href="../../de/dbd/class_free_algebra_ae50166c0e0d23487d7cb6e72ade791b6.html#ae50166c0e0d23487d7cb6e72ade791b6">setZero</a>(tmp);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        }</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    }</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    {</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> gIt = g.cbegin(); gIt != g.cend(); gIt++)</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        {</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;          <a class="code" href="../../de/dbd/class_free_algebra_a1ac7019aab57a7d294708e14db20406d.html#a1ac7019aab57a7d294708e14db20406d">mult_by_term_right</a>(tmp,f, gIt.coeff(), gIt.monom());</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;          H.add(tmp);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;          <a class="code" href="../../de/dbd/class_free_algebra_ae50166c0e0d23487d7cb6e72ade791b6.html#ae50166c0e0d23487d7cb6e72ade791b6">setZero</a>(tmp);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        }</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    }</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  H.value(result);</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <a class="code" href="../../de/dbd/class_free_algebra_a48da1b9447ee94cd049989ae16f19a9f.html#a48da1b9447ee94cd049989ae16f19a9f">clear</a>(tmp);</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;}</div>
 <div class="ttc" id="a_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30_html_aa2e1f459d90ab6e50fc0b8c642dceb30"><div class="ttname"><a href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a></div><div class="ttdeci">Polynomial&lt; CoefficientRingType &gt; Poly</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00263">Polynomial.hpp:263</a></div></div>
-<div class="ttc" id="aclass_free_algebra_a1ac7019aab57a7d294708e14db20406d_html_a1ac7019aab57a7d294708e14db20406d"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a1ac7019aab57a7d294708e14db20406d.html#a1ac7019aab57a7d294708e14db20406d">FreeAlgebra::mult_by_term_right</a></div><div class="ttdeci">void mult_by_term_right(Poly &amp;result, const Poly &amp;f, const ring_elem c, const Monom m) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00532">FreeAlgebra.cpp:532</a></div></div>
-<div class="ttc" id="aclass_free_algebra_a22488cdb33d05933350e82d32fa66a7b_html_a22488cdb33d05933350e82d32fa66a7b"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a22488cdb33d05933350e82d32fa66a7b.html#a22488cdb33d05933350e82d32fa66a7b">FreeAlgebra::mult_by_term_left</a></div><div class="ttdeci">void mult_by_term_left(Poly &amp;result, const Poly &amp;f, const ring_elem c, const Monom m) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00565">FreeAlgebra.cpp:565</a></div></div>
+<div class="ttc" id="aclass_free_algebra_a1ac7019aab57a7d294708e14db20406d_html_a1ac7019aab57a7d294708e14db20406d"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a1ac7019aab57a7d294708e14db20406d.html#a1ac7019aab57a7d294708e14db20406d">FreeAlgebra::mult_by_term_right</a></div><div class="ttdeci">void mult_by_term_right(Poly &amp;result, const Poly &amp;f, const ring_elem c, const Monom m) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00530">FreeAlgebra.cpp:530</a></div></div>
+<div class="ttc" id="aclass_free_algebra_a22488cdb33d05933350e82d32fa66a7b_html_a22488cdb33d05933350e82d32fa66a7b"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a22488cdb33d05933350e82d32fa66a7b.html#a22488cdb33d05933350e82d32fa66a7b">FreeAlgebra::mult_by_term_left</a></div><div class="ttdeci">void mult_by_term_left(Poly &amp;result, const Poly &amp;f, const ring_elem c, const Monom m) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00563">FreeAlgebra.cpp:563</a></div></div>
 <div class="ttc" id="aclass_free_algebra_a280690ad8b930f5df42d707fdaa42456_html_a280690ad8b930f5df42d707fdaa42456"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a280690ad8b930f5df42d707fdaa42456.html#a280690ad8b930f5df42d707fdaa42456">FreeAlgebra::init</a></div><div class="ttdeci">void init(Poly &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00048">FreeAlgebra.hpp:48</a></div></div>
-<div class="ttc" id="aclass_free_algebra_a48da1b9447ee94cd049989ae16f19a9f_html_a48da1b9447ee94cd049989ae16f19a9f"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a48da1b9447ee94cd049989ae16f19a9f.html#a48da1b9447ee94cd049989ae16f19a9f">FreeAlgebra::clear</a></div><div class="ttdeci">void clear(Poly &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00116">FreeAlgebra.cpp:116</a></div></div>
-<div class="ttc" id="aclass_free_algebra_ae50166c0e0d23487d7cb6e72ade791b6_html_ae50166c0e0d23487d7cb6e72ade791b6"><div class="ttname"><a href="../../de/dbd/class_free_algebra_ae50166c0e0d23487d7cb6e72ade791b6.html#ae50166c0e0d23487d7cb6e72ade791b6">FreeAlgebra::setZero</a></div><div class="ttdeci">void setZero(Poly &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00122">FreeAlgebra.cpp:122</a></div></div>
-<div class="ttc" id="aclass_free_algebra_heap_html"><div class="ttname"><a href="../../d4/d31/class_free_algebra_heap.html">FreeAlgebraHeap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00279">FreeAlgebra.hpp:280</a></div></div>
+<div class="ttc" id="aclass_free_algebra_a48da1b9447ee94cd049989ae16f19a9f_html_a48da1b9447ee94cd049989ae16f19a9f"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a48da1b9447ee94cd049989ae16f19a9f.html#a48da1b9447ee94cd049989ae16f19a9f">FreeAlgebra::clear</a></div><div class="ttdeci">void clear(Poly &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00114">FreeAlgebra.cpp:114</a></div></div>
+<div class="ttc" id="aclass_free_algebra_ae50166c0e0d23487d7cb6e72ade791b6_html_ae50166c0e0d23487d7cb6e72ade791b6"><div class="ttname"><a href="../../de/dbd/class_free_algebra_ae50166c0e0d23487d7cb6e72ade791b6.html#ae50166c0e0d23487d7cb6e72ade791b6">FreeAlgebra::setZero</a></div><div class="ttdeci">void setZero(Poly &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00120">FreeAlgebra.cpp:120</a></div></div>
+<div class="ttc" id="aclass_free_algebra_heap_html"><div class="ttname"><a href="../../d4/d31/class_free_algebra_heap.html">FreeAlgebraHeap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00277">FreeAlgebra.hpp:278</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../de/dbd/class_free_algebra_a48da1b9447ee94cd049989ae16f19a9f.html#a48da1b9447ee94cd049989ae16f19a9f">clear()</a>, <a class="el" href="../../de/dbd/class_free_algebra_a280690ad8b930f5df42d707fdaa42456.html#a280690ad8b930f5df42d707fdaa42456">init()</a>, <a class="el" href="../../de/dbd/class_free_algebra_a22488cdb33d05933350e82d32fa66a7b.html#a22488cdb33d05933350e82d32fa66a7b">mult_by_term_left()</a>, <a class="el" href="../../de/dbd/class_free_algebra_a1ac7019aab57a7d294708e14db20406d.html#a1ac7019aab57a7d294708e14db20406d">mult_by_term_right()</a>, and <a class="el" href="../../de/dbd/class_free_algebra_ae50166c0e0d23487d7cb6e72ade791b6.html#ae50166c0e0d23487d7cb6e72ade791b6">setZero()</a>.</p>
 
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a3ac84662e7b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

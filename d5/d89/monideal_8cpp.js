@@ -1,7 +1,7 @@
 var monideal_8cpp =
 [
-    [ "borel1", "d5/d89/monideal_8cpp_a1e44e69e68341d56716de7e021209ad1.html#a1e44e69e68341d56716de7e021209ad1", null ],
-    [ "varpower_monideal", "d5/d89/monideal_8cpp_ae918ba85253a49f25316d34bfedb993f.html#ae918ba85253a49f25316d34bfedb993f", null ],
+    [ "borel1", "d5/d89/monideal_8cpp_ac12a1228742acd9efad0d592c7055e36.html#ac12a1228742acd9efad0d592c7055e36", null ],
+    [ "varpower_monideal", "d5/d89/monideal_8cpp_a749096eb419cefe178c0e170f0812635.html#a749096eb419cefe178c0e170f0812635", null ],
     [ "ndepth", "d5/d89/monideal_8cpp_a78993852177787f3c04a9f3c686f074f.html#a78993852177787f3c04a9f3c686f074f", null ],
     [ "nleaves", "d5/d89/monideal_8cpp_abfd66b90d07734873d6bb6fd61e566a6.html#abfd66b90d07734873d6bb6fd61e566a6", null ],
     [ "nlists", "d5/d89/monideal_8cpp_ac134bfbf116039338b60c67ccdf3451e.html#ac134bfbf116039338b60c67ccdf3451e", null ],

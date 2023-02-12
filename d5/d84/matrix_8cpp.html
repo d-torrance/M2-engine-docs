@@ -87,21 +87,22 @@ $(document).ready(function(){initNavTree('d5/d84/matrix_8cpp.html','../../'); in
 <div class="title">matrix.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d1/d79/random_8h_source.html">interface/random.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d41/gmp-util_8h_source.html">interface/gmp-util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d79/random_8h_source.html">interface/random.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/db0/_exponent_vector_8hpp_source.html">ExponentVector.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d2/d6f/style_8hpp_source.html">style.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d5c/text-io_8hpp_source.html">text-io.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d10/ring_8hpp_source.html">ring.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/d23/comb_8hpp_source.html">comb.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../de/d6c/polyring_8hpp_source.html">polyring.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d0f/assprime_8hpp_source.html">assprime.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d4f/monideal_8hpp_source.html">monideal.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d0/d5a/relem_8hpp_source.html">relem.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/dcb/freemod_8hpp_source.html">freemod.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/da7/ntuple_8hpp_source.html">ntuple.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/da8/exptable_8h_source.html">exptable.h</a>&quot;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d2/d80/matrix-con_8hpp_source.html">matrix-con.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/d60/monomial-collection_8hpp_source.html">monomial-collection.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d34/_m2_free_algebra_8hpp_source.html">M2FreeAlgebra.hpp</a>&quot;</code><br />
@@ -112,8 +113,8 @@ $(document).ready(function(){initNavTree('d5/d84/matrix_8cpp.html','../../'); in
 Functions</h2></td></tr>
 <tr class="memitem:a7cd8abe77e383deaaa269899cdbd3c41"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/matrix_8cpp_a7cd8abe77e383deaaa269899cdbd3c41.html#a7cd8abe77e383deaaa269899cdbd3c41">makemonideal</a> (const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *A)</td></tr>
 <tr class="separator:a7cd8abe77e383deaaa269899cdbd3c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8289d82175a6cfa2e2a8452a070ef4db"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/matrix_8cpp_a8289d82175a6cfa2e2a8452a070ef4db.html#a8289d82175a6cfa2e2a8452a070ef4db">signdivide</a> (int n, const int *a, const int *b, int *exp)</td></tr>
-<tr class="separator:a8289d82175a6cfa2e2a8452a070ef4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f84b808e6893eaa3d4a92810b7a2369"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/matrix_8cpp_a4f84b808e6893eaa3d4a92810b7a2369.html#a4f84b808e6893eaa3d4a92810b7a2369">signdivide</a> (int n, <a class="el" href="../../da/db0/_exponent_vector_8hpp_a21989b3e062e85cbe627cf36cf1bb395.html#a21989b3e062e85cbe627cf36cf1bb395">const_exponents</a> a, <a class="el" href="../../da/db0/_exponent_vector_8hpp_a21989b3e062e85cbe627cf36cf1bb395.html#a21989b3e062e85cbe627cf36cf1bb395">const_exponents</a> b, <a class="el" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> exp)</td></tr>
+<tr class="separator:a4f84b808e6893eaa3d4a92810b7a2369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fed768cf3caefe3d8b49539e5fb98c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/matrix_8cpp_a7fed768cf3caefe3d8b49539e5fb98c3.html#a7fed768cf3caefe3d8b49539e5fb98c3">NCMonomials</a> (<a class="el" href="../../d3/d60/monomial-collection_8hpp_a3ff66fa0172547637ea18786761e8241.html#a3ff66fa0172547637ea18786761e8241">ModuleMonomialSet</a> &amp;H, const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *M)</td></tr>
 <tr class="separator:a7fed768cf3caefe3d8b49539e5fb98c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a244d0e2acfb03fd6e4fb01726294c5bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/matrix_8cpp_a244d0e2acfb03fd6e4fb01726294c5bc.html#a244d0e2acfb03fd6e4fb01726294c5bc">NCMonomialMatrix</a> (<a class="el" href="../../d3/d60/monomial-collection_8hpp_a3ff66fa0172547637ea18786761e8241.html#a3ff66fa0172547637ea18786761e8241">ModuleMonomialSet</a> &amp;H, const <a class="el" href="../../d6/df0/class_free_module.html">FreeModule</a> *target)</td></tr>
@@ -133,7 +134,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d5/d84/matrix_8cpp.html">matrix.cpp</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:51:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

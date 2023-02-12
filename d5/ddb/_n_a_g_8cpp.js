@@ -7,7 +7,7 @@ var _n_a_g_8cpp =
     [ "cond_number_via_svd", "d5/ddb/_n_a_g_8cpp_a1348d1b851a267ea7414e27ff44fb3b9.html#a1348d1b851a267ea7414e27ff44fb3b9", null ],
     [ "degree_ring_elem", "d5/ddb/_n_a_g_8cpp_aa49ea4bd7747cc3dc1c587fca105f763.html#aa49ea4bd7747cc3dc1c587fca105f763", null ],
     [ "extract_divisible_by_x", "d5/ddb/_n_a_g_8cpp_aaa0464f90f6c18b3023cadf5b76b0712.html#aaa0464f90f6c18b3023cadf5b76b0712", null ],
-    [ "monomials_to_conventional_exponent_vectors", "d5/ddb/_n_a_g_8cpp_afc660a80a4f8a0c0ce4ad97f5d0de32a.html#afc660a80a4f8a0c0ce4ad97f5d0de32a", null ],
+    [ "monomials_to_conventional_expvectors", "d5/ddb/_n_a_g_8cpp_a72ca6d8b851df8a719c18c8ed0498cb4.html#a72ca6d8b851df8a719c18c8ed0498cb4", null ],
     [ "norm_of_inverse_via_svd", "d5/ddb/_n_a_g_8cpp_a1cf4a4cad658ea4953713a2a99604f81.html#a1cf4a4cad658ea4953713a2a99604f81", null ],
     [ "print_complex_matrix", "d5/ddb/_n_a_g_8cpp_a57a1757bf25b18bed36f72e924c0bc5b.html#a57a1757bf25b18bed36f72e924c0bc5b", null ],
     [ "rawGetAllSolutionsPT", "d5/ddb/_n_a_g_8cpp_a1738b7185de1896512a4e54d9d2e68ee.html#a1738b7185de1896512a4e54d9d2e68ee", null ],

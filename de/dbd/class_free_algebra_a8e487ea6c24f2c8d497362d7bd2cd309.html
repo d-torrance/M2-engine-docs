@@ -139,16 +139,16 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a8e487ea6c24
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  assert(K != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  std::shared_ptr&lt;FreeMonoid&gt; M (<span class="keyword">new</span> <a class="code" href="../../dc/da6/class_free_monoid.html">FreeMonoid</a>(names, <a class="code" href="../../d2/dc0/_n_c_groebner_test_8cpp_af9d63a9930dbf9e4121ecba5b8c7ea19.html#af9d63a9930dbf9e4121ecba5b8c7ea19">degreeRing</a>, degrees, wtvecs, heftVector));</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a>* result = <span class="keyword">new</span> <a class="code" href="../../de/dbd/class_free_algebra_a75505cbd163c21bb00004c5e0ee412bf.html#a75505cbd163c21bb00004c5e0ee412bf">FreeAlgebra</a>(K, M);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  assert(K != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  std::shared_ptr&lt;FreeMonoid&gt; M (<span class="keyword">new</span> <a class="code" href="../../dc/da6/class_free_monoid.html">FreeMonoid</a>(names, <a class="code" href="../../d2/dc0/_n_c_groebner_test_8cpp_af9d63a9930dbf9e4121ecba5b8c7ea19.html#af9d63a9930dbf9e4121ecba5b8c7ea19">degreeRing</a>, degrees, wtvecs, heftVector));</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a>* result = <span class="keyword">new</span> <a class="code" href="../../de/dbd/class_free_algebra_a75505cbd163c21bb00004c5e0ee412bf.html#a75505cbd163c21bb00004c5e0ee412bf">FreeAlgebra</a>(K, M);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 <div class="ttc" id="a_n_c_groebner_test_8cpp_af9d63a9930dbf9e4121ecba5b8c7ea19_html_af9d63a9930dbf9e4121ecba5b8c7ea19"><div class="ttname"><a href="../../d2/dc0/_n_c_groebner_test_8cpp_af9d63a9930dbf9e4121ecba5b8c7ea19.html#af9d63a9930dbf9e4121ecba5b8c7ea19">degreeRing</a></div><div class="ttdeci">const PolynomialRing * degreeRing(const std::vector&lt; std::string &gt; &amp;names)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc0/_n_c_groebner_test_8cpp_source.html#l00074">NCGroebnerTest.cpp:74</a></div></div>
-<div class="ttc" id="aclass_free_algebra_a75505cbd163c21bb00004c5e0ee412bf_html_a75505cbd163c21bb00004c5e0ee412bf"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a75505cbd163c21bb00004c5e0ee412bf.html#a75505cbd163c21bb00004c5e0ee412bf">FreeAlgebra::FreeAlgebra</a></div><div class="ttdeci">FreeAlgebra(const Ring *K, std::shared_ptr&lt; FreeMonoid &gt; M)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00108">FreeAlgebra.cpp:108</a></div></div>
+<div class="ttc" id="aclass_free_algebra_a75505cbd163c21bb00004c5e0ee412bf_html_a75505cbd163c21bb00004c5e0ee412bf"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a75505cbd163c21bb00004c5e0ee412bf.html#a75505cbd163c21bb00004c5e0ee412bf">FreeAlgebra::FreeAlgebra</a></div><div class="ttdeci">FreeAlgebra(const Ring *K, std::shared_ptr&lt; FreeMonoid &gt; M)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00106">FreeAlgebra.cpp:106</a></div></div>
 <div class="ttc" id="aclass_free_algebra_html"><div class="ttname"><a href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00022">FreeAlgebra.hpp:23</a></div></div>
 <div class="ttc" id="aclass_free_monoid_html"><div class="ttname"><a href="../../dc/da6/class_free_monoid.html">FreeMonoid</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d8f/_free_monoid_8hpp_source.html#l00043">FreeMonoid.hpp:44</a></div></div>
 </div><!-- fragment -->
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a8e487ea6c24
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

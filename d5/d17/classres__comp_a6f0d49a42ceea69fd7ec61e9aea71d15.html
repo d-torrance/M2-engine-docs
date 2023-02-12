@@ -105,17 +105,17 @@ $(document).ready(function(){initNavTree('d5/d17/classres__comp_a6f0d49a42ceea69
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9d/res-a1_8cpp_source.html#l00469">469</a> of file <a class="el" href="../../d6/d9d/res-a1_8cpp_source.html">res-a1.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;{</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  <span class="keywordflow">if</span> (mypairs == NULL) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  <a class="code" href="../../dc/d2a/classres__pair.html">res_pair</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = mypairs-&gt;next_gen;</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> == NULL || <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next == NULL) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  <span class="comment">//  for (res_pair *q = p; q!=NULL; q=q-&gt;next)</span></div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  <span class="comment">//    q-&gt;compare_num = sort_value(q, s_pair_order); // MES: to be written</span></div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160; </div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;  <a class="code" href="../../d5/d17/classres__comp_ab9aa1454c1bef866b9ff231ce99e1018.html#ab9aa1454c1bef866b9ff231ce99e1018">sort_res_pairs</a>(mypairs-&gt;next_gen);</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;}</div>
-<div class="ttc" id="aclassres__comp_ab9aa1454c1bef866b9ff231ce99e1018_html_ab9aa1454c1bef866b9ff231ce99e1018"><div class="ttname"><a href="../../d5/d17/classres__comp_ab9aa1454c1bef866b9ff231ce99e1018.html#ab9aa1454c1bef866b9ff231ce99e1018">res_comp::sort_res_pairs</a></div><div class="ttdeci">void sort_res_pairs(res_pair *&amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9d/res-a1_8cpp_source.html#l00435">res-a1.cpp:435</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9d/res-a1_8cpp_source.html#l00471">471</a> of file <a class="el" href="../../d6/d9d/res-a1_8cpp_source.html">res-a1.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;{</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  <span class="keywordflow">if</span> (mypairs == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  <a class="code" href="../../dc/d2a/classres__pair.html">res_pair</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = mypairs-&gt;next_gen;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> == NULL || <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;  <span class="comment">//  for (res_pair *q = p; q!=NULL; q=q-&gt;next)</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;  <span class="comment">//    q-&gt;compare_num = sort_value(q, s_pair_order); // MES: to be written</span></div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;  <a class="code" href="../../d5/d17/classres__comp_ab9aa1454c1bef866b9ff231ce99e1018.html#ab9aa1454c1bef866b9ff231ce99e1018">sort_res_pairs</a>(mypairs-&gt;next_gen);</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;}</div>
+<div class="ttc" id="aclassres__comp_ab9aa1454c1bef866b9ff231ce99e1018_html_ab9aa1454c1bef866b9ff231ce99e1018"><div class="ttname"><a href="../../d5/d17/classres__comp_ab9aa1454c1bef866b9ff231ce99e1018.html#ab9aa1454c1bef866b9ff231ce99e1018">res_comp::sort_res_pairs</a></div><div class="ttdeci">void sort_res_pairs(res_pair *&amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9d/res-a1_8cpp_source.html#l00439">res-a1.cpp:439</a></div></div>
 <div class="ttc" id="aclassres__pair_html"><div class="ttname"><a href="../../dc/d2a/classres__pair.html">res_pair</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc5/res-a1-poly_8hpp_source.html#l00027">res-a1-poly.hpp:29</a></div></div>
 <div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 </div><!-- fragment -->
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('d5/d17/classres__comp_a6f0d49a42ceea69
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d17/classres__comp.html">res_comp</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

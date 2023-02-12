@@ -18,8 +18,8 @@ var hierarchy =
       [ "MGBCallback", "df/df8/class_m_g_b_callback.html", null ]
     ] ],
     [ "cc_doubles_struct", "db/dae/structcc__doubles__struct.html", null ],
-    [ "cc_struct", "de/d31/structcc__struct.html", null ],
     [ "CC_struct", "d3/d66/struct_c_c__struct.html", null ],
+    [ "cc_struct", "de/d31/structcc__struct.html", null ],
     [ "CCmutable_struct", "d6/ddb/struct_c_cmutable__struct.html", null ],
     [ "ChineseRemainder", "d0/d4e/class_chinese_remainder.html", null ],
     [ "CoefficientRingType", "db/dc3/struct_coefficient_ring_type.html", null ],
@@ -70,6 +70,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "exponent_table", "d7/db5/structexponent__table.html", null ],
+    [ "ExponentVector< E, OC >", "d1/d42/class_exponent_vector.html", null ],
     [ "F4Res", "d0/dd7/class_f4_res.html", null ],
     [ "F4toM2Interface", "d5/df9/class_f4to_m2_interface.html", null ],
     [ "F4Vec", "df/de1/class_f4_vec.html", null ],
@@ -179,8 +180,6 @@ var hierarchy =
     [ "NCF4::NCF4Stats", "d8/df0/struct_n_c_f4_1_1_n_c_f4_stats.html", null ],
     [ "BIBasis::JanetTree< MonomType >::Node", "df/da3/struct_b_i_basis_1_1_janet_tree_1_1_node.html", null ],
     [ "Nterm", "d0/dbc/struct_nterm.html", null ],
-    [ "ntuple", "da/dc4/classntuple.html", null ],
-    [ "ntuple_monomials", "df/d8a/classntuple__monomials.html", null ],
     [ "std::numeric_limits< mpfr::mpreal >", "d6/dba/classstd_1_1numeric__limits_3_01mpfr_1_1mpreal_01_4.html", null ],
     [ "our_new_delete", "da/dcc/structour__new__delete.html", [
       [ "F4MemoryBlock< pre_spair >", "d8/d75/class_f4_memory_block.html", null ],
@@ -195,9 +194,9 @@ var hierarchy =
       [ "DRing", "d6/de6/class_d_ring.html", null ],
       [ "DetComputation", "d7/d9a/class_det_computation.html", null ],
       [ "EngineObject", "d4/d3f/class_engine_object.html", [
+        [ "EngineMonomial", "d7/def/class_engine_monomial.html", null ],
         [ "FreeModule", "d6/df0/class_free_module.html", null ],
         [ "Matrix", "d6/d3f/class_matrix.html", null ],
-        [ "Monomial", "d4/daa/class_monomial.html", null ],
         [ "MonomialIdeal", "df/ddb/class_monomial_ideal.html", null ],
         [ "RingElement", "d6/de2/class_ring_element.html", null ],
         [ "RingMap", "d6/d6a/class_ring_map.html", null ]

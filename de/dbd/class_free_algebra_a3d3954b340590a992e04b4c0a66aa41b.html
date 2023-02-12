@@ -107,15 +107,15 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a3d3954b3405
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00150">150</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> cq; <span class="comment">// in coeff ring.</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordtype">bool</span> worked = <a class="code" href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">coefficientRing</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_afb7c55b4135b669cf01c0134da82114f.html#afb7c55b4135b669cf01c0134da82114f">from_rational</a>(q, cq);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">if</span> (!worked) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <a class="code" href="../../de/dbd/class_free_algebra_a352906c7547dd21de6fcc6e2f470bfe3.html#a352906c7547dd21de6fcc6e2f470bfe3">from_coefficient</a>(result, cq);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div>
-<div class="ttc" id="aclass_free_algebra_a352906c7547dd21de6fcc6e2f470bfe3_html_a352906c7547dd21de6fcc6e2f470bfe3"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a352906c7547dd21de6fcc6e2f470bfe3.html#a352906c7547dd21de6fcc6e2f470bfe3">FreeAlgebra::from_coefficient</a></div><div class="ttdeci">void from_coefficient(Poly &amp;result, const ring_elem a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00131">FreeAlgebra.cpp:131</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00148">148</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;{</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> cq; <span class="comment">// in coeff ring.</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">bool</span> worked = <a class="code" href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">coefficientRing</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_afb7c55b4135b669cf01c0134da82114f.html#afb7c55b4135b669cf01c0134da82114f">from_rational</a>(q, cq);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordflow">if</span> (!worked) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <a class="code" href="../../de/dbd/class_free_algebra_a352906c7547dd21de6fcc6e2f470bfe3.html#a352906c7547dd21de6fcc6e2f470bfe3">from_coefficient</a>(result, cq);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
+<div class="ttc" id="aclass_free_algebra_a352906c7547dd21de6fcc6e2f470bfe3_html_a352906c7547dd21de6fcc6e2f470bfe3"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a352906c7547dd21de6fcc6e2f470bfe3.html#a352906c7547dd21de6fcc6e2f470bfe3">FreeAlgebra::from_coefficient</a></div><div class="ttdeci">void from_coefficient(Poly &amp;result, const ring_elem a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00129">FreeAlgebra.cpp:129</a></div></div>
 <div class="ttc" id="aclass_free_algebra_a5448329115f9424b39dc739bb0d65f1d_html_a5448329115f9424b39dc739bb0d65f1d"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">FreeAlgebra::coefficientRing</a></div><div class="ttdeci">const Ring * coefficientRing() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00041">FreeAlgebra.hpp:41</a></div></div>
 <div class="ttc" id="aclass_ring_afb7c55b4135b669cf01c0134da82114f_html_afb7c55b4135b669cf01c0134da82114f"><div class="ttname"><a href="../../dd/dcf/class_ring_afb7c55b4135b669cf01c0134da82114f.html#afb7c55b4135b669cf01c0134da82114f">Ring::from_rational</a></div><div class="ttdeci">virtual bool from_rational(const mpq_srcptr q, ring_elem &amp;result) const =0</div></div>
 <div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00045">ringelem.hpp:46</a></div></div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a3d3954b3405
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

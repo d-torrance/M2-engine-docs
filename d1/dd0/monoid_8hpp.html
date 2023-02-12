@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('d1/dd0/monoid_8hpp.html','../../'); in
 <div class="contents">
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/db4/engine-includes_8hpp_source.html">engine-includes.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/db0/_exponent_vector_8hpp_source.html">ExponentVector.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/d04/hash_8hpp_source.html">hash.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/d64/imonorder_8hpp_source.html">imonorder.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d94/newdelete_8hpp_source.html">newdelete.hpp</a>&quot;</code><br />
@@ -105,7 +106,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a337de43f0792d2f0364a64ba9905116d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>(byte_len)&#160;&#160;&#160;static_cast&lt;<a class="el" href="../../dc/da9/dpoly_8hpp_a71242be5605e7bc772ca672ba5c5a5f4.html#a71242be5605e7bc772ca672ba5c5a5f4">exponents</a>&gt;(alloca(byte_len))</td></tr>
+<tr class="memitem:a337de43f0792d2f0364a64ba9905116d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>(byte_len)&#160;&#160;&#160;static_cast&lt;<a class="el" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a>&gt;(alloca(byte_len))</td></tr>
 <tr class="separator:a337de43f0792d2f0364a64ba9905116d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5921edf169b8ef4def00cef434057648"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_a5921edf169b8ef4def00cef434057648.html#a5921edf169b8ef4def00cef434057648">EXPONENT_BYTE_SIZE</a>(nvars)&#160;&#160;&#160;static_cast&lt;int&gt;((sizeof(int) * (nvars)))</td></tr>
 <tr class="separator:a5921edf169b8ef4def00cef434057648"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,24 +117,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a71242be5605e7bc772ca672ba5c5a5f4"><td class="memItemLeft" align="right" valign="top">typedef int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_a71242be5605e7bc772ca672ba5c5a5f4.html#a71242be5605e7bc772ca672ba5c5a5f4">exponents</a></td></tr>
-<tr class="separator:a71242be5605e7bc772ca672ba5c5a5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a888cc3de9edc7be644a94844fa5c31cc"><td class="memItemLeft" align="right" valign="top">typedef int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_a888cc3de9edc7be644a94844fa5c31cc.html#a888cc3de9edc7be644a94844fa5c31cc">graded_exponents</a></td></tr>
-<tr class="separator:a888cc3de9edc7be644a94844fa5c31cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b4ebe3eadf8c5e18658576c688a1c57"><td class="memItemLeft" align="right" valign="top">typedef int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_a8b4ebe3eadf8c5e18658576c688a1c57.html#a8b4ebe3eadf8c5e18658576c688a1c57">partial_sums</a></td></tr>
-<tr class="separator:a8b4ebe3eadf8c5e18658576c688a1c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b3f8e88af1cc26075f7af0f961adb96"><td class="memItemLeft" align="right" valign="top">typedef int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a></td></tr>
-<tr class="separator:a4b3f8e88af1cc26075f7af0f961adb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86222e014a79b9a6a6b2c041789da32b"><td class="memItemLeft" align="right" valign="top">typedef const int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_a86222e014a79b9a6a6b2c041789da32b.html#a86222e014a79b9a6a6b2c041789da32b">const_exponents</a></td></tr>
-<tr class="separator:a86222e014a79b9a6a6b2c041789da32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4b25fd2798bb66ce41a32893f788a2f"><td class="memItemLeft" align="right" valign="top">typedef const int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_ab4b25fd2798bb66ce41a32893f788a2f.html#ab4b25fd2798bb66ce41a32893f788a2f">const_graded_exponents</a></td></tr>
-<tr class="separator:ab4b25fd2798bb66ce41a32893f788a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5720b0f297326d9b6b1ba8925c1e6b8"><td class="memItemLeft" align="right" valign="top">typedef const int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_af5720b0f297326d9b6b1ba8925c1e6b8.html#af5720b0f297326d9b6b1ba8925c1e6b8">const_partial_sums</a></td></tr>
-<tr class="separator:af5720b0f297326d9b6b1ba8925c1e6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a478c7f9d1b96319cce705c05e567cc29"><td class="memItemLeft" align="right" valign="top">typedef const int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_a478c7f9d1b96319cce705c05e567cc29.html#a478c7f9d1b96319cce705c05e567cc29">const_monomial</a></td></tr>
-<tr class="separator:a478c7f9d1b96319cce705c05e567cc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4ab03e30a3d5409df540c53f94693d1"><td class="memItemLeft" align="right" valign="top">typedef const int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_ae4ab03e30a3d5409df540c53f94693d1.html#ae4ab03e30a3d5409df540c53f94693d1">const_varpower</a></td></tr>
 <tr class="separator:ae4ab03e30a3d5409df540c53f94693d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3f8e88af1cc26075f7af0f961adb96"><td class="memItemLeft" align="right" valign="top">typedef int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a></td></tr>
+<tr class="separator:a4b3f8e88af1cc26075f7af0f961adb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478c7f9d1b96319cce705c05e567cc29"><td class="memItemLeft" align="right" valign="top">typedef const int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/monoid_8hpp_a478c7f9d1b96319cce705c05e567cc29.html#a478c7f9d1b96319cce705c05e567cc29">const_monomial</a></td></tr>
+<tr class="separator:a478c7f9d1b96319cce705c05e567cc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -141,7 +130,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d1/dd0/monoid_8hpp.html">monoid.hpp</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

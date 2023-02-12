@@ -2,7 +2,7 @@ var dir_3bd4c1e8abe0cd95d07e5be4652cd377 =
 [
     [ "FreeAlgebra.cpp", "dc/d2e/_free_algebra_8cpp.html", "dc/d2e/_free_algebra_8cpp" ],
     [ "FreeAlgebra.hpp", "d6/dc4/_free_algebra_8hpp.html", "d6/dc4/_free_algebra_8hpp" ],
-    [ "FreeAlgebraQuotient.cpp", "db/dcc/_free_algebra_quotient_8cpp.html", "db/dcc/_free_algebra_quotient_8cpp" ],
+    [ "FreeAlgebraQuotient.cpp", "db/dcc/_free_algebra_quotient_8cpp.html", null ],
     [ "FreeAlgebraQuotient.hpp", "d4/db6/_free_algebra_quotient_8hpp.html", [
       [ "FreeAlgebraQuotient", "d0/d77/class_free_algebra_quotient.html", "d0/d77/class_free_algebra_quotient" ],
       [ "FreeAlgebraQuotientElement", "d2/d58/class_free_algebra_quotient_element.html", "d2/d58/class_free_algebra_quotient_element" ]

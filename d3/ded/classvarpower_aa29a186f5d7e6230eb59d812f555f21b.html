@@ -121,57 +121,57 @@ $(document).ready(function(){initNavTree('d3/ded/classvarpower_aa29a186f5d7e6230
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d1b/varpower_8cpp_source.html#l00438">438</a> of file <a class="el" href="../../de/d1b/varpower_8cpp_source.html">varpower.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;{</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keywordtype">int</span> len = *a;  <span class="comment">// potential length</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <span class="keywordflow">if</span> (*b &lt; *a) len = *b;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <span class="keywordtype">int</span> *result_vp = result.<a class="code" href="../../d3/d23/classintarray_af51b0ee5a5e5990f806312ed569d28dd.html#af51b0ee5a5e5990f806312ed569d28dd">alloc</a>(len);</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  <span class="keywordtype">int</span> *orig_result_vp = result_vp;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  result_vp++;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160; </div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <a class="code" href="../../d4/ded/classindex__varpower.html">index_varpower</a> i = a;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  <a class="code" href="../../d4/ded/classindex__varpower.html">index_varpower</a> j = b;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  <span class="comment">// merge the two varpowers to staticVP</span></div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  <span class="keywordtype">int</span> va = (i.<a class="code" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">valid</a>() ? i.<a class="code" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">var</a>() : -1);</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  <span class="keywordtype">int</span> vb = (j.<a class="code" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">valid</a>() ? j.<a class="code" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">var</a>() : -1);</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  <span class="keywordflow">for</span> (;;)</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    {</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;      <span class="keywordflow">if</span> (va &gt; vb)</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        {</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;          ++i;</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;          va = (i.<a class="code" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">valid</a>() ? i.<a class="code" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">var</a>() : -1);</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        }</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (vb &gt; va)</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        {</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;          ++j;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;          vb = (j.<a class="code" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">valid</a>() ? j.<a class="code" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">var</a>() : -1);</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        }</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        {</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;          <span class="keywordflow">if</span> (va == -1) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;          <span class="keywordtype">int</span> ea = i.<a class="code" href="../../d4/ded/classindex__varpower_a015066c28fc7520db3b0e4753055245f.html#a015066c28fc7520db3b0e4753055245f">exponent</a>();</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;          <span class="keywordtype">int</span> eb = j.<a class="code" href="../../d4/ded/classindex__varpower_a015066c28fc7520db3b0e4753055245f.html#a015066c28fc7520db3b0e4753055245f">exponent</a>();</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;          <span class="keywordflow">if</span> (ea &gt; eb) ea = eb;</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;          *result_vp++ = va;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;          *result_vp++ = ea;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;          ++i;</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;          ++j;</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;          va = (i.<a class="code" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">valid</a>() ? i.<a class="code" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">var</a>() : -1);</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;          vb = (j.<a class="code" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">valid</a>() ? j.<a class="code" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">var</a>() : -1);</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        }</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    }</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  *orig_result_vp = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(result_vp - orig_result_vp);</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;}</div>
-<div class="ttc" id="aclassindex__varpower_a015066c28fc7520db3b0e4753055245f_html_a015066c28fc7520db3b0e4753055245f"><div class="ttname"><a href="../../d4/ded/classindex__varpower_a015066c28fc7520db3b0e4753055245f.html#a015066c28fc7520db3b0e4753055245f">index_varpower::exponent</a></div><div class="ttdeci">int exponent()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1e/varpower_8hpp_source.html#l00089">varpower.hpp:89</a></div></div>
-<div class="ttc" id="aclassindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c_html_a677a3e00b16bf7e9427f6541bb5cae4c"><div class="ttname"><a href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">index_varpower::valid</a></div><div class="ttdeci">int valid()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1e/varpower_8hpp_source.html#l00079">varpower.hpp:79</a></div></div>
-<div class="ttc" id="aclassindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f_html_a9a1b8f3b83460d9af59e230d8224a25f"><div class="ttname"><a href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">index_varpower::var</a></div><div class="ttdeci">int var()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1e/varpower_8hpp_source.html#l00088">varpower.hpp:88</a></div></div>
-<div class="ttc" id="aclassindex__varpower_html"><div class="ttname"><a href="../../d4/ded/classindex__varpower.html">index_varpower</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1e/varpower_8hpp_source.html#l00067">varpower.hpp:68</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../de/d1b/varpower_8cpp_source.html#l00437">437</a> of file <a class="el" href="../../de/d1b/varpower_8cpp_source.html">varpower.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;{</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="keywordtype">int</span> len = *a;  <span class="comment">// potential length</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keywordflow">if</span> (*b &lt; *a) len = *b;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <span class="keywordtype">int</span> *result_vp = result.<a class="code" href="../../d3/d23/classintarray_af51b0ee5a5e5990f806312ed569d28dd.html#af51b0ee5a5e5990f806312ed569d28dd">alloc</a>(len);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <span class="keywordtype">int</span> *orig_result_vp = result_vp;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  result_vp++;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160; </div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <a class="code" href="../../d4/ded/classindex__varpower.html">index_varpower</a> i = a;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <a class="code" href="../../d4/ded/classindex__varpower.html">index_varpower</a> j = b;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160; </div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  <span class="comment">// merge the two varpowers to staticVP</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  <span class="keywordtype">int</span> va = (i.<a class="code" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">valid</a>() ? i.<a class="code" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">var</a>() : -1);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  <span class="keywordtype">int</span> vb = (j.<a class="code" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">valid</a>() ? j.<a class="code" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">var</a>() : -1);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  <span class="keywordflow">for</span> (;;)</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    {</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;      <span class="keywordflow">if</span> (va &gt; vb)</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        {</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;          ++i;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;          va = (i.<a class="code" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">valid</a>() ? i.<a class="code" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">var</a>() : -1);</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        }</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (vb &gt; va)</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        {</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;          ++j;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;          vb = (j.<a class="code" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">valid</a>() ? j.<a class="code" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">var</a>() : -1);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        }</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        {</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;          <span class="keywordflow">if</span> (va == -1) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;          <span class="keywordtype">int</span> ea = i.<a class="code" href="../../d4/ded/classindex__varpower_a015066c28fc7520db3b0e4753055245f.html#a015066c28fc7520db3b0e4753055245f">exponent</a>();</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;          <span class="keywordtype">int</span> eb = j.<a class="code" href="../../d4/ded/classindex__varpower_a015066c28fc7520db3b0e4753055245f.html#a015066c28fc7520db3b0e4753055245f">exponent</a>();</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;          <span class="keywordflow">if</span> (ea &gt; eb) ea = eb;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;          *result_vp++ = va;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;          *result_vp++ = ea;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;          ++i;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;          ++j;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;          va = (i.<a class="code" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">valid</a>() ? i.<a class="code" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">var</a>() : -1);</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;          vb = (j.<a class="code" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">valid</a>() ? j.<a class="code" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">var</a>() : -1);</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        }</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    }</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;  *orig_result_vp = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(result_vp - orig_result_vp);</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;}</div>
+<div class="ttc" id="aclassindex__varpower_a015066c28fc7520db3b0e4753055245f_html_a015066c28fc7520db3b0e4753055245f"><div class="ttname"><a href="../../d4/ded/classindex__varpower_a015066c28fc7520db3b0e4753055245f.html#a015066c28fc7520db3b0e4753055245f">index_varpower::exponent</a></div><div class="ttdeci">int exponent()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1e/varpower_8hpp_source.html#l00090">varpower.hpp:90</a></div></div>
+<div class="ttc" id="aclassindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c_html_a677a3e00b16bf7e9427f6541bb5cae4c"><div class="ttname"><a href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">index_varpower::valid</a></div><div class="ttdeci">int valid()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1e/varpower_8hpp_source.html#l00080">varpower.hpp:80</a></div></div>
+<div class="ttc" id="aclassindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f_html_a9a1b8f3b83460d9af59e230d8224a25f"><div class="ttname"><a href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">index_varpower::var</a></div><div class="ttdeci">int var()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1e/varpower_8hpp_source.html#l00089">varpower.hpp:89</a></div></div>
+<div class="ttc" id="aclassindex__varpower_html"><div class="ttname"><a href="../../d4/ded/classindex__varpower.html">index_varpower</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1e/varpower_8hpp_source.html#l00068">varpower.hpp:69</a></div></div>
 <div class="ttc" id="aclassintarray_af51b0ee5a5e5990f806312ed569d28dd_html_af51b0ee5a5e5990f806312ed569d28dd"><div class="ttname"><a href="../../d3/d23/classintarray_af51b0ee5a5e5990f806312ed569d28dd.html#af51b0ee5a5e5990f806312ed569d28dd">intarray::alloc</a></div><div class="ttdeci">int * alloc(int extra)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df8/intarray_8hpp_source.html#l00092">intarray.hpp:92</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/d23/classintarray_af51b0ee5a5e5990f806312ed569d28dd.html#af51b0ee5a5e5990f806312ed569d28dd">intarray::alloc()</a>, <a class="el" href="../../d4/ded/classindex__varpower_a015066c28fc7520db3b0e4753055245f.html#a015066c28fc7520db3b0e4753055245f">index_varpower::exponent()</a>, <a class="el" href="../../d4/ded/classindex__varpower_a677a3e00b16bf7e9427f6541bb5cae4c.html#a677a3e00b16bf7e9427f6541bb5cae4c">index_varpower::valid()</a>, and <a class="el" href="../../d4/ded/classindex__varpower_a9a1b8f3b83460d9af59e230d8224a25f.html#a9a1b8f3b83460d9af59e230d8224a25f">index_varpower::var()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/daa/class_monomial_a60dcbafc4458e593134ed0819c943f3b.html#a60dcbafc4458e593134ed0819c943f3b">Monomial::gcd()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/def/class_engine_monomial_aa155d9dbb40ed04fe20412808852e530.html#aa155d9dbb40ed04fe20412808852e530">EngineMonomial::gcd()</a>.</p>
 
 </div>
 </div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('d3/ded/classvarpower_aa29a186f5d7e6230
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/ded/classvarpower.html">varpower</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

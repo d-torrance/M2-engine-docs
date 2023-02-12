@@ -115,39 +115,39 @@ $(document).ready(function(){initNavTree('d5/d17/classres__comp_af27d14d9fdf443e
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9d/res-a1_8cpp_source.html#l00510">510</a> of file <a class="el" href="../../d6/d9d/res-a1_8cpp_source.html">res-a1.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;{</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> f;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">return</span> g;</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  <a class="code" href="../../dc/d2a/classres__pair.html">res_pair</a> head;</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  <a class="code" href="../../dc/d2a/classres__pair.html">res_pair</a> *result = &amp;head;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  <span class="keywordflow">while</span> (1) <span class="keywordflow">switch</span> (<a class="code" href="../../d5/d17/classres__comp_a2f4b13d303cc003da65677ae0d740af0.html#a2f4b13d303cc003da65677ae0d740af0">compare_compares</a>(f, g))</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;      {</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <span class="keywordflow">case</span> -1:</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;          result-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a> = g;</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;          result = result-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a>;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;          g = g-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a>;</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;          <span class="keywordflow">if</span> (g == NULL)</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            {</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;              result-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a> = f;</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;              <span class="keywordflow">return</span> head.<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a>;</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;            }</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;          result-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a> = f;</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;          result = result-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a>;</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;          f = f-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a>;</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;          <span class="keywordflow">if</span> (f == NULL)</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;            {</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;              result-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a> = g;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;              <span class="keywordflow">return</span> head.<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a>;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;            }</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;          assert(0);</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;      }</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;}</div>
-<div class="ttc" id="aclassres__comp_a2f4b13d303cc003da65677ae0d740af0_html_a2f4b13d303cc003da65677ae0d740af0"><div class="ttname"><a href="../../d5/d17/classres__comp_a2f4b13d303cc003da65677ae0d740af0.html#a2f4b13d303cc003da65677ae0d740af0">res_comp::compare_compares</a></div><div class="ttdeci">int compare_compares(res_pair *f, res_pair *g) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9d/res-a1_8cpp_source.html#l00499">res-a1.cpp:499</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9d/res-a1_8cpp_source.html#l00512">512</a> of file <a class="el" href="../../d6/d9d/res-a1_8cpp_source.html">res-a1.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;{</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> f;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">return</span> g;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  <a class="code" href="../../dc/d2a/classres__pair.html">res_pair</a> head;</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <a class="code" href="../../dc/d2a/classres__pair.html">res_pair</a> *result = &amp;head;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  <span class="keywordflow">while</span> (1) <span class="keywordflow">switch</span> (<a class="code" href="../../d5/d17/classres__comp_a2f4b13d303cc003da65677ae0d740af0.html#a2f4b13d303cc003da65677ae0d740af0">compare_compares</a>(f, g))</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;      {</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="keywordflow">case</span> -1:</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;          result-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a> = g;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;          result = result-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a>;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;          g = g-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a>;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;          <span class="keywordflow">if</span> (g == NULL)</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;            {</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;              result-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a> = f;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;              <span class="keywordflow">return</span> head.<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a>;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;            }</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;          result-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a> = f;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;          result = result-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a>;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;          f = f-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a>;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;          <span class="keywordflow">if</span> (f == NULL)</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;            {</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;              result-&gt;<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a> = g;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;              <span class="keywordflow">return</span> head.<a class="code" href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">next_compare</a>;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            }</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;          assert(0);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;      }</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;}</div>
+<div class="ttc" id="aclassres__comp_a2f4b13d303cc003da65677ae0d740af0_html_a2f4b13d303cc003da65677ae0d740af0"><div class="ttname"><a href="../../d5/d17/classres__comp_a2f4b13d303cc003da65677ae0d740af0.html#a2f4b13d303cc003da65677ae0d740af0">res_comp::compare_compares</a></div><div class="ttdeci">int compare_compares(res_pair *f, res_pair *g) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9d/res-a1_8cpp_source.html#l00501">res-a1.cpp:501</a></div></div>
 <div class="ttc" id="aclassres__pair_a11c064dacd6ca7862750e7ad6302229d_html_a11c064dacd6ca7862750e7ad6302229d"><div class="ttname"><a href="../../dc/d2a/classres__pair_a11c064dacd6ca7862750e7ad6302229d.html#a11c064dacd6ca7862750e7ad6302229d">res_pair::next_compare</a></div><div class="ttdeci">res_pair * next_compare</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc5/res-a1-poly_8hpp_source.html#l00038">res-a1-poly.hpp:38</a></div></div>
 <div class="ttc" id="aclassres__pair_html"><div class="ttname"><a href="../../dc/d2a/classres__pair.html">res_pair</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc5/res-a1-poly_8hpp_source.html#l00027">res-a1-poly.hpp:29</a></div></div>
 </div><!-- fragment -->
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('d5/d17/classres__comp_af27d14d9fdf443e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d17/classres__comp.html">res_comp</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

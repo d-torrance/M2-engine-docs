@@ -5,7 +5,7 @@ var class_d_poly =
     [ "add_in_place", "d3/d42/class_d_poly_a54b91118fed030d5eed942f2f77baa70.html#a54b91118fed030d5eed942f2f77baa70", null ],
     [ "add_in_place_0", "d3/d42/class_d_poly_a9a94fb55b4ddc0d36c933ae8d61edafe.html#a9a94fb55b4ddc0d36c933ae8d61edafe", null ],
     [ "add_in_place_n", "d3/d42/class_d_poly_a575413b4bc25e0561431e1553bc552a0.html#a575413b4bc25e0561431e1553bc552a0", null ],
-    [ "add_term", "d3/d42/class_d_poly_a6ba23e9f3f9f490a9d5b960d45a441d0.html#a6ba23e9f3f9f490a9d5b960d45a441d0", null ],
+    [ "add_term", "d3/d42/class_d_poly_ab94e216e35305d00f46de35670f2dd10.html#ab94e216e35305d00f46de35670f2dd10", null ],
     [ "alloc_poly_0", "d3/d42/class_d_poly_a8161c053a5bc3218290dc71d85f65b6f.html#a8161c053a5bc3218290dc71d85f65b6f", null ],
     [ "alloc_poly_n", "d3/d42/class_d_poly_a8da712325de7418653b4fd9d3164fe25.html#a8da712325de7418653b4fd9d3164fe25", null ],
     [ "append_to_stream", "d3/d42/class_d_poly_a5680758ab8dd22b08fdfc26c3cd12467.html#a5680758ab8dd22b08fdfc26c3cd12467", null ],

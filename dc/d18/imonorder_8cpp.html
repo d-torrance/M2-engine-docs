@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('dc/d18/imonorder_8cpp.html','../../');
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d9/d64/imonorder_8hpp_source.html">imonorder.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/db4/engine-includes_8hpp_source.html">engine-includes.hpp</a>&quot;</code><br />
 <code>#include &lt;malloc.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../da/db0/_exponent_vector_8hpp_source.html">ExponentVector.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/d03/overflow_8hpp_source.html">overflow.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../dc/d18/imonorder_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -136,10 +137,10 @@ Functions</h2></td></tr>
 <tr class="separator:a9c5c77865eef027108ee0a312473416f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae936aa147330b2b00cce98bdcff6fdb9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d18/imonorder_8cpp_ae936aa147330b2b00cce98bdcff6fdb9.html#ae936aa147330b2b00cce98bdcff6fdb9">MO_unpack2</a> (int nvars, const int *slots, int *expon)</td></tr>
 <tr class="separator:ae936aa147330b2b00cce98bdcff6fdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c8b68e12051c0839192a7a920addc78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d18/imonorder_8cpp_a4c8b68e12051c0839192a7a920addc78.html#a4c8b68e12051c0839192a7a920addc78">monomialOrderEncodeFromActualExponents</a> (const MonomialOrder *mo, <a class="el" href="../../d9/d64/imonorder_8hpp_a86222e014a79b9a6a6b2c041789da32b.html#a86222e014a79b9a6a6b2c041789da32b">const_exponents</a> expon, <a class="el" href="../../d8/d11/gbring_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a> result_psums)</td></tr>
+<tr class="memitem:a4c8b68e12051c0839192a7a920addc78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d18/imonorder_8cpp_a4c8b68e12051c0839192a7a920addc78.html#a4c8b68e12051c0839192a7a920addc78">monomialOrderEncodeFromActualExponents</a> (const MonomialOrder *mo, <a class="el" href="../../da/db0/_exponent_vector_8hpp_a21989b3e062e85cbe627cf36cf1bb395.html#a21989b3e062e85cbe627cf36cf1bb395">const_exponents</a> expon, <a class="el" href="../../d8/d11/gbring_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a> result_psums)</td></tr>
 <tr class="separator:a4c8b68e12051c0839192a7a920addc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51edf6766e36f5a53e7e4052300e1830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d18/imonorder_8cpp_a51edf6766e36f5a53e7e4052300e1830.html#a51edf6766e36f5a53e7e4052300e1830">monomialOrderDecodeToActualExponents</a> (const MonomialOrder *mo, <a class="el" href="../../d9/d64/imonorder_8hpp_a478c7f9d1b96319cce705c05e567cc29.html#a478c7f9d1b96319cce705c05e567cc29">const_monomial</a> psums, <a class="el" href="../../dc/da9/dpoly_8hpp_a71242be5605e7bc772ca672ba5c5a5f4.html#a71242be5605e7bc772ca672ba5c5a5f4">exponents</a> expon)</td></tr>
-<tr class="separator:a51edf6766e36f5a53e7e4052300e1830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79215441690cae9016d1b108f74dbcd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d18/imonorder_8cpp_a79215441690cae9016d1b108f74dbcd2.html#a79215441690cae9016d1b108f74dbcd2">monomialOrderDecodeToActualExponents</a> (const MonomialOrder *mo, <a class="el" href="../../d9/d64/imonorder_8hpp_a478c7f9d1b96319cce705c05e567cc29.html#a478c7f9d1b96319cce705c05e567cc29">const_monomial</a> psums, <a class="el" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> expon)</td></tr>
+<tr class="separator:a79215441690cae9016d1b108f74dbcd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -147,7 +148,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dc/d18/imonorder_8cpp.html">imonorder.cpp</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:51:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

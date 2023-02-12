@@ -128,7 +128,7 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
       [ "DMat", "da/dc3/class_d_mat.html", "da/dc3/class_d_mat" ]
     ] ],
     [ "dpoly.cpp", "d4/d23/dpoly_8cpp.html", "d4/d23/dpoly_8cpp" ],
-    [ "dpoly.hpp", "dc/da9/dpoly_8hpp.html", "dc/da9/dpoly_8hpp" ],
+    [ "dpoly.hpp", "dc/da9/dpoly_8hpp.html", null ],
     [ "eigen.cpp", "dd/d0e/eigen_8cpp.html", "dd/d0e/eigen_8cpp" ],
     [ "eigen.hpp", "d3/ddd/eigen_8hpp.html", "d3/ddd/eigen_8hpp" ],
     [ "engine-includes.hpp", "d1/db4/engine-includes_8hpp.html", null ],
@@ -142,6 +142,7 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
       [ "GBKernelComputation", "d7/d37/class_g_b_kernel_computation.html", "d7/d37/class_g_b_kernel_computation" ]
     ] ],
     [ "exceptions.hpp", "da/d49/exceptions_8hpp.html", "da/d49/exceptions_8hpp" ],
+    [ "ExponentVector.hpp", "da/db0/_exponent_vector_8hpp.html", "da/db0/_exponent_vector_8hpp" ],
     [ "exptable.c", "d6/da0/exptable_8c.html", "d6/da0/exptable_8c" ],
     [ "exptable.h", "da/da8/exptable_8h.html", "da/da8/exptable_8h" ],
     [ "finalize.cpp", "db/de9/finalize_8cpp.html", "db/de9/finalize_8cpp" ],
@@ -237,7 +238,9 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "M2FreeAlgebra.cpp", "df/d52/_m2_free_algebra_8cpp.html", "df/d52/_m2_free_algebra_8cpp" ],
     [ "M2FreeAlgebra.hpp", "da/d34/_m2_free_algebra_8hpp.html", "da/d34/_m2_free_algebra_8hpp" ],
     [ "M2FreeAlgebraQuotient.cpp", "d5/d37/_m2_free_algebra_quotient_8cpp.html", "d5/d37/_m2_free_algebra_quotient_8cpp" ],
-    [ "M2FreeAlgebraQuotient.hpp", "d9/dcb/_m2_free_algebra_quotient_8hpp.html", "d9/dcb/_m2_free_algebra_quotient_8hpp" ],
+    [ "M2FreeAlgebraQuotient.hpp", "d9/dcb/_m2_free_algebra_quotient_8hpp.html", [
+      [ "M2FreeAlgebraQuotient", "db/d22/class_m2_free_algebra_quotient.html", "db/d22/class_m2_free_algebra_quotient" ]
+    ] ],
     [ "m2tbb.hpp", "d7/d61/m2tbb_8hpp.html", null ],
     [ "mat-arith.hpp", "d0/d17/mat-arith_8hpp.html", "d0/d17/mat-arith_8hpp" ],
     [ "mat-elem-ops.hpp", "de/d24/mat-elem-ops_8hpp.html", [
@@ -300,7 +303,7 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     ] ],
     [ "monomial.cpp", "db/daa/monomial_8cpp.html", null ],
     [ "monomial.hpp", "d6/da9/monomial_8hpp.html", [
-      [ "Monomial", "d4/daa/class_monomial.html", "d4/daa/class_monomial" ]
+      [ "EngineMonomial", "d7/def/class_engine_monomial.html", "d7/def/class_engine_monomial" ]
     ] ],
     [ "monordering.hpp", "d4/d38/monordering_8hpp.html", [
       [ "MonomialOrderings", "d7/d7c/class_monomial_orderings.html", "d7/d7c/class_monomial_orderings" ]
@@ -308,9 +311,15 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "monsort.cpp", "d9/d69/monsort_8cpp.html", null ],
     [ "monsort.hpp", "df/d3b/monsort_8hpp.html", "df/d3b/monsort_8hpp" ],
     [ "montable.cpp", "df/d3c/montable_8cpp.html", "df/d3c/montable_8cpp" ],
-    [ "montable.hpp", "dd/dcc/montable_8hpp.html", "dd/dcc/montable_8hpp" ],
+    [ "montable.hpp", "dd/dcc/montable_8hpp.html", [
+      [ "MonomialTable", "d9/d3b/class_monomial_table.html", "d9/d3b/class_monomial_table" ],
+      [ "mon_term", "d7/d75/struct_monomial_table_1_1mon__term.html", "d7/d75/struct_monomial_table_1_1mon__term" ]
+    ] ],
     [ "montableZZ.cpp", "d8/dfa/montable_z_z_8cpp.html", "d8/dfa/montable_z_z_8cpp" ],
-    [ "montableZZ.hpp", "d3/d55/montable_z_z_8hpp.html", "d3/d55/montable_z_z_8hpp" ],
+    [ "montableZZ.hpp", "d3/d55/montable_z_z_8hpp.html", [
+      [ "MonomialTableZZ", "da/da3/class_monomial_table_z_z.html", "da/da3/class_monomial_table_z_z" ],
+      [ "mon_term", "dd/d76/struct_monomial_table_z_z_1_1mon__term.html", "dd/d76/struct_monomial_table_z_z_1_1mon__term" ]
+    ] ],
     [ "mpreal.h", "d9/de1/mpreal_8h.html", "d9/de1/mpreal_8h" ],
     [ "mutablecomplex.cpp", "d7/d11/mutablecomplex_8cpp.html", "d7/d11/mutablecomplex_8cpp" ],
     [ "mutablecomplex.hpp", "d5/d71/mutablecomplex_8hpp.html", [
@@ -329,8 +338,6 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "ntl-interface.cpp", "da/d45/ntl-interface_8cpp.html", "da/d45/ntl-interface_8cpp" ],
     [ "ntl-interface.hpp", "d8/d76/ntl-interface_8hpp.html", "d8/d76/ntl-interface_8hpp" ],
     [ "ntl-internal.cpp", "dd/d7c/ntl-internal_8cpp.html", "dd/d7c/ntl-internal_8cpp" ],
-    [ "ntuple.cpp", "d9/dba/ntuple_8cpp.html", null ],
-    [ "ntuple.hpp", "de/da7/ntuple_8hpp.html", "de/da7/ntuple_8hpp" ],
     [ "overflow-test.cpp", "db/d91/overflow-test_8cpp.html", "db/d91/overflow-test_8cpp" ],
     [ "overflow.cpp", "d8/d7b/overflow_8cpp.html", "d8/d7b/overflow_8cpp" ],
     [ "overflow.hpp", "d3/d03/overflow_8hpp.html", "d3/d03/overflow_8hpp" ],
@@ -482,7 +489,6 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "timing.hpp", "d5/d05/timing_8hpp.html", "d5/d05/timing_8hpp" ],
     [ "tower.cpp", "de/d5c/tower_8cpp.html", "de/d5c/tower_8cpp" ],
     [ "tower.hpp", "d7/de0/tower_8hpp.html", "d7/de0/tower_8hpp" ],
-    [ "util.cpp", "df/d2d/util_8cpp.html", "df/d2d/util_8cpp" ],
     [ "util.hpp", "d0/d3f/util_8hpp.html", "d0/d3f/util_8hpp" ],
     [ "varpower.cpp", "de/d1b/varpower_8cpp.html", "de/d1b/varpower_8cpp" ],
     [ "varpower.hpp", "d0/d1e/varpower_8hpp.html", [

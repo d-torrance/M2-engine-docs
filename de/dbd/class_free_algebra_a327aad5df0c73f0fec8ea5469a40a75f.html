@@ -97,27 +97,27 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a327aad5df0c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00866">866</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;{</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;  <span class="keywordtype">bool</span> ishomog = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  <a class="code" href="../../d3/da0/class_word.html">Word</a> tmp;</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;  <span class="keyword">auto</span> i = f.cbegin();</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;  <span class="keywordflow">if</span> (i == f.cend()) <span class="keywordflow">return</span> std::make_pair(0, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;  <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a8ecf13fe3c5074f67b764d497bda34e3.html#a8ecf13fe3c5074f67b764d497bda34e3">wordFromMonom</a>(tmp, i.monom());</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;  <span class="keywordtype">int</span> maxheft = <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a2e953013a0323827d04caa3bf6d43216.html#a2e953013a0323827d04caa3bf6d43216">wordHeft</a>(tmp);</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;  <span class="keywordflow">for</span> (++i; i != f.cend(); ++i)</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    {</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;      <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a8ecf13fe3c5074f67b764d497bda34e3.html#a8ecf13fe3c5074f67b764d497bda34e3">wordFromMonom</a>(tmp, i.monom());</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;      <span class="keywordtype">int</span> thisheft = <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a2e953013a0323827d04caa3bf6d43216.html#a2e953013a0323827d04caa3bf6d43216">wordHeft</a>(tmp);</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;      <span class="keywordflow">if</span> (thisheft != maxheft)</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        {</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;          ishomog = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;          <span class="keywordflow">if</span> (thisheft &gt; maxheft)</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;            maxheft = thisheft;</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        }</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    }</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;  <span class="keywordflow">return</span> std::make_pair(maxheft, ishomog);</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00864">864</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;{</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;  <span class="keywordtype">bool</span> ishomog = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  <a class="code" href="../../d3/da0/class_word.html">Word</a> tmp;</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;  <span class="keyword">auto</span> i = f.cbegin();</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  <span class="keywordflow">if</span> (i == f.cend()) <span class="keywordflow">return</span> std::make_pair(0, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;  <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a8ecf13fe3c5074f67b764d497bda34e3.html#a8ecf13fe3c5074f67b764d497bda34e3">wordFromMonom</a>(tmp, i.monom());</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;  <span class="keywordtype">int</span> maxheft = <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a2e953013a0323827d04caa3bf6d43216.html#a2e953013a0323827d04caa3bf6d43216">wordHeft</a>(tmp);</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;  <span class="keywordflow">for</span> (++i; i != f.cend(); ++i)</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    {</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;      <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a8ecf13fe3c5074f67b764d497bda34e3.html#a8ecf13fe3c5074f67b764d497bda34e3">wordFromMonom</a>(tmp, i.monom());</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;      <span class="keywordtype">int</span> thisheft = <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a2e953013a0323827d04caa3bf6d43216.html#a2e953013a0323827d04caa3bf6d43216">wordHeft</a>(tmp);</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;      <span class="keywordflow">if</span> (thisheft != maxheft)</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        {</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;          ishomog = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;          <span class="keywordflow">if</span> (thisheft &gt; maxheft)</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;            maxheft = thisheft;</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        }</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    }</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;  <span class="keywordflow">return</span> std::make_pair(maxheft, ishomog);</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;}</div>
 <div class="ttc" id="aclass_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c_html_a4ba1219e183883baa554fb9dd80d2b1c"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">FreeAlgebra::monoid</a></div><div class="ttdeci">const FreeMonoid &amp; monoid() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00042">FreeAlgebra.hpp:42</a></div></div>
 <div class="ttc" id="aclass_free_monoid_a2e953013a0323827d04caa3bf6d43216_html_a2e953013a0323827d04caa3bf6d43216"><div class="ttname"><a href="../../dc/da6/class_free_monoid_a2e953013a0323827d04caa3bf6d43216.html#a2e953013a0323827d04caa3bf6d43216">FreeMonoid::wordHeft</a></div><div class="ttdeci">int wordHeft(Word &amp;word) const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d8f/_free_monoid_8hpp_source.html#l00157">FreeMonoid.hpp:157</a></div></div>
 <div class="ttc" id="aclass_free_monoid_a8ecf13fe3c5074f67b764d497bda34e3_html_a8ecf13fe3c5074f67b764d497bda34e3"><div class="ttname"><a href="../../dc/da6/class_free_monoid_a8ecf13fe3c5074f67b764d497bda34e3.html#a8ecf13fe3c5074f67b764d497bda34e3">FreeMonoid::wordFromMonom</a></div><div class="ttdeci">void wordFromMonom(Word &amp;result, const Monom &amp;m) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d5e/_free_monoid_8cpp_source.html#l00287">FreeMonoid.cpp:287</a></div></div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a327aad5df0c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

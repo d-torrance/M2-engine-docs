@@ -125,36 +125,36 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_aa9ab6c28301
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00782">782</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;{</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  <span class="keywordflow">if</span> (f.numTerms() == 0)</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    {</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;      o &lt;&lt; <span class="stringliteral">&quot;0&quot;</span>;</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    }</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160; </div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;  <span class="keywordtype">bool</span> two_terms = (f.numTerms() &gt; 1);</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;  <span class="keywordtype">bool</span> needs_parens = p_parens &amp;&amp; two_terms;</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;  <span class="keywordflow">if</span> (needs_parens)</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;    {</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;      <span class="keywordflow">if</span> (p_plus) o &lt;&lt; <span class="charliteral">&#39;+&#39;</span>;</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;      o &lt;&lt; <span class="charliteral">&#39;(&#39;</span>;</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;      p_plus = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    }</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160; </div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = f.cbegin(); i != f.cend(); i++)</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;    {</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;      <span class="keywordtype">bool</span> is_one = <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_aec354700d1b9f216a3b5a3aa4822e0a3.html#aec354700d1b9f216a3b5a3aa4822e0a3">is_one</a>(i.monom());</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;      p_parens = !is_one;</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;      <span class="keywordtype">bool</span> p_one_this = (is_one &amp;&amp; needs_parens) || (is_one &amp;&amp; p_one);</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;      <a class="code" href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">coefficientRing</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a7681f099a40a51225f38f66386820c39.html#a7681f099a40a51225f38f66386820c39">elem_text_out</a>(o, i.coeff(), p_one_this, p_plus, p_parens);</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;      <span class="keywordflow">if</span> (!is_one)</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a877c6e228cd7fd0eaae0c5c55549df3d.html#a877c6e228cd7fd0eaae0c5c55549df3d">elem_text_out</a>(o, i.monom());</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;      p_plus = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    }</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160; </div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;  <span class="keywordflow">if</span> (needs_parens) o &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00780">780</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;{</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;  <span class="keywordflow">if</span> (f.numTerms() == 0)</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    {</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;      o &lt;&lt; <span class="stringliteral">&quot;0&quot;</span>;</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    }</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160; </div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;  <span class="keywordtype">bool</span> two_terms = (f.numTerms() &gt; 1);</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;  <span class="keywordtype">bool</span> needs_parens = p_parens &amp;&amp; two_terms;</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;  <span class="keywordflow">if</span> (needs_parens)</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    {</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;      <span class="keywordflow">if</span> (p_plus) o &lt;&lt; <span class="charliteral">&#39;+&#39;</span>;</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;      o &lt;&lt; <span class="charliteral">&#39;(&#39;</span>;</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;      p_plus = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;    }</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160; </div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = f.cbegin(); i != f.cend(); i++)</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;    {</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;      <span class="keywordtype">bool</span> is_one = <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_aec354700d1b9f216a3b5a3aa4822e0a3.html#aec354700d1b9f216a3b5a3aa4822e0a3">is_one</a>(i.monom());</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;      p_parens = !is_one;</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;      <span class="keywordtype">bool</span> p_one_this = (is_one &amp;&amp; needs_parens) || (is_one &amp;&amp; p_one);</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;      <a class="code" href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">coefficientRing</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a7681f099a40a51225f38f66386820c39.html#a7681f099a40a51225f38f66386820c39">elem_text_out</a>(o, i.coeff(), p_one_this, p_plus, p_parens);</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;      <span class="keywordflow">if</span> (!is_one)</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a877c6e228cd7fd0eaae0c5c55549df3d.html#a877c6e228cd7fd0eaae0c5c55549df3d">elem_text_out</a>(o, i.monom());</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;      p_plus = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    }</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160; </div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;  <span class="keywordflow">if</span> (needs_parens) o &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;}</div>
 <div class="ttc" id="aclass_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c_html_a4ba1219e183883baa554fb9dd80d2b1c"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">FreeAlgebra::monoid</a></div><div class="ttdeci">const FreeMonoid &amp; monoid() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00042">FreeAlgebra.hpp:42</a></div></div>
 <div class="ttc" id="aclass_free_algebra_a5448329115f9424b39dc739bb0d65f1d_html_a5448329115f9424b39dc739bb0d65f1d"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">FreeAlgebra::coefficientRing</a></div><div class="ttdeci">const Ring * coefficientRing() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00041">FreeAlgebra.hpp:41</a></div></div>
 <div class="ttc" id="aclass_free_monoid_a877c6e228cd7fd0eaae0c5c55549df3d_html_a877c6e228cd7fd0eaae0c5c55549df3d"><div class="ttname"><a href="../../dc/da6/class_free_monoid_a877c6e228cd7fd0eaae0c5c55549df3d.html#a877c6e228cd7fd0eaae0c5c55549df3d">FreeMonoid::elem_text_out</a></div><div class="ttdeci">void elem_text_out(buffer &amp;o, const Monom &amp;m1) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d5e/_free_monoid_8cpp_source.html#l00181">FreeMonoid.cpp:181</a></div></div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_aa9ab6c28301
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

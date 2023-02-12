@@ -4,7 +4,7 @@ var class_d_ring =
     [ "ring_type", "d6/de6/class_d_ring_a942714837921731f864fe6fb3fcac7a5.html#a942714837921731f864fe6fb3fcac7a5", null ],
     [ "DRing", "d6/de6/class_d_ring_ab6546bbd95666686245a62068c979808.html#ab6546bbd95666686245a62068c979808", null ],
     [ "add", "d6/de6/class_d_ring_acfd0005cc4b8e77e5b4245fef913de5f.html#acfd0005cc4b8e77e5b4245fef913de5f", null ],
-    [ "add_term", "d6/de6/class_d_ring_a102cdd90c74762bb313f44684490e39e.html#a102cdd90c74762bb313f44684490e39e", null ],
+    [ "add_term", "d6/de6/class_d_ring_a4413428417792280bf8d0c2cac7417a5.html#a4413428417792280bf8d0c2cac7417a5", null ],
     [ "compare", "d6/de6/class_d_ring_a2a17c699123225b56ed043c71e08cd39.html#a2a17c699123225b56ed043c71e08cd39", null ],
     [ "create", "d6/de6/class_d_ring_aa08cb5a54253a90a4af8f81a2b266635.html#aa08cb5a54253a90a4af8f81a2b266635", null ],
     [ "degree", "d6/de6/class_d_ring_a612977f55b31acb97833b4a9bd880d68.html#a612977f55b31acb97833b4a9bd880d68", null ],

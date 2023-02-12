@@ -72,7 +72,7 @@ var class_monoid =
     [ "simple_degree", "d9/db1/class_monoid_a98007f3f453ac5fdd12140d72e024bdf.html#a98007f3f453ac5fdd12140d72e024bdf", null ],
     [ "text_out", "d9/db1/class_monoid_a4ba7dc36a41c837125be881988840f43.html#a4ba7dc36a41c837125be881988840f43", null ],
     [ "to_arrayint", "d9/db1/class_monoid_ab14c7dab00db38390a5825a00c52293b.html#ab14c7dab00db38390a5825a00c52293b", null ],
-    [ "to_expvector", "d9/db1/class_monoid_abaa4fb140b8b02dd7a69cf526bd10cea.html#abaa4fb140b8b02dd7a69cf526bd10cea", null ],
+    [ "to_expvector", "d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4", null ],
     [ "to_varpower", "d9/db1/class_monoid_a742e5cde6c7eeec25dab1c891f7e1afb.html#a742e5cde6c7eeec25dab1c891f7e1afb", null ],
     [ "weight_value_exists", "d9/db1/class_monoid_ac23ffdad3ae3ad504a9ff15a30f3526b.html#ac23ffdad3ae3ad504a9ff15a30f3526b", null ],
     [ "component_up_", "d9/db1/class_monoid_a00cdd843d67272887765610130c10a4a.html#a00cdd843d67272887765610130c10a4a", null ],

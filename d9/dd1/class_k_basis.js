@@ -1,6 +1,6 @@
 var class_k_basis =
 [
-    [ "KBasis", "d9/dd1/class_k_basis_a607e29fe7d5d9440d1867f8eb559e422.html#a607e29fe7d5d9440d1867f8eb559e422", null ],
+    [ "KBasis", "d9/dd1/class_k_basis_ae9610421fe3a4ac36579984b0e89af6b.html#ae9610421fe3a4ac36579984b0e89af6b", null ],
     [ "~KBasis", "d9/dd1/class_k_basis_a4ec68e6f750831b9cb0e7b37c5bd38a3.html#a4ec68e6f750831b9cb0e7b37c5bd38a3", null ],
     [ "backtrack", "d9/dd1/class_k_basis_a803025d9f3d7b390784b1ae52893a085.html#a803025d9f3d7b390784b1ae52893a085", null ],
     [ "backtrack_mg", "d9/dd1/class_k_basis_a4e6ff64844ba1c73946e8cee93d8f510.html#a4e6ff64844ba1c73946e8cee93d8f510", null ],
@@ -9,7 +9,7 @@ var class_k_basis =
     [ "basis0_singly_graded", "d9/dd1/class_k_basis_acdc53fe45c367b50ca791ea8ea5015ba.html#acdc53fe45c367b50ca791ea8ea5015ba", null ],
     [ "compute", "d9/dd1/class_k_basis_acf13b878ef536b5b1f1bacd81093a7db.html#acf13b878ef536b5b1f1bacd81093a7db", null ],
     [ "insert", "d9/dd1/class_k_basis_a28f251f5f1c6f62cbb73a08d1afd4667.html#a28f251f5f1c6f62cbb73a08d1afd4667", null ],
-    [ "k_basis", "d9/dd1/class_k_basis_a3e6a869e34de525868d3261d90a6801a.html#a3e6a869e34de525868d3261d90a6801a", null ],
+    [ "k_basis", "d9/dd1/class_k_basis_abb0d3ac3f4aa489984b8112ccb4bbe96.html#abb0d3ac3f4aa489984b8112ccb4bbe96", null ],
     [ "try_insert_full", "d9/dd1/class_k_basis_a6e0abac713b15758362d0e1b10a8477b.html#a6e0abac713b15758362d0e1b10a8477b", null ],
     [ "try_insert_mg", "d9/dd1/class_k_basis_a316485aadacd9f65a6ef1f088da06b11.html#a316485aadacd9f65a6ef1f088da06b11", null ],
     [ "try_insert_sg", "d9/dd1/class_k_basis_af1b948a2af785aaa7783064cbc283fe3.html#af1b948a2af785aaa7783064cbc283fe3", null ],
@@ -18,7 +18,6 @@ var class_k_basis =
     [ "computation_type", "d9/dd1/class_k_basis_a0b40f00d2a0074ecbbae6a76cefea499.html#a0b40f00d2a0074ecbbae6a76cefea499", null ],
     [ "D", "d9/dd1/class_k_basis_a3e82b9e39190607d12765f6909549321.html#a3e82b9e39190607d12765f6909549321", null ],
     [ "do_truncation", "d9/dd1/class_k_basis_a5615e3b52fe3dc24428a38114938e669.html#a5615e3b52fe3dc24428a38114938e669", null ],
-    [ "heft_vector", "d9/dd1/class_k_basis_a2cb145876b1f7bb9bb3a34083d93dc5a.html#a2cb145876b1f7bb9bb3a34083d93dc5a", null ],
     [ "hi_degree", "d9/dd1/class_k_basis_a7cab72cc888a4c4329b8ffafe98699a2.html#a7cab72cc888a4c4329b8ffafe98699a2", null ],
     [ "kb_comp", "d9/dd1/class_k_basis_a305db4edaa81a6ab1d930110c8e067b0.html#a305db4edaa81a6ab1d930110c8e067b0", null ],
     [ "kb_error", "d9/dd1/class_k_basis_a85ef8ac6fbe2669256c010344eec8d1f.html#a85ef8ac6fbe2669256c010344eec8d1f", null ],
@@ -34,9 +33,10 @@ var class_k_basis =
     [ "lo_degree", "d9/dd1/class_k_basis_a4a27591ff6804452b988cce75725ba03.html#a4a27591ff6804452b988cce75725ba03", null ],
     [ "M", "d9/dd1/class_k_basis_a090ee66e0f1aa28b23359c2ac357cacd.html#a090ee66e0f1aa28b23359c2ac357cacd", null ],
     [ "mat", "d9/dd1/class_k_basis_a4f002a743fefc570df8e4aa5c26ff82f.html#a4f002a743fefc570df8e4aa5c26ff82f", null ],
+    [ "mHeftVector", "d9/dd1/class_k_basis_a9fd076eedf4e19af3e0f5c031c6fa054.html#a9fd076eedf4e19af3e0f5c031c6fa054", null ],
+    [ "mVariables", "d9/dd1/class_k_basis_a2425fdd65c19f1ddd3d2b25469a107ca.html#a2425fdd65c19f1ddd3d2b25469a107ca", null ],
     [ "P", "d9/dd1/class_k_basis_a80ace4f1e4722d93b8822a42af230548.html#a80ace4f1e4722d93b8822a42af230548", null ],
     [ "var_degs", "d9/dd1/class_k_basis_a67738700fc2bc9d063634870328c412e.html#a67738700fc2bc9d063634870328c412e", null ],
     [ "var_wts", "d9/dd1/class_k_basis_ac9c76a6dd06c0340df936265acb2257c.html#ac9c76a6dd06c0340df936265acb2257c", null ],
-    [ "vars", "d9/dd1/class_k_basis_adc4df02597a1f08e922265b51645a118.html#adc4df02597a1f08e922265b51645a118", null ],
     [ "weight_has_zeros", "d9/dd1/class_k_basis_ad049d88e36c8192e57d399dddb34e838.html#ad049d88e36c8192e57d399dddb34e838", null ]
 ];

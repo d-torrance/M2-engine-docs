@@ -113,14 +113,14 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a06441ff722f
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00689">689</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;{</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">coefficientRing</a>()-&gt;<a class="code" href="../../de/dbd/class_free_algebra_a8d2c48d5d414cf01f078623b2892f2d3.html#a8d2c48d5d414cf01f078623b2892f2d3">is_zero</a>(coeff)) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;  <span class="keyword">auto</span>&amp; outcoeff = f.getCoeffInserter();</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;  <span class="keyword">auto</span>&amp; outmonom = f.getMonomInserter();</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  outcoeff.push_back(coeff);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  outmonom.insert(outmonom.end(),monom.<a class="code" href="../../dd/d21/struct_monom_a5f601ae2252fdce5db9cf534bd984e09.html#a5f601ae2252fdce5db9cf534bd984e09">begin</a>(), monom.<a class="code" href="../../dd/d21/struct_monom_a71c5bf1c7a148439388944242067e56d.html#a71c5bf1c7a148439388944242067e56d">end</a>());</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00687">687</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;{</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">coefficientRing</a>()-&gt;<a class="code" href="../../de/dbd/class_free_algebra_a8d2c48d5d414cf01f078623b2892f2d3.html#a8d2c48d5d414cf01f078623b2892f2d3">is_zero</a>(coeff)) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;  <span class="keyword">auto</span>&amp; outcoeff = f.getCoeffInserter();</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;  <span class="keyword">auto</span>&amp; outmonom = f.getMonomInserter();</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;  outcoeff.push_back(coeff);</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;  outmonom.insert(outmonom.end(),monom.<a class="code" href="../../dd/d21/struct_monom_a5f601ae2252fdce5db9cf534bd984e09.html#a5f601ae2252fdce5db9cf534bd984e09">begin</a>(), monom.<a class="code" href="../../dd/d21/struct_monom_a71c5bf1c7a148439388944242067e56d.html#a71c5bf1c7a148439388944242067e56d">end</a>());</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;}</div>
 <div class="ttc" id="aclass_free_algebra_a5448329115f9424b39dc739bb0d65f1d_html_a5448329115f9424b39dc739bb0d65f1d"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">FreeAlgebra::coefficientRing</a></div><div class="ttdeci">const Ring * coefficientRing() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00041">FreeAlgebra.hpp:41</a></div></div>
 <div class="ttc" id="aclass_free_algebra_a8d2c48d5d414cf01f078623b2892f2d3_html_a8d2c48d5d414cf01f078623b2892f2d3"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a8d2c48d5d414cf01f078623b2892f2d3.html#a8d2c48d5d414cf01f078623b2892f2d3">FreeAlgebra::is_zero</a></div><div class="ttdeci">bool is_zero(const Poly &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00071">FreeAlgebra.hpp:71</a></div></div>
 <div class="ttc" id="astruct_monom_a5f601ae2252fdce5db9cf534bd984e09_html_a5f601ae2252fdce5db9cf534bd984e09"><div class="ttname"><a href="../../dd/d21/struct_monom_a5f601ae2252fdce5db9cf534bd984e09.html#a5f601ae2252fdce5db9cf534bd984e09">Monom::begin</a></div><div class="ttdeci">const int * begin() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00036">Polynomial.hpp:36</a></div></div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a06441ff722f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -107,18 +107,18 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a0ea69b04bbf
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00305">305</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;{</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keyword">auto</span>&amp; outmonom = result.getMonomInserter();</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keyword">auto</span>&amp; outcoeff = result.getCoeffInserter();</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = f.cbeginMonom(); i != f.cendMonom(); ++i)</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    outmonom.push_back(*i);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=f.cbeginCoeff(); i != f.cendCoeff(); ++i)</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    outcoeff.push_back(<a class="code" href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">coefficientRing</a>()-&gt;<a class="code" href="../../de/dbd/class_free_algebra_a0ea69b04bbf054e295de497c0f04025d.html#a0ea69b04bbf054e295de497c0f04025d">negate</a>(*i));</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div>
-<div class="ttc" id="aclass_free_algebra_a0ea69b04bbf054e295de497c0f04025d_html_a0ea69b04bbf054e295de497c0f04025d"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a0ea69b04bbf054e295de497c0f04025d.html#a0ea69b04bbf054e295de497c0f04025d">FreeAlgebra::negate</a></div><div class="ttdeci">void negate(Poly &amp;result, const Poly &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00305">FreeAlgebra.cpp:305</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00303">303</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;{</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keyword">auto</span>&amp; outmonom = result.getMonomInserter();</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <span class="keyword">auto</span>&amp; outcoeff = result.getCoeffInserter();</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = f.cbeginMonom(); i != f.cendMonom(); ++i)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    outmonom.push_back(*i);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=f.cbeginCoeff(); i != f.cendCoeff(); ++i)</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    outcoeff.push_back(<a class="code" href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">coefficientRing</a>()-&gt;<a class="code" href="../../de/dbd/class_free_algebra_a0ea69b04bbf054e295de497c0f04025d.html#a0ea69b04bbf054e295de497c0f04025d">negate</a>(*i));</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
+<div class="ttc" id="aclass_free_algebra_a0ea69b04bbf054e295de497c0f04025d_html_a0ea69b04bbf054e295de497c0f04025d"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a0ea69b04bbf054e295de497c0f04025d.html#a0ea69b04bbf054e295de497c0f04025d">FreeAlgebra::negate</a></div><div class="ttdeci">void negate(Poly &amp;result, const Poly &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00303">FreeAlgebra.cpp:303</a></div></div>
 <div class="ttc" id="aclass_free_algebra_a5448329115f9424b39dc739bb0d65f1d_html_a5448329115f9424b39dc739bb0d65f1d"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">FreeAlgebra::coefficientRing</a></div><div class="ttdeci">const Ring * coefficientRing() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00041">FreeAlgebra.hpp:41</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">coefficientRing()</a>.</p>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a0ea69b04bbf
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -123,20 +123,20 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a090d6a04e73111
 
 <p>Implements <a class="el" href="../../d5/d58/class_polynomial_ring_a54364ed8dd7fc3b9b276712b034b39c1.html#a54364ed8dd7fc3b9b276712b034b39c1">PolynomialRing</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02327">2327</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l02328"></a><span class="lineno"> 2328</span>&#160;{</div>
-<div class="line"><a name="l02329"></a><span class="lineno"> 2329</span>&#160;  <span class="comment">// The first step is to find the lead monomial.</span></div>
-<div class="line"><a name="l02330"></a><span class="lineno"> 2330</span>&#160; </div>
-<div class="line"><a name="l02331"></a><span class="lineno"> 2331</span>&#160;  <span class="keywordflow">if</span> (v == 0) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l02332"></a><span class="lineno"> 2332</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> *lead = <a class="code" href="../../d3/dfc/class_poly_ring_a9b5fbd8da276738829a40ff27218f316.html#a9b5fbd8da276738829a40ff27218f316">vec_locate_lead_term</a>(F, v);</div>
-<div class="line"><a name="l02333"></a><span class="lineno"> 2333</span>&#160; </div>
-<div class="line"><a name="l02334"></a><span class="lineno"> 2334</span>&#160;  <span class="comment">// Now that we have the lead term, use the first n parts of the monomial</span></div>
-<div class="line"><a name="l02335"></a><span class="lineno"> 2335</span>&#160;  <span class="comment">// ordering</span></div>
-<div class="line"><a name="l02336"></a><span class="lineno"> 2336</span>&#160; </div>
-<div class="line"><a name="l02337"></a><span class="lineno"> 2337</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> r = <a class="code" href="../../d3/dfc/class_poly_ring_add71ce0c91474b72608cec4753deaa93.html#add71ce0c91474b72608cec4753deaa93">PolyRing::lead_term</a>(nparts, lead-&gt;<a class="code" href="../../d6/ddd/structvecterm_af3abb9332a7c7aaf676c6346931ca3dd.html#af3abb9332a7c7aaf676c6346931ca3dd">coeff</a>);</div>
-<div class="line"><a name="l02338"></a><span class="lineno"> 2338</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dd/dcf/class_ring_a2ab579eb49ebe28eed42e2a083c96c03.html#a2ab579eb49ebe28eed42e2a083c96c03">make_vec</a>(lead-&gt;<a class="code" href="../../d6/ddd/structvecterm_a70a333957a4a067dc8efb4cb09f72122.html#a70a333957a4a067dc8efb4cb09f72122">comp</a>, r);</div>
-<div class="line"><a name="l02339"></a><span class="lineno"> 2339</span>&#160;}</div>
-<div class="ttc" id="aclass_poly_ring_a9b5fbd8da276738829a40ff27218f316_html_a9b5fbd8da276738829a40ff27218f316"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_a9b5fbd8da276738829a40ff27218f316.html#a9b5fbd8da276738829a40ff27218f316">PolyRing::vec_locate_lead_term</a></div><div class="ttdeci">const vecterm * vec_locate_lead_term(const FreeModule *F, vec v) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l02291">poly.cpp:2291</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02328">2328</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l02329"></a><span class="lineno"> 2329</span>&#160;{</div>
+<div class="line"><a name="l02330"></a><span class="lineno"> 2330</span>&#160;  <span class="comment">// The first step is to find the lead monomial.</span></div>
+<div class="line"><a name="l02331"></a><span class="lineno"> 2331</span>&#160; </div>
+<div class="line"><a name="l02332"></a><span class="lineno"> 2332</span>&#160;  <span class="keywordflow">if</span> (v == 0) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l02333"></a><span class="lineno"> 2333</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> *lead = <a class="code" href="../../d3/dfc/class_poly_ring_a9b5fbd8da276738829a40ff27218f316.html#a9b5fbd8da276738829a40ff27218f316">vec_locate_lead_term</a>(F, v);</div>
+<div class="line"><a name="l02334"></a><span class="lineno"> 2334</span>&#160; </div>
+<div class="line"><a name="l02335"></a><span class="lineno"> 2335</span>&#160;  <span class="comment">// Now that we have the lead term, use the first n parts of the monomial</span></div>
+<div class="line"><a name="l02336"></a><span class="lineno"> 2336</span>&#160;  <span class="comment">// ordering</span></div>
+<div class="line"><a name="l02337"></a><span class="lineno"> 2337</span>&#160; </div>
+<div class="line"><a name="l02338"></a><span class="lineno"> 2338</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> r = <a class="code" href="../../d3/dfc/class_poly_ring_add71ce0c91474b72608cec4753deaa93.html#add71ce0c91474b72608cec4753deaa93">PolyRing::lead_term</a>(nparts, lead-&gt;<a class="code" href="../../d6/ddd/structvecterm_af3abb9332a7c7aaf676c6346931ca3dd.html#af3abb9332a7c7aaf676c6346931ca3dd">coeff</a>);</div>
+<div class="line"><a name="l02339"></a><span class="lineno"> 2339</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dd/dcf/class_ring_a2ab579eb49ebe28eed42e2a083c96c03.html#a2ab579eb49ebe28eed42e2a083c96c03">make_vec</a>(lead-&gt;<a class="code" href="../../d6/ddd/structvecterm_a70a333957a4a067dc8efb4cb09f72122.html#a70a333957a4a067dc8efb4cb09f72122">comp</a>, r);</div>
+<div class="line"><a name="l02340"></a><span class="lineno"> 2340</span>&#160;}</div>
+<div class="ttc" id="aclass_poly_ring_a9b5fbd8da276738829a40ff27218f316_html_a9b5fbd8da276738829a40ff27218f316"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_a9b5fbd8da276738829a40ff27218f316.html#a9b5fbd8da276738829a40ff27218f316">PolyRing::vec_locate_lead_term</a></div><div class="ttdeci">const vecterm * vec_locate_lead_term(const FreeModule *F, vec v) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l02292">poly.cpp:2292</a></div></div>
 <div class="ttc" id="aclass_poly_ring_add71ce0c91474b72608cec4753deaa93_html_add71ce0c91474b72608cec4753deaa93"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_add71ce0c91474b72608cec4753deaa93.html#add71ce0c91474b72608cec4753deaa93">PolyRing::lead_term</a></div><div class="ttdeci">ring_elem lead_term(const ring_elem f) const</div></div>
 <div class="ttc" id="aclass_ring_a2ab579eb49ebe28eed42e2a083c96c03_html_a2ab579eb49ebe28eed42e2a083c96c03"><div class="ttname"><a href="../../dd/dcf/class_ring_a2ab579eb49ebe28eed42e2a083c96c03.html#a2ab579eb49ebe28eed42e2a083c96c03">Ring::make_vec</a></div><div class="ttdeci">vec make_vec(int r, ring_elem a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d36/ring-vecs_8cpp_source.html#l00020">ring-vecs.cpp:20</a></div></div>
 <div class="ttc" id="astructvecterm_a70a333957a4a067dc8efb4cb09f72122_html_a70a333957a4a067dc8efb4cb09f72122"><div class="ttname"><a href="../../d6/ddd/structvecterm_a70a333957a4a067dc8efb4cb09f72122.html#a70a333957a4a067dc8efb4cb09f72122">vecterm::comp</a></div><div class="ttdeci">int comp</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00108">ringelem.hpp:108</a></div></div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a090d6a04e73111
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

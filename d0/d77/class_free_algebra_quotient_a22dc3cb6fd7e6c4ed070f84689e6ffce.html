@@ -113,16 +113,16 @@ $(document).ready(function(){initNavTree('d0/d77/class_free_algebra_quotient_a22
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dcc/_free_algebra_quotient_8cpp_source.html#l00010">10</a> of file <a class="el" href="../../db/dcc/_free_algebra_quotient_8cpp_source.html">FreeAlgebraQuotient.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  : <a class="code" href="../../d0/d77/class_free_algebra_quotient_a8f1ed0c2b116f5c6d345007b54be40db.html#a8f1ed0c2b116f5c6d345007b54be40db">mFreeAlgebra</a>(A),</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../d0/d77/class_free_algebra_quotient_a5e69643606ef89419cda0d9ac9fda775.html#a5e69643606ef89419cda0d9ac9fda775">mGroebner</a>(A,GB,maxdeg,0),</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d0/d77/class_free_algebra_quotient_a88e6148897c72bcb8dac6e60c9e0b57d.html#a88e6148897c72bcb8dac6e60c9e0b57d">mMaxdeg</a>(maxdeg)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="comment">// this NCGroebner object is used for reductions only.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="comment">// will eventually separate the &#39;reduction&#39; code from the &#39;GB&#39; code</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="comment">// into two separate classes, but for now we have just one.</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="../../d0/d77/class_free_algebra_quotient_a5e69643606ef89419cda0d9ac9fda775.html#a5e69643606ef89419cda0d9ac9fda775">mGroebner</a>.<a class="code" href="../../d8/d79/class_n_c_groebner_af05a893551a5de4da4788958aa980356.html#af05a893551a5de4da4788958aa980356">initReductionOnly</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../db/dcc/_free_algebra_quotient_8cpp_source.html#l00008">8</a> of file <a class="el" href="../../db/dcc/_free_algebra_quotient_8cpp_source.html">FreeAlgebraQuotient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  : <a class="code" href="../../d0/d77/class_free_algebra_quotient_a8f1ed0c2b116f5c6d345007b54be40db.html#a8f1ed0c2b116f5c6d345007b54be40db">mFreeAlgebra</a>(A),</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="../../d0/d77/class_free_algebra_quotient_a5e69643606ef89419cda0d9ac9fda775.html#a5e69643606ef89419cda0d9ac9fda775">mGroebner</a>(A,GB,maxdeg,0),</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="../../d0/d77/class_free_algebra_quotient_a88e6148897c72bcb8dac6e60c9e0b57d.html#a88e6148897c72bcb8dac6e60c9e0b57d">mMaxdeg</a>(maxdeg)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="comment">// this NCGroebner object is used for reductions only.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="comment">// will eventually separate the &#39;reduction&#39; code from the &#39;GB&#39; code</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="comment">// into two separate classes, but for now we have just one.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="../../d0/d77/class_free_algebra_quotient_a5e69643606ef89419cda0d9ac9fda775.html#a5e69643606ef89419cda0d9ac9fda775">mGroebner</a>.<a class="code" href="../../d8/d79/class_n_c_groebner_af05a893551a5de4da4788958aa980356.html#af05a893551a5de4da4788958aa980356">initReductionOnly</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
 <div class="ttc" id="aclass_free_algebra_quotient_a5e69643606ef89419cda0d9ac9fda775_html_a5e69643606ef89419cda0d9ac9fda775"><div class="ttname"><a href="../../d0/d77/class_free_algebra_quotient_a5e69643606ef89419cda0d9ac9fda775.html#a5e69643606ef89419cda0d9ac9fda775">FreeAlgebraQuotient::mGroebner</a></div><div class="ttdeci">NCGroebner mGroebner</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db6/_free_algebra_quotient_8hpp_source.html#l00024">FreeAlgebraQuotient.hpp:24</a></div></div>
 <div class="ttc" id="aclass_free_algebra_quotient_a88e6148897c72bcb8dac6e60c9e0b57d_html_a88e6148897c72bcb8dac6e60c9e0b57d"><div class="ttname"><a href="../../d0/d77/class_free_algebra_quotient_a88e6148897c72bcb8dac6e60c9e0b57d.html#a88e6148897c72bcb8dac6e60c9e0b57d">FreeAlgebraQuotient::mMaxdeg</a></div><div class="ttdeci">int mMaxdeg</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db6/_free_algebra_quotient_8hpp_source.html#l00028">FreeAlgebraQuotient.hpp:28</a></div></div>
 <div class="ttc" id="aclass_free_algebra_quotient_a8f1ed0c2b116f5c6d345007b54be40db_html_a8f1ed0c2b116f5c6d345007b54be40db"><div class="ttname"><a href="../../d0/d77/class_free_algebra_quotient_a8f1ed0c2b116f5c6d345007b54be40db.html#a8f1ed0c2b116f5c6d345007b54be40db">FreeAlgebraQuotient::mFreeAlgebra</a></div><div class="ttdeci">const FreeAlgebra &amp; mFreeAlgebra</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db6/_free_algebra_quotient_8hpp_source.html#l00023">FreeAlgebraQuotient.hpp:23</a></div></div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('d0/d77/class_free_algebra_quotient_a22
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d77/class_free_algebra_quotient.html">FreeAlgebraQuotient</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

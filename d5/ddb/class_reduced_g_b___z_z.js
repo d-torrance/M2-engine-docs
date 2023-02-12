@@ -7,7 +7,7 @@ var class_reduced_g_b___z_z =
     ] ],
     [ "ReducedGB_ZZ", "d5/ddb/class_reduced_g_b___z_z_a0cd43015d61184533f000f4cb28fa49c.html#a0cd43015d61184533f000f4cb28fa49c", null ],
     [ "~ReducedGB_ZZ", "d5/ddb/class_reduced_g_b___z_z_ac55d6f1be22da3747d7af946f72d1cd9.html#ac55d6f1be22da3747d7af946f72d1cd9", null ],
-    [ "find_divisor", "d5/ddb/class_reduced_g_b___z_z_a17712150e6082ab050b5203cf28c71c1.html#a17712150e6082ab050b5203cf28c71c1", null ],
+    [ "find_divisor", "d5/ddb/class_reduced_g_b___z_z_af44320ef62dbd6c7260a3c113bc41d93.html#af44320ef62dbd6c7260a3c113bc41d93", null ],
     [ "minimalize", "d5/ddb/class_reduced_g_b___z_z_a637f916b96db2f49daf97057104950dd.html#a637f916b96db2f49daf97057104950dd", null ],
     [ "remainder", "d5/ddb/class_reduced_g_b___z_z_aec4ba0cd56865dcfd322a8b5920beb37.html#aec4ba0cd56865dcfd322a8b5920beb37", null ],
     [ "remainder", "d5/ddb/class_reduced_g_b___z_z_ac3c1c390dfc64c42bcadb3b3666352ef.html#ac3c1c390dfc64c42bcadb3b3666352ef", null ],

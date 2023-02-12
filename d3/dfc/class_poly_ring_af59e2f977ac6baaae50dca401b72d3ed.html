@@ -97,37 +97,37 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_af59e2f977ac6ba
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02073">2073</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l02074"></a><span class="lineno"> 2074</span>&#160;{</div>
-<div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;  <span class="comment">// Divide f into two lists of equal length, sort each,</span></div>
-<div class="line"><a name="l02076"></a><span class="lineno"> 2076</span>&#160;  <span class="comment">// then add them together.  This allows the same monomial</span></div>
-<div class="line"><a name="l02077"></a><span class="lineno"> 2077</span>&#160;  <span class="comment">// to appear more than once in &#39;f&#39;.</span></div>
-<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160; </div>
-<div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160;  <span class="keywordflow">if</span> (f == NULL || f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> == NULL) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l02080"></a><span class="lineno"> 2080</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *f1 = NULL;</div>
-<div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *f2 = NULL;</div>
-<div class="line"><a name="l02082"></a><span class="lineno"> 2082</span>&#160;  <span class="keywordflow">while</span> (f != NULL)</div>
-<div class="line"><a name="l02083"></a><span class="lineno"> 2083</span>&#160;    {</div>
-<div class="line"><a name="l02084"></a><span class="lineno"> 2084</span>&#160;      <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *t = f;</div>
-<div class="line"><a name="l02085"></a><span class="lineno"> 2085</span>&#160;      f = f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
-<div class="line"><a name="l02086"></a><span class="lineno"> 2086</span>&#160;      t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = f1;</div>
-<div class="line"><a name="l02087"></a><span class="lineno"> 2087</span>&#160;      f1 = t;</div>
-<div class="line"><a name="l02088"></a><span class="lineno"> 2088</span>&#160; </div>
-<div class="line"><a name="l02089"></a><span class="lineno"> 2089</span>&#160;      <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l02090"></a><span class="lineno"> 2090</span>&#160;      t = f;</div>
-<div class="line"><a name="l02091"></a><span class="lineno"> 2091</span>&#160;      f = f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
-<div class="line"><a name="l02092"></a><span class="lineno"> 2092</span>&#160;      t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = f2;</div>
-<div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160;      f2 = t;</div>
-<div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;    }</div>
-<div class="line"><a name="l02095"></a><span class="lineno"> 2095</span>&#160; </div>
-<div class="line"><a name="l02096"></a><span class="lineno"> 2096</span>&#160;  <a class="code" href="../../d3/dfc/class_poly_ring_af59e2f977ac6baaae50dca401b72d3ed.html#af59e2f977ac6baaae50dca401b72d3ed">sort</a>(f1);</div>
-<div class="line"><a name="l02097"></a><span class="lineno"> 2097</span>&#160;  <a class="code" href="../../d3/dfc/class_poly_ring_af59e2f977ac6baaae50dca401b72d3ed.html#af59e2f977ac6baaae50dca401b72d3ed">sort</a>(f2);</div>
-<div class="line"><a name="l02098"></a><span class="lineno"> 2098</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> g = f1;</div>
-<div class="line"><a name="l02099"></a><span class="lineno"> 2099</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> h = f2;</div>
-<div class="line"><a name="l02100"></a><span class="lineno"> 2100</span>&#160;  <a class="code" href="../../dd/dcf/class_ring_acf98d2d1f7fd61fd52af3c0a17d9d225.html#acf98d2d1f7fd61fd52af3c0a17d9d225">add_to</a>(g, h);</div>
-<div class="line"><a name="l02101"></a><span class="lineno"> 2101</span>&#160;  f = g;</div>
-<div class="line"><a name="l02102"></a><span class="lineno"> 2102</span>&#160;}</div>
-<div class="ttc" id="aclass_poly_ring_af59e2f977ac6baaae50dca401b72d3ed_html_af59e2f977ac6baaae50dca401b72d3ed"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_af59e2f977ac6baaae50dca401b72d3ed.html#af59e2f977ac6baaae50dca401b72d3ed">PolyRing::sort</a></div><div class="ttdeci">void sort(Nterm *&amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l02073">poly.cpp:2073</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02074">2074</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;{</div>
+<div class="line"><a name="l02076"></a><span class="lineno"> 2076</span>&#160;  <span class="comment">// Divide f into two lists of equal length, sort each,</span></div>
+<div class="line"><a name="l02077"></a><span class="lineno"> 2077</span>&#160;  <span class="comment">// then add them together.  This allows the same monomial</span></div>
+<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160;  <span class="comment">// to appear more than once in &#39;f&#39;.</span></div>
+<div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160; </div>
+<div class="line"><a name="l02080"></a><span class="lineno"> 2080</span>&#160;  <span class="keywordflow">if</span> (f == NULL || f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *f1 = NULL;</div>
+<div class="line"><a name="l02082"></a><span class="lineno"> 2082</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *f2 = NULL;</div>
+<div class="line"><a name="l02083"></a><span class="lineno"> 2083</span>&#160;  <span class="keywordflow">while</span> (f != NULL)</div>
+<div class="line"><a name="l02084"></a><span class="lineno"> 2084</span>&#160;    {</div>
+<div class="line"><a name="l02085"></a><span class="lineno"> 2085</span>&#160;      <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *t = f;</div>
+<div class="line"><a name="l02086"></a><span class="lineno"> 2086</span>&#160;      f = f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
+<div class="line"><a name="l02087"></a><span class="lineno"> 2087</span>&#160;      t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = f1;</div>
+<div class="line"><a name="l02088"></a><span class="lineno"> 2088</span>&#160;      f1 = t;</div>
+<div class="line"><a name="l02089"></a><span class="lineno"> 2089</span>&#160; </div>
+<div class="line"><a name="l02090"></a><span class="lineno"> 2090</span>&#160;      <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02091"></a><span class="lineno"> 2091</span>&#160;      t = f;</div>
+<div class="line"><a name="l02092"></a><span class="lineno"> 2092</span>&#160;      f = f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
+<div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160;      t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = f2;</div>
+<div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;      f2 = t;</div>
+<div class="line"><a name="l02095"></a><span class="lineno"> 2095</span>&#160;    }</div>
+<div class="line"><a name="l02096"></a><span class="lineno"> 2096</span>&#160; </div>
+<div class="line"><a name="l02097"></a><span class="lineno"> 2097</span>&#160;  <a class="code" href="../../d3/dfc/class_poly_ring_af59e2f977ac6baaae50dca401b72d3ed.html#af59e2f977ac6baaae50dca401b72d3ed">sort</a>(f1);</div>
+<div class="line"><a name="l02098"></a><span class="lineno"> 2098</span>&#160;  <a class="code" href="../../d3/dfc/class_poly_ring_af59e2f977ac6baaae50dca401b72d3ed.html#af59e2f977ac6baaae50dca401b72d3ed">sort</a>(f2);</div>
+<div class="line"><a name="l02099"></a><span class="lineno"> 2099</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> g = f1;</div>
+<div class="line"><a name="l02100"></a><span class="lineno"> 2100</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> h = f2;</div>
+<div class="line"><a name="l02101"></a><span class="lineno"> 2101</span>&#160;  <a class="code" href="../../dd/dcf/class_ring_acf98d2d1f7fd61fd52af3c0a17d9d225.html#acf98d2d1f7fd61fd52af3c0a17d9d225">add_to</a>(g, h);</div>
+<div class="line"><a name="l02102"></a><span class="lineno"> 2102</span>&#160;  f = g;</div>
+<div class="line"><a name="l02103"></a><span class="lineno"> 2103</span>&#160;}</div>
+<div class="ttc" id="aclass_poly_ring_af59e2f977ac6baaae50dca401b72d3ed_html_af59e2f977ac6baaae50dca401b72d3ed"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_af59e2f977ac6baaae50dca401b72d3ed.html#af59e2f977ac6baaae50dca401b72d3ed">PolyRing::sort</a></div><div class="ttdeci">void sort(Nterm *&amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l02074">poly.cpp:2074</a></div></div>
 <div class="ttc" id="aclass_ring_acf98d2d1f7fd61fd52af3c0a17d9d225_html_acf98d2d1f7fd61fd52af3c0a17d9d225"><div class="ttname"><a href="../../dd/dcf/class_ring_acf98d2d1f7fd61fd52af3c0a17d9d225.html#acf98d2d1f7fd61fd52af3c0a17d9d225">Ring::add_to</a></div><div class="ttdeci">void add_to(ring_elem &amp;f, const ring_elem &amp;g) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2b/ring_8cpp_source.html#l00202">ring.cpp:202</a></div></div>
 <div class="ttc" id="astruct_nterm_a395044af0f071742b5d1fdeb74a9efa2_html_a395044af0f071742b5d1fdeb74a9efa2"><div class="ttname"><a href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">Nterm::next</a></div><div class="ttdeci">Nterm * next</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00099">ringelem.hpp:99</a></div></div>
 <div class="ttc" id="astruct_nterm_html"><div class="ttname"><a href="../../d0/dbc/struct_nterm.html">Nterm</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00097">ringelem.hpp:98</a></div></div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_af59e2f977ac6ba
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../dd/dcf/class_ring_acf98d2d1f7fd61fd52af3c0a17d9d225.html#acf98d2d1f7fd61fd52af3c0a17d9d225">Ring::add_to()</a>, and <a class="el" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">Nterm::next</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/dfc/class_poly_ring_aa4b0d09c48b6dcc2f32c095fb47fbb10.html#aa4b0d09c48b6dcc2f32c095fb47fbb10">divide_by_expvector()</a>, <a class="el" href="../../d3/dfc/class_poly_ring_a25400898dbea41fee283f2a51209b10c.html#a25400898dbea41fee283f2a51209b10c">homogenize()</a>, and <a class="el" href="../../dd/ddb/class_schur_ring_a55c61ea7bbcbb106375f2c5e156932eb.html#a55c61ea7bbcbb106375f2c5e156932eb">SchurRing::mult_by_term()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/dfc/class_poly_ring_a5456e8cdad8870d2f5b436ade715c5cf.html#a5456e8cdad8870d2f5b436ade715c5cf">divide_by_expvector()</a>, <a class="el" href="../../d3/dfc/class_poly_ring_a25400898dbea41fee283f2a51209b10c.html#a25400898dbea41fee283f2a51209b10c">homogenize()</a>, and <a class="el" href="../../dd/ddb/class_schur_ring_a55c61ea7bbcbb106375f2c5e156932eb.html#a55c61ea7bbcbb106375f2c5e156932eb">SchurRing::mult_by_term()</a>.</p>
 
 </div>
 </div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_af59e2f977ac6ba
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

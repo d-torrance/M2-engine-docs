@@ -107,33 +107,33 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_ac0836fb3874
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00262">262</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;{</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keyword">auto</span> fIt = f.cbegin();</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keyword">auto</span> gIt = g.cbegin();</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keyword">auto</span> fEnd = f.cend();</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keyword">auto</span> gEnd = g.cend();</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="keywordtype">int</span> cmp;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordflow">for</span> ( ; ; fIt++, gIt++)</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      <span class="keywordflow">if</span> (fIt == fEnd)</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;          <span class="keywordflow">if</span> (gIt == gEnd) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a0f0ab67e043160b4b46de33bff8bb59a.html#a0f0ab67e043160b4b46de33bff8bb59a">EQ</a>;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        }</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      <span class="keywordflow">if</span> (gIt == gEnd) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="comment">// TODO: can we remove the following block?  Make sure monoid can handle zero variables...</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../de/dbd/class_free_algebra_a6f57fdc9c8fe149a0b1e631e0ebe5341.html#a6f57fdc9c8fe149a0b1e631e0ebe5341">numVars</a>() &gt; 0)</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;          cmp = <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a6fc4850847d2662a28a9c0f9e2254686.html#a6fc4850847d2662a28a9c0f9e2254686">compare</a>(fIt.monom(),gIt.monom());</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;          <span class="keywordflow">if</span> (cmp != 0) <span class="keywordflow">return</span> cmp;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        }</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      <span class="comment">// if we are here, then the monomials are the same and we compare coefficients.</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <span class="comment">// for example if a,b are in the base and a &gt; b then ax &gt; bx.</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      cmp = <a class="code" href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">coefficientRing</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_ac7003d0bc8d7d274777ccfb0bd3ec229.html#ac7003d0bc8d7d274777ccfb0bd3ec229">compare_elems</a>(fIt.coeff(), fIt.coeff());</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <span class="keywordflow">if</span> (cmp != 0) <span class="keywordflow">return</span> cmp;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    }</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00260">260</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;{</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keyword">auto</span> fIt = f.cbegin();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keyword">auto</span> gIt = g.cbegin();</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keyword">auto</span> fEnd = f.cend();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keyword">auto</span> gEnd = g.cend();</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordtype">int</span> cmp;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordflow">for</span> ( ; ; fIt++, gIt++)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      <span class="keywordflow">if</span> (fIt == fEnd)</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;          <span class="keywordflow">if</span> (gIt == gEnd) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a0f0ab67e043160b4b46de33bff8bb59a.html#a0f0ab67e043160b4b46de33bff8bb59a">EQ</a>;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <span class="keywordflow">if</span> (gIt == gEnd) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <span class="comment">// TODO: can we remove the following block?  Make sure monoid can handle zero variables...</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../de/dbd/class_free_algebra_a6f57fdc9c8fe149a0b1e631e0ebe5341.html#a6f57fdc9c8fe149a0b1e631e0ebe5341">numVars</a>() &gt; 0)</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;          cmp = <a class="code" href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">monoid</a>().<a class="code" href="../../dc/da6/class_free_monoid_a6fc4850847d2662a28a9c0f9e2254686.html#a6fc4850847d2662a28a9c0f9e2254686">compare</a>(fIt.monom(),gIt.monom());</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;          <span class="keywordflow">if</span> (cmp != 0) <span class="keywordflow">return</span> cmp;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      <span class="comment">// if we are here, then the monomials are the same and we compare coefficients.</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      <span class="comment">// for example if a,b are in the base and a &gt; b then ax &gt; bx.</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      cmp = <a class="code" href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">coefficientRing</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_ac7003d0bc8d7d274777ccfb0bd3ec229.html#ac7003d0bc8d7d274777ccfb0bd3ec229">compare_elems</a>(fIt.coeff(), fIt.coeff());</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <span class="keywordflow">if</span> (cmp != 0) <span class="keywordflow">return</span> cmp;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}</div>
 <div class="ttc" id="aclass_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c_html_a4ba1219e183883baa554fb9dd80d2b1c"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c">FreeAlgebra::monoid</a></div><div class="ttdeci">const FreeMonoid &amp; monoid() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00042">FreeAlgebra.hpp:42</a></div></div>
 <div class="ttc" id="aclass_free_algebra_a5448329115f9424b39dc739bb0d65f1d_html_a5448329115f9424b39dc739bb0d65f1d"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d">FreeAlgebra::coefficientRing</a></div><div class="ttdeci">const Ring * coefficientRing() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00041">FreeAlgebra.hpp:41</a></div></div>
 <div class="ttc" id="aclass_free_algebra_a6f57fdc9c8fe149a0b1e631e0ebe5341_html_a6f57fdc9c8fe149a0b1e631e0ebe5341"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a6f57fdc9c8fe149a0b1e631e0ebe5341.html#a6f57fdc9c8fe149a0b1e631e0ebe5341">FreeAlgebra::numVars</a></div><div class="ttdeci">int numVars() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00044">FreeAlgebra.hpp:44</a></div></div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_ac0836fb3874
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

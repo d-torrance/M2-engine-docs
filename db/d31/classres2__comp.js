@@ -57,7 +57,7 @@ var classres2__comp =
     [ "sort_reduction", "db/d31/classres2__comp_a8634704e59c9f402e596fb4fee8af581.html#a8634704e59c9f402e596fb4fee8af581", null ],
     [ "sort_res2_pairs", "db/d31/classres2__comp_a43619c272bd2a0bae6d4960c51ef6818.html#a43619c272bd2a0bae6d4960c51ef6818", null ],
     [ "sort_skeleton", "db/d31/classres2__comp_a8f50f690fc1a540f5bfb8cf8e63e8d5e.html#a8f50f690fc1a540f5bfb8cf8e63e8d5e", null ],
-    [ "sort_value", "db/d31/classres2__comp_a43e298a3fcfddf0d04d768b6fd6ad42e.html#a43e298a3fcfddf0d04d768b6fd6ad42e", null ],
+    [ "sort_value", "db/d31/classres2__comp_aa511a0320254221ad76c601227497fea.html#aa511a0320254221ad76c601227497fea", null ],
     [ "start_computation", "db/d31/classres2__comp_afd43374a56d9f08824fcecce27f29484.html#afd43374a56d9f08824fcecce27f29484", null ],
     [ "stats", "db/d31/classres2__comp_ab162d870e07ccf45d49740778d854f2e.html#ab162d870e07ccf45d49740778d854f2e", null ],
     [ "stop_conditions_ok", "db/d31/classres2__comp_ae5b4b2cea10ee1cb804d9658fe36cb05.html#ae5b4b2cea10ee1cb804d9658fe36cb05", null ],

@@ -89,8 +89,9 @@ $(document).ready(function(){initNavTree('d9/d64/imonorder_8hpp.html','../../');
 <div class="title">imonorder.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../de/daf/monomial-ordering_8h_source.html">interface/monomial-ordering.h</a>&quot;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../de/daf/monomial-ordering_8h_source.html">interface/monomial-ordering.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/db0/_exponent_vector_8hpp_source.html">ExponentVector.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../d9/d64/imonorder_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -103,14 +104,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a71242be5605e7bc772ca672ba5c5a5f4"><td class="memItemLeft" align="right" valign="top">typedef int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/imonorder_8hpp_a71242be5605e7bc772ca672ba5c5a5f4.html#a71242be5605e7bc772ca672ba5c5a5f4">exponents</a></td></tr>
-<tr class="separator:a71242be5605e7bc772ca672ba5c5a5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b3f8e88af1cc26075f7af0f961adb96"><td class="memItemLeft" align="right" valign="top">typedef int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/imonorder_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a></td></tr>
 <tr class="separator:a4b3f8e88af1cc26075f7af0f961adb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13d3bdee365b150ed6cbd411d3a30490"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/imonorder_8hpp_a13d3bdee365b150ed6cbd411d3a30490.html#a13d3bdee365b150ed6cbd411d3a30490">deg_t</a></td></tr>
 <tr class="separator:a13d3bdee365b150ed6cbd411d3a30490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86222e014a79b9a6a6b2c041789da32b"><td class="memItemLeft" align="right" valign="top">typedef const int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/imonorder_8hpp_a86222e014a79b9a6a6b2c041789da32b.html#a86222e014a79b9a6a6b2c041789da32b">const_exponents</a></td></tr>
-<tr class="separator:a86222e014a79b9a6a6b2c041789da32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a478c7f9d1b96319cce705c05e567cc29"><td class="memItemLeft" align="right" valign="top">typedef const int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/imonorder_8hpp_a478c7f9d1b96319cce705c05e567cc29.html#a478c7f9d1b96319cce705c05e567cc29">const_monomial</a></td></tr>
 <tr class="separator:a478c7f9d1b96319cce705c05e567cc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -120,10 +117,10 @@ Functions</h2></td></tr>
 <tr class="separator:a315ce8276bc53e1b68b12d4006546f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af4e747746bdc98a5101fbe2793f1f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/imonorder_8hpp_a6af4e747746bdc98a5101fbe2793f1f4.html#a6af4e747746bdc98a5101fbe2793f1f4">monomialOrderFree</a> (MonomialOrder *mo)</td></tr>
 <tr class="separator:a6af4e747746bdc98a5101fbe2793f1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa7493c5784997ce7ed2da751d0776d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/imonorder_8hpp_aaa7493c5784997ce7ed2da751d0776d8.html#aaa7493c5784997ce7ed2da751d0776d8">monomialOrderEncodeFromActualExponents</a> (const MonomialOrder *mo, <a class="el" href="../../d9/d64/imonorder_8hpp_a86222e014a79b9a6a6b2c041789da32b.html#a86222e014a79b9a6a6b2c041789da32b">const_exponents</a> a, <a class="el" href="../../d8/d11/gbring_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a> b)</td></tr>
+<tr class="memitem:aaa7493c5784997ce7ed2da751d0776d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/imonorder_8hpp_aaa7493c5784997ce7ed2da751d0776d8.html#aaa7493c5784997ce7ed2da751d0776d8">monomialOrderEncodeFromActualExponents</a> (const MonomialOrder *mo, <a class="el" href="../../da/db0/_exponent_vector_8hpp_a21989b3e062e85cbe627cf36cf1bb395.html#a21989b3e062e85cbe627cf36cf1bb395">const_exponents</a> a, <a class="el" href="../../d8/d11/gbring_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a> b)</td></tr>
 <tr class="separator:aaa7493c5784997ce7ed2da751d0776d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c6f16839f79adfb20e54fea4ad69ac8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/imonorder_8hpp_a4c6f16839f79adfb20e54fea4ad69ac8.html#a4c6f16839f79adfb20e54fea4ad69ac8">monomialOrderDecodeToActualExponents</a> (const MonomialOrder *mo, <a class="el" href="../../d9/d64/imonorder_8hpp_a478c7f9d1b96319cce705c05e567cc29.html#a478c7f9d1b96319cce705c05e567cc29">const_monomial</a> a, <a class="el" href="../../dc/da9/dpoly_8hpp_a71242be5605e7bc772ca672ba5c5a5f4.html#a71242be5605e7bc772ca672ba5c5a5f4">exponents</a> b)</td></tr>
-<tr class="separator:a4c6f16839f79adfb20e54fea4ad69ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba8c2c430ad0c4fe901f0755633a386"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/imonorder_8hpp_a2ba8c2c430ad0c4fe901f0755633a386.html#a2ba8c2c430ad0c4fe901f0755633a386">monomialOrderDecodeToActualExponents</a> (const MonomialOrder *mo, <a class="el" href="../../d9/d64/imonorder_8hpp_a478c7f9d1b96319cce705c05e567cc29.html#a478c7f9d1b96319cce705c05e567cc29">const_monomial</a> a, <a class="el" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> b)</td></tr>
+<tr class="separator:a2ba8c2c430ad0c4fe901f0755633a386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36d0feffd54b91eb90db0ce981625262"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/imonorder_8hpp_a36d0feffd54b91eb90db0ce981625262.html#a36d0feffd54b91eb90db0ce981625262">laurentVariables</a> (const MonomialOrder *mo)</td></tr>
 <tr class="separator:a36d0feffd54b91eb90db0ce981625262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -133,7 +130,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d9/d64/imonorder_8hpp.html">imonorder.hpp</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:51:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

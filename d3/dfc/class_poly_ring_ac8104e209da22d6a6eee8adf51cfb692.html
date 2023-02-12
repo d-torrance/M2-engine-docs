@@ -117,12 +117,12 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ac8104e209da22d
 
 <p>Implements <a class="el" href="../../d5/d58/class_polynomial_ring_a6e24f0f4ca210a62d04b97a683b4cd09.html#a6e24f0f4ca210a62d04b97a683b4cd09">PolynomialRing</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02104">2104</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l02105"></a><span class="lineno"> 2105</span>&#160;{</div>
-<div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *t = a; t != 0; t = t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>)</div>
-<div class="line"><a name="l02107"></a><span class="lineno"> 2107</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_a17e7622250b0cf7b741a215931ccbe81.html#a17e7622250b0cf7b741a215931ccbe81">in_subring</a>(nslots, t-&gt;monom)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l02108"></a><span class="lineno"> 2108</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l02109"></a><span class="lineno"> 2109</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02105">2105</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;{</div>
+<div class="line"><a name="l02107"></a><span class="lineno"> 2107</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *t = a; t != 0; t = t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>)</div>
+<div class="line"><a name="l02108"></a><span class="lineno"> 2108</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_a17e7622250b0cf7b741a215931ccbe81.html#a17e7622250b0cf7b741a215931ccbe81">in_subring</a>(nslots, t-&gt;monom)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02109"></a><span class="lineno"> 2109</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l02110"></a><span class="lineno"> 2110</span>&#160;}</div>
 <div class="ttc" id="aclass_monoid_a17e7622250b0cf7b741a215931ccbe81_html_a17e7622250b0cf7b741a215931ccbe81"><div class="ttname"><a href="../../d9/db1/class_monoid_a17e7622250b0cf7b741a215931ccbe81.html#a17e7622250b0cf7b741a215931ccbe81">Monoid::in_subring</a></div><div class="ttdeci">bool in_subring(int nslots, const_monomial m) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5c/monoid_8cpp_source.html#l00438">monoid.cpp:438</a></div></div>
 <div class="ttc" id="aclass_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494_html_a7ea73f5905aee6f71bb8a4f1ce54c494"><div class="ttname"><a href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">PolynomialRing::M_</a></div><div class="ttdeci">const Monoid * M_</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/polyring_8hpp_source.html#l00067">polyring.hpp:67</a></div></div>
 <div class="ttc" id="astruct_nterm_a395044af0f071742b5d1fdeb74a9efa2_html_a395044af0f071742b5d1fdeb74a9efa2"><div class="ttname"><a href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">Nterm::next</a></div><div class="ttdeci">Nterm * next</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00099">ringelem.hpp:99</a></div></div>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ac8104e209da22d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

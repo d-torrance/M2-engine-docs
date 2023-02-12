@@ -21,6 +21,7 @@ var dir_cb190e7768d1e7821fcc13efdd565523 =
     [ "M2-replacement.c", "d7/dce/_m2-replacement_8c.html", "d7/dce/_m2-replacement_8c" ],
     [ "M2mem-replacement.c", "d9/df2/_m2mem-replacement_8c.html", "d9/df2/_m2mem-replacement_8c" ],
     [ "M2mem-replacement.h", "d1/d81/_m2mem-replacement_8h.html", "d1/d81/_m2mem-replacement_8h" ],
+    [ "MonoidTest.cpp", "d7/db1/_monoid_test_8cpp.html", "d7/db1/_monoid_test_8cpp" ],
     [ "NCGroebnerTest.cpp", "d2/dc0/_n_c_groebner_test_8cpp.html", "d2/dc0/_n_c_groebner_test_8cpp" ],
     [ "PointArray.cpp", "df/db9/_point_array_8cpp.html", "df/db9/_point_array_8cpp" ],
     [ "ResTest.cpp", "db/d92/_res_test_8cpp.html", "db/d92/_res_test_8cpp" ],

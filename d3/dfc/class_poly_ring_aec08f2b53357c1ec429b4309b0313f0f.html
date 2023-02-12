@@ -129,26 +129,26 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_aec08f2b53357c1
 
 <p>Implements <a class="el" href="../../d5/d58/class_polynomial_ring_a41512235bebbda071253f007f0c409ce.html#a41512235bebbda071253f007f0c409ce">PolynomialRing</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l00572">572</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;{</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *t = f;</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  <span class="keywordflow">if</span> (t == NULL)</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    {</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;      lo = hi = 0;</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    }</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;  <span class="keywordtype">int</span> e = <a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_ad7520147437e719f96936744e72fac75.html#ad7520147437e719f96936744e72fac75">degree_weights</a>(t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>, wts);</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  lo = hi = e;</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  <span class="keywordflow">for</span> (t = t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>; t != NULL; t = t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>)</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    {</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;      e = <a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_ad7520147437e719f96936744e72fac75.html#ad7520147437e719f96936744e72fac75">degree_weights</a>(t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>, wts);</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;      <span class="keywordflow">if</span> (e &gt; hi)</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        hi = e;</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (e &lt; lo)</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        lo = e;</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    }</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;}</div>
-<div class="ttc" id="aclass_monoid_ad7520147437e719f96936744e72fac75_html_ad7520147437e719f96936744e72fac75"><div class="ttname"><a href="../../d9/db1/class_monoid_ad7520147437e719f96936744e72fac75.html#ad7520147437e719f96936744e72fac75">Monoid::degree_weights</a></div><div class="ttdeci">int degree_weights(const_monomial m, M2_arrayint wts) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5c/monoid_8cpp_source.html#l00668">monoid.cpp:668</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l00573">573</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;{</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *t = f;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;  <span class="keywordflow">if</span> (t == NULL)</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    {</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;      lo = hi = 0;</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    }</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  <span class="keywordtype">int</span> e = <a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_ad7520147437e719f96936744e72fac75.html#ad7520147437e719f96936744e72fac75">degree_weights</a>(t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>, wts);</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  lo = hi = e;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;  <span class="keywordflow">for</span> (t = t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>; t != NULL; t = t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>)</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    {</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;      e = <a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_ad7520147437e719f96936744e72fac75.html#ad7520147437e719f96936744e72fac75">degree_weights</a>(t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>, wts);</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;      <span class="keywordflow">if</span> (e &gt; hi)</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        hi = e;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (e &lt; lo)</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        lo = e;</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    }</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;}</div>
+<div class="ttc" id="aclass_monoid_ad7520147437e719f96936744e72fac75_html_ad7520147437e719f96936744e72fac75"><div class="ttname"><a href="../../d9/db1/class_monoid_ad7520147437e719f96936744e72fac75.html#ad7520147437e719f96936744e72fac75">Monoid::degree_weights</a></div><div class="ttdeci">int degree_weights(const_monomial m, M2_arrayint wts) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5c/monoid_8cpp_source.html#l00686">monoid.cpp:686</a></div></div>
 <div class="ttc" id="aclass_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494_html_a7ea73f5905aee6f71bb8a4f1ce54c494"><div class="ttname"><a href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">PolynomialRing::M_</a></div><div class="ttdeci">const Monoid * M_</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/polyring_8hpp_source.html#l00067">polyring.hpp:67</a></div></div>
 <div class="ttc" id="astruct_nterm_a395044af0f071742b5d1fdeb74a9efa2_html_a395044af0f071742b5d1fdeb74a9efa2"><div class="ttname"><a href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">Nterm::next</a></div><div class="ttdeci">Nterm * next</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00099">ringelem.hpp:99</a></div></div>
 <div class="ttc" id="astruct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7_html_a7d8ae0809fcf1cf7cdb9aa339538e6e7"><div class="ttname"><a href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">Nterm::monom</a></div><div class="ttdeci">int monom[1]</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00101">ringelem.hpp:101</a></div></div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_aec08f2b53357c1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

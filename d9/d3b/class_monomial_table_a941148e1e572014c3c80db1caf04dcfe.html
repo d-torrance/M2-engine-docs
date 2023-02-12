@@ -97,33 +97,33 @@ $(document).ready(function(){initNavTree('d9/d3b/class_monomial_table_a941148e1e
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d3c/montable_8cpp_source.html#l00418">418</a> of file <a class="el" href="../../df/d3c/montable_8cpp_source.html">montable.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;{</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  mon_term *t, *head;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  <span class="comment">/* Loop through each component, display monomials(val) 10 per line */</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  fprintf(fil,</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;          <span class="stringliteral">&quot;monomial table: %d vars, %d components, %d elements\n&quot;</span>,</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;          this-&gt;<a class="code" href="../../d9/d3b/class_monomial_table_a87232c25ae1f8ca7d936c756db647e76.html#a87232c25ae1f8ca7d936c756db647e76">_nvars</a>,</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;          <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="../../d9/d3b/class_monomial_table_aa339a0a63a2b3d6d2a0219e3b2ed351e.html#aa339a0a63a2b3d6d2a0219e3b2ed351e">_head</a>.size()),</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;          this-&gt;_count);</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 1; i &lt; <a class="code" href="../../d9/d3b/class_monomial_table_aa339a0a63a2b3d6d2a0219e3b2ed351e.html#aa339a0a63a2b3d6d2a0219e3b2ed351e">_head</a>.size(); i++)</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    {</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      head = this-&gt;<a class="code" href="../../d9/d3b/class_monomial_table_aa339a0a63a2b3d6d2a0219e3b2ed351e.html#aa339a0a63a2b3d6d2a0219e3b2ed351e">_head</a>[i];</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;      <span class="keywordflow">if</span> (head-&gt;_next == head) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;      fprintf(fil, <span class="stringliteral">&quot;  -- component %d --\n&quot;</span>, i);</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;      <span class="keywordflow">for</span> (t = head-&gt;_next; t != head; t = t-&gt;_next)</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        {</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;          <a class="code" href="../../df/d3c/montable_8cpp_ae42ac51e3ee4e183f445155824b21dee.html#ae42ac51e3ee4e183f445155824b21dee">exponents_show</a>(fil, t-&gt;_lead, <a class="code" href="../../d9/d3b/class_monomial_table_a87232c25ae1f8ca7d936c756db647e76.html#a87232c25ae1f8ca7d936c756db647e76">_nvars</a>);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;          fprintf(fil, <span class="stringliteral">&quot; (%d)\n&quot;</span>, t-&gt;_val);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        }</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    }</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  fprintf(fil, <span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;}</div>
-<div class="ttc" id="aclass_monomial_table_a87232c25ae1f8ca7d936c756db647e76_html_a87232c25ae1f8ca7d936c756db647e76"><div class="ttname"><a href="../../d9/d3b/class_monomial_table_a87232c25ae1f8ca7d936c756db647e76.html#a87232c25ae1f8ca7d936c756db647e76">MonomialTable::_nvars</a></div><div class="ttdeci">int _nvars</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcc/montable_8hpp_source.html#l00088">montable.hpp:88</a></div></div>
-<div class="ttc" id="aclass_monomial_table_aa339a0a63a2b3d6d2a0219e3b2ed351e_html_aa339a0a63a2b3d6d2a0219e3b2ed351e"><div class="ttname"><a href="../../d9/d3b/class_monomial_table_aa339a0a63a2b3d6d2a0219e3b2ed351e.html#aa339a0a63a2b3d6d2a0219e3b2ed351e">MonomialTable::_head</a></div><div class="ttdeci">gc_vector&lt; mon_term * &gt; _head</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcc/montable_8hpp_source.html#l00090">montable.hpp:90</a></div></div>
-<div class="ttc" id="amontable_8cpp_ae42ac51e3ee4e183f445155824b21dee_html_ae42ac51e3ee4e183f445155824b21dee"><div class="ttname"><a href="../../df/d3c/montable_8cpp_ae42ac51e3ee4e183f445155824b21dee.html#ae42ac51e3ee4e183f445155824b21dee">exponents_show</a></div><div class="ttdeci">static void exponents_show(FILE *fil, exponents exp, int nvars)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d3c/montable_8cpp_source.html#l00033">montable.cpp:33</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../df/d3c/montable_8cpp_source.html#l00419">419</a> of file <a class="el" href="../../df/d3c/montable_8cpp_source.html">montable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;{</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  mon_term *t, *head;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <span class="comment">/* Loop through each component, display monomials(val) 10 per line */</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  fprintf(fil,</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;          <span class="stringliteral">&quot;monomial table: %d vars, %d components, %d elements\n&quot;</span>,</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;          this-&gt;<a class="code" href="../../d9/d3b/class_monomial_table_a87232c25ae1f8ca7d936c756db647e76.html#a87232c25ae1f8ca7d936c756db647e76">_nvars</a>,</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;          <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="../../d9/d3b/class_monomial_table_aa339a0a63a2b3d6d2a0219e3b2ed351e.html#aa339a0a63a2b3d6d2a0219e3b2ed351e">_head</a>.size()),</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;          this-&gt;_count);</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 1; i &lt; <a class="code" href="../../d9/d3b/class_monomial_table_aa339a0a63a2b3d6d2a0219e3b2ed351e.html#aa339a0a63a2b3d6d2a0219e3b2ed351e">_head</a>.size(); i++)</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    {</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;      head = this-&gt;<a class="code" href="../../d9/d3b/class_monomial_table_aa339a0a63a2b3d6d2a0219e3b2ed351e.html#aa339a0a63a2b3d6d2a0219e3b2ed351e">_head</a>[i];</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;      <span class="keywordflow">if</span> (head-&gt;_next == head) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;      fprintf(fil, <span class="stringliteral">&quot;  -- component %d --\n&quot;</span>, i);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;      <span class="keywordflow">for</span> (t = head-&gt;_next; t != head; t = t-&gt;_next)</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        {</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;          <a class="code" href="../../df/d3c/montable_8cpp_aecf533644e39a6c870a0a212fb99af7d.html#aecf533644e39a6c870a0a212fb99af7d">exponents_show</a>(fil, t-&gt;_lead, <a class="code" href="../../d9/d3b/class_monomial_table_a87232c25ae1f8ca7d936c756db647e76.html#a87232c25ae1f8ca7d936c756db647e76">_nvars</a>);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;          fprintf(fil, <span class="stringliteral">&quot; (%d)\n&quot;</span>, t-&gt;_val);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        }</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    }</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  fprintf(fil, <span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;}</div>
+<div class="ttc" id="aclass_monomial_table_a87232c25ae1f8ca7d936c756db647e76_html_a87232c25ae1f8ca7d936c756db647e76"><div class="ttname"><a href="../../d9/d3b/class_monomial_table_a87232c25ae1f8ca7d936c756db647e76.html#a87232c25ae1f8ca7d936c756db647e76">MonomialTable::_nvars</a></div><div class="ttdeci">int _nvars</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcc/montable_8hpp_source.html#l00087">montable.hpp:87</a></div></div>
+<div class="ttc" id="aclass_monomial_table_aa339a0a63a2b3d6d2a0219e3b2ed351e_html_aa339a0a63a2b3d6d2a0219e3b2ed351e"><div class="ttname"><a href="../../d9/d3b/class_monomial_table_aa339a0a63a2b3d6d2a0219e3b2ed351e.html#aa339a0a63a2b3d6d2a0219e3b2ed351e">MonomialTable::_head</a></div><div class="ttdeci">gc_vector&lt; mon_term * &gt; _head</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcc/montable_8hpp_source.html#l00089">montable.hpp:89</a></div></div>
+<div class="ttc" id="amontable_8cpp_aecf533644e39a6c870a0a212fb99af7d_html_aecf533644e39a6c870a0a212fb99af7d"><div class="ttname"><a href="../../df/d3c/montable_8cpp_aecf533644e39a6c870a0a212fb99af7d.html#aecf533644e39a6c870a0a212fb99af7d">exponents_show</a></div><div class="ttdeci">static void exponents_show(FILE *fil, exponents_t exp, int nvars)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d3c/montable_8cpp_source.html#l00034">montable.cpp:34</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d9/d3b/class_monomial_table_aa339a0a63a2b3d6d2a0219e3b2ed351e.html#aa339a0a63a2b3d6d2a0219e3b2ed351e">_head</a>, <a class="el" href="../../d7/d75/struct_monomial_table_1_1mon__term_ac43edb48cb815252c5713ae536c7b77c.html#ac43edb48cb815252c5713ae536c7b77c">MonomialTable::mon_term::_lead</a>, <a class="el" href="../../d7/d75/struct_monomial_table_1_1mon__term_a733d3dde7af5574b1eaa7ee94c334f62.html#a733d3dde7af5574b1eaa7ee94c334f62">MonomialTable::mon_term::_next</a>, <a class="el" href="../../d9/d3b/class_monomial_table_a87232c25ae1f8ca7d936c756db647e76.html#a87232c25ae1f8ca7d936c756db647e76">_nvars</a>, <a class="el" href="../../d7/d75/struct_monomial_table_1_1mon__term_a177c606e116e63b6bdc90b4aad925b66.html#a177c606e116e63b6bdc90b4aad925b66">MonomialTable::mon_term::_val</a>, and <a class="el" href="../../df/d3c/montable_8cpp_ae42ac51e3ee4e183f445155824b21dee.html#ae42ac51e3ee4e183f445155824b21dee">exponents_show()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d3b/class_monomial_table_aa339a0a63a2b3d6d2a0219e3b2ed351e.html#aa339a0a63a2b3d6d2a0219e3b2ed351e">_head</a>, <a class="el" href="../../d7/d75/struct_monomial_table_1_1mon__term_a669c593436853fb20e1b719ad6c3a767.html#a669c593436853fb20e1b719ad6c3a767">MonomialTable::mon_term::_lead</a>, <a class="el" href="../../d7/d75/struct_monomial_table_1_1mon__term_a733d3dde7af5574b1eaa7ee94c334f62.html#a733d3dde7af5574b1eaa7ee94c334f62">MonomialTable::mon_term::_next</a>, <a class="el" href="../../d9/d3b/class_monomial_table_a87232c25ae1f8ca7d936c756db647e76.html#a87232c25ae1f8ca7d936c756db647e76">_nvars</a>, <a class="el" href="../../d7/d75/struct_monomial_table_1_1mon__term_a177c606e116e63b6bdc90b4aad925b66.html#a177c606e116e63b6bdc90b4aad925b66">MonomialTable::mon_term::_val</a>, and <a class="el" href="../../df/d3c/montable_8cpp_aecf533644e39a6c870a0a212fb99af7d.html#aecf533644e39a6c870a0a212fb99af7d">exponents_show()</a>.</p>
 
 </div>
 </div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('d9/d3b/class_monomial_table_a941148e1e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d3b/class_monomial_table.html">MonomialTable</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

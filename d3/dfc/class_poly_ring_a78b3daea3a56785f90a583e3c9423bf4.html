@@ -107,17 +107,17 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a78b3daea3a5678
 
 <p>Implements <a class="el" href="../../dd/dcf/class_ring_a84bd4fdbdd4e1e44b2b24ad800138e1c.html#a84bd4fdbdd4e1e44b2b24ad800138e1c">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l00645">645</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;{</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *a = f;</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> head;</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *result = &amp;head;</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  <span class="keywordflow">for</span> (; a != NULL; a = a-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>, result = result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>)</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <a class="code" href="../../d3/dfc/class_poly_ring_a246ef1ae5779d3bd5fa8f27b0425d76e.html#a246ef1ae5779d3bd5fa8f27b0425d76e">copy_term</a>(a);</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;  result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = NULL;</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;  <span class="keywordflow">return</span> head.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;}</div>
-<div class="ttc" id="aclass_poly_ring_a246ef1ae5779d3bd5fa8f27b0425d76e_html_a246ef1ae5779d3bd5fa8f27b0425d76e"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_a246ef1ae5779d3bd5fa8f27b0425d76e.html#a246ef1ae5779d3bd5fa8f27b0425d76e">PolyRing::copy_term</a></div><div class="ttdeci">Nterm * copy_term(const Nterm *t) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l00160">poly.cpp:160</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l00646">646</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;{</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *a = f;</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> head;</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *result = &amp;head;</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  <span class="keywordflow">for</span> (; a != NULL; a = a-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>, result = result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>)</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <a class="code" href="../../d3/dfc/class_poly_ring_a246ef1ae5779d3bd5fa8f27b0425d76e.html#a246ef1ae5779d3bd5fa8f27b0425d76e">copy_term</a>(a);</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;  result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = NULL;</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;  <span class="keywordflow">return</span> head.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;}</div>
+<div class="ttc" id="aclass_poly_ring_a246ef1ae5779d3bd5fa8f27b0425d76e_html_a246ef1ae5779d3bd5fa8f27b0425d76e"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_a246ef1ae5779d3bd5fa8f27b0425d76e.html#a246ef1ae5779d3bd5fa8f27b0425d76e">PolyRing::copy_term</a></div><div class="ttdeci">Nterm * copy_term(const Nterm *t) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l00161">poly.cpp:161</a></div></div>
 <div class="ttc" id="astruct_nterm_a395044af0f071742b5d1fdeb74a9efa2_html_a395044af0f071742b5d1fdeb74a9efa2"><div class="ttname"><a href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">Nterm::next</a></div><div class="ttdeci">Nterm * next</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00099">ringelem.hpp:99</a></div></div>
 <div class="ttc" id="astruct_nterm_html"><div class="ttname"><a href="../../d0/dbc/struct_nterm.html">Nterm</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00097">ringelem.hpp:98</a></div></div>
 </div><!-- fragment -->
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a78b3daea3a5678
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

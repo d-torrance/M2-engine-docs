@@ -87,9 +87,10 @@ $(document).ready(function(){initNavTree('d0/d3f/util_8hpp.html','../../'); init
 <div class="title">util.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d1/db4/engine-includes_8hpp_source.html">engine-includes.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;M2mem.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/db4/engine-includes_8hpp_source.html">engine-includes.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../d0/d3f/util_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -103,14 +104,14 @@ Functions</h2></td></tr>
 <tr class="separator:a8306892126f38260d996b5f27e0182bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadf153b4918ef4ec44a539df61798977"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3f/util_8hpp_aadf153b4918ef4ec44a539df61798977.html#aadf153b4918ef4ec44a539df61798977">M2_ArrayString_to_stdvector</a> (M2_ArrayString strs)</td></tr>
 <tr class="separator:aadf153b4918ef4ec44a539df61798977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab290d85ed3b3cacaca14add6b8fb2590"><td class="memItemLeft" align="right" valign="top">M2_ArrayString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3f/util_8hpp_ab290d85ed3b3cacaca14add6b8fb2590.html#ab290d85ed3b3cacaca14add6b8fb2590">toM2ArrayString</a> (const std::vector&lt; std::string &gt; &amp;strs)</td></tr>
-<tr class="separator:ab290d85ed3b3cacaca14add6b8fb2590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2e838383f0dd6c07a0c0c9e0339f8b6"><td class="memTemplParams" colspan="2">template&lt;typename inttype &gt; </td></tr>
-<tr class="memitem:ae2e838383f0dd6c07a0c0c9e0339f8b6"><td class="memTemplItemLeft" align="right" valign="top">M2_arrayint&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d3f/util_8hpp_ae2e838383f0dd6c07a0c0c9e0339f8b6.html#ae2e838383f0dd6c07a0c0c9e0339f8b6">stdvector_to_M2_arrayint</a> (const std::vector&lt; inttype &gt; &amp;v)</td></tr>
-<tr class="separator:ae2e838383f0dd6c07a0c0c9e0339f8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd8984218915fa6a77064f017e672554"><td class="memTemplParams" colspan="2">template&lt;typename inttype &gt; </td></tr>
-<tr class="memitem:acd8984218915fa6a77064f017e672554"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; inttype &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d3f/util_8hpp_acd8984218915fa6a77064f017e672554.html#acd8984218915fa6a77064f017e672554">M2_arrayint_to_stdvector</a> (M2_arrayint arr)</td></tr>
-<tr class="separator:acd8984218915fa6a77064f017e672554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfe7e8ddc54d5a80194cc1e23ba87a7"><td class="memItemLeft" align="right" valign="top">M2_ArrayString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3f/util_8hpp_a9cfe7e8ddc54d5a80194cc1e23ba87a7.html#a9cfe7e8ddc54d5a80194cc1e23ba87a7">stdvector_to_M2_ArrayString</a> (const std::vector&lt; std::string &gt; &amp;strs)</td></tr>
+<tr class="separator:a9cfe7e8ddc54d5a80194cc1e23ba87a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30cf035ffee78e13404b2ee33a431597"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a30cf035ffee78e13404b2ee33a431597"><td class="memTemplItemLeft" align="right" valign="top">M2_arrayint&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d3f/util_8hpp_a30cf035ffee78e13404b2ee33a431597.html#a30cf035ffee78e13404b2ee33a431597">stdvector_to_M2_arrayint</a> (const std::vector&lt; <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt; &amp;v)</td></tr>
+<tr class="separator:a30cf035ffee78e13404b2ee33a431597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976464ef01db898f9624b213a038f15d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a976464ef01db898f9624b213a038f15d"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d3f/util_8hpp_a976464ef01db898f9624b213a038f15d.html#a976464ef01db898f9624b213a038f15d">M2_arrayint_to_stdvector</a> (M2_arrayint arr)</td></tr>
+<tr class="separator:a976464ef01db898f9624b213a038f15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -118,7 +119,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d0/d3f/util_8hpp.html">util.hpp</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

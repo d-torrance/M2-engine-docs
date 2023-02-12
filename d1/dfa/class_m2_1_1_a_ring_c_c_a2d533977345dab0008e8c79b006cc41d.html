@@ -115,27 +115,27 @@ $(document).ready(function(){initNavTree('d1/dfa/class_m2_1_1_a_ring_c_c_a2d5339
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/dbc/aring-_c_c_8hpp_source.html#l00172">172</a> of file <a class="el" href="../../da/dbc/aring-_c_c_8hpp_source.html">aring-CC.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="code" href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a5e9b093cd73c3ccc5b571fd2e27a0cac.html#a5e9b093cd73c3ccc5b571fd2e27a0cac">ElementType</a> result;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d1/d02/namespacempfr_a7af670164065bb2be4855f16210e6572.html#a7af670164065bb2be4855f16210e6572">fabs</a>(a.re) &gt;= <a class="code" href="../../d1/d02/namespacempfr_a7af670164065bb2be4855f16210e6572.html#a7af670164065bb2be4855f16210e6572">fabs</a>(a.im))</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = a.im / a.re;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordtype">double</span> denom = a.re + <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> * a.im;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        result.re = 1.0 / denom;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        result.im = -<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> / denom;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      }</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = a.re / a.im;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordtype">double</span> denom = a.im + <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> * a.re;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        result.re = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> / denom;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        result.im = -1.0 / denom;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      }</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="code" href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a2e894a4d63b23729d491e998ad66b44a.html#a2e894a4d63b23729d491e998ad66b44a">set</a>(res, result);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  }</div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_a2e894a4d63b23729d491e998ad66b44a_html_a2e894a4d63b23729d491e998ad66b44a"><div class="ttname"><a href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a2e894a4d63b23729d491e998ad66b44a.html#a2e894a4d63b23729d491e998ad66b44a">M2::ARingCC::set</a></div><div class="ttdeci">void set(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbc/aring-_c_c_8hpp_source.html#l00101">aring-CC.hpp:101</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_a5e9b093cd73c3ccc5b571fd2e27a0cac_html_a5e9b093cd73c3ccc5b571fd2e27a0cac"><div class="ttname"><a href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a5e9b093cd73c3ccc5b571fd2e27a0cac.html#a5e9b093cd73c3ccc5b571fd2e27a0cac">M2::ARingCC::ElementType</a></div><div class="ttdeci">elem ElementType</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbc/aring-_c_c_8hpp_source.html#l00030">aring-CC.hpp:30</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../da/dbc/aring-_c_c_8hpp_source.html#l00175">175</a> of file <a class="el" href="../../da/dbc/aring-_c_c_8hpp_source.html">aring-CC.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a5e9b093cd73c3ccc5b571fd2e27a0cac.html#a5e9b093cd73c3ccc5b571fd2e27a0cac">ElementType</a> result;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d1/d02/namespacempfr_a7af670164065bb2be4855f16210e6572.html#a7af670164065bb2be4855f16210e6572">fabs</a>(a.re) &gt;= <a class="code" href="../../d1/d02/namespacempfr_a7af670164065bb2be4855f16210e6572.html#a7af670164065bb2be4855f16210e6572">fabs</a>(a.im))</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = a.im / a.re;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordtype">double</span> denom = a.re + <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> * a.im;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        result.re = 1.0 / denom;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        result.im = -<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> / denom;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = a.re / a.im;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordtype">double</span> denom = a.im + <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> * a.re;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        result.re = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> / denom;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        result.im = -1.0 / denom;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a2e894a4d63b23729d491e998ad66b44a.html#a2e894a4d63b23729d491e998ad66b44a">set</a>(res, result);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  }</div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_a2e894a4d63b23729d491e998ad66b44a_html_a2e894a4d63b23729d491e998ad66b44a"><div class="ttname"><a href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a2e894a4d63b23729d491e998ad66b44a.html#a2e894a4d63b23729d491e998ad66b44a">M2::ARingCC::set</a></div><div class="ttdeci">void set(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbc/aring-_c_c_8hpp_source.html#l00104">aring-CC.hpp:104</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_a5e9b093cd73c3ccc5b571fd2e27a0cac_html_a5e9b093cd73c3ccc5b571fd2e27a0cac"><div class="ttname"><a href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a5e9b093cd73c3ccc5b571fd2e27a0cac.html#a5e9b093cd73c3ccc5b571fd2e27a0cac">M2::ARingCC::ElementType</a></div><div class="ttdeci">elem ElementType</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbc/aring-_c_c_8hpp_source.html#l00033">aring-CC.hpp:33</a></div></div>
 <div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 <div class="ttc" id="anamespacempfr_a7af670164065bb2be4855f16210e6572_html_a7af670164065bb2be4855f16210e6572"><div class="ttname"><a href="../../d1/d02/namespacempfr_a7af670164065bb2be4855f16210e6572.html#a7af670164065bb2be4855f16210e6572">mpfr::fabs</a></div><div class="ttdeci">const mpreal fabs(const mpreal &amp;x, mp_rnd_t r=mpreal::get_default_rnd())</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de1/mpreal_8h_source.html#l02268">mpreal.h:2268</a></div></div>
 </div><!-- fragment -->
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('d1/dfa/class_m2_1_1_a_ring_c_c_a2d5339
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d1/dfa/class_m2_1_1_a_ring_c_c.html">ARingCC</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

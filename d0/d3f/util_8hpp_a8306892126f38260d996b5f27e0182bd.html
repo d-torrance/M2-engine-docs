@@ -86,6 +86,9 @@ $(document).ready(function(){initNavTree('d0/d3f/util_8hpp_a8306892126f38260d996
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void M2_ArrayString_to_stdvector </td>
@@ -105,19 +108,24 @@ $(document).ready(function(){initNavTree('d0/d3f/util_8hpp_a8306892126f38260d996
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d2d/util_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../df/d2d/util_8cpp_source.html">util.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; strs-&gt;len; i++)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      M2_string a = strs-&gt;array[i];</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      std::string b((<span class="keywordtype">char</span> *)a-&gt;array, a-&gt;len);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      result.push_back(b);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d3f/util_8hpp_source.html#l00025">25</a> of file <a class="el" href="../../d0/d3f/util_8hpp_source.html">util.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  result.reserve(strs-&gt;len);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; strs-&gt;len; i++)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    result.push_back(<a class="code" href="../../d0/d3f/util_8hpp_a97f075769dcf9387e58f431595297615.html#a97f075769dcf9387e58f431595297615">string_M2_to_std</a>(strs-&gt;array[i]));</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="ttc" id="autil_8hpp_a97f075769dcf9387e58f431595297615_html_a97f075769dcf9387e58f431595297615"><div class="ttname"><a href="../../d0/d3f/util_8hpp_a97f075769dcf9387e58f431595297615.html#a97f075769dcf9387e58f431595297615">string_M2_to_std</a></div><div class="ttdeci">std::string string_M2_to_std(const M2_string s)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3f/util_8hpp_source.html#l00020">util.hpp:20</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d6/d92/interface_2aring_8cpp_a4ed43421becd8c742e10ef8756ee0e92.html#a4ed43421becd8c742e10ef8756ee0e92">rawARingTower1()</a>, <a class="el" href="../../d6/d92/interface_2aring_8cpp_ab31861d250102d3088f13460a7985c4e.html#ab31861d250102d3088f13460a7985c4e">rawARingTower2()</a>, and <a class="el" href="../../d6/da2/interface_2ring_8cpp_aacd8d3a00b8d3cf5f9390846e02bcfe5.html#aacd8d3a00b8d3cf5f9390846e02bcfe5">rawRingM2FreeAlgebra()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d3f/util_8hpp_a97f075769dcf9387e58f431595297615.html#a97f075769dcf9387e58f431595297615">string_M2_to_std()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d3f/util_8hpp_aadf153b4918ef4ec44a539df61798977.html#aadf153b4918ef4ec44a539df61798977">M2_ArrayString_to_stdvector()</a>, <a class="el" href="../../d6/d92/interface_2aring_8cpp_a4ed43421becd8c742e10ef8756ee0e92.html#a4ed43421becd8c742e10ef8756ee0e92">rawARingTower1()</a>, <a class="el" href="../../d6/d92/interface_2aring_8cpp_ab31861d250102d3088f13460a7985c4e.html#ab31861d250102d3088f13460a7985c4e">rawARingTower2()</a>, and <a class="el" href="../../d6/da2/interface_2ring_8cpp_aacd8d3a00b8d3cf5f9390846e02bcfe5.html#aacd8d3a00b8d3cf5f9390846e02bcfe5">rawRingM2FreeAlgebra()</a>.</p>
 
 </div>
 </div>
@@ -127,7 +135,7 @@ $(document).ready(function(){initNavTree('d0/d3f/util_8hpp_a8306892126f38260d996
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d0/d3f/util_8hpp.html">util.hpp</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:52:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 12 2023 01:50:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

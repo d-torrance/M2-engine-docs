@@ -32,7 +32,6 @@ var namespace_m2 =
     [ "Reader", "db/dc5/class_m2_1_1_reader.html", "db/dc5/class_m2_1_1_reader" ],
     [ "ARingPolynomial", "da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80", null ],
     [ "ARingQQ", "d7/d82/namespace_m2_a4020664aefa28984a9e3e19b16a31981.html#a4020664aefa28984a9e3e19b16a31981", null ],
-    [ "exponents", "d7/d82/namespace_m2_ae3262bf277751657ca75d6e2c2459330.html#ae3262bf277751657ca75d6e2c2459330", null ],
     [ "GFElement", "d7/d82/namespace_m2_acfb85825df61e90cf4452b02ae376188.html#acfb85825df61e90cf4452b02ae376188", null ],
     [ "RingID", "d4/de2/group__rings_ga7579b18152595d75b0bce712fbd605df.html#ga7579b18152595d75b0bce712fbd605df", [
       [ "ring_example", "d4/de2/group__rings_ga7579b18152595d75b0bce712fbd605df.html#gga7579b18152595d75b0bce712fbd605dfae3bb0466606f7302f5dc59a61b98d141", null ],
