@@ -1,5 +1,6 @@
 var NAVTREEINDEX43 =
 {
+"dc/d0d/class_res_monoid_dense_ab578a871869b60d6879bba687201e629.html#ab578a871869b60d6879bba687201e629":[6,0,284,9],
 "dc/d0d/class_res_monoid_dense_abae40d354fa93a9a7852f841b458380c.html#abae40d354fa93a9a7852f841b458380c":[6,0,284,32],
 "dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d":[6,0,284,52],
 "dc/d0d/class_res_monoid_dense_ac027eb51c2aada0ebc9db9cf37e04c41.html#ac027eb51c2aada0ebc9db9cf37e04c41":[6,0,284,37],
@@ -248,6 +249,5 @@ var NAVTREEINDEX43 =
 "dc/d7e/polynom_8hpp_source.html":[7,0,0,0,0,17],
 "dc/d87/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_01_4.html":[6,0,54],
 "dc/d87/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_01_4_a0f2c60bf54cb997cc6f763b27ac13229.html#a0f2c60bf54cb997cc6f763b27ac13229":[6,0,54,4],
-"dc/d87/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_01_4_a1072071f104cb82778f5a32e70042895.html#a1072071f104cb82778f5a32e70042895":[6,0,54,3],
-"dc/d87/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_01_4_a1cb288572220bad462e23cc70c6fccad.html#a1cb288572220bad462e23cc70c6fccad":[6,0,54,2]
+"dc/d87/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_01_4_a1072071f104cb82778f5a32e70042895.html#a1072071f104cb82778f5a32e70042895":[6,0,54,3]
 };

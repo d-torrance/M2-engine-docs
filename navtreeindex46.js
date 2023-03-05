@@ -1,5 +1,6 @@
 var NAVTREEINDEX46 =
 {
+"dd/d1b/class_m2_1_1_a_ring_q_q_flint_a519183b872f5e65e9a1af08fbb69b033.html#a519183b872f5e65e9a1af08fbb69b033":[4,0,10,22],
 "dd/d1b/class_m2_1_1_a_ring_q_q_flint_a54e91fc0e9e54796ab10c75abdb01047.html#a54e91fc0e9e54796ab10c75abdb01047":[4,0,10,41],
 "dd/d1b/class_m2_1_1_a_ring_q_q_flint_a58002d0d4fdad46cc635980cdaa4a859.html#a58002d0d4fdad46cc635980cdaa4a859":[4,0,10,17],
 "dd/d1b/class_m2_1_1_a_ring_q_q_flint_a5f53f2750dbf643acf390c4edc8acbe6.html#a5f53f2750dbf643acf390c4edc8acbe6":[4,0,10,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX46 =
 "dd/d77/aring-zzp-ffpack_8hpp_source.html":[7,0,0,0,41],
 "dd/d78/class_m2_1_1_a_ring_r_ri.html":[4,0,13],
 "dd/d78/class_m2_1_1_a_ring_r_ri_a01f009684e7289ab88836791eea7994b.html#a01f009684e7289ab88836791eea7994b":[4,0,13,23],
-"dd/d78/class_m2_1_1_a_ring_r_ri_a01ff0bd4cb8f06d7d38d079bd1dced36.html#a01ff0bd4cb8f06d7d38d079bd1dced36":[4,0,13,57],
-"dd/d78/class_m2_1_1_a_ring_r_ri_a02dde292c633569477c0122f6b7ba0d8.html#a02dde292c633569477c0122f6b7ba0d8":[4,0,13,17]
+"dd/d78/class_m2_1_1_a_ring_r_ri_a01ff0bd4cb8f06d7d38d079bd1dced36.html#a01ff0bd4cb8f06d7d38d079bd1dced36":[4,0,13,57]
 };

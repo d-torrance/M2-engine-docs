@@ -1,5 +1,6 @@
 var NAVTREEINDEX0 =
 {
+"":[5,0,9],
 "annotated.html":[6,0],
 "classes.html":[6,1],
 "d0/d03/struct_p_o_l_y.html":[6,0,241],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "d0/d5c/structres2__pair_aedc08fe18a754d8aa9bbd3abb97716de.html#aedc08fe18a754d8aa9bbd3abb97716de":[6,0,269,0],
 "d0/d5c/structres2__pair_af5fc482995c85d25a94473aea28ebe5b.html#af5fc482995c85d25a94473aea28ebe5b":[6,0,269,9],
 "d0/d65/class_naive_queue_configuration.html":[6,0,220],
-"d0/d65/class_naive_queue_configuration_a15b6f02426c9e80525f583facac13dc1.html#a15b6f02426c9e80525f583facac13dc1":[6,0,220,3],
-"d0/d65/class_naive_queue_configuration_a1a535c697c36929492039e955de4bff3.html#a1a535c697c36929492039e955de4bff3":[6,0,220,7]
+"d0/d65/class_naive_queue_configuration_a15b6f02426c9e80525f583facac13dc1.html#a15b6f02426c9e80525f583facac13dc1":[6,0,220,3]
 };

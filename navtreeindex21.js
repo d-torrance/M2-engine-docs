@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"d6/d42/class_fraction_field_a29ec248d7c1935e97d6f2e71fae73849.html#a29ec248d7c1935e97d6f2e71fae73849":[6,0,88,22],
 "d6/d42/class_fraction_field_a2f23ac0f7875fa0460a87759bdf9bd8e.html#a2f23ac0f7875fa0460a87759bdf9bd8e":[6,0,88,37],
 "d6/d42/class_fraction_field_a2f5da7a88eacc9ce3104991d95af5770.html#a2f5da7a88eacc9ce3104991d95af5770":[6,0,88,60],
 "d6/d42/class_fraction_field_a32750a2f1f8a315d0de34b42780e70c6.html#a32750a2f1f8a315d0de34b42780e70c6":[6,0,88,26],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "d6/d8d/class_m2_1_1_a_ring_g_f_givaro_ad109351972d6f61f2c678ee34dbe4024.html#ad109351972d6f61f2c678ee34dbe4024":[4,0,7,31],
 "d6/d8d/class_m2_1_1_a_ring_g_f_givaro_ad63c24892bb684406bd32717d241407f.html#ad63c24892bb684406bd32717d241407f":[4,0,7,32],
 "d6/d8d/class_m2_1_1_a_ring_g_f_givaro_ad6d10e45d0c20dd966bf0e7d1f148229.html#ad6d10e45d0c20dd966bf0e7d1f148229":[4,0,7,34],
-"d6/d8d/class_m2_1_1_a_ring_g_f_givaro_ad87397e7a9a52a95db4351cf8ffc75be.html#ad87397e7a9a52a95db4351cf8ffc75be":[4,0,7,42],
-"d6/d8d/class_m2_1_1_a_ring_g_f_givaro_adf289772397fe095cc57ea6b13494e31.html#adf289772397fe095cc57ea6b13494e31":[4,0,7,51]
+"d6/d8d/class_m2_1_1_a_ring_g_f_givaro_ad87397e7a9a52a95db4351cf8ffc75be.html#ad87397e7a9a52a95db4351cf8ffc75be":[4,0,7,42]
 };

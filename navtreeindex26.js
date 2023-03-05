@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"d6/dfd/class_local_ring_aea4f2e6ad3ff005d0893c2adc1539fb4.html#aea4f2e6ad3ff005d0893c2adc1539fb4":[6,0,153,46],
 "d6/dfd/class_local_ring_aeb0a0524a10974ccfc868ff923cbe314.html#aeb0a0524a10974ccfc868ff923cbe314":[6,0,153,37],
 "d6/dfd/class_local_ring_aefe76348cf9fc08d7e22838521cbc700.html#aefe76348cf9fc08d7e22838521cbc700":[6,0,153,54],
 "d6/dfd/class_local_ring_af62ed98cd676db9fcac3ec23113742bf.html#af62ed98cd676db9fcac3ec23113742bf":[6,0,153,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "d7/d23/class_concrete_vector_arithmetic_adee46c53111b098bc6729f1be988e286.html#adee46c53111b098bc6729f1be988e286":[6,0,39,6],
 "d7/d23/class_concrete_vector_arithmetic_ae0ec276c6e5c6af19d920620a3e8ca4f.html#ae0ec276c6e5c6af19d920620a3e8ca4f":[6,0,39,17],
 "d7/d23/class_concrete_vector_arithmetic_ae298bb82ad691912cd36f36f1c1f536a.html#ae298bb82ad691912cd36f36f1c1f536a":[6,0,39,25],
-"d7/d23/class_concrete_vector_arithmetic_ae72f99083ce1d3a6b9f634a17b9ceaaa.html#ae72f99083ce1d3a6b9f634a17b9ceaaa":[6,0,39,24],
-"d7/d2b/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_q_q_01_4.html":[6,0,53]
+"d7/d23/class_concrete_vector_arithmetic_ae72f99083ce1d3a6b9f634a17b9ceaaa.html#ae72f99083ce1d3a6b9f634a17b9ceaaa":[6,0,39,24]
 };

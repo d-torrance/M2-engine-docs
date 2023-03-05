@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"df/dc5/_ring_q_q_test_8cpp_a11742ed53791fcd126c2ca137ee1ea89.html#a11742ed53791fcd126c2ca137ee1ea89":[7,0,0,0,6,26,3],
 "df/dc5/_ring_q_q_test_8cpp_a377afbc3ef0b8e0782a7c7f63c225822.html#a377afbc3ef0b8e0782a7c7f63c225822":[7,0,0,0,6,26,4],
 "df/dc5/_ring_q_q_test_8cpp_a472c115d688575b8cfcbef8e94cde46a.html#a472c115d688575b8cfcbef8e94cde46a":[7,0,0,0,6,26,0],
 "df/dc5/_ring_q_q_test_8cpp_a56d7dc9c088cef17e87bcdd1302b6d86.html#a56d7dc9c088cef17e87bcdd1302b6d86":[7,0,0,0,6,26,9],
@@ -238,8 +239,8 @@ var NAVTREEINDEX55 =
 "dir_8ed8434bc3d991323934987a3489e746.html":[7,0,0,0,1],
 "dir_cb190e7768d1e7821fcc13efdd565523.html":[7,0,0,0,6],
 "files.html":[7,0],
-"functions.html":[6,3,0],
 "functions.html":[6,3,0,0],
+"functions.html":[6,3,0],
 "functions_a.html":[6,3,0,1],
 "functions_b.html":[6,3,0,2],
 "functions_c.html":[6,3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "functions_enum.html":[6,3,4],
 "functions_eval.html":[6,3,5],
 "functions_f.html":[6,3,0,6],
-"functions_func.html":[6,3,1],
-"functions_func.html":[6,3,1,0]
+"functions_func.html":[6,3,1]
 };

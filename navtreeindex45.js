@@ -1,5 +1,6 @@
 var NAVTREEINDEX45 =
 {
+"dc/dbd/f4-m2-interface_8hpp.html":[7,0,0,0,1,3],
 "dc/dbd/f4-m2-interface_8hpp_source.html":[7,0,0,0,1,3],
 "dc/dc0/class_m2_free_algebra.html":[6,0,155],
 "dc/dc0/class_m2_free_algebra_a062e2e62d8a939c675449c52a61b6d9f.html#a062e2e62d8a939c675449c52a61b6d9f":[6,0,155,51],
@@ -248,6 +249,5 @@ var NAVTREEINDEX45 =
 "dd/d1b/class_m2_1_1_a_ring_q_q_flint_a3ef86791920e22b5d125ca55a298a166.html#a3ef86791920e22b5d125ca55a298a166":[4,0,10,10],
 "dd/d1b/class_m2_1_1_a_ring_q_q_flint_a4914eebb41efa48fcd7b0a35ba063432.html#a4914eebb41efa48fcd7b0a35ba063432":[4,0,10,1],
 "dd/d1b/class_m2_1_1_a_ring_q_q_flint_a4d97fe4cb8763c082019f674afce847a.html#a4d97fe4cb8763c082019f674afce847a":[4,0,10,43],
-"dd/d1b/class_m2_1_1_a_ring_q_q_flint_a4e8cc8a01ac999ccbbb81ea81ecfd493.html#a4e8cc8a01ac999ccbbb81ea81ecfd493":[4,0,10,25],
-"dd/d1b/class_m2_1_1_a_ring_q_q_flint_a519183b872f5e65e9a1af08fbb69b033.html#a519183b872f5e65e9a1af08fbb69b033":[4,0,10,22]
+"dd/d1b/class_m2_1_1_a_ring_q_q_flint_a4e8cc8a01ac999ccbbb81ea81ecfd493.html#a4e8cc8a01ac999ccbbb81ea81ecfd493":[4,0,10,25]
 };

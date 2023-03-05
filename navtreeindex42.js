@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"db/d86/structenter__factory_aa79433311202af7ea618c58def011cec.html#aa79433311202af7ea618c58def011cec":[6,0,69,5],
 "db/d8e/class_res_polynomial.html":[6,0,290],
 "db/d8e/class_res_polynomial_a0174c8e8461e817ba578845eb70d21c4.html#a0174c8e8461e817ba578845eb70d21c4":[6,0,290,1],
 "db/d8e/class_res_polynomial_a0c321ae803ee4c698276fbde3b843062.html#a0c321ae803ee4c698276fbde3b843062":[6,0,290,11],
@@ -119,8 +120,8 @@ var NAVTREEINDEX42 =
 "db/dc4/_ring_z_z_test_8cpp_source.html":[7,0,0,0,6,31],
 "db/dc5/class_m2_1_1_reader.html":[6,0,2,25],
 "db/dc5/class_m2_1_1_reader_a1253c0d77d8a9e54e226141d95ea3e07.html#a1253c0d77d8a9e54e226141d95ea3e07":[6,0,2,25,5],
-"db/dc5/class_m2_1_1_reader_a27313c2fa0f969df4fdd9f9fd3aaf77b.html#a27313c2fa0f969df4fdd9f9fd3aaf77b":[6,0,2,25,2],
 "db/dc5/class_m2_1_1_reader_a27313c2fa0f969df4fdd9f9fd3aaf77b.html#a27313c2fa0f969df4fdd9f9fd3aaf77b":[6,0,2,25,4],
+"db/dc5/class_m2_1_1_reader_a27313c2fa0f969df4fdd9f9fd3aaf77b.html#a27313c2fa0f969df4fdd9f9fd3aaf77b":[6,0,2,25,2],
 "db/dc5/class_m2_1_1_reader_aaa2a47892cf1842fb416e9294cfe1962.html#aaa2a47892cf1842fb416e9294cfe1962":[6,0,2,25,3],
 "db/dc5/class_m2_1_1_reader_af93d79bf212a90e1ffc59dd061e6a918.html#af93d79bf212a90e1ffc59dd061e6a918":[6,0,2,25,1],
 "db/dc5/class_m2_1_1_reader_af969cbca21b9b827a179f343dc4d5b13.html#af969cbca21b9b827a179f343dc4d5b13":[6,0,2,25,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "dc/d0d/class_res_monoid_dense_aaabef2cbf5a15d16dd7cd800b3a41641.html#aaabef2cbf5a15d16dd7cd800b3a41641":[6,0,284,0],
 "dc/d0d/class_res_monoid_dense_aafaadd9e487a17c8b50b55d67c5b2284.html#aafaadd9e487a17c8b50b55d67c5b2284":[6,0,284,12],
 "dc/d0d/class_res_monoid_dense_ab3c4c5765aa8998db51a6acdd82db0be.html#ab3c4c5765aa8998db51a6acdd82db0be":[6,0,284,26],
-"dc/d0d/class_res_monoid_dense_ab46270cb60d3d277c5c09e343ab4959a.html#ab46270cb60d3d277c5c09e343ab4959a":[6,0,284,55],
-"dc/d0d/class_res_monoid_dense_ab578a871869b60d6879bba687201e629.html#ab578a871869b60d6879bba687201e629":[6,0,284,9]
+"dc/d0d/class_res_monoid_dense_ab46270cb60d3d277c5c09e343ab4959a.html#ab46270cb60d3d277c5c09e343ab4959a":[6,0,284,55]
 };

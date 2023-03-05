@@ -1,5 +1,6 @@
 var NAVTREEINDEX40 =
 {
+"da/dc3/class_d_mat_acbd201ab89479b7cac4e99f08228a179.html#acbd201ab89479b7cac4e99f08228a179":[6,0,44,10],
 "da/dc3/class_d_mat_acd9d44a2501d236d5e0a9259b0ca2b78.html#acd9d44a2501d236d5e0a9259b0ca2b78":[6,0,44,15],
 "da/dc3/class_d_mat_ae96570ac0d611add9bbe53140cb90f2c.html#ae96570ac0d611add9bbe53140cb90f2c":[6,0,44,5],
 "da/dc3/class_d_mat_aeda1f445aec23f34c0d23f42b0af0fc6.html#aeda1f445aec23f34c0d23f42b0af0fc6":[6,0,44,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX40 =
 "db/d22/class_m2_free_algebra_quotient_af7f4c33378f08e2551f4fa344471b411.html#af7f4c33378f08e2551f4fa344471b411":[6,0,157,27],
 "db/d22/class_m2_free_algebra_quotient_afdcdf2d3a1b6d5220fc0bf053168a4f2.html#afdcdf2d3a1b6d5220fc0bf053168a4f2":[6,0,157,49],
 "db/d23/gausser_8cpp.html":[7,0,0,0,1,13],
-"db/d23/gausser_8cpp_source.html":[7,0,0,0,1,13],
-"db/d26/class_minimal_primes.html":[6,0,175]
+"db/d23/gausser_8cpp_source.html":[7,0,0,0,1,13]
 };

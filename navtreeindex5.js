@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"d1/d07/classres__level_a4c9f67141bcb8cd5f060500022d11e75.html#a4c9f67141bcb8cd5f060500022d11e75":[6,0,274,2],
 "d1/d07/classres__level_a902a22bfe716adc646e50dfd0241df74.html#a902a22bfe716adc646e50dfd0241df74":[6,0,274,4],
 "d1/d07/classres__level_aa6662ced932015e39fcd4cb6e1558c3a.html#aa6662ced932015e39fcd4cb6e1558c3a":[6,0,274,6],
 "d1/d07/classres__level_ac0d9ee3c7670641571d1fd974b50726f.html#ac0d9ee3c7670641571d1fd974b50726f":[6,0,274,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "d1/d36/res-memblock_8hpp.html":[7,0,0,0,5,16],
 "d1/d36/res-memblock_8hpp_source.html":[7,0,0,0,5,16],
 "d1/d42/class_exponent_vector.html":[6,0,72],
-"d1/d42/class_exponent_vector_a044e2127bc4c3969a4f7a45f798411c4.html#a044e2127bc4c3969a4f7a45f798411c4":[6,0,72,1],
-"d1/d42/class_exponent_vector_a0a48294b98988ea1411ad87ea42ac745.html#a0a48294b98988ea1411ad87ea42ac745":[6,0,72,20]
+"d1/d42/class_exponent_vector_a044e2127bc4c3969a4f7a45f798411c4.html#a044e2127bc4c3969a4f7a45f798411c4":[6,0,72,1]
 };

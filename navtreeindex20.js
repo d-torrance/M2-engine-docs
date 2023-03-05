@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"d6/d0d/structbinomial_g_b_1_1monomial__list_aad7dd95a359cd8b03523d4b53cf201a6.html#aad7dd95a359cd8b03523d4b53cf201a6":[6,0,20,2,1],
 "d6/d0d/structbinomial_g_b_1_1monomial__list_abf907f192ab173702b5eb804079ea3a7.html#abf907f192ab173702b5eb804079ea3a7":[6,0,20,2,4],
 "d6/d10/class_f4_monomial_lookup_table_t.html":[6,0,77],
 "d6/d10/class_f4_monomial_lookup_table_t_a017bb6ab8fdb9fb50bcf9588e4750c1d.html#a017bb6ab8fdb9fb50bcf9588e4750c1d":[6,0,77,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "d6/d42/class_fraction_field_a12dc3fab0cdb2854fce1dbd3d2cfdae9.html#a12dc3fab0cdb2854fce1dbd3d2cfdae9":[6,0,88,30],
 "d6/d42/class_fraction_field_a13f8ad1da41e2576774555fb3bbee428.html#a13f8ad1da41e2576774555fb3bbee428":[6,0,88,25],
 "d6/d42/class_fraction_field_a195f8b32752039bd2856d57e8bc1e63e.html#a195f8b32752039bd2856d57e8bc1e63e":[6,0,88,6],
-"d6/d42/class_fraction_field_a1c3d614711a4bd4190a4ef060eb5015d.html#a1c3d614711a4bd4190a4ef060eb5015d":[6,0,88,59],
-"d6/d42/class_fraction_field_a29ec248d7c1935e97d6f2e71fae73849.html#a29ec248d7c1935e97d6f2e71fae73849":[6,0,88,22]
+"d6/d42/class_fraction_field_a1c3d614711a4bd4190a4ef060eb5015d.html#a1c3d614711a4bd4190a4ef060eb5015d":[6,0,88,59]
 };

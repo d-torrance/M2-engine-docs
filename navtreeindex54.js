@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"df/d63/_a_ring_elem_8hpp.html":[7,0,0,0,48],
 "df/d63/_a_ring_elem_8hpp_source.html":[7,0,0,0,48],
 "df/d6c/struct_matrix_window.html":[6,0,172],
 "df/d6c/struct_matrix_window_a28e420572b41f51e2aa1bcd263af257d.html#a28e420572b41f51e2aa1bcd263af257d":[6,0,172,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "df/dc4/res-monomial-sorter_8cpp.html":[7,0,0,0,5,23],
 "df/dc4/res-monomial-sorter_8cpp_source.html":[7,0,0,0,5,23],
 "df/dc5/_ring_q_q_test_8cpp.html":[7,0,0,0,6,26],
-"df/dc5/_ring_q_q_test_8cpp_a0b3da353001a8b8aa2f0af95a083d46c.html#a0b3da353001a8b8aa2f0af95a083d46c":[7,0,0,0,6,26,7],
-"df/dc5/_ring_q_q_test_8cpp_a11742ed53791fcd126c2ca137ee1ea89.html#a11742ed53791fcd126c2ca137ee1ea89":[7,0,0,0,6,26,3]
+"df/dc5/_ring_q_q_test_8cpp_a0b3da353001a8b8aa2f0af95a083d46c.html#a0b3da353001a8b8aa2f0af95a083d46c":[7,0,0,0,6,26,7]
 };

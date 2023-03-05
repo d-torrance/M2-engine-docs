@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"d3/def/class_zip_iterator_a696c330e1ef26db0d237171be16b1f2c.html#a696c330e1ef26db0d237171be16b1f2c":[6,0,362,0],
 "d3/def/class_zip_iterator_aa267eedbbf3841dfc5ea7f025189dd64.html#aa267eedbbf3841dfc5ea7f025189dd64":[6,0,362,5],
 "d3/def/class_zip_iterator_ae30e65066808218cad47428757d0aaf8.html#ae30e65066808218cad47428757d0aaf8":[6,0,362,4],
 "d3/def/class_zip_iterator_ae4fa06be4d51fae078ff616e0ccf1464.html#ae4fa06be4d51fae078ff616e0ccf1464":[6,0,362,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "d4/d2e/class_res_gausser_q_q_hybrid_abf9da791ce036f55e122c0f1929a6795.html#abf9da791ce036f55e122c0f1929a6795":[6,0,282,40],
 "d4/d2e/class_res_gausser_q_q_hybrid_ac7012946414a45461a648ef52e340a80.html#ac7012946414a45461a648ef52e340a80":[6,0,282,31],
 "d4/d2e/class_res_gausser_q_q_hybrid_acb80dfdd69de25381e017d00595396ab.html#acb80dfdd69de25381e017d00595396ab":[6,0,282,25],
-"d4/d2e/class_res_gausser_q_q_hybrid_ad11c40de21b9c86df7359b2dca3990c1.html#ad11c40de21b9c86df7359b2dca3990c1":[6,0,282,20],
-"d4/d2e/class_res_gausser_q_q_hybrid_ad22bfc52b6a7ba9895fc6a6beea5af83.html#ad22bfc52b6a7ba9895fc6a6beea5af83":[6,0,282,19]
+"d4/d2e/class_res_gausser_q_q_hybrid_ad11c40de21b9c86df7359b2dca3990c1.html#ad11c40de21b9c86df7359b2dca3990c1":[6,0,282,20]
 };

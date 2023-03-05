@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"d0/da2/monomial-collection_8cpp.html":[7,0,0,0,198],
 "d0/da2/monomial-collection_8cpp_source.html":[7,0,0,0,198],
 "d0/da5/class_monom_hash.html":[6,0,189],
 "d0/da5/class_monom_hash_a1f1f45998af4b10a7f11c7139ddaa48e.html#a1f1f45998af4b10a7f11c7139ddaa48e":[6,0,189,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "d1/d02/namespacempfr_a257de77b45fa54b6fc9aff49bc286371.html#a257de77b45fa54b6fc9aff49bc286371":[5,0,6,19],
 "d1/d02/namespacempfr_a263ad817a6952394f793c7989a4bcc7e.html#a263ad817a6952394f793c7989a4bcc7e":[5,0,6,276],
 "d1/d02/namespacempfr_a2b277f6e7a98e7b5da7fad3a38a211ec.html#a2b277f6e7a98e7b5da7fad3a38a211ec":[5,0,6,87],
-"d1/d02/namespacempfr_a2ba9d732239fd5e9d7d58e36a00befed.html#a2ba9d732239fd5e9d7d58e36a00befed":[5,0,6,48],
-"d1/d02/namespacempfr_a2d7fe4d8fb259a51cedece349c4e8d89.html#a2d7fe4d8fb259a51cedece349c4e8d89":[5,0,6,128]
+"d1/d02/namespacempfr_a2ba9d732239fd5e9d7d58e36a00befed.html#a2ba9d732239fd5e9d7d58e36a00befed":[5,0,6,48]
 };

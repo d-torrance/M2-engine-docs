@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"d5/d58/class_polynomial_ring_ac3ed4d62763e027c7d51bc600871ded5.html#ac3ed4d62763e027c7d51bc600871ded5":[4,0,2,6,27],
 "d5/d58/class_polynomial_ring_ac40d52c55b96aec2d85a317977d69156.html#ac40d52c55b96aec2d85a317977d69156":[4,0,2,6,60],
 "d5/d58/class_polynomial_ring_ac7d02c16a850422f90b08e1781b3885d.html#ac7d02c16a850422f90b08e1781b3885d":[4,0,2,6,4],
 "d5/d58/class_polynomial_ring_accd41bc13a5181a656ea4e3264c8cfbf.html#accd41bc13a5181a656ea4e3264c8cfbf":[4,0,2,6,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "d5/dc0/structspair_aab0f7ee3d8a7c5add822fe1ca98bc987.html#aab0f7ee3d8a7c5add822fe1ca98bc987":[6,0,326,1],
 "d5/dc0/structspair_ab2110251754ccb047f0a71b2200c30e8.html#ab2110251754ccb047f0a71b2200c30e8":[6,0,326,0],
 "d5/dc0/structspair_ad3537193bc4ba9f59e79757c17bae268.html#ad3537193bc4ba9f59e79757c17bae268":[6,0,326,4],
-"d5/dc8/class_associated_primes.html":[6,0,11],
-"d5/dc8/class_associated_primes_a010457c4a585486305e8a39fe7e222f8.html#a010457c4a585486305e8a39fe7e222f8":[6,0,11,1]
+"d5/dc8/class_associated_primes.html":[6,0,11]
 };

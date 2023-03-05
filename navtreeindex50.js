@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"dd/ddb/class_schur_ring_a5277acb0b00e633eb968e2a3bd628bae.html#a5277acb0b00e633eb968e2a3bd628bae":[6,0,312,11],
 "dd/ddb/class_schur_ring_a52f31252474feaa4d977b9c45a99690f.html#a52f31252474feaa4d977b9c45a99690f":[6,0,312,0],
 "dd/ddb/class_schur_ring_a55c61ea7bbcbb106375f2c5e156932eb.html#a55c61ea7bbcbb106375f2c5e156932eb":[6,0,312,13],
 "dd/ddb/class_schur_ring_a57da9e4ccd84c6a637318e00156fc7f4.html#a57da9e4ccd84c6a637318e00156fc7f4":[6,0,312,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "de/d10/franzi-gb_8cpp_a1a3761822c6b39b16ad02d4de6ff3f16.html#a1a3761822c6b39b16ad02d4de6ff3f16":[7,0,0,0,118,7],
 "de/d10/franzi-gb_8cpp_a29ff16b6eaf37f5d2b983a2aec3b564b.html#a29ff16b6eaf37f5d2b983a2aec3b564b":[7,0,0,0,118,10],
 "de/d10/franzi-gb_8cpp_a2a1e16cfcb221bc4e7c9a546a570818e.html#a2a1e16cfcb221bc4e7c9a546a570818e":[7,0,0,0,118,12],
-"de/d10/franzi-gb_8cpp_a3594684979fc905c97144b6eb7d3caf9.html#a3594684979fc905c97144b6eb7d3caf9":[7,0,0,0,118,16],
-"de/d10/franzi-gb_8cpp_a3a32cf3388d74be94b3317c0cd7e9488.html#a3a32cf3388d74be94b3317c0cd7e9488":[7,0,0,0,118,15]
+"de/d10/franzi-gb_8cpp_a3594684979fc905c97144b6eb7d3caf9.html#a3594684979fc905c97144b6eb7d3caf9":[7,0,0,0,118,16]
 };
