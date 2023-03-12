@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('d5/d2d/class_m2_1_1_dummy_ring.html','
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d8/dac/class_m2_1_1_dummy_ring-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -98,8 +99,9 @@ Inheritance diagram for M2::DummyRing:</div>
  <div class="center">
   <img src="../../d5/d2d/class_m2_1_1_dummy_ring.png" usemap="#M2::DummyRing_map" alt=""/>
   <map id="M2::DummyRing_map" name="M2::DummyRing_map">
-<area href="../../db/d1a/class_m2_1_1_ring_interface.html" alt="M2::RingInterface" shape="rect" coords="0,56,111,80"/>
-<area href="../../da/dcc/structour__new__delete.html" alt="our_new_delete" shape="rect" coords="0,0,111,24"/>
+<area href="../../de/db5/class_m2_1_1_simple_a_ring.html" alt="M2::SimpleARing&lt; DummyRing &gt;" shape="rect" coords="0,112,197,136"/>
+<area href="../../db/d1a/class_m2_1_1_ring_interface.html" alt="M2::RingInterface" shape="rect" coords="0,56,197,80"/>
+<area href="../../da/dcc/structour__new__delete.html" alt="our_new_delete" shape="rect" coords="0,0,197,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -172,8 +174,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa2202ecfda841e1e16ef3e28c4e50afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a6b3bc796605c801bb4dbb664c97056"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_a7a6b3bc796605c801bb4dbb664c97056.html#a7a6b3bc796605c801bb4dbb664c97056">compare_elems</a> (const <a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_a422b9cc5f01b2bb876e2d944cf26c0c8.html#a422b9cc5f01b2bb876e2d944cf26c0c8">ElementType</a> f, const <a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_a422b9cc5f01b2bb876e2d944cf26c0c8.html#a422b9cc5f01b2bb876e2d944cf26c0c8">ElementType</a> g) const</td></tr>
 <tr class="separator:a7a6b3bc796605c801bb4dbb664c97056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1ef05ff8ef0614e68e8b181f060f6eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_aa1ef05ff8ef0614e68e8b181f060f6eb.html#aa1ef05ff8ef0614e68e8b181f060f6eb">clear</a> (<a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_ace1c76a31cdead298204e41c70d220f6.html#ace1c76a31cdead298204e41c70d220f6">elem</a> &amp;result) const</td></tr>
-<tr class="separator:aa1ef05ff8ef0614e68e8b181f060f6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15229844d122b569846206fd4fbb56e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_a15229844d122b569846206fd4fbb56e0.html#a15229844d122b569846206fd4fbb56e0">set_zero</a> (<a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_ace1c76a31cdead298204e41c70d220f6.html#ace1c76a31cdead298204e41c70d220f6">elem</a> &amp;result) const</td></tr>
 <tr class="separator:a15229844d122b569846206fd4fbb56e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a525e22aa8acab5b4b97dc21093d430fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_a525e22aa8acab5b4b97dc21093d430fe.html#a525e22aa8acab5b4b97dc21093d430fe">copy</a> (<a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_ace1c76a31cdead298204e41c70d220f6.html#ace1c76a31cdead298204e41c70d220f6">elem</a> &amp;result, const <a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_ace1c76a31cdead298204e41c70d220f6.html#ace1c76a31cdead298204e41c70d220f6">elem</a> a) const</td></tr>
@@ -204,13 +204,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a906b565bdf400c60011ac521bd14fdc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_a906b565bdf400c60011ac521bd14fdc1.html#a906b565bdf400c60011ac521bd14fdc1">swap</a> (<a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_a422b9cc5f01b2bb876e2d944cf26c0c8.html#a422b9cc5f01b2bb876e2d944cf26c0c8">ElementType</a> &amp;a, <a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_a422b9cc5f01b2bb876e2d944cf26c0c8.html#a422b9cc5f01b2bb876e2d944cf26c0c8">ElementType</a> &amp;b) const</td></tr>
 <tr class="separator:a906b565bdf400c60011ac521bd14fdc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a567d47f0eb4eefde90b1bb5b122fc204"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_a567d47f0eb4eefde90b1bb5b122fc204.html#a567d47f0eb4eefde90b1bb5b122fc204">mOriginalRing</a></td></tr>
-<tr class="separator:a567d47f0eb4eefde90b1bb5b122fc204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a10b9893e76a1e29e4e85a5d420ca3718"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_a10b9893e76a1e29e4e85a5d420ca3718.html#a10b9893e76a1e29e4e85a5d420ca3718">clear</a> (<a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_ace1c76a31cdead298204e41c70d220f6.html#ace1c76a31cdead298204e41c70d220f6">elem</a> &amp;result)</td></tr>
+<tr class="separator:a10b9893e76a1e29e4e85a5d420ca3718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_structour__new__delete"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_structour__new__delete')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../da/dcc/structour__new__delete.html">our_new_delete</a></td></tr>
 <tr class="memitem:a300a3e5f23320f7490bd6a981b28b136 inherit pub_static_methods_structour__new__delete"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dcc/structour__new__delete_a300a3e5f23320f7490bd6a981b28b136.html#a300a3e5f23320f7490bd6a981b28b136">operator new</a> (size_t size)</td></tr>
 <tr class="separator:a300a3e5f23320f7490bd6a981b28b136 inherit pub_static_methods_structour__new__delete"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,10 +225,15 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a6a9bd401c73bb4d433c63f8cfeccdf89 inherit pub_static_methods_structour__new__delete"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afab4c8d83fd2bd59db3be7b1f5354eae inherit pub_static_methods_structour__new__delete"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dcc/structour__new__delete_afab4c8d83fd2bd59db3be7b1f5354eae.html#afab4c8d83fd2bd59db3be7b1f5354eae">operator delete[]</a> (void *obj, void *existing_memory)</td></tr>
 <tr class="separator:afab4c8d83fd2bd59db3be7b1f5354eae inherit pub_static_methods_structour__new__delete"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a567d47f0eb4eefde90b1bb5b122fc204"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring_a567d47f0eb4eefde90b1bb5b122fc204.html#a567d47f0eb4eefde90b1bb5b122fc204">mOriginalRing</a></td></tr>
+<tr class="separator:a567d47f0eb4eefde90b1bb5b122fc204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d5/d40/aring_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../d5/d40/aring_8hpp_source.html">aring.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d40/aring_8hpp_source.html#l00152">152</a> of file <a class="el" href="../../d5/d40/aring_8hpp_source.html">aring.hpp</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/<a class="el" href="../../d5/d40/aring_8hpp_source.html">aring.hpp</a></li>
 </ul>
@@ -241,7 +243,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d5/d2d/class_m2_1_1_dummy_ring.html">DummyRing</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

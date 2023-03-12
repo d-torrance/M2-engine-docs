@@ -123,25 +123,25 @@ template&lt;typename RT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html#l00463">463</a> of file <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html">mat-elem-ops.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  {</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    assert(i &lt; mat.numRows());</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    assert(j &lt; mat.numRows());</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    assert(i &lt;= j);</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordtype">size_t</span> n_to_delete = j - i + 1;</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <span class="keywordtype">size_t</span> new_nrows = mat.numRows() - n_to_delete;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <a class="code" href="../../d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a86d9d46de12f0d9f8ce29eeea0725076.html#a86d9d46de12f0d9f8ce29eeea0725076">Mat</a> newMatrix(mat.ring(), new_nrows, mat.numColumns());</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> c = 0; c &lt; mat.numColumns(); c++)</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;      {</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> r = 0; r &lt; i; r++)</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;          mat.ring().swap(mat.entry(r, c), newMatrix.entry(r, c));</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> r = j + 1; r &lt; mat.numRows(); r++)</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;          mat.ring().swap(mat.entry(r, c), newMatrix.entry(r - n_to_delete, c));</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;      }</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    mat.swap(newMatrix);</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  }</div>
-<div class="ttc" id="aclass_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a86d9d46de12f0d9f8ce29eeea0725076_html_a86d9d46de12f0d9f8ce29eeea0725076"><div class="ttname"><a href="../../d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a86d9d46de12f0d9f8ce29eeea0725076.html#a86d9d46de12f0d9f8ce29eeea0725076">MatElementaryOps&lt; DMat&lt; RT &gt; &gt;::Mat</a></div><div class="ttdeci">DMat&lt; RT &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d24/mat-elem-ops_8hpp_source.html#l00017">mat-elem-ops.hpp:17</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html#l00443">443</a> of file <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html">mat-elem-ops.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  {</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    assert(i &lt; mat.numRows());</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    assert(j &lt; mat.numRows());</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    assert(i &lt;= j);</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="keywordtype">size_t</span> n_to_delete = j - i + 1;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordtype">size_t</span> new_nrows = mat.numRows() - n_to_delete;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <a class="code" href="../../d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a86d9d46de12f0d9f8ce29eeea0725076.html#a86d9d46de12f0d9f8ce29eeea0725076">Mat</a> newMatrix(mat.ring(), new_nrows, mat.numColumns());</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160; </div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> c = 0; c &lt; mat.numColumns(); c++)</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;      {</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> r = 0; r &lt; i; r++)</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;          mat.ring().swap(mat.entry(r, c), newMatrix.entry(r, c));</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> r = j + 1; r &lt; mat.numRows(); r++)</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;          mat.ring().swap(mat.entry(r, c), newMatrix.entry(r - n_to_delete, c));</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;      }</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    mat.swap(newMatrix);</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  }</div>
+<div class="ttc" id="aclass_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a86d9d46de12f0d9f8ce29eeea0725076_html_a86d9d46de12f0d9f8ce29eeea0725076"><div class="ttname"><a href="../../d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a86d9d46de12f0d9f8ce29eeea0725076.html#a86d9d46de12f0d9f8ce29eeea0725076">MatElementaryOps&lt; DMat&lt; RT &gt; &gt;::Mat</a></div><div class="ttdeci">DMat&lt; RT &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d24/mat-elem-ops_8hpp_source.html#l00019">mat-elem-ops.hpp:19</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../da/dc3/class_d_mat_a368035bca371125e7f118465fd45d52a.html#a368035bca371125e7f118465fd45d52a">DMat&lt; ACoeffRing &gt;::entry()</a>, <a class="el" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat&lt; ACoeffRing &gt;::numColumns()</a>, <a class="el" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat&lt; ACoeffRing &gt;::numRows()</a>, <a class="el" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">DMat&lt; ACoeffRing &gt;::ring()</a>, and <a class="el" href="../../da/dc3/class_d_mat_a94a2f2bd553d920413b59ba22543d9d4.html#a94a2f2bd553d920413b59ba22543d9d4">DMat&lt; ACoeffRing &gt;::swap()</a>.</p>
 
@@ -153,7 +153,7 @@ template&lt;typename RT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4.html">MatElementaryOps&lt; DMat&lt; RT &gt; &gt;</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

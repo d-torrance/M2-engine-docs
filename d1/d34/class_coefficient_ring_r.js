@@ -1,5 +1,7 @@
 var class_coefficient_ring_r =
 [
+    [ "Element", "d0/d4b/class_coefficient_ring_r_1_1_element.html", "d0/d4b/class_coefficient_ring_r_1_1_element" ],
+    [ "ElementArray", "df/d9d/class_coefficient_ring_r_1_1_element_array.html", "df/d9d/class_coefficient_ring_r_1_1_element_array" ],
     [ "elem", "d1/d34/class_coefficient_ring_r_ae321a637e6c1f4963d11af50eb4dc98b.html#ae321a637e6c1f4963d11af50eb4dc98b", null ],
     [ "ElementContainerType", "d1/d34/class_coefficient_ring_r_a087053664b28848df4da849555cc3867.html#a087053664b28848df4da849555cc3867", null ],
     [ "ElementType", "d1/d34/class_coefficient_ring_r_a6bcaa5a3c7d169e85c912a77509ae6a6.html#a6bcaa5a3c7d169e85c912a77509ae6a6", null ],
@@ -10,6 +12,7 @@ var class_coefficient_ring_r =
     [ "divide", "d1/d34/class_coefficient_ring_r_aaea242279a6f6085e04456500c87cf95.html#aaea242279a6f6085e04456500c87cf95", null ],
     [ "elem_text_out", "d1/d34/class_coefficient_ring_r_a3a6d400dc9f7a0cf28b15b2581366c30.html#a3a6d400dc9f7a0cf28b15b2581366c30", null ],
     [ "from_ring_elem", "d1/d34/class_coefficient_ring_r_a48984464b741d68fd90ee397ac02e029.html#a48984464b741d68fd90ee397ac02e029", null ],
+    [ "from_ring_elem_const", "d1/d34/class_coefficient_ring_r_a81e6b91ec0451a799a58a057ef7b25df.html#a81e6b91ec0451a799a58a057ef7b25df", null ],
     [ "init", "d1/d34/class_coefficient_ring_r_af9205fc585fe72e91eea2a427d851843.html#af9205fc585fe72e91eea2a427d851843", null ],
     [ "init_set", "d1/d34/class_coefficient_ring_r_a36d1f7295817c94ceb7d7125fc810d2e.html#a36d1f7295817c94ceb7d7125fc810d2e", null ],
     [ "invert", "d1/d34/class_coefficient_ring_r_aef37cea92f29b30b3ed678b65cc3db6a.html#aef37cea92f29b30b3ed678b65cc3db6a", null ],

@@ -99,19 +99,19 @@ template&lt;typename Gen &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html#l00694">694</a> of file <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html">res-f4-m2-interface.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;{</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a>* R = G.ring();</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> M(R-&gt;<a class="code" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>(G.numRows()), R-&gt;<a class="code" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>(G.numColumns()), <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = G.begin(); i != G.end(); ++i)</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    {</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=i.components().size()-1; j&gt;=0; --j)</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;      {</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        M.set_entry(i.components()[j], i.column(), R-&gt;<a class="code" href="../../dd/dcf/class_ring_a6f6b08df2379200116484876c4fd2d87.html#a6f6b08df2379200116484876c4fd2d87">from_long</a>(i.coefficients()[j]));</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;      }</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    }</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;  <span class="keywordflow">return</span> M.to_matrix();</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html#l00682">682</a> of file <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html">res-f4-m2-interface.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;{</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a>* R = G.ring();</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> M(R-&gt;<a class="code" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>(G.numRows()), R-&gt;<a class="code" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>(G.numColumns()), <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = G.begin(); i != G.end(); ++i)</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    {</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=i.components().size()-1; j&gt;=0; --j)</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;      {</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        M.set_entry(i.components()[j], i.column(), R-&gt;<a class="code" href="../../dd/dcf/class_ring_a6f6b08df2379200116484876c4fd2d87.html#a6f6b08df2379200116484876c4fd2d87">from_long</a>(i.coefficients()[j]));</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;      }</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    }</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;  <span class="keywordflow">return</span> M.to_matrix();</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;}</div>
 <div class="ttc" id="aclass_matrix_constructor_html"><div class="ttname"><a href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d80/matrix-con_8hpp_source.html#l00013">matrix-con.hpp:14</a></div></div>
 <div class="ttc" id="aclass_ring_a246965acb6f313f82aa3059a7c43091a_html_a246965acb6f313f82aa3059a7c43091a"><div class="ttname"><a href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">Ring::make_FreeModule</a></div><div class="ttdeci">virtual FreeModule * make_FreeModule() const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2b/ring_8cpp_source.html#l00052">ring.cpp:52</a></div></div>
 <div class="ttc" id="aclass_ring_a6f6b08df2379200116484876c4fd2d87_html_a6f6b08df2379200116484876c4fd2d87"><div class="ttname"><a href="../../dd/dcf/class_ring_a6f6b08df2379200116484876c4fd2d87.html#a6f6b08df2379200116484876c4fd2d87">Ring::from_long</a></div><div class="ttdeci">virtual ring_elem from_long(long n) const =0</div></div>
@@ -129,7 +129,7 @@ template&lt;typename Gen &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_208df166e208656f2e3436240a4845e8.html">schreyer-resolution</a></li><li class="navelem"><a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp.html">res-f4-m2-interface.cpp</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:28 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

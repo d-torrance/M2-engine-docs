@@ -28,6 +28,11 @@ var namespace_m2 =
     [ "ARingZZpFlint", "d1/d21/class_m2_1_1_a_ring_z_zp_flint.html", "d1/d21/class_m2_1_1_a_ring_z_zp_flint" ],
     [ "ARingZZp", "d6/d13/class_m2_1_1_a_ring_z_zp.html", "d6/d13/class_m2_1_1_a_ring_z_zp" ],
     [ "RingInterface", "db/d1a/class_m2_1_1_ring_interface.html", null ],
+    [ "ElementImpl", "d2/d8c/class_m2_1_1_element_impl.html", "d2/d8c/class_m2_1_1_element_impl" ],
+    [ "SimpleARing", "de/db5/class_m2_1_1_simple_a_ring.html", [
+      [ "Element", "d7/d87/class_m2_1_1_simple_a_ring_1_1_element.html", "d7/d87/class_m2_1_1_simple_a_ring_1_1_element" ],
+      [ "ElementArray", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array.html", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array" ]
+    ] ],
     [ "DummyRing", "d5/d2d/class_m2_1_1_dummy_ring.html", "d5/d2d/class_m2_1_1_dummy_ring" ],
     [ "Reader", "db/dc5/class_m2_1_1_reader.html", "db/dc5/class_m2_1_1_reader" ],
     [ "ARingPolynomial", "da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80", null ],

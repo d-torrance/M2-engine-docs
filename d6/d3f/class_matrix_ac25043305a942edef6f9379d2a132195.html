@@ -133,56 +133,56 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_ac25043305a942edef
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l00688">688</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;{</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  <span class="keywordtype">bool</span> doing_fraction = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  <span class="keywordtype">int</span> threshold = 0;</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160; </div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  <a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *F = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>(r);</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;  <a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *G = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>(c);</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(F, G, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160; </div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;  <span class="comment">// Loop through all selected elements, flip a &#39;fraction_non_zero&#39; coin, and if</span></div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;  <span class="comment">// non-zero</span></div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;  <span class="comment">// set that element.</span></div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160; </div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;  <span class="keywordflow">if</span> (density != 1.0)</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    {</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;      doing_fraction = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;      threshold = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(density * 10000);</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    }</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160; </div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;  <span class="keywordflow">if</span> (special_type == 0)</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    {</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; i++)</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; r; j++)</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;          {</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;            <span class="keywordflow">if</span> (doing_fraction)</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;              {</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;                int32_t u = <a class="code" href="../../de/daa/random_8cpp_a88eee3d6ac480499a200da0edd23c875.html#a88eee3d6ac480499a200da0edd23c875">rawRandomInt</a>((int32_t)10000);</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;                <span class="keywordflow">if</span> (u &gt; threshold) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;              }</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;            mat.set_entry(j, i, R-&gt;<a class="code" href="../../dd/dcf/class_ring_acb4a4be06b249fcb3d0cf332bb1cc9cf.html#acb4a4be06b249fcb3d0cf332bb1cc9cf">random</a>());</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;          }</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    }</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (special_type == 1)</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l00701">701</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;{</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;  <span class="keywordtype">bool</span> doing_fraction = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;  <span class="keywordtype">int</span> threshold = 0;</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160; </div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;  <a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *F = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>(r);</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;  <a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *G = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>(c);</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(F, G, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;  <span class="comment">// Loop through all selected elements, flip a &#39;fraction_non_zero&#39; coin, and if</span></div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;  <span class="comment">// non-zero</span></div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;  <span class="comment">// set that element.</span></div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160; </div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;  <span class="keywordflow">if</span> (density != 1.0)</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    {</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;      doing_fraction = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;      threshold = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(density * 10000);</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    }</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160; </div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  <span class="keywordflow">if</span> (special_type == 0)</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    {</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; i++)</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        {</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;          <span class="keywordtype">int</span> top = (i &gt;= r ? r : i);</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; top; j++)</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;            {</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;              <span class="keywordflow">if</span> (doing_fraction)</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                {</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;                  int32_t u = <a class="code" href="../../de/daa/random_8cpp_a88eee3d6ac480499a200da0edd23c875.html#a88eee3d6ac480499a200da0edd23c875">rawRandomInt</a>((int32_t)10000);</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                  <span class="keywordflow">if</span> (u &gt; threshold) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;                }</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;              mat.set_entry(j, i, R-&gt;<a class="code" href="../../dd/dcf/class_ring_acb4a4be06b249fcb3d0cf332bb1cc9cf.html#acb4a4be06b249fcb3d0cf332bb1cc9cf">random</a>());</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;            }</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        }</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    }</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  <span class="keywordflow">return</span> mat.to_matrix();</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;}</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; r; j++)</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;          {</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;            <span class="keywordflow">if</span> (doing_fraction)</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;              {</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                int32_t u = <a class="code" href="../../de/daa/random_8cpp_a88eee3d6ac480499a200da0edd23c875.html#a88eee3d6ac480499a200da0edd23c875">rawRandomInt</a>((int32_t)10000);</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                <span class="keywordflow">if</span> (u &gt; threshold) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;              }</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;            mat.set_entry(j, i, R-&gt;<a class="code" href="../../dd/dcf/class_ring_acb4a4be06b249fcb3d0cf332bb1cc9cf.html#acb4a4be06b249fcb3d0cf332bb1cc9cf">random</a>());</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;          }</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    }</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (special_type == 1)</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    {</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; i++)</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        {</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;          <span class="keywordtype">int</span> top = (i &gt;= r ? r : i);</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; top; j++)</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;            {</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;              <span class="keywordflow">if</span> (doing_fraction)</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                {</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                  int32_t u = <a class="code" href="../../de/daa/random_8cpp_a88eee3d6ac480499a200da0edd23c875.html#a88eee3d6ac480499a200da0edd23c875">rawRandomInt</a>((int32_t)10000);</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                  <span class="keywordflow">if</span> (u &gt; threshold) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                }</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;              mat.set_entry(j, i, R-&gt;<a class="code" href="../../dd/dcf/class_ring_acb4a4be06b249fcb3d0cf332bb1cc9cf.html#acb4a4be06b249fcb3d0cf332bb1cc9cf">random</a>());</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;            }</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        }</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    }</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;  <span class="keywordflow">return</span> mat.to_matrix();</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;}</div>
 <div class="ttc" id="aclass_free_module_html"><div class="ttname"><a href="../../d6/df0/class_free_module.html">FreeModule</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcb/freemod_8hpp_source.html#l00015">freemod.hpp:16</a></div></div>
 <div class="ttc" id="aclass_matrix_constructor_html"><div class="ttname"><a href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d80/matrix-con_8hpp_source.html#l00013">matrix-con.hpp:14</a></div></div>
 <div class="ttc" id="aclass_ring_a246965acb6f313f82aa3059a7c43091a_html_a246965acb6f313f82aa3059a7c43091a"><div class="ttname"><a href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">Ring::make_FreeModule</a></div><div class="ttdeci">virtual FreeModule * make_FreeModule() const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2b/ring_8cpp_source.html#l00052">ring.cpp:52</a></div></div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_ac25043305a942edef
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

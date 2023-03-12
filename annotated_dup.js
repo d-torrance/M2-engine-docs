@@ -48,6 +48,11 @@ var annotated_dup =
       [ "ARingZZpFlint", "d1/d21/class_m2_1_1_a_ring_z_zp_flint.html", "d1/d21/class_m2_1_1_a_ring_z_zp_flint" ],
       [ "ARingZZp", "d6/d13/class_m2_1_1_a_ring_z_zp.html", "d6/d13/class_m2_1_1_a_ring_z_zp" ],
       [ "RingInterface", "db/d1a/class_m2_1_1_ring_interface.html", null ],
+      [ "ElementImpl", "d2/d8c/class_m2_1_1_element_impl.html", "d2/d8c/class_m2_1_1_element_impl" ],
+      [ "SimpleARing", "de/db5/class_m2_1_1_simple_a_ring.html", [
+        [ "Element", "d7/d87/class_m2_1_1_simple_a_ring_1_1_element.html", "d7/d87/class_m2_1_1_simple_a_ring_1_1_element" ],
+        [ "ElementArray", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array.html", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array" ]
+      ] ],
       [ "DummyRing", "d5/d2d/class_m2_1_1_dummy_ring.html", "d5/d2d/class_m2_1_1_dummy_ring" ],
       [ "Reader", "db/dc5/class_m2_1_1_reader.html", "db/dc5/class_m2_1_1_reader" ]
     ] ],
@@ -78,7 +83,6 @@ var annotated_dup =
     ] ],
     [ "AllocLogger", "d4/d6d/class_alloc_logger.html", "d4/d6d/class_alloc_logger" ],
     [ "ARing", "d1/d7e/class_a_ring.html", null ],
-    [ "ARingElem", "d9/d09/class_a_ring_elem.html", "d9/d09/class_a_ring_elem" ],
     [ "ARingElement", "d9/d84/class_a_ring_element.html", "d9/d84/class_a_ring_element" ],
     [ "ARingElementGenerator", "df/dc2/class_a_ring_element_generator.html", "df/dc2/class_a_ring_element_generator" ],
     [ "AssociatedPrimes", "d5/dc8/class_associated_primes.html", "d5/dc8/class_associated_primes" ],
@@ -385,6 +389,7 @@ var annotated_dup =
     [ "SchurRing", "dd/ddb/class_schur_ring.html", "dd/ddb/class_schur_ring" ],
     [ "SchurRing2", "df/da2/class_schur_ring2.html", "df/da2/class_schur_ring2" ],
     [ "SchurSnRing", "d7/d6f/class_schur_sn_ring.html", "d7/d6f/class_schur_sn_ring" ],
+    [ "SimpleRing", "d5/d43/class_simple_ring.html", null ],
     [ "SkewMultiplication", "d0/d29/class_skew_multiplication.html", "d0/d29/class_skew_multiplication" ],
     [ "SkewPolynomialRing", "dc/d98/class_skew_polynomial_ring.html", "dc/d98/class_skew_polynomial_ring" ],
     [ "slab", "dc/d02/classslab.html", "dc/d02/classslab" ],

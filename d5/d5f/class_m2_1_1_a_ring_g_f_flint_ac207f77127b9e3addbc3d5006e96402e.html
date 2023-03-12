@@ -121,26 +121,26 @@ $(document).ready(function(){initNavTree('d5/d5f/class_m2_1_1_a_ring_g_f_flint_a
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d9d/aring-gf-flint_8hpp_source.html#l00233">233</a> of file <a class="el" href="../../da/d9d/aring-gf-flint_8hpp_source.html">aring-gf-flint.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">if</span> (mpz_sgn(n) &lt; 0)</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      <a class="code" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b.html#af5fba8d049dc15cf24dd83fe8dd7963b">invert</a>(result, a);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <a class="code" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_a3c93274cd315b52402c64d3290f70b25.html#a3c93274cd315b52402c64d3290f70b25">copy</a>(result, a);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    mpz_t abs_n;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    mpz_init(abs_n);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    mpz_abs(abs_n, n);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    fmpz_t fn;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    fmpz_init_set_readonly(fn, abs_n);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    fq_zech_pow(&amp;result, &amp;result, fn, <a class="code" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">mContext</a>);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    fmpz_clear_readonly(fn);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    mpz_clear(abs_n);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  }</div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_g_f_flint_a3c93274cd315b52402c64d3290f70b25_html_a3c93274cd315b52402c64d3290f70b25"><div class="ttname"><a href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_a3c93274cd315b52402c64d3290f70b25.html#a3c93274cd315b52402c64d3290f70b25">M2::ARingGFFlint::copy</a></div><div class="ttdeci">void copy(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d9d/aring-gf-flint_8hpp_source.html#l00101">aring-gf-flint.hpp:101</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364_html_ad4c7e36421be7df07b49a2e27b120364"><div class="ttname"><a href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">M2::ARingGFFlint::mContext</a></div><div class="ttdeci">fq_zech_ctx_t mContext</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d9d/aring-gf-flint_8hpp_source.html#l00053">aring-gf-flint.hpp:53</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b_html_af5fba8d049dc15cf24dd83fe8dd7963b"><div class="ttname"><a href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b.html#af5fba8d049dc15cf24dd83fe8dd7963b">M2::ARingGFFlint::invert</a></div><div class="ttdeci">void invert(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d9d/aring-gf-flint_8hpp_source.html#l00153">aring-gf-flint.hpp:153</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../da/d9d/aring-gf-flint_8hpp_source.html#l00290">290</a> of file <a class="el" href="../../da/d9d/aring-gf-flint_8hpp_source.html">aring-gf-flint.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">if</span> (mpz_sgn(n) &lt; 0)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <a class="code" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b.html#af5fba8d049dc15cf24dd83fe8dd7963b">invert</a>(result, a);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <a class="code" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_a3c93274cd315b52402c64d3290f70b25.html#a3c93274cd315b52402c64d3290f70b25">copy</a>(result, a);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    mpz_t abs_n;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    mpz_init(abs_n);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    mpz_abs(abs_n, n);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    fmpz_t fn;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    fmpz_init_set_readonly(fn, abs_n);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    fq_zech_pow(&amp;result, &amp;result, fn, <a class="code" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">mContext</a>);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    fmpz_clear_readonly(fn);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    mpz_clear(abs_n);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  }</div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_g_f_flint_a3c93274cd315b52402c64d3290f70b25_html_a3c93274cd315b52402c64d3290f70b25"><div class="ttname"><a href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_a3c93274cd315b52402c64d3290f70b25.html#a3c93274cd315b52402c64d3290f70b25">M2::ARingGFFlint::copy</a></div><div class="ttdeci">void copy(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d9d/aring-gf-flint_8hpp_source.html#l00158">aring-gf-flint.hpp:158</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364_html_ad4c7e36421be7df07b49a2e27b120364"><div class="ttname"><a href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">M2::ARingGFFlint::mContext</a></div><div class="ttdeci">fq_zech_ctx_t mContext</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d9d/aring-gf-flint_8hpp_source.html#l00105">aring-gf-flint.hpp:105</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b_html_af5fba8d049dc15cf24dd83fe8dd7963b"><div class="ttname"><a href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b.html#af5fba8d049dc15cf24dd83fe8dd7963b">M2::ARingGFFlint::invert</a></div><div class="ttdeci">void invert(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d9d/aring-gf-flint_8hpp_source.html#l00210">aring-gf-flint.hpp:210</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_a3c93274cd315b52402c64d3290f70b25.html#a3c93274cd315b52402c64d3290f70b25">copy()</a>, <a class="el" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b.html#af5fba8d049dc15cf24dd83fe8dd7963b">invert()</a>, and <a class="el" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">mContext</a>.</p>
 
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('d5/d5f/class_m2_1_1_a_ring_g_f_flint_a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint.html">ARingGFFlint</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

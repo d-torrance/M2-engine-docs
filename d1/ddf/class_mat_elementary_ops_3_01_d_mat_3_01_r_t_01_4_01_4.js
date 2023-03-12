@@ -1,6 +1,7 @@
 var class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4 =
 [
     [ "ConstIterator", "d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a81f0fef402296156eba143ec12e56bee.html#a81f0fef402296156eba143ec12e56bee", null ],
+    [ "Element", "d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a8669c3b987b90417b17746ca33567360.html#a8669c3b987b90417b17746ca33567360", null ],
     [ "ElementType", "d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a5efd74a4f4a302a70315aa0250f2d438.html#a5efd74a4f4a302a70315aa0250f2d438", null ],
     [ "Iterator", "d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a77cd13040caafe02c3bddea2c59debe4.html#a77cd13040caafe02c3bddea2c59debe4", null ],
     [ "Mat", "d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a86d9d46de12f0d9f8ce29eeea0725076.html#a86d9d46de12f0d9f8ce29eeea0725076", null ],

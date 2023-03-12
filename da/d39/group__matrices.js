@@ -206,6 +206,8 @@ var group__matrices =
       [ "EigenvalueType", "d6/db0/class_mutable_mat_a2fedb1471d6fc48f36f29615d3c88a0e.html#a2fedb1471d6fc48f36f29615d3c88a0e", null ],
       [ "EigenvectorType", "d6/db0/class_mutable_mat_aab4bc2840080c98a7010ab97d9f62da2.html#aab4bc2840080c98a7010ab97d9f62da2", null ],
       [ "elem", "d6/db0/class_mutable_mat_ac745584efa800face04658c8d6a21494.html#ac745584efa800face04658c8d6a21494", null ],
+      [ "Element", "d6/db0/class_mutable_mat_ad93785d6485a1219043832f4a4b73e68.html#ad93785d6485a1219043832f4a4b73e68", null ],
+      [ "ElementType", "d6/db0/class_mutable_mat_a0f45524be96f3b836562c6a9417f1a71.html#a0f45524be96f3b836562c6a9417f1a71", null ],
       [ "HermitianEigenvalueType", "d6/db0/class_mutable_mat_a149a6c03367dcf47bf8fc63ff001eaa1.html#a149a6c03367dcf47bf8fc63ff001eaa1", null ],
       [ "HermitianEigenvectorType", "d6/db0/class_mutable_mat_a0e1880f0bc36ffbeee54a24cf3cc928a.html#a0e1880f0bc36ffbeee54a24cf3cc928a", null ],
       [ "MatOps", "d6/db0/class_mutable_mat_a4d94c94a86d3d4c55e08d3864159745a.html#a4d94c94a86d3d4c55e08d3864159745a", null ],

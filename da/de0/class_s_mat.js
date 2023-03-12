@@ -4,6 +4,7 @@ var class_s_mat =
     [ "sparsevec", "d7/d3d/struct_s_mat_1_1sparsevec.html", "d7/d3d/struct_s_mat_1_1sparsevec" ],
     [ "CoeffRing", "da/de0/class_s_mat_a2c4e45ce7e0f4624ab61ca1a9befece2.html#a2c4e45ce7e0f4624ab61ca1a9befece2", null ],
     [ "elem", "da/de0/class_s_mat_a441405a3b9bc6d5c73b42de4002163f2.html#a441405a3b9bc6d5c73b42de4002163f2", null ],
+    [ "Element", "da/de0/class_s_mat_a14f9fc8b82a0d1f7c44519f2d7a73b91.html#a14f9fc8b82a0d1f7c44519f2d7a73b91", null ],
     [ "ElementType", "da/de0/class_s_mat_ac5b3c16eafd14c22c1baeabdbcc5ee17.html#ac5b3c16eafd14c22c1baeabdbcc5ee17", null ],
     [ "SMat", "da/de0/class_s_mat_af0706e9a344a10c9db2fa98c7f5a74b4.html#af0706e9a344a10c9db2fa98c7f5a74b4", null ],
     [ "SMat", "da/de0/class_s_mat_af8685660b16ba0a7d69fbde8e41dc4dc.html#af8685660b16ba0a7d69fbde8e41dc4dc", null ],

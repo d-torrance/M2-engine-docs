@@ -121,27 +121,23 @@ template&lt;typename SourceRing , typename TargetRing &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l00663">663</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;  {</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    assert(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>ConcreteRing&lt;SourceRing&gt; *<span class="keyword">&gt;</span>(R) != 0);</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    assert(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>ConcreteRing&lt;TargetRing&gt; *<span class="keyword">&gt;</span>(S) != 0);</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    <span class="keyword">const</span> SourceRing &amp;R1 =</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>ConcreteRing&lt;SourceRing&gt; *<span class="keyword">&gt;</span>(R)-&gt;ring();</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    <span class="keyword">const</span> TargetRing &amp;S1 =</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;        <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>ConcreteRing&lt;TargetRing&gt; *<span class="keyword">&gt;</span>(S)-&gt;ring();</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160; </div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <span class="keyword">typename</span> SourceRing::ElementType fR1;</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    <span class="keyword">typename</span> TargetRing::ElementType gS1;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160; </div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    R1.init(fR1);</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    S1.init(gS1);</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    S1.from_ring_elem(gS1, gS);</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    <span class="keywordtype">bool</span> retval = <a class="code" href="../../d7/d82/namespace_m2_afba54afa3110843cd8d23a4d8fb7f56e.html#afba54afa3110843cd8d23a4d8fb7f56e">mylift</a>(R1, S1, fR1, gS1);  <span class="comment">// sets fR1.</span></div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    <span class="keywordflow">if</span> (retval) R1.to_ring_elem(result_gR, fR1);</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    R1.clear(fR1);</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    S1.clear(gS1);</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <span class="keywordflow">return</span> retval;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;  }</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l00566">566</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;  {</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    assert(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>ConcreteRing&lt;SourceRing&gt; *<span class="keyword">&gt;</span>(R) != 0);</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    assert(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>ConcreteRing&lt;TargetRing&gt; *<span class="keyword">&gt;</span>(S) != 0);</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="keyword">const</span> SourceRing &amp;R1 =</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>ConcreteRing&lt;SourceRing&gt; *<span class="keyword">&gt;</span>(R)-&gt;ring();</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="keyword">const</span> TargetRing &amp;S1 =</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>ConcreteRing&lt;TargetRing&gt; *<span class="keyword">&gt;</span>(S)-&gt;ring();</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160; </div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <span class="keyword">typename</span> SourceRing::Element fR1(R1);</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <span class="keyword">typename</span> TargetRing::Element gS1(S1);</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160; </div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    S1.from_ring_elem(gS1, gS);</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <span class="keywordtype">bool</span> retval = <a class="code" href="../../d7/d82/namespace_m2_afba54afa3110843cd8d23a4d8fb7f56e.html#afba54afa3110843cd8d23a4d8fb7f56e">mylift</a>(R1, S1, fR1, gS1);  <span class="comment">// sets fR1.</span></div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    <span class="keywordflow">if</span> (retval) R1.to_ring_elem(result_gR, fR1);</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <span class="keywordflow">return</span> retval;</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  }</div>
 <div class="ttc" id="anamespace_m2_afba54afa3110843cd8d23a4d8fb7f56e_html_afba54afa3110843cd8d23a4d8fb7f56e"><div class="ttname"><a href="../../d7/d82/namespace_m2_afba54afa3110843cd8d23a4d8fb7f56e.html#afba54afa3110843cd8d23a4d8fb7f56e">M2::mylift</a></div><div class="ttdeci">bool mylift(const RingR &amp;R, const RingS &amp;S, typename RingR::ElementType &amp;result_gR, const typename RingS::ElementType &amp;gS)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df4/aring-translate_8hpp_source.html#l00174">aring-translate.hpp:174</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/d82/namespace_m2_afba54afa3110843cd8d23a4d8fb7f56e.html#afba54afa3110843cd8d23a4d8fb7f56e">M2::mylift()</a>.</p>
@@ -154,7 +150,7 @@ template&lt;typename SourceRing , typename TargetRing &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d3/d9c/namespace_m2_1_1_ring_promoter.html">RingPromoter</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

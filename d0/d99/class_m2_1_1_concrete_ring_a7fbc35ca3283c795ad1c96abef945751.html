@@ -107,14 +107,14 @@ $(document).ready(function(){initNavTree('d0/d99/class_m2_1_1_concrete_ring_a7fb
 
 <p>Reimplemented from <a class="el" href="../../dd/dcf/class_ring_a3d64baae17fd73c1e9b0ed62898e558f.html#a3d64baae17fd73c1e9b0ed62898e558f">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l01289">1289</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;{</div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;  <span class="keywordtype">long</span> b;</div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;  fmpz t = <span class="keyword">reinterpret_cast&lt;</span>fmpz<span class="keyword">&gt;</span>(<span class="keyword">const_cast&lt;</span><a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *<span class="keyword">&gt;</span>(a.<a class="code" href="../../d5/d64/unionring__elem_a0c404ff97309917f9b63c4166812923b.html#a0c404ff97309917f9b63c4166812923b">poly_val</a>));</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;  <span class="keywordtype">bool</span> succeed = <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_a10f6fae64ac10189f17459672460467f.html#a10f6fae64ac10189f17459672460467f">ring</a>().coerceToLongInteger(b, t);</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;  <span class="keywordflow">return</span> std::pair&lt;bool, long&gt;(succeed, b);</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;}</div>
-<div class="ttc" id="aclass_m2_1_1_concrete_ring_a10f6fae64ac10189f17459672460467f_html_a10f6fae64ac10189f17459672460467f"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_a10f6fae64ac10189f17459672460467f.html#a10f6fae64ac10189f17459672460467f">M2::ConcreteRing::ring</a></div><div class="ttdeci">const RingType &amp; ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00040">aring-glue.hpp:40</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l01145">1145</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;{</div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;  <span class="keywordtype">long</span> b;</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;  fmpz t = <span class="keyword">reinterpret_cast&lt;</span>fmpz<span class="keyword">&gt;</span>(<span class="keyword">const_cast&lt;</span><a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *<span class="keyword">&gt;</span>(a.<a class="code" href="../../d5/d64/unionring__elem_a0c404ff97309917f9b63c4166812923b.html#a0c404ff97309917f9b63c4166812923b">poly_val</a>));</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;  <span class="keywordtype">bool</span> succeed = <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_a10f6fae64ac10189f17459672460467f.html#a10f6fae64ac10189f17459672460467f">ring</a>().coerceToLongInteger(b, t);</div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;  <span class="keywordflow">return</span> std::pair&lt;bool, long&gt;(succeed, b);</div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;}</div>
+<div class="ttc" id="aclass_m2_1_1_concrete_ring_a10f6fae64ac10189f17459672460467f_html_a10f6fae64ac10189f17459672460467f"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_a10f6fae64ac10189f17459672460467f.html#a10f6fae64ac10189f17459672460467f">M2::ConcreteRing::ring</a></div><div class="ttdeci">const RingType &amp; ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00041">aring-glue.hpp:41</a></div></div>
 <div class="ttc" id="astruct_nterm_html"><div class="ttname"><a href="../../d0/dbc/struct_nterm.html">Nterm</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00097">ringelem.hpp:98</a></div></div>
 <div class="ttc" id="aunionring__elem_a0c404ff97309917f9b63c4166812923b_html_a0c404ff97309917f9b63c4166812923b"><div class="ttname"><a href="../../d5/d64/unionring__elem_a0c404ff97309917f9b63c4166812923b.html#a0c404ff97309917f9b63c4166812923b">ring_elem::poly_val</a></div><div class="ttdeci">Nterm * poly_val</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00047">ringelem.hpp:47</a></div></div>
 </div><!-- fragment -->
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('d0/d99/class_m2_1_1_concrete_ring_a7fb
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring.html">ConcreteRing</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

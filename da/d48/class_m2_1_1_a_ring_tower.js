@@ -1,5 +1,7 @@
 var class_m2_1_1_a_ring_tower =
 [
+    [ "Element", "de/d6c/class_m2_1_1_a_ring_tower_1_1_element.html", "de/d6c/class_m2_1_1_a_ring_tower_1_1_element" ],
+    [ "ElementArray", "d6/d12/class_m2_1_1_a_ring_tower_1_1_element_array.html", "d6/d12/class_m2_1_1_a_ring_tower_1_1_element_array" ],
     [ "BaseCoefficientType", "da/d48/class_m2_1_1_a_ring_tower_a851dcfd1e00be12f60cf45f20fa34ae5.html#a851dcfd1e00be12f60cf45f20fa34ae5", null ],
     [ "BaseRingType", "da/d48/class_m2_1_1_a_ring_tower_a62f5e618bc5e3d6bb80ee99802c8ff30.html#a62f5e618bc5e3d6bb80ee99802c8ff30", null ],
     [ "elem", "da/d48/class_m2_1_1_a_ring_tower_a02aa7ad2bd09d30d64234fefd6c4637d.html#a02aa7ad2bd09d30d64234fefd6c4637d", null ],
@@ -28,6 +30,7 @@ var class_m2_1_1_a_ring_tower =
     [ "eval", "da/d48/class_m2_1_1_a_ring_tower_a5995dc2f8df6c8a0fe69bb06e0a079d5.html#a5995dc2f8df6c8a0fe69bb06e0a079d5", null ],
     [ "extensions_text_out", "da/d48/class_m2_1_1_a_ring_tower_afb93aeb75eeef4c86987963cb268528f.html#afb93aeb75eeef4c86987963cb268528f", null ],
     [ "from_ring_elem", "da/d48/class_m2_1_1_a_ring_tower_ab13730bdefdabf4cb29545064fbaf441.html#ab13730bdefdabf4cb29545064fbaf441", null ],
+    [ "from_ring_elem_const", "da/d48/class_m2_1_1_a_ring_tower_aaf92ed82ce5adbf0262695d98a3a7e9b.html#aaf92ed82ce5adbf0262695d98a3a7e9b", null ],
     [ "increase_capacity", "da/d48/class_m2_1_1_a_ring_tower_a4b212299746082cc1d2d9e06cb024b6a.html#a4b212299746082cc1d2d9e06cb024b6a", null ],
     [ "init", "da/d48/class_m2_1_1_a_ring_tower_afca15268df3318779e0e4e053911c4a0.html#afca15268df3318779e0e4e053911c4a0", null ],
     [ "init_set", "da/d48/class_m2_1_1_a_ring_tower_aea4f840ee2944bb95f275752235839dc.html#aea4f840ee2944bb95f275752235839dc", null ],

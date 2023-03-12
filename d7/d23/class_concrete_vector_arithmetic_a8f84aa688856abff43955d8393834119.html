@@ -123,22 +123,22 @@ template&lt;typename RingType , typename ElementArrayType  = ElementArray&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00150">150</a> of file <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html">VectorArithmetic.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">auto</span>&amp; <a class="code" href="../../d1/d00/debug_8cpp_a1814e17d2619d9711b864278a91be7ee.html#a1814e17d2619d9711b864278a91be7ee">dvec</a> = * <a class="code" href="../../d7/d23/class_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4.html#a56f6e314bc923b459eb369d5207a50e4">elementArray</a>(dense);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = first; i &lt;= last; i++)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d7/d23/class_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5.html#a2f781d5f5209547d6da2d2e9088d0cb5">mRing</a>-&gt;is_zero(<a class="code" href="../../d1/d00/debug_8cpp_a1814e17d2619d9711b864278a91be7ee.html#a1814e17d2619d9711b864278a91be7ee">dvec</a>[i])) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">// these lines give the gist of how to handle delayed modulus</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="comment">//if (dvec[i] &gt; mCharacteristic) dvec[i] %= mCharacteristic;</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">//else if (dvec[i] &lt; 0) dvec[i] %= mCharacteristic;</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">//if (dvec[i] == 0) continue;</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      }</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> last + 1;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  }</div>
-<div class="ttc" id="aclass_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5_html_a2f781d5f5209547d6da2d2e9088d0cb5"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5.html#a2f781d5f5209547d6da2d2e9088d0cb5">ConcreteVectorArithmetic::mRing</a></div><div class="ttdeci">const RingType * mRing</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00060">VectorArithmetic.hpp:60</a></div></div>
-<div class="ttc" id="aclass_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4_html_a56f6e314bc923b459eb369d5207a50e4"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4.html#a56f6e314bc923b459eb369d5207a50e4">ConcreteVectorArithmetic::elementArray</a></div><div class="ttdeci">ElementArrayContainer * elementArray(const ElementArrayType &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00062">VectorArithmetic.hpp:62</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00148">148</a> of file <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html">VectorArithmetic.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">auto</span>&amp; <a class="code" href="../../d1/d00/debug_8cpp_a1814e17d2619d9711b864278a91be7ee.html#a1814e17d2619d9711b864278a91be7ee">dvec</a> = * <a class="code" href="../../d7/d23/class_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4.html#a56f6e314bc923b459eb369d5207a50e4">elementArray</a>(dense);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = first; i &lt;= last; i++)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d7/d23/class_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5.html#a2f781d5f5209547d6da2d2e9088d0cb5">mRing</a>-&gt;is_zero(<a class="code" href="../../d1/d00/debug_8cpp_a1814e17d2619d9711b864278a91be7ee.html#a1814e17d2619d9711b864278a91be7ee">dvec</a>[i])) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">// these lines give the gist of how to handle delayed modulus</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">//if (dvec[i] &gt; mCharacteristic) dvec[i] %= mCharacteristic;</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">//else if (dvec[i] &lt; 0) dvec[i] %= mCharacteristic;</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="comment">//if (dvec[i] == 0) continue;</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">return</span> last + 1;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  }</div>
+<div class="ttc" id="aclass_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5_html_a2f781d5f5209547d6da2d2e9088d0cb5"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5.html#a2f781d5f5209547d6da2d2e9088d0cb5">ConcreteVectorArithmetic::mRing</a></div><div class="ttdeci">const RingType * mRing</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00058">VectorArithmetic.hpp:58</a></div></div>
+<div class="ttc" id="aclass_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4_html_a56f6e314bc923b459eb369d5207a50e4"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4.html#a56f6e314bc923b459eb369d5207a50e4">ConcreteVectorArithmetic::elementArray</a></div><div class="ttdeci">ElementArrayContainer * elementArray(const ElementArrayType &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00060">VectorArithmetic.hpp:60</a></div></div>
 <div class="ttc" id="adebug_8cpp_a1814e17d2619d9711b864278a91be7ee_html_a1814e17d2619d9711b864278a91be7ee"><div class="ttname"><a href="../../d1/d00/debug_8cpp_a1814e17d2619d9711b864278a91be7ee.html#a1814e17d2619d9711b864278a91be7ee">dvec</a></div><div class="ttdeci">void dvec(const Ring *R, const vec v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d00/debug_8cpp_source.html#l00068">debug.cpp:68</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d1/d00/debug_8cpp_a1814e17d2619d9711b864278a91be7ee.html#a1814e17d2619d9711b864278a91be7ee">dvec()</a>, <a class="el" href="../../d7/d23/class_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4.html#a56f6e314bc923b459eb369d5207a50e4">ConcreteVectorArithmetic&lt; RingType, ElementArrayType &gt;::elementArray()</a>, and <a class="el" href="../../d7/d23/class_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5.html#a2f781d5f5209547d6da2d2e9088d0cb5">ConcreteVectorArithmetic&lt; RingType, ElementArrayType &gt;::mRing</a>.</p>
@@ -151,7 +151,7 @@ template&lt;typename RingType , typename ElementArrayType  = ElementArray&gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d23/class_concrete_vector_arithmetic.html">ConcreteVectorArithmetic</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

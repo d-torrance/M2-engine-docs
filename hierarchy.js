@@ -4,7 +4,6 @@ var hierarchy =
     [ "ARing", "d1/d7e/class_a_ring.html", [
       [ "M2::AConcreteRing< RingType >", "d3/dd1/class_m2_1_1_a_concrete_ring.html", null ]
     ] ],
-    [ "ARingElem< RT >", "d9/d09/class_a_ring_elem.html", null ],
     [ "ARingElement< RT >", "d9/d84/class_a_ring_element.html", null ],
     [ "ARingElementGenerator< RingType >", "df/dc2/class_a_ring_element_generator.html", null ],
     [ "M2::ARingPolynomialStruct", "db/d05/struct_m2_1_1_a_ring_polynomial_struct.html", null ],
@@ -22,6 +21,7 @@ var hierarchy =
     [ "cc_struct", "de/d31/structcc__struct.html", null ],
     [ "CCmutable_struct", "d6/ddb/struct_c_cmutable__struct.html", null ],
     [ "ChineseRemainder", "d0/d4e/class_chinese_remainder.html", null ],
+    [ "CoefficientRingR", "d1/d34/class_coefficient_ring_r.html", null ],
     [ "CoefficientRingType", "db/dc3/struct_coefficient_ring_type.html", null ],
     [ "CoefficientVector", "d8/da3/class_coefficient_vector.html", null ],
     [ "NCF4::Column", "d8/dcb/struct_n_c_f4_1_1_column.html", null ],
@@ -57,6 +57,19 @@ var hierarchy =
     [ "EigenTypes< M2::ARingRR >", "d9/dc6/struct_eigen_types_3_01_m2_1_1_a_ring_r_r_01_4.html", null ],
     [ "EigenTypes< M2::ARingRRR >", "dd/dbb/struct_eigen_types_3_01_m2_1_1_a_ring_r_r_r_01_4.html", null ],
     [ "ElementArray", "d5/d94/class_element_array.html", null ],
+    [ "M2::ARingGFFlint::ElementArray", "d8/dd7/class_m2_1_1_a_ring_g_f_flint_1_1_element_array.html", null ],
+    [ "M2::ARingGFFlintBig::ElementArray", "dc/d3d/class_m2_1_1_a_ring_g_f_flint_big_1_1_element_array.html", null ],
+    [ "M2::ARingTower::ElementArray", "d6/d12/class_m2_1_1_a_ring_tower_1_1_element_array.html", null ],
+    [ "M2::SimpleARing< ARing >::ElementArray", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array.html", null ],
+    [ "M2::ElementImpl< ElementType >", "d2/d8c/class_m2_1_1_element_impl.html", [
+      [ "CoefficientRingR::Element", "d0/d4b/class_coefficient_ring_r_1_1_element.html", null ],
+      [ "M2::ARingGFFlint::Element", "d8/d56/class_m2_1_1_a_ring_g_f_flint_1_1_element.html", null ],
+      [ "M2::ARingGFFlintBig::Element", "d0/d79/class_m2_1_1_a_ring_g_f_flint_big_1_1_element.html", null ],
+      [ "M2::ARingTower::Element", "de/d6c/class_m2_1_1_a_ring_tower_1_1_element.html", null ]
+    ] ],
+    [ "M2::ElementImpl< ARing::ElementType >", "d2/d8c/class_m2_1_1_element_impl.html", [
+      [ "M2::SimpleARing< ARing >::Element", "d7/d87/class_m2_1_1_simple_a_ring_1_1_element.html", null ]
+    ] ],
     [ "enter_factory", "db/d86/structenter__factory.html", null ],
     [ "EntryConfig", "d4/de5/class_entry_config.html", null ],
     [ "std::exception", null, [
@@ -186,8 +199,8 @@ var hierarchy =
       [ "F4MemoryBlock< monomial_word >", "d8/d75/class_f4_memory_block.html", null ],
       [ "F4MemoryBlock< varpower_word >", "d8/d75/class_f4_memory_block.html", null ],
       [ "SMat< CoeffRing >", "da/de0/class_s_mat.html", null ],
-      [ "CoefficientRingR", "d1/d34/class_coefficient_ring_r.html", null ],
-      [ "CoefficientRingZZp", "dd/dd5/class_coefficient_ring_z_zp.html", null ],
+      [ "CoefficientRingR::Element", "d0/d4b/class_coefficient_ring_r_1_1_element.html", null ],
+      [ "CoefficientRingR::ElementArray", "df/d9d/class_coefficient_ring_r_1_1_element_array.html", null ],
       [ "DPolyTraverser", "d4/d61/class_d_poly_traverser.html", [
         [ "TowerEvaluator", "dc/d52/class_tower_evaluator.html", null ]
       ] ],
@@ -224,24 +237,55 @@ var hierarchy =
       [ "GBWeight", "d5/d82/class_g_b_weight.html", null ],
       [ "Gausser", "d4/db9/class_gausser.html", null ],
       [ "M2::RingInterface", "db/d1a/class_m2_1_1_ring_interface.html", [
-        [ "M2::ARingCC", "d1/dfa/class_m2_1_1_a_ring_c_c.html", null ],
-        [ "M2::ARingCCC", "d6/de1/class_m2_1_1_a_ring_c_c_c.html", null ],
+        [ "M2::SimpleARing< ARingQQGMP >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingQQGMP", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingCC >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingCC", "d1/dfa/class_m2_1_1_a_ring_c_c.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingZZpFFPACK >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingZZpFFPACK", "da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingZZGMP >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingZZGMP", "db/d2e/class_m2_1_1_a_ring_z_z_g_m_p.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingRRi >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingRRi", "dd/d78/class_m2_1_1_a_ring_r_ri.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingQQFlint >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingQQFlint", "dd/d1b/class_m2_1_1_a_ring_q_q_flint.html", null ]
+        ] ],
+        [ "M2::SimpleARing< DummyRing >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::DummyRing", "d5/d2d/class_m2_1_1_dummy_ring.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingGFM2 >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingGFM2", "dd/df1/class_m2_1_1_a_ring_g_f_m2.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingCCC >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingCCC", "d6/de1/class_m2_1_1_a_ring_c_c_c.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingZZpFlint >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingZZpFlint", "d1/d21/class_m2_1_1_a_ring_z_zp_flint.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingRRR >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingRRR", "dd/d9e/class_m2_1_1_a_ring_r_r_r.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingZZp >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingZZp", "d6/d13/class_m2_1_1_a_ring_z_zp.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingZZ >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingZZ", "d4/dea/class_m2_1_1_a_ring_z_z.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingRR >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingRR", "d0/d48/class_m2_1_1_a_ring_r_r.html", null ]
+        ] ],
+        [ "M2::SimpleARing< CoefficientRingZZp >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "CoefficientRingZZp", "dd/dd5/class_coefficient_ring_z_zp.html", null ]
+        ] ],
         [ "M2::ARingGFFlint", "d5/d5f/class_m2_1_1_a_ring_g_f_flint.html", null ],
         [ "M2::ARingGFFlintBig", "d8/d7a/class_m2_1_1_a_ring_g_f_flint_big.html", null ],
-        [ "M2::ARingGFGivaro", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro.html", null ],
-        [ "M2::ARingGFM2", "dd/df1/class_m2_1_1_a_ring_g_f_m2.html", null ],
-        [ "M2::ARingQQFlint", "dd/d1b/class_m2_1_1_a_ring_q_q_flint.html", null ],
-        [ "M2::ARingQQGMP", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p.html", null ],
-        [ "M2::ARingRR", "d0/d48/class_m2_1_1_a_ring_r_r.html", null ],
-        [ "M2::ARingRRR", "dd/d9e/class_m2_1_1_a_ring_r_r_r.html", null ],
-        [ "M2::ARingRRi", "dd/d78/class_m2_1_1_a_ring_r_ri.html", null ],
         [ "M2::ARingTower", "da/d48/class_m2_1_1_a_ring_tower.html", null ],
-        [ "M2::ARingZZ", "d4/dea/class_m2_1_1_a_ring_z_z.html", null ],
-        [ "M2::ARingZZGMP", "db/d2e/class_m2_1_1_a_ring_z_z_g_m_p.html", null ],
-        [ "M2::ARingZZp", "d6/d13/class_m2_1_1_a_ring_z_zp.html", null ],
-        [ "M2::ARingZZpFFPACK", "da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k.html", null ],
-        [ "M2::ARingZZpFlint", "d1/d21/class_m2_1_1_a_ring_z_zp_flint.html", null ],
-        [ "M2::DummyRing", "d5/d2d/class_m2_1_1_dummy_ring.html", null ]
+        [ "M2::SimpleARing< ARing >", "de/db5/class_m2_1_1_simple_a_ring.html", null ]
       ] ],
       [ "Matrix::iterator", "d2/d54/class_matrix_1_1iterator.html", null ],
       [ "MonomialInfo", "dd/dab/class_monomial_info.html", null ],
@@ -484,6 +528,9 @@ var hierarchy =
     [ "SchreyerOrder_symm", "dc/d2a/struct_schreyer_order__symm.html", null ],
     [ "schur_poly_iterator", "d7/d11/classschur__poly__iterator.html", null ],
     [ "BIBasis::SettingsManager", "dd/dbf/class_b_i_basis_1_1_settings_manager.html", null ],
+    [ "SimpleRing", "d5/d43/class_simple_ring.html", [
+      [ "M2::ARingGFGivaro", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro.html", null ]
+    ] ],
     [ "SkewMultiplication", "d0/d29/class_skew_multiplication.html", null ],
     [ "MemoryBlock< T, NSLAB >::slab", "d5/d90/struct_memory_block_1_1slab.html", null ],
     [ "SLEvaluator", "d0/d4e/class_s_l_evaluator.html", [

@@ -105,17 +105,17 @@ $(document).ready(function(){initNavTree('d6/de1/class_m2_1_1_a_ring_c_c_c_a323d
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00504">504</a> of file <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html">aring-CCC.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  {</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    gmp_CCmutable result = <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(gmp_CCmutable);</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    result-&gt;re = <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(gmp_RRmutable);</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    result-&gt;im = <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(gmp_RRmutable);</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    mpfr_init2(result-&gt;re, <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision</a>());</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    mpfr_init2(result-&gt;im, <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision</a>());</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    mpfr_set(result-&gt;re, &amp;a.re, MPFR_RNDN);</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    mpfr_set(result-&gt;im, &amp;a.im, MPFR_RNDN);</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d41/gmp-util_8h_a5666f6a5496dd378bc6502276f87008c.html#a5666f6a5496dd378bc6502276f87008c">moveTo_gmpCC</a>(result);</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  }</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00495">495</a> of file <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html">aring-CCC.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  {</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    gmp_CCmutable result = <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(gmp_CCmutable);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    result-&gt;re = <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(gmp_RRmutable);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    result-&gt;im = <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(gmp_RRmutable);</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    mpfr_init2(result-&gt;re, <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision</a>());</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    mpfr_init2(result-&gt;im, <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision</a>());</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    mpfr_set(result-&gt;re, &amp;a.re, MPFR_RNDN);</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    mpfr_set(result-&gt;im, &amp;a.im, MPFR_RNDN);</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d41/gmp-util_8h_a5666f6a5496dd378bc6502276f87008c.html#a5666f6a5496dd378bc6502276f87008c">moveTo_gmpCC</a>(result);</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  }</div>
 <div class="ttc" id="a_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57_html_a6ca24b55fd05d728fa63a538c8f0ec57"><div class="ttname"><a href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a></div><div class="ttdeci">#define getmemstructtype(S)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d81/_m2mem-replacement_8h_source.html#l00035">M2mem-replacement.h:35</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf_html_a6ca36f68691d04e4535212cbb3a963cf"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">M2::ARingCCC::get_precision</a></div><div class="ttdeci">unsigned long get_precision() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00040">aring-CCC.hpp:40</a></div></div>
 <div class="ttc" id="agmp-util_8h_a5666f6a5496dd378bc6502276f87008c_html_a5666f6a5496dd378bc6502276f87008c"><div class="ttname"><a href="../../d0/d41/gmp-util_8h_a5666f6a5496dd378bc6502276f87008c.html#a5666f6a5496dd378bc6502276f87008c">moveTo_gmpCC</a></div><div class="ttdeci">gmp_CC moveTo_gmpCC(gmp_CCmutable _z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d41/gmp-util_8h_source.html#l00079">gmp-util.h:79</a></div></div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('d6/de1/class_m2_1_1_a_ring_c_c_c_a323d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c.html">ARingCCC</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

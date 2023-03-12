@@ -121,18 +121,18 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a9b242a23e
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00640">640</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;{</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;  <a class="code" href="../../d9/d3a/class_flint_z_z_mat.html">FlintZZMat</a> A1(A);</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;  <a class="code" href="../../d9/d3a/class_flint_z_z_mat.html">FlintZZMat</a> B1(B);</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;  <a class="code" href="../../d9/d3a/class_flint_z_z_mat.html">FlintZZMat</a> result1(A.<a class="code" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>(), B.<a class="code" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>());</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160; </div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;  fmpz_mat_mul(result1.value(), A1.value(), B1.value());</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160; </div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  result1.toDMat(result_product);</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;}</div>
-<div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00132">dmat.hpp:132</a></div></div>
-<div class="ttc" id="aclass_d_mat_aff91923e882c194ecf16030897933e45_html_aff91923e882c194ecf16030897933e45"><div class="ttname"><a href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat::numColumns</a></div><div class="ttdeci">size_t numColumns() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00133">dmat.hpp:133</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00636">636</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;{</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  <a class="code" href="../../d9/d3a/class_flint_z_z_mat.html">FlintZZMat</a> A1(A);</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  <a class="code" href="../../d9/d3a/class_flint_z_z_mat.html">FlintZZMat</a> B1(B);</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;  <a class="code" href="../../d9/d3a/class_flint_z_z_mat.html">FlintZZMat</a> result1(A.<a class="code" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>(), B.<a class="code" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>());</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160; </div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;  fmpz_mat_mul(result1.value(), A1.value(), B1.value());</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160; </div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;  result1.toDMat(result_product);</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;}</div>
+<div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00133">dmat.hpp:133</a></div></div>
+<div class="ttc" id="aclass_d_mat_aff91923e882c194ecf16030897933e45_html_aff91923e882c194ecf16030897933e45"><div class="ttname"><a href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat::numColumns</a></div><div class="ttdeci">size_t numColumns() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00134">dmat.hpp:134</a></div></div>
 <div class="ttc" id="aclass_flint_z_z_mat_html"><div class="ttname"><a href="../../d9/d3a/class_flint_z_z_mat.html">FlintZZMat</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6d/dmat-qq-interface-flint_8hpp_source.html#l00013">dmat-qq-interface-flint.hpp:14</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat&lt; ACoeffRing &gt;::numColumns()</a>, <a class="el" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat&lt; ACoeffRing &gt;::numRows()</a>, <a class="el" href="../../d9/d3a/class_flint_z_z_mat_a94f945b98c39c30206e15deee930605e.html#a94f945b98c39c30206e15deee930605e">FlintZZMat::toDMat()</a>, and <a class="el" href="../../d9/d3a/class_flint_z_z_mat_a1ee984fe9b6c9b22ade68f122f320a55.html#a1ee984fe9b6c9b22ade68f122f320a55">FlintZZMat::value()</a>.</p>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a9b242a23e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:37 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

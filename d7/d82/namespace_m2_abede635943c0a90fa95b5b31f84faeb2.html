@@ -121,19 +121,17 @@ template&lt;typename RingType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l00932">932</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;{</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;  <span class="keywordflow">if</span> (Rg == <a class="code" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>)</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    {</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;      <span class="keyword">typename</span> RingType::ElementType a;</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;      R.init(a);</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;      R.from_ring_elem(a, f);</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;      result = Rg-&gt;<a class="code" href="../../dd/dcf/class_ring_a6f6b08df2379200116484876c4fd2d87.html#a6f6b08df2379200116484876c4fd2d87">from_long</a>(R.coerceToLongInteger(a));</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;      R.clear(a);</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;    }</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l00831">831</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;{</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;  <span class="keywordflow">if</span> (Rg == <a class="code" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>)</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    {</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;      <span class="keyword">typename</span> RingType::Element a(R);</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;      R.from_ring_elem(a, f);</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;      result = Rg-&gt;<a class="code" href="../../dd/dcf/class_ring_a6f6b08df2379200116484876c4fd2d87.html#a6f6b08df2379200116484876c4fd2d87">from_long</a>(R.coerceToLongInteger(a));</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    }</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;}</div>
 <div class="ttc" id="aclass_ring_a6f6b08df2379200116484876c4fd2d87_html_a6f6b08df2379200116484876c4fd2d87"><div class="ttname"><a href="../../dd/dcf/class_ring_a6f6b08df2379200116484876c4fd2d87.html#a6f6b08df2379200116484876c4fd2d87">Ring::from_long</a></div><div class="ttdeci">virtual ring_elem from_long(long n) const =0</div></div>
 <div class="ttc" id="agauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9_html_a5ad190417a478c3f15fa01ef9ee9bac9"><div class="ttname"><a href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a></div><div class="ttdeci">RingZZ * globalZZ</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00013">relem.cpp:13</a></div></div>
 </div><!-- fragment -->
@@ -149,7 +147,7 @@ template&lt;typename RingType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

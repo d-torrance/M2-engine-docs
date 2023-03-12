@@ -117,28 +117,28 @@ $(document).ready(function(){initNavTree('d4/d85/class_m2_1_1_ring_q_q_abdef4643
 
 <p>Reimplemented from <a class="el" href="../../dd/dcf/class_ring_a6cf572cc4135a4d6c406cd9b05dd4f88.html#a6cf572cc4135a4d6c406cd9b05dd4f88">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l00583">583</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  {</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_a204548922e1b14e9ced6a855dc8d92d1.html#a204548922e1b14e9ced6a855dc8d92d1">is_zero</a>(c))</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;      {</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        c = g;</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;      }</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    mpq_srcptr a = <a class="code" href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a>(c);</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    mpq_srcptr b = <a class="code" href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a>(g);</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    <span class="keywordtype">int</span> sa = mpq_sgn(a);</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    mpq_ptr result = <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(mpq_ptr);</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    mpq_init(result);</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160; </div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    mpz_gcd(mpq_numref(result), mpq_numref(a), mpq_numref(b));</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    mpz_lcm(mpq_denref(result), mpq_denref(a), mpq_denref(b));</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    <span class="keywordflow">if</span> (sa != mpq_sgn(result)) mpq_neg(result, result);</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    <a class="code" href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a>(mpq_numref(result));</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    <a class="code" href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a>(mpq_denref(result));</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    c = <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a>(result);</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;  }</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l00490">490</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  {</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_a204548922e1b14e9ced6a855dc8d92d1.html#a204548922e1b14e9ced6a855dc8d92d1">is_zero</a>(c))</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;      {</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        c = g;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;      }</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    mpq_srcptr a = <a class="code" href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a>(c);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    mpq_srcptr b = <a class="code" href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a>(g);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordtype">int</span> sa = mpq_sgn(a);</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    mpq_ptr result = <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(mpq_ptr);</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    mpq_init(result);</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160; </div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    mpz_gcd(mpq_numref(result), mpq_numref(a), mpq_numref(b));</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    mpz_lcm(mpq_denref(result), mpq_denref(a), mpq_denref(b));</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="keywordflow">if</span> (sa != mpq_sgn(result)) mpq_neg(result, result);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <a class="code" href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a>(mpq_numref(result));</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <a class="code" href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a>(mpq_denref(result));</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    c = <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a>(result);</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  }</div>
 <div class="ttc" id="a_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57_html_a6ca24b55fd05d728fa63a538c8f0ec57"><div class="ttname"><a href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a></div><div class="ttdeci">#define getmemstructtype(S)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d81/_m2mem-replacement_8h_source.html#l00035">M2mem-replacement.h:35</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_concrete_ring_a204548922e1b14e9ced6a855dc8d92d1_html_a204548922e1b14e9ced6a855dc8d92d1"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_a204548922e1b14e9ced6a855dc8d92d1.html#a204548922e1b14e9ced6a855dc8d92d1">M2::ConcreteRing&lt; ARingQQ &gt;::is_zero</a></div><div class="ttdeci">virtual bool is_zero(const ring_elem f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00243">aring-glue.hpp:243</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_concrete_ring_a204548922e1b14e9ced6a855dc8d92d1_html_a204548922e1b14e9ced6a855dc8d92d1"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_a204548922e1b14e9ced6a855dc8d92d1.html#a204548922e1b14e9ced6a855dc8d92d1">M2::ConcreteRing&lt; ARingQQ &gt;::is_zero</a></div><div class="ttdeci">virtual bool is_zero(const ring_elem f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00219">aring-glue.hpp:219</a></div></div>
 <div class="ttc" id="agmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c_html_ac1d9cec5a8df3154d9dfbf08b298419c"><div class="ttname"><a href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a></div><div class="ttdeci">void mpz_reallocate_limbs(mpz_ptr _z)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d41/gmp-util_8h_source.html#l00014">gmp-util.h:14</a></div></div>
 <div class="ttc" id="aringelem_8hpp_a763804a1f716888d0f6362e483ca41c3_html_a763804a1f716888d0f6362e483ca41c3"><div class="ttname"><a href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a></div><div class="ttdeci">#define MPQ_VAL(f)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00112">ringelem.hpp:112</a></div></div>
 <div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00045">ringelem.hpp:46</a></div></div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('d4/d85/class_m2_1_1_ring_q_q_abdef4643
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d4/d85/class_m2_1_1_ring_q_q.html">RingQQ</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -12,9 +12,15 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "aring-CCC.cpp", "da/d89/aring-_c_c_c_8cpp.html", null ],
     [ "aring-CCC.hpp", "d5/d9c/aring-_c_c_c_8hpp.html", null ],
     [ "aring-gf-flint-big.cpp", "d6/db2/aring-gf-flint-big_8cpp.html", null ],
-    [ "aring-gf-flint-big.hpp", "d3/dd0/aring-gf-flint-big_8hpp.html", null ],
+    [ "aring-gf-flint-big.hpp", "d3/dd0/aring-gf-flint-big_8hpp.html", [
+      [ "Element", "d0/d79/class_m2_1_1_a_ring_g_f_flint_big_1_1_element.html", "d0/d79/class_m2_1_1_a_ring_g_f_flint_big_1_1_element" ],
+      [ "ElementArray", "dc/d3d/class_m2_1_1_a_ring_g_f_flint_big_1_1_element_array.html", "dc/d3d/class_m2_1_1_a_ring_g_f_flint_big_1_1_element_array" ]
+    ] ],
     [ "aring-gf-flint.cpp", "da/d2c/aring-gf-flint_8cpp.html", null ],
-    [ "aring-gf-flint.hpp", "da/d9d/aring-gf-flint_8hpp.html", null ],
+    [ "aring-gf-flint.hpp", "da/d9d/aring-gf-flint_8hpp.html", [
+      [ "Element", "d8/d56/class_m2_1_1_a_ring_g_f_flint_1_1_element.html", "d8/d56/class_m2_1_1_a_ring_g_f_flint_1_1_element" ],
+      [ "ElementArray", "d8/dd7/class_m2_1_1_a_ring_g_f_flint_1_1_element_array.html", "d8/dd7/class_m2_1_1_a_ring_g_f_flint_1_1_element_array" ]
+    ] ],
     [ "aring-gf-givaro.cpp", "d6/d9b/aring-gf-givaro_8cpp.html", null ],
     [ "aring-gf-givaro.hpp", "d2/d7f/aring-gf-givaro_8hpp.html", "d2/d7f/aring-gf-givaro_8hpp" ],
     [ "aring-glue.hpp", "dd/da4/aring-glue_8hpp.html", "dd/da4/aring-glue_8hpp" ],
@@ -48,9 +54,6 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "aring-zzp.hpp", "d5/d4e/aring-zzp_8hpp.html", null ],
     [ "aring.cpp", "d2/d8c/aring_8cpp.html", null ],
     [ "aring.hpp", "d5/d40/aring_8hpp.html", "d5/d40/aring_8hpp" ],
-    [ "ARingElem.hpp", "df/d63/_a_ring_elem_8hpp.html", [
-      [ "ARingElem", "d9/d09/class_a_ring_elem.html", "d9/d09/class_a_ring_elem" ]
-    ] ],
     [ "assprime.cpp", "d0/d5b/assprime_8cpp.html", "d0/d5b/assprime_8cpp" ],
     [ "assprime.hpp", "df/d0f/assprime_8hpp.html", [
       [ "AssociatedPrimes", "d5/dc8/class_associated_primes.html", "d5/dc8/class_associated_primes" ]
@@ -63,7 +66,10 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "buffer.cpp", "dd/d85/buffer_8cpp.html", null ],
     [ "buffer.hpp", "da/d1d/buffer_8hpp.html", "da/d1d/buffer_8hpp" ],
     [ "coeffrings.cpp", "d8/d12/coeffrings_8cpp.html", null ],
-    [ "coeffrings.hpp", "d5/d07/coeffrings_8hpp.html", null ],
+    [ "coeffrings.hpp", "d5/d07/coeffrings_8hpp.html", [
+      [ "Element", "d0/d4b/class_coefficient_ring_r_1_1_element.html", "d0/d4b/class_coefficient_ring_r_1_1_element" ],
+      [ "ElementArray", "df/d9d/class_coefficient_ring_r_1_1_element_array.html", "df/d9d/class_coefficient_ring_r_1_1_element_array" ]
+    ] ],
     [ "comb.cpp", "db/dc0/comb_8cpp.html", "db/dc0/comb_8cpp" ],
     [ "comb.hpp", "d1/d23/comb_8hpp.html", "d1/d23/comb_8hpp" ],
     [ "comp-gb-declared.cpp", "d0/db1/comp-gb-declared_8cpp.html", null ],

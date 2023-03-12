@@ -121,22 +121,22 @@ $(document).ready(function(){initNavTree('d6/d13/class_m2_1_1_a_ring_z_zp_ab08f5
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/aring-zzp_8hpp_source.html#l00239">239</a> of file <a class="el" href="../../d5/d4e/aring-zzp_8hpp_source.html">aring-zzp.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">if</span> (a != 0)</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordtype">int</span> n1 = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(mpz_fdiv_ui(n, <a class="code" href="../../d6/d13/class_m2_1_1_a_ring_z_zp_aad7f183be10a4243c400248aea780b3f.html#aad7f183be10a4243c400248aea780b3f">p1</a>));</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <a class="code" href="../../d6/d13/class_m2_1_1_a_ring_z_zp_ae842bcd29a3e976a349b39dca40dff6c.html#ae842bcd29a3e976a349b39dca40dff6c">power</a>(result, a, n1);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      }</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">if</span> (mpz_sgn(n) == 0) result = <a class="code" href="../../d6/d13/class_m2_1_1_a_ring_z_zp_aad7f183be10a4243c400248aea780b3f.html#aad7f183be10a4243c400248aea780b3f">p1</a>; <span class="comment">// the element 1 in this ring.</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mpz_sgn(n) &lt; 0) <span class="keywordflow">throw</span> <a class="code" href="../../d1/daf/structexc_1_1division__by__zero__error.html">exc::division_by_zero_error</a>();</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">else</span> result = 0; <span class="comment">// result is 0 in the ring.</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      }</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  }</div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_z_zp_aad7f183be10a4243c400248aea780b3f_html_aad7f183be10a4243c400248aea780b3f"><div class="ttname"><a href="../../d6/d13/class_m2_1_1_a_ring_z_zp_aad7f183be10a4243c400248aea780b3f.html#aad7f183be10a4243c400248aea780b3f">M2::ARingZZp::p1</a></div><div class="ttdeci">int p1</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d4e/aring-zzp_8hpp_source.html#l00303">aring-zzp.hpp:303</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_z_zp_ae842bcd29a3e976a349b39dca40dff6c_html_ae842bcd29a3e976a349b39dca40dff6c"><div class="ttname"><a href="../../d6/d13/class_m2_1_1_a_ring_z_zp_ae842bcd29a3e976a349b39dca40dff6c.html#ae842bcd29a3e976a349b39dca40dff6c">M2::ARingZZp::power</a></div><div class="ttdeci">void power(elem &amp;result, elem a, int n) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d4e/aring-zzp_8hpp_source.html#l00223">aring-zzp.hpp:223</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/aring-zzp_8hpp_source.html#l00249">249</a> of file <a class="el" href="../../d5/d4e/aring-zzp_8hpp_source.html">aring-zzp.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">if</span> (a != 0)</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordtype">int</span> n1 = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(mpz_fdiv_ui(n, <a class="code" href="../../d6/d13/class_m2_1_1_a_ring_z_zp_aad7f183be10a4243c400248aea780b3f.html#aad7f183be10a4243c400248aea780b3f">p1</a>));</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <a class="code" href="../../d6/d13/class_m2_1_1_a_ring_z_zp_ae842bcd29a3e976a349b39dca40dff6c.html#ae842bcd29a3e976a349b39dca40dff6c">power</a>(result, a, n1);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">if</span> (mpz_sgn(n) == 0) result = <a class="code" href="../../d6/d13/class_m2_1_1_a_ring_z_zp_aad7f183be10a4243c400248aea780b3f.html#aad7f183be10a4243c400248aea780b3f">p1</a>; <span class="comment">// the element 1 in this ring.</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mpz_sgn(n) &lt; 0) <span class="keywordflow">throw</span> <a class="code" href="../../d1/daf/structexc_1_1division__by__zero__error.html">exc::division_by_zero_error</a>();</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">else</span> result = 0; <span class="comment">// result is 0 in the ring.</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  }</div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_z_zp_aad7f183be10a4243c400248aea780b3f_html_aad7f183be10a4243c400248aea780b3f"><div class="ttname"><a href="../../d6/d13/class_m2_1_1_a_ring_z_zp_aad7f183be10a4243c400248aea780b3f.html#aad7f183be10a4243c400248aea780b3f">M2::ARingZZp::p1</a></div><div class="ttdeci">int p1</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d4e/aring-zzp_8hpp_source.html#l00313">aring-zzp.hpp:313</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_z_zp_ae842bcd29a3e976a349b39dca40dff6c_html_ae842bcd29a3e976a349b39dca40dff6c"><div class="ttname"><a href="../../d6/d13/class_m2_1_1_a_ring_z_zp_ae842bcd29a3e976a349b39dca40dff6c.html#ae842bcd29a3e976a349b39dca40dff6c">M2::ARingZZp::power</a></div><div class="ttdeci">void power(elem &amp;result, elem a, int n) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d4e/aring-zzp_8hpp_source.html#l00233">aring-zzp.hpp:233</a></div></div>
 <div class="ttc" id="astructexc_1_1division__by__zero__error_html"><div class="ttname"><a href="../../d1/daf/structexc_1_1division__by__zero__error.html">exc::division_by_zero_error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00017">exceptions.hpp:18</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d6/d13/class_m2_1_1_a_ring_z_zp_aad7f183be10a4243c400248aea780b3f.html#aad7f183be10a4243c400248aea780b3f">p1</a>, and <a class="el" href="../../d6/d13/class_m2_1_1_a_ring_z_zp_ae842bcd29a3e976a349b39dca40dff6c.html#ae842bcd29a3e976a349b39dca40dff6c">power()</a>.</p>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('d6/d13/class_m2_1_1_a_ring_z_zp_ab08f5
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d6/d13/class_m2_1_1_a_ring_z_zp.html">ARingZZp</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

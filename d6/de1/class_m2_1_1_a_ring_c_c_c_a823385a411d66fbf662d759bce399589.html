@@ -121,36 +121,31 @@ $(document).ready(function(){initNavTree('d6/de1/class_m2_1_1_a_ring_c_c_c_a8233
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00296">296</a> of file <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html">aring-CCC.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    mpfr_t tmp;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a14ee82a8ccec5980d2e78ed1845dc50a.html#a14ee82a8ccec5980d2e78ed1845dc50a">ElementType</a> result;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a60c45c281158ef7c4edf745f284fe8ed.html#a60c45c281158ef7c4edf745f284fe8ed">init</a>(result);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    mpfr_init2(tmp, <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision</a>());</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">// &amp;result.re = &amp;a.re*&amp;b.re - &amp;a.im*&amp;b.im;</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    mpfr_mul(tmp, &amp;a.re, &amp;b.re, MPFR_RNDN);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    mpfr_set(&amp;result.re, tmp, MPFR_RNDN);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    mpfr_mul(tmp, &amp;a.im, &amp;b.im, MPFR_RNDN);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    mpfr_sub(&amp;result.re, &amp;result.re, tmp, MPFR_RNDN);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="comment">// &amp;result.im = &amp;a.re*&amp;b.im + &amp;a.im*&amp;b.re;</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    mpfr_mul(tmp, &amp;a.re, &amp;b.im, MPFR_RNDN);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    mpfr_set(&amp;result.im, tmp, MPFR_RNDN);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    mpfr_mul(tmp, &amp;a.im, &amp;b.re, MPFR_RNDN);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    mpfr_add(&amp;result.im, &amp;result.im, tmp, MPFR_RNDN);</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">set</a>(res, result);</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ab0caa8d2e4b34d4b45b5444e00ea8e8a.html#ab0caa8d2e4b34d4b45b5444e00ea8e8a">clear</a>(result);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    mpfr_clear(tmp);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  }</div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_a14ee82a8ccec5980d2e78ed1845dc50a_html_a14ee82a8ccec5980d2e78ed1845dc50a"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a14ee82a8ccec5980d2e78ed1845dc50a.html#a14ee82a8ccec5980d2e78ed1845dc50a">M2::ARingCCC::ElementType</a></div><div class="ttdeci">elem ElementType</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00032">aring-CCC.hpp:32</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_a60c45c281158ef7c4edf745f284fe8ed_html_a60c45c281158ef7c4edf745f284fe8ed"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a60c45c281158ef7c4edf745f284fe8ed.html#a60c45c281158ef7c4edf745f284fe8ed">M2::ARingCCC::init</a></div><div class="ttdeci">void init(ElementType &amp;result) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00097">aring-CCC.hpp:97</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00295">295</a> of file <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html">aring-CCC.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    mpfr_t tmp;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    Element result(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    mpfr_init2(tmp, <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision</a>());</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="comment">// &amp;result.re = &amp;a.re*&amp;b.re - &amp;a.im*&amp;b.im;</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    mpfr_mul(tmp, &amp;a.re, &amp;b.re, MPFR_RNDN);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    mpfr_set(&amp;result.value().re, tmp, MPFR_RNDN);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    mpfr_mul(tmp, &amp;a.im, &amp;b.im, MPFR_RNDN);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    mpfr_sub(&amp;result.value().re, &amp;result.value().re, tmp, MPFR_RNDN);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">// &amp;result.im = &amp;a.re*&amp;b.im + &amp;a.im*&amp;b.re;</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    mpfr_mul(tmp, &amp;a.re, &amp;b.im, MPFR_RNDN);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    mpfr_set(&amp;result.value().im, tmp, MPFR_RNDN);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    mpfr_mul(tmp, &amp;a.im, &amp;b.re, MPFR_RNDN);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    mpfr_add(&amp;result.value().im, &amp;result.value().im, tmp, MPFR_RNDN);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">set</a>(res, result);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    mpfr_clear(tmp);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  }</div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf_html_a6ca36f68691d04e4535212cbb3a963cf"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">M2::ARingCCC::get_precision</a></div><div class="ttdeci">unsigned long get_precision() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00040">aring-CCC.hpp:40</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_ab0caa8d2e4b34d4b45b5444e00ea8e8a_html_ab0caa8d2e4b34d4b45b5444e00ea8e8a"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ab0caa8d2e4b34d4b45b5444e00ea8e8a.html#ab0caa8d2e4b34d4b45b5444e00ea8e8a">M2::ARingCCC::clear</a></div><div class="ttdeci">void clear(ElementType &amp;result) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00122">aring-CCC.hpp:122</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470_html_ad4163b5010df51b6ff9fba518d028470"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">M2::ARingCCC::set</a></div><div class="ttdeci">void set(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00110">aring-CCC.hpp:110</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470_html_ad4163b5010df51b6ff9fba518d028470"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">M2::ARingCCC::set</a></div><div class="ttdeci">void set(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00115">aring-CCC.hpp:115</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ab0caa8d2e4b34d4b45b5444e00ea8e8a.html#ab0caa8d2e4b34d4b45b5444e00ea8e8a">clear()</a>, <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision()</a>, <a class="el" href="../../de/d31/structcc__struct_a01c7e0ae1aa6afdb88e34089b44e315c.html#a01c7e0ae1aa6afdb88e34089b44e315c">cc_struct::im</a>, <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a60c45c281158ef7c4edf745f284fe8ed.html#a60c45c281158ef7c4edf745f284fe8ed">init()</a>, <a class="el" href="../../de/d31/structcc__struct_ab0d0e122986378302dd93f5fb27ec281.html#ab0d0e122986378302dd93f5fb27ec281">cc_struct::re</a>, and <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">set()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision()</a>, <a class="el" href="../../de/d31/structcc__struct_a01c7e0ae1aa6afdb88e34089b44e315c.html#a01c7e0ae1aa6afdb88e34089b44e315c">cc_struct::im</a>, <a class="el" href="../../de/d31/structcc__struct_ab0d0e122986378302dd93f5fb27ec281.html#ab0d0e122986378302dd93f5fb27ec281">cc_struct::re</a>, and <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">set()</a>.</p>
 
 </div>
 </div>
@@ -160,7 +155,7 @@ $(document).ready(function(){initNavTree('d6/de1/class_m2_1_1_a_ring_c_c_c_a8233
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c.html">ARingCCC</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -7,7 +7,7 @@ var group__coeffrings =
       [ "ring_type", "dd/dd5/class_coefficient_ring_z_zp_ae6804a4e4346d36fa6e876441120e2c1.html#ae6804a4e4346d36fa6e876441120e2c1", null ],
       [ "CoefficientRingZZp", "dd/dd5/class_coefficient_ring_z_zp_a194b0df250c74c070d6ef575d8a898e6.html#a194b0df250c74c070d6ef575d8a898e6", null ],
       [ "add", "dd/dd5/class_coefficient_ring_z_zp_aa18e3d6486a20fcb91b68d473c0855e0.html#aa18e3d6486a20fcb91b68d473c0855e0", null ],
-      [ "clear", "dd/dd5/class_coefficient_ring_z_zp_a349aafb97de10beb0ffa89ea5c6da725.html#a349aafb97de10beb0ffa89ea5c6da725", null ],
+      [ "clear", "dd/dd5/class_coefficient_ring_z_zp_a340ec7deaedca94a8bb8f798a78ec8d2.html#a340ec7deaedca94a8bb8f798a78ec8d2", null ],
       [ "coerceToLongInteger", "dd/dd5/class_coefficient_ring_z_zp_aec634f909044f6c3d4ada0bc296c1183.html#aec634f909044f6c3d4ada0bc296c1183", null ],
       [ "divide", "dd/dd5/class_coefficient_ring_z_zp_a3f377de7d0ac91d89c8c682f04e3d69d.html#a3f377de7d0ac91d89c8c682f04e3d69d", null ],
       [ "elem_text_out", "dd/dd5/class_coefficient_ring_z_zp_a985293cc42e8c9ca5ad1eaa9c6a8e3a0.html#a985293cc42e8c9ca5ad1eaa9c6a8e3a0", null ],
@@ -37,6 +37,19 @@ var group__coeffrings =
       [ "zero", "dd/dd5/class_coefficient_ring_z_zp_aa6dfbd4df92f0e6f297e34f1878dbf25.html#aa6dfbd4df92f0e6f297e34f1878dbf25", null ]
     ] ],
     [ "CoefficientRingR", "d1/d34/class_coefficient_ring_r.html", [
+      [ "Element", "d0/d4b/class_coefficient_ring_r_1_1_element.html", [
+        [ "Element", "d0/d4b/class_coefficient_ring_r_1_1_element_a3dd2a90800051dc3631f149b618f0a14.html#a3dd2a90800051dc3631f149b618f0a14", null ],
+        [ "Element", "d0/d4b/class_coefficient_ring_r_1_1_element_a1ecd1179cdbd97775ccc341acbbc98ac.html#a1ecd1179cdbd97775ccc341acbbc98ac", null ]
+      ] ],
+      [ "ElementArray", "df/d9d/class_coefficient_ring_r_1_1_element_array.html", [
+        [ "ElementArray", "df/d9d/class_coefficient_ring_r_1_1_element_array_abdb0e22d8e6245eddeeadf65a960fe20.html#abdb0e22d8e6245eddeeadf65a960fe20", null ],
+        [ "~ElementArray", "df/d9d/class_coefficient_ring_r_1_1_element_array_a0d806864f7fc85a3579797bcd6c1dfc5.html#a0d806864f7fc85a3579797bcd6c1dfc5", null ],
+        [ "data", "df/d9d/class_coefficient_ring_r_1_1_element_array_aa8111c8a32a2b5d124cb7b79b79e9fd0.html#aa8111c8a32a2b5d124cb7b79b79e9fd0", null ],
+        [ "data", "df/d9d/class_coefficient_ring_r_1_1_element_array_a607be04ed3503241b2b6844ae4b44bfd.html#a607be04ed3503241b2b6844ae4b44bfd", null ],
+        [ "operator[]", "df/d9d/class_coefficient_ring_r_1_1_element_array_a88e1c7326c5f429711b3dddf636249c1.html#a88e1c7326c5f429711b3dddf636249c1", null ],
+        [ "operator[]", "df/d9d/class_coefficient_ring_r_1_1_element_array_ae7764ae3c4066a8414be4afe8b0824d6.html#ae7764ae3c4066a8414be4afe8b0824d6", null ],
+        [ "mData", "df/d9d/class_coefficient_ring_r_1_1_element_array_ab99969951417f319b676d605da8dba79.html#ab99969951417f319b676d605da8dba79", null ]
+      ] ],
       [ "elem", "d1/d34/class_coefficient_ring_r_ae321a637e6c1f4963d11af50eb4dc98b.html#ae321a637e6c1f4963d11af50eb4dc98b", null ],
       [ "ElementContainerType", "d1/d34/class_coefficient_ring_r_a087053664b28848df4da849555cc3867.html#a087053664b28848df4da849555cc3867", null ],
       [ "ElementType", "d1/d34/class_coefficient_ring_r_a6bcaa5a3c7d169e85c912a77509ae6a6.html#a6bcaa5a3c7d169e85c912a77509ae6a6", null ],
@@ -47,6 +60,7 @@ var group__coeffrings =
       [ "divide", "d1/d34/class_coefficient_ring_r_aaea242279a6f6085e04456500c87cf95.html#aaea242279a6f6085e04456500c87cf95", null ],
       [ "elem_text_out", "d1/d34/class_coefficient_ring_r_a3a6d400dc9f7a0cf28b15b2581366c30.html#a3a6d400dc9f7a0cf28b15b2581366c30", null ],
       [ "from_ring_elem", "d1/d34/class_coefficient_ring_r_a48984464b741d68fd90ee397ac02e029.html#a48984464b741d68fd90ee397ac02e029", null ],
+      [ "from_ring_elem_const", "d1/d34/class_coefficient_ring_r_a81e6b91ec0451a799a58a057ef7b25df.html#a81e6b91ec0451a799a58a057ef7b25df", null ],
       [ "init", "d1/d34/class_coefficient_ring_r_af9205fc585fe72e91eea2a427d851843.html#af9205fc585fe72e91eea2a427d851843", null ],
       [ "init_set", "d1/d34/class_coefficient_ring_r_a36d1f7295817c94ceb7d7125fc810d2e.html#a36d1f7295817c94ceb7d7125fc810d2e", null ],
       [ "invert", "d1/d34/class_coefficient_ring_r_aef37cea92f29b30b3ed678b65cc3db6a.html#aef37cea92f29b30b3ed678b65cc3db6a", null ],

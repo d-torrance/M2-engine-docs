@@ -117,16 +117,14 @@ template&lt;typename RT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l01326">1326</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;{</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> c;                 <span class="comment">// in originalRing()</span></div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;  <span class="keyword">typename</span> RT::ElementType b;  <span class="comment">// in ring()</span></div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;  R.init(b);</div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;  R.from_ring_elem(b, a);</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;  R.lift_to_original_ring(c, b);</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;  R.clear(b);</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(&amp;R.originalRing(), c);</div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l01182">1182</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;{</div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> c;                <span class="comment">// in originalRing()</span></div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;  <span class="keyword">typename</span> RT::Element b(R);  <span class="comment">// in ring()</span></div>
+<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;  R.from_ring_elem(b, a);</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;  R.lift_to_original_ring(c, b);</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(&amp;R.originalRing(), c);</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;}</div>
 <div class="ttc" id="aclass_ring_element_ab978463e39096a4e0d1ecc0720f9acf3_html_ab978463e39096a4e0d1ecc0720f9acf3"><div class="ttname"><a href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a></div><div class="ttdeci">static RingElement * make_raw(const Ring *R, ring_elem f)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00020">relem.cpp:20</a></div></div>
 <div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00045">ringelem.hpp:46</a></div></div>
 </div><!-- fragment -->
@@ -140,7 +138,7 @@ template&lt;typename RT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

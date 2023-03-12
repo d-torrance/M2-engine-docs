@@ -115,24 +115,24 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_a07365f871f81379e1
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l00525">525</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;{</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R = F-&gt;get_ring();</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  <span class="keywordflow">if</span> (R != G-&gt;<a class="code" href="../../d6/df0/class_free_module_a29c99edc8181d08d3700f43baa269673.html#a29c99edc8181d08d3700f43baa269673">get_ring</a>())</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    {</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;flip: expected same ring&quot;</span>);</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    }</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *H = F-&gt;<a class="code" href="../../d6/df0/class_free_module_a4ba7445417116df56e618d2124543e97.html#a4ba7445417116df56e618d2124543e97">tensor</a>(G);</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *K = G-&gt;<a class="code" href="../../d6/df0/class_free_module_a4ba7445417116df56e618d2124543e97.html#a4ba7445417116df56e618d2124543e97">tensor</a>(F);</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160; </div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(K, H, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  <span class="keywordtype">int</span> next = 0;</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> f = 0; f &lt; F-&gt;rank(); f++)</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> g = 0; g &lt; G-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>(); g++)</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;      mat.set_column(next++, R-&gt;<a class="code" href="../../dd/dcf/class_ring_af4273c605af5eb38c425447035801330.html#af4273c605af5eb38c425447035801330">e_sub_i</a>(f + g * F-&gt;rank()));</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;  <span class="keywordflow">return</span> mat.to_matrix();</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l00538">538</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;{</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R = F-&gt;get_ring();</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;  <span class="keywordflow">if</span> (R != G-&gt;<a class="code" href="../../d6/df0/class_free_module_a29c99edc8181d08d3700f43baa269673.html#a29c99edc8181d08d3700f43baa269673">get_ring</a>())</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    {</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;flip: expected same ring&quot;</span>);</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    }</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *H = F-&gt;<a class="code" href="../../d6/df0/class_free_module_a4ba7445417116df56e618d2124543e97.html#a4ba7445417116df56e618d2124543e97">tensor</a>(G);</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *K = G-&gt;<a class="code" href="../../d6/df0/class_free_module_a4ba7445417116df56e618d2124543e97.html#a4ba7445417116df56e618d2124543e97">tensor</a>(F);</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160; </div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(K, H, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;  <span class="keywordtype">int</span> next = 0;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> f = 0; f &lt; F-&gt;rank(); f++)</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> g = 0; g &lt; G-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>(); g++)</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;      mat.set_column(next++, R-&gt;<a class="code" href="../../dd/dcf/class_ring_af4273c605af5eb38c425447035801330.html#af4273c605af5eb38c425447035801330">e_sub_i</a>(f + g * F-&gt;rank()));</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;  <span class="keywordflow">return</span> mat.to_matrix();</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;}</div>
 <div class="ttc" id="aclass_free_module_a29c99edc8181d08d3700f43baa269673_html_a29c99edc8181d08d3700f43baa269673"><div class="ttname"><a href="../../d6/df0/class_free_module_a29c99edc8181d08d3700f43baa269673.html#a29c99edc8181d08d3700f43baa269673">FreeModule::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcb/freemod_8hpp_source.html#l00052">freemod.hpp:52</a></div></div>
 <div class="ttc" id="aclass_free_module_a4ba7445417116df56e618d2124543e97_html_a4ba7445417116df56e618d2124543e97"><div class="ttname"><a href="../../d6/df0/class_free_module_a4ba7445417116df56e618d2124543e97.html#a4ba7445417116df56e618d2124543e97">FreeModule::tensor</a></div><div class="ttdeci">FreeModule * tensor(const FreeModule *G) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dff/freemod_8cpp_source.html#l00264">freemod.cpp:264</a></div></div>
 <div class="ttc" id="aclass_free_module_af359cfc5802d332b199aeca8a79f2107_html_af359cfc5802d332b199aeca8a79f2107"><div class="ttname"><a href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">FreeModule::rank</a></div><div class="ttdeci">int rank() const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcb/freemod_8hpp_source.html#l00056">freemod.hpp:56</a></div></div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_a07365f871f81379e1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,6 @@
 var class_m2_1_1_concrete_ring =
 [
+    [ "Element", "d0/d99/class_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b.html#aeeb92bc934137a4ba516dcb24f79ce8b", null ],
     [ "ElementType", "d0/d99/class_m2_1_1_concrete_ring_a333c37f42ff2d3e521441991c8da0a58.html#a333c37f42ff2d3e521441991c8da0a58", null ],
     [ "ConcreteRing", "d0/d99/class_m2_1_1_concrete_ring_a91dc328ffd31154686b10475a86a8c74.html#a91dc328ffd31154686b10475a86a8c74", null ],
     [ "~ConcreteRing", "d0/d99/class_m2_1_1_concrete_ring_a7c142e34632ca8d7d8c64cd4c84f9b43.html#a7c142e34632ca8d7d8c64cd4c84f9b43", null ],

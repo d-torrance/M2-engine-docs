@@ -6,7 +6,7 @@ var class_m2_1_1_dummy_ring =
     [ "FieldType", "d5/d2d/class_m2_1_1_dummy_ring_aae90f4a8f1503aed33b4c165c19a39f5.html#aae90f4a8f1503aed33b4c165c19a39f5", null ],
     [ "add", "d5/d2d/class_m2_1_1_dummy_ring_a5ed5d96a19b80d30b7d0990ad8985ce3.html#a5ed5d96a19b80d30b7d0990ad8985ce3", null ],
     [ "characteristic", "d5/d2d/class_m2_1_1_dummy_ring_a8d6155adbd2e8a1a15816e136bfda829.html#a8d6155adbd2e8a1a15816e136bfda829", null ],
-    [ "clear", "d5/d2d/class_m2_1_1_dummy_ring_aa1ef05ff8ef0614e68e8b181f060f6eb.html#aa1ef05ff8ef0614e68e8b181f060f6eb", null ],
+    [ "clear", "d5/d2d/class_m2_1_1_dummy_ring_a10b9893e76a1e29e4e85a5d420ca3718.html#a10b9893e76a1e29e4e85a5d420ca3718", null ],
     [ "coerceToLongInteger", "d5/d2d/class_m2_1_1_dummy_ring_a5e5248a2878d63630288163e6892a73a.html#a5e5248a2878d63630288163e6892a73a", null ],
     [ "compare_elems", "d5/d2d/class_m2_1_1_dummy_ring_a7a6b3bc796605c801bb4dbb664c97056.html#a7a6b3bc796605c801bb4dbb664c97056", null ],
     [ "computeHashValue", "d5/d2d/class_m2_1_1_dummy_ring_a0f09f1911373071a2f192151e13535a1.html#a0f09f1911373071a2f192151e13535a1", null ],

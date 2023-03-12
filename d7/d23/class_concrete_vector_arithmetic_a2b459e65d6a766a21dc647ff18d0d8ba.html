@@ -117,27 +117,27 @@ template&lt;typename RingType , typename ElementArrayType  = ElementArray&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00308">308</a> of file <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html">VectorArithmetic.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  {</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keyword">auto</span>&amp; svec = * <a class="code" href="../../d7/d23/class_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4.html#a56f6e314bc923b459eb369d5207a50e4">elementArray</a>(v);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">bool</span> first = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot;[(&quot;</span> &lt;&lt; svec.size() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; a : svec)</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      {</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <a class="code" href="../../da/d40/classbuffer.html">buffer</a> b;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <a class="code" href="../../d7/d23/class_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5.html#a2f781d5f5209547d6da2d2e9088d0cb5">mRing</a>-&gt;elem_text_out(b, a, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordflow">if</span> (first)</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;          first = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;          o &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        o &lt;&lt; b.<a class="code" href="../../da/d40/classbuffer_ab8e628e6b90112afba781d016b509701.html#ab8e628e6b90112afba781d016b509701">str</a>();</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      }</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">return</span> o;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  }</div>
-<div class="ttc" id="aclass_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5_html_a2f781d5f5209547d6da2d2e9088d0cb5"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5.html#a2f781d5f5209547d6da2d2e9088d0cb5">ConcreteVectorArithmetic::mRing</a></div><div class="ttdeci">const RingType * mRing</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00060">VectorArithmetic.hpp:60</a></div></div>
-<div class="ttc" id="aclass_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4_html_a56f6e314bc923b459eb369d5207a50e4"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4.html#a56f6e314bc923b459eb369d5207a50e4">ConcreteVectorArithmetic::elementArray</a></div><div class="ttdeci">ElementArrayContainer * elementArray(const ElementArrayType &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00062">VectorArithmetic.hpp:62</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00306">306</a> of file <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html">VectorArithmetic.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  {</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keyword">auto</span>&amp; svec = * <a class="code" href="../../d7/d23/class_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4.html#a56f6e314bc923b459eb369d5207a50e4">elementArray</a>(v);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">bool</span> first = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot;[(&quot;</span> &lt;&lt; svec.size() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; a : svec)</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <a class="code" href="../../da/d40/classbuffer.html">buffer</a> b;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <a class="code" href="../../d7/d23/class_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5.html#a2f781d5f5209547d6da2d2e9088d0cb5">mRing</a>-&gt;elem_text_out(b, a, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keywordflow">if</span> (first)</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;          first = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;          o &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        o &lt;&lt; b.<a class="code" href="../../da/d40/classbuffer_ab8e628e6b90112afba781d016b509701.html#ab8e628e6b90112afba781d016b509701">str</a>();</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">return</span> o;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  }</div>
+<div class="ttc" id="aclass_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5_html_a2f781d5f5209547d6da2d2e9088d0cb5"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a2f781d5f5209547d6da2d2e9088d0cb5.html#a2f781d5f5209547d6da2d2e9088d0cb5">ConcreteVectorArithmetic::mRing</a></div><div class="ttdeci">const RingType * mRing</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00058">VectorArithmetic.hpp:58</a></div></div>
+<div class="ttc" id="aclass_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4_html_a56f6e314bc923b459eb369d5207a50e4"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a56f6e314bc923b459eb369d5207a50e4.html#a56f6e314bc923b459eb369d5207a50e4">ConcreteVectorArithmetic::elementArray</a></div><div class="ttdeci">ElementArrayContainer * elementArray(const ElementArrayType &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00060">VectorArithmetic.hpp:60</a></div></div>
 <div class="ttc" id="aclassbuffer_ab8e628e6b90112afba781d016b509701_html_ab8e628e6b90112afba781d016b509701"><div class="ttname"><a href="../../da/d40/classbuffer_ab8e628e6b90112afba781d016b509701.html#ab8e628e6b90112afba781d016b509701">buffer::str</a></div><div class="ttdeci">char * str()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1d/buffer_8hpp_source.html#l00037">buffer.hpp:37</a></div></div>
 <div class="ttc" id="aclassbuffer_html"><div class="ttname"><a href="../../da/d40/classbuffer.html">buffer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1d/buffer_8hpp_source.html#l00019">buffer.hpp:20</a></div></div>
 </div><!-- fragment -->
@@ -151,7 +151,7 @@ template&lt;typename RingType , typename ElementArrayType  = ElementArray&gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d23/class_concrete_vector_arithmetic.html">ConcreteVectorArithmetic</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

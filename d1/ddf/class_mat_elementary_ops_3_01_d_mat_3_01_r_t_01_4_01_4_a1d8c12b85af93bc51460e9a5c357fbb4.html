@@ -129,14 +129,14 @@ template&lt;typename RT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html#l00635">635</a> of file <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html">mat-elem-ops.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  {</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    result.resize(rows-&gt;len, cols-&gt;len);  <span class="comment">// resets to a zero matrix</span></div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> r = 0; r &lt; rows-&gt;len; r++)</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> c = 0; c &lt; cols-&gt;len; c++)</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        mat.ring().set(result.entry(r, c),</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;                       mat.entry(rows-&gt;array[r], cols-&gt;array[c]));</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;  }</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html#l00600">600</a> of file <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html">mat-elem-ops.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;  {</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    result.resize(rows-&gt;len, cols-&gt;len);  <span class="comment">// resets to a zero matrix</span></div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> r = 0; r &lt; rows-&gt;len; r++)</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> c = 0; c &lt; cols-&gt;len; c++)</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        mat.ring().set(result.entry(r, c),</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                       mat.entry(rows-&gt;array[r], cols-&gt;array[c]));</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../da/dc3/class_d_mat_a368035bca371125e7f118465fd45d52a.html#a368035bca371125e7f118465fd45d52a">DMat&lt; ACoeffRing &gt;::entry()</a>, <a class="el" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">DMat&lt; ACoeffRing &gt;::resize()</a>, and <a class="el" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">DMat&lt; ACoeffRing &gt;::ring()</a>.</p>
 
@@ -148,7 +148,7 @@ template&lt;typename RT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4.html">MatElementaryOps&lt; DMat&lt; RT &gt; &gt;</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

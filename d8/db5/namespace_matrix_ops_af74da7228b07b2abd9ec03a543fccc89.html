@@ -109,16 +109,16 @@ template&lt;typename RT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d17/mat-arith_8hpp_source.html#l00428">428</a> of file <a class="el" href="../../d0/d17/mat-arith_8hpp_source.html">mat-arith.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;{</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  <span class="comment">// result should be the 0 matrix of the correct size.</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  assert(&amp;A != &amp;result);  <span class="comment">// these cannot be aliased!</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  assert(result.<a class="code" href="../../da/de0/class_s_mat_ab267714be3d09dad36331f7384aea056.html#ab267714be3d09dad36331f7384aea056">numRows</a>() == A.<a class="code" href="../../da/de0/class_s_mat_ac2f48ab56ea6880bc030b45abb1f0b33.html#ac2f48ab56ea6880bc030b45abb1f0b33">numColumns</a>());</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  assert(result.<a class="code" href="../../da/de0/class_s_mat_ac2f48ab56ea6880bc030b45abb1f0b33.html#ac2f48ab56ea6880bc030b45abb1f0b33">numColumns</a>() == A.<a class="code" href="../../da/de0/class_s_mat_ab267714be3d09dad36331f7384aea056.html#ab267714be3d09dad36331f7384aea056">numRows</a>());</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  <span class="keywordflow">throw</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;      <span class="stringliteral">&quot;&#39;transpose&#39; not written for sparse mutable matrices&quot;</span>);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  <span class="comment">// TODO: MES: write this!!</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d17/mat-arith_8hpp_source.html#l00424">424</a> of file <a class="el" href="../../d0/d17/mat-arith_8hpp_source.html">mat-arith.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;{</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <span class="comment">// result should be the 0 matrix of the correct size.</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  assert(&amp;A != &amp;result);  <span class="comment">// these cannot be aliased!</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  assert(result.<a class="code" href="../../da/de0/class_s_mat_ab267714be3d09dad36331f7384aea056.html#ab267714be3d09dad36331f7384aea056">numRows</a>() == A.<a class="code" href="../../da/de0/class_s_mat_ac2f48ab56ea6880bc030b45abb1f0b33.html#ac2f48ab56ea6880bc030b45abb1f0b33">numColumns</a>());</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  assert(result.<a class="code" href="../../da/de0/class_s_mat_ac2f48ab56ea6880bc030b45abb1f0b33.html#ac2f48ab56ea6880bc030b45abb1f0b33">numColumns</a>() == A.<a class="code" href="../../da/de0/class_s_mat_ab267714be3d09dad36331f7384aea056.html#ab267714be3d09dad36331f7384aea056">numRows</a>());</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  <span class="keywordflow">throw</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;      <span class="stringliteral">&quot;&#39;transpose&#39; not written for sparse mutable matrices&quot;</span>);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  <span class="comment">// TODO: MES: write this!!</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;}</div>
 <div class="ttc" id="aclass_s_mat_ab267714be3d09dad36331f7384aea056_html_ab267714be3d09dad36331f7384aea056"><div class="ttname"><a href="../../da/de0/class_s_mat_ab267714be3d09dad36331f7384aea056.html#ab267714be3d09dad36331f7384aea056">SMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dc0/smat_8hpp_source.html#l00072">smat.hpp:72</a></div></div>
 <div class="ttc" id="aclass_s_mat_ac2f48ab56ea6880bc030b45abb1f0b33_html_ac2f48ab56ea6880bc030b45abb1f0b33"><div class="ttname"><a href="../../da/de0/class_s_mat_ac2f48ab56ea6880bc030b45abb1f0b33.html#ac2f48ab56ea6880bc030b45abb1f0b33">SMat::numColumns</a></div><div class="ttdeci">size_t numColumns() const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dc0/smat_8hpp_source.html#l00073">smat.hpp:73</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00009">exceptions.hpp:10</a></div></div>
@@ -133,7 +133,7 @@ template&lt;typename RT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:37 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

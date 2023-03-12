@@ -121,25 +121,25 @@ $(document).ready(function(){initNavTree('dd/dd5/class_coefficient_ring_z_zp_a94
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d07/coeffrings_8hpp_source.html#l00123">123</a> of file <a class="el" href="../../d5/d07/coeffrings_8hpp_source.html">coeffrings.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// we assume: a, b are NONZERO!!</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// result -= a*b</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="../../dd/dd5/class_coefficient_ring_z_zp_ab6470c229705f2aee103d9fac27a5923.html#ab6470c229705f2aee103d9fac27a5923">elem</a> ab = <a class="code" href="../../dd/dd5/class_coefficient_ring_z_zp_a4f8aa8c080e4a22570e3ac178df1aa28.html#a4f8aa8c080e4a22570e3ac178df1aa28">modulus_add</a>(a, b, <a class="code" href="../../dd/dd5/class_coefficient_ring_z_zp_ada725eab162844ec35f581255c5aa409.html#ada725eab162844ec35f581255c5aa409">p1</a>);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="../../dd/dd5/class_coefficient_ring_z_zp_a0f7e9a37f82710a1ef47d1c569a277fd.html#a0f7e9a37f82710a1ef47d1c569a277fd">subtract</a>(result, result, ab);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// if (result==zero)</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">//   result = ab;</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// else</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//   {</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">//  int n = modulus_sub(exp_table[result], exp_table[ab], p);</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">//  result = log_table[n];</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">//   }</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  }</div>
-<div class="ttc" id="aclass_coefficient_ring_z_zp_a0f7e9a37f82710a1ef47d1c569a277fd_html_a0f7e9a37f82710a1ef47d1c569a277fd"><div class="ttname"><a href="../../dd/dd5/class_coefficient_ring_z_zp_a0f7e9a37f82710a1ef47d1c569a277fd.html#a0f7e9a37f82710a1ef47d1c569a277fd">CoefficientRingZZp::subtract</a></div><div class="ttdeci">void subtract(elem &amp;result, elem a, elem b) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d07/coeffrings_8hpp_source.html#l00110">coeffrings.hpp:110</a></div></div>
-<div class="ttc" id="aclass_coefficient_ring_z_zp_a4f8aa8c080e4a22570e3ac178df1aa28_html_a4f8aa8c080e4a22570e3ac178df1aa28"><div class="ttname"><a href="../../dd/dd5/class_coefficient_ring_z_zp_a4f8aa8c080e4a22570e3ac178df1aa28.html#a4f8aa8c080e4a22570e3ac178df1aa28">CoefficientRingZZp::modulus_add</a></div><div class="ttdeci">static int modulus_add(int a, int b, int p)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d07/coeffrings_8hpp_source.html#l00022">coeffrings.hpp:22</a></div></div>
-<div class="ttc" id="aclass_coefficient_ring_z_zp_ab6470c229705f2aee103d9fac27a5923_html_ab6470c229705f2aee103d9fac27a5923"><div class="ttname"><a href="../../dd/dd5/class_coefficient_ring_z_zp_ab6470c229705f2aee103d9fac27a5923.html#ab6470c229705f2aee103d9fac27a5923">CoefficientRingZZp::elem</a></div><div class="ttdeci">int elem</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d07/coeffrings_8hpp_source.html#l00036">coeffrings.hpp:36</a></div></div>
-<div class="ttc" id="aclass_coefficient_ring_z_zp_ada725eab162844ec35f581255c5aa409_html_ada725eab162844ec35f581255c5aa409"><div class="ttname"><a href="../../dd/dd5/class_coefficient_ring_z_zp_ada725eab162844ec35f581255c5aa409.html#ada725eab162844ec35f581255c5aa409">CoefficientRingZZp::p1</a></div><div class="ttdeci">int p1</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d07/coeffrings_8hpp_source.html#l00016">coeffrings.hpp:16</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d07/coeffrings_8hpp_source.html#l00124">124</a> of file <a class="el" href="../../d5/d07/coeffrings_8hpp_source.html">coeffrings.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// we assume: a, b are NONZERO!!</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// result -= a*b</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="../../dd/dd5/class_coefficient_ring_z_zp_ab6470c229705f2aee103d9fac27a5923.html#ab6470c229705f2aee103d9fac27a5923">elem</a> ab = <a class="code" href="../../dd/dd5/class_coefficient_ring_z_zp_a4f8aa8c080e4a22570e3ac178df1aa28.html#a4f8aa8c080e4a22570e3ac178df1aa28">modulus_add</a>(a, b, <a class="code" href="../../dd/dd5/class_coefficient_ring_z_zp_ada725eab162844ec35f581255c5aa409.html#ada725eab162844ec35f581255c5aa409">p1</a>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="../../dd/dd5/class_coefficient_ring_z_zp_a0f7e9a37f82710a1ef47d1c569a277fd.html#a0f7e9a37f82710a1ef47d1c569a277fd">subtract</a>(result, result, ab);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">// if (result==zero)</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">//   result = ab;</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// else</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">//   {</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">//  int n = modulus_sub(exp_table[result], exp_table[ab], p);</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">//  result = log_table[n];</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">//   }</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  }</div>
+<div class="ttc" id="aclass_coefficient_ring_z_zp_a0f7e9a37f82710a1ef47d1c569a277fd_html_a0f7e9a37f82710a1ef47d1c569a277fd"><div class="ttname"><a href="../../dd/dd5/class_coefficient_ring_z_zp_a0f7e9a37f82710a1ef47d1c569a277fd.html#a0f7e9a37f82710a1ef47d1c569a277fd">CoefficientRingZZp::subtract</a></div><div class="ttdeci">void subtract(elem &amp;result, elem a, elem b) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d07/coeffrings_8hpp_source.html#l00111">coeffrings.hpp:111</a></div></div>
+<div class="ttc" id="aclass_coefficient_ring_z_zp_a4f8aa8c080e4a22570e3ac178df1aa28_html_a4f8aa8c080e4a22570e3ac178df1aa28"><div class="ttname"><a href="../../dd/dd5/class_coefficient_ring_z_zp_a4f8aa8c080e4a22570e3ac178df1aa28.html#a4f8aa8c080e4a22570e3ac178df1aa28">CoefficientRingZZp::modulus_add</a></div><div class="ttdeci">static int modulus_add(int a, int b, int p)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d07/coeffrings_8hpp_source.html#l00023">coeffrings.hpp:23</a></div></div>
+<div class="ttc" id="aclass_coefficient_ring_z_zp_ab6470c229705f2aee103d9fac27a5923_html_ab6470c229705f2aee103d9fac27a5923"><div class="ttname"><a href="../../dd/dd5/class_coefficient_ring_z_zp_ab6470c229705f2aee103d9fac27a5923.html#ab6470c229705f2aee103d9fac27a5923">CoefficientRingZZp::elem</a></div><div class="ttdeci">int elem</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d07/coeffrings_8hpp_source.html#l00037">coeffrings.hpp:37</a></div></div>
+<div class="ttc" id="aclass_coefficient_ring_z_zp_ada725eab162844ec35f581255c5aa409_html_ada725eab162844ec35f581255c5aa409"><div class="ttname"><a href="../../dd/dd5/class_coefficient_ring_z_zp_ada725eab162844ec35f581255c5aa409.html#ada725eab162844ec35f581255c5aa409">CoefficientRingZZp::p1</a></div><div class="ttdeci">int p1</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d07/coeffrings_8hpp_source.html#l00017">coeffrings.hpp:17</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../dd/dd5/class_coefficient_ring_z_zp_a4f8aa8c080e4a22570e3ac178df1aa28.html#a4f8aa8c080e4a22570e3ac178df1aa28">modulus_add()</a>, <a class="el" href="../../dd/dd5/class_coefficient_ring_z_zp_ada725eab162844ec35f581255c5aa409.html#ada725eab162844ec35f581255c5aa409">p1</a>, and <a class="el" href="../../dd/dd5/class_coefficient_ring_z_zp_a0f7e9a37f82710a1ef47d1c569a277fd.html#a0f7e9a37f82710a1ef47d1c569a277fd">subtract()</a>.</p>
 
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('dd/dd5/class_coefficient_ring_z_zp_a94
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dd5/class_coefficient_ring_z_zp.html">CoefficientRingZZp</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

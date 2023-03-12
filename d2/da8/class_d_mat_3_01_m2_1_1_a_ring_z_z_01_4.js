@@ -4,6 +4,7 @@ var class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4 =
     [ "CoeffRing", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ac3053269505723b9527fb0a7fbc08b1d.html#ac3053269505723b9527fb0a7fbc08b1d", null ],
     [ "ConstIterator", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_af188eb62c783091428e58ea7146bb768.html#af188eb62c783091428e58ea7146bb768", null ],
     [ "elem", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a813c6db613741226d225737d1af1a74a.html#a813c6db613741226d225737d1af1a74a", null ],
+    [ "Element", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ad5522e8f7fb565166335bda766c9b8de.html#ad5522e8f7fb565166335bda766c9b8de", null ],
     [ "ElementType", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a5a11d32733ff3420e4baa63ce2677d93.html#a5a11d32733ff3420e4baa63ce2677d93", null ],
     [ "Iterator", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a4373257884d8801871b6b3af52066ab9.html#a4373257884d8801871b6b3af52066ab9", null ],
     [ "DMat", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a0b970a1a7d22f203aacfc6358fd083ab.html#a0b970a1a7d22f203aacfc6358fd083ab", null ],

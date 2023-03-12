@@ -117,23 +117,19 @@ $(document).ready(function(){initNavTree('d0/d99/class_m2_1_1_concrete_ring_ace7
 
 <p>Reimplemented from <a class="el" href="../../dd/dcf/class_ring_a9ee59996c167e760c72ace9dacff0ce3.html#a9ee59996c167e760c72ace9dacff0ce3">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l01136">1136</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;{</div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;  <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_a333c37f42ff2d3e521441991c8da0a58.html#a333c37f42ff2d3e521441991c8da0a58">ElementType</a> a;</div>
-<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;  <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;init(a);</div>
-<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;  <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;from_ring_elem(a, f);</div>
-<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;  <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;zeroize_tiny(epsilon, a);</div>
-<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> result;</div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;  <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;to_ring_elem(result, a);</div>
-<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;  <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;clear(a);</div>
-<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;}</div>
-<div class="ttc" id="aclass_m2_1_1_concrete_ring_a333c37f42ff2d3e521441991c8da0a58_html_a333c37f42ff2d3e521441991c8da0a58"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_a333c37f42ff2d3e521441991c8da0a58.html#a333c37f42ff2d3e521441991c8da0a58">M2::ConcreteRing::ElementType</a></div><div class="ttdeci">RingType::ElementType ElementType</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00032">aring-glue.hpp:32</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l01017">1017</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;{</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;  <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b.html#aeeb92bc934137a4ba516dcb24f79ce8b">Element</a> a(*<a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>);</div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;  <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;from_ring_elem(a, f);</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;  <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;zeroize_tiny(epsilon, a);</div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> result;</div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;  <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;to_ring_elem(result, a);</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;}</div>
 <div class="ttc" id="aclass_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf_html_ac5931fcf132c0d43e222045e93f5a0cf"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">M2::ConcreteRing::R</a></div><div class="ttdeci">std::unique_ptr&lt; RingType &gt; R</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00023">aring-glue.hpp:23</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b_html_aeeb92bc934137a4ba516dcb24f79ce8b"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b.html#aeeb92bc934137a4ba516dcb24f79ce8b">M2::ConcreteRing::Element</a></div><div class="ttdeci">RingType::Element Element</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00033">aring-glue.hpp:33</a></div></div>
 <div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00045">ringelem.hpp:46</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring_ab120d1e17781af239a4ba2656c698fa6.html#ab120d1e17781af239a4ba2656c698fa6">M2::ConcreteRing&lt; RingType &gt;::zeroize_tiny()</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -142,7 +138,7 @@ $(document).ready(function(){initNavTree('d0/d99/class_m2_1_1_concrete_ring_ace7
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring.html">ConcreteRing</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

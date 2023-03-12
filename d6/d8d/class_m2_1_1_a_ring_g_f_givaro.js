@@ -26,6 +26,7 @@ var class_m2_1_1_a_ring_g_f_givaro =
     [ "fieldElementToM2Array", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro_a9169bdbea4dd073e3b22d472ec707ef6.html#a9169bdbea4dd073e3b22d472ec707ef6", null ],
     [ "findMinimalPolynomial", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro_a56941916de4e3a49848efa9e6dd985aa.html#a56941916de4e3a49848efa9e6dd985aa", null ],
     [ "from_ring_elem", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro_a0cf6ffeb39f237831f52f1a9e6f07ec2.html#a0cf6ffeb39f237831f52f1a9e6f07ec2", null ],
+    [ "from_ring_elem_const", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro_ac6f9c440ebba609c86d2035df0aa1884.html#ac6f9c440ebba609c86d2035df0aa1884", null ],
     [ "getGenerator", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro_a5b0b4ecb763d5907fefc992767d377fd.html#a5b0b4ecb763d5907fefc992767d377fd", null ],
     [ "getGeneratorCoeffs", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro_a35c16bd6f1811f3667fee7237813dd13.html#a35c16bd6f1811f3667fee7237813dd13", null ],
     [ "getModPolynomialCoeffs", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro_a6a8e9e8594125579809e1be668b62d33.html#a6a8e9e8594125579809e1be668b62d33", null ],

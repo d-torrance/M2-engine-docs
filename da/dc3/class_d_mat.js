@@ -3,6 +3,7 @@ var class_d_mat =
     [ "CoeffRing", "da/dc3/class_d_mat_a1456b3e65636b78e2b2e418c1a6c7bd7.html#a1456b3e65636b78e2b2e418c1a6c7bd7", null ],
     [ "ConstIterator", "da/dc3/class_d_mat_a6c2a46e4b34fcf9a122f7a27798619a0.html#a6c2a46e4b34fcf9a122f7a27798619a0", null ],
     [ "elem", "da/dc3/class_d_mat_a734714766b48a21bf6235d9f1b0693fc.html#a734714766b48a21bf6235d9f1b0693fc", null ],
+    [ "Element", "da/dc3/class_d_mat_ab01d6e06ca7c9ba9ba767ab3947e2de0.html#ab01d6e06ca7c9ba9ba767ab3947e2de0", null ],
     [ "ElementType", "da/dc3/class_d_mat_a97fa208b286ada86b61d08c7a1121801.html#a97fa208b286ada86b61d08c7a1121801", null ],
     [ "Iterator", "da/dc3/class_d_mat_abd40d18cf0e081f51f8e6042467abbac.html#abd40d18cf0e081f51f8e6042467abbac", null ],
     [ "DMat", "da/dc3/class_d_mat_ae96570ac0d611add9bbe53140cb90f2c.html#ae96570ac0d611add9bbe53140cb90f2c", null ],

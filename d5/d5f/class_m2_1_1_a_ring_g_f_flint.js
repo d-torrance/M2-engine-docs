@@ -1,5 +1,7 @@
 var class_m2_1_1_a_ring_g_f_flint =
 [
+    [ "Element", "d8/d56/class_m2_1_1_a_ring_g_f_flint_1_1_element.html", "d8/d56/class_m2_1_1_a_ring_g_f_flint_1_1_element" ],
+    [ "ElementArray", "d8/dd7/class_m2_1_1_a_ring_g_f_flint_1_1_element_array.html", "d8/dd7/class_m2_1_1_a_ring_g_f_flint_1_1_element_array" ],
     [ "elem", "d5/d5f/class_m2_1_1_a_ring_g_f_flint_a11023f1ae2a4a61caa47fbbe1fd7d27e.html#a11023f1ae2a4a61caa47fbbe1fd7d27e", null ],
     [ "ElementContainerType", "d5/d5f/class_m2_1_1_a_ring_g_f_flint_a4922336e4584a7357cfd0c056e84a5c3.html#a4922336e4584a7357cfd0c056e84a5c3", null ],
     [ "ElementType", "d5/d5f/class_m2_1_1_a_ring_g_f_flint_a1d6793f12ba7ff455e9e90348f303393.html#a1d6793f12ba7ff455e9e90348f303393", null ],
@@ -17,6 +19,7 @@ var class_m2_1_1_a_ring_g_f_flint =
     [ "eval", "d5/d5f/class_m2_1_1_a_ring_g_f_flint_a63b93b95943d86b70f02f4ac705ca202.html#a63b93b95943d86b70f02f4ac705ca202", null ],
     [ "flintContext", "d5/d5f/class_m2_1_1_a_ring_g_f_flint_a8b6a8c019ee3d4c4b6aa9dabfe56dca1.html#a8b6a8c019ee3d4c4b6aa9dabfe56dca1", null ],
     [ "from_ring_elem", "d5/d5f/class_m2_1_1_a_ring_g_f_flint_ac1435cb835dd447b4dc198417d9f5237.html#ac1435cb835dd447b4dc198417d9f5237", null ],
+    [ "from_ring_elem_const", "d5/d5f/class_m2_1_1_a_ring_g_f_flint_a4e63c9541baa70a6bc09890c7469245e.html#a4e63c9541baa70a6bc09890c7469245e", null ],
     [ "fromSmallIntegerCoefficients", "d5/d5f/class_m2_1_1_a_ring_g_f_flint_aea2b195ed2799de13be6111e0c188a9b.html#aea2b195ed2799de13be6111e0c188a9b", null ],
     [ "getGenerator", "d5/d5f/class_m2_1_1_a_ring_g_f_flint_a049bdfe21c242433db12c30cef4e23fe.html#a049bdfe21c242433db12c30cef4e23fe", null ],
     [ "getSmallIntegerCoefficients", "d5/d5f/class_m2_1_1_a_ring_g_f_flint_a084dee1ed245efa65a759bfcd8d626f3.html#a084dee1ed245efa65a759bfcd8d626f3", null ],

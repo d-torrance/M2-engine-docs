@@ -125,14 +125,14 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="../../dc/db8/class_mutable_matrix_aec0ef802b4c0981a4495ee3e88ee1ff3.html#aec0ef802b4c0981a4495ee3e88ee1ff3">MutableMatrix</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dc0/mutablemat-imp_8hpp_source.html#l00200">200</a> of file <a class="el" href="../../d3/dc0/mutablemat-imp_8hpp_source.html">mutablemat-imp.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;{</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>* LU1 = this-&gt;coerce&lt;T&gt;();</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>* v1 = <span class="keyword">const_cast&lt;</span><a class="code" href="../../dc/db8/class_mutable_matrix.html">MutableMatrix</a>*<span class="keyword">&gt;</span>(v)-&gt;coerce&lt;T&gt;();</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">if</span> (LU1 == <span class="keyword">nullptr</span> or v1 == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(<span class="stringliteral">&quot;expected matrices of the same ring/type&quot;</span>);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d8/db5/namespace_matrix_ops_a31bf8724d2ad8678fe937d329c3ffe5a.html#a31bf8724d2ad8678fe937d329c3ffe5a">MatrixOps::LUincremental</a>(P, *LU1, *v1, m);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/dc0/mutablemat-imp_8hpp_source.html#l00198">198</a> of file <a class="el" href="../../d3/dc0/mutablemat-imp_8hpp_source.html">mutablemat-imp.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>* LU1 = this-&gt;coerce&lt;T&gt;();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>* v1 = <span class="keyword">const_cast&lt;</span><a class="code" href="../../dc/db8/class_mutable_matrix.html">MutableMatrix</a>*<span class="keyword">&gt;</span>(v)-&gt;coerce&lt;T&gt;();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordflow">if</span> (LU1 == <span class="keyword">nullptr</span> or v1 == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(<span class="stringliteral">&quot;expected matrices of the same ring/type&quot;</span>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d8/db5/namespace_matrix_ops_a31bf8724d2ad8678fe937d329c3ffe5a.html#a31bf8724d2ad8678fe937d329c3ffe5a">MatrixOps::LUincremental</a>(P, *LU1, *v1, m);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
 <div class="ttc" id="aclass_mutable_matrix_html"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix.html">MutableMatrix</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dc2/mat_8hpp_source.html#l00023">mat.hpp:24</a></div></div>
 <div class="ttc" id="anamespace_matrix_ops_a31bf8724d2ad8678fe937d329c3ffe5a_html_a31bf8724d2ad8678fe937d329c3ffe5a"><div class="ttname"><a href="../../d8/db5/namespace_matrix_ops_a31bf8724d2ad8678fe937d329c3ffe5a.html#a31bf8724d2ad8678fe937d329c3ffe5a">MatrixOps::LUincremental</a></div><div class="ttdeci">M2_arrayintOrNull LUincremental(std::vector&lt; size_t &gt; &amp;P, Mat &amp;LU, const Mat &amp;v, int i)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d8a/mat-linalg_8hpp_source.html#l00245">mat-linalg.hpp:245</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00009">exceptions.hpp:10</a></div></div>
@@ -148,7 +148,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/db0/class_mutable_mat.html">MutableMat</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

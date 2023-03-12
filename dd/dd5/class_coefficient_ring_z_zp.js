@@ -6,7 +6,7 @@ var class_coefficient_ring_z_zp =
     [ "ring_type", "dd/dd5/class_coefficient_ring_z_zp_ae6804a4e4346d36fa6e876441120e2c1.html#ae6804a4e4346d36fa6e876441120e2c1", null ],
     [ "CoefficientRingZZp", "dd/dd5/class_coefficient_ring_z_zp_a194b0df250c74c070d6ef575d8a898e6.html#a194b0df250c74c070d6ef575d8a898e6", null ],
     [ "add", "dd/dd5/class_coefficient_ring_z_zp_aa18e3d6486a20fcb91b68d473c0855e0.html#aa18e3d6486a20fcb91b68d473c0855e0", null ],
-    [ "clear", "dd/dd5/class_coefficient_ring_z_zp_a349aafb97de10beb0ffa89ea5c6da725.html#a349aafb97de10beb0ffa89ea5c6da725", null ],
+    [ "clear", "dd/dd5/class_coefficient_ring_z_zp_a340ec7deaedca94a8bb8f798a78ec8d2.html#a340ec7deaedca94a8bb8f798a78ec8d2", null ],
     [ "coerceToLongInteger", "dd/dd5/class_coefficient_ring_z_zp_aec634f909044f6c3d4ada0bc296c1183.html#aec634f909044f6c3d4ada0bc296c1183", null ],
     [ "divide", "dd/dd5/class_coefficient_ring_z_zp_a3f377de7d0ac91d89c8c682f04e3d69d.html#a3f377de7d0ac91d89c8c682f04e3d69d", null ],
     [ "elem_text_out", "dd/dd5/class_coefficient_ring_z_zp_a985293cc42e8c9ca5ad1eaa9c6a8e3a0.html#a985293cc42e8c9ca5ad1eaa9c6a8e3a0", null ],

@@ -121,71 +121,66 @@ $(document).ready(function(){initNavTree('d6/de1/class_m2_1_1_a_ring_c_c_c_aa675
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00340">340</a> of file <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html">aring-CCC.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  {</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    mpfr_t <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, denom;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    mpfr_init2(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision</a>());</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    mpfr_init2(denom, <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision</a>());</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a14ee82a8ccec5980d2e78ed1845dc50a.html#a14ee82a8ccec5980d2e78ed1845dc50a">ElementType</a> result;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a60c45c281158ef7c4edf745f284fe8ed.html#a60c45c281158ef7c4edf745f284fe8ed">init</a>(result);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">if</span> (mpfr_cmpabs(&amp;b.re, &amp;b.im) &gt;= 0)</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="comment">// for v = c + d*i,</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="comment">// p = d/c</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="comment">// c+di = c(1+p*i), so denom is c(1+p^2)</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="comment">// which is c + d*p</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="comment">// double p = v.im/v.re;</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="comment">// double denom = v.re + p * v.im;</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="comment">// result.re = (u.re + p*u.im)/denom;</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="comment">// result.im = (u.im - p*u.re)/denom;</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        mpfr_div(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;b.im, &amp;b.re, MPFR_RNDN);</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        mpfr_mul(denom, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;b.im, MPFR_RNDN);</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        mpfr_add(denom, denom, &amp;b.re, MPFR_RNDN);</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        mpfr_mul(&amp;result.re, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;a.im, MPFR_RNDN);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        mpfr_add(&amp;result.re, &amp;result.re, &amp;a.re, MPFR_RNDN);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        mpfr_div(&amp;result.re, &amp;result.re, denom, MPFR_RNDN);</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        mpfr_mul(&amp;result.im, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;a.re, MPFR_RNDN);</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        mpfr_neg(&amp;result.im, &amp;result.im, MPFR_RNDN);</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        mpfr_add(&amp;result.im, &amp;result.im, &amp;a.im, MPFR_RNDN);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        mpfr_div(&amp;result.im, &amp;result.im, denom, MPFR_RNDN);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      }</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      {</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="comment">// double p = v.re/v.im;</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="comment">// double denom = v.im + p * v.re;</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="comment">// result.re = (u.re * p + u.im)/denom;</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="comment">// result.im = (-u.re + p * u.im)/denom;</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        mpfr_div(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;b.re, &amp;b.im, MPFR_RNDN);</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        mpfr_mul(denom, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;b.re, MPFR_RNDN);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        mpfr_add(denom, denom, &amp;b.im, MPFR_RNDN);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        mpfr_mul(&amp;result.re, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;a.re, MPFR_RNDN);</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        mpfr_add(&amp;result.re, &amp;result.re, &amp;a.im, MPFR_RNDN);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        mpfr_div(&amp;result.re, &amp;result.re, denom, MPFR_RNDN);</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        mpfr_mul(&amp;result.im, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;a.im, MPFR_RNDN);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        mpfr_sub(&amp;result.im, &amp;result.im, &amp;a.re, MPFR_RNDN);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        mpfr_div(&amp;result.im, &amp;result.im, denom, MPFR_RNDN);</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      }</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    mpfr_clear(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    mpfr_clear(denom);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">set</a>(res, result);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ab0caa8d2e4b34d4b45b5444e00ea8e8a.html#ab0caa8d2e4b34d4b45b5444e00ea8e8a">clear</a>(result);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  }</div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_a14ee82a8ccec5980d2e78ed1845dc50a_html_a14ee82a8ccec5980d2e78ed1845dc50a"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a14ee82a8ccec5980d2e78ed1845dc50a.html#a14ee82a8ccec5980d2e78ed1845dc50a">M2::ARingCCC::ElementType</a></div><div class="ttdeci">elem ElementType</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00032">aring-CCC.hpp:32</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_a60c45c281158ef7c4edf745f284fe8ed_html_a60c45c281158ef7c4edf745f284fe8ed"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a60c45c281158ef7c4edf745f284fe8ed.html#a60c45c281158ef7c4edf745f284fe8ed">M2::ARingCCC::init</a></div><div class="ttdeci">void init(ElementType &amp;result) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00097">aring-CCC.hpp:97</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00335">335</a> of file <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html">aring-CCC.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    mpfr_t <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, denom;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    mpfr_init2(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision</a>());</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    mpfr_init2(denom, <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision</a>());</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    Element result(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordflow">if</span> (mpfr_cmpabs(&amp;b.re, &amp;b.im) &gt;= 0)</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="comment">// for v = c + d*i,</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="comment">// p = d/c</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="comment">// c+di = c(1+p*i), so denom is c(1+p^2)</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="comment">// which is c + d*p</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="comment">// double p = v.im/v.re;</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="comment">// double denom = v.re + p * v.im;</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="comment">// result.re = (u.re + p*u.im)/denom;</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="comment">// result.im = (u.im - p*u.re)/denom;</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        mpfr_div(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;b.im, &amp;b.re, MPFR_RNDN);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        mpfr_mul(denom, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;b.im, MPFR_RNDN);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        mpfr_add(denom, denom, &amp;b.re, MPFR_RNDN);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        mpfr_mul(&amp;result.value().re, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;a.im, MPFR_RNDN);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        mpfr_add(&amp;result.value().re, &amp;result.value().re, &amp;a.re, MPFR_RNDN);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        mpfr_div(&amp;result.value().re, &amp;result.value().re, denom, MPFR_RNDN);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        mpfr_mul(&amp;result.value().im, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;a.re, MPFR_RNDN);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        mpfr_neg(&amp;result.value().im, &amp;result.value().im, MPFR_RNDN);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        mpfr_add(&amp;result.value().im, &amp;result.value().im, &amp;a.im, MPFR_RNDN);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        mpfr_div(&amp;result.value().im, &amp;result.value().im, denom, MPFR_RNDN);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="comment">// double p = v.re/v.im;</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="comment">// double denom = v.im + p * v.re;</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="comment">// result.re = (u.re * p + u.im)/denom;</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="comment">// result.im = (-u.re + p * u.im)/denom;</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        mpfr_div(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;b.re, &amp;b.im, MPFR_RNDN);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        mpfr_mul(denom, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;b.re, MPFR_RNDN);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        mpfr_add(denom, denom, &amp;b.im, MPFR_RNDN);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        mpfr_mul(&amp;result.value().re, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;a.re, MPFR_RNDN);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        mpfr_add(&amp;result.value().re, &amp;result.value().re, &amp;a.im, MPFR_RNDN);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        mpfr_div(&amp;result.value().re, &amp;result.value().re, denom, MPFR_RNDN);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        mpfr_mul(&amp;result.value().im, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, &amp;a.im, MPFR_RNDN);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        mpfr_sub(&amp;result.value().im, &amp;result.value().im, &amp;a.re, MPFR_RNDN);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        mpfr_div(&amp;result.value().im, &amp;result.value().im, denom, MPFR_RNDN);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;      }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    mpfr_clear(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    mpfr_clear(denom);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <a class="code" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">set</a>(res, result);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  }</div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf_html_a6ca36f68691d04e4535212cbb3a963cf"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">M2::ARingCCC::get_precision</a></div><div class="ttdeci">unsigned long get_precision() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00040">aring-CCC.hpp:40</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_ab0caa8d2e4b34d4b45b5444e00ea8e8a_html_ab0caa8d2e4b34d4b45b5444e00ea8e8a"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ab0caa8d2e4b34d4b45b5444e00ea8e8a.html#ab0caa8d2e4b34d4b45b5444e00ea8e8a">M2::ARingCCC::clear</a></div><div class="ttdeci">void clear(ElementType &amp;result) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00122">aring-CCC.hpp:122</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470_html_ad4163b5010df51b6ff9fba518d028470"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">M2::ARingCCC::set</a></div><div class="ttdeci">void set(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00110">aring-CCC.hpp:110</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470_html_ad4163b5010df51b6ff9fba518d028470"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">M2::ARingCCC::set</a></div><div class="ttdeci">void set(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00115">aring-CCC.hpp:115</a></div></div>
 <div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ab0caa8d2e4b34d4b45b5444e00ea8e8a.html#ab0caa8d2e4b34d4b45b5444e00ea8e8a">clear()</a>, <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision()</a>, <a class="el" href="../../de/d31/structcc__struct_a01c7e0ae1aa6afdb88e34089b44e315c.html#a01c7e0ae1aa6afdb88e34089b44e315c">cc_struct::im</a>, <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a60c45c281158ef7c4edf745f284fe8ed.html#a60c45c281158ef7c4edf745f284fe8ed">init()</a>, <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, <a class="el" href="../../de/d31/structcc__struct_ab0d0e122986378302dd93f5fb27ec281.html#ab0d0e122986378302dd93f5fb27ec281">cc_struct::re</a>, and <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">set()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision()</a>, <a class="el" href="../../de/d31/structcc__struct_a01c7e0ae1aa6afdb88e34089b44e315c.html#a01c7e0ae1aa6afdb88e34089b44e315c">cc_struct::im</a>, <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, <a class="el" href="../../de/d31/structcc__struct_ab0d0e122986378302dd93f5fb27ec281.html#ab0d0e122986378302dd93f5fb27ec281">cc_struct::re</a>, and <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">set()</a>.</p>
 
 </div>
 </div>
@@ -195,7 +190,7 @@ $(document).ready(function(){initNavTree('d6/de1/class_m2_1_1_a_ring_c_c_c_aa675
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c.html">ARingCCC</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

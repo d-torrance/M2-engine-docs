@@ -109,15 +109,12 @@ template&lt;typename RT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l01248">1248</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;{</div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;  <span class="keyword">typename</span> RT::ElementType b;</div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;  ring.init(b);</div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;  ring.from_ring_elem(b, a);</div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;  <span class="keywordtype">long</span> result = ring.coerceToLongInteger(b);</div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;  ring.clear(b);</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;  <span class="keywordflow">return</span> std::pair&lt;bool, long&gt;(<span class="keyword">true</span>, result);</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l01107">1107</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;{</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;  <span class="keyword">const</span> <span class="keyword">typename</span> RT::ElementType &amp;b = ring.from_ring_elem_const(a);</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;  <span class="keywordtype">long</span> result = ring.coerceToLongInteger(b);</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;  <span class="keywordflow">return</span> std::pair&lt;bool, long&gt;(<span class="keyword">true</span>, result);</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring_a9287e1296d5d8037ad427dec70999afb.html#a9287e1296d5d8037ad427dec70999afb">M2::ConcreteRing&lt; RingType &gt;::coerceToLongInteger()</a>.</p>
 
@@ -129,7 +126,7 @@ template&lt;typename RT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 02:02:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 12 2023 01:51:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
