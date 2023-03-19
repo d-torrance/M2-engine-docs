@@ -40,6 +40,5 @@ var dir_8ed8434bc3d991323934987a3489e746 =
     [ "moninfo.cpp", "de/d97/moninfo_8cpp.html", null ],
     [ "moninfo.hpp", "d5/d0a/moninfo_8hpp.html", "d5/d0a/moninfo_8hpp" ],
     [ "ntuple-monomial.hpp", "d5/d04/ntuple-monomial_8hpp.html", "d5/d04/ntuple-monomial_8hpp" ],
-    [ "varpower-monomial.cpp", "d5/dda/varpower-monomial_8cpp.html", "d5/dda/varpower-monomial_8cpp" ],
     [ "varpower-monomial.hpp", "d6/dac/varpower-monomial_8hpp.html", "d6/dac/varpower-monomial_8hpp" ]
 ];

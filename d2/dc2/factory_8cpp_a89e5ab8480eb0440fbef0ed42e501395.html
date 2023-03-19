@@ -107,29 +107,29 @@ $(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_a89e5ab8480eb0440f
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dc2/factory_8cpp_source.html#l00881">881</a> of file <a class="el" href="../../d2/dc2/factory_8cpp_source.html">factory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;{</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;  CFList I;</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; M.<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>(); i++)</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    {</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; M.<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); j++)</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;        {</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;          <span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *g;</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;          {</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;            g = <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(M.<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>(), M.<a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i, j));</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;          }</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;          I.append(<a class="code" href="../../d2/dc2/factory_8cpp_ac11eb4d2067afe35c90c95a7ea143d20.html#ac11eb4d2067afe35c90c95a7ea143d20">convertToFactory</a>(*g, inExtension));</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;        }</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    }</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;  <span class="keywordflow">return</span> I;</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;}</div>
-<div class="ttc" id="aclass_matrix_a0dd3516d8526ad736fe69848aacd1406_html_a0dd3516d8526ad736fe69848aacd1406"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem</a></div><div class="ttdeci">ring_elem elem(int i, int j) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d84/matrix_8cpp_source.html#l00304">matrix.cpp:304</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d2/dc2/factory_8cpp_source.html#l00871">871</a> of file <a class="el" href="../../d2/dc2/factory_8cpp_source.html">factory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;{</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;  CFList I;</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; M.<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>(); i++)</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    {</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; M.<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); j++)</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        {</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;          <span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *g;</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;          {</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;            g = <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(M.<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>(), M.<a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i, j));</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;          }</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;          I.append(<a class="code" href="../../d2/dc2/factory_8cpp_ac11eb4d2067afe35c90c95a7ea143d20.html#ac11eb4d2067afe35c90c95a7ea143d20">convertToFactory</a>(*g, inExtension));</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        }</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    }</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;  <span class="keywordflow">return</span> I;</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;}</div>
+<div class="ttc" id="aclass_matrix_a0dd3516d8526ad736fe69848aacd1406_html_a0dd3516d8526ad736fe69848aacd1406"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem</a></div><div class="ttdeci">ring_elem elem(int i, int j) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d84/matrix_8cpp_source.html#l00305">matrix.cpp:305</a></div></div>
 <div class="ttc" id="aclass_matrix_a6cb4735dadc364c543bb667468b0fac8_html_a6cb4735dadc364c543bb667468b0fac8"><div class="ttname"><a href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">Matrix::n_cols</a></div><div class="ttdeci">int n_cols() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00099">matrix.hpp:99</a></div></div>
 <div class="ttc" id="aclass_matrix_a7d4293b74029beb92af3d47fdcb7c18c_html_a7d4293b74029beb92af3d47fdcb7c18c"><div class="ttname"><a href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">Matrix::n_rows</a></div><div class="ttdeci">int n_rows() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00098">matrix.hpp:98</a></div></div>
 <div class="ttc" id="aclass_matrix_aa8df790e4669d0075ef8356d23e8d1fc_html_aa8df790e4669d0075ef8356d23e8d1fc"><div class="ttname"><a href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">Matrix::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00085">matrix.hpp:85</a></div></div>
 <div class="ttc" id="aclass_ring_element_ab978463e39096a4e0d1ecc0720f9acf3_html_ab978463e39096a4e0d1ecc0720f9acf3"><div class="ttname"><a href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a></div><div class="ttdeci">static RingElement * make_raw(const Ring *R, ring_elem f)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00020">relem.cpp:20</a></div></div>
 <div class="ttc" id="aclass_ring_element_html"><div class="ttname"><a href="../../d6/de2/class_ring_element.html">RingElement</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5a/relem_8hpp_source.html#l00010">relem.hpp:11</a></div></div>
-<div class="ttc" id="afactory_8cpp_ac11eb4d2067afe35c90c95a7ea143d20_html_ac11eb4d2067afe35c90c95a7ea143d20"><div class="ttname"><a href="../../d2/dc2/factory_8cpp_ac11eb4d2067afe35c90c95a7ea143d20.html#ac11eb4d2067afe35c90c95a7ea143d20">convertToFactory</a></div><div class="ttdeci">static CanonicalForm convertToFactory(mpz_srcptr p)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc2/factory_8cpp_source.html#l00310">factory.cpp:310</a></div></div>
+<div class="ttc" id="afactory_8cpp_ac11eb4d2067afe35c90c95a7ea143d20_html_ac11eb4d2067afe35c90c95a7ea143d20"><div class="ttname"><a href="../../d2/dc2/factory_8cpp_ac11eb4d2067afe35c90c95a7ea143d20.html#ac11eb4d2067afe35c90c95a7ea143d20">convertToFactory</a></div><div class="ttdeci">static CanonicalForm convertToFactory(mpz_srcptr p)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc2/factory_8cpp_source.html#l00312">factory.cpp:312</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_a89e5ab8480eb0440f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d2/dc2/factory_8cpp.html">factory.cpp</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:51:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

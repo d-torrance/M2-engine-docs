@@ -139,44 +139,44 @@ $(document).ready(function(){initNavTree('d5/df9/class_res_monoid_sparse_a63967c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html#l00403">403</a> of file <a class="el" href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html">res-moninfo-sparse.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  {</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="comment">// REWRITE</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a4a82f2101a80b71b06b5ae0a168e4fe5.html#a4a82f2101a80b71b06b5ae0a168e4fe5">ncalls_compare</a>++;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    printf(<span class="stringliteral">&quot;compare_schreyer: &quot;</span>);</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    printf(<span class="stringliteral">&quot;  m=&quot;</span>);</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a2f5a351339c320a95334f8aaee4d207d.html#a2f5a351339c320a95334f8aaee4d207d">showAlpha</a>(m);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    printf(<span class="stringliteral">&quot;  n=&quot;</span>);    </div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a2f5a351339c320a95334f8aaee4d207d.html#a2f5a351339c320a95334f8aaee4d207d">showAlpha</a>(n);</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    printf(<span class="stringliteral">&quot;  m0=&quot;</span>);    </div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a2f5a351339c320a95334f8aaee4d207d.html#a2f5a351339c320a95334f8aaee4d207d">showAlpha</a>(m0);</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    printf(<span class="stringliteral">&quot;  n0=&quot;</span>);    </div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a2f5a351339c320a95334f8aaee4d207d.html#a2f5a351339c320a95334f8aaee4d207d">showAlpha</a>(n0);</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    printf(<span class="stringliteral">&quot;  tiebreakers: %ld %ld\n&quot;</span>, tie1, tie2);</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordtype">int</span>* m1 = <span class="keyword">new</span> <span class="keywordtype">int</span>[*m + *m0];  <span class="comment">// need less than this</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordtype">int</span>* n1 = <span class="keyword">new</span> <span class="keywordtype">int</span>[*n + *n0];  <span class="comment">// need less than this</span></div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a4b3f68bf09b7b23c876e2d33a3937832.html#a4b3f68bf09b7b23c876e2d33a3937832">mult</a>(m, m0, m1);</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a4b3f68bf09b7b23c876e2d33a3937832.html#a4b3f68bf09b7b23c876e2d33a3937832">mult</a>(n, n0, n1);</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordtype">int</span> cmp = <a class="code" href="../../d5/df9/class_res_monoid_sparse_ab9b095c95ef7183b9a8c918613be67b1.html#ab9b095c95ef7183b9a8c918613be67b1">compare_grevlex</a>(m1, n1);</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordflow">if</span> (cmp == 0)</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;      {</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        <span class="keywordflow">if</span> (tie1 &gt; tie2)</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;          cmp = -1;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tie1 &lt; tie2)</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;          cmp = 1;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;          cmp = 0;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      }</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keyword">delete</span>[] m1;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keyword">delete</span>[] n1;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordflow">return</span> cmp;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  }</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html#l00402">402</a> of file <a class="el" href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html">res-moninfo-sparse.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  {</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="comment">// REWRITE</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a4a82f2101a80b71b06b5ae0a168e4fe5.html#a4a82f2101a80b71b06b5ae0a168e4fe5">ncalls_compare</a>++;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    printf(<span class="stringliteral">&quot;compare_schreyer: &quot;</span>);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    printf(<span class="stringliteral">&quot;  m=&quot;</span>);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a2f5a351339c320a95334f8aaee4d207d.html#a2f5a351339c320a95334f8aaee4d207d">showAlpha</a>(m);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    printf(<span class="stringliteral">&quot;  n=&quot;</span>);    </div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a2f5a351339c320a95334f8aaee4d207d.html#a2f5a351339c320a95334f8aaee4d207d">showAlpha</a>(n);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    printf(<span class="stringliteral">&quot;  m0=&quot;</span>);    </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a2f5a351339c320a95334f8aaee4d207d.html#a2f5a351339c320a95334f8aaee4d207d">showAlpha</a>(m0);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    printf(<span class="stringliteral">&quot;  n0=&quot;</span>);    </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a2f5a351339c320a95334f8aaee4d207d.html#a2f5a351339c320a95334f8aaee4d207d">showAlpha</a>(n0);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    printf(<span class="stringliteral">&quot;  tiebreakers: %ld %ld\n&quot;</span>, tie1, tie2);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordtype">int</span>* m1 = <span class="keyword">new</span> <span class="keywordtype">int</span>[*m + *m0];  <span class="comment">// need less than this</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordtype">int</span>* n1 = <span class="keyword">new</span> <span class="keywordtype">int</span>[*n + *n0];  <span class="comment">// need less than this</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a4b3f68bf09b7b23c876e2d33a3937832.html#a4b3f68bf09b7b23c876e2d33a3937832">mult</a>(m, m0, m1);</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <a class="code" href="../../d5/df9/class_res_monoid_sparse_a4b3f68bf09b7b23c876e2d33a3937832.html#a4b3f68bf09b7b23c876e2d33a3937832">mult</a>(n, n0, n1);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordtype">int</span> cmp = <a class="code" href="../../d5/df9/class_res_monoid_sparse_ab9b095c95ef7183b9a8c918613be67b1.html#ab9b095c95ef7183b9a8c918613be67b1">compare_grevlex</a>(m1, n1);</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordflow">if</span> (cmp == 0)</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      {</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <span class="keywordflow">if</span> (tie1 &gt; tie2)</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;          cmp = -1;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tie1 &lt; tie2)</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;          cmp = 1;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;          cmp = 0;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      }</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keyword">delete</span>[] m1;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keyword">delete</span>[] n1;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordflow">return</span> cmp;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  }</div>
 <div class="ttc" id="aclass_res_monoid_sparse_a2f5a351339c320a95334f8aaee4d207d_html_a2f5a351339c320a95334f8aaee4d207d"><div class="ttname"><a href="../../d5/df9/class_res_monoid_sparse_a2f5a351339c320a95334f8aaee4d207d.html#a2f5a351339c320a95334f8aaee4d207d">ResMonoidSparse::showAlpha</a></div><div class="ttdeci">void showAlpha(res_const_packed_monomial m) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d4e/res-moninfo-sparse_8cpp_source.html#l00101">res-moninfo-sparse.cpp:101</a></div></div>
-<div class="ttc" id="aclass_res_monoid_sparse_a4a82f2101a80b71b06b5ae0a168e4fe5_html_a4a82f2101a80b71b06b5ae0a168e4fe5"><div class="ttname"><a href="../../d5/df9/class_res_monoid_sparse_a4a82f2101a80b71b06b5ae0a168e4fe5.html#a4a82f2101a80b71b06b5ae0a168e4fe5">ResMonoidSparse::ncalls_compare</a></div><div class="ttdeci">unsigned long ncalls_compare</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html#l00043">res-moninfo-sparse.hpp:43</a></div></div>
-<div class="ttc" id="aclass_res_monoid_sparse_a4b3f68bf09b7b23c876e2d33a3937832_html_a4b3f68bf09b7b23c876e2d33a3937832"><div class="ttname"><a href="../../d5/df9/class_res_monoid_sparse_a4b3f68bf09b7b23c876e2d33a3937832.html#a4b3f68bf09b7b23c876e2d33a3937832">ResMonoidSparse::mult</a></div><div class="ttdeci">bool mult(res_const_packed_monomial m, res_const_packed_monomial n, res_packed_monomial result) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html#l00351">res-moninfo-sparse.hpp:351</a></div></div>
-<div class="ttc" id="aclass_res_monoid_sparse_ab9b095c95ef7183b9a8c918613be67b1_html_ab9b095c95ef7183b9a8c918613be67b1"><div class="ttname"><a href="../../d5/df9/class_res_monoid_sparse_ab9b095c95ef7183b9a8c918613be67b1.html#ab9b095c95ef7183b9a8c918613be67b1">ResMonoidSparse::compare_grevlex</a></div><div class="ttdeci">int compare_grevlex(res_const_packed_monomial m, res_const_packed_monomial n) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html#l00364">res-moninfo-sparse.hpp:364</a></div></div>
+<div class="ttc" id="aclass_res_monoid_sparse_a4a82f2101a80b71b06b5ae0a168e4fe5_html_a4a82f2101a80b71b06b5ae0a168e4fe5"><div class="ttname"><a href="../../d5/df9/class_res_monoid_sparse_a4a82f2101a80b71b06b5ae0a168e4fe5.html#a4a82f2101a80b71b06b5ae0a168e4fe5">ResMonoidSparse::ncalls_compare</a></div><div class="ttdeci">unsigned long ncalls_compare</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html#l00042">res-moninfo-sparse.hpp:42</a></div></div>
+<div class="ttc" id="aclass_res_monoid_sparse_a4b3f68bf09b7b23c876e2d33a3937832_html_a4b3f68bf09b7b23c876e2d33a3937832"><div class="ttname"><a href="../../d5/df9/class_res_monoid_sparse_a4b3f68bf09b7b23c876e2d33a3937832.html#a4b3f68bf09b7b23c876e2d33a3937832">ResMonoidSparse::mult</a></div><div class="ttdeci">bool mult(res_const_packed_monomial m, res_const_packed_monomial n, res_packed_monomial result) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html#l00350">res-moninfo-sparse.hpp:350</a></div></div>
+<div class="ttc" id="aclass_res_monoid_sparse_ab9b095c95ef7183b9a8c918613be67b1_html_ab9b095c95ef7183b9a8c918613be67b1"><div class="ttname"><a href="../../d5/df9/class_res_monoid_sparse_ab9b095c95ef7183b9a8c918613be67b1.html#ab9b095c95ef7183b9a8c918613be67b1">ResMonoidSparse::compare_grevlex</a></div><div class="ttdeci">int compare_grevlex(res_const_packed_monomial m, res_const_packed_monomial n) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html#l00363">res-moninfo-sparse.hpp:363</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d5/df9/class_res_monoid_sparse_ab9b095c95ef7183b9a8c918613be67b1.html#ab9b095c95ef7183b9a8c918613be67b1">compare_grevlex()</a>, <a class="el" href="../../d5/df9/class_res_monoid_sparse_a4b3f68bf09b7b23c876e2d33a3937832.html#a4b3f68bf09b7b23c876e2d33a3937832">mult()</a>, <a class="el" href="../../d5/df9/class_res_monoid_sparse_a4a82f2101a80b71b06b5ae0a168e4fe5.html#a4a82f2101a80b71b06b5ae0a168e4fe5">ncalls_compare</a>, and <a class="el" href="../../d5/df9/class_res_monoid_sparse_a2f5a351339c320a95334f8aaee4d207d.html#a2f5a351339c320a95334f8aaee4d207d">showAlpha()</a>.</p>
 
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('d5/df9/class_res_monoid_sparse_a63967c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/df9/class_res_monoid_sparse.html">ResMonoidSparse</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

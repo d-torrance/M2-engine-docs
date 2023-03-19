@@ -100,11 +100,11 @@ $(document).ready(function(){initNavTree('db/d1b/class_b_r_p_a26d60fcd097b25449d
 <p class="definition">Definition at line <a class="el" href="../../d4/d1c/franzi-brp_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../d4/d1c/franzi-brp_8cpp_source.html">franzi-brp.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="../../db/d1b/class_b_r_p.html">BRP</a> tmp;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  monomials::const_iterator end = <a class="code" href="../../db/d1b/class_b_r_p_a9cf2fc66d420cfee42a74d151e1fcb24.html#a9cf2fc66d420cfee42a74d151e1fcb24">m</a>.end();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  monomials::const_iterator <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> = <a class="code" href="../../db/d1b/class_b_r_p_a9cf2fc66d420cfee42a74d151e1fcb24.html#a9cf2fc66d420cfee42a74d151e1fcb24">m</a>.end();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="../../db/d40/franzi-brp_8hpp_a0b7d8b2720cde71ff864b1f7425fa486.html#a0b7d8b2720cde71ff864b1f7425fa486">brMonomial</a> last = -1;  <span class="comment">// set this to -1 so it never is the same as mono, if</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                         <span class="comment">// we set it to 0, we have problems when multiplying</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                         <span class="comment">// 1*1</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">for</span> (monomials::const_iterator it = <a class="code" href="../../db/d1b/class_b_r_p_a9cf2fc66d420cfee42a74d151e1fcb24.html#a9cf2fc66d420cfee42a74d151e1fcb24">m</a>.begin(); it != end; it++)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">for</span> (monomials::const_iterator it = <a class="code" href="../../db/d1b/class_b_r_p_a9cf2fc66d420cfee42a74d151e1fcb24.html#a9cf2fc66d420cfee42a74d151e1fcb24">m</a>.begin(); it != <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>; it++)</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <a class="code" href="../../db/d40/franzi-brp_8hpp_a0b7d8b2720cde71ff864b1f7425fa486.html#a0b7d8b2720cde71ff864b1f7425fa486">brMonomial</a> mono = other | *it;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">if</span> (last == mono)</div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('db/d1b/class_b_r_p_a26d60fcd097b25449d
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="keywordflow">if</span> (*lastIt == *it)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        {</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;          lastIt = tmp.<a class="code" href="../../db/d1b/class_b_r_p_a9cf2fc66d420cfee42a74d151e1fcb24.html#a9cf2fc66d420cfee42a74d151e1fcb24">m</a>.erase(lastIt, ++it);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;          <span class="keywordflow">if</span> (lastIt != end)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;          <span class="keywordflow">if</span> (lastIt != <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;              ++it;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div>
@@ -145,8 +145,9 @@ $(document).ready(function(){initNavTree('db/d1b/class_b_r_p_a26d60fcd097b25449d
 <div class="ttc" id="aclass_b_r_p_html"><div class="ttname"><a href="../../db/d1b/class_b_r_p.html">BRP</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d40/franzi-brp_8hpp_source.html#l00027">franzi-brp.hpp:28</a></div></div>
 <div class="ttc" id="afranzi-brp_8cpp_a67fc85e2740cd77a99ac9625d03213fc_html_a67fc85e2740cd77a99ac9625d03213fc"><div class="ttname"><a href="../../d4/d1c/franzi-brp_8cpp_a67fc85e2740cd77a99ac9625d03213fc.html#a67fc85e2740cd77a99ac9625d03213fc">funccomp</a></div><div class="ttdeci">bool funccomp(const brMonomial &amp;a, const brMonomial &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d1c/franzi-brp_8cpp_source.html#l00079">franzi-brp.cpp:79</a></div></div>
 <div class="ttc" id="afranzi-brp_8hpp_a0b7d8b2720cde71ff864b1f7425fa486_html_a0b7d8b2720cde71ff864b1f7425fa486"><div class="ttname"><a href="../../db/d40/franzi-brp_8hpp_a0b7d8b2720cde71ff864b1f7425fa486.html#a0b7d8b2720cde71ff864b1f7425fa486">brMonomial</a></div><div class="ttdeci">unsigned long brMonomial</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d40/franzi-brp_8hpp_source.html#l00014">franzi-brp.hpp:14</a></div></div>
+<div class="ttc" id="aringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad_html_a202eaaa0b459954e5ac23a43454d57ad"><div class="ttname"><a href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a></div><div class="ttdeci">TermIterator&lt; Nterm &gt; end(Nterm *)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d82/ringelem_8cpp_source.html#l00005">ringelem.cpp:5</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d1c/franzi-brp_8cpp_a67fc85e2740cd77a99ac9625d03213fc.html#a67fc85e2740cd77a99ac9625d03213fc">funccomp()</a>, and <a class="el" href="../../db/d1b/class_b_r_p_a9cf2fc66d420cfee42a74d151e1fcb24.html#a9cf2fc66d420cfee42a74d151e1fcb24">m</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end()</a>, <a class="el" href="../../d4/d1c/franzi-brp_8cpp_a67fc85e2740cd77a99ac9625d03213fc.html#a67fc85e2740cd77a99ac9625d03213fc">funccomp()</a>, and <a class="el" href="../../db/d1b/class_b_r_p_a9cf2fc66d420cfee42a74d151e1fcb24.html#a9cf2fc66d420cfee42a74d151e1fcb24">m</a>.</p>
 
 </div>
 </div>
@@ -156,7 +157,7 @@ $(document).ready(function(){initNavTree('db/d1b/class_b_r_p_a26d60fcd097b25449d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d1b/class_b_r_p.html">BRP</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

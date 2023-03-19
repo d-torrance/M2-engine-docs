@@ -1,6 +1,5 @@
 var matrix_8h =
 [
-    [ "IM2_kernel_of_GB", "dd/df4/matrix_8h_aa9f8c29ff08722732ca21112ac9ed587.html#aa9f8c29ff08722732ca21112ac9ed587", null ],
     [ "IM2_Matrix_auto_reduce", "dd/df4/matrix_8h_a04d6eb46f31e7e6b74d56d5f16c72279.html#a04d6eb46f31e7e6b74d56d5f16c72279", null ],
     [ "IM2_Matrix_concat", "dd/df4/matrix_8h_a32a38b6b0213faf7b604aba4606729d7.html#a32a38b6b0213faf7b604aba4606729d7", null ],
     [ "IM2_Matrix_contract", "dd/df4/matrix_8h_ab1a7a36e9be7e9982a7725fb13d91da9.html#ab1a7a36e9be7e9982a7725fb13d91da9", null ],
@@ -15,7 +14,6 @@ var matrix_8h =
     [ "IM2_Matrix_get_entry", "dd/df4/matrix_8h_a490c3f1c2ff0bc3e3484503493b2bfbd.html#a490c3f1c2ff0bc3e3484503493b2bfbd", null ],
     [ "IM2_Matrix_get_source", "dd/df4/matrix_8h_a2c095b3dbaa7f6fdd50f2aabcf3b0e34.html#a2c095b3dbaa7f6fdd50f2aabcf3b0e34", null ],
     [ "IM2_Matrix_get_target", "dd/df4/matrix_8h_ac58e43e3b9bcaf9c7891b2c7aa596108.html#ac58e43e3b9bcaf9c7891b2c7aa596108", null ],
-    [ "IM2_Matrix_Hilbert", "dd/df4/matrix_8h_af82f5db01bd48bcd103a25ebef1111eb.html#af82f5db01bd48bcd103a25ebef1111eb", null ],
     [ "IM2_Matrix_homogenize", "dd/df4/matrix_8h_adf4fc988f78ea878d6e63aef5bc323fe.html#adf4fc988f78ea878d6e63aef5bc323fe", null ],
     [ "IM2_Matrix_identity", "dd/df4/matrix_8h_af70353ce246a78af2f4e4a51dae827a7.html#af70353ce246a78af2f4e4a51dae827a7", null ],
     [ "IM2_Matrix_initial", "dd/df4/matrix_8h_a521bee7b2270ed9d24aae381a78cd805.html#a521bee7b2270ed9d24aae381a78cd805", null ],

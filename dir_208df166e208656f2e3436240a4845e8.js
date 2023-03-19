@@ -55,10 +55,5 @@ var dir_208df166e208656f2e3436240a4845e8 =
     [ "res-schreyer-frame.hpp", "df/dd9/res-schreyer-frame_8hpp.html", "df/dd9/res-schreyer-frame_8hpp" ],
     [ "res-schreyer-order.hpp", "d5/d7b/res-schreyer-order_8hpp.html", [
       [ "ResSchreyerOrder", "df/de7/struct_res_schreyer_order.html", "df/de7/struct_res_schreyer_order" ]
-    ] ],
-    [ "res-varpower-monomial.cpp", "dd/dfa/res-varpower-monomial_8cpp.html", "dd/dfa/res-varpower-monomial_8cpp" ],
-    [ "res-varpower-monomial.hpp", "db/dd9/res-varpower-monomial_8hpp.html", [
-      [ "res_varpower_monomials", "d3/df0/classres__varpower__monomials.html", "d3/df0/classres__varpower__monomials" ],
-      [ "index_res_varpower_monomial", "d9/d3c/classindex__res__varpower__monomial.html", "d9/d3c/classindex__res__varpower__monomial" ]
     ] ]
 ];

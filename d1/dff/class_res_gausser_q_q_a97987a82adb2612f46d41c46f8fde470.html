@@ -134,10 +134,10 @@ $(document).ready(function(){initNavTree('d1/dff/class_res_gausser_q_q_a97987a82
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keyword">auto</span>&amp; elems = <a class="code" href="../../d1/dff/class_res_gausser_q_q_a26e672583c79b1feaf390e2a28e15f6b.html#a26e672583c79b1feaf390e2a28e15f6b">coefficientVector</a>(coeffs);</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keyword">auto</span> monom = comps.begin();</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="keyword">auto</span> coeff = elems.begin();</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keyword">auto</span> end = elems.end();</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keyword">auto</span> <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> = elems.end();</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d0/dbb/res-gausser_8hpp_a46aff60fe9e7b02cb075b491f6e3af7b.html#a46aff60fe9e7b02cb075b491f6e3af7b">ComponentIndex</a> c = 0; c &lt; ncolumns; c++)</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <span class="keywordflow">if</span> (coeff == end or *monom != c)</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <span class="keywordflow">if</span> (coeff == <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> or *monom != c)</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        o &lt;&lt; <span class="stringliteral">&quot; .&quot;</span>;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        {</div>
@@ -152,8 +152,9 @@ $(document).ready(function(){initNavTree('d1/dff/class_res_gausser_q_q_a97987a82
 <div class="ttc" id="aclass_res_gausser_q_q_a22c7af4a92659d92adc33c0f3731e7fc_html_a22c7af4a92659d92adc33c0f3731e7fc"><div class="ttname"><a href="../../d1/dff/class_res_gausser_q_q_a22c7af4a92659d92adc33c0f3731e7fc.html#a22c7af4a92659d92adc33c0f3731e7fc">ResGausserQQ::out</a></div><div class="ttdeci">std::ostream &amp; out(std::ostream &amp;o, FieldElement &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dc9/res-gausser-_q_q_8cpp_source.html#l00227">res-gausser-QQ.cpp:227</a></div></div>
 <div class="ttc" id="aclass_res_gausser_q_q_a26e672583c79b1feaf390e2a28e15f6b_html_a26e672583c79b1feaf390e2a28e15f6b"><div class="ttname"><a href="../../d1/dff/class_res_gausser_q_q_a26e672583c79b1feaf390e2a28e15f6b.html#a26e672583c79b1feaf390e2a28e15f6b">ResGausserQQ::coefficientVector</a></div><div class="ttdeci">CoefficientVector coefficientVector(std::vector&lt; FieldElement &gt; *vals) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db6/res-gausser-_q_q_8hpp_source.html#l00038">res-gausser-QQ.hpp:38</a></div></div>
 <div class="ttc" id="ares-gausser_8hpp_a46aff60fe9e7b02cb075b491f6e3af7b_html_a46aff60fe9e7b02cb075b491f6e3af7b"><div class="ttname"><a href="../../d0/dbb/res-gausser_8hpp_a46aff60fe9e7b02cb075b491f6e3af7b.html#a46aff60fe9e7b02cb075b491f6e3af7b">ComponentIndex</a></div><div class="ttdeci">int ComponentIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dbb/res-gausser_8hpp_source.html#l00015">res-gausser.hpp:13</a></div></div>
+<div class="ttc" id="aringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad_html_a202eaaa0b459954e5ac23a43454d57ad"><div class="ttname"><a href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a></div><div class="ttdeci">TermIterator&lt; Nterm &gt; end(Nterm *)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d82/ringelem_8cpp_source.html#l00005">ringelem.cpp:5</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d1/dff/class_res_gausser_q_q_a26e672583c79b1feaf390e2a28e15f6b.html#a26e672583c79b1feaf390e2a28e15f6b">coefficientVector()</a>, and <a class="el" href="../../d1/dff/class_res_gausser_q_q_a22c7af4a92659d92adc33c0f3731e7fc.html#a22c7af4a92659d92adc33c0f3731e7fc">out()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dff/class_res_gausser_q_q_a26e672583c79b1feaf390e2a28e15f6b.html#a26e672583c79b1feaf390e2a28e15f6b">coefficientVector()</a>, <a class="el" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end()</a>, and <a class="el" href="../../d1/dff/class_res_gausser_q_q_a22c7af4a92659d92adc33c0f3731e7fc.html#a22c7af4a92659d92adc33c0f3731e7fc">out()</a>.</p>
 
 </div>
 </div>
@@ -163,7 +164,7 @@ $(document).ready(function(){initNavTree('d1/dff/class_res_gausser_q_q_a97987a82
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/dff/class_res_gausser_q_q.html">ResGausserQQ</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

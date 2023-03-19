@@ -113,21 +113,21 @@ $(document).ready(function(){initNavTree('d1/d55/engine_8h_aeb0c6040a51ffe1ad7fb
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dc8/groebner_8cpp_source.html#l00495">495</a> of file <a class="el" href="../../d2/dc8/groebner_8cpp_source.html">groebner.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;{</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    {</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;      <a class="code" href="../../d4/d7a/text-io_8cpp_a8284cb28c22ece6792116bf485c18324.html#a8284cb28c22ece6792116bf485c18324">clear_emit_size</a>();</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;      <a class="code" href="../../d6/d1e/class_f4_res_computation.html">F4ResComputation</a> *G = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="../../d6/d1e/class_f4_res_computation.html">F4ResComputation</a> *<span class="keyword">&gt;</span>(C);</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;      <span class="keywordflow">if</span> (G != 0) <span class="keywordflow">return</span> G-&gt;<a class="code" href="../../d6/d1e/class_f4_res_computation_ada0a53df81219ab1c29e4731920fa36e.html#ada0a53df81219ab1c29e4731920fa36e">get_mutable_matrix</a>(R, level);</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected fast nonminimal resolution computation type&quot;</span>);</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    {</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  }</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/dc8/groebner_8cpp_source.html#l00508">508</a> of file <a class="el" href="../../d2/dc8/groebner_8cpp_source.html">groebner.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;{</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    {</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;      <a class="code" href="../../d4/d7a/text-io_8cpp_a8284cb28c22ece6792116bf485c18324.html#a8284cb28c22ece6792116bf485c18324">clear_emit_size</a>();</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;      <a class="code" href="../../d6/d1e/class_f4_res_computation.html">F4ResComputation</a> *G = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="../../d6/d1e/class_f4_res_computation.html">F4ResComputation</a> *<span class="keyword">&gt;</span>(C);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;      <span class="keywordflow">if</span> (G != 0) <span class="keywordflow">return</span> G-&gt;<a class="code" href="../../d6/d1e/class_f4_res_computation_ada0a53df81219ab1c29e4731920fa36e.html#ada0a53df81219ab1c29e4731920fa36e">get_mutable_matrix</a>(R, level);</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected fast nonminimal resolution computation type&quot;</span>);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    {</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  }</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;}</div>
 <div class="ttc" id="aclass_f4_res_computation_ada0a53df81219ab1c29e4731920fa36e_html_ada0a53df81219ab1c29e4731920fa36e"><div class="ttname"><a href="../../d6/d1e/class_f4_res_computation_ada0a53df81219ab1c29e4731920fa36e.html#ada0a53df81219ab1c29e4731920fa36e">F4ResComputation::get_mutable_matrix</a></div><div class="ttdeci">MutableMatrix * get_mutable_matrix(const Ring *R, int level)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dff/res-f4-computation_8cpp_source.html#l00266">res-f4-computation.cpp:266</a></div></div>
 <div class="ttc" id="aclass_f4_res_computation_html"><div class="ttname"><a href="../../d6/d1e/class_f4_res_computation.html">F4ResComputation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d2f/res-f4-computation_8hpp_source.html#l00014">res-f4-computation.hpp:15</a></div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('d1/d55/engine_8h_aeb0c6040a51ffe1ad7fb
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d1/d55/engine_8h.html">engine.h</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:51:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

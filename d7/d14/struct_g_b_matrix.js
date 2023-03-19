@@ -5,6 +5,6 @@ var struct_g_b_matrix =
     [ "append", "d7/d14/struct_g_b_matrix_a8aa96d26d790af893868c260c380e505.html#a8aa96d26d790af893868c260c380e505", null ],
     [ "get_free_module", "d7/d14/struct_g_b_matrix_a0d9ef5d67553a8e692a6848cf8828fb8.html#a0d9ef5d67553a8e692a6848cf8828fb8", null ],
     [ "to_matrix", "d7/d14/struct_g_b_matrix_a23b2b9f6d947a4cad8d133a130dc9074.html#a23b2b9f6d947a4cad8d133a130dc9074", null ],
-    [ "elems", "d7/d14/struct_g_b_matrix_a148b60b55df645023e23fec7361401a9.html#a148b60b55df645023e23fec7361401a9", null ],
+    [ "elems", "d7/d14/struct_g_b_matrix_a9c32aada63157ee3f787e6c0f9bcdbd8.html#a9c32aada63157ee3f787e6c0f9bcdbd8", null ],
     [ "F", "d7/d14/struct_g_b_matrix_ac95167d25c101ab78b34a77583a0b73f.html#ac95167d25c101ab78b34a77583a0b73f", null ]
 ];

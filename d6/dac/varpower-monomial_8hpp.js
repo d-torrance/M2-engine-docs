@@ -1,8 +1,8 @@
 var varpower_monomial_8hpp =
 [
-    [ "varpower_monomials", "d6/dec/classvarpower__monomials.html", "d6/dec/classvarpower__monomials" ],
-    [ "index_varpower_monomial", "d4/d60/classindex__varpower__monomial.html", "d4/d60/classindex__varpower__monomial" ],
     [ "const_varpower_monomial", "d6/dac/varpower-monomial_8hpp_aafe85fd808bd13fc2516f834d2b6de46.html#aafe85fd808bd13fc2516f834d2b6de46", null ],
+    [ "index_varpower_monomial", "d6/dac/varpower-monomial_8hpp_ac571c8c8b56dfc31cf35f3bf703b74fa.html#ac571c8c8b56dfc31cf35f3bf703b74fa", null ],
     [ "varpower_monomial", "d6/dac/varpower-monomial_8hpp_a157ac534e5ec3ea071fa7e5928ad2db5.html#a157ac534e5ec3ea071fa7e5928ad2db5", null ],
-    [ "varpower_word", "d6/dac/varpower-monomial_8hpp_a2493f1db0bf1fb63564761e4e51288d9.html#a2493f1db0bf1fb63564761e4e51288d9", null ]
+    [ "varpower_monomials", "d6/dac/varpower-monomial_8hpp_a80c9578f9706c63d2c27a27ba4d6b8f8.html#a80c9578f9706c63d2c27a27ba4d6b8f8", null ],
+    [ "varpower_word", "d6/dac/varpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec.html#ac06516f99c07ceb08dbb3d05a8aed2ec", null ]
 ];

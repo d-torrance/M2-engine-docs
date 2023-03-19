@@ -113,30 +113,30 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_ace2262c3df62223cd
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l01038">1038</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;{</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = <a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;    {</div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring&quot;</span>);</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;    }</div>
-<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>(), 0);</div>
-<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;  maxdivided = 0;</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;    {</div>
-<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i) != NULL)</div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;        {</div>
-<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;          <span class="keywordtype">int</span> lo, hi;</div>
-<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;          P-&gt;<a class="code" href="../../dd/dcf/class_ring_aa5474e4319c97c0bc7e0514e17511de8.html#aa5474e4319c97c0bc7e0514e17511de8">vec_degree_of_var</a>(n, <a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i), lo, hi);</div>
-<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;          <span class="keywordflow">if</span> (maxd &gt;= 0 &amp;&amp; lo &gt; maxd) lo = maxd;</div>
-<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;          <span class="keywordflow">if</span> (lo &gt; maxdivided) maxdivided = lo;</div>
-<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;          mat.append(P-&gt;<a class="code" href="../../dd/dcf/class_ring_a99764aad7596e897826901072a5819d2.html#a99764aad7596e897826901072a5819d2">vec_divide_by_var</a>(n, lo, <a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i)));</div>
-<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;        }</div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;    }</div>
-<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;  <span class="keywordflow">return</span> mat.to_matrix();</div>
-<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;}</div>
-<div class="ttc" id="aclass_matrix_a0dd3516d8526ad736fe69848aacd1406_html_a0dd3516d8526ad736fe69848aacd1406"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem</a></div><div class="ttdeci">ring_elem elem(int i, int j) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d84/matrix_8cpp_source.html#l00304">matrix.cpp:304</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l01035">1035</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;{</div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = <a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;    {</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring&quot;</span>);</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;    }</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>(), 0);</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;  maxdivided = 0;</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;    {</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i) != NULL)</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;        {</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;          <span class="keywordtype">int</span> lo, hi;</div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;          P-&gt;<a class="code" href="../../dd/dcf/class_ring_aa5474e4319c97c0bc7e0514e17511de8.html#aa5474e4319c97c0bc7e0514e17511de8">vec_degree_of_var</a>(n, <a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i), lo, hi);</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;          <span class="keywordflow">if</span> (maxd &gt;= 0 &amp;&amp; lo &gt; maxd) lo = maxd;</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;          <span class="keywordflow">if</span> (lo &gt; maxdivided) maxdivided = lo;</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;          mat.append(P-&gt;<a class="code" href="../../dd/dcf/class_ring_a99764aad7596e897826901072a5819d2.html#a99764aad7596e897826901072a5819d2">vec_divide_by_var</a>(n, lo, <a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i)));</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;        }</div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;    }</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;  <span class="keywordflow">return</span> mat.to_matrix();</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;}</div>
+<div class="ttc" id="aclass_matrix_a0dd3516d8526ad736fe69848aacd1406_html_a0dd3516d8526ad736fe69848aacd1406"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem</a></div><div class="ttdeci">ring_elem elem(int i, int j) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d84/matrix_8cpp_source.html#l00305">matrix.cpp:305</a></div></div>
 <div class="ttc" id="aclass_matrix_a0f771b1c1bf2eb4a5968b772a91884df_html_a0f771b1c1bf2eb4a5968b772a91884df"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">Matrix::rows</a></div><div class="ttdeci">const FreeModule * rows() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00096">matrix.hpp:96</a></div></div>
 <div class="ttc" id="aclass_matrix_a6cb4735dadc364c543bb667468b0fac8_html_a6cb4735dadc364c543bb667468b0fac8"><div class="ttname"><a href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">Matrix::n_cols</a></div><div class="ttdeci">int n_cols() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00099">matrix.hpp:99</a></div></div>
 <div class="ttc" id="aclass_matrix_aa8df790e4669d0075ef8356d23e8d1fc_html_aa8df790e4669d0075ef8356d23e8d1fc"><div class="ttname"><a href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">Matrix::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00085">matrix.hpp:85</a></div></div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_ace2262c3df62223cd
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

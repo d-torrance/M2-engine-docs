@@ -100,12 +100,12 @@ $(document).ready(function(){initNavTree('de/d10/franzi-gb_8cpp_a1a3761822c6b39b
 <p class="definition">Definition at line <a class="el" href="../../de/d10/franzi-gb_8cpp_source.html#l00376">376</a> of file <a class="el" href="../../de/d10/franzi-gb_8cpp_source.html">franzi-gb.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;{</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keywordtype">bool</span> changesHappened = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  IntermediateBasis::iterator end = F.end();</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  IntermediateBasis::iterator <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> = F.end();</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> numChanged = 0;</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keywordflow">while</span> (changesHappened)</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    {</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      changesHappened = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <span class="keywordflow">for</span> (IntermediateBasis::iterator it = F.begin(); it != end;)</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <span class="keywordflow">for</span> (IntermediateBasis::iterator it = F.begin(); it != <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>;)</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        {</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="../../de/d10/franzi-gb_8cpp_ade743e7887924fddaf6ced548360f652.html#ade743e7887924fddaf6ced548360f652">reduce</a>(it-&gt;second, F, it))</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            {</div>
@@ -129,8 +129,9 @@ $(document).ready(function(){initNavTree('de/d10/franzi-gb_8cpp_a1a3761822c6b39b
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;}</div>
 <div class="ttc" id="afranzi-gb_8cpp_ade743e7887924fddaf6ced548360f652_html_ade743e7887924fddaf6ced548360f652"><div class="ttname"><a href="../../de/d10/franzi-gb_8cpp_ade743e7887924fddaf6ced548360f652.html#ade743e7887924fddaf6ced548360f652">reduce</a></div><div class="ttdeci">bool reduce(BRP &amp;f, const IntermediateBasis &amp;F, const IntermediateBasis::const_iterator itF)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d10/franzi-gb_8cpp_source.html#l00333">franzi-gb.cpp:333</a></div></div>
+<div class="ttc" id="aringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad_html_a202eaaa0b459954e5ac23a43454d57ad"><div class="ttname"><a href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a></div><div class="ttdeci">TermIterator&lt; Nterm &gt; end(Nterm *)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d82/ringelem_8cpp_source.html#l00005">ringelem.cpp:5</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../de/d10/franzi-gb_8cpp_ade743e7887924fddaf6ced548360f652.html#ade743e7887924fddaf6ced548360f652">reduce()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end()</a>, and <a class="el" href="../../de/d10/franzi-gb_8cpp_ade743e7887924fddaf6ced548360f652.html#ade743e7887924fddaf6ced548360f652">reduce()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/d10/franzi-gb_8cpp_a14e81b9d04537f8dd05a8cef7fb8563e.html#a14e81b9d04537f8dd05a8cef7fb8563e">gb()</a>.</p>
 
@@ -142,7 +143,7 @@ $(document).ready(function(){initNavTree('de/d10/franzi-gb_8cpp_a1a3761822c6b39b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../de/d10/franzi-gb_8cpp.html">franzi-gb.cpp</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:51:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

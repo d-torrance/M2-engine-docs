@@ -121,37 +121,37 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_a5928ddd99cca58612
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">// Checks to make:</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// each vector in V is over same ring.</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R = target-&gt;<a class="code" href="../../d6/df0/class_free_module_a29c99edc8181d08d3700f43baa269673.html#a29c99edc8181d08d3700f43baa269673">get_ring</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">if</span> (M != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; M-&gt;len; i++)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> (R != M-&gt;array[i]-&gt;get_ring())</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected vectors in the same ring&quot;</span>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(target, ncols);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">if</span> (M != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> next = 0;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r = 0; r &lt; target-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>(); r++)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 0; c &lt; ncols &amp;&amp; next &lt; M-&gt;len; c++)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            mat.set_entry(r, c, M-&gt;array[next]-&gt;get_value());</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            next++;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      mat.compute_column_degrees();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">return</span> mat.to_matrix();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// Checks to make:</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">// each vector in V is over same ring.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R = target-&gt;<a class="code" href="../../d6/df0/class_free_module_a29c99edc8181d08d3700f43baa269673.html#a29c99edc8181d08d3700f43baa269673">get_ring</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">if</span> (M != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; M-&gt;len; i++)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> (R != M-&gt;array[i]-&gt;get_ring())</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;          {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected vectors in the same ring&quot;</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(target, ncols);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">if</span> (M != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> next = 0;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r = 0; r &lt; target-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>(); r++)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 0; c &lt; ncols &amp;&amp; next &lt; M-&gt;len; c++)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            mat.set_entry(r, c, M-&gt;array[next]-&gt;get_value());</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            next++;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      mat.compute_column_degrees();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">return</span> mat.to_matrix();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="ttc" id="aclass_free_module_a29c99edc8181d08d3700f43baa269673_html_a29c99edc8181d08d3700f43baa269673"><div class="ttname"><a href="../../d6/df0/class_free_module_a29c99edc8181d08d3700f43baa269673.html#a29c99edc8181d08d3700f43baa269673">FreeModule::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcb/freemod_8hpp_source.html#l00052">freemod.hpp:52</a></div></div>
 <div class="ttc" id="aclass_free_module_af359cfc5802d332b199aeca8a79f2107_html_af359cfc5802d332b199aeca8a79f2107"><div class="ttname"><a href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">FreeModule::rank</a></div><div class="ttdeci">int rank() const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcb/freemod_8hpp_source.html#l00056">freemod.hpp:56</a></div></div>
 <div class="ttc" id="aclass_matrix_constructor_html"><div class="ttname"><a href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d80/matrix-con_8hpp_source.html#l00013">matrix-con.hpp:14</a></div></div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_a5928ddd99cca58612
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

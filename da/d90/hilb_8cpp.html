@@ -88,12 +88,29 @@ $(document).ready(function(){initNavTree('da/d90/hilb_8cpp.html','../../'); init
 <div class="title">hilb.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;cstdlib&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../de/d6b/hilb_8hpp_source.html">hilb.hpp</a>&quot;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d6b/hilb_8hpp_source.html">hilb.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/d5a/relem_8hpp_source.html">relem.hpp</a>&quot;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/df2/_exponent_list_8hpp_source.html">ExponentList.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/db0/_exponent_vector_8hpp_source.html">ExponentVector.hpp</a>&quot;</code><br />
+<code>#include &quot;M2mem.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d1d/buffer_8hpp_source.html">buffer.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d41/error_8h_source.html">error.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/dcb/freemod_8hpp_source.html">freemod.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/db6/int-bag_8hpp_source.html">int-bag.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d2/d87/interrupted_8hpp_source.html">interrupted.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d2c/mem_8hpp_source.html">mem.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d4f/monideal_8hpp_source.html">monideal.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/dd0/monoid_8hpp_source.html">monoid.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d6c/polyring_8hpp_source.html">polyring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d5a/relem_8hpp_source.html">relem.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d10/ring_8hpp_source.html">ring.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../da/d90/hilb_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -104,11 +121,11 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adf761816ad9700c7b440b529810910ed"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/hilb_8cpp_adf761816ad9700c7b440b529810910ed.html#adf761816ad9700c7b440b529810910ed">popular_var</a> (const <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> &amp;I, int &amp;npure, <a class="el" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> pure, int &amp;nhits, <a class="el" href="../../d1/dd0/monoid_8hpp_ae4ab03e30a3d5409df540c53f94693d1.html#ae4ab03e30a3d5409df540c53f94693d1">const_varpower</a> &amp;non_pure_power, int &amp;exp_of_popular)</td></tr>
+<tr class="memitem:adf761816ad9700c7b440b529810910ed"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/hilb_8cpp_adf761816ad9700c7b440b529810910ed.html#adf761816ad9700c7b440b529810910ed">popular_var</a> (const <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> &amp;I, int &amp;npure, <a class="el" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> pure, int &amp;nhits, <a class="el" href="../../d6/df2/_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad.html#a32c7462759c905470880b0dba58f00ad">const_varpower</a> &amp;non_pure_power, int &amp;exp_of_popular)</td></tr>
 <tr class="separator:adf761816ad9700c7b440b529810910ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2a528d49150fd24eb80b048e6bc17a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/hilb_8cpp_afa2a528d49150fd24eb80b048e6bc17a.html#afa2a528d49150fd24eb80b048e6bc17a">find_pivot</a> (const <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> &amp;I, int &amp;npure, <a class="el" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> pure, <a class="el" href="../../d3/d23/classintarray.html">intarray</a> &amp;m)</td></tr>
-<tr class="separator:afa2a528d49150fd24eb80b048e6bc17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63f6b21008951d3bb1a9454d9eaa2a58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/hilb_8cpp_a63f6b21008951d3bb1a9454d9eaa2a58.html#a63f6b21008951d3bb1a9454d9eaa2a58">iquotient_and_sum</a> (<a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> &amp;I, <a class="el" href="../../d1/dd0/monoid_8hpp_ae4ab03e30a3d5409df540c53f94693d1.html#ae4ab03e30a3d5409df540c53f94693d1">const_varpower</a> m, <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *&amp;quot, <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *&amp;sum, <a class="el" href="../../d1/d5b/classstash.html">stash</a> *mi_stash)</td></tr>
+<tr class="memitem:a03bad5894f2bdf668a2576c602eb92bb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/hilb_8cpp_a03bad5894f2bdf668a2576c602eb92bb.html#a03bad5894f2bdf668a2576c602eb92bb">find_pivot</a> (const <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> &amp;I, int &amp;npure, <a class="el" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> pure, <a class="el" href="../../da/d94/newdelete_8hpp_a2f57de967a25a07781a4d50fa2cc1a1b.html#a2f57de967a25a07781a4d50fa2cc1a1b">gc_vector</a>&lt; int &gt; &amp;m)</td></tr>
+<tr class="separator:a03bad5894f2bdf668a2576c602eb92bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f6b21008951d3bb1a9454d9eaa2a58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/hilb_8cpp_a63f6b21008951d3bb1a9454d9eaa2a58.html#a63f6b21008951d3bb1a9454d9eaa2a58">iquotient_and_sum</a> (<a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> &amp;I, <a class="el" href="../../d6/df2/_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad.html#a32c7462759c905470880b0dba58f00ad">const_varpower</a> m, <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *&amp;quot, <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *&amp;sum, <a class="el" href="../../d1/d5b/classstash.html">stash</a> *mi_stash)</td></tr>
 <tr class="separator:a63f6b21008951d3bb1a9454d9eaa2a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -117,7 +134,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../da/d90/hilb_8cpp.html">hilb.cpp</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:51:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

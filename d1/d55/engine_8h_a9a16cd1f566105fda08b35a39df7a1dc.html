@@ -149,32 +149,32 @@ $(document).ready(function(){initNavTree('d1/d55/engine_8h_a9a16cd1f566105fda08b
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dc8/groebner_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d2/dc8/groebner_8cpp_source.html">groebner.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="comment">// Choose the correct computation here.</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="../../d2/dc8/groebner_8cpp_a9bee2cf033993a389a55db5f889b89a4.html#a9bee2cf033993a389a55db5f889b89a4">test_over_RR_or_CC</a>(m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>());</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <a class="code" href="../../d4/d7a/text-io_8cpp_a8284cb28c22ece6792116bf485c18324.html#a8284cb28c22ece6792116bf485c18324">clear_emit_size</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../de/ded/class_g_b_computation_a443f3848097cecf3f384b9af273295e4.html#a443f3848097cecf3f384b9af273295e4">GBComputation::choose_gb</a>(m,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                      collect_syz,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                      n_rows_to_keep,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                      gb_weights,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                      use_max_degree,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                      max_degree,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                      algorithm,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                      strategy,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                      max_reduction_count);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/dc8/groebner_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d2/dc8/groebner_8cpp_source.html">groebner.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// Choose the correct computation here.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="../../d2/dc8/groebner_8cpp_a9bee2cf033993a389a55db5f889b89a4.html#a9bee2cf033993a389a55db5f889b89a4">test_over_RR_or_CC</a>(m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>());</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <a class="code" href="../../d4/d7a/text-io_8cpp_a8284cb28c22ece6792116bf485c18324.html#a8284cb28c22ece6792116bf485c18324">clear_emit_size</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../de/ded/class_g_b_computation_a443f3848097cecf3f384b9af273295e4.html#a443f3848097cecf3f384b9af273295e4">GBComputation::choose_gb</a>(m,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                      collect_syz,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                      n_rows_to_keep,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                      gb_weights,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                      use_max_degree,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                      max_degree,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                      algorithm,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                      strategy,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                      max_reduction_count);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
 <div class="ttc" id="aclass_g_b_computation_a443f3848097cecf3f384b9af273295e4_html_a443f3848097cecf3f384b9af273295e4"><div class="ttname"><a href="../../de/ded/class_g_b_computation_a443f3848097cecf3f384b9af273295e4.html#a443f3848097cecf3f384b9af273295e4">GBComputation::choose_gb</a></div><div class="ttdeci">static GBComputation * choose_gb(const Matrix *m, M2_bool collect_syz, int n_rows_to_keep, M2_arrayint gb_weights, M2_bool use_max_degree, int max_degree, int algorithm, int strategy, int max_reduction_count=10)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4d/comp-gb_8cpp_source.html#l00030">comp-gb.cpp:30</a></div></div>
 <div class="ttc" id="aclass_matrix_aa8df790e4669d0075ef8356d23e8d1fc_html_aa8df790e4669d0075ef8356d23e8d1fc"><div class="ttname"><a href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">Matrix::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00085">matrix.hpp:85</a></div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
-<div class="ttc" id="agroebner_8cpp_a9bee2cf033993a389a55db5f889b89a4_html_a9bee2cf033993a389a55db5f889b89a4"><div class="ttname"><a href="../../d2/dc8/groebner_8cpp_a9bee2cf033993a389a55db5f889b89a4.html#a9bee2cf033993a389a55db5f889b89a4">test_over_RR_or_CC</a></div><div class="ttdeci">void test_over_RR_or_CC(const Ring *R)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc8/groebner_8cpp_source.html#l00037">groebner.cpp:37</a></div></div>
+<div class="ttc" id="agroebner_8cpp_a9bee2cf033993a389a55db5f889b89a4_html_a9bee2cf033993a389a55db5f889b89a4"><div class="ttname"><a href="../../d2/dc8/groebner_8cpp_a9bee2cf033993a389a55db5f889b89a4.html#a9bee2cf033993a389a55db5f889b89a4">test_over_RR_or_CC</a></div><div class="ttdeci">void test_over_RR_or_CC(const Ring *R)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc8/groebner_8cpp_source.html#l00038">groebner.cpp:38</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00009">exceptions.hpp:10</a></div></div>
 <div class="ttc" id="atext-io_8cpp_a8284cb28c22ece6792116bf485c18324_html_a8284cb28c22ece6792116bf485c18324"><div class="ttname"><a href="../../d4/d7a/text-io_8cpp_a8284cb28c22ece6792116bf485c18324.html#a8284cb28c22ece6792116bf485c18324">clear_emit_size</a></div><div class="ttdeci">void clear_emit_size()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d7a/text-io_8cpp_source.html#l00025">text-io.cpp:25</a></div></div>
 </div><!-- fragment -->
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('d1/d55/engine_8h_a9a16cd1f566105fda08b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d1/d55/engine_8h.html">engine.h</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:51:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

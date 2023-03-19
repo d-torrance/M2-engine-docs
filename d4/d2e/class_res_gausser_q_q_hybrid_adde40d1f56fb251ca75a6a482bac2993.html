@@ -134,10 +134,10 @@ $(document).ready(function(){initNavTree('d4/d2e/class_res_gausser_q_q_hybrid_ad
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <span class="keyword">auto</span>&amp; elems = <a class="code" href="../../d4/d2e/class_res_gausser_q_q_hybrid_ab0e64700134ea5d825a0f98253cf308f.html#ab0e64700134ea5d825a0f98253cf308f">coefficientVector</a>(coeffs);</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  <span class="keyword">auto</span> monom = comps.begin();</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <span class="keyword">auto</span> coeff = elems.begin();</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  <span class="keyword">auto</span> end = elems.end();</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  <span class="keyword">auto</span> <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> = elems.end();</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d0/dbb/res-gausser_8hpp_a46aff60fe9e7b02cb075b491f6e3af7b.html#a46aff60fe9e7b02cb075b491f6e3af7b">ComponentIndex</a> c = 0; c &lt; ncolumns; c++)</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    {</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      <span class="keywordflow">if</span> (coeff == end or *monom != c)</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      <span class="keywordflow">if</span> (coeff == <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> or *monom != c)</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        o &lt;&lt; <span class="stringliteral">&quot; .&quot;</span>;</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        {</div>
@@ -152,8 +152,9 @@ $(document).ready(function(){initNavTree('d4/d2e/class_res_gausser_q_q_hybrid_ad
 <div class="ttc" id="aclass_res_gausser_q_q_hybrid_a1d021f150e590c730ec521e8fef0e243_html_a1d021f150e590c730ec521e8fef0e243"><div class="ttname"><a href="../../d4/d2e/class_res_gausser_q_q_hybrid_a1d021f150e590c730ec521e8fef0e243.html#a1d021f150e590c730ec521e8fef0e243">ResGausserQQHybrid::out</a></div><div class="ttdeci">std::ostream &amp; out(std::ostream &amp;o, FieldElement &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d99/res-gausser-_q_q-hybrid_8cpp_source.html#l00355">res-gausser-QQ-hybrid.cpp:355</a></div></div>
 <div class="ttc" id="aclass_res_gausser_q_q_hybrid_ab0e64700134ea5d825a0f98253cf308f_html_ab0e64700134ea5d825a0f98253cf308f"><div class="ttname"><a href="../../d4/d2e/class_res_gausser_q_q_hybrid_ab0e64700134ea5d825a0f98253cf308f.html#ab0e64700134ea5d825a0f98253cf308f">ResGausserQQHybrid::coefficientVector</a></div><div class="ttdeci">CoefficientVector coefficientVector(std::vector&lt; FieldElement &gt; *vals) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5b/res-gausser-_q_q-hybrid_8hpp_source.html#l00050">res-gausser-QQ-hybrid.hpp:50</a></div></div>
 <div class="ttc" id="ares-gausser_8hpp_a46aff60fe9e7b02cb075b491f6e3af7b_html_a46aff60fe9e7b02cb075b491f6e3af7b"><div class="ttname"><a href="../../d0/dbb/res-gausser_8hpp_a46aff60fe9e7b02cb075b491f6e3af7b.html#a46aff60fe9e7b02cb075b491f6e3af7b">ComponentIndex</a></div><div class="ttdeci">int ComponentIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dbb/res-gausser_8hpp_source.html#l00015">res-gausser.hpp:13</a></div></div>
+<div class="ttc" id="aringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad_html_a202eaaa0b459954e5ac23a43454d57ad"><div class="ttname"><a href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a></div><div class="ttdeci">TermIterator&lt; Nterm &gt; end(Nterm *)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d82/ringelem_8cpp_source.html#l00005">ringelem.cpp:5</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d2e/class_res_gausser_q_q_hybrid_ab0e64700134ea5d825a0f98253cf308f.html#ab0e64700134ea5d825a0f98253cf308f">coefficientVector()</a>, and <a class="el" href="../../d4/d2e/class_res_gausser_q_q_hybrid_a1d021f150e590c730ec521e8fef0e243.html#a1d021f150e590c730ec521e8fef0e243">out()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d2e/class_res_gausser_q_q_hybrid_ab0e64700134ea5d825a0f98253cf308f.html#ab0e64700134ea5d825a0f98253cf308f">coefficientVector()</a>, <a class="el" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end()</a>, and <a class="el" href="../../d4/d2e/class_res_gausser_q_q_hybrid_a1d021f150e590c730ec521e8fef0e243.html#a1d021f150e590c730ec521e8fef0e243">out()</a>.</p>
 
 </div>
 </div>
@@ -163,7 +164,7 @@ $(document).ready(function(){initNavTree('d4/d2e/class_res_gausser_q_q_hybrid_ad
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d2e/class_res_gausser_q_q_hybrid.html">ResGausserQQHybrid</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

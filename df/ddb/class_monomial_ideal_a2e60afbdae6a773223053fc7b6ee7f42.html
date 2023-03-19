@@ -96,24 +96,23 @@ $(document).ready(function(){initNavTree('df/ddb/class_monomial_ideal_a2e60afbda
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d89/monideal_8cpp_source.html#l00987">987</a> of file <a class="el" href="../../d5/d89/monideal_8cpp_source.html">monideal.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;{</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;  <span class="keywordtype">int</span> npure = 0;</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;  <span class="keywordtype">int</span> v, e;</div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../df/d8c/classint__bag.html">Bag</a>&amp; b : *<span class="keyword">this</span>)</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    {</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;      <a class="code" href="../../d1/dd0/monoid_8hpp_ae4ab03e30a3d5409df540c53f94693d1.html#ae4ab03e30a3d5409df540c53f94693d1">const_varpower</a> m = b.<a class="code" href="../../df/d8c/classint__bag_ae19b495cadd01aba1bfee9a155920948.html#ae19b495cadd01aba1bfee9a155920948">monom</a>().<a class="code" href="../../d3/d23/classintarray_a7d59e994739d234d67835a7be12bf869.html#a7d59e994739d234d67835a7be12bf869">raw</a>();</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d3/ded/classvarpower_a0768fa359fa6f6be5f2ca9fe61434357.html#a0768fa359fa6f6be5f2ca9fe61434357">varpower::is_pure_power</a>(m, v, e)) npure++;</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    }</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;  <span class="keywordflow">return</span> npure;</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;}</div>
-<div class="ttc" id="aclassint__bag_ae19b495cadd01aba1bfee9a155920948_html_ae19b495cadd01aba1bfee9a155920948"><div class="ttname"><a href="../../df/d8c/classint__bag_ae19b495cadd01aba1bfee9a155920948.html#ae19b495cadd01aba1bfee9a155920948">int_bag::monom</a></div><div class="ttdeci">const intarray &amp; monom() const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db6/int-bag_8hpp_source.html#l00025">int-bag.hpp:25</a></div></div>
-<div class="ttc" id="aclassint__bag_html"><div class="ttname"><a href="../../df/d8c/classint__bag.html">int_bag</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db6/int-bag_8hpp_source.html#l00008">int-bag.hpp:9</a></div></div>
-<div class="ttc" id="aclassintarray_a7d59e994739d234d67835a7be12bf869_html_a7d59e994739d234d67835a7be12bf869"><div class="ttname"><a href="../../d3/d23/classintarray_a7d59e994739d234d67835a7be12bf869.html#a7d59e994739d234d67835a7be12bf869">intarray::raw</a></div><div class="ttdeci">int * raw()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df8/intarray_8hpp_source.html#l00075">intarray.hpp:75</a></div></div>
-<div class="ttc" id="aclassvarpower_a0768fa359fa6f6be5f2ca9fe61434357_html_a0768fa359fa6f6be5f2ca9fe61434357"><div class="ttname"><a href="../../d3/ded/classvarpower_a0768fa359fa6f6be5f2ca9fe61434357.html#a0768fa359fa6f6be5f2ca9fe61434357">varpower::is_pure_power</a></div><div class="ttdeci">static bool is_pure_power(const int *a, int &amp;v, int &amp;e)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d1b/varpower_8cpp_source.html#l00531">varpower.cpp:531</a></div></div>
-<div class="ttc" id="amonoid_8hpp_ae4ab03e30a3d5409df540c53f94693d1_html_ae4ab03e30a3d5409df540c53f94693d1"><div class="ttname"><a href="../../d1/dd0/monoid_8hpp_ae4ab03e30a3d5409df540c53f94693d1.html#ae4ab03e30a3d5409df540c53f94693d1">const_varpower</a></div><div class="ttdeci">const int * const_varpower</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00022">monoid.hpp:19</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d89/monideal_8cpp_source.html#l00985">985</a> of file <a class="el" href="../../d5/d89/monideal_8cpp_source.html">monideal.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;{</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;  <span class="keywordtype">int</span> npure = 0;</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;  <span class="keywordtype">int</span> v, e;</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../df/d8c/classint__bag.html">Bag</a>&amp; b : *<span class="keyword">this</span>)</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;    {</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;      <a class="code" href="../../d6/df2/_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad.html#a32c7462759c905470880b0dba58f00ad">const_varpower</a> m = b.<a class="code" href="../../df/d8c/classint__bag_aa982e70f09af788801a867c5813d8bf0.html#aa982e70f09af788801a867c5813d8bf0">monom</a>().data();</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d1/d39/class_exponent_list_ad89ccabb453992b47814880cf10293ee.html#ad89ccabb453992b47814880cf10293ee">varpower::is_pure_power</a>(m, v, e)) npure++;</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    }</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;  <span class="keywordflow">return</span> npure;</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;}</div>
+<div class="ttc" id="a_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad_html_a32c7462759c905470880b0dba58f00ad"><div class="ttname"><a href="../../d6/df2/_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad.html#a32c7462759c905470880b0dba58f00ad">const_varpower</a></div><div class="ttdeci">varpower::ConstExponents const_varpower</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00196">ExponentList.hpp:196</a></div></div>
+<div class="ttc" id="aclass_exponent_list_ad89ccabb453992b47814880cf10293ee_html_ad89ccabb453992b47814880cf10293ee"><div class="ttname"><a href="../../d1/d39/class_exponent_list_ad89ccabb453992b47814880cf10293ee.html#ad89ccabb453992b47814880cf10293ee">ExponentList::is_pure_power</a></div><div class="ttdeci">static bool is_pure_power(ConstExponents a, Exponent &amp;v, Exponent &amp;e)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00169">ExponentList.hpp:169</a></div></div>
+<div class="ttc" id="aclassint__bag_aa982e70f09af788801a867c5813d8bf0_html_aa982e70f09af788801a867c5813d8bf0"><div class="ttname"><a href="../../df/d8c/classint__bag_aa982e70f09af788801a867c5813d8bf0.html#aa982e70f09af788801a867c5813d8bf0">int_bag::monom</a></div><div class="ttdeci">gc_vector&lt; int &gt; &amp; monom()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db6/int-bag_8hpp_source.html#l00025">int-bag.hpp:25</a></div></div>
+<div class="ttc" id="aclassint__bag_html"><div class="ttname"><a href="../../df/d8c/classint__bag.html">int_bag</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db6/int-bag_8hpp_source.html#l00007">int-bag.hpp:8</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/ded/classvarpower_a0768fa359fa6f6be5f2ca9fe61434357.html#a0768fa359fa6f6be5f2ca9fe61434357">varpower::is_pure_power()</a>, <a class="el" href="../../df/d8c/classint__bag_ae19b495cadd01aba1bfee9a155920948.html#ae19b495cadd01aba1bfee9a155920948">int_bag::monom()</a>, and <a class="el" href="../../d3/d23/classintarray_a7d59e994739d234d67835a7be12bf869.html#a7d59e994739d234d67835a7be12bf869">intarray::raw()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d39/class_exponent_list_ad89ccabb453992b47814880cf10293ee.html#ad89ccabb453992b47814880cf10293ee">ExponentList&lt; E, L &gt;::is_pure_power()</a>, and <a class="el" href="../../df/d8c/classint__bag_aa982e70f09af788801a867c5813d8bf0.html#aa982e70f09af788801a867c5813d8bf0">int_bag::monom()</a>.</p>
 
 </div>
 </div>
@@ -123,7 +122,7 @@ $(document).ready(function(){initNavTree('df/ddb/class_monomial_ideal_a2e60afbda
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

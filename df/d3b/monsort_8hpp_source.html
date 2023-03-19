@@ -184,18 +184,18 @@ $(document).ready(function(){initNavTree('df/d3b/monsort_8hpp_source.html','../.
 <div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="../../df/d3b/monsort_8hpp_a418905a17a22ba6c0f5ef26b07b99325.html#a418905a17a22ba6c0f5ef26b07b99325">  101</a></span>&#160;<span class="preprocessor">#define swap(a, b, t) ((t) = (a), (a) = (b), (b) = (t))</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Sorter&gt;</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="../../d5/d18/class_quick_sorter_ad5f52e7d1dd96fefd52563691d0bffbc.html#ad5f52e7d1dd96fefd52563691d0bffbc">  104</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d18/class_quick_sorter_ad5f52e7d1dd96fefd52563691d0bffbc.html#ad5f52e7d1dd96fefd52563691d0bffbc">QuickSorter&lt;Sorter&gt;::sort2</a>(<span class="keywordtype">long</span> begin, <span class="keywordtype">long</span> end)</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="../../d5/d18/class_quick_sorter_ad5f52e7d1dd96fefd52563691d0bffbc.html#ad5f52e7d1dd96fefd52563691d0bffbc">  104</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d18/class_quick_sorter_ad5f52e7d1dd96fefd52563691d0bffbc.html#ad5f52e7d1dd96fefd52563691d0bffbc">QuickSorter&lt;Sorter&gt;::sort2</a>(<span class="keywordtype">long</span> <a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a>, <span class="keywordtype">long</span> <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>)</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="../../d5/d18/class_quick_sorter_abaefec981673f1ebc0995ff4a0d282d2.html#abaefec981673f1ebc0995ff4a0d282d2">value</a> pivot;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="../../d5/d18/class_quick_sorter_abaefec981673f1ebc0995ff4a0d282d2.html#abaefec981673f1ebc0995ff4a0d282d2">value</a> t; <span class="comment">/* temporary variable for swap */</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">if</span> (end &gt; begin)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> &gt; <a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a>)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordtype">long</span> l = begin + 1;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="keywordtype">long</span> r = end;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <a class="code" href="../../df/d3b/monsort_8hpp_a418905a17a22ba6c0f5ef26b07b99325.html#a418905a17a22ba6c0f5ef26b07b99325">swap</a>(elems[begin],</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordtype">long</span> l = <a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a> + 1;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="keywordtype">long</span> r = <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <a class="code" href="../../df/d3b/monsort_8hpp_a418905a17a22ba6c0f5ef26b07b99325.html#a418905a17a22ba6c0f5ef26b07b99325">swap</a>(elems[<a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a>],</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;           elems[<a class="code" href="../../df/d3b/monsort_8hpp_ac97110fcc862a8898bcb2a721fafd976.html#ac97110fcc862a8898bcb2a721fafd976">pivot_index</a>()],</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;           t); <span class="comment">/*** choose arbitrary pivot ***/</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      pivot = elems[begin];</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      pivot = elems[<a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a>];</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keywordflow">while</span> (l &lt; r)</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;          <span class="keywordflow">if</span> (M-&gt;compare(elems[l], pivot) &lt;= 0)</div>
@@ -212,28 +212,28 @@ $(document).ready(function(){initNavTree('df/d3b/monsort_8hpp_source.html','../.
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            }</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      l--;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <a class="code" href="../../df/d3b/monsort_8hpp_a418905a17a22ba6c0f5ef26b07b99325.html#a418905a17a22ba6c0f5ef26b07b99325">swap</a>(elems[begin], elems[l], t);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      sort2(begin, l);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      sort2(r, end);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <a class="code" href="../../df/d3b/monsort_8hpp_a418905a17a22ba6c0f5ef26b07b99325.html#a418905a17a22ba6c0f5ef26b07b99325">swap</a>(elems[<a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a>], elems[l], t);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      sort2(<a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a>, l);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      sort2(r, <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">// Same as sort2, except depth information is kept</span></div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Sorter&gt;</div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="../../d5/d18/class_quick_sorter_a376ec7d936a8d37864268f33ca9a3bec.html#a376ec7d936a8d37864268f33ca9a3bec">  143</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d18/class_quick_sorter_a376ec7d936a8d37864268f33ca9a3bec.html#a376ec7d936a8d37864268f33ca9a3bec">QuickSorter&lt;Sorter&gt;::sort2depth</a>(<span class="keywordtype">long</span> begin, <span class="keywordtype">long</span> end, <span class="keywordtype">long</span> depth)</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="../../d5/d18/class_quick_sorter_a376ec7d936a8d37864268f33ca9a3bec.html#a376ec7d936a8d37864268f33ca9a3bec">  143</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d18/class_quick_sorter_a376ec7d936a8d37864268f33ca9a3bec.html#a376ec7d936a8d37864268f33ca9a3bec">QuickSorter&lt;Sorter&gt;::sort2depth</a>(<span class="keywordtype">long</span> <a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a>, <span class="keywordtype">long</span> <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>, <span class="keywordtype">long</span> depth)</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <a class="code" href="../../d5/d18/class_quick_sorter_abaefec981673f1ebc0995ff4a0d282d2.html#abaefec981673f1ebc0995ff4a0d282d2">value</a> pivot;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="../../d5/d18/class_quick_sorter_abaefec981673f1ebc0995ff4a0d282d2.html#abaefec981673f1ebc0995ff4a0d282d2">value</a> t; <span class="comment">/* temporary variable for swap */</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordflow">if</span> (depth &gt; maxdepth) maxdepth = depth;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">if</span> (end &gt; begin)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> &gt; <a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a>)</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordtype">long</span> l = begin + 1;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordtype">long</span> r = end;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <a class="code" href="../../df/d3b/monsort_8hpp_a418905a17a22ba6c0f5ef26b07b99325.html#a418905a17a22ba6c0f5ef26b07b99325">swap</a>(elems[begin],</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordtype">long</span> l = <a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a> + 1;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordtype">long</span> r = <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <a class="code" href="../../df/d3b/monsort_8hpp_a418905a17a22ba6c0f5ef26b07b99325.html#a418905a17a22ba6c0f5ef26b07b99325">swap</a>(elems[<a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a>],</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;           elems[<a class="code" href="../../df/d3b/monsort_8hpp_ac97110fcc862a8898bcb2a721fafd976.html#ac97110fcc862a8898bcb2a721fafd976">pivot_index</a>()],</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;           t); <span class="comment">/*** choose arbitrary pivot ***/</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      pivot = elems[begin];</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      pivot = elems[<a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a>];</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="keywordflow">while</span> (l &lt; r)</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        {</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;          <span class="keywordflow">if</span> (M-&gt;compare(elems[l], pivot) &lt;= 0)</div>
@@ -250,9 +250,9 @@ $(document).ready(function(){initNavTree('df/d3b/monsort_8hpp_source.html','../.
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            }</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      l--;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <a class="code" href="../../df/d3b/monsort_8hpp_a418905a17a22ba6c0f5ef26b07b99325.html#a418905a17a22ba6c0f5ef26b07b99325">swap</a>(elems[begin], elems[l], t);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      sort2depth(begin, l, depth + 1);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      sort2depth(r, end, depth + 1);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <a class="code" href="../../df/d3b/monsort_8hpp_a418905a17a22ba6c0f5ef26b07b99325.html#a418905a17a22ba6c0f5ef26b07b99325">swap</a>(elems[<a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a>], elems[l], t);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      sort2depth(<a class="code" href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a>, l, depth + 1);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      sort2depth(r, <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>, depth + 1);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
@@ -484,13 +484,15 @@ $(document).ready(function(){initNavTree('df/d3b/monsort_8hpp_source.html','../.
 <div class="ttc" id="amonsort_8hpp_ad1ebdbd34b0535c35692b9e2173d9ef2_html_ad1ebdbd34b0535c35692b9e2173d9ef2"><div class="ttname"><a href="../../df/d3b/monsort_8hpp_ad1ebdbd34b0535c35692b9e2173d9ef2.html#ad1ebdbd34b0535c35692b9e2173d9ef2">NSTACK</a></div><div class="ttdeci">#define NSTACK</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d3b/monsort_8hpp_source.html#l00190">monsort.hpp:190</a></div></div>
 <div class="ttc" id="anewdelete_8hpp_aaf4886e5c6f155b7532a0dff02d13591_html_aaf4886e5c6f155b7532a0dff02d13591"><div class="ttname"><a href="../../da/d94/newdelete_8hpp_aaf4886e5c6f155b7532a0dff02d13591.html#aaf4886e5c6f155b7532a0dff02d13591">newarray_atomic</a></div><div class="ttdeci">#define newarray_atomic(T, len)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00048">newdelete.hpp:48</a></div></div>
 <div class="ttc" id="anewdelete_8hpp_html"><div class="ttname"><a href="../../da/d94/newdelete_8hpp.html">newdelete.hpp</a></div></div>
+<div class="ttc" id="aringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad_html_a202eaaa0b459954e5ac23a43454d57ad"><div class="ttname"><a href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a></div><div class="ttdeci">TermIterator&lt; Nterm &gt; end(Nterm *)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d82/ringelem_8cpp_source.html#l00005">ringelem.cpp:5</a></div></div>
+<div class="ttc" id="aringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9_html_a6ae7c472077eac3917af3d44ef7952b9"><div class="ttname"><a href="../../d0/d82/ringelem_8cpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9">begin</a></div><div class="ttdeci">TermIterator&lt; Nterm &gt; begin(Nterm *ptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d82/ringelem_8cpp_source.html#l00004">ringelem.cpp:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../df/d3b/monsort_8hpp.html">monsort.hpp</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:26 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:51:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

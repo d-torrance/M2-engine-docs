@@ -1,7 +1,6 @@
 var interface_2matrix_8cpp =
 [
     [ "getRealVector", "d3/d2d/interface_2matrix_8cpp_aa2b3a3471b49f2f9442b0107a0cc28d2.html#aa2b3a3471b49f2f9442b0107a0cc28d2", null ],
-    [ "IM2_kernel_of_GB", "d3/d2d/interface_2matrix_8cpp_a435b6913a477eadc6f0b6fc40f38a3c9.html#a435b6913a477eadc6f0b6fc40f38a3c9", null ],
     [ "IM2_Matrix_concat", "d3/d2d/interface_2matrix_8cpp_a32a38b6b0213faf7b604aba4606729d7.html#a32a38b6b0213faf7b604aba4606729d7", null ],
     [ "IM2_Matrix_contract", "d3/d2d/interface_2matrix_8cpp_ab1a7a36e9be7e9982a7725fb13d91da9.html#ab1a7a36e9be7e9982a7725fb13d91da9", null ],
     [ "IM2_Matrix_diff", "d3/d2d/interface_2matrix_8cpp_ad376fe8726efff13ebfe60fbc1148258.html#ad376fe8726efff13ebfe60fbc1148258", null ],

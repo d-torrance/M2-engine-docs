@@ -96,30 +96,30 @@ $(document).ready(function(){initNavTree('dd/d1a/class_schreyer_frame_a4abd5cf9d
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d16/res-schreyer-frame_8cpp_source.html#l00924">924</a> of file <a class="el" href="../../d0/d16/res-schreyer-frame_8cpp_source.html">res-schreyer-frame.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;{</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;  <span class="keywordtype">int</span> lo, hi, len;</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;  <a class="code" href="../../dd/d1a/class_schreyer_frame_abfd8ba7f405c36faf9e396dd48ed1295.html#abfd8ba7f405c36faf9e396dd48ed1295">getBounds</a>(lo, hi, len);</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;  <span class="comment">//  std::cout &lt;&lt; &quot;bounds: lo=&quot; &lt;&lt; lo &lt;&lt; &quot; hi=&quot; &lt;&lt; hi &lt;&lt; &quot; len=&quot; &lt;&lt; len &lt;&lt;</span></div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;  <span class="comment">//  std::endl;</span></div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;  <a class="code" href="../../d6/d45/class_betti_display.html">BettiDisplay</a> B(lo, hi, len);</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;  <span class="comment">// now set B</span></div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160; </div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> lev = 0; lev &lt;= len; lev++)</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;    {</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;      <span class="keyword">auto</span>&amp; myframe = <a class="code" href="../../dd/d1a/class_schreyer_frame_a9d7625844d7e1522cd5d313613a0943f.html#a9d7625844d7e1522cd5d313613a0943f">level</a>(lev);</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = myframe.begin(); <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != myframe.end(); ++<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>)</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;        {</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;          <span class="keywordtype">int</span> deg = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;mDegree;  <span class="comment">// this is actual degree, not slanted degree</span></div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;          B.entry(deg - lev, lev)++;</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;        }</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;    }</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160; </div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  <span class="keywordflow">return</span> B.getBetti();</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d16/res-schreyer-frame_8cpp_source.html#l00925">925</a> of file <a class="el" href="../../d0/d16/res-schreyer-frame_8cpp_source.html">res-schreyer-frame.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;{</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;  <span class="keywordtype">int</span> lo, hi, len;</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;  <a class="code" href="../../dd/d1a/class_schreyer_frame_abfd8ba7f405c36faf9e396dd48ed1295.html#abfd8ba7f405c36faf9e396dd48ed1295">getBounds</a>(lo, hi, len);</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;  <span class="comment">//  std::cout &lt;&lt; &quot;bounds: lo=&quot; &lt;&lt; lo &lt;&lt; &quot; hi=&quot; &lt;&lt; hi &lt;&lt; &quot; len=&quot; &lt;&lt; len &lt;&lt;</span></div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;  <span class="comment">//  std::endl;</span></div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;  <a class="code" href="../../d6/d45/class_betti_display.html">BettiDisplay</a> B(lo, hi, len);</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;  <span class="comment">// now set B</span></div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160; </div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> lev = 0; lev &lt;= len; lev++)</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    {</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;      <span class="keyword">auto</span>&amp; myframe = <a class="code" href="../../dd/d1a/class_schreyer_frame_a9d7625844d7e1522cd5d313613a0943f.html#a9d7625844d7e1522cd5d313613a0943f">level</a>(lev);</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = myframe.begin(); <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != myframe.end(); ++<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>)</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;        {</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;          <span class="keywordtype">int</span> deg = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;mDegree;  <span class="comment">// this is actual degree, not slanted degree</span></div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;          B.entry(deg - lev, lev)++;</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;        }</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    }</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160; </div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;  <span class="keywordflow">return</span> B.getBetti();</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;}</div>
 <div class="ttc" id="aclass_betti_display_html"><div class="ttname"><a href="../../d6/d45/class_betti_display.html">BettiDisplay</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d41/betti_8hpp_source.html#l00013">betti.hpp:14</a></div></div>
 <div class="ttc" id="aclass_schreyer_frame_a9d7625844d7e1522cd5d313613a0943f_html_a9d7625844d7e1522cd5d313613a0943f"><div class="ttname"><a href="../../dd/d1a/class_schreyer_frame_a9d7625844d7e1522cd5d313613a0943f.html#a9d7625844d7e1522cd5d313613a0943f">SchreyerFrame::level</a></div><div class="ttdeci">std::vector&lt; FrameElement &gt; &amp; level(int lev)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd9/res-schreyer-frame_8hpp_source.html#l00182">res-schreyer-frame.hpp:182</a></div></div>
-<div class="ttc" id="aclass_schreyer_frame_abfd8ba7f405c36faf9e396dd48ed1295_html_abfd8ba7f405c36faf9e396dd48ed1295"><div class="ttname"><a href="../../dd/d1a/class_schreyer_frame_abfd8ba7f405c36faf9e396dd48ed1295.html#abfd8ba7f405c36faf9e396dd48ed1295">SchreyerFrame::getBounds</a></div><div class="ttdeci">void getBounds(int &amp;loDegree, int &amp;hiDegree, int &amp;length) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d16/res-schreyer-frame_8cpp_source.html#l00755">res-schreyer-frame.cpp:755</a></div></div>
+<div class="ttc" id="aclass_schreyer_frame_abfd8ba7f405c36faf9e396dd48ed1295_html_abfd8ba7f405c36faf9e396dd48ed1295"><div class="ttname"><a href="../../dd/d1a/class_schreyer_frame_abfd8ba7f405c36faf9e396dd48ed1295.html#abfd8ba7f405c36faf9e396dd48ed1295">SchreyerFrame::getBounds</a></div><div class="ttdeci">void getBounds(int &amp;loDegree, int &amp;hiDegree, int &amp;length) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d16/res-schreyer-frame_8cpp_source.html#l00756">res-schreyer-frame.cpp:756</a></div></div>
 <div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d6/d45/class_betti_display_ad687aa7e61f89e8eaaa82926c7573780.html#ad687aa7e61f89e8eaaa82926c7573780">BettiDisplay::entry()</a>, <a class="el" href="../../d6/d45/class_betti_display_a18ca86334cb86514d21bb301d72293c0.html#a18ca86334cb86514d21bb301d72293c0">BettiDisplay::getBetti()</a>, <a class="el" href="../../dd/d1a/class_schreyer_frame_abfd8ba7f405c36faf9e396dd48ed1295.html#abfd8ba7f405c36faf9e396dd48ed1295">getBounds()</a>, <a class="el" href="../../dd/d1a/class_schreyer_frame_a9d7625844d7e1522cd5d313613a0943f.html#a9d7625844d7e1522cd5d313613a0943f">level()</a>, and <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.</p>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('dd/d1a/class_schreyer_frame_a4abd5cf9d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d1a/class_schreyer_frame.html">SchreyerFrame</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

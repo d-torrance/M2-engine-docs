@@ -148,6 +148,8 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
       [ "GBKernelComputation", "d7/d37/class_g_b_kernel_computation.html", "d7/d37/class_g_b_kernel_computation" ]
     ] ],
     [ "exceptions.hpp", "da/d49/exceptions_8hpp.html", "da/d49/exceptions_8hpp" ],
+    [ "ExponentList.cpp", "d7/daf/_exponent_list_8cpp.html", "d7/daf/_exponent_list_8cpp" ],
+    [ "ExponentList.hpp", "d6/df2/_exponent_list_8hpp.html", "d6/df2/_exponent_list_8hpp" ],
     [ "ExponentVector.hpp", "da/db0/_exponent_vector_8hpp.html", "da/db0/_exponent_vector_8hpp" ],
     [ "exptable.c", "d6/da0/exptable_8c.html", "d6/da0/exptable_8c" ],
     [ "exptable.h", "da/da8/exptable_8h.html", "da/da8/exptable_8h" ],
@@ -222,8 +224,6 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "imonorder.hpp", "d9/d64/imonorder_8hpp.html", "d9/d64/imonorder_8hpp" ],
     [ "int-bag.cpp", "d1/dee/int-bag_8cpp.html", null ],
     [ "int-bag.hpp", "dc/db6/int-bag_8hpp.html", "dc/db6/int-bag_8hpp" ],
-    [ "intarray.cpp", "de/d9d/intarray_8cpp.html", null ],
-    [ "intarray.hpp", "d3/df8/intarray_8hpp.html", "d3/df8/intarray_8hpp" ],
     [ "interreduce.cpp", "db/d0a/interreduce_8cpp.html", null ],
     [ "interreduce.hpp", "de/df1/interreduce_8hpp.html", [
       [ "Interreducer", "d5/d51/class_interreducer.html", "d5/d51/class_interreducer" ]
@@ -423,6 +423,7 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "ring-vecs.cpp", "df/d36/ring-vecs_8cpp.html", "df/d36/ring-vecs_8cpp" ],
     [ "ring.cpp", "dd/d2b/ring_8cpp.html", "dd/d2b/ring_8cpp" ],
     [ "ring.hpp", "db/d10/ring_8hpp.html", "db/d10/ring_8hpp" ],
+    [ "ringelem.cpp", "d0/d82/ringelem_8cpp.html", "d0/d82/ringelem_8cpp" ],
     [ "ringelem.hpp", "dd/dc9/ringelem_8hpp.html", "dd/dc9/ringelem_8hpp" ],
     [ "ringmap.cpp", "d7/d1c/ringmap_8cpp.html", null ],
     [ "ringmap.hpp", "d0/dcf/ringmap_8hpp.html", [
@@ -496,11 +497,6 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "tower.cpp", "de/d5c/tower_8cpp.html", "de/d5c/tower_8cpp" ],
     [ "tower.hpp", "d7/de0/tower_8hpp.html", "d7/de0/tower_8hpp" ],
     [ "util.hpp", "d0/d3f/util_8hpp.html", "d0/d3f/util_8hpp" ],
-    [ "varpower.cpp", "de/d1b/varpower_8cpp.html", "de/d1b/varpower_8cpp" ],
-    [ "varpower.hpp", "d0/d1e/varpower_8hpp.html", [
-      [ "varpower", "d3/ded/classvarpower.html", "d3/ded/classvarpower" ],
-      [ "index_varpower", "d4/ded/classindex__varpower.html", "d4/ded/classindex__varpower" ]
-    ] ],
     [ "VectorArithmetic.hpp", "d1/df1/_vector_arithmetic_8hpp.html", "d1/df1/_vector_arithmetic_8hpp" ],
     [ "weylalg.cpp", "d8/dee/weylalg_8cpp.html", null ],
     [ "weylalg.hpp", "d5/d4c/weylalg_8hpp.html", [

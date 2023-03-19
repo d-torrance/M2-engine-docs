@@ -115,20 +115,20 @@ $(document).ready(function(){initNavTree('d2/dbf/class_point_array_ac7d936ea6746
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da0/_n_a_g_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d8/da0/_n_a_g_8hpp_source.html">NAG.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                    : <a class="code" href="../../d2/dbf/class_point_array_aaa9d7b196dd2c6c0e20bd902678cb773.html#aaa9d7b196dd2c6c0e20bd902678cb773">mEpsilon</a>(epsilon)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">double</span> s = 0;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">double</span> r = rand();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        s += r;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="../../d2/dbf/class_point_array_ae9da90b50d3753c811166a3bc6c05f51.html#ae9da90b50d3753c811166a3bc6c05f51">mWeights</a>.push_back(r);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) <a class="code" href="../../d2/dbf/class_point_array_ae9da90b50d3753c811166a3bc6c05f51.html#ae9da90b50d3753c811166a3bc6c05f51">mWeights</a>[i] /= s;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="ttc" id="aclass_point_array_aaa9d7b196dd2c6c0e20bd902678cb773_html_aaa9d7b196dd2c6c0e20bd902678cb773"><div class="ttname"><a href="../../d2/dbf/class_point_array_aaa9d7b196dd2c6c0e20bd902678cb773.html#aaa9d7b196dd2c6c0e20bd902678cb773">PointArray::mEpsilon</a></div><div class="ttdeci">Weight mEpsilon</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da0/_n_a_g_8hpp_source.html#l00120">NAG.hpp:120</a></div></div>
-<div class="ttc" id="aclass_point_array_ae9da90b50d3753c811166a3bc6c05f51_html_ae9da90b50d3753c811166a3bc6c05f51"><div class="ttname"><a href="../../d2/dbf/class_point_array_ae9da90b50d3753c811166a3bc6c05f51.html#ae9da90b50d3753c811166a3bc6c05f51">PointArray::mWeights</a></div><div class="ttdeci">RealVector mWeights</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da0/_n_a_g_8hpp_source.html#l00121">NAG.hpp:121</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d8/da0/_n_a_g_8hpp_source.html#l00059">59</a> of file <a class="el" href="../../d8/da0/_n_a_g_8hpp_source.html">NAG.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                    : <a class="code" href="../../d2/dbf/class_point_array_aaa9d7b196dd2c6c0e20bd902678cb773.html#aaa9d7b196dd2c6c0e20bd902678cb773">mEpsilon</a>(epsilon)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">double</span> s = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">double</span> r = rand();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        s += r;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="../../d2/dbf/class_point_array_ae9da90b50d3753c811166a3bc6c05f51.html#ae9da90b50d3753c811166a3bc6c05f51">mWeights</a>.push_back(r);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) <a class="code" href="../../d2/dbf/class_point_array_ae9da90b50d3753c811166a3bc6c05f51.html#ae9da90b50d3753c811166a3bc6c05f51">mWeights</a>[i] /= s;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
+<div class="ttc" id="aclass_point_array_aaa9d7b196dd2c6c0e20bd902678cb773_html_aaa9d7b196dd2c6c0e20bd902678cb773"><div class="ttname"><a href="../../d2/dbf/class_point_array_aaa9d7b196dd2c6c0e20bd902678cb773.html#aaa9d7b196dd2c6c0e20bd902678cb773">PointArray::mEpsilon</a></div><div class="ttdeci">Weight mEpsilon</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da0/_n_a_g_8hpp_source.html#l00119">NAG.hpp:119</a></div></div>
+<div class="ttc" id="aclass_point_array_ae9da90b50d3753c811166a3bc6c05f51_html_ae9da90b50d3753c811166a3bc6c05f51"><div class="ttname"><a href="../../d2/dbf/class_point_array_ae9da90b50d3753c811166a3bc6c05f51.html#ae9da90b50d3753c811166a3bc6c05f51">PointArray::mWeights</a></div><div class="ttdeci">RealVector mWeights</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da0/_n_a_g_8hpp_source.html#l00120">NAG.hpp:120</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d2/dbf/class_point_array_ae9da90b50d3753c811166a3bc6c05f51.html#ae9da90b50d3753c811166a3bc6c05f51">mWeights</a>.</p>
 
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('d2/dbf/class_point_array_ac7d936ea6746
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/dbf/class_point_array.html">PointArray</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:33 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -14,6 +14,7 @@ var debug_8hpp =
     [ "dRRR", "da/d7b/debug_8hpp_aae37d7e33076a7505d635bf735460007.html#aae37d7e33076a7505d635bf735460007", null ],
     [ "dstash", "da/d7b/debug_8hpp_a27f673ac9a6f684b24073a9a7b2f78c2.html#a27f673ac9a6f684b24073a9a7b2f78c2", null ],
     [ "dvec", "da/d7b/debug_8hpp_a1814e17d2619d9711b864278a91be7ee.html#a1814e17d2619d9711b864278a91be7ee", null ],
+    [ "dvector", "da/d7b/debug_8hpp_aac1d03e0f0199dc05fa9a7d43f1209d4.html#aac1d03e0f0199dc05fa9a7d43f1209d4", null ],
     [ "pring", "da/d7b/debug_8hpp_aa588c0342d3da8e3deb06951d620e59b.html#aa588c0342d3da8e3deb06951d620e59b", null ],
     [ "showint", "da/d7b/debug_8hpp_a7445c45b7924903958f0899bd97bdb7c.html#a7445c45b7924903958f0899bd97bdb7c", null ]
 ];

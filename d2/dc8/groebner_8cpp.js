@@ -25,6 +25,7 @@ var groebner_8cpp =
     [ "rawGBMinimalGenerators", "d2/dc8/groebner_8cpp_ae24d214a66247c7ec8fdbc3074529d74.html#ae24d214a66247c7ec8fdbc3074529d74", null ],
     [ "rawGBSyzygies", "d2/dc8/groebner_8cpp_a205802352b7d4c9ba83fbb27f06e37c9.html#a205802352b7d4c9ba83fbb27f06e37c9", null ],
     [ "rawGroebnerWalk", "d2/dc8/groebner_8cpp_a0ac9a0d3f0bb0554348f7bffad712cff.html#a0ac9a0d3f0bb0554348f7bffad712cff", null ],
+    [ "rawKernelOfGB", "d2/dc8/groebner_8cpp_a1078b4529fb24641a3d82db2213adaa9.html#a1078b4529fb24641a3d82db2213adaa9", null ],
     [ "rawMarkedGB", "d2/dc8/groebner_8cpp_a1db8079197a0e577a4f2faf1d4440220.html#a1db8079197a0e577a4f2faf1d4440220", null ],
     [ "rawMGB", "d2/dc8/groebner_8cpp_a9dbfef081e5d5773dd1ae6b93f95847a.html#a9dbfef081e5d5773dd1ae6b93f95847a", null ],
     [ "rawNCBasis", "d2/dc8/groebner_8cpp_a253f175d61293812a0153cf37a3cc967.html#a253f175d61293812a0153cf37a3cc967", null ],

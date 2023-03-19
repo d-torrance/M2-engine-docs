@@ -97,18 +97,18 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_a2586d83176aa47e1b
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l01436">1436</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;{</div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> result(<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>(), 0);</div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;    {</div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;      vec f = <a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a629f09fa842540aca946bcec51719ca4.html#a629f09fa842540aca946bcec51719ca4">vec_remove_monomial_factors</a>(<a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i),</div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;                                                      make_squarefree_only);</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;      result.append(f);</div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;    }</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;  <span class="keywordflow">return</span> result.to_matrix();</div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;}</div>
-<div class="ttc" id="aclass_matrix_a0dd3516d8526ad736fe69848aacd1406_html_a0dd3516d8526ad736fe69848aacd1406"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem</a></div><div class="ttdeci">ring_elem elem(int i, int j) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d84/matrix_8cpp_source.html#l00304">matrix.cpp:304</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l01433">1433</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;{</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> result(<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>(), 0);</div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;    {</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;      vec f = <a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a629f09fa842540aca946bcec51719ca4.html#a629f09fa842540aca946bcec51719ca4">vec_remove_monomial_factors</a>(<a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i),</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;                                                      make_squarefree_only);</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;      result.append(f);</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;    }</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;  <span class="keywordflow">return</span> result.to_matrix();</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;}</div>
+<div class="ttc" id="aclass_matrix_a0dd3516d8526ad736fe69848aacd1406_html_a0dd3516d8526ad736fe69848aacd1406"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem</a></div><div class="ttdeci">ring_elem elem(int i, int j) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d84/matrix_8cpp_source.html#l00305">matrix.cpp:305</a></div></div>
 <div class="ttc" id="aclass_matrix_a0f771b1c1bf2eb4a5968b772a91884df_html_a0f771b1c1bf2eb4a5968b772a91884df"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">Matrix::rows</a></div><div class="ttdeci">const FreeModule * rows() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00096">matrix.hpp:96</a></div></div>
 <div class="ttc" id="aclass_matrix_a6cb4735dadc364c543bb667468b0fac8_html_a6cb4735dadc364c543bb667468b0fac8"><div class="ttname"><a href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">Matrix::n_cols</a></div><div class="ttdeci">int n_cols() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00099">matrix.hpp:99</a></div></div>
 <div class="ttc" id="aclass_matrix_aa8df790e4669d0075ef8356d23e8d1fc_html_aa8df790e4669d0075ef8356d23e8d1fc"><div class="ttname"><a href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">Matrix::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00085">matrix.hpp:85</a></div></div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_a2586d83176aa47e1b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

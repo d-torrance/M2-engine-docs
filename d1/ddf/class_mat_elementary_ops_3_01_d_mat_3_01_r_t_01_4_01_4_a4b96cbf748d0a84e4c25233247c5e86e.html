@@ -136,20 +136,21 @@ template&lt;typename RT &gt; </div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">auto</span> loc1 = mat.columnBegin(i);</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keyword">auto</span> loc2 = mat.columnBegin(j);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">auto</span> end = mat.columnEnd(i);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">auto</span> <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> = mat.columnEnd(i);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="../../d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a8669c3b987b90417b17746ca33567360.html#a8669c3b987b90417b17746ca33567360">Element</a> f(mat.ring());</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    mat.ring().set_zero(f);</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    mat.ring().set_zero(result);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">for</span> (; loc1 != end; ++loc1, ++loc2)</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">for</span> (; loc1 != <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>; ++loc1, ++loc2)</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      {</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        mat.ring().mult(f, *loc1, *loc2);</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        mat.ring().add(result, result, f);</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      }</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  }</div>
 <div class="ttc" id="aclass_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a8669c3b987b90417b17746ca33567360_html_a8669c3b987b90417b17746ca33567360"><div class="ttname"><a href="../../d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a8669c3b987b90417b17746ca33567360.html#a8669c3b987b90417b17746ca33567360">MatElementaryOps&lt; DMat&lt; RT &gt; &gt;::Element</a></div><div class="ttdeci">RT::Element Element</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d24/mat-elem-ops_8hpp_source.html#l00021">mat-elem-ops.hpp:21</a></div></div>
+<div class="ttc" id="aringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad_html_a202eaaa0b459954e5ac23a43454d57ad"><div class="ttname"><a href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a></div><div class="ttdeci">TermIterator&lt; Nterm &gt; end(Nterm *)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d82/ringelem_8cpp_source.html#l00005">ringelem.cpp:5</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/dc3/class_d_mat_a8cae92a21c72c409435f48f9c4c55644.html#a8cae92a21c72c409435f48f9c4c55644">DMat&lt; ACoeffRing &gt;::columnBegin()</a>, <a class="el" href="../../da/dc3/class_d_mat_ab322eb1de52d9eae41d5cf430e2921bb.html#ab322eb1de52d9eae41d5cf430e2921bb">DMat&lt; ACoeffRing &gt;::columnEnd()</a>, <a class="el" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat&lt; ACoeffRing &gt;::numColumns()</a>, and <a class="el" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">DMat&lt; ACoeffRing &gt;::ring()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/dc3/class_d_mat_a8cae92a21c72c409435f48f9c4c55644.html#a8cae92a21c72c409435f48f9c4c55644">DMat&lt; ACoeffRing &gt;::columnBegin()</a>, <a class="el" href="../../da/dc3/class_d_mat_ab322eb1de52d9eae41d5cf430e2921bb.html#ab322eb1de52d9eae41d5cf430e2921bb">DMat&lt; ACoeffRing &gt;::columnEnd()</a>, <a class="el" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end()</a>, <a class="el" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat&lt; ACoeffRing &gt;::numColumns()</a>, and <a class="el" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">DMat&lt; ACoeffRing &gt;::ring()</a>.</p>
 
 </div>
 </div>
@@ -159,7 +160,7 @@ template&lt;typename RT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4.html">MatElementaryOps&lt; DMat&lt; RT &gt; &gt;</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

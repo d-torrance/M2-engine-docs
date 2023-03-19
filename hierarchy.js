@@ -83,6 +83,8 @@ var hierarchy =
       ] ]
     ] ],
     [ "exponent_table", "d7/db5/structexponent__table.html", null ],
+    [ "ExponentList< E, L >", "d1/d39/class_exponent_list.html", null ],
+    [ "ExponentListIterator< E, L >", "dc/d51/class_exponent_list_iterator.html", null ],
     [ "ExponentVector< E, OC >", "d1/d42/class_exponent_vector.html", null ],
     [ "F4Res", "d0/dd7/class_f4_res.html", null ],
     [ "F4toM2Interface", "d5/df9/class_f4to_m2_interface.html", null ],
@@ -116,10 +118,6 @@ var hierarchy =
       [ "MyIdealConsumer", "d8/d5c/class_my_ideal_consumer.html", null ]
     ] ],
     [ "indent", "d2/dd2/structindent.html", null ],
-    [ "index_res_varpower_monomial", "d9/d3c/classindex__res__varpower__monomial.html", null ],
-    [ "index_varpower", "d4/ded/classindex__varpower.html", null ],
-    [ "index_varpower_monomial", "d4/d60/classindex__varpower__monomial.html", null ],
-    [ "intarray", "d3/d23/classintarray.html", null ],
     [ "Interreducer", "d5/d51/class_interreducer.html", null ],
     [ "IntsSet< Configuration >", "dc/dd8/class_ints_set.html", null ],
     [ "BIBasis::JanetTree< MonomType >::Iterator", "d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator.html", null ],
@@ -495,7 +493,6 @@ var hierarchy =
       [ "M2::RElementWrap< RingType >", "d1/da0/class_m2_1_1_r_element_wrap.html", null ]
     ] ],
     [ "res_pair", "dc/d2a/classres__pair.html", null ],
-    [ "res_varpower_monomials", "d3/df0/classres__varpower__monomials.html", null ],
     [ "ResF4toM2Interface", "d2/d32/class_res_f4to_m2_interface.html", null ],
     [ "ResMonoidDense", "dc/d0d/class_res_monoid_dense.html", null ],
     [ "ResMonoidSparse", "d5/df9/class_res_monoid_sparse.html", null ],
@@ -551,12 +548,11 @@ var hierarchy =
     [ "Table_T", "d6/d47/struct_table___t.html", null ],
     [ "tableau", "d8/dee/classtableau.html", null ],
     [ "tableau2", "dd/d69/classtableau2.html", null ],
+    [ "TermIterator< T >", "d9/d6d/struct_term_iterator.html", null ],
     [ "BIBasis::Triple< MonomType >", "da/d09/class_b_i_basis_1_1_triple.html", null ],
     [ "TrivialHomotopyAlgorithm", "d5/da7/class_trivial_homotopy_algorithm.html", null ],
     [ "BIBasis::TSet< MonomType >", "d3/d5c/class_b_i_basis_1_1_t_set.html", null ],
     [ "VariablePrecisionHomotopyAlgorithm", "d4/d16/class_variable_precision_homotopy_algorithm.html", null ],
-    [ "varpower", "d3/ded/classvarpower.html", null ],
-    [ "varpower_monomials", "d6/dec/classvarpower__monomials.html", null ],
     [ "BIBasis::Monom::VarsListNode", "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node.html", null ],
     [ "vecHeap", "d1/d2c/classvec_heap.html", null ],
     [ "VectorArithmetic", "d1/df6/class_vector_arithmetic.html", null ],
@@ -569,5 +565,6 @@ var hierarchy =
     [ "res_varpower_word *", "dd/dec/classres__varpower__word_01_5.html", null ],
     [ "Ts", "dc/d68/class_ts.html", [
       [ "overloaded< Ts >", "d9/d94/structoverloaded.html", null ]
-    ] ]
+    ] ],
+    [ "varpower_word *", "d1/dbc/classvarpower__word_01_5.html", null ]
 ];

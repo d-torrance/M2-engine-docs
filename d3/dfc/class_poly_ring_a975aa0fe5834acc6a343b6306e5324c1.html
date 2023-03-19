@@ -123,20 +123,20 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a975aa0fe5834ac
 
 <p>Implements <a class="el" href="../../d5/d58/class_polynomial_ring_a4f4b12a6080ce825f011dbe786a10e66.html#a4f4b12a6080ce825f011dbe786a10e66">PolynomialRing</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l00635">635</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;{</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *result = NULL;</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809">POLY</a>(f) == NULL) <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;  <span class="keywordtype">int</span> lo, hi;</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  <a class="code" href="../../d3/dfc/class_poly_ring_aec08f2b53357c1ec429b4309b0313f0f.html#aec08f2b53357c1ec429b4309b0313f0f">degree_weights</a>(f, wts, lo, hi);</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  assert(wts-&gt;array[v] != 0);</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;  <span class="keywordtype">int</span> d = (wts-&gt;array[v] &gt; 0 ? hi : lo);</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d3/dfc/class_poly_ring_a25400898dbea41fee283f2a51209b10c.html#a25400898dbea41fee283f2a51209b10c">homogenize</a>(f, v, d, wts);</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;}</div>
-<div class="ttc" id="aclass_poly_ring_a25400898dbea41fee283f2a51209b10c_html_a25400898dbea41fee283f2a51209b10c"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_a25400898dbea41fee283f2a51209b10c.html#a25400898dbea41fee283f2a51209b10c">PolyRing::homogenize</a></div><div class="ttdeci">virtual ring_elem homogenize(const ring_elem f, int v, int deg, M2_arrayint wts) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l00596">poly.cpp:596</a></div></div>
-<div class="ttc" id="aclass_poly_ring_aec08f2b53357c1ec429b4309b0313f0f_html_aec08f2b53357c1ec429b4309b0313f0f"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_aec08f2b53357c1ec429b4309b0313f0f.html#aec08f2b53357c1ec429b4309b0313f0f">PolyRing::degree_weights</a></div><div class="ttdeci">virtual void degree_weights(const ring_elem f, M2_arrayint wts, int &amp;lo, int &amp;hi) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l00573">poly.cpp:573</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l00631">631</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;{</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *result = NULL;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809">POLY</a>(f) == NULL) <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;  <span class="keywordtype">int</span> lo, hi;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;  <a class="code" href="../../d3/dfc/class_poly_ring_aec08f2b53357c1ec429b4309b0313f0f.html#aec08f2b53357c1ec429b4309b0313f0f">degree_weights</a>(f, wts, lo, hi);</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;  assert(wts-&gt;array[v] != 0);</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;  <span class="keywordtype">int</span> d = (wts-&gt;array[v] &gt; 0 ? hi : lo);</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d3/dfc/class_poly_ring_a25400898dbea41fee283f2a51209b10c.html#a25400898dbea41fee283f2a51209b10c">homogenize</a>(f, v, d, wts);</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;}</div>
+<div class="ttc" id="aclass_poly_ring_a25400898dbea41fee283f2a51209b10c_html_a25400898dbea41fee283f2a51209b10c"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_a25400898dbea41fee283f2a51209b10c.html#a25400898dbea41fee283f2a51209b10c">PolyRing::homogenize</a></div><div class="ttdeci">virtual ring_elem homogenize(const ring_elem f, int v, int deg, M2_arrayint wts) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l00594">poly.cpp:594</a></div></div>
+<div class="ttc" id="aclass_poly_ring_aec08f2b53357c1ec429b4309b0313f0f_html_aec08f2b53357c1ec429b4309b0313f0f"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_aec08f2b53357c1ec429b4309b0313f0f.html#aec08f2b53357c1ec429b4309b0313f0f">PolyRing::degree_weights</a></div><div class="ttdeci">virtual void degree_weights(const ring_elem f, M2_arrayint wts, int &amp;lo, int &amp;hi) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l00571">poly.cpp:571</a></div></div>
 <div class="ttc" id="apoly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809_html_af4c97ae01895f6d3290e9c2ec19a5809"><div class="ttname"><a href="../../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809">POLY</a></div><div class="ttdeci">#define POLY(q)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l00023">poly.cpp:23</a></div></div>
-<div class="ttc" id="astruct_nterm_html"><div class="ttname"><a href="../../d0/dbc/struct_nterm.html">Nterm</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00097">ringelem.hpp:98</a></div></div>
+<div class="ttc" id="astruct_nterm_html"><div class="ttname"><a href="../../d0/dbc/struct_nterm.html">Nterm</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00095">ringelem.hpp:96</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/dfc/class_poly_ring_aec08f2b53357c1ec429b4309b0313f0f.html#aec08f2b53357c1ec429b4309b0313f0f">degree_weights()</a>, <a class="el" href="../../d3/dfc/class_poly_ring_a25400898dbea41fee283f2a51209b10c.html#a25400898dbea41fee283f2a51209b10c">homogenize()</a>, and <a class="el" href="../../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809">POLY</a>.</p>
 
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a975aa0fe5834ac
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:33 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

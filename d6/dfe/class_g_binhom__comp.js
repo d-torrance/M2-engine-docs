@@ -3,7 +3,7 @@ var class_g_binhom__comp =
     [ "GBinhom_comp", "d6/dfe/class_g_binhom__comp_a67b14d5a4ecae87a05160386d0bfc9ad.html#a67b14d5a4ecae87a05160386d0bfc9ad", null ],
     [ "~GBinhom_comp", "d6/dfe/class_g_binhom__comp_afc73fbd99661486c3ff0c7fc2eb8a82e.html#afc73fbd99661486c3ff0c7fc2eb8a82e", null ],
     [ "add_gens", "d6/dfe/class_g_binhom__comp_a0d2af5cdee7fec7b70ad70ecda9def25.html#a0d2af5cdee7fec7b70ad70ecda9def25", null ],
-    [ "calc", "d6/dfe/class_g_binhom__comp_a4a048c042e72d362a205bbc49fd69572.html#a4a048c042e72d362a205bbc49fd69572", null ],
+    [ "calc", "d6/dfe/class_g_binhom__comp_a73a054f9ae70d8cd2a953794116eecd8.html#a73a054f9ae70d8cd2a953794116eecd8", null ],
     [ "change_matrix", "d6/dfe/class_g_binhom__comp_ac357e0c02c7b8c0a7bca0ba06b907b7b.html#ac357e0c02c7b8c0a7bca0ba06b907b7b", null ],
     [ "compare", "d6/dfe/class_g_binhom__comp_a1a824fee2b65f4ac5e933607e0a4c70d.html#a1a824fee2b65f4ac5e933607e0a4c70d", null ],
     [ "complete_thru_degree", "d6/dfe/class_g_binhom__comp_a3ec817db677dd7b6f3f55989ba07bb38.html#a3ec817db677dd7b6f3f55989ba07bb38", null ],

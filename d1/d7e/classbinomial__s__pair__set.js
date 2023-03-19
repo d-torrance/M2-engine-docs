@@ -18,7 +18,7 @@ var classbinomial__s__pair__set =
     [ "stats", "d1/d7e/classbinomial__s__pair__set_a498737610d51afe68fb1a06cc9fc93aa.html#a498737610d51afe68fb1a06cc9fc93aa", null ],
     [ "_max_degree", "d1/d7e/classbinomial__s__pair__set_a8bc9507bd090d111ead0af684bfc24ea.html#a8bc9507bd090d111ead0af684bfc24ea", null ],
     [ "_n_elems", "d1/d7e/classbinomial__s__pair__set_a7a9a74ff74e5cce7c19701d6fc6db344.html#a7a9a74ff74e5cce7c19701d6fc6db344", null ],
-    [ "_npairs", "d1/d7e/classbinomial__s__pair__set_a9088998906ec50532084c17b4f30f340.html#a9088998906ec50532084c17b4f30f340", null ],
+    [ "_npairs", "d1/d7e/classbinomial__s__pair__set_aa4b4d045c43209d18c07281e19837708.html#aa4b4d045c43209d18c07281e19837708", null ],
     [ "_pairs", "d1/d7e/classbinomial__s__pair__set_acb340858c91a945325552cd91e9deea5.html#acb340858c91a945325552cd91e9deea5", null ],
     [ "_prev_lcm", "d1/d7e/classbinomial__s__pair__set_afc203f62abc2a5aa625c6a550f871b1d.html#afc203f62abc2a5aa625c6a550f871b1d", null ],
     [ "R", "d1/d7e/classbinomial__s__pair__set_a4499629b927e616035b107e4e8177c35.html#a4499629b927e616035b107e4e8177c35", null ]

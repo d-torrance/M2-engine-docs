@@ -22,11 +22,11 @@ var class_g_b_kernel_computation =
     [ "exp_size", "d7/d37/class_g_b_kernel_computation_ac57a991549b30285dcbda09d7c6675e7.html#ac57a991549b30285dcbda09d7c6675e7", null ],
     [ "F", "d7/d37/class_g_b_kernel_computation_a3b53c4bcb44045c1762b256dad6fcf2b.html#a3b53c4bcb44045c1762b256dad6fcf2b", null ],
     [ "G", "d7/d37/class_g_b_kernel_computation_a7048fdc3c9db1c7c62cde30012c1e441.html#a7048fdc3c9db1c7c62cde30012c1e441", null ],
-    [ "gb", "d7/d37/class_g_b_kernel_computation_a874f548c57f41ace3bb7e064d400e633.html#a874f548c57f41ace3bb7e064d400e633", null ],
+    [ "gb", "d7/d37/class_g_b_kernel_computation_acb1a7e3d947c0305a2e32d4459632b9d.html#acb1a7e3d947c0305a2e32d4459632b9d", null ],
     [ "GR", "d7/d37/class_g_b_kernel_computation_ab348061f9d852f7c65ecd8e5bc5a2631.html#ab348061f9d852f7c65ecd8e5bc5a2631", null ],
     [ "K", "d7/d37/class_g_b_kernel_computation_a3f076ab153c87b95a604b4c90c40a649.html#a3f076ab153c87b95a604b4c90c40a649", null ],
     [ "M", "d7/d37/class_g_b_kernel_computation_afd28afa70cadf4410a05cd532a6facb9.html#afd28afa70cadf4410a05cd532a6facb9", null ],
-    [ "mi", "d7/d37/class_g_b_kernel_computation_aa096313aafb5d969345c3f4150aaf446.html#aa096313aafb5d969345c3f4150aaf446", null ],
+    [ "mi", "d7/d37/class_g_b_kernel_computation_af3ba812d316bdebc9890bc241b19c0cc.html#af3ba812d316bdebc9890bc241b19c0cc", null ],
     [ "monom_size", "d7/d37/class_g_b_kernel_computation_a43c1dbc1cb40594f4e4fda40b65f9993.html#a43c1dbc1cb40594f4e4fda40b65f9993", null ],
     [ "n_ones", "d7/d37/class_g_b_kernel_computation_a82a7299b2882f4c404441041a7c8bc5b.html#a82a7299b2882f4c404441041a7c8bc5b", null ],
     [ "n_others", "d7/d37/class_g_b_kernel_computation_a37f0158d20b279a15ed85bd51343255a.html#a37f0158d20b279a15ed85bd51343255a", null ],
@@ -34,6 +34,6 @@ var class_g_b_kernel_computation =
     [ "R", "d7/d37/class_g_b_kernel_computation_ab7fb4137c6f819a244787f57658fdb55.html#ab7fb4137c6f819a244787f57658fdb55", null ],
     [ "SF", "d7/d37/class_g_b_kernel_computation_aabc2c8422e14c4e0c246311abf2d74d4.html#aabc2c8422e14c4e0c246311abf2d74d4", null ],
     [ "SG", "d7/d37/class_g_b_kernel_computation_ad7d5c35de0a4a28c524f8990c034233f.html#ad7d5c35de0a4a28c524f8990c034233f", null ],
-    [ "syzygies", "d7/d37/class_g_b_kernel_computation_a8e5616494debd084a146c767d3a96d57.html#a8e5616494debd084a146c767d3a96d57", null ],
+    [ "syzygies", "d7/d37/class_g_b_kernel_computation_a63e48d385f584b3654cdcfad797ba007.html#a63e48d385f584b3654cdcfad797ba007", null ],
     [ "total_reduce_count", "d7/d37/class_g_b_kernel_computation_acfc0e977deea7bff667b59ea8a19d67b.html#acfc0e977deea7bff667b59ea8a19d67b", null ]
 ];

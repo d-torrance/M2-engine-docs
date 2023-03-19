@@ -115,29 +115,29 @@ $(document).ready(function(){initNavTree('dc/d0d/class_res_monoid_dense_a48c1c91
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00160">160</a> of file <a class="el" href="../../d0/d58/res-moninfo-dense_8hpp_source.html">res-moninfo-dense.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">// &#39;result&#39; must have enough space allocated</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="../../dc/d0d/class_res_monoid_dense_a1a88b0ac2da280a9b6e5cf1290ac0078.html#a1a88b0ac2da280a9b6e5cf1290ac0078">ncalls_to_varpower</a>++;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="../../d7/d0a/res-monomial-types_8hpp_a97e86639da4aa6c465bfe58681f13e1d.html#a97e86639da4aa6c465bfe58681f13e1d">res_varpower_word</a>* t = result + 1;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="../../d7/d0a/res-monomial-types_8hpp_a49487411723b81298f85d07cad2b85a4.html#a49487411723b81298f85d07cad2b85a4">res_const_packed_monomial</a> m1 = m + <a class="code" href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">nslots</a>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">int</span> len = 0;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code" href="../../dc/d0d/class_res_monoid_dense_adddcc3e79aca1c92d1f515048deed888.html#adddcc3e79aca1c92d1f515048deed888">nvars</a> - 1; i &gt;= 0; i--)</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span> (*--m1 &gt; 0)</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;          {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            *t++ = i;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            *t++ = *m1;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            len++;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;          }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      }</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    *result = len;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  }</div>
-<div class="ttc" id="aclass_res_monoid_dense_a1a88b0ac2da280a9b6e5cf1290ac0078_html_a1a88b0ac2da280a9b6e5cf1290ac0078"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_a1a88b0ac2da280a9b6e5cf1290ac0078.html#a1a88b0ac2da280a9b6e5cf1290ac0078">ResMonoidDense::ncalls_to_varpower</a></div><div class="ttdeci">unsigned long ncalls_to_varpower</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00044">res-moninfo-dense.hpp:44</a></div></div>
-<div class="ttc" id="aclass_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d_html_abc7040059d3293ade8f8180640c1af5d"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">ResMonoidDense::nslots</a></div><div class="ttdeci">int nslots</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00017">res-moninfo-dense.hpp:17</a></div></div>
-<div class="ttc" id="aclass_res_monoid_dense_adddcc3e79aca1c92d1f515048deed888_html_adddcc3e79aca1c92d1f515048deed888"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_adddcc3e79aca1c92d1f515048deed888.html#adddcc3e79aca1c92d1f515048deed888">ResMonoidDense::nvars</a></div><div class="ttdeci">int nvars</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00016">res-moninfo-dense.hpp:16</a></div></div>
-<div class="ttc" id="ares-monomial-types_8hpp_a49487411723b81298f85d07cad2b85a4_html_a49487411723b81298f85d07cad2b85a4"><div class="ttname"><a href="../../d7/d0a/res-monomial-types_8hpp_a49487411723b81298f85d07cad2b85a4.html#a49487411723b81298f85d07cad2b85a4">res_const_packed_monomial</a></div><div class="ttdeci">const res_monomial_word * res_const_packed_monomial</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0a/res-monomial-types_8hpp_source.html#l00024">res-monomial-types.hpp:24</a></div></div>
-<div class="ttc" id="ares-monomial-types_8hpp_a97e86639da4aa6c465bfe58681f13e1d_html_a97e86639da4aa6c465bfe58681f13e1d"><div class="ttname"><a href="../../d7/d0a/res-monomial-types_8hpp_a97e86639da4aa6c465bfe58681f13e1d.html#a97e86639da4aa6c465bfe58681f13e1d">res_varpower_word</a></div><div class="ttdeci">myword res_varpower_word</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0a/res-monomial-types_8hpp_source.html#l00026">res-monomial-types.hpp:26</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00159">159</a> of file <a class="el" href="../../d0/d58/res-moninfo-dense_8hpp_source.html">res-moninfo-dense.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">// &#39;result&#39; must have enough space allocated</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="../../dc/d0d/class_res_monoid_dense_a1a88b0ac2da280a9b6e5cf1290ac0078.html#a1a88b0ac2da280a9b6e5cf1290ac0078">ncalls_to_varpower</a>++;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="../../d7/d0a/res-monomial-types_8hpp_aeafae28e221cfed9648e85c2b97a56a3.html#aeafae28e221cfed9648e85c2b97a56a3">res_varpower_word</a>* t = result + 1;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="../../d7/d0a/res-monomial-types_8hpp_a49487411723b81298f85d07cad2b85a4.html#a49487411723b81298f85d07cad2b85a4">res_const_packed_monomial</a> m1 = m + <a class="code" href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">nslots</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">int</span> len = 0;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code" href="../../dc/d0d/class_res_monoid_dense_adddcc3e79aca1c92d1f515048deed888.html#adddcc3e79aca1c92d1f515048deed888">nvars</a> - 1; i &gt;= 0; i--)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">if</span> (*--m1 &gt; 0)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;          {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            *t++ = i;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            *t++ = *m1;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            len++;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;          }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    *result = len;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  }</div>
+<div class="ttc" id="aclass_res_monoid_dense_a1a88b0ac2da280a9b6e5cf1290ac0078_html_a1a88b0ac2da280a9b6e5cf1290ac0078"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_a1a88b0ac2da280a9b6e5cf1290ac0078.html#a1a88b0ac2da280a9b6e5cf1290ac0078">ResMonoidDense::ncalls_to_varpower</a></div><div class="ttdeci">unsigned long ncalls_to_varpower</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00043">res-moninfo-dense.hpp:43</a></div></div>
+<div class="ttc" id="aclass_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d_html_abc7040059d3293ade8f8180640c1af5d"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">ResMonoidDense::nslots</a></div><div class="ttdeci">int nslots</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00016">res-moninfo-dense.hpp:16</a></div></div>
+<div class="ttc" id="aclass_res_monoid_dense_adddcc3e79aca1c92d1f515048deed888_html_adddcc3e79aca1c92d1f515048deed888"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_adddcc3e79aca1c92d1f515048deed888.html#adddcc3e79aca1c92d1f515048deed888">ResMonoidDense::nvars</a></div><div class="ttdeci">int nvars</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00015">res-moninfo-dense.hpp:15</a></div></div>
+<div class="ttc" id="ares-monomial-types_8hpp_a49487411723b81298f85d07cad2b85a4_html_a49487411723b81298f85d07cad2b85a4"><div class="ttname"><a href="../../d7/d0a/res-monomial-types_8hpp_a49487411723b81298f85d07cad2b85a4.html#a49487411723b81298f85d07cad2b85a4">res_const_packed_monomial</a></div><div class="ttdeci">const res_monomial_word * res_const_packed_monomial</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0a/res-monomial-types_8hpp_source.html#l00034">res-monomial-types.hpp:34</a></div></div>
+<div class="ttc" id="ares-monomial-types_8hpp_aeafae28e221cfed9648e85c2b97a56a3_html_aeafae28e221cfed9648e85c2b97a56a3"><div class="ttname"><a href="../../d7/d0a/res-monomial-types_8hpp_aeafae28e221cfed9648e85c2b97a56a3.html#aeafae28e221cfed9648e85c2b97a56a3">res_varpower_word</a></div><div class="ttdeci">res_varpower_monomials::Exponent res_varpower_word</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0a/res-monomial-types_8hpp_source.html#l00027">res-monomial-types.hpp:27</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../dc/d0d/class_res_monoid_dense_a1a88b0ac2da280a9b6e5cf1290ac0078.html#a1a88b0ac2da280a9b6e5cf1290ac0078">ncalls_to_varpower</a>, <a class="el" href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">nslots</a>, and <a class="el" href="../../dc/d0d/class_res_monoid_dense_adddcc3e79aca1c92d1f515048deed888.html#adddcc3e79aca1c92d1f515048deed888">nvars</a>.</p>
 
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('dc/d0d/class_res_monoid_dense_a48c1c91
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d0d/class_res_monoid_dense.html">ResMonoidDense</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 01:51:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 19 2023 01:52:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

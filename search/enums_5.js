@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['heaptype_12060',['HeapType',['../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223a',1,'NCReduction.hpp']]]
+  ['heaptype_12048',['HeapType',['../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223a',1,'NCReduction.hpp']]]
 ];

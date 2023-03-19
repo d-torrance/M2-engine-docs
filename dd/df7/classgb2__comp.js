@@ -72,6 +72,6 @@ var classgb2__comp =
     [ "syz", "dd/df7/classgb2__comp_a1fca24a1243451ac117ccfa000bbb9e0.html#a1fca24a1243451ac117ccfa000bbb9e0", null ],
     [ "these_pairs", "dd/df7/classgb2__comp_a55ca0cc4ddd39aa53eeda4c78d89bb05.html#a55ca0cc4ddd39aa53eeda4c78d89bb05", null ],
     [ "this_degree", "dd/df7/classgb2__comp_a6eb01b9fe9338dcbe1c5a2eb5a35d889.html#a6eb01b9fe9338dcbe1c5a2eb5a35d889", null ],
-    [ "total_pairs", "dd/df7/classgb2__comp_a007323192adbeff879210a5d4486b4d9.html#a007323192adbeff879210a5d4486b4d9", null ],
+    [ "total_pairs", "dd/df7/classgb2__comp_a2b0d7a92ee535fa798452b5358dbf67c.html#a2b0d7a92ee535fa798452b5358dbf67c", null ],
     [ "use_hilb", "dd/df7/classgb2__comp_abd7984578c6fac00a8ea14f886e1eb2b.html#abd7984578c6fac00a8ea14f886e1eb2b", null ]
 ];
