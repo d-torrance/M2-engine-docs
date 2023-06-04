@@ -146,7 +146,6 @@ var NAVTREEINDEX26 =
 "d7/d11/classschur__poly__iterator_ac609ff4c0ff131c2c79a0db86f447896.html#ac609ff4c0ff131c2c79a0db86f447896":[6,0,307,4],
 "d7/d11/classschur__poly__iterator_ace9a937931641e219151a5e2fc923def.html#ace9a937931641e219151a5e2fc923def":[6,0,307,2],
 "d7/d11/classschur__poly__iterator_af22aeb7897d8727edf3ef2bf7bff11ba.html#af22aeb7897d8727edf3ef2bf7bff11ba":[6,0,307,5],
-"":[5,0,9],
 "d7/d11/mutablecomplex_8cpp.html":[7,0,0,0,211],
 "d7/d11/mutablecomplex_8cpp_a0d6e989fd58644c55f2eacb03829a58d.html#a0d6e989fd58644c55f2eacb03829a58d":[7,0,0,0,211,8],
 "d7/d11/mutablecomplex_8cpp_a16bfb04bfec5394dcf99fc060a6da666.html#a16bfb04bfec5394dcf99fc060a6da666":[7,0,0,0,211,11],
@@ -249,5 +248,6 @@ var NAVTREEINDEX26 =
 "d7/d23/class_concrete_vector_arithmetic_a8f84aa688856abff43955d8393834119.html#a8f84aa688856abff43955d8393834119":[6,0,38,9],
 "d7/d23/class_concrete_vector_arithmetic_a9ad775ce9df57f23e174ac6bebb4665c.html#a9ad775ce9df57f23e174ac6bebb4665c":[6,0,38,15],
 "d7/d23/class_concrete_vector_arithmetic_aa646a5bbf88ae4a904a6a82458b83f5a.html#aa646a5bbf88ae4a904a6a82458b83f5a":[6,0,38,22],
-"d7/d23/class_concrete_vector_arithmetic_ab146a9a0de7fff4d32b54096e00d2237.html#ab146a9a0de7fff4d32b54096e00d2237":[6,0,38,0]
+"d7/d23/class_concrete_vector_arithmetic_ab146a9a0de7fff4d32b54096e00d2237.html#ab146a9a0de7fff4d32b54096e00d2237":[6,0,38,0],
+"d7/d23/class_concrete_vector_arithmetic_ab2c7648e5aa15518dce284f7e87cf649.html#ab2c7648e5aa15518dce284f7e87cf649":[6,0,38,27]
 };
