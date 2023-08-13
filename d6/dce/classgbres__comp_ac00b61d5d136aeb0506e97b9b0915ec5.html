@@ -113,10 +113,10 @@ $(document).ready(function(){initNavTree('d6/dce/classgbres__comp_ac00b61d5d136a
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordflow">if</span> (m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>() != F-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>())</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    {</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected matrices to have same number of rows&quot;</span>);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    }</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat_red(m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa19c616f5a4f272b4da3c29e726ef972.html#aa19c616f5a4f272b4da3c29e726ef972">cols</a>(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a06fff1c55e11c5cadf8a5abd3f6c35cb.html#a06fff1c55e11c5cadf8a5abd3f6c35cb">degree_shift</a>());</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat_lift(<a class="code" href="../../d6/dce/classgbres__comp_a5fb9c5011d047e189f6593752d269647.html#a5fb9c5011d047e189f6593752d269647">nodes</a>[1]-&gt;output_free_module(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa19c616f5a4f272b4da3c29e726ef972.html#aa19c616f5a4f272b4da3c29e726ef972">cols</a>(), 0);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat_lift(<a class="code" href="../../d6/dce/classgbres__comp_a5fb9c5011d047e189f6593752d269647.html#a5fb9c5011d047e189f6593752d269647">nodes</a>[1]-&gt;output_free_module(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa19c616f5a4f272b4da3c29e726ef972.html#aa19c616f5a4f272b4da3c29e726ef972">cols</a>(), <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    {</div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('d6/dce/classgbres__comp_ac00b61d5d136a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dce/classgbres__comp.html">gbres_comp</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:48 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

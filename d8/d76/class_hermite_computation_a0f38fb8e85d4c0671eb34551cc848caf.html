@@ -112,12 +112,12 @@ $(document).ready(function(){initNavTree('d8/d76/class_hermite_computation_a0f38
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  <span class="keywordflow">if</span> (m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>() != <a class="code" href="../../d8/df4/hermite_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>)</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    {</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected matrix over ZZ&quot;</span>);</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    }</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  <span class="keywordflow">if</span> (m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>() != <a class="code" href="../../d8/d76/class_hermite_computation_a8f3b83e3d517935a89ff457714a59347.html#a8f3b83e3d517935a89ff457714a59347">gens</a>-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>()-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>())</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    {</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected matrices to have same number of rows&quot;</span>);</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    }</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat_remainder(m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa19c616f5a4f272b4da3c29e726ef972.html#aa19c616f5a4f272b4da3c29e726ef972">cols</a>(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a06fff1c55e11c5cadf8a5abd3f6c35cb.html#a06fff1c55e11c5cadf8a5abd3f6c35cb">degree_shift</a>());</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('d8/d76/class_hermite_computation_a0f38
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d76/class_hermite_computation.html">HermiteComputation</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:49 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

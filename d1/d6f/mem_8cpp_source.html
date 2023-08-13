@@ -98,12 +98,12 @@ $(document).ready(function(){initNavTree('d1/d6f/mem_8cpp_source.html','../../')
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Array of stashes of 2^n powers.</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// This looks thread unsafe, but is actually thread safe because it is only</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// initialized once when the engine is setup.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d1/d6f/mem_8cpp_a05e4d9829321b3db5b3dced46a697515.html#a05e4d9829321b3db5b3dced46a697515">   14</a></span>&#160;<a class="code" href="../../da/d01/classdoubling__stash.html">doubling_stash</a> *<a class="code" href="../../d1/d6f/mem_8cpp_a05e4d9829321b3db5b3dced46a697515.html#a05e4d9829321b3db5b3dced46a697515">doubles</a> = NULL;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d1/d6f/mem_8cpp_a05e4d9829321b3db5b3dced46a697515.html#a05e4d9829321b3db5b3dced46a697515">   14</a></span>&#160;<a class="code" href="../../da/d01/classdoubling__stash.html">doubling_stash</a> *<a class="code" href="../../d1/d6f/mem_8cpp_a05e4d9829321b3db5b3dced46a697515.html#a05e4d9829321b3db5b3dced46a697515">doubles</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d1/d5b/classstash_a505aed40248234617f1b9a8ab425ffeb.html#a505aed40248234617f1b9a8ab425ffeb">   16</a></span>&#160;<a class="code" href="../../d1/d5b/classstash_a505aed40248234617f1b9a8ab425ffeb.html#a505aed40248234617f1b9a8ab425ffeb">stash::stash</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *s, <span class="keywordtype">size_t</span> len)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    : name(s),</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      slabs(NULL),</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      free_list(NULL),</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      slabs(nullptr),</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      free_list(nullptr),</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      n_allocs(0),</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      n_inuse(0),</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      highwater(0),</div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('d1/d6f/mem_8cpp_source.html','../../')
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d1/d5b/classstash_a08c07e5949cc3fce5f2038fc8b57d681.html#a08c07e5949cc3fce5f2038fc8b57d681">   35</a></span>&#160;<a class="code" href="../../d1/d5b/classstash_a08c07e5949cc3fce5f2038fc8b57d681.html#a08c07e5949cc3fce5f2038fc8b57d681">stash::~stash</a>()</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  acquireSpinLock(&amp;<a class="code" href="../../d1/d5b/classstash_ab0087ae1e008a33c48fbf24b4481cf06.html#ab0087ae1e008a33c48fbf24b4481cf06">list_spinlock</a>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a> != NULL)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a> != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <a class="code" href="../../dc/d02/classslab.html">slab</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a> = <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a>-&gt;<a class="code" href="../../dc/d02/classslab_a0f7418588412caf4f807db4c1e07ecb1.html#a0f7418588412caf4f807db4c1e07ecb1">next</a>;</div>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('d1/d6f/mem_8cpp_source.html','../../')
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// Time to chop it up.</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">char</span> *prev = NULL;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">char</span> *prev = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">char</span> *current = <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a>-&gt;<a class="code" href="../../dc/d02/classslab_a732031f976ecea45e711378c3196331f.html#a732031f976ecea45e711378c3196331f">s</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d1/d5b/classstash_a17742f50b5d7de4db6bc915baa510b79.html#a17742f50b5d7de4db6bc915baa510b79">n_per_slab</a>; i++)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
@@ -221,7 +221,7 @@ $(document).ready(function(){initNavTree('d1/d6f/mem_8cpp_source.html','../../')
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d1/d2c/mem_8hpp_a68f338430f08beb25d341e25ad038cbf.html#a68f338430f08beb25d341e25ad038cbf">NDOUBLES</a>; i++)</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../da/d01/classdoubling__stash_aa0a5d02a1e5a4d59f989c7ab8d205c97.html#aa0a5d02a1e5a4d59f989c7ab8d205c97">doubles</a>[i] != NULL)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../da/d01/classdoubling__stash_aa0a5d02a1e5a4d59f989c7ab8d205c97.html#aa0a5d02a1e5a4d59f989c7ab8d205c97">doubles</a>[i] != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <a class="code" href="../../d4/d7a/text-io_8cpp_a5bd0b57b7653fb12e1dcaa8c4d09ce4e.html#a5bd0b57b7653fb12e1dcaa8c4d09ce4e">emit</a>(<span class="stringliteral">&quot;internal warning -- deleting a double stash&quot;</span>);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <a class="code" href="../../d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(<a class="code" href="../../da/d01/classdoubling__stash_aa0a5d02a1e5a4d59f989c7ab8d205c97.html#aa0a5d02a1e5a4d59f989c7ab8d205c97">doubles</a>[i]);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('d1/d6f/mem_8cpp_source.html','../../')
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
 <div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="../../da/d01/classdoubling__stash_abb45db0dfe6f0a2d669f858c850859ac.html#abb45db0dfe6f0a2d669f858c850859ac">  156</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d01/classdoubling__stash_abb45db0dfe6f0a2d669f858c850859ac.html#abb45db0dfe6f0a2d669f858c850859ac">doubling_stash::delete_elem</a>(<span class="keywordtype">void</span> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>)</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">int</span> *q = (<span class="keywordtype">int</span> *)<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  q--;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <a class="code" href="../../da/d01/classdoubling__stash_aa0a5d02a1e5a4d59f989c7ab8d205c97.html#aa0a5d02a1e5a4d59f989c7ab8d205c97">doubles</a>[*q]-&gt;<a class="code" href="../../d1/d5b/classstash_ae4b46df1e16a1459ac79ef4aa4047b68.html#ae4b46df1e16a1459ac79ef4aa4047b68">delete_elem</a>(q);</div>
@@ -306,7 +306,7 @@ $(document).ready(function(){initNavTree('d1/d6f/mem_8cpp_source.html','../../')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d1/d6f/mem_8cpp.html">mem.cpp</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:44 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -100,9 +100,9 @@ $(document).ready(function(){initNavTree('d3/d96/poly_8cpp_a635a6ae163fee47d654f
 <p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02226">2226</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l02227"></a><span class="lineno"> 2227</span>&#160;{</div>
 <div class="line"><a name="l02228"></a><span class="lineno"> 2228</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d3/dfc/class_poly_ring.html">PolyRing</a> *P = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a7c300ee9c7b94c7cab639b03024736eb.html#a7c300ee9c7b94c7cab639b03024736eb">cast_to_PolyRing</a>();</div>
-<div class="line"><a name="l02229"></a><span class="lineno"> 2229</span>&#160;  <span class="keywordflow">if</span> (P == 0) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l02230"></a><span class="lineno"> 2230</span>&#160;  <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_aece123c61c00a4f07a6008badec14362.html#aece123c61c00a4f07a6008badec14362">n_vars</a>() != 1) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l02231"></a><span class="lineno"> 2231</span>&#160;  <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">characteristic</a>() == 0) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l02229"></a><span class="lineno"> 2229</span>&#160;  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l02230"></a><span class="lineno"> 2230</span>&#160;  <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_aece123c61c00a4f07a6008badec14362.html#aece123c61c00a4f07a6008badec14362">n_vars</a>() != 1) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l02231"></a><span class="lineno"> 2231</span>&#160;  <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">characteristic</a>() == 0) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l02232"></a><span class="lineno"> 2232</span>&#160;  <span class="keywordflow">return</span> P;</div>
 <div class="line"><a name="l02233"></a><span class="lineno"> 2233</span>&#160;}</div>
 <div class="ttc" id="aclass_poly_ring_html"><div class="ttname"><a href="../../d3/dfc/class_poly_ring.html">PolyRing</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc0/poly_8hpp_source.html#l00020">poly.hpp:21</a></div></div>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('d3/d96/poly_8cpp_a635a6ae163fee47d654f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d3/d96/poly_8cpp.html">poly.cpp</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:37 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:46 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

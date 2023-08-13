@@ -140,11 +140,11 @@ $(document).ready(function(){initNavTree('dc/d5a/classsagbi_a64a8b4a6e105fb86660
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *result = &amp;head;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(R-&gt;<a class="code" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>(1), 1);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordflow">while</span> (f != NULL)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordflow">while</span> (f != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *g = f;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      f = f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      g-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = NULL;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      g-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      mat.set_entry(0, 0, g);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <a class="code" href="../../d6/d3f/class_matrix.html">Matrix</a> *m = mat.to_matrix();</div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('dc/d5a/classsagbi_a64a8b4a6e105fb86660
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = NULL;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> head.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="ttc" id="aclass_g_b_computation_a6573ab84e62c65b8da649ca8db685d5f_html_a6573ab84e62c65b8da649ca8db685d5f"><div class="ttname"><a href="../../de/ded/class_g_b_computation_a6573ab84e62c65b8da649ca8db685d5f.html#a6573ab84e62c65b8da649ca8db685d5f">GBComputation::matrix_remainder</a></div><div class="ttdeci">virtual const Matrix * matrix_remainder(const Matrix *m)=0</div></div>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('dc/d5a/classsagbi_a64a8b4a6e105fb86660
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d5a/classsagbi.html">sagbi</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

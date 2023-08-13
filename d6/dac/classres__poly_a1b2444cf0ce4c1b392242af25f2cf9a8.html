@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d6/dac/classres__poly_a1b2444cf0ce4c1b
 <div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="../../d9/d1b/structresterm.html">resterm</a> head;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="../../d9/d1b/structresterm.html">resterm</a> *result = &amp;head;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d9/d1b/structresterm.html">resterm</a> *tm = f; tm != NULL; tm = tm-&gt;<a class="code" href="../../d9/d1b/structresterm_afd51a10339309dd1e7b60e185ef8caf5.html#afd51a10339309dd1e7b60e185ef8caf5">next</a>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d9/d1b/structresterm.html">resterm</a> *tm = f; tm != <span class="keyword">nullptr</span>; tm = tm-&gt;<a class="code" href="../../d9/d1b/structresterm_afd51a10339309dd1e7b60e185ef8caf5.html#afd51a10339309dd1e7b60e185ef8caf5">next</a>)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      result-&gt;<a class="code" href="../../d9/d1b/structresterm_afd51a10339309dd1e7b60e185ef8caf5.html#afd51a10339309dd1e7b60e185ef8caf5">next</a> = <a class="code" href="../../d6/dac/classres__poly_adb62516ddca0a3eda3acccb436bd3879.html#adb62516ddca0a3eda3acccb436bd3879">new_term</a>();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      result = result-&gt;<a class="code" href="../../d9/d1b/structresterm_afd51a10339309dd1e7b60e185ef8caf5.html#afd51a10339309dd1e7b60e185ef8caf5">next</a>;</div>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('d6/dac/classres__poly_a1b2444cf0ce4c1b
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      result-&gt;<a class="code" href="../../d9/d1b/structresterm_a34796788a6394a6a715a05ff0e48fb77.html#a34796788a6394a6a715a05ff0e48fb77">coeff</a> = <a class="code" href="../../d6/dac/classres__poly_a9814772af5b8c50d36eca02df7105033.html#a9814772af5b8c50d36eca02df7105033">K</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a84bd4fdbdd4e1e44b2b24ad800138e1c.html#a84bd4fdbdd4e1e44b2b24ad800138e1c">copy</a>(tm-&gt;coeff);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="../../d6/dac/classres__poly_af68b8c7830107ddb000c36fa4a4dd637.html#af68b8c7830107ddb000c36fa4a4dd637">M</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_abf72f14643cb88f7118445ff61eda4c1.html#abf72f14643cb88f7118445ff61eda4c1">copy</a>(tm-&gt;monom, result-&gt;<a class="code" href="../../d9/d1b/structresterm_a8728662faef6d050f6f2e2d0acb35155.html#a8728662faef6d050f6f2e2d0acb35155">monom</a>);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  result-&gt;<a class="code" href="../../d9/d1b/structresterm_afd51a10339309dd1e7b60e185ef8caf5.html#afd51a10339309dd1e7b60e185ef8caf5">next</a> = NULL;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  result-&gt;<a class="code" href="../../d9/d1b/structresterm_afd51a10339309dd1e7b60e185ef8caf5.html#afd51a10339309dd1e7b60e185ef8caf5">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">return</span> head.<a class="code" href="../../d9/d1b/structresterm_afd51a10339309dd1e7b60e185ef8caf5.html#afd51a10339309dd1e7b60e185ef8caf5">next</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="ttc" id="aclass_monoid_abf72f14643cb88f7118445ff61eda4c1_html_abf72f14643cb88f7118445ff61eda4c1"><div class="ttname"><a href="../../d9/db1/class_monoid_abf72f14643cb88f7118445ff61eda4c1.html#abf72f14643cb88f7118445ff61eda4c1">Monoid::copy</a></div><div class="ttdeci">void copy(const_monomial m, monomial result) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5c/monoid_8cpp_source.html#l00518">monoid.cpp:518</a></div></div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('d6/dac/classres__poly_a1b2444cf0ce4c1b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dac/classres__poly.html">res_poly</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -115,14 +115,14 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_af6df8e2b64932e872
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l01266">1266</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;{</div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;  <span class="keywordflow">if</span> (f == 0) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;  <span class="keywordflow">if</span> (whichvar == 0) <span class="keywordflow">return</span> f-&gt;deg;</div>
 <div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;  <span class="comment">// At this point, we need to find the max degree of the given var</span></div>
 <div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;  <span class="keywordtype">int</span> deg = -1;</div>
 <div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++)</div>
 <div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;    {</div>
 <div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;      TowerPolynomial g = f-&gt;arr.polys[i];</div>
-<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;      <span class="keywordflow">if</span> (g != 0)</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;      <span class="keywordflow">if</span> (g != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;        {</div>
 <div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;          <span class="keywordtype">int</span> d = <a class="code" href="../../d3/d42/class_d_poly_af6df8e2b64932e872f52acd5c05d1f53.html#af6df8e2b64932e872f52acd5c05d1f53">degree</a>(level - 1, whichvar - 1, g);</div>
 <div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;          <span class="keywordflow">if</span> (d &gt; deg) deg = d;</div>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_af6df8e2b64932e872
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:38 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

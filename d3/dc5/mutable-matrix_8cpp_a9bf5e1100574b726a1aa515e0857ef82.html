@@ -120,19 +120,19 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_a9bf5e11005
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    {</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;      *success = 1;</div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;      <a class="code" href="../../dc/db8/class_mutable_matrix.html">MutableMatrix</a> *result = A-&gt;<a class="code" href="../../dc/db8/class_mutable_matrix_ad18b183c1f058dd2da77420e5d67f60f.html#ad18b183c1f058dd2da77420e5d67f60f">solveInvertible</a>(B);</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;      <span class="keywordflow">if</span> (result != NULL)</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;      <span class="keywordflow">if</span> (result != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;        {</div>
 <div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="../../db/de9/finalize_8cpp_a7a85cceae51c6e27366f8ee12c2d753a.html#a7a85cceae51c6e27366f8ee12c2d753a">internMutableMatrix</a>(result);</div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;        }</div>
 <div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        {</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;          <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        }</div>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    {</div>
 <div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;      *success = 0;</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;  }</div>
 <div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;}</div>
 <div class="ttc" id="aclass_mutable_matrix_ad18b183c1f058dd2da77420e5d67f60f_html_ad18b183c1f058dd2da77420e5d67f60f"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_ad18b183c1f058dd2da77420e5d67f60f.html#ad18b183c1f058dd2da77420e5d67f60f">MutableMatrix::solveInvertible</a></div><div class="ttdeci">virtual MutableMatrix * solveInvertible(const MutableMatrix *B) const =0</div></div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_a9bf5e11005
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d3/dc5/mutable-matrix_8cpp.html">mutable-matrix.cpp</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:46 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

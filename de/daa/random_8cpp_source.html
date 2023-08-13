@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('de/daa/random_8cpp_source.html','../..
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  mpz_ptr result = <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(mpz_ptr);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  mpz_init(result);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> (maxN == 0)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> (maxN == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    mpz_urandomm(result, <a class="code" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>, <a class="code" href="../../de/daa/random_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3.html#a2b3a315978345e6081d8a9d6e9ab2ab3">maxHeight</a>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (1 != mpz_sgn(maxN))</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('de/daa/random_8cpp_source.html','../..
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  mpq_ptr result = <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(mpq_ptr);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  mpq_init(result);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">if</span> (height == 0) height = <a class="code" href="../../de/daa/random_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3.html#a2b3a315978345e6081d8a9d6e9ab2ab3">maxHeight</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">if</span> (height == <span class="keyword">nullptr</span>) height = <a class="code" href="../../de/daa/random_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3.html#a2b3a315978345e6081d8a9d6e9ab2ab3">maxHeight</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  mpz_urandomm(mpq_numref(result), <a class="code" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>, height);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  mpz_urandomm(mpq_denref(result), <a class="code" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>, height);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  mpz_add_ui(mpq_numref(result), mpq_numref(result), 1);</div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('de/daa/random_8cpp_source.html','../..
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">/* returns random a/b, where 1 &lt;= b &lt;= height, 1 &lt;= a &lt;= height */</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">/* if height is the null pointer, use the default height */</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">if</span> (height == 0) height = <a class="code" href="../../de/daa/random_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3.html#a2b3a315978345e6081d8a9d6e9ab2ab3">maxHeight</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">if</span> (height == <span class="keyword">nullptr</span>) height = <a class="code" href="../../de/daa/random_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3.html#a2b3a315978345e6081d8a9d6e9ab2ab3">maxHeight</a>;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  mpz_urandomm(mpq_numref(result), <a class="code" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>, height);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  mpz_urandomm(mpq_denref(result), <a class="code" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>, height);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  mpz_add_ui(mpq_numref(result), mpq_numref(result), 1);</div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('de/daa/random_8cpp_source.html','../..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../de/daa/random_8cpp.html">random.cpp</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:44 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

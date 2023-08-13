@@ -131,27 +131,27 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_a9dbfef081e5d5773dd
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    {</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R = inputMatrix-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>();</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d3/dfc/class_poly_ring.html">PolyRing</a> *P = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a7c300ee9c7b94c7cab639b03024736eb.html#a7c300ee9c7b94c7cab639b03024736eb">cast_to_PolyRing</a>();</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;      <span class="keywordflow">if</span> (P == 0)</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;      <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        {</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a polynomial ring&quot;</span>);</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        }</div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;      <span class="keywordflow">if</span> (nthreads &lt; 0)</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        {</div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;mgb: expected a non-negative number of threads&quot;</span>);</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        }</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;      <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">characteristic</a>() &gt; <a class="code" href="../../d1/df6/polyroots_8cpp_affe776513b24d84b39af8ab0930fef7f.html#affe776513b24d84b39af8ab0930fef7f">std::numeric_limits&lt;int&gt;::max</a>())</div>
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        {</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;characteristic is too large for mathic gb computation&quot;</span>);</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        }</div>
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;      <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">characteristic</a>() == 0)</div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        {</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;              <span class="stringliteral">&quot;characteristic for mathic gb computation must be a prime &quot;</span></div>
 <div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;              <span class="stringliteral">&quot;number&quot;</span>);</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        }</div>
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;      <span class="keywordflow">if</span> (not P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a7e8c03a55da33b51714f6b95f4b06923.html#a7e8c03a55da33b51714f6b95f4b06923">getCoefficientRing</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_add1e694a2f0b834c4708476ec237644e.html#add1e694a2f0b834c4708476ec237644e">isFinitePrimeField</a>())</div>
 <div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        {</div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_a9dbfef081e5d5773dd
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;              <span class="stringliteral">&quot;monomial ordering is not appropriate for Groebner basis &quot;</span></div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;              <span class="stringliteral">&quot;computation&quot;</span>);</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        }</div>
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;      <span class="keywordflow">if</span> (!configuration.setMonomialOrder(</div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;              (base_is_revlex</div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_a9dbfef081e5d5773dd
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;      <span class="keywordflow">if</span> (callback.<a class="code" href="../../df/df8/class_m_g_b_callback_a57595b1561f7c52cfabac6f715c7187b.html#a57595b1561f7c52cfabac6f715c7187b">wasInterrupted</a>())</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;        {</div>
 <div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;computation was interrupted&quot;</span>);</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        }</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d6/d3f/class_matrix.html">Matrix</a> *result = matStream.value();</div>
 <div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;      <span class="comment">// printf(&quot;number of callbacks = %lu  result = %lu\n&quot;,</span></div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_a9dbfef081e5d5773dd
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d0/d7a/groebner_8h.html">groebner.h</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:46 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

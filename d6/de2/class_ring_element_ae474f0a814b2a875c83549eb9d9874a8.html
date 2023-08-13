@@ -110,10 +110,10 @@ $(document).ready(function(){initNavTree('d6/de2/class_ring_element_ae474f0a814b
 <p class="definition">Definition at line <a class="el" href="../../d8/dfc/relem_8cpp_source.html#l00185">185</a> of file <a class="el" href="../../d8/dfc/relem_8cpp_source.html">relem.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;{</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = <a class="code" href="../../d6/de2/class_ring_element_aac17d01996fc44a0ce837b4e7351f198.html#aac17d01996fc44a0ce837b4e7351f198">R</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordflow">if</span> (P == 0)</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    {</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring&quot;</span>);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="../../d6/de2/class_ring_element_a0e2a80fc5c6bcc3d890ba8b99e92ff24.html#a0e2a80fc5c6bcc3d890ba8b99e92ff24">RingElement</a>(coeffR, P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a022fa3ad6c939e59a8d17da93392d521.html#a022fa3ad6c939e59a8d17da93392d521">get_coeff</a>(coeffR, <a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>(), m-&gt;<a class="code" href="../../d7/def/class_engine_monomial_a1d446f650860d37319026b8f99dfe352.html#a1d446f650860d37319026b8f99dfe352">ints</a>()));</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('d6/de2/class_ring_element_ae474f0a814b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

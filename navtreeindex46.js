@@ -1,6 +1,5 @@
 var NAVTREEINDEX46 =
 {
-"dd/d1a/class_schreyer_frame_a5c538a012e7ead19507156eb4ac9081d.html#a5c538a012e7ead19507156eb4ac9081d":[6,0,302,24],
 "dd/d1a/class_schreyer_frame_a6129122dcb7460da57395bc99301e88b.html#a6129122dcb7460da57395bc99301e88b":[6,0,302,39],
 "dd/d1a/class_schreyer_frame_a617664b1f1b1a3d48bb5f52331d5af58.html#a617664b1f1b1a3d48bb5f52331d5af58":[6,0,302,62],
 "dd/d1a/class_schreyer_frame_a61dff83c7955c472bb3229d99c32bca2.html#a61dff83c7955c472bb3229d99c32bca2":[6,0,302,28],
@@ -249,5 +248,6 @@ var NAVTREEINDEX46 =
 "dd/d5f/mutablemat-defs_8hpp_acd2376beef8ba32da79382d336ce351d.html#acd2376beef8ba32da79382d336ce351d":[7,0,0,0,213,9],
 "dd/d5f/mutablemat-defs_8hpp_source.html":[7,0,0,0,213],
 "dd/d60/class_word_with_data_table.html":[6,0,356],
-"dd/d60/class_word_with_data_table_a11b55d80b8a15a9e7933eb8920b54772.html#a11b55d80b8a15a9e7933eb8920b54772":[6,0,356,13]
+"dd/d60/class_word_with_data_table_a11b55d80b8a15a9e7933eb8920b54772.html#a11b55d80b8a15a9e7933eb8920b54772":[6,0,356,13],
+"dd/d60/class_word_with_data_table_a17339754793154c3b91b547ff876539b.html#a17339754793154c3b91b547ff876539b":[6,0,356,0]
 };

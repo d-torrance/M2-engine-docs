@@ -102,12 +102,12 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_af6dfba26d892
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    {</div>
 <div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;      <a class="code" href="../../dc/db8/class_mutable_matrix.html">MutableMatrix</a> *B = A-&gt;<a class="code" href="../../dc/db8/class_mutable_matrix_aad873f9d032bcb24878a6379eac0341c.html#aad873f9d032bcb24878a6379eac0341c">invert</a>();</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;      <span class="keywordflow">if</span> (B==0) <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix not invertible&quot;</span>);</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;      <span class="keywordflow">if</span> (B==<span class="keyword">nullptr</span>) <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix not invertible&quot;</span>);</div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../db/de9/finalize_8cpp_a7a85cceae51c6e27366f8ee12c2d753a.html#a7a85cceae51c6e27366f8ee12c2d753a">internMutableMatrix</a>(B);</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    {</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;  }</div>
 <div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;}</div>
 <div class="ttc" id="aclass_mutable_matrix_aad873f9d032bcb24878a6379eac0341c_html_aad873f9d032bcb24878a6379eac0341c"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_aad873f9d032bcb24878a6379eac0341c.html#aad873f9d032bcb24878a6379eac0341c">MutableMatrix::invert</a></div><div class="ttdeci">virtual MutableMatrix * invert() const =0</div></div>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_af6dfba26d892
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../df/d3c/mutable-matrix_8h.html">mutable-matrix.h</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:46 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -123,17 +123,17 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a483af39a5d9dc608c
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l00885">885</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;{</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;  <span class="keywordflow">if</span> (f == 0) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;  TowerPolynomial *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = f-&gt;arr.polys;</div>
 <div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;  <span class="keywordtype">long</span> deg = f-&gt;deg;</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;  <span class="keywordflow">if</span> (b == 0)</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;  <span class="keywordflow">if</span> (b == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    {</div>
 <div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;      <a class="code" href="../../d3/d42/class_d_poly_ab6f011d51e611e3d699476d484ff1eb3.html#ab6f011d51e611e3d699476d484ff1eb3">dealloc_poly</a>(f);</div>
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    }</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!<a class="code" href="../../d3/d42/class_d_poly_ad874b57fc12ada04e9f3a179b653afb2.html#ad874b57fc12ada04e9f3a179b653afb2">is_one</a>(level - 1, b))</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= deg; i++)</div>
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;      {</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;        <span class="keywordflow">if</span> (*<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != 0) *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d3/d42/class_d_poly_a97309a372254a403991876f5aa8ed4e0.html#a97309a372254a403991876f5aa8ed4e0">mult</a>(level - 1, *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, b, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;        <span class="keywordflow">if</span> (*<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != <span class="keyword">nullptr</span>) *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d3/d42/class_d_poly_a97309a372254a403991876f5aa8ed4e0.html#a97309a372254a403991876f5aa8ed4e0">mult</a>(level - 1, *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, b, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>++;</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;      }</div>
 <div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;}</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a483af39a5d9dc608c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:38 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

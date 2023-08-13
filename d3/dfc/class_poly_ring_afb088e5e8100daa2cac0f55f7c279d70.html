@@ -128,12 +128,12 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_afb088e5e8100da
 <div class="line"><a name="l02533"></a><span class="lineno"> 2533</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>() == <a class="code" href="../../dd/da4/aring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857.html#ab88d3ea2a9742f382a17da830d0b7857">globalQQ</a>)</div>
 <div class="line"><a name="l02534"></a><span class="lineno"> 2534</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/dfc/class_poly_ring_ab326720537af6abb0940193263bc8b2d.html#ab326720537af6abb0940193263bc8b2d">translate_gbvector_from_vec_QQ</a>(F, v, result_denominator);</div>
 <div class="line"><a name="l02535"></a><span class="lineno"> 2535</span>&#160;  result_denominator = <a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a480f948242b890421b63365d1ef8d7b8.html#a480f948242b890421b63365d1ef8d7b8">one</a>();</div>
-<div class="line"><a name="l02536"></a><span class="lineno"> 2536</span>&#160;  <span class="keywordflow">if</span> (v == 0) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l02536"></a><span class="lineno"> 2536</span>&#160;  <span class="keywordflow">if</span> (v == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l02537"></a><span class="lineno"> 2537</span>&#160;  <a class="code" href="../../d8/d73/class_g_b_ring.html">GBRing</a> *GR = <a class="code" href="../../d5/d58/class_polynomial_ring_a6d483e0a62ce61f8b09c55e5229063a0.html#a6d483e0a62ce61f8b09c55e5229063a0">get_gb_ring</a>();</div>
 <div class="line"><a name="l02538"></a><span class="lineno"> 2538</span>&#160;  <a class="code" href="../../dc/d58/classgbvector_heap.html">gbvectorHeap</a> H(GR, F);</div>
 <div class="line"><a name="l02539"></a><span class="lineno"> 2539</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> head;</div>
 <div class="line"><a name="l02540"></a><span class="lineno"> 2540</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *inresult;</div>
-<div class="line"><a name="l02541"></a><span class="lineno"> 2541</span>&#160;  <span class="keywordflow">for</span> (vec w = v; w != 0; w = w-&gt;next)</div>
+<div class="line"><a name="l02541"></a><span class="lineno"> 2541</span>&#160;  <span class="keywordflow">for</span> (vec w = v; w != <span class="keyword">nullptr</span>; w = w-&gt;next)</div>
 <div class="line"><a name="l02542"></a><span class="lineno"> 2542</span>&#160;    {</div>
 <div class="line"><a name="l02543"></a><span class="lineno"> 2543</span>&#160;      inresult = &amp;head;</div>
 <div class="line"><a name="l02544"></a><span class="lineno"> 2544</span>&#160;      <span class="keywordtype">int</span> comp = w-&gt;<a class="code" href="../../d7/d40/structgbvector_a857b617c77d0b7e4b5ec6e2bf8d73b89.html#a857b617c77d0b7e4b5ec6e2bf8d73b89">comp</a> + 1;</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_afb088e5e8100da
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:42 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:50 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

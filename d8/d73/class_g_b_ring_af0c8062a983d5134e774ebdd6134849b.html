@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_af0c8062a983d513
 <div class="fragment"><div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;{</div>
 <div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;  mpz_t a;</div>
 <div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;  mpz_init(a);</div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;  <span class="keywordflow">for</span> (; f != 0; f = f-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;  <span class="keywordflow">for</span> (; f != <span class="keyword">nullptr</span>; f = f-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
 <div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;    {</div>
 <div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;      mpz_divexact(a, f-&gt;<a class="code" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>.<a class="code" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>(), u);</div>
 <div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;      f-&gt;<a class="code" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a> = <a class="code" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;RingZZ::from_int(a);</div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_af0c8062a983d513
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:49 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

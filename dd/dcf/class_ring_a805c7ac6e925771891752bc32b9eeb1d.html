@@ -109,10 +109,10 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a805c7ac6e9257718917
 
 <p class="definition">Definition at line <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html#l00201">201</a> of file <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html">ring-vecs.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;{</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(f)) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(f)) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> head;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  vec result = &amp;head;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">for</span> (vec v = w; v != 0; v = v-&gt;next)</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">for</span> (vec v = w; v != <span class="keyword">nullptr</span>; v = v-&gt;next)</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    {</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> a = <a class="code" href="../../dd/dcf/class_ring_ada0ae7428fbb2d3c0de7d835997d454a.html#ada0ae7428fbb2d3c0de7d835997d454a">mult</a>(v-&gt;coeff, f);</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(a))</div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a805c7ac6e9257718917
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;          result = t;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  result-&gt;next = NULL;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  result-&gt;next = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordflow">return</span> head.<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a>;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;}</div>
 <div class="ttc" id="aclass_ring_a2ab579eb49ebe28eed42e2a083c96c03_html_a2ab579eb49ebe28eed42e2a083c96c03"><div class="ttname"><a href="../../dd/dcf/class_ring_a2ab579eb49ebe28eed42e2a083c96c03.html#a2ab579eb49ebe28eed42e2a083c96c03">Ring::make_vec</a></div><div class="ttdeci">vec make_vec(int r, ring_elem a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d36/ring-vecs_8cpp_source.html#l00020">ring-vecs.cpp:20</a></div></div>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a805c7ac6e9257718917
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

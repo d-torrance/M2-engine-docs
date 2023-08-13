@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('d4/dae/betti_8cpp_source.html','../../
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../d6/d45/class_betti_display_a883e78c6a75bf5ba95f5c9bbdb70e937.html#a883e78c6a75bf5ba95f5c9bbdb70e937">    5</a></span>&#160;<a class="code" href="../../d6/d45/class_betti_display_a883e78c6a75bf5ba95f5c9bbdb70e937.html#a883e78c6a75bf5ba95f5c9bbdb70e937">BettiDisplay::BettiDisplay</a>()</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    : mLoDegree(0), mHiDegree(0), mHiLength(0), mNLevels(0)</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <a class="code" href="../../d6/d45/class_betti_display_a9e32540acba0c8f23c89a90b6ed9719e.html#a9e32540acba0c8f23c89a90b6ed9719e">mValues</a> = 0;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <a class="code" href="../../d6/d45/class_betti_display_a9e32540acba0c8f23c89a90b6ed9719e.html#a9e32540acba0c8f23c89a90b6ed9719e">mValues</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d6/d45/class_betti_display_a4bfb4eedd621c7a73ab061dc7ff0e1e5.html#a4bfb4eedd621c7a73ab061dc7ff0e1e5">   11</a></span>&#160;<a class="code" href="../../d6/d45/class_betti_display_a883e78c6a75bf5ba95f5c9bbdb70e937.html#a883e78c6a75bf5ba95f5c9bbdb70e937">BettiDisplay::BettiDisplay</a>(<span class="keywordtype">int</span> lodegree, <span class="keywordtype">int</span> hidegree, <span class="keywordtype">int</span> hilen)</div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('d4/dae/betti_8cpp_source.html','../../
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d6/d45/class_betti_display_a3bebefbc7182c3909b863593ccf37bd0.html#a3bebefbc7182c3909b863593ccf37bd0">   52</a></span>&#160;<a class="code" href="../../d6/d45/class_betti_display_a3bebefbc7182c3909b863593ccf37bd0.html#a3bebefbc7182c3909b863593ccf37bd0">BettiDisplay::~BettiDisplay</a>()</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">delete</span>[] <a class="code" href="../../d6/d45/class_betti_display_a9e32540acba0c8f23c89a90b6ed9719e.html#a9e32540acba0c8f23c89a90b6ed9719e">mValues</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="../../d6/d45/class_betti_display_a9e32540acba0c8f23c89a90b6ed9719e.html#a9e32540acba0c8f23c89a90b6ed9719e">mValues</a> = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="../../d6/d45/class_betti_display_a9e32540acba0c8f23c89a90b6ed9719e.html#a9e32540acba0c8f23c89a90b6ed9719e">mValues</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d6/d45/class_betti_display_a58685c837d3dc0dc14de9fcfb66b64f3.html#a58685c837d3dc0dc14de9fcfb66b64f3">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d45/class_betti_display_a58685c837d3dc0dc14de9fcfb66b64f3.html#a58685c837d3dc0dc14de9fcfb66b64f3">BettiDisplay::resize</a>(<span class="keywordtype">int</span> new_lo_degree, <span class="keywordtype">int</span> new_hi_degree, <span class="keywordtype">int</span> new_length)</div>
@@ -302,7 +302,7 @@ $(document).ready(function(){initNavTree('d4/dae/betti_8cpp_source.html','../../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d4/dae/betti_8cpp.html">betti.cpp</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:33 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

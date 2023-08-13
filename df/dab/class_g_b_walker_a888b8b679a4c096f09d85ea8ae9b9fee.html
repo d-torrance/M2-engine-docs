@@ -108,12 +108,12 @@ $(document).ready(function(){initNavTree('df/dab/class_g_b_walker_a888b8b679a4c0
 <div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="comment">// Initialize the local variables of the computation</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="../../df/dab/class_g_b_walker_ae4e574b72c4051f61630a4cece7a0554.html#ae4e574b72c4051f61630a4cece7a0554">state</a> = <a class="code" href="../../df/dab/class_g_b_walker_a90f50ff9b1982d3fbcdba46c144b5066.html#a90f50ff9b1982d3fbcdba46c144b5066ac8536ff35cf1e880ecc4bc346477357a">STATE_compute_w</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="../../df/dab/class_g_b_walker_aa33bf94fccac102946c200fee868a2d6.html#aa33bf94fccac102946c200fee868a2d6">ww</a> = 0;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="../../df/dab/class_g_b_walker_ad675de3eee9a04d32616a459f347286a.html#ad675de3eee9a04d32616a459f347286a">inwwG</a> = 0;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="../../df/dab/class_g_b_walker_a541c9af30e308dbde1252f5aab4eebbc.html#a541c9af30e308dbde1252f5aab4eebbc">gb_inwwG</a> = 0;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="../../df/dab/class_g_b_walker_aa33bf94fccac102946c200fee868a2d6.html#aa33bf94fccac102946c200fee868a2d6">ww</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="../../df/dab/class_g_b_walker_ad675de3eee9a04d32616a459f347286a.html#ad675de3eee9a04d32616a459f347286a">inwwG</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="../../df/dab/class_g_b_walker_a541c9af30e308dbde1252f5aab4eebbc.html#a541c9af30e308dbde1252f5aab4eebbc">gb_inwwG</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="../../df/dab/class_g_b_walker_a24d16518c6f3c3e22ad619f72247e346.html#a24d16518c6f3c3e22ad619f72247e346">next_to_reduce</a> = 0;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">// G is already set</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="../../df/dab/class_g_b_walker_a1a3c68322c8876ca1257245fa10595ba.html#a1a3c68322c8876ca1257245fa10595ba">G1</a> = 0;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="../../df/dab/class_g_b_walker_a1a3c68322c8876ca1257245fa10595ba.html#a1a3c68322c8876ca1257245fa10595ba">G1</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
 <div class="ttc" id="aclass_g_b_walker_a1a3c68322c8876ca1257245fa10595ba_html_a1a3c68322c8876ca1257245fa10595ba"><div class="ttname"><a href="../../df/dab/class_g_b_walker_a1a3c68322c8876ca1257245fa10595ba.html#a1a3c68322c8876ca1257245fa10595ba">GBWalker::G1</a></div><div class="ttdeci">MarkedGB * G1</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d5c/gb-walk_8hpp_source.html#l00060">gb-walk.hpp:60</a></div></div>
 <div class="ttc" id="aclass_g_b_walker_a24d16518c6f3c3e22ad619f72247e346_html_a24d16518c6f3c3e22ad619f72247e346"><div class="ttname"><a href="../../df/dab/class_g_b_walker_a24d16518c6f3c3e22ad619f72247e346.html#a24d16518c6f3c3e22ad619f72247e346">GBWalker::next_to_reduce</a></div><div class="ttdeci">int next_to_reduce</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d5c/gb-walk_8hpp_source.html#l00056">gb-walk.hpp:56</a></div></div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('df/dab/class_g_b_walker_a888b8b679a4c0
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/dab/class_g_b_walker.html">GBWalker</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:49 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

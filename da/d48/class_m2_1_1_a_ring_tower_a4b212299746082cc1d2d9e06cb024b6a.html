@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_a4b21
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <a class="code" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a> *newelems = <a class="code" href="../../da/d94/newdelete_8hpp_a8e45ca33f2628740d647f3bdf832b96d.html#a8e45ca33f2628740d647f3bdf832b96d">newarray</a>(<a class="code" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a>, newdeg + 1);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <a class="code" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a> *fp = f-&gt;<a class="code" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9">polys</a>;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++) newelems[i] = fp[i];</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg + 1; i &lt; newdeg + 1; i++) newelems[i] = 0;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg + 1; i &lt; newdeg + 1; i++) newelems[i] = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <span class="keyword">delete</span>[] fp;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      f-&gt;<a class="code" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9">polys</a> = newelems;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      f-&gt;<a class="code" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c">len</a> = newdeg + 1;</div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_a4b21
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../da/d48/class_m2_1_1_a_ring_tower.html">ARingTower</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:45 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:53 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

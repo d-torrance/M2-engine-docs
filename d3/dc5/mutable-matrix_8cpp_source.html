@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected non-negative integer&quot;</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">size_t</span> nrows = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(n);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../db/de9/finalize_8cpp_a7a85cceae51c6e27366f8ee12c2d753a.html#a7a85cceae51c6e27366f8ee12c2d753a">internMutableMatrix</a>(<a class="code" href="../../dc/db8/class_mutable_matrix_afe8166972efc3f4e690eed1c10ef0aac.html#afe8166972efc3f4e690eed1c10ef0aac">MutableMatrix::identity</a>(R, nrows, is_dense));</div>
@@ -268,12 +268,12 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordflow">if</span> (r &lt; 0 || r &gt;= M-&gt;<a class="code" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">n_rows</a>())</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    {</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix row index %d out of range 0 .. %d&quot;</span>, r, M-&gt;<a class="code" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">n_rows</a>() - 1);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordflow">if</span> (c &lt; 0 || c &gt;= M-&gt;<a class="code" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">n_cols</a>())</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    {</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix column index %d out of range 0 .. %d&quot;</span>, c, M-&gt;<a class="code" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">n_cols</a>() - 1);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> result;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  M-&gt;<a class="code" href="../../dc/db8/class_mutable_matrix_a56128821c2eb57f3704e59937bd0472e.html#a56128821c2eb57f3704e59937bd0472e">get_entry</a>(r, c, result);</div>
@@ -574,7 +574,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    {</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  }</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;}</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160; </div>
@@ -685,7 +685,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    {</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;  }</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;}</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160; </div>
@@ -702,7 +702,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    {</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;  }</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;}</div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160; </div>
@@ -863,7 +863,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    {</div>
 <div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;  }</div>
 <div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;}</div>
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160; </div>
@@ -872,12 +872,12 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    {</div>
 <div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;      <a class="code" href="../../dc/db8/class_mutable_matrix.html">MutableMatrix</a> *B = A-&gt;<a class="code" href="../../dc/db8/class_mutable_matrix_aad873f9d032bcb24878a6379eac0341c.html#aad873f9d032bcb24878a6379eac0341c">invert</a>();</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;      <span class="keywordflow">if</span> (B==0) <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix not invertible&quot;</span>);</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;      <span class="keywordflow">if</span> (B==<span class="keyword">nullptr</span>) <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix not invertible&quot;</span>);</div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../db/de9/finalize_8cpp_a7a85cceae51c6e27366f8ee12c2d753a.html#a7a85cceae51c6e27366f8ee12c2d753a">internMutableMatrix</a>(B);</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    {</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;  }</div>
 <div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;}</div>
 <div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160; </div>
@@ -889,7 +889,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    {</div>
 <div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;  }</div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;}</div>
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160; </div>
@@ -901,7 +901,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    {</div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;  }</div>
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;}</div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160; </div>
@@ -913,7 +913,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    {</div>
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;  }</div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;}</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160; </div>
@@ -925,19 +925,19 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    {</div>
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;      *success = 1;</div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;      <a class="code" href="../../dc/db8/class_mutable_matrix.html">MutableMatrix</a> *result = A-&gt;<a class="code" href="../../dc/db8/class_mutable_matrix_a059f64186f5ad18a148dad57ad524aa4.html#a059f64186f5ad18a148dad57ad524aa4">solveLinear</a>(B);</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;      <span class="keywordflow">if</span> (result != NULL)</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;      <span class="keywordflow">if</span> (result != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        {</div>
 <div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="../../db/de9/finalize_8cpp_a7a85cceae51c6e27366f8ee12c2d753a.html#a7a85cceae51c6e27366f8ee12c2d753a">internMutableMatrix</a>(result);</div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        }</div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;        {</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;          <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;        }</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    {</div>
 <div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;      *success = 0;</div>
 <div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;  }</div>
 <div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;}</div>
 <div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160; </div>
@@ -949,19 +949,19 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    {</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;      *success = 1;</div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;      <a class="code" href="../../dc/db8/class_mutable_matrix.html">MutableMatrix</a> *result = A-&gt;<a class="code" href="../../dc/db8/class_mutable_matrix_ad18b183c1f058dd2da77420e5d67f60f.html#ad18b183c1f058dd2da77420e5d67f60f">solveInvertible</a>(B);</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;      <span class="keywordflow">if</span> (result != NULL)</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;      <span class="keywordflow">if</span> (result != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;        {</div>
 <div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="../../db/de9/finalize_8cpp_a7a85cceae51c6e27366f8ee12c2d753a.html#a7a85cceae51c6e27366f8ee12c2d753a">internMutableMatrix</a>(result);</div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;        }</div>
 <div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        {</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;          <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        }</div>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    {</div>
 <div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;      *success = 0;</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;  }</div>
 <div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;}</div>
 <div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160; </div>
@@ -1007,7 +1007,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;    {</div>
 <div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;  }</div>
 <div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;}</div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160; </div>
@@ -1112,7 +1112,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;      <span class="keywordflow">if</span> (M-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a62bb710ec47481354070de00bb2dcddb.html#a62bb710ec47481354070de00bb2dcddb">get_precision</a>() == 0)</div>
 <div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;        {</div>
 <div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected ring over an RR or CC&quot;</span>);</div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;        }</div>
 <div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;      <span class="keywordflow">return</span> M-&gt;<a class="code" href="../../d6/d3f/class_matrix_a3b6756621170dc71e85d96865f1d1f34.html#a3b6756621170dc71e85d96865f1d1f34">clean</a>(epsilon);</div>
 <div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
@@ -1128,7 +1128,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;  <span class="keywordflow">if</span> (R-&gt;<a class="code" href="../../dd/dcf/class_ring_a62bb710ec47481354070de00bb2dcddb.html#a62bb710ec47481354070de00bb2dcddb">get_precision</a>() == 0)</div>
 <div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;    {</div>
 <div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected ring over an RR or CC&quot;</span>);</div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;    }</div>
 <div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, R-&gt;<a class="code" href="../../dd/dcf/class_ring_a9ee59996c167e760c72ace9dacff0ce3.html#a9ee59996c167e760c72ace9dacff0ce3">zeroize_tiny</a>(epsilon, f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>()));</div>
 <div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;}</div>
@@ -1141,7 +1141,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;      <span class="keywordflow">if</span> (M-&gt;<a class="code" href="../../dc/db8/class_mutable_matrix_a7cc399470a14251d96f7059b4457f1cb.html#a7cc399470a14251d96f7059b4457f1cb">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a62bb710ec47481354070de00bb2dcddb.html#a62bb710ec47481354070de00bb2dcddb">get_precision</a>() == 0)</div>
 <div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;        {</div>
 <div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected ring over an RR or CC&quot;</span>);</div>
-<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;        }</div>
 <div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;      M-&gt;<a class="code" href="../../dc/db8/class_mutable_matrix_ad63eecf02b17c98608e5be0a2d6aebb5.html#ad63eecf02b17c98608e5be0a2d6aebb5">clean</a>(epsilon);</div>
 <div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;      <span class="keywordflow">return</span> M;</div>
@@ -1157,7 +1157,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;  <span class="keywordflow">if</span> (R-&gt;<a class="code" href="../../dd/dcf/class_ring_a62bb710ec47481354070de00bb2dcddb.html#a62bb710ec47481354070de00bb2dcddb">get_precision</a>() == 0)</div>
 <div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;    {</div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected ring over an RR or CC&quot;</span>);</div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;    }</div>
 <div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;  gmp_RRmutable norm = <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(gmp_RRmutable);</div>
 <div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;  mpfr_init2(norm, mpfr_get_prec(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>));</div>
@@ -1166,7 +1166,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    {</div>
 <div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;Lp norm only implemented for p = infinity&quot;</span>);</div>
 <div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;      mpfr_clear(norm);</div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;    }</div>
 <div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;  <span class="keywordflow">return</span> norm;</div>
 <div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;}</div>
@@ -1175,7 +1175,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div class="line"><a name="l01093"></a><span class="lineno"><a class="line" href="../../d3/dc5/mutable-matrix_8cpp_ae3274dc975e0691417ca8ef8e3f6eb3b.html#ae3274dc975e0691417ca8ef8e3f6eb3b"> 1093</a></span>&#160;gmp_RRorNull <a class="code" href="../../d3/dc5/mutable-matrix_8cpp_ae3274dc975e0691417ca8ef8e3f6eb3b.html#ae3274dc975e0691417ca8ef8e3f6eb3b">rawRingElementNorm</a>(gmp_RR <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, <span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *f)</div>
 <div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;{</div>
 <div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;  gmp_RRmutable norm = <a class="code" href="../../d3/dc5/mutable-matrix_8cpp_a90177657a355256a11823cc894fc0dba.html#a90177657a355256a11823cc894fc0dba">get_norm_start</a>(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>());</div>
-<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;  <span class="keywordflow">if</span> (!norm) <span class="keywordflow">return</span> 0;  <span class="comment">// error already given.</span></div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;  <span class="keywordflow">if</span> (!norm) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;  <span class="comment">// error already given.</span></div>
 <div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;  f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a308925e8ca2bc536ea6456f99bad0e90.html#a308925e8ca2bc536ea6456f99bad0e90">increase_maxnorm</a>(norm, f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>());</div>
 <div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d0/d41/gmp-util_8h_a8eb5bf01e101b45627045ebad26a4b1c.html#a8eb5bf01e101b45627045ebad26a4b1c">moveTo_gmpRR</a>(norm);</div>
 <div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;}</div>
@@ -1382,7 +1382,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d3/dc5/mutable-matrix_8cpp.html">mutable-matrix.cpp</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:44 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

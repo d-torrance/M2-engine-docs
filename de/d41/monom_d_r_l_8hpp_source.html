@@ -150,13 +150,13 @@ $(document).ready(function(){initNavTree('de/d41/monom_d_r_l_8hpp_source.html','
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d0/da6/class_b_i_basis_1_1_monom_d_r_l_ae2c087191b646ab785ca4bd92cc0798f.html#ae2c087191b646ab785ca4bd92cc0798f">   64</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="../../d0/da6/class_b_i_basis_1_1_monom_d_r_l_ae2c087191b646ab785ca4bd92cc0798f.html#ae2c087191b646ab785ca4bd92cc0798f">MonomDRL::MonomDRL</a>()</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        : <a class="code" href="../../d4/d58/class_b_i_basis_1_1_monom.html">Monom</a>()</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        , Next(0)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        , Next(nullptr)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d0/da6/class_b_i_basis_1_1_monom_d_r_l_a56787154657b7bb118aef7826ba2079e.html#a56787154657b7bb118aef7826ba2079e">   70</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="../../d0/da6/class_b_i_basis_1_1_monom_d_r_l_ae2c087191b646ab785ca4bd92cc0798f.html#ae2c087191b646ab785ca4bd92cc0798f">MonomDRL::MonomDRL</a>(<span class="keyword">const</span> <a class="code" href="../../d0/da6/class_b_i_basis_1_1_monom_d_r_l.html">MonomDRL</a>&amp; anotherMonom)</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        : <a class="code" href="../../d4/d58/class_b_i_basis_1_1_monom.html">Monom</a>()</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        , Next(0)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        , Next(nullptr)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span> (!anotherMonom.<a class="code" href="../../d4/d58/class_b_i_basis_1_1_monom_ace5c7e7f9d408c26588328d3d9b772e4.html#ace5c7e7f9d408c26588328d3d9b772e4">ListHead</a>)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('de/d41/monom_d_r_l_8hpp_source.html','
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d4/d58/class_b_i_basis_1_1_monom_ace5c7e7f9d408c26588328d3d9b772e4.html#ace5c7e7f9d408c26588328d3d9b772e4">ListHead</a> || <a class="code" href="../../d4/d58/class_b_i_basis_1_1_monom_ace5c7e7f9d408c26588328d3d9b772e4.html#ace5c7e7f9d408c26588328d3d9b772e4">ListHead</a>-&gt;<a class="code" href="../../d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_a27e6ebbc6d73553e4cc3ab65c46c45af.html#a27e6ebbc6d73553e4cc3ab65c46c45af">Value</a> &lt; var)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="../../d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node.html">VarsListNode</a>* position = <a class="code" href="../../d4/d58/class_b_i_basis_1_1_monom_ace5c7e7f9d408c26588328d3d9b772e4.html#ace5c7e7f9d408c26588328d3d9b772e4">ListHead</a>;</div>
@@ -256,7 +256,7 @@ $(document).ready(function(){initNavTree('de/d41/monom_d_r_l_8hpp_source.html','
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">if</span> (*iterator)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            {</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                <a class="code" href="../../d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node.html">VarsListNode</a> *nodeToDelete = (*iterator)-&gt;<a class="code" href="../../d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_ad94cd89a5774ddecb9cd01102e148e02.html#ad94cd89a5774ddecb9cd01102e148e02">Next</a>;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                *iterator = 0;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                *iterator = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="keywordflow">while</span> (nodeToDelete)</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                {</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                    iteratorAnother = nodeToDelete;</div>
@@ -686,7 +686,7 @@ $(document).ready(function(){initNavTree('de/d41/monom_d_r_l_8hpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_6d3e1fc03a2c0fe268d053df8b4dd308.html">bibasis</a></li><li class="navelem"><a class="el" href="../../de/d41/monom_d_r_l_8hpp.html">monomDRL.hpp</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:33 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

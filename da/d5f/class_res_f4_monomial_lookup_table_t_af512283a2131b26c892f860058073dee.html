@@ -126,7 +126,7 @@ template&lt;typename Key &gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_source.html">res-f4-monlookup.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_a745a68dc27f7a5da9de7915130952e2b.html#a745a68dc27f7a5da9de7915130952e2b">count</a> += 2;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  mi_node **<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = &amp;top, *up = NULL;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  mi_node **<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = &amp;top, *up = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">bool</span> one_element = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../dc/d51/class_exponent_list_iterator.html">index_res_varpower_monomial</a> i = b; i.<a class="code" href="../../dc/d51/class_exponent_list_iterator_aa4b917e0ca8f707730b8bc452fd51a42.html#aa4b917e0ca8f707730b8bc452fd51a42">valid</a>();)</div>
@@ -135,7 +135,7 @@ template&lt;typename Key &gt; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <a class="code" href="../../d6/dac/varpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec.html#ac06516f99c07ceb08dbb3d05a8aed2ec">varpower_word</a> insert_var = i.var();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <a class="code" href="../../d6/dac/varpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec.html#ac06516f99c07ceb08dbb3d05a8aed2ec">varpower_word</a> insert_exp;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordflow">if</span> (*<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> == NULL)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordflow">if</span> (*<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        {</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;          <span class="comment">// make a new header node</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;          *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_aeb7296f238ddc748e0bad3ba44865944.html#aeb7296f238ddc748e0bad3ba44865944">new_mi_node</a>(insert_var, 0, up);</div>
@@ -216,7 +216,7 @@ template&lt;typename Key &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d5f/class_res_f4_monomial_lookup_table_t.html">ResF4MonomialLookupTableT</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

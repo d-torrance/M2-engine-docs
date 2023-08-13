@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('d2/d32/class_res_f4to_m2_interface_acc
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  std::vector&lt;res_monomial_word&gt; monoms(n * R.<a class="code" href="../../d1/d4c/class_res_poly_ring_a237f1044108c2e4477a4840628540857.html#a237f1044108c2e4477a4840628540857">monoid</a>().<a class="code" href="../../dc/d0d/class_res_monoid_dense_a0c7137f6e207e748ec1fea7f3268fc3e.html#a0c7137f6e207e748ec1fea7f3268fc3e">max_monomial_size</a>());</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  n = 0;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <a class="code" href="../../d7/d0a/res-monomial-types_8hpp_a519813b4b46a3b9a9de16c4845d0609c.html#a519813b4b46a3b9a9de16c4845d0609c">res_monomial_word</a>* nextmonom = monoms.data();</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d7/d40/structgbvector.html">gbvector</a>* t = f; t != 0; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d7/d40/structgbvector.html">gbvector</a>* t = f; t != <span class="keyword">nullptr</span>; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    {</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      R.<a class="code" href="../../d1/d4c/class_res_poly_ring_a7d82e1ebe86b3f8a4cf9c744dec98af1.html#a7d82e1ebe86b3f8a4cf9c744dec98af1">resGausser</a>().<a class="code" href="../../df/d88/class_res_gausser_a93186e7edd7477fb0936b086d515d9e1.html#a93186e7edd7477fb0936b086d515d9e1">from_ring_elem</a>(</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;          coeffs, t-&gt;coeff, f-&gt;<a class="code" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>);  <span class="comment">// note: f-&gt;coeff is assumed to be 1 for</span></div>
@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('d2/d32/class_res_f4to_m2_interface_acc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d32/class_res_f4to_m2_interface.html">ResF4toM2Interface</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

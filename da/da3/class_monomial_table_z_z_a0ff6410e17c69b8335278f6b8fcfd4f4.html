@@ -115,12 +115,12 @@ $(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_a0ff64
 
 <p class="definition">Definition at line <a class="el" href="../../d8/dfa/montable_z_z_8cpp_source.html#l00351">351</a> of file <a class="el" href="../../d8/dfa/montable_z_z_8cpp_source.html">montableZZ.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;{</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  <span class="keywordflow">if</span> (comp &gt;= <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="../../da/da3/class_monomial_table_z_z_ab311557a28f15446964c862ed52241f2.html#ab311557a28f15446964c862ed52241f2">_head</a>.size())) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  <span class="keywordflow">if</span> (comp &gt;= <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="../../da/da3/class_monomial_table_z_z_ab311557a28f15446964c862ed52241f2.html#ab311557a28f15446964c862ed52241f2">_head</a>.size())) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  mon_term *head = <a class="code" href="../../da/da3/class_monomial_table_z_z_ab311557a28f15446964c862ed52241f2.html#ab311557a28f15446964c862ed52241f2">_head</a>[comp];</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  mon_term *t;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  mon_term *result = 0;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  mon_term *result = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="keywordtype">int</span> neqs = 0;</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> expmask = <a class="code" href="../../d8/dfa/montable_z_z_8cpp_a12037dbf8ecf6b1cc9d4e548f1d5452d.html#a12037dbf8ecf6b1cc9d4e548f1d5452d">monomial_mask</a>(<a class="code" href="../../da/da3/class_monomial_table_z_z_a8e7faee5842030eee952cddf3b02c154.html#a8e7faee5842030eee952cddf3b02c154">_nvars</a>, <a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>);</div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_a0ff64
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;              }</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;          <span class="keywordflow">if</span> (is_eq)</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;              <span class="keywordflow">if</span> (result == 0) result = t;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;              <span class="keywordflow">if</span> (result == <span class="keyword">nullptr</span>) result = t;</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;              neqs++;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            }</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        }</div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_a0ff64
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/da3/class_monomial_table_z_z.html">MonomialTableZZ</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:41 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:50 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

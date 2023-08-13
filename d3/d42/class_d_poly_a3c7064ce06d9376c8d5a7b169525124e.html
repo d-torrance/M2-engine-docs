@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a3c7064ce06d9376c8
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">// if negative, then that variable is transcendental over lower vars</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">if</span> (level &lt; 0 || level &gt;= <a class="code" href="../../d3/d42/class_d_poly_ae16cc47ff6c3e6a7e8e72d714a5665db.html#ae16cc47ff6c3e6a7e8e72d714a5665db">nlevels</a>) <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  TowerPolynomial f = <a class="code" href="../../d3/d42/class_d_poly_a04698c503b7101aca77b17ca1f9684b8.html#a04698c503b7101aca77b17ca1f9684b8">extensions</a>[level];</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">if</span> (f == 0) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">return</span> f-&gt;deg;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 <div class="ttc" id="aclass_d_poly_a04698c503b7101aca77b17ca1f9684b8_html_a04698c503b7101aca77b17ca1f9684b8"><div class="ttname"><a href="../../d3/d42/class_d_poly_a04698c503b7101aca77b17ca1f9684b8.html#a04698c503b7101aca77b17ca1f9684b8">DPoly::extensions</a></div><div class="ttdeci">TowerPolynomial * extensions</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da9/dpoly_8hpp_source.html#l00048">dpoly.hpp:48</a></div></div>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a3c7064ce06d9376c8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:38 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

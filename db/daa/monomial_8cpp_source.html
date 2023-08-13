@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('db/daa/monomial_8cpp_source.html','../
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d7/def/class_engine_monomial_ae07ff3fe0b8019f3dba3218a4c098524.html#ae07ff3fe0b8019f3dba3218a4c098524">   26</a></span>&#160;<a class="code" href="../../d7/def/class_engine_monomial.html">EngineMonomial</a> *<a class="code" href="../../d7/def/class_engine_monomial_ae07ff3fe0b8019f3dba3218a4c098524.html#ae07ff3fe0b8019f3dba3218a4c098524">EngineMonomial::make</a>(<span class="keywordtype">int</span> v, <span class="keywordtype">int</span> e)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="../../d7/def/class_engine_monomial.html">EngineMonomial</a> *result = <span class="keyword">new</span> <a class="code" href="../../d7/def/class_engine_monomial_a6ef12ebd1ec826e49f0fcf7183d7254f.html#a6ef12ebd1ec826e49f0fcf7183d7254f">EngineMonomial</a>(v, e);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
@@ -122,23 +122,23 @@ $(document).ready(function(){initNavTree('db/daa/monomial_8cpp_source.html','../
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">if</span> ((m-&gt;len % 2) != 0)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;Monomial expected an even number of elements&quot;</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 2; i &lt; m-&gt;len; i += 2)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (m-&gt;array[i - 2] &lt;= m-&gt;array[i])</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;Monomial expects variables in descending order&quot;</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="../../d7/def/class_engine_monomial.html">EngineMonomial</a> *result = <span class="keyword">new</span> <a class="code" href="../../d7/def/class_engine_monomial_a6ef12ebd1ec826e49f0fcf7183d7254f.html#a6ef12ebd1ec826e49f0fcf7183d7254f">EngineMonomial</a>(m);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d7/def/class_engine_monomial_a8afb93ddd0730efdffc0b792922bedbd.html#a8afb93ddd0730efdffc0b792922bedbd">   51</a></span>&#160;<a class="code" href="../../d7/def/class_engine_monomial.html">EngineMonomial</a> *<a class="code" href="../../d7/def/class_engine_monomial_ae07ff3fe0b8019f3dba3218a4c098524.html#ae07ff3fe0b8019f3dba3218a4c098524">EngineMonomial::make</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> *vp)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="../../d7/def/class_engine_monomial.html">EngineMonomial</a> *result = <span class="keyword">new</span> <a class="code" href="../../d7/def/class_engine_monomial_a6ef12ebd1ec826e49f0fcf7183d7254f.html#a6ef12ebd1ec826e49f0fcf7183d7254f">EngineMonomial</a>(vp);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('db/daa/monomial_8cpp_source.html','../
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <a class="code" href="../../d7/def/class_engine_monomial.html">EngineMonomial</a> *result = <span class="keyword">new</span> <a class="code" href="../../d7/def/class_engine_monomial_a6ef12ebd1ec826e49f0fcf7183d7254f.html#a6ef12ebd1ec826e49f0fcf7183d7254f">EngineMonomial</a>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="../../d1/d39/class_exponent_list_a6d3f962029c76b269a063b554f22d091.html#a6d3f962029c76b269a063b554f22d091">varpower::mult</a>(<a class="code" href="../../d7/def/class_engine_monomial_a1d446f650860d37319026b8f99dfe352.html#a1d446f650860d37319026b8f99dfe352">ints</a>(), b.<a class="code" href="../../d7/def/class_engine_monomial_a1d446f650860d37319026b8f99dfe352.html#a1d446f650860d37319026b8f99dfe352">ints</a>(), result-&gt;<a class="code" href="../../d7/def/class_engine_monomial_a4609f57de910a4f2e8553bb75a6be3c9.html#a4609f57de910a4f2e8553bb75a6be3c9">val</a>);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('db/daa/monomial_8cpp_source.html','../
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="../../d7/def/class_engine_monomial.html">EngineMonomial</a> *result = <span class="keyword">new</span> <a class="code" href="../../d7/def/class_engine_monomial_a6ef12ebd1ec826e49f0fcf7183d7254f.html#a6ef12ebd1ec826e49f0fcf7183d7254f">EngineMonomial</a>;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <a class="code" href="../../d1/d39/class_exponent_list_afd77d7ad562847d818e83f6b8d849639.html#afd77d7ad562847d818e83f6b8d849639">varpower::power</a>(<a class="code" href="../../d7/def/class_engine_monomial_a1d446f650860d37319026b8f99dfe352.html#a1d446f650860d37319026b8f99dfe352">ints</a>(), n, result-&gt;<a class="code" href="../../d7/def/class_engine_monomial_a4609f57de910a4f2e8553bb75a6be3c9.html#a4609f57de910a4f2e8553bb75a6be3c9">val</a>);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
@@ -301,7 +301,7 @@ $(document).ready(function(){initNavTree('db/daa/monomial_8cpp_source.html','../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../db/daa/monomial_8cpp.html">monomial.cpp</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:44 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

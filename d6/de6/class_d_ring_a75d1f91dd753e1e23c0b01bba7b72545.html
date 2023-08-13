@@ -123,12 +123,12 @@ $(document).ready(function(){initNavTree('d6/de6/class_d_ring_a75d1f91dd753e1e23
 
 <p class="definition">Definition at line <a class="el" href="../../dc/da9/dpoly_8hpp_source.html#l00258">258</a> of file <a class="el" href="../../dc/da9/dpoly_8hpp_source.html">dpoly.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">if</span> (a == 0 || b == 0)</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      result = 0;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">if</span> (a == <span class="keyword">nullptr</span> || b == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      result = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      {</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <a class="code" href="../../d6/de6/class_d_ring_ab9fcd4b7844548399b086dc6570500e7.html#ab9fcd4b7844548399b086dc6570500e7">elem</a> a1 = <a class="code" href="../../d6/de6/class_d_ring_af65ba4e65d5e002289f517ba5a7e8442.html#af65ba4e65d5e002289f517ba5a7e8442">D</a>.<a class="code" href="../../d3/d42/class_d_poly_a2f56942fe6577e7c42bae14c3736f3c5.html#a2f56942fe6577e7c42bae14c3736f3c5">copy</a>(<a class="code" href="../../d6/de6/class_d_ring_aa3cdd6c6fdfd4f8764be73e0be764196.html#aa3cdd6c6fdfd4f8764be73e0be764196">level</a>, a);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/de6/class_d_ring_af65ba4e65d5e002289f517ba5a7e8442.html#af65ba4e65d5e002289f517ba5a7e8442">D</a>.<a class="code" href="../../d3/d42/class_d_poly_aeffebcc8466c6c044fbc183112382e3b.html#aeffebcc8466c6c044fbc183112382e3b">division_in_place</a>(<a class="code" href="../../d6/de6/class_d_ring_aa3cdd6c6fdfd4f8764be73e0be764196.html#aa3cdd6c6fdfd4f8764be73e0be764196">level</a>, a1, b, result)) result = 0;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/de6/class_d_ring_af65ba4e65d5e002289f517ba5a7e8442.html#af65ba4e65d5e002289f517ba5a7e8442">D</a>.<a class="code" href="../../d3/d42/class_d_poly_aeffebcc8466c6c044fbc183112382e3b.html#aeffebcc8466c6c044fbc183112382e3b">division_in_place</a>(<a class="code" href="../../d6/de6/class_d_ring_aa3cdd6c6fdfd4f8764be73e0be764196.html#aa3cdd6c6fdfd4f8764be73e0be764196">level</a>, a1, b, result)) result = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <a class="code" href="../../d6/de6/class_d_ring_af65ba4e65d5e002289f517ba5a7e8442.html#af65ba4e65d5e002289f517ba5a7e8442">D</a>.<a class="code" href="../../d3/d42/class_d_poly_ab6f011d51e611e3d699476d484ff1eb3.html#ab6f011d51e611e3d699476d484ff1eb3">dealloc_poly</a>(a1);</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      }</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  }</div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('d6/de6/class_d_ring_a75d1f91dd753e1e23
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/de6/class_d_ring.html">DRing</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:38 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

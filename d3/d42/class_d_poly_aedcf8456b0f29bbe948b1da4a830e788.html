@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_aedcf8456b0f29bbe9
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l00428">428</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;{</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  <span class="keywordflow">if</span> (f == 0)</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    fprintf(fil, <span class="stringliteral">&quot;0&quot;</span>);</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (level == 0)</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    {</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_aedcf8456b0f29bbe9
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++)</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        {</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;          <span class="keywordflow">if</span> (i &gt; 0) fprintf(fil, <span class="stringliteral">&quot;,&quot;</span>);</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i] != 0) <a class="code" href="../../d3/d42/class_d_poly_aedcf8456b0f29bbe948b1da4a830e788.html#aedcf8456b0f29bbe948b1da4a830e788">display_poly</a>(fil, level - 1, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i]);</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i] != <span class="keyword">nullptr</span>) <a class="code" href="../../d3/d42/class_d_poly_aedcf8456b0f29bbe948b1da4a830e788.html#aedcf8456b0f29bbe948b1da4a830e788">display_poly</a>(fil, level - 1, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i]);</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        }</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;      fprintf(fil, <span class="stringliteral">&quot;]&quot;</span>);</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    }</div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_aedcf8456b0f29bbe9
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:38 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -120,18 +120,18 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a67c91e222fc891
 <p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02205">2205</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160;{</div>
 <div class="line"><a name="l02207"></a><span class="lineno"> 2207</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *a = f;</div>
-<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;  <span class="keywordflow">if</span> (a == 0) <span class="keywordflow">return</span> f;</div>
+<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;  <span class="keywordflow">if</span> (a == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> f;</div>
 <div class="line"><a name="l02209"></a><span class="lineno"> 2209</span>&#160; </div>
 <div class="line"><a name="l02210"></a><span class="lineno"> 2210</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> head;</div>
 <div class="line"><a name="l02211"></a><span class="lineno"> 2211</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *result = &amp;head;</div>
-<div class="line"><a name="l02212"></a><span class="lineno"> 2212</span>&#160;  <span class="keywordflow">for</span> (; a != NULL; a = a-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>)</div>
+<div class="line"><a name="l02212"></a><span class="lineno"> 2212</span>&#160;  <span class="keywordflow">for</span> (; a != <span class="keyword">nullptr</span>; a = a-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>)</div>
 <div class="line"><a name="l02213"></a><span class="lineno"> 2213</span>&#160;    {</div>
 <div class="line"><a name="l02214"></a><span class="lineno"> 2214</span>&#160;      result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <a class="code" href="../../d3/dfc/class_poly_ring_acdd279664ded1684b9098f7a8b8b0f1e.html#acdd279664ded1684b9098f7a8b8b0f1e">new_term</a>();</div>
 <div class="line"><a name="l02215"></a><span class="lineno"> 2215</span>&#160;      result = result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l02216"></a><span class="lineno"> 2216</span>&#160;      result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">coeff</a> = <a class="code" href="../../d5/d58/class_polynomial_ring_a54aee749a7364fd81e2460f691480fdc.html#a54aee749a7364fd81e2460f691480fdc">K_</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a2b8cbd8d5bfa9610f5f1070e390ef2c8.html#a2b8cbd8d5bfa9610f5f1070e390ef2c8">divide</a>(a-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">coeff</a>, c);</div>
 <div class="line"><a name="l02217"></a><span class="lineno"> 2217</span>&#160;      <a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_abf72f14643cb88f7118445ff61eda4c1.html#abf72f14643cb88f7118445ff61eda4c1">copy</a>(a-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>, result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>);</div>
 <div class="line"><a name="l02218"></a><span class="lineno"> 2218</span>&#160;    }</div>
-<div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160;  result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = NULL;</div>
+<div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160;  result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l02220"></a><span class="lineno"> 2220</span>&#160;  <span class="keywordflow">return</span> head.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l02221"></a><span class="lineno"> 2221</span>&#160;}</div>
 <div class="ttc" id="aclass_monoid_abf72f14643cb88f7118445ff61eda4c1_html_abf72f14643cb88f7118445ff61eda4c1"><div class="ttname"><a href="../../d9/db1/class_monoid_abf72f14643cb88f7118445ff61eda4c1.html#abf72f14643cb88f7118445ff61eda4c1">Monoid::copy</a></div><div class="ttdeci">void copy(const_monomial m, monomial result) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5c/monoid_8cpp_source.html#l00518">monoid.cpp:518</a></div></div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a67c91e222fc891
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:42 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:50 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

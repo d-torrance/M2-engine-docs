@@ -112,18 +112,18 @@ $(document).ready(function(){initNavTree('db/d31/classres2__comp_abe08103c0a5c3f
 <div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;  <a class="code" href="../../d0/d5c/structres2__pair.html">res2_pair</a> *a, *b;</div>
 <div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160; </div>
 <div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;  a = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;syz-&gt;comp;</div>
-<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;syz-&gt;next == NULL)</div>
-<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;    b = NULL;</div>
+<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;syz-&gt;next == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;    b = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;    b = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;syz-&gt;next-&gt;comp;</div>
 <div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160; </div>
 <div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;  o &lt;&lt; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;me &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;  o &lt;&lt; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;level &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;degree &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;  <span class="keywordflow">if</span> (a != NULL)</div>
+<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;  <span class="keywordflow">if</span> (a != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;    o &lt;&lt; a-&gt;<a class="code" href="../../d0/d5c/structres2__pair_a19dcbc6443d974943e450290c993a59a.html#a19dcbc6443d974943e450290c993a59a">me</a> &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot;. &quot;</span>;</div>
-<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;  <span class="keywordflow">if</span> (b != NULL)</div>
+<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;  <span class="keywordflow">if</span> (b != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;    o &lt;&lt; b-&gt;<a class="code" href="../../d0/d5c/structres2__pair_a19dcbc6443d974943e450290c993a59a.html#a19dcbc6443d974943e450290c993a59a">me</a> &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot;. &quot;</span>;</div>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('db/d31/classres2__comp_abe08103c0a5c3f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d31/classres2__comp.html">res2_comp</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:42 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

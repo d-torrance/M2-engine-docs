@@ -162,10 +162,10 @@ $(document).ready(function(){initNavTree('dc/d5a/classsagbi_a46fdc62b4d511ef235d
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> result(m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa19c616f5a4f272b4da3c29e726ef972.html#aa19c616f5a4f272b4da3c29e726ef972">cols</a>());</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d3/dfc/class_poly_ring.html">PolyRing</a> *<a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> = rawT-&gt;<a class="code" href="../../dd/dcf/class_ring_a7c300ee9c7b94c7cab639b03024736eb.html#a7c300ee9c7b94c7cab639b03024736eb">cast_to_PolyRing</a>();</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d3/dfc/class_poly_ring.html">PolyRing</a> *S = rawS-&gt;<a class="code" href="../../dd/dcf/class_ring_a7c300ee9c7b94c7cab639b03024736eb.html#a7c300ee9c7b94c7cab639b03024736eb">cast_to_PolyRing</a>();</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">if</span> ((<a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> == 0) || (S == 0))</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">if</span> ((<a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> == <span class="keyword">nullptr</span>) || (S == <span class="keyword">nullptr</span>))</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    {</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring&quot;</span>);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">int</span> nslots = <a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>-&gt;getMonoid()-&gt;n_slots(numparts);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
@@ -202,7 +202,7 @@ $(document).ready(function(){initNavTree('dc/d5a/classsagbi_a46fdc62b4d511ef235d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d5a/classsagbi.html">sagbi</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

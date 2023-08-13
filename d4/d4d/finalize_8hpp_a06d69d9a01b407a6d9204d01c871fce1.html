@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('d4/d4d/finalize_8hpp_a06d69d9a01b407a6
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#ifdef MEMDEBUG</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  GC_REGISTER_FINALIZER_IGNORE_SELF(M2_debug_to_outer(G), <a class="code" href="../../db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec">remove_gb</a>, 0, 0, 0);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  GC_REGISTER_FINALIZER_IGNORE_SELF(                  G , <a class="code" href="../../db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec">remove_gb</a>, 0, 0, 0);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  GC_REGISTER_FINALIZER_IGNORE_SELF(                  G , <a class="code" href="../../db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec">remove_gb</a>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  AO_t nfinalized = <a class="code" href="../../db/de9/finalize_8cpp_a975e52a2961e176fb6bfadf4e1fa133c.html#a975e52a2961e176fb6bfadf4e1fa133c">AO_fetch_and_add1</a>(&amp;<a class="code" href="../../db/de9/finalize_8cpp_a5f1bc29409bb07400d83e6c82ccfa7c6.html#a5f1bc29409bb07400d83e6c82ccfa7c6">gbs_nfinalized</a>);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('d4/d4d/finalize_8hpp_a06d69d9a01b407a6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d4/d4d/finalize_8hpp.html">finalize.hpp</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:45 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

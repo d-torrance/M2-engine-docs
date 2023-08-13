@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a79fa8c61785b6bab2
 <div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;  result_maxdegs[level] = <a class="code" href="../../d1/df6/polyroots_8cpp_affe776513b24d84b39af8ab0930fef7f.html#affe776513b24d84b39af8ab0930fef7f">std::max</a>(result_maxdegs[level], f-&gt;deg);</div>
 <div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;  <span class="keywordflow">if</span> (level == 0) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++)</div>
-<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;    <span class="keywordflow">if</span> (f-&gt;arr.polys[i] != 0)</div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;    <span class="keywordflow">if</span> (f-&gt;arr.polys[i] != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;      <a class="code" href="../../d3/d42/class_d_poly_a79fa8c61785b6bab2801b3b08299c14e.html#a79fa8c61785b6bab2801b3b08299c14e">degrees_of_vars</a>(level - 1, f-&gt;arr.polys[i], result_maxdegs);</div>
 <div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;}</div>
 <div class="ttc" id="aclass_d_poly_a79fa8c61785b6bab2801b3b08299c14e_html_a79fa8c61785b6bab2801b3b08299c14e"><div class="ttname"><a href="../../d3/d42/class_d_poly_a79fa8c61785b6bab2801b3b08299c14e.html#a79fa8c61785b6bab2801b3b08299c14e">DPoly::degrees_of_vars</a></div><div class="ttdeci">void degrees_of_vars(int level, const TowerPolynomial f, std::vector&lt; int &gt; &amp;result_max_degs) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l01469">dpoly.cpp:1469</a></div></div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a79fa8c61785b6bab2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:38 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

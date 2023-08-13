@@ -1,7 +1,7 @@
 var class_monomial_ideal =
 [
     [ "Iterator", "d8/d54/class_monomial_ideal_1_1_iterator.html", "d8/d54/class_monomial_ideal_1_1_iterator" ],
-    [ "MonomialIdeal", "df/ddb/class_monomial_ideal_ae3032ab16661c7318c22782e506f0ca4.html#ae3032ab16661c7318c22782e506f0ca4", null ],
+    [ "MonomialIdeal", "df/ddb/class_monomial_ideal_a724a2026a45418f12f37507d172307ef.html#a724a2026a45418f12f37507d172307ef", null ],
     [ "~MonomialIdeal", "df/ddb/class_monomial_ideal_a13dcf9b18227167451f9b749c12c2c44.html#a13dcf9b18227167451f9b749c12c2c44", null ],
     [ "MonomialIdeal", "df/ddb/class_monomial_ideal_a9a7238595508f23e12c950f7d007dcf7.html#a9a7238595508f23e12c950f7d007dcf7", null ],
     [ "MonomialIdeal", "df/ddb/class_monomial_ideal_a83182a1835ab76fbcccd0337ab071da3.html#a83182a1835ab76fbcccd0337ab071da3", null ],

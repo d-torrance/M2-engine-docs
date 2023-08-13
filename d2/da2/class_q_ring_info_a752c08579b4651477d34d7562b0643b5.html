@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('d2/da2/class_q_ring_info_a752c08579b46
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="comment">// remove the gbvector&#39;s as they are stashed in gbrings.</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="comment">// WARNING: these need to be deleted only if the gbring is non-NULL.</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">if</span> (GR == 0) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">if</span> (GR == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d2/da2/class_q_ring_info_a81bdc0d9141f552fe1622287317ad25e.html#a81bdc0d9141f552fe1622287317ad25e">quotient_gbvectors</a>.size(); i++)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    GR-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_a15a21edcd629abbde8800b5d793d3efc.html#a15a21edcd629abbde8800b5d793d3efc">gbvector_remove</a>(<a class="code" href="../../d2/da2/class_q_ring_info_a81bdc0d9141f552fe1622287317ad25e.html#a81bdc0d9141f552fe1622287317ad25e">quotient_gbvectors</a>[i]);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('d2/da2/class_q_ring_info_a752c08579b46
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/da2/class_q_ring_info.html">QRingInfo</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:42 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:50 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

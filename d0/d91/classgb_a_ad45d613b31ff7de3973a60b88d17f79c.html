@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_ad45d613b31ff7de3973a
 <div class="line"><a name="l01994"></a><span class="lineno"> 1994</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> head;</div>
 <div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *frem = &amp;head;</div>
 <div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160; </div>
-<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;  frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = 0;</div>
+<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;  frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;  <span class="keywordtype">int</span> count = 0;</div>
 <div class="line"><a name="l01999"></a><span class="lineno"> 1999</span>&#160;  <a class="code" href="../../d0/d03/struct_p_o_l_y.html">POLY</a> h = f;</div>
 <div class="line"><a name="l02000"></a><span class="lineno"> 2000</span>&#160;  <span class="keywordflow">while</span> (!<a class="code" href="../../d0/d91/classgb_a_a247f12a87fe0a021e26161b6d7ffe13f.html#a247f12a87fe0a021e26161b6d7ffe13f">R</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_a71b113730b3a61cf5ab4deb433dcb880.html#a71b113730b3a61cf5ab4deb433dcb880">gbvector_is_zero</a>(h.<a class="code" href="../../d0/d03/struct_p_o_l_y_a99d4e7b185b16968de58cb6c47ef605e.html#a99d4e7b185b16968de58cb6c47ef605e">f</a>))</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_ad45d613b31ff7de3973a
 <div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;          frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = h.<a class="code" href="../../d0/d03/struct_p_o_l_y_a99d4e7b185b16968de58cb6c47ef605e.html#a99d4e7b185b16968de58cb6c47ef605e">f</a>;</div>
 <div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;          frem = frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l02011"></a><span class="lineno"> 2011</span>&#160;          h.<a class="code" href="../../d0/d03/struct_p_o_l_y_a99d4e7b185b16968de58cb6c47ef605e.html#a99d4e7b185b16968de58cb6c47ef605e">f</a> = h.<a class="code" href="../../d0/d03/struct_p_o_l_y_a99d4e7b185b16968de58cb6c47ef605e.html#a99d4e7b185b16968de58cb6c47ef605e">f</a>-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160;          frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = 0;</div>
+<div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160;          frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l02013"></a><span class="lineno"> 2013</span>&#160;        }</div>
 <div class="line"><a name="l02014"></a><span class="lineno"> 2014</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l02015"></a><span class="lineno"> 2015</span>&#160;        {</div>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_ad45d613b31ff7de3973a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d91/classgb_a.html">gbA</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:39 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:48 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

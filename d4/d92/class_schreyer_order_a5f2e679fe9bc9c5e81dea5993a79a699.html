@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('d4/d92/class_schreyer_order_a5f2e679fe
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordflow">if</span> (n &lt; 0 || n &gt; <a class="code" href="../../d4/d92/class_schreyer_order_a97c1bb8c7d8561b7191ba077f2b82a9e.html#a97c1bb8c7d8561b7191ba077f2b82a9e">rank</a>())</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;sub schreyer order: index out of bounds&quot;</span>);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <a class="code" href="../../d4/d92/class_schreyer_order.html">SchreyerOrder</a> *result = <span class="keyword">new</span> <a class="code" href="../../d4/d92/class_schreyer_order_a76ad1c8ca80316be5e043bb28ce9c61b.html#a76ad1c8ca80316be5e043bb28ce9c61b">SchreyerOrder</a>(<a class="code" href="../../d4/d92/class_schreyer_order_a6479bb604f00026ab8b02376553b413a.html#a6479bb604f00026ab8b02376553b413a">M</a>);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) result-&gt;<a class="code" href="../../d4/d92/class_schreyer_order_a3ede03c89f6de48af0dfbceccfe9d430.html#a3ede03c89f6de48af0dfbceccfe9d430">append</a>(<a class="code" href="../../d4/d92/class_schreyer_order_ae7370d5ac9ae569ae3cba24c3c63cdc9.html#ae7370d5ac9ae569ae3cba24c3c63cdc9">compare_num</a>(i), <a class="code" href="../../d4/d92/class_schreyer_order_ae87b390dc5085de0fa8241bd4d3d56e6.html#ae87b390dc5085de0fa8241bd4d3d56e6">base_monom</a>(i));</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('d4/d92/class_schreyer_order_a5f2e679fe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d92/class_schreyer_order.html">SchreyerOrder</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

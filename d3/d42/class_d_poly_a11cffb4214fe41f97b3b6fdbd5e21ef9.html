@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a11cffb4214fe41f97
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      TowerPolynomial *newelems = <a class="code" href="../../da/d94/newdelete_8hpp_a8e45ca33f2628740d647f3bdf832b96d.html#a8e45ca33f2628740d647f3bdf832b96d">newarray</a>(TowerPolynomial, newdeg + 1);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      TowerPolynomial *fp = f-&gt;arr.polys;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++) newelems[i] = fp[i];</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg + 1; i &lt; newdeg + 1; i++) newelems[i] = 0;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg + 1; i &lt; newdeg + 1; i++) newelems[i] = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      <a class="code" href="../../d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(fp);</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      f-&gt;arr.polys = newelems;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      f-&gt;len = newdeg + 1;</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a11cffb4214fe41f97
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:38 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

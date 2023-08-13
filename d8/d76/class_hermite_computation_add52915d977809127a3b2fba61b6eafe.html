@@ -128,27 +128,27 @@ $(document).ready(function(){initNavTree('d8/d76/class_hermite_computation_add52
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;  <span class="keywordflow">if</span> (m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>() != <a class="code" href="../../d8/df4/hermite_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>)</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    {</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected matrix over ZZ&quot;</span>);</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;      *result_remainder = 0;</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;      *result_quotient = 0;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;      *result_remainder = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;      *result_quotient = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    }</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <span class="keywordflow">if</span> (m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>() != <a class="code" href="../../d8/d76/class_hermite_computation_a8f3b83e3d517935a89ff457714a59347.html#a8f3b83e3d517935a89ff457714a59347">gens</a>-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>()-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>())</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    {</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected matrices to have same number of rows&quot;</span>);</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;      *result_remainder = 0;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;      *result_quotient = 0;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;      *result_remainder = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;      *result_quotient = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    }</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat_remainder(m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa19c616f5a4f272b4da3c29e726ef972.html#aa19c616f5a4f272b4da3c29e726ef972">cols</a>(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a06fff1c55e11c5cadf8a5abd3f6c35cb.html#a06fff1c55e11c5cadf8a5abd3f6c35cb">degree_shift</a>());</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat_quotient(<a class="code" href="../../d8/d76/class_hermite_computation_a6cc8e86f4949619b2c2a4ac73d5d644b.html#a6cc8e86f4949619b2c2a4ac73d5d644b">Fsyz</a>, m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa19c616f5a4f272b4da3c29e726ef972.html#aa19c616f5a4f272b4da3c29e726ef972">cols</a>(), 0);</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat_quotient(<a class="code" href="../../d8/d76/class_hermite_computation_a6cc8e86f4949619b2c2a4ac73d5d644b.html#a6cc8e86f4949619b2c2a4ac73d5d644b">Fsyz</a>, m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa19c616f5a4f272b4da3c29e726ef972.html#aa19c616f5a4f272b4da3c29e726ef972">cols</a>(), <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  <span class="keywordtype">bool</span> all_zeroes = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    {</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;      vec f = <a class="code" href="../../d8/df4/hermite_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_aef0dd726d2923b97198ae701dc3406a6.html#aef0dd726d2923b97198ae701dc3406a6">copy_vec</a>(m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i));</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;      vec fsyz = NULL;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;      vec fsyz = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160; </div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;      <a class="code" href="../../d8/d76/class_hermite_computation_a905c2256c83102682eba846df0842718.html#a905c2256c83102682eba846df0842718">gb_reduce</a>(f, fsyz);</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;      <span class="keywordflow">if</span> (f != 0) all_zeroes = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;      <span class="keywordflow">if</span> (f != <span class="keyword">nullptr</span>) all_zeroes = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160; </div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;      <a class="code" href="../../d8/df4/hermite_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_aa1a3bff97b8dae10e2616a3db6a83ac2.html#aa1a3bff97b8dae10e2616a3db6a83ac2">negate_vec_to</a>(fsyz);</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;      mat_remainder.set_column(i, f);</div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('d8/d76/class_hermite_computation_add52
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d76/class_hermite_computation.html">HermiteComputation</a></li>
-    <li class="footer">Generated on Sun Aug 6 2023 01:22:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 13 2023 01:18:49 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
