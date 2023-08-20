@@ -1,5 +1,6 @@
 var NAVTREEINDEX39 =
 {
+"da/d60/class_sum_collector_af69401278669c9817641089ae2b60da1.html#af69401278669c9817641089ae2b60da1":[6,0,334,0],
 "da/d64/class_monomials_ignoring_component.html":[6,0,202],
 "da/d64/class_monomials_ignoring_component_a104ea93944b329d35c821b819531c5da.html#a104ea93944b329d35c821b819531c5da":[6,0,202,3],
 "da/d64/class_monomials_ignoring_component_a2a4254052b0c51b05f9b2553afeb8ff0.html#a2a4254052b0c51b05f9b2553afeb8ff0":[6,0,202,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX39 =
 "da/dc2/struct_solution_a8d3e7e60d4a037f0d015f82e4842173b.html#a8d3e7e60d4a037f0d015f82e4842173b":[6,0,320,9],
 "da/dc2/struct_solution_a8f39c7aa719a8d3e1efa031d4dee01e8.html#a8f39c7aa719a8d3e1efa031d4dee01e8":[6,0,320,7],
 "da/dc2/struct_solution_aa1bb9c4784ee3f0f85b2bf47e0f42a13.html#aa1bb9c4784ee3f0f85b2bf47e0f42a13":[6,0,320,3],
-"da/dc2/struct_solution_aacdf986f1a02787c7e48f82faf3d9532.html#aacdf986f1a02787c7e48f82faf3d9532":[6,0,320,2],
-"da/dc2/struct_solution_ab55bd4b023d596ce11aaf737b9a6123b.html#ab55bd4b023d596ce11aaf737b9a6123b":[6,0,320,0]
+"da/dc2/struct_solution_aacdf986f1a02787c7e48f82faf3d9532.html#aacdf986f1a02787c7e48f82faf3d9532":[6,0,320,2]
 };
