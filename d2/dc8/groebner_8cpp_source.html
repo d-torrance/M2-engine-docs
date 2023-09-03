@@ -999,7 +999,7 @@ $(document).ready(function(){initNavTree('d2/dc8/groebner_8cpp_source.html','../
 <div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;      <span class="keywordflow">if</span> (isF4)</div>
 <div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;        {</div>
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;          <span class="keywordtype">int</span> numthreads = <a class="code" href="../../d7/dce/_m2-replacement_8c_afa50d77369ce57c74c1ecb78f2642fe1.html#afa50d77369ce57c74c1ecb78f2642fe1">M2_numTBBThreads</a>; <span class="comment">// settable from front end.</span></div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot;Using numthreads = &quot;</span> &lt;&lt; numthreads &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;          <span class="comment">// std::cout &lt;&lt; &quot;Using numthreads = &quot; &lt;&lt; numthreads &lt;&lt; std::endl;</span></div>
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;          <a class="code" href="../../d0/d92/class_n_c_f4.html">NCF4</a> G(A-&gt;<a class="code" href="../../dc/dc0/class_m2_free_algebra_a137c4eb3118a70a835ff19a214a14706.html#a137c4eb3118a70a835ff19a214a14706">freeAlgebra</a>(), elems, maxdeg, strategy, (isParallel ? numthreads : 1));</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;          G.<a class="code" href="../../d0/d92/class_n_c_f4_ace006b34a202dc6443913465e192d34f.html#ace006b34a202dc6443913465e192d34f">compute</a>(maxdeg); <span class="comment">// this argument is actually the soft degree limit</span></div>
 <div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;          <span class="keyword">auto</span> result = <a class="code" href="../../df/d52/_m2_free_algebra_8cpp_a4a116dabef5fc374f622bd0cc144d700.html#a4a116dabef5fc374f622bd0cc144d700">copyPolyVector</a>(A, G.<a class="code" href="../../d0/d92/class_n_c_f4_a02134fdbdfd58c64c894d4d720d156de.html#a02134fdbdfd58c64c894d4d720d156de">currentValue</a>());</div>
@@ -1296,7 +1296,7 @@ $(document).ready(function(){initNavTree('d2/dc8/groebner_8cpp_source.html','../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d2/dc8/groebner_8cpp.html">groebner.cpp</a></li>
-    <li class="footer">Generated on Sun Aug 27 2023 01:19:52 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 3 2023 01:20:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
