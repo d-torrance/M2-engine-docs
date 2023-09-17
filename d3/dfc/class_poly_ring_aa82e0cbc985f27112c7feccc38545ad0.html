@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_aa82e0cbc985f27
 <div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;      <a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_af796c73504cb5e1cdb2737b73468eb04.html#af796c73504cb5e1cdb2737b73468eb04">from_expvector</a>(exp0, m);</div>
 <div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d3/dfc/class_poly_ring_a75a4d77a328f96da40c199df944d4bc7.html#a75a4d77a328f96da40c199df944d4bc7">make_flat_term</a>(a, m);</div>
 <div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;    }</div>
-<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;  <span class="keywordflow">if</span> (logicalK == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;  <span class="keywordflow">if</span> (logicalK == 0)</div>
 <div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;    {</div>
 <div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected actual coefficient ring&quot;</span>);</div>
 <div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d3/dfc/class_poly_ring_a329ec18778d29d75eeba6efd4b94aca1.html#a329ec18778d29d75eeba6efd4b94aca1">from_long</a>(0);</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_aa82e0cbc985f27
 <div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;      logicalK-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a3a3c308184f8d25f6f20ee6e5dee1cfb.html#a3a3c308184f8d25f6f20ee6e5dee1cfb">getMonoid</a>()-&gt;<a class="code" href="../../d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4">to_expvector</a>(f.monom, <a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a> + nvars0);</div>
 <div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;      <a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_af796c73504cb5e1cdb2737b73468eb04.html#af796c73504cb5e1cdb2737b73468eb04">from_expvector</a>(<a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>, t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>);</div>
 <div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;    }</div>
-<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;  inresult-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;  inresult-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = 0;</div>
 <div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;  <span class="keywordflow">return</span> head.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;}</div>
 <div class="ttc" id="a_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12_html_aec09fab2f897ff3d8346961f38331d12"><div class="ttname"><a href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a></div><div class="ttdeci">exponents::Exponents exponents_t</div><div class="ttdef"><b>Definition:</b> <a href="../../da/db0/_exponent_vector_8hpp_source.html#l00276">ExponentVector.hpp:276</a></div></div>
@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_aa82e0cbc985f27
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:50 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

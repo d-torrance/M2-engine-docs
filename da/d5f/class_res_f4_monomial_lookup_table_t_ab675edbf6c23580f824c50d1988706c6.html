@@ -125,7 +125,7 @@ template&lt;typename Key &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_source.html#l00170">170</a> of file <a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_source.html">res-f4-monlookup.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">if</span> (mi == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">if</span> (mi == NULL) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  mi_node *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = mi;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
@@ -135,13 +135,13 @@ template&lt;typename Key &gt; </div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> == <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;header)</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;          <span class="keywordflow">if</span> ((<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;down()) == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;          <span class="keywordflow">if</span> ((<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;down()) == NULL) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;          <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;exp &gt; <a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;var])</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;          <span class="keywordflow">if</span> ((<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;header-&gt;down()) == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;          <span class="keywordflow">if</span> ((<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;header-&gt;down()) == NULL) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;          <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
@@ -168,7 +168,7 @@ template&lt;typename Key &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d5f/class_res_f4_monomial_lookup_table_t.html">ResF4MonomialLookupTableT</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

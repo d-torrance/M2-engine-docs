@@ -121,8 +121,8 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a510e9873649c738eab6
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  <span class="comment">// result = 0</span></div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  <span class="comment">// for each non-zero term f e[component] of the vector v</span></div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  <span class="comment">//    result += f M[v]</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  vec result = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  <span class="keywordflow">for</span> (; v != <span class="keyword">nullptr</span>; v = v-&gt;next)</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  vec result = NULL;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  <span class="keywordflow">for</span> (; v != NULL; v = v-&gt;next)</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    {</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      vec w = this-&gt;<a class="code" href="../../dd/dcf/class_ring_aef0dd726d2923b97198ae701dc3406a6.html#aef0dd726d2923b97198ae701dc3406a6">copy_vec</a>(m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(v-&gt;comp));</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      <a class="code" href="../../dd/dcf/class_ring_a7e69dd9e350769debce345a1467001fe.html#a7e69dd9e350769debce345a1467001fe">mult_vec_to</a>(w, v-&gt;coeff, !opposite_mult);</div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a510e9873649c738eab6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

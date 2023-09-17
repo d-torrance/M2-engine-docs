@@ -148,10 +148,10 @@ $(document).ready(function(){initNavTree('d6/dfe/class_g_binhom__comp_a5c1f06128
 <p class="definition">Definition at line <a class="el" href="../../d6/db9/gb-sugarless_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../d6/db9/gb-sugarless_8cpp_source.html">gb-sugarless.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span> || P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a0029ed30ca6f682c9d0fe4748a32d32e.html#a0029ed30ca6f682c9d0fe4748a32d32e">is_ZZ</a>())</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">if</span> (P == 0 || P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a0029ed30ca6f682c9d0fe4748a32d32e.html#a0029ed30ca6f682c9d0fe4748a32d32e">is_ZZ</a>())</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring over a field&quot;</span>);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="../../d6/dfe/class_g_binhom__comp.html">GBinhom_comp</a> *result =</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keyword">new</span> <a class="code" href="../../d6/dfe/class_g_binhom__comp_a67b14d5a4ecae87a05160386d0bfc9ad.html#a67b14d5a4ecae87a05160386d0bfc9ad">GBinhom_comp</a>(m, <a class="code" href="../../d6/dfe/class_g_binhom__comp_a5284acdf731a0f97fe5d0f82ed65ea11.html#a5284acdf731a0f97fe5d0f82ed65ea11">collect_syz</a>, n_rows_to_keep, gb_weights, <a class="code" href="../../d6/dfe/class_g_binhom__comp_a0d49925639fb431960db49ae86eff8bb.html#a0d49925639fb431960db49ae86eff8bb">strategy</a>);</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('d6/dfe/class_g_binhom__comp_a5c1f06128
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dfe/class_g_binhom__comp.html">GBinhom_comp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:48 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

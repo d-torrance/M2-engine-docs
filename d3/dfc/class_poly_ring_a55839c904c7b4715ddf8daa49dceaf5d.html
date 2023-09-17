@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a55839c904c7b47
 <div class="line"><a name="l02446"></a><span class="lineno"> 2446</span>&#160;  mpz_t denom;</div>
 <div class="line"><a name="l02447"></a><span class="lineno"> 2447</span>&#160;  mpz_init_set_si(denom, 1);</div>
 <div class="line"><a name="l02448"></a><span class="lineno"> 2448</span>&#160; </div>
-<div class="line"><a name="l02449"></a><span class="lineno"> 2449</span>&#160;  <span class="keywordflow">for</span> (vec w = f; w != <span class="keyword">nullptr</span>; w = w-&gt;next)</div>
+<div class="line"><a name="l02449"></a><span class="lineno"> 2449</span>&#160;  <span class="keywordflow">for</span> (vec w = f; w != 0; w = w-&gt;next)</div>
 <div class="line"><a name="l02450"></a><span class="lineno"> 2450</span>&#160;    <a class="code" href="../../d3/dfc/class_poly_ring_aea24367a1270068cfe81760eae0e296a.html#aea24367a1270068cfe81760eae0e296a">determine_common_denominator_QQ</a>(w-&gt;coeff, denom);</div>
 <div class="line"><a name="l02451"></a><span class="lineno"> 2451</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> result = <a class="code" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;RingZZ::from_int(denom);</div>
 <div class="line"><a name="l02452"></a><span class="lineno"> 2452</span>&#160;  mpz_clear(denom);</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a55839c904c7b47
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:50 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

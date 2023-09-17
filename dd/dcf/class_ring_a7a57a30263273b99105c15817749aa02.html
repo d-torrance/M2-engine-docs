@@ -112,12 +112,12 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a7a57a30263273b99105
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(a))</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    {</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;      <a class="code" href="../../dd/dcf/class_ring_a54898084da41b2130f8a8f844043ca6d.html#a54898084da41b2130f8a8f844043ca6d">remove_vec</a>(v);</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;      v = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;      v = 0;</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    }</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> head;</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  head.<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = v;</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  vec <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = &amp;head;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next != 0)</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    {</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;      <span class="comment">// old version: this-&gt;mult_to(p-&gt;next-&gt;coeff, a);</span></div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> c =</div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a7a57a30263273b99105
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

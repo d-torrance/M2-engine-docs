@@ -117,12 +117,12 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a12273ebca945689a198
 <div class="fragment"><div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;{</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;  <a class="code" href="../../d8/d11/gbring_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a> degv;</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;  <a class="code" href="../../dd/dcf/class_ring_af6404c989f5555bba318266e64effbb0.html#af6404c989f5555bba318266e64effbb0">degree_monoid</a>()-&gt;<a class="code" href="../../d9/db1/class_monoid_aa9e749653bacdaee4a132801e9862ab0.html#aa9e749653bacdaee4a132801e9862ab0">one</a>(degf);</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;  <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;  <span class="keywordtype">bool</span> result = <a class="code" href="../../dd/dcf/class_ring_a98dd442aad0b0337e0da58b8a631bd92.html#a98dd442aad0b0337e0da58b8a631bd92">multi_degree</a>(f-&gt;coeff, degf);</div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  <a class="code" href="../../dd/dcf/class_ring_af6404c989f5555bba318266e64effbb0.html#af6404c989f5555bba318266e64effbb0">degree_monoid</a>()-&gt;<a class="code" href="../../d9/db1/class_monoid_ac6c092c8e8afa4ab22276f88def6c2bf.html#ac6c092c8e8afa4ab22276f88def6c2bf">mult</a>(degf, F-&gt;<a class="code" href="../../d6/df0/class_free_module_a61bc243d245bec72ef2e1ea9fb42e052.html#a61bc243d245bec72ef2e1ea9fb42e052">degree</a>(f-&gt;comp), degf);</div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;  degv = <a class="code" href="../../dd/dcf/class_ring_af6404c989f5555bba318266e64effbb0.html#af6404c989f5555bba318266e64effbb0">degree_monoid</a>()-&gt;<a class="code" href="../../d9/db1/class_monoid_a6f3936578edf5076153f30833bc552fe.html#a6f3936578edf5076153f30833bc552fe">make_one</a>();</div>
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160; </div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;  <span class="keywordflow">for</span> (vec v = f-&gt;next; v != <span class="keyword">nullptr</span>; v = v-&gt;next)</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;  <span class="keywordflow">for</span> (vec v = f-&gt;next; v != 0; v = v-&gt;next)</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    {</div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;      <span class="keywordtype">bool</span> ishom = <a class="code" href="../../dd/dcf/class_ring_a98dd442aad0b0337e0da58b8a631bd92.html#a98dd442aad0b0337e0da58b8a631bd92">multi_degree</a>(v-&gt;coeff, degv);</div>
 <div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;      result = result &amp;&amp; ishom;</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a12273ebca945689a198
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

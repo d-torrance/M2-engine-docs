@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('db/daa/class_solvable_algebra_a486fc87
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="../../db/daa/class_solvable_algebra.html">SolvableAlgebra</a> *result = <span class="keyword">new</span> <a class="code" href="../../db/daa/class_solvable_algebra_a153f83bb9bf7fcab276e86f2cc8eb804.html#a153f83bb9bf7fcab276e86f2cc8eb804">SolvableAlgebra</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  result-&gt;<a class="code" href="../../d3/dfc/class_poly_ring_a32787d2bc0bbbe50db56d43f36f7af05.html#a32787d2bc0bbbe50db56d43f36f7af05">initialize_poly_ring</a>(K, M);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">if</span> (!result-&gt;<a class="code" href="../../db/daa/class_solvable_algebra_a5ad3b6ad379ab6c5d53adecdadcfb337.html#a5ad3b6ad379ab6c5d53adecdadcfb337">initialize_solvable</a>(Q)) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">if</span> (!result-&gt;<a class="code" href="../../db/daa/class_solvable_algebra_a5ad3b6ad379ab6c5d53adecdadcfb337.html#a5ad3b6ad379ab6c5d53adecdadcfb337">initialize_solvable</a>(Q)) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  result-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_ae00cf1588bf0dce374a8660d8ab5190e.html#ae00cf1588bf0dce374a8660d8ab5190e">gb_ring_</a> = <a class="code" href="../../d8/d73/class_g_b_ring_ad12e7b69c2b1373a00ec8dbc93652b5a.html#ad12e7b69c2b1373a00ec8dbc93652b5a">GBRing::create_SolvableAlgebra</a>(K, M, result);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('db/daa/class_solvable_algebra_a486fc87
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/daa/class_solvable_algebra.html">SolvableAlgebra</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:52 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:31 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

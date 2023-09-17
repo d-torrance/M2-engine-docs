@@ -100,14 +100,14 @@ $(document).ready(function(){initNavTree('d6/d92/interface_2aring_8cpp_a8eb6d244
 <p class="definition">Definition at line <a class="el" href="../../d6/d92/interface_2aring_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d6/d92/interface_2aring_8cpp_source.html">aring.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *R = <a class="code" href="../../d6/d92/interface_2aring_8cpp_a256928deb618c3ef53e64383df87573a.html#a256928deb618c3ef53e64383df87573a">checkGaloisFieldInput</a>(f);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">if</span> (R == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;  <span class="comment">// error message has already been logged</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">if</span> (R == 0) <span class="keywordflow">return</span> 0;  <span class="comment">// error message has already been logged</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_a8c585bd1fba6c8b4eb55bc5d6ea337d1.html#a8c585bd1fba6c8b4eb55bc5d6ea337d1">M2::ConcreteRing&lt;M2::ARingGFM2&gt;::create</a>(*R, f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>());</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 <div class="ttc" id="aclass_m2_1_1_concrete_ring_a8c585bd1fba6c8b4eb55bc5d6ea337d1_html_a8c585bd1fba6c8b4eb55bc5d6ea337d1"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_a8c585bd1fba6c8b4eb55bc5d6ea337d1.html#a8c585bd1fba6c8b4eb55bc5d6ea337d1">M2::ConcreteRing::create</a></div><div class="ttdeci">static ConcreteRing&lt; RingType &gt; * create(std::unique_ptr&lt; RingType &gt; R)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00513">aring-glue.hpp:513</a></div></div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('d6/d92/interface_2aring_8cpp_a8eb6d244
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d6/d92/interface_2aring_8cpp.html">aring.cpp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:44 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:22 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

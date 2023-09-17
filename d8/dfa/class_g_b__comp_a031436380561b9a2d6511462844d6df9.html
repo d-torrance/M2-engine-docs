@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('d8/dfa/class_g_b__comp_a031436380561b9
 <div class="fragment"><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;{</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> head;</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *result = &amp;head;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = 0;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160; </div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  <a class="code" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> div_totalexp = <a class="code" href="../../da/d94/newdelete_8hpp_aaf4886e5c6f155b7532a0dff02d13591.html#aaf4886e5c6f155b7532a0dff02d13591">newarray_atomic</a>(<span class="keywordtype">int</span>, <a class="code" href="../../d8/dfa/class_g_b__comp_a456cbbfa97b2de40a7542e0c1eaee9e3.html#a456cbbfa97b2de40a7542e0c1eaee9e3">_M</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_a686ece7cc294cc80866870573c1e625b.html#a686ece7cc294cc80866870573c1e625b">n_vars</a>());</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  <span class="keywordtype">int</span> count = 0;</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('d8/dfa/class_g_b__comp_a031436380561b9
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  fb.add(f);</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  fsyzb.add(fsyz);</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *lead;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  <span class="keywordflow">while</span> ((lead = fb.get_lead_term()) != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  <span class="keywordflow">while</span> ((lead = fb.get_lead_term()) != NULL)</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    {</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;      <a class="code" href="../../df/d8c/classint__bag.html">Bag</a> *b;</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;      <a class="code" href="../../d8/dfa/class_g_b__comp_aaa6be129e1e02969e78615699ba6590c.html#aaa6be129e1e02969e78615699ba6590c">_GR</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_aeb6e7165284697483910f5c635b6389c.html#aeb6e7165284697483910f5c635b6389c">gbvector_get_lead_exponents</a>(<a class="code" href="../../d8/dfa/class_g_b__comp_a77ef15790011bf2871ffbf5cf8e9b46d.html#a77ef15790011bf2871ffbf5cf8e9b46d">_F</a>, lead, div_totalexp);</div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('d8/dfa/class_g_b__comp_a031436380561b9
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;                                     fb,</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                                     fsyzb,</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                                     g,</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;                                     <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;                                     0);</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;          count++;</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        }</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../d8/dfa/class_g_b__comp_a23469474120ac734d963a0d61b46691f.html#a23469474120ac734d963a0d61b46691f">_monideals</a>[lead-&gt;<a class="code" href="../../d7/d40/structgbvector_a857b617c77d0b7e4b5ec6e2bf8d73b89.html#a857b617c77d0b7e4b5ec6e2bf8d73b89">comp</a>]-&gt;mi_search-&gt;search_expvector(div_totalexp,</div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('d8/dfa/class_g_b__comp_a031436380561b9
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        {</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;          result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = fb.remove_lead_term();</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;          result = result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;          result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;          result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = 0;</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        }</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    }</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160; </div>
@@ -226,7 +226,7 @@ $(document).ready(function(){initNavTree('d8/dfa/class_g_b__comp_a031436380561b9
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/dfa/class_g_b__comp.html">GB_comp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:26 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

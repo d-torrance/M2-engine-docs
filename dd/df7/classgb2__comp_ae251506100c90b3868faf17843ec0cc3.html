@@ -134,16 +134,16 @@ $(document).ready(function(){initNavTree('dd/df7/classgb2__comp_ae251506100c90b3
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;      <a class="code" href="../../dd/df7/classgb2__comp_acde7d59ea766a8577f2d9ca35145cece.html#acde7d59ea766a8577f2d9ca35145cece">monideals</a>.push_back(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    }</div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160; </div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *fsyz = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *fsyz = NULL;</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dd/df7/classgb2__comp_a5205fd4153022272eba5ba16501f80ac.html#a5205fd4153022272eba5ba16501f80ac">orig_syz</a> &gt;= 0)</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    {</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../dd/df7/classgb2__comp_a5205fd4153022272eba5ba16501f80ac.html#a5205fd4153022272eba5ba16501f80ac">orig_syz</a> &gt; n)</div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        fsyz = <a class="code" href="../../dd/df7/classgb2__comp_af1fbefa6b382f2f7c1636f914739106a.html#af1fbefa6b382f2f7c1636f914739106a">GR</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_a868fb80c116b163e82cd604d5c2d94fb.html#a868fb80c116b163e82cd604d5c2d94fb">gbvector_term</a>(</div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;            <a class="code" href="../../dd/df7/classgb2__comp_a280618ba13cb350e0c53b42a125a245b.html#a280618ba13cb350e0c53b42a125a245b">Fsyz</a>, denom, n + 1);  <span class="comment">// Note the change in component number</span></div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;      <a class="code" href="../../dd/df7/classgb2__comp_aad6410ff9fa625d727f370ac6aa34b59.html#aad6410ff9fa625d727f370ac6aa34b59">gb_reduce</a>(f, fsyz);</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;      <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;      <span class="keywordflow">if</span> (f == NULL)</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        {</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;          <span class="keywordflow">if</span> (fsyz != <span class="keyword">nullptr</span> &amp;&amp; <a class="code" href="../../dd/df7/classgb2__comp_a1fca24a1243451ac117ccfa000bbb9e0.html#a1fca24a1243451ac117ccfa000bbb9e0">syz</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;          <span class="keywordflow">if</span> (fsyz != NULL &amp;&amp; <a class="code" href="../../dd/df7/classgb2__comp_a1fca24a1243451ac117ccfa000bbb9e0.html#a1fca24a1243451ac117ccfa000bbb9e0">syz</a> != NULL)</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;            <a class="code" href="../../dd/df7/classgb2__comp_a1fca24a1243451ac117ccfa000bbb9e0.html#a1fca24a1243451ac117ccfa000bbb9e0">syz</a>-&gt;<a class="code" href="../../dc/d99/classgb__node_a643611c05eb5d2b535debb62c93b4e2b.html#a643611c05eb5d2b535debb62c93b4e2b">receive_generator</a>(fsyz, <a class="code" href="../../dd/df7/classgb2__comp_a0690a8bd60f61e1f8310fa55dde22205.html#a0690a8bd60f61e1f8310fa55dde22205">n_syz</a>++, <a class="code" href="../../dd/df7/classgb2__comp_af1fbefa6b382f2f7c1636f914739106a.html#af1fbefa6b382f2f7c1636f914739106a">GR</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_af5f0ad97485e897100f5f7eadb98e3fb.html#af5f0ad97485e897100f5f7eadb98e3fb">one</a>());</div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        }</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;      <span class="keywordflow">else</span></div>
@@ -156,8 +156,8 @@ $(document).ready(function(){initNavTree('dd/df7/classgb2__comp_ae251506100c90b3
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    {</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;      <a class="code" href="../../dd/df7/classgb2__comp_aad6410ff9fa625d727f370ac6aa34b59.html#aad6410ff9fa625d727f370ac6aa34b59">gb_reduce</a>(f, fsyz);</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;      <a class="code" href="../../dd/df7/classgb2__comp_af1fbefa6b382f2f7c1636f914739106a.html#af1fbefa6b382f2f7c1636f914739106a">GR</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_a15a21edcd629abbde8800b5d793d3efc.html#a15a21edcd629abbde8800b5d793d3efc">gbvector_remove</a>(fsyz);</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;      <a class="code" href="../../dd/df7/classgb2__comp_af1fbefa6b382f2f7c1636f914739106a.html#af1fbefa6b382f2f7c1636f914739106a">GR</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_aa165ba7fd8fae65f9604f5d950be016f.html#aa165ba7fd8fae65f9604f5d950be016f">gbvector_remove_content</a>(f, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;      <span class="keywordflow">if</span> (f != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;      <a class="code" href="../../dd/df7/classgb2__comp_af1fbefa6b382f2f7c1636f914739106a.html#af1fbefa6b382f2f7c1636f914739106a">GR</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_aa165ba7fd8fae65f9604f5d950be016f.html#aa165ba7fd8fae65f9604f5d950be016f">gbvector_remove_content</a>(f, NULL);</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;      <span class="keywordflow">if</span> (f != NULL)</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        {</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;          <span class="comment">// schreyer_append(f);</span></div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;          isgen = <span class="keyword">true</span>;</div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('dd/df7/classgb2__comp_ae251506100c90b3
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;          <span class="comment">// The fsyz part will be set at the end of the degree,</span></div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;          <span class="comment">// after sorting takes place, and after auto-reduction in</span></div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;          <span class="comment">// this degree.</span></div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;          <a class="code" href="../../dd/df7/classgb2__comp_a3b467a868769ad42cbaeb16df66a3799.html#a3b467a868769ad42cbaeb16df66a3799">gb_insert</a>(f, <span class="keyword">nullptr</span>, 1);</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;          <a class="code" href="../../dd/df7/classgb2__comp_a3b467a868769ad42cbaeb16df66a3799.html#a3b467a868769ad42cbaeb16df66a3799">gb_insert</a>(f, NULL, 1);</div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        }</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    }</div>
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;  <span class="keywordflow">return</span> isgen;</div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('dd/df7/classgb2__comp_ae251506100c90b3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/df7/classgb2__comp.html">gb2_comp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:26 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

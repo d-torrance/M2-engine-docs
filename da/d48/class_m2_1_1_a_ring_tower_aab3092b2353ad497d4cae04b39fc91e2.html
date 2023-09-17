@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_aab30
 <p class="definition">Definition at line <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html">aring-tower.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;{</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="comment">// o &lt;&lt; to_string(level, f);</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordflow">if</span> (f == 0)</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    {</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      o &lt;&lt; <span class="stringliteral">&quot;0&quot;</span>;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      <span class="keywordflow">return</span>;</div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_aab30
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <span class="keywordtype">bool</span> firstterm = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg; i &gt;= 0; i--)</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">if</span> (f-&gt;polys[i] != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">if</span> (f-&gt;polys[i] != 0)</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;          {</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <span class="keywordtype">bool</span> this_p_parens = p_parens || (i &gt; 0);</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
@@ -226,7 +226,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_aab30
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../da/d48/class_m2_1_1_a_ring_tower.html">ARingTower</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:53 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

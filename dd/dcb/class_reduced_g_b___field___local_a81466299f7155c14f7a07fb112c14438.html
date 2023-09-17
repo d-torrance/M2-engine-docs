@@ -125,16 +125,16 @@ $(document).ready(function(){initNavTree('dd/dcb/class_reduced_g_b___field___loc
 
 <p class="definition">Definition at line <a class="el" href="../../df/dea/reducedgb-field-local_8cpp_source.html#l00563">563</a> of file <a class="el" href="../../df/dea/reducedgb-field-local_8cpp_source.html">reducedgb-field-local.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;{</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;  <span class="keywordflow">if</span> (f == 0) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160; </div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  <a class="code" href="../../dd/dcb/class_reduced_g_b___field___local_a11680e715214266c6a4dfe1e83b850fd.html#a11680e715214266c6a4dfe1e83b850fd">T1</a> = <a class="code" href="../../d9/d3b/class_monomial_table_a95d573adc0c7e7ed8562344c2c55e204.html#a95d573adc0c7e7ed8562344c2c55e204">MonomialTable::make</a>(<a class="code" href="../../d9/d3f/class_reduced_g_b_a88515b65250c4e3add7d965800b3b83d.html#a88515b65250c4e3add7d965800b3b83d">R</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_adbe13bf9147c68bf0d5167eca152761c.html#adbe13bf9147c68bf0d5167eca152761c">n_vars</a>());</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a627f44b64b5d8d3ae8cb6a675f164405.html#a627f44b64b5d8d3ae8cb6a675f164405">zero</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a627f44b64b5d8d3ae8cb6a675f164405.html#a627f44b64b5d8d3ae8cb6a675f164405">zero</a> = 0;</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> head;</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *frem = &amp;head;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = 0;</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;  <a class="code" href="../../d0/d03/struct_p_o_l_y.html">POLY</a> h;</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;  h.<a class="code" href="../../d0/d03/struct_p_o_l_y_a99d4e7b185b16968de58cb6c47ef605e.html#a99d4e7b185b16968de58cb6c47ef605e">f</a> = f;</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  h.<a class="code" href="../../d0/d03/struct_p_o_l_y_a7efdb8993698f844b8afabb2f926eecd.html#a7efdb8993698f844b8afabb2f926eecd">fsyz</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  h.<a class="code" href="../../d0/d03/struct_p_o_l_y_a7efdb8993698f844b8afabb2f926eecd.html#a7efdb8993698f844b8afabb2f926eecd">fsyz</a> = NULL;</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  <a class="code" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> h_exp = <a class="code" href="../../d9/d3f/class_reduced_g_b_a88515b65250c4e3add7d965800b3b83d.html#a88515b65250c4e3add7d965800b3b83d">R</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_aecb1378eabf8e141cb0585a3295d35ec.html#aecb1378eabf8e141cb0585a3295d35ec">exponents_make</a>();</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  <span class="keywordtype">int</span> h_alpha, g_alpha;</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;  <span class="keywordtype">int</span> h_deg = <a class="code" href="../../dd/dcb/class_reduced_g_b___field___local_a1f4919206de474493385faf4b2bcc0cb.html#a1f4919206de474493385faf4b2bcc0cb">wt</a>-&gt;<a class="code" href="../../d5/d82/class_g_b_weight_abc6bce853dab9c86c8488a5deb642ab1.html#abc6bce853dab9c86c8488a5deb642ab1">gbvector_weight</a>(f);</div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('dd/dcb/class_reduced_g_b___field___loc
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;            }</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;          <span class="keywordflow">if</span> (g_alpha &gt; h_alpha)</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;            {</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;              <span class="keywordflow">if</span> (head.<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;              <span class="keywordflow">if</span> (head.<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> != 0)</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;                {</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;                  <span class="comment">// In this case, we can&#39;t reduce the tail without</span></div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;                  <span class="comment">// risking an infinite loop.  So we declare ourselves done</span></div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('dd/dcb/class_reduced_g_b___field___loc
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;          frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = h.<a class="code" href="../../d0/d03/struct_p_o_l_y_a99d4e7b185b16968de58cb6c47ef605e.html#a99d4e7b185b16968de58cb6c47ef605e">f</a>;</div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;          frem = frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;          h.<a class="code" href="../../d0/d03/struct_p_o_l_y_a99d4e7b185b16968de58cb6c47ef605e.html#a99d4e7b185b16968de58cb6c47ef605e">f</a> = h.<a class="code" href="../../d0/d03/struct_p_o_l_y_a99d4e7b185b16968de58cb6c47ef605e.html#a99d4e7b185b16968de58cb6c47ef605e">f</a>-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;          frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;          frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = 0;</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        }</div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    }</div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160; </div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('dd/dcb/class_reduced_g_b___field___loc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcb/class_reduced_g_b___field___local.html">ReducedGB_Field_Local</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

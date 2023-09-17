@@ -109,24 +109,24 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a3742f8db2692d89b6
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l00515">515</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;{</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  <span class="keywordflow">if</span> (v &gt; level) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  <span class="keywordflow">if</span> (v &gt; level) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  <span class="keywordtype">int</span> which = (v == 0 ? 1 : 0);</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  TowerPolynomial result =</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;      <a class="code" href="../../d3/d42/class_d_poly_ab97eddc9418f9175354022b0b3af4258.html#ab97eddc9418f9175354022b0b3af4258">alloc_poly_0</a>(which);  <span class="comment">// TODO: check that this initializes elements to 0</span></div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;      <a class="code" href="../../d3/d42/class_d_poly_a8161c053a5bc3218290dc71d85f65b6f.html#a8161c053a5bc3218290dc71d85f65b6f">alloc_poly_0</a>(which);  <span class="comment">// TODO: check that this initializes elements to 0</span></div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;  result-&gt;arr.ints[which] = 1;</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= level; i++)</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    {</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;      which = (i == v ? 1 : 0);</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;      TowerPolynomial a = result;</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;      result = <a class="code" href="../../d3/d42/class_d_poly_a210d2eeeaecf38259887816043c1a822.html#a210d2eeeaecf38259887816043c1a822">alloc_poly_n</a>(which);</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;      result = <a class="code" href="../../d3/d42/class_d_poly_a8da712325de7418653b4fd9d3164fe25.html#a8da712325de7418653b4fd9d3164fe25">alloc_poly_n</a>(which);</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;      result-&gt;arr.polys[which] = a;</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    }</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;}</div>
-<div class="ttc" id="aclass_d_poly_a210d2eeeaecf38259887816043c1a822_html_a210d2eeeaecf38259887816043c1a822"><div class="ttname"><a href="../../d3/d42/class_d_poly_a210d2eeeaecf38259887816043c1a822.html#a210d2eeeaecf38259887816043c1a822">DPoly::alloc_poly_n</a></div><div class="ttdeci">static TowerPolynomial alloc_poly_n(int deg, TowerPolynomial *elems=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00265">dpoly.cpp:265</a></div></div>
-<div class="ttc" id="aclass_d_poly_ab97eddc9418f9175354022b0b3af4258_html_ab97eddc9418f9175354022b0b3af4258"><div class="ttname"><a href="../../d3/d42/class_d_poly_ab97eddc9418f9175354022b0b3af4258.html#ab97eddc9418f9175354022b0b3af4258">DPoly::alloc_poly_0</a></div><div class="ttdeci">static TowerPolynomial alloc_poly_0(int deg, long *elems=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00279">dpoly.cpp:279</a></div></div>
+<div class="ttc" id="aclass_d_poly_a8161c053a5bc3218290dc71d85f65b6f_html_a8161c053a5bc3218290dc71d85f65b6f"><div class="ttname"><a href="../../d3/d42/class_d_poly_a8161c053a5bc3218290dc71d85f65b6f.html#a8161c053a5bc3218290dc71d85f65b6f">DPoly::alloc_poly_0</a></div><div class="ttdeci">static TowerPolynomial alloc_poly_0(int deg, long *elems=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00279">dpoly.cpp:279</a></div></div>
+<div class="ttc" id="aclass_d_poly_a8da712325de7418653b4fd9d3164fe25_html_a8da712325de7418653b4fd9d3164fe25"><div class="ttname"><a href="../../d3/d42/class_d_poly_a8da712325de7418653b4fd9d3164fe25.html#a8da712325de7418653b4fd9d3164fe25">DPoly::alloc_poly_n</a></div><div class="ttdeci">static TowerPolynomial alloc_poly_n(int deg, TowerPolynomial *elems=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00265">dpoly.cpp:265</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d42/class_d_poly_ab97eddc9418f9175354022b0b3af4258.html#ab97eddc9418f9175354022b0b3af4258">alloc_poly_0()</a>, and <a class="el" href="../../d3/d42/class_d_poly_a210d2eeeaecf38259887816043c1a822.html#a210d2eeeaecf38259887816043c1a822">alloc_poly_n()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d42/class_d_poly_a8161c053a5bc3218290dc71d85f65b6f.html#a8161c053a5bc3218290dc71d85f65b6f">alloc_poly_0()</a>, and <a class="el" href="../../d3/d42/class_d_poly_a8da712325de7418653b4fd9d3164fe25.html#a8da712325de7418653b4fd9d3164fe25">alloc_poly_n()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/de6/class_d_ring_a280694262e290e0508d6eda49d4661e0.html#a280694262e290e0508d6eda49d4661e0">DRing::set_var()</a>.</p>
 
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a3742f8db2692d89b6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

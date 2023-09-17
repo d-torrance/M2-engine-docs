@@ -111,13 +111,13 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_afeaed3291c13ef6
 <div class="fragment"><div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;{</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> head;</div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *result = &amp;head;</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = v; t != <span class="keyword">nullptr</span>; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = v; t != NULL; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    {</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;      result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <a class="code" href="../../d8/d73/class_g_b_ring_ad7bae20923f7a95c1eccfd768509c307.html#ad7bae20923f7a95c1eccfd768509c307">gbvector_copy_term</a>(t);</div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;      result = result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;      <a class="code" href="../../d8/d73/class_g_b_ring_ad095d4e9734992cec2bb1101d200f270.html#ad095d4e9734992cec2bb1101d200f270">K</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_ad03d14925b01de133086ac7c61fb53dd.html#ad03d14925b01de133086ac7c61fb53dd">mult_to</a>(result-&gt;<a class="code" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>, u);</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    }</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = NULL;</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;  <span class="keywordflow">return</span> head.<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;}</div>
 <div class="ttc" id="aclass_g_b_ring_ad095d4e9734992cec2bb1101d200f270_html_ad095d4e9734992cec2bb1101d200f270"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_ad095d4e9734992cec2bb1101d200f270.html#ad095d4e9734992cec2bb1101d200f270">GBRing::K</a></div><div class="ttdeci">const Ring * K</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00078">gbring.hpp:78</a></div></div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_afeaed3291c13ef6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:48 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

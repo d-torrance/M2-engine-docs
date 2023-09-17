@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('d2/dc8/groebner_8cpp_a205802352b7d4c9b
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    {</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      <a class="code" href="../../d4/d7a/text-io_8cpp_a8284cb28c22ece6792116bf485c18324.html#a8284cb28c22ece6792116bf485c18324">clear_emit_size</a>();</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      <a class="code" href="../../de/ded/class_g_b_computation.html">GBComputation</a> *G = C-&gt;<a class="code" href="../../d6/dea/class_computation_a6432f67b411eacaee9f0845b01d9f40a.html#a6432f67b411eacaee9f0845b01d9f40a">cast_to_GBComputation</a>();</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      <span class="keywordflow">if</span> (G != <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> G-&gt;<a class="code" href="../../de/ded/class_g_b_computation_a508c6a665c8c521b499cc8dc3397572b.html#a508c6a665c8c521b499cc8dc3397572b">get_syzygies</a>();</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      <span class="keywordflow">if</span> (G != 0) <span class="keywordflow">return</span> G-&gt;<a class="code" href="../../de/ded/class_g_b_computation_a508c6a665c8c521b499cc8dc3397572b.html#a508c6a665c8c521b499cc8dc3397572b">get_syzygies</a>();</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;computation type unknown or not implemented&quot;</span>);</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    {</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('d2/dc8/groebner_8cpp_a205802352b7d4c9b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d2/dc8/groebner_8cpp.html">groebner.cpp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:44 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

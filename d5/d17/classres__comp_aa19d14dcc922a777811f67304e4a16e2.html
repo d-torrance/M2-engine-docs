@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('d5/d17/classres__comp_aa19d14dcc922a77
 <div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;    {</div>
 <div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;      <span class="comment">// Sort the pairs in the current level:</span></div>
 <div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;      <a class="code" href="../../dc/d2a/classres__pair.html">res_pair</a> *pp = reslevel[level];</div>
-<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;      <span class="keywordflow">if</span> (pp == <span class="keyword">nullptr</span>) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;      <span class="keywordflow">if</span> (pp == NULL) <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160; </div>
 <div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;      <a class="code" href="../../d5/d17/classres__comp_a28feacb0136b91b9a0e6c1ec1ff9d0cd.html#a28feacb0136b91b9a0e6c1ec1ff9d0cd">compare_type</a> = strategy;</div>
 <div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160;      <a class="code" href="../../d5/d17/classres__comp_ab9aa1454c1bef866b9ff231ce99e1018.html#ab9aa1454c1bef866b9ff231ce99e1018">sort_res_pairs</a>(pp);</div>
@@ -121,9 +121,9 @@ $(document).ready(function(){initNavTree('d5/d17/classres__comp_aa19d14dcc922a77
 <div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160; </div>
 <div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;      <span class="comment">// Now compute the pairs at the next level</span></div>
 <div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;      <a class="code" href="../../dc/d2a/classres__pair.html">res_pair</a> head, *ptrhead;</div>
-<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;      head.<a class="code" href="../../dc/d2a/classres__pair_a2d38b4c678d770da44d183ba0e40ea5e.html#a2d38b4c678d770da44d183ba0e40ea5e">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;      head.<a class="code" href="../../dc/d2a/classres__pair_a2d38b4c678d770da44d183ba0e40ea5e.html#a2d38b4c678d770da44d183ba0e40ea5e">next</a> = NULL;</div>
 <div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;      ptrhead = &amp;head;</div>
-<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="../../dc/d2a/classres__pair.html">res_pair</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = pp; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != <span class="keyword">nullptr</span>; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next) <a class="code" href="../../d5/d17/classres__comp_a88107b9fb4809ec2589b74d4dcb84eaa.html#a88107b9fb4809ec2589b74d4dcb84eaa">skeleton_pairs</a>(ptrhead, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="../../dc/d2a/classres__pair.html">res_pair</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = pp; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != NULL; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next) <a class="code" href="../../d5/d17/classres__comp_a88107b9fb4809ec2589b74d4dcb84eaa.html#a88107b9fb4809ec2589b74d4dcb84eaa">skeleton_pairs</a>(ptrhead, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
 <div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;      reslevel.push_back(head.<a class="code" href="../../dc/d2a/classres__pair_a2d38b4c678d770da44d183ba0e40ea5e.html#a2d38b4c678d770da44d183ba0e40ea5e">next</a>);</div>
 <div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;    }</div>
 <div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160; </div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('d5/d17/classres__comp_aa19d14dcc922a77
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d17/classres__comp.html">res_comp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

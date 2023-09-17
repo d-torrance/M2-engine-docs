@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('db/d31/classres2__comp_af0161f5f1894ca
 
 <p class="definition">Definition at line <a class="el" href="../../dc/dde/res-a0_8cpp_source.html#l00857">857</a> of file <a class="el" href="../../dc/dde/res-a0_8cpp_source.html">res-a0.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;{</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;  <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> f;</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> g;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;  <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> f;</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;  <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">return</span> g;</div>
 <div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;  <a class="code" href="../../d0/d5c/structres2__pair.html">res2_pair</a> head;</div>
 <div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;  <a class="code" href="../../d0/d5c/structres2__pair.html">res2_pair</a> *result = &amp;head;</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;  <span class="keywordflow">while</span> (1) <span class="keywordflow">switch</span> (<a class="code" href="../../db/d31/classres2__comp_a1ed91906af3748788990be32b23e35c2.html#a1ed91906af3748788990be32b23e35c2">compare_res2_pairs</a>(f, g))</div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('db/d31/classres2__comp_af0161f5f1894ca
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;          result-&gt;<a class="code" href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">next</a> = g;</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;          result = result-&gt;<a class="code" href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">next</a>;</div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;          g = g-&gt;<a class="code" href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">next</a>;</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;          <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;          <span class="keywordflow">if</span> (g == NULL)</div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;            {</div>
 <div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;              result-&gt;<a class="code" href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">next</a> = f;</div>
 <div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;              <span class="keywordflow">return</span> head.<a class="code" href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">next</a>;</div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('db/d31/classres2__comp_af0161f5f1894ca
 <div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;          result-&gt;<a class="code" href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">next</a> = f;</div>
 <div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;          result = result-&gt;<a class="code" href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">next</a>;</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;          f = f-&gt;<a class="code" href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">next</a>;</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;          <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;          <span class="keywordflow">if</span> (f == NULL)</div>
 <div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;            {</div>
 <div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;              result-&gt;<a class="code" href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">next</a> = g;</div>
 <div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;              <span class="keywordflow">return</span> head.<a class="code" href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">next</a>;</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('db/d31/classres2__comp_af0161f5f1894ca
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d31/classres2__comp.html">res2_comp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

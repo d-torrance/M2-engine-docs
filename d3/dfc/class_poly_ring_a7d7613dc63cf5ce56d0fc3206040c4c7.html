@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a7d7613dc63cf5c
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02625">2625</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l02627"></a><span class="lineno"> 2627</span>&#160;{</div>
-<div class="line"><a name="l02628"></a><span class="lineno"> 2628</span>&#160;  <span class="keywordflow">if</span> (v == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l02628"></a><span class="lineno"> 2628</span>&#160;  <span class="keywordflow">if</span> (v == 0) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l02629"></a><span class="lineno"> 2629</span>&#160; </div>
 <div class="line"><a name="l02630"></a><span class="lineno"> 2630</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>() == <a class="code" href="../../dd/da4/aring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857.html#ab88d3ea2a9742f382a17da830d0b7857">globalQQ</a>)</div>
 <div class="line"><a name="l02631"></a><span class="lineno"> 2631</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/dfc/class_poly_ring_ae932376785fd6c09b9a634ae0857c35c.html#ae932376785fd6c09b9a634ae0857c35c">translate_gbvector_to_vec_QQ</a>(F, v, <a class="code" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a480f948242b890421b63365d1ef8d7b8.html#a480f948242b890421b63365d1ef8d7b8">one</a>());</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a7d7613dc63cf5c
 <div class="line"><a name="l02633"></a><span class="lineno"> 2633</span>&#160; </div>
 <div class="line"><a name="l02634"></a><span class="lineno"> 2634</span>&#160;  <span class="keywordtype">int</span> firstcomp = v-&gt;<a class="code" href="../../d7/d40/structgbvector_a857b617c77d0b7e4b5ec6e2bf8d73b89.html#a857b617c77d0b7e4b5ec6e2bf8d73b89">comp</a>;</div>
 <div class="line"><a name="l02635"></a><span class="lineno"> 2635</span>&#160;  <span class="keywordtype">int</span> lastcomp = firstcomp;</div>
-<div class="line"><a name="l02636"></a><span class="lineno"> 2636</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = v-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>; t != <span class="keyword">nullptr</span>; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
+<div class="line"><a name="l02636"></a><span class="lineno"> 2636</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = v-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>; t != 0; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
 <div class="line"><a name="l02637"></a><span class="lineno"> 2637</span>&#160;    {</div>
 <div class="line"><a name="l02638"></a><span class="lineno"> 2638</span>&#160;      <span class="keywordflow">if</span> (firstcomp &gt; t-&gt;comp)</div>
 <div class="line"><a name="l02639"></a><span class="lineno"> 2639</span>&#160;        firstcomp = t-&gt;comp;</div>
@@ -139,17 +139,17 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a7d7613dc63cf5c
 <div class="line"><a name="l02645"></a><span class="lineno"> 2645</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> **vec_last = <a class="code" href="../../da/d94/newdelete_8hpp_a8e45ca33f2628740d647f3bdf832b96d.html#a8e45ca33f2628740d647f3bdf832b96d">newarray</a>(<a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *, lastcomp - firstcomp + 1);</div>
 <div class="line"><a name="l02646"></a><span class="lineno"> 2646</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; lastcomp - firstcomp + 1; i++)</div>
 <div class="line"><a name="l02647"></a><span class="lineno"> 2647</span>&#160;    {</div>
-<div class="line"><a name="l02648"></a><span class="lineno"> 2648</span>&#160;      vec_comps[i] = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l02649"></a><span class="lineno"> 2649</span>&#160;      vec_last[i] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l02648"></a><span class="lineno"> 2648</span>&#160;      vec_comps[i] = 0;</div>
+<div class="line"><a name="l02649"></a><span class="lineno"> 2649</span>&#160;      vec_last[i] = 0;</div>
 <div class="line"><a name="l02650"></a><span class="lineno"> 2650</span>&#160;    }</div>
 <div class="line"><a name="l02651"></a><span class="lineno"> 2651</span>&#160; </div>
 <div class="line"><a name="l02652"></a><span class="lineno"> 2652</span>&#160;  <span class="comment">// Now make a list of Nterm&#39;s, copy gbvectors in (except comps)</span></div>
-<div class="line"><a name="l02653"></a><span class="lineno"> 2653</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = v; t != <span class="keyword">nullptr</span>; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
+<div class="line"><a name="l02653"></a><span class="lineno"> 2653</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = v; t != 0; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
 <div class="line"><a name="l02654"></a><span class="lineno"> 2654</span>&#160;    {</div>
 <div class="line"><a name="l02655"></a><span class="lineno"> 2655</span>&#160;      <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *s = <a class="code" href="../../d3/dfc/class_poly_ring_acdd279664ded1684b9098f7a8b8b0f1e.html#acdd279664ded1684b9098f7a8b8b0f1e">new_term</a>();</div>
 <div class="line"><a name="l02656"></a><span class="lineno"> 2656</span>&#160;      GR-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_a2c8da52ae046ea9ed0fa12cb77d78412.html#a2c8da52ae046ea9ed0fa12cb77d78412">gbvector_get_lead_monomial</a>(F, t, s-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>);</div>
 <div class="line"><a name="l02657"></a><span class="lineno"> 2657</span>&#160;      s-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">coeff</a> = t-&gt;coeff;</div>
-<div class="line"><a name="l02658"></a><span class="lineno"> 2658</span>&#160;      s-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l02658"></a><span class="lineno"> 2658</span>&#160;      s-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = 0;</div>
 <div class="line"><a name="l02659"></a><span class="lineno"> 2659</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a> = t-&gt;comp - firstcomp;</div>
 <div class="line"><a name="l02660"></a><span class="lineno"> 2660</span>&#160;      <span class="keywordflow">if</span> (!vec_comps[<a class="code" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>])</div>
 <div class="line"><a name="l02661"></a><span class="lineno"> 2661</span>&#160;        {</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a7d7613dc63cf5c
 <div class="line"><a name="l02670"></a><span class="lineno"> 2670</span>&#160;    }</div>
 <div class="line"><a name="l02671"></a><span class="lineno"> 2671</span>&#160; </div>
 <div class="line"><a name="l02672"></a><span class="lineno"> 2672</span>&#160;  <span class="comment">// Now create the vecs</span></div>
-<div class="line"><a name="l02673"></a><span class="lineno"> 2673</span>&#160;  vec result = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l02673"></a><span class="lineno"> 2673</span>&#160;  vec result = 0;</div>
 <div class="line"><a name="l02674"></a><span class="lineno"> 2674</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a> = 0; <a class="code" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a> &lt; lastcomp - firstcomp + 1; <a class="code" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>++)</div>
 <div class="line"><a name="l02675"></a><span class="lineno"> 2675</span>&#160;    <span class="keywordflow">if</span> (vec_comps[<a class="code" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>])</div>
 <div class="line"><a name="l02676"></a><span class="lineno"> 2676</span>&#160;      {</div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a7d7613dc63cf5c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:50 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

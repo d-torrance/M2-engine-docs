@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('dc/d98/class_skew_polynomial_ring_ac59
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="../../dc/d98/class_skew_polynomial_ring.html">SkewPolynomialRing</a> *result = <span class="keyword">new</span> <a class="code" href="../../dc/d98/class_skew_polynomial_ring_a0adde18cb1db286d31db3868157bb632.html#a0adde18cb1db286d31db3868157bb632">SkewPolynomialRing</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  result-&gt;<a class="code" href="../../d3/dfc/class_poly_ring_a32787d2bc0bbbe50db56d43f36f7af05.html#a32787d2bc0bbbe50db56d43f36f7af05">initialize_poly_ring</a>(K, M);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordflow">if</span> (!result-&gt;<a class="code" href="../../dc/d98/class_skew_polynomial_ring_a59a1eaf2c5cbd40fceb3f71d72994479.html#a59a1eaf2c5cbd40fceb3f71d72994479">initialize_skew</a>(skewvars)) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordflow">if</span> (!result-&gt;<a class="code" href="../../dc/d98/class_skew_polynomial_ring_a59a1eaf2c5cbd40fceb3f71d72994479.html#a59a1eaf2c5cbd40fceb3f71d72994479">initialize_skew</a>(skewvars)) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  result-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_ae00cf1588bf0dce374a8660d8ab5190e.html#ae00cf1588bf0dce374a8660d8ab5190e">gb_ring_</a> = <a class="code" href="../../d8/d73/class_g_b_ring_a10f2695991307adabbeb34846253fb99.html#a10f2695991307adabbeb34846253fb99">GBRing::create_SkewPolynomialRing</a>(K, M, result-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a46236cd31fb7cb00825673ac4b691675.html#a46236cd31fb7cb00825673ac4b691675">skew_</a>);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('dc/d98/class_skew_polynomial_ring_ac59
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d98/class_skew_polynomial_ring.html">SkewPolynomialRing</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:52 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:31 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

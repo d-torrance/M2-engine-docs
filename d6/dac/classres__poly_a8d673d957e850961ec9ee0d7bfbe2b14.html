@@ -99,10 +99,10 @@ $(document).ready(function(){initNavTree('d6/dac/classres__poly_a8d673d957e85096
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d11/res-a1-poly_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../d7/d11/res-a1-poly_8cpp_source.html">res-a1-poly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> c_inv = <a class="code" href="../../d6/dac/classres__poly_a9814772af5b8c50d36eca02df7105033.html#a9814772af5b8c50d36eca02df7105033">K</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a6e158a0a10dbc5ab15f38be603ba8d88.html#a6e158a0a10dbc5ab15f38be603ba8d88">invert</a>(f-&gt;<a class="code" href="../../d9/d1b/structresterm_a34796788a6394a6a715a05ff0e48fb77.html#a34796788a6394a6a715a05ff0e48fb77">coeff</a>);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d9/d1b/structresterm.html">resterm</a> *tm = f; tm != <span class="keyword">nullptr</span>; tm = tm-&gt;<a class="code" href="../../d9/d1b/structresterm_afd51a10339309dd1e7b60e185ef8caf5.html#afd51a10339309dd1e7b60e185ef8caf5">next</a>) <a class="code" href="../../d6/dac/classres__poly_a9814772af5b8c50d36eca02df7105033.html#a9814772af5b8c50d36eca02df7105033">K</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_ad03d14925b01de133086ac7c61fb53dd.html#ad03d14925b01de133086ac7c61fb53dd">mult_to</a>(tm-&gt;coeff, c_inv);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d9/d1b/structresterm.html">resterm</a> *tm = f; tm != NULL; tm = tm-&gt;<a class="code" href="../../d9/d1b/structresterm_afd51a10339309dd1e7b60e185ef8caf5.html#afd51a10339309dd1e7b60e185ef8caf5">next</a>) <a class="code" href="../../d6/dac/classres__poly_a9814772af5b8c50d36eca02df7105033.html#a9814772af5b8c50d36eca02df7105033">K</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_ad03d14925b01de133086ac7c61fb53dd.html#ad03d14925b01de133086ac7c61fb53dd">mult_to</a>(tm-&gt;coeff, c_inv);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="../../d6/dac/classres__poly_a9814772af5b8c50d36eca02df7105033.html#a9814772af5b8c50d36eca02df7105033">K</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a01cb95f67031f0ee729eb3ac65c3ce68.html#a01cb95f67031f0ee729eb3ac65c3ce68">remove</a>(c_inv);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('d6/dac/classres__poly_a8d673d957e85096
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dac/classres__poly.html">res_poly</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

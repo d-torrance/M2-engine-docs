@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('da/d4d/comp-gb_8cpp_source.html','../.
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R1 = m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *R2 = R1-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (R2 == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (R2 == 0)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="comment">// Look for the correct computation type here.</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">if</span> (R1 == <a class="code" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>)</div>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('da/d4d/comp-gb_8cpp_source.html','../.
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#warning &quot;handle non polynomial rings&quot;</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;GB computation for non-polynomial rings not yet re-implemented&quot;</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">//  const PolynomialRing *R = R2-&gt;get_flattened_ring();</span></div>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('da/d4d/comp-gb_8cpp_source.html','../.
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="../../db/de9/finalize_8cpp_a06d69d9a01b407a6d9204d01c871fce1.html#a06d69d9a01b407a6d9204d01c871fce1">intern_GB</a>(result);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">return</span> result != <span class="keyword">nullptr</span> ? <span class="keyword">new</span> <a class="code" href="../../de/ded/class_g_b_computation_ac013af229680d9e95621fc39bdedb8b8.html#ac013af229680d9e95621fc39bdedb8b8">GBProxy</a>(result) : <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">return</span> result != NULL ? <span class="keyword">new</span> <a class="code" href="../../de/ded/class_g_b_computation_ac013af229680d9e95621fc39bdedb8b8.html#ac013af229680d9e95621fc39bdedb8b8">GBProxy</a>(result) : NULL;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#if 0</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">//   if (is_graded)</span></div>
@@ -278,7 +278,7 @@ $(document).ready(function(){initNavTree('da/d4d/comp-gb_8cpp_source.html','../.
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">// used.</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;{</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;Hilbert function use is not implemented for this GB algorithm&quot;</span>);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
 <div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="../../de/ded/class_g_b_computation_ad21c5976a3c291f7e67f27fa12fd7a38.html#ad21c5976a3c291f7e67f27fa12fd7a38">  197</a></span>&#160;<span class="keyword">const</span> <a class="code" href="../../d6/d3f/class_matrix.html">Matrix</a> <span class="comment">/* or null */</span> *<a class="code" href="../../de/ded/class_g_b_computation_ad21c5976a3c291f7e67f27fa12fd7a38.html#ad21c5976a3c291f7e67f27fa12fd7a38">GBComputation::get_parallel_lead_terms</a>(</div>
@@ -287,7 +287,7 @@ $(document).ready(function(){initNavTree('da/d4d/comp-gb_8cpp_source.html','../.
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      <span class="stringliteral">&quot;Cannot compute parallel lead terms for this kind of Groebner &quot;</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      <span class="stringliteral">&quot;computation&quot;</span>);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">// Local Variables:</span></div>
@@ -337,7 +337,7 @@ $(document).ready(function(){initNavTree('da/d4d/comp-gb_8cpp_source.html','../.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../da/d4d/comp-gb_8cpp.html">comp-gb.cpp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:41 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:20 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('d1/d80/localring_8cpp_a695595e1e7c0180
 <p class="definition">Definition at line <a class="el" href="../../d1/d80/localring_8cpp_source.html#l00739">739</a> of file <a class="el" href="../../d1/d80/localring_8cpp_source.html">localring.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;{</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d6/dfd/class_local_ring.html">LocalRing</a> *L = f-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_ad78cf2030aec84b6f55389e4f1e9797d.html#ad78cf2030aec84b6f55389e4f1e9797d">cast_to_LocalRing</a>();</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;  <span class="keywordflow">if</span> (L == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;  <span class="keywordflow">if</span> (L == 0)</div>
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    {</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected an object over a local ring&quot;</span>);</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('d1/d80/localring_8cpp_a695595e1e7c0180
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d1/d80/localring_8cpp.html">localring.cpp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:45 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

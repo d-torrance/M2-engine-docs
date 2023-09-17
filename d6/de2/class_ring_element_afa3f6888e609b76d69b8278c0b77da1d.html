@@ -104,10 +104,10 @@ $(document).ready(function(){initNavTree('d6/de2/class_ring_element_afa3f6888e60
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          <span class="stringliteral">&quot;ring multiplication requires both elements to have the same base &quot;</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          <span class="stringliteral">&quot;ring&quot;</span>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> result = <a class="code" href="../../d6/de2/class_ring_element_aac17d01996fc44a0ce837b4e7351f198.html#aac17d01996fc44a0ce837b4e7351f198">R</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_ada0ae7428fbb2d3c0de7d835997d454a.html#ada0ae7428fbb2d3c0de7d835997d454a">mult</a>(<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>(), b.<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>());</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="../../d6/de2/class_ring_element_a0e2a80fc5c6bcc3d890ba8b99e92ff24.html#a0e2a80fc5c6bcc3d890ba8b99e92ff24">RingElement</a>(<a class="code" href="../../d6/de2/class_ring_element_aac17d01996fc44a0ce837b4e7351f198.html#aac17d01996fc44a0ce837b4e7351f198">R</a>, result);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
 <div class="ttc" id="aclass_ring_ada0ae7428fbb2d3c0de7d835997d454a_html_ada0ae7428fbb2d3c0de7d835997d454a"><div class="ttname"><a href="../../dd/dcf/class_ring_ada0ae7428fbb2d3c0de7d835997d454a.html#ada0ae7428fbb2d3c0de7d835997d454a">Ring::mult</a></div><div class="ttdeci">virtual ring_elem mult(const ring_elem f, const ring_elem g) const =0</div></div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('d6/de2/class_ring_element_afa3f6888e60
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

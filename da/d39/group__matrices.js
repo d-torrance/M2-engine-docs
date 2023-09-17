@@ -77,7 +77,7 @@ var group__matrices =
     [ "MatrixConstructor", "d3/d7a/class_matrix_constructor.html", [
       [ "MatrixConstructor", "d3/d7a/class_matrix_constructor_aa8054180ed82e06d84d6ad190c8062e2.html#aa8054180ed82e06d84d6ad190c8062e2", null ],
       [ "MatrixConstructor", "d3/d7a/class_matrix_constructor_ac77f4b54729dae9555130631d866f3ba.html#ac77f4b54729dae9555130631d866f3ba", null ],
-      [ "MatrixConstructor", "d3/d7a/class_matrix_constructor_a418a0d0eb18db95c00be9bf1999fdedc.html#a418a0d0eb18db95c00be9bf1999fdedc", null ],
+      [ "MatrixConstructor", "d3/d7a/class_matrix_constructor_aa7e8e942a59474705d23c05853f26c3b.html#aa7e8e942a59474705d23c05853f26c3b", null ],
       [ "append", "d3/d7a/class_matrix_constructor_a6cac2dfdd6d7e76cb4be7ce3862fcaf6.html#a6cac2dfdd6d7e76cb4be7ce3862fcaf6", null ],
       [ "append", "d3/d7a/class_matrix_constructor_a82cd5af150336ac9a4cb9c5670e4c0ea.html#a82cd5af150336ac9a4cb9c5670e4c0ea", null ],
       [ "compute_column_degree", "d3/d7a/class_matrix_constructor_a1122ebc8257b13640765fc82c123cfc0.html#a1122ebc8257b13640765fc82c123cfc0", null ],

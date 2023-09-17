@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d6/d05/classbinomial_g_b_aaafd0bb2e5e7
 <div class="fragment"><div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;{</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;  monomial_list *r;</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;  monomial_list **deglist = <a class="code" href="../../da/d94/newdelete_8hpp_a8e45ca33f2628740d647f3bdf832b96d.html#a8e45ca33f2628740d647f3bdf832b96d">newarray</a>(monomial_list *, <a class="code" href="../../d6/d05/classbinomial_g_b_ad65f14278524f1b91e52e04d7c293391.html#ad65f14278524f1b91e52e04d7c293391">_max_degree</a> + 1);</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= <a class="code" href="../../d6/d05/classbinomial_g_b_ad65f14278524f1b91e52e04d7c293391.html#ad65f14278524f1b91e52e04d7c293391">_max_degree</a>; i++) deglist[i] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= <a class="code" href="../../d6/d05/classbinomial_g_b_ad65f14278524f1b91e52e04d7c293391.html#ad65f14278524f1b91e52e04d7c293391">_max_degree</a>; i++) deglist[i] = NULL;</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;  <span class="keywordflow">for</span> (iterator <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d6/d05/classbinomial_g_b_a12eca205a36b0c007dc4cb6756d67e01.html#a12eca205a36b0c007dc4cb6756d67e01">begin</a>(); <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != <a class="code" href="../../d6/d05/classbinomial_g_b_afc740f3bbbb25e1f2ac2bfae4c3eda0f.html#afc740f3bbbb25e1f2ac2bfae4c3eda0f">end</a>(); <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>++)</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    {</div>
@@ -113,13 +113,13 @@ $(document).ready(function(){initNavTree('d6/d05/classbinomial_g_b_aaafd0bb2e5e7
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;      nl-&gt;next = deglist[d];</div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;      deglist[d] = nl;</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    }</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;  monomial_list *result = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;  monomial_list *result = NULL;</div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160; </div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> d = 0; d &lt;= <a class="code" href="../../d6/d05/classbinomial_g_b_ad65f14278524f1b91e52e04d7c293391.html#ad65f14278524f1b91e52e04d7c293391">_max_degree</a>; d++)</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    <span class="keywordflow">if</span> (deglist[d] != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    <span class="keywordflow">if</span> (deglist[d] != NULL)</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;      {</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        monomial_list *currentresult = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        <span class="keywordflow">while</span> (deglist[d] != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        monomial_list *currentresult = NULL;</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        <span class="keywordflow">while</span> (deglist[d] != NULL)</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;          {</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;            monomial_list *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = deglist[d];</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;            deglist[d] = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next;</div>
@@ -143,16 +143,16 @@ $(document).ready(function(){initNavTree('d6/d05/classbinomial_g_b_aaafd0bb2e5e7
 <div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;                currentresult = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;              }</div>
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;          }</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        <span class="keywordflow">if</span> (result == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        <span class="keywordflow">if</span> (result == NULL)</div>
 <div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;          result = currentresult;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (currentresult != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (currentresult != NULL)</div>
 <div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;          {</div>
 <div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;            monomial_list *q;</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;            <span class="keywordflow">for</span> (q = result; q-&gt;next != <span class="keyword">nullptr</span>; q = q-&gt;next)</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;            <span class="keywordflow">for</span> (q = result; q-&gt;next != NULL; q = q-&gt;next)</div>
 <div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;              ;</div>
 <div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;            q-&gt;next = currentresult;</div>
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;          }</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        currentresult = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        currentresult = NULL;</div>
 <div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;      }</div>
 <div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  <a class="code" href="../../d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(deglist);</div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;  <span class="keywordflow">return</span> result;</div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('d6/d05/classbinomial_g_b_aaafd0bb2e5e7
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d05/classbinomial_g_b.html">binomialGB</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:46 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

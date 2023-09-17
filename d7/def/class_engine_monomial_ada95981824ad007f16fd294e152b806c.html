@@ -110,16 +110,16 @@ $(document).ready(function(){initNavTree('d7/def/class_engine_monomial_ada959818
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">if</span> ((m-&gt;len % 2) != 0)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;Monomial expected an even number of elements&quot;</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 2; i &lt; m-&gt;len; i += 2)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (m-&gt;array[i - 2] &lt;= m-&gt;array[i])</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;Monomial expects variables in descending order&quot;</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="../../d7/def/class_engine_monomial.html">EngineMonomial</a> *result = <span class="keyword">new</span> <a class="code" href="../../d7/def/class_engine_monomial_a6ef12ebd1ec826e49f0fcf7183d7254f.html#a6ef12ebd1ec826e49f0fcf7183d7254f">EngineMonomial</a>(m);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="ttc" id="aclass_engine_monomial_a6ef12ebd1ec826e49f0fcf7183d7254f_html_a6ef12ebd1ec826e49f0fcf7183d7254f"><div class="ttname"><a href="../../d7/def/class_engine_monomial_a6ef12ebd1ec826e49f0fcf7183d7254f.html#a6ef12ebd1ec826e49f0fcf7183d7254f">EngineMonomial::EngineMonomial</a></div><div class="ttdeci">EngineMonomial()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/daa/monomial_8cpp_source.html#l00007">monomial.cpp:7</a></div></div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('d7/def/class_engine_monomial_ada959818
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/def/class_engine_monomial.html">EngineMonomial</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

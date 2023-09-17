@@ -108,10 +108,10 @@ $(document).ready(function(){initNavTree('de/dfb/classhilb__comp_af0a64bcacdeb9f
 <p class="definition">Definition at line <a class="el" href="../../da/d90/hilb_8cpp_source.html#l00665">665</a> of file <a class="el" href="../../da/d90/hilb_8cpp_source.html">hilb.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;{</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = <a class="code" href="../../de/dfb/classhilb__comp_ad3894293525272b88e8a3b3a44f79f77.html#ad3894293525272b88e8a3b3a44f79f77">M</a>-&gt;get_ring()-&gt;<a class="code" href="../../d9/db1/class_monoid_a4503903402520f2121e75c8814511acb.html#a4503903402520f2121e75c8814511acb">get_degree_ring</a>();</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;  <span class="keywordflow">if</span> (P == 0) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;  <a class="code" href="../../de/dfb/classhilb__comp.html">hilb_comp</a> *hf = <span class="keyword">new</span> <a class="code" href="../../de/dfb/classhilb__comp_a5e885ebee094e3e3fcef2afa40f9951e.html#a5e885ebee094e3e3fcef2afa40f9951e">hilb_comp</a>(P, <a class="code" href="../../de/dfb/classhilb__comp_ad3894293525272b88e8a3b3a44f79f77.html#ad3894293525272b88e8a3b3a44f79f77">M</a>);</div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;  <span class="keywordtype">int</span> retval = hf-&gt;<a class="code" href="../../de/dfb/classhilb__comp_a1293f9736c38f3f57d5b7183777ae976.html#a1293f9736c38f3f57d5b7183777ae976">calc</a>(-1);</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;  <span class="keywordflow">if</span> (retval != <a class="code" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213a45f992597e767ffedbba1563ebfa6045">COMP_DONE</a>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;  <span class="keywordflow">if</span> (retval != <a class="code" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213a45f992597e767ffedbba1563ebfa6045">COMP_DONE</a>) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;  <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *result = hf-&gt;<a class="code" href="../../de/dfb/classhilb__comp_ac8ac7f8024616fd5514707edf081b966.html#ac8ac7f8024616fd5514707edf081b966">value</a>();</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;  <span class="keyword">delete</span> hf;</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;  <span class="keywordflow">return</span> result;</div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('de/dfb/classhilb__comp_af0a64bcacdeb9f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dfb/classhilb__comp.html">hilb_comp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:48 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

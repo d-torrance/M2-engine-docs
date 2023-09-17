@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_aee5967b07cd5e7d40
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">if</span> (f == 0) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = oldlevel; i &gt; newlevel; i--)</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">if</span> (f-&gt;deg &gt; 0)</div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_aee5967b07cd5e7d40
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      TowerPolynomial g = f-&gt;arr.polys[0];</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      f-&gt;arr.polys[0] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      f-&gt;arr.polys[0] = 0;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <a class="code" href="../../d3/d42/class_d_poly_ab6f011d51e611e3d699476d484ff1eb3.html#ab6f011d51e611e3d699476d484ff1eb3">dealloc_poly</a>(f);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      f = g;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_aee5967b07cd5e7d40
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -121,13 +121,13 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_aa5474e4319c97c0bc7e
 
 <p class="definition">Definition at line <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html#l00704">704</a> of file <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html">ring-vecs.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;{</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;  <span class="keywordflow">if</span> (v == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;  <span class="keywordflow">if</span> (v == NULL)</div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    {</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;attempting to find degree of zero vector&quot;</span>);</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    }</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;  <a class="code" href="../../dd/dcf/class_ring_a4e183811e66298270c5f9dd77277f578.html#a4e183811e66298270c5f9dd77277f578">degree_of_var</a>(n, v-&gt;coeff, lo, hi);</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;  <span class="keywordflow">for</span> (vec w = v-&gt;next; w != <span class="keyword">nullptr</span>; w = w-&gt;next)</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;  <span class="keywordflow">for</span> (vec w = v-&gt;next; w != 0; w = w-&gt;next)</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    {</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;      <span class="keywordtype">int</span> lo1, hi1;</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;      <a class="code" href="../../dd/dcf/class_ring_a4e183811e66298270c5f9dd77277f578.html#a4e183811e66298270c5f9dd77277f578">degree_of_var</a>(n, w-&gt;coeff, lo1, hi1);</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_aa5474e4319c97c0bc7e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

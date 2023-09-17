@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a99764aad7596e897826
 <div class="fragment"><div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;{</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;  <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> head;</div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;  <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> *result = &amp;head;</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  <span class="keywordflow">for</span> (vec w = v; w != <span class="keyword">nullptr</span>; w = w-&gt;next)</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  <span class="keywordflow">for</span> (vec w = v; w != 0; w = w-&gt;next)</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    {</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> a = <a class="code" href="../../dd/dcf/class_ring_a9506152db714ef40d2f7acf8773a8d7a.html#a9506152db714ef40d2f7acf8773a8d7a">divide_by_var</a>(n, d, w-&gt;coeff);</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(a))</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a99764aad7596e897826
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;          result = t;</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        }</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    }</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;  result-&gt;<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;  result-&gt;<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = 0;</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;  <span class="keywordflow">return</span> head.<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a>;</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;}</div>
 <div class="ttc" id="aclass_ring_a2ab579eb49ebe28eed42e2a083c96c03_html_a2ab579eb49ebe28eed42e2a083c96c03"><div class="ttname"><a href="../../dd/dcf/class_ring_a2ab579eb49ebe28eed42e2a083c96c03.html#a2ab579eb49ebe28eed42e2a083c96c03">Ring::make_vec</a></div><div class="ttdeci">vec make_vec(int r, ring_elem a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d36/ring-vecs_8cpp_source.html#l00020">ring-vecs.cpp:20</a></div></div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a99764aad7596e897826
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"df/dab/class_g_b_walker_a1a3c68322c8876ca1257245fa10595ba.html#a1a3c68322c8876ca1257245fa10595ba":[4,3,0,8,28],
 "df/dab/class_g_b_walker_a24d16518c6f3c3e22ad619f72247e346.html#a24d16518c6f3c3e22ad619f72247e346":[4,3,0,8,35],
 "df/dab/class_g_b_walker_a2c07c18fd3930628ead7ea4a3d5a7042.html#a2c07c18fd3930628ead7ea4a3d5a7042":[4,3,0,8,32],
 "df/dab/class_g_b_walker_a46e58838db69ecfe743b62e6be34cda9.html#a46e58838db69ecfe743b62e6be34cda9":[4,3,0,8,2],
@@ -200,7 +201,6 @@ var NAVTREEINDEX55 =
 "df/ddb/class_monomial_ideal_a6f8926a0e2a349e7b7c7d4416d74f067.html#a6f8926a0e2a349e7b7c7d4416d74f067":[6,0,193,14],
 "df/ddb/class_monomial_ideal_a710d441abf6976ab2c77210391ce7c3b.html#a710d441abf6976ab2c77210391ce7c3b":[6,0,193,45],
 "df/ddb/class_monomial_ideal_a718beec22919e08a40fcaee52f4bc005.html#a718beec22919e08a40fcaee52f4bc005":[6,0,193,62],
-"df/ddb/class_monomial_ideal_a724a2026a45418f12f37507d172307ef.html#a724a2026a45418f12f37507d172307ef":[6,0,193,1],
 "df/ddb/class_monomial_ideal_a74f2a7f2ce262c0d030838df5c15e41f.html#a74f2a7f2ce262c0d030838df5c15e41f":[6,0,193,52],
 "df/ddb/class_monomial_ideal_a77937df74d029cbde07efa994a023b96.html#a77937df74d029cbde07efa994a023b96":[6,0,193,41],
 "df/ddb/class_monomial_ideal_a7b6fe145bb13df14cb27dc37258d1755.html#a7b6fe145bb13df14cb27dc37258d1755":[6,0,193,57],
@@ -229,6 +229,7 @@ var NAVTREEINDEX55 =
 "df/ddb/class_monomial_ideal_ad580a2b46747af408644100b72524118.html#ad580a2b46747af408644100b72524118":[6,0,193,55],
 "df/ddb/class_monomial_ideal_ad6d1140e6ffd609c4b27639686708491.html#ad6d1140e6ffd609c4b27639686708491":[6,0,193,37],
 "df/ddb/class_monomial_ideal_ae04fad2dcfc2838d5a1fbb0c0e42290c.html#ae04fad2dcfc2838d5a1fbb0c0e42290c":[6,0,193,5],
+"df/ddb/class_monomial_ideal_ae3032ab16661c7318c22782e506f0ca4.html#ae3032ab16661c7318c22782e506f0ca4":[6,0,193,1],
 "df/ddb/class_monomial_ideal_af0e6bcb007b3e6d8869e820d08e5b3bc.html#af0e6bcb007b3e6d8869e820d08e5b3bc":[6,0,193,48],
 "df/ddb/class_monomial_ideal_af77dfe9a92b5c64c46ee2f0f2d301258.html#af77dfe9a92b5c64c46ee2f0f2d301258":[6,0,193,44],
 "df/ddb/class_monomial_ideal_af811da0593d8eb43b8a5d893b4b0edb5.html#af811da0593d8eb43b8a5d893b4b0edb5":[6,0,193,50],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "df/de1/class_f4_vec_a973003b140305a5861f74d9581bfb5a3.html#a973003b140305a5861f74d9581bfb5a3":[6,0,83,0],
 "df/de1/class_f4_vec_aac1cea22bef235e1683a451bdf0eceec.html#aac1cea22bef235e1683a451bdf0eceec":[6,0,83,15],
 "df/de1/class_f4_vec_aac76870a90c812a5978e435f15beb207.html#aac76870a90c812a5978e435f15beb207":[6,0,83,12],
-"df/de1/class_f4_vec_ab0e34ca3aa4d16b7bcd0960bdba60015.html#ab0e34ca3aa4d16b7bcd0960bdba60015":[6,0,83,7],
-"df/de1/class_f4_vec_ab3a3497797c18e10cb3db1c39f77281c.html#ab3a3497797c18e10cb3db1c39f77281c":[6,0,83,1]
+"df/de1/class_f4_vec_ab0e34ca3aa4d16b7bcd0960bdba60015.html#ab0e34ca3aa4d16b7bcd0960bdba60015":[6,0,83,7]
 };

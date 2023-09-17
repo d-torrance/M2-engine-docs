@@ -116,13 +116,13 @@ $(document).ready(function(){initNavTree('d8/d14/freemodule_8cpp_a9bf92a47f843d8
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordflow">if</span> (eachdeg == 0)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;rawFreeModule: degree rank 0, but sequence of degrees given&quot;</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d6/da9/namespaceffpack_interface_a7fe9019d71b118738d03cf718ed15807.html#a7fe9019d71b118738d03cf718ed15807">rank</a> = degs-&gt;len / eachdeg;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d6/da9/namespaceffpack_interface_a7fe9019d71b118738d03cf718ed15807.html#a7fe9019d71b118738d03cf718ed15807">rank</a> * eachdeg != degs-&gt;len)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;inappropriate number of degrees&quot;</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;          <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="../../d8/d11/gbring_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a> deg = D-&gt;<a class="code" href="../../d9/db1/class_monoid_a6f3936578edf5076153f30833bc552fe.html#a6f3936578edf5076153f30833bc552fe">make_one</a>();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *F = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>();</div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('d8/d14/freemodule_8cpp_a9bf92a47f843d8
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 <div class="ttc" id="aclass_free_module_a70e90276abbdf7722815b3482c4b6a3d_html_a70e90276abbdf7722815b3482c4b6a3d"><div class="ttname"><a href="../../d6/df0/class_free_module_a70e90276abbdf7722815b3482c4b6a3d.html#a70e90276abbdf7722815b3482c4b6a3d">FreeModule::append</a></div><div class="ttdeci">void append(const_monomial d)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dff/freemod_8cpp_source.html#l00127">freemod.cpp:127</a></div></div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('d8/d14/freemodule_8cpp_a9bf92a47f843d8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d8/d14/freemodule_8cpp.html">freemodule.cpp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:44 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_a90177657a3
 <div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;  <span class="keywordflow">if</span> (R-&gt;<a class="code" href="../../dd/dcf/class_ring_a62bb710ec47481354070de00bb2dcddb.html#a62bb710ec47481354070de00bb2dcddb">get_precision</a>() == 0)</div>
 <div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;    {</div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected ring over an RR or CC&quot;</span>);</div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;    }</div>
 <div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;  gmp_RRmutable norm = <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(gmp_RRmutable);</div>
 <div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;  mpfr_init2(norm, mpfr_get_prec(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>));</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_a90177657a3
 <div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    {</div>
 <div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;Lp norm only implemented for p = infinity&quot;</span>);</div>
 <div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;      mpfr_clear(norm);</div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;    }</div>
 <div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;  <span class="keywordflow">return</span> norm;</div>
 <div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;}</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_a90177657a3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d3/dc5/mutable-matrix_8cpp.html">mutable-matrix.cpp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:45 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

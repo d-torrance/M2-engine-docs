@@ -111,12 +111,12 @@ $(document).ready(function(){initNavTree('d8/d76/class_hermite_computation_a905c
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  <span class="comment">// (in absolute value).</span></div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> head;</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> *result = &amp;head;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  head.<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <span class="keywordflow">while</span> (f != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  head.<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = 0;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <span class="keywordflow">while</span> (f != 0)</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    {</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a> = f-&gt;comp;</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;      <a class="code" href="../../db/dde/structhm__elem.html">hm_elem</a> *h = <a class="code" href="../../d8/d76/class_hermite_computation_a80979f0614a80e9ea86b198ca37b3e6f.html#a80979f0614a80e9ea86b198ca37b3e6f">initial</a>[<a class="code" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>];</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="keywordflow">if</span> (h != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="keywordflow">if</span> (h != 0)</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        {</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;          <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> v;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;          <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code" href="../../d1/d02/namespacempfr_a34202039f44574fa594858f1d8faba37.html#a34202039f44574fa594858f1d8faba37">rem</a> =</div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('d8/d76/class_hermite_computation_a905c
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      result-&gt;<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = f;</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      f = f-&gt;next;</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      result = result-&gt;<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a>;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      result-&gt;<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      result-&gt;<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = 0;</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('d8/d76/class_hermite_computation_a905c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d76/class_hermite_computation.html">HermiteComputation</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:48 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

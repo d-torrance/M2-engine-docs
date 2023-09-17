@@ -132,8 +132,8 @@ $(document).ready(function(){initNavTree('d2/d32/class_res_f4to_m2_interface_a41
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>** last = <a class="code" href="../../da/d94/newdelete_8hpp_a8e45ca33f2628740d647f3bdf832b96d.html#a8e45ca33f2628740d647f3bdf832b96d">newarray</a>(<a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>*, F-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>());</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; F-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>(); i++)</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      comps[i] = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      last[i] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      comps[i] = 0;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      last[i] = 0;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keywordtype">int</span>* <a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[M-&gt;<a class="code" href="../../d9/db1/class_monoid_a686ece7cc294cc80866870573c1e625b.html#a686ece7cc294cc80866870573c1e625b">n_vars</a>()];</div>
@@ -148,8 +148,8 @@ $(document).ready(function(){initNavTree('d2/d32/class_res_f4to_m2_interface_a41
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> a =</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;          R.<a class="code" href="../../d1/d4c/class_res_poly_ring_a7d82e1ebe86b3f8a4cf9c744dec98af1.html#a7d82e1ebe86b3f8a4cf9c744dec98af1">resGausser</a>().<a class="code" href="../../df/d88/class_res_gausser_ac76899158f868d8a5040fc1b0cdc7c75.html#ac76899158f868d8a5040fc1b0cdc7c75">to_ring_elem</a>(origR-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a7e8c03a55da33b51714f6b95f4b06923.html#a7e8c03a55da33b51714f6b95f4b06923">getCoefficientRing</a>(), f.<a class="code" href="../../db/d8e/class_res_polynomial_a0f213e3f5660087d50aa61a5572799c2.html#a0f213e3f5660087d50aa61a5572799c2">coeffs</a>, i);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>* g = origR-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a98b2e44941716f33a2f2f2d9e2344983.html#a98b2e44941716f33a2f2f2d9e2344983">make_flat_term</a>(a, m1);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      g-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      <span class="keywordflow">if</span> (last[comp] == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      g-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = 0;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      <span class="keywordflow">if</span> (last[comp] == 0)</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        {</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;          comps[comp] = g;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;          last[comp] = g;</div>
@@ -160,15 +160,15 @@ $(document).ready(function(){initNavTree('d2/d32/class_res_f4to_m2_interface_a41
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;          last[comp] = g;</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        }</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  vec result = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  vec result = 0;</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; F-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>(); i++)</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <span class="keywordflow">if</span> (comps[i] != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <span class="keywordflow">if</span> (comps[i] != 0)</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        {</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;          vec v = origR-&gt;<a class="code" href="../../dd/dcf/class_ring_a2ab579eb49ebe28eed42e2a083c96c03.html#a2ab579eb49ebe28eed42e2a083c96c03">make_vec</a>(i, comps[i]);</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;          origR-&gt;<a class="code" href="../../dd/dcf/class_ring_ac3bf5e7ce2fc181cc6944e8614ca86c1.html#ac3bf5e7ce2fc181cc6944e8614ca86c1">add_vec_to</a>(result, v);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;          comps[i] = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;          last[i] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;          comps[i] = 0;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;          last[i] = 0;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        }</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('d2/d32/class_res_f4to_m2_interface_a41
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d32/class_res_f4to_m2_interface.html">ResF4toM2Interface</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

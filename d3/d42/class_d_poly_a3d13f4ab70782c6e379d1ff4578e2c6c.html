@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a3d13f4ab70782c6e3
 <p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l00144">144</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="comment">// o &lt;&lt; to_string(level, f);</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">if</span> (f == 0)</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    {</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      o &lt;&lt; <span class="stringliteral">&quot;0&quot;</span>;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="keywordflow">return</span>;</div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a3d13f4ab70782c6e3
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    {</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keywordtype">bool</span> firstterm = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg; i &gt;= 0; i--)</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">if</span> (f-&gt;arr.polys[i] != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">if</span> (f-&gt;arr.polys[i] != 0)</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;          {</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="keywordtype">bool</span> this_p_parens = p_parens || (i &gt; 0);</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a3d13f4ab70782c6e3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

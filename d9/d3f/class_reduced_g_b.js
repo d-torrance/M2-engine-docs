@@ -5,7 +5,7 @@ var class_reduced_g_b =
     [ "cast_to_GBComputation", "d9/d3f/class_reduced_g_b_a89347074cd6840c2c48879a98852f830.html#a89347074cd6840c2c48879a98852f830", null ],
     [ "complete_thru_degree", "d9/d3f/class_reduced_g_b_aea695e0672c1346c4cdf298cf9c61c06.html#aea695e0672c1346c4cdf298cf9c61c06", null ],
     [ "contains", "d9/d3f/class_reduced_g_b_a747269a57b029a8193bc0f236b66fff7.html#a747269a57b029a8193bc0f236b66fff7", null ],
-    [ "create", "d9/d3f/class_reduced_g_b_a7b66fb4c7fbefbd3c42c4356dfc8ba78.html#a7b66fb4c7fbefbd3c42c4356dfc8ba78", null ],
+    [ "create", "d9/d3f/class_reduced_g_b_aa5a1d25268db1b301bb54f4dd4e0cb1e.html#aa5a1d25268db1b301bb54f4dd4e0cb1e", null ],
     [ "get_change", "d9/d3f/class_reduced_g_b_a3e7decf0d99557e744d23097d2bc163d.html#a3e7decf0d99557e744d23097d2bc163d", null ],
     [ "get_gb", "d9/d3f/class_reduced_g_b_a7cd3700612daeb267c03ebf7b3dbae3c.html#a7cd3700612daeb267c03ebf7b3dbae3c", null ],
     [ "get_initial", "d9/d3f/class_reduced_g_b_a62c0b403d3ce5d9cdd1391f8cba6be0b.html#a62c0b403d3ce5d9cdd1391f8cba6be0b", null ],

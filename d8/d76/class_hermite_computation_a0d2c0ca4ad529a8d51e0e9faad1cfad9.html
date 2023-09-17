@@ -116,13 +116,13 @@ $(document).ready(function(){initNavTree('d8/d76/class_hermite_computation_a0d2c
 <p class="definition">Definition at line <a class="el" href="../../d8/df4/hermite_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d8/df4/hermite_8cpp_source.html">hermite.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    : <a class="code" href="../../d8/d76/class_hermite_computation_ae972e9abb549c747e78ba1d54a384441.html#ae972e9abb549c747e78ba1d54a384441">row</a>(m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>() - 1),</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <a class="code" href="../../d8/d76/class_hermite_computation_a8f3b83e3d517935a89ff457714a59347.html#a8f3b83e3d517935a89ff457714a59347">gens</a>(m),</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="../../d8/d76/class_hermite_computation_ab2a39fa582d94959275b6e7b0f8ddccb.html#ab2a39fa582d94959275b6e7b0f8ddccb">GB_list</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="../../d8/d76/class_hermite_computation_ab2a39fa582d94959275b6e7b0f8ddccb.html#ab2a39fa582d94959275b6e7b0f8ddccb">GB_list</a>(NULL),</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <a class="code" href="../../d8/d76/class_hermite_computation_a410ca40db2d428ef11f5bcb8b1223299.html#a410ca40db2d428ef11f5bcb8b1223299">n_gb</a>(0),</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <a class="code" href="../../d8/d76/class_hermite_computation_a8c6901609e2f305955a890442c4a59fa.html#a8c6901609e2f305955a890442c4a59fa">collect_syz</a>(collsyz)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>(); i++) <a class="code" href="../../d8/d76/class_hermite_computation_a80979f0614a80e9ea86b198ca37b3e6f.html#a80979f0614a80e9ea86b198ca37b3e6f">initial</a>.push_back(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>(); i++) <a class="code" href="../../d8/d76/class_hermite_computation_a80979f0614a80e9ea86b198ca37b3e6f.html#a80979f0614a80e9ea86b198ca37b3e6f">initial</a>.push_back(NULL);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">if</span> (nsyz &lt; 0 || nsyz &gt; m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>()) nsyz = m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="../../d8/d76/class_hermite_computation_a1e1b8ff45ae263271c22e51e30cd344f.html#a1e1b8ff45ae263271c22e51e30cd344f">n_comps_per_syz</a> = nsyz;</div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('d8/d76/class_hermite_computation_a0d2c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d76/class_hermite_computation.html">HermiteComputation</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:48 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

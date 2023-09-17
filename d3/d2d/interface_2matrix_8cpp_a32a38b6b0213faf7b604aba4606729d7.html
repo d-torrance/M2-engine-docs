@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('d3/d2d/interface_2matrix_8cpp_a32a38b6
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <span class="keywordflow">if</span> (n == 0)</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        {</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix concat: expects at least one matrix&quot;</span>);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;          <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *F = Ms-&gt;array[0]-&gt;rows();</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R = F-&gt;<a class="code" href="../../d6/df0/class_free_module_a29c99edc8181d08d3700f43baa269673.html#a29c99edc8181d08d3700f43baa269673">get_ring</a>();</div>
@@ -117,12 +117,12 @@ $(document).ready(function(){initNavTree('d3/d2d/interface_2matrix_8cpp_a32a38b6
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;          <span class="keywordflow">if</span> (F-&gt;<a class="code" href="../../d6/df0/class_free_module_a29c99edc8181d08d3700f43baa269673.html#a29c99edc8181d08d3700f43baa269673">get_ring</a>() != M-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>())</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            {</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;              <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix concat: different base rings&quot;</span>);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;              <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;              <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            }</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;          <span class="keywordflow">if</span> (F-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>() != M-&gt;<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>())</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            {</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;              <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix concat: row sizes are not equal&quot;</span>);</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;              <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;              <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            }</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; M-&gt;<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); j++)</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            {</div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('d3/d2d/interface_2matrix_8cpp_a32a38b6
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    {</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  }</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
 <div class="ttc" id="aclass_free_module_a29c99edc8181d08d3700f43baa269673_html_a29c99edc8181d08d3700f43baa269673"><div class="ttname"><a href="../../d6/df0/class_free_module_a29c99edc8181d08d3700f43baa269673.html#a29c99edc8181d08d3700f43baa269673">FreeModule::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcb/freemod_8hpp_source.html#l00052">freemod.hpp:52</a></div></div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('d3/d2d/interface_2matrix_8cpp_a32a38b6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d3/d2d/interface_2matrix_8cpp.html">matrix.cpp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:44 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

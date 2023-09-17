@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_abe5947e46187cfe
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="preprocessor">#ifdef DEVELOPMENT</span></div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="preprocessor">#warning &quot;Schreyer order question&quot;</span></div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordflow">if</span> (v == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordflow">if</span> (v == NULL) <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <span class="keywordflow">if</span> (nparts &lt; 0)</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    {</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d8/d73/class_g_b_ring_ad7bae20923f7a95c1eccfd768509c307.html#ad7bae20923f7a95c1eccfd768509c307">gbvector_copy_term</a>(v);</div>
@@ -128,13 +128,13 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_abe5947e46187cfe
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;      <span class="keywordtype">int</span> nslots = <a class="code" href="../../d8/d73/class_g_b_ring_ab18e35a60f14b50cc320b0b53fe49a80.html#ab18e35a60f14b50cc320b0b53fe49a80">M</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_afaec71dc9220887dbf22d8f25e54e937.html#afaec71dc9220887dbf22d8f25e54e937">n_slots</a>(nparts);</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;      <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> head;</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;      <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *result = &amp;head;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = v; t != <span class="keyword">nullptr</span>; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = v; t != NULL; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        {</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="../../d8/d73/class_g_b_ring_ab18e35a60f14b50cc320b0b53fe49a80.html#ab18e35a60f14b50cc320b0b53fe49a80">M</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_a85091ad699cd882228ad2cdab4e6439e.html#a85091ad699cd882228ad2cdab4e6439e">compare</a>(nslots, t-&gt;monom, v-&gt;monom) != 0) <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;          result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <a class="code" href="../../d8/d73/class_g_b_ring_ad7bae20923f7a95c1eccfd768509c307.html#ad7bae20923f7a95c1eccfd768509c307">gbvector_copy_term</a>(t);</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;          result = result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        }</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;      result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;      result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = NULL;</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;      <span class="keywordflow">return</span> head.<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    }</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;}</div>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_abe5947e46187cfe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:48 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

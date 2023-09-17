@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_aef0dd726d2923b97198
 <div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> head;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  vec result = &amp;head;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = v; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != <span class="keyword">nullptr</span>; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = v; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != 0; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      vec w = <a class="code" href="../../dd/dcf/class_ring_afe8591877ff12e2221b8774625fe79f2.html#afe8591877ff12e2221b8774625fe79f2">new_vec</a>();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      result-&gt;next = w;</div>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_aef0dd726d2923b97198
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      w-&gt;comp = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;comp;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      w-&gt;coeff = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;coeff;  <span class="comment">// copy is not done</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  result-&gt;next = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  result-&gt;next = 0;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">return</span> head.<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="ttc" id="aclass_ring_afe8591877ff12e2221b8774625fe79f2_html_afe8591877ff12e2221b8774625fe79f2"><div class="ttname"><a href="../../dd/dcf/class_ring_afe8591877ff12e2221b8774625fe79f2.html#afe8591877ff12e2221b8774625fe79f2">Ring::new_vec</a></div><div class="ttdeci">vec new_vec() const</div><div class="ttdoc">vector operations ////////////////////</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d36/ring-vecs_8cpp_source.html#l00014">ring-vecs.cpp:14</a></div></div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_aef0dd726d2923b97198
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

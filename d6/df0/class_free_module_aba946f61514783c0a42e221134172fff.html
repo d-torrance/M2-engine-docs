@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('d6/df0/class_free_module_aba946f615147
 <div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *F = m-&gt;<a class="code" href="../../d7/d14/struct_g_b_matrix_a0d9ef5d67553a8e692a6848cf8828fb8.html#a0d9ef5d67553a8e692a6848cf8828fb8">get_free_module</a>();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *<a class="code" href="../../d6/df0/class_free_module_ab235794215e6cad6d3f0b002ccc0d4f6.html#ab235794215e6cad6d3f0b002ccc0d4f6">R</a> = F-&gt;<a class="code" href="../../d6/df0/class_free_module_a29c99edc8181d08d3700f43baa269673.html#a29c99edc8181d08d3700f43baa269673">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d6/df0/class_free_module_ab235794215e6cad6d3f0b002ccc0d4f6.html#ab235794215e6cad6d3f0b002ccc0d4f6">R</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d6/df0/class_free_module_ab235794215e6cad6d3f0b002ccc0d4f6.html#ab235794215e6cad6d3f0b002ccc0d4f6">R</a> == 0)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a polynomial ring&quot;</span>);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('d6/df0/class_free_module_aba946f615147
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="../../d8/d11/gbring_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a> deg = <a class="code" href="../../d6/df0/class_free_module_ab235794215e6cad6d3f0b002ccc0d4f6.html#ab235794215e6cad6d3f0b002ccc0d4f6">R</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_af6404c989f5555bba318266e64effbb0.html#af6404c989f5555bba318266e64effbb0">degree_monoid</a>()-&gt;<a class="code" href="../../d9/db1/class_monoid_a6f3936578edf5076153f30833bc552fe.html#a6f3936578edf5076153f30833bc552fe">make_one</a>();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *v = m-&gt;<a class="code" href="../../d7/d14/struct_g_b_matrix_a9c32aada63157ee3f787e6c0f9bcdbd8.html#a9c32aada63157ee3f787e6c0f9bcdbd8">elems</a>[i];</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">if</span> (v != <span class="keyword">nullptr</span>) <a class="code" href="../../d6/df0/class_free_module_ab235794215e6cad6d3f0b002ccc0d4f6.html#ab235794215e6cad6d3f0b002ccc0d4f6">R</a>-&gt;get_gb_ring()-&gt;gbvector_multidegree(F, v, deg);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">if</span> (v != 0) <a class="code" href="../../d6/df0/class_free_module_ab235794215e6cad6d3f0b002ccc0d4f6.html#ab235794215e6cad6d3f0b002ccc0d4f6">R</a>-&gt;get_gb_ring()-&gt;gbvector_multidegree(F, v, deg);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      G-&gt;<a class="code" href="../../d6/df0/class_free_module_a70e90276abbdf7722815b3482c4b6a3d.html#a70e90276abbdf7722815b3482c4b6a3d">append</a>(deg);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('d6/df0/class_free_module_aba946f615147
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/df0/class_free_module.html">FreeModule</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:26 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

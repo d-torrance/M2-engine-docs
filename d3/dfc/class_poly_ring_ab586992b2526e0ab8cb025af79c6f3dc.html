@@ -179,21 +179,21 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ab586992b2526e0
 <div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *nextterm = <a class="code" href="../../d3/dfc/class_poly_ring_acdd279664ded1684b9098f7a8b8b0f1e.html#acdd279664ded1684b9098f7a8b8b0f1e">new_term</a>();</div>
 <div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;  <span class="keywordtype">long</span> gval = 0, flast = 0;</div>
 <div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160; </div>
-<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;  <span class="keywordflow">if</span> (t != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;  <span class="keywordflow">if</span> (t != 0)</div>
 <div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;    {</div>
 <div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;      <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *z = t;</div>
-<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;      <span class="keywordflow">for</span> (; z-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> != <span class="keyword">nullptr</span>; z = z-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>)</div>
+<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;      <span class="keywordflow">for</span> (; z-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> != 0; z = z-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>)</div>
 <div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;        ;</div>
 <div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160; </div>
 <div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;      flast = <a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_a43999ea4784e2d9c2bb40814853c4f67.html#a43999ea4784e2d9c2bb40814853c4f67">first_weight_value</a>(z-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>);</div>
 <div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;    }</div>
 <div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160; </div>
-<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;  <span class="keywordflow">if</span> (b != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;  <span class="keywordflow">if</span> (b != 0)</div>
 <div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;    {</div>
 <div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;      <span class="keywordtype">long</span> gfirst, glast;</div>
 <div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;      <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *z = b;</div>
 <div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160; </div>
-<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;      <span class="keywordflow">if</span> (z-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;      <span class="keywordflow">if</span> (z-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> == 0)</div>
 <div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;        gval = 0;</div>
 <div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;        {</div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ab586992b2526e0
 <div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;              <span class="comment">// In this case, we return silently</span></div>
 <div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;              <span class="keywordflow">throw</span> <a class="code" href="../../d1/d91/structexc_1_1internal__error.html">exc::internal_error</a>(<span class="stringliteral">&quot;division algorithm for this element is not implemented&quot;</span>);</div>
 <div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;            }</div>
-<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;          <span class="keywordflow">for</span> (; z-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> != <span class="keyword">nullptr</span>; z = z-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>)</div>
+<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;          <span class="keywordflow">for</span> (; z-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> != 0; z = z-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>)</div>
 <div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;            ;</div>
 <div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;          glast = <a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_a43999ea4784e2d9c2bb40814853c4f67.html#a43999ea4784e2d9c2bb40814853c4f67">first_weight_value</a>(z-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>);</div>
 <div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;          gval = gfirst - glast;</div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ab586992b2526e0
 <div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;    }</div>
 <div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160; </div>
 <div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;  <span class="comment">//  buffer o;</span></div>
-<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;  <span class="keywordflow">while</span> (t != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;  <span class="keywordflow">while</span> (t != NULL)</div>
 <div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;    {</div>
 <div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;      <span class="keywordtype">long</span> ffirst;</div>
 <div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160; </div>
@@ -256,9 +256,9 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ab586992b2526e0
 <div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;        }</div>
 <div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;    }</div>
 <div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160; </div>
-<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;  nextterm = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;  remt-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;  divt-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;  nextterm = NULL;</div>
+<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;  remt-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = NULL;</div>
+<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;  divt-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = NULL;</div>
 <div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;  quot = divhead.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;  <span class="keywordflow">return</span> remhead.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;}</div>
@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ab586992b2526e0
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:50 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

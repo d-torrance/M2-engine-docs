@@ -111,14 +111,14 @@ $(document).ready(function(){initNavTree('d5/d82/class_g_b_weight_a5143994ecbb4f
 <div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">/* Return the maximum degree of any term of f */</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">if</span> (f == 0)</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      initial_term_weight = 0;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">int</span> deg = <a class="code" href="../../d5/d82/class_g_b_weight_a18b2a054eb6bb1846e76dd0d6ecccfd9.html#a18b2a054eb6bb1846e76dd0d6ecccfd9">gbvector_term_weight</a>(f);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  initial_term_weight = deg;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = f-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>; t != <span class="keyword">nullptr</span>; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = f-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>; t != 0; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordtype">int</span> tdeg = <a class="code" href="../../d5/d82/class_g_b_weight_a18b2a054eb6bb1846e76dd0d6ecccfd9.html#a18b2a054eb6bb1846e76dd0d6ecccfd9">gbvector_term_weight</a>(t);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">if</span> (tdeg &gt; deg) deg = tdeg;</div>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('d5/d82/class_g_b_weight_a5143994ecbb4f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d82/class_g_b_weight.html">GBWeight</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:48 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

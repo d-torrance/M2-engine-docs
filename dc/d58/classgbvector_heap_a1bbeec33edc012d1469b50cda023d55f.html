@@ -99,10 +99,10 @@ $(document).ready(function(){initNavTree('dc/d58/classgbvector_heap_a1bbeec33edc
 <p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l01583">1583</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160;{</div>
 <div class="line"><a name="l01585"></a><span class="lineno"> 1585</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dc/d58/classgbvector_heap_a3b6023904d426df7d9620e6912d096c6.html#a3b6023904d426df7d9620e6912d096c6">mLead</a> &lt; 0) <a class="code" href="../../dc/d58/classgbvector_heap_acc2eb1092efe8253569996acf39ef0a3.html#acc2eb1092efe8253569996acf39ef0a3">get_lead_term</a>();</div>
-<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dc/d58/classgbvector_heap_a3b6023904d426df7d9620e6912d096c6.html#a3b6023904d426df7d9620e6912d096c6">mLead</a> &lt; 0) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dc/d58/classgbvector_heap_a3b6023904d426df7d9620e6912d096c6.html#a3b6023904d426df7d9620e6912d096c6">mLead</a> &lt; 0) <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l01587"></a><span class="lineno"> 1587</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *result = <a class="code" href="../../dc/d58/classgbvector_heap_ac548ed0dbe1a6674991a0cc29a0e3da9.html#ac548ed0dbe1a6674991a0cc29a0e3da9">heap</a>[<a class="code" href="../../dc/d58/classgbvector_heap_a3b6023904d426df7d9620e6912d096c6.html#a3b6023904d426df7d9620e6912d096c6">mLead</a>];</div>
 <div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;  <a class="code" href="../../dc/d58/classgbvector_heap_ac548ed0dbe1a6674991a0cc29a0e3da9.html#ac548ed0dbe1a6674991a0cc29a0e3da9">heap</a>[<a class="code" href="../../dc/d58/classgbvector_heap_a3b6023904d426df7d9620e6912d096c6.html#a3b6023904d426df7d9620e6912d096c6">mLead</a>] = result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;  result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;  result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = NULL;</div>
 <div class="line"><a name="l01590"></a><span class="lineno"> 1590</span>&#160;  <a class="code" href="../../dc/d58/classgbvector_heap_a3b6023904d426df7d9620e6912d096c6.html#a3b6023904d426df7d9620e6912d096c6">mLead</a> = -1;</div>
 <div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160;}</div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('dc/d58/classgbvector_heap_a1bbeec33edc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d58/classgbvector_heap.html">gbvectorHeap</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:48 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

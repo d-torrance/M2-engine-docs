@@ -126,10 +126,10 @@ $(document).ready(function(){initNavTree('d2/d89/class_marked_g_b_acbca2c01e90e3
 <p class="definition">Definition at line <a class="el" href="../../d0/dbf/reducedgb-marked_8cpp_source.html#l00168">168</a> of file <a class="el" href="../../d0/dbf/reducedgb-marked_8cpp_source.html">reducedgb-marked.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">//  return geo_remainder(f,use_denom,denom);</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a627f44b64b5d8d3ae8cb6a675f164405.html#a627f44b64b5d8d3ae8cb6a675f164405">zero</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a627f44b64b5d8d3ae8cb6a675f164405.html#a627f44b64b5d8d3ae8cb6a675f164405">zero</a> = 0;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> head;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *frem = &amp;head;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = 0;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *h = f;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <a class="code" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> EXP = <a class="code" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>(<a class="code" href="../../d9/d3f/class_reduced_g_b_a88515b65250c4e3add7d965800b3b83d.html#a88515b65250c4e3add7d965800b3b83d">R</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_a80d5c086c90b27c66fa71f1a981b4b23.html#a80d5c086c90b27c66fa71f1a981b4b23">exponent_byte_size</a>());</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('d2/d89/class_marked_g_b_acbca2c01e90e3
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;          frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = h;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;          frem = frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;          h = h-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;          frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;          frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = 0;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        {</div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('d2/d89/class_marked_g_b_acbca2c01e90e3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d89/class_marked_g_b.html">MarkedGB</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:49 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:28 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

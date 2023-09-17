@@ -113,10 +113,10 @@ $(document).ready(function(){initNavTree('d0/d6d/ring_8h_afc3ec6b5660b2e71c06d95
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    {</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring.html">M2::ConcreteRing&lt;M2::ARingZZpFFPACK&gt;</a> *Kp =</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;          <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring.html">M2::ConcreteRing&lt;M2::ARingZZpFFPACK&gt;</a> *<span class="keyword">&gt;</span>(K);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      <span class="keywordflow">if</span> (Kp == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      <span class="keywordflow">if</span> (Kp == 0)</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        {</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a base ring ZZ/p&quot;</span>);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;          <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        }</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k.html">M2::ARingZZpFFPACK</a> &amp;A = Kp-&gt;<a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring_a10f6fae64ac10189f17459672460467f.html#a10f6fae64ac10189f17459672460467f">ring</a>();</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('d0/d6d/ring_8h_afc3ec6b5660b2e71c06d95
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    {</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  }</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;}</div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_tower_ac9ff7072587a33dc3c784d8a554bce08_html_ac9ff7072587a33dc3c784d8a554bce08"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_ac9ff7072587a33dc3c784d8a554bce08.html#ac9ff7072587a33dc3c784d8a554bce08">M2::ARingTower::create</a></div><div class="ttdeci">static ARingTower * create(const BaseRingType &amp;baseRing, const std::vector&lt; std::string &gt; &amp;names)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcb/aring-tower_8cpp_source.html#l00041">aring-tower.cpp:41</a></div></div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('d0/d6d/ring_8h_afc3ec6b5660b2e71c06d95
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d0/d6d/ring_8h.html">ring.h</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:45 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

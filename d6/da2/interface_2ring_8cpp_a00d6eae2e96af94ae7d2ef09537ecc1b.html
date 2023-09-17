@@ -103,46 +103,46 @@ $(document).ready(function(){initNavTree('d6/da2/interface_2ring_8cpp_a00d6eae2e
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    {</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="keywordflow">if</span> (R == <a class="code" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>) <span class="keywordflow">return</span> <a class="code" href="../../dd/da4/aring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857.html#ab88d3ea2a9742f382a17da830d0b7857">globalQQ</a>;</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../de/dba/class_poly_ring_flat.html">PolyRingFlat</a> *P = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a94387f992f6669812656f5742891bba0.html#a94387f992f6669812656f5742891bba0">cast_to_PolyRingFlat</a>();</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <span class="keywordflow">if</span> (P == 0)</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        {</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring&quot;</span>);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;          <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        }</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a3a3c308184f8d25f6f20ee6e5dee1cfb.html#a3a3c308184f8d25f6f20ee6e5dee1cfb">getMonoid</a>()-&gt;<a class="code" href="../../d9/db1/class_monoid_a01fac27359c197f8bb921c23c9cedc2f.html#a01fac27359c197f8bb921c23c9cedc2f">numNonTermOrderVariables</a>() &gt; 0)</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        {</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;              <span class="stringliteral">&quot;cannot currently make fraction field over a polynomial ring &quot;</span></div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;              <span class="stringliteral">&quot;with a non-global monomial order&quot;</span>);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;          <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        }</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a3a3c308184f8d25f6f20ee6e5dee1cfb.html#a3a3c308184f8d25f6f20ee6e5dee1cfb">getMonoid</a>()-&gt;<a class="code" href="../../d9/db1/class_monoid_aab292604e3651237004a58e75a65451a.html#aab292604e3651237004a58e75a65451a">numInvertibleVariables</a>() &gt; 0)</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        {</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;              <span class="stringliteral">&quot;cannot currently make fraction field over a polynomial ring &quot;</span></div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;              <span class="stringliteral">&quot;with Laurent variables, i.e. Inverses=&gt;true set&quot;</span>);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;          <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        }</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      <span class="keywordflow">if</span> (R-&gt;<a class="code" href="../../dd/dcf/class_ring_a62bb710ec47481354070de00bb2dcddb.html#a62bb710ec47481354070de00bb2dcddb">get_precision</a>() &gt; 0)</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        {</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;cannot make fraction field over approximate field base&quot;</span>);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;          <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        }</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_aea25337c6e651e706935ec85df90161b.html#aea25337c6e651e706935ec85df90161b">cast_to_FractionField</a>() != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_aea25337c6e651e706935ec85df90161b.html#aea25337c6e651e706935ec85df90161b">cast_to_FractionField</a>() != 0)</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        {</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;              <span class="stringliteral">&quot;fraction fields over other fraction fields not yet implemented&quot;</span>);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;          <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        }</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_ad78cf2030aec84b6f55389e4f1e9797d.html#ad78cf2030aec84b6f55389e4f1e9797d">cast_to_LocalRing</a>() != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_ad78cf2030aec84b6f55389e4f1e9797d.html#ad78cf2030aec84b6f55389e4f1e9797d">cast_to_LocalRing</a>() != 0)</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        {</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;fraction fields over other local rings not yet implemented&quot;</span>);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;          <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d6/d42/class_fraction_field_a579a17e3477967ef7ab9511472453dc8.html#a579a17e3477967ef7ab9511472453dc8">FractionField::create</a>(P);</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    {</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  }</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div>
 <div class="ttc" id="aaring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857_html_ab88d3ea2a9742f382a17da830d0b7857"><div class="ttname"><a href="../../dd/da4/aring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857.html#ab88d3ea2a9742f382a17da830d0b7857">globalQQ</a></div><div class="ttdeci">const RingQQ * globalQQ</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d92/interface_2aring_8cpp_source.html#l00022">aring.cpp:22</a></div></div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('d6/da2/interface_2ring_8cpp_a00d6eae2e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d6/da2/interface_2ring_8cpp.html">ring.cpp</a></li>
-    <li class="footer">Generated on Sun Sep 10 2023 01:20:45 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 17 2023 01:21:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
