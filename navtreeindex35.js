@@ -1,6 +1,5 @@
 var NAVTREEINDEX35 =
 {
-"d9/d92/monomial-ideal_8h_a479d06ea1241f9e54ce43144d7bff470.html#a479d06ea1241f9e54ce43144d7bff470":[7,0,0,0,2,19,8],
 "d9/d92/monomial-ideal_8h_a57e644c0c84591e539439d553828a8a9.html#a57e644c0c84591e539439d553828a8a9":[7,0,0,0,2,19,14],
 "d9/d92/monomial-ideal_8h_a5d04ad2cd43590534548d381c2bf1253.html#a5d04ad2cd43590534548d381c2bf1253":[7,0,0,0,2,19,15],
 "d9/d92/monomial-ideal_8h_a613df9af3ad2463782e2cb1815d36ac6.html#a613df9af3ad2463782e2cb1815d36ac6":[7,0,0,0,2,19,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX35 =
 "d9/dd1/class_k_basis_ae9610421fe3a4ac36579984b0e89af6b.html#ae9610421fe3a4ac36579984b0e89af6b":[6,0,145,0],
 "d9/dd1/class_k_basis_aed479bce8432643855507e384674b56d.html#aed479bce8432643855507e384674b56d":[6,0,145,24],
 "d9/dd1/class_k_basis_aedcab21c8b92e3dacbbe704828dfa4e8.html#aedcab21c8b92e3dacbbe704828dfa4e8":[6,0,145,5],
-"d9/dd1/class_k_basis_af1b948a2af785aaa7783064cbc283fe3.html#af1b948a2af785aaa7783064cbc283fe3":[6,0,145,12]
+"d9/dd1/class_k_basis_af1b948a2af785aaa7783064cbc283fe3.html#af1b948a2af785aaa7783064cbc283fe3":[6,0,145,12],
+"d9/dd2/class_stats_allocator.html":[6,0,327]
 };
