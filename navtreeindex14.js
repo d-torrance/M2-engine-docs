@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"d3/ddd/eigen_8hpp.html#a522b8e40e31815a2f7dfc664347bde5f":[7,0,0,0,94,8],
 "d3/ddd/eigen_8hpp.html#a56ba255897185438deb0d30995c23a0e":[7,0,0,0,94,6],
 "d3/ddd/eigen_8hpp.html#a68b3b512faaac33a0c9642950dc2871d":[7,0,0,0,94,7],
 "d3/ddd/eigen_8hpp.html#ab283d0faea8ebc63035e107782d51f0b":[7,0,0,0,94,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "d4/d2e/class_res_gausser_q_q_hybrid_a7d70cc0d96ea00455eed699a3bbbb8a4.html#a7d70cc0d96ea00455eed699a3bbbb8a4":[6,0,278,14],
 "d4/d2e/class_res_gausser_q_q_hybrid_a7ea720f6ff90b1ce219bcd4711eb34a8.html#a7ea720f6ff90b1ce219bcd4711eb34a8":[6,0,278,7],
 "d4/d2e/class_res_gausser_q_q_hybrid_a8481b98dbf87477393b41334cdd5e595.html#a8481b98dbf87477393b41334cdd5e595":[6,0,278,18],
-"d4/d2e/class_res_gausser_q_q_hybrid_a850809469ab40d9cda45255c5722ccfd.html#a850809469ab40d9cda45255c5722ccfd":[6,0,278,35]
+"d4/d2e/class_res_gausser_q_q_hybrid_a850809469ab40d9cda45255c5722ccfd.html#a850809469ab40d9cda45255c5722ccfd":[6,0,278,35],
+"d4/d2e/class_res_gausser_q_q_hybrid_a886472719137a32debc72c61f3439782.html#a886472719137a32debc72c61f3439782":[6,0,278,12]
 };
