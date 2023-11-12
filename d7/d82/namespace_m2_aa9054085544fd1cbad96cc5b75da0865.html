@@ -127,17 +127,17 @@ $(document).ready(function(){initNavTree('d7/d82/namespace_m2_aa9054085544fd1cba
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/df4/aring-translate_8hpp_source.html#l00481">481</a> of file <a class="el" href="../../de/df4/aring-translate_8hpp_source.html">aring-translate.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;{</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    ARingRRR <a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>(S.get_precision());</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    ARingRRR::Element gT(<a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>);</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keyword">auto</span> gS1 = <span class="keyword">const_cast&lt;</span>ARingRRi::ElementType&amp;<span class="keyword">&gt;</span>(gS);</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    S.midpoint(gT,gS1);</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keywordtype">bool</span> liftstep = <a class="code" href="../../d7/d82/namespace_m2_aa9054085544fd1cbad96cc5b75da0865.html#aa9054085544fd1cbad96cc5b75da0865">mylift</a>(R,<a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>,result_gR,gT);</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    S.diameter(gT,gS1);</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordflow">return</span> liftstep &amp;&amp; <a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>.is_zero(gT);</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;}</div>
-<div class="ttc" id="anamespace_m2_aa9054085544fd1cbad96cc5b75da0865_html_aa9054085544fd1cbad96cc5b75da0865"><div class="ttname"><a href="../../d7/d82/namespace_m2_aa9054085544fd1cbad96cc5b75da0865.html#aa9054085544fd1cbad96cc5b75da0865">M2::mylift</a></div><div class="ttdeci">bool mylift(const ARingQQ &amp;R, const ARingRRi &amp;S, ARingQQ::ElementType &amp;result_gR, const ARingRRi::ElementType &amp;gS)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df4/aring-translate_8hpp_source.html#l00481">aring-translate.hpp:481</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../de/df4/aring-translate_8hpp_source.html#l00483">483</a> of file <a class="el" href="../../de/df4/aring-translate_8hpp_source.html">aring-translate.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;{</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    ARingRRR <a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>(S.get_precision());</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    ARingRRR::Element gT(<a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>);</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keyword">auto</span> gS1 = <span class="keyword">const_cast&lt;</span>ARingRRi::ElementType&amp;<span class="keyword">&gt;</span>(gS);</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    S.midpoint(gT,gS1);</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordtype">bool</span> liftstep = <a class="code" href="../../d7/d82/namespace_m2_aa9054085544fd1cbad96cc5b75da0865.html#aa9054085544fd1cbad96cc5b75da0865">mylift</a>(R,<a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>,result_gR,gT);</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    S.diameter(gT,gS1);</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keywordflow">return</span> liftstep &amp;&amp; <a class="code" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>.is_zero(gT);</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;}</div>
+<div class="ttc" id="anamespace_m2_aa9054085544fd1cbad96cc5b75da0865_html_aa9054085544fd1cbad96cc5b75da0865"><div class="ttname"><a href="../../d7/d82/namespace_m2_aa9054085544fd1cbad96cc5b75da0865.html#aa9054085544fd1cbad96cc5b75da0865">M2::mylift</a></div><div class="ttdeci">bool mylift(const ARingQQ &amp;R, const ARingRRi &amp;S, ARingQQ::ElementType &amp;result_gR, const ARingRRi::ElementType &amp;gS)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df4/aring-translate_8hpp_source.html#l00483">aring-translate.hpp:483</a></div></div>
 <div class="ttc" id="atable_8c_a0acb682b8260ab1c60b918599864e2e5_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d33/table_8c_source.html#l00007">table.c:7</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../dd/d78/class_m2_1_1_a_ring_r_ri_ac8f1a0035896144d54aa6916cd6e8b9f.html#ac8f1a0035896144d54aa6916cd6e8b9f">M2::ARingRRi::diameter()</a>, <a class="el" href="../../dd/d78/class_m2_1_1_a_ring_r_ri_acc693a322bca72c670c0da7cdec51358.html#acc693a322bca72c670c0da7cdec51358">M2::ARingRRi::get_precision()</a>, <a class="el" href="../../dd/d78/class_m2_1_1_a_ring_r_ri_a3dcccd948a66dd300fd6cc23a2565695.html#a3dcccd948a66dd300fd6cc23a2565695">M2::ARingRRi::midpoint()</a>, <a class="el" href="../../d7/d82/namespace_m2_afba54afa3110843cd8d23a4d8fb7f56e.html#afba54afa3110843cd8d23a4d8fb7f56e">mylift()</a>, and <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>.</p>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('d7/d82/namespace_m2_aa9054085544fd1cba
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li>
-    <li class="footer">Generated on Sun Nov 5 2023 01:23:48 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Nov 12 2023 01:24:39 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

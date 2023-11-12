@@ -90,17 +90,17 @@ $(document).ready(function(){initNavTree('df/d56/dmat-zz-flint_8hpp_source.html'
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef _dmat_zz_flint_hpp_</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define _dmat_zz_flint_hpp_</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// The following needs to be included before any flint files are included.</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;M2/gc-include.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma GCC diagnostic push</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#pragma GCC diagnostic ignored &quot;-Wconversion&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;flint/arith.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;flint/nmod_mat.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;flint/fmpq_mat.h&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma GCC diagnostic pop</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d51/aring-zz-flint_8hpp.html">aring-zz-flint.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span>            <span class="comment">// for assert</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span>             <span class="comment">// for swap</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d51/aring-zz-flint_8hpp.html">aring-zz-flint.hpp</a>&quot;</span>  <span class="comment">// for ARingZZ</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// The following needs to be included before any flint files are included.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;M2/gc-include.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma GCC diagnostic push</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma GCC diagnostic ignored &quot;-Wconversion&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;flint/fmpz_mat.h&gt;</span>  <span class="comment">// for fmpz_mat_t, fmpz_mat_entry, fmpz_mat_clear, fmpz_m...</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#pragma GCC diagnostic pop</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ACoeffRing&gt;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="../../da/dc3/class_d_mat.html">DMat</a>;</div>
@@ -248,8 +248,8 @@ $(document).ready(function(){initNavTree('df/d56/dmat-zz-flint_8hpp_source.html'
 <div class="ttc" id="aclass_d_mat_const_iterator_html"><div class="ttname"><a href="../../d6/d9a/class_d_mat_const_iterator.html">DMatConstIterator</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00016">dmat.hpp:17</a></div></div>
 <div class="ttc" id="aclass_d_mat_html"><div class="ttname"><a href="../../da/dc3/class_d_mat.html">DMat</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00072">dmat.hpp:73</a></div></div>
 <div class="ttc" id="aclass_d_mat_iterator_html"><div class="ttname"><a href="../../df/d28/class_d_mat_iterator.html">DMatIterator</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00037">dmat.hpp:38</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_z_z_aa0c9e2d2fa09fc05a06b3e2efaf7c50e_html_aa0c9e2d2fa09fc05a06b3e2efaf7c50e"><div class="ttname"><a href="../../d4/dea/class_m2_1_1_a_ring_z_z_aa0c9e2d2fa09fc05a06b3e2efaf7c50e.html#aa0c9e2d2fa09fc05a06b3e2efaf7c50e">M2::ARingZZ::ElementType</a></div><div class="ttdeci">fmpz ElementType</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d51/aring-zz-flint_8hpp_source.html#l00034">aring-zz-flint.hpp:34</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_z_z_html"><div class="ttname"><a href="../../d4/dea/class_m2_1_1_a_ring_z_z.html">M2::ARingZZ</a></div><div class="ttdoc">wrapper for the flint fmpz_t integer representation</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d51/aring-zz-flint_8hpp_source.html#l00029">aring-zz-flint.hpp:30</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_z_z_aa0c9e2d2fa09fc05a06b3e2efaf7c50e_html_aa0c9e2d2fa09fc05a06b3e2efaf7c50e"><div class="ttname"><a href="../../d4/dea/class_m2_1_1_a_ring_z_z_aa0c9e2d2fa09fc05a06b3e2efaf7c50e.html#aa0c9e2d2fa09fc05a06b3e2efaf7c50e">M2::ARingZZ::ElementType</a></div><div class="ttdeci">fmpz ElementType</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d51/aring-zz-flint_8hpp_source.html#l00035">aring-zz-flint.hpp:35</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_z_z_html"><div class="ttname"><a href="../../d4/dea/class_m2_1_1_a_ring_z_z.html">M2::ARingZZ</a></div><div class="ttdoc">wrapper for the flint fmpz_t integer representation</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d51/aring-zz-flint_8hpp_source.html#l00030">aring-zz-flint.hpp:31</a></div></div>
 <div class="ttc" id="amonsort_8hpp_a418905a17a22ba6c0f5ef26b07b99325_html_a418905a17a22ba6c0f5ef26b07b99325"><div class="ttname"><a href="../../df/d3b/monsort_8hpp_a418905a17a22ba6c0f5ef26b07b99325.html#a418905a17a22ba6c0f5ef26b07b99325">swap</a></div><div class="ttdeci">#define swap(a, b, t)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d3b/monsort_8hpp_source.html#l00101">monsort.hpp:101</a></div></div>
 <div class="ttc" id="anamespace_m2_html"><div class="ttname"><a href="../../d7/d82/namespace_m2.html">M2</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dba/aring-_c_c_8cpp_source.html#l00003">aring-CC.cpp:3</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('df/d56/dmat-zz-flint_8hpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../df/d56/dmat-zz-flint_8hpp.html">dmat-zz-flint.hpp</a></li>
-    <li class="footer">Generated on Sun Nov 5 2023 01:23:38 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Nov 12 2023 01:24:28 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

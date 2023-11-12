@@ -115,36 +115,36 @@ template&lt;typename RT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00367">367</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;{</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> RT::ElementType ElementType;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="../../d6/d9a/class_d_mat_const_iterator.html">DMat&lt;RT&gt;::ConstIterator</a> ConstIterator;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  assert(A.<a class="code" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>() == B.<a class="code" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  assert(A.<a class="code" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>() == C.<a class="code" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  assert(B.<a class="code" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>() == C.<a class="code" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>());</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  ElementType* result = C.<a class="code" href="../../da/dc3/class_d_mat_acbd201ab89479b7cac4e99f08228a179.html#acbd201ab89479b7cac4e99f08228a179">array</a>();</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="keyword">typename</span> RT::Element tmp(A.<a class="code" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">ring</a>());</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="comment">// WARNING: this routine expects the result matrix to be in ROW MAJOR ORDER</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; A.<a class="code" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>(); i++)</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; B.<a class="code" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>(); j++)</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      {</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        ConstIterator i1 = A.<a class="code" href="../../da/dc3/class_d_mat_a4a0b9a9008466127eeaedc0430d46555.html#a4a0b9a9008466127eeaedc0430d46555">rowBegin</a>(i);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        ConstIterator iend = A.<a class="code" href="../../da/dc3/class_d_mat_a7284ac9aaa4ac8fc50fb080058364624.html#a7284ac9aaa4ac8fc50fb080058364624">rowEnd</a>(i);</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        ConstIterator j1 = B.<a class="code" href="../../da/dc3/class_d_mat_a8cae92a21c72c409435f48f9c4c55644.html#a8cae92a21c72c409435f48f9c4c55644">columnBegin</a>(j);</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keywordflow">while</span> (i1 != iend)</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;          {</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            A.<a class="code" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">ring</a>().mult(tmp, *i1, *j1);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            A.<a class="code" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">ring</a>().subtract(*result, *result, tmp);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            ++i1;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            ++j1;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;          }</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        result++;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      }</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00372">372</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;{</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> RT::ElementType ElementType;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="../../d6/d9a/class_d_mat_const_iterator.html">DMat&lt;RT&gt;::ConstIterator</a> ConstIterator;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  assert(A.<a class="code" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>() == B.<a class="code" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  assert(A.<a class="code" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>() == C.<a class="code" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  assert(B.<a class="code" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>() == C.<a class="code" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>());</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  ElementType* result = C.<a class="code" href="../../da/dc3/class_d_mat_acbd201ab89479b7cac4e99f08228a179.html#acbd201ab89479b7cac4e99f08228a179">array</a>();</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <span class="keyword">typename</span> RT::Element tmp(A.<a class="code" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">ring</a>());</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  <span class="comment">// WARNING: this routine expects the result matrix to be in ROW MAJOR ORDER</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; A.<a class="code" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>(); i++)</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; B.<a class="code" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>(); j++)</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      {</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        ConstIterator i1 = A.<a class="code" href="../../da/dc3/class_d_mat_a4a0b9a9008466127eeaedc0430d46555.html#a4a0b9a9008466127eeaedc0430d46555">rowBegin</a>(i);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        ConstIterator iend = A.<a class="code" href="../../da/dc3/class_d_mat_a7284ac9aaa4ac8fc50fb080058364624.html#a7284ac9aaa4ac8fc50fb080058364624">rowEnd</a>(i);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        ConstIterator j1 = B.<a class="code" href="../../da/dc3/class_d_mat_a8cae92a21c72c409435f48f9c4c55644.html#a8cae92a21c72c409435f48f9c4c55644">columnBegin</a>(j);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keywordflow">while</span> (i1 != iend)</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;          {</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            A.<a class="code" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">ring</a>().mult(tmp, *i1, *j1);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            A.<a class="code" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">ring</a>().subtract(*result, *result, tmp);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            ++i1;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            ++j1;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;          }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        result++;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      }</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;}</div>
 <div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00133">dmat.hpp:133</a></div></div>
 <div class="ttc" id="aclass_d_mat_a4a0b9a9008466127eeaedc0430d46555_html_a4a0b9a9008466127eeaedc0430d46555"><div class="ttname"><a href="../../da/dc3/class_d_mat_a4a0b9a9008466127eeaedc0430d46555.html#a4a0b9a9008466127eeaedc0430d46555">DMat::rowBegin</a></div><div class="ttdeci">Iterator rowBegin(size_t row)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00151">dmat.hpp:151</a></div></div>
 <div class="ttc" id="aclass_d_mat_a7284ac9aaa4ac8fc50fb080058364624_html_a7284ac9aaa4ac8fc50fb080058364624"><div class="ttname"><a href="../../da/dc3/class_d_mat_a7284ac9aaa4ac8fc50fb080058364624.html#a7284ac9aaa4ac8fc50fb080058364624">DMat::rowEnd</a></div><div class="ttdeci">ConstIterator rowEnd(size_t row) const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00159">dmat.hpp:159</a></div></div>
@@ -164,7 +164,7 @@ template&lt;typename RT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun Nov 5 2023 01:23:49 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Nov 12 2023 01:24:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

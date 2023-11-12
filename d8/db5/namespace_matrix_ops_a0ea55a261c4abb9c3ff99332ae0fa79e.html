@@ -115,16 +115,16 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a0ea55a261
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00797">797</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;{</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;  <a class="code" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4.html">DMatZZpFlint</a> A1(A);</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;  <span class="keywordtype">long</span> <a class="code" href="../../d8/db5/namespace_matrix_ops_a7742e489fa7f3ed3d88da75ae730bd82.html#a7742e489fa7f3ed3d88da75ae730bd82">rank</a> = nmod_mat_rref(A1.nmod_mat());</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;  result_rref.<a class="code" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_a03bd5f81c5258ce3a8df650b7decec9a.html#a03bd5f81c5258ce3a8df650b7decec9a">swap</a>(A1);</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d8/db5/namespace_matrix_ops_a7742e489fa7f3ed3d88da75ae730bd82.html#a7742e489fa7f3ed3d88da75ae730bd82">rank</a>;</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;}</div>
-<div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_a03bd5f81c5258ce3a8df650b7decec9a_html_a03bd5f81c5258ce3a8df650b7decec9a"><div class="ttname"><a href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_a03bd5f81c5258ce3a8df650b7decec9a.html#a03bd5f81c5258ce3a8df650b7decec9a">DMat&lt; M2::ARingZZpFlint &gt;::swap</a></div><div class="ttdeci">void swap(DMat&lt; ACoeffRing &gt; &amp;M)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/dmat-zzp-flint_8hpp_source.html#l00081">dmat-zzp-flint.hpp:81</a></div></div>
-<div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_html"><div class="ttname"><a href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4.html">DMat&lt; M2::ARingZZpFlint &gt;</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/dmat-zzp-flint_8hpp_source.html#l00026">dmat-zzp-flint.hpp:27</a></div></div>
-<div class="ttc" id="anamespace_matrix_ops_a7742e489fa7f3ed3d88da75ae730bd82_html_a7742e489fa7f3ed3d88da75ae730bd82"><div class="ttname"><a href="../../d8/db5/namespace_matrix_ops_a7742e489fa7f3ed3d88da75ae730bd82.html#a7742e489fa7f3ed3d88da75ae730bd82">MatrixOps::rank</a></div><div class="ttdeci">size_t rank(const DMatQQFlint &amp;A)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d8a/mat-linalg_8hpp_source.html#l00985">mat-linalg.hpp:985</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00802">802</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;{</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;  <a class="code" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4.html">DMatZZpFlint</a> A1(A);</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;  <span class="keywordtype">long</span> <a class="code" href="../../d8/db5/namespace_matrix_ops_a7742e489fa7f3ed3d88da75ae730bd82.html#a7742e489fa7f3ed3d88da75ae730bd82">rank</a> = nmod_mat_rref(A1.nmod_mat());</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;  result_rref.<a class="code" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_a03bd5f81c5258ce3a8df650b7decec9a.html#a03bd5f81c5258ce3a8df650b7decec9a">swap</a>(A1);</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d8/db5/namespace_matrix_ops_a7742e489fa7f3ed3d88da75ae730bd82.html#a7742e489fa7f3ed3d88da75ae730bd82">rank</a>;</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;}</div>
+<div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_a03bd5f81c5258ce3a8df650b7decec9a_html_a03bd5f81c5258ce3a8df650b7decec9a"><div class="ttname"><a href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_a03bd5f81c5258ce3a8df650b7decec9a.html#a03bd5f81c5258ce3a8df650b7decec9a">DMat&lt; M2::ARingZZpFlint &gt;::swap</a></div><div class="ttdeci">void swap(DMat&lt; ACoeffRing &gt; &amp;M)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/dmat-zzp-flint_8hpp_source.html#l00080">dmat-zzp-flint.hpp:80</a></div></div>
+<div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_html"><div class="ttname"><a href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4.html">DMat&lt; M2::ARingZZpFlint &gt;</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/dmat-zzp-flint_8hpp_source.html#l00025">dmat-zzp-flint.hpp:26</a></div></div>
+<div class="ttc" id="anamespace_matrix_ops_a7742e489fa7f3ed3d88da75ae730bd82_html_a7742e489fa7f3ed3d88da75ae730bd82"><div class="ttname"><a href="../../d8/db5/namespace_matrix_ops_a7742e489fa7f3ed3d88da75ae730bd82.html#a7742e489fa7f3ed3d88da75ae730bd82">MatrixOps::rank</a></div><div class="ttdeci">size_t rank(const DMatQQFlint &amp;A)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d8a/mat-linalg_8hpp_source.html#l00990">mat-linalg.hpp:990</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_acd0308cf5eea09e814e0008a8a3df188.html#acd0308cf5eea09e814e0008a8a3df188">DMat&lt; M2::ARingZZpFlint &gt;::nmod_mat()</a>, <a class="el" href="../../d8/db5/namespace_matrix_ops_a72f709df6c609135ea8635ef3cd19972.html#a72f709df6c609135ea8635ef3cd19972">rank()</a>, and <a class="el" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_a03bd5f81c5258ce3a8df650b7decec9a.html#a03bd5f81c5258ce3a8df650b7decec9a">DMat&lt; M2::ARingZZpFlint &gt;::swap()</a>.</p>
 
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a0ea55a261
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun Nov 5 2023 01:23:49 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Nov 12 2023 01:24:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

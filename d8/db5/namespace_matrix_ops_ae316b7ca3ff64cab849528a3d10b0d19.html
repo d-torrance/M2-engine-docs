@@ -121,17 +121,17 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_ae316b7ca3
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00784">784</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;{</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  <span class="comment">//    DMatZZpFlint&amp; A1 = const_cast&lt;DMatZZpFlint&amp;&gt;(A); // needed because</span></div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;  <span class="comment">//    nmod_mat_mul doesn&#39;t declare params const</span></div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  <span class="comment">//    DMatZZpFlint&amp; B1 = const_cast&lt;DMatZZpFlint&amp;&gt;(B);</span></div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  <span class="comment">// The A1 and B1 on the next line are switched because the memory layout</span></div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;  <span class="comment">// expected</span></div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;  <span class="comment">// is the transpose of what we have for DMat.</span></div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;  nmod_mat_mul(result_product.<a class="code" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_acd0308cf5eea09e814e0008a8a3df188.html#acd0308cf5eea09e814e0008a8a3df188">nmod_mat</a>(), A.<a class="code" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_acd0308cf5eea09e814e0008a8a3df188.html#acd0308cf5eea09e814e0008a8a3df188">nmod_mat</a>(), B.<a class="code" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_acd0308cf5eea09e814e0008a8a3df188.html#acd0308cf5eea09e814e0008a8a3df188">nmod_mat</a>());</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;}</div>
-<div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_acd0308cf5eea09e814e0008a8a3df188_html_acd0308cf5eea09e814e0008a8a3df188"><div class="ttname"><a href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_acd0308cf5eea09e814e0008a8a3df188.html#acd0308cf5eea09e814e0008a8a3df188">DMat&lt; M2::ARingZZpFlint &gt;::nmod_mat</a></div><div class="ttdeci">const nmod_mat_t &amp; nmod_mat() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/dmat-zzp-flint_8hpp_source.html#l00109">dmat-zzp-flint.hpp:109</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00789">789</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;{</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;  <span class="comment">//    DMatZZpFlint&amp; A1 = const_cast&lt;DMatZZpFlint&amp;&gt;(A); // needed because</span></div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;  <span class="comment">//    nmod_mat_mul doesn&#39;t declare params const</span></div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;  <span class="comment">//    DMatZZpFlint&amp; B1 = const_cast&lt;DMatZZpFlint&amp;&gt;(B);</span></div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;  <span class="comment">// The A1 and B1 on the next line are switched because the memory layout</span></div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;  <span class="comment">// expected</span></div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;  <span class="comment">// is the transpose of what we have for DMat.</span></div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;  nmod_mat_mul(result_product.<a class="code" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_acd0308cf5eea09e814e0008a8a3df188.html#acd0308cf5eea09e814e0008a8a3df188">nmod_mat</a>(), A.<a class="code" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_acd0308cf5eea09e814e0008a8a3df188.html#acd0308cf5eea09e814e0008a8a3df188">nmod_mat</a>(), B.<a class="code" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_acd0308cf5eea09e814e0008a8a3df188.html#acd0308cf5eea09e814e0008a8a3df188">nmod_mat</a>());</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;}</div>
+<div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_acd0308cf5eea09e814e0008a8a3df188_html_acd0308cf5eea09e814e0008a8a3df188"><div class="ttname"><a href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_acd0308cf5eea09e814e0008a8a3df188.html#acd0308cf5eea09e814e0008a8a3df188">DMat&lt; M2::ARingZZpFlint &gt;::nmod_mat</a></div><div class="ttdeci">const nmod_mat_t &amp; nmod_mat() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d98/dmat-zzp-flint_8hpp_source.html#l00108">dmat-zzp-flint.hpp:108</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_acd0308cf5eea09e814e0008a8a3df188.html#acd0308cf5eea09e814e0008a8a3df188">DMat&lt; M2::ARingZZpFlint &gt;::nmod_mat()</a>.</p>
 
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_ae316b7ca3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun Nov 5 2023 01:23:49 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Nov 12 2023 01:24:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
