@@ -107,15 +107,15 @@ $(document).ready(function(){initNavTree('df/d21/namespace_eigen_m2_af3c5a8e3f97
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d0e/eigen_8cpp_source.html#l00292">292</a> of file <a class="el" href="../../dd/d0e/eigen_8cpp_source.html">eigen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;{</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="keywordtype">int</span> numrows = orig.rows();</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keywordtype">int</span> numcols = orig.cols();</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  result.<a class="code" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(numrows, numcols);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r=0; r&lt;numrows; r++)</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c=0; c&lt;numcols; c++)</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      result.<a class="code" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">ring</a>().set(result.<a class="code" href="../../da/dc3/class_d_mat_a368035bca371125e7f118465fd45d52a.html#a368035bca371125e7f118465fd45d52a">entry</a>(r,c), * orig(r,c).mpfr_srcptr());</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/d0e/eigen_8cpp_source.html#l00327">327</a> of file <a class="el" href="../../dd/d0e/eigen_8cpp_source.html">eigen.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;{</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keywordtype">int</span> numrows = orig.rows();</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordtype">int</span> numcols = orig.cols();</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  result.<a class="code" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(numrows, numcols);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r=0; r&lt;numrows; r++)</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c=0; c&lt;numcols; c++)</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      result.<a class="code" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">ring</a>().set(result.<a class="code" href="../../da/dc3/class_d_mat_a368035bca371125e7f118465fd45d52a.html#a368035bca371125e7f118465fd45d52a">entry</a>(r,c), * orig(r,c).mpfr_srcptr());</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
 <div class="ttc" id="aclass_d_mat_a368035bca371125e7f118465fd45d52a_html_a368035bca371125e7f118465fd45d52a"><div class="ttname"><a href="../../da/dc3/class_d_mat_a368035bca371125e7f118465fd45d52a.html#a368035bca371125e7f118465fd45d52a">DMat::entry</a></div><div class="ttdeci">ElementType &amp; entry(size_t row, size_t column)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00185">dmat.hpp:185</a></div></div>
 <div class="ttc" id="aclass_d_mat_a88d2a242efc934b17d6cc94851000627_html_a88d2a242efc934b17d6cc94851000627"><div class="ttname"><a href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">DMat::resize</a></div><div class="ttdeci">void resize(size_t new_nrows, size_t new_ncols)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00194">dmat.hpp:194</a></div></div>
 <div class="ttc" id="aclass_d_mat_a90c3eef69ba48fe9a686f65a165d21a4_html_a90c3eef69ba48fe9a686f65a165d21a4"><div class="ttname"><a href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">DMat::ring</a></div><div class="ttdeci">const ACoeffRing &amp; ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00132">dmat.hpp:132</a></div></div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('df/d21/namespace_eigen_m2_af3c5a8e3f97
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/d21/namespace_eigen_m2.html">EigenM2</a></li>
-    <li class="footer">Generated on Sun Nov 12 2023 01:24:39 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Nov 19 2023 01:27:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
