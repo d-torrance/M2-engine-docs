@@ -88,36 +88,28 @@ $(document).ready(function(){initNavTree('d3/df2/interface_2monoid_8cpp.html','.
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d8/da8/monoid_8h_source.html">interface/monoid.h</a>&quot;</code><br />
-<code>#include &lt;cstdio&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d1d/buffer_8hpp_source.html">buffer.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d41/error_8h_source.html">error.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/daf/monomial-ordering_8h_source.html">interface/monomial-ordering.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/dd0/monoid_8hpp_source.html">monoid.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d10/ring_8hpp_source.html">ring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d3f/util_8hpp_source.html">util.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../d3/df2/interface_2monoid_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a00eb83495efc273fda68a812390de6bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/db1/class_monoid.html">Monoid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_a00eb83495efc273fda68a812390de6bb.html#a00eb83495efc273fda68a812390de6bb">IM2_Monoid_trivial</a> ()</td></tr>
-<tr class="separator:a00eb83495efc273fda68a812390de6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75c0746b50f9268b640bb9d6cb5dc76a"><td class="memItemLeft" align="right" valign="top">engine_RawMonoidOrNull&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_a75c0746b50f9268b640bb9d6cb5dc76a.html#a75c0746b50f9268b640bb9d6cb5dc76a">IM2_Monoid_make</a> (const <a class="el" href="../../dd/d53/struct_monomial_ordering.html">MonomialOrdering</a> *mo, M2_ArrayString names, const <a class="el" href="../../dd/dcf/class_ring.html">Ring</a> *deg_ring, M2_arrayint degs, M2_arrayint hefts)</td></tr>
-<tr class="separator:a75c0746b50f9268b640bb9d6cb5dc76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80ebc88245eaf5b9dfa7ff2ed4eb6998"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_a80ebc88245eaf5b9dfa7ff2ed4eb6998.html#a80ebc88245eaf5b9dfa7ff2ed4eb6998">rawMonoidHash</a> (const <a class="el" href="../../d9/db1/class_monoid.html">Monoid</a> *M)</td></tr>
-<tr class="separator:a80ebc88245eaf5b9dfa7ff2ed4eb6998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e889006b968111ce708df2e4de35436"><td class="memItemLeft" align="right" valign="top">M2_string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_a8e889006b968111ce708df2e4de35436.html#a8e889006b968111ce708df2e4de35436">IM2_Monoid_to_string</a> (const <a class="el" href="../../d9/db1/class_monoid.html">Monoid</a> *M)</td></tr>
-<tr class="separator:a8e889006b968111ce708df2e4de35436"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a08ed997ffe4ea6f8424401fc6112bf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_a4a08ed997ffe4ea6f8424401fc6112bf.html#a4a08ed997ffe4ea6f8424401fc6112bf">write_row</a> (std::vector&lt; int &gt; &amp;grading, int nvars, int which, int value)</td></tr>
-<tr class="separator:a4a08ed997ffe4ea6f8424401fc6112bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a321ce80a4888d1d505bc7b5e9e7ab5f1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_a321ce80a4888d1d505bc7b5e9e7ab5f1.html#a321ce80a4888d1d505bc7b5e9e7ab5f1">write_weights</a> (std::vector&lt; int &gt; &amp;grading, int nvars, int firstvar, int *wts, int nwts)</td></tr>
-<tr class="separator:a321ce80a4888d1d505bc7b5e9e7ab5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8e6aec63b8db19052ae6ed45d4540f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_ac8e6aec63b8db19052ae6ed45d4540f0.html#ac8e6aec63b8db19052ae6ed45d4540f0">monomialOrderingToMatrix</a> (const struct <a class="el" href="../../dd/d53/struct_monomial_ordering.html">MonomialOrdering</a> &amp;mo, std::vector&lt; int &gt; &amp;mat, bool &amp;base_is_revlex, int &amp;component_direction, int &amp;component_is_before_row)</td></tr>
-<tr class="separator:ac8e6aec63b8db19052ae6ed45d4540f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7c682566799bf9b3c4f3473e6508da2"><td class="memItemLeft" align="right" valign="top">M2_arrayint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_ab7c682566799bf9b3c4f3473e6508da2.html#ab7c682566799bf9b3c4f3473e6508da2">rawMonomialOrderingToMatrix</a> (const struct <a class="el" href="../../dd/d53/struct_monomial_ordering.html">MonomialOrdering</a> *mo)</td></tr>
-<tr class="separator:ab7c682566799bf9b3c4f3473e6508da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cda24d108398ba2f5753fd567d052a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d9/db1/class_monoid.html">Monoid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_ab8cda24d108398ba2f5753fd567d052a.html#ab8cda24d108398ba2f5753fd567d052a">rawTrivialMonoid</a> ()</td></tr>
+<tr class="separator:ab8cda24d108398ba2f5753fd567d052a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb69e4745109833d7dd6c9124d62ba28"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d9/db1/class_monoid.html">Monoid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_aeb69e4745109833d7dd6c9124d62ba28.html#aeb69e4745109833d7dd6c9124d62ba28">rawMonoid</a> (const <a class="el" href="../../dd/d53/struct_monomial_ordering.html">MonomialOrdering</a> *mo, const <a class="el" href="../../dd/dcf/class_ring.html">Ring</a> *deg_ring, M2_ArrayString names, M2_arrayint degs, M2_arrayint hefts)</td></tr>
+<tr class="separator:aeb69e4745109833d7dd6c9124d62ba28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44118102607ad8a956a613d271298a64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_a44118102607ad8a956a613d271298a64.html#a44118102607ad8a956a613d271298a64">rawMonoidNumberOfBlocks</a> (const <a class="el" href="../../d9/db1/class_monoid.html">Monoid</a> *M)</td></tr>
 <tr class="separator:a44118102607ad8a956a613d271298a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ebc88245eaf5b9dfa7ff2ed4eb6998"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_a80ebc88245eaf5b9dfa7ff2ed4eb6998.html#a80ebc88245eaf5b9dfa7ff2ed4eb6998">rawMonoidHash</a> (const <a class="el" href="../../d9/db1/class_monoid.html">Monoid</a> *M)</td></tr>
+<tr class="separator:a80ebc88245eaf5b9dfa7ff2ed4eb6998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce107e088038057d54d39bb41ce2983"><td class="memItemLeft" align="right" valign="top">M2_string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_afce107e088038057d54d39bb41ce2983.html#afce107e088038057d54d39bb41ce2983">rawMonoidToString</a> (const <a class="el" href="../../d9/db1/class_monoid.html">Monoid</a> *M)</td></tr>
+<tr class="separator:afce107e088038057d54d39bb41ce2983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a326b784be579ca32c1c3036dff09a034"><td class="memItemLeft" align="right" valign="top">M2_arrayint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df2/interface_2monoid_8cpp_a326b784be579ca32c1c3036dff09a034.html#a326b784be579ca32c1c3036dff09a034">to_degree_vector</a> (const <a class="el" href="../../d9/db1/class_monoid.html">Monoid</a> *M, <a class="el" href="../../d9/d64/imonorder_8hpp_a478c7f9d1b96319cce705c05e567cc29.html#a478c7f9d1b96319cce705c05e567cc29">const_monomial</a> d)</td></tr>
+<tr class="separator:a326b784be579ca32c1c3036dff09a034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -125,7 +117,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d3/df2/interface_2monoid_8cpp.html">monoid.cpp</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -107,20 +107,20 @@ $(document).ready(function(){initNavTree('d3/d2d/interface_2matrix_8cpp_aa2b3a34
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d2d/interface_2matrix_8cpp_source.html#l00957">957</a> of file <a class="el" href="../../d3/d2d/interface_2matrix_8cpp_source.html">matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;{</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;  <a class="code" href="../../d2/dbf/class_point_array_a25855725f62d28b2cd2f5824462a0007.html#a25855725f62d28b2cd2f5824462a0007">PointArray::RealVector</a> result;</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;  <span class="keyword">auto</span> MC = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="../../d6/db0/class_mutable_mat.html">MutableMat&lt;DMat&lt;M2::ARingCC&gt;</a> <span class="keyword">&gt;</span> *&gt;(M);</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;  <span class="comment">// if (MC == nullptr)</span></div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;  <span class="keyword">auto</span> i = MC-&gt;<a class="code" href="../../d6/db0/class_mutable_mat_a76d13b802f959658bc1e851160fcbd06.html#a76d13b802f959658bc1e851160fcbd06">getMat</a>().columnBegin(col);</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;  <span class="keyword">auto</span> iEnd = MC-&gt;getMat().columnEnd(col);</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;  <span class="keywordflow">for</span> (; i != iEnd; ++i)</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;    {</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;      result.push_back((*i).re);</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;      result.push_back((*i).im);</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    }</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d2d/interface_2matrix_8cpp_source.html#l00958">958</a> of file <a class="el" href="../../d3/d2d/interface_2matrix_8cpp_source.html">matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;{</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;  <a class="code" href="../../d2/dbf/class_point_array_a25855725f62d28b2cd2f5824462a0007.html#a25855725f62d28b2cd2f5824462a0007">PointArray::RealVector</a> result;</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;  <span class="keyword">auto</span> MC = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="../../d6/db0/class_mutable_mat.html">MutableMat&lt;DMat&lt;M2::ARingCC&gt;</a> <span class="keyword">&gt;</span> *&gt;(M);</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;  <span class="comment">// if (MC == nullptr)</span></div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;  <span class="keyword">auto</span> i = MC-&gt;<a class="code" href="../../d6/db0/class_mutable_mat_a76d13b802f959658bc1e851160fcbd06.html#a76d13b802f959658bc1e851160fcbd06">getMat</a>().columnBegin(col);</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;  <span class="keyword">auto</span> iEnd = MC-&gt;getMat().columnEnd(col);</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;  <span class="keywordflow">for</span> (; i != iEnd; ++i)</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;    {</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;      result.push_back((*i).re);</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;      result.push_back((*i).im);</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    }</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;}</div>
 <div class="ttc" id="aclass_mutable_mat_a76d13b802f959658bc1e851160fcbd06_html_a76d13b802f959658bc1e851160fcbd06"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a76d13b802f959658bc1e851160fcbd06.html#a76d13b802f959658bc1e851160fcbd06">MutableMat::getMat</a></div><div class="ttdeci">Mat &amp; getMat()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00206">mutablemat-defs.hpp:206</a></div></div>
 <div class="ttc" id="aclass_mutable_mat_html"><div class="ttname"><a href="../../d6/db0/class_mutable_mat.html">MutableMat</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00163">mutablemat-defs.hpp:164</a></div></div>
 <div class="ttc" id="aclass_point_array_a25855725f62d28b2cd2f5824462a0007_html_a25855725f62d28b2cd2f5824462a0007"><div class="ttname"><a href="../../d2/dbf/class_point_array_a25855725f62d28b2cd2f5824462a0007.html#a25855725f62d28b2cd2f5824462a0007">PointArray::RealVector</a></div><div class="ttdeci">std::vector&lt; double &gt; RealVector</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da0/_n_a_g_8hpp_source.html#l00053">NAG.hpp:53</a></div></div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('d3/d2d/interface_2matrix_8cpp_aa2b3a34
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d3/d2d/interface_2matrix_8cpp.html">matrix.cpp</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:42 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

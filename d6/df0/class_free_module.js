@@ -7,7 +7,6 @@ var class_free_module =
     [ "change_degree", "d6/df0/class_free_module_a699a12b4d0cb0a986dd91c4205d22e99.html#a699a12b4d0cb0a986dd91c4205d22e99", null ],
     [ "computeHashValue", "d6/df0/class_free_module_a9ff8bbf58e3ac2d95316667d690bf6f9.html#a9ff8bbf58e3ac2d95316667d690bf6f9", null ],
     [ "degree", "d6/df0/class_free_module_a61bc243d245bec72ef2e1ea9fb42e052.html#a61bc243d245bec72ef2e1ea9fb42e052", null ],
-    [ "degree_monoid", "d6/df0/class_free_module_ab5bf4efd209eaadec8635f8caf777b53.html#ab5bf4efd209eaadec8635f8caf777b53", null ],
     [ "direct_sum", "d6/df0/class_free_module_aeaa0657e0acc01d349c4db33d6ccb382.html#aeaa0657e0acc01d349c4db33d6ccb382", null ],
     [ "direct_sum_to", "d6/df0/class_free_module_a789de5a06757f51e7e945a445e410a50.html#a789de5a06757f51e7e945a445e410a50", null ],
     [ "exterior", "d6/df0/class_free_module_a767ad41f904f0f32bcff1d709d4fc951.html#a767ad41f904f0f32bcff1d709d4fc951", null ],

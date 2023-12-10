@@ -96,25 +96,24 @@ $(document).ready(function(){initNavTree('d9/db1/class_monoid_abc89480da534b8575
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d5c/monoid_8cpp_source.html#l00240">240</a> of file <a class="el" href="../../d6/d5c/monoid_8cpp_source.html">monoid.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;{</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  std::vector&lt;int&gt; result;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="comment">// grab the first weight vector</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/db1/class_monoid_ab59731cc8d86bee9c04f64ffbfee5d79.html#ab59731cc8d86bee9c04f64ffbfee5d79">getMonomialOrdering</a>()-&gt;len &gt; 0 and</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <a class="code" href="../../d9/db1/class_monoid_ab59731cc8d86bee9c04f64ffbfee5d79.html#ab59731cc8d86bee9c04f64ffbfee5d79">getMonomialOrdering</a>()-&gt;array[0]-&gt;type == <a class="code" href="../../de/daf/monomial-ordering_8h_aef0dda4b3c1bd2001600d55e8deadc07.html#aef0dda4b3c1bd2001600d55e8deadc07ad4f3cdd6021b3c061a43eb6f21701232">MO_WEIGHTS</a>)</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      result.reserve(<a class="code" href="../../d9/db1/class_monoid_a686ece7cc294cc80866870573c1e625b.html#a686ece7cc294cc80866870573c1e625b">n_vars</a>());</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> *wts = <a class="code" href="../../d9/db1/class_monoid_ab59731cc8d86bee9c04f64ffbfee5d79.html#ab59731cc8d86bee9c04f64ffbfee5d79">getMonomialOrdering</a>()-&gt;<a class="code" href="../../dd/d53/struct_monomial_ordering_a50917e95eea25ef79478905ec6d244ca.html#a50917e95eea25ef79478905ec6d244ca">array</a>[0]-&gt;wts;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../d9/db1/class_monoid_ab59731cc8d86bee9c04f64ffbfee5d79.html#ab59731cc8d86bee9c04f64ffbfee5d79">getMonomialOrdering</a>()-&gt;<a class="code" href="../../dd/d53/struct_monomial_ordering_a50917e95eea25ef79478905ec6d244ca.html#a50917e95eea25ef79478905ec6d244ca">array</a>[0]-&gt;nvars; i++)</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        result.push_back(wts[i]);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordflow">for</span> (; i &lt; <a class="code" href="../../d9/db1/class_monoid_a686ece7cc294cc80866870573c1e625b.html#a686ece7cc294cc80866870573c1e625b">n_vars</a>(); i++) result.push_back(0);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
-<div class="ttc" id="aclass_monoid_a686ece7cc294cc80866870573c1e625b_html_a686ece7cc294cc80866870573c1e625b"><div class="ttname"><a href="../../d9/db1/class_monoid_a686ece7cc294cc80866870573c1e625b.html#a686ece7cc294cc80866870573c1e625b">Monoid::n_vars</a></div><div class="ttdeci">int n_vars() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00143">monoid.hpp:143</a></div></div>
-<div class="ttc" id="aclass_monoid_ab59731cc8d86bee9c04f64ffbfee5d79_html_ab59731cc8d86bee9c04f64ffbfee5d79"><div class="ttname"><a href="../../d9/db1/class_monoid_ab59731cc8d86bee9c04f64ffbfee5d79.html#ab59731cc8d86bee9c04f64ffbfee5d79">Monoid::getMonomialOrdering</a></div><div class="ttdeci">const MonomialOrdering * getMonomialOrdering() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00106">monoid.hpp:106</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d5c/monoid_8cpp_source.html#l00222">222</a> of file <a class="el" href="../../d6/d5c/monoid_8cpp_source.html">monoid.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;{</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  std::vector&lt;int&gt; result;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="comment">// grab the first weight vector</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/db1/class_monoid_ab59731cc8d86bee9c04f64ffbfee5d79.html#ab59731cc8d86bee9c04f64ffbfee5d79">getMonomialOrdering</a>()-&gt;len &gt; 0 and</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;      <a class="code" href="../../d9/db1/class_monoid_ab59731cc8d86bee9c04f64ffbfee5d79.html#ab59731cc8d86bee9c04f64ffbfee5d79">getMonomialOrdering</a>()-&gt;array[0]-&gt;type == <a class="code" href="../../de/daf/monomial-ordering_8h_aef0dda4b3c1bd2001600d55e8deadc07.html#aef0dda4b3c1bd2001600d55e8deadc07ad4f3cdd6021b3c061a43eb6f21701232">MO_WEIGHTS</a>)</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      mon_part content = <a class="code" href="../../d9/db1/class_monoid_ab59731cc8d86bee9c04f64ffbfee5d79.html#ab59731cc8d86bee9c04f64ffbfee5d79">getMonomialOrdering</a>()-&gt;<a class="code" href="../../dd/d53/struct_monomial_ordering_a50917e95eea25ef79478905ec6d244ca.html#a50917e95eea25ef79478905ec6d244ca">array</a>[0];</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      std::copy(content-&gt;wts,</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                content-&gt;wts + content-&gt;nvars,</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                std::back_inserter(result));</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      result.resize(<a class="code" href="../../d9/db1/class_monoid_a686ece7cc294cc80866870573c1e625b.html#a686ece7cc294cc80866870573c1e625b">n_vars</a>());</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
+<div class="ttc" id="aclass_monoid_a686ece7cc294cc80866870573c1e625b_html_a686ece7cc294cc80866870573c1e625b"><div class="ttname"><a href="../../d9/db1/class_monoid_a686ece7cc294cc80866870573c1e625b.html#a686ece7cc294cc80866870573c1e625b">Monoid::n_vars</a></div><div class="ttdeci">int n_vars() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00154">monoid.hpp:154</a></div></div>
+<div class="ttc" id="aclass_monoid_ab59731cc8d86bee9c04f64ffbfee5d79_html_ab59731cc8d86bee9c04f64ffbfee5d79"><div class="ttname"><a href="../../d9/db1/class_monoid_ab59731cc8d86bee9c04f64ffbfee5d79.html#ab59731cc8d86bee9c04f64ffbfee5d79">Monoid::getMonomialOrdering</a></div><div class="ttdeci">const MonomialOrdering * getMonomialOrdering() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00120">monoid.hpp:120</a></div></div>
 <div class="ttc" id="amonomial-ordering_8h_aef0dda4b3c1bd2001600d55e8deadc07_html_aef0dda4b3c1bd2001600d55e8deadc07ad4f3cdd6021b3c061a43eb6f21701232"><div class="ttname"><a href="../../de/daf/monomial-ordering_8h_aef0dda4b3c1bd2001600d55e8deadc07.html#aef0dda4b3c1bd2001600d55e8deadc07ad4f3cdd6021b3c061a43eb6f21701232">MO_WEIGHTS</a></div><div class="ttdeci">@ MO_WEIGHTS</div><div class="ttdef"><b>Definition:</b> <a href="../../de/daf/monomial-ordering_8h_source.html#l00023">monomial-ordering.h:23</a></div></div>
 <div class="ttc" id="astruct_monomial_ordering_a50917e95eea25ef79478905ec6d244ca_html_a50917e95eea25ef79478905ec6d244ca"><div class="ttname"><a href="../../dd/d53/struct_monomial_ordering_a50917e95eea25ef79478905ec6d244ca.html#a50917e95eea25ef79478905ec6d244ca">MonomialOrdering::array</a></div><div class="ttdeci">mon_part array[1]</div><div class="ttdef"><b>Definition:</b> <a href="../../de/daf/monomial-ordering_8h_source.html#l00042">monomial-ordering.h:42</a></div></div>
 </div><!-- fragment -->
@@ -128,7 +127,7 @@ $(document).ready(function(){initNavTree('d9/db1/class_monoid_abc89480da534b8575
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/db1/class_monoid.html">Monoid</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:46 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -107,17 +107,17 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_aea24367a127006
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02404">2404</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l02406"></a><span class="lineno"> 2406</span>&#160;{</div>
-<div class="line"><a name="l02407"></a><span class="lineno"> 2407</span>&#160;  <span class="comment">// We assume that &#39;this&#39; is QQ[M].</span></div>
-<div class="line"><a name="l02408"></a><span class="lineno"> 2408</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>() != <a class="code" href="../../dd/da4/aring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857.html#ab88d3ea2a9742f382a17da830d0b7857">globalQQ</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l02409"></a><span class="lineno"> 2409</span>&#160; </div>
-<div class="line"><a name="l02410"></a><span class="lineno"> 2410</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>&amp; t : f)</div>
-<div class="line"><a name="l02411"></a><span class="lineno"> 2411</span>&#160;    {</div>
-<div class="line"><a name="l02412"></a><span class="lineno"> 2412</span>&#160;      mpq_srcptr a = <a class="code" href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a>(t.coeff);</div>
-<div class="line"><a name="l02413"></a><span class="lineno"> 2413</span>&#160;      mpz_lcm(denom_so_far, denom_so_far, mpq_denref(a));</div>
-<div class="line"><a name="l02414"></a><span class="lineno"> 2414</span>&#160;    }</div>
-<div class="line"><a name="l02415"></a><span class="lineno"> 2415</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02403">2403</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l02405"></a><span class="lineno"> 2405</span>&#160;{</div>
+<div class="line"><a name="l02406"></a><span class="lineno"> 2406</span>&#160;  <span class="comment">// We assume that &#39;this&#39; is QQ[M].</span></div>
+<div class="line"><a name="l02407"></a><span class="lineno"> 2407</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>() != <a class="code" href="../../dd/da4/aring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857.html#ab88d3ea2a9742f382a17da830d0b7857">globalQQ</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02408"></a><span class="lineno"> 2408</span>&#160; </div>
+<div class="line"><a name="l02409"></a><span class="lineno"> 2409</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>&amp; t : f)</div>
+<div class="line"><a name="l02410"></a><span class="lineno"> 2410</span>&#160;    {</div>
+<div class="line"><a name="l02411"></a><span class="lineno"> 2411</span>&#160;      mpq_srcptr a = <a class="code" href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a>(t.coeff);</div>
+<div class="line"><a name="l02412"></a><span class="lineno"> 2412</span>&#160;      mpz_lcm(denom_so_far, denom_so_far, mpq_denref(a));</div>
+<div class="line"><a name="l02413"></a><span class="lineno"> 2413</span>&#160;    }</div>
+<div class="line"><a name="l02414"></a><span class="lineno"> 2414</span>&#160;}</div>
 <div class="ttc" id="aaring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857_html_ab88d3ea2a9742f382a17da830d0b7857"><div class="ttname"><a href="../../dd/da4/aring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857.html#ab88d3ea2a9742f382a17da830d0b7857">globalQQ</a></div><div class="ttdeci">const RingQQ * globalQQ</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d92/interface_2aring_8cpp_source.html#l00024">aring.cpp:24</a></div></div>
 <div class="ttc" id="aclass_polynomial_ring_a88dc577a515e0381070b639878205bb7_html_a88dc577a515e0381070b639878205bb7"><div class="ttname"><a href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">PolynomialRing::getCoefficients</a></div><div class="ttdeci">virtual const Ring * getCoefficients() const</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/polyring_8hpp_source.html#l00220">polyring.hpp:220</a></div></div>
 <div class="ttc" id="aringelem_8hpp_a763804a1f716888d0f6362e483ca41c3_html_a763804a1f716888d0f6362e483ca41c3"><div class="ttname"><a href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a></div><div class="ttdeci">#define MPQ_VAL(f)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00144">ringelem.hpp:144</a></div></div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_aea24367a127006
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

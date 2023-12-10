@@ -96,32 +96,33 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_af49119c2b82482f23
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l01409">1409</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;{</div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;  <span class="keywordtype">bool</span> keep;</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> result(<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>(), 0);</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;    {</div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;      vec f = <a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i);</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;      <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;      keep = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = i + 1; j &lt; <a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); j++)</div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;        {</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;          vec g = <a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(j);</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;          <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>()-&gt;vec_is_scalar_multiple(f, g))</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;            {</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;              keep = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;              <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;            }</div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;        }</div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;      <span class="keywordflow">if</span> (keep) result.append(<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>()-&gt;copy_vec(f));</div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;    }</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;  <span class="keywordflow">return</span> result.to_matrix();</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;}</div>
-<div class="ttc" id="aclass_matrix_a0dd3516d8526ad736fe69848aacd1406_html_a0dd3516d8526ad736fe69848aacd1406"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem</a></div><div class="ttdeci">ring_elem elem(int i, int j) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d84/matrix_8cpp_source.html#l00305">matrix.cpp:305</a></div></div>
-<div class="ttc" id="aclass_matrix_a0f771b1c1bf2eb4a5968b772a91884df_html_a0f771b1c1bf2eb4a5968b772a91884df"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">Matrix::rows</a></div><div class="ttdeci">const FreeModule * rows() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00096">matrix.hpp:96</a></div></div>
-<div class="ttc" id="aclass_matrix_a6cb4735dadc364c543bb667468b0fac8_html_a6cb4735dadc364c543bb667468b0fac8"><div class="ttname"><a href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">Matrix::n_cols</a></div><div class="ttdeci">int n_cols() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00099">matrix.hpp:99</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l01427">1427</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;{</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;  <span class="keywordtype">bool</span> keep;</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;  <span class="keyword">auto</span> R = <a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>();</div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> result(<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>(), 0);</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;    {</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;      vec f = <a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i);</div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;      <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;      keep = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = i + 1; j &lt; <a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); j++)</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;        {</div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;          vec g = <a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(j);</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;          <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;          <span class="keywordflow">if</span> (R-&gt;vec_is_scalar_multiple(f, g))</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;            {</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;              keep = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;              <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;            }</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        }</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;      <span class="keywordflow">if</span> (keep) result.append(R-&gt;copy_vec(f));</div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;    }</div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;  <span class="keywordflow">return</span> result.to_matrix();</div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;}</div>
+<div class="ttc" id="aclass_matrix_a0dd3516d8526ad736fe69848aacd1406_html_a0dd3516d8526ad736fe69848aacd1406"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem</a></div><div class="ttdeci">ring_elem elem(int i, int j) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d84/matrix_8cpp_source.html#l00307">matrix.cpp:307</a></div></div>
+<div class="ttc" id="aclass_matrix_a0f771b1c1bf2eb4a5968b772a91884df_html_a0f771b1c1bf2eb4a5968b772a91884df"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">Matrix::rows</a></div><div class="ttdeci">const FreeModule * rows() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00095">matrix.hpp:95</a></div></div>
+<div class="ttc" id="aclass_matrix_a6cb4735dadc364c543bb667468b0fac8_html_a6cb4735dadc364c543bb667468b0fac8"><div class="ttname"><a href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">Matrix::n_cols</a></div><div class="ttdeci">int n_cols() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00098">matrix.hpp:98</a></div></div>
 <div class="ttc" id="aclass_matrix_aa8df790e4669d0075ef8356d23e8d1fc_html_aa8df790e4669d0075ef8356d23e8d1fc"><div class="ttname"><a href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">Matrix::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00085">matrix.hpp:85</a></div></div>
 <div class="ttc" id="aclass_matrix_constructor_html"><div class="ttname"><a href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d80/matrix-con_8hpp_source.html#l00013">matrix-con.hpp:14</a></div></div>
 </div><!-- fragment -->
@@ -137,7 +138,7 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_af49119c2b82482f23
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:46 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

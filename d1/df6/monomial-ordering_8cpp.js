@@ -9,6 +9,7 @@ var monomial_ordering_8cpp =
     [ "moGetWeightValues", "d1/df6/monomial-ordering_8cpp_af0c6e4e0c80d38fd8a665c4d09c3d0a8.html#af0c6e4e0c80d38fd8a665c4d09c3d0a8", null ],
     [ "moIsGRevLex", "d1/df6/monomial-ordering_8cpp_a50cf4fa94ab7aebdd3196d27a3406389.html#a50cf4fa94ab7aebdd3196d27a3406389", null ],
     [ "moIsLex", "d1/df6/monomial-ordering_8cpp_a0b0166086490e9be3935cc6899afa2e5.html#a0b0166086490e9be3935cc6899afa2e5", null ],
+    [ "monomialOrderingToMatrix", "d1/df6/monomial-ordering_8cpp_ac8e6aec63b8db19052ae6ed45d4540f0.html#ac8e6aec63b8db19052ae6ed45d4540f0", null ],
     [ "ones", "d1/df6/monomial-ordering_8cpp_a47e42ab083fb808a7eb1f5d7dc18dce3.html#a47e42ab083fb808a7eb1f5d7dc18dce3", null ],
     [ "ones_to_string", "d1/df6/monomial-ordering_8cpp_acffec198f31e12f59ed7a3997f708bbe.html#acffec198f31e12f59ed7a3997f708bbe", null ],
     [ "rawGRevLexMonomialOrdering", "d1/df6/monomial-ordering_8cpp_a93d84095621117e208664c8724d1f9d1.html#a93d84095621117e208664c8724d1f9d1", null ],
@@ -17,6 +18,7 @@ var monomial_ordering_8cpp =
     [ "rawJoinMonomialOrdering", "d1/df6/monomial-ordering_8cpp_a7f1a520e4f5d7cec8eedde22f69fb02e.html#a7f1a520e4f5d7cec8eedde22f69fb02e", null ],
     [ "rawLexMonomialOrdering", "d1/df6/monomial-ordering_8cpp_a5c5b1e819a0d36341451d7ddf43d599c.html#a5c5b1e819a0d36341451d7ddf43d599c", null ],
     [ "rawMonomialOrderingHash", "d1/df6/monomial-ordering_8cpp_a2e8bf78c8a7710edfb4648561b795bce.html#a2e8bf78c8a7710edfb4648561b795bce", null ],
+    [ "rawMonomialOrderingToMatrix", "d1/df6/monomial-ordering_8cpp_ab7c682566799bf9b3c4f3473e6508da2.html#ab7c682566799bf9b3c4f3473e6508da2", null ],
     [ "rawNClexMonomialOrdering", "d1/df6/monomial-ordering_8cpp_a3ac19d933b29f9058f5ffabbfa07b7c9.html#a3ac19d933b29f9058f5ffabbfa07b7c9", null ],
     [ "rawNonTermOrderVariables", "d1/df6/monomial-ordering_8cpp_a7028fe71c0766b170379a73bd87f67f5.html#a7028fe71c0766b170379a73bd87f67f5", null ],
     [ "rawNumberOfInvertibleVariables", "d1/df6/monomial-ordering_8cpp_a278514ef0b522fba6eecb13ba9b4244a.html#a278514ef0b522fba6eecb13ba9b4244a", null ],
@@ -25,5 +27,7 @@ var monomial_ordering_8cpp =
     [ "rawProductMonomialOrdering", "d1/df6/monomial-ordering_8cpp_a01a11673729267c5c4f18c05c40ef8dd.html#a01a11673729267c5c4f18c05c40ef8dd", null ],
     [ "rawRevLexMonomialOrdering", "d1/df6/monomial-ordering_8cpp_a9bda40ee4a640924a00585c36fa3daf2.html#a9bda40ee4a640924a00585c36fa3daf2", null ],
     [ "rawWeightsMonomialOrdering", "d1/df6/monomial-ordering_8cpp_af760465940788de9fecbabcd002ab302.html#af760465940788de9fecbabcd002ab302", null ],
-    [ "toString", "d1/df6/monomial-ordering_8cpp_accad216723dd44afb473068aaa26909c.html#accad216723dd44afb473068aaa26909c", null ]
+    [ "toString", "d1/df6/monomial-ordering_8cpp_accad216723dd44afb473068aaa26909c.html#accad216723dd44afb473068aaa26909c", null ],
+    [ "write_row", "d1/df6/monomial-ordering_8cpp_a4a08ed997ffe4ea6f8424401fc6112bf.html#a4a08ed997ffe4ea6f8424401fc6112bf", null ],
+    [ "write_weights", "d1/df6/monomial-ordering_8cpp_a321ce80a4888d1d505bc7b5e9e7ab5f1.html#a321ce80a4888d1d505bc7b5e9e7ab5f1", null ]
 ];

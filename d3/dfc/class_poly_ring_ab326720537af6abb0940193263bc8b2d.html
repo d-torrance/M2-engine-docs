@@ -113,45 +113,45 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ab326720537af6a
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02490">2490</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l02494"></a><span class="lineno"> 2494</span>&#160;{</div>
-<div class="line"><a name="l02495"></a><span class="lineno"> 2495</span>&#160;  <span class="keywordflow">if</span> (v == 0)</div>
-<div class="line"><a name="l02496"></a><span class="lineno"> 2496</span>&#160;    {</div>
-<div class="line"><a name="l02497"></a><span class="lineno"> 2497</span>&#160;      result_denominator = <a class="code" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a480f948242b890421b63365d1ef8d7b8.html#a480f948242b890421b63365d1ef8d7b8">one</a>();</div>
-<div class="line"><a name="l02498"></a><span class="lineno"> 2498</span>&#160;      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l02499"></a><span class="lineno"> 2499</span>&#160;    }</div>
-<div class="line"><a name="l02500"></a><span class="lineno"> 2500</span>&#160;  <a class="code" href="../../d8/d73/class_g_b_ring.html">GBRing</a> *GR = <a class="code" href="../../d5/d58/class_polynomial_ring_a6d483e0a62ce61f8b09c55e5229063a0.html#a6d483e0a62ce61f8b09c55e5229063a0">get_gb_ring</a>();</div>
-<div class="line"><a name="l02501"></a><span class="lineno"> 2501</span>&#160;  result_denominator = <a class="code" href="../../d3/dfc/class_poly_ring_a55839c904c7b4715ddf8daa49dceaf5d.html#a55839c904c7b4715ddf8daa49dceaf5d">vec_get_denominator_QQ</a>(v);</div>
-<div class="line"><a name="l02502"></a><span class="lineno"> 2502</span>&#160;  <a class="code" href="../../dc/d58/classgbvector_heap.html">gbvectorHeap</a> H(GR, F);</div>
-<div class="line"><a name="l02503"></a><span class="lineno"> 2503</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> head;</div>
-<div class="line"><a name="l02504"></a><span class="lineno"> 2504</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *inresult;</div>
-<div class="line"><a name="l02505"></a><span class="lineno"> 2505</span>&#160;  mpz_t a;</div>
-<div class="line"><a name="l02506"></a><span class="lineno"> 2506</span>&#160;  mpz_init(a);</div>
-<div class="line"><a name="l02507"></a><span class="lineno"> 2507</span>&#160;  <span class="keywordflow">for</span> (vec w = v; w != 0; w = w-&gt;next)</div>
-<div class="line"><a name="l02508"></a><span class="lineno"> 2508</span>&#160;    {</div>
-<div class="line"><a name="l02509"></a><span class="lineno"> 2509</span>&#160;      inresult = &amp;head;</div>
-<div class="line"><a name="l02510"></a><span class="lineno"> 2510</span>&#160;      <span class="keywordtype">int</span> comp = w-&gt;<a class="code" href="../../d7/d40/structgbvector_a857b617c77d0b7e4b5ec6e2bf8d73b89.html#a857b617c77d0b7e4b5ec6e2bf8d73b89">comp</a> + 1;</div>
-<div class="line"><a name="l02511"></a><span class="lineno"> 2511</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>&amp; t : w-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">coeff</a>)</div>
-<div class="line"><a name="l02512"></a><span class="lineno"> 2512</span>&#160;        {</div>
-<div class="line"><a name="l02513"></a><span class="lineno"> 2513</span>&#160;          <span class="comment">// make a gbvector node.</span></div>
-<div class="line"><a name="l02514"></a><span class="lineno"> 2514</span>&#160;          mpq_srcptr b = <a class="code" href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a>(t.<a class="code" href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">coeff</a>);</div>
-<div class="line"><a name="l02515"></a><span class="lineno"> 2515</span>&#160;          mpz_mul(a, result_denominator.<a class="code" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>(), mpq_numref(b));</div>
-<div class="line"><a name="l02516"></a><span class="lineno"> 2516</span>&#160;          mpz_divexact(a, a, mpq_denref(b));</div>
-<div class="line"><a name="l02517"></a><span class="lineno"> 2517</span>&#160;          <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *g = GR-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_a868fb80c116b163e82cd604d5c2d94fb.html#a868fb80c116b163e82cd604d5c2d94fb">gbvector_term</a>(</div>
-<div class="line"><a name="l02518"></a><span class="lineno"> 2518</span>&#160;              F, <a class="code" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;RingZZ::from_int(a), t.<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>, comp);</div>
-<div class="line"><a name="l02519"></a><span class="lineno"> 2519</span>&#160;          inresult-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = g;</div>
-<div class="line"><a name="l02520"></a><span class="lineno"> 2520</span>&#160;          inresult = inresult-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><a name="l02521"></a><span class="lineno"> 2521</span>&#160;        }</div>
-<div class="line"><a name="l02522"></a><span class="lineno"> 2522</span>&#160;      H.add(head.<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>);</div>
-<div class="line"><a name="l02523"></a><span class="lineno"> 2523</span>&#160;    }</div>
-<div class="line"><a name="l02524"></a><span class="lineno"> 2524</span>&#160;  mpz_clear(a);</div>
-<div class="line"><a name="l02525"></a><span class="lineno"> 2525</span>&#160;  <span class="keywordflow">return</span> H.value();</div>
-<div class="line"><a name="l02526"></a><span class="lineno"> 2526</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02489">2489</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l02493"></a><span class="lineno"> 2493</span>&#160;{</div>
+<div class="line"><a name="l02494"></a><span class="lineno"> 2494</span>&#160;  <span class="keywordflow">if</span> (v == 0)</div>
+<div class="line"><a name="l02495"></a><span class="lineno"> 2495</span>&#160;    {</div>
+<div class="line"><a name="l02496"></a><span class="lineno"> 2496</span>&#160;      result_denominator = <a class="code" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a480f948242b890421b63365d1ef8d7b8.html#a480f948242b890421b63365d1ef8d7b8">one</a>();</div>
+<div class="line"><a name="l02497"></a><span class="lineno"> 2497</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l02498"></a><span class="lineno"> 2498</span>&#160;    }</div>
+<div class="line"><a name="l02499"></a><span class="lineno"> 2499</span>&#160;  <a class="code" href="../../d8/d73/class_g_b_ring.html">GBRing</a> *GR = <a class="code" href="../../d5/d58/class_polynomial_ring_a6d483e0a62ce61f8b09c55e5229063a0.html#a6d483e0a62ce61f8b09c55e5229063a0">get_gb_ring</a>();</div>
+<div class="line"><a name="l02500"></a><span class="lineno"> 2500</span>&#160;  result_denominator = <a class="code" href="../../d3/dfc/class_poly_ring_a55839c904c7b4715ddf8daa49dceaf5d.html#a55839c904c7b4715ddf8daa49dceaf5d">vec_get_denominator_QQ</a>(v);</div>
+<div class="line"><a name="l02501"></a><span class="lineno"> 2501</span>&#160;  <a class="code" href="../../dc/d58/classgbvector_heap.html">gbvectorHeap</a> H(GR, F);</div>
+<div class="line"><a name="l02502"></a><span class="lineno"> 2502</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> head;</div>
+<div class="line"><a name="l02503"></a><span class="lineno"> 2503</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *inresult;</div>
+<div class="line"><a name="l02504"></a><span class="lineno"> 2504</span>&#160;  mpz_t a;</div>
+<div class="line"><a name="l02505"></a><span class="lineno"> 2505</span>&#160;  mpz_init(a);</div>
+<div class="line"><a name="l02506"></a><span class="lineno"> 2506</span>&#160;  <span class="keywordflow">for</span> (vec w = v; w != 0; w = w-&gt;next)</div>
+<div class="line"><a name="l02507"></a><span class="lineno"> 2507</span>&#160;    {</div>
+<div class="line"><a name="l02508"></a><span class="lineno"> 2508</span>&#160;      inresult = &amp;head;</div>
+<div class="line"><a name="l02509"></a><span class="lineno"> 2509</span>&#160;      <span class="keywordtype">int</span> comp = w-&gt;<a class="code" href="../../d7/d40/structgbvector_a857b617c77d0b7e4b5ec6e2bf8d73b89.html#a857b617c77d0b7e4b5ec6e2bf8d73b89">comp</a> + 1;</div>
+<div class="line"><a name="l02510"></a><span class="lineno"> 2510</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>&amp; t : w-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">coeff</a>)</div>
+<div class="line"><a name="l02511"></a><span class="lineno"> 2511</span>&#160;        {</div>
+<div class="line"><a name="l02512"></a><span class="lineno"> 2512</span>&#160;          <span class="comment">// make a gbvector node.</span></div>
+<div class="line"><a name="l02513"></a><span class="lineno"> 2513</span>&#160;          mpq_srcptr b = <a class="code" href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a>(t.<a class="code" href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">coeff</a>);</div>
+<div class="line"><a name="l02514"></a><span class="lineno"> 2514</span>&#160;          mpz_mul(a, result_denominator.<a class="code" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>(), mpq_numref(b));</div>
+<div class="line"><a name="l02515"></a><span class="lineno"> 2515</span>&#160;          mpz_divexact(a, a, mpq_denref(b));</div>
+<div class="line"><a name="l02516"></a><span class="lineno"> 2516</span>&#160;          <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *g = GR-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_a868fb80c116b163e82cd604d5c2d94fb.html#a868fb80c116b163e82cd604d5c2d94fb">gbvector_term</a>(</div>
+<div class="line"><a name="l02517"></a><span class="lineno"> 2517</span>&#160;              F, <a class="code" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;RingZZ::from_int(a), t.<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>, comp);</div>
+<div class="line"><a name="l02518"></a><span class="lineno"> 2518</span>&#160;          inresult-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = g;</div>
+<div class="line"><a name="l02519"></a><span class="lineno"> 2519</span>&#160;          inresult = inresult-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
+<div class="line"><a name="l02520"></a><span class="lineno"> 2520</span>&#160;        }</div>
+<div class="line"><a name="l02521"></a><span class="lineno"> 2521</span>&#160;      H.add(head.<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>);</div>
+<div class="line"><a name="l02522"></a><span class="lineno"> 2522</span>&#160;    }</div>
+<div class="line"><a name="l02523"></a><span class="lineno"> 2523</span>&#160;  mpz_clear(a);</div>
+<div class="line"><a name="l02524"></a><span class="lineno"> 2524</span>&#160;  <span class="keywordflow">return</span> H.value();</div>
+<div class="line"><a name="l02525"></a><span class="lineno"> 2525</span>&#160;}</div>
 <div class="ttc" id="aclass_g_b_ring_a868fb80c116b163e82cd604d5c2d94fb_html_a868fb80c116b163e82cd604d5c2d94fb"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_a868fb80c116b163e82cd604d5c2d94fb.html#a868fb80c116b163e82cd604d5c2d94fb">GBRing::gbvector_term</a></div><div class="ttdeci">gbvector * gbvector_term(const FreeModule *F, ring_elem coeff, int comp)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00294">gbring.cpp:294</a></div></div>
 <div class="ttc" id="aclass_g_b_ring_html"><div class="ttname"><a href="../../d8/d73/class_g_b_ring.html">GBRing</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00059">gbring.hpp:60</a></div></div>
-<div class="ttc" id="aclass_poly_ring_a55839c904c7b4715ddf8daa49dceaf5d_html_a55839c904c7b4715ddf8daa49dceaf5d"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_a55839c904c7b4715ddf8daa49dceaf5d.html#a55839c904c7b4715ddf8daa49dceaf5d">PolyRing::vec_get_denominator_QQ</a></div><div class="ttdeci">ring_elem vec_get_denominator_QQ(vec f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l02436">poly.cpp:2436</a></div></div>
+<div class="ttc" id="aclass_poly_ring_a55839c904c7b4715ddf8daa49dceaf5d_html_a55839c904c7b4715ddf8daa49dceaf5d"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_a55839c904c7b4715ddf8daa49dceaf5d.html#a55839c904c7b4715ddf8daa49dceaf5d">PolyRing::vec_get_denominator_QQ</a></div><div class="ttdeci">ring_elem vec_get_denominator_QQ(vec f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/poly_8cpp_source.html#l02435">poly.cpp:2435</a></div></div>
 <div class="ttc" id="aclass_polynomial_ring_a6d483e0a62ce61f8b09c55e5229063a0_html_a6d483e0a62ce61f8b09c55e5229063a0"><div class="ttname"><a href="../../d5/d58/class_polynomial_ring_a6d483e0a62ce61f8b09c55e5229063a0.html#a6d483e0a62ce61f8b09c55e5229063a0">PolynomialRing::get_gb_ring</a></div><div class="ttdeci">virtual GBRing * get_gb_ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/polyring_8hpp_source.html#l00219">polyring.hpp:219</a></div></div>
-<div class="ttc" id="aclass_ring_a480f948242b890421b63365d1ef8d7b8_html_a480f948242b890421b63365d1ef8d7b8"><div class="ttname"><a href="../../dd/dcf/class_ring_a480f948242b890421b63365d1ef8d7b8.html#a480f948242b890421b63365d1ef8d7b8">Ring::one</a></div><div class="ttdeci">ring_elem one() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/ring_8hpp_source.html#l00318">ring.hpp:318</a></div></div>
+<div class="ttc" id="aclass_ring_a480f948242b890421b63365d1ef8d7b8_html_a480f948242b890421b63365d1ef8d7b8"><div class="ttname"><a href="../../dd/dcf/class_ring_a480f948242b890421b63365d1ef8d7b8.html#a480f948242b890421b63365d1ef8d7b8">Ring::one</a></div><div class="ttdeci">ring_elem one() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/ring_8hpp_source.html#l00315">ring.hpp:315</a></div></div>
 <div class="ttc" id="aclassgbvector_heap_html"><div class="ttname"><a href="../../dc/d58/classgbvector_heap.html">gbvectorHeap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00578">gbring.hpp:579</a></div></div>
 <div class="ttc" id="agauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9_html_a5ad190417a478c3f15fa01ef9ee9bac9"><div class="ttname"><a href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a></div><div class="ttdeci">RingZZ * globalZZ</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00013">relem.cpp:13</a></div></div>
 <div class="ttc" id="aringelem_8hpp_a763804a1f716888d0f6362e483ca41c3_html_a763804a1f716888d0f6362e483ca41c3"><div class="ttname"><a href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a></div><div class="ttdeci">#define MPQ_VAL(f)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00144">ringelem.hpp:144</a></div></div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ab326720537af6a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

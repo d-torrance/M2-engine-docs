@@ -123,8 +123,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8df44b36d8956478a1cb1c88aed9a3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8df790e4669d0075ef8356d23e8d1fc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dd/dcf/class_ring.html">Ring</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a> () const</td></tr>
 <tr class="separator:aa8df790e4669d0075ef8356d23e8d1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1825694e8781b3eb3421fb0310f5d86"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d9/db1/class_monoid.html">Monoid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3f/class_matrix_ab1825694e8781b3eb3421fb0310f5d86.html#ab1825694e8781b3eb3421fb0310f5d86">degree_monoid</a> () const</td></tr>
-<tr class="separator:ab1825694e8781b3eb3421fb0310f5d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64a6add557faa9ba984e08a39430ddaa"><td class="memItemLeft" align="right" valign="top">vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3f/class_matrix_a64a6add557faa9ba984e08a39430ddaa.html#a64a6add557faa9ba984e08a39430ddaa">operator[]</a> (int i)</td></tr>
 <tr class="separator:a64a6add557faa9ba984e08a39430ddaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b5eb0818f483ac6ba798027b92a82c1"><td class="memItemLeft" align="right" valign="top">const vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3f/class_matrix_a5b5eb0818f483ac6ba798027b92a82c1.html#a5b5eb0818f483ac6ba798027b92a82c1">operator[]</a> (int i) const</td></tr>
@@ -207,8 +205,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a642367cd59e0c92bac4f9ebc00dd9014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e61aa6104a06f5965c9bd643387428e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3f/class_matrix_a7e61aa6104a06f5965c9bd643387428e.html#a7e61aa6104a06f5965c9bd643387428e">is_homogeneous</a> () const</td></tr>
 <tr class="separator:a7e61aa6104a06f5965c9bd643387428e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d23150198a9e7a973a2d04c413d6e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3f/class_matrix_a06d23150198a9e7a973a2d04c413d6e5.html#a06d23150198a9e7a973a2d04c413d6e5">homogenize</a> (int v, M2_arrayint wts) const</td></tr>
-<tr class="separator:a06d23150198a9e7a973a2d04c413d6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868cf5c6255976e322ae075db18def94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3f/class_matrix_a868cf5c6255976e322ae075db18def94.html#a868cf5c6255976e322ae075db18def94">homogenize</a> (int v, const std::vector&lt; int &gt; &amp;wts) const</td></tr>
+<tr class="separator:a868cf5c6255976e322ae075db18def94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4375c1f370ea872f4ba0f9ffd90f4d66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3f/class_matrix_a4375c1f370ea872f4ba0f9ffd90f4d66.html#a4375c1f370ea872f4ba0f9ffd90f4d66">simplify</a> (int n) const</td></tr>
 <tr class="separator:a4375c1f370ea872f4ba0f9ffd90f4d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ebdff098822baa7663b5c2f18a79e68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3f/class_matrix_a9ebdff098822baa7663b5c2f18a79e68.html#a9ebdff098822baa7663b5c2f18a79e68">auto_reduce</a> () const</td></tr>
@@ -348,7 +346,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:46 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

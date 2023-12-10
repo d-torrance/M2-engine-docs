@@ -96,16 +96,16 @@ $(document).ready(function(){initNavTree('d9/db1/class_monoid_a4d9165c3aae25e1a5
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d5c/monoid_8cpp_source.html#l00325">325</a> of file <a class="el" href="../../d6/d5c/monoid_8cpp_source.html">monoid.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d9/db1/class_monoid_a6c6ebdd4f2d1942e7c1c2e21ef5f0f54.html#a6c6ebdd4f2d1942e7c1c2e21ef5f0f54">nvars_</a>; i++)</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d9/db1/class_monoid_a2fd45b529c578fd57df3d3b55ccde15e.html#a2fd45b529c578fd57df3d3b55ccde15e">primary_degree_of_var</a>(i) &lt;= 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;}</div>
-<div class="ttc" id="aclass_monoid_a2fd45b529c578fd57df3d3b55ccde15e_html_a2fd45b529c578fd57df3d3b55ccde15e"><div class="ttname"><a href="../../d9/db1/class_monoid_a2fd45b529c578fd57df3d3b55ccde15e.html#a2fd45b529c578fd57df3d3b55ccde15e">Monoid::primary_degree_of_var</a></div><div class="ttdeci">int primary_degree_of_var(int v) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00111">monoid.hpp:111</a></div></div>
-<div class="ttc" id="aclass_monoid_a6c6ebdd4f2d1942e7c1c2e21ef5f0f54_html_a6c6ebdd4f2d1942e7c1c2e21ef5f0f54"><div class="ttname"><a href="../../d9/db1/class_monoid_a6c6ebdd4f2d1942e7c1c2e21ef5f0f54.html#a6c6ebdd4f2d1942e7c1c2e21ef5f0f54">Monoid::nvars_</a></div><div class="ttdeci">int nvars_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00035">monoid.hpp:35</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d5c/monoid_8cpp_source.html#l00300">300</a> of file <a class="el" href="../../d6/d5c/monoid_8cpp_source.html">monoid.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;{</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d9/db1/class_monoid_a945cc896405706d6c799587d1d568b89.html#a945cc896405706d6c799587d1d568b89">mVariableCount</a>; i++)</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d9/db1/class_monoid_aa5fe2e523688858d67a9eda5e8adb157.html#aa5fe2e523688858d67a9eda5e8adb157">mHeftDegrees</a>[i] &lt;= 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
+<div class="ttc" id="aclass_monoid_a945cc896405706d6c799587d1d568b89_html_a945cc896405706d6c799587d1d568b89"><div class="ttname"><a href="../../d9/db1/class_monoid_a945cc896405706d6c799587d1d568b89.html#a945cc896405706d6c799587d1d568b89">Monoid::mVariableCount</a></div><div class="ttdeci">const int mVariableCount</div><div class="ttdoc">number of variables</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00046">monoid.hpp:46</a></div></div>
+<div class="ttc" id="aclass_monoid_aa5fe2e523688858d67a9eda5e8adb157_html_aa5fe2e523688858d67a9eda5e8adb157"><div class="ttname"><a href="../../d9/db1/class_monoid_aa5fe2e523688858d67a9eda5e8adb157.html#aa5fe2e523688858d67a9eda5e8adb157">Monoid::mHeftDegrees</a></div><div class="ttdeci">std::vector&lt; int &gt; mHeftDegrees</div><div class="ttdoc">length mVariableCount</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00055">monoid.hpp:55</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d9/db1/class_monoid_a6c6ebdd4f2d1942e7c1c2e21ef5f0f54.html#a6c6ebdd4f2d1942e7c1c2e21ef5f0f54">nvars_</a>, and <a class="el" href="../../d9/db1/class_monoid_a2fd45b529c578fd57df3d3b55ccde15e.html#a2fd45b529c578fd57df3d3b55ccde15e">primary_degree_of_var()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/db1/class_monoid_aa5fe2e523688858d67a9eda5e8adb157.html#aa5fe2e523688858d67a9eda5e8adb157">mHeftDegrees</a>, and <a class="el" href="../../d9/db1/class_monoid_a945cc896405706d6c799587d1d568b89.html#a945cc896405706d6c799587d1d568b89">mVariableCount</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/d51/class_resolution_computation_ada77b20177a9ad7b43442749538b25ea.html#ada77b20177a9ad7b43442749538b25ea">ResolutionComputation::choose_res()</a>.</p>
 
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('d9/db1/class_monoid_a4d9165c3aae25e1a5
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/db1/class_monoid.html">Monoid</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:46 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

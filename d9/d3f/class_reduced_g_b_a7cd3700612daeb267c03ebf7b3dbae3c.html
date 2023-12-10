@@ -106,16 +106,16 @@ $(document).ready(function(){initNavTree('d9/d3f/class_reduced_g_b_a7cd3700612da
 
 <p>Implements <a class="el" href="../../de/ded/class_g_b_computation_aa20328edfa3cd984ef4b878fb5786a7d.html#aa20328edfa3cd984ef4b878fb5786a7d">GBComputation</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d7c/reducedgb_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d3/d7c/reducedgb_8cpp_source.html">reducedgb.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(<a class="code" href="../../d9/d3f/class_reduced_g_b_ad565fd513e9b90bad99de07405765b79.html#ad565fd513e9b90bad99de07405765b79">F</a>, 0);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d7/dfc/f4-types_8hpp_a815cded99317ca9be076dfb8b54268d4.html#a815cded99317ca9be076dfb8b54268d4">VECTOR</a>(<a class="code" href="../../d0/d03/struct_p_o_l_y.html">POLY</a>)::const_iterator i = <a class="code" href="../../d9/d3f/class_reduced_g_b_a4a70a8fccebe0fc9ae1ae46b6164c6e2.html#a4a70a8fccebe0fc9ae1ae46b6164c6e2">polys</a>.begin(); i != <a class="code" href="../../d9/d3f/class_reduced_g_b_a4a70a8fccebe0fc9ae1ae46b6164c6e2.html#a4a70a8fccebe0fc9ae1ae46b6164c6e2">polys</a>.end(); i++)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      vec v = <a class="code" href="../../d9/d3f/class_reduced_g_b_a9a69675ed6fa35f9fc767151aec808de.html#a9a69675ed6fa35f9fc767151aec808de">originalR</a>-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_af7838479b74dec5bea68afd6e9daf300.html#af7838479b74dec5bea68afd6e9daf300">translate_gbvector_to_vec</a>(<a class="code" href="../../d9/d3f/class_reduced_g_b_ad565fd513e9b90bad99de07405765b79.html#ad565fd513e9b90bad99de07405765b79">F</a>, (*i).f);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      mat.append(v);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">return</span> mat.to_matrix();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d7c/reducedgb_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d3/d7c/reducedgb_8cpp_source.html">reducedgb.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(<a class="code" href="../../d9/d3f/class_reduced_g_b_ad565fd513e9b90bad99de07405765b79.html#ad565fd513e9b90bad99de07405765b79">F</a>, 0);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d7/dfc/f4-types_8hpp_a815cded99317ca9be076dfb8b54268d4.html#a815cded99317ca9be076dfb8b54268d4">VECTOR</a>(<a class="code" href="../../d0/d03/struct_p_o_l_y.html">POLY</a>)::const_iterator i = <a class="code" href="../../d9/d3f/class_reduced_g_b_a4a70a8fccebe0fc9ae1ae46b6164c6e2.html#a4a70a8fccebe0fc9ae1ae46b6164c6e2">polys</a>.begin(); i != <a class="code" href="../../d9/d3f/class_reduced_g_b_a4a70a8fccebe0fc9ae1ae46b6164c6e2.html#a4a70a8fccebe0fc9ae1ae46b6164c6e2">polys</a>.end(); i++)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      vec v = <a class="code" href="../../d9/d3f/class_reduced_g_b_a9a69675ed6fa35f9fc767151aec808de.html#a9a69675ed6fa35f9fc767151aec808de">originalR</a>-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_af7838479b74dec5bea68afd6e9daf300.html#af7838479b74dec5bea68afd6e9daf300">translate_gbvector_to_vec</a>(<a class="code" href="../../d9/d3f/class_reduced_g_b_ad565fd513e9b90bad99de07405765b79.html#ad565fd513e9b90bad99de07405765b79">F</a>, (*i).f);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      mat.append(v);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> mat.to_matrix();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="ttc" id="aclass_matrix_constructor_html"><div class="ttname"><a href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d80/matrix-con_8hpp_source.html#l00013">matrix-con.hpp:14</a></div></div>
 <div class="ttc" id="aclass_polynomial_ring_af7838479b74dec5bea68afd6e9daf300_html_af7838479b74dec5bea68afd6e9daf300"><div class="ttname"><a href="../../d5/d58/class_polynomial_ring_af7838479b74dec5bea68afd6e9daf300.html#af7838479b74dec5bea68afd6e9daf300">PolynomialRing::translate_gbvector_to_vec</a></div><div class="ttdeci">virtual vec translate_gbvector_to_vec(const FreeModule *F, const gbvector *v) const =0</div></div>
 <div class="ttc" id="aclass_reduced_g_b_a4a70a8fccebe0fc9ae1ae46b6164c6e2_html_a4a70a8fccebe0fc9ae1ae46b6164c6e2"><div class="ttname"><a href="../../d9/d3f/class_reduced_g_b_a4a70a8fccebe0fc9ae1ae46b6164c6e2.html#a4a70a8fccebe0fc9ae1ae46b6164c6e2">ReducedGB::polys</a></div><div class="ttdeci">gc_vector&lt; POLY &gt; polys</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/deb/reducedgb_8hpp_source.html#l00029">reducedgb.hpp:29</a></div></div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('d9/d3f/class_reduced_g_b_a7cd3700612da
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d3f/class_reduced_g_b.html">ReducedGB</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:47 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -97,28 +97,28 @@ $(document).ready(function(){initNavTree('d4/d4d/finalize_8hpp_a06d69d9a01b407a6
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/de9/finalize_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../db/de9/finalize_8cpp_source.html">finalize.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#ifdef MEMDEBUG</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  GC_REGISTER_FINALIZER_IGNORE_SELF(M2_debug_to_outer(G), <a class="code" href="../../db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec">remove_gb</a>, 0, 0, 0);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  GC_REGISTER_FINALIZER_IGNORE_SELF(                  G , <a class="code" href="../../db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec">remove_gb</a>, 0, 0, 0);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  AO_t nfinalized = <a class="code" href="../../db/de9/finalize_8cpp_a975e52a2961e176fb6bfadf4e1fa133c.html#a975e52a2961e176fb6bfadf4e1fa133c">AO_fetch_and_add1</a>(&amp;<a class="code" href="../../db/de9/finalize_8cpp_a5f1bc29409bb07400d83e6c82ccfa7c6.html#a5f1bc29409bb07400d83e6c82ccfa7c6">gbs_nfinalized</a>);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="comment">// -- there is no gettid under Solaris</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="comment">// int tid = static_cast&lt;int&gt;(syscall(SYS_gettid));</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="comment">// fprintf(stderr, &quot;\n   -- thread %d registering gb %zd at %p\n&quot;, tid,</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="comment">// nfinalized, (void *)G);</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      fprintf(</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;          stderr, <span class="stringliteral">&quot;\n   -- registering gb %zd at %p\n&quot;</span>, nfinalized, (<span class="keywordtype">void</span> *)G);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../db/de9/finalize_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../db/de9/finalize_8cpp_source.html">finalize.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#ifdef MEMDEBUG</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  GC_REGISTER_FINALIZER_IGNORE_SELF(M2_debug_to_outer(G), <a class="code" href="../../db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec">remove_gb</a>, 0, 0, 0);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  GC_REGISTER_FINALIZER_IGNORE_SELF(                  G , <a class="code" href="../../db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec">remove_gb</a>, 0, 0, 0);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  AO_t nfinalized = <a class="code" href="../../db/de9/finalize_8cpp_a975e52a2961e176fb6bfadf4e1fa133c.html#a975e52a2961e176fb6bfadf4e1fa133c">AO_fetch_and_add1</a>(&amp;<a class="code" href="../../db/de9/finalize_8cpp_a5f1bc29409bb07400d83e6c82ccfa7c6.html#a5f1bc29409bb07400d83e6c82ccfa7c6">gbs_nfinalized</a>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="comment">// -- there is no gettid under Solaris</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="comment">// int tid = static_cast&lt;int&gt;(syscall(SYS_gettid));</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="comment">// fprintf(stderr, &quot;\n   -- thread %d registering gb %zd at %p\n&quot;, tid,</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="comment">// nfinalized, (void *)G);</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      fprintf(</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;          stderr, <span class="stringliteral">&quot;\n   -- registering gb %zd at %p\n&quot;</span>, nfinalized, (<span class="keywordtype">void</span> *)G);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 <div class="ttc" id="a_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc_html_aa0f82116567de78d2d8d5cee3a26eebc"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a></div><div class="ttdeci">int M2_gbTrace</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00059">M2-replacement.c:59</a></div></div>
 <div class="ttc" id="afinalize_8cpp_a5f1bc29409bb07400d83e6c82ccfa7c6_html_a5f1bc29409bb07400d83e6c82ccfa7c6"><div class="ttname"><a href="../../db/de9/finalize_8cpp_a5f1bc29409bb07400d83e6c82ccfa7c6.html#a5f1bc29409bb07400d83e6c82ccfa7c6">gbs_nfinalized</a></div><div class="ttdeci">static volatile AO_t gbs_nfinalized</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de9/finalize_8cpp_source.html#l00036">finalize.cpp:36</a></div></div>
 <div class="ttc" id="afinalize_8cpp_a975e52a2961e176fb6bfadf4e1fa133c_html_a975e52a2961e176fb6bfadf4e1fa133c"><div class="ttname"><a href="../../db/de9/finalize_8cpp_a975e52a2961e176fb6bfadf4e1fa133c.html#a975e52a2961e176fb6bfadf4e1fa133c">AO_fetch_and_add1</a></div><div class="ttdeci">AO_INLINE AO_t AO_fetch_and_add1(volatile AO_t *addr)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de9/finalize_8cpp_source.html#l00009">finalize.cpp:9</a></div></div>
-<div class="ttc" id="afinalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec_html_ad5dfbb748fc385e82406d90f81a5deec"><div class="ttname"><a href="../../db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec">remove_gb</a></div><div class="ttdeci">void remove_gb(void *p, void *cd)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de9/finalize_8cpp_source.html#l00101">finalize.cpp:101</a></div></div>
+<div class="ttc" id="afinalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec_html_ad5dfbb748fc385e82406d90f81a5deec"><div class="ttname"><a href="../../db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec">remove_gb</a></div><div class="ttdeci">void remove_gb(void *p, void *cd)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de9/finalize_8cpp_source.html#l00104">finalize.cpp:104</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../db/de9/finalize_8cpp_a975e52a2961e176fb6bfadf4e1fa133c.html#a975e52a2961e176fb6bfadf4e1fa133c">AO_fetch_and_add1()</a>, <a class="el" href="../../db/de9/finalize_8cpp_a5f1bc29409bb07400d83e6c82ccfa7c6.html#a5f1bc29409bb07400d83e6c82ccfa7c6">gbs_nfinalized</a>, <a class="el" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a>, and <a class="el" href="../../db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec">remove_gb()</a>.</p>
 
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('d4/d4d/finalize_8hpp_a06d69d9a01b407a6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d4/d4d/finalize_8hpp.html">finalize.hpp</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:42 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

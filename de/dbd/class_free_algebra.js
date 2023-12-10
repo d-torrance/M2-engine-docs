@@ -13,7 +13,7 @@ var class_free_algebra =
     [ "copy", "de/dbd/class_free_algebra_a27b039b82d1cb18959c8be86eeeb9617.html#a27b039b82d1cb18959c8be86eeeb9617", null ],
     [ "copy", "de/dbd/class_free_algebra_a17afa5d75091e8e358f9bac23e5d38d3.html#a17afa5d75091e8e358f9bac23e5d38d3", null ],
     [ "create", "de/dbd/class_free_algebra_a8e487ea6c24f2c8d497362d7bd2cd309.html#a8e487ea6c24f2c8d497362d7bd2cd309", null ],
-    [ "degree", "de/dbd/class_free_algebra_ad5fc7282fe95aeaec05ae2472b4d6ac7.html#ad5fc7282fe95aeaec05ae2472b4d6ac7", null ],
+    [ "degree", "de/dbd/class_free_algebra_a56a7a996a8dca8883ecc66ca908bade4.html#a56a7a996a8dca8883ecc66ca908bade4", null ],
     [ "degreeMonoid", "de/dbd/class_free_algebra_abbda849412017e38e29f41603c281bb0.html#abbda849412017e38e29f41603c281bb0", null ],
     [ "elem_text_out", "de/dbd/class_free_algebra_aa9ab6c28301ed675d3b57796e535aa9c.html#aa9ab6c28301ed675d3b57796e535aa9c", null ],
     [ "eval", "de/dbd/class_free_algebra_abb084af5b943d04033b2296e230664ab.html#abb084af5b943d04033b2296e230664ab", null ],

@@ -1,11 +1,5 @@
 var NAVTREEINDEX44 =
 {
-"dc/d5a/classsagbi_a46fdc62b4d511ef235d0604872a6e700.html#a46fdc62b4d511ef235d0604872a6e700":[4,3,5,2],
-"dc/d5a/classsagbi_a5ed0f492b56ddf205914fc40911ac07f.html#a5ed0f492b56ddf205914fc40911ac07f":[4,3,5,0],
-"dc/d5a/classsagbi_a64a8b4a6e105fb866603f7635109cb9d.html#a64a8b4a6e105fb866603f7635109cb9d":[4,3,5,1],
-"dc/d5a/classsagbi_a7b41ac511b69cf5dd55581f10945c0e8.html#a7b41ac511b69cf5dd55581f10945c0e8":[4,3,5,3],
-"dc/d64/aring-qq-gmp_8hpp.html":[7,0,0,0,23],
-"dc/d64/aring-qq-gmp_8hpp_source.html":[7,0,0,0,23],
 "dc/d6c/class_q_ring_info___z_z.html":[4,0,0,4],
 "dc/d6c/class_q_ring_info___z_z_a029aac3a4bd0891bbd9bdd6c4dd1f368.html#a029aac3a4bd0891bbd9bdd6c4dd1f368":[4,0,0,4,6],
 "dc/d6c/class_q_ring_info___z_z_a107d118dfe75d726daadf748058d4f8d.html#a107d118dfe75d726daadf748058d4f8d":[4,0,0,4,3],
@@ -249,5 +243,11 @@ var NAVTREEINDEX44 =
 "dc/db8/class_mutable_matrix_a377f62d1b9f6014c41a7cb5ebc305ed5.html#a377f62d1b9f6014c41a7cb5ebc305ed5":[4,2,0,30],
 "dc/db8/class_mutable_matrix_a38d41cdc9e3ff6d994ec3d7007e2d322.html#a38d41cdc9e3ff6d994ec3d7007e2d322":[4,2,0,29],
 "dc/db8/class_mutable_matrix_a40bdbe01a1193f4e567d0901fb4354bc.html#a40bdbe01a1193f4e567d0901fb4354bc":[4,2,0,48],
-"dc/db8/class_mutable_matrix_a43f3c4b3e48000f8e9c4d59f1d1a9b2f.html#a43f3c4b3e48000f8e9c4d59f1d1a9b2f":[4,2,0,17]
+"dc/db8/class_mutable_matrix_a43f3c4b3e48000f8e9c4d59f1d1a9b2f.html#a43f3c4b3e48000f8e9c4d59f1d1a9b2f":[4,2,0,17],
+"dc/db8/class_mutable_matrix_a449b42d2ff6b5c33dd50bce5812cd1a2.html#a449b42d2ff6b5c33dd50bce5812cd1a2":[4,2,0,35],
+"dc/db8/class_mutable_matrix_a4ba59e4905736202efa0f4ffe9c6d60c.html#a4ba59e4905736202efa0f4ffe9c6d60c":[4,2,0,2],
+"dc/db8/class_mutable_matrix_a53662b3a101a6b114716c3ab42187996.html#a53662b3a101a6b114716c3ab42187996":[4,2,0,33],
+"dc/db8/class_mutable_matrix_a5516c69fd442445ee85d0a51c51c63e9.html#a5516c69fd442445ee85d0a51c51c63e9":[4,2,0,19],
+"dc/db8/class_mutable_matrix_a56128821c2eb57f3704e59937bd0472e.html#a56128821c2eb57f3704e59937bd0472e":[4,2,0,24],
+"dc/db8/class_mutable_matrix_a569737049ad54740ce60af720cfa8df4.html#a569737049ad54740ce60af720cfa8df4":[4,2,0,3]
 };

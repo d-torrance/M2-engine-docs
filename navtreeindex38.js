@@ -1,8 +1,5 @@
 var NAVTREEINDEX38 =
 {
-"da/d22/class_s_l_p_a17df357f6f5b197c943b1aadab859519.html#a17df357f6f5b197c943b1aadab859519":[6,0,317,4],
-"da/d22/class_s_l_p_a184a00d41e669dd5126f64ef6c1b8754.html#a184a00d41e669dd5126f64ef6c1b8754":[6,0,317,21],
-"da/d22/class_s_l_p_a1ca3f3e5660a7aa13b9c8105976c9ab7.html#a1ca3f3e5660a7aa13b9c8105976c9ab7":[6,0,317,22],
 "da/d22/class_s_l_p_a1d6d7b9cb97e1da852f9f79076c0a820.html#a1d6d7b9cb97e1da852f9f79076c0a820":[6,0,317,10],
 "da/d22/class_s_l_p_a1daf7da81cc2a6eb24ef2c6fbf9c4447.html#a1daf7da81cc2a6eb24ef2c6fbf9c4447":[6,0,317,34],
 "da/d22/class_s_l_p_a21bf7c113b4f76fd86fa695c5ee6dd28.html#a21bf7c113b4f76fd86fa695c5ee6dd28":[6,0,317,33],
@@ -48,8 +45,8 @@ var NAVTREEINDEX38 =
 "da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80":[5,0,4,29],
 "da/d39/group__matrices.html":[4,2],
 "da/d39/group__matrices_ga279d84b40c6e3c343716c75725f7610c.html#ga279d84b40c6e3c343716c75725f7610c":[4,2,5],
-"da/d39/group__matrices_ga279d84b40c6e3c343716c75725f7610c.html#ga279d84b40c6e3c343716c75725f7610c":[7,0,0,0,179,0],
 "da/d39/group__matrices_ga279d84b40c6e3c343716c75725f7610c.html#ga279d84b40c6e3c343716c75725f7610c":[7,0,0,0,178,2],
+"da/d39/group__matrices_ga279d84b40c6e3c343716c75725f7610c.html#ga279d84b40c6e3c343716c75725f7610c":[7,0,0,0,179,0],
 "da/d39/group__matrices_gaeda989d4916eae3fbd1a28018fc78a85.html#gaeda989d4916eae3fbd1a28018fc78a85":[4,2,4],
 "da/d39/group__matrices_gaeda989d4916eae3fbd1a28018fc78a85.html#gaeda989d4916eae3fbd1a28018fc78a85":[7,0,0,0,171,12],
 "da/d40/classbuffer.html":[6,0,22],
@@ -249,5 +246,8 @@ var NAVTREEINDEX38 =
 "da/d60/class_sum_collector.html":[6,0,334],
 "da/d60/class_sum_collector_a80633837fdba90a2fde98b2118db0a11.html#a80633837fdba90a2fde98b2118db0a11":[6,0,334,3],
 "da/d60/class_sum_collector_aae62dbb1fff9d62ff18ca4c6924098f3.html#aae62dbb1fff9d62ff18ca4c6924098f3":[6,0,334,2],
-"da/d60/class_sum_collector_ae139f38f5f35d89b4eea666919a01bad.html#ae139f38f5f35d89b4eea666919a01bad":[6,0,334,1]
+"da/d60/class_sum_collector_ae139f38f5f35d89b4eea666919a01bad.html#ae139f38f5f35d89b4eea666919a01bad":[6,0,334,1],
+"da/d60/class_sum_collector_af69401278669c9817641089ae2b60da1.html#af69401278669c9817641089ae2b60da1":[6,0,334,0],
+"da/d64/class_monomials_ignoring_component.html":[6,0,202],
+"da/d64/class_monomials_ignoring_component_a104ea93944b329d35c821b819531c5da.html#a104ea93944b329d35c821b819531c5da":[6,0,202,3]
 };

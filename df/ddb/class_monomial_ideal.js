@@ -14,7 +14,6 @@ var class_monomial_ideal =
     [ "debug_check", "df/ddb/class_monomial_ideal_ad2aecaf72212c96351db47a4fc79cac6.html#ad2aecaf72212c96351db47a4fc79cac6", null ],
     [ "debug_check", "df/ddb/class_monomial_ideal_a521d4d769f68a98d2c2f540da8ea35cb.html#a521d4d769f68a98d2c2f540da8ea35cb", null ],
     [ "debug_out", "df/ddb/class_monomial_ideal_a2a1c64a00411c9fec244cf1f0c8f3658.html#a2a1c64a00411c9fec244cf1f0c8f3658", null ],
-    [ "degree_monoid", "df/ddb/class_monomial_ideal_a6f8926a0e2a349e7b7c7d4416d74f067.html#a6f8926a0e2a349e7b7c7d4416d74f067", null ],
     [ "delete_mi_node", "df/ddb/class_monomial_ideal_a5a0f4a6440e0884f84e4cbfccf3b61f2.html#a5a0f4a6440e0884f84e4cbfccf3b61f2", null ],
     [ "do_node", "df/ddb/class_monomial_ideal_a0b9e7395a854f24e4a44204f0f9ef6ba.html#a0b9e7395a854f24e4a44204f0f9ef6ba", null ],
     [ "do_tree", "df/ddb/class_monomial_ideal_a9cd7b0de6687239b620888fd22ae0a8a.html#a9cd7b0de6687239b620888fd22ae0a8a", null ],

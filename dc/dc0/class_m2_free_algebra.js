@@ -11,7 +11,6 @@ var class_m2_free_algebra =
     [ "create", "dc/dc0/class_m2_free_algebra_ac76b08d02e08550e798c8829a2bd73e1.html#ac76b08d02e08550e798c8829a2bd73e1", null ],
     [ "debug_display", "dc/dc0/class_m2_free_algebra_a0b822758371127c836065928c961394b.html#a0b822758371127c836065928c961394b", null ],
     [ "debug_display", "dc/dc0/class_m2_free_algebra_ac717cef3753fcd036c5bc1a25d48b31a.html#ac717cef3753fcd036c5bc1a25d48b31a", null ],
-    [ "degree", "dc/dc0/class_m2_free_algebra_aba033a4b4801ef61b0cae9191504f4de.html#aba033a4b4801ef61b0cae9191504f4de", null ],
     [ "degreeMonoid", "dc/dc0/class_m2_free_algebra_a85cb92e3a05b5123ad7c16fb0062c68d.html#a85cb92e3a05b5123ad7c16fb0062c68d", null ],
     [ "degreeRing", "dc/dc0/class_m2_free_algebra_a45cfd82bdbbe500441f6fd2abcc11d03.html#a45cfd82bdbbe500441f6fd2abcc11d03", null ],
     [ "divide", "dc/dc0/class_m2_free_algebra_ab01e6f53fa5c89ba74aa5e927902e5ec.html#ab01e6f53fa5c89ba74aa5e927902e5ec", null ],

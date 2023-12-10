@@ -1,13 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"de/daf/monomial-ordering_8h_a2e8bf78c8a7710edfb4648561b795bce.html#a2e8bf78c8a7710edfb4648561b795bce":[7,0,0,0,2,21,12],
-"de/daf/monomial-ordering_8h_a38a370409b1b054b96e3ab215297695b.html#a38a370409b1b054b96e3ab215297695b":[7,0,0,0,2,21,6],
-"de/daf/monomial-ordering_8h_a3ac19d933b29f9058f5ffabbfa07b7c9.html#a3ac19d933b29f9058f5ffabbfa07b7c9":[7,0,0,0,2,21,14],
-"de/daf/monomial-ordering_8h_a5956af6c493fc6881d6017bd104c5f1b.html#a5956af6c493fc6881d6017bd104c5f1b":[7,0,0,0,2,21,5],
-"de/daf/monomial-ordering_8h_a5c5b1e819a0d36341451d7ddf43d599c.html#a5c5b1e819a0d36341451d7ddf43d599c":[7,0,0,0,2,21,11],
-"de/daf/monomial-ordering_8h_a7028fe71c0766b170379a73bd87f67f5.html#a7028fe71c0766b170379a73bd87f67f5":[7,0,0,0,2,21,15],
-"de/daf/monomial-ordering_8h_a824a378bbd37d572e189db1bb4c52da7.html#a824a378bbd37d572e189db1bb4c52da7":[7,0,0,0,2,21,13],
-"de/daf/monomial-ordering_8h_a93d84095621117e208664c8724d1f9d1.html#a93d84095621117e208664c8724d1f9d1":[7,0,0,0,2,21,7],
 "de/daf/monomial-ordering_8h_a9bda40ee4a640924a00585c36fa3daf2.html#a9bda40ee4a640924a00585c36fa3daf2":[7,0,0,0,2,21,20],
 "de/daf/monomial-ordering_8h_aa23e3c91f3370e0d51850c27e2af2a73.html#aa23e3c91f3370e0d51850c27e2af2a73":[7,0,0,0,2,21,9],
 "de/daf/monomial-ordering_8h_abc38aa1f4a34b3d53fb71ecc4361e6f8.html#abc38aa1f4a34b3d53fb71ecc4361e6f8":[7,0,0,0,2,21,3],
@@ -128,6 +120,7 @@ var NAVTREEINDEX52 =
 "de/dbd/class_free_algebra_a4ba1219e183883baa554fb9dd80d2b1c.html#a4ba1219e183883baa554fb9dd80d2b1c":[6,0,90,38],
 "de/dbd/class_free_algebra_a5175a171abedbf2e09af588925908bbe.html#a5175a171abedbf2e09af588925908bbe":[6,0,90,60],
 "de/dbd/class_free_algebra_a5448329115f9424b39dc739bb0d65f1d.html#a5448329115f9424b39dc739bb0d65f1d":[6,0,90,7],
+"de/dbd/class_free_algebra_a56a7a996a8dca8883ecc66ca908bade4.html#a56a7a996a8dca8883ecc66ca908bade4":[6,0,90,13],
 "de/dbd/class_free_algebra_a690c7c60f2ff76d86505d10000777a0a.html#a690c7c60f2ff76d86505d10000777a0a":[6,0,90,24],
 "de/dbd/class_free_algebra_a6f57fdc9c8fe149a0b1e631e0ebe5341.html#a6f57fdc9c8fe149a0b1e631e0ebe5341":[6,0,90,52],
 "de/dbd/class_free_algebra_a71852f791681553a2c89f938920c7900.html#a71852f791681553a2c89f938920c7900":[6,0,90,33],
@@ -157,7 +150,6 @@ var NAVTREEINDEX52 =
 "de/dbd/class_free_algebra_ac0836fb3874f893383f5df64373a3e3b.html#ac0836fb3874f893383f5df64373a3e3b":[6,0,90,8],
 "de/dbd/class_free_algebra_acae150033e2edf51c824e229b075ad03.html#acae150033e2edf51c824e229b075ad03":[6,0,90,34],
 "de/dbd/class_free_algebra_acb48b8edd0eaeb43cf69971b24b72d44.html#acb48b8edd0eaeb43cf69971b24b72d44":[6,0,90,5],
-"de/dbd/class_free_algebra_ad5fc7282fe95aeaec05ae2472b4d6ac7.html#ad5fc7282fe95aeaec05ae2472b4d6ac7":[6,0,90,13],
 "de/dbd/class_free_algebra_ad7e709d69aea542ce19a0c0c791efa11.html#ad7e709d69aea542ce19a0c0c791efa11":[6,0,90,45],
 "de/dbd/class_free_algebra_ae50166c0e0d23487d7cb6e72ade791b6.html#ae50166c0e0d23487d7cb6e72ade791b6":[6,0,90,55],
 "de/dc8/_eschreyer_8hpp.html":[7,0,0,0,101],
@@ -249,5 +241,13 @@ var NAVTREEINDEX52 =
 "de/df4/aring-translate_8hpp.html#a4874eaf412009e96172af70dfef5fb36":[7,0,0,0,33,42],
 "de/df4/aring-translate_8hpp.html#a4bc805bcf48ed5a27f8e1227b3cd70bd":[7,0,0,0,33,6],
 "de/df4/aring-translate_8hpp.html#a4f5c147790fb58d8dd6be9dae6494bdc":[7,0,0,0,33,16],
-"de/df4/aring-translate_8hpp.html#a525a9dd9ae03faba9d79ddec7ec7ec3b":[7,0,0,0,33,34]
+"de/df4/aring-translate_8hpp.html#a525a9dd9ae03faba9d79ddec7ec7ec3b":[7,0,0,0,33,34],
+"de/df4/aring-translate_8hpp.html#a53efb7c794d419d55678af3ef07dbd97":[7,0,0,0,33,27],
+"de/df4/aring-translate_8hpp.html#a5611ba3528f053c3f3129ab3fd01abc9":[7,0,0,0,33,43],
+"de/df4/aring-translate_8hpp.html#a61c044d0cffdc78a8fac72f0887c3773":[7,0,0,0,33,55],
+"de/df4/aring-translate_8hpp.html#a62c1d4f81b6874878820082fb55a2a8b":[7,0,0,0,33,5],
+"de/df4/aring-translate_8hpp.html#a63935fb4fd87c308abd2efe7bdff10be":[7,0,0,0,33,14],
+"de/df4/aring-translate_8hpp.html#a6558baadc0688f88a798bb6ce9d2c527":[7,0,0,0,33,46],
+"de/df4/aring-translate_8hpp.html#a6b062369f3bcfc422d713aa0f4e1c4b1":[7,0,0,0,33,48],
+"de/df4/aring-translate_8hpp.html#a6caefcadc244d3571b03423fd3433160":[7,0,0,0,33,22]
 };

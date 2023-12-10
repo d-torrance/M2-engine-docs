@@ -107,29 +107,29 @@ $(document).ready(function(){initNavTree('d1/d55/engine_8h_a105ed29944f466ca5d22
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d80/localring_8cpp_source.html#l00739">739</a> of file <a class="el" href="../../d1/d80/localring_8cpp_source.html">localring.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;{</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d6/dfd/class_local_ring.html">LocalRing</a> *L = f-&gt;<a class="code" href="../../d6/dfd/class_local_ring_a82f77c416799b81bb16c26212095bec2.html#a82f77c416799b81bb16c26212095bec2">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_ad78cf2030aec84b6f55389e4f1e9797d.html#ad78cf2030aec84b6f55389e4f1e9797d">cast_to_LocalRing</a>();</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;  <span class="keywordflow">if</span> (L == 0)</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    {</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected an object over a local ring&quot;</span>);</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    }</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  <span class="comment">// TODO: Check that f is over a localization of R</span></div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;  <span class="keywordflow">if</span> (R != L-&gt;<a class="code" href="../../d6/dfd/class_local_ring_a82f77c416799b81bb16c26212095bec2.html#a82f77c416799b81bb16c26212095bec2">get_ring</a>())</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    {</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected an object over a localization of the first argument&quot;</span>);</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    }</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;  <a class="code" href="../../d6/d3f/class_matrix.html">Matrix</a> *result;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;  L-&gt;<a class="code" href="../../d6/dfd/class_local_ring_a331b1a804dcc8bb8d2671077f56e433c.html#a331b1a804dcc8bb8d2671077f56e433c">lift_up</a>(R, f, result);</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/d80/localring_8cpp_source.html#l00731">731</a> of file <a class="el" href="../../d1/d80/localring_8cpp_source.html">localring.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;{</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d6/dfd/class_local_ring.html">LocalRing</a> *L = f-&gt;<a class="code" href="../../d6/dfd/class_local_ring_a82f77c416799b81bb16c26212095bec2.html#a82f77c416799b81bb16c26212095bec2">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_ad78cf2030aec84b6f55389e4f1e9797d.html#ad78cf2030aec84b6f55389e4f1e9797d">cast_to_LocalRing</a>();</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;  <span class="keywordflow">if</span> (L == 0)</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    {</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected an object over a local ring&quot;</span>);</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    }</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;  <span class="comment">// TODO: Check that f is over a localization of R</span></div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;  <span class="keywordflow">if</span> (R != L-&gt;<a class="code" href="../../d6/dfd/class_local_ring_a82f77c416799b81bb16c26212095bec2.html#a82f77c416799b81bb16c26212095bec2">get_ring</a>())</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    {</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected an object over a localization of the first argument&quot;</span>);</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    }</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;  <a class="code" href="../../d6/d3f/class_matrix.html">Matrix</a> *result;</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;  L-&gt;<a class="code" href="../../d6/dfd/class_local_ring_a331b1a804dcc8bb8d2671077f56e433c.html#a331b1a804dcc8bb8d2671077f56e433c">lift_up</a>(R, f, result);</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;}</div>
 <div class="ttc" id="aclass_local_ring_a331b1a804dcc8bb8d2671077f56e433c_html_a331b1a804dcc8bb8d2671077f56e433c"><div class="ttname"><a href="../../d6/dfd/class_local_ring_a331b1a804dcc8bb8d2671077f56e433c.html#a331b1a804dcc8bb8d2671077f56e433c">LocalRing::lift_up</a></div><div class="ttdeci">virtual void lift_up(const Ring *R, const Matrix *m, Matrix *&amp;result) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d80/localring_8cpp_source.html#l00227">localring.cpp:227</a></div></div>
 <div class="ttc" id="aclass_local_ring_a82f77c416799b81bb16c26212095bec2_html_a82f77c416799b81bb16c26212095bec2"><div class="ttname"><a href="../../d6/dfd/class_local_ring_a82f77c416799b81bb16c26212095bec2.html#a82f77c416799b81bb16c26212095bec2">LocalRing::get_ring</a></div><div class="ttdeci">const PolyRing * get_ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dae/localring_8hpp_source.html#l00042">localring.hpp:42</a></div></div>
 <div class="ttc" id="aclass_local_ring_html"><div class="ttname"><a href="../../d6/dfd/class_local_ring.html">LocalRing</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dae/localring_8hpp_source.html#l00018">localring.hpp:19</a></div></div>
 <div class="ttc" id="aclass_matrix_html"><div class="ttname"><a href="../../d6/d3f/class_matrix.html">Matrix</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00017">matrix.hpp:18</a></div></div>
-<div class="ttc" id="aclass_ring_ad78cf2030aec84b6f55389e4f1e9797d_html_ad78cf2030aec84b6f55389e4f1e9797d"><div class="ttname"><a href="../../dd/dcf/class_ring_ad78cf2030aec84b6f55389e4f1e9797d.html#ad78cf2030aec84b6f55389e4f1e9797d">Ring::cast_to_LocalRing</a></div><div class="ttdeci">virtual const LocalRing * cast_to_LocalRing() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/ring_8hpp_source.html#l00219">ring.hpp:219</a></div></div>
+<div class="ttc" id="aclass_ring_ad78cf2030aec84b6f55389e4f1e9797d_html_ad78cf2030aec84b6f55389e4f1e9797d"><div class="ttname"><a href="../../dd/dcf/class_ring_ad78cf2030aec84b6f55389e4f1e9797d.html#ad78cf2030aec84b6f55389e4f1e9797d">Ring::cast_to_LocalRing</a></div><div class="ttdeci">virtual const LocalRing * cast_to_LocalRing() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/ring_8hpp_source.html#l00216">ring.hpp:216</a></div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../dd/dcf/class_ring_ad78cf2030aec84b6f55389e4f1e9797d.html#ad78cf2030aec84b6f55389e4f1e9797d">Ring::cast_to_LocalRing()</a>, <a class="el" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR()</a>, <a class="el" href="../../d6/dfd/class_local_ring_a82f77c416799b81bb16c26212095bec2.html#a82f77c416799b81bb16c26212095bec2">LocalRing::get_ring()</a>, <a class="el" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">Matrix::get_ring()</a>, and <a class="el" href="../../d6/dfd/class_local_ring_a331b1a804dcc8bb8d2671077f56e433c.html#a331b1a804dcc8bb8d2671077f56e433c">LocalRing::lift_up()</a>.</p>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('d1/d55/engine_8h_a105ed29944f466ca5d22
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d1/d55/engine_8h.html">engine.h</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:50 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:42 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -97,22 +97,22 @@ $(document).ready(function(){initNavTree('dc/dc0/class_m2_free_algebra_a0b822758
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d52/_m2_free_algebra_8cpp_source.html#l00289">289</a> of file <a class="el" href="../../df/d52/_m2_free_algebra_8cpp_source.html">M2FreeAlgebra.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;{</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;coeffs: &quot;</span>;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=f-&gt;cbeginCoeff(); i != f-&gt;cendCoeff(); ++i)</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    {</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      <a class="code" href="../../da/d40/classbuffer.html">buffer</a> o;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <a class="code" href="../../dc/dc0/class_m2_free_algebra_a8cd90c456397553a80cbbe17ac21fe7c.html#a8cd90c456397553a80cbbe17ac21fe7c">coefficientRing</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a7681f099a40a51225f38f66386820c39.html#a7681f099a40a51225f38f66386820c39">elem_text_out</a>(o, *i);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      std::cout &lt;&lt; o.<a class="code" href="../../da/d40/classbuffer_ab8e628e6b90112afba781d016b509701.html#ab8e628e6b90112afba781d016b509701">str</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  std::cout &lt;&lt; std::endl  &lt;&lt; <span class="stringliteral">&quot;  monoms: &quot;</span>;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=f-&gt;cbeginMonom(); i != f-&gt;cendMonom(); ++i)</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      std::cout &lt;&lt; (*i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    }</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d52/_m2_free_algebra_8cpp_source.html#l00287">287</a> of file <a class="el" href="../../df/d52/_m2_free_algebra_8cpp_source.html">M2FreeAlgebra.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;coeffs: &quot;</span>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=f-&gt;cbeginCoeff(); i != f-&gt;cendCoeff(); ++i)</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      <a class="code" href="../../da/d40/classbuffer.html">buffer</a> o;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <a class="code" href="../../dc/dc0/class_m2_free_algebra_a8cd90c456397553a80cbbe17ac21fe7c.html#a8cd90c456397553a80cbbe17ac21fe7c">coefficientRing</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a7681f099a40a51225f38f66386820c39.html#a7681f099a40a51225f38f66386820c39">elem_text_out</a>(o, *i);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      std::cout &lt;&lt; o.<a class="code" href="../../da/d40/classbuffer_ab8e628e6b90112afba781d016b509701.html#ab8e628e6b90112afba781d016b509701">str</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  std::cout &lt;&lt; std::endl  &lt;&lt; <span class="stringliteral">&quot;  monoms: &quot;</span>;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=f-&gt;cbeginMonom(); i != f-&gt;cendMonom(); ++i)</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      std::cout &lt;&lt; (*i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
 <div class="ttc" id="aclass_m2_free_algebra_a8cd90c456397553a80cbbe17ac21fe7c_html_a8cd90c456397553a80cbbe17ac21fe7c"><div class="ttname"><a href="../../dc/dc0/class_m2_free_algebra_a8cd90c456397553a80cbbe17ac21fe7c.html#a8cd90c456397553a80cbbe17ac21fe7c">M2FreeAlgebra::coefficientRing</a></div><div class="ttdeci">const Ring * coefficientRing() const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d34/_m2_free_algebra_8hpp_source.html#l00076">M2FreeAlgebra.hpp:76</a></div></div>
 <div class="ttc" id="aclass_ring_a7681f099a40a51225f38f66386820c39_html_a7681f099a40a51225f38f66386820c39"><div class="ttname"><a href="../../dd/dcf/class_ring_a7681f099a40a51225f38f66386820c39.html#a7681f099a40a51225f38f66386820c39">Ring::elem_text_out</a></div><div class="ttdeci">virtual void elem_text_out(buffer &amp;o, const ring_elem f, bool p_one=true, bool p_plus=false, bool p_parens=false) const =0</div></div>
 <div class="ttc" id="aclassbuffer_ab8e628e6b90112afba781d016b509701_html_ab8e628e6b90112afba781d016b509701"><div class="ttname"><a href="../../da/d40/classbuffer_ab8e628e6b90112afba781d016b509701.html#ab8e628e6b90112afba781d016b509701">buffer::str</a></div><div class="ttdeci">char * str()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1d/buffer_8hpp_source.html#l00037">buffer.hpp:37</a></div></div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('dc/dc0/class_m2_free_algebra_a0b822758
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/dc0/class_m2_free_algebra.html">M2FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:46 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -97,19 +97,19 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_aa3deac342d58c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d37/ringelement_8cpp_source.html#l00363">363</a> of file <a class="el" href="../../d2/d37/ringelement_8cpp_source.html">ringelement.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;{</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    {</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R = f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>();</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, R-&gt;<a class="code" href="../../dd/dcf/class_ring_a91c9c1b47e0968110b4858c3681473e5.html#a91c9c1b47e0968110b4858c3681473e5">antipode</a>(f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>()));</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    {</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  }</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;}</div>
-<div class="ttc" id="aclass_ring_a91c9c1b47e0968110b4858c3681473e5_html_a91c9c1b47e0968110b4858c3681473e5"><div class="ttname"><a href="../../dd/dcf/class_ring_a91c9c1b47e0968110b4858c3681473e5.html#a91c9c1b47e0968110b4858c3681473e5">Ring::antipode</a></div><div class="ttdeci">virtual ring_elem antipode(ring_elem f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/ring_8hpp_source.html#l00469">ring.hpp:469</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d37/ringelement_8cpp_source.html#l00373">373</a> of file <a class="el" href="../../d2/d37/ringelement_8cpp_source.html">ringelement.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;{</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    {</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R = f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>();</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, R-&gt;<a class="code" href="../../dd/dcf/class_ring_a91c9c1b47e0968110b4858c3681473e5.html#a91c9c1b47e0968110b4858c3681473e5">antipode</a>(f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>()));</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  }</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;}</div>
+<div class="ttc" id="aclass_ring_a91c9c1b47e0968110b4858c3681473e5_html_a91c9c1b47e0968110b4858c3681473e5"><div class="ttname"><a href="../../dd/dcf/class_ring_a91c9c1b47e0968110b4858c3681473e5.html#a91c9c1b47e0968110b4858c3681473e5">Ring::antipode</a></div><div class="ttdeci">virtual ring_elem antipode(ring_elem f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/ring_8hpp_source.html#l00473">ring.hpp:473</a></div></div>
 <div class="ttc" id="aclass_ring_element_a4452e8487df6246870938a2311b259a7_html_a4452e8487df6246870938a2311b259a7"><div class="ttname"><a href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">RingElement::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5a/relem_8hpp_source.html#l00025">relem.hpp:25</a></div></div>
 <div class="ttc" id="aclass_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b_html_a82fc5ddcc26a6f2efe867bff0088d54b"><div class="ttname"><a href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">RingElement::get_value</a></div><div class="ttdeci">ring_elem get_value() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5a/relem_8hpp_source.html#l00023">relem.hpp:23</a></div></div>
 <div class="ttc" id="aclass_ring_element_ab978463e39096a4e0d1ecc0720f9acf3_html_ab978463e39096a4e0d1ecc0720f9acf3"><div class="ttname"><a href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a></div><div class="ttdeci">static RingElement * make_raw(const Ring *R, ring_elem f)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00020">relem.cpp:20</a></div></div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_aa3deac342d58c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d2/d37/ringelement_8cpp.html">ringelement.cpp</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

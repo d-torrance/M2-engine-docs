@@ -7,7 +7,7 @@ var class_free_algebra_quotient =
     [ "compare_elems", "d0/d77/class_free_algebra_quotient_a5495ac27e2c068b5bd2a3a8e5fa594d3.html#a5495ac27e2c068b5bd2a3a8e5fa594d3", null ],
     [ "computeHashValue", "d0/d77/class_free_algebra_quotient_a7cbdd303fe0119967ab1ff029f80798a.html#a7cbdd303fe0119967ab1ff029f80798a", null ],
     [ "copy", "d0/d77/class_free_algebra_quotient_af17ad507e3dfd20133b9a5ecbf3edff0.html#af17ad507e3dfd20133b9a5ecbf3edff0", null ],
-    [ "degree", "d0/d77/class_free_algebra_quotient_aa249f8dc4dbf9ae33e51033eebfb9118.html#aa249f8dc4dbf9ae33e51033eebfb9118", null ],
+    [ "degree", "d0/d77/class_free_algebra_quotient_ac1b8f0a5b196f65159895d5e138ae9d3.html#ac1b8f0a5b196f65159895d5e138ae9d3", null ],
     [ "degreeMonoid", "d0/d77/class_free_algebra_quotient_a06698af82ac366c677dc1291c69fea84.html#a06698af82ac366c677dc1291c69fea84", null ],
     [ "elem_text_out", "d0/d77/class_free_algebra_quotient_a26e3527c5d50173dacb122e88a94eac8.html#a26e3527c5d50173dacb122e88a94eac8", null ],
     [ "eval", "d0/d77/class_free_algebra_quotient_a3de185c5a05db32a87d6baf6850ae0f5.html#a3de185c5a05db32a87d6baf6850ae0f5", null ],

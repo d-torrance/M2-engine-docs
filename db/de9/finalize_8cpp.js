@@ -11,7 +11,6 @@ var finalize_8cpp =
     [ "remove_gb", "db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec", null ],
     [ "remove_monideal", "db/de9/finalize_8cpp_a8edf5905229d913571c2b764ccf7b057.html#a8edf5905229d913571c2b764ccf7b057", null ],
     [ "remove_MutableMatrix", "db/de9/finalize_8cpp_a2acd80d5ff4b2d40403f1d69e3f4178b.html#a2acd80d5ff4b2d40403f1d69e3f4178b", null ],
-    [ "remove_polyring", "db/de9/finalize_8cpp_a2c2e65572bc30c0e4c3b271d256de615.html#a2c2e65572bc30c0e4c3b271d256de615", null ],
     [ "remove_res", "db/de9/finalize_8cpp_acd907bbebf5d58d8a86ca872771d383e.html#acd907bbebf5d58d8a86ca872771d383e", null ],
     [ "remove_SchreyerOrder", "db/de9/finalize_8cpp_a62e309e31422eabdd0a945104a8bd60c.html#a62e309e31422eabdd0a945104a8bd60c", null ],
     [ "comp_nfinalized", "db/de9/finalize_8cpp_ad4f492c9ab8e22988cc9f164c40cc1b3.html#ad4f492c9ab8e22988cc9f164c40cc1b3", null ],

@@ -97,24 +97,24 @@ $(document).ready(function(){initNavTree('d4/d4d/finalize_8hpp_a7a85cceae51c6e27
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/de9/finalize_8cpp_source.html#l00193">193</a> of file <a class="el" href="../../db/de9/finalize_8cpp_source.html">finalize.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;{</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordflow">if</span> (G == 0) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#ifdef MEMDEBUG</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  GC_REGISTER_FINALIZER(M2_debug_to_outer(G), <a class="code" href="../../db/de9/finalize_8cpp_a2acd80d5ff4b2d40403f1d69e3f4178b.html#a2acd80d5ff4b2d40403f1d69e3f4178b">remove_MutableMatrix</a>, 0, 0, 0);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  GC_REGISTER_FINALIZER(                  G,  <a class="code" href="../../db/de9/finalize_8cpp_a2acd80d5ff4b2d40403f1d69e3f4178b.html#a2acd80d5ff4b2d40403f1d69e3f4178b">remove_MutableMatrix</a>, 0, 0, 0);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  AO_t nfinalized = <a class="code" href="../../db/de9/finalize_8cpp_a975e52a2961e176fb6bfadf4e1fa133c.html#a975e52a2961e176fb6bfadf4e1fa133c">AO_fetch_and_add1</a>(&amp;<a class="code" href="../../db/de9/finalize_8cpp_a9c95d4c8f02372c98be74bfba1e62f43.html#a9c95d4c8f02372c98be74bfba1e62f43">mutablematrices_nfinalized</a>);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    fprintf(stderr,</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="stringliteral">&quot;\n   -- registering mutable matrix %zd at %p\n&quot;</span>,</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            nfinalized,</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            (<span class="keywordtype">void</span> *)G);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordflow">return</span> G;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../db/de9/finalize_8cpp_source.html#l00196">196</a> of file <a class="el" href="../../db/de9/finalize_8cpp_source.html">finalize.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordflow">if</span> (G == 0) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#ifdef MEMDEBUG</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  GC_REGISTER_FINALIZER(M2_debug_to_outer(G), <a class="code" href="../../db/de9/finalize_8cpp_a2acd80d5ff4b2d40403f1d69e3f4178b.html#a2acd80d5ff4b2d40403f1d69e3f4178b">remove_MutableMatrix</a>, 0, 0, 0);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  GC_REGISTER_FINALIZER(                  G,  <a class="code" href="../../db/de9/finalize_8cpp_a2acd80d5ff4b2d40403f1d69e3f4178b.html#a2acd80d5ff4b2d40403f1d69e3f4178b">remove_MutableMatrix</a>, 0, 0, 0);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  AO_t nfinalized = <a class="code" href="../../db/de9/finalize_8cpp_a975e52a2961e176fb6bfadf4e1fa133c.html#a975e52a2961e176fb6bfadf4e1fa133c">AO_fetch_and_add1</a>(&amp;<a class="code" href="../../db/de9/finalize_8cpp_a9c95d4c8f02372c98be74bfba1e62f43.html#a9c95d4c8f02372c98be74bfba1e62f43">mutablematrices_nfinalized</a>);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    fprintf(stderr,</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="stringliteral">&quot;\n   -- registering mutable matrix %zd at %p\n&quot;</span>,</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            nfinalized,</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            (<span class="keywordtype">void</span> *)G);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordflow">return</span> G;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
 <div class="ttc" id="a_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc_html_aa0f82116567de78d2d8d5cee3a26eebc"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a></div><div class="ttdeci">int M2_gbTrace</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00059">M2-replacement.c:59</a></div></div>
-<div class="ttc" id="afinalize_8cpp_a2acd80d5ff4b2d40403f1d69e3f4178b_html_a2acd80d5ff4b2d40403f1d69e3f4178b"><div class="ttname"><a href="../../db/de9/finalize_8cpp_a2acd80d5ff4b2d40403f1d69e3f4178b.html#a2acd80d5ff4b2d40403f1d69e3f4178b">remove_MutableMatrix</a></div><div class="ttdeci">void remove_MutableMatrix(void *p, void *cd)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de9/finalize_8cpp_source.html#l00182">finalize.cpp:182</a></div></div>
+<div class="ttc" id="afinalize_8cpp_a2acd80d5ff4b2d40403f1d69e3f4178b_html_a2acd80d5ff4b2d40403f1d69e3f4178b"><div class="ttname"><a href="../../db/de9/finalize_8cpp_a2acd80d5ff4b2d40403f1d69e3f4178b.html#a2acd80d5ff4b2d40403f1d69e3f4178b">remove_MutableMatrix</a></div><div class="ttdeci">void remove_MutableMatrix(void *p, void *cd)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de9/finalize_8cpp_source.html#l00185">finalize.cpp:185</a></div></div>
 <div class="ttc" id="afinalize_8cpp_a975e52a2961e176fb6bfadf4e1fa133c_html_a975e52a2961e176fb6bfadf4e1fa133c"><div class="ttname"><a href="../../db/de9/finalize_8cpp_a975e52a2961e176fb6bfadf4e1fa133c.html#a975e52a2961e176fb6bfadf4e1fa133c">AO_fetch_and_add1</a></div><div class="ttdeci">AO_INLINE AO_t AO_fetch_and_add1(volatile AO_t *addr)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de9/finalize_8cpp_source.html#l00009">finalize.cpp:9</a></div></div>
 <div class="ttc" id="afinalize_8cpp_a9c95d4c8f02372c98be74bfba1e62f43_html_a9c95d4c8f02372c98be74bfba1e62f43"><div class="ttname"><a href="../../db/de9/finalize_8cpp_a9c95d4c8f02372c98be74bfba1e62f43.html#a9c95d4c8f02372c98be74bfba1e62f43">mutablematrices_nfinalized</a></div><div class="ttdeci">static volatile AO_t mutablematrices_nfinalized</div><div class="ttdef"><b>Definition:</b> <a href="../../db/de9/finalize_8cpp_source.html#l00030">finalize.cpp:30</a></div></div>
 </div><!-- fragment -->
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('d4/d4d/finalize_8hpp_a7a85cceae51c6e27
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d4/d4d/finalize_8hpp.html">finalize.hpp</a></li>
-    <li class="footer">Generated on Sun Dec 3 2023 01:25:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Dec 10 2023 01:27:42 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

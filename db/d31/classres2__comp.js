@@ -10,7 +10,6 @@ var classres2__comp =
     [ "cast_to_res2_comp", "db/d31/classres2__comp_a2d5aae295453ed6a35a9264a8498e01a.html#a2d5aae295453ed6a35a9264a8498e01a", null ],
     [ "compare_res2_pairs", "db/d31/classres2__comp_a1ed91906af3748788990be32b23e35c2.html#a1ed91906af3748788990be32b23e35c2", null ],
     [ "complete_thru_degree", "db/d31/classres2__comp_a366bf47f0710ef80d26ab8fecafe3c25.html#a366bf47f0710ef80d26ab8fecafe3c25", null ],
-    [ "degree_monoid", "db/d31/classres2__comp_a3858daea89cf89be041a53744a4b7408.html#a3858daea89cf89be041a53744a4b7408", null ],
     [ "display_order", "db/d31/classres2__comp_a8d179245d294f8257d8231d89d17207f.html#a8d179245d294f8257d8231d89d17207f", null ],
     [ "do_all_pairs", "db/d31/classres2__comp_ae0b3559fac3110bff4af46353bd57a3e.html#ae0b3559fac3110bff4af46353bd57a3e", null ],
     [ "do_auto_reductions", "db/d31/classres2__comp_ab02a6bfafbdd68b22248676720d1514a.html#ab02a6bfafbdd68b22248676720d1514a", null ],

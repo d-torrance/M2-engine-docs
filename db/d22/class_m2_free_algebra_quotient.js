@@ -11,7 +11,6 @@ var class_m2_free_algebra_quotient =
     [ "create", "db/d22/class_m2_free_algebra_quotient_a2016fab63f86d8a69db24670a4e092b2.html#a2016fab63f86d8a69db24670a4e092b2", null ],
     [ "debug_display", "db/d22/class_m2_free_algebra_quotient_a7637312c5d7d59c7b516b06bd77b9924.html#a7637312c5d7d59c7b516b06bd77b9924", null ],
     [ "debug_display", "db/d22/class_m2_free_algebra_quotient_a6aa9377266328988d5a45feac75b3721.html#a6aa9377266328988d5a45feac75b3721", null ],
-    [ "degree", "db/d22/class_m2_free_algebra_quotient_a65c92b2a42965f5a20182763cac771a6.html#a65c92b2a42965f5a20182763cac771a6", null ],
     [ "degreeMonoid", "db/d22/class_m2_free_algebra_quotient_aecec8c76d8689173f5577284ff400c06.html#aecec8c76d8689173f5577284ff400c06", null ],
     [ "divide", "db/d22/class_m2_free_algebra_quotient_a0c714c768b2cf8f257a734b3f1834456.html#a0c714c768b2cf8f257a734b3f1834456", null ],
     [ "elem_text_out", "db/d22/class_m2_free_algebra_quotient_a63eaa9f57033c816dd194661eea9f1a6.html#a63eaa9f57033c816dd194661eea9f1a6", null ],
