@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"d3/d31/classour__gc__cleanup_a06cce0c7e15ef83312d0b5240cd0d474.html#a06cce0c7e15ef83312d0b5240cd0d474":[6,0,224,0],
 "d3/d31/classour__gc__cleanup_a0c022cf1e062422acd36ecc63f51f87b.html#a0c022cf1e062422acd36ecc63f51f87b":[6,0,224,1],
 "d3/d42/class_d_poly.html":[4,0,2,1],
 "d3/d42/class_d_poly_a010da65b56b456403c4f6117eb8c415b.html#a010da65b56b456403c4f6117eb8c415b":[4,0,2,1,65],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "d3/d7b/class_mutable_engine_object_ac1b947c41e24e71d14a66a9c4db5cf83.html#ac1b947c41e24e71d14a66a9c4db5cf83":[6,0,210,2],
 "d3/d7c/reducedgb_8cpp.html":[7,0,0,0,252],
 "d3/d7c/reducedgb_8cpp_source.html":[7,0,0,0,252],
-"d3/d85/aring-wrap_8hpp.html":[7,0,0,0,35]
+"d3/d85/aring-wrap_8hpp.html":[7,0,0,0,35],
+"d3/d85/aring-wrap_8hpp_source.html":[7,0,0,0,35]
 };

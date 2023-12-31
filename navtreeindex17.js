@@ -1,6 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"d5/d17/classres__comp_ad5a2cb91e78ca1c13182e98a1aecd868.html#ad5a2cb91e78ca1c13182e98a1aecd868":[4,3,1,2,70],
 "d5/d17/classres__comp_ad87173b52600a89f03fdec667c0be4b9.html#ad87173b52600a89f03fdec667c0be4b9":[4,3,1,2,43],
 "d5/d17/classres__comp_adb8475cf67941cd0b7d10211b5e643fc.html#adb8475cf67941cd0b7d10211b5e643fc":[4,3,1,2,54],
 "d5/d17/classres__comp_ae108ff4a215d6b7df2674cccfec1652c.html#ae108ff4a215d6b7df2674cccfec1652c":[4,3,1,2,22],
@@ -249,5 +248,6 @@ var NAVTREEINDEX17 =
 "d5/d58/class_polynomial_ring_ac3ed4d62763e027c7d51bc600871ded5.html#ac3ed4d62763e027c7d51bc600871ded5":[4,0,2,6,26],
 "d5/d58/class_polynomial_ring_ac40d52c55b96aec2d85a317977d69156.html#ac40d52c55b96aec2d85a317977d69156":[4,0,2,6,59],
 "d5/d58/class_polynomial_ring_ac7d02c16a850422f90b08e1781b3885d.html#ac7d02c16a850422f90b08e1781b3885d":[4,0,2,6,4],
-"d5/d58/class_polynomial_ring_ac9ecf0725daa2652fcc178950ba5dfa1.html#ac9ecf0725daa2652fcc178950ba5dfa1":[4,0,2,6,20]
+"d5/d58/class_polynomial_ring_ac9ecf0725daa2652fcc178950ba5dfa1.html#ac9ecf0725daa2652fcc178950ba5dfa1":[4,0,2,6,20],
+"d5/d58/class_polynomial_ring_accd41bc13a5181a656ea4e3264c8cfbf.html#accd41bc13a5181a656ea4e3264c8cfbf":[4,0,2,6,13]
 };

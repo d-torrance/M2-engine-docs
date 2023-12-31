@@ -1,6 +1,5 @@
 var NAVTREEINDEX55 =
 {
-"df/dab/class_g_b_walker_a5caee532d6f70b4558744978b82b56fe.html#a5caee532d6f70b4558744978b82b56fe":[4,3,0,8,8],
 "df/dab/class_g_b_walker_a5ee1e63ed9ca0f6d4ea3728c22188591.html#a5ee1e63ed9ca0f6d4ea3728c22188591":[4,3,0,8,34],
 "df/dab/class_g_b_walker_a62de4cc75f11c688ec2a06bd8aec1eb0.html#a62de4cc75f11c688ec2a06bd8aec1eb0":[4,3,0,8,24],
 "df/dab/class_g_b_walker_a63a9bb8e216401af0f5acb5407ac875e.html#a63a9bb8e216401af0f5acb5407ac875e":[4,3,0,8,14],
@@ -249,5 +248,6 @@ var NAVTREEINDEX55 =
 "df/de3/janettree_8hpp.html":[7,0,0,0,0,5],
 "df/de3/janettree_8hpp_source.html":[7,0,0,0,0,5],
 "df/de7/struct_res_schreyer_order.html":[6,0,290],
-"df/de7/struct_res_schreyer_order_a1da00308e01e1b61eef4bc94a6b4465f.html#a1da00308e01e1b61eef4bc94a6b4465f":[6,0,290,1]
+"df/de7/struct_res_schreyer_order_a1da00308e01e1b61eef4bc94a6b4465f.html#a1da00308e01e1b61eef4bc94a6b4465f":[6,0,290,1],
+"df/de7/struct_res_schreyer_order_a5bea96a3b90862e3cb8f9104708fc6d9.html#a5bea96a3b90862e3cb8f9104708fc6d9":[6,0,290,0]
 };

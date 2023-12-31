@@ -1,6 +1,5 @@
 var NAVTREEINDEX49 =
 {
-"dd/dc9/ringelem_8hpp_af9bac62e2d632a9591e4db48aaa8ebd6.html#af9bac62e2d632a9591e4db48aaa8ebd6":[7,0,0,0,272,6],
 "dd/dc9/ringelem_8hpp_afea72c39052b53d15e7acad8d36847c1.html#afea72c39052b53d15e7acad8d36847c1":[7,0,0,0,272,22],
 "dd/dc9/ringelem_8hpp_source.html":[7,0,0,0,272],
 "dd/dca/dmat-gf-flint-big_8hpp.html":[7,0,0,0,78],
@@ -249,5 +248,6 @@ var NAVTREEINDEX49 =
 "dd/dcf/class_ring_afb7c55b4135b669cf01c0134da82114f.html#afb7c55b4135b669cf01c0134da82114f":[4,0,26,87],
 "dd/dcf/class_ring_afc47f40ab072db783126111b70693e49.html#afc47f40ab072db783126111b70693e49":[4,0,26,1],
 "dd/dcf/class_ring_afdf9776b22c9fc94f2e820fc8843622f.html#afdf9776b22c9fc94f2e820fc8843622f":[4,0,26,136],
-"dd/dcf/class_ring_afe8591877ff12e2221b8774625fe79f2.html#afe8591877ff12e2221b8774625fe79f2":[4,0,26,155]
+"dd/dcf/class_ring_afe8591877ff12e2221b8774625fe79f2.html#afe8591877ff12e2221b8774625fe79f2":[4,0,26,155],
+"dd/dcf/class_ring_afe99d9228f4ed009c801de0e070c9e3c.html#afe99d9228f4ed009c801de0e070c9e3c":[4,0,26,37]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX41 =
 {
-"db/d22/class_m2_free_algebra_quotient_a87ca510b3e9b4b0ddb86e17ef83a78d5.html#a87ca510b3e9b4b0ddb86e17ef83a78d5":[6,0,154,39],
 "db/d22/class_m2_free_algebra_quotient_a920670da3964eb7e68a54af62cef1ada.html#a920670da3964eb7e68a54af62cef1ada":[6,0,154,52],
 "db/d22/class_m2_free_algebra_quotient_a94b584a634d6192bd69ce1ef929bd380.html#a94b584a634d6192bd69ce1ef929bd380":[6,0,154,1],
 "db/d22/class_m2_free_algebra_quotient_a95c7cfefef9f74073c6976fa29cbcb85.html#a95c7cfefef9f74073c6976fa29cbcb85":[6,0,154,23],
@@ -249,5 +248,6 @@ var NAVTREEINDEX41 =
 "db/d67/_a_ring_c_c_c_test_8cpp_ac159c77e395a5fdd0243f43a40020504.html#ac159c77e395a5fdd0243f43a40020504":[7,0,0,0,6,0,8],
 "db/d67/_a_ring_c_c_c_test_8cpp_ae9bdae880060e6251e33e74cbf189d60.html#ae9bdae880060e6251e33e74cbf189d60":[7,0,0,0,6,0,6],
 "db/d67/_a_ring_c_c_c_test_8cpp_aff583e237b55bacf34012e1187cef2d8.html#aff583e237b55bacf34012e1187cef2d8":[7,0,0,0,6,0,2],
-"db/d67/_a_ring_c_c_c_test_8cpp_source.html":[7,0,0,0,6,0]
+"db/d67/_a_ring_c_c_c_test_8cpp_source.html":[7,0,0,0,6,0],
+"db/d6c/gauss_8hpp.html":[7,0,0,0,124]
 };
