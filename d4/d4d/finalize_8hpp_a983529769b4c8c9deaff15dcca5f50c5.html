@@ -97,23 +97,23 @@ $(document).ready(function(){initNavTree('d4/d4d/finalize_8hpp_a983529769b4c8c9d
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/de9/finalize_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../db/de9/finalize_8cpp_source.html">finalize.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="comment">// We are already setting a finalizer for rings in newdelete.hpp,</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">// I believe this one is just unsetting that one.</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">// #ifdef MEMDEBUG</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">//   GC_REGISTER_FINALIZER_IGNORE_SELF(M2_debug_to_outer(const_cast&lt;PolynomialRing *&gt;(G)), remove_polyring, 0, 0, 0);</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">// #else</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//   GC_REGISTER_FINALIZER_IGNORE_SELF(                  const_cast&lt;PolynomialRing *&gt;(G) , remove_polyring, 0, 0, 0);</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// #endif</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">//   AO_t nfinalized = AO_fetch_and_add1(&amp;polyrings_nfinalized);</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">//   if (M2_gbTrace &gt;= 3)</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">//     fprintf(stderr,</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">//             &quot;\n   -- registering polynomial ring %zd at %p\n&quot;,</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">//             nfinalized,</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">//             (const void *)G);</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../db/de9/finalize_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../db/de9/finalize_8cpp_source.html">finalize.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">// We are already setting a finalizer for rings in newdelete.hpp,</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// I believe this one is just unsetting that one.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">// #ifdef MEMDEBUG</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">//   GC_REGISTER_FINALIZER_IGNORE_SELF(M2_debug_to_outer(const_cast&lt;PolynomialRing *&gt;(G)), remove_polyring, 0, 0, 0);</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">// #else</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">//   GC_REGISTER_FINALIZER_IGNORE_SELF(                  const_cast&lt;PolynomialRing *&gt;(G) , remove_polyring, 0, 0, 0);</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// #endif</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">//   AO_t nfinalized = AO_fetch_and_add1(&amp;polyrings_nfinalized);</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">//   if (M2_gbTrace &gt;= 3)</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">//     fprintf(stderr,</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">//             &quot;\n   -- registering polynomial ring %zd at %p\n&quot;,</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//             nfinalized,</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">//             (const void *)G);</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="../../d6/da2/interface_2ring_8cpp_aa9eb5c1d9e712d3a1ffbaea41d4214e8.html#aa9eb5c1d9e712d3a1ffbaea41d4214e8">IM2_Ring_polyring()</a>, <a class="el" href="../../d6/da2/interface_2ring_8cpp_a29dfb5fc1877422daedd3b54e635e644.html#a29dfb5fc1877422daedd3b54e635e644">IM2_Ring_quotient()</a>, <a class="el" href="../../d6/da2/interface_2ring_8cpp_aeb8923cf0d95b4d47f5f8d53ed82cb48.html#aeb8923cf0d95b4d47f5f8d53ed82cb48">IM2_Ring_quotient1()</a>, <a class="el" href="../../d6/da2/interface_2ring_8cpp_a3954e10c086dbb60c3c81e46a494dc12.html#a3954e10c086dbb60c3c81e46a494dc12">IM2_Ring_schur()</a>, <a class="el" href="../../d6/da2/interface_2ring_8cpp_acc1232e21a39bcc595f1049bb5abe470.html#acc1232e21a39bcc595f1049bb5abe470">IM2_Ring_skew_polyring()</a>, <a class="el" href="../../d6/da2/interface_2ring_8cpp_abc05dabf1b1ecac88e0e2d8dec3abf9d.html#abc05dabf1b1ecac88e0e2d8dec3abf9d">IM2_Ring_solvable_algebra()</a>, <a class="el" href="../../d6/da2/interface_2ring_8cpp_aef27b0c423dc22a773284557a56d7b77.html#aef27b0c423dc22a773284557a56d7b77">IM2_Ring_weyl_algebra()</a>, and <a class="el" href="../../d6/da2/interface_2ring_8cpp_a16f6fa58d5c2f770101a13b061b6f580.html#a16f6fa58d5c2f770101a13b061b6f580">rawDividedPowerRing()</a>.</p>
 
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('d4/d4d/finalize_8hpp_a983529769b4c8c9d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d4/d4d/finalize_8hpp.html">finalize.hpp</a></li>
-    <li class="footer">Generated on Sun Jan 21 2024 01:34:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jan 28 2024 01:21:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

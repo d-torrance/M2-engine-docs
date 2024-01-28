@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('db/de9/finalize_8cpp.html','../../'); 
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d4/d4d/finalize_8hpp_source.html">finalize.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/db4/engine-includes_8hpp_source.html">engine-includes.hpp</a>&quot;</code><br />
-<code>#include &lt;atomic_ops.h&gt;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d4f/monideal_8hpp_source.html">monideal.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/ddf/comp-gb_8hpp_source.html">comp-gb.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d0b/comp-res_8hpp_source.html">comp-res.hpp</a>&quot;</code><br />
@@ -102,8 +102,6 @@ $(document).ready(function(){initNavTree('db/de9/finalize_8cpp.html','../../'); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a975e52a2961e176fb6bfadf4e1fa133c"><td class="memItemLeft" align="right" valign="top">AO_INLINE AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a975e52a2961e176fb6bfadf4e1fa133c.html#a975e52a2961e176fb6bfadf4e1fa133c">AO_fetch_and_add1</a> (volatile AO_t *addr)</td></tr>
-<tr class="separator:a975e52a2961e176fb6bfadf4e1fa133c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8edf5905229d913571c2b764ccf7b057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a8edf5905229d913571c2b764ccf7b057.html#a8edf5905229d913571c2b764ccf7b057">remove_monideal</a> (void *<a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, void *cd)</td></tr>
 <tr class="separator:a8edf5905229d913571c2b764ccf7b057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6501d4db829e3bfb2219f4850e8d224c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a6501d4db829e3bfb2219f4850e8d224c.html#a6501d4db829e3bfb2219f4850e8d224c">intern_monideal</a> (<a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *G)</td></tr>
@@ -131,34 +129,34 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ae1f49d12a64f64163bf79d820a4f9d20"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_ae1f49d12a64f64163bf79d820a4f9d20.html#ae1f49d12a64f64163bf79d820a4f9d20">monideals_nfinalized</a> = 0</td></tr>
-<tr class="separator:ae1f49d12a64f64163bf79d820a4f9d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc4c98f6c0da2a54c0d055f03cbd72ee"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_adc4c98f6c0da2a54c0d055f03cbd72ee.html#adc4c98f6c0da2a54c0d055f03cbd72ee">monideals_nremoved</a> = 0</td></tr>
-<tr class="separator:adc4c98f6c0da2a54c0d055f03cbd72ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c95d4c8f02372c98be74bfba1e62f43"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a9c95d4c8f02372c98be74bfba1e62f43.html#a9c95d4c8f02372c98be74bfba1e62f43">mutablematrices_nfinalized</a> = 0</td></tr>
-<tr class="separator:a9c95d4c8f02372c98be74bfba1e62f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28834aef1b66476ea7eb3b3f2427529b"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a28834aef1b66476ea7eb3b3f2427529b.html#a28834aef1b66476ea7eb3b3f2427529b">mutablematrices_nremoved</a> = 0</td></tr>
-<tr class="separator:a28834aef1b66476ea7eb3b3f2427529b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a703b4f2aeef8e739bbc4c3ce58d492e9"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a703b4f2aeef8e739bbc4c3ce58d492e9.html#a703b4f2aeef8e739bbc4c3ce58d492e9">polyrings_nfinalized</a> = 0</td></tr>
-<tr class="separator:a703b4f2aeef8e739bbc4c3ce58d492e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1003262963fe5b9b8c4af138e79ee4c3"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a1003262963fe5b9b8c4af138e79ee4c3.html#a1003262963fe5b9b8c4af138e79ee4c3">polyrings_nremoved</a> = 0</td></tr>
-<tr class="separator:a1003262963fe5b9b8c4af138e79ee4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f1bc29409bb07400d83e6c82ccfa7c6"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a5f1bc29409bb07400d83e6c82ccfa7c6.html#a5f1bc29409bb07400d83e6c82ccfa7c6">gbs_nfinalized</a> = 0</td></tr>
-<tr class="separator:a5f1bc29409bb07400d83e6c82ccfa7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b24fece1c9d81905e85ead38fffdff2"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a9b24fece1c9d81905e85ead38fffdff2.html#a9b24fece1c9d81905e85ead38fffdff2">gbs_nremoved</a> = 0</td></tr>
-<tr class="separator:a9b24fece1c9d81905e85ead38fffdff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13508774e24d30c86cb2d4596531c474"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a13508774e24d30c86cb2d4596531c474.html#a13508774e24d30c86cb2d4596531c474">res_nfinalized</a> = 0</td></tr>
-<tr class="separator:a13508774e24d30c86cb2d4596531c474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f6431f3ed3aad062fde764f5b7148b9"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a2f6431f3ed3aad062fde764f5b7148b9.html#a2f6431f3ed3aad062fde764f5b7148b9">res_nremoved</a> = 0</td></tr>
-<tr class="separator:a2f6431f3ed3aad062fde764f5b7148b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4f492c9ab8e22988cc9f164c40cc1b3"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_ad4f492c9ab8e22988cc9f164c40cc1b3.html#ad4f492c9ab8e22988cc9f164c40cc1b3">comp_nfinalized</a> = 0</td></tr>
-<tr class="separator:ad4f492c9ab8e22988cc9f164c40cc1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc0120cb4ec7d9ec2b70a5453b967afe"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_acc0120cb4ec7d9ec2b70a5453b967afe.html#acc0120cb4ec7d9ec2b70a5453b967afe">comp_nremoved</a> = 0</td></tr>
-<tr class="separator:acc0120cb4ec7d9ec2b70a5453b967afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7465aa2c2868cefe7b8c7a813174a0e"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_aa7465aa2c2868cefe7b8c7a813174a0e.html#aa7465aa2c2868cefe7b8c7a813174a0e">schorder_nfinalized</a> = 0</td></tr>
-<tr class="separator:aa7465aa2c2868cefe7b8c7a813174a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22f81d14481051270107a38852134380"><td class="memItemLeft" align="right" valign="top">static volatile AO_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a22f81d14481051270107a38852134380.html#a22f81d14481051270107a38852134380">schorder_nremoved</a> = 0</td></tr>
-<tr class="separator:a22f81d14481051270107a38852134380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a314f1633907ca5517a427746f3be4"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a46a314f1633907ca5517a427746f3be4.html#a46a314f1633907ca5517a427746f3be4">monideals_nfinalized</a> = 0</td></tr>
+<tr class="separator:a46a314f1633907ca5517a427746f3be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec852bc19434c8c752f2949087950d4"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a0ec852bc19434c8c752f2949087950d4.html#a0ec852bc19434c8c752f2949087950d4">monideals_nremoved</a> = 0</td></tr>
+<tr class="separator:a0ec852bc19434c8c752f2949087950d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe38175c8400dcd128ae6ef52c0d8922"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_afe38175c8400dcd128ae6ef52c0d8922.html#afe38175c8400dcd128ae6ef52c0d8922">mutablematrices_nfinalized</a> = 0</td></tr>
+<tr class="separator:afe38175c8400dcd128ae6ef52c0d8922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b01cee12b14bca0376ae7997ac6be9"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_af8b01cee12b14bca0376ae7997ac6be9.html#af8b01cee12b14bca0376ae7997ac6be9">mutablematrices_nremoved</a> = 0</td></tr>
+<tr class="separator:af8b01cee12b14bca0376ae7997ac6be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44d1adbbfde673d0837a247ef0ce06b"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_ac44d1adbbfde673d0837a247ef0ce06b.html#ac44d1adbbfde673d0837a247ef0ce06b">polyrings_nfinalized</a> = 0</td></tr>
+<tr class="separator:ac44d1adbbfde673d0837a247ef0ce06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4645ba49214a02fc684fdb2ae8d9622"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_ac4645ba49214a02fc684fdb2ae8d9622.html#ac4645ba49214a02fc684fdb2ae8d9622">polyrings_nremoved</a> = 0</td></tr>
+<tr class="separator:ac4645ba49214a02fc684fdb2ae8d9622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933b739846e3e582ba30d487117f12b9"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a933b739846e3e582ba30d487117f12b9.html#a933b739846e3e582ba30d487117f12b9">gbs_nfinalized</a> = 0</td></tr>
+<tr class="separator:a933b739846e3e582ba30d487117f12b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6224573bb0c9c6b3926602581f609cdf"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a6224573bb0c9c6b3926602581f609cdf.html#a6224573bb0c9c6b3926602581f609cdf">gbs_nremoved</a> = 0</td></tr>
+<tr class="separator:a6224573bb0c9c6b3926602581f609cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95576c322083b766d5056a956cf927e"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_ad95576c322083b766d5056a956cf927e.html#ad95576c322083b766d5056a956cf927e">res_nfinalized</a> = 0</td></tr>
+<tr class="separator:ad95576c322083b766d5056a956cf927e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90de081147ba0e7b0f6fb9632661386"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_ad90de081147ba0e7b0f6fb9632661386.html#ad90de081147ba0e7b0f6fb9632661386">res_nremoved</a> = 0</td></tr>
+<tr class="separator:ad90de081147ba0e7b0f6fb9632661386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3746f296791923aee6f56dc5b988dfe"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_ae3746f296791923aee6f56dc5b988dfe.html#ae3746f296791923aee6f56dc5b988dfe">comp_nfinalized</a> = 0</td></tr>
+<tr class="separator:ae3746f296791923aee6f56dc5b988dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03e1c53eee596dabf098166f0cbab88"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_ae03e1c53eee596dabf098166f0cbab88.html#ae03e1c53eee596dabf098166f0cbab88">comp_nremoved</a> = 0</td></tr>
+<tr class="separator:ae03e1c53eee596dabf098166f0cbab88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c08bdbbed36d87bb9e769980701b56"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_ae8c08bdbbed36d87bb9e769980701b56.html#ae8c08bdbbed36d87bb9e769980701b56">schorder_nfinalized</a> = 0</td></tr>
+<tr class="separator:ae8c08bdbbed36d87bb9e769980701b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac462517a041d654511f5e70e96a61c79"><td class="memItemLeft" align="right" valign="top">static volatile std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_ac462517a041d654511f5e70e96a61c79.html#ac462517a041d654511f5e70e96a61c79">schorder_nremoved</a> = 0</td></tr>
+<tr class="separator:ac462517a041d654511f5e70e96a61c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fb77db382f900660e60491db97da045"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a3fb77db382f900660e60491db97da045.html#a3fb77db382f900660e60491db97da045">nres</a></td></tr>
 <tr class="separator:a3fb77db382f900660e60491db97da045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22a9d2314fbda627ad2e4d802a0f071a"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/finalize_8cpp_a22a9d2314fbda627ad2e4d802a0f071a.html#a22a9d2314fbda627ad2e4d802a0f071a">nres_destruct</a></td></tr>
@@ -170,7 +168,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../db/de9/finalize_8cpp.html">finalize.cpp</a></li>
-    <li class="footer">Generated on Sun Jan 21 2024 01:34:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jan 28 2024 01:21:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
