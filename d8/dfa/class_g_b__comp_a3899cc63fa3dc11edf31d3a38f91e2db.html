@@ -128,15 +128,15 @@ $(document).ready(function(){initNavTree('d8/dfa/class_g_b__comp_a3899cc63fa3dc1
 <div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;  <span class="keywordflow">if</span> (m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>() != <a class="code" href="../../d8/dfa/class_g_b__comp_aafd7870c106e1b345350bfc2760bd594.html#aafd7870c106e1b345350bfc2760bd594">originalR</a>)</div>
 <div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;    {</div>
 <div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected matrix over the same ring&quot;</span>);</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;      *result_remainder = 0;</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;      *result_quotient = 0;</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;      *result_remainder = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;      *result_quotient = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;    }</div>
 <div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;  <span class="keywordflow">if</span> (m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>() != <a class="code" href="../../d8/dfa/class_g_b__comp_a77ef15790011bf2871ffbf5cf8e9b46d.html#a77ef15790011bf2871ffbf5cf8e9b46d">_F</a>-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>())</div>
 <div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;    {</div>
 <div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected matrices to have same number of rows&quot;</span>);</div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;      *result_remainder = 0;</div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;      *result_quotient = 0;</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;      *result_remainder = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;      *result_quotient = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;    }</div>
 <div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;  <a class="code" href="../../d8/dfa/class_g_b__comp_a14b1b8f16312e3b92ec569a77f9d93c0.html#a14b1b8f16312e3b92ec569a77f9d93c0">start_computation</a>();</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('d8/dfa/class_g_b__comp_a3899cc63fa3dc1
 <div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;      <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *fsyz = <a class="code" href="../../d8/dfa/class_g_b__comp_aaa6be129e1e02969e78615699ba6590c.html#aaa6be129e1e02969e78615699ba6590c">_GR</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_a636f1cd63198468bc6c4d48d68e6221c.html#a636f1cd63198468bc6c4d48d68e6221c">gbvector_zero</a>();</div>
 <div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160; </div>
 <div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;      <a class="code" href="../../d8/dfa/class_g_b__comp_a054e770ea8d81a3fdd08b5b14ac0d8c1.html#a054e770ea8d81a3fdd08b5b14ac0d8c1">gb_reduce</a>(f, fsyz);</div>
-<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;      <span class="keywordflow">if</span> (f != 0) all_zeroes = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;      <span class="keywordflow">if</span> (f != <span class="keyword">nullptr</span>) all_zeroes = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160; </div>
 <div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;      vec fv = <a class="code" href="../../d8/dfa/class_g_b__comp_aafd7870c106e1b345350bfc2760bd594.html#aafd7870c106e1b345350bfc2760bd594">originalR</a>-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a92c07f63568be6e075a4840d678ab1e7.html#a92c07f63568be6e075a4840d678ab1e7">translate_gbvector_to_vec_denom</a>(<a class="code" href="../../d8/dfa/class_g_b__comp_a77ef15790011bf2871ffbf5cf8e9b46d.html#a77ef15790011bf2871ffbf5cf8e9b46d">_F</a>, f, denom);</div>
 <div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;      <a class="code" href="../../d8/dfa/class_g_b__comp_a0d3196c35aaa9024c9924e25cd0849f8.html#a0d3196c35aaa9024c9924e25cd0849f8">_K</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a25329b83562f816d1935003d78971a8d.html#a25329b83562f816d1935003d78971a8d">negate_to</a>(denom);</div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('d8/dfa/class_g_b__comp_a3899cc63fa3dc1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/dfa/class_g_b__comp.html">GB_comp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

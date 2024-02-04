@@ -125,10 +125,10 @@ $(document).ready(function(){initNavTree('d5/ddb/class_reduced_g_b___z_z_aec4ba0
 
 <p class="definition">Definition at line <a class="el" href="../../db/d16/reducedgb-_z_z_8cpp_source.html#l00177">177</a> of file <a class="el" href="../../db/d16/reducedgb-_z_z_8cpp_source.html">reducedgb-ZZ.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a627f44b64b5d8d3ae8cb6a675f164405.html#a627f44b64b5d8d3ae8cb6a675f164405">zero</a> = 0;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a627f44b64b5d8d3ae8cb6a675f164405.html#a627f44b64b5d8d3ae8cb6a675f164405">zero</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> head;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *frem = &amp;head;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = 0;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *h = f;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> EXP = <a class="code" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>(<a class="code" href="../../d9/d3f/class_reduced_g_b_a88515b65250c4e3add7d965800b3b83d.html#a88515b65250c4e3add7d965800b3b83d">R</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_a80d5c086c90b27c66fa71f1a981b4b23.html#a80d5c086c90b27c66fa71f1a981b4b23">exponent_byte_size</a>());</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('d5/ddb/class_reduced_g_b___z_z_aec4ba0
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = h;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      frem = frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      h = h-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = 0;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      frem-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  h = head.<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  f = h;</div>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('d5/ddb/class_reduced_g_b___z_z_aec4ba0
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/ddb/class_reduced_g_b___z_z.html">ReducedGB_ZZ</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

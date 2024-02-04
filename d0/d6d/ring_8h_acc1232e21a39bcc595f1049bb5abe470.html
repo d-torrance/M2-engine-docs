@@ -112,10 +112,10 @@ $(document).ready(function(){initNavTree('d0/d6d/ring_8h_acc1232e21a39bcc595f104
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordflow">if</span> (P == 0)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a polynomial ring&quot;</span>);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <a class="code" href="../../dc/d98/class_skew_polynomial_ring.html">SkewPolynomialRing</a> *result = <a class="code" href="../../dc/d98/class_skew_polynomial_ring_ac59fb8cfb8c0f8265352943eb2afe27e.html#ac59fb8cfb8c0f8265352943eb2afe27e">SkewPolynomialRing::create</a>(</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;          P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>(), P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a3a3c308184f8d25f6f20ee6e5dee1cfb.html#a3a3c308184f8d25f6f20ee6e5dee1cfb">getMonoid</a>(), skewvars);</div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('d0/d6d/ring_8h_acc1232e21a39bcc595f104
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    {</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  }</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
 <div class="ttc" id="aclass_polynomial_ring_a3a3c308184f8d25f6f20ee6e5dee1cfb_html_a3a3c308184f8d25f6f20ee6e5dee1cfb"><div class="ttname"><a href="../../d5/d58/class_polynomial_ring_a3a3c308184f8d25f6f20ee6e5dee1cfb.html#a3a3c308184f8d25f6f20ee6e5dee1cfb">PolynomialRing::getMonoid</a></div><div class="ttdeci">virtual const Monoid * getMonoid() const</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/polyring_8hpp_source.html#l00225">polyring.hpp:225</a></div></div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('d0/d6d/ring_8h_acc1232e21a39bcc595f104
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d0/d6d/ring_8h.html">ring.h</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:52 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

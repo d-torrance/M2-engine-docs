@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('dc/d9b/pfaff_8cpp_source.html','../../
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d87/interrupted_8hpp.html">interrupted.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../dc/df6/class_pfaffian_computation_a54df7120d2643029fc7d571c0c297ccc.html#a54df7120d2643029fc7d571c0c297ccc">    7</a></span>&#160;<a class="code" href="../../dc/df6/class_pfaffian_computation_a54df7120d2643029fc7d571c0c297ccc.html#a54df7120d2643029fc7d571c0c297ccc">PfaffianComputation::PfaffianComputation</a>(<span class="keyword">const</span> <a class="code" href="../../d6/d3f/class_matrix.html">Matrix</a> *M0, <span class="keywordtype">int</span> p0)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    : R(M0-&gt;get_ring()), M(M0), <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>(p0), done(false), row_set(0)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    : R(M0-&gt;get_ring()), M(M0), <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>(p0), done(false), row_set(nullptr)</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="../../dc/df6/class_pfaffian_computation_a4e895f3505748f76bf9b4f8532a1755a.html#a4e895f3505748f76bf9b4f8532a1755a">pfaffs</a> = <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a>(<a class="code" href="../../dc/df6/class_pfaffian_computation_a030d878549e94839c152d75c57bd7d26.html#a030d878549e94839c152d75c57bd7d26">R</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>(1), 0);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dc/df6/class_pfaffian_computation_ad7f2deb0306c4da8887f153bee88111f.html#ad7f2deb0306c4da8887f153bee88111f">p</a> == 0)</div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('dc/d9b/pfaff_8cpp_source.html','../../
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>()-&gt;get_precision() &gt; 0)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;pfaffian computations over RR or CC not yet implemented&quot;</span>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="../../dc/df6/class_pfaffian_computation.html">PfaffianComputation</a> d {<span class="keyword">this</span>, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>};</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  d.calc();</div>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('dc/d9b/pfaff_8cpp_source.html','../../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dc/d9b/pfaff_8cpp.html">pfaff.cpp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

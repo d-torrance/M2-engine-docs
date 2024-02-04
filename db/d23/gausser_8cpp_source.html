@@ -96,8 +96,8 @@ $(document).ready(function(){initNavTree('db/d23/gausser_8cpp_source.html','../.
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d4/db9/class_gausser_a98124ff5c2eb54e1e426e302b0b6d2a1.html#a98124ff5c2eb54e1e426e302b0b6d2a1">    9</a></span>&#160;<a class="code" href="../../d4/db9/class_gausser.html">Gausser</a> *<a class="code" href="../../d4/db9/class_gausser_a98124ff5c2eb54e1e426e302b0b6d2a1.html#a98124ff5c2eb54e1e426e302b0b6d2a1">Gausser::newGausser</a>(<span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *K, <a class="code" href="../../d5/d43/class_f4_mem.html">F4Mem</a> *Mem0)</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d7/d1a/class_z__mod.html">Z_mod</a> *<a class="code" href="../../d4/db9/class_gausser_a47c8a1e15a64779b452b0ab70e6600d6.html#a47c8a1e15a64779b452b0ab70e6600d6">Kp</a> = <a class="code" href="../../d4/db9/class_gausser_a84e1b17dd94fdf0a21f01feaaff16194.html#a84e1b17dd94fdf0a21f01feaaff16194">K</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_acfc60bed5e5bf5689aa0b9cd18080640.html#acfc60bed5e5bf5689aa0b9cd18080640">cast_to_Z_mod</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d4/db9/class_gausser_a47c8a1e15a64779b452b0ab70e6600d6.html#a47c8a1e15a64779b452b0ab70e6600d6">Kp</a> != 0) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="../../d4/db9/class_gausser_abf88e5b6c427c97dfe26c2b5def33012.html#abf88e5b6c427c97dfe26c2b5def33012">Gausser</a>(<a class="code" href="../../d4/db9/class_gausser_a47c8a1e15a64779b452b0ab70e6600d6.html#a47c8a1e15a64779b452b0ab70e6600d6">Kp</a>, Mem0);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d4/db9/class_gausser_a47c8a1e15a64779b452b0ab70e6600d6.html#a47c8a1e15a64779b452b0ab70e6600d6">Kp</a> != <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="../../d4/db9/class_gausser_abf88e5b6c427c97dfe26c2b5def33012.html#abf88e5b6c427c97dfe26c2b5def33012">Gausser</a>(<a class="code" href="../../d4/db9/class_gausser_a47c8a1e15a64779b452b0ab70e6600d6.html#a47c8a1e15a64779b452b0ab70e6600d6">Kp</a>, Mem0);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d4/db9/class_gausser_abf88e5b6c427c97dfe26c2b5def33012.html#abf88e5b6c427c97dfe26c2b5def33012">   16</a></span>&#160;<a class="code" href="../../d4/db9/class_gausser_abf88e5b6c427c97dfe26c2b5def33012.html#abf88e5b6c427c97dfe26c2b5def33012">Gausser::Gausser</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d1a/class_z__mod.html">Z_mod</a> *K0, <a class="code" href="../../d5/d43/class_f4_mem.html">F4Mem</a> *Mem0)</div>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('db/d23/gausser_8cpp_source.html','../.
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; len; i++) result[i] = elems[i].get_int();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d4/db9/class_gausser_a3ac8e487ee59654206eecd8ba68c1323.html#a3ac8e487ee59654206eecd8ba68c1323">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d4/db9/class_gausser_a3ac8e487ee59654206eecd8ba68c1323.html#a3ac8e487ee59654206eecd8ba68c1323">Gausser::to_ringelem_array</a>(<span class="keywordtype">int</span> len,</div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('db/d23/gausser_8cpp_source.html','../.
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; len; i++) result[i] = elems[i];</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    };</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../d4/db9/class_gausser_a8a20651701fc545dfb4493446aee8a88.html#a8a20651701fc545dfb4493446aee8a88">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d4/db9/class_gausser_a8a20651701fc545dfb4493446aee8a88.html#a8a20651701fc545dfb4493446aee8a88">Gausser::deallocate_F4CCoefficientArray</a>(<a class="code" href="../../d2/dc6/gausser_8hpp_a74ebf151d71edc169dd3ae7174669f43.html#a74ebf151d71edc169dd3ae7174669f43">F4CoefficientArray</a> &amp;F,</div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('db/d23/gausser_8cpp_source.html','../.
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="../../d4/db9/class_gausser_a34b4ccb72d24d3a4ef71bfaf7570e586.html#a34b4ccb72d24d3a4ef71bfaf7570e586aee9c7806fb3df43cfd65fc7e28df6eff">ZZp</a>:</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="../../d4/db9/class_gausser_a09e171544d4017bbea7141f059c9872c.html#a09e171544d4017bbea7141f059c9872c">Mem</a>-&gt;<a class="code" href="../../d5/d43/class_f4_mem_a60186eca81c964b21d398658230ffa60.html#a60186eca81c964b21d398658230ffa60">coefficients</a>.<a class="code" href="../../df/de1/class_f4_vec_a4c60f11cea254164511146c2089de2f5.html#a4c60f11cea254164511146c2089de2f5">deallocate</a>(elems);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        F = 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        F = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
@@ -315,7 +315,7 @@ $(document).ready(function(){initNavTree('db/d23/gausser_8cpp_source.html','../.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8ed8434bc3d991323934987a3489e746.html">f4</a></li><li class="navelem"><a class="el" href="../../db/d23/gausser_8cpp.html">gausser.cpp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:50 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

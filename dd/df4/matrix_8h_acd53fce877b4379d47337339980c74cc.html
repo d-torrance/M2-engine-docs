@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('dd/df4/matrix_8h_acd53fce877b4379d4733
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      <span class="keywordflow">if</span> (n == 0)</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        {</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix direct sum: expects at least one matrix&quot;</span>);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        }</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d6/d3f/class_matrix.html">Matrix</a> *result = Ms-&gt;array[0];</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R = result-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>();</div>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('dd/df4/matrix_8h_acd53fce877b4379d4733
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">if</span> (R != Ms-&gt;array[i]-&gt;get_ring())</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;          {</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix direct sum: different base rings&quot;</span>);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;          }</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 1; i &lt; n; i++)</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        result = result-&gt;<a class="code" href="../../d6/d3f/class_matrix_aeddedfb471f985a3781514378848cd85.html#aeddedfb471f985a3781514378848cd85">direct_sum</a>(Ms-&gt;array[i]);</div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('dd/df4/matrix_8h_acd53fce877b4379d4733
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    {</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  }</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
 <div class="ttc" id="aclass_matrix_aa8df790e4669d0075ef8356d23e8d1fc_html_aa8df790e4669d0075ef8356d23e8d1fc"><div class="ttname"><a href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">Matrix::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00085">matrix.hpp:85</a></div></div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('dd/df4/matrix_8h_acd53fce877b4379d4733
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../dd/df4/matrix_8h.html">matrix.h</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:52 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

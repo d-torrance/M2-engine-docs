@@ -112,13 +112,13 @@ $(document).ready(function(){initNavTree('d9/d3f/class_reduced_g_b_a0aff9a7ba773
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">if</span> (m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>() != <a class="code" href="../../d9/d3f/class_reduced_g_b_a9a69675ed6fa35f9fc767151aec808de.html#a9a69675ed6fa35f9fc767151aec808de">originalR</a>)</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    {</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected matrix over the same ring&quot;</span>);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">if</span> (m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>() != <a class="code" href="../../d9/d3f/class_reduced_g_b_ad565fd513e9b90bad99de07405765b79.html#ad565fd513e9b90bad99de07405765b79">F</a>-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>())</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected matrices to have same number of rows&quot;</span>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> red(m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa19c616f5a4f272b4da3c29e726ef972.html#aa19c616f5a4f272b4da3c29e726ef972">cols</a>(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a06fff1c55e11c5cadf8a5abd3f6c35cb.html#a06fff1c55e11c5cadf8a5abd3f6c35cb">degree_shift</a>());</div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('d9/d3f/class_reduced_g_b_a0aff9a7ba773
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d3f/class_reduced_g_b.html">ReducedGB</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -120,7 +120,7 @@ template&lt;typename Key &gt; </div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  <span class="keyword">auto</span> comp = M-&gt;<a class="code" href="../../dc/d0d/class_res_monoid_dense_a0ca67cdf25e35c98720ca9153e4bfb76.html#a0ca67cdf25e35c98720ca9153e4bfb76">get_component</a>(m);</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keywordflow">if</span> (comp &gt;= mis.size()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  mi_node *mi = mis[comp];</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keywordflow">if</span> (mi == NULL) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keywordflow">if</span> (mi == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  M-&gt;<a class="code" href="../../dc/d0d/class_res_monoid_dense_a6d6ba4a37656470c82661c045773d03b.html#a6d6ba4a37656470c82661c045773d03b">to_expvector</a>(m, <a class="code" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_abd7c1d1a2952e24f27820010363f1550.html#abd7c1d1a2952e24f27820010363f1550">exp0</a>, comp);</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_ab675edbf6c23580f824c50d1988706c6.html#ab675edbf6c23580f824c50d1988706c6">find_one_divisor1</a>(mi, <a class="code" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_abd7c1d1a2952e24f27820010363f1550.html#abd7c1d1a2952e24f27820010363f1550">exp0</a>, result_k);</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;}</div>
@@ -137,7 +137,7 @@ template&lt;typename Key &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d5f/class_res_f4_monomial_lookup_table_t.html">ResF4MonomialLookupTableT</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_a4aa6d27732e42681838370bb18b90411.html','../../'); initResizable(); });
+$(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_a7fe34ff83b57e3712b9e8472a5c487c7.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -81,8 +81,8 @@ $(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_a4aa6d
 </div>
 
 <div class="contents">
-<a id="a4aa6d27732e42681838370bb18b90411"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4aa6d27732e42681838370bb18b90411">&#9670;&nbsp;</a></span>find_monomial_divisors()</h2>
+<a id="a7fe34ff83b57e3712b9e8472a5c487c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe34ff83b57e3712b9e8472a5c487c7">&#9670;&nbsp;</a></span>find_monomial_divisors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_a4aa6d
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../da/d94/newdelete_8hpp_a2f57de967a25a07781a4d50fa2cc1a1b.html#a2f57de967a25a07781a4d50fa2cc1a1b">gc_vector</a>&lt; <a class="el" href="../../dd/d76/struct_monomial_table_z_z_1_1mon__term.html">mon_term</a> * &gt; *&#160;</td>
-          <td class="paramname"><em>result</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>result</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_a4aa6d
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">if</span> (is_div)</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;          {</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            nmatches++;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keywordflow">if</span> (result != 0) result-&gt;push_back(t);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keywordflow">if</span> (result != <span class="keyword">nullptr</span>) result-&gt;push_back(t);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d1/df6/polyroots_8cpp_affe776513b24d84b39af8ab0930fef7f.html#affe776513b24d84b39af8ab0930fef7f">max</a> &gt;= 0 &amp;&amp; nmatches &gt;= <a class="code" href="../../d1/df6/polyroots_8cpp_affe776513b24d84b39af8ab0930fef7f.html#affe776513b24d84b39af8ab0930fef7f">max</a>) <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;          }</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      }</div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_a4aa6d
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      o &lt;&lt; <span class="stringliteral">&quot;find_monomial_divisors called on &quot;</span>;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <a class="code" href="../../da/da3/class_monomial_table_z_z_a4edfd6cfa462b250177b6ee0ce2f2565.html#a4edfd6cfa462b250177b6ee0ce2f2565">show_mon_term</a>(o, <span class="keyword">nullptr</span>, <a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>, comp);</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      o &lt;&lt; <span class="stringliteral">&quot; #matches=&quot;</span> &lt;&lt; nmatches &lt;&lt; <a class="code" href="../../d7/dce/_m2-replacement_8c_a3e47bea989735dbc22688e1ee25ebe9c.html#a3e47bea989735dbc22688e1ee25ebe9c">newline</a>;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <span class="keywordflow">if</span> (result != 0)</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <span class="keywordflow">if</span> (result != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; result-&gt;size(); i++) <a class="code" href="../../da/da3/class_monomial_table_z_z_a4edfd6cfa462b250177b6ee0ce2f2565.html#a4edfd6cfa462b250177b6ee0ce2f2565">show_mon_term</a>(o, (*result)[i]);</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      o &lt;&lt; <a class="code" href="../../d7/dce/_m2-replacement_8c_a3e47bea989735dbc22688e1ee25ebe9c.html#a3e47bea989735dbc22688e1ee25ebe9c">newline</a>;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    }</div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_a4aa6d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/da3/class_monomial_table_z_z.html">MonomialTableZZ</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

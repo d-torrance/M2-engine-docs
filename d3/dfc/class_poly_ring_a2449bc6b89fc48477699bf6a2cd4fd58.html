@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a2449bc6b89fc48
 <div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *remt = &amp;remhead;</div>
 <div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> c;</div>
 <div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;  <a class="code" href="../../d8/d11/gbring_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a> m = <a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_a6f3936578edf5076153f30833bc552fe.html#a6f3936578edf5076153f30833bc552fe">make_one</a>();</div>
-<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;  <span class="keywordflow">while</span> (t != NULL)</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;  <span class="keywordflow">while</span> (t != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_a2813e4414394296858d7d8ea0946114c.html#a2813e4414394296858d7d8ea0946114c">divides_partial_order</a>(b-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>, t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>))</div>
 <div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;      {</div>
 <div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;        a = t;</div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a2449bc6b89fc48
 <div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;        t = t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;      }</div>
 <div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160; </div>
-<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;  remt-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = NULL;</div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;  remt-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;  <span class="keywordflow">return</span> remhead.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;}</div>
 <div class="ttc" id="aclass_monoid_a2813e4414394296858d7d8ea0946114c_html_a2813e4414394296858d7d8ea0946114c"><div class="ttname"><a href="../../d9/db1/class_monoid_a2813e4414394296858d7d8ea0946114c.html#a2813e4414394296858d7d8ea0946114c">Monoid::divides_partial_order</a></div><div class="ttdeci">bool divides_partial_order(const_monomial m, const_monomial n) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5c/monoid_8cpp_source.html#l00481">monoid.cpp:481</a></div></div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a2449bc6b89fc48
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

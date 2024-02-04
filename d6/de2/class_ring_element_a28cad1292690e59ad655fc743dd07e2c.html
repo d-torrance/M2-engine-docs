@@ -103,10 +103,10 @@ $(document).ready(function(){initNavTree('d6/de2/class_ring_element_a28cad129269
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          <span class="stringliteral">&quot;ring subtraction requires both elements to have the same base ring&quot;</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> result = <a class="code" href="../../d6/de2/class_ring_element_aac17d01996fc44a0ce837b4e7351f198.html#aac17d01996fc44a0ce837b4e7351f198">R</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a3b38783c970fe2174ad23f33bef6ea70.html#a3b38783c970fe2174ad23f33bef6ea70">subtract</a>(<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>(), b.<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>());</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="../../d6/de2/class_ring_element_a0e2a80fc5c6bcc3d890ba8b99e92ff24.html#a0e2a80fc5c6bcc3d890ba8b99e92ff24">RingElement</a>(<a class="code" href="../../d6/de2/class_ring_element_aac17d01996fc44a0ce837b4e7351f198.html#aac17d01996fc44a0ce837b4e7351f198">R</a>, result);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="ttc" id="aclass_ring_a3b38783c970fe2174ad23f33bef6ea70_html_a3b38783c970fe2174ad23f33bef6ea70"><div class="ttname"><a href="../../dd/dcf/class_ring_a3b38783c970fe2174ad23f33bef6ea70.html#a3b38783c970fe2174ad23f33bef6ea70">Ring::subtract</a></div><div class="ttdeci">virtual ring_elem subtract(const ring_elem f, const ring_elem g) const =0</div></div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('d6/de2/class_ring_element_a28cad129269
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

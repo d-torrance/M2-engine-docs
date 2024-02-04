@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('dc/d98/class_skew_polynomial_ring_af9e
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">if</span> (sign == 0) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *t = <a class="code" href="../../d3/dfc/class_poly_ring_acdd279664ded1684b9098f7a8b8b0f1e.html#acdd279664ded1684b9098f7a8b8b0f1e">new_term</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">coeff</a> = <a class="code" href="../../d5/d58/class_polynomial_ring_a54aee749a7364fd81e2460f691480fdc.html#a54aee749a7364fd81e2460f691480fdc">K_</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_ada0ae7428fbb2d3c0de7d835997d454a.html#ada0ae7428fbb2d3c0de7d835997d454a">mult</a>(c, s.coeff);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">if</span> (sign &lt; 0) <a class="code" href="../../d5/d58/class_polynomial_ring_a54aee749a7364fd81e2460f691480fdc.html#a54aee749a7364fd81e2460f691480fdc">K_</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a25329b83562f816d1935003d78971a8d.html#a25329b83562f816d1935003d78971a8d">negate_to</a>(t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">coeff</a>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('dc/d98/class_skew_polynomial_ring_af9e
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      inresult-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = t;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      inresult = inresult-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  inresult-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  inresult-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">return</span> head.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
 <div class="ttc" id="a_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12_html_aec09fab2f897ff3d8346961f38331d12"><div class="ttname"><a href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a></div><div class="ttdeci">exponents::Exponents exponents_t</div><div class="ttdef"><b>Definition:</b> <a href="../../da/db0/_exponent_vector_8hpp_source.html#l00276">ExponentVector.hpp:276</a></div></div>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('dc/d98/class_skew_polynomial_ring_af9e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d98/class_skew_polynomial_ring.html">SkewPolynomialRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

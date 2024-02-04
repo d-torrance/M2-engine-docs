@@ -118,8 +118,8 @@ $(document).ready(function(){initNavTree('db/d49/classs__pair__heap_a95450142dd3
 <p class="definition">Definition at line <a class="el" href="../../d9/d52/spair_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../d9/d52/spair_8cpp_source.html">spair.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="comment">// Sort in ascending degree order, then ascending monomial order</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span> f;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">return</span> g;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> f;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> g;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="../../d8/d45/structs__pair.html">s_pair</a> head;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="../../d8/d45/structs__pair.html">s_pair</a> *result = &amp;head;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordflow">while</span> (1) <span class="keywordflow">switch</span> (<a class="code" href="../../db/d49/classs__pair__heap_a6e7211f1f4d2134ac9b3389b393d5600.html#a6e7211f1f4d2134ac9b3389b393d5600">compare</a>(f, g))</div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('db/d49/classs__pair__heap_a95450142dd3
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;          result-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a> = g;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;          result = result-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a>;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;          g = g-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;          <span class="keywordflow">if</span> (g == NULL)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;          <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            {</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;              result-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a> = f;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;              <span class="keywordflow">return</span> head.<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a>;</div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('db/d49/classs__pair__heap_a95450142dd3
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;          result-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a> = f;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;          result = result-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a>;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;          f = f-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;          <span class="keywordflow">if</span> (f == NULL)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;          <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            {</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;              result-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a> = g;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;              <span class="keywordflow">return</span> head.<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a>;</div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('db/d49/classs__pair__heap_a95450142dd3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d49/classs__pair__heap.html">s_pair_heap</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

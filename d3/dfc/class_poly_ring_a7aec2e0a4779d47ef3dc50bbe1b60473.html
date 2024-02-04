@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a7aec2e0a4779d4
 <div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *nextterm = <a class="code" href="../../d3/dfc/class_poly_ring_acdd279664ded1684b9098f7a8b8b0f1e.html#acdd279664ded1684b9098f7a8b8b0f1e">new_term</a>();</div>
 <div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160; </div>
 <div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;  <span class="comment">//  buffer o;</span></div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;  <span class="keywordflow">while</span> (t != NULL)</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;  <span class="keywordflow">while</span> (t != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_a2813e4414394296858d7d8ea0946114c.html#a2813e4414394296858d7d8ea0946114c">divides_partial_order</a>(b-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>, t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>))</div>
 <div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;      {</div>
 <div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;        <span class="comment">// o &lt;&lt; &quot;t = &quot;; elem_text_out(o,t); o &lt;&lt; newline;</span></div>
@@ -173,9 +173,9 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a7aec2e0a4779d4
 <div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;        t = t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;      }</div>
 <div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160; </div>
-<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;  nextterm = NULL;</div>
-<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;  remt-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = NULL;</div>
-<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;  divt-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = NULL;</div>
+<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;  nextterm = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;  remt-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;  divt-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;  quot = divhead.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;  <span class="keywordflow">return</span> remhead.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;}</div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a7aec2e0a4779d4
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

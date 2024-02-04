@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('d8/da3/classres2__poly_ac8ef5989943eaf
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dbc/res-a0-poly_8cpp_source.html#l00254">254</a> of file <a class="el" href="../../d9/dbc/res-a0-poly_8cpp_source.html">res-a0-poly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;{</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">if</span> (f == NULL)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    {</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      o &lt;&lt; <span class="stringliteral">&quot;0&quot;</span>;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <span class="keywordflow">return</span>;</div>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('d8/da3/classres2__poly_ac8ef5989943eaf
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keywordtype">bool</span> p_one = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordtype">bool</span> p_parens = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordtype">bool</span> p_plus = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d2/dbf/structres2term.html">res2term</a> *t = f; t != NULL; t = t-&gt;<a class="code" href="../../d2/dbf/structres2term_a2f39d6cc2e8452a9abfb161a5aa72bf9.html#a2f39d6cc2e8452a9abfb161a5aa72bf9">next</a>)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="../../d2/dbf/structres2term.html">res2term</a> *t = f; t != <span class="keyword">nullptr</span>; t = t-&gt;<a class="code" href="../../d2/dbf/structres2term_a2f39d6cc2e8452a9abfb161a5aa72bf9.html#a2f39d6cc2e8452a9abfb161a5aa72bf9">next</a>)</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    {</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      <span class="keywordtype">int</span> isone = <a class="code" href="../../d8/da3/classres2__poly_a2a283784910fcc30e615a9075f314e3b.html#a2a283784910fcc30e615a9075f314e3b">M</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_a657eb759a40ad53e4c3c2bb92295c3ca.html#a657eb759a40ad53e4c3c2bb92295c3ca">is_one</a>(t-&gt;monom);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <a class="code" href="../../d8/da3/classres2__poly_a6aea4262af2d980f05225703f02520da.html#a6aea4262af2d980f05225703f02520da">K</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a7681f099a40a51225f38f66386820c39.html#a7681f099a40a51225f38f66386820c39">elem_text_out</a>(o, t-&gt;coeff, p_one, p_plus, p_parens);</div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('d8/da3/classres2__poly_ac8ef5989943eaf
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/da3/classres2__poly.html">res2_poly</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -98,12 +98,12 @@ $(document).ready(function(){initNavTree('dc/d58/classgbvector_heap_a3ad45a6d042
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l01594">1594</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;{</div>
-<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *result = NULL;</div>
+<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *result = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= <a class="code" href="../../dc/d58/classgbvector_heap_a71e5462503f5606dd593ee984b8f8caf.html#a71e5462503f5606dd593ee984b8f8caf">top_of_heap</a>; i++)</div>
 <div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;    {</div>
-<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../dc/d58/classgbvector_heap_ac548ed0dbe1a6674991a0cc29a0e3da9.html#ac548ed0dbe1a6674991a0cc29a0e3da9">heap</a>[i] == NULL) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../dc/d58/classgbvector_heap_ac548ed0dbe1a6674991a0cc29a0e3da9.html#ac548ed0dbe1a6674991a0cc29a0e3da9">heap</a>[i] == <span class="keyword">nullptr</span>) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;      <a class="code" href="../../dc/d58/classgbvector_heap_add1dd7aa2ef4f1e908c79f0a38b12662.html#add1dd7aa2ef4f1e908c79f0a38b12662">GR</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_ad185a1fa27c0b16d63710fc6bd9dee50.html#ad185a1fa27c0b16d63710fc6bd9dee50">gbvector_add_to</a>(<a class="code" href="../../dc/d58/classgbvector_heap_a4429265f3add4c989fd9d189fc2bfec6.html#a4429265f3add4c989fd9d189fc2bfec6">F</a>, result, <a class="code" href="../../dc/d58/classgbvector_heap_ac548ed0dbe1a6674991a0cc29a0e3da9.html#ac548ed0dbe1a6674991a0cc29a0e3da9">heap</a>[i]);</div>
-<div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;      <a class="code" href="../../dc/d58/classgbvector_heap_ac548ed0dbe1a6674991a0cc29a0e3da9.html#ac548ed0dbe1a6674991a0cc29a0e3da9">heap</a>[i] = NULL;</div>
+<div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;      <a class="code" href="../../dc/d58/classgbvector_heap_ac548ed0dbe1a6674991a0cc29a0e3da9.html#ac548ed0dbe1a6674991a0cc29a0e3da9">heap</a>[i] = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;    }</div>
 <div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;  <a class="code" href="../../dc/d58/classgbvector_heap_a71e5462503f5606dd593ee984b8f8caf.html#a71e5462503f5606dd593ee984b8f8caf">top_of_heap</a> = -1;</div>
 <div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;  <span class="keywordflow">return</span> result;</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('dc/d58/classgbvector_heap_a3ad45a6d042
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d58/classgbvector_heap.html">gbvectorHeap</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

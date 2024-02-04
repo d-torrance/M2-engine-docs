@@ -110,9 +110,9 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a61d4bfd2af05a757e3e
 <p class="definition">Definition at line <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html#l00694">694</a> of file <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html">ring-vecs.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;{</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *PR = <a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;  <span class="keywordflow">if</span> (PR == 0 || v == NULL) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;  <span class="keywordflow">if</span> (PR == <span class="keyword">nullptr</span> || v == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/db1/class_monoid.html">Monoid</a> *M = PR-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a3a3c308184f8d25f6f20ee6e5dee1cfb.html#a3a3c308184f8d25f6f20ee6e5dee1cfb">getMonoid</a>();</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;  <span class="keywordflow">for</span> (vec w = v; w != NULL; w = w-&gt;next)</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;  <span class="keywordflow">for</span> (vec w = v; w != <span class="keyword">nullptr</span>; w = w-&gt;next)</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="keywordflow">if</span> (!M-&gt;<a class="code" href="../../d9/db1/class_monoid_a17e7622250b0cf7b741a215931ccbe81.html#a17e7622250b0cf7b741a215931ccbe81">in_subring</a>(nslots, PR-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_af375408bcf9a23887d38b2f9c611c66c.html#af375408bcf9a23887d38b2f9c611c66c">lead_flat_monomial</a>(w-&gt;coeff))) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;}</div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a61d4bfd2af05a757e3e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

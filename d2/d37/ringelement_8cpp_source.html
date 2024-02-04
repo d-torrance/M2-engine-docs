@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> f;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">if</span> (R-&gt;<a class="code" href="../../dd/dcf/class_ring_a627647d4e37d375a95f7308fa57565aa.html#a627647d4e37d375a95f7308fa57565aa">from_BigComplex</a>(z, f)) <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, f);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;cannot create element of this ring from an element of CC&quot;</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../d2/d37/ringelement_8cpp_af9ea11d4191a5c09b0d91317c8606d1a.html#af9ea11d4191a5c09b0d91317c8606d1a">   72</a></span>&#160;<span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *<a class="code" href="../../d2/d37/ringelement_8cpp_af9ea11d4191a5c09b0d91317c8606d1a.html#af9ea11d4191a5c09b0d91317c8606d1a">IM2_RingElement_from_BigReal</a>(<span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R, gmp_RR z)</div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> f;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">if</span> (R-&gt;<a class="code" href="../../dd/dcf/class_ring_a21be379569c91492bf6b1f61c1e1d3d2.html#a21be379569c91492bf6b1f61c1e1d3d2">from_BigReal</a>(z, f)) <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, f);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;cannot create element of this ring from an element of RR&quot;</span>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../d2/d37/ringelement_8cpp_aebb8c391b4e5e74c5a3ee94c58afc78a.html#aebb8c391b4e5e74c5a3ee94c58afc78a">   80</a></span>&#160;<span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *<a class="code" href="../../d2/d37/ringelement_8cpp_aebb8c391b4e5e74c5a3ee94c58afc78a.html#aebb8c391b4e5e74c5a3ee94c58afc78a">IM2_RingElement_from_Interval</a>(<span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R, gmp_RRi z)</div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;   <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> f;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;   <span class="keywordflow">if</span> (R-&gt;<a class="code" href="../../dd/dcf/class_ring_a28c61dd3bd079e86e155df7f72d94864.html#a28c61dd3bd079e86e155df7f72d94864">from_Interval</a>(z, f)) <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, f);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;   <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;cannot create element of this ring from an element of RRi&quot;</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;   <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;   <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../d2/d37/ringelement_8cpp_af4d649a4a938a18e89a2ffb86abd11af.html#af4d649a4a938a18e89a2ffb86abd11af">   88</a></span>&#160;gmp_ZZorNull <a class="code" href="../../d2/d37/ringelement_8cpp_af4d649a4a938a18e89a2ffb86abd11af.html#af4d649a4a938a18e89a2ffb86abd11af">IM2_RingElement_to_Integer</a>(<span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *a)</div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;Expected ZZ or ZZ/p as base ring&quot;</span>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../d2/d37/ringelement_8cpp_a193385dacc384435a6f641c3f52a9eed.html#a193385dacc384435a6f641c3f52a9eed">  114</a></span>&#160;gmp_QQorNull <a class="code" href="../../d2/d37/ringelement_8cpp_a193385dacc384435a6f641c3f52a9eed.html#a193385dacc384435a6f641c3f52a9eed">IM2_RingElement_to_rational</a>(<span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *a)</div>
@@ -264,7 +264,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R = a-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>();</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keyword">auto</span> RCCC = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring.html">M2::ConcreteRing&lt;M2::ARingCCC&gt;</a> *<span class="keyword">&gt;</span>(R);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordflow">if</span> (RCCC != 0)</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordflow">if</span> (RCCC != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    {</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../de/d31/structcc__struct.html">M2::ARingCCC::ElementType</a> &amp;b =</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;          RCCC-&gt;ring().from_ring_elem_const(a-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>());</div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keyword">auto</span> RCC = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="../../d0/d99/class_m2_1_1_concrete_ring.html">M2::ConcreteRing&lt;M2::ARingCC&gt;</a> *<span class="keyword">&gt;</span>(R);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">if</span> (RCC != 0)</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">if</span> (RCC != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    {</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../db/dae/structcc__doubles__struct.html">M2::ARingCC::ElementType</a> &amp;b =</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;          RCC-&gt;ring().from_ring_elem_const(a-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>());</div>
@@ -280,7 +280,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected an element of CCC&quot;</span>);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#if 0</span></div>
@@ -324,12 +324,12 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    {</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> a = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a0947d5cf2b215abb3432bd300e5fefbe.html#a0947d5cf2b215abb3432bd300e5fefbe">var</a>(v);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, a);</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    {</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  }</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
@@ -356,12 +356,12 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;              <span class="stringliteral">&quot;ring remainder requires both elements to have the same base &quot;</span></div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;              <span class="stringliteral">&quot;ring&quot;</span>);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        }</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> fquot;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> frem =</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;          R-&gt;<a class="code" href="../../dd/dcf/class_ring_a5d5a83a2a025ade33c8ded49e39e9312.html#a5d5a83a2a025ade33c8ded49e39e9312">remainderAndQuotient</a>(a-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>(), b-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>(), fquot);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      engine_RawRingElementPair result = <span class="keyword">new</span> engine_RawRingElementPair_struct;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      result-&gt;a = <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, fquot);</div>
@@ -370,7 +370,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    {</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  }</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;}</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
@@ -402,11 +402,11 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <span class="keywordflow">if</span> (f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a8d45d9a2620ce1e0c5432070524ccbcb.html#a8d45d9a2620ce1e0c5432070524ccbcb">promote</a>(S, result)) <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;cannot promote given ring element&quot;</span>);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    {</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  }</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;}</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
@@ -424,11 +424,11 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;          <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        }</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      <span class="comment">// ERROR(&quot;cannot lift given ring element&quot;);</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    {</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  }</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;}</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
@@ -453,7 +453,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    {</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  }</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
@@ -466,7 +466,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    {</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  }</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;}</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
@@ -482,7 +482,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    {</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="keywordtype">int</span> lo, hi;</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      a-&gt;<a class="code" href="../../d6/de2/class_ring_element_ac63060238e3328e5b885e7ae0487d55b.html#ac63060238e3328e5b885e7ae0487d55b">degree_weights</a>(M2_arrayint_to_stdvector&lt;int&gt;(wts), lo, hi);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      gmp_ZZpair <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <span class="keyword">new</span> gmp_ZZpair_struct;</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;a = <a class="code" href="../../da/d94/newdelete_8hpp_a4b6a76f68cebc914ce819a24aedda112.html#a4b6a76f68cebc914ce819a24aedda112">newitem</a>(__mpz_struct);</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;b = <a class="code" href="../../da/d94/newdelete_8hpp_a4b6a76f68cebc914ce819a24aedda112.html#a4b6a76f68cebc914ce819a24aedda112">newitem</a>(__mpz_struct);</div>
@@ -494,7 +494,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    {</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  }</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;}</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
@@ -510,7 +510,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    {</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  }</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;}</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
@@ -523,7 +523,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    {</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  }</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;}</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
@@ -595,7 +595,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    {</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  }</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;}</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160; </div>
@@ -609,7 +609,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    {</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  }</div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;}</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160; </div>
@@ -623,7 +623,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    {</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  }</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;}</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160; </div>
@@ -679,10 +679,10 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    {</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;      <span class="keywordflow">if</span> (P == 0)</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;      <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        {</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a polynomial&quot;</span>);</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        }</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;      <span class="keywordtype">long</span> relems_len;</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> *relems = P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_ac9ecf0725daa2652fcc178950ba5dfa1.html#ac9ecf0725daa2652fcc178950ba5dfa1">get_parts</a>(</div>
@@ -697,7 +697,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    {</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  }</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;}</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160; </div>
@@ -744,7 +744,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        {</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;          <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> hr;</div>
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;          <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *g = input_relems[j];</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;          <span class="keywordflow">if</span> (g != 0)</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;          <span class="keywordflow">if</span> (g != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;            {</div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;              hr.<a class="code" href="../../d5/d64/unionring__elem_a0c404ff97309917f9b63c4166812923b.html#a0c404ff97309917f9b63c4166812923b">poly_val</a> =</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                  R-&gt;<a class="code" href="../../d3/dfc/class_poly_ring_a72af4c57bf0f132ad5d1bffe5f237cfe.html#a72af4c57bf0f132ad5d1bffe5f237cfe">mult_by_term</a>(output_relems[i - j], g-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">coeff</a>, g-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>);</div>
@@ -778,13 +778,13 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;      <span class="keywordflow">if</span> (len &lt;= 1)</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        {</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected ring element array of length at least 2&quot;</span>);</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        }</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d3/dfc/class_poly_ring.html">PolyRing</a> *P = H-&gt;array[1]-&gt;get_ring()-&gt;<a class="code" href="../../dd/dcf/class_ring_a7c300ee9c7b94c7cab639b03024736eb.html#a7c300ee9c7b94c7cab639b03024736eb">cast_to_PolyRing</a>();</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;      <span class="keywordflow">if</span> (P == 0)</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;      <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        {</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a polynomial ring&quot;</span>);</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        }</div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;      <a class="code" href="../../d7/dfc/f4-types_8hpp_a815cded99317ca9be076dfb8b54268d4.html#a815cded99317ca9be076dfb8b54268d4">VECTOR</a>(<a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a>) input_relems(len);</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;      <a class="code" href="../../d7/dfc/f4-types_8hpp_a815cded99317ca9be076dfb8b54268d4.html#a815cded99317ca9be076dfb8b54268d4">VECTOR</a>(<a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a>) output_relems(len);</div>
@@ -801,7 +801,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    {</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  }</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;}</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160; </div>
@@ -820,10 +820,10 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    {</div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;      <span class="keywordflow">if</span> (P == 0)</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;      <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;        {</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a polynomial&quot;</span>);</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        }</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> g = P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a4034691bb822f8b29c5dd0293f57a5e4.html#a4034691bb822f8b29c5dd0293f57a5e4">get_part</a>(M2_arrayint_to_stdvector&lt;int&gt;(wts),</div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                                f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>(),</div>
@@ -835,7 +835,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    {</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;  }</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;}</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160; </div>
@@ -859,22 +859,22 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    {</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d3/dfc/class_poly_ring.html">PolyRing</a> *P = f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a7c300ee9c7b94c7cab639b03024736eb.html#a7c300ee9c7b94c7cab639b03024736eb">cast_to_PolyRing</a>();</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;      <span class="keywordflow">if</span> (P == 0)</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;      <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        {</div>
 <div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected an element of a polynomial ring&quot;</span>);</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        }</div>
 <div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;      <span class="keywordflow">if</span> (!P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a49295daf51d50cfb48bb55bab23c636d.html#a49295daf51d50cfb48bb55bab23c636d">has_associate_divisors</a>())</div>
 <div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        {</div>
 <div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;cannot find preferred associates for this ring&quot;</span>);</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        }</div>
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(</div>
 <div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;          P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>(), P-&gt;<a class="code" href="../../d3/dfc/class_poly_ring_a37af4c3e87b25a748893ae38078af778.html#a37af4c3e87b25a748893ae38078af778">preferred_associate_divisor</a>(f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>()));</div>
 <div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    {</div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  }</div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;}</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160; </div>
@@ -908,7 +908,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    {</div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;  }</div>
 <div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;}</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160; </div>
@@ -921,7 +921,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    {</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;  }</div>
 <div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;}</div>
 <div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160; </div>
@@ -932,12 +932,12 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;    {</div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *f = a-&gt;<a class="code" href="../../d6/de2/class_ring_element_a319962a1c71fab9b611170191f398dc3.html#a319962a1c71fab9b611170191f398dc3">fraction</a>(R, b);</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;      <span class="keywordflow">return</span> f;</div>
 <div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    {</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;  }</div>
 <div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;}</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160; </div>
@@ -946,17 +946,17 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    {</div>
 <div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../dd/ddb/class_schur_ring.html">SchurRing</a> *S = f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_afe99d9228f4ed009c801de0e070c9e3c.html#afe99d9228f4ed009c801de0e070c9e3c">cast_to_SchurRing</a>();</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;      <span class="keywordflow">if</span> (S == 0)</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;      <span class="keywordflow">if</span> (S == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        {</div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a polynomial over a Schur ring&quot;</span>);</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        }</div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> result = S-&gt;<a class="code" href="../../dd/ddb/class_schur_ring_a57da9e4ccd84c6a637318e00156fc7f4.html#a57da9e4ccd84c6a637318e00156fc7f4">dimension</a>(f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>());</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;      <span class="keywordflow">return</span> result.<a class="code" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>();</div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    {</div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;  }</div>
 <div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;}</div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160; </div>
@@ -967,22 +967,22 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    {</div>
 <div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d7/d6f/class_schur_sn_ring.html">SchurSnRing</a> *R = a-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a83db2318bcf6c77e675ded3ffb5a992c.html#a83db2318bcf6c77e675ded3ffb5a992c">cast_to_SchurSnRing</a>();</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;      <span class="keywordflow">if</span> (R == 0)</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;      <span class="keywordflow">if</span> (R == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        {</div>
 <div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a SchurSn ring element&quot;</span>);</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;        }</div>
 <div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;      <span class="keywordflow">if</span> (R != b-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>())</div>
 <div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;        {</div>
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected SchurSn ring elements&quot;</span>);</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        }</div>
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> result = R-&gt;<a class="code" href="../../d7/d6f/class_schur_sn_ring_aae4aa67d38567a0d2c318aab3a65ebf7.html#aae4aa67d38567a0d2c318aab3a65ebf7">tensor_mult</a>(a-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>(), b-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>());</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, result);</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    {</div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;  }</div>
 <div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;}</div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160; </div>
@@ -996,20 +996,20 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    {</div>
 <div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../df/da2/class_schur_ring2.html">SchurRing2</a> *S = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a43a1d2b529abf7b09466f1b23ad27f4f.html#a43a1d2b529abf7b09466f1b23ad27f4f">cast_to_SchurRing2</a>();</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;      <span class="keywordflow">if</span> (S == 0)</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;      <span class="keywordflow">if</span> (S == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;        {</div>
 <div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a Schur ring&quot;</span>);</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;        }</div>
 <div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;      <span class="comment">// Check that part is a partition, and that the number of parts is &lt;=</span></div>
 <div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;      <span class="comment">// number allowed</span></div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;      <span class="keywordflow">if</span> (!S-&gt;<a class="code" href="../../df/da2/class_schur_ring2_a9d89f6c3f4ff7d006766898b101f3afe.html#a9d89f6c3f4ff7d006766898b101f3afe">is_valid_partition</a>(part)) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;      <span class="keywordflow">if</span> (!S-&gt;<a class="code" href="../../df/da2/class_schur_ring2_a9d89f6c3f4ff7d006766898b101f3afe.html#a9d89f6c3f4ff7d006766898b101f3afe">is_valid_partition</a>(part)) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> result = S-&gt;<a class="code" href="../../df/da2/class_schur_ring2_ad1155d146496bf781a02a0a371e22c29.html#ad1155d146496bf781a02a0a371e22c29">from_partition</a>(part);</div>
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(S, result);</div>
 <div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    {</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;  }</div>
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;}</div>
 <div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;<span class="comment">/* Special routines for tower rings */</span></div>
@@ -1019,7 +1019,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;<span class="comment"> * tower rings */</span></div>
 <div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;{</div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d2/dcb/class_tower.html">Tower</a> *R = f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_aae39a604654cdc6587c7ddb166f83158.html#aae39a604654cdc6587c7ddb166f83158">cast_to_Tower</a>();</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;  <span class="keywordflow">if</span> (R == 0) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;  <span class="keywordflow">if</span> (R == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;  <span class="keywordflow">return</span> R-&gt;<a class="code" href="../../d2/dcb/class_tower_a57d5cbf50136a01dd9f6758fb24a9beb.html#a57d5cbf50136a01dd9f6758fb24a9beb">degreeInVariable</a>(v, f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>());</div>
 <div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;}</div>
 <div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160; </div>
@@ -1027,7 +1027,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;<span class="comment">/* Currently only valid for tower rings.  Others return 0.  */</span></div>
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;{</div>
 <div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d2/dcb/class_tower.html">Tower</a> *R = R1-&gt;<a class="code" href="../../dd/dcf/class_ring_aae39a604654cdc6587c7ddb166f83158.html#aae39a604654cdc6587c7ddb166f83158">cast_to_Tower</a>();</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  <span class="keywordflow">if</span> (R == 0) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  <span class="keywordflow">if</span> (R == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;  <span class="keywordflow">if</span> (firstvar &lt; 0)</div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;    {</div>
 <div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;use rawCharacteristic to find the characteristic&quot;</span>);</div>
@@ -1039,10 +1039,10 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00952"></a><span class="lineno"><a class="line" href="../../d2/d37/ringelement_8cpp_aa852f5a8454854112a02402d64125f32.html#aa852f5a8454854112a02402d64125f32">  952</a></span>&#160;<span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> <span class="comment">/* or null */</span> *<a class="code" href="../../d2/d37/ringelement_8cpp_aa852f5a8454854112a02402d64125f32.html#aa852f5a8454854112a02402d64125f32">rawDiff</a>(<span class="keywordtype">int</span> v, <span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *f)</div>
 <div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;{</div>
 <div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d2/dcb/class_tower.html">Tower</a> *R = f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_aae39a604654cdc6587c7ddb166f83158.html#aae39a604654cdc6587c7ddb166f83158">cast_to_Tower</a>();</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;  <span class="keywordflow">if</span> (R == 0)</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;  <span class="keywordflow">if</span> (R == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;    {</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;not implemented for this ring&quot;</span>);</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    }</div>
 <div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, R-&gt;<a class="code" href="../../d2/dcb/class_tower_a195228d346b8def3b4d48aa16109f053.html#a195228d346b8def3b4d48aa16109f053">differentiate</a>(v, f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>()));</div>
 <div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;}</div>
@@ -1050,10 +1050,10 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00963"></a><span class="lineno"><a class="line" href="../../d2/d37/ringelement_8cpp_a0c2dd9ddc0c57534067d1865f7a19a20.html#a0c2dd9ddc0c57534067d1865f7a19a20">  963</a></span>&#160;<span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> <span class="comment">/* or null */</span> *<a class="code" href="../../d2/d37/ringelement_8cpp_a0c2dd9ddc0c57534067d1865f7a19a20.html#a0c2dd9ddc0c57534067d1865f7a19a20">rawLowerP</a>(<span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *f)</div>
 <div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;{</div>
 <div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d2/dcb/class_tower.html">Tower</a> *R = f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_aae39a604654cdc6587c7ddb166f83158.html#aae39a604654cdc6587c7ddb166f83158">cast_to_Tower</a>();</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;  <span class="keywordflow">if</span> (R == 0)</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;  <span class="keywordflow">if</span> (R == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;    {</div>
 <div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;not implemented for this ring&quot;</span>);</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;    }</div>
 <div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, R-&gt;<a class="code" href="../../d2/dcb/class_tower_a0d976985f2a1f723af2dbbaefc361fee.html#a0d976985f2a1f723af2dbbaefc361fee">lowerP</a>(f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>()));</div>
 <div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;}</div>
@@ -1063,15 +1063,15 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;                                             <span class="keyword">const</span> <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *g)</div>
 <div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;{</div>
 <div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d2/dcb/class_tower.html">Tower</a> *R = f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_aae39a604654cdc6587c7ddb166f83158.html#aae39a604654cdc6587c7ddb166f83158">cast_to_Tower</a>();</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;  <span class="keywordflow">if</span> (R == 0)</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;  <span class="keywordflow">if</span> (R == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    {</div>
 <div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;not implemented for this ring&quot;</span>);</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    }</div>
 <div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;  <span class="keywordflow">if</span> (g-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>() != R)</div>
 <div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;    {</div>
 <div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected elements in the same ring&quot;</span>);</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;    }</div>
 <div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R,</div>
 <div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;                               R-&gt;<a class="code" href="../../d2/dcb/class_tower_a19f4d805e128480c5df3cd506a15abcf.html#a19f4d805e128480c5df3cd506a15abcf">power_mod</a>(f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>(), n, g-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>()));</div>
@@ -1302,7 +1302,7 @@ $(document).ready(function(){initNavTree('d2/d37/ringelement_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d2/d37/ringelement_8cpp.html">ringelement.cpp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:50 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

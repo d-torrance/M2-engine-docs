@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ae9b8ecaaaf7173
 <div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;  <span class="comment">// In the latter case, the last set of variables are part of</span></div>
 <div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;  <span class="comment">// the coefficients.</span></div>
 <div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;  <span class="keywordtype">int</span> nvars0 = <a class="code" href="../../d3/d96/poly_8cpp_a04bde92399c24f427966b6d5a99d5de5.html#a04bde92399c24f427966b6d5a99d5de5">check_coeff_ring</a>(coeffR, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;  <span class="keywordflow">if</span> (nvars0 &lt; 0) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;  <span class="keywordflow">if</span> (nvars0 &lt; 0) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;  <span class="keywordtype">int</span> n = <a class="code" href="../../d3/dfc/class_poly_ring_ad0ee8466f8a4b4a656ec8d7fefc6e2bf.html#ad0ee8466f8a4b4a656ec8d7fefc6e2bf">n_logical_terms</a>(nvars0, f);</div>
 <div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;  engine_RawMonomialArray monoms =</div>
 <div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;      <a class="code" href="../../da/d94/newdelete_8hpp_a7ceed03f3acdf8c10d3d65ef4ceb5ce4.html#a7ceed03f3acdf8c10d3d65ef4ceb5ce4">GETMEM</a>(engine_RawMonomialArray, <a class="code" href="../../d1/d81/_m2mem-replacement_8h_a2efb50c1704c54823722126752d6ea77.html#a2efb50c1704c54823722126752d6ea77">sizeofarray</a>(monoms, n));</div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ae9b8ecaaaf7173
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

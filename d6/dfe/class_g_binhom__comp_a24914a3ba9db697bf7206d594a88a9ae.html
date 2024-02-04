@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('d6/dfe/class_g_binhom__comp_a24914a3ba
 <p class="definition">Definition at line <a class="el" href="../../d6/db9/gb-sugarless_8cpp_source.html#l00234">234</a> of file <a class="el" href="../../d6/db9/gb-sugarless_8cpp_source.html">gb-sugarless.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;{</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <a class="code" href="../../d8/d45/structs__pair.html">s_pair</a> *r;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">for</span> (r = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;pair_list; r != NULL; r = r-&gt;<a class="code" href="../../d8/d45/structs__pair_ad613e20bc57f38a2c4f84ca22f555720.html#ad613e20bc57f38a2c4f84ca22f555720">next_same</a>)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">for</span> (r = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;pair_list; r != <span class="keyword">nullptr</span>; r = r-&gt;<a class="code" href="../../d8/d45/structs__pair_ad613e20bc57f38a2c4f84ca22f555720.html#ad613e20bc57f38a2c4f84ca22f555720">next_same</a>)</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">if</span> (r-&gt;<a class="code" href="../../d8/d45/structs__pair_a33b137e3b5d1d54134a128ee0b92d0f8.html#a33b137e3b5d1d54134a128ee0b92d0f8">second</a> == q)</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      {</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">if</span> (r-&gt;<a class="code" href="../../d8/d45/structs__pair_a9ff5e72510a87e938dd7588b86007c36.html#a9ff5e72510a87e938dd7588b86007c36">compare_num</a> &gt;= 0)</div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('d6/dfe/class_g_binhom__comp_a24914a3ba
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;          <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordflow">for</span> (r = q-&gt;<a class="code" href="../../dc/d9c/structgb__elem_a25301ad6ee1b66b626be352ea40248d4.html#a25301ad6ee1b66b626be352ea40248d4">pair_list</a>; r != NULL; r = r-&gt;<a class="code" href="../../d8/d45/structs__pair_ad613e20bc57f38a2c4f84ca22f555720.html#ad613e20bc57f38a2c4f84ca22f555720">next_same</a>)</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordflow">for</span> (r = q-&gt;<a class="code" href="../../dc/d9c/structgb__elem_a25301ad6ee1b66b626be352ea40248d4.html#a25301ad6ee1b66b626be352ea40248d4">pair_list</a>; r != <span class="keyword">nullptr</span>; r = r-&gt;<a class="code" href="../../d8/d45/structs__pair_ad613e20bc57f38a2c4f84ca22f555720.html#ad613e20bc57f38a2c4f84ca22f555720">next_same</a>)</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">if</span> (r-&gt;<a class="code" href="../../d8/d45/structs__pair_a33b137e3b5d1d54134a128ee0b92d0f8.html#a33b137e3b5d1d54134a128ee0b92d0f8">second</a> == <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>)</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      {</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">if</span> (r-&gt;<a class="code" href="../../d8/d45/structs__pair_a9ff5e72510a87e938dd7588b86007c36.html#a9ff5e72510a87e938dd7588b86007c36">compare_num</a> &gt;= 0)</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('d6/dfe/class_g_binhom__comp_a24914a3ba
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dfe/class_g_binhom__comp.html">GBinhom_comp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

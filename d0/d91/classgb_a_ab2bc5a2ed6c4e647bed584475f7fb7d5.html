@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_ab2bc5a2ed6c4e647bed5
 <div class="line"><a name="l02430"></a><span class="lineno"> 2430</span>&#160;                <span class="comment">// Recompute h, hf_diff</span></div>
 <div class="line"><a name="l02431"></a><span class="lineno"> 2431</span>&#160;                <a class="code" href="../../d6/d3f/class_matrix.html">Matrix</a> *hf = <a class="code" href="../../d0/d91/classgb_a_acbe1669088b1d8279bd9bf299f946a6d.html#acbe1669088b1d8279bd9bf299f946a6d">make_lead_term_matrix</a>();</div>
 <div class="line"><a name="l02432"></a><span class="lineno"> 2432</span>&#160;                <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *h = <a class="code" href="../../de/dfb/classhilb__comp_af0a64bcacdeb9fd78d4eba85ff93cacb.html#af0a64bcacdeb9fd78d4eba85ff93cacb">hilb_comp::hilbertNumerator</a>(hf);</div>
-<div class="line"><a name="l02433"></a><span class="lineno"> 2433</span>&#160;                <span class="keywordflow">if</span> (h == 0)</div>
+<div class="line"><a name="l02433"></a><span class="lineno"> 2433</span>&#160;                <span class="keywordflow">if</span> (h == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l02434"></a><span class="lineno"> 2434</span>&#160;                  {</div>
 <div class="line"><a name="l02435"></a><span class="lineno"> 2435</span>&#160;                    <a class="code" href="../../d6/dea/class_computation_a3d43eb6c869405fa62a9b9662f1bdb1d.html#a3d43eb6c869405fa62a9b9662f1bdb1d">set_status</a>(<a class="code" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213af7f83acff45b8cb3944b17a21c048b06">COMP_INTERRUPTED</a>);</div>
 <div class="line"><a name="l02436"></a><span class="lineno"> 2436</span>&#160;                    <span class="keywordflow">return</span>;</div>
@@ -244,7 +244,7 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_ab2bc5a2ed6c4e647bed5
 <div class="line"><a name="l02504"></a><span class="lineno"> 2504</span>&#160;          <span class="keywordflow">case</span> <a class="code" href="../../d0/d91/classgb_a_a768de36fb5bdf86987d2e9d25f0001cd.html#a768de36fb5bdf86987d2e9d25f0001cda343c15a48561faf8ede2c3c334b76fe1">STATE_SPAIRS</a>:</div>
 <div class="line"><a name="l02505"></a><span class="lineno"> 2505</span>&#160;          <span class="keywordflow">case</span> <a class="code" href="../../d0/d91/classgb_a_a768de36fb5bdf86987d2e9d25f0001cd.html#a768de36fb5bdf86987d2e9d25f0001cdadf197baa0b87b5d2371b42a974aaaac8">STATE_GENS</a>:</div>
 <div class="line"><a name="l02506"></a><span class="lineno"> 2506</span>&#160;            <span class="comment">// Compute the spairs for this degree</span></div>
-<div class="line"><a name="l02507"></a><span class="lineno"> 2507</span>&#160;            <span class="keywordflow">while</span> ((<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d0/d91/classgb_a_ad4e6d6b1bc296ed90234c80cabccfcc6.html#ad4e6d6b1bc296ed90234c80cabccfcc6">spair_set_next</a>()) != 0)</div>
+<div class="line"><a name="l02507"></a><span class="lineno"> 2507</span>&#160;            <span class="keywordflow">while</span> ((<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d0/d91/classgb_a_ad4e6d6b1bc296ed90234c80cabccfcc6.html#ad4e6d6b1bc296ed90234c80cabccfcc6">spair_set_next</a>()) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l02508"></a><span class="lineno"> 2508</span>&#160;              {</div>
 <div class="line"><a name="l02509"></a><span class="lineno"> 2509</span>&#160;                <a class="code" href="../../d0/d91/classgb_a_acaad0acdeb58d6956d12f1e65d6fbc58.html#acaad0acdeb58d6956d12f1e65d6fbc58">process_spair</a>(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
 <div class="line"><a name="l02510"></a><span class="lineno"> 2510</span>&#160;                <a class="code" href="../../d0/d91/classgb_a_ab91f49ab0f4c2a99ceb6655fec4b1ccd.html#ab91f49ab0f4c2a99ceb6655fec4b1ccd">npairs</a>--;</div>
@@ -390,7 +390,7 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_ab2bc5a2ed6c4e647bed5
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d91/classgb_a.html">gbA</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

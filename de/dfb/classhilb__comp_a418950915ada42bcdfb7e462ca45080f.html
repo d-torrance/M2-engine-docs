@@ -108,10 +108,10 @@ $(document).ready(function(){initNavTree('de/dfb/classhilb__comp_a418950915ada42
 <p class="definition">Definition at line <a class="el" href="../../da/d90/hilb_8cpp_source.html#l00689">689</a> of file <a class="el" href="../../da/d90/hilb_8cpp_source.html">hilb.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;{</div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = I-&gt;<a class="code" href="../../df/ddb/class_monomial_ideal_a9e805c8e8acbb28b8431d1609d6174b9.html#a9e805c8e8acbb28b8431d1609d6174b9">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a771d6d70fa732b18257f115d1c3d52a9.html#a771d6d70fa732b18257f115d1c3d52a9">get_degree_ring</a>();</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  <span class="keywordflow">if</span> (P == 0) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  <a class="code" href="../../de/dfb/classhilb__comp.html">hilb_comp</a> *hf = <span class="keyword">new</span> <a class="code" href="../../de/dfb/classhilb__comp_a5e885ebee094e3e3fcef2afa40f9951e.html#a5e885ebee094e3e3fcef2afa40f9951e">hilb_comp</a>(P, I);</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;  <span class="keywordtype">int</span> retval = hf-&gt;<a class="code" href="../../de/dfb/classhilb__comp_a1293f9736c38f3f57d5b7183777ae976.html#a1293f9736c38f3f57d5b7183777ae976">calc</a>(-1);</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  <span class="keywordflow">if</span> (retval != <a class="code" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213a45f992597e767ffedbba1563ebfa6045">COMP_DONE</a>) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  <span class="keywordflow">if</span> (retval != <a class="code" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213a45f992597e767ffedbba1563ebfa6045">COMP_DONE</a>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;  <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *result = hf-&gt;<a class="code" href="../../de/dfb/classhilb__comp_ac8ac7f8024616fd5514707edf081b966.html#ac8ac7f8024616fd5514707edf081b966">value</a>();</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;  <span class="keyword">delete</span> hf;</div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;  <span class="keywordflow">return</span> result;</div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('de/dfb/classhilb__comp_a418950915ada42
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dfb/classhilb__comp.html">hilb_comp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

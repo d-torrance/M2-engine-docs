@@ -137,16 +137,16 @@ $(document).ready(function(){initNavTree('d8/dfa/class_g_b__comp_ac163c3b11b9580
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;          <a class="code" href="../../d8/dfa/class_g_b__comp_a9067ff6054b116d5d4a66c8fdd9d3fab.html#a9067ff6054b116d5d4a66c8fdd9d3fab">_syz</a>.push_back(fsyz);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;          <a class="code" href="../../d8/dfa/class_g_b__comp_a076ef79b7f77c07570b79567ce847e33.html#a076ef79b7f77c07570b79567ce847e33">_n_syz</a>++;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <a class="code" href="../../d8/d45/structs__pair.html">s_pair</a> *result = <span class="keyword">new</span> <a class="code" href="../../d8/d45/structs__pair.html">s_pair</a>;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  result-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a> = NULL;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  result-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  result-&gt;<a class="code" href="../../d8/d45/structs__pair_a4993446f29ebec9909f3e0811222c287.html#a4993446f29ebec9909f3e0811222c287">syz_type</a> = <a class="code" href="../../d7/ddf/comp-gb_8hpp_ab7fb1013ceff02ac96fafb985c9500de.html#ab7fb1013ceff02ac96fafb985c9500de">SPAIR_GEN</a>;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  result-&gt;<a class="code" href="../../d8/d45/structs__pair_a1b72cee4a6487abea0ce0c0576fdc721.html#a1b72cee4a6487abea0ce0c0576fdc721">degree</a> = <a class="code" href="../../d8/dfa/class_g_b__comp_a948e9a8b5758b35c6959ead04e170044.html#a948e9a8b5758b35c6959ead04e170044">weightInfo_</a>-&gt;<a class="code" href="../../d5/d82/class_g_b_weight_abc6bce853dab9c86c8488a5deb642ab1.html#abc6bce853dab9c86c8488a5deb642ab1">gbvector_weight</a>(f);</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  result-&gt;<a class="code" href="../../d8/d45/structs__pair_a9ff5e72510a87e938dd7588b86007c36.html#a9ff5e72510a87e938dd7588b86007c36">compare_num</a> = 0;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  result-&gt;<a class="code" href="../../d8/d45/structs__pair_a7eff2724d6c06dc138fbf271fd823c63.html#a7eff2724d6c06dc138fbf271fd823c63">first</a> = NULL;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  result-&gt;<a class="code" href="../../d8/d45/structs__pair_a33b137e3b5d1d54134a128ee0b92d0f8.html#a33b137e3b5d1d54134a128ee0b92d0f8">second</a> = NULL;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  result-&gt;<a class="code" href="../../d8/d45/structs__pair_a7eff2724d6c06dc138fbf271fd823c63.html#a7eff2724d6c06dc138fbf271fd823c63">first</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  result-&gt;<a class="code" href="../../d8/d45/structs__pair_a33b137e3b5d1d54134a128ee0b92d0f8.html#a33b137e3b5d1d54134a128ee0b92d0f8">second</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  result-&gt;<a class="code" href="../../d8/d45/structs__pair_a5598076ab78b239012fb48eafd184ce2.html#a5598076ab78b239012fb48eafd184ce2">f</a> = f; <span class="comment">/* NOTE THAT WE GRAB f */</span></div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  result-&gt;<a class="code" href="../../d8/d45/structs__pair_a7a5066681252aecf1a94ea45a106ab2e.html#a7a5066681252aecf1a94ea45a106ab2e">fsyz</a> = fsyz;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('d8/dfa/class_g_b__comp_ac163c3b11b9580
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/dfa/class_g_b__comp.html">GB_comp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

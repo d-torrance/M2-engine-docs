@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_aca59f330d6da36d
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l01294">1294</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;{</div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;  <span class="keywordflow">if</span> (f == 0) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;  <span class="keywordflow">for</span> (; f != 0; f = f-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;  <span class="keywordflow">for</span> (; f != <span class="keyword">nullptr</span>; f = f-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
 <div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;    {</div>
 <div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;      mpz_gcd(content, content, f-&gt;<a class="code" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>.<a class="code" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
 <div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d8/d9a/_z_z_8hpp_a4fdbcec93cf372e693113cc2bd1e2c73.html#a4fdbcec93cf372e693113cc2bd1e2c73">mask_mpz_cmp_si</a>(content, 1) == 0) <span class="keywordflow">return</span>;</div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_aca59f330d6da36d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

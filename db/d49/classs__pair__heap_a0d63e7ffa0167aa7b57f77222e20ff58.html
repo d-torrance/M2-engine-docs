@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('db/d49/classs__pair__heap_a0d63e7ffa01
 <p class="definition">Definition at line <a class="el" href="../../d9/d52/spair_8cpp_source.html#l00225">225</a> of file <a class="el" href="../../d9/d52/spair_8cpp_source.html">spair.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;{</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="comment">// Find a non-zero element</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/d49/classs__pair__heap_a18b571fb37a8fd034f57b52e3b7d661d.html#a18b571fb37a8fd034f57b52e3b7d661d">nelems</a> == 0) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/d49/classs__pair__heap_a18b571fb37a8fd034f57b52e3b7d661d.html#a18b571fb37a8fd034f57b52e3b7d661d">nelems</a> == 0) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">int</span> i, first;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordflow">for</span> (first = 0; first &lt;= <a class="code" href="../../db/d49/classs__pair__heap_ad1bfbe42c16ce537b7fdd6bb546ea6a6.html#ad1bfbe42c16ce537b7fdd6bb546ea6a6">top_of_heap</a>; first++)</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../db/d49/classs__pair__heap_a6cd73f2bf318533351554e74235a483e.html#a6cd73f2bf318533351554e74235a483e">n_in_heap</a>[first] &gt; 0) <span class="keywordflow">break</span>;</div>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('db/d49/classs__pair__heap_a0d63e7ffa01
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="comment">// Now find the smallest one</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">for</span> (i = first + 1; i &lt;= <a class="code" href="../../db/d49/classs__pair__heap_ad1bfbe42c16ce537b7fdd6bb546ea6a6.html#ad1bfbe42c16ce537b7fdd6bb546ea6a6">top_of_heap</a>; i++)</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../db/d49/classs__pair__heap_a5588bfac84aaa52fe8ab9fef3c63fe61.html#a5588bfac84aaa52fe8ab9fef3c63fe61">heap</a>[i] == NULL) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../db/d49/classs__pair__heap_a5588bfac84aaa52fe8ab9fef3c63fe61.html#a5588bfac84aaa52fe8ab9fef3c63fe61">heap</a>[i] == <span class="keyword">nullptr</span>) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <span class="keywordtype">int</span> cmp = <a class="code" href="../../db/d49/classs__pair__heap_a6e7211f1f4d2134ac9b3389b393d5600.html#a6e7211f1f4d2134ac9b3389b393d5600">compare</a>(smallest, <a class="code" href="../../db/d49/classs__pair__heap_a5588bfac84aaa52fe8ab9fef3c63fe61.html#a5588bfac84aaa52fe8ab9fef3c63fe61">heap</a>[i]);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      <span class="keywordflow">if</span> (cmp &gt; 0)</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        {</div>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('db/d49/classs__pair__heap_a0d63e7ffa01
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="comment">// Now remove this element and return it:</span></div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <a class="code" href="../../db/d49/classs__pair__heap_a5588bfac84aaa52fe8ab9fef3c63fe61.html#a5588bfac84aaa52fe8ab9fef3c63fe61">heap</a>[first] = smallest-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a>;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  smallest-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a> = NULL;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  smallest-&gt;<a class="code" href="../../d8/d45/structs__pair_a5844565e9742d4d95b8394efed1bdf97.html#a5844565e9742d4d95b8394efed1bdf97">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <a class="code" href="../../db/d49/classs__pair__heap_a18b571fb37a8fd034f57b52e3b7d661d.html#a18b571fb37a8fd034f57b52e3b7d661d">nelems</a>--;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <a class="code" href="../../db/d49/classs__pair__heap_a6cd73f2bf318533351554e74235a483e.html#a6cd73f2bf318533351554e74235a483e">n_in_heap</a>[first]--;</div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('db/d49/classs__pair__heap_a0d63e7ffa01
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d49/classs__pair__heap.html">s_pair_heap</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

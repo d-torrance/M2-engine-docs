@@ -104,12 +104,12 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_af49119c2b82482f23
 <div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
 <div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;    {</div>
 <div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;      vec f = <a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i);</div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;      <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;      <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;      keep = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = i + 1; j &lt; <a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); j++)</div>
 <div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;        {</div>
 <div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;          vec g = <a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(j);</div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;          <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;          <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;          <span class="keywordflow">if</span> (R-&gt;vec_is_scalar_multiple(f, g))</div>
 <div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;            {</div>
 <div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;              keep = <span class="keyword">false</span>;</div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_af49119c2b82482f23
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

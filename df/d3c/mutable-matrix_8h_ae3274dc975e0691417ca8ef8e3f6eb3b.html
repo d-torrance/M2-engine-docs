@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_ae3274dc975e0
 <p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l01093">1093</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;{</div>
 <div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;  gmp_RRmutable norm = <a class="code" href="../../d3/dc5/mutable-matrix_8cpp_a90177657a355256a11823cc894fc0dba.html#a90177657a355256a11823cc894fc0dba">get_norm_start</a>(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>());</div>
-<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;  <span class="keywordflow">if</span> (!norm) <span class="keywordflow">return</span> 0;  <span class="comment">// error already given.</span></div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;  <span class="keywordflow">if</span> (!norm) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;  <span class="comment">// error already given.</span></div>
 <div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;  f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a308925e8ca2bc536ea6456f99bad0e90.html#a308925e8ca2bc536ea6456f99bad0e90">increase_maxnorm</a>(norm, f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>());</div>
 <div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d0/d41/gmp-util_8h_a8eb5bf01e101b45627045ebad26a4b1c.html#a8eb5bf01e101b45627045ebad26a4b1c">moveTo_gmpRR</a>(norm);</div>
 <div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;}</div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_ae3274dc975e0
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../df/d3c/mutable-matrix_8h.html">mutable-matrix.h</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:52 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

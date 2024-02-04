@@ -137,9 +137,9 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_a11b185a808d5cf7
 <div class="fragment"><div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;{</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *result = <a class="code" href="../../d8/d73/class_g_b_ring_a84eb57a32ad21366c5110f770176088f.html#a84eb57a32ad21366c5110f770176088f">mult_by_term1</a>(F, f, u, monom, comp);</div>
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d4/d92/class_schreyer_order.html">SchreyerOrder</a> *S;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;  <span class="keywordflow">if</span> (comp &gt; 0 &amp;&amp; <a class="code" href="../../d8/d73/class_g_b_ring_a27ecce1541fb99889a582be71154ebd2.html#a27ecce1541fb99889a582be71154ebd2">_schreyer_encoded</a> &amp;&amp; (S = F-&gt;<a class="code" href="../../d6/df0/class_free_module_a400e9ad1141393b6d23e70ee7dc8849a.html#a400e9ad1141393b6d23e70ee7dc8849a">get_schreyer_order</a>()) != 0)</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;  <span class="keywordflow">if</span> (comp &gt; 0 &amp;&amp; <a class="code" href="../../d8/d73/class_g_b_ring_a27ecce1541fb99889a582be71154ebd2.html#a27ecce1541fb99889a582be71154ebd2">_schreyer_encoded</a> &amp;&amp; (S = F-&gt;<a class="code" href="../../d6/df0/class_free_module_a400e9ad1141393b6d23e70ee7dc8849a.html#a400e9ad1141393b6d23e70ee7dc8849a">get_schreyer_order</a>()) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    {</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = result; t != 0; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = result; t != <span class="keyword">nullptr</span>; t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
 <div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        S-&gt;<a class="code" href="../../d4/d92/class_schreyer_order_ab907225b730a64e2ca80083894e13d28.html#ab907225b730a64e2ca80083894e13d28">schreyer_up</a>(t-&gt;monom, comp - 1, t-&gt;monom);</div>
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    }</div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;  <span class="keywordflow">return</span> result;</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_a11b185a808d5cf7
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

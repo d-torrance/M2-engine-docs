@@ -128,28 +128,28 @@ $(document).ready(function(){initNavTree('d3/d16/class_gauss_elim_computation_a7
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="keywordflow">if</span> (m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>() != <a class="code" href="../../d3/d16/class_gauss_elim_computation_ad754dada3214923c91cab07229b9ca41.html#ad754dada3214923c91cab07229b9ca41">R</a>)</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    {</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;encountered different rings&quot;</span>);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      *result_remainder = 0;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      *result_quotient = 0;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      *result_remainder = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      *result_quotient = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    }</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="keywordflow">if</span> (m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>() != <a class="code" href="../../d3/d16/class_gauss_elim_computation_aaab3532c79629f340dca673751a2794d.html#aaab3532c79629f340dca673751a2794d">gens</a>-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>()-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>())</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    {</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected matrices to have same number of rows&quot;</span>);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      *result_remainder = 0;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      *result_quotient = 0;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      *result_remainder = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      *result_quotient = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    }</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat_remainder(m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0f771b1c1bf2eb4a5968b772a91884df.html#a0f771b1c1bf2eb4a5968b772a91884df">rows</a>(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa19c616f5a4f272b4da3c29e726ef972.html#aa19c616f5a4f272b4da3c29e726ef972">cols</a>(), m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a06fff1c55e11c5cadf8a5abd3f6c35cb.html#a06fff1c55e11c5cadf8a5abd3f6c35cb">degree_shift</a>());</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat_quotient(<a class="code" href="../../d3/d16/class_gauss_elim_computation_ae57fb809102382d36adfb56e2bc72032.html#ae57fb809102382d36adfb56e2bc72032">Fsyz</a>, m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa19c616f5a4f272b4da3c29e726ef972.html#aa19c616f5a4f272b4da3c29e726ef972">cols</a>(), 0);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat_quotient(<a class="code" href="../../d3/d16/class_gauss_elim_computation_ae57fb809102382d36adfb56e2bc72032.html#ae57fb809102382d36adfb56e2bc72032">Fsyz</a>, m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa19c616f5a4f272b4da3c29e726ef972.html#aa19c616f5a4f272b4da3c29e726ef972">cols</a>(), <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  <span class="keywordtype">bool</span> all_zeroes = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    {</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      vec f = <a class="code" href="../../d3/d16/class_gauss_elim_computation_ad754dada3214923c91cab07229b9ca41.html#ad754dada3214923c91cab07229b9ca41">R</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_aef0dd726d2923b97198ae701dc3406a6.html#aef0dd726d2923b97198ae701dc3406a6">copy_vec</a>(m-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i));</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;      vec fsyz = NULL;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;      vec fsyz = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      <a class="code" href="../../d3/d16/class_gauss_elim_computation_ace8837a7803cdd7d404e225e40c63ea0.html#ace8837a7803cdd7d404e225e40c63ea0">reduce</a>(f, fsyz);</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;      <a class="code" href="../../d3/d16/class_gauss_elim_computation_ad754dada3214923c91cab07229b9ca41.html#ad754dada3214923c91cab07229b9ca41">R</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_aa1a3bff97b8dae10e2616a3db6a83ac2.html#aa1a3bff97b8dae10e2616a3db6a83ac2">negate_vec_to</a>(fsyz);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="keywordflow">if</span> (f != 0) all_zeroes = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="keywordflow">if</span> (f != <span class="keyword">nullptr</span>) all_zeroes = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      mat_remainder.set_column(i, f);</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      mat_quotient.set_column(i, fsyz);</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    }</div>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('d3/d16/class_gauss_elim_computation_a7
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d16/class_gauss_elim_computation.html">GaussElimComputation</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

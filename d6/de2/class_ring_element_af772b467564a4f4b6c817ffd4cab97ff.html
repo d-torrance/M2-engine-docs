@@ -110,29 +110,29 @@ $(document).ready(function(){initNavTree('d6/de2/class_ring_element_af772b467564
 <p class="definition">Definition at line <a class="el" href="../../d8/dfc/relem_8cpp_source.html#l00245">245</a> of file <a class="el" href="../../d8/dfc/relem_8cpp_source.html">relem.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;{</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = <a class="code" href="../../d6/de2/class_ring_element_aac17d01996fc44a0ce837b4e7351f198.html#aac17d01996fc44a0ce837b4e7351f198">R</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordflow">if</span> (P == 0)</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    {</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring&quot;</span>);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    }</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordflow">if</span> (v &lt; 0 || v &gt;= P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_aece123c61c00a4f07a6008badec14362.html#aece123c61c00a4f07a6008badec14362">n_vars</a>())</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    {</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;homogenization: improper ring variable&quot;</span>);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    }</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordflow">if</span> (wts.size() == 0 || wts.size() != <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_aece123c61c00a4f07a6008badec14362.html#aece123c61c00a4f07a6008badec14362">n_vars</a>()))</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    {</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;homogenization: improper weight function&quot;</span>);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">if</span> (wts[v] == 0)</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;homogenization: variable weight is zero&quot;</span>);</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <a class="code" href="../../d6/de2/class_ring_element.html">RingElement</a> *result = <span class="keyword">new</span> <a class="code" href="../../d6/de2/class_ring_element_a0e2a80fc5c6bcc3d890ba8b99e92ff24.html#a0e2a80fc5c6bcc3d890ba8b99e92ff24">RingElement</a>(P, P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a5424cc913ebf01bf02748ac88f1cb6cb.html#a5424cc913ebf01bf02748ac88f1cb6cb">homogenize</a>(<a class="code" href="../../d6/de2/class_ring_element_a7e9369caec8ff5a6f3f33e69f7428f41.html#a7e9369caec8ff5a6f3f33e69f7428f41">val</a>, v, wts));</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
 <div class="ttc" id="aclass_polynomial_ring_a5424cc913ebf01bf02748ac88f1cb6cb_html_a5424cc913ebf01bf02748ac88f1cb6cb"><div class="ttname"><a href="../../d5/d58/class_polynomial_ring_a5424cc913ebf01bf02748ac88f1cb6cb.html#a5424cc913ebf01bf02748ac88f1cb6cb">PolynomialRing::homogenize</a></div><div class="ttdeci">virtual ring_elem homogenize(const ring_elem f, int v, int deg, const std::vector&lt; int &gt; &amp;wts) const =0</div></div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('d6/de2/class_ring_element_af772b467564
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

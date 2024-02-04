@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('dd/dcb/class_reduced_g_b___field___loc
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <a class="code" href="../../dd/dcb/class_reduced_g_b___field___local_a1f4919206de474493385faf4b2bcc0cb.html#a1f4919206de474493385faf4b2bcc0cb">wt</a>(wt0)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="comment">// fprintf(stderr, &quot;creating GB with local order\n&quot;);</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dd/dcb/class_reduced_g_b___field___local_a1f4919206de474493385faf4b2bcc0cb.html#a1f4919206de474493385faf4b2bcc0cb">wt</a> == 0) <a class="code" href="../../dd/dcb/class_reduced_g_b___field___local_a1f4919206de474493385faf4b2bcc0cb.html#a1f4919206de474493385faf4b2bcc0cb">wt</a> = <span class="keyword">new</span> <a class="code" href="../../d5/d82/class_g_b_weight.html">GBWeight</a>(F0, 0);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dd/dcb/class_reduced_g_b___field___local_a1f4919206de474493385faf4b2bcc0cb.html#a1f4919206de474493385faf4b2bcc0cb">wt</a> == <span class="keyword">nullptr</span>) <a class="code" href="../../dd/dcb/class_reduced_g_b___field___local_a1f4919206de474493385faf4b2bcc0cb.html#a1f4919206de474493385faf4b2bcc0cb">wt</a> = <span class="keyword">new</span> <a class="code" href="../../d5/d82/class_g_b_weight.html">GBWeight</a>(F0, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; originalR0-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a18ad6d75a9dbc204061d2779758db1d8.html#a18ad6d75a9dbc204061d2779758db1d8">n_quotients</a>(); i++)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordtype">int</span> f_lead_wt;</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('dd/dcb/class_reduced_g_b___field___loc
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      divisor_info t;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      t.g.f = <span class="keyword">const_cast&lt;</span><a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *<span class="keyword">&gt;</span>(f);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      t.g.fsyz = 0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      t.g.fsyz = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      t.size = <a class="code" href="../../d9/d3f/class_reduced_g_b_a88515b65250c4e3add7d965800b3b83d.html#a88515b65250c4e3add7d965800b3b83d">R</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_af357213b35a416911ff7deb0429e9e19.html#af357213b35a416911ff7deb0429e9e19">gbvector_n_terms</a>(f);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      t.alpha = a;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('dd/dcb/class_reduced_g_b___field___loc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcb/class_reduced_g_b___field___local.html">ReducedGB_Field_Local</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

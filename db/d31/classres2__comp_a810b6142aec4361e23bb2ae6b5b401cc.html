@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('db/d31/classres2__comp_a810b6142aec436
 <p class="definition">Definition at line <a class="el" href="../../dc/dde/res-a0_8cpp_source.html#l00603">603</a> of file <a class="el" href="../../dc/dde/res-a0_8cpp_source.html">res-a0.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;{</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  <a class="code" href="../../d0/d5c/structres2__pair.html">res2_pair</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <span class="keyword">new</span> <a class="code" href="../../d0/d5c/structres2__pair.html">res2_pair</a>;</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;  <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next = NULL;</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;  <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;  <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;me = <a class="code" href="../../db/d31/classres2__comp_a142b779dae2aaea20dbc8eda2791b932.html#a142b779dae2aaea20dbc8eda2791b932">next_component</a>++;</div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;pair_num = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;me;</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;syz_type = <a class="code" href="../../da/d2a/res-a0-pair_8hpp_a16af7b253440dadd46a80a4b9fddba4d.html#a16af7b253440dadd46a80a4b9fddba4da9190d14b5e5454f578c1102119d948eb">SYZ2_S_PAIR</a>;</div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('db/d31/classres2__comp_a810b6142aec436
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="comment">//     p-&gt;syz-&gt;next = R-&gt;new_term(K-&gt;from_long(-1), basemon, second);</span></div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;  <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;mi = <span class="keyword">new</span> <a class="code" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a>(<a class="code" href="../../db/d31/classres2__comp_a556fbbcf6fede4799f7252183974df7c.html#a556fbbcf6fede4799f7252183974df7c">P</a>, <a class="code" href="../../db/d31/classres2__comp_a330dea683a57da9b6bda373ca7d239df.html#a330dea683a57da9b6bda373ca7d239df">mi_stash</a>);</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;  <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;pivot_term = NULL;</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;  <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;pivot_term = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160; </div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;}</div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('db/d31/classres2__comp_a810b6142aec436
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d31/classres2__comp.html">res2_comp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

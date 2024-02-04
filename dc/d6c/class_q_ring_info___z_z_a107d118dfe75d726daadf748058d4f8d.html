@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('dc/d6c/class_q_ring_info___z_z_a107d11
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> head;</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *result = &amp;head;</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = f;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="keywordflow">while</span> (t != NULL)</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="keywordflow">while</span> (t != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    {</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      GR-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_aeb6e7165284697483910f5c635b6389c.html#aeb6e7165284697483910f5c635b6389c">gbvector_get_lead_exponents</a>(F, t, EXP1);</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;      <span class="keywordtype">int</span> w = <a class="code" href="../../dc/d6c/class_q_ring_info___z_z_ae28be032a5b4abeca91ee953301354e4.html#ae28be032a5b4abeca91ee953301354e4">ringtableZZ</a>-&gt;<a class="code" href="../../da/da3/class_monomial_table_z_z_aca15e8e9e0e9027c31706b0daa1bf3de.html#aca15e8e9e0e9027c31706b0daa1bf3de">find_smallest_coeff_divisor</a>(EXP1, 1);</div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('dc/d6c/class_q_ring_info___z_z_a107d11
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;          <span class="comment">// If the lead monomial reduces away, continue,</span></div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;          <span class="comment">//   else tack the monomial onto the result</span></div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;          <span class="keyword">const</span> <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *g = <a class="code" href="../../d2/da2/class_q_ring_info_a9a3ef89449ceb983974d3fb2729e43de.html#a9a3ef89449ceb983974d3fb2729e43de">quotient_gbvector</a>(w);</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;          <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a627f44b64b5d8d3ae8cb6a675f164405.html#a627f44b64b5d8d3ae8cb6a675f164405">zero</a> = 0;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;          <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a627f44b64b5d8d3ae8cb6a675f164405.html#a627f44b64b5d8d3ae8cb6a675f164405">zero</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;          <span class="keywordflow">if</span> (GR-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_a12e5c76b7447cc22f4eace4967cead9f.html#a12e5c76b7447cc22f4eace4967cead9f">gbvector_reduce_lead_term_ZZ</a>(F, F, t, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a627f44b64b5d8d3ae8cb6a675f164405.html#a627f44b64b5d8d3ae8cb6a675f164405">zero</a>, g, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a627f44b64b5d8d3ae8cb6a675f164405.html#a627f44b64b5d8d3ae8cb6a675f164405">zero</a>))</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        }</div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('dc/d6c/class_q_ring_info___z_z_a107d11
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      t = t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;      result = result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    }</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = NULL;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  f = head.<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;}</div>
 <div class="ttc" id="a_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12_html_aec09fab2f897ff3d8346961f38331d12"><div class="ttname"><a href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a></div><div class="ttdeci">exponents::Exponents exponents_t</div><div class="ttdef"><b>Definition:</b> <a href="../../da/db0/_exponent_vector_8hpp_source.html#l00276">ExponentVector.hpp:276</a></div></div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('dc/d6c/class_q_ring_info___z_z_a107d11
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d6c/class_q_ring_info___z_z.html">QRingInfo_ZZ</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

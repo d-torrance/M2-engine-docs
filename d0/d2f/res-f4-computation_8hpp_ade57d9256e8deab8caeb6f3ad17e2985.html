@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('d0/d2f/res-f4-computation_8hpp_ade57d9
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">// null is returned.</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a>* origR =</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      groebnerBasisMatrix-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">if</span> (origR == 0)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">if</span> (origR == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring&quot;</span>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('d0/d2f/res-f4-computation_8hpp_ade57d9
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a>* K = origR-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a88dc577a515e0381070b639878205bb7.html#a88dc577a515e0381070b639878205bb7">getCoefficients</a>();</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="../../df/d88/class_res_gausser.html">ResGausser</a>* KK = <a class="code" href="../../df/d88/class_res_gausser_a43970fc9f73aef7bd3cea0d2f3893642.html#a43970fc9f73aef7bd3cea0d2f3893642">ResGausser::newResGausser</a>(K);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">if</span> (KK == 0)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">if</span> (KK == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          <span class="stringliteral">&quot;cannot use res(...,FastNonminimal=&gt;true) with this type of &quot;</span></div>
@@ -325,7 +325,7 @@ $(document).ready(function(){initNavTree('d0/d2f/res-f4-computation_8hpp_ade57d9
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_208df166e208656f2e3436240a4845e8.html">schreyer-resolution</a></li><li class="navelem"><a class="el" href="../../d0/d2f/res-f4-computation_8hpp.html">res-f4-computation.hpp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:52 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

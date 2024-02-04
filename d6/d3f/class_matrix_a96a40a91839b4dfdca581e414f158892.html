@@ -131,24 +131,24 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_a96a40a91839b4dfdc
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    {</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;          <span class="stringliteral">&quot;determinant computations over RR or CC requires Strategy=&gt;Cofactor&quot;</span>);</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    }</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="keywordflow">if</span> (first_row != 0 || first_col != 0)</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="keywordflow">if</span> (first_row != <span class="keyword">nullptr</span> || first_col != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    {</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;      <span class="comment">// Make sure these are the correct size, and both are given</span></div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;      <span class="keywordflow">if</span> (first_row == 0 || first_row-&gt;len != <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>)</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;      <span class="keywordflow">if</span> (first_row == <span class="keyword">nullptr</span> || first_row-&gt;len != <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>)</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        {</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;row index set inappropriate&quot;</span>);</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        }</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;      <span class="keywordflow">if</span> (first_col == 0 || first_col-&gt;len != <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>)</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;      <span class="keywordflow">if</span> (first_col == <span class="keyword">nullptr</span> || first_col-&gt;len != <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>)</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        {</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;column index set inappropriate&quot;</span>);</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        }</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    }</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;  <a class="code" href="../../d7/d9a/class_det_computation.html">DetComputation</a> *d = <span class="keyword">new</span> <a class="code" href="../../d7/d9a/class_det_computation.html">DetComputation</a>(<span class="keyword">this</span>, <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, 0, strategy);</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  <span class="keywordflow">if</span> (first_row != 0 &amp;&amp; first_col != 0)</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  <span class="keywordflow">if</span> (first_row != <span class="keyword">nullptr</span> &amp;&amp; first_col != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    d-&gt;<a class="code" href="../../d7/d9a/class_det_computation_a27c165be0be31a9f726e594d00e49430.html#a27c165be0be31a9f726e594d00e49430">set_next_minor</a>(first_row-&gt;array, first_col-&gt;array);</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  d-&gt;<a class="code" href="../../d7/d9a/class_det_computation_a4b2645ebecf68597a014fce84f801aa2.html#a4b2645ebecf68597a014fce84f801aa2">calc</a>(n_to_compute);</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  <a class="code" href="../../d6/d3f/class_matrix.html">Matrix</a> *result = d-&gt;<a class="code" href="../../d7/d9a/class_det_computation_a87040347cb140ca5eee9e2378a4952c5.html#a87040347cb140ca5eee9e2378a4952c5">determinants</a>();</div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_a96a40a91839b4dfdc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_a92796e9352d2827c8fda9863a740ec94.html','../../'); initResizable(); });
+$(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_a5f8ca45d58516b4ff1758715081e9795.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -81,8 +81,8 @@ $(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_a92796e9352d2827c8
 </div>
 
 <div class="contents">
-<a id="a92796e9352d2827c8fda9863a740ec94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92796e9352d2827c8fda9863a740ec94">&#9670;&nbsp;</a></span>rawFactorBase()</h2>
+<a id="a5f8ca45d58516b4ff1758715081e9795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f8ca45d58516b4ff1758715081e9795">&#9670;&nbsp;</a></span>rawFactorBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_a92796e9352d2827c8
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *&#160;</td>
-          <td class="paramname"><em>mipo</em> = <code>NULL</code>&#160;</td>
+          <td class="paramname"><em>mipo</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -121,13 +121,13 @@ $(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_a92796e9352d2827c8
 
 <p class="definition">Definition at line <a class="el" href="../../d2/dc2/factory_8cpp_source.html#l00661">661</a> of file <a class="el" href="../../d2/dc2/factory_8cpp_source.html">factory.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;{</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;  <span class="keywordtype">bool</span> inExtension = mipo != NULL;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;  <span class="keywordtype">bool</span> inExtension = mipo != <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    {</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = g-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;      *result_factors = 0;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;      *result_powers = 0;</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;      <span class="keywordflow">if</span> (P == 0)</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;      *result_factors = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;      *result_powers = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;      <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        {</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring&quot;</span>);</div>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;          <span class="keywordflow">return</span>;</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_a92796e9352d2827c8
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;          CanonicalForm h = <a class="code" href="../../d2/dc2/factory_8cpp_ac11eb4d2067afe35c90c95a7ea143d20.html#ac11eb4d2067afe35c90c95a7ea143d20">convertToFactory</a>(*g, <a class="code" href="../../d2/dc2/factory_8cpp_a989373183d1e2ac9ab9ba069b0a8118c.html#a989373183d1e2ac9ab9ba069b0a8118c">notInExtension</a>);</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;          q = factorize(h, a);</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        }</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mipo != NULL)</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mipo != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        {</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;          CanonicalForm mipocf = <a class="code" href="../../d2/dc2/factory_8cpp_ac11eb4d2067afe35c90c95a7ea143d20.html#ac11eb4d2067afe35c90c95a7ea143d20">convertToFactory</a>(*mipo, <a class="code" href="../../d2/dc2/factory_8cpp_a989373183d1e2ac9ab9ba069b0a8118c.html#a989373183d1e2ac9ab9ba069b0a8118c">notInExtension</a>);</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;          Variable a = rootOf(mipocf, <span class="charliteral">&#39;a&#39;</span>);</div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_a92796e9352d2827c8
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;          CanonicalForm h = <a class="code" href="../../d2/dc2/factory_8cpp_ac11eb4d2067afe35c90c95a7ea143d20.html#ac11eb4d2067afe35c90c95a7ea143d20">convertToFactory</a>(*g, inExtension);</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;          <span class="comment">// displayCF(P,h);</span></div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;          q = factorize(h);</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;          <a class="code" href="../../d2/dc2/factory_8cpp_ae08b5017e22d32e3289cdde86ea4cb2f.html#ae08b5017e22d32e3289cdde86ea4cb2f">algebraicElement_M2</a> = NULL;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;          <a class="code" href="../../d2/dc2/factory_8cpp_ae08b5017e22d32e3289cdde86ea4cb2f.html#ae08b5017e22d32e3289cdde86ea4cb2f">algebraicElement_M2</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;        }</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;      <span class="keywordtype">int</span> nfactors = q.length();</div>
@@ -179,8 +179,8 @@ $(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_a92796e9352d2827c8
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;          (*result_factors)-&gt;array[next] = <a class="code" href="../../d2/dc2/factory_8cpp_a3fc9e7ad1ec132467af61806e9870636.html#a3fc9e7ad1ec132467af61806e9870636">convertToM2</a>(P, i.getItem().factor());</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;          (*result_powers)-&gt;array[next++] = i.getItem().exp();</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        }</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;      <a class="code" href="../../d2/dc2/factory_8cpp_ae08b5017e22d32e3289cdde86ea4cb2f.html#ae08b5017e22d32e3289cdde86ea4cb2f">algebraicElement_M2</a> = NULL;</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) *result_factors = NULL, *result_powers = NULL;</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;      <a class="code" href="../../d2/dc2/factory_8cpp_ae08b5017e22d32e3289cdde86ea4cb2f.html#ae08b5017e22d32e3289cdde86ea4cb2f">algebraicElement_M2</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>()) *result_factors = <span class="keyword">nullptr</span>, *result_powers = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    {</div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
@@ -221,7 +221,7 @@ $(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_a92796e9352d2827c8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d2/dc2/factory_8cpp.html">factory.cpp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:52 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -100,10 +100,10 @@ $(document).ready(function(){initNavTree('d1/d1d/ringelement_8h_a55d0d21ede2e6f8
 <p class="definition">Definition at line <a class="el" href="../../d2/d37/ringelement_8cpp_source.html#l00963">963</a> of file <a class="el" href="../../d2/d37/ringelement_8cpp_source.html">ringelement.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;{</div>
 <div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d2/dcb/class_tower.html">Tower</a> *R = f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a4452e8487df6246870938a2311b259a7.html#a4452e8487df6246870938a2311b259a7">get_ring</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_aae39a604654cdc6587c7ddb166f83158.html#aae39a604654cdc6587c7ddb166f83158">cast_to_Tower</a>();</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;  <span class="keywordflow">if</span> (R == 0)</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;  <span class="keywordflow">if</span> (R == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;    {</div>
 <div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;not implemented for this ring&quot;</span>);</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;    }</div>
 <div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, R-&gt;<a class="code" href="../../d2/dcb/class_tower_a0d976985f2a1f723af2dbbaefc361fee.html#a0d976985f2a1f723af2dbbaefc361fee">lowerP</a>(f-&gt;<a class="code" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>()));</div>
 <div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;}</div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('d1/d1d/ringelement_8h_a55d0d21ede2e6f8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d1/d1d/ringelement_8h.html">ringelement.h</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:52 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

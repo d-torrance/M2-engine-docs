@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('db/de9/finalize_8cpp_aae491e7c1ab7a0a3
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#ifdef MEMDEBUG</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  GC_REGISTER_FINALIZER(M2_debug_to_outer(G), <a class="code" href="../../db/de9/finalize_8cpp_a62e309e31422eabdd0a945104a8bd60c.html#a62e309e31422eabdd0a945104a8bd60c">remove_SchreyerOrder</a>, 0, 0, 0);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  GC_REGISTER_FINALIZER(                  G , <a class="code" href="../../db/de9/finalize_8cpp_a62e309e31422eabdd0a945104a8bd60c.html#a62e309e31422eabdd0a945104a8bd60c">remove_SchreyerOrder</a>, 0, 0, 0);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  GC_REGISTER_FINALIZER(                  G , <a class="code" href="../../db/de9/finalize_8cpp_a62e309e31422eabdd0a945104a8bd60c.html#a62e309e31422eabdd0a945104a8bd60c">remove_SchreyerOrder</a>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  std::atomic&lt;int&gt; nfinalized = <a class="code" href="../../db/de9/finalize_8cpp_ae8c08bdbbed36d87bb9e769980701b56.html#ae8c08bdbbed36d87bb9e769980701b56">schorder_nfinalized</a>++;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('db/de9/finalize_8cpp_aae491e7c1ab7a0a3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../db/de9/finalize_8cpp.html">finalize.cpp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

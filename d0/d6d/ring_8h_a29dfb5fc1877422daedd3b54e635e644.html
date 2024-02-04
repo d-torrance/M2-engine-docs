@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('d0/d6d/ring_8h_a29dfb5fc1877422daedd3b
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      <span class="keywordflow">if</span> (I-&gt;<a class="code" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>() != 1)</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        {</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a one row matrix of quotient elements&quot;</span>);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        }</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      <span class="keywordflow">if</span> (P != <span class="keyword">nullptr</span>)</div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('d0/d6d/ring_8h_a29dfb5fc1877422daedd3b
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    {</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;  }</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;}</div>
 <div class="ttc" id="aclass_m2_free_algebra_html"><div class="ttname"><a href="../../dc/dc0/class_m2_free_algebra.html">M2FreeAlgebra</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d34/_m2_free_algebra_8hpp_source.html#l00055">M2FreeAlgebra.hpp:56</a></div></div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('d0/d6d/ring_8h_a29dfb5fc1877422daedd3b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d0/d6d/ring_8h.html">ring.h</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:52 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

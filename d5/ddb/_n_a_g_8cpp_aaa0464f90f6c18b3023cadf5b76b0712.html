@@ -112,10 +112,10 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_aaa0464f90f6c18b302
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="comment">/* Extracts into fx the terms divisible by the (n-1-i)-th variable &quot;x&quot;</span></div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">     and divides them by x. (exponent vectors are assumed to be reversed)</span></div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">     Note: terms in fx may not be in monomial order. */</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>* fx = NULL;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>* fx = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>* f = ff;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>* prev_f = NULL;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordflow">while</span> (f != NULL)</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>* prev_f = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordflow">while</span> (f != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      <span class="keywordflow">if</span> (f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>[i] == 0)</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        {</div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_aaa0464f90f6c18b302
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        {</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;          f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>[i]--;  <span class="comment">// divide by x</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;          <span class="keywordflow">if</span> (prev_f != NULL)</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;          <span class="keywordflow">if</span> (prev_f != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            {</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;              prev_f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;  <span class="comment">// extract</span></div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            }</div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_aaa0464f90f6c18b302
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            }</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;          f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = fx;  <span class="comment">// prepend to fx</span></div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;          fx = f;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;          f = (prev_f == NULL) ? ff : prev_f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;          f = (prev_f == <span class="keyword">nullptr</span>) ? ff : prev_f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordflow">return</span> fx;</div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_aaa0464f90f6c18b302
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d5/ddb/_n_a_g_8cpp.html">NAG.cpp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:52 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

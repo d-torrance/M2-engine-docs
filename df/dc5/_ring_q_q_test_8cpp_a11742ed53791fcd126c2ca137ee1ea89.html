@@ -110,10 +110,10 @@ $(document).ready(function(){initNavTree('df/dc5/_ring_q_q_test_8cpp_a11742ed537
 <p class="definition">Definition at line <a class="el" href="../../df/dc5/_ring_q_q_test_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../df/dc5/_ring_q_q_test_8cpp_source.html">RingQQTest.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R = <a class="code" href="../../dd/da4/aring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857.html#ab88d3ea2a9742f382a17da830d0b7857">globalQQ</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  EXPECT_TRUE(R != 0);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  EXPECT_TRUE(R != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  EXPECT_TRUE(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="../../d7/d1a/class_z__mod.html">Z_mod</a> *<span class="keyword">&gt;</span>(R) == 0);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  EXPECT_TRUE(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="../../d4/d85/class_m2_1_1_ring_q_q.html">RingQQ</a> *<span class="keyword">&gt;</span>(R) != 0);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  EXPECT_TRUE(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="../../d7/d1a/class_z__mod.html">Z_mod</a> *<span class="keyword">&gt;</span>(R) == <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  EXPECT_TRUE(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="../../d4/d85/class_m2_1_1_ring_q_q.html">RingQQ</a> *<span class="keyword">&gt;</span>(R) != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  EXPECT_EQ(R-&gt;<a class="code" href="../../dd/dcf/class_ring_add08b7838779d3f97d159add46889c87.html#add08b7838779d3f97d159add46889c87">coefficient_type</a>(), <a class="code" href="../../dd/dcf/class_ring_a9e57707e3d58a95caee2f12f741f532d.html#a9e57707e3d58a95caee2f12f741f532da2271da0c782d50ac47467d67b7fc64ce">Ring::COEFF_QQ</a>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  EXPECT_FALSE(R-&gt;<a class="code" href="../../dd/dcf/class_ring_a0029ed30ca6f682c9d0fe4748a32d32e.html#a0029ed30ca6f682c9d0fe4748a32d32e">is_ZZ</a>());</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  EXPECT_EQ(<a class="code" href="../../de/d59/_a_ring_test_8hpp_aed865d319365c090f84bd7fd38400807.html#aed865d319365c090f84bd7fd38400807">ringName</a>(*R), <span class="stringliteral">&quot;QQGMP&quot;</span>);</div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('df/dc5/_ring_q_q_test_8cpp_a11742ed537
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_cb190e7768d1e7821fcc13efdd565523.html">unit-tests</a></li><li class="navelem"><a class="el" href="../../df/dc5/_ring_q_q_test_8cpp.html">RingQQTest.cpp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:53 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -103,26 +103,26 @@ $(document).ready(function(){initNavTree('de/d11/franzi-interface_8cpp_a181b109f
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="comment">// cout &lt;&lt; &quot;first BRP in F &quot; &lt;&lt; F.begin()-&gt;second &lt;&lt; endl;</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a> *R = m-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>();</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">if</span> (P == 0)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a polynomial ring&quot;</span>);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">if</span> (P-&gt;<a class="code" href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">characteristic</a>() != 2)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected coefficient ring ZZ/2&quot;</span>);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordflow">if</span> (not P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a7e8c03a55da33b51714f6b95f4b06923.html#a7e8c03a55da33b51714f6b95f4b06923">getCoefficientRing</a>()-&gt;<a class="code" href="../../dd/dcf/class_ring_add1e694a2f0b834c4708476ec237644e.html#add1e694a2f0b834c4708476ec237644e">isFinitePrimeField</a>())</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected coefficient ring ZZ/2&quot;</span>);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">int</span> n = P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_aece123c61c00a4f07a6008badec14362.html#aece123c61c00a4f07a6008badec14362">n_vars</a>();</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordflow">if</span> (n &gt; 64)</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;Cannot handle more than 64 variables yet&quot;</span>);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="../../de/d11/franzi-interface_8cpp_a14e81b9d04537f8dd05a8cef7fb8563e.html#a14e81b9d04537f8dd05a8cef7fb8563e">gb</a>(F, n);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="comment">// cout &lt;&lt; &quot;first BRP in F after gb() &quot; &lt;&lt; F.begin()-&gt;second &lt;&lt; endl;</span></div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('de/d11/franzi-interface_8cpp_a181b109f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../de/d11/franzi-interface_8cpp.html">franzi-interface.cpp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

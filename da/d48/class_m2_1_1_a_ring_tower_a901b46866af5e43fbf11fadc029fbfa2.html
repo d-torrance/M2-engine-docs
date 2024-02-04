@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_a901b
 <p class="definition">Definition at line <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html#l00398">398</a> of file <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html">aring-tower.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;{</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  assert(!<a class="code" href="../../da/d48/class_m2_1_1_a_ring_tower_abccea2309d7ab04fc3513e97db6135ee.html#abccea2309d7ab04fc3513e97db6135ee">mBaseRing</a>.<a class="code" href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_af43d347bab161707e093cf1da53170b3.html#af43d347bab161707e093cf1da53170b3">is_zero</a>(b));</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <span class="keywordflow">if</span> (f == 0) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <span class="keywordtype">long</span> deg = f-&gt;deg;</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  <span class="keywordflow">if</span> (level == 0)</div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_a901b
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    {</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= deg; i++)</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keywordflow">if</span> (f-&gt;polys[i] != 0) <a class="code" href="../../da/d48/class_m2_1_1_a_ring_tower_a84964f49b26870eb62fa52929fd8b894.html#a84964f49b26870eb62fa52929fd8b894">mult_by_coeff</a>(level - 1, f-&gt;polys[i], b);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keywordflow">if</span> (f-&gt;polys[i] != <span class="keyword">nullptr</span>) <a class="code" href="../../da/d48/class_m2_1_1_a_ring_tower_a84964f49b26870eb62fa52929fd8b894.html#a84964f49b26870eb62fa52929fd8b894">mult_by_coeff</a>(level - 1, f-&gt;polys[i], b);</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    }</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;}</div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_tower_a84964f49b26870eb62fa52929fd8b894_html_a84964f49b26870eb62fa52929fd8b894"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_a84964f49b26870eb62fa52929fd8b894.html#a84964f49b26870eb62fa52929fd8b894">M2::ARingTower::mult_by_coeff</a></div><div class="ttdeci">void mult_by_coeff(ARingPolynomial &amp;f, const BaseCoefficientType &amp;b) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcb/aring-tower_8cpp_source.html#l00418">aring-tower.cpp:418</a></div></div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_a901b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../da/d48/class_m2_1_1_a_ring_tower.html">ARingTower</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('d4/d4d/finalize_8hpp_a6501d4db829e3bfb
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#ifdef MEMDEBUG</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  GC_REGISTER_FINALIZER(M2_debug_to_outer(G), <a class="code" href="../../db/de9/finalize_8cpp_a8edf5905229d913571c2b764ccf7b057.html#a8edf5905229d913571c2b764ccf7b057">remove_monideal</a>, 0, 0, 0);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  GC_REGISTER_FINALIZER(G,                    <a class="code" href="../../db/de9/finalize_8cpp_a8edf5905229d913571c2b764ccf7b057.html#a8edf5905229d913571c2b764ccf7b057">remove_monideal</a>, 0, 0, 0);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  GC_REGISTER_FINALIZER(G,                    <a class="code" href="../../db/de9/finalize_8cpp_a8edf5905229d913571c2b764ccf7b057.html#a8edf5905229d913571c2b764ccf7b057">remove_monideal</a>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::atomic&lt;int&gt; nfinalized = <a class="code" href="../../db/de9/finalize_8cpp_a46a314f1633907ca5517a427746f3be4.html#a46a314f1633907ca5517a427746f3be4">monideals_nfinalized</a>++;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('d4/d4d/finalize_8hpp_a6501d4db829e3bfb
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d4/d4d/finalize_8hpp.html">finalize.hpp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

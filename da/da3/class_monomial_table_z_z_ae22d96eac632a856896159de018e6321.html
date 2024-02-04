@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_ae22d9
 
 <p class="definition">Definition at line <a class="el" href="../../d8/dfa/montable_z_z_8cpp_source.html#l00325">325</a> of file <a class="el" href="../../d8/dfa/montable_z_z_8cpp_source.html">montableZZ.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;{</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keywordflow">if</span> (comp &gt;= <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="../../da/da3/class_monomial_table_z_z_ab311557a28f15446964c862ed52241f2.html#ab311557a28f15446964c862ed52241f2">_head</a>.size())) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keywordflow">if</span> (comp &gt;= <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="../../da/da3/class_monomial_table_z_z_ab311557a28f15446964c862ed52241f2.html#ab311557a28f15446964c862ed52241f2">_head</a>.size())) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  mon_term *head = <a class="code" href="../../da/da3/class_monomial_table_z_z_ab311557a28f15446964c862ed52241f2.html#ab311557a28f15446964c862ed52241f2">_head</a>[comp];</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  mon_term *t;</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordtype">int</span> i;</div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_ae22d9
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            }</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordflow">if</span> (is_eq &amp;&amp; !mpz_cmp(coeff, t-&gt;_coeff)) <span class="keywordflow">return</span> t;</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;      }</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
 <div class="ttc" id="aclass_monomial_table_z_z_a8e7faee5842030eee952cddf3b02c154_html_a8e7faee5842030eee952cddf3b02c154"><div class="ttname"><a href="../../da/da3/class_monomial_table_z_z_a8e7faee5842030eee952cddf3b02c154.html#a8e7faee5842030eee952cddf3b02c154">MonomialTableZZ::_nvars</a></div><div class="ttdeci">int _nvars</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d55/montable_z_z_8hpp_source.html#l00116">montableZZ.hpp:116</a></div></div>
 <div class="ttc" id="aclass_monomial_table_z_z_ab311557a28f15446964c862ed52241f2_html_ab311557a28f15446964c862ed52241f2"><div class="ttname"><a href="../../da/da3/class_monomial_table_z_z_ab311557a28f15446964c862ed52241f2.html#ab311557a28f15446964c862ed52241f2">MonomialTableZZ::_head</a></div><div class="ttdeci">gc_vector&lt; mon_term * &gt; _head</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d55/montable_z_z_8hpp_source.html#l00118">montableZZ.hpp:118</a></div></div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('da/da3/class_monomial_table_z_z_ae22d9
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/da3/class_monomial_table_z_z.html">MonomialTableZZ</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

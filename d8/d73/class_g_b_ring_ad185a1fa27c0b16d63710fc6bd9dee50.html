@@ -115,11 +115,11 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_ad185a1fa27c0b16
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l00660">660</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;{</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;  <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;  <span class="keywordflow">if</span> (f == NULL)</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;  <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    {</div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;      f = g;</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;      g = NULL;</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;      g = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    }</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d8/d73/class_g_b_ring_a02b699e6b4925db2b7d4f42362c7f49c.html#a02b699e6b4925db2b7d4f42362c7f49c">zzp</a>)</div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_ad185a1fa27c0b16
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;          result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = g;</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;          result = result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;          g = g-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;          <span class="keywordflow">if</span> (g == NULL)</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;          <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            {</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;              result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = f;</div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;              f = head.<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
@@ -146,11 +146,11 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_ad185a1fa27c0b16
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;          result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = f;</div>
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;          result = result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;          f = f-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;          <span class="keywordflow">if</span> (f == NULL)</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;          <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;            {</div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;              result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = g;</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;              f = head.<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;              g = NULL;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;              g = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;              <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;            }</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;          <span class="keywordflow">break</span>;</div>
@@ -178,17 +178,17 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_ad185a1fa27c0b16
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;              result = result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;            }</div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;          <a class="code" href="../../d8/d73/class_g_b_ring_aeaf04d81756de31637079b664b3867ad.html#aeaf04d81756de31637079b664b3867ad">gbvector_remove_term</a>(tmg);</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;          <span class="keywordflow">if</span> (g == NULL)</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;          <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;            {</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;              result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = f;</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;              f = head.<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;              <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;            }</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;          <span class="keywordflow">if</span> (f == NULL)</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;          <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;            {</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;              result-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = g;</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;              f = head.<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;              g = NULL;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;              g = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;              <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;            }</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;          <span class="keywordflow">break</span>;</div>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_ad185a1fa27c0b16
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

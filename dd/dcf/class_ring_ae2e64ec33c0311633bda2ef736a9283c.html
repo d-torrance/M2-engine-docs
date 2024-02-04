@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_ae2e64ec33c0311633bd
 <div class="fragment"><div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;{</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> head;</div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;  <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> *result = &amp;head;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  <span class="keywordflow">for</span> (vec w = v; w != 0; w = w-&gt;next)</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  <span class="keywordflow">for</span> (vec w = v; w != <span class="keyword">nullptr</span>; w = w-&gt;next)</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    {</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;      <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> a = <a class="code" href="../../dd/dcf/class_ring_a00425962be22e15c9933f78bd6dedf80.html#a00425962be22e15c9933f78bd6dedf80">divide_by_expvector</a>(<a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>, w-&gt;coeff);</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(a))</div>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_ae2e64ec33c0311633bd
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;          result = t;</div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        }</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    }</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;  result-&gt;<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = 0;</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;  result-&gt;<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;  <span class="keywordflow">return</span> head.<a class="code" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a>;</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;}</div>
 <div class="ttc" id="aclass_ring_a00425962be22e15c9933f78bd6dedf80_html_a00425962be22e15c9933f78bd6dedf80"><div class="ttname"><a href="../../dd/dcf/class_ring_a00425962be22e15c9933f78bd6dedf80.html#a00425962be22e15c9933f78bd6dedf80">Ring::divide_by_expvector</a></div><div class="ttdeci">virtual ring_elem divide_by_expvector(const_exponents exp, const ring_elem a) const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2b/ring_8cpp_source.html#l00356">ring.cpp:356</a></div></div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_ae2e64ec33c0311633bd
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

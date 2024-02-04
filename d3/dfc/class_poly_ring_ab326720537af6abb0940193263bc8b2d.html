@@ -115,10 +115,10 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ab326720537af6a
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02489">2489</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l02493"></a><span class="lineno"> 2493</span>&#160;{</div>
-<div class="line"><a name="l02494"></a><span class="lineno"> 2494</span>&#160;  <span class="keywordflow">if</span> (v == 0)</div>
+<div class="line"><a name="l02494"></a><span class="lineno"> 2494</span>&#160;  <span class="keywordflow">if</span> (v == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l02495"></a><span class="lineno"> 2495</span>&#160;    {</div>
 <div class="line"><a name="l02496"></a><span class="lineno"> 2496</span>&#160;      result_denominator = <a class="code" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a480f948242b890421b63365d1ef8d7b8.html#a480f948242b890421b63365d1ef8d7b8">one</a>();</div>
-<div class="line"><a name="l02497"></a><span class="lineno"> 2497</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l02497"></a><span class="lineno"> 2497</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l02498"></a><span class="lineno"> 2498</span>&#160;    }</div>
 <div class="line"><a name="l02499"></a><span class="lineno"> 2499</span>&#160;  <a class="code" href="../../d8/d73/class_g_b_ring.html">GBRing</a> *GR = <a class="code" href="../../d5/d58/class_polynomial_ring_a6d483e0a62ce61f8b09c55e5229063a0.html#a6d483e0a62ce61f8b09c55e5229063a0">get_gb_ring</a>();</div>
 <div class="line"><a name="l02500"></a><span class="lineno"> 2500</span>&#160;  result_denominator = <a class="code" href="../../d3/dfc/class_poly_ring_a55839c904c7b4715ddf8daa49dceaf5d.html#a55839c904c7b4715ddf8daa49dceaf5d">vec_get_denominator_QQ</a>(v);</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ab326720537af6a
 <div class="line"><a name="l02503"></a><span class="lineno"> 2503</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *inresult;</div>
 <div class="line"><a name="l02504"></a><span class="lineno"> 2504</span>&#160;  mpz_t a;</div>
 <div class="line"><a name="l02505"></a><span class="lineno"> 2505</span>&#160;  mpz_init(a);</div>
-<div class="line"><a name="l02506"></a><span class="lineno"> 2506</span>&#160;  <span class="keywordflow">for</span> (vec w = v; w != 0; w = w-&gt;next)</div>
+<div class="line"><a name="l02506"></a><span class="lineno"> 2506</span>&#160;  <span class="keywordflow">for</span> (vec w = v; w != <span class="keyword">nullptr</span>; w = w-&gt;next)</div>
 <div class="line"><a name="l02507"></a><span class="lineno"> 2507</span>&#160;    {</div>
 <div class="line"><a name="l02508"></a><span class="lineno"> 2508</span>&#160;      inresult = &amp;head;</div>
 <div class="line"><a name="l02509"></a><span class="lineno"> 2509</span>&#160;      <span class="keywordtype">int</span> comp = w-&gt;<a class="code" href="../../d7/d40/structgbvector_a857b617c77d0b7e4b5ec6e2bf8d73b89.html#a857b617c77d0b7e4b5ec6e2bf8d73b89">comp</a> + 1;</div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ab326720537af6a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

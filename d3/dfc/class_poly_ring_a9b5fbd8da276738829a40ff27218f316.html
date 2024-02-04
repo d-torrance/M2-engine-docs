@@ -119,12 +119,12 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a9b5fbd8da27673
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l02280">2280</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l02283"></a><span class="lineno"> 2283</span>&#160;{</div>
-<div class="line"><a name="l02284"></a><span class="lineno"> 2284</span>&#160;  <span class="keywordflow">if</span> (v == 0) <span class="keywordflow">return</span> v;</div>
+<div class="line"><a name="l02284"></a><span class="lineno"> 2284</span>&#160;  <span class="keywordflow">if</span> (v == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> v;</div>
 <div class="line"><a name="l02285"></a><span class="lineno"> 2285</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d6/ddd/structvecterm.html">vecterm</a> *lead = v;</div>
 <div class="line"><a name="l02286"></a><span class="lineno"> 2286</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d4/d92/class_schreyer_order.html">SchreyerOrder</a> *S = F-&gt;<a class="code" href="../../d6/df0/class_free_module_a400e9ad1141393b6d23e70ee7dc8849a.html#a400e9ad1141393b6d23e70ee7dc8849a">get_schreyer_order</a>();</div>
 <div class="line"><a name="l02287"></a><span class="lineno"> 2287</span>&#160;  <span class="keywordflow">if</span> (S)</div>
 <div class="line"><a name="l02288"></a><span class="lineno"> 2288</span>&#160;    {</div>
-<div class="line"><a name="l02289"></a><span class="lineno"> 2289</span>&#160;      <span class="keywordflow">for</span> (vec w = v-&gt;next; w != 0; w = w-&gt;next)</div>
+<div class="line"><a name="l02289"></a><span class="lineno"> 2289</span>&#160;      <span class="keywordflow">for</span> (vec w = v-&gt;next; w != <span class="keyword">nullptr</span>; w = w-&gt;next)</div>
 <div class="line"><a name="l02290"></a><span class="lineno"> 2290</span>&#160;        {</div>
 <div class="line"><a name="l02291"></a><span class="lineno"> 2291</span>&#160;          <span class="keywordflow">if</span> (S-&gt;<a class="code" href="../../d4/d92/class_schreyer_order_a786610e8fb01f6f4c1d3404db25e8d4b.html#a786610e8fb01f6f4c1d3404db25e8d4b">schreyer_compare</a>(<a class="code" href="../../d0/d03/struct_p_o_l_y.html">POLY</a>(lead-&gt;<a class="code" href="../../d6/ddd/structvecterm_af3abb9332a7c7aaf676c6346931ca3dd.html#af3abb9332a7c7aaf676c6346931ca3dd">coeff</a>)-&gt;monom,</div>
 <div class="line"><a name="l02292"></a><span class="lineno"> 2292</span>&#160;                                  lead-&gt;<a class="code" href="../../d6/ddd/structvecterm_a70a333957a4a067dc8efb4cb09f72122.html#a70a333957a4a067dc8efb4cb09f72122">comp</a>,</div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a9b5fbd8da27673
 <div class="line"><a name="l02299"></a><span class="lineno"> 2299</span>&#160;    }</div>
 <div class="line"><a name="l02300"></a><span class="lineno"> 2300</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l02301"></a><span class="lineno"> 2301</span>&#160;    {</div>
-<div class="line"><a name="l02302"></a><span class="lineno"> 2302</span>&#160;      <span class="keywordflow">for</span> (vec w = v-&gt;next; w != 0; w = w-&gt;next)</div>
+<div class="line"><a name="l02302"></a><span class="lineno"> 2302</span>&#160;      <span class="keywordflow">for</span> (vec w = v-&gt;next; w != <span class="keyword">nullptr</span>; w = w-&gt;next)</div>
 <div class="line"><a name="l02303"></a><span class="lineno"> 2303</span>&#160;        {</div>
 <div class="line"><a name="l02304"></a><span class="lineno"> 2304</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_a85091ad699cd882228ad2cdab4e6439e.html#a85091ad699cd882228ad2cdab4e6439e">compare</a>(<a class="code" href="../../d0/d03/struct_p_o_l_y.html">POLY</a>(lead-&gt;<a class="code" href="../../d6/ddd/structvecterm_af3abb9332a7c7aaf676c6346931ca3dd.html#af3abb9332a7c7aaf676c6346931ca3dd">coeff</a>)-&gt;monom,</div>
 <div class="line"><a name="l02305"></a><span class="lineno"> 2305</span>&#160;                          lead-&gt;<a class="code" href="../../d6/ddd/structvecterm_a70a333957a4a067dc8efb4cb09f72122.html#a70a333957a4a067dc8efb4cb09f72122">comp</a>,</div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a9b5fbd8da27673
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

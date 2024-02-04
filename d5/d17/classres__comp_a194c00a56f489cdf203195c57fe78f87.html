@@ -110,9 +110,9 @@ $(document).ready(function(){initNavTree('d5/d17/classres__comp_a194c00a56f489cd
 <p class="definition">Definition at line <a class="el" href="../../d6/d9d/res-a1_8cpp_source.html#l01165">1165</a> of file <a class="el" href="../../d6/d9d/res-a1_8cpp_source.html">res-a1.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;{</div>
 <div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;  <a class="code" href="../../dd/d86/classres__degree.html">res_degree</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d5/d17/classres__comp_ae1f5e2a5ef3caf60ad9ba57f77a321fe.html#ae1f5e2a5ef3caf60ad9ba57f77a321fe">get_degree_set</a>(lev, d);</div>
-<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> == NULL) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;  <span class="keywordtype">int</span> result = 0;</div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../dc/d2a/classres__pair.html">res_pair</a> *q = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;first; q != NULL; q = q-&gt;next)</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../dc/d2a/classres__pair.html">res_pair</a> *q = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;first; q != <span class="keyword">nullptr</span>; q = q-&gt;next)</div>
 <div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;    result += <a class="code" href="../../d5/d17/classres__comp_a82f502e81b14ac1cdb1dd87291e757e4.html#a82f502e81b14ac1cdb1dd87291e757e4">R</a>-&gt;<a class="code" href="../../d6/dac/classres__poly_a3b0dc16cb8fae8a06e9fb7c0d1a231c6.html#a3b0dc16cb8fae8a06e9fb7c0d1a231c6">n_terms</a>(q-&gt;syz);</div>
 <div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160; </div>
 <div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;  <span class="keywordflow">return</span> result;</div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('d5/d17/classres__comp_a194c00a56f489cd
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d17/classres__comp.html">res_comp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

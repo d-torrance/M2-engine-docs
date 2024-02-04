@@ -144,9 +144,9 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a45458c49e0fa73
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;      <span class="keywordflow">if</span> (((d - e) % wts[v]) != 0)</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        {</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;          <span class="comment">// We cannot homogenize, so clean up and exit.</span></div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;          result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = NULL;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;          result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;          <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;homogenization impossible&quot;</span>);</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;          result = NULL;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;          result = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;          <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        }</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;      <a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[v] += (d - e) / wts[v];</div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a45458c49e0fa73
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;      result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">coeff</a> = <a class="code" href="../../d5/d58/class_polynomial_ring_a54aee749a7364fd81e2460f691480fdc.html#a54aee749a7364fd81e2460f691480fdc">K_</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_a84bd4fdbdd4e1e44b2b24ad800138e1c.html#a84bd4fdbdd4e1e44b2b24ad800138e1c">copy</a>(a.coeff);</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;      <a class="code" href="../../d5/d58/class_polynomial_ring_a7ea73f5905aee6f71bb8a4f1ce54c494.html#a7ea73f5905aee6f71bb8a4f1ce54c494">M_</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_af796c73504cb5e1cdb2737b73468eb04.html#af796c73504cb5e1cdb2737b73468eb04">from_expvector</a>(<a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>, result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">monom</a>);</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    }</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;  result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = NULL;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;  result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;  <a class="code" href="../../d3/dfc/class_poly_ring_af59e2f977ac6baaae50dca401b72d3ed.html#af59e2f977ac6baaae50dca401b72d3ed">sort</a>(head.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>);  <span class="comment">// The monomial order, etc. might all have changed.</span></div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;                    <span class="comment">// Some terms might even drop out</span></div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;  <a class="code" href="../../d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(<a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>);</div>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a45458c49e0fa73
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

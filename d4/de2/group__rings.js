@@ -1329,7 +1329,7 @@ var group__rings =
       [ "in_subring", "dd/dcf/class_ring_a52ffb06bc101f548106f6cfcfc9fa2ab.html#a52ffb06bc101f548106f6cfcfc9fa2ab", null ],
       [ "increase_maxnorm", "dd/dcf/class_ring_a308925e8ca2bc536ea6456f99bad0e90.html#a308925e8ca2bc536ea6456f99bad0e90", null ],
       [ "index_of_var", "dd/dcf/class_ring_a921ad93c8e17f2cae123b5d1bf206402.html#a921ad93c8e17f2cae123b5d1bf206402", null ],
-      [ "initialize_ring", "dd/dcf/class_ring_ae39d2bc7d09a023aeed6f2463ed2464f.html#ae39d2bc7d09a023aeed6f2463ed2464f", null ],
+      [ "initialize_ring", "dd/dcf/class_ring_a57db5364300d12a9e778ef9794f61962.html#a57db5364300d12a9e778ef9794f61962", null ],
       [ "invert", "dd/dcf/class_ring_a6e158a0a10dbc5ab15f38be603ba8d88.html#a6e158a0a10dbc5ab15f38be603ba8d88", null ],
       [ "is_basic_ring", "dd/dcf/class_ring_a67c2f7ed10e29d390ca4146d5da11a5d.html#a67c2f7ed10e29d390ca4146d5da11a5d", null ],
       [ "is_CCC", "dd/dcf/class_ring_aa6d007e7619fa67da71dd28c0f1ac918.html#aa6d007e7619fa67da71dd28c0f1ac918", null ],

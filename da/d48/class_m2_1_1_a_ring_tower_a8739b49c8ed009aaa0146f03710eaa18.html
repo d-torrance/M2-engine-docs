@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_a8739
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html#l00356">356</a> of file <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html">aring-tower.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;{</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keywordflow">if</span> (f == 0) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keywordtype">int</span> deg = f-&gt;deg;</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keywordflow">if</span> (level == 0)</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    {</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_a8739
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    {</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= deg; i++)</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">if</span> (f-&gt;polys[i] != 0) <a class="code" href="../../da/d48/class_m2_1_1_a_ring_tower_a8739b49c8ed009aaa0146f03710eaa18.html#a8739b49c8ed009aaa0146f03710eaa18">negate_in_place</a>(level - 1, f-&gt;polys[i]);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">if</span> (f-&gt;polys[i] != <span class="keyword">nullptr</span>) <a class="code" href="../../da/d48/class_m2_1_1_a_ring_tower_a8739b49c8ed009aaa0146f03710eaa18.html#a8739b49c8ed009aaa0146f03710eaa18">negate_in_place</a>(level - 1, f-&gt;polys[i]);</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    }</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;}</div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_tower_a8739b49c8ed009aaa0146f03710eaa18_html_a8739b49c8ed009aaa0146f03710eaa18"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_a8739b49c8ed009aaa0146f03710eaa18.html#a8739b49c8ed009aaa0146f03710eaa18">M2::ARingTower::negate_in_place</a></div><div class="ttdeci">void negate_in_place(int level, ARingPolynomial &amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcb/aring-tower_8cpp_source.html#l00356">aring-tower.cpp:356</a></div></div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_a8739
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../da/d48/class_m2_1_1_a_ring_tower.html">ARingTower</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

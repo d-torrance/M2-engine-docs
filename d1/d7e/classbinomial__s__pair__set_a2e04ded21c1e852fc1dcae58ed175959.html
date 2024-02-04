@@ -123,13 +123,13 @@ $(document).ready(function(){initNavTree('d1/d7e/classbinomial__s__pair__set_a2e
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  s_pair_lcm_list *r = &amp;head;</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    {</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;      <span class="keywordflow">if</span> (r-&gt;next == NULL || ((cmp = <a class="code" href="../../d1/d7e/classbinomial__s__pair__set_a4499629b927e616035b107e4e8177c35.html#a4499629b927e616035b107e4e8177c35">R</a>-&gt;<a class="code" href="../../dd/d3a/classbinomial__ring_aded45e225961995ed69f85b39f7827e4.html#aded45e225961995ed69f85b39f7827e4">compare</a>(s.<a class="code" href="../../de/d61/structbinomial__s__pair_a8106e35393a3c13454d65f2894b16c1f.html#a8106e35393a3c13454d65f2894b16c1f">lcm</a>, r-&gt;next-&gt;lcm)) == <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>))</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;      <span class="keywordflow">if</span> (r-&gt;next == <span class="keyword">nullptr</span> || ((cmp = <a class="code" href="../../d1/d7e/classbinomial__s__pair__set_a4499629b927e616035b107e4e8177c35.html#a4499629b927e616035b107e4e8177c35">R</a>-&gt;<a class="code" href="../../dd/d3a/classbinomial__ring_aded45e225961995ed69f85b39f7827e4.html#aded45e225961995ed69f85b39f7827e4">compare</a>(s.<a class="code" href="../../de/d61/structbinomial__s__pair_a8106e35393a3c13454d65f2894b16c1f.html#a8106e35393a3c13454d65f2894b16c1f">lcm</a>, r-&gt;next-&gt;lcm)) == <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>))</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        {</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;          <span class="comment">// Insert new lcm node</span></div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;          s_pair_lcm_list *r1 = <span class="keyword">new</span> s_pair_lcm_list;</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;          r1-&gt;next = r-&gt;next;</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;          r1-&gt;lcm = s.<a class="code" href="../../de/d61/structbinomial__s__pair_a8106e35393a3c13454d65f2894b16c1f.html#a8106e35393a3c13454d65f2894b16c1f">lcm</a>;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;          r1-&gt;pairs = NULL;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;          r1-&gt;pairs = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;          r-&gt;next = r1;</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        }</div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('d1/d7e/classbinomial__s__pair__set_a2e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d7e/classbinomial__s__pair__set.html">binomial_s_pair_set</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:53 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

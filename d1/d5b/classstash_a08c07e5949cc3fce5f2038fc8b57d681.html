@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('d1/d5b/classstash_a08c07e5949cc3fce5f2
 <p class="definition">Definition at line <a class="el" href="../../d1/d6f/mem_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d1/d6f/mem_8cpp_source.html">mem.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  acquireSpinLock(&amp;<a class="code" href="../../d1/d5b/classstash_ab0087ae1e008a33c48fbf24b4481cf06.html#ab0087ae1e008a33c48fbf24b4481cf06">list_spinlock</a>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a> != NULL)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a> != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <a class="code" href="../../dc/d02/classslab.html">slab</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a> = <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a>-&gt;<a class="code" href="../../dc/d02/classslab_a0f7418588412caf4f807db4c1e07ecb1.html#a0f7418588412caf4f807db4c1e07ecb1">next</a>;</div>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('d1/d5b/classstash_a08c07e5949cc3fce5f2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d5b/classstash.html">stash</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -113,17 +113,17 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_ada52875a8c75669
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;  <span class="comment">// then add them together.  This allows the same monomial</span></div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;  <span class="comment">// to appear more than once in &#39;f&#39;.</span></div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160; </div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;  <span class="keywordflow">if</span> (f == NULL || f-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> == NULL) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *f1 = NULL;</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *f2 = NULL;</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;  <span class="keywordflow">while</span> (f != NULL)</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span> || f-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *f1 = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;  <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *f2 = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;  <span class="keywordflow">while</span> (f != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    {</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;      <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *t = f;</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;      f = f-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;      t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = f1;</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;      f1 = t;</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160; </div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;      <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;      <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;      t = f;</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;      f = f-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;      t-&gt;<a class="code" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = f2;</div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_ada52875a8c75669
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

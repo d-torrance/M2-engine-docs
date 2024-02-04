@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ad8f541867bf4f1
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <span class="comment">// We assume that Rg is one of the coefficient rings of &#39;this&#39;</span></div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *t = f;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keywordflow">if</span> (t == 0)</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keywordflow">if</span> (t == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    {</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      result = Rg-&gt;zero();</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ad8f541867bf4f1
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keywordflow">if</span> (Rg != <a class="code" href="../../d5/d58/class_polynomial_ring_a54aee749a7364fd81e2460f691480fdc.html#a54aee749a7364fd81e2460f691480fdc">K_</a>)</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    {</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *Rg1 = Rg-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a089b7bac07b4bf41c1398df57ca32f68.html#a089b7bac07b4bf41c1398df57ca32f68">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      <span class="keywordflow">if</span> (Rg1 != 0)</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      <span class="keywordflow">if</span> (Rg1 != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        nvars0 -= Rg1-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_aece123c61c00a4f07a6008badec14362.html#aece123c61c00a4f07a6008badec14362">n_vars</a>();</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_ad8f541867bf4f1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

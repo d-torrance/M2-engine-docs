@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('d4/d92/class_schreyer_order_a3208fb786
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; rk; i++)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *v = m-&gt;<a class="code" href="../../d7/d14/struct_g_b_matrix_a9c32aada63157ee3f787e6c0f9bcdbd8.html#a9c32aada63157ee3f787e6c0f9bcdbd8">elems</a>[i];</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">if</span> (v == NULL || S == NULL)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">if</span> (v == <span class="keyword">nullptr</span> || S == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        tiebreaks[i] = i;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        tiebreaks[i] = i + rk * S-&gt;<a class="code" href="../../d4/d92/class_schreyer_order_ae7370d5ac9ae569ae3cba24c3c63cdc9.html#ae7370d5ac9ae569ae3cba24c3c63cdc9">compare_num</a>(v-&gt;<a class="code" href="../../d7/d40/structgbvector_a857b617c77d0b7e4b5ec6e2bf8d73b89.html#a857b617c77d0b7e4b5ec6e2bf8d73b89">comp</a> - 1);</div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('d4/d92/class_schreyer_order_a3208fb786
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; rk; i++)</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *v = m-&gt;<a class="code" href="../../d7/d14/struct_g_b_matrix_a9c32aada63157ee3f787e6c0f9bcdbd8.html#a9c32aada63157ee3f787e6c0f9bcdbd8">elems</a>[i];</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">if</span> (v == NULL)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">if</span> (v == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="../../d4/d92/class_schreyer_order_a6479bb604f00026ab8b02376553b413a.html#a6479bb604f00026ab8b02376553b413a">M</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_aa9e749653bacdaee4a132801e9862ab0.html#aa9e749653bacdaee4a132801e9862ab0">one</a>(<a class="code" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">else</span>  <span class="comment">// if (S == NULL)</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="../../d4/d92/class_schreyer_order_a6479bb604f00026ab8b02376553b413a.html#a6479bb604f00026ab8b02376553b413a">M</a>-&gt;<a class="code" href="../../d9/db1/class_monoid_abf72f14643cb88f7118445ff61eda4c1.html#abf72f14643cb88f7118445ff61eda4c1">copy</a>(v-&gt;<a class="code" href="../../d7/d40/structgbvector_a3ee5a8a3a86ab0049158832984336233.html#a3ee5a8a3a86ab0049158832984336233">monom</a>, <a class="code" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>);</div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('d4/d92/class_schreyer_order_a3208fb786
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d92/class_schreyer_order.html">SchreyerOrder</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

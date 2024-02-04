@@ -112,8 +112,8 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a0fe8f347a4921d
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *f = ff;</div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *g = gg;</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;  gg = <a class="code" href="../../db/d10/ring_8hpp_afc4022fa228930d460b6d19e3988ddf6.html#afc4022fa228930d460b6d19e3988ddf6">ZERO_RINGELEM</a>;</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;  <span class="keywordflow">if</span> (g == NULL) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;  <span class="keywordflow">if</span> (f == NULL)</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;  <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    {</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;      ff = g;</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;      <span class="keywordflow">return</span>;</div>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a0fe8f347a4921d
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;          result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = g;</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;          result = result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;          g = g-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;          <span class="keywordflow">if</span> (g == NULL)</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;          <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            {</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;              result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = f;</div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;              ff = head.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a0fe8f347a4921d
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;          result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = f;</div>
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;          result = result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;          f = f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;          <span class="keywordflow">if</span> (f == NULL)</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;          <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;            {</div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;              result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = g;</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;              ff = head.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
@@ -160,13 +160,13 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a0fe8f347a4921d
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;              result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = tmf;</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;              result = result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;            }</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;          <span class="keywordflow">if</span> (g == NULL)</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;          <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;            {</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;              result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = f;</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;              ff = head.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;              <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;            }</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;          <span class="keywordflow">if</span> (f == NULL)</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;          <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;            {</div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;              result-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = g;</div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;              ff = head.<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a0fe8f347a4921d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

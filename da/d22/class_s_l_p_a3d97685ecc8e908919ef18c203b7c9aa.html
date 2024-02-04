@@ -136,7 +136,7 @@ template&lt;class Field &gt; </div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    {</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>* fx = <a class="code" href="../../d5/ddb/_n_a_g_8cpp_aaa0464f90f6c18b3023cadf5b76b0712.html#aaa0464f90f6c18b3023cadf5b76b0712">extract_divisible_by_x</a>(f, i);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <span class="keywordflow">if</span> (fx == NULL)</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <span class="keywordflow">if</span> (fx == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        part_pos[i] = <a class="code" href="../../d8/da0/_n_a_g_8hpp_a8cd76d5fe45787109372933e7563f32c.html#a8cd76d5fe45787109372933e7563f32c">ZERO_CONST</a>;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        {</div>
@@ -150,7 +150,7 @@ template&lt;class Field &gt; </div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        }</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordtype">int</span> c = 0;  <span class="comment">// count nonzeros</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keywordflow">if</span> (f != NULL) c++;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keywordflow">if</span> (f != <span class="keyword">nullptr</span>) c++;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">if</span> (part_pos[i] != <a class="code" href="../../d8/da0/_n_a_g_8hpp_a8cd76d5fe45787109372933e7563f32c.html#a8cd76d5fe45787109372933e7563f32c">ZERO_CONST</a>) c++;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordflow">if</span> (c == 0) <span class="keywordflow">return</span> <a class="code" href="../../d8/da0/_n_a_g_8hpp_a8cd76d5fe45787109372933e7563f32c.html#a8cd76d5fe45787109372933e7563f32c">ZERO_CONST</a>;</div>
@@ -160,7 +160,7 @@ template&lt;class Field &gt; </div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <a class="code" href="../../da/d22/class_s_l_p_ae892ab1bd9bccb045a0bc91d6e246f5f.html#ae892ab1bd9bccb045a0bc91d6e246f5f">node_index</a>.push_back(prog.size());</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  prog.push_back(<a class="code" href="../../d8/da0/_n_a_g_8hpp_a119163bad73cbcbe065e981d0ef4662e.html#a119163bad73cbcbe065e981d0ef4662e">slpMULTIsum</a>);</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  prog.push_back(c);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordflow">if</span> (f != NULL)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordflow">if</span> (f != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    prog.push_back(<a class="code" href="../../d8/da0/_n_a_g_8hpp_a2a876dd761d8964c985698abccc212dd.html#a2a876dd761d8964c985698abccc212dd">CONST_OFFSET</a> +</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                add_constant_get_position&lt;Field&gt;(</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                    consts, <a class="code" href="../../da/d22/class_s_l_p_a587827830bca6e486c1c5437e62c73aa.html#a587827830bca6e486c1c5437e62c73aa">element_type</a>(<a class="code" href="../../d8/da0/_n_a_g_8hpp_a481b52082331308efab274f146f19bad.html#a481b52082331308efab274f146f19bad">toBigComplex</a>(<a class="code" href="../../da/d22/class_s_l_p_a238c1298154af52e3b76d075608840d7.html#a238c1298154af52e3b76d075608840d7">C</a>, f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">coeff</a>))));</div>
@@ -196,7 +196,7 @@ template&lt;class Field &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d22/class_s_l_p.html">SLP</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

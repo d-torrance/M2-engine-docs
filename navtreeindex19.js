@@ -248,6 +248,6 @@ var NAVTREEINDEX19 =
 "d6/d10/class_f4_monomial_lookup_table_t.html":[6,0,78],
 "d6/d10/class_f4_monomial_lookup_table_t_a017bb6ab8fdb9fb50bcf9588e4750c1d.html#a017bb6ab8fdb9fb50bcf9588e4750c1d":[6,0,78,23],
 "d6/d10/class_f4_monomial_lookup_table_t_a01dd5983aa4fcfc3a0d68964bf7e8d75.html#a01dd5983aa4fcfc3a0d68964bf7e8d75":[6,0,78,21],
-"d6/d10/class_f4_monomial_lookup_table_t_a024c00d69d5f3a4469c413d000039209.html#a024c00d69d5f3a4469c413d000039209":[6,0,78,1],
-"d6/d10/class_f4_monomial_lookup_table_t_a0572bdd2449a0327a4875a562887e51a.html#a0572bdd2449a0327a4875a562887e51a":[6,0,78,25]
+"d6/d10/class_f4_monomial_lookup_table_t_a0572bdd2449a0327a4875a562887e51a.html#a0572bdd2449a0327a4875a562887e51a":[6,0,78,25],
+"d6/d10/class_f4_monomial_lookup_table_t_a10e711c0466dd4394b2090a45861322d.html#a10e711c0466dd4394b2090a45861322d":[6,0,78,24]
 };

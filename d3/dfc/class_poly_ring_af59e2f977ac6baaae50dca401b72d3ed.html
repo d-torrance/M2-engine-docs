@@ -103,17 +103,17 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_af59e2f977ac6ba
 <div class="line"><a name="l02065"></a><span class="lineno"> 2065</span>&#160;  <span class="comment">// then add them together.  This allows the same monomial</span></div>
 <div class="line"><a name="l02066"></a><span class="lineno"> 2066</span>&#160;  <span class="comment">// to appear more than once in &#39;f&#39;.</span></div>
 <div class="line"><a name="l02067"></a><span class="lineno"> 2067</span>&#160; </div>
-<div class="line"><a name="l02068"></a><span class="lineno"> 2068</span>&#160;  <span class="keywordflow">if</span> (f == NULL || f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> == NULL) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l02069"></a><span class="lineno"> 2069</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *f1 = NULL;</div>
-<div class="line"><a name="l02070"></a><span class="lineno"> 2070</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *f2 = NULL;</div>
-<div class="line"><a name="l02071"></a><span class="lineno"> 2071</span>&#160;  <span class="keywordflow">while</span> (f != NULL)</div>
+<div class="line"><a name="l02068"></a><span class="lineno"> 2068</span>&#160;  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span> || f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02069"></a><span class="lineno"> 2069</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *f1 = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l02070"></a><span class="lineno"> 2070</span>&#160;  <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *f2 = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l02071"></a><span class="lineno"> 2071</span>&#160;  <span class="keywordflow">while</span> (f != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l02072"></a><span class="lineno"> 2072</span>&#160;    {</div>
 <div class="line"><a name="l02073"></a><span class="lineno"> 2073</span>&#160;      <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a> *t = f;</div>
 <div class="line"><a name="l02074"></a><span class="lineno"> 2074</span>&#160;      f = f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;      t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = f1;</div>
 <div class="line"><a name="l02076"></a><span class="lineno"> 2076</span>&#160;      f1 = t;</div>
 <div class="line"><a name="l02077"></a><span class="lineno"> 2077</span>&#160; </div>
-<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160;      <span class="keywordflow">if</span> (f == NULL) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160;      <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160;      t = f;</div>
 <div class="line"><a name="l02080"></a><span class="lineno"> 2080</span>&#160;      f = f-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a>;</div>
 <div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;      t-&gt;<a class="code" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = f2;</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_af59e2f977ac6ba
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

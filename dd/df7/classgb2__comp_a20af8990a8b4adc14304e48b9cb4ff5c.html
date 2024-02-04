@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('dd/df7/classgb2__comp_a20af8990a8b4adc
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="../../dd/df7/classgb2__comp_a4260e55f0f0eef167ccdae7a1d9b8d2f.html#a4260e55f0f0eef167ccdae7a1d9b8d2f">level</a> = lev;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="../../dd/df7/classgb2__comp_abe0cf59c3f61f129f04c529fb46b086c.html#abe0cf59c3f61f129f04c529fb46b086c">originalR</a> = FFsyz-&gt;get_ring()-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a089b7bac07b4bf41c1398df57ca32f68.html#a089b7bac07b4bf41c1398df57ca32f68">cast_to_PolynomialRing</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dd/df7/classgb2__comp_abe0cf59c3f61f129f04c529fb46b086c.html#abe0cf59c3f61f129f04c529fb46b086c">originalR</a> == NULL)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dd/df7/classgb2__comp_abe0cf59c3f61f129f04c529fb46b086c.html#abe0cf59c3f61f129f04c529fb46b086c">originalR</a> == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;internal error - ring is not a polynomial ring&quot;</span>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      assert(0);</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('dd/df7/classgb2__comp_a20af8990a8b4adc
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="../../dd/df7/classgb2__comp_a969f6a93b7445211e99324d6c62a64ca.html#a969f6a93b7445211e99324d6c62a64ca">F</a> = <span class="keyword">const_cast&lt;</span><a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *<span class="keyword">&gt;</span>(ggens-&gt;output_free_module());</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="../../dd/df7/classgb2__comp_adb7c255382a737b6ac83d26b079f50b6.html#adb7c255382a737b6ac83d26b079f50b6">gens</a> = ggens;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="../../dd/df7/classgb2__comp_a1fca24a1243451ac117ccfa000bbb9e0.html#a1fca24a1243451ac117ccfa000bbb9e0">syz</a> = NULL;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="../../dd/df7/classgb2__comp_a1fca24a1243451ac117ccfa000bbb9e0.html#a1fca24a1243451ac117ccfa000bbb9e0">syz</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="../../dd/df7/classgb2__comp_a280618ba13cb350e0c53b42a125a245b.html#a280618ba13cb350e0c53b42a125a245b">Fsyz</a> = <span class="keyword">const_cast&lt;</span><a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *<span class="keyword">&gt;</span>(FFsyz);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('dd/df7/classgb2__comp_a20af8990a8b4adc
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// We index into this using gbvector components (which are one greater than</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// the</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// FreeModule components</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="../../dd/df7/classgb2__comp_acde7d59ea766a8577f2d9ca35145cece.html#acde7d59ea766a8577f2d9ca35145cece">monideals</a>.push_back(0);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="../../dd/df7/classgb2__comp_acde7d59ea766a8577f2d9ca35145cece.html#acde7d59ea766a8577f2d9ca35145cece">monideals</a>.push_back(<span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../dd/df7/classgb2__comp_a969f6a93b7445211e99324d6c62a64ca.html#a969f6a93b7445211e99324d6c62a64ca">F</a>-&gt;<a class="code" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>(); i++)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="../../d7/de9/structmonideal__pair.html">monideal_pair</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <span class="keyword">new</span> <a class="code" href="../../d7/de9/structmonideal__pair.html">monideal_pair</a>(<a class="code" href="../../dd/df7/classgb2__comp_abe0cf59c3f61f129f04c529fb46b086c.html#abe0cf59c3f61f129f04c529fb46b086c">originalR</a>, <a class="code" href="../../dd/df7/classgb2__comp_a5e032a2f4ef7c15bf671281a75ac6235.html#a5e032a2f4ef7c15bf671281a75ac6235">mi_stash</a>);</div>
@@ -260,7 +260,7 @@ $(document).ready(function(){initNavTree('dd/df7/classgb2__comp_a20af8990a8b4adc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/df7/classgb2__comp.html">gb2_comp</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

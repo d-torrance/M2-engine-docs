@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('d6/df0/class_free_module_a4ba744541711
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d6/df0/class_free_module_ab235794215e6cad6d3f0b002ccc0d4f6.html#ab235794215e6cad6d3f0b002ccc0d4f6">R</a> != G-&gt;<a class="code" href="../../d6/df0/class_free_module_a29c99edc8181d08d3700f43baa269673.html#a29c99edc8181d08d3700f43baa269673">get_ring</a>())</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    {</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected free modules over the same ring&quot;</span>);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keyword">auto</span> D = <a class="code" href="../../d6/df0/class_free_module_ab235794215e6cad6d3f0b002ccc0d4f6.html#ab235794215e6cad6d3f0b002ccc0d4f6">R</a>-&gt;<a class="code" href="../../dd/dcf/class_ring_af6404c989f5555bba318266e64effbb0.html#af6404c989f5555bba318266e64effbb0">degree_monoid</a>();</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <a class="code" href="../../d6/df0/class_free_module.html">FreeModule</a> *result = <a class="code" href="../../d6/df0/class_free_module_a3a07f6157d2726a5dad2785fa0a126b8.html#a3a07f6157d2726a5dad2785fa0a126b8">new_free</a>();</div>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('d6/df0/class_free_module_a4ba744541711
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      }</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  D-&gt;remove(deg);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d6/df0/class_free_module_a56db415d96a3918f59b71083da5fca17.html#a56db415d96a3918f59b71083da5fca17">schreyer</a> != NULL &amp;&amp; G-&gt;<a class="code" href="../../d6/df0/class_free_module_a56db415d96a3918f59b71083da5fca17.html#a56db415d96a3918f59b71083da5fca17">schreyer</a> != NULL)</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d6/df0/class_free_module_a56db415d96a3918f59b71083da5fca17.html#a56db415d96a3918f59b71083da5fca17">schreyer</a> != <span class="keyword">nullptr</span> &amp;&amp; G-&gt;<a class="code" href="../../d6/df0/class_free_module_a56db415d96a3918f59b71083da5fca17.html#a56db415d96a3918f59b71083da5fca17">schreyer</a> != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    result-&gt;<a class="code" href="../../d6/df0/class_free_module_a56db415d96a3918f59b71083da5fca17.html#a56db415d96a3918f59b71083da5fca17">schreyer</a> = <a class="code" href="../../d6/df0/class_free_module_a56db415d96a3918f59b71083da5fca17.html#a56db415d96a3918f59b71083da5fca17">schreyer</a>-&gt;<a class="code" href="../../d4/d92/class_schreyer_order_a9bdd5ddbdb2e1406b9ea27cd8c6d9a4c.html#a9bdd5ddbdb2e1406b9ea27cd8c6d9a4c">tensor</a>(G-&gt;<a class="code" href="../../d6/df0/class_free_module_a56db415d96a3918f59b71083da5fca17.html#a56db415d96a3918f59b71083da5fca17">schreyer</a>);</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('d6/df0/class_free_module_a4ba744541711
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/df0/class_free_module.html">FreeModule</a></li>
-    <li class="footer">Generated on Sun Jan 28 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 4 2024 01:21:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
