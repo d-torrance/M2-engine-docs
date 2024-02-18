@@ -109,23 +109,24 @@ template&lt;typename RingType , typename Gen &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html#l00711">711</a> of file <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html">res-f4-m2-interface.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;{</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;  M.<a class="code" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(G.numColumns(), G.numRows());</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = G.begin(); i != G.end(); ++i)</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    {</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;i.components().size(); ++j)</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;      {</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        M.<a class="code" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">ring</a>().set_from_long(M.<a class="code" href="../../da/dc3/class_d_mat_a368035bca371125e7f118465fd45d52a.html#a368035bca371125e7f118465fd45d52a">entry</a>(i.column(), i.components()[j]), i.coefficients()[j]);</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;      }</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    }</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html#l00567">567</a> of file <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html">res-f4-m2-interface.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;{</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  M.<a class="code" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(<a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>.numColumns(), <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>.numRows());</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160; </div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>.begin(); i != <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>.end(); ++i)</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    {</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;i.components().size(); ++j)</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;      {</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        M.<a class="code" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">ring</a>().set_from_long(M.<a class="code" href="../../da/dc3/class_d_mat_a368035bca371125e7f118465fd45d52a.html#a368035bca371125e7f118465fd45d52a">entry</a>(i.column(), i.components()[j]), i.coefficients()[j]);</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;      }</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    }</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;}</div>
 <div class="ttc" id="aclass_d_mat_a368035bca371125e7f118465fd45d52a_html_a368035bca371125e7f118465fd45d52a"><div class="ttname"><a href="../../da/dc3/class_d_mat_a368035bca371125e7f118465fd45d52a.html#a368035bca371125e7f118465fd45d52a">DMat::entry</a></div><div class="ttdeci">ElementType &amp; entry(size_t row, size_t column)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00185">dmat.hpp:185</a></div></div>
 <div class="ttc" id="aclass_d_mat_a88d2a242efc934b17d6cc94851000627_html_a88d2a242efc934b17d6cc94851000627"><div class="ttname"><a href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">DMat::resize</a></div><div class="ttdeci">void resize(size_t new_nrows, size_t new_ncols)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00194">dmat.hpp:194</a></div></div>
 <div class="ttc" id="aclass_d_mat_a90c3eef69ba48fe9a686f65a165d21a4_html_a90c3eef69ba48fe9a686f65a165d21a4"><div class="ttname"><a href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">DMat::ring</a></div><div class="ttdeci">const ACoeffRing &amp; ring() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00132">dmat.hpp:132</a></div></div>
+<div class="ttc" id="ares-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903_html_acc0eea0b8cd2df09e6f3c2bade95a903"><div class="ttname"><a href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a></div><div class="ttdeci">tbb::flow::graph G</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/res-tasking-example_8cpp_source.html#l00017">res-tasking-example.cpp:17</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/dc3/class_d_mat_a368035bca371125e7f118465fd45d52a.html#a368035bca371125e7f118465fd45d52a">DMat&lt; ACoeffRing &gt;::entry()</a>, <a class="el" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">DMat&lt; ACoeffRing &gt;::resize()</a>, and <a class="el" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">DMat&lt; ACoeffRing &gt;::ring()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/dc3/class_d_mat_a368035bca371125e7f118465fd45d52a.html#a368035bca371125e7f118465fd45d52a">DMat&lt; ACoeffRing &gt;::entry()</a>, <a class="el" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>, <a class="el" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">DMat&lt; ACoeffRing &gt;::resize()</a>, and <a class="el" href="../../da/dc3/class_d_mat_a90c3eef69ba48fe9a686f65a165d21a4.html#a90c3eef69ba48fe9a686f65a165d21a4">DMat&lt; ACoeffRing &gt;::ring()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/d1a/class_schreyer_frame_aed05272971b00971de76e0ff864ed92b.html#aed05272971b00971de76e0ff864ed92b">SchreyerFrame::rankUsingDenseMatrix()</a>, and <a class="el" href="../../dd/d1a/class_schreyer_frame_a06503fa2e462f02860f9c7c03e1c785b.html#a06503fa2e462f02860f9c7c03e1c785b">SchreyerFrame::rankUsingDenseMatrixFlint()</a>.</p>
 
@@ -137,7 +138,7 @@ template&lt;typename RingType , typename Gen &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_208df166e208656f2e3436240a4845e8.html">schreyer-resolution</a></li><li class="navelem"><a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp.html">res-f4-m2-interface.cpp</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

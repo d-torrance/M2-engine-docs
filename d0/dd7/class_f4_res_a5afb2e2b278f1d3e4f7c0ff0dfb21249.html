@@ -104,18 +104,18 @@ $(document).ready(function(){initNavTree('d0/dd7/class_f4_res_a5afb2e2b278f1d3e4
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dd9/res-f4_8cpp_source.html#l00675">675</a> of file <a class="el" href="../../de/dd9/res-f4_8cpp_source.html">res-f4.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;{</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;-- columns --&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;  <span class="keyword">auto</span> <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> = <a class="code" href="../../d0/dd7/class_f4_res_a87f1bddef6821ae976d35b3740bf3e48.html#a87f1bddef6821ae976d35b3740bf3e48">mColumns</a>.cend();</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = <a class="code" href="../../d0/dd7/class_f4_res_a87f1bddef6821ae976d35b3740bf3e48.html#a87f1bddef6821ae976d35b3740bf3e48">mColumns</a>.cbegin(); i != <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>; ++i)</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    {</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;      <a class="code" href="../../d0/dd7/class_f4_res_a66b62b616f121dca24b48b2144d09893.html#a66b62b616f121dca24b48b2144d09893">monoid</a>().<a class="code" href="../../dc/d0d/class_res_monoid_dense_a3843b2c4680583ca5fb7d1d1c495be6d.html#a3843b2c4680583ca5fb7d1d1c495be6d">showAlpha</a>((*i));</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;      std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    }</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;}</div>
-<div class="ttc" id="aclass_f4_res_a66b62b616f121dca24b48b2144d09893_html_a66b62b616f121dca24b48b2144d09893"><div class="ttname"><a href="../../d0/dd7/class_f4_res_a66b62b616f121dca24b48b2144d09893.html#a66b62b616f121dca24b48b2144d09893">F4Res::monoid</a></div><div class="ttdeci">const ResMonoid &amp; monoid() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0d/res-f4_8hpp_source.html#l00037">res-f4.hpp:37</a></div></div>
-<div class="ttc" id="aclass_f4_res_a87f1bddef6821ae976d35b3740bf3e48_html_a87f1bddef6821ae976d35b3740bf3e48"><div class="ttname"><a href="../../d0/dd7/class_f4_res_a87f1bddef6821ae976d35b3740bf3e48.html#a87f1bddef6821ae976d35b3740bf3e48">F4Res::mColumns</a></div><div class="ttdeci">std::vector&lt; res_packed_monomial &gt; mColumns</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0d/res-f4_8hpp_source.html#l00102">res-f4.hpp:102</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../de/dd9/res-f4_8cpp_source.html#l00717">717</a> of file <a class="el" href="../../de/dd9/res-f4_8cpp_source.html">res-f4.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;{</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;-- columns --&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  <span class="keyword">auto</span> <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> = <a class="code" href="../../d0/dd7/class_f4_res_a87f1bddef6821ae976d35b3740bf3e48.html#a87f1bddef6821ae976d35b3740bf3e48">mColumns</a>.cend();</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = <a class="code" href="../../d0/dd7/class_f4_res_a87f1bddef6821ae976d35b3740bf3e48.html#a87f1bddef6821ae976d35b3740bf3e48">mColumns</a>.cbegin(); i != <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>; ++i)</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    {</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;      <a class="code" href="../../d0/dd7/class_f4_res_a66b62b616f121dca24b48b2144d09893.html#a66b62b616f121dca24b48b2144d09893">monoid</a>().<a class="code" href="../../dc/d0d/class_res_monoid_dense_a3843b2c4680583ca5fb7d1d1c495be6d.html#a3843b2c4680583ca5fb7d1d1c495be6d">showAlpha</a>((*i));</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;      std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    }</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;}</div>
+<div class="ttc" id="aclass_f4_res_a66b62b616f121dca24b48b2144d09893_html_a66b62b616f121dca24b48b2144d09893"><div class="ttname"><a href="../../d0/dd7/class_f4_res_a66b62b616f121dca24b48b2144d09893.html#a66b62b616f121dca24b48b2144d09893">F4Res::monoid</a></div><div class="ttdeci">const ResMonoid &amp; monoid() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0d/res-f4_8hpp_source.html#l00038">res-f4.hpp:38</a></div></div>
+<div class="ttc" id="aclass_f4_res_a87f1bddef6821ae976d35b3740bf3e48_html_a87f1bddef6821ae976d35b3740bf3e48"><div class="ttname"><a href="../../d0/dd7/class_f4_res_a87f1bddef6821ae976d35b3740bf3e48.html#a87f1bddef6821ae976d35b3740bf3e48">F4Res::mColumns</a></div><div class="ttdeci">std::vector&lt; res_packed_monomial &gt; mColumns</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0d/res-f4_8hpp_source.html#l00107">res-f4.hpp:107</a></div></div>
 <div class="ttc" id="aclass_res_monoid_dense_a3843b2c4680583ca5fb7d1d1c495be6d_html_a3843b2c4680583ca5fb7d1d1c495be6d"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_a3843b2c4680583ca5fb7d1d1c495be6d.html#a3843b2c4680583ca5fb7d1d1c495be6d">ResMonoidDense::showAlpha</a></div><div class="ttdeci">void showAlpha(res_const_packed_monomial m) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd0/res-moninfo-dense_8cpp_source.html#l00106">res-moninfo-dense.cpp:106</a></div></div>
 <div class="ttc" id="aringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad_html_a202eaaa0b459954e5ac23a43454d57ad"><div class="ttname"><a href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a></div><div class="ttdeci">TermIterator&lt; Nterm &gt; end(Nterm *)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d82/ringelem_8cpp_source.html#l00005">ringelem.cpp:5</a></div></div>
 </div><!-- fragment -->
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('d0/dd7/class_f4_res_a5afb2e2b278f1d3e4
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/dd7/class_f4_res.html">F4Res</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

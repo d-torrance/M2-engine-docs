@@ -15,7 +15,7 @@ var class_k_basis =
     [ "try_insert_sg", "d9/dd1/class_k_basis_af1b948a2af785aaa7783064cbc283fe3.html#af1b948a2af785aaa7783064cbc283fe3", null ],
     [ "value", "d9/dd1/class_k_basis_aca41294ae1c9a8b6324c1e41d66f3fe9.html#aca41294ae1c9a8b6324c1e41d66f3fe9", null ],
     [ "bottom_matrix", "d9/dd1/class_k_basis_a1b5e779363a82440ed0321ef4d6c16de.html#a1b5e779363a82440ed0321ef4d6c16de", null ],
-    [ "computation_type", "d9/dd1/class_k_basis_a0b40f00d2a0074ecbbae6a76cefea499.html#a0b40f00d2a0074ecbbae6a76cefea499", null ],
+    [ "computation_type", "d9/dd1/class_k_basis_ac5f92c9697f234804880e1f365d3231b.html#ac5f92c9697f234804880e1f365d3231b", null ],
     [ "D", "d9/dd1/class_k_basis_a3e82b9e39190607d12765f6909549321.html#a3e82b9e39190607d12765f6909549321", null ],
     [ "do_truncation", "d9/dd1/class_k_basis_a5615e3b52fe3dc24428a38114938e669.html#a5615e3b52fe3dc24428a38114938e669", null ],
     [ "hi_degree", "d9/dd1/class_k_basis_a7cab72cc888a4c4329b8ffafe98699a2.html#a7cab72cc888a4c4329b8ffafe98699a2", null ],

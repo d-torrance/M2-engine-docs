@@ -113,28 +113,28 @@ $(document).ready(function(){initNavTree('dc/d4f/res-f4-m2-interface_8cpp_a1eced
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html#l00853">853</a> of file <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html">res-f4-m2-interface.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;{</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;  <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    {</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;      <a class="code" href="../../d6/d1e/class_f4_res_computation.html">F4ResComputation</a>* G = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="../../d6/d1e/class_f4_res_computation.html">F4ResComputation</a>*<span class="keyword">&gt;</span>(C);</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;      <span class="keywordflow">if</span> (G != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        <span class="keywordflow">return</span> G-&gt;<a class="code" href="../../d6/d1e/class_f4_res_computation_a56fe30ca7b53e22fad8e4f505d8c0a5e.html#a56fe30ca7b53e22fad8e4f505d8c0a5e">minimal_betti</a>(slanted_degree_limit,</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;                                length_limit);  <span class="comment">// Computes it if needed</span></div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected resolution computed via res(...,FastNonminimal=&gt;true)&quot;</span>);</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    {</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  }</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;}</div>
-<div class="ttc" id="aclass_f4_res_computation_a56fe30ca7b53e22fad8e4f505d8c0a5e_html_a56fe30ca7b53e22fad8e4f505d8c0a5e"><div class="ttname"><a href="../../d6/d1e/class_f4_res_computation_a56fe30ca7b53e22fad8e4f505d8c0a5e.html#a56fe30ca7b53e22fad8e4f505d8c0a5e">F4ResComputation::minimal_betti</a></div><div class="ttdeci">M2_arrayint minimal_betti(M2_arrayint slanted_degree_limit, M2_arrayint length_limit)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dff/res-f4-computation_8cpp_source.html#l00216">res-f4-computation.cpp:216</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html#l00709">709</a> of file <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html">res-f4-m2-interface.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;{</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;  <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    {</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;      <a class="code" href="../../d6/d1e/class_f4_res_computation.html">F4ResComputation</a>* <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a> = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="../../d6/d1e/class_f4_res_computation.html">F4ResComputation</a>*<span class="keyword">&gt;</span>(C);</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>-&gt;minimal_betti(slanted_degree_limit,</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;                                length_limit);  <span class="comment">// Computes it if needed</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected resolution computed via res(...,FastNonminimal=&gt;true)&quot;</span>);</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    {</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  }</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;}</div>
 <div class="ttc" id="aclass_f4_res_computation_html"><div class="ttname"><a href="../../d6/d1e/class_f4_res_computation.html">F4ResComputation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d2f/res-f4-computation_8hpp_source.html#l00014">res-f4-computation.hpp:15</a></div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
-<div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00009">exceptions.hpp:10</a></div></div>
+<div class="ttc" id="ares-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903_html_acc0eea0b8cd2df09e6f3c2bade95a903"><div class="ttname"><a href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a></div><div class="ttdeci">tbb::flow::graph G</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/res-tasking-example_8cpp_source.html#l00017">res-tasking-example.cpp:17</a></div></div>
+<div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR()</a>, and <a class="el" href="../../d6/d1e/class_f4_res_computation_a56fe30ca7b53e22fad8e4f505d8c0a5e.html#a56fe30ca7b53e22fad8e4f505d8c0a5e">F4ResComputation::minimal_betti()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR()</a>, and <a class="el" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>.</p>
 
 </div>
 </div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('dc/d4f/res-f4-m2-interface_8cpp_a1eced
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_208df166e208656f2e3436240a4845e8.html">schreyer-resolution</a></li><li class="navelem"><a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp.html">res-f4-m2-interface.cpp</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:21:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

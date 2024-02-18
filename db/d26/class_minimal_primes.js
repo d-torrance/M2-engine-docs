@@ -26,5 +26,5 @@ var class_minimal_primes =
     [ "nvars", "db/d26/class_minimal_primes_ab5574decb3c386150c5732e5f653f8c0.html#ab5574decb3c386150c5732e5f653f8c0", null ],
     [ "primes", "db/d26/class_minimal_primes_a1ada5c52885eb44c2f2cbeced61b9ee7.html#a1ada5c52885eb44c2f2cbeced61b9ee7", null ],
     [ "Q", "db/d26/class_minimal_primes_a580165f7a6af10600073a73fbcb3335d.html#a580165f7a6af10600073a73fbcb3335d", null ],
-    [ "state", "db/d26/class_minimal_primes_a6df5f56e1261a120cada217aa2409c1d.html#a6df5f56e1261a120cada217aa2409c1d", null ]
+    [ "state", "db/d26/class_minimal_primes_a33e09f64c2115722cf5e55d1983b6963.html#a33e09f64c2115722cf5e55d1983b6963", null ]
 ];

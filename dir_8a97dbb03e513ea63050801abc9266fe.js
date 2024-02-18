@@ -2,6 +2,7 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
 [
     [ "bibasis", "dir_6d3e1fc03a2c0fe268d053df8b4dd308.html", "dir_6d3e1fc03a2c0fe268d053df8b4dd308" ],
     [ "f4", "dir_8ed8434bc3d991323934987a3489e746.html", "dir_8ed8434bc3d991323934987a3489e746" ],
+    [ "gb-f4", "dir_46c62c7923ec94477cb2a52e63da755a.html", "dir_46c62c7923ec94477cb2a52e63da755a" ],
     [ "interface", "dir_8587dbd6c5a5c081f70c427936cccafd.html", "dir_8587dbd6c5a5c081f70c427936cccafd" ],
     [ "NCAlgebras", "dir_3bd4c1e8abe0cd95d07e5be4652cd377.html", "dir_3bd4c1e8abe0cd95d07e5be4652cd377" ],
     [ "NCResolutions", "dir_23afb875d2d911a61a070793ea5cfc92.html", "dir_23afb875d2d911a61a070793ea5cfc92" ],
@@ -58,6 +59,12 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "assprime.hpp", "df/d0f/assprime_8hpp.html", [
       [ "AssociatedPrimes", "d5/dc8/class_associated_primes.html", "d5/dc8/class_associated_primes" ]
     ] ],
+    [ "BasicPoly.cpp", "d5/dae/_basic_poly_8cpp.html", null ],
+    [ "BasicPoly.hpp", "d7/d65/_basic_poly_8hpp.html", "d7/d65/_basic_poly_8hpp" ],
+    [ "BasicPolyList.cpp", "dd/d15/_basic_poly_list_8cpp.html", "dd/d15/_basic_poly_list_8cpp" ],
+    [ "BasicPolyList.hpp", "d4/d6d/_basic_poly_list_8hpp.html", "d4/d6d/_basic_poly_list_8hpp" ],
+    [ "BasicPolyListParser.cpp", "d8/d5d/_basic_poly_list_parser_8cpp.html", "d8/d5d/_basic_poly_list_parser_8cpp" ],
+    [ "BasicPolyListParser.hpp", "d1/de7/_basic_poly_list_parser_8hpp.html", "d1/de7/_basic_poly_list_parser_8hpp" ],
     [ "betti.cpp", "d4/dae/betti_8cpp.html", null ],
     [ "betti.hpp", "d7/d41/betti_8hpp.html", [
       [ "BettiDisplay", "d6/d45/class_betti_display.html", "d6/d45/class_betti_display" ],
@@ -357,6 +364,7 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "poly.hpp", "d4/dc0/poly_8hpp.html", "d4/dc0/poly_8hpp" ],
     [ "Polynomial.cpp", "d2/daa/_polynomial_8cpp.html", "d2/daa/_polynomial_8cpp" ],
     [ "Polynomial.hpp", "db/d99/_polynomial_8hpp.html", "db/d99/_polynomial_8hpp" ],
+    [ "PolynomialStream.hpp", "d8/d1a/_polynomial_stream_8hpp.html", "d8/d1a/_polynomial_stream_8hpp" ],
     [ "polyquotient.cpp", "db/d14/polyquotient_8cpp.html", null ],
     [ "polyquotient.hpp", "d0/da9/polyquotient_8hpp.html", null ],
     [ "polyring.cpp", "d4/d82/polyring_8cpp.html", [

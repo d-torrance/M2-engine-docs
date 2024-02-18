@@ -6,7 +6,7 @@ var class_resolution_computation =
     [ "betti_init", "dd/d51/class_resolution_computation_a355d38396aeb4164a3f3b55f199a94fa.html#a355d38396aeb4164a3f3b55f199a94fa", null ],
     [ "betti_make", "dd/d51/class_resolution_computation_aa7567ecdfc9f9d65dcfb31f3682ca84f.html#aa7567ecdfc9f9d65dcfb31f3682ca84f", null ],
     [ "cast_to_ResolutionComputation", "dd/d51/class_resolution_computation_ae6153077a9abf3d77d25e535a1277c2a.html#ae6153077a9abf3d77d25e535a1277c2a", null ],
-    [ "choose_res", "dd/d51/class_resolution_computation_ada77b20177a9ad7b43442749538b25ea.html#ada77b20177a9ad7b43442749538b25ea", null ],
+    [ "choose_res", "dd/d51/class_resolution_computation_a82fed2e40d74698d0de21c9237e64c9e.html#a82fed2e40d74698d0de21c9237e64c9e", null ],
     [ "complete_thru_degree", "dd/d51/class_resolution_computation_acecdccdf466a8b838dd4348559d0e939.html#acecdccdf466a8b838dd4348559d0e939", null ],
     [ "get_betti", "dd/d51/class_resolution_computation_a5b52c222f7a75924a9d0d1c586da44f8.html#a5b52c222f7a75924a9d0d1c586da44f8", null ],
     [ "get_free", "dd/d51/class_resolution_computation_a4eace4dc7c9cd3be02f7bd99bfc28f14.html#a4eace4dc7c9cd3be02f7bd99bfc28f14", null ],

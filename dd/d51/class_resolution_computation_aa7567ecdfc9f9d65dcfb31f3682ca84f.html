@@ -127,52 +127,52 @@ $(document).ready(function(){initNavTree('dd/d51/class_resolution_computation_aa
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/dcb/comp-res_8cpp_source.html#l00155">155</a> of file <a class="el" href="../../da/dcb/comp-res_8cpp_source.html">comp-res.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">int</span> d, lev;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">int</span> hi1 = hi + 1;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">int</span> len1 = len + 1;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="comment">// Reset &#39;hi1&#39; to reflect the top degree that occurs</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordflow">for</span> (d = hi; d &gt;= lo; d--)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <span class="keywordflow">for</span> (lev = 0; lev &lt;= len; lev++)</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">if</span> (bettis[lev + (len + 1) * (d - lo)] &gt; 0)</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;          {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            hi1 = d;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;          }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <span class="keywordflow">if</span> (hi1 &lt;= hi) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordflow">if</span> (hi1 &gt; hi) hi1 = hi;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="comment">// Reset &#39;len1&#39; to reflect the top level that occurs</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordflow">for</span> (lev = len; lev &gt;= 0; lev--)</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keywordflow">for</span> (d = lo; d &lt;= hi1; d++)</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span> (bettis[lev + (len + 1) * (d - lo)] &gt; 0)</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;          {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            len1 = lev;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;          }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="keywordflow">if</span> (len1 &lt;= len) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">if</span> (len1 &gt; len) len1 = len;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">int</span> totallen = (hi1 - lo + 1) * (len1 + 1);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  M2_arrayint result = <a class="code" href="../../d7/dce/_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50.html#a84a8e7c0bac25be533dcc0125ff14c50">M2_makearrayint</a>(3 + totallen);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  result-&gt;array[0] = lo;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  result-&gt;array[1] = hi1;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  result-&gt;array[2] = len1;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">int</span> next = 3;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordflow">for</span> (d = lo; d &lt;= hi1; d++)</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">for</span> (lev = 0; lev &lt;= len1; lev++)</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      result-&gt;array[next++] = bettis[lev + (len + 1) * (d - lo)];</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/dcb/comp-res_8cpp_source.html#l00157">157</a> of file <a class="el" href="../../da/dcb/comp-res_8cpp_source.html">comp-res.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;{</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">int</span> d, lev;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">int</span> hi1 = hi + 1;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">int</span> len1 = len + 1;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="comment">// Reset &#39;hi1&#39; to reflect the top degree that occurs</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordflow">for</span> (d = hi; d &gt;= lo; d--)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keywordflow">for</span> (lev = 0; lev &lt;= len; lev++)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span> (bettis[lev + (len + 1) * (d - lo)] &gt; 0)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;          {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            hi1 = d;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;          }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="keywordflow">if</span> (hi1 &lt;= hi) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordflow">if</span> (hi1 &gt; hi) hi1 = hi;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="comment">// Reset &#39;len1&#39; to reflect the top level that occurs</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordflow">for</span> (lev = len; lev &gt;= 0; lev--)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      <span class="keywordflow">for</span> (d = lo; d &lt;= hi1; d++)</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">if</span> (bettis[lev + (len + 1) * (d - lo)] &gt; 0)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;          {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            len1 = lev;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;          }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <span class="keywordflow">if</span> (len1 &lt;= len) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">if</span> (len1 &gt; len) len1 = len;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">int</span> totallen = (hi1 - lo + 1) * (len1 + 1);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  M2_arrayint result = <a class="code" href="../../d7/dce/_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50.html#a84a8e7c0bac25be533dcc0125ff14c50">M2_makearrayint</a>(3 + totallen);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  result-&gt;array[0] = lo;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  result-&gt;array[1] = hi1;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  result-&gt;array[2] = len1;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">int</span> next = 3;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordflow">for</span> (d = lo; d &lt;= hi1; d++)</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">for</span> (lev = 0; lev &lt;= len1; lev++)</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      result-&gt;array[next++] = bettis[lev + (len + 1) * (d - lo)];</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div>
 <div class="ttc" id="a_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50_html_a84a8e7c0bac25be533dcc0125ff14c50"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50.html#a84a8e7c0bac25be533dcc0125ff14c50">M2_makearrayint</a></div><div class="ttdeci">M2_arrayint M2_makearrayint(int n)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00008">M2-replacement.c:8</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/dce/_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50.html#a84a8e7c0bac25be533dcc0125ff14c50">M2_makearrayint()</a>.</p>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('dd/d51/class_resolution_computation_aa
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d51/class_resolution_computation.html">ResolutionComputation</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:22:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

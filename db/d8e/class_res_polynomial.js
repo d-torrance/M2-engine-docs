@@ -9,7 +9,7 @@ var class_res_polynomial =
     [ "ResPolynomialConstructor", "db/d8e/class_res_polynomial_a72f0f36c07e75f98d758a4c1999273fd.html#a72f0f36c07e75f98d758a4c1999273fd", null ],
     [ "ResPolynomialIterator", "db/d8e/class_res_polynomial_a4e4a3880cd44ac889bca5726cfb08af1.html#a4e4a3880cd44ac889bca5726cfb08af1", null ],
     [ "ResPolyRing", "db/d8e/class_res_polynomial_abb07a0f0226373ac7a3bc7fd1ba34b47.html#abb07a0f0226373ac7a3bc7fd1ba34b47", null ],
-    [ "coeffs", "db/d8e/class_res_polynomial_a0f213e3f5660087d50aa61a5572799c2.html#a0f213e3f5660087d50aa61a5572799c2", null ],
+    [ "coeffs", "db/d8e/class_res_polynomial_a7bb2e476197d7947dd8a002d3598ba2b.html#a7bb2e476197d7947dd8a002d3598ba2b", null ],
     [ "len", "db/d8e/class_res_polynomial_af51c4468dc7f112e0ca29ca5e2bd60a4.html#af51c4468dc7f112e0ca29ca5e2bd60a4", null ],
     [ "monoms", "db/d8e/class_res_polynomial_a0c321ae803ee4c698276fbde3b843062.html#a0c321ae803ee4c698276fbde3b843062", null ],
     [ "npoly_destructor", "db/d8e/class_res_polynomial_ad7433436ddb96e2520d6d8720563b103.html#ad7433436ddb96e2520d6d8720563b103", null ]

@@ -1,8 +1,5 @@
 var _n_c_groebner_test_8cpp =
 [
-    [ "degreeMonoid", "d2/dc0/_n_c_groebner_test_8cpp_a22e68466501e280897566baf6716be25.html#a22e68466501e280897566baf6716be25", null ],
-    [ "degreeRing", "d2/dc0/_n_c_groebner_test_8cpp_af9d63a9930dbf9e4121ecba5b8c7ea19.html#af9d63a9930dbf9e4121ecba5b8c7ea19", null ],
-    [ "degreeRing", "d2/dc0/_n_c_groebner_test_8cpp_a60576699090679487e2fa704d3d3a01d.html#a60576699090679487e2fa704d3d3a01d", null ],
     [ "operator<<", "d2/dc0/_n_c_groebner_test_8cpp_a555fa61baf1ae11344ca783818dfaa43.html#a555fa61baf1ae11344ca783818dfaa43", null ],
     [ "operator<<", "d2/dc0/_n_c_groebner_test_8cpp_a7d0b6d88e6a8171b974f332398615022.html#a7d0b6d88e6a8171b974f332398615022", null ],
     [ "TEST", "d2/dc0/_n_c_groebner_test_8cpp_a60a8f47159f76f2f4b1c43af7d872b57.html#a60a8f47159f76f2f4b1c43af7d872b57", null ],

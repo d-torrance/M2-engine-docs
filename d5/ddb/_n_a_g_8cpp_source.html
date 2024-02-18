@@ -152,13 +152,13 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  handle = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  eval_time = 0;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  n_calls = 0;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  nodes = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Field&gt;</div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../da/d22/class_s_l_p_a1171b88bbd38e3962e8b12c56b5ba83b.html#a1171b88bbd38e3962e8b12c56b5ba83b">   72</a></span>&#160;<a class="code" href="../../da/d22/class_s_l_p_a1171b88bbd38e3962e8b12c56b5ba83b.html#a1171b88bbd38e3962e8b12c56b5ba83b">SLP&lt;Field&gt;::~SLP</a>()</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="../../d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(nodes);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="../../d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(<a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">if</span> (handle != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      printf(<span class="stringliteral">&quot;closing library\n&quot;</span>);</div>
@@ -260,7 +260,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  res-&gt;<a class="code" href="../../da/d22/class_s_l_p_a46acda9938a4e20bea40e55977c2e6e4.html#a46acda9938a4e20bea40e55977c2e6e4">program</a> = <a class="code" href="../../d7/dce/_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50.html#a84a8e7c0bac25be533dcc0125ff14c50">M2_makearrayint</a>(program-&gt;len);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  memcpy(res-&gt;<a class="code" href="../../da/d22/class_s_l_p_a46acda9938a4e20bea40e55977c2e6e4.html#a46acda9938a4e20bea40e55977c2e6e4">program</a>-&gt;array, program-&gt;array, program-&gt;len * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  make_nodes(res-&gt;<a class="code" href="../../da/d22/class_s_l_p_ac4915b2341e3e5fe3653514f30e90dfd.html#ac4915b2341e3e5fe3653514f30e90dfd">nodes</a>, num_consts + num_inputs + num_operations);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_consts; i++) res-&gt;<a class="code" href="../../da/d22/class_s_l_p_ac4915b2341e3e5fe3653514f30e90dfd.html#ac4915b2341e3e5fe3653514f30e90dfd">nodes</a>[i] = nodes[i];</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_consts; i++) res-&gt;<a class="code" href="../../da/d22/class_s_l_p_ac4915b2341e3e5fe3653514f30e90dfd.html#ac4915b2341e3e5fe3653514f30e90dfd">nodes</a>[i] = <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[i];</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  res-&gt;<a class="code" href="../../da/d22/class_s_l_p_ae892ab1bd9bccb045a0bc91d6e246f5f.html#ae892ab1bd9bccb045a0bc91d6e246f5f">node_index</a> = node_index;  <span class="comment">// points to position in program (rel. to</span></div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                 <span class="comment">// start) of operation corresponding to a node</span></div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  res-&gt;<a class="code" href="../../da/d22/class_s_l_p_ae83d3f5bbcfd655a3f0fafd47af54ff2.html#ae83d3f5bbcfd655a3f0fafd47af54ff2">num_consts</a> = num_consts;</div>
@@ -507,7 +507,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;             res-&gt;<a class="code" href="../../da/d22/class_s_l_p_ae83d3f5bbcfd655a3f0fafd47af54ff2.html#ae83d3f5bbcfd655a3f0fafd47af54ff2">num_consts</a> + res-&gt;<a class="code" href="../../da/d22/class_s_l_p_a9f0828a2b6ec30648d5f4ba331372758.html#a9f0828a2b6ec30648d5f4ba331372758">num_inputs</a> + res-&gt;<a class="code" href="../../da/d22/class_s_l_p_a21bf7c113b4f76fd86fa695c5ee6dd28.html#a21bf7c113b4f76fd86fa695c5ee6dd28">num_operations</a>);</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <span class="comment">// memcpy(res-&gt;nodes, nodes, num_consts*sizeof(element_type)); //!!! assume:</span></div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  <span class="comment">// appending constants</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_consts; i++) res-&gt;<a class="code" href="../../da/d22/class_s_l_p_ac4915b2341e3e5fe3653514f30e90dfd.html#ac4915b2341e3e5fe3653514f30e90dfd">nodes</a>[i] = nodes[i];</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_consts; i++) res-&gt;<a class="code" href="../../da/d22/class_s_l_p_ac4915b2341e3e5fe3653514f30e90dfd.html#ac4915b2341e3e5fe3653514f30e90dfd">nodes</a>[i] = <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[i];</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <span class="comment">// memcpy(res-&gt;nodes+num_consts, slp-&gt;nodes,</span></div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <span class="comment">// slp-&gt;num_consts*sizeof(element_type)); //!!! assume: appending constants</span></div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  for (<span class="keywordtype">int</span> i = 0; i &lt; slp-&gt;<a class="code" href="../../da/d22/class_s_l_p_ae83d3f5bbcfd655a3f0fafd47af54ff2.html#ae83d3f5bbcfd655a3f0fafd47af54ff2">num_consts</a>; i++)</div>
@@ -767,7 +767,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;  <span class="comment">// constants</span></div>
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_consts; i++)</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    {</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;      res-&gt;<a class="code" href="../../da/d22/class_s_l_p_ac4915b2341e3e5fe3653514f30e90dfd.html#ac4915b2341e3e5fe3653514f30e90dfd">nodes</a>[i] = nodes[i];</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;      res-&gt;<a class="code" href="../../da/d22/class_s_l_p_ac4915b2341e3e5fe3653514f30e90dfd.html#ac4915b2341e3e5fe3653514f30e90dfd">nodes</a>[i] = <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[i];</div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    }</div>
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160; </div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;  res-&gt;<a class="code" href="../../da/d22/class_s_l_p_ac4915b2341e3e5fe3653514f30e90dfd.html#ac4915b2341e3e5fe3653514f30e90dfd">nodes</a>[num_consts] = <a class="code" href="../../da/d22/class_s_l_p_a587827830bca6e486c1c5437e62c73aa.html#a587827830bca6e486c1c5437e62c73aa">element_type</a>(0, 0);  <span class="comment">// ... plus ZERO</span></div>
@@ -805,7 +805,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160; </div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  <span class="keywordtype">int</span> cur_node = num_consts;</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  copy_complex_array&lt;Field&gt;(num_inputs, values, nodes + cur_node);</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  copy_complex_array&lt;Field&gt;(num_inputs, values, <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a> + cur_node);</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;  cur_node += num_inputs;</div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160; </div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  clock_t start_t = clock();  <span class="comment">// clock execution time</span></div>
@@ -826,8 +826,8 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        <span class="comment">// evaluation via dynamically linked function</span></div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        <span class="comment">// input: nodes (shifted by number of consts)</span></div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="comment">// output: out</span></div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        out = nodes + num_consts + num_inputs;</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        compiled_fn(nodes + num_consts, out);</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        out = <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a> + num_consts + num_inputs;</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        compiled_fn(<a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a> + num_consts, out);</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;      <span class="keywordflow">default</span>:  <span class="comment">// evaluation by interpretation</span></div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;        convert_to_absolute_position();</div>
@@ -837,25 +837,25 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;            <span class="keywordflow">switch</span> (program-&gt;array[i])</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;              {</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="../../d8/da0/_n_a_g_8hpp_a1511bf3d8225b5e092be1492a6cfd347.html#a1511bf3d8225b5e092be1492a6cfd347">slpCOPY</a>:</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                  nodes[cur_node] = nodes[program-&gt;array[(++i)++]];</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                  <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[cur_node] = <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[program-&gt;array[(++i)++]];</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                  <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="../../d8/da0/_n_a_g_8hpp_a119163bad73cbcbe065e981d0ef4662e.html#a119163bad73cbcbe065e981d0ef4662e">slpMULTIsum</a>:</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                  {</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                    <span class="keywordtype">int</span> n_summands = program-&gt;array[i + 1];</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                    nodes[cur_node] =</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                    <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[cur_node] =</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;                        (n_summands &gt; 0)</div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;                            ?  <span class="comment">// create a temp var?</span></div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;                            nodes[program-&gt;array[i + 2]]</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;                            <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[program-&gt;array[i + 2]]</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;                            : <a class="code" href="../../da/d22/class_s_l_p_a587827830bca6e486c1c5437e62c73aa.html#a587827830bca6e486c1c5437e62c73aa">element_type</a>(0, 0);  <span class="comment">// zero if empty sum</span></div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 1; j &lt; n_summands; j++)</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                      nodes[cur_node] =</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                          nodes[cur_node] + nodes[program-&gt;array[i + j + 2]];</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                      <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[cur_node] =</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                          <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[cur_node] + <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[program-&gt;array[i + j + 2]];</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                    i += n_summands + 2;</div>
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                  }</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                  <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="../../d8/da0/_n_a_g_8hpp_a30e9b5d53800a4e136224db470969aff.html#a30e9b5d53800a4e136224db470969aff">slpPRODUCT</a>:</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                  nodes[cur_node] = nodes[program-&gt;array[i + 1]] *</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                                    nodes[program-&gt;array[i + 2]];</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                  <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[cur_node] = <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[program-&gt;array[i + 1]] *</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                                    <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[program-&gt;array[i + 2]];</div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;                  i += 3;</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                  <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;                <span class="keywordflow">default</span>:</div>
@@ -882,7 +882,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        <a class="code" href="../../da/d22/class_s_l_p_a587827830bca6e486c1c5437e62c73aa.html#a587827830bca6e486c1c5437e62c73aa">element_type</a>* c = ret;</div>
 <div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; rows_out; i++)</div>
 <div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; cols_out; j++, c++)</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;            *c = nodes[program-&gt;array[i * cols_out + j + out_entries_shift]];</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;            *c = <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[program-&gt;array[i * cols_out + j + out_entries_shift]];</div>
 <div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        <span class="comment">// end: interpretation</span></div>
 <div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    }</div>
 <div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;}</div>
@@ -898,7 +898,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;  <span class="keywordflow">if</span> (values-&gt;<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>() != num_inputs)</div>
 <div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;different number of inputs expected&quot;</span>);</div>
 <div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; num_inputs; i++, cur_node++)</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    nodes[cur_node] = <a class="code" href="../../da/d22/class_s_l_p_a587827830bca6e486c1c5437e62c73aa.html#a587827830bca6e486c1c5437e62c73aa">element_type</a>(<a class="code" href="../../d8/da0/_n_a_g_8hpp_a481b52082331308efab274f146f19bad.html#a481b52082331308efab274f146f19bad">toBigComplex</a>(C, values-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(0, i)));</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[cur_node] = <a class="code" href="../../da/d22/class_s_l_p_a587827830bca6e486c1c5437e62c73aa.html#a587827830bca6e486c1c5437e62c73aa">element_type</a>(<a class="code" href="../../d8/da0/_n_a_g_8hpp_a481b52082331308efab274f146f19bad.html#a481b52082331308efab274f146f19bad">toBigComplex</a>(C, values-&gt;<a class="code" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(0, i)));</div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160; </div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;  clock_t start_t = clock();  <span class="comment">// clock execution time</span></div>
 <div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160; </div>
@@ -908,8 +908,8 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        <span class="comment">// evaluation via dynamically linked function</span></div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        <span class="comment">// input: nodes (shifted by number of consts)</span></div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        <span class="comment">// output: out</span></div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        out = nodes + num_consts + num_inputs;</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        compiled_fn(nodes + num_consts, out);</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        out = <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a> + num_consts + num_inputs;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        compiled_fn(<a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a> + num_consts, out);</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;      <span class="keywordflow">default</span>:  <span class="comment">// evaluation by interpretation</span></div>
 <div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        convert_to_absolute_position();</div>
@@ -919,25 +919,25 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;            <span class="keywordflow">switch</span> (program-&gt;array[i])</div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;              {</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="../../d8/da0/_n_a_g_8hpp_a1511bf3d8225b5e092be1492a6cfd347.html#a1511bf3d8225b5e092be1492a6cfd347">slpCOPY</a>:</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;                  nodes[cur_node] = nodes[program-&gt;array[(++i)++]];</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;                  <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[cur_node] = <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[program-&gt;array[(++i)++]];</div>
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;                  <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="../../d8/da0/_n_a_g_8hpp_a119163bad73cbcbe065e981d0ef4662e.html#a119163bad73cbcbe065e981d0ef4662e">slpMULTIsum</a>:</div>
 <div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;                  {</div>
 <div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;                    <span class="keywordtype">int</span> n_summands = program-&gt;array[i + 1];</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;                    nodes[cur_node] =</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;                    <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[cur_node] =</div>
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;                        (n_summands &gt; 0)</div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;                            ?  <span class="comment">// create a temp var?</span></div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;                            nodes[program-&gt;array[i + 2]]</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;                            <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[program-&gt;array[i + 2]]</div>
 <div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                            : <a class="code" href="../../da/d22/class_s_l_p_a587827830bca6e486c1c5437e62c73aa.html#a587827830bca6e486c1c5437e62c73aa">element_type</a>(0, 0);  <span class="comment">// zero if empty sum</span></div>
 <div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 1; j &lt; n_summands; j++)</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;                      nodes[cur_node] =</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                          nodes[cur_node] + nodes[program-&gt;array[i + j + 2]];</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;                      <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[cur_node] =</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                          <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[cur_node] + <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[program-&gt;array[i + j + 2]];</div>
 <div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                    i += n_summands + 2;</div>
 <div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;                  }</div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;                  <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="../../d8/da0/_n_a_g_8hpp_a30e9b5d53800a4e136224db470969aff.html#a30e9b5d53800a4e136224db470969aff">slpPRODUCT</a>:</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;                  nodes[cur_node] = nodes[program-&gt;array[i + 1]] *</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;                                    nodes[program-&gt;array[i + 2]];</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;                  <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[cur_node] = <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[program-&gt;array[i + 1]] *</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;                                    <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[program-&gt;array[i + 2]];</div>
 <div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                  i += 3;</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;                  <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                <span class="keywordflow">default</span>:</div>
@@ -983,7 +983,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; cols_out; j++)</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;            {</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;              <a class="code" href="../../da/d22/class_s_l_p_a587827830bca6e486c1c5437e62c73aa.html#a587827830bca6e486c1c5437e62c73aa">element_type</a> c =</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;                  nodes[program-&gt;array[i * cols_out + j + out_entries_shift]];</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;                  <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[program-&gt;array[i * cols_out + j + out_entries_shift]];</div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160; </div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;              <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> e = <a class="code" href="../../d8/da0/_n_a_g_8hpp_a603106a6360b31a08edcaf298deb9756.html#a603106a6360b31a08edcaf298deb9756">from_doubles</a>(<a class="code" href="../../d6/df0/class_free_module_ab235794215e6cad6d3f0b002ccc0d4f6.html#ab235794215e6cad6d3f0b002ccc0d4f6">R</a>, c.getreal(), c.getimaginary());</div>
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160; </div>
@@ -1063,7 +1063,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; num_consts; i++, cur_node++)</div>
 <div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    {</div>
 <div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;      <span class="keywordtype">char</span> s[100];</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;      nodes[cur_node].snprint(s, 100);</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;      <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a>[cur_node].snprint(s, 100);</div>
 <div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;      o &lt;&lt; s &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;    }</div>
 <div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;  o &lt;&lt; <a class="code" href="../../d7/dce/_m2-replacement_8c_a3e47bea989735dbc22688e1ee25ebe9c.html#a3e47bea989735dbc22688e1ee25ebe9c">newline</a>;</div>
@@ -2480,6 +2480,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div class="ttc" id="apoly_8hpp_html"><div class="ttname"><a href="../../d4/dc0/poly_8hpp.html">poly.hpp</a></div></div>
 <div class="ttc" id="apolyroots_8cpp_affe776513b24d84b39af8ab0930fef7f_html_affe776513b24d84b39af8ab0930fef7f"><div class="ttname"><a href="../../d1/df6/polyroots_8cpp_affe776513b24d84b39af8ab0930fef7f.html#affe776513b24d84b39af8ab0930fef7f">max</a></div><div class="ttdeci">#define max(a, b)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df6/polyroots_8cpp_source.html#l00021">polyroots.cpp:21</a></div></div>
 <div class="ttc" id="arelem_8hpp_html"><div class="ttname"><a href="../../d0/d5a/relem_8hpp.html">relem.hpp</a></div></div>
+<div class="ttc" id="ares-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11_html_a56e1af971878c87cab120e8708997b11"><div class="ttname"><a href="../../d0/dfb/res-tasking-example_8cpp_a56e1af971878c87cab120e8708997b11.html#a56e1af971878c87cab120e8708997b11">nodes</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; NodePtr &gt; &gt; nodes</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/res-tasking-example_8cpp_source.html#l00018">res-tasking-example.cpp:18</a></div></div>
 <div class="ttc" id="astruct_nterm_a395044af0f071742b5d1fdeb74a9efa2_html_a395044af0f071742b5d1fdeb74a9efa2"><div class="ttname"><a href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">Nterm::next</a></div><div class="ttdeci">Nterm * next</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00097">ringelem.hpp:97</a></div></div>
 <div class="ttc" id="astruct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a_html_a3eb9c9daff3bb4f2a8052be2bfea895a"><div class="ttname"><a href="../../d0/dbc/struct_nterm_a3eb9c9daff3bb4f2a8052be2bfea895a.html#a3eb9c9daff3bb4f2a8052be2bfea895a">Nterm::coeff</a></div><div class="ttdeci">ring_elem coeff</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00098">ringelem.hpp:98</a></div></div>
 <div class="ttc" id="astruct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7_html_a7d8ae0809fcf1cf7cdb9aa339538e6e7"><div class="ttname"><a href="../../d0/dbc/struct_nterm_a7d8ae0809fcf1cf7cdb9aa339538e6e7.html#a7d8ae0809fcf1cf7cdb9aa339538e6e7">Nterm::monom</a></div><div class="ttdeci">int monom[1]</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00100">ringelem.hpp:100</a></div></div>
@@ -2501,7 +2502,7 @@ $(document).ready(function(){initNavTree('d5/ddb/_n_a_g_8cpp_source.html','../..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d5/ddb/_n_a_g_8cpp.html">NAG.cpp</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

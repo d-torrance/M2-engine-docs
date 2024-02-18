@@ -139,21 +139,21 @@ $(document).ready(function(){initNavTree('d5/df9/class_f4to_m2_interface_a5a3b60
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1e/f4-m2-interface_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d3/d1e/f4-m2-interface_8cpp_source.html">f4-m2-interface.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a> *w = f.<a class="code" href="../../d5/d39/struct_g_b_f4_polynomial_a537e11618ac75bee33331c962074c2b0.html#a537e11618ac75bee33331c962074c2b0">monoms</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a> leaddeg = MI-&gt;<a class="code" href="../../dd/dab/class_monomial_info_a2abf7311f74aae7c3209e3ff9b62608b.html#a2abf7311f74aae7c3209e3ff9b62608b">monomial_weight</a>(w, wts);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a> deg = leaddeg;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; f.<a class="code" href="../../d5/d39/struct_g_b_f4_polynomial_ac67d4476404b77290ff7a27aa0ef8197.html#ac67d4476404b77290ff7a27aa0ef8197">len</a>; i++)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      w = w + MI-&gt;<a class="code" href="../../dd/dab/class_monomial_info_ad9323d9d84e9eebf78eaaed6da703a73.html#ad9323d9d84e9eebf78eaaed6da703a73">monomial_size</a>(w);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <a class="code" href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a> degi = MI-&gt;<a class="code" href="../../dd/dab/class_monomial_info_a2abf7311f74aae7c3209e3ff9b62608b.html#a2abf7311f74aae7c3209e3ff9b62608b">monomial_weight</a>(w, wts);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">if</span> (degi &gt; deg) deg = degi;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  alpha = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(deg - leaddeg);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  deg_result = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(deg);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1e/f4-m2-interface_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d3/d1e/f4-m2-interface_8cpp_source.html">f4-m2-interface.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a> *w = f.<a class="code" href="../../d5/d39/struct_g_b_f4_polynomial_a537e11618ac75bee33331c962074c2b0.html#a537e11618ac75bee33331c962074c2b0">monoms</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a> leaddeg = MI-&gt;<a class="code" href="../../dd/dab/class_monomial_info_a2abf7311f74aae7c3209e3ff9b62608b.html#a2abf7311f74aae7c3209e3ff9b62608b">monomial_weight</a>(w, wts);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a> deg = leaddeg;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; f.<a class="code" href="../../d5/d39/struct_g_b_f4_polynomial_ac67d4476404b77290ff7a27aa0ef8197.html#ac67d4476404b77290ff7a27aa0ef8197">len</a>; i++)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      w = w + MI-&gt;<a class="code" href="../../dd/dab/class_monomial_info_ad9323d9d84e9eebf78eaaed6da703a73.html#ad9323d9d84e9eebf78eaaed6da703a73">monomial_size</a>(w);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a> degi = MI-&gt;<a class="code" href="../../dd/dab/class_monomial_info_a2abf7311f74aae7c3209e3ff9b62608b.html#a2abf7311f74aae7c3209e3ff9b62608b">monomial_weight</a>(w, wts);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">if</span> (degi &gt; deg) deg = degi;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  alpha = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(deg - leaddeg);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  deg_result = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(deg);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="ttc" id="aclass_monomial_info_a2abf7311f74aae7c3209e3ff9b62608b_html_a2abf7311f74aae7c3209e3ff9b62608b"><div class="ttname"><a href="../../dd/dab/class_monomial_info_a2abf7311f74aae7c3209e3ff9b62608b.html#a2abf7311f74aae7c3209e3ff9b62608b">MonomialInfo::monomial_weight</a></div><div class="ttdeci">monomial_word monomial_weight(const_packed_monomial m, const M2_arrayint wts) const</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d97/moninfo_8cpp_source.html#l00059">moninfo.cpp:59</a></div></div>
 <div class="ttc" id="aclass_monomial_info_ad9323d9d84e9eebf78eaaed6da703a73_html_ad9323d9d84e9eebf78eaaed6da703a73"><div class="ttname"><a href="../../dd/dab/class_monomial_info_ad9323d9d84e9eebf78eaaed6da703a73.html#ad9323d9d84e9eebf78eaaed6da703a73">MonomialInfo::monomial_size</a></div><div class="ttdeci">int monomial_size(const_packed_monomial m) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00087">moninfo.hpp:87</a></div></div>
 <div class="ttc" id="amoninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb_html_afe2d8fe59c70630e71d82733c3f8ddcb"><div class="ttname"><a href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a></div><div class="ttdeci">long monomial_word</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00029">moninfo.hpp:29</a></div></div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('d5/df9/class_f4to_m2_interface_a5a3b60
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/df9/class_f4to_m2_interface.html">F4toM2Interface</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

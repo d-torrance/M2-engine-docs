@@ -109,55 +109,55 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dad/matrix-stream_8hpp_source.html#l00082">82</a> of file <a class="el" href="../../de/dad/matrix-stream_8hpp_source.html">matrix-stream.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a>* R = M-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d3/dfc/class_poly_ring.html">PolyRing</a>* P = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a7c300ee9c7b94c7cab639b03024736eb.html#a7c300ee9c7b94c7cab639b03024736eb">cast_to_PolyRing</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  assert(P != 0);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a>* KK = P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a7e8c03a55da33b51714f6b95f4b06923.html#a7e8c03a55da33b51714f6b95f4b06923">getCoefficientRing</a>();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">size_t</span> nvars = P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_aece123c61c00a4f07a6008badec14362.html#aece123c61c00a4f07a6008badec14362">n_vars</a>();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">size_t</span> ncols = M-&gt;<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">int</span> charac = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(P-&gt;<a class="code" href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">characteristic</a>());</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  assert(charac &gt; 0);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> <a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a> =</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <a class="code" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>(<a class="code" href="../../d1/dd0/monoid_8hpp_a5921edf169b8ef4def00cef434057648.html#a5921edf169b8ef4def00cef434057648">EXPONENT_BYTE_SIZE</a>(nvars));  <span class="comment">// allocated on stack</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  stream.idealBegin(ncols);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="../../d2/d54/class_matrix_1_1iterator.html">Matrix::iterator</a> i(M);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 0; c &lt; ncols; c++)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      i.set(c);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="comment">// We need the length of this column, in number of monomials</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordtype">size_t</span> nterms = 0;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">for</span> (; i.valid(); i.next())</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;          <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>* t = i.entry();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          <span class="keywordflow">for</span> ([[maybe_unused]] <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>&amp; s : t) nterms++;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      stream.appendPolynomialBegin(nterms);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      i.set(c);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="comment">// Now we process each column, sending it to the stream</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordflow">for</span> (; i.valid(); i.next())</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;          <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>* t = i.entry();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;          <span class="keywordflow">for</span> (<a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>&amp; s : t)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;              P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a3a3c308184f8d25f6f20ee6e5dee1cfb.html#a3a3c308184f8d25f6f20ee6e5dee1cfb">getMonoid</a>()-&gt;<a class="code" href="../../d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4">to_expvector</a>(s.monom, <a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;              stream.appendTermBegin(i.row());</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;              <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; nvars; j++)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[j] != 0) stream.appendExponent(j, <a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[j]);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;              std::pair&lt;bool, long&gt; b = KK-&gt;<a class="code" href="../../dd/dcf/class_ring_a3d64baae17fd73c1e9b0ed62898e558f.html#a3d64baae17fd73c1e9b0ed62898e558f">coerceToLongInteger</a>(s.coeff);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;              assert(b.first);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;              <span class="keywordtype">int</span> a = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                  b.second);  <span class="comment">// This will fit, as the charac fits into an int</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;              <span class="keywordflow">if</span> (a &lt; 0) a += charac;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;              stream.appendTermDone(a);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      stream.appendPolynomialDone();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  stream.idealDone();</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/dad/matrix-stream_8hpp_source.html#l00085">85</a> of file <a class="el" href="../../de/dad/matrix-stream_8hpp_source.html">matrix-stream.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a>* R = M-&gt;<a class="code" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">get_ring</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d3/dfc/class_poly_ring.html">PolyRing</a>* P = R-&gt;<a class="code" href="../../dd/dcf/class_ring_a7c300ee9c7b94c7cab639b03024736eb.html#a7c300ee9c7b94c7cab639b03024736eb">cast_to_PolyRing</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  assert(P != 0);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/dcf/class_ring.html">Ring</a>* KK = P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a7e8c03a55da33b51714f6b95f4b06923.html#a7e8c03a55da33b51714f6b95f4b06923">getCoefficientRing</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">size_t</span> nvars = P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_aece123c61c00a4f07a6008badec14362.html#aece123c61c00a4f07a6008badec14362">n_vars</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">size_t</span> ncols = M-&gt;<a class="code" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">int</span> charac = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(P-&gt;<a class="code" href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">characteristic</a>());</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  assert(charac &gt; 0);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> <a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a> =</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <a class="code" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>(<a class="code" href="../../d1/dd0/monoid_8hpp_a5921edf169b8ef4def00cef434057648.html#a5921edf169b8ef4def00cef434057648">EXPONENT_BYTE_SIZE</a>(nvars));  <span class="comment">// allocated on stack</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  stream.idealBegin(ncols);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="../../d2/d54/class_matrix_1_1iterator.html">Matrix::iterator</a> i(M);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 0; c &lt; ncols; c++)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      i.set(c);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="comment">// We need the length of this column, in number of monomials</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordtype">size_t</span> nterms = 0;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordflow">for</span> (; i.valid(); i.next())</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;          <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>* t = i.entry();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;          <span class="keywordflow">for</span> ([[maybe_unused]] <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>&amp; s : t) nterms++;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      stream.appendPolynomialBegin(nterms);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      i.set(c);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="comment">// Now we process each column, sending it to the stream</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keywordflow">for</span> (; i.valid(); i.next())</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;          <a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>* t = i.entry();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;          <span class="keywordflow">for</span> (<a class="code" href="../../d0/dbc/struct_nterm.html">Nterm</a>&amp; s : t)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;              P-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_a3a3c308184f8d25f6f20ee6e5dee1cfb.html#a3a3c308184f8d25f6f20ee6e5dee1cfb">getMonoid</a>()-&gt;<a class="code" href="../../d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4">to_expvector</a>(s.monom, <a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;              stream.appendTermBegin(i.row());</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;              <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; nvars; j++)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[j] != 0) stream.appendExponent(j, <a class="code" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[j]);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;              std::pair&lt;bool, long&gt; b = KK-&gt;<a class="code" href="../../dd/dcf/class_ring_a3d64baae17fd73c1e9b0ed62898e558f.html#a3d64baae17fd73c1e9b0ed62898e558f">coerceToLongInteger</a>(s.coeff);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;              assert(b.first);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;              <span class="keywordtype">int</span> a = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                  b.second);  <span class="comment">// This will fit, as the charac fits into an int</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;              <span class="keywordflow">if</span> (a &lt; 0) a += charac;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;              stream.appendTermDone(a);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      stream.appendPolynomialDone();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  stream.idealDone();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
 <div class="ttc" id="a_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12_html_aec09fab2f897ff3d8346961f38331d12"><div class="ttname"><a href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a></div><div class="ttdeci">exponents::Exponents exponents_t</div><div class="ttdef"><b>Definition:</b> <a href="../../da/db0/_exponent_vector_8hpp_source.html#l00276">ExponentVector.hpp:276</a></div></div>
 <div class="ttc" id="aclass_matrix_1_1iterator_html"><div class="ttname"><a href="../../d2/d54/class_matrix_1_1iterator.html">Matrix::iterator</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00238">matrix.hpp:239</a></div></div>
 <div class="ttc" id="aclass_matrix_a6cb4735dadc364c543bb667468b0fac8_html_a6cb4735dadc364c543bb667468b0fac8"><div class="ttname"><a href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">Matrix::n_cols</a></div><div class="ttdeci">int n_cols() const</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dce/matrix_8hpp_source.html#l00098">matrix.hpp:98</a></div></div>
@@ -178,7 +178,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>, <a class="el" href="../../dd/dcf/class_ring_a7c300ee9c7b94c7cab639b03024736eb.html#a7c300ee9c7b94c7cab639b03024736eb">Ring::cast_to_PolyRing()</a>, <a class="el" href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">Ring::characteristic()</a>, <a class="el" href="../../dd/dcf/class_ring_a3d64baae17fd73c1e9b0ed62898e558f.html#a3d64baae17fd73c1e9b0ed62898e558f">Ring::coerceToLongInteger()</a>, <a class="el" href="../../d2/d54/class_matrix_1_1iterator_a8690e9693c819c21f5e3e9869b2d5cbd.html#a8690e9693c819c21f5e3e9869b2d5cbd">Matrix::iterator::entry()</a>, <a class="el" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">mpfr::exp()</a>, <a class="el" href="../../d1/dd0/monoid_8hpp_a5921edf169b8ef4def00cef434057648.html#a5921edf169b8ef4def00cef434057648">EXPONENT_BYTE_SIZE</a>, <a class="el" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">Matrix::get_ring()</a>, <a class="el" href="../../d5/d58/class_polynomial_ring_a7e8c03a55da33b51714f6b95f4b06923.html#a7e8c03a55da33b51714f6b95f4b06923">PolynomialRing::getCoefficientRing()</a>, <a class="el" href="../../d5/d58/class_polynomial_ring_a3a3c308184f8d25f6f20ee6e5dee1cfb.html#a3a3c308184f8d25f6f20ee6e5dee1cfb">PolynomialRing::getMonoid()</a>, <a class="el" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">Matrix::n_cols()</a>, <a class="el" href="../../d5/d58/class_polynomial_ring_aece123c61c00a4f07a6008badec14362.html#aece123c61c00a4f07a6008badec14362">PolynomialRing::n_vars()</a>, <a class="el" href="../../d2/d54/class_matrix_1_1iterator_af61259a5d2a130a965a2f08845401d41.html#af61259a5d2a130a965a2f08845401d41">Matrix::iterator::next()</a>, <a class="el" href="../../d2/d54/class_matrix_1_1iterator_a00767089fe31894f9eb6a59cf8850523.html#a00767089fe31894f9eb6a59cf8850523">Matrix::iterator::row()</a>, <a class="el" href="../../d2/d54/class_matrix_1_1iterator_a73179b88d1313f0b2809759d76455804.html#a73179b88d1313f0b2809759d76455804">Matrix::iterator::set()</a>, <a class="el" href="../../d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4">Monoid::to_expvector()</a>, and <a class="el" href="../../d2/d54/class_matrix_1_1iterator_a84d2e0d0d4d136d6d3b5d6ba47ae284f.html#a84d2e0d0d4d136d6d3b5d6ba47ae284f">Matrix::iterator::valid()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/dc8/groebner_8cpp_aa5782b7b0eb0165bc64fa302e8241b12.html#aa5782b7b0eb0165bc64fa302e8241b12">rawDisplayMatrixStream()</a>, and <a class="el" href="../../d1/d55/engine_8h_ab9588be836df06f507e20aef6538560a.html#ab9588be836df06f507e20aef6538560a">rawMGB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/dc4/classnewf4_1_1_g_b_f4_computation_a1c67babe586b5cf5e54e194359c30a31.html#a1c67babe586b5cf5e54e194359c30a31">newf4::GBF4Computation::initializeWithMatrix()</a>, <a class="el" href="../../d2/dc8/groebner_8cpp_aa5782b7b0eb0165bc64fa302e8241b12.html#aa5782b7b0eb0165bc64fa302e8241b12">rawDisplayMatrixStream()</a>, and <a class="el" href="../../d1/d55/engine_8h_ab9588be836df06f507e20aef6538560a.html#ab9588be836df06f507e20aef6538560a">rawMGB()</a>.</p>
 
 </div>
 </div>
@@ -188,7 +188,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../de/dad/matrix-stream_8hpp.html">matrix-stream.hpp</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:21:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,9 +1,9 @@
 var class_matrix_stream =
 [
     [ "Coefficient", "d6/d02/class_matrix_stream_a3dae1497de43f1863be424fe98d991df.html#a3dae1497de43f1863be424fe98d991df", null ],
-    [ "Component", "d6/d02/class_matrix_stream_a7ab5d706cb5c6bb6dc60deb9f402f605.html#a7ab5d706cb5c6bb6dc60deb9f402f605", null ],
+    [ "Component", "d6/d02/class_matrix_stream_a62d184ff52e9a218be9c991c53fe150e.html#a62d184ff52e9a218be9c991c53fe150e", null ],
     [ "Exponent", "d6/d02/class_matrix_stream_a2b4769333afe9a39264e1678aeb4cff1.html#a2b4769333afe9a39264e1678aeb4cff1", null ],
-    [ "VarIndex", "d6/d02/class_matrix_stream_ae8c519ad8e1bc1b56235af1c117046cf.html#ae8c519ad8e1bc1b56235af1c117046cf", null ],
+    [ "VarIndex", "d6/d02/class_matrix_stream_a625368e2753faefd09ee58481285b53b.html#a625368e2753faefd09ee58481285b53b", null ],
     [ "MatrixStream", "d6/d02/class_matrix_stream_adac9ba46e35a0102872b65634ab14c21.html#adac9ba46e35a0102872b65634ab14c21", null ],
     [ "~MatrixStream", "d6/d02/class_matrix_stream_afd1431d6bcb82a30e0efb6f2c31c11d1.html#afd1431d6bcb82a30e0efb6f2c31c11d1", null ],
     [ "appendExponent", "d6/d02/class_matrix_stream_a8813edf125ed43990031230df55aab19.html#a8813edf125ed43990031230df55aab19", null ],

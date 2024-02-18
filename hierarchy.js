@@ -8,6 +8,9 @@ var hierarchy =
     [ "ARingElementGenerator< RingType >", "df/dc2/class_a_ring_element_generator.html", null ],
     [ "M2::ARingPolynomialStruct", "db/d05/struct_m2_1_1_a_ring_polynomial_struct.html", null ],
     [ "AssociatedPrimes", "d5/dc8/class_associated_primes.html", null ],
+    [ "BasicPoly", "d3/d9f/class_basic_poly.html", null ],
+    [ "BasicPolyListStreamCollector", "de/d95/class_basic_poly_list_stream_collector.html", null ],
+    [ "newf4::Basis", "d9/d73/classnewf4_1_1_basis.html", null ],
     [ "BettiDisplay", "d6/d45/class_betti_display.html", null ],
     [ "BettiHashAndEq", "d7/d37/class_betti_hash_and_eq.html", null ],
     [ "Table_T::binding", "db/d77/struct_table___t_1_1binding.html", null ],
@@ -23,13 +26,13 @@ var hierarchy =
     [ "ChineseRemainder", "d0/d4e/class_chinese_remainder.html", null ],
     [ "CoefficientRingR", "d1/d34/class_coefficient_ring_r.html", null ],
     [ "CoefficientRingType", "db/dc3/struct_coefficient_ring_type.html", null ],
-    [ "CoefficientVector", "d8/da3/class_coefficient_vector.html", null ],
     [ "NCF4::Column", "d8/dcb/struct_n_c_f4_1_1_column.html", null ],
+    [ "newf4::Column", "d7/db8/structnewf4_1_1_column.html", null ],
     [ "Matrix::column_iterator", "de/dfe/class_matrix_1_1column__iterator.html", null ],
     [ "ColumnsSorter", "d9/d05/class_columns_sorter.html", null ],
     [ "complex", "d6/d3b/classcomplex.html", null ],
     [ "ComplexField", "d5/d7d/class_complex_field.html", null ],
-    [ "ConcreteVectorArithmetic< RingType, ElementArrayType >", "d7/d23/class_concrete_vector_arithmetic.html", null ],
+    [ "ConcreteVectorArithmetic< RingType >", "d7/d23/class_concrete_vector_arithmetic.html", null ],
     [ "Polynomial< CoefficientRingType >::const_iterator", "d3/d58/class_polynomial_1_1const__iterator.html", null ],
     [ "BIBasis::JanetTree< MonomType >::ConstIterator", "df/da9/class_b_i_basis_1_1_janet_tree_1_1_const_iterator.html", null ],
     [ "ConstZipIterator< U, T >", "da/dfd/class_const_zip_iterator.html", null ],
@@ -78,7 +81,8 @@ var hierarchy =
         [ "exc::engine_error", "da/dbb/structexc_1_1engine__error.html", [
           [ "exc::division_by_zero_error", "d1/daf/structexc_1_1division__by__zero__error.html", null ],
           [ "exc::internal_error", "d1/d91/structexc_1_1internal__error.html", null ],
-          [ "exc::overflow_exception", "db/df5/structexc_1_1overflow__exception.html", null ]
+          [ "exc::overflow_exception", "db/df5/structexc_1_1overflow__exception.html", null ],
+          [ "parsing_error", "d8/d84/structparsing__error.html", null ]
         ] ]
       ] ]
     ] ],
@@ -91,8 +95,6 @@ var hierarchy =
     [ "F4Vec", "df/de1/class_f4_vec.html", null ],
     [ "BIBasis::FastAllocator", "d1/df2/class_b_i_basis_1_1_fast_allocator.html", null ],
     [ "FF_LUComputation", "d7/db4/class_f_f___l_u_computation.html", null ],
-    [ "ResGausserQQ::FieldElement", "de/d99/struct_res_gausser_q_q_1_1_field_element.html", null ],
-    [ "ResGausserQQHybrid::FieldElement", "da/db7/struct_res_gausser_q_q_hybrid_1_1_field_element.html", null ],
     [ "FixedPrecisionHomotopyAlgorithm", "d9/ddd/class_fixed_precision_homotopy_algorithm.html", null ],
     [ "FlintQQMat", "d2/d11/class_flint_q_q_mat.html", null ],
     [ "FlintZZMat", "d9/d3a/class_flint_z_z_mat.html", null ],
@@ -107,9 +109,11 @@ var hierarchy =
     [ "FunctionPair", "d2/d44/class_function_pair.html", null ],
     [ "M2::GaloisFieldTable", "d5/dab/class_m2_1_1_galois_field_table.html", null ],
     [ "gbA::gbelem", "d7/dce/structgb_a_1_1gbelem.html", null ],
+    [ "newf4::GBF4Computation", "d1/dc4/classnewf4_1_1_g_b_f4_computation.html", null ],
     [ "gbvector", "d7/d40/structgbvector.html", null ],
     [ "gbvectorHeap", "dc/d58/classgbvector_heap.html", null ],
     [ "geobucket< FREEMODULETYPE, VECTYPE >", "d5/d03/classgeobucket.html", null ],
+    [ "newf4::HashTableStats", "dd/db9/structnewf4_1_1_hash_table_stats.html", null ],
     [ "HilbertController", "dd/dc6/class_hilbert_controller.html", null ],
     [ "HomotopyAlgorithm< RT >", "d6/d19/struct_homotopy_algorithm.html", null ],
     [ "HomotopyAlgorithm< M2::ARingCC >", "dd/d40/struct_homotopy_algorithm_3_01_m2_1_1_a_ring_c_c_01_4.html", null ],
@@ -117,6 +121,7 @@ var hierarchy =
     [ "Frobby::IdealConsumer", null, [
       [ "MyIdealConsumer", "d8/d5c/class_my_ideal_consumer.html", null ]
     ] ],
+    [ "IdentifierHash", "da/d49/class_identifier_hash.html", null ],
     [ "indent", "d2/dd2/structindent.html", null ],
     [ "Interreducer", "d5/d51/class_interreducer.html", null ],
     [ "IntsSet< Configuration >", "dc/dd8/class_ints_set.html", null ],
@@ -134,6 +139,7 @@ var hierarchy =
     [ "LLLoperations", "d8/d7d/class_l_l_loperations.html", null ],
     [ "local_elem", "d4/d20/structlocal__elem.html", null ],
     [ "LUUtil< RT >", "df/dcd/class_l_u_util.html", null ],
+    [ "newf4::MacaulayMatrix", "d5/d59/classnewf4_1_1_macaulay_matrix.html", null ],
     [ "MarkedGB_sorter", "d4/d5b/struct_marked_g_b__sorter.html", null ],
     [ "MatElementaryOps< MT >", "db/d2e/class_mat_elementary_ops.html", null ],
     [ "MatElementaryOps< DMat< RT > >", "d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4.html", null ],
@@ -142,10 +148,7 @@ var hierarchy =
     [ "MatrixSorter", "da/d1d/class_matrix_sorter.html", null ],
     [ "MatrixStream", "d6/d02/class_matrix_stream.html", null ],
     [ "MatrixWindow", "df/d6c/struct_matrix_window.html", null ],
-    [ "MemoryBlock< T, NSLAB >", "d3/d57/class_memory_block.html", null ],
-    [ "MemoryBlock< res_monomial_word >", "d3/d57/class_memory_block.html", null ],
-    [ "MemoryBlock< res_varpower_word >", "d3/d57/class_memory_block.html", null ],
-    [ "MemoryBlock< SchreyerFrameTypes::PreElement >", "d3/d57/class_memory_block.html", null ],
+    [ "MemoryBlock", "d3/d57/class_memory_block.html", null ],
     [ "MinimalPrimes", "db/d26/class_minimal_primes.html", null ],
     [ "mo_block", "dd/dbb/structmo__block.html", null ],
     [ "ModuleMonom", "d9/d8a/class_module_monom.html", null ],
@@ -170,9 +173,15 @@ var hierarchy =
     [ "MonomialCollectionVarSize", "d4/d7c/class_monomial_collection_var_size.html", null ],
     [ "MonomialHashAndEqFixedSize", "d8/da4/class_monomial_hash_and_eq_fixed_size.html", null ],
     [ "MonomialHashAndEqVarSize", "d2/d70/class_monomial_hash_and_eq_var_size.html", null ],
+    [ "newf4::MonomialHashFunction", "d5/dd0/classnewf4_1_1_monomial_hash_function.html", null ],
     [ "MonomialHashTable< ValueType >", "d0/d1f/class_monomial_hash_table.html", null ],
+    [ "newf4::MonomialHashTable", "d1/d1e/classnewf4_1_1_monomial_hash_table.html", null ],
     [ "MonomialHashTable< MonomialInfo >", "d0/d1f/class_monomial_hash_table.html", null ],
     [ "MonomialHashTable< ResMonomialsWithComponent >", "d0/d1f/class_monomial_hash_table.html", null ],
+    [ "newf4::MonomialInfo", "da/d7e/structnewf4_1_1_monomial_info.html", null ],
+    [ "newf4::MonomialView::MonomialIterator< Const >", "d2/daf/classnewf4_1_1_monomial_view_1_1_monomial_iterator.html", null ],
+    [ "newf4::MonomialLookupTable::MonomialLookupIterator", "d8/df3/classnewf4_1_1_monomial_lookup_table_1_1_monomial_lookup_iterator.html", null ],
+    [ "newf4::MonomialLookupTable", "db/d90/classnewf4_1_1_monomial_lookup_table.html", null ],
     [ "MonomialMemorySpace", "d3/d43/class_monomial_memory_space.html", null ],
     [ "MonomialOrder", "d0/d87/struct_monomial_order__rec.html", null ],
     [ "MonomialOrdering", "dd/d53/struct_monomial_ordering.html", null ],
@@ -183,6 +192,7 @@ var hierarchy =
     [ "MonomialsIgnoringComponent", "da/d64/class_monomials_ignoring_component.html", null ],
     [ "MonomialSorterObject", "dd/d94/class_monomial_sorter_object.html", null ],
     [ "MonomialsWithComponent", "d9/db6/class_monomials_with_component.html", null ],
+    [ "newf4::MonomialView", "da/d80/classnewf4_1_1_monomial_view.html", null ],
     [ "MonomSort< T >", "de/dff/struct_monom_sort.html", null ],
     [ "montable_sorter_ZZ", "d9/d6a/structmontable__sorter___z_z.html", null ],
     [ "mpfr::mpreal", "d6/df7/classmpfr_1_1mpreal.html", null ],
@@ -196,6 +206,7 @@ var hierarchy =
       [ "F4MemoryBlock< pre_spair >", "d8/d75/class_f4_memory_block.html", null ],
       [ "F4MemoryBlock< monomial_word >", "d8/d75/class_f4_memory_block.html", null ],
       [ "F4MemoryBlock< varpower_word >", "d8/d75/class_f4_memory_block.html", null ],
+      [ "F4MonomialLookupTableT< int32_t >", "d6/d10/class_f4_monomial_lookup_table_t.html", null ],
       [ "SMat< CoeffRing >", "da/de0/class_s_mat.html", null ],
       [ "CoefficientRingR::Element", "d0/d4b/class_coefficient_ring_r_1_1_element.html", null ],
       [ "CoefficientRingR::ElementArray", "df/d9d/class_coefficient_ring_r_1_1_element_array.html", null ],
@@ -233,7 +244,6 @@ var hierarchy =
         ] ]
       ] ],
       [ "GBWeight", "d5/d82/class_g_b_weight.html", null ],
-      [ "Gausser", "d4/db9/class_gausser.html", null ],
       [ "M2::RingInterface", "db/d1a/class_m2_1_1_ring_interface.html", [
         [ "M2::SimpleARing< ARingQQGMP >", "de/db5/class_m2_1_1_simple_a_ring.html", [
           [ "M2::ARingQQGMP", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p.html", null ]
@@ -277,6 +287,9 @@ var hierarchy =
         [ "M2::SimpleARing< ARingRR >", "de/db5/class_m2_1_1_simple_a_ring.html", [
           [ "M2::ARingRR", "d0/d48/class_m2_1_1_a_ring_r_r.html", null ]
         ] ],
+        [ "M2::SimpleARing< ARingGFGivaro >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingGFGivaro", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro.html", null ]
+        ] ],
         [ "M2::SimpleARing< CoefficientRingZZp >", "de/db5/class_m2_1_1_simple_a_ring.html", [
           [ "CoefficientRingZZp", "dd/dd5/class_coefficient_ring_z_zp.html", null ]
         ] ],
@@ -313,11 +326,6 @@ var hierarchy =
       ] ],
       [ "ResF4MonomialLookupTableT< Key >", "da/d5f/class_res_f4_monomial_lookup_table_t.html", null ],
       [ "ResF4MonomialLookupTableT< Key >::mi_node", "d9/dc9/struct_res_f4_monomial_lookup_table_t_1_1mi__node.html", null ],
-      [ "ResGausser", "df/d88/class_res_gausser.html", [
-        [ "ResGausserQQ", "d1/dff/class_res_gausser_q_q.html", null ],
-        [ "ResGausserQQHybrid", "d4/d2e/class_res_gausser_q_q_hybrid.html", null ],
-        [ "ResGausserZZp", "d5/de8/class_res_gausser_z_zp.html", null ]
-      ] ],
       [ "ResPolyRing", "d1/d4c/class_res_poly_ring.html", null ],
       [ "RingMap::var", "d4/d7d/struct_ring_map_1_1var.html", null ],
       [ "SMat< ACoeffRing >", "da/de0/class_s_mat.html", null ],
@@ -345,9 +353,7 @@ var hierarchy =
       [ "buffer", "da/d40/classbuffer.html", null ],
       [ "coefficient_matrix", "d8/dce/structcoefficient__matrix.html", null ],
       [ "column_elem", "d3/d69/structcolumn__elem.html", null ],
-      [ "dense_row", "df/d8a/structdense__row.html", null ],
       [ "doubling_stash", "da/d01/classdoubling__stash.html", null ],
-      [ "exc::engine_error", "da/dbb/structexc_1_1engine__error.html", null ],
       [ "gbA::SPairSet", "d9/dad/structgb_a_1_1_s_pair_set.html", null ],
       [ "gb_elem", "dc/d9c/structgb__elem.html", null ],
       [ "gb_node", "dc/d99/classgb__node.html", [
@@ -383,7 +389,8 @@ var hierarchy =
                 [ "ReducedGB_ZZ", "d5/ddb/class_reduced_g_b___z_z.html", null ]
               ] ],
               [ "binomialGB_comp", "da/d1d/classbinomial_g_b__comp.html", null ],
-              [ "gbA", "d0/d91/classgb_a.html", null ]
+              [ "gbA", "d0/d91/classgb_a.html", null ],
+              [ "newf4::GBF4Interface", "d6/d99/classnewf4_1_1_g_b_f4_interface.html", null ]
             ] ],
             [ "GBKernelComputation", "d7/d37/class_g_b_kernel_computation.html", null ],
             [ "ResolutionComputation", "dd/d51/class_resolution_computation.html", [
@@ -463,6 +470,7 @@ var hierarchy =
       [ "stash", "d1/d5b/classstash.html", null ],
       [ "vec", "d6/ddd/structvecterm.html", null ]
     ] ],
+    [ "OurNode", "d5/dec/struct_our_node.html", null ],
     [ "OurQueueConfiguration", "d1/d7c/class_our_queue_configuration.html", null ],
     [ "OurQueueConfiguration1", "d4/d77/class_our_queue_configuration1.html", null ],
     [ "OverlapTable", "de/d48/class_overlap_table.html", null ],
@@ -476,6 +484,10 @@ var hierarchy =
     [ "POLY", "d0/d03/struct_p_o_l_y.html", null ],
     [ "polyheap", "d3/d5a/classpolyheap.html", null ],
     [ "BIBasis::Polynom< MonomType >", "d9/d02/class_b_i_basis_1_1_polynom.html", null ],
+    [ "newf4::Polynomial", "d4/d1b/classnewf4_1_1_polynomial.html", null ],
+    [ "newf4::Polynomial::PolynomialIterator< Const >", "d6/d58/classnewf4_1_1_polynomial_1_1_polynomial_iterator.html", null ],
+    [ "newf4::PolynomialList", "d2/d47/classnewf4_1_1_polynomial_list.html", null ],
+    [ "newf4::PolynomialListStreamCollector", "d7/d35/classnewf4_1_1_polynomial_list_stream_collector.html", null ],
     [ "SchreyerFrameTypes::PreElement", "d9/d02/struct_schreyer_frame_types_1_1_pre_element.html", null ],
     [ "NCF4::PreRow", "df/d6f/struct_n_c_f4_1_1_pre_row.html", null ],
     [ "PreSPairSorter", "d0/de8/class_pre_s_pair_sorter.html", null ],
@@ -494,6 +506,10 @@ var hierarchy =
     ] ],
     [ "res_pair", "dc/d2a/classres__pair.html", null ],
     [ "ResF4toM2Interface", "d2/d32/class_res_f4to_m2_interface.html", null ],
+    [ "ResMemoryBlock< T, NSLAB >", "d9/d2f/class_res_memory_block.html", null ],
+    [ "ResMemoryBlock< res_monomial_word >", "d9/d2f/class_res_memory_block.html", null ],
+    [ "ResMemoryBlock< res_varpower_word >", "d9/d2f/class_res_memory_block.html", null ],
+    [ "ResMemoryBlock< SchreyerFrameTypes::PreElement >", "d9/d2f/class_res_memory_block.html", null ],
     [ "ResMonoidDense", "dc/d0d/class_res_monoid_dense.html", null ],
     [ "ResMonoidSparse", "d5/df9/class_res_monoid_sparse.html", null ],
     [ "ResMonomialsIgnoringComponent", "d1/dac/class_res_monomials_ignoring_component.html", null ],
@@ -520,16 +536,14 @@ var hierarchy =
     [ "RingElementGenerator< RingType >", "df/d9f/class_ring_element_generator.html", null ],
     [ "F4Res::Row", "d9/d66/struct_f4_res_1_1_row.html", null ],
     [ "NCF4::Row", "d8/d29/struct_n_c_f4_1_1_row.html", null ],
+    [ "newf4::Row", "d6/d54/structnewf4_1_1_row.html", null ],
     [ "sagbi", "dc/d5a/classsagbi.html", null ],
     [ "SchreyerFrame", "dd/d1a/class_schreyer_frame.html", null ],
     [ "SchreyerOrder_symm", "dc/d2a/struct_schreyer_order__symm.html", null ],
     [ "schur_poly_iterator", "d7/d11/classschur__poly__iterator.html", null ],
     [ "BIBasis::SettingsManager", "dd/dbf/class_b_i_basis_1_1_settings_manager.html", null ],
-    [ "SimpleRing", "d5/d43/class_simple_ring.html", [
-      [ "M2::ARingGFGivaro", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro.html", null ]
-    ] ],
     [ "SkewMultiplication", "d0/d29/class_skew_multiplication.html", null ],
-    [ "MemoryBlock< T, NSLAB >::slab", "d5/d90/struct_memory_block_1_1slab.html", null ],
+    [ "ResMemoryBlock< T, NSLAB >::slab", "d3/d86/struct_res_memory_block_1_1slab.html", null ],
     [ "SLEvaluator", "d0/d4e/class_s_l_evaluator.html", [
       [ "SLEvaluatorConcrete< RT >", "d2/dbe/class_s_l_evaluator_concrete.html", null ]
     ] ],
@@ -537,6 +551,9 @@ var hierarchy =
     [ "Solution", "da/dc2/struct_solution.html", null ],
     [ "sorter", "df/d8a/structsorter.html", null ],
     [ "gbA::spair", "df/deb/structgb_a_1_1spair.html", null ],
+    [ "newf4::SPair", "db/dd1/structnewf4_1_1_s_pair.html", null ],
+    [ "newf4::SPairSet::SPairIterator", "d8/d27/classnewf4_1_1_s_pair_set_1_1_s_pair_iterator.html", null ],
+    [ "newf4::SPairSet", "d2/d40/classnewf4_1_1_s_pair_set.html", null ],
     [ "SPolySorter", "d7/df0/class_s_poly_sorter.html", null ],
     [ "StatsAllocator< T >", "d9/dd2/class_stats_allocator.html", null ],
     [ "StopConditions", "d6/d5d/struct_stop_conditions.html", null ],
@@ -556,15 +573,12 @@ var hierarchy =
     [ "BIBasis::Monom::VarsListNode", "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node.html", null ],
     [ "vecHeap", "d1/d2c/classvec_heap.html", null ],
     [ "VectorArithmetic", "d1/df6/class_vector_arithmetic.html", null ],
+    [ "VectorArithmeticStats", "d6/d59/class_vector_arithmetic_stats.html", null ],
     [ "Word", "d3/da0/class_word.html", null ],
     [ "WordTable", "d6/def/class_word_table.html", null ],
     [ "WordWithData", "d2/d05/class_word_with_data.html", null ],
     [ "WordWithDataTable", "dd/d60/class_word_with_data_table.html", null ],
     [ "ZipIterator< U, T >", "d3/def/class_zip_iterator.html", null ],
-    [ "res_monomial_word *", "da/db3/classres__monomial__word_01_5.html", null ],
     [ "res_varpower_word *", "dd/dec/classres__varpower__word_01_5.html", null ],
-    [ "Ts", "dc/d68/class_ts.html", [
-      [ "overloaded< Ts >", "d9/d94/structoverloaded.html", null ]
-    ] ],
     [ "varpower_word *", "d1/dbc/classvarpower__word_01_5.html", null ]
 ];

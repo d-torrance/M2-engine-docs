@@ -104,33 +104,33 @@ $(document).ready(function(){initNavTree('d9/d4a/class_f4_g_b_aedee0c9b50fa2ef21
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de5/f4_8cpp_source.html#l00706">706</a> of file <a class="el" href="../../d3/de5/f4_8cpp_source.html">f4.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;{</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;  <span class="comment">/* After LU decomposition, loop through each</span></div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;<span class="comment">     row of the matrix.  If the corresponding</span></div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;<span class="comment">     lead term is not in the initial ideal (or, at least,</span></div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;<span class="comment">     wasn&#39;t) then insert GB element (and so update spairs, etc,</span></div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;<span class="comment">     but don&#39;t do auto_reduce...)</span></div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="comment">     If instead the lead term is not new, then keep track of this</span></div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;<span class="comment">     information somehow: place ... into a monheap...</span></div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;<span class="comment">  */</span></div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160; </div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  <span class="comment">/* If we can place the possible new elements first, or in a separate place,</span></div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="comment">     then</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;<span class="comment">     we don&#39;t need to loop through all of these */</span></div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160; </div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r = 0; r &lt; <a class="code" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>-&gt;<a class="code" href="../../d8/dce/structcoefficient__matrix_af5bf4578e96603663cbf257509a9067d.html#af5bf4578e96603663cbf257509a9067d">rows</a>.size(); r++)</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    {</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d9/d4a/class_f4_g_b_a3095d006fca1c7aa9fa8db27354b779b.html#a3095d006fca1c7aa9fa8db27354b779b">is_new_GB_row</a>(r))</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        {</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;          <a class="code" href="../../d9/d4a/class_f4_g_b_ac129a0a9d0bf6e59362e6110405af6b1.html#ac129a0a9d0bf6e59362e6110405af6b1">insert_gb_element</a>(<a class="code" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>-&gt;<a class="code" href="../../d8/dce/structcoefficient__matrix_af5bf4578e96603663cbf257509a9067d.html#af5bf4578e96603663cbf257509a9067d">rows</a>[r]);</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        }</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    }</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/de5/f4_8cpp_source.html#l00708">708</a> of file <a class="el" href="../../d3/de5/f4_8cpp_source.html">f4.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;{</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;  <span class="comment">/* After LU decomposition, loop through each</span></div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;<span class="comment">     row of the matrix.  If the corresponding</span></div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;<span class="comment">     lead term is not in the initial ideal (or, at least,</span></div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;<span class="comment">     wasn&#39;t) then insert GB element (and so update spairs, etc,</span></div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="comment">     but don&#39;t do auto_reduce...)</span></div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;<span class="comment">     If instead the lead term is not new, then keep track of this</span></div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="comment">     information somehow: place ... into a monheap...</span></div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160; </div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  <span class="comment">/* If we can place the possible new elements first, or in a separate place,</span></div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;<span class="comment">     then</span></div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="comment">     we don&#39;t need to loop through all of these */</span></div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160; </div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r = 0; r &lt; <a class="code" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>-&gt;<a class="code" href="../../d8/dce/structcoefficient__matrix_af5bf4578e96603663cbf257509a9067d.html#af5bf4578e96603663cbf257509a9067d">rows</a>.size(); r++)</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    {</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d9/d4a/class_f4_g_b_a3095d006fca1c7aa9fa8db27354b779b.html#a3095d006fca1c7aa9fa8db27354b779b">is_new_GB_row</a>(r))</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        {</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;          <a class="code" href="../../d9/d4a/class_f4_g_b_ac129a0a9d0bf6e59362e6110405af6b1.html#ac129a0a9d0bf6e59362e6110405af6b1">insert_gb_element</a>(<a class="code" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>-&gt;<a class="code" href="../../d8/dce/structcoefficient__matrix_af5bf4578e96603663cbf257509a9067d.html#af5bf4578e96603663cbf257509a9067d">rows</a>[r]);</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        }</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    }</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;}</div>
 <div class="ttc" id="aclass_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23_html_a22603dbf551ddc04bc867abddb8d9b23"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">F4GB::mat</a></div><div class="ttdeci">coefficient_matrix * mat</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/f4_8hpp_source.html#l00124">f4.hpp:124</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_a3095d006fca1c7aa9fa8db27354b779b_html_a3095d006fca1c7aa9fa8db27354b779b"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a3095d006fca1c7aa9fa8db27354b779b.html#a3095d006fca1c7aa9fa8db27354b779b">F4GB::is_new_GB_row</a></div><div class="ttdeci">bool is_new_GB_row(int row) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de5/f4_8cpp_source.html#l00464">f4.cpp:464</a></div></div>
-<div class="ttc" id="aclass_f4_g_b_ac129a0a9d0bf6e59362e6110405af6b1_html_ac129a0a9d0bf6e59362e6110405af6b1"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_ac129a0a9d0bf6e59362e6110405af6b1.html#ac129a0a9d0bf6e59362e6110405af6b1">F4GB::insert_gb_element</a></div><div class="ttdeci">void insert_gb_element(row_elem &amp;r)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de5/f4_8cpp_source.html#l00640">f4.cpp:640</a></div></div>
+<div class="ttc" id="aclass_f4_g_b_ac129a0a9d0bf6e59362e6110405af6b1_html_ac129a0a9d0bf6e59362e6110405af6b1"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_ac129a0a9d0bf6e59362e6110405af6b1.html#ac129a0a9d0bf6e59362e6110405af6b1">F4GB::insert_gb_element</a></div><div class="ttdeci">void insert_gb_element(row_elem &amp;r)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de5/f4_8cpp_source.html#l00642">f4.cpp:642</a></div></div>
 <div class="ttc" id="astructcoefficient__matrix_af5bf4578e96603663cbf257509a9067d_html_af5bf4578e96603663cbf257509a9067d"><div class="ttname"><a href="../../d8/dce/structcoefficient__matrix_af5bf4578e96603663cbf257509a9067d.html#af5bf4578e96603663cbf257509a9067d">coefficient_matrix::rows</a></div><div class="ttdeci">row_array rows</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dfc/f4-types_8hpp_source.html#l00102">f4-types.hpp:102</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d9/d4a/class_f4_g_b_ac129a0a9d0bf6e59362e6110405af6b1.html#ac129a0a9d0bf6e59362e6110405af6b1">insert_gb_element()</a>, <a class="el" href="../../d9/d4a/class_f4_g_b_a3095d006fca1c7aa9fa8db27354b779b.html#a3095d006fca1c7aa9fa8db27354b779b">is_new_GB_row()</a>, <a class="el" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>, and <a class="el" href="../../d8/dce/structcoefficient__matrix_af5bf4578e96603663cbf257509a9067d.html#af5bf4578e96603663cbf257509a9067d">coefficient_matrix::rows</a>.</p>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('d9/d4a/class_f4_g_b_aedee0c9b50fa2ef21
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d4a/class_f4_g_b.html">F4GB</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -149,6 +149,7 @@ var namespaces_dup =
       [ "triangularSolve", "d8/db5/namespace_matrix_ops_af9cd7f1cd7cd78d3d9c91e56a4f06fc7.html#af9cd7f1cd7cd78d3d9c91e56a4f06fc7", null ]
     ] ],
     [ "mpfr", "d1/d02/namespacempfr.html", "d1/d02/namespacempfr" ],
+    [ "newf4", "da/db5/namespacenewf4.html", "da/db5/namespacenewf4" ],
     [ "safe", "d6/dcb/namespacesafe.html", [
       [ "add", "d6/dcb/namespacesafe_a9bc0f400d9284da1cf4a66355924eb63.html#a9bc0f400d9284da1cf4a66355924eb63", null ],
       [ "add", "d6/dcb/namespacesafe_a33c6936227918d3d2d0706c2b33e67e6.html#a33c6936227918d3d2d0706c2b33e67e6", null ],

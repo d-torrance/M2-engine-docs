@@ -58,6 +58,8 @@ var matrix_8h =
     [ "rawMatrixContent", "dd/df4/matrix_8h_a0fd9cceae119bc23cc9ad2b178c3e5f4.html#a0fd9cceae119bc23cc9ad2b178c3e5f4", null ],
     [ "rawMatrixHash", "dd/df4/matrix_8h_a65cd3fecc2417de9663484a0ef4de5ab.html#a65cd3fecc2417de9663484a0ef4de5ab", null ],
     [ "rawMatrixIndices", "dd/df4/matrix_8h_afde2a17804b835c624081fe42615e83f.html#afde2a17804b835c624081fe42615e83f", null ],
+    [ "rawMatrixReadMsolveFile", "dd/df4/matrix_8h_a96275106c4513551dfe8dacc97520e5a.html#a96275106c4513551dfe8dacc97520e5a", null ],
+    [ "rawMatrixReadMsolveString", "dd/df4/matrix_8h_ae25f5d1303bfe3a10b830560c0cb757e.html#ae25f5d1303bfe3a10b830560c0cb757e", null ],
     [ "rawMatrixRemoveContent", "dd/df4/matrix_8h_a64ebc1cfa6892ff00d66612ba23499df.html#a64ebc1cfa6892ff00d66612ba23499df", null ],
     [ "rawMatrixSplitContent", "dd/df4/matrix_8h_ad2eb99478d426e8865a6c0d6a9cd975f.html#ad2eb99478d426e8865a6c0d6a9cd975f", null ],
     [ "rawMinors", "dd/df4/matrix_8h_a74234a3ba0449180c0fb01d60a37addb.html#a74234a3ba0449180c0fb01d60a37addb", null ],

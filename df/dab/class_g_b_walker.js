@@ -38,7 +38,7 @@ var class_g_b_walker =
     [ "next_to_reduce", "df/dab/class_g_b_walker_a24d16518c6f3c3e22ad619f72247e346.html#a24d16518c6f3c3e22ad619f72247e346", null ],
     [ "polys", "df/dab/class_g_b_walker_a6bfec3ff37bf3da94b1fd7a19d38b782.html#a6bfec3ff37bf3da94b1fd7a19d38b782", null ],
     [ "R", "df/dab/class_g_b_walker_ad8709849db165cc26c693e024d542f64.html#ad8709849db165cc26c693e024d542f64", null ],
-    [ "state", "df/dab/class_g_b_walker_ae4e574b72c4051f61630a4cece7a0554.html#ae4e574b72c4051f61630a4cece7a0554", null ],
+    [ "state", "df/dab/class_g_b_walker_ac72b44407f32d2669b1d4f248a990e62.html#ac72b44407f32d2669b1d4f248a990e62", null ],
     [ "w_history", "df/dab/class_g_b_walker_a069498c3eee906f972ca82aac8ad04b8.html#a069498c3eee906f972ca82aac8ad04b8", null ],
     [ "ww", "df/dab/class_g_b_walker_aa33bf94fccac102946c200fee868a2d6.html#aa33bf94fccac102946c200fee868a2d6", null ]
 ];

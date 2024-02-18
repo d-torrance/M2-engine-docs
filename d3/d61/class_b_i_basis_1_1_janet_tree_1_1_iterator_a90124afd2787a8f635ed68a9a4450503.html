@@ -122,13 +122,13 @@ template&lt;typename MonomType &gt; </div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        }</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        Node* r = <span class="keyword">new</span> <span class="keyword">typename</span> JanetTree&lt;MonomType&gt;::Node(triple-&gt;GetPolynomLm()[var]);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        Node* j = r;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a385e7536b2426e1d8ae70ca51cf2fca0.html#a385e7536b2426e1d8ae70ca51cf2fca0">Node</a>* r = <span class="keyword">new</span> <span class="keyword">typename</span> <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a385e7536b2426e1d8ae70ca51cf2fca0.html#a385e7536b2426e1d8ae70ca51cf2fca0">JanetTree&lt;MonomType&gt;::Node</a>(triple-&gt;GetPolynomLm()[var]);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a385e7536b2426e1d8ae70ca51cf2fca0.html#a385e7536b2426e1d8ae70ca51cf2fca0">Node</a>* j = r;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">while</span>(degree &gt; triple-&gt;GetPolynomLm()[var]) </div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        {</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            degree -= triple-&gt;GetPolynomLm()[var];</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            ++var;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            j-&gt;NextVariable = <span class="keyword">new</span> <span class="keyword">typename</span> JanetTree&lt;MonomType&gt;::Node(triple-&gt;GetPolynomLm()[var]);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            j-&gt;NextVariable = <span class="keyword">new</span> <span class="keyword">typename</span> <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_a385e7536b2426e1d8ae70ca51cf2fca0.html#a385e7536b2426e1d8ae70ca51cf2fca0">JanetTree&lt;MonomType&gt;::Node</a>(triple-&gt;GetPolynomLm()[var]);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            j = j-&gt;NextVariable;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        }</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        j-&gt;CurrentTriple = triple;</div>
@@ -137,6 +137,7 @@ template&lt;typename MonomType &gt; </div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        *<a class="code" href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_ab0bba6f5764173d12dd0deb4fc38e265.html#ab0bba6f5764173d12dd0deb4fc38e265">CurrentNode</a> = r;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
 <div class="ttc" id="aclass_b_i_basis_1_1_janet_tree_1_1_iterator_ab0bba6f5764173d12dd0deb4fc38e265_html_ab0bba6f5764173d12dd0deb4fc38e265"><div class="ttname"><a href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_ab0bba6f5764173d12dd0deb4fc38e265.html#ab0bba6f5764173d12dd0deb4fc38e265">BIBasis::JanetTree::Iterator::CurrentNode</a></div><div class="ttdeci">Node ** CurrentNode</div><div class="ttdef"><b>Definition:</b> <a href="../../df/de3/janettree_8hpp_source.html#l00055">janettree.hpp:55</a></div></div>
+<div class="ttc" id="ares-tasking-example_8cpp_a385e7536b2426e1d8ae70ca51cf2fca0_html_a385e7536b2426e1d8ae70ca51cf2fca0"><div class="ttname"><a href="../../d0/dfb/res-tasking-example_8cpp_a385e7536b2426e1d8ae70ca51cf2fca0.html#a385e7536b2426e1d8ae70ca51cf2fca0">Node</a></div><div class="ttdeci">tbb::flow::continue_node&lt; tbb::flow::continue_msg &gt; Node</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/res-tasking-example_8cpp_source.html#l00014">res-tasking-example.cpp:14</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../df/da3/struct_b_i_basis_1_1_janet_tree_1_1_node_a1a4733d3db2e6986dbf95652ebdcd7f0.html#a1a4733d3db2e6986dbf95652ebdcd7f0">BIBasis::JanetTree&lt; MonomType &gt;::Node::CurrentTriple</a>, <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple_af48b57c12a175c35d6d1bde3d88c4325.html#af48b57c12a175c35d6d1bde3d88c4325">BIBasis::Triple&lt; MonomType &gt;::GetPolynomLm()</a>, <a class="el" href="../../df/da3/struct_b_i_basis_1_1_janet_tree_1_1_node_a9f1d5d353efcf3483f98409d28702622.html#a9f1d5d353efcf3483f98409d28702622">BIBasis::JanetTree&lt; MonomType &gt;::Node::NextDegree</a>, and <a class="el" href="../../df/da3/struct_b_i_basis_1_1_janet_tree_1_1_node_abffd3c2dcf5990b4571c74be641832bd.html#abffd3c2dcf5990b4571c74be641832bd">BIBasis::JanetTree&lt; MonomType &gt;::Node::NextVariable</a>.</p>
 
@@ -150,7 +151,7 @@ template&lt;typename MonomType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d30/namespace_b_i_basis.html">BIBasis</a></li><li class="navelem"><a class="el" href="../../d2/d19/class_b_i_basis_1_1_janet_tree.html">JanetTree</a></li><li class="navelem"><a class="el" href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator.html">Iterator</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:22:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

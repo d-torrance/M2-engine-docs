@@ -145,8 +145,8 @@ $(document).ready(function(){initNavTree('da/d4d/comp-gb_8cpp_aa839849c2d6dcf317
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">auto</span> vectorArithmetic = <span class="keyword">new</span> <a class="code" href="../../d1/df6/class_vector_arithmetic.html">VectorArithmetic</a>(K);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// TODO: code here used to detect whether R, K is a valid ring here</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="../../de/ded/class_g_b_computation.html">GBComputation</a> *G;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  G = <span class="keyword">new</span> <a class="code" href="../../d8/d5d/class_f4_computation.html">F4Computation</a>(vectorArithmetic,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="../../de/ded/class_g_b_computation.html">GBComputation</a> *<a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a> = <span class="keyword">new</span> <a class="code" href="../../d8/d5d/class_f4_computation.html">F4Computation</a>(vectorArithmetic,</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        Mem,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        m,</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                        collect_syz,</div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('da/d4d/comp-gb_8cpp_aa839849c2d6dcf317
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                        strategy,</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                        use_max_degree,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                        max_degree);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> G;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="ttc" id="aclass_f4_computation_html"><div class="ttname"><a href="../../d8/d5d/class_f4_computation.html">F4Computation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/def/f4-computation_8hpp_source.html#l00020">f4-computation.hpp:21</a></div></div>
 <div class="ttc" id="aclass_f4_mem_html"><div class="ttname"><a href="../../d5/d43/class_f4_mem.html">F4Mem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db6/f4-mem_8hpp_source.html#l00114">f4-mem.hpp:115</a></div></div>
@@ -165,9 +165,10 @@ $(document).ready(function(){initNavTree('da/d4d/comp-gb_8cpp_aa839849c2d6dcf317
 <div class="ttc" id="aclass_polynomial_ring_html"><div class="ttname"><a href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/polyring_8hpp_source.html#l00038">polyring.hpp:39</a></div></div>
 <div class="ttc" id="aclass_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d_html_a1c9b92ccaaf1f3f7a27ccbdafd73df2d"><div class="ttname"><a href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">Ring::cast_to_PolynomialRing</a></div><div class="ttdeci">virtual const PolynomialRing * cast_to_PolynomialRing() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/ring_8hpp_source.html#l00206">ring.hpp:206</a></div></div>
 <div class="ttc" id="aclass_ring_html"><div class="ttname"><a href="../../dd/dcf/class_ring.html">Ring</a></div><div class="ttdoc">xxx xxx xxx</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/ring_8hpp_source.html#l00064">ring.hpp:65</a></div></div>
-<div class="ttc" id="aclass_vector_arithmetic_html"><div class="ttname"><a href="../../d1/df6/class_vector_arithmetic.html">VectorArithmetic</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00381">VectorArithmetic.hpp:382</a></div></div>
+<div class="ttc" id="aclass_vector_arithmetic_html"><div class="ttname"><a href="../../d1/df6/class_vector_arithmetic.html">VectorArithmetic</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00574">VectorArithmetic.hpp:575</a></div></div>
+<div class="ttc" id="ares-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903_html_acc0eea0b8cd2df09e6f3c2bade95a903"><div class="ttname"><a href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a></div><div class="ttdeci">tbb::flow::graph G</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/res-tasking-example_8cpp_source.html#l00017">res-tasking-example.cpp:17</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">Ring::cast_to_PolynomialRing()</a>, <a class="el" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">Matrix::get_ring()</a>, and <a class="el" href="../../d6/de2/class_ring_element_aac17d01996fc44a0ce837b4e7351f198.html#aac17d01996fc44a0ce837b4e7351f198">RingElement::R</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dcf/class_ring_a1c9b92ccaaf1f3f7a27ccbdafd73df2d.html#a1c9b92ccaaf1f3f7a27ccbdafd73df2d">Ring::cast_to_PolynomialRing()</a>, <a class="el" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>, <a class="el" href="../../d6/d3f/class_matrix_aa8df790e4669d0075ef8356d23e8d1fc.html#aa8df790e4669d0075ef8356d23e8d1fc">Matrix::get_ring()</a>, and <a class="el" href="../../d6/de2/class_ring_element_aac17d01996fc44a0ce837b4e7351f198.html#aac17d01996fc44a0ce837b4e7351f198">RingElement::R</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../de/ded/class_g_b_computation_a443f3848097cecf3f384b9af273295e4.html#a443f3848097cecf3f384b9af273295e4">GBComputation::choose_gb()</a>.</p>
 
@@ -179,7 +180,7 @@ $(document).ready(function(){initNavTree('da/d4d/comp-gb_8cpp_aa839849c2d6dcf317
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../da/d4d/comp-gb_8cpp.html">comp-gb.cpp</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:21:54 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

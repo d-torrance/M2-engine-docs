@@ -104,18 +104,18 @@ $(document).ready(function(){initNavTree('d0/dd7/class_f4_res_a0bd25e67eb358bd54
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dd9/res-f4_8cpp_source.html#l00665">665</a> of file <a class="el" href="../../de/dd9/res-f4_8cpp_source.html">res-f4.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;{</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;-- reducers(rows) -- &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;  <span class="keyword">auto</span> <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> = <a class="code" href="../../d0/dd7/class_f4_res_a9d050ea0ca02a97cab9113832198b50c.html#a9d050ea0ca02a97cab9113832198b50c">mReducers</a>.cend();</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = <a class="code" href="../../d0/dd7/class_f4_res_a9d050ea0ca02a97cab9113832198b50c.html#a9d050ea0ca02a97cab9113832198b50c">mReducers</a>.cbegin(); i != <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>; ++i)</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    {</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;      <a class="code" href="../../d0/dd7/class_f4_res_a66b62b616f121dca24b48b2144d09893.html#a66b62b616f121dca24b48b2144d09893">monoid</a>().<a class="code" href="../../dc/d0d/class_res_monoid_dense_a3843b2c4680583ca5fb7d1d1c495be6d.html#a3843b2c4680583ca5fb7d1d1c495be6d">showAlpha</a>((*i).mLeadTerm);</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;      std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    }</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;}</div>
-<div class="ttc" id="aclass_f4_res_a66b62b616f121dca24b48b2144d09893_html_a66b62b616f121dca24b48b2144d09893"><div class="ttname"><a href="../../d0/dd7/class_f4_res_a66b62b616f121dca24b48b2144d09893.html#a66b62b616f121dca24b48b2144d09893">F4Res::monoid</a></div><div class="ttdeci">const ResMonoid &amp; monoid() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0d/res-f4_8hpp_source.html#l00037">res-f4.hpp:37</a></div></div>
-<div class="ttc" id="aclass_f4_res_a9d050ea0ca02a97cab9113832198b50c_html_a9d050ea0ca02a97cab9113832198b50c"><div class="ttname"><a href="../../d0/dd7/class_f4_res_a9d050ea0ca02a97cab9113832198b50c.html#a9d050ea0ca02a97cab9113832198b50c">F4Res::mReducers</a></div><div class="ttdeci">std::vector&lt; Row &gt; mReducers</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0d/res-f4_8hpp_source.html#l00097">res-f4.hpp:97</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../de/dd9/res-f4_8cpp_source.html#l00707">707</a> of file <a class="el" href="../../de/dd9/res-f4_8cpp_source.html">res-f4.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;{</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;-- reducers(rows) -- &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;  <span class="keyword">auto</span> <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a> = <a class="code" href="../../d0/dd7/class_f4_res_a9d050ea0ca02a97cab9113832198b50c.html#a9d050ea0ca02a97cab9113832198b50c">mReducers</a>.cend();</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = <a class="code" href="../../d0/dd7/class_f4_res_a9d050ea0ca02a97cab9113832198b50c.html#a9d050ea0ca02a97cab9113832198b50c">mReducers</a>.cbegin(); i != <a class="code" href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a>; ++i)</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    {</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;      <a class="code" href="../../d0/dd7/class_f4_res_a66b62b616f121dca24b48b2144d09893.html#a66b62b616f121dca24b48b2144d09893">monoid</a>().<a class="code" href="../../dc/d0d/class_res_monoid_dense_a3843b2c4680583ca5fb7d1d1c495be6d.html#a3843b2c4680583ca5fb7d1d1c495be6d">showAlpha</a>((*i).mLeadTerm);</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;      std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    }</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;}</div>
+<div class="ttc" id="aclass_f4_res_a66b62b616f121dca24b48b2144d09893_html_a66b62b616f121dca24b48b2144d09893"><div class="ttname"><a href="../../d0/dd7/class_f4_res_a66b62b616f121dca24b48b2144d09893.html#a66b62b616f121dca24b48b2144d09893">F4Res::monoid</a></div><div class="ttdeci">const ResMonoid &amp; monoid() const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0d/res-f4_8hpp_source.html#l00038">res-f4.hpp:38</a></div></div>
+<div class="ttc" id="aclass_f4_res_a9d050ea0ca02a97cab9113832198b50c_html_a9d050ea0ca02a97cab9113832198b50c"><div class="ttname"><a href="../../d0/dd7/class_f4_res_a9d050ea0ca02a97cab9113832198b50c.html#a9d050ea0ca02a97cab9113832198b50c">F4Res::mReducers</a></div><div class="ttdeci">std::vector&lt; Row &gt; mReducers</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0d/res-f4_8hpp_source.html#l00102">res-f4.hpp:102</a></div></div>
 <div class="ttc" id="aclass_res_monoid_dense_a3843b2c4680583ca5fb7d1d1c495be6d_html_a3843b2c4680583ca5fb7d1d1c495be6d"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_a3843b2c4680583ca5fb7d1d1c495be6d.html#a3843b2c4680583ca5fb7d1d1c495be6d">ResMonoidDense::showAlpha</a></div><div class="ttdeci">void showAlpha(res_const_packed_monomial m) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd0/res-moninfo-dense_8cpp_source.html#l00106">res-moninfo-dense.cpp:106</a></div></div>
 <div class="ttc" id="aringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad_html_a202eaaa0b459954e5ac23a43454d57ad"><div class="ttname"><a href="../../d0/d82/ringelem_8cpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad">end</a></div><div class="ttdeci">TermIterator&lt; Nterm &gt; end(Nterm *)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d82/ringelem_8cpp_source.html#l00005">ringelem.cpp:5</a></div></div>
 </div><!-- fragment -->
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('d0/dd7/class_f4_res_a0bd25e67eb358bd54
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/dd7/class_f4_res.html">F4Res</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

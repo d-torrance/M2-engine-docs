@@ -10,7 +10,7 @@ var engine_8h =
     [ "IM2_GB_to_string", "d1/d55/engine_8h_ad626063e5dd10fc77674b71759a3b2d8.html#ad626063e5dd10fc77674b71759a3b2d8", null ],
     [ "IM2_initialize", "d1/d55/engine_8h_a21cacf17c372979654039408400c1ffe.html#a21cacf17c372979654039408400c1ffe", null ],
     [ "IM2_last_error_message", "d1/d55/engine_8h_af68bddb76ca81de0e24a641c97eec717.html#af68bddb76ca81de0e24a641c97eec717", null ],
-    [ "IM2_res_make", "d1/d55/engine_8h_a571974630effae1788f26d3201163eb6.html#a571974630effae1788f26d3201163eb6", null ],
+    [ "IM2_res_make", "d1/d55/engine_8h_a8129f1327f65e6c62f9c06de3bd0f253.html#a8129f1327f65e6c62f9c06de3bd0f253", null ],
     [ "IM2_Resolution_status", "d1/d55/engine_8h_a2df9eb484520d7d0afdc377d4f2c719f.html#a2df9eb484520d7d0afdc377d4f2c719f", null ],
     [ "IM2_Resolution_status_level", "d1/d55/engine_8h_af314dc8df2716fcccdc6754c3c4800b8.html#af314dc8df2716fcccdc6754c3c4800b8", null ],
     [ "rawBIBasis", "d1/d55/engine_8h_a2ad58abb6165b4c8d6448da349f2eb97.html#a2ad58abb6165b4c8d6448da349f2eb97", null ],

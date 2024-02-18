@@ -127,9 +127,9 @@ var group__gb =
         [ "lcm", "df/deb/structgb_a_1_1spair_ae7e4e7d73304e53c397bae44a104c30c.html#ae7e4e7d73304e53c397bae44a104c30c", null ],
         [ "lead_of_spoly", "df/deb/structgb_a_1_1spair_a3131f9edd238fe3875744632137e84d1.html#a3131f9edd238fe3875744632137e84d1", null ],
         [ "next", "df/deb/structgb_a_1_1spair_a63af054141ecb87ea7628d4bb737d233.html#a63af054141ecb87ea7628d4bb737d233", null ],
-        [ "pair", "df/deb/structgb_a_1_1spair_a1007ee883f04a39be5860eeb43efcba4.html#a1007ee883f04a39be5860eeb43efcba4", null ],
+        [ "pair", "df/deb/structgb_a_1_1spair_a4b5f3f06522a34cedd97f722182c36eb.html#a4b5f3f06522a34cedd97f722182c36eb", null ],
         [ "type", "df/deb/structgb_a_1_1spair_abbad1085113eb96a786b77893d63e4f0.html#abbad1085113eb96a786b77893d63e4f0", null ],
-        [ "x", "df/deb/structgb_a_1_1spair_a97d5e97ca673daa83398d34f3d876332.html#a97d5e97ca673daa83398d34f3d876332", null ]
+        [ "x", "df/deb/structgb_a_1_1spair_a66c5e87bcd95b031f2c57022b59c6b4a.html#a66c5e87bcd95b031f2c57022b59c6b4a", null ]
       ] ],
       [ "SPairSet", "d9/dad/structgb_a_1_1_s_pair_set.html", [
         [ "SPairSet", "d9/dad/structgb_a_1_1_s_pair_set_a35c023b32cf2e089d6af88c354556db4.html#a35c023b32cf2e089d6af88c354556db4", null ],
@@ -554,7 +554,7 @@ var group__gb =
       [ "next_to_reduce", "df/dab/class_g_b_walker_a24d16518c6f3c3e22ad619f72247e346.html#a24d16518c6f3c3e22ad619f72247e346", null ],
       [ "polys", "df/dab/class_g_b_walker_a6bfec3ff37bf3da94b1fd7a19d38b782.html#a6bfec3ff37bf3da94b1fd7a19d38b782", null ],
       [ "R", "df/dab/class_g_b_walker_ad8709849db165cc26c693e024d542f64.html#ad8709849db165cc26c693e024d542f64", null ],
-      [ "state", "df/dab/class_g_b_walker_ae4e574b72c4051f61630a4cece7a0554.html#ae4e574b72c4051f61630a4cece7a0554", null ],
+      [ "state", "df/dab/class_g_b_walker_ac72b44407f32d2669b1d4f248a990e62.html#ac72b44407f32d2669b1d4f248a990e62", null ],
       [ "w_history", "df/dab/class_g_b_walker_a069498c3eee906f972ca82aac8ad04b8.html#a069498c3eee906f972ca82aac8ad04b8", null ],
       [ "ww", "df/dab/class_g_b_walker_aa33bf94fccac102946c200fee868a2d6.html#aa33bf94fccac102946c200fee868a2d6", null ]
     ] ],

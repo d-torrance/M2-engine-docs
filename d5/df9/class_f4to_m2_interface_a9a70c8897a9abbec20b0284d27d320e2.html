@@ -127,14 +127,14 @@ $(document).ready(function(){initNavTree('d5/df9/class_f4to_m2_interface_a9a70c8
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1e/f4-m2-interface_8cpp_source.html#l00154">154</a> of file <a class="el" href="../../d3/d1e/f4-m2-interface_8cpp_source.html">f4-m2-interface.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> result(F, <a class="code" href="../../d2/d6f/style_8hpp_ae9befcbff10f3a4ff986f206da609a90.html#ae9befcbff10f3a4ff986f206da609a90">INTSIZE</a>(polys));</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; polys.size(); i++)</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    result.set_column(i, <a class="code" href="../../d5/df9/class_f4to_m2_interface_aeae8fb357cd440600883ddebdf7c11d4.html#aeae8fb357cd440600883ddebdf7c11d4">to_M2_vec</a>(VA, MI, polys[i]-&gt;f, F));</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordflow">return</span> result.to_matrix();</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
-<div class="ttc" id="aclass_f4to_m2_interface_aeae8fb357cd440600883ddebdf7c11d4_html_aeae8fb357cd440600883ddebdf7c11d4"><div class="ttname"><a href="../../d5/df9/class_f4to_m2_interface_aeae8fb357cd440600883ddebdf7c11d4.html#aeae8fb357cd440600883ddebdf7c11d4">F4toM2Interface::to_M2_vec</a></div><div class="ttdeci">static vec to_M2_vec(const VectorArithmetic *VA, const MonomialInfo *MI, const GBF4Polynomial &amp;f, const FreeModule *F)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1e/f4-m2-interface_8cpp_source.html#l00096">f4-m2-interface.cpp:96</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1e/f4-m2-interface_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../d3/d1e/f4-m2-interface_8cpp_source.html">f4-m2-interface.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> result(F, <a class="code" href="../../d2/d6f/style_8hpp_ae9befcbff10f3a4ff986f206da609a90.html#ae9befcbff10f3a4ff986f206da609a90">INTSIZE</a>(polys));</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; polys.size(); i++)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    result.set_column(i, <a class="code" href="../../d5/df9/class_f4to_m2_interface_aeae8fb357cd440600883ddebdf7c11d4.html#aeae8fb357cd440600883ddebdf7c11d4">to_M2_vec</a>(VA, MI, polys[i]-&gt;f, F));</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordflow">return</span> result.to_matrix();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="ttc" id="aclass_f4to_m2_interface_aeae8fb357cd440600883ddebdf7c11d4_html_aeae8fb357cd440600883ddebdf7c11d4"><div class="ttname"><a href="../../d5/df9/class_f4to_m2_interface_aeae8fb357cd440600883ddebdf7c11d4.html#aeae8fb357cd440600883ddebdf7c11d4">F4toM2Interface::to_M2_vec</a></div><div class="ttdeci">static vec to_M2_vec(const VectorArithmetic *VA, const MonomialInfo *MI, const GBF4Polynomial &amp;f, const FreeModule *F)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1e/f4-m2-interface_8cpp_source.html#l00095">f4-m2-interface.cpp:95</a></div></div>
 <div class="ttc" id="aclass_matrix_constructor_html"><div class="ttname"><a href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d80/matrix-con_8hpp_source.html#l00013">matrix-con.hpp:14</a></div></div>
 <div class="ttc" id="astyle_8hpp_ae9befcbff10f3a4ff986f206da609a90_html_ae9befcbff10f3a4ff986f206da609a90"><div class="ttname"><a href="../../d2/d6f/style_8hpp_ae9befcbff10f3a4ff986f206da609a90.html#ae9befcbff10f3a4ff986f206da609a90">INTSIZE</a></div><div class="ttdeci">#define INTSIZE(a)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d6f/style_8hpp_source.html#l00008">style.hpp:8</a></div></div>
 </div><!-- fragment -->
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('d5/df9/class_f4to_m2_interface_a9a70c8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/df9/class_f4to_m2_interface.html">F4toM2Interface</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:21:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

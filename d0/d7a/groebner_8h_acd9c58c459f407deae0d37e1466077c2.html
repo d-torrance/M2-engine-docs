@@ -107,25 +107,25 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_acd9c58c459f407deae
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dc8/groebner_8cpp_source.html#l00598">598</a> of file <a class="el" href="../../d2/dc8/groebner_8cpp_source.html">groebner.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;{</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;  <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    {</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;      <a class="code" href="../../dd/d51/class_resolution_computation.html">ResolutionComputation</a> *G = C-&gt;<a class="code" href="../../d6/dea/class_computation_ac3c17286503852c731066a5c9cb4650f.html#ac3c17286503852c731066a5c9cb4650f">cast_to_ResolutionComputation</a>();</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;      <span class="keywordflow">if</span> (G != <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> G-&gt;<a class="code" href="../../dd/d51/class_resolution_computation_a5b52c222f7a75924a9d0d1c586da44f8.html#a5b52c222f7a75924a9d0d1c586da44f8">get_betti</a>(type);</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected resolution computation type&quot;</span>);</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    {</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  }</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/dc8/groebner_8cpp_source.html#l00608">608</a> of file <a class="el" href="../../d2/dc8/groebner_8cpp_source.html">groebner.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;{</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    {</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;      <a class="code" href="../../dd/d51/class_resolution_computation.html">ResolutionComputation</a> *<a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a> = C-&gt;<a class="code" href="../../d6/dea/class_computation_ac3c17286503852c731066a5c9cb4650f.html#ac3c17286503852c731066a5c9cb4650f">cast_to_ResolutionComputation</a>();</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a> != <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <a class="code" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>-&gt;get_betti(type);</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected resolution computation type&quot;</span>);</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    {</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;  }</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;}</div>
 <div class="ttc" id="aclass_computation_ac3c17286503852c731066a5c9cb4650f_html_ac3c17286503852c731066a5c9cb4650f"><div class="ttname"><a href="../../d6/dea/class_computation_ac3c17286503852c731066a5c9cb4650f.html#ac3c17286503852c731066a5c9cb4650f">Computation::cast_to_ResolutionComputation</a></div><div class="ttdeci">virtual ResolutionComputation * cast_to_ResolutionComputation()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/comp_8hpp_source.html#l00061">comp.hpp:61</a></div></div>
-<div class="ttc" id="aclass_resolution_computation_a5b52c222f7a75924a9d0d1c586da44f8_html_a5b52c222f7a75924a9d0d1c586da44f8"><div class="ttname"><a href="../../dd/d51/class_resolution_computation_a5b52c222f7a75924a9d0d1c586da44f8.html#a5b52c222f7a75924a9d0d1c586da44f8">ResolutionComputation::get_betti</a></div><div class="ttdeci">virtual M2_arrayint get_betti(int type) const =0</div></div>
 <div class="ttc" id="aclass_resolution_computation_html"><div class="ttname"><a href="../../dd/d51/class_resolution_computation.html">ResolutionComputation</a></div><div class="ttdoc">Base class for free resolution computation classes.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0b/comp-res_8hpp_source.html#l00015">comp-res.hpp:17</a></div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
-<div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00009">exceptions.hpp:10</a></div></div>
+<div class="ttc" id="ares-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903_html_acc0eea0b8cd2df09e6f3c2bade95a903"><div class="ttname"><a href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a></div><div class="ttdeci">tbb::flow::graph G</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/res-tasking-example_8cpp_source.html#l00017">res-tasking-example.cpp:17</a></div></div>
+<div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_acd9c58c459f407deae
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d0/d7a/groebner_8h.html">groebner.h</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:21:55 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

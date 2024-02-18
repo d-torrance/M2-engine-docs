@@ -19,8 +19,6 @@ var dir_8ed8434bc3d991323934987a3489e746 =
     [ "f4.hpp", "d5/d35/f4_8hpp.html", [
       [ "F4GB", "d9/d4a/class_f4_g_b.html", "d9/d4a/class_f4_g_b" ]
     ] ],
-    [ "gausser.cpp", "db/d23/gausser_8cpp.html", null ],
-    [ "gausser.hpp", "d2/dc6/gausser_8hpp.html", "d2/dc6/gausser_8hpp" ],
     [ "hilb-fcn.cpp", "d0/dc6/hilb-fcn_8cpp.html", null ],
     [ "hilb-fcn.hpp", "d7/df6/hilb-fcn_8hpp.html", [
       [ "HilbertController", "dd/dc6/class_hilbert_controller.html", "dd/dc6/class_hilbert_controller" ]

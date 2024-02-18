@@ -1,0 +1,28 @@
+var classnewf4_1_1_g_b_f4_interface =
+[
+    [ "GBF4Interface", "d6/d99/classnewf4_1_1_g_b_f4_interface_a3aaed82773f738b3e6a020f1ebbfeb8d.html#a3aaed82773f738b3e6a020f1ebbfeb8d", null ],
+    [ "GBF4Interface", "d6/d99/classnewf4_1_1_g_b_f4_interface_a3eeabd36121419aa941a29c236db2edc.html#a3eeabd36121419aa941a29c236db2edc", null ],
+    [ "~GBF4Interface", "d6/d99/classnewf4_1_1_g_b_f4_interface_a06f528c4e36ebc465503589f05244e75.html#a06f528c4e36ebc465503589f05244e75", null ],
+    [ "complete_thru_degree", "d6/d99/classnewf4_1_1_g_b_f4_interface_a2538a80b0d9cfe220014aec5656aed73.html#a2538a80b0d9cfe220014aec5656aed73", null ],
+    [ "computation", "d6/d99/classnewf4_1_1_g_b_f4_interface_a0f2f7831a27a62c483d34c5973b1ca3b.html#a0f2f7831a27a62c483d34c5973b1ca3b", null ],
+    [ "computation_is_complete", "d6/d99/classnewf4_1_1_g_b_f4_interface_a99f87abca9a593e867ba434252cb9224.html#a99f87abca9a593e867ba434252cb9224", null ],
+    [ "contains", "d6/d99/classnewf4_1_1_g_b_f4_interface_ac282997cc835db31cfb2232d30e81444.html#ac282997cc835db31cfb2232d30e81444", null ],
+    [ "get_change", "d6/d99/classnewf4_1_1_g_b_f4_interface_a653a964cf374930e1912f8d03cac68d7.html#a653a964cf374930e1912f8d03cac68d7", null ],
+    [ "get_gb", "d6/d99/classnewf4_1_1_g_b_f4_interface_a67fa3c048f45fb26192526cc60f2c90b.html#a67fa3c048f45fb26192526cc60f2c90b", null ],
+    [ "get_initial", "d6/d99/classnewf4_1_1_g_b_f4_interface_a594d8ab2412ab0939b8235808a921cd6.html#a594d8ab2412ab0939b8235808a921cd6", null ],
+    [ "get_mingens", "d6/d99/classnewf4_1_1_g_b_f4_interface_a497067795731e311f6891ee6759a785a.html#a497067795731e311f6891ee6759a785a", null ],
+    [ "get_ring", "d6/d99/classnewf4_1_1_g_b_f4_interface_a2c5a3d1b3840c0cdff544b9943f6d51c.html#a2c5a3d1b3840c0cdff544b9943f6d51c", null ],
+    [ "get_syzygies", "d6/d99/classnewf4_1_1_g_b_f4_interface_a4d6eb17490825dd3110a20edc0bfd72f.html#a4d6eb17490825dd3110a20edc0bfd72f", null ],
+    [ "matrix_lift", "d6/d99/classnewf4_1_1_g_b_f4_interface_a35eab3dcb5ae24de8995be023113190e.html#a35eab3dcb5ae24de8995be023113190e", null ],
+    [ "matrix_remainder", "d6/d99/classnewf4_1_1_g_b_f4_interface_ab4f286255c9737480c3635d030102116.html#ab4f286255c9737480c3635d030102116", null ],
+    [ "remove_gb", "d6/d99/classnewf4_1_1_g_b_f4_interface_a56cf0b3af96391f8a749164bd16592d4.html#a56cf0b3af96391f8a749164bd16592d4", null ],
+    [ "set_hilbert_function", "d6/d99/classnewf4_1_1_g_b_f4_interface_aafce5491113afd8c2e4bb335d6751807.html#aafce5491113afd8c2e4bb335d6751807", null ],
+    [ "show", "d6/d99/classnewf4_1_1_g_b_f4_interface_a135f83c06380fe7d71705cfae008d8d3.html#a135f83c06380fe7d71705cfae008d8d3", null ],
+    [ "start_computation", "d6/d99/classnewf4_1_1_g_b_f4_interface_ab94811c7620ddc2d152f07ce90efa979.html#ab94811c7620ddc2d152f07ce90efa979", null ],
+    [ "stop_conditions_ok", "d6/d99/classnewf4_1_1_g_b_f4_interface_aeabb45684e864dedcb972bb76e76b13f.html#aeabb45684e864dedcb972bb76e76b13f", null ],
+    [ "text_out", "d6/d99/classnewf4_1_1_g_b_f4_interface_a7018227c18dc44808393f10ed8aff569.html#a7018227c18dc44808393f10ed8aff569", null ],
+    [ "mComputation", "d6/d99/classnewf4_1_1_g_b_f4_interface_a8b14629bf11556c74d93e94c5ce27abb.html#a8b14629bf11556c74d93e94c5ce27abb", null ],
+    [ "mFreeModule", "d6/d99/classnewf4_1_1_g_b_f4_interface_ac45b4b52fc51289f815ad21852494eb2.html#ac45b4b52fc51289f815ad21852494eb2", null ],
+    [ "mOriginalRing", "d6/d99/classnewf4_1_1_g_b_f4_interface_aeadb4bdd63e4787fd6ee62de46142df5.html#aeadb4bdd63e4787fd6ee62de46142df5", null ],
+    [ "mVectorArithmetic", "d6/d99/classnewf4_1_1_g_b_f4_interface_a7a01e3a6c5ce1e2686d3fc5311596b2a.html#a7a01e3a6c5ce1e2686d3fc5311596b2a", null ]
+];

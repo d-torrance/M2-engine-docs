@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['safe_6493',['safe',['../d6/dcb/namespacesafe.html',1,'']]],
-  ['schreyerframetypes_6494',['SchreyerFrameTypes',['../de/d8e/namespace_schreyer_frame_types.html',1,'']]]
+  ['newf4_6642',['newf4',['../da/db5/namespacenewf4.html',1,'']]]
 ];

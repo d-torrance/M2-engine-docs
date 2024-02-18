@@ -1,5 +1,7 @@
 var dir_208df166e208656f2e3436240a4845e8 =
 [
+    [ "res-dep-graph.cpp", "d2/df0/res-dep-graph_8cpp.html", null ],
+    [ "res-dep-graph.hpp", "d9/db9/res-dep-graph_8hpp.html", null ],
     [ "res-f4-computation.cpp", "d8/dff/res-f4-computation_8cpp.html", "d8/dff/res-f4-computation_8cpp" ],
     [ "res-f4-computation.hpp", "d0/d2f/res-f4-computation_8hpp.html", "d0/d2f/res-f4-computation_8hpp" ],
     [ "res-f4-m2-interface.cpp", "dc/d4f/res-f4-m2-interface_8cpp.html", "dc/d4f/res-f4-m2-interface_8cpp" ],
@@ -13,25 +15,9 @@ var dir_208df166e208656f2e3436240a4845e8 =
       [ "F4Res", "d0/dd7/class_f4_res.html", "d0/dd7/class_f4_res" ],
       [ "Row", "d9/d66/struct_f4_res_1_1_row.html", "d9/d66/struct_f4_res_1_1_row" ]
     ] ],
-    [ "res-gausser-QQ-hybrid.cpp", "dc/d99/res-gausser-_q_q-hybrid_8cpp.html", null ],
-    [ "res-gausser-QQ-hybrid.hpp", "d7/d5b/res-gausser-_q_q-hybrid_8hpp.html", [
-      [ "ResGausserQQHybrid", "d4/d2e/class_res_gausser_q_q_hybrid.html", "d4/d2e/class_res_gausser_q_q_hybrid" ],
-      [ "FieldElement", "da/db7/struct_res_gausser_q_q_hybrid_1_1_field_element.html", "da/db7/struct_res_gausser_q_q_hybrid_1_1_field_element" ]
-    ] ],
-    [ "res-gausser-QQ.cpp", "dc/dc9/res-gausser-_q_q_8cpp.html", null ],
-    [ "res-gausser-QQ.hpp", "d1/db6/res-gausser-_q_q_8hpp.html", [
-      [ "ResGausserQQ", "d1/dff/class_res_gausser_q_q.html", "d1/dff/class_res_gausser_q_q" ],
-      [ "FieldElement", "de/d99/struct_res_gausser_q_q_1_1_field_element.html", "de/d99/struct_res_gausser_q_q_1_1_field_element" ]
-    ] ],
-    [ "res-gausser-ZZp.cpp", "df/dca/res-gausser-_z_zp_8cpp.html", null ],
-    [ "res-gausser-ZZp.hpp", "d5/d40/res-gausser-_z_zp_8hpp.html", [
-      [ "ResGausserZZp", "d5/de8/class_res_gausser_z_zp.html", "d5/de8/class_res_gausser_z_zp" ]
-    ] ],
-    [ "res-gausser.cpp", "de/d27/res-gausser_8cpp.html", null ],
-    [ "res-gausser.hpp", "d0/dbb/res-gausser_8hpp.html", "d0/dbb/res-gausser_8hpp" ],
     [ "res-memblock.hpp", "d1/d36/res-memblock_8hpp.html", [
-      [ "MemoryBlock", "d3/d57/class_memory_block.html", "d3/d57/class_memory_block" ],
-      [ "slab", "d5/d90/struct_memory_block_1_1slab.html", "d5/d90/struct_memory_block_1_1slab" ]
+      [ "ResMemoryBlock", "d9/d2f/class_res_memory_block.html", "d9/d2f/class_res_memory_block" ],
+      [ "slab", "d3/d86/struct_res_memory_block_1_1slab.html", "d3/d86/struct_res_memory_block_1_1slab" ]
     ] ],
     [ "res-moninfo-dense.cpp", "d8/dd0/res-moninfo-dense_8cpp.html", null ],
     [ "res-moninfo-dense.hpp", "d0/d58/res-moninfo-dense_8hpp.html", [
@@ -55,5 +41,6 @@ var dir_208df166e208656f2e3436240a4845e8 =
     [ "res-schreyer-frame.hpp", "df/dd9/res-schreyer-frame_8hpp.html", "df/dd9/res-schreyer-frame_8hpp" ],
     [ "res-schreyer-order.hpp", "d5/d7b/res-schreyer-order_8hpp.html", [
       [ "ResSchreyerOrder", "df/de7/struct_res_schreyer_order.html", "df/de7/struct_res_schreyer_order" ]
-    ] ]
+    ] ],
+    [ "res-tasking-example.cpp", "d0/dfb/res-tasking-example_8cpp.html", "d0/dfb/res-tasking-example_8cpp" ]
 ];

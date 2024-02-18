@@ -9,7 +9,7 @@ var structgb_a_1_1spair =
     [ "lcm", "df/deb/structgb_a_1_1spair_ae7e4e7d73304e53c397bae44a104c30c.html#ae7e4e7d73304e53c397bae44a104c30c", null ],
     [ "lead_of_spoly", "df/deb/structgb_a_1_1spair_a3131f9edd238fe3875744632137e84d1.html#a3131f9edd238fe3875744632137e84d1", null ],
     [ "next", "df/deb/structgb_a_1_1spair_a63af054141ecb87ea7628d4bb737d233.html#a63af054141ecb87ea7628d4bb737d233", null ],
-    [ "pair", "df/deb/structgb_a_1_1spair_a1007ee883f04a39be5860eeb43efcba4.html#a1007ee883f04a39be5860eeb43efcba4", null ],
+    [ "pair", "df/deb/structgb_a_1_1spair_a4b5f3f06522a34cedd97f722182c36eb.html#a4b5f3f06522a34cedd97f722182c36eb", null ],
     [ "type", "df/deb/structgb_a_1_1spair_abbad1085113eb96a786b77893d63e4f0.html#abbad1085113eb96a786b77893d63e4f0", null ],
-    [ "x", "df/deb/structgb_a_1_1spair_a97d5e97ca673daa83398d34f3d876332.html#a97d5e97ca673daa83398d34f3d876332", null ]
+    [ "x", "df/deb/structgb_a_1_1spair_a66c5e87bcd95b031f2c57022b59c6b4a.html#a66c5e87bcd95b031f2c57022b59c6b4a", null ]
 ];

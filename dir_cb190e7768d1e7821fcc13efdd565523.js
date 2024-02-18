@@ -21,9 +21,12 @@ var dir_cb190e7768d1e7821fcc13efdd565523 =
     [ "M2-replacement.c", "d7/dce/_m2-replacement_8c.html", "d7/dce/_m2-replacement_8c" ],
     [ "M2mem-replacement.c", "d9/df2/_m2mem-replacement_8c.html", "d9/df2/_m2mem-replacement_8c" ],
     [ "M2mem-replacement.h", "d1/d81/_m2mem-replacement_8h.html", "d1/d81/_m2mem-replacement_8h" ],
+    [ "MatrixIOTest.cpp", "de/d5f/_matrix_i_o_test_8cpp.html", "de/d5f/_matrix_i_o_test_8cpp" ],
     [ "MonoidTest.cpp", "d7/db1/_monoid_test_8cpp.html", "d7/db1/_monoid_test_8cpp" ],
     [ "NCGroebnerTest.cpp", "d2/dc0/_n_c_groebner_test_8cpp.html", "d2/dc0/_n_c_groebner_test_8cpp" ],
+    [ "NewF4Test.cpp", "d1/d26/_new_f4_test_8cpp.html", "d1/d26/_new_f4_test_8cpp" ],
     [ "PointArray.cpp", "df/db9/_point_array_8cpp.html", "df/db9/_point_array_8cpp" ],
+    [ "PolyRingTest.cpp", "d6/dfd/_poly_ring_test_8cpp.html", "d6/dfd/_poly_ring_test_8cpp" ],
     [ "ResTest.cpp", "db/d92/_res_test_8cpp.html", "db/d92/_res_test_8cpp" ],
     [ "RingCCCTest.cpp", "dd/d91/_ring_c_c_c_test_8cpp.html", "dd/d91/_ring_c_c_c_test_8cpp" ],
     [ "RingQQTest.cpp", "df/dc5/_ring_q_q_test_8cpp.html", "df/dc5/_ring_q_q_test_8cpp" ],
@@ -33,5 +36,7 @@ var dir_cb190e7768d1e7821fcc13efdd565523 =
     [ "RingZZpTest.cpp", "de/d85/_ring_z_zp_test_8cpp.html", "de/d85/_ring_z_zp_test_8cpp" ],
     [ "RingZZTest.cpp", "db/dc4/_ring_z_z_test_8cpp.html", "db/dc4/_ring_z_z_test_8cpp" ],
     [ "SubsetTest.cpp", "d8/da9/_subset_test_8cpp.html", "d8/da9/_subset_test_8cpp" ],
-    [ "testMain.cpp", "d7/de0/test_main_8cpp.html", "d7/de0/test_main_8cpp" ]
+    [ "testMain.cpp", "d7/de0/test_main_8cpp.html", "d7/de0/test_main_8cpp" ],
+    [ "util-polyring-creation.cpp", "d2/d70/util-polyring-creation_8cpp.html", "d2/d70/util-polyring-creation_8cpp" ],
+    [ "util-polyring-creation.hpp", "de/dcc/util-polyring-creation_8hpp.html", "de/dcc/util-polyring-creation_8hpp" ]
 ];

@@ -59,6 +59,8 @@ var interface_2matrix_8cpp =
     [ "rawMatrixContent", "d3/d2d/interface_2matrix_8cpp_a0fd9cceae119bc23cc9ad2b178c3e5f4.html#a0fd9cceae119bc23cc9ad2b178c3e5f4", null ],
     [ "rawMatrixHash", "d3/d2d/interface_2matrix_8cpp_a65cd3fecc2417de9663484a0ef4de5ab.html#a65cd3fecc2417de9663484a0ef4de5ab", null ],
     [ "rawMatrixIndices", "d3/d2d/interface_2matrix_8cpp_afde2a17804b835c624081fe42615e83f.html#afde2a17804b835c624081fe42615e83f", null ],
+    [ "rawMatrixReadMsolveFile", "d3/d2d/interface_2matrix_8cpp_a96275106c4513551dfe8dacc97520e5a.html#a96275106c4513551dfe8dacc97520e5a", null ],
+    [ "rawMatrixReadMsolveString", "d3/d2d/interface_2matrix_8cpp_ae25f5d1303bfe3a10b830560c0cb757e.html#ae25f5d1303bfe3a10b830560c0cb757e", null ],
     [ "rawMatrixRemoveContent", "d3/d2d/interface_2matrix_8cpp_a64ebc1cfa6892ff00d66612ba23499df.html#a64ebc1cfa6892ff00d66612ba23499df", null ],
     [ "rawMatrixSplitContent", "d3/d2d/interface_2matrix_8cpp_ad2eb99478d426e8865a6c0d6a9cd975f.html#ad2eb99478d426e8865a6c0d6a9cd975f", null ],
     [ "rawMinors", "d3/d2d/interface_2matrix_8cpp_a74234a3ba0449180c0fb01d60a37addb.html#a74234a3ba0449180c0fb01d60a37addb", null ],

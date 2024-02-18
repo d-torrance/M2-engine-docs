@@ -9,7 +9,7 @@ var groebner_8cpp =
     [ "IM2_GB_set_hilbert_function", "d2/dc8/groebner_8cpp_a05b610848729903c99c7a1f0dd02b40f.html#a05b610848729903c99c7a1f0dd02b40f", null ],
     [ "IM2_GB_to_string", "d2/dc8/groebner_8cpp_ad626063e5dd10fc77674b71759a3b2d8.html#ad626063e5dd10fc77674b71759a3b2d8", null ],
     [ "IM2_Matrix_Hilbert", "d2/dc8/groebner_8cpp_af82f5db01bd48bcd103a25ebef1111eb.html#af82f5db01bd48bcd103a25ebef1111eb", null ],
-    [ "IM2_res_make", "d2/dc8/groebner_8cpp_a571974630effae1788f26d3201163eb6.html#a571974630effae1788f26d3201163eb6", null ],
+    [ "IM2_res_make", "d2/dc8/groebner_8cpp_a8129f1327f65e6c62f9c06de3bd0f253.html#a8129f1327f65e6c62f9c06de3bd0f253", null ],
     [ "IM2_Resolution_status", "d2/dc8/groebner_8cpp_a70a0244d48cb9086599daab6bd621f0b.html#a70a0244d48cb9086599daab6bd621f0b", null ],
     [ "IM2_Resolution_status_level", "d2/dc8/groebner_8cpp_a33b1a0fcd06dcfdfbfc62c4cb2a98ee1.html#a33b1a0fcd06dcfdfbfc62c4cb2a98ee1", null ],
     [ "matrixToPolyList", "d2/dc8/groebner_8cpp_a0aa8b80f7b854fc14e87514e43ac1825.html#a0aa8b80f7b854fc14e87514e43ac1825", null ],

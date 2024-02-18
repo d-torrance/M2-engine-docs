@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Macaulay2 Engine: MemoryBlock&lt; T, NSLAB &gt; Class Template Reference</title>
+<title>Macaulay2 Engine: MemoryBlock Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -82,91 +82,51 @@ $(document).ready(function(){initNavTree('d3/d57/class_memory_block.html','../..
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d1/d95/class_memory_block-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MemoryBlock&lt; T, NSLAB &gt; Class Template Reference</div>  </div>
+<div class="title">MemoryBlock Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="../../df/d28/_memory_block_8hpp_source.html">MemoryBlock.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d90/struct_memory_block_1_1slab.html">slab</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa660d750815108d0cbb8059251b7b856"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_aa660d750815108d0cbb8059251b7b856.html#aa660d750815108d0cbb8059251b7b856">MemoryBlock</a> ()</td></tr>
-<tr class="separator:aa660d750815108d0cbb8059251b7b856"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9e31d7312c092debc072d4a68711ca8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_aa9e31d7312c092debc072d4a68711ca8.html#aa9e31d7312c092debc072d4a68711ca8">~MemoryBlock</a> ()</td></tr>
-<tr class="separator:aa9e31d7312c092debc072d4a68711ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4e5ade6f7482fafa0101dade03eb3db"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab4e5ade6f7482fafa0101dade03eb3db"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *, <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> * &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_ab4e5ade6f7482fafa0101dade03eb3db.html#ab4e5ade6f7482fafa0101dade03eb3db">allocateArray</a> (size_t nelems)</td></tr>
-<tr class="separator:ab4e5ade6f7482fafa0101dade03eb3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa64f3069660136719594b511c31b4cd8"><td class="memTemplParams" colspan="2">template&lt;typename T , typename MutexType &gt; </td></tr>
-<tr class="memitem:aa64f3069660136719594b511c31b4cd8"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *, <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> * &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_aa64f3069660136719594b511c31b4cd8.html#aa64f3069660136719594b511c31b4cd8">safeAllocateArray</a> (size_t nelems, MutexType &amp;mutex)</td></tr>
-<tr class="separator:aa64f3069660136719594b511c31b4cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74713bf7b9163e0fe296123da7af8567"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a74713bf7b9163e0fe296123da7af8567"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *, <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> * &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a74713bf7b9163e0fe296123da7af8567.html#a74713bf7b9163e0fe296123da7af8567">shrinkLastAllocate</a> (<a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *<a class="el" href="../../dd/dc9/ringelem_8hpp_a639d591014dd9e2ad7c63138054b173a.html#a639d591014dd9e2ad7c63138054b173a">begin</a>, <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *<a class="el" href="../../dd/dc9/ringelem_8hpp_aa8137d96f85c0cc9c8a37daee7716918.html#aa8137d96f85c0cc9c8a37daee7716918">end</a>, <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *newtop)</td></tr>
-<tr class="separator:a74713bf7b9163e0fe296123da7af8567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7c9b54bbf71f6ba3b97062f72dc0767"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa7c9b54bbf71f6ba3b97062f72dc0767"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_aa7c9b54bbf71f6ba3b97062f72dc0767.html#aa7c9b54bbf71f6ba3b97062f72dc0767">freeTopArray</a> (<a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *<a class="el" href="../../dd/dc9/ringelem_8hpp_a639d591014dd9e2ad7c63138054b173a.html#a639d591014dd9e2ad7c63138054b173a">begin</a>, <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *<a class="el" href="../../dd/dc9/ringelem_8hpp_aa8137d96f85c0cc9c8a37daee7716918.html#aa8137d96f85c0cc9c8a37daee7716918">end</a>)</td></tr>
-<tr class="separator:aa7c9b54bbf71f6ba3b97062f72dc0767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62539b8a02efacf0318ffb5c0c8f93c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a62539b8a02efacf0318ffb5c0c8f93c6.html#a62539b8a02efacf0318ffb5c0c8f93c6">deallocateAll</a> ()</td></tr>
-<tr class="separator:a62539b8a02efacf0318ffb5c0c8f93c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c76dc39bc6dd672c3c9d5e0d87d3e99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a5c76dc39bc6dd672c3c9d5e0d87d3e99.html#a5c76dc39bc6dd672c3c9d5e0d87d3e99">swap</a> (<a class="el" href="../../d3/d57/class_memory_block.html">MemoryBlock</a> &amp;source)</td></tr>
-<tr class="separator:a5c76dc39bc6dd672c3c9d5e0d87d3e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeac9f21ea01ef0162d4ae26ce06be485"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_aeac9f21ea01ef0162d4ae26ce06be485.html#aeac9f21ea01ef0162d4ae26ce06be485">getMemoryUsedInBytes</a> ()</td></tr>
-<tr class="separator:aeac9f21ea01ef0162d4ae26ce06be485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa660d750815108d0cbb8059251b7b856"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_aa660d750815108d0cbb8059251b7b856.html#aa660d750815108d0cbb8059251b7b856">MemoryBlock</a> ()</td></tr>
-<tr class="separator:aa660d750815108d0cbb8059251b7b856"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9e31d7312c092debc072d4a68711ca8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_aa9e31d7312c092debc072d4a68711ca8.html#aa9e31d7312c092debc072d4a68711ca8">~MemoryBlock</a> ()</td></tr>
-<tr class="separator:aa9e31d7312c092debc072d4a68711ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a788cf5973d411d28471810cb6bcf64c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a788cf5973d411d28471810cb6bcf64c6.html#a788cf5973d411d28471810cb6bcf64c6">reset</a> ()</td></tr>
-<tr class="separator:a788cf5973d411d28471810cb6bcf64c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad51976056b40939fa77462e365bb3b14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_ad51976056b40939fa77462e365bb3b14.html#ad51976056b40939fa77462e365bb3b14">reserve</a> (int len)</td></tr>
-<tr class="separator:ad51976056b40939fa77462e365bb3b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5498b3da20f6fec471d7e3bf793e89a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_ab5498b3da20f6fec471d7e3bf793e89a.html#ab5498b3da20f6fec471d7e3bf793e89a">intern</a> (int len)</td></tr>
-<tr class="separator:ab5498b3da20f6fec471d7e3bf793e89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb6dd57bc5ffa516ba18096d669df5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_affb6dd57bc5ffa516ba18096d669df5f.html#affb6dd57bc5ffa516ba18096d669df5f">allocate</a> (int len=1)</td></tr>
-<tr class="separator:affb6dd57bc5ffa516ba18096d669df5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c37a05a94e1cc4c115168eae0cf9013"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a6c37a05a94e1cc4c115168eae0cf9013.html#a6c37a05a94e1cc4c115168eae0cf9013">n_slabs</a> () const</td></tr>
-<tr class="separator:a6c37a05a94e1cc4c115168eae0cf9013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a708344d5923f12643ff7ae63191212d5"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a708344d5923f12643ff7ae63191212d5.html#a708344d5923f12643ff7ae63191212d5">memoryUsage</a> () const</td></tr>
-<tr class="separator:a708344d5923f12643ff7ae63191212d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ae4ffe7c0d25857c6b7912e5df07bdb6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d90/struct_memory_block_1_1slab.html">slab</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_ae4ffe7c0d25857c6b7912e5df07bdb6b.html#ae4ffe7c0d25857c6b7912e5df07bdb6b">new_slab</a> ()</td></tr>
-<tr class="separator:ae4ffe7c0d25857c6b7912e5df07bdb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a734af8678e5b969cfc2b10e3395c101a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a734af8678e5b969cfc2b10e3395c101a.html#a734af8678e5b969cfc2b10e3395c101a">MemoryBlock</a> ()</td></tr>
+<tr class="separator:a734af8678e5b969cfc2b10e3395c101a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af2edbe97a10dcf54f8b8b631d608ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a1af2edbe97a10dcf54f8b8b631d608ef.html#a1af2edbe97a10dcf54f8b8b631d608ef">~MemoryBlock</a> ()</td></tr>
+<tr class="separator:a1af2edbe97a10dcf54f8b8b631d608ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207fe24242c0fe6e4e3e20b07ee85b92"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a207fe24242c0fe6e4e3e20b07ee85b92"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *, <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> * &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a207fe24242c0fe6e4e3e20b07ee85b92.html#a207fe24242c0fe6e4e3e20b07ee85b92">allocateArray</a> (size_t nelems)</td></tr>
+<tr class="separator:a207fe24242c0fe6e4e3e20b07ee85b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2f39ccceefc702cf1b5fd6ee749a54"><td class="memTemplParams" colspan="2">template&lt;typename T , typename MutexType &gt; </td></tr>
+<tr class="memitem:abd2f39ccceefc702cf1b5fd6ee749a54"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *, <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> * &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_abd2f39ccceefc702cf1b5fd6ee749a54.html#abd2f39ccceefc702cf1b5fd6ee749a54">safeAllocateArray</a> (size_t nelems, MutexType &amp;mutex)</td></tr>
+<tr class="separator:abd2f39ccceefc702cf1b5fd6ee749a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60310ce228902074bcf8ba864e72e215"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a60310ce228902074bcf8ba864e72e215"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *, <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> * &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a60310ce228902074bcf8ba864e72e215.html#a60310ce228902074bcf8ba864e72e215">shrinkLastAllocate</a> (<a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *<a class="el" href="../../dd/dc9/ringelem_8hpp_a639d591014dd9e2ad7c63138054b173a.html#a639d591014dd9e2ad7c63138054b173a">begin</a>, <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *<a class="el" href="../../dd/dc9/ringelem_8hpp_aa8137d96f85c0cc9c8a37daee7716918.html#aa8137d96f85c0cc9c8a37daee7716918">end</a>, <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *newtop)</td></tr>
+<tr class="separator:a60310ce228902074bcf8ba864e72e215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a3ac120f1cf2669df90751df54a613"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a18a3ac120f1cf2669df90751df54a613"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a18a3ac120f1cf2669df90751df54a613.html#a18a3ac120f1cf2669df90751df54a613">freeTopArray</a> (<a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *<a class="el" href="../../dd/dc9/ringelem_8hpp_a639d591014dd9e2ad7c63138054b173a.html#a639d591014dd9e2ad7c63138054b173a">begin</a>, <a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *<a class="el" href="../../dd/dc9/ringelem_8hpp_aa8137d96f85c0cc9c8a37daee7716918.html#aa8137d96f85c0cc9c8a37daee7716918">end</a>)</td></tr>
+<tr class="separator:a18a3ac120f1cf2669df90751df54a613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f5505b4505d35f8a6ffec1ee8f44775"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a8f5505b4505d35f8a6ffec1ee8f44775.html#a8f5505b4505d35f8a6ffec1ee8f44775">deallocateAll</a> ()</td></tr>
+<tr class="separator:a8f5505b4505d35f8a6ffec1ee8f44775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d5314efc8480c058ac01e446c4a3aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_ab6d5314efc8480c058ac01e446c4a3aa.html#ab6d5314efc8480c058ac01e446c4a3aa">swap</a> (<a class="el" href="../../d3/d57/class_memory_block.html">MemoryBlock</a> &amp;source)</td></tr>
+<tr class="separator:ab6d5314efc8480c058ac01e446c4a3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a4919609ea4206fd3baff5589b8863"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a64a4919609ea4206fd3baff5589b8863.html#a64a4919609ea4206fd3baff5589b8863">getMemoryUsedInBytes</a> ()</td></tr>
+<tr class="separator:a64a4919609ea4206fd3baff5589b8863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a590609faef676004c58230ba99d16990"><td class="memItemLeft" align="right" valign="top">memt::Arena *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a590609faef676004c58230ba99d16990.html#a590609faef676004c58230ba99d16990">mArena</a></td></tr>
-<tr class="separator:a590609faef676004c58230ba99d16990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f43ec84193ded569b517ff2e923acb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d90/struct_memory_block_1_1slab.html">slab</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a6f43ec84193ded569b517ff2e923acb1.html#a6f43ec84193ded569b517ff2e923acb1">first_slab</a></td></tr>
-<tr class="separator:a6f43ec84193ded569b517ff2e923acb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c2125f20aa781e14be895760963c112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d90/struct_memory_block_1_1slab.html">slab</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a4c2125f20aa781e14be895760963c112.html#a4c2125f20aa781e14be895760963c112">current_slab</a></td></tr>
-<tr class="separator:a4c2125f20aa781e14be895760963c112"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57050cfa18c6d54d890c6ff50544cb34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d90/struct_memory_block_1_1slab.html">slab</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a57050cfa18c6d54d890c6ff50544cb34.html#a57050cfa18c6d54d890c6ff50544cb34">last_slab</a></td></tr>
-<tr class="separator:a57050cfa18c6d54d890c6ff50544cb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7313e4fb4dd7a62fe14cd1ce4b76485f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_a7313e4fb4dd7a62fe14cd1ce4b76485f.html#a7313e4fb4dd7a62fe14cd1ce4b76485f">next_free</a></td></tr>
-<tr class="separator:a7313e4fb4dd7a62fe14cd1ce4b76485f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb4a3aebbf9064b0889b67b3ad32794"><td class="memItemLeft" align="right" valign="top">memt::Arena *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d57/class_memory_block_aabb4a3aebbf9064b0889b67b3ad32794.html#aabb4a3aebbf9064b0889b67b3ad32794">mArena</a></td></tr>
+<tr class="separator:aabb4a3aebbf9064b0889b67b3ad32794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T, long int NSLAB = 4092&gt;<br />
-class MemoryBlock&lt; T, NSLAB &gt;</h3>
-
-
+<div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../df/d28/_memory_block_8hpp_source.html#l00008">8</a> of file <a class="el" href="../../df/d28/_memory_block_8hpp_source.html">MemoryBlock.hpp</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/<a class="el" href="../../df/d28/_memory_block_8hpp_source.html">MemoryBlock.hpp</a></li>
-<li>/home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/schreyer-resolution/<a class="el" href="../../d1/d36/res-memblock_8hpp_source.html">res-memblock.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -174,7 +134,7 @@ class MemoryBlock&lt; T, NSLAB &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d57/class_memory_block.html">MemoryBlock</a></li>
-    <li class="footer">Generated on Sun Feb 11 2024 01:21:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 18 2024 01:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
