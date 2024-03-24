@@ -1,6 +1,5 @@
 var NAVTREEINDEX42 =
 {
-"db/d22/class_m2_free_algebra_quotient_a2016fab63f86d8a69db24670a4e092b2.html#a2016fab63f86d8a69db24670a4e092b2":[6,0,155,8],
 "db/d22/class_m2_free_algebra_quotient_a2d3cf0e00b4205a119d4a13e99325f48.html#a2d3cf0e00b4205a119d4a13e99325f48":[6,0,155,35],
 "db/d22/class_m2_free_algebra_quotient_a32dad9657f9f20210e7207c4d3bae0cf.html#a32dad9657f9f20210e7207c4d3bae0cf":[6,0,155,25],
 "db/d22/class_m2_free_algebra_quotient_a33939aa142e42a277e02e468c6749e8c.html#a33939aa142e42a277e02e468c6749e8c":[6,0,155,18],
@@ -249,5 +248,6 @@ var NAVTREEINDEX42 =
 "db/d49/classs__pair__heap_aafdddf3c1118d0e1d40b35c40a0ec111.html#aafdddf3c1118d0e1d40b35c40a0ec111":[6,0,299,13],
 "db/d49/classs__pair__heap_acb3cdb742c9e8bf81a95034c1a1d3319.html#acb3cdb742c9e8bf81a95034c1a1d3319":[6,0,299,8],
 "db/d49/classs__pair__heap_acf24a45c88664772124db0f19a95862b.html#acf24a45c88664772124db0f19a95862b":[6,0,299,9],
-"db/d49/classs__pair__heap_ad1bfbe42c16ce537b7fdd6bb546ea6a6.html#ad1bfbe42c16ce537b7fdd6bb546ea6a6":[6,0,299,18]
+"db/d49/classs__pair__heap_ad1bfbe42c16ce537b7fdd6bb546ea6a6.html#ad1bfbe42c16ce537b7fdd6bb546ea6a6":[6,0,299,18],
+"db/d49/classs__pair__heap_ad21d7c44305095e8c2d1a3c583830acd.html#ad21d7c44305095e8c2d1a3c583830acd":[6,0,299,1]
 };

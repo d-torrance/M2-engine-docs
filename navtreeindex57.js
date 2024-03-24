@@ -1,6 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"df/ddb/class_monomial_ideal_a52d3340bbdcdaafa42d4d72b288ce853.html#a52d3340bbdcdaafa42d4d72b288ce853":[6,0,194,64],
 "df/ddb/class_monomial_ideal_a5a0f4a6440e0884f84e4cbfccf3b61f2.html#a5a0f4a6440e0884f84e4cbfccf3b61f2":[6,0,194,14],
 "df/ddb/class_monomial_ideal_a5fc6bf4e34132fb278f3bde7e7c352f8.html#a5fc6bf4e34132fb278f3bde7e7c352f8":[6,0,194,26],
 "df/ddb/class_monomial_ideal_a66d7abadb883e9da8d8415a45f49150f.html#a66d7abadb883e9da8d8415a45f49150f":[6,0,194,45],
@@ -156,8 +155,8 @@ var NAVTREEINDEX57 =
 "functions_p.html":[6,3,0,16],
 "functions_q.html":[6,3,0,17],
 "functions_r.html":[6,3,0,18],
-"functions_rela.html":[6,3,6,0],
 "functions_rela.html":[6,3,6],
+"functions_rela.html":[6,3,6,0],
 "functions_rela_b.html":[6,3,6,1],
 "functions_rela_c.html":[6,3,6,2],
 "functions_rela_d.html":[6,3,6,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX57 =
 "globals_func.html":[7,1,1,0],
 "globals_func.html":[7,1,1],
 "globals_func_b.html":[7,1,1,1],
-"globals_func_c.html":[7,1,1,2]
+"globals_func_c.html":[7,1,1,2],
+"globals_func_d.html":[7,1,1,3]
 };

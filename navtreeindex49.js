@@ -1,6 +1,5 @@
 var NAVTREEINDEX49 =
 {
-"dd/d9e/class_m2_1_1_a_ring_r_r_r_aaf965b6808adc141113c054a90314726.html#aaf965b6808adc141113c054a90314726":[4,0,14,43],
 "dd/d9e/class_m2_1_1_a_ring_r_r_r_ab40170dfb59003f6a6dcc529cb9e1fe9.html#ab40170dfb59003f6a6dcc529cb9e1fe9":[4,0,14,38],
 "dd/d9e/class_m2_1_1_a_ring_r_r_r_abaeb1c6555d57c90862daa017554fde8.html#abaeb1c6555d57c90862daa017554fde8":[4,0,14,4],
 "dd/d9e/class_m2_1_1_a_ring_r_r_r_abf54cc0809ebdffb2659d17d6e5f8f89.html#abf54cc0809ebdffb2659d17d6e5f8f89":[4,0,14,35],
@@ -249,5 +248,6 @@ var NAVTREEINDEX49 =
 "dd/dc9/class_poly_ring_quotient_a8420137204c8da5d6b10745e25e4db5e.html#a8420137204c8da5d6b10745e25e4db5e":[4,0,2,5,27],
 "dd/dc9/class_poly_ring_quotient_a8507e3d8142c5e828360cd44754f7d49.html#a8507e3d8142c5e828360cd44754f7d49":[4,0,2,5,47],
 "dd/dc9/class_poly_ring_quotient_a854c5c1cd3a4286efa4a439c8bcea812.html#a854c5c1cd3a4286efa4a439c8bcea812":[4,0,2,5,34],
-"dd/dc9/class_poly_ring_quotient_a878bdd4e9b4292ae178ec7089c1884c2.html#a878bdd4e9b4292ae178ec7089c1884c2":[4,0,2,5,63]
+"dd/dc9/class_poly_ring_quotient_a878bdd4e9b4292ae178ec7089c1884c2.html#a878bdd4e9b4292ae178ec7089c1884c2":[4,0,2,5,63],
+"dd/dc9/class_poly_ring_quotient_a8c8e3b1eebdc3acebc7eb9c773736fbd.html#a8c8e3b1eebdc3acebc7eb9c773736fbd":[4,0,2,5,7]
 };
