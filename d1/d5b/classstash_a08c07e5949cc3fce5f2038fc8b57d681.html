@@ -104,9 +104,10 @@ $(document).ready(function(){initNavTree('d1/d5b/classstash_a08c07e5949cc3fce5f2
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <a class="code" href="../../dc/d02/classslab.html">slab</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a> = <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a>-&gt;<a class="code" href="../../dc/d02/classslab_a0f7418588412caf4f807db4c1e07ecb1.html#a0f7418588412caf4f807db4c1e07ecb1">next</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      GC_FREE(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);  <span class="comment">// this dramatically improves our memory usage</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="comment">// printf(&quot;removed %p\n&quot;, p);</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// TODO: comment out all GC_FREE()s!?</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="comment">// printf(&quot;removed %p\n&quot;, p);</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="ttc" id="aclassslab_a0f7418588412caf4f807db4c1e07ecb1_html_a0f7418588412caf4f807db4c1e07ecb1"><div class="ttname"><a href="../../dc/d02/classslab_a0f7418588412caf4f807db4c1e07ecb1.html#a0f7418588412caf4f807db4c1e07ecb1">slab::next</a></div><div class="ttdeci">slab * next</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00040">mem.hpp:40</a></div></div>
 <div class="ttc" id="aclassslab_html"><div class="ttname"><a href="../../dc/d02/classslab.html">slab</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00036">mem.hpp:37</a></div></div>
 <div class="ttc" id="aclassstash_a56ac3888860dca8a3336554eb9757c9c_html_a56ac3888860dca8a3336554eb9757c9c"><div class="ttname"><a href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">stash::slabs</a></div><div class="ttdeci">slab * slabs</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00069">mem.hpp:69</a></div></div>
@@ -123,7 +124,7 @@ $(document).ready(function(){initNavTree('d1/d5b/classstash_a08c07e5949cc3fce5f2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d5b/classstash.html">stash</a></li>
-    <li class="footer">Generated on Sun May 5 2024 01:26:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun May 12 2024 01:33:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

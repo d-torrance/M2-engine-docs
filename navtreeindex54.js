@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"de/dcc/util-polyring-creation_8hpp_a552abe65eef90c23d13d55375579e1cf.html#a552abe65eef90c23d13d55375579e1cf":[7,0,0,0,7,38,4],
 "de/dcc/util-polyring-creation_8hpp_a60576699090679487e2fa704d3d3a01d.html#a60576699090679487e2fa704d3d3a01d":[7,0,0,0,7,38,2],
 "de/dcc/util-polyring-creation_8hpp_a631d21c8dbc3eaa7cdee634f363d36b5.html#a631d21c8dbc3eaa7cdee634f363d36b5":[7,0,0,0,7,38,3],
 "de/dcc/util-polyring-creation_8hpp_af9d63a9930dbf9e4121ecba5b8c7ea19.html#af9d63a9930dbf9e4121ecba5b8c7ea19":[7,0,0,0,7,38,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "df/d28/class_d_mat_iterator_abbe7c4c09df46820c24aecaa50ebad7e.html#abbe7c4c09df46820c24aecaa50ebad7e":[6,0,51,6],
 "df/d28/class_d_mat_iterator_abdb9682da618b2a39ebc62c9af53926f.html#abdb9682da618b2a39ebc62c9af53926f":[6,0,51,0],
 "df/d28/class_d_mat_iterator_af2099f8ecc656b48817d30f3fdc447c7.html#af2099f8ecc656b48817d30f3fdc447c7":[6,0,51,3],
-"df/d2c/classgb__emitter.html":[6,0,105],
-"df/d2c/classgb__emitter_a05b45c74bd4a31e787969ce46112b165.html#a05b45c74bd4a31e787969ce46112b165":[6,0,105,23]
+"df/d2c/classgb__emitter.html":[6,0,105]
 };

@@ -115,52 +115,52 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_aa0f1c7106ad176ddd967
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html#l01198">1198</a> of file <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html">gb-default.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;{</div>
-<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;  <span class="keywordflow">if</span> (ps == <span class="keyword">nullptr</span> || ps-&gt;next == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;  <span class="keywordflow">if</span> (len &lt;= 1) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;  <a class="code" href="../../d0/d91/classgb_a_a9a4a331e2d2a7b5a1ae53f986b69808f.html#a9a4a331e2d2a7b5a1ae53f986b69808f">spairs</a> a;  <span class="comment">// array of spair&#39;s</span></div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;  <a class="code" href="../../d0/d91/classgb_a_a9a4a331e2d2a7b5a1ae53f986b69808f.html#a9a4a331e2d2a7b5a1ae53f986b69808f">spairs</a> b;  <span class="comment">// these are the ones which are uncomputed, but whose lead_of_spoly</span></div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;             <span class="comment">// is 0.</span></div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;  a.reserve(len);</div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d5/dc0/structspair.html">spair</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = ps; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != <span class="keyword">nullptr</span>; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next)</div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;    {</div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;      <span class="keywordflow">if</span> ((<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;type &gt; SPAIR::SPAIR_SKEW) || <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;lead_of_spoly)</div>
-<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;        a.push_back(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;        b.push_back(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;    }</div>
-<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160; </div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;  <a class="code" href="../../d7/df0/class_s_poly_sorter.html">SPolySorter</a> SP(<a class="code" href="../../d0/d91/classgb_a_a247f12a87fe0a021e26161b6d7ffe13f.html#a247f12a87fe0a021e26161b6d7ffe13f">R</a>, <a class="code" href="../../d0/d91/classgb_a_a9b9ecd89b87835c4ec5c493eaf097021.html#a9b9ecd89b87835c4ec5c493eaf097021">_F</a>);</div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;  <span class="comment">//  QuickSorter&lt;SPolySorter&gt;::sort(&amp;SP,&amp;a[0],a.size());</span></div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;  std::stable_sort(a.begin(), a.end(), SP);</div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;  <span class="keywordtype">int</span> asize = <a class="code" href="../../d2/d6f/style_8hpp_ae9befcbff10f3a4ff986f206da609a90.html#ae9befcbff10f3a4ff986f206da609a90">INTSIZE</a>(a);</div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;  <span class="keywordtype">int</span> bsize = <a class="code" href="../../d2/d6f/style_8hpp_ae9befcbff10f3a4ff986f206da609a90.html#ae9befcbff10f3a4ff986f206da609a90">INTSIZE</a>(b);</div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160; </div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;  <span class="keywordflow">if</span> (asize &gt; 0)</div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;    {</div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;      ps = a[0];</div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; asize; i++) a[i - 1]-&gt;next = a[i];</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html#l01210">1210</a> of file <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html">gb-default.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;{</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;  <span class="keywordflow">if</span> (ps == <span class="keyword">nullptr</span> || ps-&gt;next == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;  <span class="keywordflow">if</span> (len &lt;= 1) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;  <a class="code" href="../../d0/d91/classgb_a_a9a4a331e2d2a7b5a1ae53f986b69808f.html#a9a4a331e2d2a7b5a1ae53f986b69808f">spairs</a> a;  <span class="comment">// array of spair&#39;s</span></div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;  <a class="code" href="../../d0/d91/classgb_a_a9a4a331e2d2a7b5a1ae53f986b69808f.html#a9a4a331e2d2a7b5a1ae53f986b69808f">spairs</a> b;  <span class="comment">// these are the ones which are uncomputed, but whose lead_of_spoly</span></div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;             <span class="comment">// is 0.</span></div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;  a.reserve(len);</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d5/dc0/structspair.html">spair</a> *<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = ps; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != <span class="keyword">nullptr</span>; <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next)</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;    {</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;      <span class="keywordflow">if</span> ((<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;type &gt; SPAIR::SPAIR_SKEW) || <a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;lead_of_spoly)</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;        a.push_back(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;        b.push_back(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
 <div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;    }</div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (bsize &gt; 0)</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;    {</div>
-<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;      ps = b[0];</div>
-<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;      <span class="comment">// debugging// fprintf(stderr, &quot;bsize is %d\n&quot;,bsize);</span></div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;    }</div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;    {</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;      ps = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    }</div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160; </div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;  <span class="keywordflow">if</span> (asize &gt; 0) a[asize - 1]-&gt;next = (bsize &gt; 0 ? b[0] : <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;  <span class="keywordflow">if</span> (bsize &gt; 0)</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160; </div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;  <a class="code" href="../../d7/df0/class_s_poly_sorter.html">SPolySorter</a> SP(<a class="code" href="../../d0/d91/classgb_a_a247f12a87fe0a021e26161b6d7ffe13f.html#a247f12a87fe0a021e26161b6d7ffe13f">R</a>, <a class="code" href="../../d0/d91/classgb_a_a9b9ecd89b87835c4ec5c493eaf097021.html#a9b9ecd89b87835c4ec5c493eaf097021">_F</a>);</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;  <span class="comment">//  QuickSorter&lt;SPolySorter&gt;::sort(&amp;SP,&amp;a[0],a.size());</span></div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;  std::stable_sort(a.begin(), a.end(), SP);</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;  <span class="keywordtype">int</span> asize = <a class="code" href="../../d2/d6f/style_8hpp_ae9befcbff10f3a4ff986f206da609a90.html#ae9befcbff10f3a4ff986f206da609a90">INTSIZE</a>(a);</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;  <span class="keywordtype">int</span> bsize = <a class="code" href="../../d2/d6f/style_8hpp_ae9befcbff10f3a4ff986f206da609a90.html#ae9befcbff10f3a4ff986f206da609a90">INTSIZE</a>(b);</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160; </div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;  <span class="keywordflow">if</span> (asize &gt; 0)</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;    {</div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;      ps = a[0];</div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; asize; i++) a[i - 1]-&gt;next = a[i];</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;    }</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (bsize &gt; 0)</div>
 <div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;    {</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; bsize; i++) b[i - 1]-&gt;next = b[i];</div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;      b[bsize - 1]-&gt;next = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;      ps = b[0];</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;      <span class="comment">// debugging// fprintf(stderr, &quot;bsize is %d\n&quot;,bsize);</span></div>
 <div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    }</div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;}</div>
-<div class="ttc" id="aclass_s_poly_sorter_html"><div class="ttname"><a href="../../d7/df0/class_s_poly_sorter.html">SPolySorter</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dd0/gb-default_8cpp_source.html#l00710">gb-default.cpp:711</a></div></div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;    {</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;      ps = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;    }</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160; </div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;  <span class="keywordflow">if</span> (asize &gt; 0) a[asize - 1]-&gt;next = (bsize &gt; 0 ? b[0] : <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;  <span class="keywordflow">if</span> (bsize &gt; 0)</div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;    {</div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; bsize; i++) b[i - 1]-&gt;next = b[i];</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;      b[bsize - 1]-&gt;next = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;    }</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;}</div>
+<div class="ttc" id="aclass_s_poly_sorter_html"><div class="ttname"><a href="../../d7/df0/class_s_poly_sorter.html">SPolySorter</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dd0/gb-default_8cpp_source.html#l00722">gb-default.cpp:723</a></div></div>
 <div class="ttc" id="aclassgb_a_a247f12a87fe0a021e26161b6d7ffe13f_html_a247f12a87fe0a021e26161b6d7ffe13f"><div class="ttname"><a href="../../d0/d91/classgb_a_a247f12a87fe0a021e26161b6d7ffe13f.html#a247f12a87fe0a021e26161b6d7ffe13f">gbA::R</a></div><div class="ttdeci">GBRing * R</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd0/gb-default_8hpp_source.html#l00127">gb-default.hpp:127</a></div></div>
 <div class="ttc" id="aclassgb_a_a9a4a331e2d2a7b5a1ae53f986b69808f_html_a9a4a331e2d2a7b5a1ae53f986b69808f"><div class="ttname"><a href="../../d0/d91/classgb_a_a9a4a331e2d2a7b5a1ae53f986b69808f.html#a9a4a331e2d2a7b5a1ae53f986b69808f">gbA::spairs</a></div><div class="ttdeci">gc_vector&lt; spair * &gt; spairs</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd0/gb-default_8hpp_source.html#l00093">gb-default.hpp:93</a></div></div>
 <div class="ttc" id="aclassgb_a_a9b9ecd89b87835c4ec5c493eaf097021_html_a9b9ecd89b87835c4ec5c493eaf097021"><div class="ttname"><a href="../../d0/d91/classgb_a_a9b9ecd89b87835c4ec5c493eaf097021.html#a9b9ecd89b87835c4ec5c493eaf097021">gbA::_F</a></div><div class="ttdeci">const FreeModule * _F</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd0/gb-default_8hpp_source.html#l00133">gb-default.hpp:133</a></div></div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_aa0f1c7106ad176ddd967
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d91/classgb_a.html">gbA</a></li>
-    <li class="footer">Generated on Sun May 5 2024 01:26:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun May 12 2024 01:33:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

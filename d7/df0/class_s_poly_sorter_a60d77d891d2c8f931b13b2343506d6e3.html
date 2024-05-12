@@ -115,42 +115,42 @@ $(document).ready(function(){initNavTree('d7/df0/class_s_poly_sorter_a60d77d891d
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html#l00720">720</a> of file <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html">gb-default.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  {</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="comment">// returns: LT if a &lt; b, EQ if a == b, GT if a &gt; b.</span></div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <span class="comment">/* Compare using degree, then type, then lead term of spoly */</span></div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="keywordtype">int</span> result;</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="keywordtype">int</span> cmp = a-&gt;deg - b-&gt;deg;</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    <span class="keywordflow">if</span> (cmp &lt; 0)</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;      result = <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (cmp &gt; 0)</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;      result = <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;      {</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *a1 =</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;            (a-&gt;type &gt; gbA::SPAIR::SPAIR_SKEW ? a-&gt;f() : a-&gt;lead_of_spoly);</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *b1 =</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;            (b-&gt;type &gt; gbA::SPAIR::SPAIR_SKEW ? b-&gt;f() : b-&gt;lead_of_spoly);</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <span class="keywordflow">if</span> (a1 == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;          {</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;            <span class="keywordflow">if</span> (b1 == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;              result = <a class="code" href="../../d2/d6f/style_8hpp_a0f0ab67e043160b4b46de33bff8bb59a.html#a0f0ab67e043160b4b46de33bff8bb59a">EQ</a>;</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;              result = <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;          }</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;          {</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;            <span class="keywordflow">if</span> (!b1)</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;              result = <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;              result = <a class="code" href="../../d7/df0/class_s_poly_sorter_aee02eb18cc78a77413fb37a6dc7d3541.html#aee02eb18cc78a77413fb37a6dc7d3541">R</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_ad01d89118af92f90a4fddc868207507d.html#ad01d89118af92f90a4fddc868207507d">gbvector_compare</a>(<a class="code" href="../../d7/df0/class_s_poly_sorter_a19fb736763672ca1df2872a10b7689e8.html#a19fb736763672ca1df2872a10b7689e8">F</a>, a1, b1);</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;          }</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;      }</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;  }</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html#l00732">732</a> of file <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html">gb-default.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;  {</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <span class="comment">// returns: LT if a &lt; b, EQ if a == b, GT if a &gt; b.</span></div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <span class="comment">/* Compare using degree, then type, then lead term of spoly */</span></div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    <span class="keywordtype">int</span> result;</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="keywordtype">int</span> cmp = a-&gt;deg - b-&gt;deg;</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    <span class="keywordflow">if</span> (cmp &lt; 0)</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;      result = <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (cmp &gt; 0)</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;      result = <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;      {</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *a1 =</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;            (a-&gt;type &gt; gbA::SPAIR::SPAIR_SKEW ? a-&gt;f() : a-&gt;lead_of_spoly);</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        <a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *b1 =</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;            (b-&gt;type &gt; gbA::SPAIR::SPAIR_SKEW ? b-&gt;f() : b-&gt;lead_of_spoly);</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        <span class="keywordflow">if</span> (a1 == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;          {</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;            <span class="keywordflow">if</span> (b1 == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;              result = <a class="code" href="../../d2/d6f/style_8hpp_a0f0ab67e043160b4b46de33bff8bb59a.html#a0f0ab67e043160b4b46de33bff8bb59a">EQ</a>;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;              result = <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;          }</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;          {</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;            <span class="keywordflow">if</span> (!b1)</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;              result = <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;              result = <a class="code" href="../../d7/df0/class_s_poly_sorter_aee02eb18cc78a77413fb37a6dc7d3541.html#aee02eb18cc78a77413fb37a6dc7d3541">R</a>-&gt;<a class="code" href="../../d8/d73/class_g_b_ring_ad01d89118af92f90a4fddc868207507d.html#ad01d89118af92f90a4fddc868207507d">gbvector_compare</a>(<a class="code" href="../../d7/df0/class_s_poly_sorter_a19fb736763672ca1df2872a10b7689e8.html#a19fb736763672ca1df2872a10b7689e8">F</a>, a1, b1);</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;          }</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;      }</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  }</div>
 <div class="ttc" id="aclass_g_b_ring_ad01d89118af92f90a4fddc868207507d_html_ad01d89118af92f90a4fddc868207507d"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_ad01d89118af92f90a4fddc868207507d.html#ad01d89118af92f90a4fddc868207507d">GBRing::gbvector_compare</a></div><div class="ttdeci">int gbvector_compare(const FreeModule *F, const gbvector *f, const gbvector *g) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00407">gbring.cpp:407</a></div></div>
-<div class="ttc" id="aclass_s_poly_sorter_a19fb736763672ca1df2872a10b7689e8_html_a19fb736763672ca1df2872a10b7689e8"><div class="ttname"><a href="../../d7/df0/class_s_poly_sorter_a19fb736763672ca1df2872a10b7689e8.html#a19fb736763672ca1df2872a10b7689e8">SPolySorter::F</a></div><div class="ttdeci">const FreeModule * F</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dd0/gb-default_8cpp_source.html#l00716">gb-default.cpp:716</a></div></div>
-<div class="ttc" id="aclass_s_poly_sorter_aee02eb18cc78a77413fb37a6dc7d3541_html_aee02eb18cc78a77413fb37a6dc7d3541"><div class="ttname"><a href="../../d7/df0/class_s_poly_sorter_aee02eb18cc78a77413fb37a6dc7d3541.html#aee02eb18cc78a77413fb37a6dc7d3541">SPolySorter::R</a></div><div class="ttdeci">GBRing * R</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dd0/gb-default_8cpp_source.html#l00717">gb-default.cpp:717</a></div></div>
+<div class="ttc" id="aclass_s_poly_sorter_a19fb736763672ca1df2872a10b7689e8_html_a19fb736763672ca1df2872a10b7689e8"><div class="ttname"><a href="../../d7/df0/class_s_poly_sorter_a19fb736763672ca1df2872a10b7689e8.html#a19fb736763672ca1df2872a10b7689e8">SPolySorter::F</a></div><div class="ttdeci">const FreeModule * F</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dd0/gb-default_8cpp_source.html#l00728">gb-default.cpp:728</a></div></div>
+<div class="ttc" id="aclass_s_poly_sorter_aee02eb18cc78a77413fb37a6dc7d3541_html_aee02eb18cc78a77413fb37a6dc7d3541"><div class="ttname"><a href="../../d7/df0/class_s_poly_sorter_aee02eb18cc78a77413fb37a6dc7d3541.html#aee02eb18cc78a77413fb37a6dc7d3541">SPolySorter::R</a></div><div class="ttdeci">GBRing * R</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dd0/gb-default_8cpp_source.html#l00729">gb-default.cpp:729</a></div></div>
 <div class="ttc" id="astructgbvector_html"><div class="ttname"><a href="../../d7/d40/structgbvector.html">gbvector</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00043">gbring.hpp:44</a></div></div>
 <div class="ttc" id="astyle_8hpp_a0f0ab67e043160b4b46de33bff8bb59a_html_a0f0ab67e043160b4b46de33bff8bb59a"><div class="ttname"><a href="../../d2/d6f/style_8hpp_a0f0ab67e043160b4b46de33bff8bb59a.html#a0f0ab67e043160b4b46de33bff8bb59a">EQ</a></div><div class="ttdeci">const int EQ</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d6f/style_8hpp_source.html#l00011">style.hpp:11</a></div></div>
 <div class="ttc" id="astyle_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd_html_a4b12cb41b0dc3083344493a1f6e5e8fd"><div class="ttname"><a href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a></div><div class="ttdeci">const int GT</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d6f/style_8hpp_source.html#l00012">style.hpp:12</a></div></div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('d7/df0/class_s_poly_sorter_a60d77d891d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/df0/class_s_poly_sorter.html">SPolySorter</a></li>
-    <li class="footer">Generated on Sun May 5 2024 01:26:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun May 12 2024 01:33:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

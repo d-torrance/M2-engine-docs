@@ -105,33 +105,33 @@ $(document).ready(function(){initNavTree('d1/d5b/classstash_a535ddb3dc11aa2361bb
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d6f/mem_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../d1/d6f/mem_8cpp_source.html">mem.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">//  o &lt;&lt; &quot;total space allocated from system = &quot; &lt;&lt; engine_allocated &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">//  o &lt;&lt; &quot;number of global delete&#39;s  = &quot; &lt;&lt; engine_dealloc &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">int</span> n = (<a class="code" href="../../dc/d02/classslab_a569561ac07bdefb1306cbaa89d3115eb.html#a569561ac07bdefb1306cbaa89d3115eb">slab::n_slabs</a> * <a class="code" href="../../d1/d2c/mem_8hpp_a465250e9be6282d14e8ddeea2d313036.html#a465250e9be6282d14e8ddeea2d313036">slab_size</a>) / 1024 +</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;          (<a class="code" href="../../d1/d6f/mem_8cpp_ac40af4ab7373fbb53821facc535224f2.html#ac40af4ab7373fbb53821facc535224f2">allocated_amount</a> - <a class="code" href="../../d1/d6f/mem_8cpp_a4ac3e2b884004fcae0a209537fb483c4.html#a4ac3e2b884004fcae0a209537fb483c4">deleted_amount</a>) / 1024;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  o &lt;&lt; <span class="stringliteral">&quot;size of each slab = &quot;</span> &lt;&lt; <span class="keyword">sizeof</span>(<a class="code" href="../../dc/d02/classslab.html">slab</a>) &lt;&lt; <a class="code" href="../../d7/dce/_m2-replacement_8c_a3e47bea989735dbc22688e1ee25ebe9c.html#a3e47bea989735dbc22688e1ee25ebe9c">newline</a>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  o &lt;&lt; <span class="stringliteral">&quot;total engine stash space allocated = &quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot;k&quot;</span> &lt;&lt; <a class="code" href="../../d7/dce/_m2-replacement_8c_a3e47bea989735dbc22688e1ee25ebe9c.html#a3e47bea989735dbc22688e1ee25ebe9c">newline</a>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">if</span> (n &gt; 0)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> N = 200;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordtype">char</span> s[N];</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      snprintf(s, N,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;              <span class="stringliteral">&quot;%16s %10s %10s %10s %10s %10s %10s %10s%s&quot;</span>,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;              <span class="stringliteral">&quot;stash&quot;</span>,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;              <span class="stringliteral">&quot;k total&quot;</span>,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;              <span class="stringliteral">&quot;k in use&quot;</span>,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;              <span class="stringliteral">&quot;size&quot;</span>,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;              <span class="stringliteral">&quot;nalloc&quot;</span>,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;              <span class="stringliteral">&quot;inuse&quot;</span>,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;              <span class="stringliteral">&quot;highwater&quot;</span>,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;              <span class="stringliteral">&quot;freed&quot;</span>,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;              <a class="code" href="../../d7/dce/_m2-replacement_8c_a3e47bea989735dbc22688e1ee25ebe9c.html#a3e47bea989735dbc22688e1ee25ebe9c">newline</a>);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      o &lt;&lt; s;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/d6f/mem_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../d1/d6f/mem_8cpp_source.html">mem.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">//  o &lt;&lt; &quot;total space allocated from system = &quot; &lt;&lt; engine_allocated &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="comment">//  o &lt;&lt; &quot;number of global delete&#39;s  = &quot; &lt;&lt; engine_dealloc &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">int</span> n = (<a class="code" href="../../dc/d02/classslab_a569561ac07bdefb1306cbaa89d3115eb.html#a569561ac07bdefb1306cbaa89d3115eb">slab::n_slabs</a> * <a class="code" href="../../d1/d2c/mem_8hpp_a465250e9be6282d14e8ddeea2d313036.html#a465250e9be6282d14e8ddeea2d313036">slab_size</a>) / 1024 +</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          (<a class="code" href="../../d1/d6f/mem_8cpp_ac40af4ab7373fbb53821facc535224f2.html#ac40af4ab7373fbb53821facc535224f2">allocated_amount</a> - <a class="code" href="../../d1/d6f/mem_8cpp_a4ac3e2b884004fcae0a209537fb483c4.html#a4ac3e2b884004fcae0a209537fb483c4">deleted_amount</a>) / 1024;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  o &lt;&lt; <span class="stringliteral">&quot;size of each slab = &quot;</span> &lt;&lt; <span class="keyword">sizeof</span>(<a class="code" href="../../dc/d02/classslab.html">slab</a>) &lt;&lt; <a class="code" href="../../d7/dce/_m2-replacement_8c_a3e47bea989735dbc22688e1ee25ebe9c.html#a3e47bea989735dbc22688e1ee25ebe9c">newline</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  o &lt;&lt; <span class="stringliteral">&quot;total engine stash space allocated = &quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot;k&quot;</span> &lt;&lt; <a class="code" href="../../d7/dce/_m2-replacement_8c_a3e47bea989735dbc22688e1ee25ebe9c.html#a3e47bea989735dbc22688e1ee25ebe9c">newline</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">if</span> (n &gt; 0)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> N = 200;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordtype">char</span> s[N];</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      snprintf(s, N,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;              <span class="stringliteral">&quot;%16s %10s %10s %10s %10s %10s %10s %10s%s&quot;</span>,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;              <span class="stringliteral">&quot;stash&quot;</span>,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;              <span class="stringliteral">&quot;k total&quot;</span>,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;              <span class="stringliteral">&quot;k in use&quot;</span>,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;              <span class="stringliteral">&quot;size&quot;</span>,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;              <span class="stringliteral">&quot;nalloc&quot;</span>,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;              <span class="stringliteral">&quot;inuse&quot;</span>,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;              <span class="stringliteral">&quot;highwater&quot;</span>,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;              <span class="stringliteral">&quot;freed&quot;</span>,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;              <a class="code" href="../../d7/dce/_m2-replacement_8c_a3e47bea989735dbc22688e1ee25ebe9c.html#a3e47bea989735dbc22688e1ee25ebe9c">newline</a>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      o &lt;&lt; s;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
 <div class="ttc" id="a_m2-replacement_8c_a3e47bea989735dbc22688e1ee25ebe9c_html_a3e47bea989735dbc22688e1ee25ebe9c"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_a3e47bea989735dbc22688e1ee25ebe9c.html#a3e47bea989735dbc22688e1ee25ebe9c">newline</a></div><div class="ttdeci">char newline[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00056">M2-replacement.c:56</a></div></div>
 <div class="ttc" id="aclassslab_a569561ac07bdefb1306cbaa89d3115eb_html_a569561ac07bdefb1306cbaa89d3115eb"><div class="ttname"><a href="../../dc/d02/classslab_a569561ac07bdefb1306cbaa89d3115eb.html#a569561ac07bdefb1306cbaa89d3115eb">slab::n_slabs</a></div><div class="ttdeci">static int n_slabs</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00039">mem.hpp:39</a></div></div>
 <div class="ttc" id="aclassslab_html"><div class="ttname"><a href="../../dc/d02/classslab.html">slab</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00036">mem.hpp:37</a></div></div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('d1/d5b/classstash_a535ddb3dc11aa2361bb
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d5b/classstash.html">stash</a></li>
-    <li class="footer">Generated on Sun May 5 2024 01:26:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun May 12 2024 01:33:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

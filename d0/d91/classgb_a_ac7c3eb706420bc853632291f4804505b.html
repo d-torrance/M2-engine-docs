@@ -106,17 +106,17 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_ac7c3eb706420bc853632
 
 <p>Implements <a class="el" href="../../de/ded/class_g_b_computation_a508c6a665c8c521b499cc8dc3397572b.html#a508c6a665c8c521b499cc8dc3397572b">GBComputation</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html#l02702">2702</a> of file <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html">gb-default.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l02703"></a><span class="lineno"> 2703</span>&#160;{</div>
-<div class="line"><a name="l02704"></a><span class="lineno"> 2704</span>&#160;  <span class="comment">// The (non-minimal) syzygy matrix</span></div>
-<div class="line"><a name="l02705"></a><span class="lineno"> 2705</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(<a class="code" href="../../d0/d91/classgb_a_a9d233579fcad54c428ec2d9c8646e53d.html#a9d233579fcad54c428ec2d9c8646e53d">_Fsyz</a>, 0);</div>
-<div class="line"><a name="l02706"></a><span class="lineno"> 2706</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d7/dfc/f4-types_8hpp_a815cded99317ca9be076dfb8b54268d4.html#a815cded99317ca9be076dfb8b54268d4">VECTOR</a>(<a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *)::iterator i = <a class="code" href="../../d0/d91/classgb_a_adfe1dca12fccba2078f4d42ff2a30b9f.html#adfe1dca12fccba2078f4d42ff2a30b9f">_syz</a>.begin(); i != <a class="code" href="../../d0/d91/classgb_a_adfe1dca12fccba2078f4d42ff2a30b9f.html#adfe1dca12fccba2078f4d42ff2a30b9f">_syz</a>.end(); i++)</div>
-<div class="line"><a name="l02707"></a><span class="lineno"> 2707</span>&#160;    <span class="keywordflow">if</span> (*i)</div>
-<div class="line"><a name="l02708"></a><span class="lineno"> 2708</span>&#160;      {</div>
-<div class="line"><a name="l02709"></a><span class="lineno"> 2709</span>&#160;        mat.append(<a class="code" href="../../d0/d91/classgb_a_a2aab2584b63f6fab46c5d0d1c13f3803.html#a2aab2584b63f6fab46c5d0d1c13f3803">originalR</a>-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_af7838479b74dec5bea68afd6e9daf300.html#af7838479b74dec5bea68afd6e9daf300">translate_gbvector_to_vec</a>(<a class="code" href="../../d0/d91/classgb_a_a9d233579fcad54c428ec2d9c8646e53d.html#a9d233579fcad54c428ec2d9c8646e53d">_Fsyz</a>, *i));</div>
-<div class="line"><a name="l02710"></a><span class="lineno"> 2710</span>&#160;      }</div>
-<div class="line"><a name="l02711"></a><span class="lineno"> 2711</span>&#160;  <span class="keywordflow">return</span> mat.to_matrix();</div>
-<div class="line"><a name="l02712"></a><span class="lineno"> 2712</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html#l02714">2714</a> of file <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html">gb-default.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l02715"></a><span class="lineno"> 2715</span>&#160;{</div>
+<div class="line"><a name="l02716"></a><span class="lineno"> 2716</span>&#160;  <span class="comment">// The (non-minimal) syzygy matrix</span></div>
+<div class="line"><a name="l02717"></a><span class="lineno"> 2717</span>&#160;  <a class="code" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(<a class="code" href="../../d0/d91/classgb_a_a9d233579fcad54c428ec2d9c8646e53d.html#a9d233579fcad54c428ec2d9c8646e53d">_Fsyz</a>, 0);</div>
+<div class="line"><a name="l02718"></a><span class="lineno"> 2718</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d7/dfc/f4-types_8hpp_a815cded99317ca9be076dfb8b54268d4.html#a815cded99317ca9be076dfb8b54268d4">VECTOR</a>(<a class="code" href="../../d7/d40/structgbvector.html">gbvector</a> *)::iterator i = <a class="code" href="../../d0/d91/classgb_a_adfe1dca12fccba2078f4d42ff2a30b9f.html#adfe1dca12fccba2078f4d42ff2a30b9f">_syz</a>.begin(); i != <a class="code" href="../../d0/d91/classgb_a_adfe1dca12fccba2078f4d42ff2a30b9f.html#adfe1dca12fccba2078f4d42ff2a30b9f">_syz</a>.end(); i++)</div>
+<div class="line"><a name="l02719"></a><span class="lineno"> 2719</span>&#160;    <span class="keywordflow">if</span> (*i)</div>
+<div class="line"><a name="l02720"></a><span class="lineno"> 2720</span>&#160;      {</div>
+<div class="line"><a name="l02721"></a><span class="lineno"> 2721</span>&#160;        mat.append(<a class="code" href="../../d0/d91/classgb_a_a2aab2584b63f6fab46c5d0d1c13f3803.html#a2aab2584b63f6fab46c5d0d1c13f3803">originalR</a>-&gt;<a class="code" href="../../d5/d58/class_polynomial_ring_af7838479b74dec5bea68afd6e9daf300.html#af7838479b74dec5bea68afd6e9daf300">translate_gbvector_to_vec</a>(<a class="code" href="../../d0/d91/classgb_a_a9d233579fcad54c428ec2d9c8646e53d.html#a9d233579fcad54c428ec2d9c8646e53d">_Fsyz</a>, *i));</div>
+<div class="line"><a name="l02722"></a><span class="lineno"> 2722</span>&#160;      }</div>
+<div class="line"><a name="l02723"></a><span class="lineno"> 2723</span>&#160;  <span class="keywordflow">return</span> mat.to_matrix();</div>
+<div class="line"><a name="l02724"></a><span class="lineno"> 2724</span>&#160;}</div>
 <div class="ttc" id="aclass_matrix_constructor_html"><div class="ttname"><a href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d80/matrix-con_8hpp_source.html#l00013">matrix-con.hpp:14</a></div></div>
 <div class="ttc" id="aclass_polynomial_ring_af7838479b74dec5bea68afd6e9daf300_html_af7838479b74dec5bea68afd6e9daf300"><div class="ttname"><a href="../../d5/d58/class_polynomial_ring_af7838479b74dec5bea68afd6e9daf300.html#af7838479b74dec5bea68afd6e9daf300">PolynomialRing::translate_gbvector_to_vec</a></div><div class="ttdeci">virtual vec translate_gbvector_to_vec(const FreeModule *F, const gbvector *v) const =0</div></div>
 <div class="ttc" id="aclassgb_a_a2aab2584b63f6fab46c5d0d1c13f3803_html_a2aab2584b63f6fab46c5d0d1c13f3803"><div class="ttname"><a href="../../d0/d91/classgb_a_a2aab2584b63f6fab46c5d0d1c13f3803.html#a2aab2584b63f6fab46c5d0d1c13f3803">gbA::originalR</a></div><div class="ttdeci">const PolynomialRing * originalR</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd0/gb-default_8hpp_source.html#l00126">gb-default.hpp:126</a></div></div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_ac7c3eb706420bc853632
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d91/classgb_a.html">gbA</a></li>
-    <li class="footer">Generated on Sun May 5 2024 01:26:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun May 12 2024 01:33:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

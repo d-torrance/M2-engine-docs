@@ -104,27 +104,27 @@ $(document).ready(function(){initNavTree('d1/d5b/classstash_a5949a8fdf217026140b
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d6f/mem_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d1/d6f/mem_8cpp_source.html">mem.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">// grab a new slab, and chop it into element_size pieces, placing them</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// onto the free list.</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="../../dc/d02/classslab.html">slab</a> *new_slab = <span class="keyword">new</span> <a class="code" href="../../dc/d02/classslab.html">slab</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  new_slab-&gt;<a class="code" href="../../dc/d02/classslab_a0f7418588412caf4f807db4c1e07ecb1.html#a0f7418588412caf4f807db4c1e07ecb1">next</a> = <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a> = new_slab;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// Time to chop it up.</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">char</span> *prev = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">char</span> *current = <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a>-&gt;<a class="code" href="../../dc/d02/classslab_a732031f976ecea45e711378c3196331f.html#a732031f976ecea45e711378c3196331f">s</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d1/d5b/classstash_a17742f50b5d7de4db6bc915baa510b79.html#a17742f50b5d7de4db6bc915baa510b79">n_per_slab</a>; i++)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      *(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span> **<span class="keyword">&gt;</span>(current)) = prev;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      prev = current;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      current += <a class="code" href="../../d1/d5b/classstash_af00c0293f029f6e0e62bf712438b3ec9.html#af00c0293f029f6e0e62bf712438b3ec9">element_size</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="../../d1/d5b/classstash_a6295f7881b66b9105f4c18e3b88ace60.html#a6295f7881b66b9105f4c18e3b88ace60">free_list</a> = prev;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/d6f/mem_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d1/d6f/mem_8cpp_source.html">mem.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// grab a new slab, and chop it into element_size pieces, placing them</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="comment">// onto the free list.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="../../dc/d02/classslab.html">slab</a> *new_slab = <span class="keyword">new</span> <a class="code" href="../../dc/d02/classslab.html">slab</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  new_slab-&gt;<a class="code" href="../../dc/d02/classslab_a0f7418588412caf4f807db4c1e07ecb1.html#a0f7418588412caf4f807db4c1e07ecb1">next</a> = <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a> = new_slab;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="comment">// Time to chop it up.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">char</span> *prev = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">char</span> *current = <a class="code" href="../../d1/d5b/classstash_a56ac3888860dca8a3336554eb9757c9c.html#a56ac3888860dca8a3336554eb9757c9c">slabs</a>-&gt;<a class="code" href="../../dc/d02/classslab_a732031f976ecea45e711378c3196331f.html#a732031f976ecea45e711378c3196331f">s</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d1/d5b/classstash_a17742f50b5d7de4db6bc915baa510b79.html#a17742f50b5d7de4db6bc915baa510b79">n_per_slab</a>; i++)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      *(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span> **<span class="keyword">&gt;</span>(current)) = prev;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      prev = current;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      current += <a class="code" href="../../d1/d5b/classstash_af00c0293f029f6e0e62bf712438b3ec9.html#af00c0293f029f6e0e62bf712438b3ec9">element_size</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="../../d1/d5b/classstash_a6295f7881b66b9105f4c18e3b88ace60.html#a6295f7881b66b9105f4c18e3b88ace60">free_list</a> = prev;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 <div class="ttc" id="aclassslab_a0f7418588412caf4f807db4c1e07ecb1_html_a0f7418588412caf4f807db4c1e07ecb1"><div class="ttname"><a href="../../dc/d02/classslab_a0f7418588412caf4f807db4c1e07ecb1.html#a0f7418588412caf4f807db4c1e07ecb1">slab::next</a></div><div class="ttdeci">slab * next</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00040">mem.hpp:40</a></div></div>
 <div class="ttc" id="aclassslab_a732031f976ecea45e711378c3196331f_html_a732031f976ecea45e711378c3196331f"><div class="ttname"><a href="../../dc/d02/classslab_a732031f976ecea45e711378c3196331f.html#a732031f976ecea45e711378c3196331f">slab::s</a></div><div class="ttdeci">char s[slab_size]</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00041">mem.hpp:41</a></div></div>
 <div class="ttc" id="aclassslab_html"><div class="ttname"><a href="../../dc/d02/classslab.html">slab</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00036">mem.hpp:37</a></div></div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('d1/d5b/classstash_a5949a8fdf217026140b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d5b/classstash.html">stash</a></li>
-    <li class="footer">Generated on Sun May 5 2024 01:26:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun May 12 2024 01:33:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

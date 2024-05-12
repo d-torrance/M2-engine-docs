@@ -97,13 +97,13 @@ $(document).ready(function(){initNavTree('da/d01/classdoubling__stash_af3d73df22
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d6f/mem_8cpp_source.html#l00164">164</a> of file <a class="el" href="../../d1/d6f/mem_8cpp_source.html">mem.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">int</span> *q = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">int</span> *<span class="keyword">&gt;</span>(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  assert(q[-1] &gt;= 0);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  assert(q[-1] &lt;= <a class="code" href="../../d1/d2c/mem_8hpp_a68f338430f08beb25d341e25ad038cbf.html#a68f338430f08beb25d341e25ad038cbf">NDOUBLES</a>);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../da/d01/classdoubling__stash_a8a336d1fc410b984768e913f041600a3.html#a8a336d1fc410b984768e913f041600a3">double_size</a>[q[-1]];</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/d6f/mem_8cpp_source.html#l00165">165</a> of file <a class="el" href="../../d1/d6f/mem_8cpp_source.html">mem.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">int</span> *q = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">int</span> *<span class="keyword">&gt;</span>(<a class="code" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  assert(q[-1] &gt;= 0);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  assert(q[-1] &lt;= <a class="code" href="../../d1/d2c/mem_8hpp_a68f338430f08beb25d341e25ad038cbf.html#a68f338430f08beb25d341e25ad038cbf">NDOUBLES</a>);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../da/d01/classdoubling__stash_a8a336d1fc410b984768e913f041600a3.html#a8a336d1fc410b984768e913f041600a3">double_size</a>[q[-1]];</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
 <div class="ttc" id="aclassdoubling__stash_a8a336d1fc410b984768e913f041600a3_html_a8a336d1fc410b984768e913f041600a3"><div class="ttname"><a href="../../da/d01/classdoubling__stash_a8a336d1fc410b984768e913f041600a3.html#a8a336d1fc410b984768e913f041600a3">doubling_stash::double_size</a></div><div class="ttdeci">size_t double_size[NDOUBLES]</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00172">mem.hpp:172</a></div></div>
 <div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 <div class="ttc" id="amem_8hpp_a68f338430f08beb25d341e25ad038cbf_html_a68f338430f08beb25d341e25ad038cbf"><div class="ttname"><a href="../../d1/d2c/mem_8hpp_a68f338430f08beb25d341e25ad038cbf.html#a68f338430f08beb25d341e25ad038cbf">NDOUBLES</a></div><div class="ttdeci">const int NDOUBLES</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00012">mem.hpp:12</a></div></div>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('da/d01/classdoubling__stash_af3d73df22
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d01/classdoubling__stash.html">doubling_stash</a></li>
-    <li class="footer">Generated on Sun May 5 2024 01:26:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun May 12 2024 01:33:26 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

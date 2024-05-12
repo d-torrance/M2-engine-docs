@@ -107,34 +107,34 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_aeade4f35ce1d6fca91e9
 
 <p>Reimplemented from <a class="el" href="../../de/ded/class_g_b_computation_a06654fcd4834e0599e4b6b3d58d3d81e.html#a06654fcd4834e0599e4b6b3d58d3d81e">GBComputation</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html#l02650">2650</a> of file <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html">gb-default.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l02651"></a><span class="lineno"> 2651</span>&#160;{</div>
-<div class="line"><a name="l02652"></a><span class="lineno"> 2652</span>&#160;  <span class="comment">// TODO Problems here:</span></div>
-<div class="line"><a name="l02653"></a><span class="lineno"> 2653</span>&#160;  <span class="comment">//  -- check that the ring is correct</span></div>
-<div class="line"><a name="l02654"></a><span class="lineno"> 2654</span>&#160;  <span class="comment">//  -- if the computation has already been started, this will fail</span></div>
-<div class="line"><a name="l02655"></a><span class="lineno"> 2655</span>&#160;  <span class="comment">//     So probably an error should be given, and 0 returned in this case.</span></div>
-<div class="line"><a name="l02656"></a><span class="lineno"> 2656</span>&#160; </div>
-<div class="line"><a name="l02657"></a><span class="lineno"> 2657</span>&#160;  <span class="comment">// We may only use the Hilbert function if syzygies are not being collected</span></div>
-<div class="line"><a name="l02658"></a><span class="lineno"> 2658</span>&#160;  <span class="comment">// since otherwise we will miss syzygies</span></div>
-<div class="line"><a name="l02659"></a><span class="lineno"> 2659</span>&#160; </div>
-<div class="line"><a name="l02660"></a><span class="lineno"> 2660</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d0/d91/classgb_a_aacdce60ff460b5d1c1dc31751d7e6e4a.html#aacdce60ff460b5d1c1dc31751d7e6e4a">over_ZZ</a>())</div>
-<div class="line"><a name="l02661"></a><span class="lineno"> 2661</span>&#160;    {</div>
-<div class="line"><a name="l02662"></a><span class="lineno"> 2662</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
-<div class="line"><a name="l02663"></a><span class="lineno"> 2663</span>&#160;          <span class="stringliteral">&quot;cannot use Hilbert function for Groebner basis computation over the &quot;</span></div>
-<div class="line"><a name="l02664"></a><span class="lineno"> 2664</span>&#160;          <span class="stringliteral">&quot;integers&quot;</span>);</div>
-<div class="line"><a name="l02665"></a><span class="lineno"> 2665</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l02666"></a><span class="lineno"> 2666</span>&#160;    }</div>
-<div class="line"><a name="l02667"></a><span class="lineno"> 2667</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="../../d0/d91/classgb_a_aa46a505c56693b6f6050974ec3249541.html#aa46a505c56693b6f6050974ec3249541">_collect_syz</a>)</div>
-<div class="line"><a name="l02668"></a><span class="lineno"> 2668</span>&#160;    {</div>
-<div class="line"><a name="l02669"></a><span class="lineno"> 2669</span>&#160;      <a class="code" href="../../d0/d91/classgb_a_afc4426a55ea9d37a89a50d79e58729a0.html#afc4426a55ea9d37a89a50d79e58729a0">hf_orig</a> = hf;</div>
-<div class="line"><a name="l02670"></a><span class="lineno"> 2670</span>&#160;      <a class="code" href="../../d0/d91/classgb_a_abd2c8b235d2ae0b573e3afb019ddbfa6.html#abd2c8b235d2ae0b573e3afb019ddbfa6">hf_diff</a> = <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(hf-&gt;get_ring(), <a class="code" href="../../db/d10/ring_8hpp_afc4022fa228930d460b6d19e3988ddf6.html#afc4022fa228930d460b6d19e3988ddf6">ZERO_RINGELEM</a>);</div>
-<div class="line"><a name="l02671"></a><span class="lineno"> 2671</span>&#160;      <a class="code" href="../../d0/d91/classgb_a_a746d97042b3e465f1559b2c5d5e89c20.html#a746d97042b3e465f1559b2c5d5e89c20">use_hilb</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l02672"></a><span class="lineno"> 2672</span>&#160;      <a class="code" href="../../d0/d91/classgb_a_aa66fbe20cf19411bd0a37ef32dba587d.html#aa66fbe20cf19411bd0a37ef32dba587d">hilb_new_elems</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l02673"></a><span class="lineno"> 2673</span>&#160;      <a class="code" href="../../d0/d91/classgb_a_a666a507d3128ae3e644b11faba5b12fc.html#a666a507d3128ae3e644b11faba5b12fc">state</a> = <a class="code" href="../../d0/d91/classgb_a_a768de36fb5bdf86987d2e9d25f0001cd.html#a768de36fb5bdf86987d2e9d25f0001cda2bd91f293d677b04b0dea243b9eeddea">STATE_HILB</a>;</div>
-<div class="line"><a name="l02674"></a><span class="lineno"> 2674</span>&#160;    }</div>
-<div class="line"><a name="l02675"></a><span class="lineno"> 2675</span>&#160; </div>
-<div class="line"><a name="l02676"></a><span class="lineno"> 2676</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l02677"></a><span class="lineno"> 2677</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html#l02662">2662</a> of file <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html">gb-default.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l02663"></a><span class="lineno"> 2663</span>&#160;{</div>
+<div class="line"><a name="l02664"></a><span class="lineno"> 2664</span>&#160;  <span class="comment">// TODO Problems here:</span></div>
+<div class="line"><a name="l02665"></a><span class="lineno"> 2665</span>&#160;  <span class="comment">//  -- check that the ring is correct</span></div>
+<div class="line"><a name="l02666"></a><span class="lineno"> 2666</span>&#160;  <span class="comment">//  -- if the computation has already been started, this will fail</span></div>
+<div class="line"><a name="l02667"></a><span class="lineno"> 2667</span>&#160;  <span class="comment">//     So probably an error should be given, and 0 returned in this case.</span></div>
+<div class="line"><a name="l02668"></a><span class="lineno"> 2668</span>&#160; </div>
+<div class="line"><a name="l02669"></a><span class="lineno"> 2669</span>&#160;  <span class="comment">// We may only use the Hilbert function if syzygies are not being collected</span></div>
+<div class="line"><a name="l02670"></a><span class="lineno"> 2670</span>&#160;  <span class="comment">// since otherwise we will miss syzygies</span></div>
+<div class="line"><a name="l02671"></a><span class="lineno"> 2671</span>&#160; </div>
+<div class="line"><a name="l02672"></a><span class="lineno"> 2672</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d0/d91/classgb_a_aacdce60ff460b5d1c1dc31751d7e6e4a.html#aacdce60ff460b5d1c1dc31751d7e6e4a">over_ZZ</a>())</div>
+<div class="line"><a name="l02673"></a><span class="lineno"> 2673</span>&#160;    {</div>
+<div class="line"><a name="l02674"></a><span class="lineno"> 2674</span>&#160;      <a class="code" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
+<div class="line"><a name="l02675"></a><span class="lineno"> 2675</span>&#160;          <span class="stringliteral">&quot;cannot use Hilbert function for Groebner basis computation over the &quot;</span></div>
+<div class="line"><a name="l02676"></a><span class="lineno"> 2676</span>&#160;          <span class="stringliteral">&quot;integers&quot;</span>);</div>
+<div class="line"><a name="l02677"></a><span class="lineno"> 2677</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l02678"></a><span class="lineno"> 2678</span>&#160;    }</div>
+<div class="line"><a name="l02679"></a><span class="lineno"> 2679</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="../../d0/d91/classgb_a_aa46a505c56693b6f6050974ec3249541.html#aa46a505c56693b6f6050974ec3249541">_collect_syz</a>)</div>
+<div class="line"><a name="l02680"></a><span class="lineno"> 2680</span>&#160;    {</div>
+<div class="line"><a name="l02681"></a><span class="lineno"> 2681</span>&#160;      <a class="code" href="../../d0/d91/classgb_a_afc4426a55ea9d37a89a50d79e58729a0.html#afc4426a55ea9d37a89a50d79e58729a0">hf_orig</a> = hf;</div>
+<div class="line"><a name="l02682"></a><span class="lineno"> 2682</span>&#160;      <a class="code" href="../../d0/d91/classgb_a_abd2c8b235d2ae0b573e3afb019ddbfa6.html#abd2c8b235d2ae0b573e3afb019ddbfa6">hf_diff</a> = <a class="code" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(hf-&gt;get_ring(), <a class="code" href="../../db/d10/ring_8hpp_afc4022fa228930d460b6d19e3988ddf6.html#afc4022fa228930d460b6d19e3988ddf6">ZERO_RINGELEM</a>);</div>
+<div class="line"><a name="l02683"></a><span class="lineno"> 2683</span>&#160;      <a class="code" href="../../d0/d91/classgb_a_a746d97042b3e465f1559b2c5d5e89c20.html#a746d97042b3e465f1559b2c5d5e89c20">use_hilb</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l02684"></a><span class="lineno"> 2684</span>&#160;      <a class="code" href="../../d0/d91/classgb_a_aa66fbe20cf19411bd0a37ef32dba587d.html#aa66fbe20cf19411bd0a37ef32dba587d">hilb_new_elems</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l02685"></a><span class="lineno"> 2685</span>&#160;      <a class="code" href="../../d0/d91/classgb_a_a666a507d3128ae3e644b11faba5b12fc.html#a666a507d3128ae3e644b11faba5b12fc">state</a> = <a class="code" href="../../d0/d91/classgb_a_a768de36fb5bdf86987d2e9d25f0001cd.html#a768de36fb5bdf86987d2e9d25f0001cda2bd91f293d677b04b0dea243b9eeddea">STATE_HILB</a>;</div>
+<div class="line"><a name="l02686"></a><span class="lineno"> 2686</span>&#160;    }</div>
+<div class="line"><a name="l02687"></a><span class="lineno"> 2687</span>&#160; </div>
+<div class="line"><a name="l02688"></a><span class="lineno"> 2688</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l02689"></a><span class="lineno"> 2689</span>&#160;}</div>
 <div class="ttc" id="aclass_ring_element_ab978463e39096a4e0d1ecc0720f9acf3_html_ab978463e39096a4e0d1ecc0720f9acf3"><div class="ttname"><a href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a></div><div class="ttdeci">static RingElement * make_raw(const Ring *R, ring_elem f)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00020">relem.cpp:20</a></div></div>
 <div class="ttc" id="aclassgb_a_a666a507d3128ae3e644b11faba5b12fc_html_a666a507d3128ae3e644b11faba5b12fc"><div class="ttname"><a href="../../d0/d91/classgb_a_a666a507d3128ae3e644b11faba5b12fc.html#a666a507d3128ae3e644b11faba5b12fc">gbA::state</a></div><div class="ttdeci">enum gbA::gbA_state state</div></div>
 <div class="ttc" id="aclassgb_a_a746d97042b3e465f1559b2c5d5e89c20_html_a746d97042b3e465f1559b2c5d5e89c20"><div class="ttname"><a href="../../d0/d91/classgb_a_a746d97042b3e465f1559b2c5d5e89c20.html#a746d97042b3e465f1559b2c5d5e89c20">gbA::use_hilb</a></div><div class="ttdeci">bool use_hilb</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd0/gb-default_8hpp_source.html#l00204">gb-default.hpp:204</a></div></div>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_aeade4f35ce1d6fca91e9
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d91/classgb_a.html">gbA</a></li>
-    <li class="footer">Generated on Sun May 5 2024 01:26:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun May 12 2024 01:33:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
