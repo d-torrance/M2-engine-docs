@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"d3/d2d/interface_2matrix_8cpp_a32a38b6b0213faf7b604aba4606729d7.html#a32a38b6b0213faf7b604aba4606729d7":[7,0,0,0,3,14,1],
 "d3/d2d/interface_2matrix_8cpp_a3349b8da15c4b2047196a5b88ced5b1f.html#a3349b8da15c4b2047196a5b88ced5b1f":[7,0,0,0,3,14,87],
 "d3/d2d/interface_2matrix_8cpp_a35253422a48b27005862a9019d5023ba.html#a35253422a48b27005862a9019d5023ba":[7,0,0,0,3,14,25],
 "d3/d2d/interface_2matrix_8cpp_a36ebaecd7dfcbae9d5e1c782e30cd2a8.html#a36ebaecd7dfcbae9d5e1c782e30cd2a8":[7,0,0,0,3,14,71],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "d3/d60/monomial-collection_8hpp_ae2d5a7b8a878b1841b7fedcacd32d1b3.html#ae2d5a7b8a878b1841b7fedcacd32d1b3":[7,0,0,0,205,8],
 "d3/d60/monomial-collection_8hpp_source.html":[7,0,0,0,205],
 "d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator.html":[6,0,0,2,1],
-"d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_a2944f63a276095cedddc57e9c42f425b.html#a2944f63a276095cedddc57e9c42f425b":[6,0,0,2,1,4]
+"d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_a2944f63a276095cedddc57e9c42f425b.html#a2944f63a276095cedddc57e9c42f425b":[6,0,0,2,1,4],
+"d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_a3beb7640ffa1e3bc33a43b48ab13a1d3.html#a3beb7640ffa1e3bc33a43b48ab13a1d3":[6,0,0,2,1,14]
 };

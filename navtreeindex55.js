@@ -1,6 +1,5 @@
 var NAVTREEINDEX55 =
 {
-"df/d2c/classgb__emitter_a05b45c74bd4a31e787969ce46112b165.html#a05b45c74bd4a31e787969ce46112b165":[6,0,105,23],
 "df/d2c/classgb__emitter_a05e45e7a379e22443dcb18119a264d96.html#a05e45e7a379e22443dcb18119a264d96":[6,0,105,17],
 "df/d2c/classgb__emitter_a09f41fbab91f4a6057ba9d206197e600.html#a09f41fbab91f4a6057ba9d206197e600":[6,0,105,24],
 "df/d2c/classgb__emitter_a0e4c02f043399bc7d2f48360412ae6e2.html#a0e4c02f043399bc7d2f48360412ae6e2":[6,0,105,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX55 =
 "df/da2/class_schur_ring2_a9419fe89d46278fd4d43b1191789fc06.html#a9419fe89d46278fd4d43b1191789fc06":[6,0,308,21],
 "df/da2/class_schur_ring2_a95ae973a06c17d405b0aae389acc7ef0.html#a95ae973a06c17d405b0aae389acc7ef0":[6,0,308,59],
 "df/da2/class_schur_ring2_a9d21e6fafb111403d0155bff97178077.html#a9d21e6fafb111403d0155bff97178077":[6,0,308,0],
-"df/da2/class_schur_ring2_a9d89f6c3f4ff7d006766898b101f3afe.html#a9d89f6c3f4ff7d006766898b101f3afe":[6,0,308,29]
+"df/da2/class_schur_ring2_a9d89f6c3f4ff7d006766898b101f3afe.html#a9d89f6c3f4ff7d006766898b101f3afe":[6,0,308,29],
+"df/da2/class_schur_ring2_aa17a068539e000c734b0cdac5b600307.html#aa17a068539e000c734b0cdac5b600307":[6,0,308,44]
 };

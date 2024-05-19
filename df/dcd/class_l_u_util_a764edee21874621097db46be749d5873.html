@@ -117,21 +117,21 @@ template&lt;class RingType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d7d/dmat-lu-inplace_8hpp_source.html#l00434">434</a> of file <a class="el" href="../../d0/d7d/dmat-lu-inplace_8hpp_source.html">dmat-lu-inplace.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;{</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  result_columns.clear();</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  <span class="keywordtype">size_t</span> thiscol = 0;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="keywordtype">size_t</span> thisrow = 0;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keywordflow">while</span> (thisrow &lt; <a class="code" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numRows() and thiscol &lt; <a class="code" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns())</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    {</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;      <span class="keywordflow">if</span> (not <a class="code" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.ring().is_zero(<a class="code" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.entry(thisrow, thiscol)))</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        {</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;          result_columns.push_back(thiscol);</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;          thisrow++;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        }</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;      thiscol++;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    }</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d7d/dmat-lu-inplace_8hpp_source.html#l00440">440</a> of file <a class="el" href="../../d0/d7d/dmat-lu-inplace_8hpp_source.html">dmat-lu-inplace.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;{</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  result_columns.clear();</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <span class="keywordtype">size_t</span> thiscol = 0;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordtype">size_t</span> thisrow = 0;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <span class="keywordflow">while</span> (thisrow &lt; <a class="code" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numRows() and thiscol &lt; <a class="code" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns())</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    {</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;      <span class="keywordflow">if</span> (not <a class="code" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.ring().is_zero(<a class="code" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.entry(thisrow, thiscol)))</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        {</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;          result_columns.push_back(thiscol);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;          thisrow++;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        }</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;      thiscol++;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    }</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;}</div>
 <div class="ttc" id="anamespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd_html_a8de3373d524b221e7bc039814af8a2bd"><div class="ttname"><a href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">MatrixOps::LU</a></div><div class="ttdeci">M2_arrayintOrNull LU(const Mat &amp;A, Mat &amp;L, Mat &amp;U)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d8a/mat-linalg_8hpp_source.html#l00243">mat-linalg.hpp:243</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">MatrixOps::LU()</a>.</p>
@@ -146,7 +146,7 @@ template&lt;class RingType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/dcd/class_l_u_util.html">LUUtil</a></li>
-    <li class="footer">Generated on Sun May 12 2024 01:33:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun May 19 2024 01:34:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

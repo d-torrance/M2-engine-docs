@@ -1,6 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"df/ddb/class_monomial_ideal_a52d3340bbdcdaafa42d4d72b288ce853.html#a52d3340bbdcdaafa42d4d72b288ce853":[6,0,194,64],
 "df/ddb/class_monomial_ideal_a5a0f4a6440e0884f84e4cbfccf3b61f2.html#a5a0f4a6440e0884f84e4cbfccf3b61f2":[6,0,194,14],
 "df/ddb/class_monomial_ideal_a5fc6bf4e34132fb278f3bde7e7c352f8.html#a5fc6bf4e34132fb278f3bde7e7c352f8":[6,0,194,26],
 "df/ddb/class_monomial_ideal_a66d7abadb883e9da8d8415a45f49150f.html#a66d7abadb883e9da8d8415a45f49150f":[6,0,194,45],
@@ -108,8 +107,8 @@ var NAVTREEINDEX57 =
 "dir_8ed8434bc3d991323934987a3489e746.html":[7,0,0,0,1],
 "dir_cb190e7768d1e7821fcc13efdd565523.html":[7,0,0,0,7],
 "files.html":[7,0],
-"functions.html":[6,3,0],
 "functions.html":[6,3,0,0],
+"functions.html":[6,3,0],
 "functions_a.html":[6,3,0,1],
 "functions_b.html":[6,3,0,2],
 "functions_c.html":[6,3,0,3],
@@ -180,8 +179,8 @@ var NAVTREEINDEX57 =
 "functions_rela_z.html":[6,3,6,20],
 "functions_s.html":[6,3,0,19],
 "functions_t.html":[6,3,0,20],
-"functions_type.html":[6,3,3,0],
 "functions_type.html":[6,3,3],
+"functions_type.html":[6,3,3,0],
 "functions_type_b.html":[6,3,3,1],
 "functions_type_c.html":[6,3,3,2],
 "functions_type_d.html":[6,3,3,3],
@@ -202,8 +201,8 @@ var NAVTREEINDEX57 =
 "functions_type_w.html":[6,3,3,18],
 "functions_u.html":[6,3,0,21],
 "functions_v.html":[6,3,0,22],
-"functions_vars.html":[6,3,2,0],
 "functions_vars.html":[6,3,2],
+"functions_vars.html":[6,3,2,0],
 "functions_vars_a.html":[6,3,2,1],
 "functions_vars_b.html":[6,3,2,2],
 "functions_vars_c.html":[6,3,2,3],
@@ -235,8 +234,8 @@ var NAVTREEINDEX57 =
 "functions_y.html":[6,3,0,25],
 "functions_z.html":[6,3,0,26],
 "functions_~.html":[6,3,0,27],
-"globals.html":[7,1,0,0],
 "globals.html":[7,1,0],
+"globals.html":[7,1,0,0],
 "globals_a.html":[7,1,0,1],
 "globals_b.html":[7,1,0,2],
 "globals_c.html":[7,1,0,3],
@@ -246,8 +245,9 @@ var NAVTREEINDEX57 =
 "globals_enum.html":[7,1,4],
 "globals_eval.html":[7,1,5],
 "globals_f.html":[7,1,0,6],
-"globals_func.html":[7,1,1,0],
 "globals_func.html":[7,1,1],
+"globals_func.html":[7,1,1,0],
 "globals_func_b.html":[7,1,1,1],
-"globals_func_c.html":[7,1,1,2]
+"globals_func_c.html":[7,1,1,2],
+"globals_func_d.html":[7,1,1,3]
 };

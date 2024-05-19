@@ -1,6 +1,5 @@
 var NAVTREEINDEX56 =
 {
-"df/da2/class_schur_ring2_aa17a068539e000c734b0cdac5b600307.html#aa17a068539e000c734b0cdac5b600307":[6,0,308,44],
 "df/da2/class_schur_ring2_aa2d97adab067dac4599bcfc69e7ef061.html#aa2d97adab067dac4599bcfc69e7ef061":[6,0,308,16],
 "df/da2/class_schur_ring2_aa61a95d9a174e0b59651508712eef7a3.html#aa61a95d9a174e0b59651508712eef7a3":[6,0,308,10],
 "df/da2/class_schur_ring2_aa90da7b466412942f73622fd71ea7ff1.html#aa90da7b466412942f73622fd71ea7ff1":[6,0,308,19],
@@ -249,5 +248,6 @@ var NAVTREEINDEX56 =
 "df/ddb/class_monomial_ideal_a3ea4a57785c70e6e42f970d21dea8bb4.html#a3ea4a57785c70e6e42f970d21dea8bb4":[6,0,194,37],
 "df/ddb/class_monomial_ideal_a43d4b2701f3639a574708e429a9a0619.html#a43d4b2701f3639a574708e429a9a0619":[6,0,194,46],
 "df/ddb/class_monomial_ideal_a4a0505e0708959a661eedabdd9a00e4e.html#a4a0505e0708959a661eedabdd9a00e4e":[6,0,194,58],
-"df/ddb/class_monomial_ideal_a521d4d769f68a98d2c2f540da8ea35cb.html#a521d4d769f68a98d2c2f540da8ea35cb":[6,0,194,12]
+"df/ddb/class_monomial_ideal_a521d4d769f68a98d2c2f540da8ea35cb.html#a521d4d769f68a98d2c2f540da8ea35cb":[6,0,194,12],
+"df/ddb/class_monomial_ideal_a52d3340bbdcdaafa42d4d72b288ce853.html#a52d3340bbdcdaafa42d4d72b288ce853":[6,0,194,64]
 };

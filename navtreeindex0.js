@@ -1,6 +1,5 @@
 var NAVTREEINDEX0 =
 {
-"":[5,0,10],
 "annotated.html":[6,0],
 "classes.html":[6,1],
 "d0/d02/_basis_8cpp.html":[7,0,0,0,2,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "d0/d5c/structres2__pair_a3cb44c724a719b6eaa15719a4e933333.html#a3cb44c724a719b6eaa15719a4e933333":[6,0,268,2],
 "d0/d5c/structres2__pair_a423b51fee7dacb584d7e45adcc201e82.html#a423b51fee7dacb584d7e45adcc201e82":[6,0,268,6],
 "d0/d5c/structres2__pair_a78e90d97ef490b0c33bd86c0bb5a9411.html#a78e90d97ef490b0c33bd86c0bb5a9411":[6,0,268,4],
-"d0/d5c/structres2__pair_a7d60f70d3b47135b94cdffc28dcc5f42.html#a7d60f70d3b47135b94cdffc28dcc5f42":[6,0,268,8]
+"d0/d5c/structres2__pair_a7d60f70d3b47135b94cdffc28dcc5f42.html#a7d60f70d3b47135b94cdffc28dcc5f42":[6,0,268,8],
+"d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda":[6,0,268,5]
 };
