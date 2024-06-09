@@ -1,5 +1,6 @@
 var NAVTREEINDEX44 =
 {
+"db/de9/finalize_8cpp_ac4645ba49214a02fc684fdb2ae8d9622.html#ac4645ba49214a02fc684fdb2ae8d9622":[7,0,0,0,115,23],
 "db/de9/finalize_8cpp_acd907bbebf5d58d8a86ca872771d383e.html#acd907bbebf5d58d8a86ca872771d383e":[7,0,0,0,115,10],
 "db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec":[7,0,0,0,115,7],
 "db/de9/finalize_8cpp_ad90de081147ba0e7b0f6fb9632661386.html#ad90de081147ba0e7b0f6fb9632661386":[7,0,0,0,115,25],
@@ -248,6 +249,5 @@ var NAVTREEINDEX44 =
 "dc/d50/structrow__elem_ae5514cb7665850f5d08042eb15fe3530.html#ae5514cb7665850f5d08042eb15fe3530":[6,0,297,0],
 "dc/d51/class_exponent_list_iterator.html":[6,0,73],
 "dc/d51/class_exponent_list_iterator_a1febdbf0825b8648c7cee1e9a698894e.html#a1febdbf0825b8648c7cee1e9a698894e":[6,0,73,2],
-"dc/d51/class_exponent_list_iterator_a2e33994b5775342c27bffc19e3b7bc1d.html#a2e33994b5775342c27bffc19e3b7bc1d":[6,0,73,7],
-"dc/d51/class_exponent_list_iterator_a38dd7077dc09028dad2561feef0bab18.html#a38dd7077dc09028dad2561feef0bab18":[6,0,73,4]
+"dc/d51/class_exponent_list_iterator_a2e33994b5775342c27bffc19e3b7bc1d.html#a2e33994b5775342c27bffc19e3b7bc1d":[6,0,73,7]
 };

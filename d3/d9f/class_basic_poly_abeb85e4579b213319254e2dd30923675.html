@@ -125,42 +125,42 @@ $(document).ready(function(){initNavTree('d3/d9f/class_basic_poly_abeb85e4579b21
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dae/_basic_poly_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d5/dae/_basic_poly_8cpp_source.html">BasicPoly.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d3/d9f/class_basic_poly_ad471ddd57f315e9ba0830a36f8e4dd50.html#ad471ddd57f315e9ba0830a36f8e4dd50">termCount</a>() == 0)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      o &lt;&lt; <span class="charliteral">&#39;0&#39;</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">bool</span> more_than_one_term = (<a class="code" href="../../d3/d9f/class_basic_poly_ad471ddd57f315e9ba0830a36f8e4dd50.html#ad471ddd57f315e9ba0830a36f8e4dd50">termCount</a>() &gt;= 2);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">int</span> needs_parens = print_parens &amp;&amp; more_than_one_term;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">if</span> (needs_parens)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">if</span> (print_plus) o &lt;&lt; <span class="charliteral">&#39;+&#39;</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      o &lt;&lt; <span class="charliteral">&#39;(&#39;</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      print_plus = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span>* monom_loc = <a class="code" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>.data();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="../../d3/d9f/class_basic_poly_ad471ddd57f315e9ba0830a36f8e4dd50.html#ad471ddd57f315e9ba0830a36f8e4dd50">termCount</a>(); ++i)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordtype">bool</span> monom_is_one = (*monom_loc == 1); <span class="comment">// TODO: do *not* hand code this determination in!</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      print_parens = !monom_is_one;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordtype">bool</span> p_one_this = (monom_is_one &amp;&amp; needs_parens) || (monom_is_one &amp;&amp; print_one);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="../../d3/d9f/class_basic_poly_a2280a1c6b026f011c5bf54b5f92e97da.html#a2280a1c6b026f011c5bf54b5f92e97da">displayCoefficient</a>(o, <a class="code" href="../../d3/d9f/class_basic_poly_a5d0a3b93c237d041be1077e2241cb509.html#a5d0a3b93c237d041be1077e2241cb509">mCoefficients</a>[i], print_plus, p_one_this);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="keywordflow">if</span> (!monom_is_one)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="../../d3/d9f/class_basic_poly_a5d0a3b93c237d041be1077e2241cb509.html#a5d0a3b93c237d041be1077e2241cb509">mCoefficients</a>[i] != 1 and <a class="code" href="../../d3/d9f/class_basic_poly_a5d0a3b93c237d041be1077e2241cb509.html#a5d0a3b93c237d041be1077e2241cb509">mCoefficients</a>[i] != -1)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            o &lt;&lt; <span class="charliteral">&#39;*&#39;</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;          <a class="code" href="../../da/d80/classnewf4_1_1_monomial_view_a2ac9172cc202f714a93fe0765555763e.html#a2ac9172cc202f714a93fe0765555763e">newf4::MonomialView::display</a>(o, varnames, <a class="code" href="../../da/d80/classnewf4_1_1_monomial_view.html">newf4::MonomialView</a>(<span class="keyword">const_cast&lt;</span><span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(monom_loc)));</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      print_plus = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      monom_loc += *monom_loc;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">if</span> (needs_parens) o &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/dae/_basic_poly_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d5/dae/_basic_poly_8cpp_source.html">BasicPoly.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d3/d9f/class_basic_poly_ad471ddd57f315e9ba0830a36f8e4dd50.html#ad471ddd57f315e9ba0830a36f8e4dd50">termCount</a>() == 0)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      o &lt;&lt; <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">bool</span> more_than_one_term = (<a class="code" href="../../d3/d9f/class_basic_poly_ad471ddd57f315e9ba0830a36f8e4dd50.html#ad471ddd57f315e9ba0830a36f8e4dd50">termCount</a>() &gt;= 2);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">int</span> needs_parens = print_parens &amp;&amp; more_than_one_term;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">if</span> (needs_parens)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordflow">if</span> (print_plus) o &lt;&lt; <span class="charliteral">&#39;+&#39;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      o &lt;&lt; <span class="charliteral">&#39;(&#39;</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      print_plus = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span>* monom_loc = <a class="code" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>.data();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="../../d3/d9f/class_basic_poly_ad471ddd57f315e9ba0830a36f8e4dd50.html#ad471ddd57f315e9ba0830a36f8e4dd50">termCount</a>(); ++i)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordtype">bool</span> monom_is_one = (*monom_loc == 1); <span class="comment">// TODO: do *not* hand code this determination in!</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      print_parens = !monom_is_one;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keywordtype">bool</span> p_one_this = (monom_is_one &amp;&amp; needs_parens) || (monom_is_one &amp;&amp; print_one);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <a class="code" href="../../d3/d9f/class_basic_poly_a2280a1c6b026f011c5bf54b5f92e97da.html#a2280a1c6b026f011c5bf54b5f92e97da">displayCoefficient</a>(o, <a class="code" href="../../d3/d9f/class_basic_poly_a5d0a3b93c237d041be1077e2241cb509.html#a5d0a3b93c237d041be1077e2241cb509">mCoefficients</a>[i], print_plus, p_one_this);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">if</span> (!monom_is_one)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="../../d3/d9f/class_basic_poly_a5d0a3b93c237d041be1077e2241cb509.html#a5d0a3b93c237d041be1077e2241cb509">mCoefficients</a>[i] != 1 and <a class="code" href="../../d3/d9f/class_basic_poly_a5d0a3b93c237d041be1077e2241cb509.html#a5d0a3b93c237d041be1077e2241cb509">mCoefficients</a>[i] != -1)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            o &lt;&lt; <span class="charliteral">&#39;*&#39;</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;          <a class="code" href="../../da/d80/classnewf4_1_1_monomial_view_a2ac9172cc202f714a93fe0765555763e.html#a2ac9172cc202f714a93fe0765555763e">newf4::MonomialView::display</a>(o, varnames, <a class="code" href="../../da/d80/classnewf4_1_1_monomial_view.html">newf4::MonomialView</a>(<span class="keyword">const_cast&lt;</span><span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(monom_loc)));</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      print_plus = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      monom_loc += *monom_loc;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordflow">if</span> (needs_parens) o &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
 <div class="ttc" id="aclass_basic_poly_a2280a1c6b026f011c5bf54b5f92e97da_html_a2280a1c6b026f011c5bf54b5f92e97da"><div class="ttname"><a href="../../d3/d9f/class_basic_poly_a2280a1c6b026f011c5bf54b5f92e97da.html#a2280a1c6b026f011c5bf54b5f92e97da">BasicPoly::displayCoefficient</a></div><div class="ttdeci">static void displayCoefficient(std::ostream &amp;o, T val, bool print_plus, bool print_one)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dae/_basic_poly_8cpp_source.html#l00048">BasicPoly.cpp:48</a></div></div>
 <div class="ttc" id="aclass_basic_poly_a5d0a3b93c237d041be1077e2241cb509_html_a5d0a3b93c237d041be1077e2241cb509"><div class="ttname"><a href="../../d3/d9f/class_basic_poly_a5d0a3b93c237d041be1077e2241cb509.html#a5d0a3b93c237d041be1077e2241cb509">BasicPoly::mCoefficients</a></div><div class="ttdeci">std::vector&lt; int &gt; mCoefficients</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00015">BasicPoly.hpp:15</a></div></div>
 <div class="ttc" id="aclass_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c_html_a62c9a46760d40a4eb2bfc0bdf2b5d75c"><div class="ttname"><a href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">BasicPoly::mMonomials</a></div><div class="ttdeci">std::vector&lt; int &gt; mMonomials</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00017">BasicPoly.hpp:17</a></div></div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('d3/d9f/class_basic_poly_abeb85e4579b21
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d9f/class_basic_poly.html">BasicPoly</a></li>
-    <li class="footer">Generated on Sun Jun 2 2024 01:35:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 9 2024 01:38:20 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

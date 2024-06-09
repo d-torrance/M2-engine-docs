@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_af3c5982ac5ca08034
 <div class="fragment"><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;{</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d0/d92/class_n_c_f4_a04c30758d9d3b9b5b4cf58a01debac44.html#a04c30758d9d3b9b5b4cf58a01debac44">mGroebner</a>.size() &lt;= 1) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>&amp; lastPoly = *(<a class="code" href="../../d0/d92/class_n_c_f4_a04c30758d9d3b9b5b4cf58a01debac44.html#a04c30758d9d3b9b5b4cf58a01debac44">mGroebner</a>[<a class="code" href="../../d0/d92/class_n_c_f4_a04c30758d9d3b9b5b4cf58a01debac44.html#a04c30758d9d3b9b5b4cf58a01debac44">mGroebner</a>.size()-1]);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/d21/struct_monom.html">Monom</a>&amp; leadMon = lastPoly.cbegin().monom();</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <a class="code" href="../../dd/d21/struct_monom.html">Monom</a> leadMon = lastPoly.cbegin().monom();</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> fPtr = <a class="code" href="../../d0/d92/class_n_c_f4_a04c30758d9d3b9b5b4cf58a01debac44.html#a04c30758d9d3b9b5b4cf58a01debac44">mGroebner</a>.begin(); fPtr != <a class="code" href="../../d0/d92/class_n_c_f4_a04c30758d9d3b9b5b4cf58a01debac44.html#a04c30758d9d3b9b5b4cf58a01debac44">mGroebner</a>.end() - 1; ++fPtr)</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  {</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <a class="code" href="../../d5/d64/unionring__elem.html">ring_elem</a> foundCoeff = <a class="code" href="../../d0/d92/class_n_c_f4_a48771c0ae91504968dde06118ab56cdc.html#a48771c0ae91504968dde06118ab56cdc">getCoeffOfMonom</a>(**fPtr,leadMon);</div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_af3c5982ac5ca08034
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d92/class_n_c_f4.html">NCF4</a></li>
-    <li class="footer">Generated on Sun Jun 2 2024 01:35:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 9 2024 01:38:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
