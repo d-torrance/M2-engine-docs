@@ -113,27 +113,27 @@ $(document).ready(function(){initNavTree('d9/db1/class_monoid_ac6c092c8e8afa4ab2
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d5c/monoid_8cpp_source.html#l00365">365</a> of file <a class="el" href="../../d6/d5c/monoid_8cpp_source.html">monoid.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;{</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  <a class="code" href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8">overflow_type</a> *t = <a class="code" href="../../d9/db1/class_monoid_aaf82a4443ef5db865d2a88be42f84b89.html#aaf82a4443ef5db865d2a88be42f84b89">overflow</a>;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code" href="../../d9/db1/class_monoid_af0712dc2da68f35ef49dbd4200bcfbdb.html#af0712dc2da68f35ef49dbd4200bcfbdb">monomial_size_</a>; i != 0; i--) <span class="keywordflow">switch</span> (*t++)</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      {</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8ac3195691c75b4ca5f819d83dd11652d3">OVER</a>:</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;          *result++ = <a class="code" href="../../d6/dcb/namespacesafe_a33c6936227918d3d2d0706c2b33e67e6.html#a33c6936227918d3d2d0706c2b33e67e6">safe::add</a>(*m++, *n++);</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8ac48078d4712e86eb111d1844727ee262">OVER1</a>:</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;          *result++ = <a class="code" href="../../d6/dcb/namespacesafe_a32c5688e26a10560340967f20c5b44d3.html#a32c5688e26a10560340967f20c5b44d3">safe::pos_add</a>(*m++, *n++);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8a68269e75331b3cf4fb3f3cc49d5e20c9">OVER2</a>:</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;          *result++ = <a class="code" href="../../d6/dcb/namespacesafe_aa343f8acd87377835aebf9be1c38376b.html#aa343f8acd87377835aebf9be1c38376b">safe::pos_add_2</a>(*m++, *n++);</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8aad66b79b9c3867ed3bd8ee6433cc2eec">OVER4</a>:</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;          *result++ = <a class="code" href="../../d6/dcb/namespacesafe_a5a60829273ea9f73e74ad145e75e5488.html#a5a60829273ea9f73e74ad145e75e5488">safe::pos_add_4</a>(*m++, *n++);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;          <span class="keywordflow">throw</span>(<a class="code" href="../../d1/d91/structexc_1_1internal__error.html">exc::internal_error</a>(<span class="stringliteral">&quot;missing case&quot;</span>));</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      }</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d5c/monoid_8cpp_source.html#l00363">363</a> of file <a class="el" href="../../d6/d5c/monoid_8cpp_source.html">monoid.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;{</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <a class="code" href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8">overflow_type</a> *t = <a class="code" href="../../d9/db1/class_monoid_aaf82a4443ef5db865d2a88be42f84b89.html#aaf82a4443ef5db865d2a88be42f84b89">overflow</a>;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code" href="../../d9/db1/class_monoid_af0712dc2da68f35ef49dbd4200bcfbdb.html#af0712dc2da68f35ef49dbd4200bcfbdb">monomial_size_</a>; i != 0; i--) <span class="keywordflow">switch</span> (*t++)</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      {</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8ac3195691c75b4ca5f819d83dd11652d3">OVER</a>:</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;          *result++ = <a class="code" href="../../d6/dcb/namespacesafe_a33c6936227918d3d2d0706c2b33e67e6.html#a33c6936227918d3d2d0706c2b33e67e6">safe::add</a>(*m++, *n++);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8ac48078d4712e86eb111d1844727ee262">OVER1</a>:</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;          *result++ = <a class="code" href="../../d6/dcb/namespacesafe_a32c5688e26a10560340967f20c5b44d3.html#a32c5688e26a10560340967f20c5b44d3">safe::pos_add</a>(*m++, *n++);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8a68269e75331b3cf4fb3f3cc49d5e20c9">OVER2</a>:</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;          *result++ = <a class="code" href="../../d6/dcb/namespacesafe_aa343f8acd87377835aebf9be1c38376b.html#aa343f8acd87377835aebf9be1c38376b">safe::pos_add_2</a>(*m++, *n++);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8aad66b79b9c3867ed3bd8ee6433cc2eec">OVER4</a>:</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;          *result++ = <a class="code" href="../../d6/dcb/namespacesafe_a5a60829273ea9f73e74ad145e75e5488.html#a5a60829273ea9f73e74ad145e75e5488">safe::pos_add_4</a>(*m++, *n++);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;          <span class="keywordflow">throw</span>(<a class="code" href="../../d1/d91/structexc_1_1internal__error.html">exc::internal_error</a>(<span class="stringliteral">&quot;missing case&quot;</span>));</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      }</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;}</div>
 <div class="ttc" id="aclass_monoid_a3a2ab9c93b1af74df2f42514bf5839e8_html_a3a2ab9c93b1af74df2f42514bf5839e8"><div class="ttname"><a href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8">Monoid::overflow_type</a></div><div class="ttdeci">overflow_type</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00095">monoid.hpp:95</a></div></div>
 <div class="ttc" id="aclass_monoid_a3a2ab9c93b1af74df2f42514bf5839e8_html_a3a2ab9c93b1af74df2f42514bf5839e8a68269e75331b3cf4fb3f3cc49d5e20c9"><div class="ttname"><a href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8a68269e75331b3cf4fb3f3cc49d5e20c9">Monoid::OVER2</a></div><div class="ttdeci">@ OVER2</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00095">monoid.hpp:95</a></div></div>
 <div class="ttc" id="aclass_monoid_a3a2ab9c93b1af74df2f42514bf5839e8_html_a3a2ab9c93b1af74df2f42514bf5839e8aad66b79b9c3867ed3bd8ee6433cc2eec"><div class="ttname"><a href="../../d9/db1/class_monoid_a3a2ab9c93b1af74df2f42514bf5839e8.html#a3a2ab9c93b1af74df2f42514bf5839e8aad66b79b9c3867ed3bd8ee6433cc2eec">Monoid::OVER4</a></div><div class="ttdeci">@ OVER4</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00095">monoid.hpp:95</a></div></div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('d9/db1/class_monoid_ac6c092c8e8afa4ab2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/db1/class_monoid.html">Monoid</a></li>
-    <li class="footer">Generated on Sun Jun 23 2024 01:37:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 30 2024 01:39:28 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

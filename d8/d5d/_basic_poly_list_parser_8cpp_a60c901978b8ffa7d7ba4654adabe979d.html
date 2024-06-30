@@ -97,18 +97,18 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_a6
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp_source.html">BasicPolyListParser.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  std::ifstream ifs(fileName.c_str(), <a class="code" href="../../dd/d84/_s_t_y_l_e_8txt_a1213b674d689e44430fad35ad9f329d1.html#a1213b674d689e44430fad35ad9f329d1">std::ios::in</a> | std::ios::binary | std::ios::ate);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  std::ifstream::pos_type fileSize = ifs.tellg();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  ifs.seekg(0, std::ios::beg);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  std::vector&lt;char&gt; bytes(fileSize);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  ifs.read(bytes.data(), fileSize);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordflow">return</span> std::string(bytes.data(), fileSize);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp_source.html#l00006">6</a> of file <a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp_source.html">BasicPolyListParser.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  std::ifstream ifs(fileName.c_str(), <a class="code" href="../../dd/d84/_s_t_y_l_e_8txt_a1213b674d689e44430fad35ad9f329d1.html#a1213b674d689e44430fad35ad9f329d1">std::ios::in</a> | std::ios::binary | std::ios::ate);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  std::ifstream::pos_type fileSize = ifs.tellg();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  ifs.seekg(0, std::ios::beg);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  std::vector&lt;char&gt; bytes(fileSize);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  ifs.read(bytes.data(), fileSize);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">return</span> std::string(bytes.data(), fileSize);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
 <div class="ttc" id="a_s_t_y_l_e_8txt_a1213b674d689e44430fad35ad9f329d1_html_a1213b674d689e44430fad35ad9f329d1"><div class="ttname"><a href="../../dd/d84/_s_t_y_l_e_8txt_a1213b674d689e44430fad35ad9f329d1.html#a1213b674d689e44430fad35ad9f329d1">in</a></div><div class="ttdeci">Coding standards to follow when writing code in the Macaulay2 engine Run your c code through clang format as in</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d84/_s_t_y_l_e_8txt_source.html#l00003">STYLE.txt:7</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../dd/d84/_s_t_y_l_e_8txt_a1213b674d689e44430fad35ad9f329d1.html#a1213b674d689e44430fad35ad9f329d1">in</a>.</p>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_a6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp.html">BasicPolyListParser.cpp</a></li>
-    <li class="footer">Generated on Sun Jun 23 2024 01:37:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 30 2024 01:39:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

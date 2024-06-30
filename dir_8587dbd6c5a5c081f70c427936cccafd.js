@@ -3,6 +3,8 @@ var dir_8587dbd6c5a5c081f70c427936cccafd =
     [ "aring.cpp", "d6/d92/interface_2aring_8cpp.html", "d6/d92/interface_2aring_8cpp" ],
     [ "aring.h", "d7/d9e/aring_8h.html", "d7/d9e/aring_8h" ],
     [ "computation.h", "d3/d00/computation_8h.html", "d3/d00/computation_8h" ],
+    [ "cone.cpp", "d8/dbf/cone_8cpp.html", "d8/dbf/cone_8cpp" ],
+    [ "cone.h", "db/df0/cone_8h.html", "db/df0/cone_8h" ],
     [ "cra.cpp", "dd/d31/interface_2cra_8cpp.html", "dd/d31/interface_2cra_8cpp" ],
     [ "cra.h", "d2/d24/cra_8h.html", "d2/d24/cra_8h" ],
     [ "factory.cpp", "d2/dc2/factory_8cpp.html", "d2/dc2/factory_8cpp" ],

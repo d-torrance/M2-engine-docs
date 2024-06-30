@@ -1,5 +1,14 @@
 var NAVTREEINDEX54 =
 {
+"de/dbd/class_free_algebra_ae50166c0e0d23487d7cb6e72ade791b6.html#ae50166c0e0d23487d7cb6e72ade791b6":[6,0,91,55],
+"de/dc8/_eschreyer_8hpp.html":[7,0,0,0,108],
+"de/dc8/_eschreyer_8hpp_source.html":[7,0,0,0,108],
+"de/dcb/nc-res-computation_8hpp.html":[7,0,0,0,5,1],
+"de/dcb/nc-res-computation_8hpp_a739cf7279143c695ac099447a26dc3a4.html#a739cf7279143c695ac099447a26dc3a4":[7,0,0,0,5,1,1],
+"de/dcb/nc-res-computation_8hpp_source.html":[7,0,0,0,5,1],
+"de/dcc/util-polyring-creation_8hpp.html":[7,0,0,0,7,38],
+"de/dcc/util-polyring-creation_8hpp_a22e68466501e280897566baf6716be25.html#a22e68466501e280897566baf6716be25":[7,0,0,0,7,38,0],
+"de/dcc/util-polyring-creation_8hpp_a552abe65eef90c23d13d55375579e1cf.html#a552abe65eef90c23d13d55375579e1cf":[7,0,0,0,7,38,4],
 "de/dcc/util-polyring-creation_8hpp_a60576699090679487e2fa704d3d3a01d.html#a60576699090679487e2fa704d3d3a01d":[7,0,0,0,7,38,2],
 "de/dcc/util-polyring-creation_8hpp_a631d21c8dbc3eaa7cdee634f363d36b5.html#a631d21c8dbc3eaa7cdee634f363d36b5":[7,0,0,0,7,38,3],
 "de/dcc/util-polyring-creation_8hpp_af9d63a9930dbf9e4121ecba5b8c7ea19.html#af9d63a9930dbf9e4121ecba5b8c7ea19":[7,0,0,0,7,38,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX54 =
 "df/d28/_memory_block_8hpp_source.html":[7,0,0,0,197],
 "df/d28/class_d_mat_iterator.html":[6,0,51],
 "df/d28/class_d_mat_iterator_a07db84ea6c349d687df3b0a3dc95b7e9.html#a07db84ea6c349d687df3b0a3dc95b7e9":[6,0,51,4],
-"df/d28/class_d_mat_iterator_a0e9f029b64d62a5b0a518ea8f793c9d5.html#a0e9f029b64d62a5b0a518ea8f793c9d5":[6,0,51,5],
-"df/d28/class_d_mat_iterator_a14c22bec183326e3624e3e9ea13cff59.html#a14c22bec183326e3624e3e9ea13cff59":[6,0,51,2],
-"df/d28/class_d_mat_iterator_a375f75478a97822fa6ce04e54a577944.html#a375f75478a97822fa6ce04e54a577944":[6,0,51,8],
-"df/d28/class_d_mat_iterator_a7b7ee1f7105a579d755b16b83805d864.html#a7b7ee1f7105a579d755b16b83805d864":[6,0,51,1],
-"df/d28/class_d_mat_iterator_aaaa84ce6a73742875b0782286c1215da.html#aaaa84ce6a73742875b0782286c1215da":[6,0,51,7],
-"df/d28/class_d_mat_iterator_abbe7c4c09df46820c24aecaa50ebad7e.html#abbe7c4c09df46820c24aecaa50ebad7e":[6,0,51,6],
-"df/d28/class_d_mat_iterator_abdb9682da618b2a39ebc62c9af53926f.html#abdb9682da618b2a39ebc62c9af53926f":[6,0,51,0],
-"df/d28/class_d_mat_iterator_af2099f8ecc656b48817d30f3fdc447c7.html#af2099f8ecc656b48817d30f3fdc447c7":[6,0,51,3],
-"df/d2c/classgb__emitter.html":[6,0,105],
-"df/d2c/classgb__emitter_a05b45c74bd4a31e787969ce46112b165.html#a05b45c74bd4a31e787969ce46112b165":[6,0,105,23]
+"df/d28/class_d_mat_iterator_a0e9f029b64d62a5b0a518ea8f793c9d5.html#a0e9f029b64d62a5b0a518ea8f793c9d5":[6,0,51,5]
 };

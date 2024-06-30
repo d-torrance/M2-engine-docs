@@ -1,5 +1,10 @@
 var NAVTREEINDEX38 =
 {
+"d9/de1/mpreal_8h.html#af602a28e483036fecae479908e0720f0":[7,0,0,0,217,195],
+"d9/de1/mpreal_8h.html#af65180b0715c8c85bfdf89bb9d44163c":[7,0,0,0,217,61],
+"d9/de1/mpreal_8h.html#af76739a634afe2379e8ffcdc6f28bcdf":[7,0,0,0,217,159],
+"d9/de1/mpreal_8h.html#af8ddef226a9a06a358bd41a3effc2c12":[7,0,0,0,217,266],
+"d9/de1/mpreal_8h.html#afaada35e47536c677a2a2bbc5a023c7e":[7,0,0,0,217,34],
 "d9/de1/mpreal_8h.html#afb371c92cda7f334f1c3c3e417d857dc":[7,0,0,0,217,286],
 "d9/de1/mpreal_8h.html#afbdbea114d02959e926f4830a355744f":[7,0,0,0,217,38],
 "d9/de1/mpreal_8h.html#afbde1c224e1cd6adbfd16f262097279b":[7,0,0,0,217,261],
@@ -244,10 +249,5 @@ var NAVTREEINDEX38 =
 "da/d2a/res-a0-pair_8hpp_source.html":[7,0,0,0,264],
 "da/d2c/aring-gf-flint_8cpp.html":[7,0,0,0,14],
 "da/d2c/aring-gf-flint_8cpp_source.html":[7,0,0,0,14],
-"da/d34/_m2_free_algebra_8hpp.html":[7,0,0,0,172],
-"da/d34/_m2_free_algebra_8hpp_a4a116dabef5fc374f622bd0cc144d700.html#a4a116dabef5fc374f622bd0cc144d700":[7,0,0,0,172,2],
-"da/d34/_m2_free_algebra_8hpp_source.html":[7,0,0,0,172],
-"da/d37/group__polynomialrings.html":[4,0,2],
-"da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80":[4,0,2,8],
-"da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80":[5,0,4,29]
+"da/d34/_m2_free_algebra_8hpp.html":[7,0,0,0,172]
 };

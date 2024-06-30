@@ -119,38 +119,38 @@ $(document).ready(function(){initNavTree('d9/db1/class_monoid_ae92fa952dd69cfdcf
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d5c/monoid_8cpp_source.html#l00414">414</a> of file <a class="el" href="../../d6/d5c/monoid_8cpp_source.html">monoid.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;{</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  <span class="keywordtype">int</span> i = <a class="code" href="../../d9/db1/class_monoid_acdd224c5b71e4fbeb59a91b5b5098ef3.html#acdd224c5b71e4fbeb59a91b5b5098ef3">n_before_component_</a>;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  <span class="keywordflow">while</span> (1)</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    {</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;      <span class="keywordflow">if</span> (i == 0) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;      <span class="keywordflow">if</span> (*m &gt; *n) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;      <span class="keywordflow">if</span> (*m &lt; *n) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;      m++, n++;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      --i;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    }</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/db1/class_monoid_a00cdd843d67272887765610130c10a4a.html#a00cdd843d67272887765610130c10a4a">component_up_</a>)</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    {</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;      <span class="keywordflow">if</span> (mcomp &lt; ncomp) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;      <span class="keywordflow">if</span> (mcomp &gt; ncomp) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    }</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    {</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;      <span class="keywordflow">if</span> (mcomp &lt; ncomp) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      <span class="keywordflow">if</span> (mcomp &gt; ncomp) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    }</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  i = <a class="code" href="../../d9/db1/class_monoid_a2a259f7c89d3e7ab8aa69ba98a86221a.html#a2a259f7c89d3e7ab8aa69ba98a86221a">n_after_component_</a>;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="keywordflow">while</span> (1)</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    {</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;      <span class="keywordflow">if</span> (i == 0) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;      <span class="keywordflow">if</span> (*m &gt; *n) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;      <span class="keywordflow">if</span> (*m &lt; *n) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;      m++, n++;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;      --i;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    }</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a0f0ab67e043160b4b46de33bff8bb59a.html#a0f0ab67e043160b4b46de33bff8bb59a">EQ</a>;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d5c/monoid_8cpp_source.html#l00412">412</a> of file <a class="el" href="../../d6/d5c/monoid_8cpp_source.html">monoid.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;{</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <span class="keywordtype">int</span> i = <a class="code" href="../../d9/db1/class_monoid_acdd224c5b71e4fbeb59a91b5b5098ef3.html#acdd224c5b71e4fbeb59a91b5b5098ef3">n_before_component_</a>;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keywordflow">while</span> (1)</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    {</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;      <span class="keywordflow">if</span> (i == 0) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      <span class="keywordflow">if</span> (*m &gt; *n) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;      <span class="keywordflow">if</span> (*m &lt; *n) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;      m++, n++;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;      --i;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    }</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/db1/class_monoid_a00cdd843d67272887765610130c10a4a.html#a00cdd843d67272887765610130c10a4a">component_up_</a>)</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    {</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;      <span class="keywordflow">if</span> (mcomp &lt; ncomp) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      <span class="keywordflow">if</span> (mcomp &gt; ncomp) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    }</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    {</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;      <span class="keywordflow">if</span> (mcomp &lt; ncomp) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;      <span class="keywordflow">if</span> (mcomp &gt; ncomp) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    }</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  i = <a class="code" href="../../d9/db1/class_monoid_a2a259f7c89d3e7ab8aa69ba98a86221a.html#a2a259f7c89d3e7ab8aa69ba98a86221a">n_after_component_</a>;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  <span class="keywordflow">while</span> (1)</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    {</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      <span class="keywordflow">if</span> (i == 0) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;      <span class="keywordflow">if</span> (*m &gt; *n) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;      <span class="keywordflow">if</span> (*m &lt; *n) <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;      m++, n++;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;      --i;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    }</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d2/d6f/style_8hpp_a0f0ab67e043160b4b46de33bff8bb59a.html#a0f0ab67e043160b4b46de33bff8bb59a">EQ</a>;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;}</div>
 <div class="ttc" id="aclass_monoid_a00cdd843d67272887765610130c10a4a_html_a00cdd843d67272887765610130c10a4a"><div class="ttname"><a href="../../d9/db1/class_monoid_a00cdd843d67272887765610130c10a4a.html#a00cdd843d67272887765610130c10a4a">Monoid::component_up_</a></div><div class="ttdeci">bool component_up_</div><div class="ttdoc">indicates whether free module components are ordered lexicographically</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00085">monoid.hpp:85</a></div></div>
 <div class="ttc" id="aclass_monoid_a2a259f7c89d3e7ab8aa69ba98a86221a_html_a2a259f7c89d3e7ab8aa69ba98a86221a"><div class="ttname"><a href="../../d9/db1/class_monoid_a2a259f7c89d3e7ab8aa69ba98a86221a.html#a2a259f7c89d3e7ab8aa69ba98a86221a">Monoid::n_after_component_</a></div><div class="ttdeci">int n_after_component_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00083">monoid.hpp:83</a></div></div>
 <div class="ttc" id="aclass_monoid_acdd224c5b71e4fbeb59a91b5b5098ef3_html_acdd224c5b71e4fbeb59a91b5b5098ef3"><div class="ttname"><a href="../../d9/db1/class_monoid_acdd224c5b71e4fbeb59a91b5b5098ef3.html#acdd224c5b71e4fbeb59a91b5b5098ef3">Monoid::n_before_component_</a></div><div class="ttdeci">int n_before_component_</div><div class="ttdoc">indicates where the free module components are in the monomial order</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00082">monoid.hpp:82</a></div></div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('d9/db1/class_monoid_ae92fa952dd69cfdcf
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/db1/class_monoid.html">Monoid</a></li>
-    <li class="footer">Generated on Sun Jun 23 2024 01:37:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 30 2024 01:39:28 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

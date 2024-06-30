@@ -1,5 +1,14 @@
 var NAVTREEINDEX50 =
 {
+"dd/dc9/class_poly_ring_quotient_a7e949f3b29fb83ffa7893afc79e27c74.html#a7e949f3b29fb83ffa7893afc79e27c74":[4,0,2,5,30],
+"dd/dc9/class_poly_ring_quotient_a800a82f80188a01068a29fcb9ab93534.html#a800a82f80188a01068a29fcb9ab93534":[4,0,2,5,35],
+"dd/dc9/class_poly_ring_quotient_a8106bebb8c9012179dedea196a239c5b.html#a8106bebb8c9012179dedea196a239c5b":[4,0,2,5,4],
+"dd/dc9/class_poly_ring_quotient_a81b87441f743bb383ea08559f61687f0.html#a81b87441f743bb383ea08559f61687f0":[4,0,2,5,9],
+"dd/dc9/class_poly_ring_quotient_a8420137204c8da5d6b10745e25e4db5e.html#a8420137204c8da5d6b10745e25e4db5e":[4,0,2,5,27],
+"dd/dc9/class_poly_ring_quotient_a8507e3d8142c5e828360cd44754f7d49.html#a8507e3d8142c5e828360cd44754f7d49":[4,0,2,5,47],
+"dd/dc9/class_poly_ring_quotient_a854c5c1cd3a4286efa4a439c8bcea812.html#a854c5c1cd3a4286efa4a439c8bcea812":[4,0,2,5,34],
+"dd/dc9/class_poly_ring_quotient_a878bdd4e9b4292ae178ec7089c1884c2.html#a878bdd4e9b4292ae178ec7089c1884c2":[4,0,2,5,63],
+"dd/dc9/class_poly_ring_quotient_a8c8e3b1eebdc3acebc7eb9c773736fbd.html#a8c8e3b1eebdc3acebc7eb9c773736fbd":[4,0,2,5,7],
 "dd/dc9/class_poly_ring_quotient_a934ac32b044dce129c4fe06f26d7a64e.html#a934ac32b044dce129c4fe06f26d7a64e":[4,0,2,5,64],
 "dd/dc9/class_poly_ring_quotient_a9414df49eec599e3e030027084fd6c03.html#a9414df49eec599e3e030027084fd6c03":[4,0,2,5,8],
 "dd/dc9/class_poly_ring_quotient_a982904a98d1f2c541ba4ab85d979d57e.html#a982904a98d1f2c541ba4ab85d979d57e":[4,0,2,5,54],
@@ -240,14 +249,5 @@ var NAVTREEINDEX50 =
 "dd/dcf/class_ring_aa5474e4319c97c0bc7e0514e17511de8.html#aa5474e4319c97c0bc7e0514e17511de8":[4,0,26,185],
 "dd/dcf/class_ring_aa6d007e7619fa67da71dd28c0f1ac918.html#aa6d007e7619fa67da71dd28c0f1ac918":[4,0,26,108],
 "dd/dcf/class_ring_aa87774c0e44911bd5096df29377f1f58.html#aa87774c0e44911bd5096df29377f1f58":[4,0,26,135],
-"dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0":[4,0,26,126],
-"dd/dcf/class_ring_aaa29b73bd6988f789e56afdc266816d9.html#aaa29b73bd6988f789e56afdc266816d9":[4,0,26,67],
-"dd/dcf/class_ring_aae34ad2fae6aaadf8895d3c6abe81d6b.html#aae34ad2fae6aaadf8895d3c6abe81d6b":[4,0,26,68],
-"dd/dcf/class_ring_aae39a604654cdc6587c7ddb166f83158.html#aae39a604654cdc6587c7ddb166f83158":[4,0,26,47],
-"dd/dcf/class_ring_ab17d633d9abc0ddad22e829d3e3955fd.html#ab17d633d9abc0ddad22e829d3e3955fd":[4,0,26,118],
-"dd/dcf/class_ring_ab6c42f432e2ca2766eb5a13285b7448a.html#ab6c42f432e2ca2766eb5a13285b7448a":[4,0,26,214],
-"dd/dcf/class_ring_ab787238a3dad8cad36d3480085f53f35.html#ab787238a3dad8cad36d3480085f53f35":[4,0,26,30],
-"dd/dcf/class_ring_ab818c1d7ca29bc8b4761306b73b29dd8.html#ab818c1d7ca29bc8b4761306b73b29dd8":[4,0,26,42],
-"dd/dcf/class_ring_ab87f80ce23664fb2f9ceff5e0cf2b413.html#ab87f80ce23664fb2f9ceff5e0cf2b413":[4,0,26,186],
-"dd/dcf/class_ring_abb73bb60202dd8824d89a4ce02e874ef.html#abb73bb60202dd8824d89a4ce02e874ef":[4,0,26,31]
+"dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0":[4,0,26,126]
 };
