@@ -1,6 +1,5 @@
 var NAVTREEINDEX39 =
 {
-"da/d34/_m2_free_algebra_8hpp.html":[7,0,0,0,172],
 "da/d34/_m2_free_algebra_8hpp_a4a116dabef5fc374f622bd0cc144d700.html#a4a116dabef5fc374f622bd0cc144d700":[7,0,0,0,172,2],
 "da/d34/_m2_free_algebra_8hpp_source.html":[7,0,0,0,172],
 "da/d37/group__polynomialrings.html":[4,0,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX39 =
 "da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a3a6adf0789153e860cc2a62f98a430c8.html#a3a6adf0789153e860cc2a62f98a430c8":[4,0,20,22],
 "da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a3b8491c5a1b56b58f231ba7bd0c9ad82.html#a3b8491c5a1b56b58f231ba7bd0c9ad82":[4,0,20,54],
 "da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a3ce6b2658812b1643931c6e754d312fb.html#a3ce6b2658812b1643931c6e754d312fb":[4,0,20,44],
-"da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a456553d41f93e75394b9db5a0d03ba27.html#a456553d41f93e75394b9db5a0d03ba27":[4,0,20,53]
+"da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a456553d41f93e75394b9db5a0d03ba27.html#a456553d41f93e75394b9db5a0d03ba27":[4,0,20,53],
+"da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a4b5562c157ad70614cc402adcfb4b08c.html#a4b5562c157ad70614cc402adcfb4b08c":[4,0,20,4]
 };

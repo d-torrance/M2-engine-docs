@@ -1,6 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a4b5562c157ad70614cc402adcfb4b08c.html#a4b5562c157ad70614cc402adcfb4b08c":[4,0,20,4],
 "da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a4ba9ae978c20bcd6f3ca33d5180ef211.html#a4ba9ae978c20bcd6f3ca33d5180ef211":[4,0,20,12],
 "da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a554259e4d05d6245cc4993373638d944.html#a554259e4d05d6245cc4993373638d944":[4,0,20,10],
 "da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a638baa216b6b00bd9937628a37d06fad.html#a638baa216b6b00bd9937628a37d06fad":[4,0,20,27],
@@ -249,5 +248,6 @@ var NAVTREEINDEX40 =
 "da/dbc/aring-_c_c_8hpp_source.html":[7,0,0,0,9],
 "da/dc0/smat_8hpp.html":[7,0,0,0,302],
 "da/dc0/smat_8hpp_source.html":[7,0,0,0,302],
-"da/dc1/class_n_c_res_computation.html":[6,0,222]
+"da/dc1/class_n_c_res_computation.html":[6,0,222],
+"da/dc1/class_n_c_res_computation_a268a96dc334c7c30eb4f41bcb586d35f.html#a268a96dc334c7c30eb4f41bcb586d35f":[6,0,222,10]
 };
