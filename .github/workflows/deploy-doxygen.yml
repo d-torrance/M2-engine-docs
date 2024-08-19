@@ -27,7 +27,8 @@ jobs:
       - name: Configure
         run: |
           make -C M2
-          cd M2/BUILD && ../configure
+          cd M2/BUILD && ../configure --with-system-gc --with-system-memtailor \
+              --with-system-mathic --with-system-mathicgb
       - name: Build engine documentation
         run: |
           make -C M2/BUILD/Macaulay2/util echoout
