@@ -121,17 +121,20 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_a0
 
 <p class="definition">Definition at line <a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp_source.html">BasicPolyListParser.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// if str[0] is a character, find the identifier, and increment str past that,</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">if</span> (begin_loc &gt;= end_loc or not isalpha(str[begin_loc])) <span class="keywordflow">return</span> -1; <span class="comment">// TODO: throw an error here?</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">size_t</span> loc = begin_loc;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">while</span> (loc &lt; end_loc and (isdigit(str[loc]) or isalpha(str[loc]) or str[loc] == <span class="charliteral">&#39;_&#39;</span>))</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      loc++;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::string_view iden = str.substr(begin_loc, loc-begin_loc);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  begin_loc = loc;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">return</span> map.<a class="code" href="../../da/d49/class_identifier_hash_a19f73cee41bebee1372d40b41ffef836.html#a19f73cee41bebee1372d40b41ffef836">find</a>(iden);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">    std::cout &lt;&lt; str &lt;&lt; &quot;(begin=&quot; &lt;&lt; begin_loc &lt;&lt; &quot;, end=&quot; &lt;&lt; end_loc &lt;&lt; &quot; )&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// if str[0] is a character, find the identifier, and increment str past that,</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">if</span> (begin_loc &gt;= end_loc or not isalpha(str[begin_loc])) <span class="keywordflow">return</span> -1; <span class="comment">// TODO: throw an error here?</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">size_t</span> loc = begin_loc;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">while</span> (loc &lt; end_loc and (isdigit(str[loc]) or isalpha(str[loc]) or str[loc] == <span class="charliteral">&#39;_&#39;</span>))</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      loc++;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::string_view iden = str.substr(begin_loc, loc-begin_loc);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  begin_loc = loc;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">return</span> map.<a class="code" href="../../da/d49/class_identifier_hash_a19f73cee41bebee1372d40b41ffef836.html#a19f73cee41bebee1372d40b41ffef836">find</a>(iden);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="ttc" id="aclass_identifier_hash_a19f73cee41bebee1372d40b41ffef836_html_a19f73cee41bebee1372d40b41ffef836"><div class="ttname"><a href="../../da/d49/class_identifier_hash_a19f73cee41bebee1372d40b41ffef836.html#a19f73cee41bebee1372d40b41ffef836">IdentifierHash::find</a></div><div class="ttdeci">auto find(std::string_view s) const -&gt; int</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00073">BasicPoly.hpp:73</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../da/d49/class_identifier_hash_a19f73cee41bebee1372d40b41ffef836.html#a19f73cee41bebee1372d40b41ffef836">IdentifierHash::find()</a>.</p>
@@ -146,7 +149,7 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_a0
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp.html">BasicPolyListParser.cpp</a></li>
-    <li class="footer">Generated on Sun Aug 4 2024 01:42:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 19 2024 14:39:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
