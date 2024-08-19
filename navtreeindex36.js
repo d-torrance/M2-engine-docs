@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"d9/db1/class_monoid_a0cc11af763d3598bcf58b828e76778cb.html#a0cc11af763d3598bcf58b828e76778cb":[6,0,183,3],
 "d9/db1/class_monoid_a104ba968dbf181f909826ee3307049f9.html#a104ba968dbf181f909826ee3307049f9":[6,0,183,19],
 "d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4":[6,0,183,65],
 "d9/db1/class_monoid_a17e7622250b0cf7b741a215931ccbe81.html#a17e7622250b0cf7b741a215931ccbe81":[6,0,183,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "d9/de1/mpreal_8h.html#a1694bb1b41693bf75b4db882e3d18ff7":[7,0,0,0,217,113],
 "d9/de1/mpreal_8h.html#a1841424a7e29ae76d3aec415554e7b9a":[7,0,0,0,217,178],
 "d9/de1/mpreal_8h.html#a19c773ea971ccd987b3fc6d76ac56d58":[7,0,0,0,217,285],
-"d9/de1/mpreal_8h.html#a1b1bb364f5caa593a74bd677c81d5ecb":[7,0,0,0,217,66],
-"d9/de1/mpreal_8h.html#a1c3772c4192496b10995c3dee45230a4":[7,0,0,0,217,86]
+"d9/de1/mpreal_8h.html#a1b1bb364f5caa593a74bd677c81d5ecb":[7,0,0,0,217,66]
 };
