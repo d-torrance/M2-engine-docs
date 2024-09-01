@@ -1,6 +1,5 @@
 var NAVTREEINDEX38 =
 {
-"d9/de1/mpreal_8h.html#af4da884920198d3e15066926a5544151":[7,0,0,0,217,69],
 "d9/de1/mpreal_8h.html#af602a28e483036fecae479908e0720f0":[7,0,0,0,217,195],
 "d9/de1/mpreal_8h.html#af65180b0715c8c85bfdf89bb9d44163c":[7,0,0,0,217,61],
 "d9/de1/mpreal_8h.html#af76739a634afe2379e8ffcdc6f28bcdf":[7,0,0,0,217,159],
@@ -249,5 +248,6 @@ var NAVTREEINDEX38 =
 "da/d2a/res-a0-pair_8hpp.html":[7,0,0,0,264],
 "da/d2a/res-a0-pair_8hpp_source.html":[7,0,0,0,264],
 "da/d2c/aring-gf-flint_8cpp.html":[7,0,0,0,14],
-"da/d2c/aring-gf-flint_8cpp_source.html":[7,0,0,0,14]
+"da/d2c/aring-gf-flint_8cpp_source.html":[7,0,0,0,14],
+"da/d34/_m2_free_algebra_8hpp.html":[7,0,0,0,172]
 };
