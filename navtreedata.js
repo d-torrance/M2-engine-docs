@@ -71,14 +71,14 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda",
-"d0/d91/classgb_a_a768de36fb5bdf86987d2e9d25f0001cd.html#a768de36fb5bdf86987d2e9d25f0001cdae89832a5edcfbc85403f49cdb7df4676",
-"d0/d99/class_m2_1_1_concrete_ring_ad389a12b636656b5910db0f680a7b04b.html#ad389a12b636656b5910db0f680a7b04b",
-"d1/d02/namespacempfr_a0c0a8656f54344dca09c351a5513fc70.html#a0c0a8656f54344dca09c351a5513fc70",
-"d1/d02/namespacempfr_ae2e64336ba48c064bae3dbef6cd04ed6.html#ae2e64336ba48c064bae3dbef6cd04ed6",
-"d1/d34/class_coefficient_ring_r_aef37cea92f29b30b3ed678b65cc3db6a.html#aef37cea92f29b30b3ed678b65cc3db6a",
-"d1/d71/class_degree_zero_map_generator_1_1iterator.html",
+"annotated.html",
+"d0/d5c/structres2__pair_ae21943a72ceb5c79cb48c3ed9fb7b69b.html#ae21943a72ceb5c79cb48c3ed9fb7b69b",
+"d0/d91/classgb_a_a76affd6efa12b7873729aeea34c8a325.html#a76affd6efa12b7873729aeea34c8a325",
+"d0/d99/class_m2_1_1_concrete_ring_ad3bbd78387412a9ab947c793b6cf5fcf.html#ad3bbd78387412a9ab947c793b6cf5fcf",
+"d1/d02/namespacempfr_a0cad994ac6b967b3ed9dbbbc78cda9c5.html#a0cad994ac6b967b3ed9dbbbc78cda9c5",
+"d1/d02/namespacempfr_ae475bce182b6245f6c2769d05caaf35d.html#ae475bce182b6245f6c2769d05caaf35d",
+"d1/d34/class_coefficient_ring_r_af9205fc585fe72e91eea2a427d851843.html#af9205fc585fe72e91eea2a427d851843",
+"d1/d71/class_degree_zero_map_generator_1_1iterator_a1839fa1da73814fb70e5e7684d5e4f42.html#a1839fa1da73814fb70e5e7684d5e4f42",
 "d1/dd3/class_g_b_proxy_aa59c3913aec1f854cf92f641a581f6fd.html#aa59c3913aec1f854cf92f641a581f6fd",
 "d2/d11/class_flint_q_q_mat_a9d104962e43b9d26d5fa54c75e5a3b7b.html#a9d104962e43b9d26d5fa54c75e5a3b7b",
 "d2/d9f/monom_lex_8hpp_source.html",
@@ -125,11 +125,11 @@ var NAVTREEINDEX =
 "dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0",
 "dd/df4/matrix_8h_ad376fe8726efff13ebfe60fbc1148258.html#ad376fe8726efff13ebfe60fbc1148258",
 "de/d85/_ring_z_zp_test_8cpp_a3e57b6d72ad5ccdec323573e7875be06.html#a3e57b6d72ad5ccdec323573e7875be06",
-"de/dbd/class_free_algebra_ad7e709d69aea542ce19a0c0c791efa11.html#ad7e709d69aea542ce19a0c0c791efa11",
-"df/d28/class_d_mat_iterator_a0e9f029b64d62a5b0a518ea8f793c9d5.html#a0e9f029b64d62a5b0a518ea8f793c9d5",
-"df/da2/class_schur_ring2_a7ba065ae65dee16175a62df7b2002e9c.html#a7ba065ae65dee16175a62df7b2002e9c",
-"df/ddb/class_monomial_ideal_a2329e34a15c63d4a840e6304e9db8c6d.html#a2329e34a15c63d4a840e6304e9db8c6d",
-"globals_defs.html"
+"de/dbd/class_free_algebra_acb48b8edd0eaeb43cf69971b24b72d44.html#acb48b8edd0eaeb43cf69971b24b72d44",
+"df/d28/class_d_mat_iterator_a07db84ea6c349d687df3b0a3dc95b7e9.html#a07db84ea6c349d687df3b0a3dc95b7e9",
+"df/da2/class_schur_ring2_a76c9bdd1a33835cf17c12b2ee2206902.html#a76c9bdd1a33835cf17c12b2ee2206902",
+"df/ddb/class_monomial_ideal_a2262f6f897a77a8c122f6c28622fd271.html#a2262f6f897a77a8c122f6c28622fd271",
+"globals_d.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

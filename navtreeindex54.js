@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"de/dbd/class_free_algebra_acb48b8edd0eaeb43cf69971b24b72d44.html#acb48b8edd0eaeb43cf69971b24b72d44":[6,0,91,5],
 "de/dbd/class_free_algebra_ad7e709d69aea542ce19a0c0c791efa11.html#ad7e709d69aea542ce19a0c0c791efa11":[6,0,91,45],
 "de/dbd/class_free_algebra_ae50166c0e0d23487d7cb6e72ade791b6.html#ae50166c0e0d23487d7cb6e72ade791b6":[6,0,91,55],
 "de/dc8/_eschreyer_8hpp.html":[7,0,0,0,108],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "df/d21/namespace_eigen_m2_af62f1a1bf68deb784d2ae1b784fd25de.html#af62f1a1bf68deb784d2ae1b784fd25de":[5,0,1,1],
 "df/d28/_memory_block_8hpp.html":[7,0,0,0,197],
 "df/d28/_memory_block_8hpp_source.html":[7,0,0,0,197],
-"df/d28/class_d_mat_iterator.html":[6,0,51],
-"df/d28/class_d_mat_iterator_a07db84ea6c349d687df3b0a3dc95b7e9.html#a07db84ea6c349d687df3b0a3dc95b7e9":[6,0,51,4]
+"df/d28/class_d_mat_iterator.html":[6,0,51]
 };

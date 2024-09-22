@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['unitemonom_12040',['UniteMonom',['../d9/d02/class_b_i_basis_1_1_polynom_ac5b8e5d23fe1f66767baf542e0c4c119.html#ac5b8e5d23fe1f66767baf542e0c4c119',1,'BIBasis::Polynom']]],
-  ['up_12041',['up',['../d3/de1/structhilb__step_ab17dabf47b9a929ce6b291acd2289ba4.html#ab17dabf47b9a929ce6b291acd2289ba4',1,'hilb_step']]],
-  ['use_5fbigcell_12042',['use_bigcell',['../da/d1d/classbinomial_g_b__comp_a794d31a605589a5bdbbd6ca944ea45f7.html#a794d31a605589a5bdbbd6ca944ea45f7',1,'binomialGB_comp']]],
-  ['use_5fcodim_5flimit_12043',['use_codim_limit',['../d6/d5d/struct_stop_conditions_a38979f2d87b315214e69b10d3aff4494.html#a38979f2d87b315214e69b10d3aff4494',1,'StopConditions']]],
-  ['use_5fcomponent_5fdegrees_5f_12044',['use_component_degrees_',['../d5/d82/class_g_b_weight_a5a8033f69e07efaba380729eb023a039.html#a5a8033f69e07efaba380729eb023a039',1,'GBWeight']]],
-  ['use_5fgcd_5fsimplify_12045',['use_gcd_simplify',['../d6/d42/class_fraction_field_a894cd40a3d725c7388e6605b63831820.html#a894cd40a3d725c7388e6605b63831820',1,'FractionField::use_gcd_simplify()'],['../d6/dfd/class_local_ring_adddda4cf17dc4613ec0e4c56948daf4e.html#adddda4cf17dc4613ec0e4c56948daf4e',1,'LocalRing::use_gcd_simplify()']]],
-  ['use_5fhilb_12046',['use_hilb',['../d0/d91/classgb_a_a746d97042b3e465f1559b2c5d5e89c20.html#a746d97042b3e465f1559b2c5d5e89c20',1,'gbA::use_hilb()'],['../dd/df7/classgb2__comp_abd7984578c6fac00a8ea14f886e1eb2b.html#abd7984578c6fac00a8ea14f886e1eb2b',1,'gb2_comp::use_hilb()']]],
-  ['use_5frespolyheaps_12047',['use_respolyHeaps',['../db/d31/classres2__comp_ab0924d0296f006ac6973ddb75e89787f.html#ab0924d0296f006ac6973ddb75e89787f',1,'res2_comp']]],
-  ['usebkz_12048',['useBKZ',['../da/d45/ntl-interface_8cpp_a6cef1fe3aab133cf1077edf2e081d70b.html#a6cef1fe3aab133cf1077edf2e081d70b',1,'ntl-interface.cpp']]],
-  ['uselll_12049',['useLLL',['../da/d45/ntl-interface_8cpp_a20bd0eb9380377c9dfe24ae0c9935849.html#a20bd0eb9380377c9dfe24ae0c9935849',1,'ntl-interface.cpp']]],
-  ['usentl_12050',['useNTL',['../da/d45/ntl-interface_8cpp_a4ce291d49a8e60a98210aacfda4907a3.html#a4ce291d49a8e60a98210aacfda4907a3',1,'ntl-interface.cpp']]],
-  ['userr_12051',['useRR',['../da/d45/ntl-interface_8cpp_a57919576e5fb2a3e005df2fe82b086a8.html#a57919576e5fb2a3e005df2fe82b086a8',1,'ntl-interface.cpp']]]
+  ['unitemonom_12043',['UniteMonom',['../d9/d02/class_b_i_basis_1_1_polynom_ac5b8e5d23fe1f66767baf542e0c4c119.html#ac5b8e5d23fe1f66767baf542e0c4c119',1,'BIBasis::Polynom']]],
+  ['up_12044',['up',['../d3/de1/structhilb__step_ab17dabf47b9a929ce6b291acd2289ba4.html#ab17dabf47b9a929ce6b291acd2289ba4',1,'hilb_step']]],
+  ['use_5fbigcell_12045',['use_bigcell',['../da/d1d/classbinomial_g_b__comp_a794d31a605589a5bdbbd6ca944ea45f7.html#a794d31a605589a5bdbbd6ca944ea45f7',1,'binomialGB_comp']]],
+  ['use_5fcodim_5flimit_12046',['use_codim_limit',['../d6/d5d/struct_stop_conditions_a38979f2d87b315214e69b10d3aff4494.html#a38979f2d87b315214e69b10d3aff4494',1,'StopConditions']]],
+  ['use_5fcomponent_5fdegrees_5f_12047',['use_component_degrees_',['../d5/d82/class_g_b_weight_a5a8033f69e07efaba380729eb023a039.html#a5a8033f69e07efaba380729eb023a039',1,'GBWeight']]],
+  ['use_5fgcd_5fsimplify_12048',['use_gcd_simplify',['../d6/d42/class_fraction_field_a894cd40a3d725c7388e6605b63831820.html#a894cd40a3d725c7388e6605b63831820',1,'FractionField::use_gcd_simplify()'],['../d6/dfd/class_local_ring_adddda4cf17dc4613ec0e4c56948daf4e.html#adddda4cf17dc4613ec0e4c56948daf4e',1,'LocalRing::use_gcd_simplify()']]],
+  ['use_5fhilb_12049',['use_hilb',['../d0/d91/classgb_a_a746d97042b3e465f1559b2c5d5e89c20.html#a746d97042b3e465f1559b2c5d5e89c20',1,'gbA::use_hilb()'],['../dd/df7/classgb2__comp_abd7984578c6fac00a8ea14f886e1eb2b.html#abd7984578c6fac00a8ea14f886e1eb2b',1,'gb2_comp::use_hilb()']]],
+  ['use_5frespolyheaps_12050',['use_respolyHeaps',['../db/d31/classres2__comp_ab0924d0296f006ac6973ddb75e89787f.html#ab0924d0296f006ac6973ddb75e89787f',1,'res2_comp']]],
+  ['usebkz_12051',['useBKZ',['../da/d45/ntl-interface_8cpp_a6cef1fe3aab133cf1077edf2e081d70b.html#a6cef1fe3aab133cf1077edf2e081d70b',1,'ntl-interface.cpp']]],
+  ['uselll_12052',['useLLL',['../da/d45/ntl-interface_8cpp_a20bd0eb9380377c9dfe24ae0c9935849.html#a20bd0eb9380377c9dfe24ae0c9935849',1,'ntl-interface.cpp']]],
+  ['usentl_12053',['useNTL',['../da/d45/ntl-interface_8cpp_a4ce291d49a8e60a98210aacfda4907a3.html#a4ce291d49a8e60a98210aacfda4907a3',1,'ntl-interface.cpp']]],
+  ['userr_12054',['useRR',['../da/d45/ntl-interface_8cpp_a57919576e5fb2a3e005df2fe82b086a8.html#a57919576e5fb2a3e005df2fe82b086a8',1,'ntl-interface.cpp']]]
 ];
