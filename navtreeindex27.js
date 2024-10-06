@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"d7/d11/classschur__poly__iterator_a2151b11e237f70769ff93108916df895.html#a2151b11e237f70769ff93108916df895":[6,0,306,3],
 "d7/d11/classschur__poly__iterator_a2247e17cedee41f0350a5cc96c5b4af1.html#a2247e17cedee41f0350a5cc96c5b4af1":[6,0,306,8],
 "d7/d11/classschur__poly__iterator_a2c748410622b50a902753c4c8930ac69.html#a2c748410622b50a902753c4c8930ac69":[6,0,306,6],
 "d7/d11/classschur__poly__iterator_a74e3a03dfb1d296e5df1cf7c5cf2e390.html#a74e3a03dfb1d296e5df1cf7c5cf2e390":[6,0,306,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "d7/d3d/class_res_polynomial_constructor_ad9e6922c47e3dd1faed3c39fca13b579.html#ad9e6922c47e3dd1faed3c39fca13b579":[6,0,286,5],
 "d7/d3d/struct_s_mat_1_1sparsevec.html":[6,0,317,1],
 "d7/d3d/struct_s_mat_1_1sparsevec_a7c1bced51b11ec903a828a604005727c.html#a7c1bced51b11ec903a828a604005727c":[6,0,317,1,0],
-"d7/d3d/struct_s_mat_1_1sparsevec_a9683b6166dfb084629d8ad6e68af09d5.html#a9683b6166dfb084629d8ad6e68af09d5":[6,0,317,1,2],
-"d7/d3d/struct_s_mat_1_1sparsevec_acac0a783b79012d9494ac246de0051ee.html#acac0a783b79012d9494ac246de0051ee":[6,0,317,1,1]
+"d7/d3d/struct_s_mat_1_1sparsevec_a9683b6166dfb084629d8ad6e68af09d5.html#a9683b6166dfb084629d8ad6e68af09d5":[6,0,317,1,2]
 };

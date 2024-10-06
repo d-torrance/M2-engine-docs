@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"d8/db5/namespace_matrix_ops_afe4218a0888dd30913d8067224fd8445.html#afe4218a0888dd30913d8067224fd8445":[5,0,5,8],
 "d8/db5/namespace_matrix_ops_afeb433b0052beec8982e7d67a96c20de.html#afeb433b0052beec8982e7d67a96c20de":[5,0,5,97],
 "d8/db5/namespace_matrix_ops_aff0b8ec82914bed23b63bf8226374434.html#aff0b8ec82914bed23b63bf8226374434":[5,0,5,102],
 "d8/db9/aring-qq-gmp_8cpp.html":[7,0,0,0,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "d9/d02/class_b_i_basis_1_1_polynom_a68128b4d0c70d8e749ff73bd7ad07044.html#a68128b4d0c70d8e749ff73bd7ad07044":[6,0,0,10,0],
 "d9/d02/class_b_i_basis_1_1_polynom_a802922ee1746c71b7e70188392ba69d5.html#a802922ee1746c71b7e70188392ba69d5":[6,0,0,10,17],
 "d9/d02/class_b_i_basis_1_1_polynom_a851f427e4c35d4c0a1ca848132908523.html#a851f427e4c35d4c0a1ca848132908523":[6,0,0,10,7],
-"d9/d02/class_b_i_basis_1_1_polynom_a89d62d18e0c8a83accd13b02bd212cdd.html#a89d62d18e0c8a83accd13b02bd212cdd":[6,0,0,10,10],
-"d9/d02/class_b_i_basis_1_1_polynom_a9f8b68ca0728a15c615fc9187ed764e6.html#a9f8b68ca0728a15c615fc9187ed764e6":[6,0,0,10,9]
+"d9/d02/class_b_i_basis_1_1_polynom_a89d62d18e0c8a83accd13b02bd212cdd.html#a89d62d18e0c8a83accd13b02bd212cdd":[6,0,0,10,10]
 };
