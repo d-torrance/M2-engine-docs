@@ -1,6 +1,5 @@
 var NAVTREEINDEX46 =
 {
-"dc/dad/class_suffix_tree_node_afff143a826fd41625964e6fd60576286.html#afff143a826fd41625964e6fd60576286":[6,0,331,25],
 "dc/db2/reducedgb-field_8hpp.html":[7,0,0,0,255],
 "dc/db2/reducedgb-field_8hpp_source.html":[7,0,0,0,255],
 "dc/db2/structmpfr_1_1internal_1_1result__type_3_01unsigned_01long_01int_01_4.html":[6,0,3,0,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX46 =
 "dd/d09/mutablemat_8hpp_source.html":[7,0,0,0,222],
 "dd/d0a/_givaro_test_8cpp.html":[7,0,0,0,7,15],
 "dd/d0a/_givaro_test_8cpp_a0cdcae3c279645847a1edf1dde509708.html#a0cdcae3c279645847a1edf1dde509708":[7,0,0,0,7,15,1],
-"dd/d0a/_givaro_test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627":[7,0,0,0,7,15,0]
+"dd/d0a/_givaro_test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627":[7,0,0,0,7,15,0],
+"dd/d0a/_givaro_test_8cpp_source.html":[7,0,0,0,7,15]
 };

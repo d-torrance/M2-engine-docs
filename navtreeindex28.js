@@ -1,6 +1,5 @@
 var NAVTREEINDEX28 =
 {
-"d7/d3d/struct_s_mat_1_1sparsevec_acac0a783b79012d9494ac246de0051ee.html#acac0a783b79012d9494ac246de0051ee":[6,0,317,1,1],
 "d7/d40/structgbvector.html":[6,0,123],
 "d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be":[6,0,123,0],
 "d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26":[6,0,123,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX28 =
 "d7/da6/dmat-lu_8hpp_abc0860570ed3598699dc639a16308e50.html#abc0860570ed3598699dc639a16308e50":[7,0,0,0,91,4],
 "d7/da6/dmat-lu_8hpp_abf54f765e46c8013f89ab7920f807379.html#abf54f765e46c8013f89ab7920f807379":[7,0,0,0,91,2],
 "d7/da6/dmat-lu_8hpp_source.html":[7,0,0,0,91],
-"d7/da6/fplll-interface_8cpp.html":[7,0,0,0,117]
+"d7/da6/fplll-interface_8cpp.html":[7,0,0,0,117],
+"d7/da6/fplll-interface_8cpp_a6fa10c7ce9eb0ef319d1831ff8409e73.html#a6fa10c7ce9eb0ef319d1831ff8409e73":[7,0,0,0,117,0]
 };

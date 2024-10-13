@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"d2/d9f/monom_lex_8hpp.html":[7,0,0,0,0,15],
 "d2/d9f/monom_lex_8hpp_source.html":[7,0,0,0,0,15],
 "d2/da2/class_q_ring_info.html":[4,0,0,0],
 "d2/da2/class_q_ring_info_a35e37d40bca92fcc6738d5dbd984cb37.html#a35e37d40bca92fcc6738d5dbd984cb37":[4,0,0,0,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "d2/dc8/groebner_8cpp_ae45b7075879f4ff8ad78a6a8ef41631b.html#ae45b7075879f4ff8ad78a6a8ef41631b":[7,0,0,0,3,14,5],
 "d2/dc8/groebner_8cpp_ae85a1ac71dd1724565c8552917d97ed3.html#ae85a1ac71dd1724565c8552917d97ed3":[7,0,0,0,3,14,17],
 "d2/dc8/groebner_8cpp_aeb0c6040a51ffe1ad7fb9be1327b259f.html#aeb0c6040a51ffe1ad7fb9be1327b259f":[7,0,0,0,3,14,36],
-"d2/dc8/groebner_8cpp_af82f5db01bd48bcd103a25ebef1111eb.html#af82f5db01bd48bcd103a25ebef1111eb":[7,0,0,0,3,14,8]
+"d2/dc8/groebner_8cpp_af82f5db01bd48bcd103a25ebef1111eb.html#af82f5db01bd48bcd103a25ebef1111eb":[7,0,0,0,3,14,8],
+"d2/dc8/groebner_8cpp_afdde861406225fb564343cd712a01548.html#afdde861406225fb564343cd712a01548":[7,0,0,0,3,14,35]
 };

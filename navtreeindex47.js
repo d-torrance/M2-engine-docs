@@ -1,6 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"dd/d0a/_givaro_test_8cpp_source.html":[7,0,0,0,7,15],
 "dd/d0e/eigen_8cpp.html":[7,0,0,0,100],
 "dd/d0e/eigen_8cpp.html#a0cad0b2294423fcf798db91a563038c5":[7,0,0,0,100,12],
 "dd/d0e/eigen_8cpp.html#a34fab610792cb64d15deaabff2decae3":[7,0,0,0,100,14],
@@ -249,5 +248,6 @@ var NAVTREEINDEX47 =
 "dd/d51/class_b_i_basis_1_1_monom_d_l_a3d03f7caf3b37b52da3155a93c88c7dc.html#a3d03f7caf3b37b52da3155a93c88c7dc":[6,0,0,5,3],
 "dd/d51/class_b_i_basis_1_1_monom_d_l_a4530bf9315313762287b88f54f385aa1.html#a4530bf9315313762287b88f54f385aa1":[6,0,0,5,24],
 "dd/d51/class_b_i_basis_1_1_monom_d_l_a49a7901e96b2e5845dcd85aa11f7ae33.html#a49a7901e96b2e5845dcd85aa11f7ae33":[6,0,0,5,14],
-"dd/d51/class_b_i_basis_1_1_monom_d_l_a5462e7d9bb39d1f7eb770dd70cfceaf8.html#a5462e7d9bb39d1f7eb770dd70cfceaf8":[6,0,0,5,25]
+"dd/d51/class_b_i_basis_1_1_monom_d_l_a5462e7d9bb39d1f7eb770dd70cfceaf8.html#a5462e7d9bb39d1f7eb770dd70cfceaf8":[6,0,0,5,25],
+"dd/d51/class_b_i_basis_1_1_monom_d_l_a5b71b734737052f0d2ceb3e81bd5b7cb.html#a5b71b734737052f0d2ceb3e81bd5b7cb":[6,0,0,5,10]
 };
