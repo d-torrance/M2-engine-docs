@@ -22,8 +22,6 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
       [ "Element", "d8/d56/class_m2_1_1_a_ring_g_f_flint_1_1_element.html", "d8/d56/class_m2_1_1_a_ring_g_f_flint_1_1_element" ],
       [ "ElementArray", "d8/dd7/class_m2_1_1_a_ring_g_f_flint_1_1_element_array.html", "d8/dd7/class_m2_1_1_a_ring_g_f_flint_1_1_element_array" ]
     ] ],
-    [ "aring-gf-givaro.cpp", "d6/d9b/aring-gf-givaro_8cpp.html", null ],
-    [ "aring-gf-givaro.hpp", "d2/d7f/aring-gf-givaro_8hpp.html", "d2/d7f/aring-gf-givaro_8hpp" ],
     [ "aring-glue.hpp", "dd/da4/aring-glue_8hpp.html", "dd/da4/aring-glue_8hpp" ],
     [ "aring-m2-gf.cpp", "d5/dfa/aring-m2-gf_8cpp.html", "d5/dfa/aring-m2-gf_8cpp" ],
     [ "aring-m2-gf.hpp", "da/dfb/aring-m2-gf_8hpp.html", "da/dfb/aring-m2-gf_8hpp" ],
@@ -254,7 +252,7 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "M2FreeAlgebraQuotient.hpp", "d9/dcb/_m2_free_algebra_quotient_8hpp.html", [
       [ "M2FreeAlgebraQuotient", "db/d22/class_m2_free_algebra_quotient.html", "db/d22/class_m2_free_algebra_quotient" ]
     ] ],
-    [ "m2tbb.hpp", "d7/d61/m2tbb_8hpp.html", null ],
+    [ "m2tbb.hpp", "d7/d61/m2tbb_8hpp.html", "d7/d61/m2tbb_8hpp" ],
     [ "mat-arith.hpp", "d0/d17/mat-arith_8hpp.html", "d0/d17/mat-arith_8hpp" ],
     [ "mat-elem-ops.hpp", "de/d24/mat-elem-ops_8hpp.html", [
       [ "MatElementaryOps< DMat< RT > >", "d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4.html", "d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4" ],

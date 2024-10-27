@@ -287,9 +287,6 @@ var hierarchy =
         [ "M2::SimpleARing< ARingRR >", "de/db5/class_m2_1_1_simple_a_ring.html", [
           [ "M2::ARingRR", "d0/d48/class_m2_1_1_a_ring_r_r.html", null ]
         ] ],
-        [ "M2::SimpleARing< ARingGFGivaro >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "M2::ARingGFGivaro", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro.html", null ]
-        ] ],
         [ "M2::SimpleARing< CoefficientRingZZp >", "de/db5/class_m2_1_1_simple_a_ring.html", [
           [ "CoefficientRingZZp", "dd/dd5/class_coefficient_ring_z_zp.html", null ]
         ] ],

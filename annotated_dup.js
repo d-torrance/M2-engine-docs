@@ -28,7 +28,6 @@ var annotated_dup =
       [ "ARingCCC", "d6/de1/class_m2_1_1_a_ring_c_c_c.html", "d6/de1/class_m2_1_1_a_ring_c_c_c" ],
       [ "ARingGFFlintBig", "d8/d7a/class_m2_1_1_a_ring_g_f_flint_big.html", "d8/d7a/class_m2_1_1_a_ring_g_f_flint_big" ],
       [ "ARingGFFlint", "d5/d5f/class_m2_1_1_a_ring_g_f_flint.html", "d5/d5f/class_m2_1_1_a_ring_g_f_flint" ],
-      [ "ARingGFGivaro", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro.html", "d6/d8d/class_m2_1_1_a_ring_g_f_givaro" ],
       [ "ConcreteRing", "d0/d99/class_m2_1_1_concrete_ring.html", "d0/d99/class_m2_1_1_concrete_ring" ],
       [ "RingQQ", "d4/d85/class_m2_1_1_ring_q_q.html", "d4/d85/class_m2_1_1_ring_q_q" ],
       [ "GaloisFieldTable", "d5/dab/class_m2_1_1_galois_field_table.html", "d5/dab/class_m2_1_1_galois_field_table" ],
