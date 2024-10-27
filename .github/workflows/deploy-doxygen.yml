@@ -26,8 +26,9 @@ jobs:
                libgdbm-dev libflint-arb-dev
       - name: Configure
         run: |
-          make -C M2
-          cd M2/BUILD && ../configure
+          cd M2/BUILD
+          ../autogen.sh
+          ../configure
       - name: Build engine documentation
         run: |
           make -C M2/BUILD/Macaulay2/util echoout
