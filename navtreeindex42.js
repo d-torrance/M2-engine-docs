@@ -1,6 +1,5 @@
 var NAVTREEINDEX42 =
 {
-"db/d26/class_minimal_primes_ae0f3b06bb4f5c28f91a615e502c1c5a3.html#ae0f3b06bb4f5c28f91a615e502c1c5a3":[5,0,173,20],
 "db/d26/class_minimal_primes_ae395fec0d8460e17c45b7273265f9e85.html#ae395fec0d8460e17c45b7273265f9e85":[5,0,173,8],
 "db/d26/class_minimal_primes_ae77843aea178e8b2688e75a38f33a432.html#ae77843aea178e8b2688e75a38f33a432":[5,0,173,12],
 "db/d26/class_minimal_primes_af694e9565ce5d93c1a853c282e72ef52.html#af694e9565ce5d93c1a853c282e72ef52":[5,0,173,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX42 =
 "db/d90/classnewf4_1_1_monomial_lookup_table_a08bc04266cceedf64f97928fff2d3cba.html#a08bc04266cceedf64f97928fff2d3cba":[5,0,4,10,11],
 "db/d90/classnewf4_1_1_monomial_lookup_table_a0b3d934d36e62f39b6d059efb16d0c1b.html#a0b3d934d36e62f39b6d059efb16d0c1b":[5,0,4,10,3],
 "db/d90/classnewf4_1_1_monomial_lookup_table_a10e6068be428a51ee61e071da1e06c4c.html#a10e6068be428a51ee61e071da1e06c4c":[5,0,4,10,8],
-"db/d90/classnewf4_1_1_monomial_lookup_table_a160238100c10241e68e669e887a36360.html#a160238100c10241e68e669e887a36360":[5,0,4,10,1]
+"db/d90/classnewf4_1_1_monomial_lookup_table_a160238100c10241e68e669e887a36360.html#a160238100c10241e68e669e887a36360":[5,0,4,10,1],
+"db/d90/classnewf4_1_1_monomial_lookup_table_a1f9218ccd79355636e55dd18216306ee.html#a1f9218ccd79355636e55dd18216306ee":[5,0,4,10,2]
 };

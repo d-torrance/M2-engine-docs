@@ -1,6 +1,5 @@
 var NAVTREEINDEX41 =
 {
-"da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4_a03e6287ca4dcd3357f5101859389ffa4.html#a03e6287ca4dcd3357f5101859389ffa4":[5,0,3,0,8,0],
 "da/de0/class_s_mat.html":[5,0,317],
 "da/de0/class_s_mat_a031c5436aadfcca378e47ff9322fba1d.html#a031c5436aadfcca378e47ff9322fba1d":[5,0,317,45],
 "da/de0/class_s_mat_a04792c5a156f89b99c917b5f6942d488.html#a04792c5a156f89b99c917b5f6942d488":[5,0,317,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX41 =
 "db/d26/class_minimal_primes_ab5574decb3c386150c5732e5f653f8c0.html#ab5574decb3c386150c5732e5f653f8c0":[5,0,173,23],
 "db/d26/class_minimal_primes_ab9f0daf83f004ee3eeb462e6ca291907.html#ab9f0daf83f004ee3eeb462e6ca291907":[5,0,173,17],
 "db/d26/class_minimal_primes_ac10ea2564eaabb9f0eda25a559caf72e.html#ac10ea2564eaabb9f0eda25a559caf72e":[5,0,173,3],
-"db/d26/class_minimal_primes_ac512a1aca34fcc5f0bded3a2411c1e57.html#ac512a1aca34fcc5f0bded3a2411c1e57":[5,0,173,19]
+"db/d26/class_minimal_primes_ac512a1aca34fcc5f0bded3a2411c1e57.html#ac512a1aca34fcc5f0bded3a2411c1e57":[5,0,173,19],
+"db/d26/class_minimal_primes_ae0f3b06bb4f5c28f91a615e502c1c5a3.html#ae0f3b06bb4f5c28f91a615e502c1c5a3":[5,0,173,20]
 };

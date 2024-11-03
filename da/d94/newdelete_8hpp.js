@@ -3,7 +3,6 @@ var newdelete_8hpp =
     [ "our_new_delete", "da/dcc/structour__new__delete.html", "da/dcc/structour__new__delete" ],
     [ "our_gc_cleanup", "d3/d31/classour__gc__cleanup.html", "d3/d31/classour__gc__cleanup" ],
     [ "ARRAY_ON_STACK", "da/d94/newdelete_8hpp_ad0d5766703a51f2eff9db81d30987565.html#ad0d5766703a51f2eff9db81d30987565", null ],
-    [ "GC_REDIRECT_TO_LOCAL", "da/d94/newdelete_8hpp_af603ec74cf770ad9cf68a488019aefec.html#af603ec74cf770ad9cf68a488019aefec", null ],
     [ "GETMEM", "da/d94/newdelete_8hpp_a7ceed03f3acdf8c10d3d65ef4ceb5ce4.html#a7ceed03f3acdf8c10d3d65ef4ceb5ce4", null ],
     [ "GETMEM_ATOMIC", "da/d94/newdelete_8hpp_acc8a7054d17eb3cf10afd9facbab1c94.html#acc8a7054d17eb3cf10afd9facbab1c94", null ],
     [ "newarray", "da/d94/newdelete_8hpp_a8e45ca33f2628740d647f3bdf832b96d.html#a8e45ca33f2628740d647f3bdf832b96d", null ],

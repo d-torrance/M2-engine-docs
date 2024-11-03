@@ -8,6 +8,7 @@ var class_m2_free_algebra_or_quotient =
     [ "from_coefficient", "de/dd2/class_m2_free_algebra_or_quotient_a169f64ffc27f9928b77184dd9af11cdc.html#a169f64ffc27f9928b77184dd9af11cdc", null ],
     [ "fromModuleMonom", "de/dd2/class_m2_free_algebra_or_quotient_a8f6b47d8267660f4dd01355628d440d5.html#a8f6b47d8267660f4dd01355628d440d5", null ],
     [ "fromPoly", "de/dd2/class_m2_free_algebra_or_quotient_a12b0104d0655ae4f1158d9388c134d87.html#a12b0104d0655ae4f1158d9388c134d87", null ],
+    [ "is_commutative_ring", "de/dd2/class_m2_free_algebra_or_quotient_a93b8d9ab10bafaf14bf1873b38920975.html#a93b8d9ab10bafaf14bf1873b38920975", null ],
     [ "makeTerm", "de/dd2/class_m2_free_algebra_or_quotient_aa9d22611d63333836aac8454f6ae9e31.html#aa9d22611d63333836aac8454f6ae9e31", null ],
     [ "n_vars", "de/dd2/class_m2_free_algebra_or_quotient_a60c80bd232b6add775c56c1d7e39660f.html#a60c80bd232b6add775c56c1d7e39660f", null ],
     [ "toPoly", "de/dd2/class_m2_free_algebra_or_quotient_a0a8366f88da5bea6bfc996996168aa05.html#a0a8366f88da5bea6bfc996996168aa05", null ]
