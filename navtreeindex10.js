@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"d2/da2/class_q_ring_info_a35e37d40bca92fcc6738d5dbd984cb37.html#a35e37d40bca92fcc6738d5dbd984cb37":[3,0,0,0,9],
 "d2/da2/class_q_ring_info_a3e4ffcb918490edcb0913cd606c4cb84.html#a3e4ffcb918490edcb0913cd606c4cb84":[3,0,0,0,8],
 "d2/da2/class_q_ring_info_a3ec2d267fe6a2820c27b1a9d3eec8ecf.html#a3ec2d267fe6a2820c27b1a9d3eec8ecf":[3,0,0,0,10],
 "d2/da2/class_q_ring_info_a48e89b02720eae9921be9d7c012b04cb.html#a48e89b02720eae9921be9d7c012b04cb":[3,0,0,0,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "d2/dc8/groebner_8cpp_af82f5db01bd48bcd103a25ebef1111eb.html#af82f5db01bd48bcd103a25ebef1111eb":[6,0,0,0,3,14,8],
 "d2/dc8/groebner_8cpp_afdde861406225fb564343cd712a01548.html#afdde861406225fb564343cd712a01548":[6,0,0,0,3,14,35],
 "d2/dc8/groebner_8cpp_source.html":[6,0,0,0,3,14],
-"d2/dcb/class_tower.html":[5,0,341]
+"d2/dcb/class_tower.html":[5,0,341],
+"d2/dcb/class_tower_a0319cf4ce09b13160720c66dd1c96bd9.html#a0319cf4ce09b13160720c66dd1c96bd9":[5,0,341,20]
 };
