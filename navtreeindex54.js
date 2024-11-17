@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"de/df4/aring-translate_8hpp.html":[6,0,0,0,32],
 "de/df4/aring-translate_8hpp.html#a0145c910aa1eda20cf30ca74fecbf71f":[6,0,0,0,32,36],
 "de/df4/aring-translate_8hpp.html#a03e1ab1fe37563909692a91e25b7f4de":[6,0,0,0,32,9],
 "de/df4/aring-translate_8hpp.html#a054eca33000aaf55e13fc684b061b415":[6,0,0,0,32,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "df/d3c/mutable-matrix_8h_a30157171325b048890ebb135274ee636.html#a30157171325b048890ebb135274ee636":[6,0,0,0,3,25,6],
 "df/d3c/mutable-matrix_8h_a33405452619cfa938392ba14426e2b50.html#a33405452619cfa938392ba14426e2b50":[6,0,0,0,3,25,34],
 "df/d3c/mutable-matrix_8h_a360881f933b2663d88f19029a7105d88.html#a360881f933b2663d88f19029a7105d88":[6,0,0,0,3,25,7],
-"df/d3c/mutable-matrix_8h_a3ae6b86d433410dceb4ab68929927d00.html#a3ae6b86d433410dceb4ab68929927d00":[6,0,0,0,3,25,9],
-"df/d3c/mutable-matrix_8h_a3f58c11388da92233a6d28b7830eb8ac.html#a3f58c11388da92233a6d28b7830eb8ac":[6,0,0,0,3,25,51]
+"df/d3c/mutable-matrix_8h_a3ae6b86d433410dceb4ab68929927d00.html#a3ae6b86d433410dceb4ab68929927d00":[6,0,0,0,3,25,9]
 };

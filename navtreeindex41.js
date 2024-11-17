@@ -1,5 +1,6 @@
 var NAVTREEINDEX41 =
 {
+"da/de0/class_s_mat.html":[5,0,317],
 "da/de0/class_s_mat_a031c5436aadfcca378e47ff9322fba1d.html#a031c5436aadfcca378e47ff9322fba1d":[5,0,317,45],
 "da/de0/class_s_mat_a04792c5a156f89b99c917b5f6942d488.html#a04792c5a156f89b99c917b5f6942d488":[5,0,317,12],
 "da/de0/class_s_mat_a0c709016556af85be469a5e273906422.html#a0c709016556af85be469a5e273906422":[5,0,317,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX41 =
 "db/d26/class_minimal_primes_ab9f0daf83f004ee3eeb462e6ca291907.html#ab9f0daf83f004ee3eeb462e6ca291907":[5,0,173,17],
 "db/d26/class_minimal_primes_ac10ea2564eaabb9f0eda25a559caf72e.html#ac10ea2564eaabb9f0eda25a559caf72e":[5,0,173,3],
 "db/d26/class_minimal_primes_ac512a1aca34fcc5f0bded3a2411c1e57.html#ac512a1aca34fcc5f0bded3a2411c1e57":[5,0,173,19],
-"db/d26/class_minimal_primes_ae0f3b06bb4f5c28f91a615e502c1c5a3.html#ae0f3b06bb4f5c28f91a615e502c1c5a3":[5,0,173,20],
-"db/d26/class_minimal_primes_ae395fec0d8460e17c45b7273265f9e85.html#ae395fec0d8460e17c45b7273265f9e85":[5,0,173,8]
+"db/d26/class_minimal_primes_ae0f3b06bb4f5c28f91a615e502c1c5a3.html#ae0f3b06bb4f5c28f91a615e502c1c5a3":[5,0,173,20]
 };
