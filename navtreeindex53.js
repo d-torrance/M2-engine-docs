@@ -1,6 +1,5 @@
 var NAVTREEINDEX53 =
 {
-"de/daa/random_8cpp_ae4b0efde4fa4613b407716d265d19b0a.html#ae4b0efde4fa4613b407716d265d19b0a":[6,0,0,0,3,28,0],
 "de/daa/random_8cpp_ae7520c5477c11965aabeedc033c9862b.html#ae7520c5477c11965aabeedc033c9862b":[6,0,0,0,3,28,5],
 "de/daa/random_8cpp_aeede06671efb99cefbf44c44a3256323.html#aeede06671efb99cefbf44c44a3256323":[6,0,0,0,3,28,19],
 "de/daa/random_8cpp_source.html":[6,0,0,0,3,28],
@@ -249,5 +248,6 @@ var NAVTREEINDEX53 =
 "de/df3/class_degree_zero_map_generator_ac7b0a7a8e4249e88a5fa7bed6f1bb077.html#ac7b0a7a8e4249e88a5fa7bed6f1bb077":[5,0,42,8],
 "de/df3/class_degree_zero_map_generator_ad2c750087c24d292712a6f3636e7e629.html#ad2c750087c24d292712a6f3636e7e629":[5,0,42,1],
 "de/df3/class_degree_zero_map_generator_ae11767ff94ba3ee8e3c0ddd7db06780b.html#ae11767ff94ba3ee8e3c0ddd7db06780b":[5,0,42,4],
-"de/df3/class_degree_zero_map_generator_ae8d4dbed15c9c0bd3d060e0558f3b2e0.html#ae8d4dbed15c9c0bd3d060e0558f3b2e0":[5,0,42,11]
+"de/df3/class_degree_zero_map_generator_ae8d4dbed15c9c0bd3d060e0558f3b2e0.html#ae8d4dbed15c9c0bd3d060e0558f3b2e0":[5,0,42,11],
+"de/df4/aring-translate_8hpp.html":[6,0,0,0,32]
 };
