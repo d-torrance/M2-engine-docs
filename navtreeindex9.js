@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"d2/d11/class_flint_q_q_mat_a9431b9549218180c19e2ccff72396034.html#a9431b9549218180c19e2ccff72396034":[5,0,87,2],
 "d2/d11/class_flint_q_q_mat_a9d104962e43b9d26d5fa54c75e5a3b7b.html#a9d104962e43b9d26d5fa54c75e5a3b7b":[5,0,87,11],
 "d2/d11/class_flint_q_q_mat_acd77570b40098a678449b52b3202d318.html#acd77570b40098a678449b52b3202d318":[5,0,87,3],
 "d2/d11/class_flint_q_q_mat_acf0f9b5070ff33ed66f770198d9188e8.html#acf0f9b5070ff33ed66f770198d9188e8":[5,0,87,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "d2/d8c/class_m2_1_1_element_impl_ae6c733fb339a8923075c438454780906.html#ae6c733fb339a8923075c438454780906":[5,0,2,23,3],
 "d2/d9f/monom_lex_8hpp.html":[6,0,0,0,0,15],
 "d2/d9f/monom_lex_8hpp_source.html":[6,0,0,0,0,15],
-"d2/da2/class_q_ring_info.html":[3,0,0,0],
-"d2/da2/class_q_ring_info_a35e37d40bca92fcc6738d5dbd984cb37.html#a35e37d40bca92fcc6738d5dbd984cb37":[3,0,0,0,9]
+"d2/da2/class_q_ring_info.html":[3,0,0,0]
 };

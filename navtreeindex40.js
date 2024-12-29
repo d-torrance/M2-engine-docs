@@ -1,5 +1,6 @@
 var NAVTREEINDEX40 =
 {
+"da/d80/classnewf4_1_1_monomial_view_a69ae3e92a879e452a4f5e6edd075519d.html#a69ae3e92a879e452a4f5e6edd075519d":[5,0,4,11,9],
 "da/d80/classnewf4_1_1_monomial_view_a713ad7180edaecbd813181327d9f4273.html#a713ad7180edaecbd813181327d9f4273":[5,0,4,11,6],
 "da/d80/classnewf4_1_1_monomial_view_a8cc3f7e15991947a17025d991516b041.html#a8cc3f7e15991947a17025d991516b041":[5,0,4,11,14],
 "da/d80/classnewf4_1_1_monomial_view_a93912adb6ef2e8ef723e95514470ec31.html#a93912adb6ef2e8ef723e95514470ec31":[5,0,4,11,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX40 =
 "da/dd1/struct_tower_polynomial_struct_adebe500398be3c3148d0f1210335dde7.html#adebe500398be3c3148d0f1210335dde7":[3,0,2,0,2],
 "da/dd1/struct_tower_polynomial_struct_af5d66844ab2ef83232c0042c994125f8.html#af5d66844ab2ef83232c0042c994125f8":[3,0,2,0,0],
 "da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4.html":[5,0,3,0,8],
-"da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4_a03e6287ca4dcd3357f5101859389ffa4.html#a03e6287ca4dcd3357f5101859389ffa4":[5,0,3,0,8,0],
-"da/de0/class_s_mat.html":[5,0,317]
+"da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4_a03e6287ca4dcd3357f5101859389ffa4.html#a03e6287ca4dcd3357f5101859389ffa4":[5,0,3,0,8,0]
 };
