@@ -1,6 +1,5 @@
 var NAVTREEINDEX38 =
 {
-"d9/df2/_m2mem-replacement_8c.html":[6,0,0,0,7,19],
 "d9/df2/_m2mem-replacement_8c_a102ffdefa5428c5ba21ffdeccf749eaa.html#a102ffdefa5428c5ba21ffdeccf749eaa":[6,0,0,0,7,19,7],
 "d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba":[6,0,0,0,7,19,0],
 "d9/df2/_m2mem-replacement_8c_a207568845fa6a2ee53f6fccfbbb431c2.html#a207568845fa6a2ee53f6fccfbbb431c2":[6,0,0,0,7,19,16],
@@ -179,9 +178,9 @@ var NAVTREEINDEX38 =
 "da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80":[3,0,2,8],
 "da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80":[4,0,4,28],
 "da/d39/group__matrices.html":[3,2],
-"da/d39/group__matrices_ga279d84b40c6e3c343716c75725f7610c.html#ga279d84b40c6e3c343716c75725f7610c":[6,0,0,0,183,2],
 "da/d39/group__matrices_ga279d84b40c6e3c343716c75725f7610c.html#ga279d84b40c6e3c343716c75725f7610c":[3,2,5],
 "da/d39/group__matrices_ga279d84b40c6e3c343716c75725f7610c.html#ga279d84b40c6e3c343716c75725f7610c":[6,0,0,0,184,0],
+"da/d39/group__matrices_ga279d84b40c6e3c343716c75725f7610c.html#ga279d84b40c6e3c343716c75725f7610c":[6,0,0,0,183,2],
 "da/d39/group__matrices_gaeda989d4916eae3fbd1a28018fc78a85.html#gaeda989d4916eae3fbd1a28018fc78a85":[3,2,4],
 "da/d39/group__matrices_gaeda989d4916eae3fbd1a28018fc78a85.html#gaeda989d4916eae3fbd1a28018fc78a85":[6,0,0,0,176,12],
 "da/d40/classbuffer.html":[5,0,25],
@@ -249,5 +248,6 @@ var NAVTREEINDEX38 =
 "da/d48/class_m2_1_1_a_ring_tower_a02aa7ad2bd09d30d64234fefd6c4637d.html#a02aa7ad2bd09d30d64234fefd6c4637d":[3,0,14,4],
 "da/d48/class_m2_1_1_a_ring_tower_a0969bcd5b9a5c9cddba6345bb903f1f0.html#a0969bcd5b9a5c9cddba6345bb903f1f0":[3,0,14,62],
 "da/d48/class_m2_1_1_a_ring_tower_a0b8fb52a03094a0584d37b7741fc1dc7.html#a0b8fb52a03094a0584d37b7741fc1dc7":[3,0,14,5],
-"da/d48/class_m2_1_1_a_ring_tower_a0c7ef6b168e5a1846c3511e8dc023b2e.html#a0c7ef6b168e5a1846c3511e8dc023b2e":[3,0,14,38]
+"da/d48/class_m2_1_1_a_ring_tower_a0c7ef6b168e5a1846c3511e8dc023b2e.html#a0c7ef6b168e5a1846c3511e8dc023b2e":[3,0,14,38],
+"da/d48/class_m2_1_1_a_ring_tower_a0ce13aef02d2f7f13eacafa7ca5dcf4d.html#a0ce13aef02d2f7f13eacafa7ca5dcf4d":[3,0,14,47]
 };
