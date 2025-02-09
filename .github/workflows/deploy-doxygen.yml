@@ -23,7 +23,7 @@ jobs:
           sudo apt-get install -y doxygen libtool-bin libtbb-dev \
                libeigen3-dev libboost-dev libboost-regex-dev \
                libflint-dev libmathicgb-dev libmemtailor-dev libgc-dev \
-               libgdbm-dev
+               libgdbm-dev liblzma-dev
       - name: Configure
         run: |
           cd M2/BUILD
