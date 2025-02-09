@@ -5,8 +5,8 @@ var class_monomial_order_matrix =
     [ "compare", "d5/d82/class_monomial_order_matrix_a8ed39c31d5a9a5f6c67e17746226dd50.html#a8ed39c31d5a9a5f6c67e17746226dd50", null ],
     [ "facet_compare", "d5/d82/class_monomial_order_matrix_ace260965c5a27d2cfbeedf5325e6f0e7.html#ace260965c5a27d2cfbeedf5325e6f0e7", null ],
     [ "minpart", "d5/d82/class_monomial_order_matrix_acd9d293cd2b6060d492071d67bbe05ec.html#acd9d293cd2b6060d492071d67bbe05ec", null ],
-    [ "part", "d5/d82/class_monomial_order_matrix_ac57cd95950eb72fbe53ea3b16a49679e.html#ac57cd95950eb72fbe53ea3b16a49679e", null ],
-    [ "toMonomialOrdering", "d5/d82/class_monomial_order_matrix_a5c92a6600a17cd3078bd38929768c9db.html#a5c92a6600a17cd3078bd38929768c9db", null ],
+    [ "part", "d5/d82/class_monomial_order_matrix_ab7a0c857d4c55c6574a2cfd25122f9ca.html#ab7a0c857d4c55c6574a2cfd25122f9ca", null ],
+    [ "toMonomialOrdering", "d5/d82/class_monomial_order_matrix_a0c78bd7087c2e6e06376ccdc8abdf44b.html#a0c78bd7087c2e6e06376ccdc8abdf44b", null ],
     [ "value", "d5/d82/class_monomial_order_matrix_a3952cb4341059a9a4ed03bef3ea1c3b3.html#a3952cb4341059a9a4ed03bef3ea1c3b3", null ],
     [ "nvars", "d5/d82/class_monomial_order_matrix_a8ca6a5f7b1d2535efb6a8d0daa159877.html#a8ca6a5f7b1d2535efb6a8d0daa159877", null ],
     [ "order", "d5/d82/class_monomial_order_matrix_a2d0e58e847f17e95a02b2aad866c6bec.html#a2d0e58e847f17e95a02b2aad866c6bec", null ]

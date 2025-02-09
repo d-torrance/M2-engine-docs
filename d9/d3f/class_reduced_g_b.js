@@ -2,7 +2,7 @@ var class_reduced_g_b =
 [
     [ "ReducedGB", "d9/d3f/class_reduced_g_b_afb440d8ed7bbd8d179a63cfff470cc85.html#afb440d8ed7bbd8d179a63cfff470cc85", null ],
     [ "~ReducedGB", "d9/d3f/class_reduced_g_b_ae209201b4097aa401fba906579c1da14.html#ae209201b4097aa401fba906579c1da14", null ],
-    [ "cast_to_GBComputation", "d9/d3f/class_reduced_g_b_a89347074cd6840c2c48879a98852f830.html#a89347074cd6840c2c48879a98852f830", null ],
+    [ "cast_to_GBComputation", "d9/d3f/class_reduced_g_b_ad74c0f708a36dc1b3afe44ba302f4b63.html#ad74c0f708a36dc1b3afe44ba302f4b63", null ],
     [ "complete_thru_degree", "d9/d3f/class_reduced_g_b_aea695e0672c1346c4cdf298cf9c61c06.html#aea695e0672c1346c4cdf298cf9c61c06", null ],
     [ "contains", "d9/d3f/class_reduced_g_b_a747269a57b029a8193bc0f236b66fff7.html#a747269a57b029a8193bc0f236b66fff7", null ],
     [ "create", "d9/d3f/class_reduced_g_b_a7b66fb4c7fbefbd3c42c4356dfc8ba78.html#a7b66fb4c7fbefbd3c42c4356dfc8ba78", null ],
@@ -11,7 +11,7 @@ var class_reduced_g_b =
     [ "get_initial", "d9/d3f/class_reduced_g_b_a62c0b403d3ce5d9cdd1391f8cba6be0b.html#a62c0b403d3ce5d9cdd1391f8cba6be0b", null ],
     [ "get_mingens", "d9/d3f/class_reduced_g_b_a581823ba45ddac4ef7a8e7626c257669.html#a581823ba45ddac4ef7a8e7626c257669", null ],
     [ "get_parallel_lead_terms", "d9/d3f/class_reduced_g_b_a656d5a0a30336fa9c6107d03839b817d.html#a656d5a0a30336fa9c6107d03839b817d", null ],
-    [ "get_ring", "d9/d3f/class_reduced_g_b_a3061267dc592cbe7b54dfd0b8cff6e11.html#a3061267dc592cbe7b54dfd0b8cff6e11", null ],
+    [ "get_ring", "d9/d3f/class_reduced_g_b_a99096cda472ad671914a0ff6033d7cb7.html#a99096cda472ad671914a0ff6033d7cb7", null ],
     [ "get_syzygies", "d9/d3f/class_reduced_g_b_a58b817c615f2875be6efc3a6dcd07604.html#a58b817c615f2875be6efc3a6dcd07604", null ],
     [ "matrix_lift", "d9/d3f/class_reduced_g_b_ac8eb52e0c0f0f993b8bdbab0eeaed7ed.html#ac8eb52e0c0f0f993b8bdbab0eeaed7ed", null ],
     [ "matrix_remainder", "d9/d3f/class_reduced_g_b_a0aff9a7ba7739e909dc8cb503124c728.html#a0aff9a7ba7739e909dc8cb503124c728", null ],

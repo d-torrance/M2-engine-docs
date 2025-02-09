@@ -1,6 +1,6 @@
 var dmat_lu_8hpp =
 [
-    [ "DMatLinAlg", "d8/df6/class_d_mat_lin_alg.html", "d8/df6/class_d_mat_lin_alg" ],
+    [ "DMatLinAlg< RingType >", "d8/df6/class_d_mat_lin_alg.html", "d8/df6/class_d_mat_lin_alg" ],
     [ "DMatGFFlintBig", "d7/da6/dmat-lu_8hpp_a8bf782aafebc093be08354ffd3c3e50c.html#a8bf782aafebc093be08354ffd3c3e50c", null ],
     [ "permuteRows", "d7/da6/dmat-lu_8hpp_abf54f765e46c8013f89ab7920f807379.html#abf54f765e46c8013f89ab7920f807379", null ],
     [ "solveLowerTriangular", "d7/da6/dmat-lu_8hpp_a056d57a3602ef5a065c0669d8924aa95.html#a056d57a3602ef5a065c0669d8924aa95", null ],

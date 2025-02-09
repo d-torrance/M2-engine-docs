@@ -11,7 +11,7 @@ var class_s_l_evaluator_concrete =
     [ "createHomotopy", "d2/dbe/class_s_l_evaluator_concrete_a06a7a6b549bf69f5c9e4164f0a9bde84.html#a06a7a6b549bf69f5c9e4164f0a9bde84", null ],
     [ "evaluate", "d2/dbe/class_s_l_evaluator_concrete_a0f0957465d5966e19ea8ab82916f8b08.html#a0f0957465d5966e19ea8ab82916f8b08", null ],
     [ "evaluate", "d2/dbe/class_s_l_evaluator_concrete_a170c1b3f1ebbf9bec27cb1c180b50129.html#a170c1b3f1ebbf9bec27cb1c180b50129", null ],
-    [ "ring", "d2/dbe/class_s_l_evaluator_concrete_a5c235e94f4575d2e449b8ce3fe8a0665.html#a5c235e94f4575d2e449b8ce3fe8a0665", null ],
+    [ "ring", "d2/dbe/class_s_l_evaluator_concrete_a0773932b4a38d032e3c1f1ded59213de.html#a0773932b4a38d032e3c1f1ded59213de", null ],
     [ "specialize", "d2/dbe/class_s_l_evaluator_concrete_adcfbc8dc0dbf22909a952c83949e961d.html#adcfbc8dc0dbf22909a952c83949e961d", null ],
     [ "specialize", "d2/dbe/class_s_l_evaluator_concrete_a2b49f6a5d39e6c104f4a9e810d328c2f.html#a2b49f6a5d39e6c104f4a9e810d328c2f", null ],
     [ "text_out", "d2/dbe/class_s_l_evaluator_concrete_aef6f48f4af3c1333f6fe8fa0edc49326.html#aef6f48f4af3c1333f6fe8fa0edc49326", null ],

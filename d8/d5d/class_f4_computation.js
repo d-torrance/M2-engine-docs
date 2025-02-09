@@ -9,7 +9,7 @@ var class_f4_computation =
     [ "get_gb", "d8/d5d/class_f4_computation_a7a3299f8e1592a0e9d63293a3cc3252e.html#a7a3299f8e1592a0e9d63293a3cc3252e", null ],
     [ "get_initial", "d8/d5d/class_f4_computation_a9c516c3e55a4125d8418821377111c11.html#a9c516c3e55a4125d8418821377111c11", null ],
     [ "get_mingens", "d8/d5d/class_f4_computation_acda6399708b9d07d46a2d80084c61cc6.html#acda6399708b9d07d46a2d80084c61cc6", null ],
-    [ "get_ring", "d8/d5d/class_f4_computation_a4a1030a5ad99ae7ecaf136f7110ad220.html#a4a1030a5ad99ae7ecaf136f7110ad220", null ],
+    [ "get_ring", "d8/d5d/class_f4_computation_a6d68b139e7f3e61b651419a26c4a9f0f.html#a6d68b139e7f3e61b651419a26c4a9f0f", null ],
     [ "get_syzygies", "d8/d5d/class_f4_computation_adacdcb69ed57a5bd2b871f455efe92c4.html#adacdcb69ed57a5bd2b871f455efe92c4", null ],
     [ "matrix_lift", "d8/d5d/class_f4_computation_a62d80a66689f65dfaacbef405f34bc6f.html#a62d80a66689f65dfaacbef405f34bc6f", null ],
     [ "matrix_remainder", "d8/d5d/class_f4_computation_a9459a816720fb825cc14a366ba28b5d7.html#a9459a816720fb825cc14a366ba28b5d7", null ],

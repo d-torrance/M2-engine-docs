@@ -1,10 +1,10 @@
 var class_nmi__node =
 [
-    [ "baggage", "d0/d1b/class_nmi__node_a52e499419caf0bd44d3cca5da5802e5d.html#a52e499419caf0bd44d3cca5da5802e5d", null ],
-    [ "down", "d0/d1b/class_nmi__node_a848764cd47d5769333b9a31b5c9e5a00.html#a848764cd47d5769333b9a31b5c9e5a00", null ],
+    [ "baggage", "d0/d1b/class_nmi__node_a08fa051b26d8c6221530c958127972f9.html#a08fa051b26d8c6221530c958127972f9", null ],
+    [ "down", "d0/d1b/class_nmi__node_ac0d5f9cfe617bc608b09f253c2eda716.html#ac0d5f9cfe617bc608b09f253c2eda716", null ],
     [ "insert_to_left", "d0/d1b/class_nmi__node_a737c3a31278faa984ee97e8cab69ce26.html#a737c3a31278faa984ee97e8cab69ce26", null ],
-    [ "monom", "d0/d1b/class_nmi__node_abbaa58decd673978ba8730fc8316d100.html#abbaa58decd673978ba8730fc8316d100", null ],
-    [ "monom", "d0/d1b/class_nmi__node_aa91193fcd22665a6665288c1f4630f66.html#aa91193fcd22665a6665288c1f4630f66", null ],
+    [ "monom", "d0/d1b/class_nmi__node_a58b7fd28eb269fd25de5692adbb377e0.html#a58b7fd28eb269fd25de5692adbb377e0", null ],
+    [ "monom", "d0/d1b/class_nmi__node_a360bd864ab84d3e7b58f9e42f2508857.html#a360bd864ab84d3e7b58f9e42f2508857", null ],
     [ "AssociatedPrimes", "d0/d1b/class_nmi__node_a8f3fe30134f5dc2dd03a0777d74834be.html#a8f3fe30134f5dc2dd03a0777d74834be", null ],
     [ "MinimalPrimes", "d0/d1b/class_nmi__node_a958914c9aa1c17fb1bed8ec18596452e.html#a958914c9aa1c17fb1bed8ec18596452e", null ],
     [ "MonomialIdeal", "d0/d1b/class_nmi__node_afe27f82aada802456833bd99a82d3d81.html#afe27f82aada802456833bd99a82d3d81", null ],

@@ -1,7 +1,7 @@
 var class_f4_mem =
 [
     [ "F4Mem", "d5/d43/class_f4_mem_a3fed3680a3c7778558994a3bb3795109.html#a3fed3680a3c7778558994a3bb3795109", null ],
-    [ "allocate_monomial_array", "d5/d43/class_f4_mem_a02f423750fbb46355f2a376e28e57656.html#a02f423750fbb46355f2a376e28e57656", null ],
+    [ "allocate_monomial_array", "d5/d43/class_f4_mem_a1addbe11217b067beed5500826430d98.html#a1addbe11217b067beed5500826430d98", null ],
     [ "deallocate_monomial_array", "d5/d43/class_f4_mem_af9b46f03a79e77a4f929ac415e9c70d3.html#af9b46f03a79e77a4f929ac415e9c70d3", null ],
     [ "show", "d5/d43/class_f4_mem_a2334f6fd0aa15d957fd6c6195a80b5a1.html#a2334f6fd0aa15d957fd6c6195a80b5a1", null ],
     [ "coefficients", "d5/d43/class_f4_mem_a60186eca81c964b21d398658230ffa60.html#a60186eca81c964b21d398658230ffa60", null ],

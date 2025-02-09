@@ -2,7 +2,7 @@ var classnewf4_1_1_g_b_f4_computation =
 [
     [ "GBF4Computation", "d1/dc4/classnewf4_1_1_g_b_f4_computation_a90721b2a9bfdefd33ed2c4b9a6b2be45.html#a90721b2a9bfdefd33ed2c4b9a6b2be45", null ],
     [ "dumpBasisMonomials", "d1/dc4/classnewf4_1_1_g_b_f4_computation_a66b860c1e354140615d0ec1bdbc5c18b.html#a66b860c1e354140615d0ec1bdbc5c18b", null ],
-    [ "getInput", "d1/dc4/classnewf4_1_1_g_b_f4_computation_af8ee42d73d184b821ff262e038fae9a8.html#af8ee42d73d184b821ff262e038fae9a8", null ],
+    [ "getInput", "d1/dc4/classnewf4_1_1_g_b_f4_computation_a43dd4167ec0939c1567d175bde316bc9.html#a43dd4167ec0939c1567d175bde316bc9", null ],
     [ "initializeWithBasicPolyList", "d1/dc4/classnewf4_1_1_g_b_f4_computation_a8bbaa3fb40422f52c71e9376e9bd7199.html#a8bbaa3fb40422f52c71e9376e9bd7199", null ],
     [ "initializeWithMatrix", "d1/dc4/classnewf4_1_1_g_b_f4_computation_a1c67babe586b5cf5e54e194359c30a31.html#a1c67babe586b5cf5e54e194359c30a31", null ],
     [ "showFullBasis", "d1/dc4/classnewf4_1_1_g_b_f4_computation_a5c42636fa2101f77f79d9dc36b66c535.html#a5c42636fa2101f77f79d9dc36b66c535", null ],

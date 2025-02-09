@@ -11,7 +11,7 @@ var class_n_c_groebner =
     [ "createOverlapPoly", "d8/d79/class_n_c_groebner_a5b5520d7fce0ac0eeeb8ffc4deeccbf0.html#a5b5520d7fce0ac0eeeb8ffc4deeccbf0", null ],
     [ "currentValue", "d8/d79/class_n_c_groebner_a82688f1ba47be9e9f0b298310c394b7b.html#a82688f1ba47be9e9f0b298310c394b7b", null ],
     [ "displayGroebnerBasis", "d8/d79/class_n_c_groebner_ac976d958c89b56b139adff010572c1c1.html#ac976d958c89b56b139adff010572c1c1", null ],
-    [ "freeAlgebra", "d8/d79/class_n_c_groebner_a32a6b8cb564715377b76d9d2068f85ba.html#a32a6b8cb564715377b76d9d2068f85ba", null ],
+    [ "freeAlgebra", "d8/d79/class_n_c_groebner_ad142d233db2dede08c28314a23187228.html#ad142d233db2dede08c28314a23187228", null ],
     [ "getCoeffOfMonom", "d8/d79/class_n_c_groebner_ae58e5c936027664dfe17ef40e20b4e5e.html#ae58e5c936027664dfe17ef40e20b4e5e", null ],
     [ "initReductionOnly", "d8/d79/class_n_c_groebner_af05a893551a5de4da4788958aa980356.html#af05a893551a5de4da4788958aa980356", null ],
     [ "insertNewOverlaps", "d8/d79/class_n_c_groebner_a5bb28c7f31360f35e6fe3408cf10e44f.html#a5bb28c7f31360f35e6fe3408cf10e44f", null ],

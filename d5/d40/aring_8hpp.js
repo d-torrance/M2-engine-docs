@@ -1,9 +1,9 @@
 var aring_8hpp =
 [
-    [ "ElementImpl", "d2/d8c/class_m2_1_1_element_impl.html", "d2/d8c/class_m2_1_1_element_impl" ],
-    [ "Element", "d7/d87/class_m2_1_1_simple_a_ring_1_1_element.html", "d7/d87/class_m2_1_1_simple_a_ring_1_1_element" ],
-    [ "ElementArray", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array.html", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array" ],
-    [ "DummyRing", "d5/d2d/class_m2_1_1_dummy_ring.html", "d5/d2d/class_m2_1_1_dummy_ring" ],
+    [ "M2::ElementImpl< ElementType >", "d2/d8c/class_m2_1_1_element_impl.html", "d2/d8c/class_m2_1_1_element_impl" ],
+    [ "M2::SimpleARing< ARing >::Element", "d7/d87/class_m2_1_1_simple_a_ring_1_1_element.html", "d7/d87/class_m2_1_1_simple_a_ring_1_1_element" ],
+    [ "M2::SimpleARing< ARing >::ElementArray", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array.html", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array" ],
+    [ "M2::DummyRing", "d5/d2d/class_m2_1_1_dummy_ring.html", "d5/d2d/class_m2_1_1_dummy_ring" ],
     [ "RingID", "d5/d40/aring_8hpp.html#ga7579b18152595d75b0bce712fbd605df", [
       [ "ring_example", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfae3bb0466606f7302f5dc59a61b98d141", null ],
       [ "ring_ZZ", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfaa4eacfa4fc5d68d88efd6afe744c09dc", null ],

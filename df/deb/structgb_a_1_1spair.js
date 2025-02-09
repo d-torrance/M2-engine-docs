@@ -1,7 +1,7 @@
 var structgb_a_1_1spair =
 [
-    [ "f", "df/deb/structgb_a_1_1spair_a6c036cd493c4e2f3ae00dcbf73f077a7.html#a6c036cd493c4e2f3ae00dcbf73f077a7", null ],
-    [ "fsyz", "df/deb/structgb_a_1_1spair_a83646e9804c5459dc9a9a07fc2184fb8.html#a83646e9804c5459dc9a9a07fc2184fb8", null ],
+    [ "f", "df/deb/structgb_a_1_1spair_a2f9cf98b68b592f30c6c7179ddfa4332.html#a2f9cf98b68b592f30c6c7179ddfa4332", null ],
+    [ "fsyz", "df/deb/structgb_a_1_1spair_a61e0c64ce47fe8c3c49cc6cc4935ab86.html#a61e0c64ce47fe8c3c49cc6cc4935ab86", null ],
     [ "deg", "df/deb/structgb_a_1_1spair_a51bdbe7242a4567d687855fee5425463.html#a51bdbe7242a4567d687855fee5425463", null ],
     [ "f", "df/deb/structgb_a_1_1spair_a5bb97d106d2d623efc5808e40c91e80a.html#a5bb97d106d2d623efc5808e40c91e80a", null ],
     [ "i", "df/deb/structgb_a_1_1spair_a88f02530c67d64fa762e383d6906a5fe.html#a88f02530c67d64fa762e383d6906a5fe", null ],

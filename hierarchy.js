@@ -20,8 +20,8 @@ var hierarchy =
       [ "MGBCallback", "df/df8/class_m_g_b_callback.html", null ]
     ] ],
     [ "cc_doubles_struct", "db/dae/structcc__doubles__struct.html", null ],
-    [ "CC_struct", "d3/d66/struct_c_c__struct.html", null ],
     [ "cc_struct", "de/d31/structcc__struct.html", null ],
+    [ "CC_struct", "d3/d66/struct_c_c__struct.html", null ],
     [ "CCmutable_struct", "d6/ddb/struct_c_cmutable__struct.html", null ],
     [ "ChineseRemainder", "d0/d4e/class_chinese_remainder.html", null ],
     [ "CoefficientRingR", "d1/d34/class_coefficient_ring_r.html", null ],
@@ -203,8 +203,8 @@ var hierarchy =
     [ "Nterm", "d0/dbc/struct_nterm.html", null ],
     [ "std::numeric_limits< mpfr::mpreal >", "d6/dba/classstd_1_1numeric__limits_3_01mpfr_1_1mpreal_01_4.html", null ],
     [ "our_new_delete", "da/dcc/structour__new__delete.html", [
-      [ "F4MemoryBlock< pre_spair >", "d8/d75/class_f4_memory_block.html", null ],
       [ "F4MemoryBlock< monomial_word >", "d8/d75/class_f4_memory_block.html", null ],
+      [ "F4MemoryBlock< pre_spair >", "d8/d75/class_f4_memory_block.html", null ],
       [ "F4MemoryBlock< varpower_word >", "d8/d75/class_f4_memory_block.html", null ],
       [ "F4MonomialLookupTableT< int32_t >", "d6/d10/class_f4_monomial_lookup_table_t.html", null ],
       [ "SMat< CoeffRing >", "da/de0/class_s_mat.html", null ],
@@ -245,50 +245,50 @@ var hierarchy =
       ] ],
       [ "GBWeight", "d5/d82/class_g_b_weight.html", null ],
       [ "M2::RingInterface", "db/d1a/class_m2_1_1_ring_interface.html", [
-        [ "M2::SimpleARing< ARingQQGMP >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "M2::ARingQQGMP", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p.html", null ]
+        [ "M2::SimpleARing< CoefficientRingZZp >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "CoefficientRingZZp", "dd/dd5/class_coefficient_ring_z_zp.html", null ]
         ] ],
         [ "M2::SimpleARing< ARingCC >", "de/db5/class_m2_1_1_simple_a_ring.html", [
           [ "M2::ARingCC", "d1/dfa/class_m2_1_1_a_ring_c_c.html", null ]
         ] ],
-        [ "M2::SimpleARing< ARingZZpFFPACK >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "M2::ARingZZpFFPACK", "da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k.html", null ]
-        ] ],
-        [ "M2::SimpleARing< ARingZZGMP >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "M2::ARingZZGMP", "db/d2e/class_m2_1_1_a_ring_z_z_g_m_p.html", null ]
-        ] ],
-        [ "M2::SimpleARing< ARingRRi >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "M2::ARingRRi", "dd/d78/class_m2_1_1_a_ring_r_ri.html", null ]
-        ] ],
-        [ "M2::SimpleARing< ARingQQFlint >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "M2::ARingQQFlint", "dd/d1b/class_m2_1_1_a_ring_q_q_flint.html", null ]
-        ] ],
-        [ "M2::SimpleARing< DummyRing >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "M2::DummyRing", "d5/d2d/class_m2_1_1_dummy_ring.html", null ]
+        [ "M2::SimpleARing< ARingCCC >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingCCC", "d6/de1/class_m2_1_1_a_ring_c_c_c.html", null ]
         ] ],
         [ "M2::SimpleARing< ARingGFM2 >", "de/db5/class_m2_1_1_simple_a_ring.html", [
           [ "M2::ARingGFM2", "dd/df1/class_m2_1_1_a_ring_g_f_m2.html", null ]
         ] ],
-        [ "M2::SimpleARing< ARingCCC >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "M2::ARingCCC", "d6/de1/class_m2_1_1_a_ring_c_c_c.html", null ]
+        [ "M2::SimpleARing< ARingQQFlint >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingQQFlint", "dd/d1b/class_m2_1_1_a_ring_q_q_flint.html", null ]
         ] ],
-        [ "M2::SimpleARing< ARingZZpFlint >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "M2::ARingZZpFlint", "d1/d21/class_m2_1_1_a_ring_z_zp_flint.html", null ]
-        ] ],
-        [ "M2::SimpleARing< ARingRRR >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "M2::ARingRRR", "dd/d9e/class_m2_1_1_a_ring_r_r_r.html", null ]
-        ] ],
-        [ "M2::SimpleARing< ARingZZp >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "M2::ARingZZp", "d6/d13/class_m2_1_1_a_ring_z_zp.html", null ]
-        ] ],
-        [ "M2::SimpleARing< ARingZZ >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "M2::ARingZZ", "d4/dea/class_m2_1_1_a_ring_z_z.html", null ]
+        [ "M2::SimpleARing< ARingQQGMP >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingQQGMP", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p.html", null ]
         ] ],
         [ "M2::SimpleARing< ARingRR >", "de/db5/class_m2_1_1_simple_a_ring.html", [
           [ "M2::ARingRR", "d0/d48/class_m2_1_1_a_ring_r_r.html", null ]
         ] ],
-        [ "M2::SimpleARing< CoefficientRingZZp >", "de/db5/class_m2_1_1_simple_a_ring.html", [
-          [ "CoefficientRingZZp", "dd/dd5/class_coefficient_ring_z_zp.html", null ]
+        [ "M2::SimpleARing< ARingRRR >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingRRR", "dd/d9e/class_m2_1_1_a_ring_r_r_r.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingRRi >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingRRi", "dd/d78/class_m2_1_1_a_ring_r_ri.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingZZ >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingZZ", "d4/dea/class_m2_1_1_a_ring_z_z.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingZZGMP >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingZZGMP", "db/d2e/class_m2_1_1_a_ring_z_z_g_m_p.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingZZp >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingZZp", "d6/d13/class_m2_1_1_a_ring_z_zp.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingZZpFFPACK >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingZZpFFPACK", "da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k.html", null ]
+        ] ],
+        [ "M2::SimpleARing< ARingZZpFlint >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingZZpFlint", "d1/d21/class_m2_1_1_a_ring_z_zp_flint.html", null ]
+        ] ],
+        [ "M2::SimpleARing< DummyRing >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::DummyRing", "d5/d2d/class_m2_1_1_dummy_ring.html", null ]
         ] ],
         [ "M2::ARingGFFlint", "d5/d5f/class_m2_1_1_a_ring_g_f_flint.html", null ],
         [ "M2::ARingGFFlintBig", "d8/d7a/class_m2_1_1_a_ring_g_f_flint_big.html", null ],
@@ -576,6 +576,15 @@ var hierarchy =
     [ "WordWithData", "d2/d05/class_word_with_data.html", null ],
     [ "WordWithDataTable", "dd/d60/class_word_with_data_table.html", null ],
     [ "ZipIterator< U, T >", "d3/def/class_zip_iterator.html", null ],
+    [ "bool", "d9/db9/classbool.html", null ],
+    [ "clock_t", "da/d53/classclock__t.html", null ],
+    [ "const RingType *", "d6/d28/classconst_01_ring_type_01_5.html", null ],
+    [ "ElementType", "db/da8/class_a_ring_1_1_element_type.html", null ],
+    [ "gc_vector< int >", "d3/d6f/classgc__vector_3_01int_01_4.html", null ],
+    [ "int", "d1/da0/classint.html", null ],
+    [ "M2_arrayint", "d8/dc2/class_m2__arrayint.html", null ],
     [ "res_varpower_word *", "dd/dec/classres__varpower__word_01_5.html", null ],
+    [ "static int", "da/dcb/classstatic_01int.html", null ],
+    [ "U *", "d0/d7d/class_u_01_5.html", null ],
     [ "varpower_word *", "d1/dbc/classvarpower__word_01_5.html", null ]
 ];

@@ -12,5 +12,5 @@ var _n_c_reduction_8hpp =
     ] ],
     [ "getHeapName", "dd/d43/_n_c_reduction_8hpp_a570cff221fa38a699b324c73a6d321e2.html#a570cff221fa38a699b324c73a6d321e2", null ],
     [ "getHeapType", "dd/d43/_n_c_reduction_8hpp_aca705872b0a3c152c7adfdf0eabb6811.html#aca705872b0a3c152c7adfdf0eabb6811", null ],
-    [ "makePolynomialHeap", "dd/d43/_n_c_reduction_8hpp_a13287bb726a881e0dce2d188880a98c9.html#a13287bb726a881e0dce2d188880a98c9", null ]
+    [ "makePolynomialHeap", "dd/d43/_n_c_reduction_8hpp_a2e421eefe57dc2c65d280c738270775f.html#a2e421eefe57dc2c65d280c738270775f", null ]
 ];

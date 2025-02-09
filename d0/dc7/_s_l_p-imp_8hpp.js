@@ -1,6 +1,6 @@
 var _s_l_p_imp_8hpp =
 [
-    [ "ARingElement", "d9/d84/class_a_ring_element.html", "d9/d84/class_a_ring_element" ],
+    [ "ARingElement< RT >", "d9/d84/class_a_ring_element.html", "d9/d84/class_a_ring_element" ],
     [ "PRECISION_SAFETY_BITS", "d0/dc7/_s_l_p-imp_8hpp_a69795473eba620d69533472f55d338b0.html#a69795473eba620d69533472f55d338b0", null ],
     [ "SolutionStatus", "d0/dc7/_s_l_p-imp_8hpp_a801be40a606301461ff812058569ee3b.html#a801be40a606301461ff812058569ee3b", [
       [ "UNDETERMINED", "d0/dc7/_s_l_p-imp_8hpp_a801be40a606301461ff812058569ee3b.html#a801be40a606301461ff812058569ee3baf6adbbdb69d80588184f30a38895b43e", null ],

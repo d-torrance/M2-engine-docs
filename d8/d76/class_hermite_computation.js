@@ -11,7 +11,7 @@ var class_hermite_computation =
     [ "get_gb", "d8/d76/class_hermite_computation_a9fda50ce985a8f96ced0c5a734c33f52.html#a9fda50ce985a8f96ced0c5a734c33f52", null ],
     [ "get_initial", "d8/d76/class_hermite_computation_a48c246938a8ef59bd0ae1b0bf05c09a3.html#a48c246938a8ef59bd0ae1b0bf05c09a3", null ],
     [ "get_mingens", "d8/d76/class_hermite_computation_afc0c6ba7d56246dc74b1d3736df7d1b9.html#afc0c6ba7d56246dc74b1d3736df7d1b9", null ],
-    [ "get_ring", "d8/d76/class_hermite_computation_adc5f49912fd10d65d26908fe896db263.html#adc5f49912fd10d65d26908fe896db263", null ],
+    [ "get_ring", "d8/d76/class_hermite_computation_a80be7e1fa96603b761916876f4f2f0d6.html#a80be7e1fa96603b761916876f4f2f0d6", null ],
     [ "get_syzygies", "d8/d76/class_hermite_computation_a8f1384687a504630563e46ac1acec572.html#a8f1384687a504630563e46ac1acec572", null ],
     [ "insert", "d8/d76/class_hermite_computation_a8a20ee6a46d6a4a61ffa4003a2db2559.html#a8a20ee6a46d6a4a61ffa4003a2db2559", null ],
     [ "matrix_lift", "d8/d76/class_hermite_computation_add52915d977809127a3b2fba61b6eafe.html#add52915d977809127a3b2fba61b6eafe", null ],

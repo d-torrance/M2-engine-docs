@@ -189,8 +189,5 @@ var namespaces_dup =
       [ "sub_pos", "d6/dcb/namespacesafe_ac74cdc0abe5f4c77f8e576037840a8b6.html#ac74cdc0abe5f4c77f8e576037840a8b6", null ]
     ] ],
     [ "SchreyerFrameTypes", "de/d8e/namespace_schreyer_frame_types.html", "de/d8e/namespace_schreyer_frame_types" ],
-    [ "std", null, [
-      [ "numeric_limits< mpfr::mpreal >", "d6/dba/classstd_1_1numeric__limits_3_01mpfr_1_1mpreal_01_4.html", "d6/dba/classstd_1_1numeric__limits_3_01mpfr_1_1mpreal_01_4" ],
-      [ "swap", "d9/de1/mpreal_8h_ad33a269e67f055aaa18f57f76b015387.html#ad33a269e67f055aaa18f57f76b015387", null ]
-    ] ]
+    [ "std", "d8/dcc/namespacestd.html", "d8/dcc/namespacestd" ]
 ];

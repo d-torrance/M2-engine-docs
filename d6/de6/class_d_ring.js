@@ -17,7 +17,7 @@ var class_d_ring =
     [ "from_ring_elem", "d6/de6/class_d_ring_a45051e25b2ae299910e1fa1738e02c96.html#a45051e25b2ae299910e1fa1738e02c96", null ],
     [ "gcd", "d6/de6/class_d_ring_a415d1bd5faa34a8d4234205adb83800e.html#a415d1bd5faa34a8d4234205adb83800e", null ],
     [ "gcd_coefficients", "d6/de6/class_d_ring_ace0eef21a0e119af13c2dd3055b91ff7.html#ace0eef21a0e119af13c2dd3055b91ff7", null ],
-    [ "getDPoly", "d6/de6/class_d_ring_a6f4a2fa3014305bc0534f50f64be9e24.html#a6f4a2fa3014305bc0534f50f64be9e24", null ],
+    [ "getDPoly", "d6/de6/class_d_ring_a23fef8f3d4069ed937910f2324f68f77.html#a23fef8f3d4069ed937910f2324f68f77", null ],
     [ "index_of_var", "d6/de6/class_d_ring_affe89bbe5d76dde7e345b76b60f19ac8.html#affe89bbe5d76dde7e345b76b60f19ac8", null ],
     [ "init_set", "d6/de6/class_d_ring_acefb44436df309c6980e6a9a1932afd4.html#acefb44436df309c6980e6a9a1932afd4", null ],
     [ "invert", "d6/de6/class_d_ring_a842f6e84e67f76ef6b0566a81ae38f4f.html#a842f6e84e67f76ef6b0566a81ae38f4f", null ],

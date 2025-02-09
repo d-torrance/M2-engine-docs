@@ -2,8 +2,8 @@ var class_solvable_algebra =
 [
     [ "SolvableAlgebra", "db/daa/class_solvable_algebra_a153f83bb9bf7fcab276e86f2cc8eb804.html#a153f83bb9bf7fcab276e86f2cc8eb804", null ],
     [ "~SolvableAlgebra", "db/daa/class_solvable_algebra_ad3814b8ae903b65008ea3a2435a4a873.html#ad3814b8ae903b65008ea3a2435a4a873", null ],
-    [ "cast_to_SolvableAlgebra", "db/daa/class_solvable_algebra_af4cc0f601b736909a076cb88d9c3f7bc.html#af4cc0f601b736909a076cb88d9c3f7bc", null ],
-    [ "cast_to_SolvableAlgebra", "db/daa/class_solvable_algebra_a4f508aa45da45101abb0f72f93549987.html#a4f508aa45da45101abb0f72f93549987", null ],
+    [ "cast_to_SolvableAlgebra", "db/daa/class_solvable_algebra_a937223b09ad9bb58ebc31f195344c7e2.html#a937223b09ad9bb58ebc31f195344c7e2", null ],
+    [ "cast_to_SolvableAlgebra", "db/daa/class_solvable_algebra_a0b1ce32c4bb5e2468e4e463cff5b6333.html#a0b1ce32c4bb5e2468e4e463cff5b6333", null ],
     [ "create", "db/daa/class_solvable_algebra_a84892b1de8e19be5645ee6fa0bb2f9cd.html#a84892b1de8e19be5645ee6fa0bb2f9cd", null ],
     [ "create", "db/daa/class_solvable_algebra_a486fc87680e78ad85518dacf0713aa9a.html#a486fc87680e78ad85518dacf0713aa9a", null ],
     [ "initialize_solvable", "db/daa/class_solvable_algebra_a5ad3b6ad379ab6c5d53adecdadcfb337.html#a5ad3b6ad379ab6c5d53adecdadcfb337", null ],

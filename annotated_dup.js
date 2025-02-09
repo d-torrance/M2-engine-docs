@@ -1,8 +1,8 @@
 var annotated_dup =
 [
     [ "BIBasis", "de/d30/namespace_b_i_basis.html", [
-      [ "FastAllocator", "d1/df2/class_b_i_basis_1_1_fast_allocator.html", "d1/df2/class_b_i_basis_1_1_fast_allocator" ],
       [ "BooleanInvolutiveBasis", "d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis.html", "d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis" ],
+      [ "FastAllocator", "d1/df2/class_b_i_basis_1_1_fast_allocator.html", "d1/df2/class_b_i_basis_1_1_fast_allocator" ],
       [ "JanetTree", "d2/d19/class_b_i_basis_1_1_janet_tree.html", "d2/d19/class_b_i_basis_1_1_janet_tree" ],
       [ "Launcher", "d7/d07/class_b_i_basis_1_1_launcher.html", "d7/d07/class_b_i_basis_1_1_launcher" ],
       [ "Monom", "d4/d58/class_b_i_basis_1_1_monom.html", "d4/d58/class_b_i_basis_1_1_monom" ],
@@ -18,77 +18,74 @@ var annotated_dup =
       [ "TSet", "d3/d5c/class_b_i_basis_1_1_t_set.html", "d3/d5c/class_b_i_basis_1_1_t_set" ]
     ] ],
     [ "exc", "dd/d7b/namespaceexc.html", [
-      [ "engine_error", "da/dbb/structexc_1_1engine__error.html", "da/dbb/structexc_1_1engine__error" ],
-      [ "overflow_exception", "db/df5/structexc_1_1overflow__exception.html", "db/df5/structexc_1_1overflow__exception" ],
       [ "division_by_zero_error", "d1/daf/structexc_1_1division__by__zero__error.html", "d1/daf/structexc_1_1division__by__zero__error" ],
-      [ "internal_error", "d1/d91/structexc_1_1internal__error.html", "d1/d91/structexc_1_1internal__error" ]
+      [ "engine_error", "da/dbb/structexc_1_1engine__error.html", "da/dbb/structexc_1_1engine__error" ],
+      [ "internal_error", "d1/d91/structexc_1_1internal__error.html", "d1/d91/structexc_1_1internal__error" ],
+      [ "overflow_exception", "db/df5/structexc_1_1overflow__exception.html", "db/df5/structexc_1_1overflow__exception" ]
     ] ],
     [ "M2", "d7/d82/namespace_m2.html", [
+      [ "AConcreteRing", "d3/dd1/class_m2_1_1_a_concrete_ring.html", "d3/dd1/class_m2_1_1_a_concrete_ring" ],
       [ "ARingCC", "d1/dfa/class_m2_1_1_a_ring_c_c.html", "d1/dfa/class_m2_1_1_a_ring_c_c" ],
       [ "ARingCCC", "d6/de1/class_m2_1_1_a_ring_c_c_c.html", "d6/de1/class_m2_1_1_a_ring_c_c_c" ],
-      [ "ARingGFFlintBig", "d8/d7a/class_m2_1_1_a_ring_g_f_flint_big.html", "d8/d7a/class_m2_1_1_a_ring_g_f_flint_big" ],
       [ "ARingGFFlint", "d5/d5f/class_m2_1_1_a_ring_g_f_flint.html", "d5/d5f/class_m2_1_1_a_ring_g_f_flint" ],
-      [ "ConcreteRing", "d0/d99/class_m2_1_1_concrete_ring.html", "d0/d99/class_m2_1_1_concrete_ring" ],
-      [ "RingQQ", "d4/d85/class_m2_1_1_ring_q_q.html", "d4/d85/class_m2_1_1_ring_q_q" ],
-      [ "GaloisFieldTable", "d5/dab/class_m2_1_1_galois_field_table.html", "d5/dab/class_m2_1_1_galois_field_table" ],
+      [ "ARingGFFlintBig", "d8/d7a/class_m2_1_1_a_ring_g_f_flint_big.html", "d8/d7a/class_m2_1_1_a_ring_g_f_flint_big" ],
       [ "ARingGFM2", "dd/df1/class_m2_1_1_a_ring_g_f_m2.html", "dd/df1/class_m2_1_1_a_ring_g_f_m2" ],
+      [ "ARingPolynomialStruct", "db/d05/struct_m2_1_1_a_ring_polynomial_struct.html", "db/d05/struct_m2_1_1_a_ring_polynomial_struct" ],
       [ "ARingQQFlint", "dd/d1b/class_m2_1_1_a_ring_q_q_flint.html", "dd/d1b/class_m2_1_1_a_ring_q_q_flint" ],
       [ "ARingQQGMP", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p.html", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p" ],
       [ "ARingRR", "d0/d48/class_m2_1_1_a_ring_r_r.html", "d0/d48/class_m2_1_1_a_ring_r_r" ],
       [ "ARingRRi", "dd/d78/class_m2_1_1_a_ring_r_ri.html", "dd/d78/class_m2_1_1_a_ring_r_ri" ],
       [ "ARingRRR", "dd/d9e/class_m2_1_1_a_ring_r_r_r.html", "dd/d9e/class_m2_1_1_a_ring_r_r_r" ],
-      [ "ARingPolynomialStruct", "db/d05/struct_m2_1_1_a_ring_polynomial_struct.html", "db/d05/struct_m2_1_1_a_ring_polynomial_struct" ],
       [ "ARingTower", "da/d48/class_m2_1_1_a_ring_tower.html", "da/d48/class_m2_1_1_a_ring_tower" ],
-      [ "RElementWrap", "d1/da0/class_m2_1_1_r_element_wrap.html", "d1/da0/class_m2_1_1_r_element_wrap" ],
-      [ "AConcreteRing", "d3/dd1/class_m2_1_1_a_concrete_ring.html", "d3/dd1/class_m2_1_1_a_concrete_ring" ],
       [ "ARingZZ", "d4/dea/class_m2_1_1_a_ring_z_z.html", "d4/dea/class_m2_1_1_a_ring_z_z" ],
       [ "ARingZZGMP", "db/d2e/class_m2_1_1_a_ring_z_z_g_m_p.html", "db/d2e/class_m2_1_1_a_ring_z_z_g_m_p" ],
+      [ "ARingZZp", "d6/d13/class_m2_1_1_a_ring_z_zp.html", "d6/d13/class_m2_1_1_a_ring_z_zp" ],
       [ "ARingZZpFFPACK", "da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k.html", "da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k" ],
       [ "ARingZZpFlint", "d1/d21/class_m2_1_1_a_ring_z_zp_flint.html", "d1/d21/class_m2_1_1_a_ring_z_zp_flint" ],
-      [ "ARingZZp", "d6/d13/class_m2_1_1_a_ring_z_zp.html", "d6/d13/class_m2_1_1_a_ring_z_zp" ],
-      [ "RingInterface", "db/d1a/class_m2_1_1_ring_interface.html", null ],
-      [ "ElementImpl", "d2/d8c/class_m2_1_1_element_impl.html", "d2/d8c/class_m2_1_1_element_impl" ],
-      [ "SimpleARing", "de/db5/class_m2_1_1_simple_a_ring.html", [
-        [ "Element", "d7/d87/class_m2_1_1_simple_a_ring_1_1_element.html", "d7/d87/class_m2_1_1_simple_a_ring_1_1_element" ],
-        [ "ElementArray", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array.html", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array" ]
-      ] ],
+      [ "ConcreteRing", "d0/d99/class_m2_1_1_concrete_ring.html", "d0/d99/class_m2_1_1_concrete_ring" ],
       [ "DummyRing", "d5/d2d/class_m2_1_1_dummy_ring.html", "d5/d2d/class_m2_1_1_dummy_ring" ],
-      [ "Reader", "db/dc5/class_m2_1_1_reader.html", "db/dc5/class_m2_1_1_reader" ]
+      [ "ElementImpl", "d2/d8c/class_m2_1_1_element_impl.html", "d2/d8c/class_m2_1_1_element_impl" ],
+      [ "GaloisFieldTable", "d5/dab/class_m2_1_1_galois_field_table.html", "d5/dab/class_m2_1_1_galois_field_table" ],
+      [ "Reader", "db/dc5/class_m2_1_1_reader.html", "db/dc5/class_m2_1_1_reader" ],
+      [ "RElementWrap", "d1/da0/class_m2_1_1_r_element_wrap.html", "d1/da0/class_m2_1_1_r_element_wrap" ],
+      [ "RingInterface", "db/d1a/class_m2_1_1_ring_interface.html", null ],
+      [ "RingQQ", "d4/d85/class_m2_1_1_ring_q_q.html", "d4/d85/class_m2_1_1_ring_q_q" ],
+      [ "SimpleARing", "de/db5/class_m2_1_1_simple_a_ring.html", "de/db5/class_m2_1_1_simple_a_ring" ]
     ] ],
     [ "mpfr", "d1/d02/namespacempfr.html", [
       [ "internal", "df/d50/namespacempfr_1_1internal.html", [
         [ "result_type", "d2/dbe/structmpfr_1_1internal_1_1result__type.html", null ],
+        [ "result_type< double >", "d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4.html", "d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4" ],
+        [ "result_type< int >", "d4/d9d/structmpfr_1_1internal_1_1result__type_3_01int_01_4.html", "d4/d9d/structmpfr_1_1internal_1_1result__type_3_01int_01_4" ],
+        [ "result_type< long double >", "d0/d3e/structmpfr_1_1internal_1_1result__type_3_01long_01double_01_4.html", "d0/d3e/structmpfr_1_1internal_1_1result__type_3_01long_01double_01_4" ],
+        [ "result_type< long int >", "da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4.html", "da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4" ],
+        [ "result_type< long long >", "d5/d5e/structmpfr_1_1internal_1_1result__type_3_01long_01long_01_4.html", "d5/d5e/structmpfr_1_1internal_1_1result__type_3_01long_01long_01_4" ],
+        [ "result_type< mpq_t >", "d9/d6c/structmpfr_1_1internal_1_1result__type_3_01mpq__t_01_4.html", "d9/d6c/structmpfr_1_1internal_1_1result__type_3_01mpq__t_01_4" ],
         [ "result_type< mpreal >", "d3/d4a/structmpfr_1_1internal_1_1result__type_3_01mpreal_01_4.html", "d3/d4a/structmpfr_1_1internal_1_1result__type_3_01mpreal_01_4" ],
         [ "result_type< mpz_t >", "d2/db6/structmpfr_1_1internal_1_1result__type_3_01mpz__t_01_4.html", "d2/db6/structmpfr_1_1internal_1_1result__type_3_01mpz__t_01_4" ],
-        [ "result_type< mpq_t >", "d9/d6c/structmpfr_1_1internal_1_1result__type_3_01mpq__t_01_4.html", "d9/d6c/structmpfr_1_1internal_1_1result__type_3_01mpq__t_01_4" ],
-        [ "result_type< long double >", "d0/d3e/structmpfr_1_1internal_1_1result__type_3_01long_01double_01_4.html", "d0/d3e/structmpfr_1_1internal_1_1result__type_3_01long_01double_01_4" ],
-        [ "result_type< double >", "d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4.html", "d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4" ],
-        [ "result_type< unsigned long int >", "dc/db2/structmpfr_1_1internal_1_1result__type_3_01unsigned_01long_01int_01_4.html", "dc/db2/structmpfr_1_1internal_1_1result__type_3_01unsigned_01long_01int_01_4" ],
         [ "result_type< unsigned int >", "d5/df9/structmpfr_1_1internal_1_1result__type_3_01unsigned_01int_01_4.html", "d5/df9/structmpfr_1_1internal_1_1result__type_3_01unsigned_01int_01_4" ],
-        [ "result_type< long int >", "da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4.html", "da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4" ],
-        [ "result_type< int >", "d4/d9d/structmpfr_1_1internal_1_1result__type_3_01int_01_4.html", "d4/d9d/structmpfr_1_1internal_1_1result__type_3_01int_01_4" ],
-        [ "result_type< long long >", "d5/d5e/structmpfr_1_1internal_1_1result__type_3_01long_01long_01_4.html", "d5/d5e/structmpfr_1_1internal_1_1result__type_3_01long_01long_01_4" ],
+        [ "result_type< unsigned long int >", "dc/db2/structmpfr_1_1internal_1_1result__type_3_01unsigned_01long_01int_01_4.html", "dc/db2/structmpfr_1_1internal_1_1result__type_3_01unsigned_01long_01int_01_4" ],
         [ "result_type< unsigned long long >", "db/df4/structmpfr_1_1internal_1_1result__type_3_01unsigned_01long_01long_01_4.html", "db/df4/structmpfr_1_1internal_1_1result__type_3_01unsigned_01long_01long_01_4" ]
       ] ],
-      [ "mpreal", "d6/df7/classmpfr_1_1mpreal.html", "d6/df7/classmpfr_1_1mpreal" ],
-      [ "conversion_overflow", "d3/d03/classmpfr_1_1conversion__overflow.html", "d3/d03/classmpfr_1_1conversion__overflow" ]
+      [ "conversion_overflow", "d3/d03/classmpfr_1_1conversion__overflow.html", "d3/d03/classmpfr_1_1conversion__overflow" ],
+      [ "mpreal", "d6/df7/classmpfr_1_1mpreal.html", "d6/df7/classmpfr_1_1mpreal" ]
     ] ],
     [ "newf4", "da/db5/namespacenewf4.html", [
       [ "Basis", "d9/d73/classnewf4_1_1_basis.html", "d9/d73/classnewf4_1_1_basis" ],
+      [ "Column", "d7/db8/structnewf4_1_1_column.html", null ],
       [ "GBF4Computation", "d1/dc4/classnewf4_1_1_g_b_f4_computation.html", "d1/dc4/classnewf4_1_1_g_b_f4_computation" ],
       [ "GBF4Interface", "d6/d99/classnewf4_1_1_g_b_f4_interface.html", "d6/d99/classnewf4_1_1_g_b_f4_interface" ],
-      [ "MacaulayMatrix", "d5/d59/classnewf4_1_1_macaulay_matrix.html", "d5/d59/classnewf4_1_1_macaulay_matrix" ],
-      [ "Column", "d7/db8/structnewf4_1_1_column.html", null ],
-      [ "Row", "d6/d54/structnewf4_1_1_row.html", null ],
-      [ "MonomialHashFunction", "d5/dd0/classnewf4_1_1_monomial_hash_function.html", "d5/dd0/classnewf4_1_1_monomial_hash_function" ],
       [ "HashTableStats", "dd/db9/structnewf4_1_1_hash_table_stats.html", "dd/db9/structnewf4_1_1_hash_table_stats" ],
+      [ "MacaulayMatrix", "d5/d59/classnewf4_1_1_macaulay_matrix.html", "d5/d59/classnewf4_1_1_macaulay_matrix" ],
+      [ "MonomialHashFunction", "d5/dd0/classnewf4_1_1_monomial_hash_function.html", "d5/dd0/classnewf4_1_1_monomial_hash_function" ],
       [ "MonomialHashTable", "d1/d1e/classnewf4_1_1_monomial_hash_table.html", "d1/d1e/classnewf4_1_1_monomial_hash_table" ],
       [ "MonomialInfo", "da/d7e/structnewf4_1_1_monomial_info.html", "da/d7e/structnewf4_1_1_monomial_info" ],
       [ "MonomialLookupTable", "db/d90/classnewf4_1_1_monomial_lookup_table.html", "db/d90/classnewf4_1_1_monomial_lookup_table" ],
       [ "MonomialView", "da/d80/classnewf4_1_1_monomial_view.html", "da/d80/classnewf4_1_1_monomial_view" ],
-      [ "PolynomialList", "d2/d47/classnewf4_1_1_polynomial_list.html", "d2/d47/classnewf4_1_1_polynomial_list" ],
       [ "Polynomial", "d4/d1b/classnewf4_1_1_polynomial.html", "d4/d1b/classnewf4_1_1_polynomial" ],
+      [ "PolynomialList", "d2/d47/classnewf4_1_1_polynomial_list.html", "d2/d47/classnewf4_1_1_polynomial_list" ],
       [ "PolynomialListStreamCollector", "d7/d35/classnewf4_1_1_polynomial_list_stream_collector.html", "d7/d35/classnewf4_1_1_polynomial_list_stream_collector" ],
+      [ "Row", "d6/d54/structnewf4_1_1_row.html", null ],
       [ "SPair", "db/dd1/structnewf4_1_1_s_pair.html", "db/dd1/structnewf4_1_1_s_pair" ],
       [ "SPairSet", "d2/d40/classnewf4_1_1_s_pair_set.html", "d2/d40/classnewf4_1_1_s_pair_set" ]
     ] ],
@@ -96,7 +93,7 @@ var annotated_dup =
       [ "FrameElement", "d8/df1/struct_schreyer_frame_types_1_1_frame_element.html", "d8/df1/struct_schreyer_frame_types_1_1_frame_element" ],
       [ "PreElement", "d9/d02/struct_schreyer_frame_types_1_1_pre_element.html", "d9/d02/struct_schreyer_frame_types_1_1_pre_element" ]
     ] ],
-    [ "std", null, [
+    [ "std", "d8/dcc/namespacestd.html", [
       [ "numeric_limits< mpfr::mpreal >", "d6/dba/classstd_1_1numeric__limits_3_01mpfr_1_1mpreal_01_4.html", "d6/dba/classstd_1_1numeric__limits_3_01mpfr_1_1mpreal_01_4" ]
     ] ],
     [ "AllocLogger", "d4/d6d/class_alloc_logger.html", "d4/d6d/class_alloc_logger" ],
@@ -119,8 +116,8 @@ var annotated_dup =
     [ "BRP", "db/d1b/class_b_r_p.html", "db/d1b/class_b_r_p" ],
     [ "buffer", "da/d40/classbuffer.html", "da/d40/classbuffer" ],
     [ "cc_doubles_struct", "db/dae/structcc__doubles__struct.html", "db/dae/structcc__doubles__struct" ],
-    [ "CC_struct", "d3/d66/struct_c_c__struct.html", "d3/d66/struct_c_c__struct" ],
     [ "cc_struct", "de/d31/structcc__struct.html", "de/d31/structcc__struct" ],
+    [ "CC_struct", "d3/d66/struct_c_c__struct.html", "d3/d66/struct_c_c__struct" ],
     [ "CCmutable_struct", "d6/ddb/struct_c_cmutable__struct.html", "d6/ddb/struct_c_cmutable__struct" ],
     [ "ChineseRemainder", "d0/d4e/class_chinese_remainder.html", "d0/d4e/class_chinese_remainder" ],
     [ "coefficient_matrix", "d8/dce/structcoefficient__matrix.html", "d8/dce/structcoefficient__matrix" ],

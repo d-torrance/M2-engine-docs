@@ -13,7 +13,7 @@ var class_k_basis =
     [ "try_insert_full", "d9/dd1/class_k_basis_a6e0abac713b15758362d0e1b10a8477b.html#a6e0abac713b15758362d0e1b10a8477b", null ],
     [ "try_insert_mg", "d9/dd1/class_k_basis_a316485aadacd9f65a6ef1f088da06b11.html#a316485aadacd9f65a6ef1f088da06b11", null ],
     [ "try_insert_sg", "d9/dd1/class_k_basis_af1b948a2af785aaa7783064cbc283fe3.html#af1b948a2af785aaa7783064cbc283fe3", null ],
-    [ "value", "d9/dd1/class_k_basis_aca41294ae1c9a8b6324c1e41d66f3fe9.html#aca41294ae1c9a8b6324c1e41d66f3fe9", null ],
+    [ "value", "d9/dd1/class_k_basis_ac6cee5c3cb379f7e37d073c12e084c58.html#ac6cee5c3cb379f7e37d073c12e084c58", null ],
     [ "bottom_matrix", "d9/dd1/class_k_basis_a1b5e779363a82440ed0321ef4d6c16de.html#a1b5e779363a82440ed0321ef4d6c16de", null ],
     [ "computation_type", "d9/dd1/class_k_basis_ac5f92c9697f234804880e1f365d3231b.html#ac5f92c9697f234804880e1f365d3231b", null ],
     [ "D", "d9/dd1/class_k_basis_a3e82b9e39190607d12765f6909549321.html#a3e82b9e39190607d12765f6909549321", null ],

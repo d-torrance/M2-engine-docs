@@ -18,7 +18,7 @@ var class_m2_1_1_a_ring_r_ri =
     [ "elem_text_out", "dd/d78/class_m2_1_1_a_ring_r_ri_acc5ee6055bc85ce85955713be20af07f.html#acc5ee6055bc85ce85955713be20af07f", null ],
     [ "eval", "dd/d78/class_m2_1_1_a_ring_r_ri_aa424cb2ea4706fd14b7a904730cf3b89.html#aa424cb2ea4706fd14b7a904730cf3b89", null ],
     [ "from_ring_elem", "dd/d78/class_m2_1_1_a_ring_r_ri_a02dde292c633569477c0122f6b7ba0d8.html#a02dde292c633569477c0122f6b7ba0d8", null ],
-    [ "from_ring_elem_const", "dd/d78/class_m2_1_1_a_ring_r_ri_af86a122f1299df318331c498c306ff1e.html#af86a122f1299df318331c498c306ff1e", null ],
+    [ "from_ring_elem_const", "dd/d78/class_m2_1_1_a_ring_r_ri_a6aebdaed6f2887f4006a2e3491d187a3.html#a6aebdaed6f2887f4006a2e3491d187a3", null ],
     [ "get_precision", "dd/d78/class_m2_1_1_a_ring_r_ri_acc693a322bca72c670c0da7cdec51358.html#acc693a322bca72c670c0da7cdec51358", null ],
     [ "increase_norm", "dd/d78/class_m2_1_1_a_ring_r_ri_a6241fc3e2fdd603ac19eaaff83a0e962.html#a6241fc3e2fdd603ac19eaaff83a0e962", null ],
     [ "init", "dd/d78/class_m2_1_1_a_ring_r_ri_a40220f1bb2babe60dd9738846dd33070.html#a40220f1bb2babe60dd9738846dd33070", null ],

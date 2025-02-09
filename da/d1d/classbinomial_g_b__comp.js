@@ -12,7 +12,7 @@ var classbinomial_g_b__comp =
     [ "get_gb", "da/d1d/classbinomial_g_b__comp_ace65e2aa070c1cd469c0bd56e96180c9.html#ace65e2aa070c1cd469c0bd56e96180c9", null ],
     [ "get_initial", "da/d1d/classbinomial_g_b__comp_a1194c328fb25bfa7bbedd65c3a3683d4.html#a1194c328fb25bfa7bbedd65c3a3683d4", null ],
     [ "get_mingens", "da/d1d/classbinomial_g_b__comp_a4b13ecf6fd308c99679b77cc3a2ae82d.html#a4b13ecf6fd308c99679b77cc3a2ae82d", null ],
-    [ "get_ring", "da/d1d/classbinomial_g_b__comp_afda21b5e1142ca8965bb03be4be36dfb.html#afda21b5e1142ca8965bb03be4be36dfb", null ],
+    [ "get_ring", "da/d1d/classbinomial_g_b__comp_a5f60784e8a82e5952b4d9fb15b12b7fe.html#a5f60784e8a82e5952b4d9fb15b12b7fe", null ],
     [ "get_syzygies", "da/d1d/classbinomial_g_b__comp_a1d50b131e9504fec1147f448cfca78a6.html#a1d50b131e9504fec1147f448cfca78a6", null ],
     [ "matrix_lift", "da/d1d/classbinomial_g_b__comp_ac6b73037300bdbc0d76f469b75d3cfcd.html#ac6b73037300bdbc0d76f469b75d3cfcd", null ],
     [ "matrix_remainder", "da/d1d/classbinomial_g_b__comp_a524871a848be592c53b640dc2cdb691b.html#a524871a848be592c53b640dc2cdb691b", null ],

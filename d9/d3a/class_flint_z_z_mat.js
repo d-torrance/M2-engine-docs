@@ -8,6 +8,6 @@ var class_flint_z_z_mat =
     [ "numRows", "d9/d3a/class_flint_z_z_mat_a37b03266538159c0f867f1fcf2a5b895.html#a37b03266538159c0f867f1fcf2a5b895", null ],
     [ "to_fmpz_mat", "d9/d3a/class_flint_z_z_mat_ac262f1ef748570ba21adcbd24f0b1ea3.html#ac262f1ef748570ba21adcbd24f0b1ea3", null ],
     [ "toDMat", "d9/d3a/class_flint_z_z_mat_a94f945b98c39c30206e15deee930605e.html#a94f945b98c39c30206e15deee930605e", null ],
-    [ "value", "d9/d3a/class_flint_z_z_mat_a1ee984fe9b6c9b22ade68f122f320a55.html#a1ee984fe9b6c9b22ade68f122f320a55", null ],
+    [ "value", "d9/d3a/class_flint_z_z_mat_acec81c5a3a088a5c5f91a86ac50b01ac.html#acec81c5a3a088a5c5f91a86ac50b01ac", null ],
     [ "mMatrix", "d9/d3a/class_flint_z_z_mat_ae22fbdd74c8a8340e3b82945d8e2e56f.html#ae22fbdd74c8a8340e3b82945d8e2e56f", null ]
 ];

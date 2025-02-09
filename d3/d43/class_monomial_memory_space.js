@@ -1,8 +1,8 @@
 var class_monomial_memory_space =
 [
     [ "MonomialMemorySpace", "d3/d43/class_monomial_memory_space_a9324f4cfbfc28181bf33b101a326d6ab.html#a9324f4cfbfc28181bf33b101a326d6ab", null ],
-    [ "alloc", "d3/d43/class_monomial_memory_space_a0a3229764605433f6291e9c95feb3d01.html#a0a3229764605433f6291e9c95feb3d01", null ],
-    [ "allocate", "d3/d43/class_monomial_memory_space_a6dbab32a03d2ec162eb8091bb17fc15f.html#a6dbab32a03d2ec162eb8091bb17fc15f", null ],
+    [ "alloc", "d3/d43/class_monomial_memory_space_a18fb83f3bf2263ab3ebd6de0ce08cb56.html#a18fb83f3bf2263ab3ebd6de0ce08cb56", null ],
+    [ "allocate", "d3/d43/class_monomial_memory_space_a99f8fd5c02f8b470085f401e46a5f2eb.html#a99f8fd5c02f8b470085f401e46a5f2eb", null ],
     [ "freeAllAllocs", "d3/d43/class_monomial_memory_space_aee5cf1d291edd4a7ce1ff315b598585d.html#aee5cf1d291edd4a7ce1ff315b598585d", null ],
     [ "freeAllAllocsAndBackingMemory", "d3/d43/class_monomial_memory_space_a0ad272aa353399ef786ba2054ad0ab80.html#a0ad272aa353399ef786ba2054ad0ab80", null ],
     [ "popLastAlloc", "d3/d43/class_monomial_memory_space_ab3ba4d3a536186667fbb01c243b301e2.html#ab3ba4d3a536186667fbb01c243b301e2", null ],

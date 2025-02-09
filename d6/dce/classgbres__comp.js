@@ -9,7 +9,7 @@ var classgbres__comp =
     [ "free_module", "d6/dce/classgbres__comp_a8fbb6e9874a1120d266c5891d604f579.html#a8fbb6e9874a1120d266c5891d604f579", null ],
     [ "gb_matrix", "d6/dce/classgbres__comp_ae201514b7748caa956622267b200b407.html#ae201514b7748caa956622267b200b407", null ],
     [ "get_betti", "d6/dce/classgbres__comp_a7b4d873f1dff8d739eb67a9bc949edf9.html#a7b4d873f1dff8d739eb67a9bc949edf9", null ],
-    [ "get_free", "d6/dce/classgbres__comp_ae1c60c2caf86698a007474c83479951d.html#ae1c60c2caf86698a007474c83479951d", null ],
+    [ "get_free", "d6/dce/classgbres__comp_afd92060e58ad71e50f1c9aa3da6e6b5c.html#afd92060e58ad71e50f1c9aa3da6e6b5c", null ],
     [ "get_matrix", "d6/dce/classgbres__comp_a52c167eb00b279b46a7ea60a4493784a.html#a52c167eb00b279b46a7ea60a4493784a", null ],
     [ "initial_matrix", "d6/dce/classgbres__comp_ae4aad980156eb64342f88fe38a8a72fd.html#ae4aad980156eb64342f88fe38a8a72fd", null ],
     [ "is_done", "d6/dce/classgbres__comp_a96c7d4fdc1cf6300195fd5935e6fc080.html#a96c7d4fdc1cf6300195fd5935e6fc080", null ],

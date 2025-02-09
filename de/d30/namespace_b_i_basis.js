@@ -1,7 +1,7 @@
 var namespace_b_i_basis =
 [
-    [ "FastAllocator", "d1/df2/class_b_i_basis_1_1_fast_allocator.html", "d1/df2/class_b_i_basis_1_1_fast_allocator" ],
     [ "BooleanInvolutiveBasis", "d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis.html", "d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis" ],
+    [ "FastAllocator", "d1/df2/class_b_i_basis_1_1_fast_allocator.html", "d1/df2/class_b_i_basis_1_1_fast_allocator" ],
     [ "JanetTree", "d2/d19/class_b_i_basis_1_1_janet_tree.html", "d2/d19/class_b_i_basis_1_1_janet_tree" ],
     [ "Launcher", "d7/d07/class_b_i_basis_1_1_launcher.html", "d7/d07/class_b_i_basis_1_1_launcher" ],
     [ "Monom", "d4/d58/class_b_i_basis_1_1_monom.html", "d4/d58/class_b_i_basis_1_1_monom" ],

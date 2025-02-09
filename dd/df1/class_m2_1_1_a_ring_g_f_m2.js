@@ -30,7 +30,7 @@ var class_m2_1_1_a_ring_g_f_m2 =
     [ "modulus_sub", "dd/df1/class_m2_1_1_a_ring_g_f_m2_a49041a15475d50120ec32c8da449237a.html#a49041a15475d50120ec32c8da449237a", null ],
     [ "mult", "dd/df1/class_m2_1_1_a_ring_g_f_m2_abd34733a7ae03ed6d000cc7b1ef4318b.html#abd34733a7ae03ed6d000cc7b1ef4318b", null ],
     [ "negate", "dd/df1/class_m2_1_1_a_ring_g_f_m2_aa55059010e59660cfe282b1a9b9b0d08.html#aa55059010e59660cfe282b1a9b9b0d08", null ],
-    [ "originalRing", "dd/df1/class_m2_1_1_a_ring_g_f_m2_a313a085af8bd40c1166dbb726688a46e.html#a313a085af8bd40c1166dbb726688a46e", null ],
+    [ "originalRing", "dd/df1/class_m2_1_1_a_ring_g_f_m2_a6ed0f2711f48e229707690546efe9f03.html#a6ed0f2711f48e229707690546efe9f03", null ],
     [ "power", "dd/df1/class_m2_1_1_a_ring_g_f_m2_a3013c84538a4b947093b4686f5f03b24.html#a3013c84538a4b947093b4686f5f03b24", null ],
     [ "power_mpz", "dd/df1/class_m2_1_1_a_ring_g_f_m2_a22fc63a7fd118df10f8a1e8912670ab7.html#a22fc63a7fd118df10f8a1e8912670ab7", null ],
     [ "promote", "dd/df1/class_m2_1_1_a_ring_g_f_m2_ae61a00e6bbdc57a574e28519fd2d485c.html#ae61a00e6bbdc57a574e28519fd2d485c", null ],

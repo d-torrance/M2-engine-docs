@@ -7,7 +7,7 @@ var class_g_b_walker =
     [ "compute_next_w", "df/dab/class_g_b_walker_ababd89937495566d892d97aea0673b0d.html#ababd89937495566d892d97aea0673b0d", null ],
     [ "contains", "df/dab/class_g_b_walker_a9a726250007c7c588b27ff024dc5b0f0.html#a9a726250007c7c588b27ff024dc5b0f0", null ],
     [ "create", "df/dab/class_g_b_walker_a6a5213e2c77196dd9227fb5d4bb77ba3.html#a6a5213e2c77196dd9227fb5d4bb77ba3", null ],
-    [ "create", "df/dab/class_g_b_walker_a7ef199f82b74b5722dfef0dc6732322b.html#a7ef199f82b74b5722dfef0dc6732322b", null ],
+    [ "create", "df/dab/class_g_b_walker_acd8e4fed2aaf000a1898a4abe615534d.html#acd8e4fed2aaf000a1898a4abe615534d", null ],
     [ "get_change", "df/dab/class_g_b_walker_a5caee532d6f70b4558744978b82b56fe.html#a5caee532d6f70b4558744978b82b56fe", null ],
     [ "get_gb", "df/dab/class_g_b_walker_abfb60f3ff882221e8ca08a161b3921dc.html#abfb60f3ff882221e8ca08a161b3921dc", null ],
     [ "get_initial", "df/dab/class_g_b_walker_a177371ccccec01bf99085b6abfd58d90.html#a177371ccccec01bf99085b6abfd58d90", null ],

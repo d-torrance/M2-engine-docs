@@ -2,10 +2,10 @@ var matrix_8cpp =
 [
     [ "coeffs_of_vec", "d5/d84/matrix_8cpp_a5a9bc857316007ad2dc636ed01e6f224.html#a5a9bc857316007ad2dc636ed01e6f224", null ],
     [ "get_part_of_expvector", "d5/d84/matrix_8cpp_a2215afbfd70bd99284004db6169be4d9.html#a2215afbfd70bd99284004db6169be4d9", null ],
-    [ "makemonideal", "d5/d84/matrix_8cpp_a7cd8abe77e383deaaa269899cdbd3c41.html#a7cd8abe77e383deaaa269899cdbd3c41", null ],
-    [ "NCCoefficientMatrix", "d5/d84/matrix_8cpp_a4ad395e2a7435625dd94f0b3d1a65608.html#a4ad395e2a7435625dd94f0b3d1a65608", null ],
-    [ "NCCoefficientMatrix", "d5/d84/matrix_8cpp_a15d44697c63cb475259b1063a457fc01.html#a15d44697c63cb475259b1063a457fc01", null ],
-    [ "NCMonomialMatrix", "d5/d84/matrix_8cpp_a244d0e2acfb03fd6e4fb01726294c5bc.html#a244d0e2acfb03fd6e4fb01726294c5bc", null ],
+    [ "makemonideal", "d5/d84/matrix_8cpp_a4a25b52c49b5567ad48a28174fbf5736.html#a4a25b52c49b5567ad48a28174fbf5736", null ],
+    [ "NCCoefficientMatrix", "d5/d84/matrix_8cpp_ab98e0e3a363839f466cfbc454ee61917.html#ab98e0e3a363839f466cfbc454ee61917", null ],
+    [ "NCCoefficientMatrix", "d5/d84/matrix_8cpp_a952b9f1778e801313177caaf14a9fa17.html#a952b9f1778e801313177caaf14a9fa17", null ],
+    [ "NCMonomialMatrix", "d5/d84/matrix_8cpp_a4f13d3c8e74445cda518d947eae7032f.html#a4f13d3c8e74445cda518d947eae7032f", null ],
     [ "NCMonomials", "d5/d84/matrix_8cpp_a7fed768cf3caefe3d8b49539e5fb98c3.html#a7fed768cf3caefe3d8b49539e5fb98c3", null ],
     [ "signdivide", "d5/d84/matrix_8cpp_a4f84b808e6893eaa3d4a92810b7a2369.html#a4f84b808e6893eaa3d4a92810b7a2369", null ]
 ];

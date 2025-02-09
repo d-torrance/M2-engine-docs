@@ -10,7 +10,7 @@ var class_det_computation =
     [ "calc", "d7/d9a/class_det_computation_a4b2645ebecf68597a014fce84f801aa2.html#a4b2645ebecf68597a014fce84f801aa2", null ],
     [ "calc_det", "d7/d9a/class_det_computation_ab2d65f64a1fe20c7abbc6e2aaf8e9bd0.html#ab2d65f64a1fe20c7abbc6e2aaf8e9bd0", null ],
     [ "clear", "d7/d9a/class_det_computation_ae02266d7cb14ac886dec5bf4f64e4f25.html#ae02266d7cb14ac886dec5bf4f64e4f25", null ],
-    [ "determinants", "d7/d9a/class_det_computation_a87040347cb140ca5eee9e2378a4952c5.html#a87040347cb140ca5eee9e2378a4952c5", null ],
+    [ "determinants", "d7/d9a/class_det_computation_aefbdee48c429e5a7e136ccd1091d1fb8.html#aefbdee48c429e5a7e136ccd1091d1fb8", null ],
     [ "detmult", "d7/d9a/class_det_computation_a4afa892d5ec0a37343109f060a8d6ba1.html#a4afa892d5ec0a37343109f060a8d6ba1", null ],
     [ "discard", "d7/d9a/class_det_computation_ae14f8d7973a6bf76d72cefcfae004f34.html#ae14f8d7973a6bf76d72cefcfae004f34", null ],
     [ "gauss", "d7/d9a/class_det_computation_a3101855e412fda4054f76aa6c3a73708.html#a3101855e412fda4054f76aa6c3a73708", null ],

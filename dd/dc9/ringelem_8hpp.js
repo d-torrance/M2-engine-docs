@@ -5,7 +5,7 @@ var ringelem_8hpp =
     [ "ring_elem", "d5/d64/unionring__elem.html", "d5/d64/unionring__elem" ],
     [ "Nterm", "d0/dbc/struct_nterm.html", "d0/dbc/struct_nterm" ],
     [ "vec", "d6/ddd/structvecterm.html", "d6/ddd/structvecterm" ],
-    [ "TermIterator", "d9/d6d/struct_term_iterator.html", "d9/d6d/struct_term_iterator" ],
+    [ "TermIterator< T >", "d9/d6d/struct_term_iterator.html", "d9/d6d/struct_term_iterator" ],
     [ "BIGCC_IM", "dd/dc9/ringelem_8hpp_af9bac62e2d632a9591e4db48aaa8ebd6.html#af9bac62e2d632a9591e4db48aaa8ebd6", null ],
     [ "BIGCC_RE", "dd/dc9/ringelem_8hpp_a077ed2ed9749aaaf0966997a1c7b7e8d.html#a077ed2ed9749aaaf0966997a1c7b7e8d", null ],
     [ "MPQ_VAL", "dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3", null ],
@@ -24,8 +24,8 @@ var ringelem_8hpp =
     [ "tpoly", "dd/dc9/ringelem_8hpp_a05321deeb078adf416e16f6ef1ce27b5.html#a05321deeb078adf416e16f6ef1ce27b5", null ],
     [ "ZZ", "dd/dc9/ringelem_8hpp_afea72c39052b53d15e7acad8d36847c1.html#afea72c39052b53d15e7acad8d36847c1", null ],
     [ "ZZmutable", "dd/dc9/ringelem_8hpp_a487debf371b09c706e237215cab277af.html#a487debf371b09c706e237215cab277af", null ],
-    [ "begin", "dd/dc9/ringelem_8hpp_a6ae7c472077eac3917af3d44ef7952b9.html#a6ae7c472077eac3917af3d44ef7952b9", null ],
-    [ "begin", "dd/dc9/ringelem_8hpp_a639d591014dd9e2ad7c63138054b173a.html#a639d591014dd9e2ad7c63138054b173a", null ],
-    [ "end", "dd/dc9/ringelem_8hpp_a202eaaa0b459954e5ac23a43454d57ad.html#a202eaaa0b459954e5ac23a43454d57ad", null ],
-    [ "end", "dd/dc9/ringelem_8hpp_aa8137d96f85c0cc9c8a37daee7716918.html#aa8137d96f85c0cc9c8a37daee7716918", null ]
+    [ "begin", "dd/dc9/ringelem_8hpp_a7dc3f254421434195d252afe59ba8dac.html#a7dc3f254421434195d252afe59ba8dac", null ],
+    [ "begin", "dd/dc9/ringelem_8hpp_ab1b1cb64daaf1f901dd95f1380506fb9.html#ab1b1cb64daaf1f901dd95f1380506fb9", null ],
+    [ "end", "dd/dc9/ringelem_8hpp_a9e12da0d68ca4715109c3198cbe62a66.html#a9e12da0d68ca4715109c3198cbe62a66", null ],
+    [ "end", "dd/dc9/ringelem_8hpp_a5ae7f4516603af6d63b5b6f55036a5a6.html#a5ae7f4516603af6d63b5b6f55036a5a6", null ]
 ];

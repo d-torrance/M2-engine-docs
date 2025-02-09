@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['groebner_20bases_12816',['Groebner Bases',['../d0/d58/group__gb.html',1,'']]]
+  ['free_20resolutions_0',['Free Resolutions',['../d5/d44/group__res.html',1,'']]],
+  ['functions_1',['Hilbert Functions',['../d9/d8a/group__hilb.html',1,'']]]
 ];

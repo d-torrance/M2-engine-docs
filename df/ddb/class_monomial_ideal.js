@@ -22,7 +22,7 @@ var class_monomial_ideal =
     [ "find_all_divisors", "df/ddb/class_monomial_ideal_a34ff8ca3c4bc9faee4a5347f53709606.html#a34ff8ca3c4bc9faee4a5347f53709606", null ],
     [ "first_elem", "df/ddb/class_monomial_ideal_afe1dc12b60db24c5d81b73e075dd25e0.html#afe1dc12b60db24c5d81b73e075dd25e0", null ],
     [ "first_node", "df/ddb/class_monomial_ideal_a7e4eebd4c25cccb76c0793ff511322cc.html#a7e4eebd4c25cccb76c0793ff511322cc", null ],
-    [ "get_ring", "df/ddb/class_monomial_ideal_a9e805c8e8acbb28b8431d1609d6174b9.html#a9e805c8e8acbb28b8431d1609d6174b9", null ],
+    [ "get_ring", "df/ddb/class_monomial_ideal_aef478e527af8db4406c3114b63e30c46.html#aef478e527af8db4406c3114b63e30c46", null ],
     [ "insert", "df/ddb/class_monomial_ideal_a0c41e5598ea1a6f1af4bd73b17551b18.html#a0c41e5598ea1a6f1af4bd73b17551b18", null ],
     [ "insert1", "df/ddb/class_monomial_ideal_aa2b966e4fb57344655a37d92fd0e2d1a.html#aa2b966e4fb57344655a37d92fd0e2d1a", null ],
     [ "insert_minimal", "df/ddb/class_monomial_ideal_a1a4164d03f8dd942f6f0966c299d7821.html#a1a4164d03f8dd942f6f0966c299d7821", null ],

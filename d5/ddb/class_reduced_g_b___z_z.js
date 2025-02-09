@@ -13,7 +13,7 @@ var class_reduced_g_b___z_z =
     [ "remainder", "d5/ddb/class_reduced_g_b___z_z_ac3c1c390dfc64c42bcadb3b3666352ef.html#ac3c1c390dfc64c42bcadb3b3666352ef", null ],
     [ "remove_gb", "d5/ddb/class_reduced_g_b___z_z_aa8a2141742b78c1cdcfe4daaf64d99c5.html#aa8a2141742b78c1cdcfe4daaf64d99c5", null ],
     [ "set_gb", "d5/ddb/class_reduced_g_b___z_z_ae994c9af53a3bf6fd4fb931b574eefb6.html#ae994c9af53a3bf6fd4fb931b574eefb6", null ],
-    [ "ReducedGB::create", "d5/ddb/class_reduced_g_b___z_z_a90aeb28a71d6fb893e971585c1b7c5bc.html#a90aeb28a71d6fb893e971585c1b7c5bc", null ],
+    [ "ReducedGB::create", "d5/ddb/class_reduced_g_b___z_z_ab4de10bdf3efa5e3df040a09a8bf142c.html#ab4de10bdf3efa5e3df040a09a8bf142c", null ],
     [ "ringtableZZ", "d5/ddb/class_reduced_g_b___z_z_a11e45024cbb3b78c52644b8a792a5c06.html#a11e45024cbb3b78c52644b8a792a5c06", null ],
     [ "T", "d5/ddb/class_reduced_g_b___z_z_a4b7ec256f9f20d4da4fb638ee19fac77.html#a4b7ec256f9f20d4da4fb638ee19fac77", null ]
 ];

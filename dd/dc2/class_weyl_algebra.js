@@ -3,7 +3,7 @@ var class_weyl_algebra =
     [ "WeylAlgebra", "dd/dc2/class_weyl_algebra_a9f9202c7eabfa4c02be3a20a56717ada.html#a9f9202c7eabfa4c02be3a20a56717ada", null ],
     [ "~WeylAlgebra", "dd/dc2/class_weyl_algebra_ac7cb4320f54c2fce4cde127881d9c0f1.html#ac7cb4320f54c2fce4cde127881d9c0f1", null ],
     [ "binomial", "dd/dc2/class_weyl_algebra_ac46e04f8e6971edb992993856c20a848.html#ac46e04f8e6971edb992993856c20a848", null ],
-    [ "cast_to_WeylAlgebra", "dd/dc2/class_weyl_algebra_ac9270c750172698b16bef5f993f29354.html#ac9270c750172698b16bef5f993f29354", null ],
+    [ "cast_to_WeylAlgebra", "dd/dc2/class_weyl_algebra_ac54d153da0ba3b3233269f5aa3a3b1d2.html#ac54d153da0ba3b3233269f5aa3a3b1d2", null ],
     [ "create", "dd/dc2/class_weyl_algebra_aeafc288bf018909286384c479d552243.html#aeafc288bf018909286384c479d552243", null ],
     [ "diff_coefficients", "dd/dc2/class_weyl_algebra_a0b1b8ba5c1b994b91607e2c3305a8e39.html#a0b1b8ba5c1b994b91607e2c3305a8e39", null ],
     [ "divides", "dd/dc2/class_weyl_algebra_adfa5fd1a6147bcc5a25c4a81fd6ec3dc.html#adfa5fd1a6147bcc5a25c4a81fd6ec3dc", null ],

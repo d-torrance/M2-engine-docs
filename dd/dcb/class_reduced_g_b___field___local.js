@@ -10,7 +10,7 @@ var class_reduced_g_b___field___local =
     [ "remove_gb", "dd/dcb/class_reduced_g_b___field___local_a0b9afd42076ce6f4e978f85d41602ca0.html#a0b9afd42076ce6f4e978f85d41602ca0", null ],
     [ "reset_table", "dd/dcb/class_reduced_g_b___field___local_a6c6951e8de1a808e195e7060f75e519e.html#a6c6951e8de1a808e195e7060f75e519e", null ],
     [ "store_in_table", "dd/dcb/class_reduced_g_b___field___local_ae5392a8e14a37007ccf94ab9e6bd85d0.html#ae5392a8e14a37007ccf94ab9e6bd85d0", null ],
-    [ "ReducedGB::create", "dd/dcb/class_reduced_g_b___field___local_a90aeb28a71d6fb893e971585c1b7c5bc.html#a90aeb28a71d6fb893e971585c1b7c5bc", null ],
+    [ "ReducedGB::create", "dd/dcb/class_reduced_g_b___field___local_ab4de10bdf3efa5e3df040a09a8bf142c.html#ab4de10bdf3efa5e3df040a09a8bf142c", null ],
     [ "alpha", "dd/dcb/class_reduced_g_b___field___local_a4c1cdaf3029b5084ce0d2a039090b166.html#a4c1cdaf3029b5084ce0d2a039090b166", null ],
     [ "gb_elems", "dd/dcb/class_reduced_g_b___field___local_aed063382d7e8001ce8ea4284e7ed57c3.html#aed063382d7e8001ce8ea4284e7ed57c3", null ],
     [ "new_poly_elems", "dd/dcb/class_reduced_g_b___field___local_ab671f590b3d8780c71feddbb7d2bd782.html#ab671f590b3d8780c71feddbb7d2bd782", null ],

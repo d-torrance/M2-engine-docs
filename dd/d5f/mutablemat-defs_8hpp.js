@@ -1,6 +1,6 @@
 var mutablemat_defs_8hpp =
 [
-    [ "EigenTypes", "da/dfe/struct_eigen_types.html", "da/dfe/struct_eigen_types" ],
+    [ "EigenTypes< RT >", "da/dfe/struct_eigen_types.html", "da/dfe/struct_eigen_types" ],
     [ "EigenTypes< M2::ARingRR >", "d9/dc6/struct_eigen_types_3_01_m2_1_1_a_ring_r_r_01_4.html", "d9/dc6/struct_eigen_types_3_01_m2_1_1_a_ring_r_r_01_4" ],
     [ "EigenTypes< M2::ARingCC >", "dd/dfb/struct_eigen_types_3_01_m2_1_1_a_ring_c_c_01_4.html", "dd/dfb/struct_eigen_types_3_01_m2_1_1_a_ring_c_c_01_4" ],
     [ "EigenTypes< M2::ARingRRR >", "dd/dbb/struct_eigen_types_3_01_m2_1_1_a_ring_r_r_r_01_4.html", "dd/dbb/struct_eigen_types_3_01_m2_1_1_a_ring_r_r_r_01_4" ],
@@ -10,6 +10,6 @@ var mutablemat_defs_8hpp =
     [ "isDense", "dd/d5f/mutablemat-defs_8hpp_a8e7e42a1c80816420b27753527c558cc.html#a8e7e42a1c80816420b27753527c558cc", null ],
     [ "isDense", "dd/d5f/mutablemat-defs_8hpp_a302092fef20be049cf008980d6be3ea4.html#a302092fef20be049cf008980d6be3ea4", null ],
     [ "isDense", "dd/d5f/mutablemat-defs_8hpp_acd2376beef8ba32da79382d336ce351d.html#acd2376beef8ba32da79382d336ce351d", null ],
-    [ "toMatrix", "dd/d5f/mutablemat-defs_8hpp_a95b857d6debaaa14deb2522e1da07afa.html#a95b857d6debaaa14deb2522e1da07afa", null ],
-    [ "toMatrix", "dd/d5f/mutablemat-defs_8hpp_a057240bfdf91f19182392b25b44bf929.html#a057240bfdf91f19182392b25b44bf929", null ]
+    [ "toMatrix", "dd/d5f/mutablemat-defs_8hpp_af7e5e303010718199ac53d79dabca95c.html#af7e5e303010718199ac53d79dabca95c", null ],
+    [ "toMatrix", "dd/d5f/mutablemat-defs_8hpp_ad50173efeebbf4824a0392a0a0a77baa.html#ad50173efeebbf4824a0392a0a0a77baa", null ]
 ];

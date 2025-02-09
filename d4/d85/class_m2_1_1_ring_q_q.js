@@ -2,7 +2,7 @@ var class_m2_1_1_ring_q_q =
 [
     [ "RingQQ", "d4/d85/class_m2_1_1_ring_q_q_a067377163d387077bf5a6e8ace364b6c.html#a067377163d387077bf5a6e8ace364b6c", null ],
     [ "coefficient_type", "d4/d85/class_m2_1_1_ring_q_q_a6265bf96a9b7c8ddd030cd073663ccb2.html#a6265bf96a9b7c8ddd030cd073663ccb2", null ],
-    [ "create", "d4/d85/class_m2_1_1_ring_q_q_ac519cb1a61e97f3c4bc3f45d0df219e1.html#ac519cb1a61e97f3c4bc3f45d0df219e1", null ],
+    [ "create", "d4/d85/class_m2_1_1_ring_q_q_ad4f4ff1bc57f6de8afb5ac7ac307ec91.html#ad4f4ff1bc57f6de8afb5ac7ac307ec91", null ],
     [ "denominator", "d4/d85/class_m2_1_1_ring_q_q_ae08f2ee31a842fa2fb3eeafd13347602.html#ae08f2ee31a842fa2fb3eeafd13347602", null ],
     [ "fraction", "d4/d85/class_m2_1_1_ring_q_q_a6d2ddd6b4d5ddc255001980f2fddd215.html#a6d2ddd6b4d5ddc255001980f2fddd215", null ],
     [ "is_QQ", "d4/d85/class_m2_1_1_ring_q_q_ab449d788228a4f9161922b808a6ce644.html#ab449d788228a4f9161922b808a6ce644", null ],

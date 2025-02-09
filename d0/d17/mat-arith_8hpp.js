@@ -1,7 +1,7 @@
 var mat_arith_8hpp =
 [
     [ "MatrixWindow", "df/d6c/struct_matrix_window.html", "df/d6c/struct_matrix_window" ],
-    [ "SubMatrix", "d3/da1/struct_sub_matrix.html", "d3/da1/struct_sub_matrix" ],
+    [ "SubMatrix< MatType >", "d3/da1/struct_sub_matrix.html", "d3/da1/struct_sub_matrix" ],
     [ "addInPlace", "d0/d17/mat-arith_8hpp.html#aa0b591bedc09f2645c7561c0cb7fc079", null ],
     [ "addInPlace", "d0/d17/mat-arith_8hpp.html#af42f2e3244906cee8cdae89f79f9e94c", null ],
     [ "addMultipleTo", "d0/d17/mat-arith_8hpp.html#a2100eeba95e52ce0e249ae03e9365b54", null ],
@@ -20,8 +20,8 @@ var mat_arith_8hpp =
     [ "set", "d0/d17/mat-arith_8hpp.html#a282f886010aee601304c4860fb1af33f", null ],
     [ "setZero", "d0/d17/mat-arith_8hpp.html#a4cb69fe10c896de643645b4e78ca8fe9", null ],
     [ "setZero", "d0/d17/mat-arith_8hpp.html#ae753f2e353c3decad1eb81b972b0c96c", null ],
-    [ "submatrix", "d0/d17/mat-arith_8hpp_aa9015e276dc3b2389959cea2f021aa86.html#aa9015e276dc3b2389959cea2f021aa86", null ],
-    [ "submatrix", "d0/d17/mat-arith_8hpp_aabbf4906d7db3069dcc3459a32587db6.html#aabbf4906d7db3069dcc3459a32587db6", null ],
+    [ "submatrix", "d0/d17/mat-arith_8hpp_af3525d02f3098a60b9e93c66531abd6f.html#af3525d02f3098a60b9e93c66531abd6f", null ],
+    [ "submatrix", "d0/d17/mat-arith_8hpp_a21d85b1537309f9aa2940e00acdd6c3d.html#a21d85b1537309f9aa2940e00acdd6c3d", null ],
     [ "subtractInPlace", "d0/d17/mat-arith_8hpp.html#a50ed9378e232e326777a3a65b5521312", null ],
     [ "subtractInPlace", "d0/d17/mat-arith_8hpp.html#afeb433b0052beec8982e7d67a96c20de", null ],
     [ "transpose", "d0/d17/mat-arith_8hpp.html#adf30da03679f9d00ec647e6d62babc80", null ],

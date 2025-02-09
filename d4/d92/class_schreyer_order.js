@@ -12,7 +12,7 @@ var class_schreyer_order =
     [ "create", "d4/d92/class_schreyer_order_a617f135fc25e9f7bf57615a4d5ce7c22.html#a617f135fc25e9f7bf57615a4d5ce7c22", null ],
     [ "direct_sum", "d4/d92/class_schreyer_order_a983ce32ec097291e7738259be6d55ee3.html#a983ce32ec097291e7738259be6d55ee3", null ],
     [ "exterior", "d4/d92/class_schreyer_order_a36106f60d98ac77110e8b8beb0114792.html#a36106f60d98ac77110e8b8beb0114792", null ],
-    [ "getMonoid", "d4/d92/class_schreyer_order_a63307518220a54cac9cd6d4b73416131.html#a63307518220a54cac9cd6d4b73416131", null ],
+    [ "getMonoid", "d4/d92/class_schreyer_order_a6c5427b3a34ce02f8e51047d2f87ab8a.html#a6c5427b3a34ce02f8e51047d2f87ab8a", null ],
     [ "is_equal", "d4/d92/class_schreyer_order_a2c118e53f9fdebc14c1c55545d18af09.html#a2c118e53f9fdebc14c1c55545d18af09", null ],
     [ "rank", "d4/d92/class_schreyer_order_a97c1bb8c7d8561b7191ba077f2b82a9e.html#a97c1bb8c7d8561b7191ba077f2b82a9e", null ],
     [ "remove", "d4/d92/class_schreyer_order_a8fa5a9883adb05177a3182813c29c599.html#a8fa5a9883adb05177a3182813c29c599", null ],

@@ -10,10 +10,10 @@ var mutablecomplex_8cpp =
     [ "FLAG_REV_ORDER", "d7/d11/mutablecomplex_8cpp_a5613c80ef6b5ef7de2daa6d9f404db32.html#a5613c80ef6b5ef7de2daa6d9f404db32", null ],
     [ "FLAG_TRACE_MORPHISMS", "d7/d11/mutablecomplex_8cpp_a0d6e989fd58644c55f2eacb03829a58d.html#a0d6e989fd58644c55f2eacb03829a58d", null ],
     [ "FLAG_TRIM_COMPLEX", "d7/d11/mutablecomplex_8cpp_a21bff4ea40c65f2f4e2a7de8a09813f6.html#a21bff4ea40c65f2f4e2a7de8a09813f6", null ],
-    [ "rawMutableComplex", "d7/d11/mutablecomplex_8cpp_afa25fc07276809d3d1d209657458a9c1.html#afa25fc07276809d3d1d209657458a9c1", null ],
+    [ "rawMutableComplex", "d7/d11/mutablecomplex_8cpp_a913e92c1eee1c1b2f4efa0dd7a1a905c.html#a913e92c1eee1c1b2f4efa0dd7a1a905c", null ],
     [ "rawMutableComplexHash", "d7/d11/mutablecomplex_8cpp_a16bfb04bfec5394dcf99fc060a6da666.html#a16bfb04bfec5394dcf99fc060a6da666", null ],
     [ "rawMutableComplexToString", "d7/d11/mutablecomplex_8cpp_aec04afd88fbe86722efe7020a70c2d32.html#aec04afd88fbe86722efe7020a70c2d32", null ],
     [ "rawPruneBetti", "d7/d11/mutablecomplex_8cpp_a55f6cd03a5e2172d1e0609b755e47476.html#a55f6cd03a5e2172d1e0609b755e47476", null ],
-    [ "rawPruneComplex", "d7/d11/mutablecomplex_8cpp_a40e5f1688ef855117f8c60d3321a70c6.html#a40e5f1688ef855117f8c60d3321a70c6", null ],
+    [ "rawPruneComplex", "d7/d11/mutablecomplex_8cpp_a1875d631da22085bdc2fbe608637681d.html#a1875d631da22085bdc2fbe608637681d", null ],
     [ "rawPruningMorphism", "d7/d11/mutablecomplex_8cpp_a3da99ef3c06c122e5061a7f82b8cfa66.html#a3da99ef3c06c122e5061a7f82b8cfa66", null ]
 ];

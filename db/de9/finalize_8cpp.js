@@ -6,7 +6,7 @@ var finalize_8cpp =
     [ "intern_polyring", "db/de9/finalize_8cpp_a983529769b4c8c9deaff15dcca5f50c5.html#a983529769b4c8c9deaff15dcca5f50c5", null ],
     [ "intern_res", "db/de9/finalize_8cpp_abc48b76918e28478bd41d7d9645360f3.html#abc48b76918e28478bd41d7d9645360f3", null ],
     [ "intern_SchreyerOrder", "db/de9/finalize_8cpp_aae491e7c1ab7a0a376e942ab9b46a10e.html#aae491e7c1ab7a0a376e942ab9b46a10e", null ],
-    [ "internMutableMatrix", "db/de9/finalize_8cpp_a7a85cceae51c6e27366f8ee12c2d753a.html#a7a85cceae51c6e27366f8ee12c2d753a", null ],
+    [ "internMutableMatrix", "db/de9/finalize_8cpp_a69ad2638647d139d7c215cbdc820f5cb.html#a69ad2638647d139d7c215cbdc820f5cb", null ],
     [ "remove_gb", "db/de9/finalize_8cpp_ad5dfbb748fc385e82406d90f81a5deec.html#ad5dfbb748fc385e82406d90f81a5deec", null ],
     [ "remove_monideal", "db/de9/finalize_8cpp_a8edf5905229d913571c2b764ccf7b057.html#a8edf5905229d913571c2b764ccf7b057", null ],
     [ "remove_MutableMatrix", "db/de9/finalize_8cpp_a2acd80d5ff4b2d40403f1d69e3f4178b.html#a2acd80d5ff4b2d40403f1d69e3f4178b", null ],

@@ -4,7 +4,7 @@ var class_res_monomial_sorter =
     [ "numComparisons", "d8/d9c/class_res_monomial_sorter_ad0073eb48730771e151641fd2d8073ae.html#ad0073eb48730771e151641fd2d8073ae", null ],
     [ "ordered", "d8/d9c/class_res_monomial_sorter_aaeb49ce3230eb9217c2752c03a8f59cf.html#aaeb49ce3230eb9217c2752c03a8f59cf", null ],
     [ "setMonoms", "d8/d9c/class_res_monomial_sorter_a2a08b35eea4d030d4daaf72283c7ee6a.html#a2a08b35eea4d030d4daaf72283c7ee6a", null ],
-    [ "sort", "d8/d9c/class_res_monomial_sorter_a2c819b37bd13908583303a2867090754.html#a2c819b37bd13908583303a2867090754", null ],
+    [ "sort", "d8/d9c/class_res_monomial_sorter_a0ffc1c92e180bfe1526c208e82747873.html#a0ffc1c92e180bfe1526c208e82747873", null ],
     [ "toMonomial", "d8/d9c/class_res_monomial_sorter_ad550fea64af5a97211603eb7e6406dc8.html#ad550fea64af5a97211603eb7e6406dc8", null ],
     [ "mArena", "d8/d9c/class_res_monomial_sorter_a71e0227943616b6ef3e76af105d81ff0.html#a71e0227943616b6ef3e76af105d81ff0", null ],
     [ "mColumns", "d8/d9c/class_res_monomial_sorter_a5fb1ff2f55867249da320f8575a44d00.html#a5fb1ff2f55867249da320f8575a44d00", null ],

@@ -27,7 +27,7 @@ var classgb2__comp =
     [ "n_gb_elems", "dd/df7/classgb2__comp_a687b7480515954da2646c05687c1ae59.html#a687b7480515954da2646c05687c1ae59", null ],
     [ "new_ring_pair", "dd/df7/classgb2__comp_a18d2198bfc0a13ad1da798d2829e0408.html#a18d2198bfc0a13ad1da798d2829e0408", null ],
     [ "new_s_pair", "dd/df7/classgb2__comp_af58b3875e558da15572395489e446ca3.html#af58b3875e558da15572395489e446ca3", null ],
-    [ "output_free_module", "dd/df7/classgb2__comp_a1e747dbd79e2a95c5faf12acebe11140.html#a1e747dbd79e2a95c5faf12acebe11140", null ],
+    [ "output_free_module", "dd/df7/classgb2__comp_a4d6cd8e68e45cd9c0aae1a05983f5679.html#a4d6cd8e68e45cd9c0aae1a05983f5679", null ],
     [ "receive_generator", "dd/df7/classgb2__comp_ae251506100c90b3868faf17843ec0cc3.html#ae251506100c90b3868faf17843ec0cc3", null ],
     [ "reduce", "dd/df7/classgb2__comp_aebe9b89c0eb645eef5cce2afbc9f2c61.html#aebe9b89c0eb645eef5cce2afbc9f2c61", null ],
     [ "remove_pair", "dd/df7/classgb2__comp_a457028f671a2205bbd91e026369e9319.html#a457028f671a2205bbd91e026369e9319", null ],

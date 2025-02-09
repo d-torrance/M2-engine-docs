@@ -11,7 +11,7 @@ var class_d_mat_lin_alg =
     [ "kernel", "d8/df6/class_d_mat_lin_alg_a43302d0ac246c77be7f3378c700b12ef.html#a43302d0ac246c77be7f3378c700b12ef", null ],
     [ "matrixPLU", "d8/df6/class_d_mat_lin_alg_a74c839bac4a9439a1ef00ed9e601f93a.html#a74c839bac4a9439a1ef00ed9e601f93a", null ],
     [ "rank", "d8/df6/class_d_mat_lin_alg_a47cfff84b2e83952acc264d6dc144f14.html#a47cfff84b2e83952acc264d6dc144f14", null ],
-    [ "ring", "d8/df6/class_d_mat_lin_alg_aea0139fa43371a436753e9e1846e7176.html#aea0139fa43371a436753e9e1846e7176", null ],
+    [ "ring", "d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81", null ],
     [ "setUpperLower", "d8/df6/class_d_mat_lin_alg_a9d18bee2770c2f06be62758703ff511a.html#a9d18bee2770c2f06be62758703ff511a", null ],
     [ "solve", "d8/df6/class_d_mat_lin_alg_af62eb419b81883be17eea4e3b719c47c.html#af62eb419b81883be17eea4e3b719c47c", null ],
     [ "solveInvertible", "d8/df6/class_d_mat_lin_alg_a73e0808414a632221f057c5d740f4155.html#a73e0808414a632221f057c5d740f4155", null ],

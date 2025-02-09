@@ -15,7 +15,7 @@ var class_m2_1_1_a_ring_q_q_g_m_p =
     [ "elem_text_out", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a9c656ea8da079a9f4a7d844add22aba0.html#a9c656ea8da079a9f4a7d844add22aba0", null ],
     [ "eval", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_aa1b83a2aca1019fe1aaef5ed5d08a01d.html#aa1b83a2aca1019fe1aaef5ed5d08a01d", null ],
     [ "from_ring_elem", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a14052d7e91dbb335c5c32877fcda26cc.html#a14052d7e91dbb335c5c32877fcda26cc", null ],
-    [ "from_ring_elem_const", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_adc6ca6cef2a85a7afb8edbf179ccc169.html#adc6ca6cef2a85a7afb8edbf179ccc169", null ],
+    [ "from_ring_elem_const", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a130e795c5b5a5e4920e166443a726949.html#a130e795c5b5a5e4920e166443a726949", null ],
     [ "init", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_af8ea10906c80abef8bf0667cc4584265.html#af8ea10906c80abef8bf0667cc4584265", null ],
     [ "init_set", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_af4c3ed10e05f191da6f3fe062e8d2bc4.html#af4c3ed10e05f191da6f3fe062e8d2bc4", null ],
     [ "invert", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a0fe14761b69f0c6d8a9e43de63953d14.html#a0fe14761b69f0c6d8a9e43de63953d14", null ],

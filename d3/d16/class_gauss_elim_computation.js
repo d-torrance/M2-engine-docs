@@ -8,7 +8,7 @@ var class_gauss_elim_computation =
     [ "get_gb", "d3/d16/class_gauss_elim_computation_ac3682cb587a9c551a5f9607056103c26.html#ac3682cb587a9c551a5f9607056103c26", null ],
     [ "get_initial", "d3/d16/class_gauss_elim_computation_ae6962bc96b80b071d134a3aaf783091f.html#ae6962bc96b80b071d134a3aaf783091f", null ],
     [ "get_mingens", "d3/d16/class_gauss_elim_computation_a02a358f9bc971ea6913b55c58cec7eea.html#a02a358f9bc971ea6913b55c58cec7eea", null ],
-    [ "get_ring", "d3/d16/class_gauss_elim_computation_a17b17c7393dbb35a6e7757439109a3a6.html#a17b17c7393dbb35a6e7757439109a3a6", null ],
+    [ "get_ring", "d3/d16/class_gauss_elim_computation_af62a884a8b513ba1adf9b0db9e5667b3.html#af62a884a8b513ba1adf9b0db9e5667b3", null ],
     [ "get_syzygies", "d3/d16/class_gauss_elim_computation_a984e7757029e34a5559675df584dc462.html#a984e7757029e34a5559675df584dc462", null ],
     [ "insert", "d3/d16/class_gauss_elim_computation_adc4dfa981933918b2debf84177c47ff3.html#adc4dfa981933918b2debf84177c47ff3", null ],
     [ "matrix_lift", "d3/d16/class_gauss_elim_computation_a77022a9ae429a64efb81037ec5d9ab11.html#a77022a9ae429a64efb81037ec5d9ab11", null ],

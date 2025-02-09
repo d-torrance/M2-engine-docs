@@ -1,8 +1,8 @@
 var util_polyring_creation_8hpp =
 [
-    [ "degreeMonoid", "de/dcc/util-polyring-creation_8hpp_a22e68466501e280897566baf6716be25.html#a22e68466501e280897566baf6716be25", null ],
-    [ "degreeRing", "de/dcc/util-polyring-creation_8hpp_af9d63a9930dbf9e4121ecba5b8c7ea19.html#af9d63a9930dbf9e4121ecba5b8c7ea19", null ],
-    [ "degreeRing", "de/dcc/util-polyring-creation_8hpp_a60576699090679487e2fa704d3d3a01d.html#a60576699090679487e2fa704d3d3a01d", null ],
-    [ "simplePolynomialRing", "de/dcc/util-polyring-creation_8hpp_a631d21c8dbc3eaa7cdee634f363d36b5.html#a631d21c8dbc3eaa7cdee634f363d36b5", null ],
-    [ "simplePolynomialRing", "de/dcc/util-polyring-creation_8hpp_a552abe65eef90c23d13d55375579e1cf.html#a552abe65eef90c23d13d55375579e1cf", null ]
+    [ "degreeMonoid", "de/dcc/util-polyring-creation_8hpp_a02552d796198f37d8ba1a54ed60a01f0.html#a02552d796198f37d8ba1a54ed60a01f0", null ],
+    [ "degreeRing", "de/dcc/util-polyring-creation_8hpp_aa0e251a1ff34f757ba32c4252f9a8528.html#aa0e251a1ff34f757ba32c4252f9a8528", null ],
+    [ "degreeRing", "de/dcc/util-polyring-creation_8hpp_aa640c1d554f2d3b9de4883b87970de70.html#aa640c1d554f2d3b9de4883b87970de70", null ],
+    [ "simplePolynomialRing", "de/dcc/util-polyring-creation_8hpp_aba322ad2a0a2ec495cc9562af90e6623.html#aba322ad2a0a2ec495cc9562af90e6623", null ],
+    [ "simplePolynomialRing", "de/dcc/util-polyring-creation_8hpp_a45a0a96d3ec0b0086be66a86120dd5a9.html#a45a0a96d3ec0b0086be66a86120dd5a9", null ]
 ];

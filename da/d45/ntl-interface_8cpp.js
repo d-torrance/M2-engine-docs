@@ -1,7 +1,7 @@
 var ntl_interface_8cpp =
 [
-    [ "mutableMatrix_from_NTL_mat_ZZ", "da/d45/ntl-interface_8cpp_ad44a2a7b3bc6af3f1d29b34ccfc7a5f0.html#ad44a2a7b3bc6af3f1d29b34ccfc7a5f0", null ],
-    [ "mutableMatrix_to_NTL_mat_ZZ", "da/d45/ntl-interface_8cpp_ab46057bc2bdfe055685b48745a2589db.html#ab46057bc2bdfe055685b48745a2589db", null ],
+    [ "mutableMatrix_from_NTL_mat_ZZ", "da/d45/ntl-interface_8cpp_ad64f0b3361cfacd2f21e8b242fdaff17.html#ad64f0b3361cfacd2f21e8b242fdaff17", null ],
+    [ "mutableMatrix_to_NTL_mat_ZZ", "da/d45/ntl-interface_8cpp_a8cf4015c4ef79683ed1dc5764f6c86e3.html#a8cf4015c4ef79683ed1dc5764f6c86e3", null ],
     [ "ntl_LLL", "da/d45/ntl-interface_8cpp_afec2461b7c83ab4c3a27c84a45ea6327.html#afec2461b7c83ab4c3a27c84a45ea6327", null ],
     [ "FP", "da/d45/ntl-interface_8cpp_a585569e3ec76f6390e550ae482cd6ac1.html#a585569e3ec76f6390e550ae482cd6ac1", null ],
     [ "Givens", "da/d45/ntl-interface_8cpp_a4710a778bacb84aa9154b65a83b08c53.html#a4710a778bacb84aa9154b65a83b08c53", null ],

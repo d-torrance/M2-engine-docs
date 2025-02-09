@@ -29,7 +29,7 @@ var class_m2_1_1_dummy_ring =
     [ "lift_to_original_ring", "d5/d2d/class_m2_1_1_dummy_ring_a3b1b750640ee1cb7dc33e30385fe4fb4.html#a3b1b750640ee1cb7dc33e30385fe4fb4", null ],
     [ "mult", "d5/d2d/class_m2_1_1_dummy_ring_a159518a02842dd26047f069ab01c950c.html#a159518a02842dd26047f069ab01c950c", null ],
     [ "negate", "d5/d2d/class_m2_1_1_dummy_ring_ae5c0ac6a8b8f4eef1dc7d6adac14bed9.html#ae5c0ac6a8b8f4eef1dc7d6adac14bed9", null ],
-    [ "originalRing", "d5/d2d/class_m2_1_1_dummy_ring_a98cb607c9d1c698e45451821f992e388.html#a98cb607c9d1c698e45451821f992e388", null ],
+    [ "originalRing", "d5/d2d/class_m2_1_1_dummy_ring_af01c45e2b2666a81b09c75b5bf78dad3.html#af01c45e2b2666a81b09c75b5bf78dad3", null ],
     [ "power", "d5/d2d/class_m2_1_1_dummy_ring_a5e11bba719270989fba37612bfb6c03b.html#a5e11bba719270989fba37612bfb6c03b", null ],
     [ "power_mpz", "d5/d2d/class_m2_1_1_dummy_ring_a8ad4a2fe67c38bd5942b5024015dc537.html#a8ad4a2fe67c38bd5942b5024015dc537", null ],
     [ "promote", "d5/d2d/class_m2_1_1_dummy_ring_a5deade43bcfddb68c884b0dad1870339.html#a5deade43bcfddb68c884b0dad1870339", null ],

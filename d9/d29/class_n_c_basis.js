@@ -2,7 +2,7 @@ var class_n_c_basis =
 [
     [ "NCBasis", "d9/d29/class_n_c_basis_ab20363f0dc5a6ffff3854b9fb574a04c.html#ab20363f0dc5a6ffff3854b9fb574a04c", null ],
     [ "basis0", "d9/d29/class_n_c_basis_a1c106490b615b65a9edaaad0ac03d654.html#a1c106490b615b65a9edaaad0ac03d654", null ],
-    [ "compute", "d9/d29/class_n_c_basis_a7bf62bdcef0a68959fc4ecfc6e0471f9.html#a7bf62bdcef0a68959fc4ecfc6e0471f9", null ],
+    [ "compute", "d9/d29/class_n_c_basis_af65d9136f2993c1b1ac4570874369e90.html#af65d9136f2993c1b1ac4570874369e90", null ],
     [ "insert", "d9/d29/class_n_c_basis_a016fbcec5caa6e0801dd2c6f84ec98ac.html#a016fbcec5caa6e0801dd2c6f84ec98ac", null ],
     [ "mBasis", "d9/d29/class_n_c_basis_a4e3708503bbc445aa218d8cf7ef435cb.html#a4e3708503bbc445aa218d8cf7ef435cb", null ],
     [ "mCurrentHeftValue", "d9/d29/class_n_c_basis_ac3ff61a29a673a9caf07236b82b0374e.html#ac3ff61a29a673a9caf07236b82b0374e", null ],

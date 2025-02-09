@@ -1,8 +1,8 @@
 var _ring_test_8hpp =
 [
-    [ "RingElementGenerator", "df/d9f/class_ring_element_generator.html", "df/d9f/class_ring_element_generator" ],
+    [ "RingElementGenerator< RingType >", "df/d9f/class_ring_element_generator.html", "df/d9f/class_ring_element_generator" ],
     [ "fromStream", "d0/dc0/_ring_test_8hpp_a2d06bfecbd3e400deb2c3f58bb42dfab.html#a2d06bfecbd3e400deb2c3f58bb42dfab", null ],
-    [ "fromStream", "d0/dc0/_ring_test_8hpp_a954837ceca6f49b2bc95f65adbeecfb8.html#a954837ceca6f49b2bc95f65adbeecfb8", null ],
+    [ "fromStream", "d0/dc0/_ring_test_8hpp_a8b21b151847791794532fa994ff1b78a.html#a8b21b151847791794532fa994ff1b78a", null ],
     [ "getElement", "d0/dc0/_ring_test_8hpp_a3754c0f58d4e2d757d4c68d373cbac4b.html#a3754c0f58d4e2d757d4c68d373cbac4b", null ],
     [ "ringName", "d0/dc0/_ring_test_8hpp_aed865d319365c090f84bd7fd38400807.html#aed865d319365c090f84bd7fd38400807", null ],
     [ "testRingAdd", "d0/dc0/_ring_test_8hpp_ad868a498856f9eb0713d74e2e2f8bb15.html#ad868a498856f9eb0713d74e2e2f8bb15", null ],

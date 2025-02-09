@@ -9,7 +9,7 @@ var classres2__poly =
     [ "elem_text_out", "d8/da3/classres2__poly_ac8ef5989943eaf25e7cfa8de8288a6a0.html#ac8ef5989943eaf25e7cfa8de8288a6a0", null ],
     [ "elem_text_out", "d8/da3/classres2__poly_a53ba6e30047b60daf0b7821fc1e3ebb5.html#a53ba6e30047b60daf0b7821fc1e3ebb5", null ],
     [ "from_vector", "d8/da3/classres2__poly_a71321348bf4895077c93c79cc793f359.html#a71321348bf4895077c93c79cc793f359", null ],
-    [ "get_ring", "d8/da3/classres2__poly_aeb7a69eb2706cdafbae61f46faa026c9.html#aeb7a69eb2706cdafbae61f46faa026c9", null ],
+    [ "get_ring", "d8/da3/classres2__poly_a74447e59b4e2b5bc55a0f487808faaf0.html#a74447e59b4e2b5bc55a0f487808faaf0", null ],
     [ "lead_component", "d8/da3/classres2__poly_a3323f5d4a57be6e9d455707e1e156e74.html#a3323f5d4a57be6e9d455707e1e156e74", null ],
     [ "lead_monomial", "d8/da3/classres2__poly_ae5248b570138fe16fdcf6d4540b08b94.html#ae5248b570138fe16fdcf6d4540b08b94", null ],
     [ "make_monic", "d8/da3/classres2__poly_a873f762a53f7956e6ef946ec911b8007.html#a873f762a53f7956e6ef946ec911b8007", null ],

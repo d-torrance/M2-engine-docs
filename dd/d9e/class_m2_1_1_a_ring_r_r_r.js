@@ -17,7 +17,7 @@ var class_m2_1_1_a_ring_r_r_r =
     [ "elem_text_out", "dd/d9e/class_m2_1_1_a_ring_r_r_r_ae540d59a1fda6c271ddf4adb551e0ea4.html#ae540d59a1fda6c271ddf4adb551e0ea4", null ],
     [ "eval", "dd/d9e/class_m2_1_1_a_ring_r_r_r_a42238ca15524a0d769bed97cc5066c68.html#a42238ca15524a0d769bed97cc5066c68", null ],
     [ "from_ring_elem", "dd/d9e/class_m2_1_1_a_ring_r_r_r_a5de203d11a997847bd1b2886d0416f6b.html#a5de203d11a997847bd1b2886d0416f6b", null ],
-    [ "from_ring_elem_const", "dd/d9e/class_m2_1_1_a_ring_r_r_r_acd729a817aed15c75ac4f442dfdd6614.html#acd729a817aed15c75ac4f442dfdd6614", null ],
+    [ "from_ring_elem_const", "dd/d9e/class_m2_1_1_a_ring_r_r_r_aa370620fd5c85cc3229ae975f56d4b54.html#aa370620fd5c85cc3229ae975f56d4b54", null ],
     [ "get_precision", "dd/d9e/class_m2_1_1_a_ring_r_r_r_adf7ab19bb8ed5decb51e9b0885e69e94.html#adf7ab19bb8ed5decb51e9b0885e69e94", null ],
     [ "increase_norm", "dd/d9e/class_m2_1_1_a_ring_r_r_r_a0472831cb9b0280210d42599db5e1612.html#a0472831cb9b0280210d42599db5e1612", null ],
     [ "init", "dd/d9e/class_m2_1_1_a_ring_r_r_r_aaa73e55e9bdd5efc2ca08d177dff12a3.html#aaa73e55e9bdd5efc2ca08d177dff12a3", null ],

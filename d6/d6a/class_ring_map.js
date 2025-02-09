@@ -8,7 +8,7 @@ var class_ring_map =
     [ "eval", "d6/d6a/class_ring_map_a0db99cac04415e52e27defc8e744eef6.html#a0db99cac04415e52e27defc8e744eef6", null ],
     [ "eval", "d6/d6a/class_ring_map_ae03f15753a4d5dd1b571715a688d44a3.html#ae03f15753a4d5dd1b571715a688d44a3", null ],
     [ "eval_term", "d6/d6a/class_ring_map_af8d44836bf7758c558932cce61e391f8.html#af8d44836bf7758c558932cce61e391f8", null ],
-    [ "get_ring", "d6/d6a/class_ring_map_ad9598788eb37f25ed919611b25cd7c0a.html#ad9598788eb37f25ed919611b25cd7c0a", null ],
+    [ "get_ring", "d6/d6a/class_ring_map_aa041dd8442eeac3e1fdf75e6e4d32bf8.html#aa041dd8442eeac3e1fdf75e6e4d32bf8", null ],
     [ "is_equal", "d6/d6a/class_ring_map_a52045dc9317162173637e486b3c7b629.html#a52045dc9317162173637e486b3c7b629", null ],
     [ "make", "d6/d6a/class_ring_map_adf577e0afb8fb0ce9521a466e58d52fb.html#adf577e0afb8fb0ce9521a466e58d52fb", null ],
     [ "text_out", "d6/d6a/class_ring_map_adc1c8917e077f2927ae34c0b904fd375.html#adc1c8917e077f2927ae34c0b904fd375", null ],

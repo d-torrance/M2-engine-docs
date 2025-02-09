@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['free_20resolutions_12815',['Free Resolutions',['../d5/d44/group__res.html',1,'']]]
+  ['coefficient_20rings_0',['Coefficient Rings',['../d2/d5e/group__coeffrings.html',1,'']]],
+  ['computations_1',['Computations',['../d1/d71/group__comp.html',1,'']]]
 ];

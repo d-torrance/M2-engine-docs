@@ -3,7 +3,7 @@ var class_res_polynomial_constructor =
     [ "ResPolynomialConstructor", "d7/d3d/class_res_polynomial_constructor_a96cda3329693bbb8a346494dc7b3436e.html#a96cda3329693bbb8a346494dc7b3436e", null ],
     [ "~ResPolynomialConstructor", "d7/d3d/class_res_polynomial_constructor_a5a013357664728a5d787af092b474643.html#a5a013357664728a5d787af092b474643", null ],
     [ "appendMonicTerm", "d7/d3d/class_res_polynomial_constructor_a925297fd0edd8a13a11055772a54bdd9.html#a925297fd0edd8a13a11055772a54bdd9", null ],
-    [ "coefficientInserter", "d7/d3d/class_res_polynomial_constructor_a890f6cb8237daed690dda526acaca616.html#a890f6cb8237daed690dda526acaca616", null ],
+    [ "coefficientInserter", "d7/d3d/class_res_polynomial_constructor_a1bb9489d591558498b76dbc03b5557b4.html#a1bb9489d591558498b76dbc03b5557b4", null ],
     [ "pushBackTerm", "d7/d3d/class_res_polynomial_constructor_ac980ec160c6c1518d2241b4ef24a2f26.html#ac980ec160c6c1518d2241b4ef24a2f26", null ],
     [ "setPoly", "d7/d3d/class_res_polynomial_constructor_ad9e6922c47e3dd1faed3c39fca13b579.html#ad9e6922c47e3dd1faed3c39fca13b579", null ],
     [ "setPolyFromArrays", "d7/d3d/class_res_polynomial_constructor_ad7a5eca976cd1fb87f721c1c9e34af4e.html#ad7a5eca976cd1fb87f721c1c9e34af4e", null ],

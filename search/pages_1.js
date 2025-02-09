@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['macaulay2_20c_2b_2b_20engine_20documentation_12824',['Macaulay2 C++ engine documentation',['../index.html',1,'']]]
+  ['documentation_0',['Macaulay2 C++ engine documentation',['../index.html',1,'']]]
 ];

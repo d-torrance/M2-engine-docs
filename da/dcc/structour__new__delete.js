@@ -4,8 +4,8 @@ var structour__new__delete =
     [ "operator delete", "da/dcc/structour__new__delete_a6a9bd401c73bb4d433c63f8cfeccdf89.html#a6a9bd401c73bb4d433c63f8cfeccdf89", null ],
     [ "operator delete[]", "da/dcc/structour__new__delete_a4736729ac8e596923dbb435d49938c8b.html#a4736729ac8e596923dbb435d49938c8b", null ],
     [ "operator delete[]", "da/dcc/structour__new__delete_afab4c8d83fd2bd59db3be7b1f5354eae.html#afab4c8d83fd2bd59db3be7b1f5354eae", null ],
-    [ "operator new", "da/dcc/structour__new__delete_a300a3e5f23320f7490bd6a981b28b136.html#a300a3e5f23320f7490bd6a981b28b136", null ],
-    [ "operator new", "da/dcc/structour__new__delete_adfd8ef155e80da99546102a337442c08.html#adfd8ef155e80da99546102a337442c08", null ],
-    [ "operator new[]", "da/dcc/structour__new__delete_a79221d54803acd301b44ed7f7d105601.html#a79221d54803acd301b44ed7f7d105601", null ],
-    [ "operator new[]", "da/dcc/structour__new__delete_ae7e466bca937bc35fb860857f2276ae4.html#ae7e466bca937bc35fb860857f2276ae4", null ]
+    [ "operator new", "da/dcc/structour__new__delete_a1daacbe80bcb4ff475e603a376d57d07.html#a1daacbe80bcb4ff475e603a376d57d07", null ],
+    [ "operator new", "da/dcc/structour__new__delete_a9c98f166b6028261e2cb4a753faa2e3d.html#a9c98f166b6028261e2cb4a753faa2e3d", null ],
+    [ "operator new[]", "da/dcc/structour__new__delete_ab08062c08b8a0f702b2d6f1e11486b75.html#ab08062c08b8a0f702b2d6f1e11486b75", null ],
+    [ "operator new[]", "da/dcc/structour__new__delete_a4652cb3fca8b1c34be67afdf2ab2feb1.html#a4652cb3fca8b1c34be67afdf2ab2feb1", null ]
 ];
