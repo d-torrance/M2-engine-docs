@@ -107,44 +107,44 @@ template&lt;typename Gen &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html#l00581">581</a> of file <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html">res-f4-m2-interface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  582</span>{</div>
-<div class="line"><span class="lineno">  583</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d6/d3f/class_matrix.html">Matrix</a>* M = <a class="code hl_function" href="../../dc/d4f/res-f4-m2-interface_8cpp_a4a5feab94146cc669b508ea3e550c4bb.html#a4a5feab94146cc669b508ea3e550c4bb">matrixFromSparseMatrixGenerator</a>(D);</div>
-<div class="line"><span class="lineno">  584</span>  <span class="comment">//  std::cout &lt;&lt; &quot;--- sparse matrix ----&quot; &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  585</span>  <span class="comment">//  dmatrix(M);</span></div>
-<div class="line"><span class="lineno">  586</span>  <span class="comment">//  std::cout &lt;&lt; &quot;----------------------&quot; &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  587</span>  <span class="keyword">auto</span> timeA = <a class="code hl_function" href="../../d5/d05/timing_8hpp_a6673ca4a7a00d76b3d84231eff1826a3.html#a6673ca4a7a00d76b3d84231eff1826a3">timer</a>();</div>
-<div class="line"><span class="lineno">  588</span>  <a class="code hl_class" href="../../d3/d16/class_gauss_elim_computation.html">GaussElimComputation</a> comp { M, 0, 0 };</div>
-<div class="line"><span class="lineno">  589</span>  comp.set_stop_conditions(<span class="keyword">false</span>, <span class="keyword">nullptr</span>, -1, -1, -1, -1, -1, <span class="keyword">false</span>, <span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">  590</span>  comp.start_computation();</div>
-<div class="line"><span class="lineno">  591</span>  <span class="comment">//  const Matrix* gbM = comp.get_gb();</span></div>
-<div class="line"><span class="lineno">  592</span>  <span class="comment">//  std::cout &lt;&lt; &quot;--- gb of matrix ----&quot; &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  593</span>  <span class="comment">//  dmatrix(gbM);</span></div>
-<div class="line"><span class="lineno">  594</span>  <span class="comment">//  std::cout &lt;&lt; &quot;----------------------&quot; &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  595</span>  </div>
-<div class="line"><span class="lineno">  596</span>  <span class="keywordtype">int</span> rk = comp.get_initial(-1)-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>();</div>
-<div class="line"><span class="lineno">  597</span>  <span class="keyword">auto</span> timeB = <a class="code hl_function" href="../../d5/d05/timing_8hpp_a6673ca4a7a00d76b3d84231eff1826a3.html#a6673ca4a7a00d76b3d84231eff1826a3">timer</a>();</div>
-<div class="line"><span class="lineno">  598</span>  <span class="keywordtype">double</span> nsecs = <a class="code hl_function" href="../../d5/d05/timing_8hpp_add027aa52d21445f5476ec1376730c32.html#add027aa52d21445f5476ec1376730c32">seconds</a>(timeB - timeA);</div>
-<div class="line"><span class="lineno">  599</span> </div>
-<div class="line"><span class="lineno">  600</span>  <a class="code hl_variable" href="../../dd/d1a/class_schreyer_frame_ab51205ca8fdc80ff607ae7b3feaeabd9.html#ab51205ca8fdc80ff607ae7b3feaeabd9">timeComputeSparseRanks</a> += nsecs;</div>
-<div class="line"><span class="lineno">  601</span> </div>
-<div class="line"><span class="lineno">  602</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 2)</div>
-<div class="line"><span class="lineno">  603</span>    {</div>
-<div class="line"><span class="lineno">  604</span>      <span class="keywordflow">if</span> (M-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>() &gt; 0 and M-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>() &gt; 0)</div>
-<div class="line"><span class="lineno">  605</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;  sparse rank = &quot;</span> &lt;&lt; rk</div>
-<div class="line"><span class="lineno">  606</span>                  &lt;&lt; <span class="stringliteral">&quot; time = &quot;</span> &lt;&lt; nsecs &lt;&lt; <span class="stringliteral">&quot; sec&quot;</span></div>
-<div class="line"><span class="lineno">  607</span>                  &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  608</span>    }</div>
-<div class="line"><span class="lineno">  609</span> </div>
-<div class="line"><span class="lineno">  610</span>  <span class="keywordflow">return</span> rk;</div>
-<div class="line"><span class="lineno">  611</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html#l00580">580</a> of file <a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html">res-f4-m2-interface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  581</span>{</div>
+<div class="line"><span class="lineno">  582</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d6/d3f/class_matrix.html">Matrix</a>* M = <a class="code hl_function" href="../../dc/d4f/res-f4-m2-interface_8cpp_a4a5feab94146cc669b508ea3e550c4bb.html#a4a5feab94146cc669b508ea3e550c4bb">matrixFromSparseMatrixGenerator</a>(D);</div>
+<div class="line"><span class="lineno">  583</span>  <span class="comment">//  std::cout &lt;&lt; &quot;--- sparse matrix ----&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  584</span>  <span class="comment">//  dmatrix(M);</span></div>
+<div class="line"><span class="lineno">  585</span>  <span class="comment">//  std::cout &lt;&lt; &quot;----------------------&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  586</span>  <span class="keyword">auto</span> timeA = <a class="code hl_function" href="../../d5/d05/timing_8hpp_a6673ca4a7a00d76b3d84231eff1826a3.html#a6673ca4a7a00d76b3d84231eff1826a3">timer</a>();</div>
+<div class="line"><span class="lineno">  587</span>  <a class="code hl_class" href="../../d3/d16/class_gauss_elim_computation.html">GaussElimComputation</a> comp { M, 0, 0 };</div>
+<div class="line"><span class="lineno">  588</span>  comp.set_stop_conditions(<span class="keyword">false</span>, <span class="keyword">nullptr</span>, -1, -1, -1, -1, -1, <span class="keyword">false</span>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  589</span>  comp.start_computation();</div>
+<div class="line"><span class="lineno">  590</span>  <span class="comment">//  const Matrix* gbM = comp.get_gb();</span></div>
+<div class="line"><span class="lineno">  591</span>  <span class="comment">//  std::cout &lt;&lt; &quot;--- gb of matrix ----&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  592</span>  <span class="comment">//  dmatrix(gbM);</span></div>
+<div class="line"><span class="lineno">  593</span>  <span class="comment">//  std::cout &lt;&lt; &quot;----------------------&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  594</span>  </div>
+<div class="line"><span class="lineno">  595</span>  <span class="keywordtype">int</span> rk = comp.get_initial(-1)-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>();</div>
+<div class="line"><span class="lineno">  596</span>  <span class="keyword">auto</span> timeB = <a class="code hl_function" href="../../d5/d05/timing_8hpp_a6673ca4a7a00d76b3d84231eff1826a3.html#a6673ca4a7a00d76b3d84231eff1826a3">timer</a>();</div>
+<div class="line"><span class="lineno">  597</span>  <span class="keywordtype">double</span> nsecs = <a class="code hl_function" href="../../d5/d05/timing_8hpp_add027aa52d21445f5476ec1376730c32.html#add027aa52d21445f5476ec1376730c32">seconds</a>(timeB - timeA);</div>
+<div class="line"><span class="lineno">  598</span> </div>
+<div class="line"><span class="lineno">  599</span>  <a class="code hl_variable" href="../../dd/d1a/class_schreyer_frame_ab51205ca8fdc80ff607ae7b3feaeabd9.html#ab51205ca8fdc80ff607ae7b3feaeabd9">timeComputeSparseRanks</a> += nsecs;</div>
+<div class="line"><span class="lineno">  600</span> </div>
+<div class="line"><span class="lineno">  601</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 2)</div>
+<div class="line"><span class="lineno">  602</span>    {</div>
+<div class="line"><span class="lineno">  603</span>      <span class="keywordflow">if</span> (M-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>() &gt; 0 and M-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>() &gt; 0)</div>
+<div class="line"><span class="lineno">  604</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;  sparse rank = &quot;</span> &lt;&lt; rk</div>
+<div class="line"><span class="lineno">  605</span>                  &lt;&lt; <span class="stringliteral">&quot; time = &quot;</span> &lt;&lt; nsecs &lt;&lt; <span class="stringliteral">&quot; sec&quot;</span></div>
+<div class="line"><span class="lineno">  606</span>                  &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  607</span>    }</div>
+<div class="line"><span class="lineno">  608</span> </div>
+<div class="line"><span class="lineno">  609</span>  <span class="keywordflow">return</span> rk;</div>
+<div class="line"><span class="lineno">  610</span>}</div>
 <div class="ttc" id="a_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc_html_aa0f82116567de78d2d8d5cee3a26eebc"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a></div><div class="ttdeci">int M2_gbTrace</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00059">M2-replacement.c:59</a></div></div>
 <div class="ttc" id="aclass_gauss_elim_computation_html"><div class="ttname"><a href="../../d3/d16/class_gauss_elim_computation.html">GaussElimComputation</a></div><div class="ttdoc">Gaussian elimination class. To be rewritten.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d6c/gauss_8hpp_source.html#l00027">gauss.hpp:28</a></div></div>
 <div class="ttc" id="aclass_matrix_a6cb4735dadc364c543bb667468b0fac8_html_a6cb4735dadc364c543bb667468b0fac8"><div class="ttname"><a href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">Matrix::n_cols</a></div><div class="ttdeci">int n_cols() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00098">matrix.hpp:98</a></div></div>
 <div class="ttc" id="aclass_matrix_a7d4293b74029beb92af3d47fdcb7c18c_html_a7d4293b74029beb92af3d47fdcb7c18c"><div class="ttname"><a href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">Matrix::n_rows</a></div><div class="ttdeci">int n_rows() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00097">matrix.hpp:97</a></div></div>
 <div class="ttc" id="aclass_matrix_html"><div class="ttname"><a href="../../d6/d3f/class_matrix.html">Matrix</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00017">matrix.hpp:18</a></div></div>
 <div class="ttc" id="aclass_schreyer_frame_ab51205ca8fdc80ff607ae7b3feaeabd9_html_ab51205ca8fdc80ff607ae7b3feaeabd9"><div class="ttname"><a href="../../dd/d1a/class_schreyer_frame_ab51205ca8fdc80ff607ae7b3feaeabd9.html#ab51205ca8fdc80ff607ae7b3feaeabd9">SchreyerFrame::timeComputeSparseRanks</a></div><div class="ttdeci">double timeComputeSparseRanks</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/res-schreyer-frame_8hpp_source.html#l00296">res-schreyer-frame.hpp:296</a></div></div>
-<div class="ttc" id="ares-f4-m2-interface_8cpp_a4a5feab94146cc669b508ea3e550c4bb_html_a4a5feab94146cc669b508ea3e550c4bb"><div class="ttname"><a href="../../dc/d4f/res-f4-m2-interface_8cpp_a4a5feab94146cc669b508ea3e550c4bb.html#a4a5feab94146cc669b508ea3e550c4bb">matrixFromSparseMatrixGenerator</a></div><div class="ttdeci">Matrix * matrixFromSparseMatrixGenerator(Gen &amp;G)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html#l00537">res-f4-m2-interface.cpp:537</a></div></div>
+<div class="ttc" id="ares-f4-m2-interface_8cpp_a4a5feab94146cc669b508ea3e550c4bb_html_a4a5feab94146cc669b508ea3e550c4bb"><div class="ttname"><a href="../../dc/d4f/res-f4-m2-interface_8cpp_a4a5feab94146cc669b508ea3e550c4bb.html#a4a5feab94146cc669b508ea3e550c4bb">matrixFromSparseMatrixGenerator</a></div><div class="ttdeci">Matrix * matrixFromSparseMatrixGenerator(Gen &amp;G)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html#l00536">res-f4-m2-interface.cpp:536</a></div></div>
 <div class="ttc" id="atiming_8hpp_a6673ca4a7a00d76b3d84231eff1826a3_html_a6673ca4a7a00d76b3d84231eff1826a3"><div class="ttname"><a href="../../d5/d05/timing_8hpp_a6673ca4a7a00d76b3d84231eff1826a3.html#a6673ca4a7a00d76b3d84231eff1826a3">timer</a></div><div class="ttdeci">std::chrono::steady_clock::time_point timer()</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d05/timing_8hpp_source.html#l00005">timing.hpp:5</a></div></div>
 <div class="ttc" id="atiming_8hpp_add027aa52d21445f5476ec1376730c32_html_add027aa52d21445f5476ec1376730c32"><div class="ttname"><a href="../../d5/d05/timing_8hpp_add027aa52d21445f5476ec1376730c32.html#add027aa52d21445f5476ec1376730c32">seconds</a></div><div class="ttdeci">double seconds(DurationType time_diff)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d05/timing_8hpp_source.html#l00029">timing.hpp:29</a></div></div>
 </div><!-- fragment -->
@@ -160,7 +160,7 @@ template&lt;typename Gen &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d1a/class_schreyer_frame.html">SchreyerFrame</a></li>
-    <li class="footer">Generated on Sun Mar 23 2025 02:02:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 30 2025 02:04:35 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

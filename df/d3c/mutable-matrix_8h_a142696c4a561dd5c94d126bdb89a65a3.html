@@ -115,24 +115,24 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_a142696c4a561
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l01053">1053</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1055</span>{</div>
-<div class="line"><span class="lineno"> 1056</span>  <span class="comment">/* modifies M in place */</span></div>
-<div class="line"><span class="lineno"> 1057</span>  <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno"> 1058</span>    {</div>
-<div class="line"><span class="lineno"> 1059</span>      <span class="keywordflow">if</span> (M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_ad146cd609596d0a9476679ac859257a3.html#ad146cd609596d0a9476679ac859257a3">get_ring</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a62bb710ec47481354070de00bb2dcddb.html#a62bb710ec47481354070de00bb2dcddb">get_precision</a>() == 0)</div>
-<div class="line"><span class="lineno"> 1060</span>        {</div>
-<div class="line"><span class="lineno"> 1061</span>          <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected ring over an RR or CC&quot;</span>);</div>
-<div class="line"><span class="lineno"> 1062</span>          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 1063</span>        }</div>
-<div class="line"><span class="lineno"> 1064</span>      M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_ad63eecf02b17c98608e5be0a2d6aebb5.html#ad63eecf02b17c98608e5be0a2d6aebb5">clean</a>(epsilon);</div>
-<div class="line"><span class="lineno"> 1065</span>      <span class="keywordflow">return</span> M;</div>
-<div class="line"><span class="lineno"> 1066</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
-<div class="line"><span class="lineno"> 1067</span>    {</div>
-<div class="line"><span class="lineno"> 1068</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><span class="lineno"> 1069</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 1070</span>  }</div>
-<div class="line"><span class="lineno"> 1071</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l01056">1056</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1058</span>{</div>
+<div class="line"><span class="lineno"> 1059</span>  <span class="comment">/* modifies M in place */</span></div>
+<div class="line"><span class="lineno"> 1060</span>  <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno"> 1061</span>    {</div>
+<div class="line"><span class="lineno"> 1062</span>      <span class="keywordflow">if</span> (M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_ad146cd609596d0a9476679ac859257a3.html#ad146cd609596d0a9476679ac859257a3">get_ring</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a62bb710ec47481354070de00bb2dcddb.html#a62bb710ec47481354070de00bb2dcddb">get_precision</a>() == 0)</div>
+<div class="line"><span class="lineno"> 1063</span>        {</div>
+<div class="line"><span class="lineno"> 1064</span>          <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected ring over an RR or CC&quot;</span>);</div>
+<div class="line"><span class="lineno"> 1065</span>          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 1066</span>        }</div>
+<div class="line"><span class="lineno"> 1067</span>      M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_ad63eecf02b17c98608e5be0a2d6aebb5.html#ad63eecf02b17c98608e5be0a2d6aebb5">clean</a>(epsilon);</div>
+<div class="line"><span class="lineno"> 1068</span>      <span class="keywordflow">return</span> M;</div>
+<div class="line"><span class="lineno"> 1069</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><span class="lineno"> 1070</span>    {</div>
+<div class="line"><span class="lineno"> 1071</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno"> 1072</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 1073</span>  }</div>
+<div class="line"><span class="lineno"> 1074</span>}</div>
 <div class="ttc" id="aclass_mutable_matrix_ad146cd609596d0a9476679ac859257a3_html_ad146cd609596d0a9476679ac859257a3"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_ad146cd609596d0a9476679ac859257a3.html#ad146cd609596d0a9476679ac859257a3">MutableMatrix::get_ring</a></div><div class="ttdeci">virtual const Ring * get_ring() const =0</div></div>
 <div class="ttc" id="aclass_mutable_matrix_ad63eecf02b17c98608e5be0a2d6aebb5_html_ad63eecf02b17c98608e5be0a2d6aebb5"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_ad63eecf02b17c98608e5be0a2d6aebb5.html#ad63eecf02b17c98608e5be0a2d6aebb5">MutableMatrix::clean</a></div><div class="ttdeci">virtual void clean(gmp_RR epsilon)=0</div></div>
 <div class="ttc" id="aclass_ring_a62bb710ec47481354070de00bb2dcddb_html_a62bb710ec47481354070de00bb2dcddb"><div class="ttname"><a href="../../dd/dcf/class_ring_a62bb710ec47481354070de00bb2dcddb.html#a62bb710ec47481354070de00bb2dcddb">Ring::get_precision</a></div><div class="ttdeci">virtual unsigned long get_precision() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d2b/ring_8cpp_source.html#l00403">ring.cpp:403</a></div></div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_a142696c4a561
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../df/d3c/mutable-matrix_8h.html">mutable-matrix.h</a></li>
-    <li class="footer">Generated on Sun Mar 23 2025 02:02:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 30 2025 02:04:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

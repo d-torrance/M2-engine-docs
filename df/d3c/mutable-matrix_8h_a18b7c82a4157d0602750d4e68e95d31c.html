@@ -127,28 +127,28 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_a18b7c82a4157
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l00196">196</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  200</span>{</div>
-<div class="line"><span class="lineno">  201</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../dd/dcf/class_ring.html">Ring</a> *R = M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_ad146cd609596d0a9476679ac859257a3.html#ad146cd609596d0a9476679ac859257a3">get_ring</a>();</div>
-<div class="line"><span class="lineno">  202</span>  <span class="keywordflow">if</span> (R != a-&gt;<a class="code hl_function" href="../../d6/de2/class_ring_element_aeeacf97a0fec2e1e7ea86d9050a84d83.html#aeeacf97a0fec2e1e7ea86d9050a84d83">get_ring</a>())</div>
-<div class="line"><span class="lineno">  203</span>    {</div>
-<div class="line"><span class="lineno">  204</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected same ring&quot;</span>);</div>
-<div class="line"><span class="lineno">  205</span>      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  206</span>    }</div>
-<div class="line"><span class="lineno">  207</span>  <span class="keywordflow">if</span> (r &lt; 0 || r &gt;= M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">n_rows</a>())</div>
-<div class="line"><span class="lineno">  208</span>    {</div>
-<div class="line"><span class="lineno">  209</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;row index %d out of range 0..%d&quot;</span>, r, M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">n_rows</a>() - 1);</div>
-<div class="line"><span class="lineno">  210</span>      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  211</span>    }</div>
-<div class="line"><span class="lineno">  212</span>  <span class="keywordflow">if</span> (c &lt; 0 || c &gt;= M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">n_cols</a>())</div>
-<div class="line"><span class="lineno">  213</span>    {</div>
-<div class="line"><span class="lineno">  214</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;column index %d out of range 0..%d&quot;</span>, c, M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">n_cols</a>() - 1);</div>
-<div class="line"><span class="lineno">  215</span>      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  216</span>    }</div>
-<div class="line"><span class="lineno">  217</span> </div>
-<div class="line"><span class="lineno">  218</span>  M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_af0175fcb3d11970c4de37c3e769f27f6.html#af0175fcb3d11970c4de37c3e769f27f6">set_entry</a>(r, c, a-&gt;<a class="code hl_function" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>());</div>
-<div class="line"><span class="lineno">  219</span>  <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">  220</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l00199">199</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  203</span>{</div>
+<div class="line"><span class="lineno">  204</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../dd/dcf/class_ring.html">Ring</a> *R = M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_ad146cd609596d0a9476679ac859257a3.html#ad146cd609596d0a9476679ac859257a3">get_ring</a>();</div>
+<div class="line"><span class="lineno">  205</span>  <span class="keywordflow">if</span> (R != a-&gt;<a class="code hl_function" href="../../d6/de2/class_ring_element_aeeacf97a0fec2e1e7ea86d9050a84d83.html#aeeacf97a0fec2e1e7ea86d9050a84d83">get_ring</a>())</div>
+<div class="line"><span class="lineno">  206</span>    {</div>
+<div class="line"><span class="lineno">  207</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected same ring&quot;</span>);</div>
+<div class="line"><span class="lineno">  208</span>      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  209</span>    }</div>
+<div class="line"><span class="lineno">  210</span>  <span class="keywordflow">if</span> (r &lt; 0 || r &gt;= M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">n_rows</a>())</div>
+<div class="line"><span class="lineno">  211</span>    {</div>
+<div class="line"><span class="lineno">  212</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;row index %d out of range 0..%d&quot;</span>, r, M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">n_rows</a>() - 1);</div>
+<div class="line"><span class="lineno">  213</span>      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  214</span>    }</div>
+<div class="line"><span class="lineno">  215</span>  <span class="keywordflow">if</span> (c &lt; 0 || c &gt;= M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">n_cols</a>())</div>
+<div class="line"><span class="lineno">  216</span>    {</div>
+<div class="line"><span class="lineno">  217</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;column index %d out of range 0..%d&quot;</span>, c, M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">n_cols</a>() - 1);</div>
+<div class="line"><span class="lineno">  218</span>      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  219</span>    }</div>
+<div class="line"><span class="lineno">  220</span> </div>
+<div class="line"><span class="lineno">  221</span>  M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_af0175fcb3d11970c4de37c3e769f27f6.html#af0175fcb3d11970c4de37c3e769f27f6">set_entry</a>(r, c, a-&gt;<a class="code hl_function" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">get_value</a>());</div>
+<div class="line"><span class="lineno">  222</span>  <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  223</span>}</div>
 <div class="ttc" id="aclass_mutable_matrix_a01144944f09b10b128272fc5c2844a32_html_a01144944f09b10b128272fc5c2844a32"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">MutableMatrix::n_rows</a></div><div class="ttdeci">virtual size_t n_rows() const =0</div></div>
 <div class="ttc" id="aclass_mutable_matrix_a30be137116d098d73a677476902998bd_html_a30be137116d098d73a677476902998bd"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">MutableMatrix::n_cols</a></div><div class="ttdeci">virtual size_t n_cols() const =0</div></div>
 <div class="ttc" id="aclass_mutable_matrix_ad146cd609596d0a9476679ac859257a3_html_ad146cd609596d0a9476679ac859257a3"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_ad146cd609596d0a9476679ac859257a3.html#ad146cd609596d0a9476679ac859257a3">MutableMatrix::get_ring</a></div><div class="ttdeci">virtual const Ring * get_ring() const =0</div></div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_a18b7c82a4157
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../df/d3c/mutable-matrix_8h.html">mutable-matrix.h</a></li>
-    <li class="footer">Generated on Sun Mar 23 2025 02:02:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 30 2025 02:04:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
