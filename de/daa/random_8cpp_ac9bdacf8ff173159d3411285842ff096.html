@@ -105,24 +105,27 @@ $(document).ready(function(){initNavTree('de/daa/random_8cpp_ac9bdacf8ff173159d3
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/daa/random_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../de/daa/random_8cpp_source.html">random.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>{</div>
-<div class="line"><span class="lineno">   74</span>  mpq_ptr result = <a class="code hl_define" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(mpq_ptr);</div>
-<div class="line"><span class="lineno">   75</span>  mpq_init(result);</div>
-<div class="line"><span class="lineno">   76</span>  <span class="keywordflow">if</span> (height == <span class="keyword">nullptr</span>) height = <a class="code hl_variable" href="../../de/daa/random_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3.html#a2b3a315978345e6081d8a9d6e9ab2ab3">maxHeight</a>;</div>
-<div class="line"><span class="lineno">   77</span>  mpz_urandomm(mpq_numref(result), <a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>, height);</div>
-<div class="line"><span class="lineno">   78</span>  mpz_urandomm(mpq_denref(result), <a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>, height);</div>
-<div class="line"><span class="lineno">   79</span>  mpz_add_ui(mpq_numref(result), mpq_numref(result), 1);</div>
-<div class="line"><span class="lineno">   80</span>  mpz_add_ui(mpq_denref(result), mpq_denref(result), 1);</div>
-<div class="line"><span class="lineno">   81</span>  mpq_canonicalize(result);</div>
-<div class="line"><span class="lineno">   82</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/d41/gmp-util_8h_ab51faa0b4366c69f6e1a3dacd6f17c99.html#ab51faa0b4366c69f6e1a3dacd6f17c99">moveTo_gmpQQ</a>(result);</div>
-<div class="line"><span class="lineno">   83</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/daa/random_8cpp_source.html#l00177">177</a> of file <a class="el" href="../../de/daa/random_8cpp_source.html">random.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  180</span>{</div>
+<div class="line"><span class="lineno">  181</span>  mpq_ptr result = <a class="code hl_define" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>(mpq_ptr);</div>
+<div class="line"><span class="lineno">  182</span>  mpq_init(result);</div>
+<div class="line"><span class="lineno">  183</span> </div>
+<div class="line"><span class="lineno">  184</span>  <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  185</span>    <a class="code hl_function" href="../../de/daa/random_8cpp_aaeb097782fc829e917367f7f17d60d32.html#aaeb097782fc829e917367f7f17d60d32">rawSetRandomQQ</a>(result, height);</div>
+<div class="line"><span class="lineno">  186</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e) {</div>
+<div class="line"><span class="lineno">  187</span>    <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  189</span>  }</div>
+<div class="line"><span class="lineno">  190</span> </div>
+<div class="line"><span class="lineno">  191</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/d41/gmp-util_8h_ab51faa0b4366c69f6e1a3dacd6f17c99.html#ab51faa0b4366c69f6e1a3dacd6f17c99">moveTo_gmpQQ</a>(result);</div>
+<div class="line"><span class="lineno">  192</span>}</div>
 <div class="ttc" id="a_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57_html_a6ca24b55fd05d728fa63a538c8f0ec57"><div class="ttname"><a href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a></div><div class="ttdeci">#define getmemstructtype(S)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d81/_m2mem-replacement_8h_source.html#l00035">M2mem-replacement.h:35</a></div></div>
+<div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
 <div class="ttc" id="agmp-util_8h_ab51faa0b4366c69f6e1a3dacd6f17c99_html_ab51faa0b4366c69f6e1a3dacd6f17c99"><div class="ttname"><a href="../../d0/d41/gmp-util_8h_ab51faa0b4366c69f6e1a3dacd6f17c99.html#ab51faa0b4366c69f6e1a3dacd6f17c99">moveTo_gmpQQ</a></div><div class="ttdeci">gmp_QQ moveTo_gmpQQ(mpq_ptr z)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d41/gmp-util_8h_source.html#l00026">gmp-util.h:26</a></div></div>
-<div class="ttc" id="arandom_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3_html_a2b3a315978345e6081d8a9d6e9ab2ab3"><div class="ttname"><a href="../../de/daa/random_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3.html#a2b3a315978345e6081d8a9d6e9ab2ab3">maxHeight</a></div><div class="ttdeci">static mpz_t maxHeight</div><div class="ttdef"><b>Definition</b> <a href="../../de/daa/random_8cpp_source.html#l00014">random.cpp:14</a></div></div>
-<div class="ttc" id="arandom_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d_html_a9f8b71742e74bcfa6c4b6d38a690329d"><div class="ttname"><a href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a></div><div class="ttdeci">static gmp_randstate_t state</div><div class="ttdef"><b>Definition</b> <a href="../../de/daa/random_8cpp_source.html#l00015">random.cpp:15</a></div></div>
+<div class="ttc" id="arandom_8cpp_aaeb097782fc829e917367f7f17d60d32_html_aaeb097782fc829e917367f7f17d60d32"><div class="ttname"><a href="../../de/daa/random_8cpp_aaeb097782fc829e917367f7f17d60d32.html#aaeb097782fc829e917367f7f17d60d32">rawSetRandomQQ</a></div><div class="ttdeci">void rawSetRandomQQ(mpq_ptr result, gmp_ZZ height)</div><div class="ttdef"><b>Definition</b> <a href="../../de/daa/random_8cpp_source.html#l00160">random.cpp:160</a></div></div>
+<div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>, <a class="el" href="../../de/daa/random_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3.html#a2b3a315978345e6081d8a9d6e9ab2ab3">maxHeight</a>, <a class="el" href="../../d0/d41/gmp-util_8h_ab51faa0b4366c69f6e1a3dacd6f17c99.html#ab51faa0b4366c69f6e1a3dacd6f17c99">moveTo_gmpQQ()</a>, and <a class="el" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR()</a>, <a class="el" href="../../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57">getmemstructtype</a>, <a class="el" href="../../d0/d41/gmp-util_8h_ab51faa0b4366c69f6e1a3dacd6f17c99.html#ab51faa0b4366c69f6e1a3dacd6f17c99">moveTo_gmpQQ()</a>, and <a class="el" href="../../de/daa/random_8cpp_aaeb097782fc829e917367f7f17d60d32.html#aaeb097782fc829e917367f7f17d60d32">rawSetRandomQQ()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/dc5/_ring_q_q_test_8cpp_a472c115d688575b8cfcbef8e94cde46a.html#a472c115d688575b8cfcbef8e94cde46a">getElement&lt; RingQQ &gt;()</a>.</p>
 
@@ -134,7 +137,7 @@ $(document).ready(function(){initNavTree('de/daa/random_8cpp_ac9bdacf8ff173159d3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../de/daa/random_8cpp.html">random.cpp</a></li>
-    <li class="footer">Generated on Sun Apr 20 2025 02:06:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Apr 27 2025 02:07:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

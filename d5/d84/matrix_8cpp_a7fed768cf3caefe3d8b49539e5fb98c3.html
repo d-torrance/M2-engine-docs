@@ -115,25 +115,25 @@ $(document).ready(function(){initNavTree('d5/d84/matrix_8cpp_a7fed768cf3caefe3d8
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l01583">1583</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1584</span>{</div>
-<div class="line"><span class="lineno"> 1585</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../de/dd2/class_m2_free_algebra_or_quotient.html">M2FreeAlgebraOrQuotient</a>* Q = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code hl_class" href="../../de/dd2/class_m2_free_algebra_or_quotient.html">M2FreeAlgebraOrQuotient</a>*<span class="keyword">&gt;</span>(M-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>());</div>
-<div class="line"><span class="lineno"> 1586</span>  <span class="keywordflow">if</span> (Q == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>; </div>
-<div class="line"><span class="lineno"> 1587</span> </div>
-<div class="line"><span class="lineno"> 1588</span>  <span class="comment">// should not get here unless &#39;M&#39; is a matrix over a M2FreeAlgebraOrQuotient</span></div>
-<div class="line"><span class="lineno"> 1589</span>  </div>
-<div class="line"><span class="lineno"> 1590</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 0; c &lt; M-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); c++)</div>
-<div class="line"><span class="lineno"> 1591</span>    {</div>
-<div class="line"><span class="lineno"> 1592</span>      vec v = M-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(c);</div>
-<div class="line"><span class="lineno"> 1593</span>      <span class="keywordflow">for</span> (; v != <span class="keyword">nullptr</span>; v = v-&gt;next)</div>
-<div class="line"><span class="lineno"> 1594</span>        {</div>
-<div class="line"><span class="lineno"> 1595</span>          <span class="keywordtype">int</span> comp = v-&gt;comp;</div>
-<div class="line"><span class="lineno"> 1596</span>          <span class="keyword">auto</span> f = Q-&gt;<a class="code hl_function" href="../../de/dd2/class_m2_free_algebra_or_quotient_a17d151d6307a7ee456f9a138e02cab99.html#a17d151d6307a7ee456f9a138e02cab99">toPoly</a>(v-&gt;coeff);</div>
-<div class="line"><span class="lineno"> 1597</span>          <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = f-&gt;cbegin(); i != f-&gt;cend(); ++i)</div>
-<div class="line"><span class="lineno"> 1598</span>            H.insert(i.monom(), comp);</div>
-<div class="line"><span class="lineno"> 1599</span>        }</div>
-<div class="line"><span class="lineno"> 1600</span>    }</div>
-<div class="line"><span class="lineno"> 1601</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l01593">1593</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1594</span>{</div>
+<div class="line"><span class="lineno"> 1595</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../de/dd2/class_m2_free_algebra_or_quotient.html">M2FreeAlgebraOrQuotient</a>* Q = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code hl_class" href="../../de/dd2/class_m2_free_algebra_or_quotient.html">M2FreeAlgebraOrQuotient</a>*<span class="keyword">&gt;</span>(M-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>());</div>
+<div class="line"><span class="lineno"> 1596</span>  <span class="keywordflow">if</span> (Q == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>; </div>
+<div class="line"><span class="lineno"> 1597</span> </div>
+<div class="line"><span class="lineno"> 1598</span>  <span class="comment">// should not get here unless &#39;M&#39; is a matrix over a M2FreeAlgebraOrQuotient</span></div>
+<div class="line"><span class="lineno"> 1599</span>  </div>
+<div class="line"><span class="lineno"> 1600</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 0; c &lt; M-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); c++)</div>
+<div class="line"><span class="lineno"> 1601</span>    {</div>
+<div class="line"><span class="lineno"> 1602</span>      vec v = M-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(c);</div>
+<div class="line"><span class="lineno"> 1603</span>      <span class="keywordflow">for</span> (; v != <span class="keyword">nullptr</span>; v = v-&gt;next)</div>
+<div class="line"><span class="lineno"> 1604</span>        {</div>
+<div class="line"><span class="lineno"> 1605</span>          <span class="keywordtype">int</span> comp = v-&gt;comp;</div>
+<div class="line"><span class="lineno"> 1606</span>          <span class="keyword">auto</span> f = Q-&gt;<a class="code hl_function" href="../../de/dd2/class_m2_free_algebra_or_quotient_a17d151d6307a7ee456f9a138e02cab99.html#a17d151d6307a7ee456f9a138e02cab99">toPoly</a>(v-&gt;coeff);</div>
+<div class="line"><span class="lineno"> 1607</span>          <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = f-&gt;cbegin(); i != f-&gt;cend(); ++i)</div>
+<div class="line"><span class="lineno"> 1608</span>            H.insert(i.monom(), comp);</div>
+<div class="line"><span class="lineno"> 1609</span>        }</div>
+<div class="line"><span class="lineno"> 1610</span>    }</div>
+<div class="line"><span class="lineno"> 1611</span>}</div>
 <div class="ttc" id="aclass_m2_free_algebra_or_quotient_a17d151d6307a7ee456f9a138e02cab99_html_a17d151d6307a7ee456f9a138e02cab99"><div class="ttname"><a href="../../de/dd2/class_m2_free_algebra_or_quotient_a17d151d6307a7ee456f9a138e02cab99.html#a17d151d6307a7ee456f9a138e02cab99">M2FreeAlgebraOrQuotient::toPoly</a></div><div class="ttdeci">const Poly * toPoly(const ring_elem f) const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d34/_m2_free_algebra_8hpp_source.html#l00030">M2FreeAlgebra.hpp:30</a></div></div>
 <div class="ttc" id="aclass_m2_free_algebra_or_quotient_html"><div class="ttname"><a href="../../de/dd2/class_m2_free_algebra_or_quotient.html">M2FreeAlgebraOrQuotient</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d34/_m2_free_algebra_8hpp_source.html#l00027">M2FreeAlgebra.hpp:28</a></div></div>
 <div class="ttc" id="aclass_matrix_a0bceb9b9d23e40a81ac64f6c112ef441_html_a0bceb9b9d23e40a81ac64f6c112ef441"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">Matrix::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00085">matrix.hpp:85</a></div></div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('d5/d84/matrix_8cpp_a7fed768cf3caefe3d8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d5/d84/matrix_8cpp.html">matrix.cpp</a></li>
-    <li class="footer">Generated on Sun Apr 20 2025 02:06:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Apr 27 2025 02:07:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

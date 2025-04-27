@@ -121,29 +121,29 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_ace2262c3df62223cd
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l01052">1052</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1053</span>{</div>
-<div class="line"><span class="lineno"> 1054</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = <a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a73bec90f6a8598b3c5cdc201b068589a.html#a73bec90f6a8598b3c5cdc201b068589a">cast_to_PolynomialRing</a>();</div>
-<div class="line"><span class="lineno"> 1055</span>  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno"> 1056</span>    {</div>
-<div class="line"><span class="lineno"> 1057</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring&quot;</span>);</div>
-<div class="line"><span class="lineno"> 1058</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 1059</span>    }</div>
-<div class="line"><span class="lineno"> 1060</span>  <a class="code hl_class" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(<a class="code hl_function" href="../../d6/d3f/class_matrix_a9837ac28e81ff230cd72f72573854272.html#a9837ac28e81ff230cd72f72573854272">rows</a>(), 0);</div>
-<div class="line"><span class="lineno"> 1061</span>  maxdivided = 0;</div>
-<div class="line"><span class="lineno"> 1062</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
-<div class="line"><span class="lineno"> 1063</span>    {</div>
-<div class="line"><span class="lineno"> 1064</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i) != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno"> 1065</span>        {</div>
-<div class="line"><span class="lineno"> 1066</span>          <span class="keywordtype">int</span> lo, hi;</div>
-<div class="line"><span class="lineno"> 1067</span>          P-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_aa5474e4319c97c0bc7e0514e17511de8.html#aa5474e4319c97c0bc7e0514e17511de8">vec_degree_of_var</a>(n, <a class="code hl_function" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i), lo, hi);</div>
-<div class="line"><span class="lineno"> 1068</span>          <span class="keywordflow">if</span> (maxd &gt;= 0 &amp;&amp; lo &gt; maxd) lo = maxd;</div>
-<div class="line"><span class="lineno"> 1069</span>          <span class="keywordflow">if</span> (lo &gt; maxdivided) maxdivided = lo;</div>
-<div class="line"><span class="lineno"> 1070</span>          mat.append(P-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a99764aad7596e897826901072a5819d2.html#a99764aad7596e897826901072a5819d2">vec_divide_by_var</a>(n, lo, <a class="code hl_function" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i)));</div>
-<div class="line"><span class="lineno"> 1071</span>        }</div>
-<div class="line"><span class="lineno"> 1072</span>    }</div>
-<div class="line"><span class="lineno"> 1073</span>  <span class="keywordflow">return</span> mat.to_matrix();</div>
-<div class="line"><span class="lineno"> 1074</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l01062">1062</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1063</span>{</div>
+<div class="line"><span class="lineno"> 1064</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = <a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a73bec90f6a8598b3c5cdc201b068589a.html#a73bec90f6a8598b3c5cdc201b068589a">cast_to_PolynomialRing</a>();</div>
+<div class="line"><span class="lineno"> 1065</span>  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 1066</span>    {</div>
+<div class="line"><span class="lineno"> 1067</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring&quot;</span>);</div>
+<div class="line"><span class="lineno"> 1068</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 1069</span>    }</div>
+<div class="line"><span class="lineno"> 1070</span>  <a class="code hl_class" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(<a class="code hl_function" href="../../d6/d3f/class_matrix_a9837ac28e81ff230cd72f72573854272.html#a9837ac28e81ff230cd72f72573854272">rows</a>(), 0);</div>
+<div class="line"><span class="lineno"> 1071</span>  maxdivided = 0;</div>
+<div class="line"><span class="lineno"> 1072</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
+<div class="line"><span class="lineno"> 1073</span>    {</div>
+<div class="line"><span class="lineno"> 1074</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i) != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 1075</span>        {</div>
+<div class="line"><span class="lineno"> 1076</span>          <span class="keywordtype">int</span> lo, hi;</div>
+<div class="line"><span class="lineno"> 1077</span>          P-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_aa5474e4319c97c0bc7e0514e17511de8.html#aa5474e4319c97c0bc7e0514e17511de8">vec_degree_of_var</a>(n, <a class="code hl_function" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i), lo, hi);</div>
+<div class="line"><span class="lineno"> 1078</span>          <span class="keywordflow">if</span> (maxd &gt;= 0 &amp;&amp; lo &gt; maxd) lo = maxd;</div>
+<div class="line"><span class="lineno"> 1079</span>          <span class="keywordflow">if</span> (lo &gt; maxdivided) maxdivided = lo;</div>
+<div class="line"><span class="lineno"> 1080</span>          mat.append(P-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a99764aad7596e897826901072a5819d2.html#a99764aad7596e897826901072a5819d2">vec_divide_by_var</a>(n, lo, <a class="code hl_function" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i)));</div>
+<div class="line"><span class="lineno"> 1081</span>        }</div>
+<div class="line"><span class="lineno"> 1082</span>    }</div>
+<div class="line"><span class="lineno"> 1083</span>  <span class="keywordflow">return</span> mat.to_matrix();</div>
+<div class="line"><span class="lineno"> 1084</span>}</div>
 <div class="ttc" id="aclass_matrix_a0bceb9b9d23e40a81ac64f6c112ef441_html_a0bceb9b9d23e40a81ac64f6c112ef441"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">Matrix::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00085">matrix.hpp:85</a></div></div>
 <div class="ttc" id="aclass_matrix_a0dd3516d8526ad736fe69848aacd1406_html_a0dd3516d8526ad736fe69848aacd1406"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem</a></div><div class="ttdeci">ring_elem elem(int i, int j) const</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d84/matrix_8cpp_source.html#l00307">matrix.cpp:307</a></div></div>
 <div class="ttc" id="aclass_matrix_a6cb4735dadc364c543bb667468b0fac8_html_a6cb4735dadc364c543bb667468b0fac8"><div class="ttname"><a href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">Matrix::n_cols</a></div><div class="ttdeci">int n_cols() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00098">matrix.hpp:98</a></div></div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_ace2262c3df62223cd
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a></li>
-    <li class="footer">Generated on Sun Apr 20 2025 02:06:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Apr 27 2025 02:07:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -135,22 +135,22 @@ $(document).ready(function(){initNavTree('d5/d84/matrix_8cpp_a4f84b808e6893eaa3d
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l01136">1136</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1137</span>{</div>
-<div class="line"><span class="lineno"> 1138</span>  <span class="keywordtype">int</span> sign = 0;</div>
-<div class="line"><span class="lineno"> 1139</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d02/namespacempfr_ae94ad8b45bc3c448549d7c094e7f24fd.html#ae94ad8b45bc3c448549d7c094e7f24fd">sum</a> = 0;</div>
-<div class="line"><span class="lineno"> 1140</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
-<div class="line"><span class="lineno"> 1141</span>    {</div>
-<div class="line"><span class="lineno"> 1142</span>      <span class="keywordtype">int</span> e = a[i] - b[i];</div>
-<div class="line"><span class="lineno"> 1143</span>      <span class="keywordflow">if</span> (e &lt; 0) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno"> 1144</span>      <a class="code hl_function" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[i] = e;</div>
-<div class="line"><span class="lineno"> 1145</span>      sign += <a class="code hl_function" href="../../d1/d02/namespacempfr_ae94ad8b45bc3c448549d7c094e7f24fd.html#ae94ad8b45bc3c448549d7c094e7f24fd">sum</a> * e;</div>
-<div class="line"><span class="lineno"> 1146</span>      <a class="code hl_function" href="../../d1/d02/namespacempfr_ae94ad8b45bc3c448549d7c094e7f24fd.html#ae94ad8b45bc3c448549d7c094e7f24fd">sum</a> += b[i];</div>
-<div class="line"><span class="lineno"> 1147</span>    }</div>
-<div class="line"><span class="lineno"> 1148</span>  sign %= 2;</div>
-<div class="line"><span class="lineno"> 1149</span>  <span class="keywordflow">if</span> (sign == 0) <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno"> 1150</span>  <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno"> 1151</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d84/matrix_8cpp_source.html#l01146">1146</a> of file <a class="el" href="../../d5/d84/matrix_8cpp_source.html">matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1147</span>{</div>
+<div class="line"><span class="lineno"> 1148</span>  <span class="keywordtype">int</span> sign = 0;</div>
+<div class="line"><span class="lineno"> 1149</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d02/namespacempfr_ae94ad8b45bc3c448549d7c094e7f24fd.html#ae94ad8b45bc3c448549d7c094e7f24fd">sum</a> = 0;</div>
+<div class="line"><span class="lineno"> 1150</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
+<div class="line"><span class="lineno"> 1151</span>    {</div>
+<div class="line"><span class="lineno"> 1152</span>      <span class="keywordtype">int</span> e = a[i] - b[i];</div>
+<div class="line"><span class="lineno"> 1153</span>      <span class="keywordflow">if</span> (e &lt; 0) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 1154</span>      <a class="code hl_function" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[i] = e;</div>
+<div class="line"><span class="lineno"> 1155</span>      sign += <a class="code hl_function" href="../../d1/d02/namespacempfr_ae94ad8b45bc3c448549d7c094e7f24fd.html#ae94ad8b45bc3c448549d7c094e7f24fd">sum</a> * e;</div>
+<div class="line"><span class="lineno"> 1156</span>      <a class="code hl_function" href="../../d1/d02/namespacempfr_ae94ad8b45bc3c448549d7c094e7f24fd.html#ae94ad8b45bc3c448549d7c094e7f24fd">sum</a> += b[i];</div>
+<div class="line"><span class="lineno"> 1157</span>    }</div>
+<div class="line"><span class="lineno"> 1158</span>  sign %= 2;</div>
+<div class="line"><span class="lineno"> 1159</span>  <span class="keywordflow">if</span> (sign == 0) <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno"> 1160</span>  <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 1161</span>}</div>
 <div class="ttc" id="anamespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b_html_abe917cc83d7ef362269d6b65bfdf7d4b"><div class="ttname"><a href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">mpfr::exp</a></div><div class="ttdeci">const mpreal exp(const mpreal &amp;x, mp_rnd_t r=mpreal::get_default_rnd())</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l02273">mpreal.h:2273</a></div></div>
 <div class="ttc" id="anamespacempfr_ae94ad8b45bc3c448549d7c094e7f24fd_html_ae94ad8b45bc3c448549d7c094e7f24fd"><div class="ttname"><a href="../../d1/d02/namespacempfr_ae94ad8b45bc3c448549d7c094e7f24fd.html#ae94ad8b45bc3c448549d7c094e7f24fd">mpfr::sum</a></div><div class="ttdeci">const mpreal sum(const mpreal tab[], const unsigned long int n, int &amp;status, mp_rnd_t mode=mpreal::get_default_rnd())</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l02575">mpreal.h:2575</a></div></div>
 </div><!-- fragment -->
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('d5/d84/matrix_8cpp_a4f84b808e6893eaa3d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d5/d84/matrix_8cpp.html">matrix.cpp</a></li>
-    <li class="footer">Generated on Sun Apr 20 2025 02:06:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Apr 27 2025 02:07:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,8 @@
 var NAVTREEINDEX44 =
 {
+"da/dbc/aring-_c_c_8hpp.html":[6,0,0,0,9],
+"da/dbc/aring-_c_c_8hpp_source.html":[6,0,0,0,9],
+"da/dc0/smat_8hpp.html":[6,0,0,0,300],
 "da/dc0/smat_8hpp_source.html":[6,0,0,0,300],
 "da/dc1/class_n_c_res_computation.html":[5,0,222],
 "da/dc1/class_n_c_res_computation_a563c6861b19d4f72763e662ee1d9765d.html#a563c6861b19d4f72763e662ee1d9765d":[5,0,222,2],
@@ -81,8 +84,8 @@ var NAVTREEINDEX44 =
 "da/dd1/struct_tower_polynomial_struct_af5d66844ab2ef83232c0042c994125f8.html#af5d66844ab2ef83232c0042c994125f8":[3,0,2,0,0],
 "da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4.html":[4,0,6,0,4],
 "da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4.html":[5,0,3,0,4],
-"da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4_a03e6287ca4dcd3357f5101859389ffa4.html#a03e6287ca4dcd3357f5101859389ffa4":[4,0,6,0,4,0],
 "da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4_a03e6287ca4dcd3357f5101859389ffa4.html#a03e6287ca4dcd3357f5101859389ffa4":[5,0,3,0,4,0],
+"da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4_a03e6287ca4dcd3357f5101859389ffa4.html#a03e6287ca4dcd3357f5101859389ffa4":[4,0,6,0,4,0],
 "da/de0/class_s_mat.html":[5,0,317],
 "da/de0/class_s_mat_a031c5436aadfcca378e47ff9322fba1d.html#a031c5436aadfcca378e47ff9322fba1d":[5,0,317,45],
 "da/de0/class_s_mat_a04792c5a156f89b99c917b5f6942d488.html#a04792c5a156f89b99c917b5f6942d488":[5,0,317,12],
@@ -194,12 +197,12 @@ var NAVTREEINDEX44 =
 "da/dfe/struct_eigen_types_a9d70dab9784d8952f2c1f815322286e0.html#a9d70dab9784d8952f2c1f815322286e0":[5,0,61,0],
 "da/dfe/struct_eigen_types_aab99aaf72d6773b4db00fa147cbf6e28.html#aab99aaf72d6773b4db00fa147cbf6e28":[5,0,61,2],
 "da/dfe/struct_eigen_types_ae6dcf70b11b72d77054476977f5dc6a3.html#ae6dcf70b11b72d77054476977f5dc6a3":[5,0,61,3],
-"db/d05/struct_m2_1_1_a_ring_polynomial_struct.html":[5,0,2,6],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct.html":[4,0,4,7],
-"db/d05/struct_m2_1_1_a_ring_polynomial_struct_a552ba3616f5b4a33fa777ade2e344eaa.html#a552ba3616f5b4a33fa777ade2e344eaa":[4,0,4,7,1],
+"db/d05/struct_m2_1_1_a_ring_polynomial_struct.html":[5,0,2,6],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_a552ba3616f5b4a33fa777ade2e344eaa.html#a552ba3616f5b4a33fa777ade2e344eaa":[5,0,2,6,1],
-"db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c":[5,0,2,6,2],
+"db/d05/struct_m2_1_1_a_ring_polynomial_struct_a552ba3616f5b4a33fa777ade2e344eaa.html#a552ba3616f5b4a33fa777ade2e344eaa":[4,0,4,7,1],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c":[4,0,4,7,2],
+"db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c":[5,0,2,6,2],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9":[5,0,2,6,3],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9":[4,0,4,7,3],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_ad92345b7b933d2a73d1619ac95c1580b.html#ad92345b7b933d2a73d1619ac95c1580b":[4,0,4,7,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX44 =
 "db/d1b/class_b_r_p_a4b5c25f6720b5862c73b0b62b28097e7.html#a4b5c25f6720b5862c73b0b62b28097e7":[5,0,24,17],
 "db/d1b/class_b_r_p_a4c8ef7c72fba6bc5f761d563072f4394.html#a4c8ef7c72fba6bc5f761d563072f4394":[5,0,24,12],
 "db/d1b/class_b_r_p_a7308446857ece6ed788fd5bc3b19fd1d.html#a7308446857ece6ed788fd5bc3b19fd1d":[5,0,24,10],
-"db/d1b/class_b_r_p_a75a067aacd4243a2a893c037758ad115.html#a75a067aacd4243a2a893c037758ad115":[5,0,24,21],
-"db/d1b/class_b_r_p_a8c6ba213a26f4c8b2e5ec7306f64bb8e.html#a8c6ba213a26f4c8b2e5ec7306f64bb8e":[5,0,24,19],
-"db/d1b/class_b_r_p_a9cf2fc66d420cfee42a74d151e1fcb24.html#a9cf2fc66d420cfee42a74d151e1fcb24":[5,0,24,22],
-"db/d1b/class_b_r_p_a9f6b6ae3b9709c6a284b563b78b697ee.html#a9f6b6ae3b9709c6a284b563b78b697ee":[5,0,24,9]
+"db/d1b/class_b_r_p_a75a067aacd4243a2a893c037758ad115.html#a75a067aacd4243a2a893c037758ad115":[5,0,24,21]
 };

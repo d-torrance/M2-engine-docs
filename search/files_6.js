@@ -29,6 +29,5 @@ var searchData=
   ['gmp_2dutil_2eh_26',['gmp-util.h',['../d0/d41/gmp-util_8h.html',1,'']]],
   ['godbolttest_2ecpp_27',['godboltTest.cpp',['../d4/d12/godbolt_test_8cpp.html',1,'']]],
   ['groebner_2ecpp_28',['groebner.cpp',['../d2/dc8/groebner_8cpp.html',1,'']]],
-  ['groebner_2eh_29',['groebner.h',['../d0/d7a/groebner_8h.html',1,'']]],
-  ['gtest_2dinclude_2ecpp_30',['gtest-include.cpp',['../dd/dad/gtest-include_8cpp.html',1,'']]]
+  ['groebner_2eh_29',['groebner.h',['../d0/d7a/groebner_8h.html',1,'']]]
 ];

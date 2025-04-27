@@ -56,7 +56,7 @@ var searchData=
   ['points_2ecpp_53',['points.cpp',['../da/d22/points_8cpp.html',1,'']]],
   ['points_2ehpp_54',['points.hpp',['../d1/d13/points_8hpp.html',1,'']]],
   ['pointscomputation_55',['PointsComputation',['../d2/d6c/class_points_computation.html',1,'']]],
-  ['poly_56',['poly',['../d0/d03/struct_p_o_l_y.html',1,'POLY'],['../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30',1,'Poly:&#160;Polynomial.hpp'],['../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809',1,'POLY:&#160;poly.cpp']]],
+  ['poly_56',['poly',['../d0/d03/struct_p_o_l_y.html',1,'POLY'],['../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809',1,'POLY:&#160;poly.cpp'],['../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30',1,'Poly:&#160;Polynomial.hpp']]],
   ['poly_2ecpp_57',['poly.cpp',['../d3/d96/poly_8cpp.html',1,'']]],
   ['poly_2ehpp_58',['poly.hpp',['../d4/dc0/poly_8hpp.html',1,'']]],
   ['poly_5fauto_5freduce_59',['poly_auto_reduce',['../d0/d91/classgb_a_a04ab3bc4bc57569b7683836f339c5a50.html#a04ab3bc4bc57569b7683836f339c5a50',1,'gbA']]],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"d5/d58/class_polynomial_ring_a586ca7f1b4b25a2b5153c38f41acc457.html#a586ca7f1b4b25a2b5153c38f41acc457":[3,0,2,6,55],
+"d5/d58/class_polynomial_ring_a5b90b290f515022e5e34dc0611fa9a90.html#a5b90b290f515022e5e34dc0611fa9a90":[3,0,2,6,107],
 "d5/d58/class_polynomial_ring_a5bc36d0e114a986bf0f06fd4bfc3165c.html#a5bc36d0e114a986bf0f06fd4bfc3165c":[3,0,2,6,91],
 "d5/d58/class_polynomial_ring_a63ce7b382868adc019b5293e35c7233e.html#a63ce7b382868adc019b5293e35c7233e":[3,0,2,6,0],
 "d5/d58/class_polynomial_ring_a670919f1e5b4637a8206f1f90d15c797.html#a670919f1e5b4637a8206f1f90d15c797":[3,0,2,6,89],
@@ -82,8 +84,8 @@ var NAVTREEINDEX19 =
 "d5/d5d/aring-_r_r_r_8cpp_source.html":[6,0,0,0,28],
 "d5/d5e/structmpfr_1_1internal_1_1result__type_3_01long_01long_01_4.html":[5,0,3,0,5],
 "d5/d5e/structmpfr_1_1internal_1_1result__type_3_01long_01long_01_4.html":[4,0,6,0,5],
-"d5/d5e/structmpfr_1_1internal_1_1result__type_3_01long_01long_01_4_a4421b197cd9c7a1a30ac0071b5182ca5.html#a4421b197cd9c7a1a30ac0071b5182ca5":[5,0,3,0,5,0],
 "d5/d5e/structmpfr_1_1internal_1_1result__type_3_01long_01long_01_4_a4421b197cd9c7a1a30ac0071b5182ca5.html#a4421b197cd9c7a1a30ac0071b5182ca5":[4,0,6,0,5,0],
+"d5/d5e/structmpfr_1_1internal_1_1result__type_3_01long_01long_01_4_a4421b197cd9c7a1a30ac0071b5182ca5.html#a4421b197cd9c7a1a30ac0071b5182ca5":[5,0,3,0,5,0],
 "d5/d5f/class_m2_1_1_a_ring_g_f_flint.html":[3,0,6],
 "d5/d5f/class_m2_1_1_a_ring_g_f_flint_a01c3213a871e48143e6f57dcf4357b34.html#a01c3213a871e48143e6f57dcf4357b34":[3,0,6,17],
 "d5/d5f/class_m2_1_1_a_ring_g_f_flint_a049bdfe21c242433db12c30cef4e23fe.html#a049bdfe21c242433db12c30cef4e23fe":[3,0,6,21],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "d5/d89/monideal_8cpp_a93e214b7f2b467614031303d3ac118cb.html#a93e214b7f2b467614031303d3ac118cb":[6,0,0,0,198,1],
 "d5/d89/monideal_8cpp_abfd66b90d07734873d6bb6fd61e566a6.html#abfd66b90d07734873d6bb6fd61e566a6":[6,0,0,0,198,3],
 "d5/d89/monideal_8cpp_ac12a1228742acd9efad0d592c7055e36.html#ac12a1228742acd9efad0d592c7055e36":[6,0,0,0,198,0],
-"d5/d89/monideal_8cpp_ac134bfbf116039338b60c67ccdf3451e.html#ac134bfbf116039338b60c67ccdf3451e":[6,0,0,0,198,4],
-"d5/d89/monideal_8cpp_source.html":[6,0,0,0,198],
-"d5/d94/class_element_array.html":[5,0,66]
+"d5/d89/monideal_8cpp_ac134bfbf116039338b60c67ccdf3451e.html#ac134bfbf116039338b60c67ccdf3451e":[6,0,0,0,198,4]
 };

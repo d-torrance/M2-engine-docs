@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"dd/dc2/class_weyl_algebra_a9f9202c7eabfa4c02be3a20a56717ada.html#a9f9202c7eabfa4c02be3a20a56717ada":[5,0,351,0],
 "dd/dc2/class_weyl_algebra_aa995c550222cdac58afed80712a41e67.html#aa995c550222cdac58afed80712a41e67":[5,0,351,25],
 "dd/dc2/class_weyl_algebra_ab16673ef483801173c409e1c58e3378c.html#ab16673ef483801173c409e1c58e3378c":[5,0,351,24],
 "dd/dc2/class_weyl_algebra_ab30f6c030636a156351bf010fda24b30.html#ab30f6c030636a156351bf010fda24b30":[5,0,351,30],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "dd/dcf/class_ring_a3fa6b7ffef50d5832bcc63ee3b804c6f.html#a3fa6b7ffef50d5832bcc63ee3b804c6f":[3,0,25,114],
 "dd/dcf/class_ring_a40a55300b502aa41989314e7a5c9c705.html#a40a55300b502aa41989314e7a5c9c705":[3,0,25,150],
 "dd/dcf/class_ring_a4174e8d94768d8afe82820b6e43269bb.html#a4174e8d94768d8afe82820b6e43269bb":[3,0,25,204],
-"dd/dcf/class_ring_a42c4388ce795defc9623eb717f5bbbe4.html#a42c4388ce795defc9623eb717f5bbbe4":[3,0,25,3],
-"dd/dcf/class_ring_a434aa7fb20f8f3937ae009acb29fdc1b.html#a434aa7fb20f8f3937ae009acb29fdc1b":[3,0,25,182]
+"dd/dcf/class_ring_a42c4388ce795defc9623eb717f5bbbe4.html#a42c4388ce795defc9623eb717f5bbbe4":[3,0,25,3]
 };

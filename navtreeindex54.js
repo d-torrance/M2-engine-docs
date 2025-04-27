@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"dd/dcf/class_ring_a434aa7fb20f8f3937ae009acb29fdc1b.html#a434aa7fb20f8f3937ae009acb29fdc1b":[3,0,25,182],
 "dd/dcf/class_ring_a46368bd91bd0f73cf8221f5148cebef6.html#a46368bd91bd0f73cf8221f5148cebef6":[3,0,25,116],
 "dd/dcf/class_ring_a46fe6b3a58388e34b172b986f6be03ea.html#a46fe6b3a58388e34b172b986f6be03ea":[3,0,25,59],
 "dd/dcf/class_ring_a480f948242b890421b63365d1ef8d7b8.html#a480f948242b890421b63365d1ef8d7b8":[3,0,25,156],
@@ -231,9 +232,9 @@ var NAVTREEINDEX54 =
 "dd/ddb/class_schur_ring_ad88b6f3c911eb397a2e93052405bfd85.html#ad88b6f3c911eb397a2e93052405bfd85":[5,0,307,10],
 "dd/ddb/class_schur_ring_ae6c8417e770b2009a144d865981db919.html#ae6c8417e770b2009a144d865981db919":[5,0,307,9],
 "dd/ddb/class_schur_ring_af423b37e06866652d66c8162f7119704.html#af423b37e06866652d66c8162f7119704":[5,0,307,23],
-"dd/de1/_m2-cpp-replacement_8cpp.html":[6,0,0,0,7,17],
-"dd/de1/_m2-cpp-replacement_8cpp_a5035d07c37876dc3b866e1d4457ff390.html#a5035d07c37876dc3b866e1d4457ff390":[6,0,0,0,7,17,0],
-"dd/de1/_m2-cpp-replacement_8cpp_source.html":[6,0,0,0,7,17],
+"dd/de1/_m2-cpp-replacement_8cpp.html":[6,0,0,0,7,16],
+"dd/de1/_m2-cpp-replacement_8cpp_a5035d07c37876dc3b866e1d4457ff390.html#a5035d07c37876dc3b866e1d4457ff390":[6,0,0,0,7,16,0],
+"dd/de1/_m2-cpp-replacement_8cpp_source.html":[6,0,0,0,7,16],
 "dd/de7/class_g_b_ring_skew.html":[5,0,119],
 "dd/de7/class_g_b_ring_skew_a0b302697d300f657d465fe2c18a71e4c.html#a0b302697d300f657d465fe2c18a71e4c":[5,0,119,1],
 "dd/de7/class_g_b_ring_skew_a8ca06db04c2f746ef05a8e58adaa39a0.html#a8ca06db04c2f746ef05a8e58adaa39a0":[5,0,119,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "dd/df1/class_m2_1_1_a_ring_g_f_m2_a2458fbc75625163f4b7817dd2980b220.html#a2458fbc75625163f4b7817dd2980b220":[3,0,8,0],
 "dd/df1/class_m2_1_1_a_ring_g_f_m2_a280f6e89ffb08b27ab948a52a6916963.html#a280f6e89ffb08b27ab948a52a6916963":[3,0,8,41],
 "dd/df1/class_m2_1_1_a_ring_g_f_m2_a2bea7bac76b9865dd8f5d69ed25577cd.html#a2bea7bac76b9865dd8f5d69ed25577cd":[3,0,8,46],
-"dd/df1/class_m2_1_1_a_ring_g_f_m2_a3013c84538a4b947093b4686f5f03b24.html#a3013c84538a4b947093b4686f5f03b24":[3,0,8,31],
-"dd/df1/class_m2_1_1_a_ring_g_f_m2_a318a8f56abf5d8149b5fd3efab290726.html#a318a8f56abf5d8149b5fd3efab290726":[3,0,8,22]
+"dd/df1/class_m2_1_1_a_ring_g_f_m2_a3013c84538a4b947093b4686f5f03b24.html#a3013c84538a4b947093b4686f5f03b24":[3,0,8,31]
 };

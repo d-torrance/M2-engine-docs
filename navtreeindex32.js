@@ -1,13 +1,16 @@
 var NAVTREEINDEX32 =
 {
+"d7/ddf/comp-gb_8hpp_a89591fc3a74f9b7ccce817b496d182ea.html#a89591fc3a74f9b7ccce817b496d182ea":[6,0,0,0,68,8],
+"d7/ddf/comp-gb_8hpp_a9131ff672fa89b5e3caf15d0e2fafe8a.html#a9131ff672fa89b5e3caf15d0e2fafe8a":[6,0,0,0,68,0],
 "d7/ddf/comp-gb_8hpp_a9c1e73c7fccffd8dfcdf081930492fd2.html#a9c1e73c7fccffd8dfcdf081930492fd2":[6,0,0,0,68,7],
 "d7/ddf/comp-gb_8hpp_ab7fb1013ceff02ac96fafb985c9500de.html#ab7fb1013ceff02ac96fafb985c9500de":[6,0,0,0,68,3],
 "d7/ddf/comp-gb_8hpp_ac428fd8877b6a388ef66d00ca26d42dc.html#ac428fd8877b6a388ef66d00ca26d42dc":[6,0,0,0,68,6],
 "d7/ddf/comp-gb_8hpp_afc77265f2ab177ee1b317c86ced7f1c2.html#afc77265f2ab177ee1b317c86ced7f1c2":[6,0,0,0,68,4],
 "d7/ddf/comp-gb_8hpp_source.html":[6,0,0,0,68],
-"d7/de0/test_main_8cpp.html":[6,0,0,0,7,36],
-"d7/de0/test_main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627":[6,0,0,0,7,36,0],
-"d7/de0/test_main_8cpp_source.html":[6,0,0,0,7,36],
+"d7/de0/test_main_8cpp.html":[6,0,0,0,7,35],
+"d7/de0/test_main_8cpp_a2c13d491155ad1b7cb4f6b4a1aef010c.html#a2c13d491155ad1b7cb4f6b4a1aef010c":[6,0,0,0,7,35,1],
+"d7/de0/test_main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627":[6,0,0,0,7,35,0],
+"d7/de0/test_main_8cpp_source.html":[6,0,0,0,7,35],
 "d7/de0/tower_8hpp.html":[6,0,0,0,312],
 "d7/de0/tower_8hpp_a01245f37001ac9d9f7f704de568280e0.html#a01245f37001ac9d9f7f704de568280e0":[6,0,0,0,312,1],
 "d7/de0/tower_8hpp_a37239f38e0a22bfafae94ae312efd2da.html#a37239f38e0a22bfafae94ae312efd2da":[6,0,0,0,312,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX32 =
 "d8/d2b/class_ring_z_z_ae2e7358f72fd363b0291b08034b65d72.html#ae2e7358f72fd363b0291b08034b65d72":[3,0,26,5],
 "d8/d2b/class_ring_z_z_ae6496eb0a44188d4069c3fe4e339453b.html#ae6496eb0a44188d4069c3fe4e339453b":[3,0,26,0],
 "d8/d2b/class_ring_z_z_ae7576d689b9b7058ff698a44172db9a9.html#ae7576d689b9b7058ff698a44172db9a9":[3,0,26,38],
-"d8/d2b/class_ring_z_z_ae98d39e3a44b8491cb3236779b98639a.html#ae98d39e3a44b8491cb3236779b98639a":[3,0,26,12],
-"d8/d2b/class_ring_z_z_af0b3626daa6787f030db4b733484560d.html#af0b3626daa6787f030db4b733484560d":[3,0,26,10],
-"d8/d2b/class_ring_z_z_af7a09499eca947992c0c34e8805dc505.html#af7a09499eca947992c0c34e8805dc505":[3,0,26,28],
-"d8/d2f/class_sum_collector_poly_heap.html":[5,0,335]
+"d8/d2b/class_ring_z_z_ae98d39e3a44b8491cb3236779b98639a.html#ae98d39e3a44b8491cb3236779b98639a":[3,0,26,12]
 };
