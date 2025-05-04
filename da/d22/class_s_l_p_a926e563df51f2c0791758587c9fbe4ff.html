@@ -141,7 +141,7 @@ template&lt;class Field &gt; </div>
 <div class="line"><span class="lineno">  459</span>      <span class="keywordflow">case</span> <a class="code hl_define" href="../../d8/da0/_n_a_g_8hpp_a119163bad73cbcbe065e981d0ef4662e.html#a119163bad73cbcbe065e981d0ef4662e">slpMULTIsum</a>:</div>
 <div class="line"><span class="lineno">  460</span>        {</div>
 <div class="line"><span class="lineno">  461</span>          <span class="keywordtype">int</span> n_summands = prog[(++i)++];</div>
-<div class="line"><span class="lineno">  462</span>          <span class="keywordtype">int</span> part_pos[n_summands];</div>
+<div class="line"><span class="lineno">  462</span>          std::vector&lt;int&gt; part_pos(n_summands);</div>
 <div class="line"><span class="lineno">  463</span>          <span class="keywordtype">int</span> c = 0;  <span class="comment">// count nonzeroes</span></div>
 <div class="line"><span class="lineno">  464</span>          <span class="keywordtype">int</span> last_non_zero = <a class="code hl_define" href="../../d8/da0/_n_a_g_8hpp_a8cd76d5fe45787109372933e7563f32c.html#a8cd76d5fe45787109372933e7563f32c">ZERO_CONST</a>;</div>
 <div class="line"><span class="lineno">  465</span>          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n_summands; j++)</div>
@@ -312,7 +312,7 @@ template&lt;class Field &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d22/class_s_l_p.html">SLP</a></li>
-    <li class="footer">Generated on Sun Apr 27 2025 02:07:37 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 4 2025 02:12:19 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -139,7 +139,7 @@ template&lt;class Field &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/ddb/_n_a_g_8cpp_source.html#l00237">237</a> of file <a class="el" href="../../d5/ddb/_n_a_g_8cpp_source.html">NAG.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  241</span>{</div>
-<div class="line"><span class="lineno">  242</span>  <span class="keywordtype">int</span> part_pos[n];  <span class="comment">// absolute positions of the parts</span></div>
+<div class="line"><span class="lineno">  242</span>  std::vector&lt;int&gt; part_pos(n); <span class="comment">// absolute positions of the parts</span></div>
 <div class="line"><span class="lineno">  243</span>  <span class="keywordtype">int</span> last_nonzero_part_pos = <a class="code hl_define" href="../../d8/da0/_n_a_g_8hpp_a8cd76d5fe45787109372933e7563f32c.html#a8cd76d5fe45787109372933e7563f32c">ZERO_CONST</a>;</div>
 <div class="line"><span class="lineno">  244</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
 <div class="line"><span class="lineno">  245</span>    {</div>
@@ -204,7 +204,7 @@ template&lt;class Field &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d22/class_s_l_p.html">SLP</a></li>
-    <li class="footer">Generated on Sun Apr 27 2025 02:07:37 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 4 2025 02:12:19 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
