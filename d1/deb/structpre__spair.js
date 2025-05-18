@@ -4,5 +4,5 @@ var structpre__spair =
     [ "deg1", "d1/deb/structpre__spair_aea15453a36824e9f25c4f360ef85e477.html#aea15453a36824e9f25c4f360ef85e477", null ],
     [ "j", "d1/deb/structpre__spair_aea3d361688eedf6c631f66600970f64b.html#aea3d361688eedf6c631f66600970f64b", null ],
     [ "quot", "d1/deb/structpre__spair_ad15f5e47e8e1c01841ec65061c7f4e05.html#ad15f5e47e8e1c01841ec65061c7f4e05", null ],
-    [ "type", "d1/deb/structpre__spair_a2cad436ac675ed22ea4328cac366a324.html#a2cad436ac675ed22ea4328cac366a324", null ]
+    [ "type", "d1/deb/structpre__spair_a5f2e3cb69c3e6ade0f0af5f351e3936d.html#a5f2e3cb69c3e6ade0f0af5f351e3936d", null ]
 ];

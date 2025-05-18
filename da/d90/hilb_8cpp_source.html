@@ -868,27 +868,30 @@ $(document).ready(function(){initNavTree('da/d90/hilb_8cpp_source.html','../../'
 <div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>          fprintf(</div>
 <div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>              stderr,</div>
 <div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>              <span class="stringliteral">&quot;internal error: incorrect Hilbert function given, aborting\n&quot;</span>);</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>          abort();</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>        }</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (exp[0] == deg)</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>        {</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>          std::pair&lt;bool, long&gt; res =</div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>              P-&gt;<a class="code hl_function" href="../../d5/d58/class_polynomial_ring_a2df3a41ac565c2c2e2662b903dfd29c4.html#a2df3a41ac565c2c2e2662b903dfd29c4">getCoefficientRing</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a3d64baae17fd73c1e9b0ed62898e558f.html#a3d64baae17fd73c1e9b0ed62898e558f">coerceToLongInteger</a>(f.coeff);</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>          assert(res.first &amp;&amp;</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>                 std::abs(res.second) &lt; std::numeric_limits&lt;int&gt;::max());</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>          <span class="keywordtype">int</span> n = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(res.second);</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>          result += n;</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>        }</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>    }</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>  <a class="code hl_function" href="../../d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(exp);</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>}</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>          fprintf(</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>              stderr,</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>              <span class="stringliteral">&quot;exp[0]: %d   deg: %d\n&quot;</span>, exp[0], deg);    </div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>          abort();</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>        }</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (exp[0] == deg)</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>        {</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>          std::pair&lt;bool, long&gt; res =</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>              P-&gt;<a class="code hl_function" href="../../d5/d58/class_polynomial_ring_a2df3a41ac565c2c2e2662b903dfd29c4.html#a2df3a41ac565c2c2e2662b903dfd29c4">getCoefficientRing</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a3d64baae17fd73c1e9b0ed62898e558f.html#a3d64baae17fd73c1e9b0ed62898e558f">coerceToLongInteger</a>(f.coeff);</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>          assert(res.first &amp;&amp;</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>                 std::abs(res.second) &lt; std::numeric_limits&lt;int&gt;::max());</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>          <span class="keywordtype">int</span> n = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(res.second);</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>          result += n;</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>        }</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>    }</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>  <a class="code hl_function" href="../../d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(exp);</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>}</div>
 </div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span> </div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span><span class="comment">// Local Variables:</span></div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span><span class="comment">// compile-command: &quot;make -C $M2BUILDDIR/Macaulay2/e &quot;</span></div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span><span class="comment">// indent-tabs-mode: nil</span></div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span><span class="comment">// End:</span></div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span> </div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span><span class="comment">// Local Variables:</span></div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span><span class="comment">// compile-command: &quot;make -C $M2BUILDDIR/Macaulay2/e &quot;</span></div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span><span class="comment">// indent-tabs-mode: nil</span></div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span><span class="comment">// End:</span></div>
 <div class="ttc" id="a_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad_html_a32c7462759c905470880b0dba58f00ad"><div class="ttname"><a href="../../d6/df2/_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad.html#a32c7462759c905470880b0dba58f00ad">const_varpower</a></div><div class="ttdeci">varpower::ConstExponents const_varpower</div><div class="ttdef"><b>Definition</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00196">ExponentList.hpp:196</a></div></div>
 <div class="ttc" id="a_exponent_list_8hpp_acc701ea969ffb5b5413fe32f6e20afe2_html_acc701ea969ffb5b5413fe32f6e20afe2"><div class="ttname"><a href="../../d6/df2/_exponent_list_8hpp_acc701ea969ffb5b5413fe32f6e20afe2.html#acc701ea969ffb5b5413fe32f6e20afe2">index_varpower</a></div><div class="ttdeci">ExponentListIterator&lt; int, true &gt; index_varpower</div><div class="ttdef"><b>Definition</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00195">ExponentList.hpp:195</a></div></div>
 <div class="ttc" id="a_exponent_list_8hpp_html"><div class="ttname"><a href="../../d6/df2/_exponent_list_8hpp.html">ExponentList.hpp</a></div></div>
@@ -1039,7 +1042,7 @@ $(document).ready(function(){initNavTree('da/d90/hilb_8cpp_source.html','../../'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../da/d90/hilb_8cpp.html">hilb.cpp</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

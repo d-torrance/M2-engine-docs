@@ -129,60 +129,60 @@ template&lt;typename RT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00431">431</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  432</span>{</div>
-<div class="line"><span class="lineno">  433</span>  <span class="comment">// TODO: check rings match</span></div>
-<div class="line"><span class="lineno">  434</span>  <span class="comment">// TODO: no divide by zero</span></div>
-<div class="line"><span class="lineno">  435</span>  <span class="comment">// TODO: size of matrices</span></div>
-<div class="line"><span class="lineno">  436</span>  <span class="comment">// TODO: add tests</span></div>
-<div class="line"><span class="lineno">  437</span>  <span class="comment">// TODO: for size 0 also</span></div>
-<div class="line"><span class="lineno">  438</span>  <span class="keywordflow">switch</span> (strategy)</div>
-<div class="line"><span class="lineno">  439</span>    {</div>
-<div class="line"><span class="lineno">  440</span>      <span class="keywordflow">case</span> 0:</div>
-<div class="line"><span class="lineno">  441</span>        <span class="comment">// TODO: change to iter</span></div>
-<div class="line"><span class="lineno">  442</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; m; i++)</div>
-<div class="line"><span class="lineno">  443</span>          {</div>
-<div class="line"><span class="lineno">  444</span>            <span class="keyword">auto</span>&amp; a = <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.entry(i, 0);</div>
-<div class="line"><span class="lineno">  445</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().divide(a, Lv.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(i, m), Lv.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(i, i));</div>
-<div class="line"><span class="lineno">  446</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, a);</div>
-<div class="line"><span class="lineno">  447</span>            <a class="code hl_class" href="../../db/d2e/class_mat_elementary_ops.html">MatElementaryOps&lt;DMat&lt;RT&gt;</a>&gt;::column_op(Lv, m, a, i);</div>
-<div class="line"><span class="lineno">  448</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, a);</div>
-<div class="line"><span class="lineno">  449</span>          }</div>
-<div class="line"><span class="lineno">  450</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  451</span>      <span class="keywordflow">case</span> 1:</div>
-<div class="line"><span class="lineno">  452</span>        <span class="comment">// TODO: change to iter</span></div>
-<div class="line"><span class="lineno">  453</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; m; i++)</div>
-<div class="line"><span class="lineno">  454</span>          {</div>
-<div class="line"><span class="lineno">  455</span>            <span class="keyword">auto</span>&amp; a = <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.entry(i, 0);</div>
-<div class="line"><span class="lineno">  456</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, Lv.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(i, m));</div>
-<div class="line"><span class="lineno">  457</span>            <a class="code hl_class" href="../../db/d2e/class_mat_elementary_ops.html">MatElementaryOps&lt;DMat&lt;RT&gt;</a>&gt;::column_op(Lv, m, a, i);</div>
-<div class="line"><span class="lineno">  458</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, a);</div>
-<div class="line"><span class="lineno">  459</span>          }</div>
-<div class="line"><span class="lineno">  460</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  461</span>      <span class="keywordflow">case</span> 2:</div>
-<div class="line"><span class="lineno">  462</span>        <span class="comment">// TODO: change to iter</span></div>
-<div class="line"><span class="lineno">  463</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; m + 1; i++)</div>
-<div class="line"><span class="lineno">  464</span>          {</div>
-<div class="line"><span class="lineno">  465</span>            <span class="keyword">auto</span>&amp; a = <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.entry(m - i, 0);</div>
-<div class="line"><span class="lineno">  466</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().divide(a, Lv.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(m - i, m), Lv.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(m - i, m - i));</div>
-<div class="line"><span class="lineno">  467</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, a);</div>
-<div class="line"><span class="lineno">  468</span>            <a class="code hl_class" href="../../db/d2e/class_mat_elementary_ops.html">MatElementaryOps&lt;DMat&lt;RT&gt;</a>&gt;::column_op(Lv, m, a, m - i);</div>
-<div class="line"><span class="lineno">  469</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, a);</div>
-<div class="line"><span class="lineno">  470</span>          }</div>
-<div class="line"><span class="lineno">  471</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  472</span>      <span class="keywordflow">case</span> 3:</div>
-<div class="line"><span class="lineno">  473</span>        <span class="comment">// TODO: change to iter</span></div>
-<div class="line"><span class="lineno">  474</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; m + 1; i++)</div>
-<div class="line"><span class="lineno">  475</span>          {</div>
-<div class="line"><span class="lineno">  476</span>            <span class="keyword">auto</span>&amp; a = <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.entry(m - i, 0);</div>
-<div class="line"><span class="lineno">  477</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, Lv.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(m - i, m));</div>
-<div class="line"><span class="lineno">  478</span>            <a class="code hl_class" href="../../db/d2e/class_mat_elementary_ops.html">MatElementaryOps&lt;DMat&lt;RT&gt;</a>&gt;::column_op(Lv, m, a, m - i);</div>
-<div class="line"><span class="lineno">  479</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, a);</div>
-<div class="line"><span class="lineno">  480</span>          }</div>
-<div class="line"><span class="lineno">  481</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  482</span>    }</div>
-<div class="line"><span class="lineno">  483</span>}</div>
-<div class="ttc" id="aclass_d_mat_a430faaf604ffe11bf81a35456acc2e97_html_a430faaf604ffe11bf81a35456acc2e97"><div class="ttname"><a href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">DMat::entry</a></div><div class="ttdeci">ElementType &amp; entry(size_t row, size_t column)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00185">dmat.hpp:185</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00407">407</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  408</span>{</div>
+<div class="line"><span class="lineno">  409</span>  <span class="comment">// TODO: check rings match</span></div>
+<div class="line"><span class="lineno">  410</span>  <span class="comment">// TODO: no divide by zero</span></div>
+<div class="line"><span class="lineno">  411</span>  <span class="comment">// TODO: size of matrices</span></div>
+<div class="line"><span class="lineno">  412</span>  <span class="comment">// TODO: add tests</span></div>
+<div class="line"><span class="lineno">  413</span>  <span class="comment">// TODO: for size 0 also</span></div>
+<div class="line"><span class="lineno">  414</span>  <span class="keywordflow">switch</span> (strategy)</div>
+<div class="line"><span class="lineno">  415</span>    {</div>
+<div class="line"><span class="lineno">  416</span>      <span class="keywordflow">case</span> 0:</div>
+<div class="line"><span class="lineno">  417</span>        <span class="comment">// TODO: change to iter</span></div>
+<div class="line"><span class="lineno">  418</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; m; i++)</div>
+<div class="line"><span class="lineno">  419</span>          {</div>
+<div class="line"><span class="lineno">  420</span>            <span class="keyword">auto</span>&amp; a = <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.entry(i, 0);</div>
+<div class="line"><span class="lineno">  421</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().divide(a, Lv.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(i, m), Lv.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(i, i));</div>
+<div class="line"><span class="lineno">  422</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, a);</div>
+<div class="line"><span class="lineno">  423</span>            <a class="code hl_class" href="../../db/d2e/class_mat_elementary_ops.html">MatElementaryOps&lt;DMat&lt;RT&gt;</a>&gt;::column_op(Lv, m, a, i);</div>
+<div class="line"><span class="lineno">  424</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, a);</div>
+<div class="line"><span class="lineno">  425</span>          }</div>
+<div class="line"><span class="lineno">  426</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  427</span>      <span class="keywordflow">case</span> 1:</div>
+<div class="line"><span class="lineno">  428</span>        <span class="comment">// TODO: change to iter</span></div>
+<div class="line"><span class="lineno">  429</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; m; i++)</div>
+<div class="line"><span class="lineno">  430</span>          {</div>
+<div class="line"><span class="lineno">  431</span>            <span class="keyword">auto</span>&amp; a = <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.entry(i, 0);</div>
+<div class="line"><span class="lineno">  432</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, Lv.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(i, m));</div>
+<div class="line"><span class="lineno">  433</span>            <a class="code hl_class" href="../../db/d2e/class_mat_elementary_ops.html">MatElementaryOps&lt;DMat&lt;RT&gt;</a>&gt;::column_op(Lv, m, a, i);</div>
+<div class="line"><span class="lineno">  434</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, a);</div>
+<div class="line"><span class="lineno">  435</span>          }</div>
+<div class="line"><span class="lineno">  436</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  437</span>      <span class="keywordflow">case</span> 2:</div>
+<div class="line"><span class="lineno">  438</span>        <span class="comment">// TODO: change to iter</span></div>
+<div class="line"><span class="lineno">  439</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; m + 1; i++)</div>
+<div class="line"><span class="lineno">  440</span>          {</div>
+<div class="line"><span class="lineno">  441</span>            <span class="keyword">auto</span>&amp; a = <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.entry(m - i, 0);</div>
+<div class="line"><span class="lineno">  442</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().divide(a, Lv.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(m - i, m), Lv.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(m - i, m - i));</div>
+<div class="line"><span class="lineno">  443</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, a);</div>
+<div class="line"><span class="lineno">  444</span>            <a class="code hl_class" href="../../db/d2e/class_mat_elementary_ops.html">MatElementaryOps&lt;DMat&lt;RT&gt;</a>&gt;::column_op(Lv, m, a, m - i);</div>
+<div class="line"><span class="lineno">  445</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, a);</div>
+<div class="line"><span class="lineno">  446</span>          }</div>
+<div class="line"><span class="lineno">  447</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  448</span>      <span class="keywordflow">case</span> 3:</div>
+<div class="line"><span class="lineno">  449</span>        <span class="comment">// TODO: change to iter</span></div>
+<div class="line"><span class="lineno">  450</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; m + 1; i++)</div>
+<div class="line"><span class="lineno">  451</span>          {</div>
+<div class="line"><span class="lineno">  452</span>            <span class="keyword">auto</span>&amp; a = <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.entry(m - i, 0);</div>
+<div class="line"><span class="lineno">  453</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, Lv.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(m - i, m));</div>
+<div class="line"><span class="lineno">  454</span>            <a class="code hl_class" href="../../db/d2e/class_mat_elementary_ops.html">MatElementaryOps&lt;DMat&lt;RT&gt;</a>&gt;::column_op(Lv, m, a, m - i);</div>
+<div class="line"><span class="lineno">  455</span>            <a class="code hl_variable" href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a>.ring().negate(a, a);</div>
+<div class="line"><span class="lineno">  456</span>          }</div>
+<div class="line"><span class="lineno">  457</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  458</span>    }</div>
+<div class="line"><span class="lineno">  459</span>}</div>
+<div class="ttc" id="aclass_d_mat_a430faaf604ffe11bf81a35456acc2e97_html_a430faaf604ffe11bf81a35456acc2e97"><div class="ttname"><a href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">DMat::entry</a></div><div class="ttdeci">ElementType &amp; entry(size_t row, size_t column)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00111">dmat.hpp:111</a></div></div>
 <div class="ttc" id="aclass_mat_elementary_ops_html"><div class="ttname"><a href="../../db/d2e/class_mat_elementary_ops.html">MatElementaryOps</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d17/mat-arith_8hpp_source.html#l00007">mat-arith.hpp:7</a></div></div>
 <div class="ttc" id="aoverflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2_html_aa07f992d22249e2bef61db62f71671b2"><div class="ttname"><a href="../../db/d91/overflow-test_8cpp_aa07f992d22249e2bef61db62f71671b2.html#aa07f992d22249e2bef61db62f71671b2">x</a></div><div class="ttdeci">volatile int x</div><div class="ttdef"><b>Definition</b> <a href="../../db/d91/overflow-test_8cpp_source.html#l00037">overflow-test.cpp:37</a></div></div>
 </div><!-- fragment -->
@@ -196,7 +196,7 @@ template&lt;typename RT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:42 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

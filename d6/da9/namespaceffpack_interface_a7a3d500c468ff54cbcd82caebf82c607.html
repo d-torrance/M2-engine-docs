@@ -159,11 +159,11 @@ $(document).ready(function(){initNavTree('d6/da9/namespaceffpack_interface_a7a3d
 <div class="line"><span class="lineno">  210</span>                a_rows,</div>
 <div class="line"><span class="lineno">  211</span>                a_cols,</div>
 <div class="line"><span class="lineno">  212</span>                (right_side ? b_cols : b_rows),</div>
-<div class="line"><span class="lineno">  213</span>                copyA.array(),</div>
+<div class="line"><span class="lineno">  213</span>                copyA.rowMajorArray(),</div>
 <div class="line"><span class="lineno">  214</span>                a_cols,  <span class="comment">// leading dim of A</span></div>
-<div class="line"><span class="lineno">  215</span>                X.array(),</div>
+<div class="line"><span class="lineno">  215</span>                X.rowMajorArray(),</div>
 <div class="line"><span class="lineno">  216</span>                x_cols,</div>
-<div class="line"><span class="lineno">  217</span>                copyB.array(),</div>
+<div class="line"><span class="lineno">  217</span>                copyB.rowMajorArray(),</div>
 <div class="line"><span class="lineno">  218</span>                b_cols,</div>
 <div class="line"><span class="lineno">  219</span>                &amp;info);</div>
 <div class="line"><span class="lineno">  220</span> </div>
@@ -175,10 +175,10 @@ $(document).ready(function(){initNavTree('d6/da9/namespaceffpack_interface_a7a3d
 <div class="line"><span class="lineno">  226</span> </div>
 <div class="line"><span class="lineno">  227</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  228</span>}</div>
-<div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00133">dmat.hpp:133</a></div></div>
-<div class="ttc" id="aclass_d_mat_a88d2a242efc934b17d6cc94851000627_html_a88d2a242efc934b17d6cc94851000627"><div class="ttname"><a href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">DMat::resize</a></div><div class="ttdeci">void resize(size_t new_nrows, size_t new_ncols)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00194">dmat.hpp:194</a></div></div>
-<div class="ttc" id="aclass_d_mat_a8bfde729efa8a5ba300bd3024dc9a440_html_a8bfde729efa8a5ba300bd3024dc9a440"><div class="ttname"><a href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">DMat::ring</a></div><div class="ttdeci">const ACoeffRing &amp; ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00132">dmat.hpp:132</a></div></div>
-<div class="ttc" id="aclass_d_mat_aff91923e882c194ecf16030897933e45_html_aff91923e882c194ecf16030897933e45"><div class="ttname"><a href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat::numColumns</a></div><div class="ttdeci">size_t numColumns() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00134">dmat.hpp:134</a></div></div>
+<div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00107">dmat.hpp:107</a></div></div>
+<div class="ttc" id="aclass_d_mat_a88d2a242efc934b17d6cc94851000627_html_a88d2a242efc934b17d6cc94851000627"><div class="ttname"><a href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">DMat::resize</a></div><div class="ttdeci">void resize(size_t new_nrows, size_t new_ncols)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00120">dmat.hpp:120</a></div></div>
+<div class="ttc" id="aclass_d_mat_a8bfde729efa8a5ba300bd3024dc9a440_html_a8bfde729efa8a5ba300bd3024dc9a440"><div class="ttname"><a href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">DMat::ring</a></div><div class="ttdeci">const ACoeffRing &amp; ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00106">dmat.hpp:106</a></div></div>
+<div class="ttc" id="aclass_d_mat_aff91923e882c194ecf16030897933e45_html_aff91923e882c194ecf16030897933e45"><div class="ttname"><a href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat::numColumns</a></div><div class="ttdeci">size_t numColumns() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00108">dmat.hpp:108</a></div></div>
 <div class="ttc" id="amat-linalg_8hpp_a846148954610b60694ad60d414507a16_html_a846148954610b60694ad60d414507a16"><div class="ttname"><a href="../../d9/d8a/mat-linalg_8hpp_a846148954610b60694ad60d414507a16.html#a846148954610b60694ad60d414507a16">DMatZZpFFPACK</a></div><div class="ttdeci">#define DMatZZpFFPACK</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d8a/mat-linalg_8hpp_source.html#l00026">mat-linalg.hpp:26</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a846148954610b60694ad60d414507a16.html#a846148954610b60694ad60d414507a16">DMatZZpFFPACK</a>.</p>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('d6/da9/namespaceffpack_interface_a7a3d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/da9/namespaceffpack_interface.html">ffpackInterface</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:42 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

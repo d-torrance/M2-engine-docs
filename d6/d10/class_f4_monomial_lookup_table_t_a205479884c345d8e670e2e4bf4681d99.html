@@ -106,21 +106,15 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d46/f4-monlookup_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../d8/d46/f4-monlookup_8cpp_source.html">f4-monlookup.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>{</div>
-<div class="line"><span class="lineno">   81</span>  <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_define" href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a>(mi_node *)::const_iterator i = mis.begin();</div>
-<div class="line"><span class="lineno">   82</span>       i != mis.end();</div>
-<div class="line"><span class="lineno">   83</span>       i++)</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_function" href="../../d6/d10/class_f4_monomial_lookup_table_t_aa6b7e08b1d3c82910c29ec11bf001380.html#aa6b7e08b1d3c82910c29ec11bf001380">delete_mi_node</a>(*i);</div>
-<div class="line"><span class="lineno">   85</span>  <span class="keywordflow">if</span> ((<a class="code hl_variable" href="../../d6/d10/class_f4_monomial_lookup_table_t_afffba38dfb969875f4642ace7a7de3d4.html#afffba38dfb969875f4642ace7a7de3d4">count</a> % 2) == 1) <span class="keyword">delete</span> <a class="code hl_variable" href="../../d6/d10/class_f4_monomial_lookup_table_t_a6039f9ec10d743f3a11d867a781f3fa8.html#a6039f9ec10d743f3a11d867a781f3fa8">mi_stash</a>;</div>
-<div class="line"><span class="lineno">   86</span>}</div>
-<div class="ttc" id="aclass_f4_monomial_lookup_table_t_a6039f9ec10d743f3a11d867a781f3fa8_html_a6039f9ec10d743f3a11d867a781f3fa8"><div class="ttname"><a href="../../d6/d10/class_f4_monomial_lookup_table_t_a6039f9ec10d743f3a11d867a781f3fa8.html#a6039f9ec10d743f3a11d867a781f3fa8">F4MonomialLookupTableT::mi_stash</a></div><div class="ttdeci">stash * mi_stash</div><div class="ttdef"><b>Definition</b> <a href="../../db/da3/f4-monlookup_8hpp_source.html#l00043">f4-monlookup.hpp:43</a></div></div>
-<div class="ttc" id="aclass_f4_monomial_lookup_table_t_aa6b7e08b1d3c82910c29ec11bf001380_html_aa6b7e08b1d3c82910c29ec11bf001380"><div class="ttname"><a href="../../d6/d10/class_f4_monomial_lookup_table_t_aa6b7e08b1d3c82910c29ec11bf001380.html#aa6b7e08b1d3c82910c29ec11bf001380">F4MonomialLookupTableT::delete_mi_node</a></div><div class="ttdeci">void delete_mi_node(mi_node *p)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d46/f4-monlookup_8cpp_source.html#l00052">f4-monlookup.cpp:52</a></div></div>
-<div class="ttc" id="aclass_f4_monomial_lookup_table_t_afffba38dfb969875f4642ace7a7de3d4_html_afffba38dfb969875f4642ace7a7de3d4"><div class="ttname"><a href="../../d6/d10/class_f4_monomial_lookup_table_t_afffba38dfb969875f4642ace7a7de3d4.html#afffba38dfb969875f4642ace7a7de3d4">F4MonomialLookupTableT::count</a></div><div class="ttdeci">int count</div><div class="ttdef"><b>Definition</b> <a href="../../db/da3/f4-monlookup_8hpp_source.html#l00045">f4-monlookup.hpp:45</a></div></div>
-<div class="ttc" id="anewdelete_8hpp_a5eb7456054852de52b377090e128822e_html_a5eb7456054852de52b377090e128822e"><div class="ttname"><a href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a></div><div class="ttdeci">#define VECTOR(T)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00033">newdelete.hpp:33</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d8/d46/f4-monlookup_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d8/d46/f4-monlookup_8cpp_source.html">f4-monlookup.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>{</div>
+<div class="line"><span class="lineno">   72</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : <a class="code hl_variable" href="../../d6/d10/class_f4_monomial_lookup_table_t_ab183e2e5363f46795cea73c1ed3816b0.html#ab183e2e5363f46795cea73c1ed3816b0">mis</a>) <a class="code hl_function" href="../../d6/d10/class_f4_monomial_lookup_table_t_aa6b7e08b1d3c82910c29ec11bf001380.html#aa6b7e08b1d3c82910c29ec11bf001380">delete_mi_node</a>(i);</div>
+<div class="line"><span class="lineno">   73</span>  <span class="keyword">delete</span> [] <a class="code hl_variable" href="../../d6/d10/class_f4_monomial_lookup_table_t_addb674c0f30ebdc8585d9850f974621c.html#addb674c0f30ebdc8585d9850f974621c">exp0</a>;</div>
+<div class="line"><span class="lineno">   74</span>}</div>
+<div class="ttc" id="aclass_f4_monomial_lookup_table_t_aa6b7e08b1d3c82910c29ec11bf001380_html_aa6b7e08b1d3c82910c29ec11bf001380"><div class="ttname"><a href="../../d6/d10/class_f4_monomial_lookup_table_t_aa6b7e08b1d3c82910c29ec11bf001380.html#aa6b7e08b1d3c82910c29ec11bf001380">F4MonomialLookupTableT::delete_mi_node</a></div><div class="ttdeci">void delete_mi_node(mi_node *p)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d46/f4-monlookup_8cpp_source.html#l00049">f4-monlookup.cpp:49</a></div></div>
+<div class="ttc" id="aclass_f4_monomial_lookup_table_t_ab183e2e5363f46795cea73c1ed3816b0_html_ab183e2e5363f46795cea73c1ed3816b0"><div class="ttname"><a href="../../d6/d10/class_f4_monomial_lookup_table_t_ab183e2e5363f46795cea73c1ed3816b0.html#ab183e2e5363f46795cea73c1ed3816b0">F4MonomialLookupTableT::mis</a></div><div class="ttdeci">std::vector&lt; mi_node * &gt; mis</div><div class="ttdef"><b>Definition</b> <a href="../../db/da3/f4-monlookup_8hpp_source.html#l00041">f4-monlookup.hpp:41</a></div></div>
+<div class="ttc" id="aclass_f4_monomial_lookup_table_t_addb674c0f30ebdc8585d9850f974621c_html_addb674c0f30ebdc8585d9850f974621c"><div class="ttname"><a href="../../d6/d10/class_f4_monomial_lookup_table_t_addb674c0f30ebdc8585d9850f974621c.html#addb674c0f30ebdc8585d9850f974621c">F4MonomialLookupTableT::exp0</a></div><div class="ttdeci">ntuple_word * exp0</div><div class="ttdef"><b>Definition</b> <a href="../../db/da3/f4-monlookup_8hpp_source.html#l00046">f4-monlookup.hpp:46</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -129,7 +123,7 @@ template&lt;typename Key &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d10/class_f4_monomial_lookup_table_t.html">F4MonomialLookupTableT</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:39 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

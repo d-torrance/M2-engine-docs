@@ -54,7 +54,7 @@ var group__gb =
       [ "GBComputation", "de/ded/class_g_b_computation_a79fd4b4b3d036051a3b6b08ab15c6e5f.html#a79fd4b4b3d036051a3b6b08ab15c6e5f", null ],
       [ "~GBComputation", "de/ded/class_g_b_computation_a279d5f9b9161e846c7e6afd10badb59a.html#a279d5f9b9161e846c7e6afd10badb59a", null ],
       [ "cast_to_GBComputation", "de/ded/class_g_b_computation_aa0c496181f65544c4c7d3896360245a4.html#aa0c496181f65544c4c7d3896360245a4", null ],
-      [ "choose_gb", "de/ded/class_g_b_computation_a443f3848097cecf3f384b9af273295e4.html#a443f3848097cecf3f384b9af273295e4", null ],
+      [ "choose_gb", "de/ded/class_g_b_computation_aaff7a8f858cded7550f977b4bf34f01b.html#aaff7a8f858cded7550f977b4bf34f01b", null ],
       [ "complete_thru_degree", "de/ded/class_g_b_computation_a0503bdcaf49883b7c8c0f4156110547d.html#a0503bdcaf49883b7c8c0f4156110547d", null ],
       [ "contains", "de/ded/class_g_b_computation_acdd07facd6f3229c2a3a92d71eeb16f2.html#acdd07facd6f3229c2a3a92d71eeb16f2", null ],
       [ "get_change", "de/ded/class_g_b_computation_a0d9d2c4f31fde7fb1478e385bcb35b8c.html#a0d9d2c4f31fde7fb1478e385bcb35b8c", null ],

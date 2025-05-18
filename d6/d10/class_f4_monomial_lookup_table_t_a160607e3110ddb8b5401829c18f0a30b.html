@@ -125,45 +125,45 @@ template&lt;typename Key &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d46/f4-monlookup_8cpp_source.html#l00462">462</a> of file <a class="el" href="../../d8/d46/f4-monlookup_8cpp_source.html">f4-monlookup.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  469</span>{</div>
-<div class="line"><span class="lineno">  470</span>  mi_node *q;</div>
-<div class="line"><span class="lineno">  471</span>  <span class="comment">// First check the node &#39;p&#39; itself</span></div>
-<div class="line"><span class="lineno">  472</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != <span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">  473</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;var &gt;= 0);</div>
-<div class="line"><span class="lineno">  474</span>  <span class="keywordflow">if</span> (up != <span class="keyword">nullptr</span>) assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;var &lt; up-&gt;var);</div>
-<div class="line"><span class="lineno">  475</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;header == <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><span class="lineno">  476</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;tag == <a class="code hl_enumvalue" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a67ca4f8d620b7d16c521b4165fde4cd9.html#a67ca4f8d620b7d16c521b4165fde4cd9ac9e436674e92ac5fa3583b943d6671cd">mi_node::node</a>);</div>
-<div class="line"><span class="lineno">  477</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;down() == up);</div>
-<div class="line"><span class="lineno">  478</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;left != <span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">  479</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;right != <span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">  480</span> </div>
-<div class="line"><span class="lineno">  481</span>  <span class="comment">// Now loop through each element in left/right chain, checking that</span></div>
-<div class="line"><span class="lineno">  482</span>  <span class="comment">// v, e, left, right values are consistent.</span></div>
-<div class="line"><span class="lineno">  483</span>  <span class="keywordflow">for</span> (q = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;left; q != <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>; q = q-&gt;left)</div>
-<div class="line"><span class="lineno">  484</span>    {</div>
-<div class="line"><span class="lineno">  485</span>      assert(q-&gt;left != <span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">  486</span>      assert(q-&gt;right != <span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">  487</span>      assert(q-&gt;header == <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><span class="lineno">  488</span>      assert(q-&gt;right-&gt;left == q);</div>
-<div class="line"><span class="lineno">  489</span>      assert(q-&gt;left-&gt;right == q);</div>
-<div class="line"><span class="lineno">  490</span>      assert(q-&gt;var == <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;var);</div>
-<div class="line"><span class="lineno">  491</span>      assert((q-&gt;right == <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>) || (q-&gt;exp &lt; q-&gt;right-&gt;exp));</div>
-<div class="line"><span class="lineno">  492</span>      assert(q-&gt;exp &gt;= 0);</div>
-<div class="line"><span class="lineno">  493</span>    }</div>
-<div class="line"><span class="lineno">  494</span> </div>
-<div class="line"><span class="lineno">  495</span>  <span class="comment">// Now loop through again, this time descending into nodes</span></div>
-<div class="line"><span class="lineno">  496</span>  <span class="keywordtype">int</span> c = 0;</div>
-<div class="line"><span class="lineno">  497</span>  <span class="keywordflow">for</span> (q = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;right; q != <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>; q = q-&gt;right)</div>
-<div class="line"><span class="lineno">  498</span>    <span class="keywordflow">if</span> (q-&gt;tag == <a class="code hl_enumvalue" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a67ca4f8d620b7d16c521b4165fde4cd9.html#a67ca4f8d620b7d16c521b4165fde4cd9ac9e436674e92ac5fa3583b943d6671cd">mi_node::node</a>)</div>
-<div class="line"><span class="lineno">  499</span>      c += <a class="code hl_function" href="../../d6/d10/class_f4_monomial_lookup_table_t_a1da62cd6b9fb90e9aeec8220ffefdcd0.html#a1da62cd6b9fb90e9aeec8220ffefdcd0">debug_check</a>(q-&gt;down(), q);</div>
-<div class="line"><span class="lineno">  500</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  501</span>      c++;</div>
-<div class="line"><span class="lineno">  502</span>  <span class="keywordflow">return</span> c;</div>
-<div class="line"><span class="lineno">  503</span>}</div>
-<div class="ttc" id="aclass_f4_monomial_lookup_table_t_a1da62cd6b9fb90e9aeec8220ffefdcd0_html_a1da62cd6b9fb90e9aeec8220ffefdcd0"><div class="ttname"><a href="../../d6/d10/class_f4_monomial_lookup_table_t_a1da62cd6b9fb90e9aeec8220ffefdcd0.html#a1da62cd6b9fb90e9aeec8220ffefdcd0">F4MonomialLookupTableT::debug_check</a></div><div class="ttdeci">void debug_check() const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d46/f4-monlookup_8cpp_source.html#l00506">f4-monlookup.cpp:506</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d8/d46/f4-monlookup_8cpp_source.html#l00450">450</a> of file <a class="el" href="../../d8/d46/f4-monlookup_8cpp_source.html">f4-monlookup.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  457</span>{</div>
+<div class="line"><span class="lineno">  458</span>  mi_node *q;</div>
+<div class="line"><span class="lineno">  459</span>  <span class="comment">// First check the node &#39;p&#39; itself</span></div>
+<div class="line"><span class="lineno">  460</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  461</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;var &gt;= 0);</div>
+<div class="line"><span class="lineno">  462</span>  <span class="keywordflow">if</span> (up != <span class="keyword">nullptr</span>) assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;var &lt; up-&gt;var);</div>
+<div class="line"><span class="lineno">  463</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;header == <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><span class="lineno">  464</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;tag == <a class="code hl_enumvalue" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a67ca4f8d620b7d16c521b4165fde4cd9.html#a67ca4f8d620b7d16c521b4165fde4cd9ac9e436674e92ac5fa3583b943d6671cd">mi_node::node</a>);</div>
+<div class="line"><span class="lineno">  465</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;down() == up);</div>
+<div class="line"><span class="lineno">  466</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;left != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  467</span>  assert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;right != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  468</span> </div>
+<div class="line"><span class="lineno">  469</span>  <span class="comment">// Now loop through each element in left/right chain, checking that</span></div>
+<div class="line"><span class="lineno">  470</span>  <span class="comment">// v, e, left, right values are consistent.</span></div>
+<div class="line"><span class="lineno">  471</span>  <span class="keywordflow">for</span> (q = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;left; q != <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>; q = q-&gt;left)</div>
+<div class="line"><span class="lineno">  472</span>    {</div>
+<div class="line"><span class="lineno">  473</span>      assert(q-&gt;left != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  474</span>      assert(q-&gt;right != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  475</span>      assert(q-&gt;header == <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><span class="lineno">  476</span>      assert(q-&gt;right-&gt;left == q);</div>
+<div class="line"><span class="lineno">  477</span>      assert(q-&gt;left-&gt;right == q);</div>
+<div class="line"><span class="lineno">  478</span>      assert(q-&gt;var == <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;var);</div>
+<div class="line"><span class="lineno">  479</span>      assert((q-&gt;right == <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>) || (q-&gt;exp &lt; q-&gt;right-&gt;exp));</div>
+<div class="line"><span class="lineno">  480</span>      assert(q-&gt;exp &gt;= 0);</div>
+<div class="line"><span class="lineno">  481</span>    }</div>
+<div class="line"><span class="lineno">  482</span> </div>
+<div class="line"><span class="lineno">  483</span>  <span class="comment">// Now loop through again, this time descending into nodes</span></div>
+<div class="line"><span class="lineno">  484</span>  <span class="keywordtype">int</span> c = 0;</div>
+<div class="line"><span class="lineno">  485</span>  <span class="keywordflow">for</span> (q = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;right; q != <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>; q = q-&gt;right)</div>
+<div class="line"><span class="lineno">  486</span>    <span class="keywordflow">if</span> (q-&gt;tag == <a class="code hl_enumvalue" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a67ca4f8d620b7d16c521b4165fde4cd9.html#a67ca4f8d620b7d16c521b4165fde4cd9ac9e436674e92ac5fa3583b943d6671cd">mi_node::node</a>)</div>
+<div class="line"><span class="lineno">  487</span>      c += <a class="code hl_function" href="../../d6/d10/class_f4_monomial_lookup_table_t_a1da62cd6b9fb90e9aeec8220ffefdcd0.html#a1da62cd6b9fb90e9aeec8220ffefdcd0">debug_check</a>(q-&gt;down(), q);</div>
+<div class="line"><span class="lineno">  488</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  489</span>      c++;</div>
+<div class="line"><span class="lineno">  490</span>  <span class="keywordflow">return</span> c;</div>
+<div class="line"><span class="lineno">  491</span>}</div>
+<div class="ttc" id="aclass_f4_monomial_lookup_table_t_a1da62cd6b9fb90e9aeec8220ffefdcd0_html_a1da62cd6b9fb90e9aeec8220ffefdcd0"><div class="ttname"><a href="../../d6/d10/class_f4_monomial_lookup_table_t_a1da62cd6b9fb90e9aeec8220ffefdcd0.html#a1da62cd6b9fb90e9aeec8220ffefdcd0">F4MonomialLookupTableT::debug_check</a></div><div class="ttdeci">void debug_check() const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d46/f4-monlookup_8cpp_source.html#l00494">f4-monlookup.cpp:494</a></div></div>
 <div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
-<div class="ttc" id="astruct_f4_monomial_lookup_table_t_1_1mi__node_a67ca4f8d620b7d16c521b4165fde4cd9_html_a67ca4f8d620b7d16c521b4165fde4cd9ac9e436674e92ac5fa3583b943d6671cd"><div class="ttname"><a href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a67ca4f8d620b7d16c521b4165fde4cd9.html#a67ca4f8d620b7d16c521b4165fde4cd9ac9e436674e92ac5fa3583b943d6671cd">F4MonomialLookupTableT::mi_node::node</a></div><div class="ttdeci">@ node</div><div class="ttdef"><b>Definition</b> <a href="../../db/da3/f4-monlookup_8hpp_source.html#l00024">f4-monlookup.hpp:24</a></div></div>
+<div class="ttc" id="astruct_f4_monomial_lookup_table_t_1_1mi__node_a67ca4f8d620b7d16c521b4165fde4cd9_html_a67ca4f8d620b7d16c521b4165fde4cd9ac9e436674e92ac5fa3583b943d6671cd"><div class="ttname"><a href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a67ca4f8d620b7d16c521b4165fde4cd9.html#a67ca4f8d620b7d16c521b4165fde4cd9ac9e436674e92ac5fa3583b943d6671cd">F4MonomialLookupTableT::mi_node::node</a></div><div class="ttdeci">@ node</div><div class="ttdef"><b>Definition</b> <a href="../../db/da3/f4-monlookup_8hpp_source.html#l00022">f4-monlookup.hpp:22</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a61a52b243bb68ec213be76a69254a672.html#a61a52b243bb68ec213be76a69254a672">F4MonomialLookupTableT&lt; Key &gt;::mi_node::down</a>, <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_aacacf9e1032fe9416ce399e207cfe3bd.html#aacacf9e1032fe9416ce399e207cfe3bd">F4MonomialLookupTableT&lt; Key &gt;::mi_node::exp</a>, <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a02aaf919c0635f586acf6a31633c3d92.html#a02aaf919c0635f586acf6a31633c3d92">F4MonomialLookupTableT&lt; Key &gt;::mi_node::header</a>, <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_ab27237a816db25f23a8174edf8b26a59.html#ab27237a816db25f23a8174edf8b26a59">F4MonomialLookupTableT&lt; Key &gt;::mi_node::left</a>, <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_aa09dccc82e4d2bbb72badc416dfca882.html#aa09dccc82e4d2bbb72badc416dfca882">F4MonomialLookupTableT&lt; Key &gt;::mi_node::right</a>, <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a679b9f47911a8c8bc3e2f4a8514e80f1.html#a679b9f47911a8c8bc3e2f4a8514e80f1">F4MonomialLookupTableT&lt; Key &gt;::mi_node::tag</a>, and <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_acc48bfbd42687e45c28ee57b98289a24.html#acc48bfbd42687e45c28ee57b98289a24">F4MonomialLookupTableT&lt; Key &gt;::mi_node::var</a>.</p>
 
@@ -175,7 +175,7 @@ template&lt;typename Key &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d10/class_f4_monomial_lookup_table_t.html">F4MonomialLookupTableT</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:39 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -131,21 +131,16 @@ template&lt;typename RT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html#l00071">71</a> of file <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html">mat-elem-ops.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>  {</div>
-<div class="line"><span class="lineno">   74</span>    assert(i &lt; mat.numRows());</div>
-<div class="line"><span class="lineno">   75</span>    assert(j &lt; mat.numRows());</div>
-<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">if</span> (i == j) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   77</span> </div>
-<div class="line"><span class="lineno">   78</span>    <span class="keyword">auto</span> ii = mat.rowBegin(i);</div>
-<div class="line"><span class="lineno">   79</span>    <span class="keyword">auto</span> jj = mat.rowBegin(j);</div>
-<div class="line"><span class="lineno">   80</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../d0/d82/ringelem_8cpp_a9e12da0d68ca4715109c3198cbe62a66.html#a9e12da0d68ca4715109c3198cbe62a66">end</a> = mat.rowEnd(i);</div>
-<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">for</span> (; ii != <a class="code hl_function" href="../../d0/d82/ringelem_8cpp_a9e12da0d68ca4715109c3198cbe62a66.html#a9e12da0d68ca4715109c3198cbe62a66">end</a>; ++ii, ++jj) mat.ring().swap(*ii, *jj);</div>
-<div class="line"><span class="lineno">   82</span>  }</div>
-<div class="ttc" id="aringelem_8cpp_a9e12da0d68ca4715109c3198cbe62a66_html_a9e12da0d68ca4715109c3198cbe62a66"><div class="ttname"><a href="../../d0/d82/ringelem_8cpp_a9e12da0d68ca4715109c3198cbe62a66.html#a9e12da0d68ca4715109c3198cbe62a66">end</a></div><div class="ttdeci">TermIterator&lt; Nterm &gt; end(Nterm *)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d82/ringelem_8cpp_source.html#l00005">ringelem.cpp:5</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html#l00070">70</a> of file <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html">mat-elem-ops.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>  {</div>
+<div class="line"><span class="lineno">   73</span>    assert(i &lt; mat.numRows());</div>
+<div class="line"><span class="lineno">   74</span>    assert(j &lt; mat.numRows());</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (i == j) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> c = 0; c &lt; mat.numColumns(); ++c)</div>
+<div class="line"><span class="lineno">   78</span>      mat.ring().swap(mat.entry(i,c), mat.entry(j,c));</div>
+<div class="line"><span class="lineno">   79</span>  }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d0/d82/ringelem_8cpp_a9e12da0d68ca4715109c3198cbe62a66.html#a9e12da0d68ca4715109c3198cbe62a66">end()</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -154,7 +149,7 @@ template&lt;typename RT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4.html">MatElementaryOps&lt; DMat&lt; RT &gt; &gt;</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

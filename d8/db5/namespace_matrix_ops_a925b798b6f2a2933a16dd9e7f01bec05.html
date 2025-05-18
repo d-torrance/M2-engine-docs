@@ -129,15 +129,15 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a925b798b6
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00737">737</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  738</span>{</div>
-<div class="line"><span class="lineno">  739</span>  M2::ARingZZ::Element den(A.<a class="code hl_function" href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a68c3b8749decf647950a172d5c589b52.html#a68c3b8749decf647950a172d5c589b52">ring</a>());</div>
-<div class="line"><span class="lineno">  740</span>  <span class="keywordtype">bool</span> result = fmpz_mat_solve(X.<a class="code hl_function" href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ae212cc609e90d0e5a97fcd73a2c59649.html#ae212cc609e90d0e5a97fcd73a2c59649">fmpz_mat</a>(), &amp;den.value(), B.<a class="code hl_function" href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ae212cc609e90d0e5a97fcd73a2c59649.html#ae212cc609e90d0e5a97fcd73a2c59649">fmpz_mat</a>(), A.<a class="code hl_function" href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ae212cc609e90d0e5a97fcd73a2c59649.html#ae212cc609e90d0e5a97fcd73a2c59649">fmpz_mat</a>());</div>
-<div class="line"><span class="lineno">  741</span>  <span class="keywordflow">if</span> (!fmpz_is_pm1(&amp;den.value())) result = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  742</span>  <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  743</span>}</div>
-<div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a68c3b8749decf647950a172d5c589b52_html_a68c3b8749decf647950a172d5c589b52"><div class="ttname"><a href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a68c3b8749decf647950a172d5c589b52.html#a68c3b8749decf647950a172d5c589b52">DMat&lt; M2::ARingZZ &gt;::ring</a></div><div class="ttdeci">const ACoeffRing &amp; ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/d56/dmat-zz-flint_8hpp_source.html#l00082">dmat-zz-flint.hpp:82</a></div></div>
-<div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ae212cc609e90d0e5a97fcd73a2c59649_html_ae212cc609e90d0e5a97fcd73a2c59649"><div class="ttname"><a href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ae212cc609e90d0e5a97fcd73a2c59649.html#ae212cc609e90d0e5a97fcd73a2c59649">DMat&lt; M2::ARingZZ &gt;::fmpz_mat</a></div><div class="ttdeci">const fmpz_mat_t &amp; fmpz_mat() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/d56/dmat-zz-flint_8hpp_source.html#l00108">dmat-zz-flint.hpp:108</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00713">713</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  714</span>{</div>
+<div class="line"><span class="lineno">  715</span>  M2::ARingZZ::Element den(A.<a class="code hl_function" href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a68c3b8749decf647950a172d5c589b52.html#a68c3b8749decf647950a172d5c589b52">ring</a>());</div>
+<div class="line"><span class="lineno">  716</span>  <span class="keywordtype">bool</span> result = fmpz_mat_solve(X.<a class="code hl_function" href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ae212cc609e90d0e5a97fcd73a2c59649.html#ae212cc609e90d0e5a97fcd73a2c59649">fmpz_mat</a>(), &amp;den.value(), B.<a class="code hl_function" href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ae212cc609e90d0e5a97fcd73a2c59649.html#ae212cc609e90d0e5a97fcd73a2c59649">fmpz_mat</a>(), A.<a class="code hl_function" href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ae212cc609e90d0e5a97fcd73a2c59649.html#ae212cc609e90d0e5a97fcd73a2c59649">fmpz_mat</a>());</div>
+<div class="line"><span class="lineno">  717</span>  <span class="keywordflow">if</span> (!fmpz_is_pm1(&amp;den.value())) result = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  718</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  719</span>}</div>
+<div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a68c3b8749decf647950a172d5c589b52_html_a68c3b8749decf647950a172d5c589b52"><div class="ttname"><a href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a68c3b8749decf647950a172d5c589b52.html#a68c3b8749decf647950a172d5c589b52">DMat&lt; M2::ARingZZ &gt;::ring</a></div><div class="ttdeci">const ACoeffRing &amp; ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/d56/dmat-zz-flint_8hpp_source.html#l00059">dmat-zz-flint.hpp:59</a></div></div>
+<div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ae212cc609e90d0e5a97fcd73a2c59649_html_ae212cc609e90d0e5a97fcd73a2c59649"><div class="ttname"><a href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ae212cc609e90d0e5a97fcd73a2c59649.html#ae212cc609e90d0e5a97fcd73a2c59649">DMat&lt; M2::ARingZZ &gt;::fmpz_mat</a></div><div class="ttdeci">const fmpz_mat_t &amp; fmpz_mat() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/d56/dmat-zz-flint_8hpp_source.html#l00090">dmat-zz-flint.hpp:90</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ae212cc609e90d0e5a97fcd73a2c59649.html#ae212cc609e90d0e5a97fcd73a2c59649">DMat&lt; M2::ARingZZ &gt;::fmpz_mat()</a>, and <a class="el" href="../../d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a68c3b8749decf647950a172d5c589b52.html#a68c3b8749decf647950a172d5c589b52">DMat&lt; M2::ARingZZ &gt;::ring()</a>.</p>
 
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a925b798b6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:42 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

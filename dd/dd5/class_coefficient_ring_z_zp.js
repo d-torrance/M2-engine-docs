@@ -22,6 +22,7 @@ var class_coefficient_ring_z_zp =
     [ "negate", "dd/dd5/class_coefficient_ring_z_zp_a2c45e4a06c9f47d76bc021bb4ee8ad97.html#a2c45e4a06c9f47d76bc021bb4ee8ad97", null ],
     [ "set", "dd/dd5/class_coefficient_ring_z_zp_a4b7c254a37d8d300e59335f2d1b6e18c.html#a4b7c254a37d8d300e59335f2d1b6e18c", null ],
     [ "set_from_long", "dd/dd5/class_coefficient_ring_z_zp_a29c526e016411e00e0d35c8d19b35dbd.html#a29c526e016411e00e0d35c8d19b35dbd", null ],
+    [ "set_from_mpz", "dd/dd5/class_coefficient_ring_z_zp_a89455bf7d389a35e3eefcd1fa0c1b7ba.html#a89455bf7d389a35e3eefcd1fa0c1b7ba", null ],
     [ "set_zero", "dd/dd5/class_coefficient_ring_z_zp_a4682a4e2810bd68ed80b1937c6f13c9c.html#a4682a4e2810bd68ed80b1937c6f13c9c", null ],
     [ "subtract", "dd/dd5/class_coefficient_ring_z_zp_a0f7e9a37f82710a1ef47d1c569a277fd.html#a0f7e9a37f82710a1ef47d1c569a277fd", null ],
     [ "subtract_multiple", "dd/dd5/class_coefficient_ring_z_zp_a94835b5a6070fb6298f4042807359ba7.html#a94835b5a6070fb6298f4042807359ba7", null ],

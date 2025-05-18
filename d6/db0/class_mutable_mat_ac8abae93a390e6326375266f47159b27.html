@@ -127,18 +127,18 @@ template&lt;typename Mat &gt; </div>
 
 <p>Implements <a class="el" href="../../dc/db8/class_mutable_matrix_ab0da01215a72525ad5f6e60761d83a21.html#ab0da01215a72525ad5f6e60761d83a21">MutableMatrix</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00454">454</a> of file <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_source.html">mutablemat-defs.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  456</span>  {</div>
-<div class="line"><span class="lineno">  457</span>    <span class="keywordflow">if</span> (i &gt; <a class="code hl_function" href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">n_cols</a>())</div>
-<div class="line"><span class="lineno">  458</span>      {</div>
-<div class="line"><span class="lineno">  459</span>        <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;cannot insert %l columns before column %ln&quot;</span>, n_to_add, i);</div>
-<div class="line"><span class="lineno">  460</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  461</span>      }</div>
-<div class="line"><span class="lineno">  462</span>    MatOps::insert_columns(<a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>, i, n_to_add);</div>
-<div class="line"><span class="lineno">  463</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  464</span>  }</div>
-<div class="ttc" id="aclass_mutable_mat_a852442a68fd752a8e97f8723c65cfe96_html_a852442a68fd752a8e97f8723c65cfe96"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat::mat</a></div><div class="ttdeci">Mat mat</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00183">mutablemat-defs.hpp:183</a></div></div>
-<div class="ttc" id="aclass_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004_html_a8d9f7c1f50394782209a1f9a8a073004"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">MutableMat::n_cols</a></div><div class="ttdeci">virtual size_t n_cols() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00229">mutablemat-defs.hpp:229</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00452">452</a> of file <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_source.html">mutablemat-defs.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  454</span>  {</div>
+<div class="line"><span class="lineno">  455</span>    <span class="keywordflow">if</span> (i &gt; <a class="code hl_function" href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">n_cols</a>())</div>
+<div class="line"><span class="lineno">  456</span>      {</div>
+<div class="line"><span class="lineno">  457</span>        <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;cannot insert %l columns before column %ln&quot;</span>, n_to_add, i);</div>
+<div class="line"><span class="lineno">  458</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  459</span>      }</div>
+<div class="line"><span class="lineno">  460</span>    MatOps::insert_columns(<a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>, i, n_to_add);</div>
+<div class="line"><span class="lineno">  461</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  462</span>  }</div>
+<div class="ttc" id="aclass_mutable_mat_a852442a68fd752a8e97f8723c65cfe96_html_a852442a68fd752a8e97f8723c65cfe96"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat::mat</a></div><div class="ttdeci">Mat mat</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00181">mutablemat-defs.hpp:181</a></div></div>
+<div class="ttc" id="aclass_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004_html_a8d9f7c1f50394782209a1f9a8a073004"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">MutableMat::n_cols</a></div><div class="ttdeci">virtual size_t n_cols() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00227">mutablemat-defs.hpp:227</a></div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR()</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat&lt; Mat &gt;::mat</a>, and <a class="el" href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">MutableMat&lt; Mat &gt;::n_cols()</a>.</p>
@@ -151,7 +151,7 @@ template&lt;typename Mat &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/db0/class_mutable_mat.html">MutableMat</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

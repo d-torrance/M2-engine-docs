@@ -142,21 +142,24 @@ $(document).ready(function(){initNavTree('de/dfb/classhilb__comp_aea718756e9b698
 <div class="line"><span class="lineno">  720</span>          fprintf(</div>
 <div class="line"><span class="lineno">  721</span>              stderr,</div>
 <div class="line"><span class="lineno">  722</span>              <span class="stringliteral">&quot;internal error: incorrect Hilbert function given, aborting\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  723</span>          abort();</div>
-<div class="line"><span class="lineno">  724</span>        }</div>
-<div class="line"><span class="lineno">  725</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (exp[0] == deg)</div>
-<div class="line"><span class="lineno">  726</span>        {</div>
-<div class="line"><span class="lineno">  727</span>          std::pair&lt;bool, long&gt; res =</div>
-<div class="line"><span class="lineno">  728</span>              P-&gt;<a class="code hl_function" href="../../d5/d58/class_polynomial_ring_a2df3a41ac565c2c2e2662b903dfd29c4.html#a2df3a41ac565c2c2e2662b903dfd29c4">getCoefficientRing</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a3d64baae17fd73c1e9b0ed62898e558f.html#a3d64baae17fd73c1e9b0ed62898e558f">coerceToLongInteger</a>(f.coeff);</div>
-<div class="line"><span class="lineno">  729</span>          assert(res.first &amp;&amp;</div>
-<div class="line"><span class="lineno">  730</span>                 std::abs(res.second) &lt; std::numeric_limits&lt;int&gt;::max());</div>
-<div class="line"><span class="lineno">  731</span>          <span class="keywordtype">int</span> n = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(res.second);</div>
-<div class="line"><span class="lineno">  732</span>          result += n;</div>
-<div class="line"><span class="lineno">  733</span>        }</div>
-<div class="line"><span class="lineno">  734</span>    }</div>
-<div class="line"><span class="lineno">  735</span>  <a class="code hl_function" href="../../d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(exp);</div>
-<div class="line"><span class="lineno">  736</span>  <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  737</span>}</div>
+<div class="line"><span class="lineno">  723</span>          fprintf(</div>
+<div class="line"><span class="lineno">  724</span>              stderr,</div>
+<div class="line"><span class="lineno">  725</span>              <span class="stringliteral">&quot;exp[0]: %d   deg: %d\n&quot;</span>, exp[0], deg);    </div>
+<div class="line"><span class="lineno">  726</span>          abort();</div>
+<div class="line"><span class="lineno">  727</span>        }</div>
+<div class="line"><span class="lineno">  728</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (exp[0] == deg)</div>
+<div class="line"><span class="lineno">  729</span>        {</div>
+<div class="line"><span class="lineno">  730</span>          std::pair&lt;bool, long&gt; res =</div>
+<div class="line"><span class="lineno">  731</span>              P-&gt;<a class="code hl_function" href="../../d5/d58/class_polynomial_ring_a2df3a41ac565c2c2e2662b903dfd29c4.html#a2df3a41ac565c2c2e2662b903dfd29c4">getCoefficientRing</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a3d64baae17fd73c1e9b0ed62898e558f.html#a3d64baae17fd73c1e9b0ed62898e558f">coerceToLongInteger</a>(f.coeff);</div>
+<div class="line"><span class="lineno">  732</span>          assert(res.first &amp;&amp;</div>
+<div class="line"><span class="lineno">  733</span>                 std::abs(res.second) &lt; std::numeric_limits&lt;int&gt;::max());</div>
+<div class="line"><span class="lineno">  734</span>          <span class="keywordtype">int</span> n = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(res.second);</div>
+<div class="line"><span class="lineno">  735</span>          result += n;</div>
+<div class="line"><span class="lineno">  736</span>        }</div>
+<div class="line"><span class="lineno">  737</span>    }</div>
+<div class="line"><span class="lineno">  738</span>  <a class="code hl_function" href="../../d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(exp);</div>
+<div class="line"><span class="lineno">  739</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  740</span>}</div>
 <div class="ttc" id="a_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12_html_aec09fab2f897ff3d8346961f38331d12"><div class="ttname"><a href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a></div><div class="ttdeci">exponents::Exponents exponents_t</div><div class="ttdef"><b>Definition</b> <a href="../../da/db0/_exponent_vector_8hpp_source.html#l00276">ExponentVector.hpp:276</a></div></div>
 <div class="ttc" id="a_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba_html_a1c6306973edadb50294a656e3927fcba"><div class="ttname"><a href="../../d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a></div><div class="ttdeci">void freemem(void *s)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/df2/_m2mem-replacement_8c_source.html#l00063">M2mem-replacement.c:63</a></div></div>
 <div class="ttc" id="aclass_monoid_a134514e900a32c809126bf4dd6c891c4_html_a134514e900a32c809126bf4dd6c891c4"><div class="ttname"><a href="../../d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4">Monoid::to_expvector</a></div><div class="ttdeci">void to_expvector(const_monomial m, exponents_t result_exp) const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d5c/monoid_8cpp_source.html#l00746">monoid.cpp:746</a></div></div>
@@ -184,7 +187,7 @@ $(document).ready(function(){initNavTree('de/dfb/classhilb__comp_aea718756e9b698
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dfb/classhilb__comp.html">hilb_comp</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,6 @@
 var class_matrix_stream =
 [
-    [ "Coefficient", "d6/d02/class_matrix_stream_a3dae1497de43f1863be424fe98d991df.html#a3dae1497de43f1863be424fe98d991df", null ],
+    [ "Coefficient", "d6/d02/class_matrix_stream_a4ed406748875a0dbfe8f1af3d9c3ef67.html#a4ed406748875a0dbfe8f1af3d9c3ef67", null ],
     [ "Component", "d6/d02/class_matrix_stream_a62d184ff52e9a218be9c991c53fe150e.html#a62d184ff52e9a218be9c991c53fe150e", null ],
     [ "Exponent", "d6/d02/class_matrix_stream_a2b4769333afe9a39264e1678aeb4cff1.html#a2b4769333afe9a39264e1678aeb4cff1", null ],
     [ "VarIndex", "d6/d02/class_matrix_stream_a625368e2753faefd09ee58481285b53b.html#a625368e2753faefd09ee58481285b53b", null ],

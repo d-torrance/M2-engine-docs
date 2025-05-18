@@ -108,57 +108,57 @@ template&lt;class RingType &gt; </div>
 </div><div class="memdoc">
 <p>Output: X, a matrix, columns form a basis of Ax=0 returns dim of nullspace </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/da6/dmat-lu_8hpp_source.html#l00544">544</a> of file <a class="el" href="../../d7/da6/dmat-lu_8hpp_source.html">dmat-lu.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  545</span>{</div>
-<div class="line"><span class="lineno">  546</span>  <span class="keyword">const</span> <a class="code hl_typedef" href="../../d8/df6/class_d_mat_lin_alg_a698cb1f34a995798d48c57de5eb42160.html#a698cb1f34a995798d48c57de5eb42160">Mat</a>&amp; <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a> = <a class="code hl_variable" href="../../d8/df6/class_d_mat_lin_alg_a23dd6a3496d57f9fef54b4432b297dd1.html#a23dd6a3496d57f9fef54b4432b297dd1">mLUObject</a>.<a class="code hl_function" href="../../df/d1c/class_d_mat_l_uin_place_a1108ce384e2f788405d754ad7189506e.html#a1108ce384e2f788405d754ad7189506e">LUinPlace</a>();</div>
-<div class="line"><span class="lineno">  547</span>  <span class="keyword">const</span> std::vector&lt;size_t&gt;&amp; pivotColumns = <a class="code hl_variable" href="../../d8/df6/class_d_mat_lin_alg_a23dd6a3496d57f9fef54b4432b297dd1.html#a23dd6a3496d57f9fef54b4432b297dd1">mLUObject</a>.<a class="code hl_function" href="../../df/d1c/class_d_mat_l_uin_place_ae704fca6d777b82b03b6a7419fd5298c.html#ae704fca6d777b82b03b6a7419fd5298c">pivotColumns</a>();</div>
-<div class="line"><span class="lineno">  548</span> </div>
-<div class="line"><span class="lineno">  549</span>  <span class="keyword">typename</span> RingType::Element tmp(<a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>()), tmp2(<a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>());</div>
-<div class="line"><span class="lineno">  550</span> </div>
-<div class="line"><span class="lineno">  551</span>  <span class="comment">// First, let&#39;s set X to be the correct size:</span></div>
-<div class="line"><span class="lineno">  552</span>  X.resize(<a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns(), <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns() - pivotColumns.size());</div>
-<div class="line"><span class="lineno">  553</span> </div>
-<div class="line"><span class="lineno">  554</span>  <span class="keywordtype">size_t</span> col = 0;</div>
-<div class="line"><span class="lineno">  555</span>  <span class="keywordtype">size_t</span> nextpivotidx = 0;</div>
-<div class="line"><span class="lineno">  556</span>  <span class="keywordtype">size_t</span> nextpivotcol =</div>
-<div class="line"><span class="lineno">  557</span>      (pivotColumns.size() &gt; 0 ? pivotColumns[0] : <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns());</div>
-<div class="line"><span class="lineno">  558</span>  <span class="keywordtype">size_t</span> colX = 0;</div>
-<div class="line"><span class="lineno">  559</span>  <span class="keywordflow">while</span> (colX &lt; X.numColumns())</div>
-<div class="line"><span class="lineno">  560</span>    {</div>
-<div class="line"><span class="lineno">  561</span>      <span class="keywordflow">if</span> (col == nextpivotcol)</div>
-<div class="line"><span class="lineno">  562</span>        {</div>
-<div class="line"><span class="lineno">  563</span>          col++;</div>
-<div class="line"><span class="lineno">  564</span>          nextpivotidx++;</div>
-<div class="line"><span class="lineno">  565</span>          nextpivotcol =</div>
-<div class="line"><span class="lineno">  566</span>              (nextpivotidx &lt; pivotColumns.size() ? pivotColumns[nextpivotidx]</div>
-<div class="line"><span class="lineno">  567</span>                                                  : <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns());</div>
-<div class="line"><span class="lineno">  568</span>          <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  569</span>        }</div>
-<div class="line"><span class="lineno">  570</span>      <span class="comment">// At this point, we are ready to create a column of X.</span></div>
-<div class="line"><span class="lineno">  571</span>      <a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>().set_from_long(X.entry(col, colX), -1);</div>
-<div class="line"><span class="lineno">  572</span>      <span class="comment">// Now we loop through and set the elements in the rows of X = pivot</span></div>
-<div class="line"><span class="lineno">  573</span>      <span class="comment">// columns.</span></div>
-<div class="line"><span class="lineno">  574</span>      <span class="keywordflow">for</span> (<span class="keywordtype">long</span> <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = nextpivotidx - 1; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> &gt;= 0; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>--)</div>
-<div class="line"><span class="lineno">  575</span>        {</div>
-<div class="line"><span class="lineno">  576</span>          <span class="comment">// set X.entry(pivotColumns[p], colX)</span></div>
-<div class="line"><span class="lineno">  577</span>          <a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>().set(tmp, <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.entry(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, col));</div>
-<div class="line"><span class="lineno">  578</span>          <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = nextpivotidx - 1; i &gt;= <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> + 1; i--)</div>
-<div class="line"><span class="lineno">  579</span>            {</div>
-<div class="line"><span class="lineno">  580</span>              <a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>().mult(tmp2,</div>
-<div class="line"><span class="lineno">  581</span>                          <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.entry(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, pivotColumns[i]),</div>
-<div class="line"><span class="lineno">  582</span>                          X.entry(pivotColumns[i], colX));</div>
-<div class="line"><span class="lineno">  583</span>              <a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>().subtract(tmp, tmp, tmp2);</div>
-<div class="line"><span class="lineno">  584</span>            }</div>
-<div class="line"><span class="lineno">  585</span>          <a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>().divide(tmp, tmp, <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.entry(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, pivotColumns[<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>]));</div>
-<div class="line"><span class="lineno">  586</span>          <a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>().set(X.entry(pivotColumns[<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>], colX), tmp);</div>
-<div class="line"><span class="lineno">  587</span>        }</div>
-<div class="line"><span class="lineno">  588</span>      colX++;</div>
-<div class="line"><span class="lineno">  589</span>      col++;</div>
-<div class="line"><span class="lineno">  590</span>    }</div>
-<div class="line"><span class="lineno">  591</span>  <span class="keywordflow">return</span> X.numColumns();</div>
-<div class="line"><span class="lineno">  592</span>}</div>
-<div class="ttc" id="aclass_d_mat_l_uin_place_a1108ce384e2f788405d754ad7189506e_html_a1108ce384e2f788405d754ad7189506e"><div class="ttname"><a href="../../df/d1c/class_d_mat_l_uin_place_a1108ce384e2f788405d754ad7189506e.html#a1108ce384e2f788405d754ad7189506e">DMatLUinPlace::LUinPlace</a></div><div class="ttdeci">const Mat &amp; LUinPlace()</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7d/dmat-lu-inplace_8hpp_source.html#l00057">dmat-lu-inplace.hpp:57</a></div></div>
-<div class="ttc" id="aclass_d_mat_l_uin_place_ae704fca6d777b82b03b6a7419fd5298c_html_ae704fca6d777b82b03b6a7419fd5298c"><div class="ttname"><a href="../../df/d1c/class_d_mat_l_uin_place_ae704fca6d777b82b03b6a7419fd5298c.html#ae704fca6d777b82b03b6a7419fd5298c">DMatLUinPlace::pivotColumns</a></div><div class="ttdeci">const std::vector&lt; size_t &gt; &amp; pivotColumns()</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7d/dmat-lu-inplace_8hpp_source.html#l00067">dmat-lu-inplace.hpp:67</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d7/da6/dmat-lu_8hpp_source.html#l00545">545</a> of file <a class="el" href="../../d7/da6/dmat-lu_8hpp_source.html">dmat-lu.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  546</span>{</div>
+<div class="line"><span class="lineno">  547</span>  <span class="keyword">const</span> <a class="code hl_typedef" href="../../d8/df6/class_d_mat_lin_alg_a698cb1f34a995798d48c57de5eb42160.html#a698cb1f34a995798d48c57de5eb42160">Mat</a>&amp; <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a> = <a class="code hl_variable" href="../../d8/df6/class_d_mat_lin_alg_a23dd6a3496d57f9fef54b4432b297dd1.html#a23dd6a3496d57f9fef54b4432b297dd1">mLUObject</a>.<a class="code hl_function" href="../../df/d1c/class_d_mat_l_uin_place_a1108ce384e2f788405d754ad7189506e.html#a1108ce384e2f788405d754ad7189506e">LUinPlace</a>();</div>
+<div class="line"><span class="lineno">  548</span>  <span class="keyword">const</span> std::vector&lt;size_t&gt;&amp; pivotColumns = <a class="code hl_variable" href="../../d8/df6/class_d_mat_lin_alg_a23dd6a3496d57f9fef54b4432b297dd1.html#a23dd6a3496d57f9fef54b4432b297dd1">mLUObject</a>.<a class="code hl_function" href="../../df/d1c/class_d_mat_l_uin_place_ae704fca6d777b82b03b6a7419fd5298c.html#ae704fca6d777b82b03b6a7419fd5298c">pivotColumns</a>();</div>
+<div class="line"><span class="lineno">  549</span> </div>
+<div class="line"><span class="lineno">  550</span>  <span class="keyword">typename</span> RingType::Element tmp(<a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>()), tmp2(<a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>());</div>
+<div class="line"><span class="lineno">  551</span> </div>
+<div class="line"><span class="lineno">  552</span>  <span class="comment">// First, let&#39;s set X to be the correct size:</span></div>
+<div class="line"><span class="lineno">  553</span>  X.resize(<a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns(), <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns() - pivotColumns.size());</div>
+<div class="line"><span class="lineno">  554</span> </div>
+<div class="line"><span class="lineno">  555</span>  <span class="keywordtype">size_t</span> col = 0;</div>
+<div class="line"><span class="lineno">  556</span>  <span class="keywordtype">size_t</span> nextpivotidx = 0;</div>
+<div class="line"><span class="lineno">  557</span>  <span class="keywordtype">size_t</span> nextpivotcol =</div>
+<div class="line"><span class="lineno">  558</span>      (pivotColumns.size() &gt; 0 ? pivotColumns[0] : <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns());</div>
+<div class="line"><span class="lineno">  559</span>  <span class="keywordtype">size_t</span> colX = 0;</div>
+<div class="line"><span class="lineno">  560</span>  <span class="keywordflow">while</span> (colX &lt; X.numColumns())</div>
+<div class="line"><span class="lineno">  561</span>    {</div>
+<div class="line"><span class="lineno">  562</span>      <span class="keywordflow">if</span> (col == nextpivotcol)</div>
+<div class="line"><span class="lineno">  563</span>        {</div>
+<div class="line"><span class="lineno">  564</span>          col++;</div>
+<div class="line"><span class="lineno">  565</span>          nextpivotidx++;</div>
+<div class="line"><span class="lineno">  566</span>          nextpivotcol =</div>
+<div class="line"><span class="lineno">  567</span>              (nextpivotidx &lt; pivotColumns.size() ? pivotColumns[nextpivotidx]</div>
+<div class="line"><span class="lineno">  568</span>                                                  : <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns());</div>
+<div class="line"><span class="lineno">  569</span>          <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  570</span>        }</div>
+<div class="line"><span class="lineno">  571</span>      <span class="comment">// At this point, we are ready to create a column of X.</span></div>
+<div class="line"><span class="lineno">  572</span>      <a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>().set_from_long(X.entry(col, colX), -1);</div>
+<div class="line"><span class="lineno">  573</span>      <span class="comment">// Now we loop through and set the elements in the rows of X = pivot</span></div>
+<div class="line"><span class="lineno">  574</span>      <span class="comment">// columns.</span></div>
+<div class="line"><span class="lineno">  575</span>      <span class="keywordflow">for</span> (<span class="keywordtype">long</span> <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = nextpivotidx - 1; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> &gt;= 0; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>--)</div>
+<div class="line"><span class="lineno">  576</span>        {</div>
+<div class="line"><span class="lineno">  577</span>          <span class="comment">// set X.entry(pivotColumns[p], colX)</span></div>
+<div class="line"><span class="lineno">  578</span>          <a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>().set(tmp, <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.entry(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, col));</div>
+<div class="line"><span class="lineno">  579</span>          <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = nextpivotidx - 1; i &gt;= <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> + 1; i--)</div>
+<div class="line"><span class="lineno">  580</span>            {</div>
+<div class="line"><span class="lineno">  581</span>              <a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>().mult(tmp2,</div>
+<div class="line"><span class="lineno">  582</span>                          <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.entry(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, pivotColumns[i]),</div>
+<div class="line"><span class="lineno">  583</span>                          X.entry(pivotColumns[i], colX));</div>
+<div class="line"><span class="lineno">  584</span>              <a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>().subtract(tmp, tmp, tmp2);</div>
+<div class="line"><span class="lineno">  585</span>            }</div>
+<div class="line"><span class="lineno">  586</span>          <a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>().divide(tmp, tmp, <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.entry(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, pivotColumns[<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>]));</div>
+<div class="line"><span class="lineno">  587</span>          <a class="code hl_function" href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">ring</a>().set(X.entry(pivotColumns[<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>], colX), tmp);</div>
+<div class="line"><span class="lineno">  588</span>        }</div>
+<div class="line"><span class="lineno">  589</span>      colX++;</div>
+<div class="line"><span class="lineno">  590</span>      col++;</div>
+<div class="line"><span class="lineno">  591</span>    }</div>
+<div class="line"><span class="lineno">  592</span>  <span class="keywordflow">return</span> X.numColumns();</div>
+<div class="line"><span class="lineno">  593</span>}</div>
+<div class="ttc" id="aclass_d_mat_l_uin_place_a1108ce384e2f788405d754ad7189506e_html_a1108ce384e2f788405d754ad7189506e"><div class="ttname"><a href="../../df/d1c/class_d_mat_l_uin_place_a1108ce384e2f788405d754ad7189506e.html#a1108ce384e2f788405d754ad7189506e">DMatLUinPlace::LUinPlace</a></div><div class="ttdeci">const Mat &amp; LUinPlace()</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7d/dmat-lu-inplace_8hpp_source.html#l00062">dmat-lu-inplace.hpp:62</a></div></div>
+<div class="ttc" id="aclass_d_mat_l_uin_place_ae704fca6d777b82b03b6a7419fd5298c_html_ae704fca6d777b82b03b6a7419fd5298c"><div class="ttname"><a href="../../df/d1c/class_d_mat_l_uin_place_ae704fca6d777b82b03b6a7419fd5298c.html#ae704fca6d777b82b03b6a7419fd5298c">DMatLUinPlace::pivotColumns</a></div><div class="ttdeci">const std::vector&lt; size_t &gt; &amp; pivotColumns()</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7d/dmat-lu-inplace_8hpp_source.html#l00072">dmat-lu-inplace.hpp:72</a></div></div>
 <div class="ttc" id="aclass_d_mat_lin_alg_a23dd6a3496d57f9fef54b4432b297dd1_html_a23dd6a3496d57f9fef54b4432b297dd1"><div class="ttname"><a href="../../d8/df6/class_d_mat_lin_alg_a23dd6a3496d57f9fef54b4432b297dd1.html#a23dd6a3496d57f9fef54b4432b297dd1">DMatLinAlg::mLUObject</a></div><div class="ttdeci">DMatLUinPlace&lt; RingType &gt; mLUObject</div><div class="ttdef"><b>Definition</b> <a href="../../d7/da6/dmat-lu_8hpp_source.html#l00029">dmat-lu.hpp:29</a></div></div>
 <div class="ttc" id="aclass_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81_html_a5024963fb8ae218765d7a828db1b2e81"><div class="ttname"><a href="../../d8/df6/class_d_mat_lin_alg_a5024963fb8ae218765d7a828db1b2e81.html#a5024963fb8ae218765d7a828db1b2e81">DMatLinAlg::ring</a></div><div class="ttdeci">const RingType &amp; ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../d7/da6/dmat-lu_8hpp_source.html#l00072">dmat-lu.hpp:72</a></div></div>
 <div class="ttc" id="aclass_d_mat_lin_alg_a698cb1f34a995798d48c57de5eb42160_html_a698cb1f34a995798d48c57de5eb42160"><div class="ttname"><a href="../../d8/df6/class_d_mat_lin_alg_a698cb1f34a995798d48c57de5eb42160.html#a698cb1f34a995798d48c57de5eb42160">DMatLinAlg::Mat</a></div><div class="ttdeci">DMat&lt; RingType &gt; Mat</div><div class="ttdef"><b>Definition</b> <a href="../../d7/da6/dmat-lu_8hpp_source.html#l00026">dmat-lu.hpp:26</a></div></div>
@@ -177,7 +177,7 @@ template&lt;class RingType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/df6/class_d_mat_lin_alg.html">DMatLinAlg</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:39 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

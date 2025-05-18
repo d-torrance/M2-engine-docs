@@ -157,24 +157,24 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_ad8c03a741da2e849ee
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dc8/groebner_8cpp_source.html#l00660">660</a> of file <a class="el" href="../../d2/dc8/groebner_8cpp_source.html">groebner.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  669</span>{</div>
-<div class="line"><span class="lineno">  670</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  671</span>    {</div>
-<div class="line"><span class="lineno">  672</span>        <a class="code hl_class" href="../../de/ded/class_g_b_computation.html">GBComputation</a> *gbReductionIdeal = rawGBReductionIdeal-&gt;<a class="code hl_function" href="../../d6/dea/class_computation_a4d7c8c55b077b6fd526373d6a5b00681.html#a4d7c8c55b077b6fd526373d6a5b00681">cast_to_GBComputation</a>();</div>
-<div class="line"><span class="lineno">  673</span>        <a class="code hl_class" href="../../de/ded/class_g_b_computation.html">GBComputation</a> *gbI = rawGBI-&gt;<a class="code hl_function" href="../../d6/dea/class_computation_a4d7c8c55b077b6fd526373d6a5b00681.html#a4d7c8c55b077b6fd526373d6a5b00681">cast_to_GBComputation</a>();</div>
-<div class="line"><span class="lineno">  674</span>        <span class="keywordflow">if</span> ((gbReductionIdeal == <span class="keyword">nullptr</span>) || (gbI == <span class="keyword">nullptr</span>))</div>
-<div class="line"><span class="lineno">  675</span>        {</div>
-<div class="line"><span class="lineno">  676</span>            <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a Groebner basis computation&quot;</span>);</div>
-<div class="line"><span class="lineno">  677</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  678</span>        }</div>
-<div class="line"><span class="lineno">  679</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../dc/d5a/classsagbi_a7b41ac511b69cf5dd55581f10945c0e8.html#a7b41ac511b69cf5dd55581f10945c0e8">sagbi::subduct1</a>(numparts, rawT, rawS, m, inclusionAmbient, fullSubstitution, substitutionInclusion, gbI, gbReductionIdeal);</div>
-<div class="line"><span class="lineno">  680</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
-<div class="line"><span class="lineno">  681</span>    {</div>
-<div class="line"><span class="lineno">  682</span>        <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><span class="lineno">  683</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  684</span>    }</div>
-<div class="line"><span class="lineno">  685</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/dc8/groebner_8cpp_source.html#l00662">662</a> of file <a class="el" href="../../d2/dc8/groebner_8cpp_source.html">groebner.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  671</span>{</div>
+<div class="line"><span class="lineno">  672</span>    <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  673</span>    {</div>
+<div class="line"><span class="lineno">  674</span>        <a class="code hl_class" href="../../de/ded/class_g_b_computation.html">GBComputation</a> *gbReductionIdeal = rawGBReductionIdeal-&gt;<a class="code hl_function" href="../../d6/dea/class_computation_a4d7c8c55b077b6fd526373d6a5b00681.html#a4d7c8c55b077b6fd526373d6a5b00681">cast_to_GBComputation</a>();</div>
+<div class="line"><span class="lineno">  675</span>        <a class="code hl_class" href="../../de/ded/class_g_b_computation.html">GBComputation</a> *gbI = rawGBI-&gt;<a class="code hl_function" href="../../d6/dea/class_computation_a4d7c8c55b077b6fd526373d6a5b00681.html#a4d7c8c55b077b6fd526373d6a5b00681">cast_to_GBComputation</a>();</div>
+<div class="line"><span class="lineno">  676</span>        <span class="keywordflow">if</span> ((gbReductionIdeal == <span class="keyword">nullptr</span>) || (gbI == <span class="keyword">nullptr</span>))</div>
+<div class="line"><span class="lineno">  677</span>        {</div>
+<div class="line"><span class="lineno">  678</span>            <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a Groebner basis computation&quot;</span>);</div>
+<div class="line"><span class="lineno">  679</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  680</span>        }</div>
+<div class="line"><span class="lineno">  681</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../dc/d5a/classsagbi_a7b41ac511b69cf5dd55581f10945c0e8.html#a7b41ac511b69cf5dd55581f10945c0e8">sagbi::subduct1</a>(numparts, rawT, rawS, m, inclusionAmbient, fullSubstitution, substitutionInclusion, gbI, gbReductionIdeal);</div>
+<div class="line"><span class="lineno">  682</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><span class="lineno">  683</span>    {</div>
+<div class="line"><span class="lineno">  684</span>        <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno">  685</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  686</span>    }</div>
+<div class="line"><span class="lineno">  687</span>}</div>
 <div class="ttc" id="aclass_computation_a4d7c8c55b077b6fd526373d6a5b00681_html_a4d7c8c55b077b6fd526373d6a5b00681"><div class="ttname"><a href="../../d6/dea/class_computation_a4d7c8c55b077b6fd526373d6a5b00681.html#a4d7c8c55b077b6fd526373d6a5b00681">Computation::cast_to_GBComputation</a></div><div class="ttdeci">virtual GBComputation * cast_to_GBComputation()</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/comp_8hpp_source.html#l00060">comp.hpp:60</a></div></div>
 <div class="ttc" id="aclass_g_b_computation_html"><div class="ttname"><a href="../../de/ded/class_g_b_computation.html">GBComputation</a></div><div class="ttdoc">base class for Groebner basis computations.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/ddf/comp-gb_8hpp_source.html#l00027">comp-gb.hpp:30</a></div></div>
 <div class="ttc" id="aclasssagbi_a7b41ac511b69cf5dd55581f10945c0e8_html_a7b41ac511b69cf5dd55581f10945c0e8"><div class="ttname"><a href="../../dc/d5a/classsagbi_a7b41ac511b69cf5dd55581f10945c0e8.html#a7b41ac511b69cf5dd55581f10945c0e8">sagbi::subduct1</a></div><div class="ttdeci">static ring_elem subduct1(int numslots, const PolyRing *T, const PolyRing *S, ring_elem a, const RingMap *inclusionAmbient, const RingMap *fullSubstitution, const RingMap *substitutionInclusion, GBComputation *gbI, GBComputation *gbReductionIdeal)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/de2/sagbi_8cpp_source.html#l00071">sagbi.cpp:71</a></div></div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_ad8c03a741da2e849ee
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d0/d7a/groebner_8h.html">groebner.h</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:38 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

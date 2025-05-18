@@ -164,22 +164,25 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_a702d31d4ad313b6766
 <div class="line"><span class="lineno">  103</span>    {</div>
 <div class="line"><span class="lineno">  104</span>      <a class="code hl_function" href="../../d2/dc8/groebner_8cpp_a9bee2cf033993a389a55db5f889b89a4.html#a9bee2cf033993a389a55db5f889b89a4">test_over_RR_or_CC</a>(m-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>());</div>
 <div class="line"><span class="lineno">  105</span>      <a class="code hl_function" href="../../d4/d7a/text-io_8cpp_a8284cb28c22ece6792116bf485c18324.html#a8284cb28c22ece6792116bf485c18324">clear_emit_size</a>();</div>
-<div class="line"><span class="lineno">  106</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/ded/class_g_b_computation_a443f3848097cecf3f384b9af273295e4.html#a443f3848097cecf3f384b9af273295e4">GBComputation::choose_gb</a>(m,</div>
-<div class="line"><span class="lineno">  107</span>                                      collect_syz,</div>
-<div class="line"><span class="lineno">  108</span>                                      n_rows_to_keep,</div>
-<div class="line"><span class="lineno">  109</span>                                      gb_weights,</div>
-<div class="line"><span class="lineno">  110</span>                                      use_max_degree,</div>
-<div class="line"><span class="lineno">  111</span>                                      max_degree,</div>
-<div class="line"><span class="lineno">  112</span>                                      algorithm,</div>
-<div class="line"><span class="lineno">  113</span>                                      strategy,</div>
-<div class="line"><span class="lineno">  114</span>                                      max_reduction_count);</div>
-<div class="line"><span class="lineno">  115</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
-<div class="line"><span class="lineno">  116</span>    {</div>
-<div class="line"><span class="lineno">  117</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><span class="lineno">  118</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  119</span>  }</div>
-<div class="line"><span class="lineno">  120</span>}</div>
-<div class="ttc" id="aclass_g_b_computation_a443f3848097cecf3f384b9af273295e4_html_a443f3848097cecf3f384b9af273295e4"><div class="ttname"><a href="../../de/ded/class_g_b_computation_a443f3848097cecf3f384b9af273295e4.html#a443f3848097cecf3f384b9af273295e4">GBComputation::choose_gb</a></div><div class="ttdeci">static GBComputation * choose_gb(const Matrix *m, M2_bool collect_syz, int n_rows_to_keep, M2_arrayint gb_weights, M2_bool use_max_degree, int max_degree, int algorithm, int strategy, int max_reduction_count=10)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d4d/comp-gb_8cpp_source.html#l00037">comp-gb.cpp:37</a></div></div>
+<div class="line"><span class="lineno">  106</span>      <span class="keywordtype">int</span> numThreads = <a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_afa50d77369ce57c74c1ecb78f2642fe1.html#afa50d77369ce57c74c1ecb78f2642fe1">M2_numTBBThreads</a>; <span class="comment">// settable from front end.</span></div>
+<div class="line"><span class="lineno">  107</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/ded/class_g_b_computation_aaff7a8f858cded7550f977b4bf34f01b.html#aaff7a8f858cded7550f977b4bf34f01b">GBComputation::choose_gb</a>(m,</div>
+<div class="line"><span class="lineno">  108</span>                                      collect_syz,</div>
+<div class="line"><span class="lineno">  109</span>                                      n_rows_to_keep,</div>
+<div class="line"><span class="lineno">  110</span>                                      gb_weights,</div>
+<div class="line"><span class="lineno">  111</span>                                      use_max_degree,</div>
+<div class="line"><span class="lineno">  112</span>                                      max_degree,</div>
+<div class="line"><span class="lineno">  113</span>                                      algorithm,</div>
+<div class="line"><span class="lineno">  114</span>                                      strategy,</div>
+<div class="line"><span class="lineno">  115</span>                                      numThreads,</div>
+<div class="line"><span class="lineno">  116</span>                                      max_reduction_count);</div>
+<div class="line"><span class="lineno">  117</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><span class="lineno">  118</span>    {</div>
+<div class="line"><span class="lineno">  119</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno">  120</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  121</span>  }</div>
+<div class="line"><span class="lineno">  122</span>}</div>
+<div class="ttc" id="a_m2-replacement_8c_afa50d77369ce57c74c1ecb78f2642fe1_html_afa50d77369ce57c74c1ecb78f2642fe1"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_afa50d77369ce57c74c1ecb78f2642fe1.html#afa50d77369ce57c74c1ecb78f2642fe1">M2_numTBBThreads</a></div><div class="ttdeci">int M2_numTBBThreads</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00058">M2-replacement.c:58</a></div></div>
+<div class="ttc" id="aclass_g_b_computation_aaff7a8f858cded7550f977b4bf34f01b_html_aaff7a8f858cded7550f977b4bf34f01b"><div class="ttname"><a href="../../de/ded/class_g_b_computation_aaff7a8f858cded7550f977b4bf34f01b.html#aaff7a8f858cded7550f977b4bf34f01b">GBComputation::choose_gb</a></div><div class="ttdeci">static GBComputation * choose_gb(const Matrix *m, M2_bool collect_syz, int n_rows_to_keep, M2_arrayint gb_weights, M2_bool use_max_degree, int max_degree, int algorithm, int strategy, int numThreads, int max_reduction_count=10)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d4d/comp-gb_8cpp_source.html#l00039">comp-gb.cpp:39</a></div></div>
 <div class="ttc" id="aclass_matrix_a0bceb9b9d23e40a81ac64f6c112ef441_html_a0bceb9b9d23e40a81ac64f6c112ef441"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">Matrix::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00085">matrix.hpp:85</a></div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
 <div class="ttc" id="agroebner_8cpp_a9bee2cf033993a389a55db5f889b89a4_html_a9bee2cf033993a389a55db5f889b89a4"><div class="ttname"><a href="../../d2/dc8/groebner_8cpp_a9bee2cf033993a389a55db5f889b89a4.html#a9bee2cf033993a389a55db5f889b89a4">test_over_RR_or_CC</a></div><div class="ttdeci">void test_over_RR_or_CC(const Ring *R)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dc8/groebner_8cpp_source.html#l00038">groebner.cpp:38</a></div></div>
@@ -194,7 +197,7 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_a702d31d4ad313b6766
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d0/d7a/groebner_8h.html">groebner.h</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:38 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

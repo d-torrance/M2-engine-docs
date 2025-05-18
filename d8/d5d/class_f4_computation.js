@@ -1,6 +1,6 @@
 var class_f4_computation =
 [
-    [ "F4Computation", "d8/d5d/class_f4_computation_a530ea79f1426b0eb3cb81853c6422483.html#a530ea79f1426b0eb3cb81853c6422483", null ],
+    [ "F4Computation", "d8/d5d/class_f4_computation_ac9f51954ed4ee7a62e413598bbe75d23.html#ac9f51954ed4ee7a62e413598bbe75d23", null ],
     [ "~F4Computation", "d8/d5d/class_f4_computation_ac3e1e5d8ae5733e7ec46ed2deb13aab4.html#ac3e1e5d8ae5733e7ec46ed2deb13aab4", null ],
     [ "complete_thru_degree", "d8/d5d/class_f4_computation_a6fd1548b75b94364b91d583c06432598.html#a6fd1548b75b94364b91d583c06432598", null ],
     [ "computation_is_complete", "d8/d5d/class_f4_computation_a7ca6f873fefd0318a9fd046e63d2aa72.html#a7ca6f873fefd0318a9fd046e63d2aa72", null ],
@@ -21,7 +21,6 @@ var class_f4_computation =
     [ "text_out", "d8/d5d/class_f4_computation_add152c63c999ea0cfd850b6e2d198bd4.html#add152c63c999ea0cfd850b6e2d198bd4", null ],
     [ "mF4GB", "d8/d5d/class_f4_computation_ac4f54bbee485f4db798db2376c20e0e4.html#ac4f54bbee485f4db798db2376c20e0e4", null ],
     [ "mFreeModule", "d8/d5d/class_f4_computation_a5f864ae99ce27c1131f9cb41db793236.html#a5f864ae99ce27c1131f9cb41db793236", null ],
-    [ "mMemoryBlock", "d8/d5d/class_f4_computation_a3ad4601ee83a1e3301f5a43111d68d0b.html#a3ad4601ee83a1e3301f5a43111d68d0b", null ],
     [ "mMonoid", "d8/d5d/class_f4_computation_a76dbf0577b28bf37f57dabcdd08cfb03.html#a76dbf0577b28bf37f57dabcdd08cfb03", null ],
     [ "mOriginalRing", "d8/d5d/class_f4_computation_a3d0ff21db28d54e1372894080b53489d.html#a3d0ff21db28d54e1372894080b53489d", null ],
     [ "mVectorArithmetic", "d8/d5d/class_f4_computation_a52865cc5617670ae29baf59dd1c3fb12.html#a52865cc5617670ae29baf59dd1c3fb12", null ]

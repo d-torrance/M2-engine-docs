@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('db/d74/memblock_8hpp_source.html','../
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../d8/d75/class_f4_memory_block_a4c43ba07fb63d6e56b5bd2cf38f700e1.html#a4c43ba07fb63d6e56b5bd2cf38f700e1">   71</a></span><span class="keyword">typename</span> <a class="code hl_struct" href="../../d0/dc6/struct_f4_memory_block_1_1slab.html">F4MemoryBlock&lt;T, NSLAB&gt;::slab</a> *<a class="code hl_function" href="../../d8/d75/class_f4_memory_block_a4c43ba07fb63d6e56b5bd2cf38f700e1.html#a4c43ba07fb63d6e56b5bd2cf38f700e1">F4MemoryBlock&lt;T, NSLAB&gt;::new_slab</a>()</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <a class="code hl_struct" href="../../d0/dc6/struct_f4_memory_block_1_1slab.html">slab</a> *result = <span class="keyword">new</span> <a class="code hl_struct" href="../../d0/dc6/struct_f4_memory_block_1_1slab.html">slab</a>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  result-&gt;<a class="code hl_variable" href="../../d0/dc6/struct_f4_memory_block_1_1slab_a9cf16c11672dacbafd3320e4b6777770.html#a9cf16c11672dacbafd3320e4b6777770">next</a> = 0;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  result-&gt;<a class="code hl_variable" href="../../d0/dc6/struct_f4_memory_block_1_1slab_a9cf16c11672dacbafd3320e4b6777770.html#a9cf16c11672dacbafd3320e4b6777770">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
 </div>
@@ -205,17 +205,17 @@ $(document).ready(function(){initNavTree('db/d74/memblock_8hpp_source.html','../
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>{</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordflow">if</span> (next_free + len &gt; current_slab-&gt;block + NSLAB)</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <span class="keywordflow">if</span> (current_slab-&gt;next == 0)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <span class="keywordflow">if</span> (current_slab-&gt;next == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>          last_slab-&gt;next = <span class="keyword">new</span> <a class="code hl_struct" href="../../d0/dc6/struct_f4_memory_block_1_1slab.html">slab</a>;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>          last_slab = last_slab-&gt;<a class="code hl_variable" href="../../d0/dc6/struct_f4_memory_block_1_1slab_a9cf16c11672dacbafd3320e4b6777770.html#a9cf16c11672dacbafd3320e4b6777770">next</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>          last_slab-&gt;next = new_slab();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>          last_slab = last_slab-&gt;next;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>          current_slab = last_slab;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>          current_slab = current_slab-&gt;<a class="code hl_variable" href="../../d0/dc6/struct_f4_memory_block_1_1slab_a9cf16c11672dacbafd3320e4b6777770.html#a9cf16c11672dacbafd3320e4b6777770">next</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>          current_slab = current_slab-&gt;next;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      next_free = current_slab-&gt;<a class="code hl_variable" href="../../d0/dc6/struct_f4_memory_block_1_1slab_aa3f3a8a03377c8ac4708083369e5bcbb.html#aa3f3a8a03377c8ac4708083369e5bcbb">block</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      next_free = current_slab-&gt;block;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">return</span> next_free;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
@@ -302,7 +302,7 @@ $(document).ready(function(){initNavTree('db/d74/memblock_8hpp_source.html','../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8ed8434bc3d991323934987a3489e746.html">f4</a></li><li class="navelem"><a class="el" href="../../db/d74/memblock_8hpp.html">memblock.hpp</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

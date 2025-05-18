@@ -11,5 +11,6 @@ var _basic_poly_list_parser_8cpp =
     [ "readEntireFile", "d8/d5d/_basic_poly_list_parser_8cpp_a60c901978b8ffa7d7ba4654adabe979d.html#a60c901978b8ffa7d7ba4654adabe979d", null ],
     [ "readIdentifier", "d8/d5d/_basic_poly_list_parser_8cpp_a0e64ee6f5c0bc61c161bc78e13ce5cfb.html#a0e64ee6f5c0bc61c161bc78e13ce5cfb", null ],
     [ "readIdentifierList", "d8/d5d/_basic_poly_list_parser_8cpp_a8838076fa3e4bd00374f84757c0d2e5b.html#a8838076fa3e4bd00374f84757c0d2e5b", null ],
-    [ "readInteger", "d8/d5d/_basic_poly_list_parser_8cpp_acc121312254167ab2a765a116d91fe1b.html#acc121312254167ab2a765a116d91fe1b", null ]
+    [ "readInteger_long", "d8/d5d/_basic_poly_list_parser_8cpp_ab365e97ab05c9553f49a8e60073b7295.html#ab365e97ab05c9553f49a8e60073b7295", null ],
+    [ "readInteger_mpz_class", "d8/d5d/_basic_poly_list_parser_8cpp_a367c3d3ce2c3ea98d44753dddaa5373b.html#a367c3d3ce2c3ea98d44753dddaa5373b", null ]
 ];

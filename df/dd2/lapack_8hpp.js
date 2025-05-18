@@ -1,6 +1,10 @@
 var lapack_8hpp =
 [
     [ "Lapack", "df/dd6/class_lapack.html", "df/dd6/class_lapack" ],
+    [ "DMatCC", "df/dd2/lapack_8hpp_a88a894ae4db001572530f62898cd39f0.html#a88a894ae4db001572530f62898cd39f0", null ],
+    [ "DMatCCC", "df/dd2/lapack_8hpp_a6371c535f8e9fe8bd9a67ef700813a1f.html#a6371c535f8e9fe8bd9a67ef700813a1f", null ],
+    [ "DMatRR", "df/dd2/lapack_8hpp_af08ee838e04db100344bab171255dbdc.html#af08ee838e04db100344bab171255dbdc", null ],
+    [ "DMatRRR", "df/dd2/lapack_8hpp_ae4409a556af09875ac6d38e77f5ab7d5.html#ae4409a556af09875ac6d38e77f5ab7d5", null ],
     [ "cblas_daxpy", "df/dd2/lapack_8hpp_afc9479732146d0756df8823d9d7a0835.html#afc9479732146d0756df8823d9d7a0835", null ],
     [ "cblas_dgemm", "df/dd2/lapack_8hpp_a81cedce2a5f7a7b44a5c5118bd9ac0c3.html#a81cedce2a5f7a7b44a5c5118bd9ac0c3", null ],
     [ "cblas_dscal", "df/dd2/lapack_8hpp_a9340076d033cc5ec57bc41e6ddef5e8e.html#a9340076d033cc5ec57bc41e6ddef5e8e", null ],

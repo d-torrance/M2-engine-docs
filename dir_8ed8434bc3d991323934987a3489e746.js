@@ -4,8 +4,6 @@ var dir_8ed8434bc3d991323934987a3489e746 =
     [ "f4-computation.hpp", "d2/def/f4-computation_8hpp.html", "d2/def/f4-computation_8hpp" ],
     [ "f4-m2-interface.cpp", "d3/d1e/f4-m2-interface_8cpp.html", null ],
     [ "f4-m2-interface.hpp", "dc/dbd/f4-m2-interface_8hpp.html", "dc/dbd/f4-m2-interface_8hpp" ],
-    [ "f4-mem.cpp", "dc/d3a/f4-mem_8cpp.html", "dc/d3a/f4-mem_8cpp" ],
-    [ "f4-mem.hpp", "d1/db6/f4-mem_8hpp.html", "d1/db6/f4-mem_8hpp" ],
     [ "f4-monlookup.cpp", "d8/d46/f4-monlookup_8cpp.html", "d8/d46/f4-monlookup_8cpp" ],
     [ "f4-monlookup.hpp", "db/da3/f4-monlookup_8hpp.html", "db/da3/f4-monlookup_8hpp" ],
     [ "f4-spairs.cpp", "db/de6/f4-spairs_8cpp.html", "db/de6/f4-spairs_8cpp" ],

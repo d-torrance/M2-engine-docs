@@ -9,9 +9,12 @@ var f4_types_8hpp =
     [ "column_elem", "d3/d69/structcolumn__elem.html", "d3/d69/structcolumn__elem" ],
     [ "coefficient_matrix", "d8/dce/structcoefficient__matrix.html", "d8/dce/structcoefficient__matrix" ],
     [ "ColumnsSorter", "d9/d05/class_columns_sorter.html", "d9/d05/class_columns_sorter" ],
+    [ "GBSorter", "db/d38/class_g_b_sorter.html", "db/d38/class_g_b_sorter" ],
     [ "PreSPairSorter", "d0/de8/class_pre_s_pair_sorter.html", "d0/de8/class_pre_s_pair_sorter" ],
+    [ "SPairCompare", "d3/de7/class_s_pair_compare.html", "d3/de7/class_s_pair_compare" ],
     [ "sizeofspair", "d7/dfc/f4-types_8hpp_a89f7aec717a5dcb2a728335161324155.html#a89f7aec717a5dcb2a728335161324155", null ],
     [ "CompareFunction", "d7/dfc/f4-types_8hpp_a13e94e4e96be7ea5422e29a0052c3f2e.html#a13e94e4e96be7ea5422e29a0052c3f2e", null ],
+    [ "gb_array", "d7/dfc/f4-types_8hpp_a2e9f3698c99ce95a0e99361e755bce3c.html#a2e9f3698c99ce95a0e99361e755bce3c", null ],
     [ "MonomialLookupTable", "d7/dfc/f4-types_8hpp_a26f8bf3ae452faf485404829038ffe26.html#a26f8bf3ae452faf485404829038ffe26", null ],
     [ "gbelem_type", "d7/dfc/f4-types_8hpp_aba9e0150a71986fe2ea6878f577268c1.html#aba9e0150a71986fe2ea6878f577268c1", [
       [ "ELEM_IN_RING", "d7/dfc/f4-types_8hpp_aba9e0150a71986fe2ea6878f577268c1.html#aba9e0150a71986fe2ea6878f577268c1af6e526aa65e143ba7bd9b9a15be4e457", null ],
@@ -27,5 +30,9 @@ var f4_types_8hpp =
       [ "F4_SPAIR_GEN", "d7/dfc/f4-types_8hpp_ac1e9e9f028888dfaea8b9111ee735025.html#ac1e9e9f028888dfaea8b9111ee735025a4108df0bcdefaebe61fe50b0086f22cc", null ],
       [ "F4_SPAIR_ELEM", "d7/dfc/f4-types_8hpp_ac1e9e9f028888dfaea8b9111ee735025.html#ac1e9e9f028888dfaea8b9111ee735025af3109654a5094831aa61a0285d4c1860", null ]
     ] ],
-    [ "VECTOR", "d7/dfc/f4-types_8hpp_a815cded99317ca9be076dfb8b54268d4.html#a815cded99317ca9be076dfb8b54268d4", null ]
+    [ "SPairType", "d7/dfc/f4-types_8hpp_ae9790f5914af2c375b70fb21b924cf42.html#ae9790f5914af2c375b70fb21b924cf42", [
+      [ "SPair", "d7/dfc/f4-types_8hpp_ae9790f5914af2c375b70fb21b924cf42.html#ae9790f5914af2c375b70fb21b924cf42a8d650713b92db5b830c9701260d0ebe2", null ],
+      [ "Generator", "d7/dfc/f4-types_8hpp_ae9790f5914af2c375b70fb21b924cf42.html#ae9790f5914af2c375b70fb21b924cf42a92a8f0b9d28a89b480bd1d29f46f0484", null ],
+      [ "Retired", "d7/dfc/f4-types_8hpp_ae9790f5914af2c375b70fb21b924cf42.html#ae9790f5914af2c375b70fb21b924cf42ad109ac74df282488efd1dd7621a847d2", null ]
+    ] ]
 ];

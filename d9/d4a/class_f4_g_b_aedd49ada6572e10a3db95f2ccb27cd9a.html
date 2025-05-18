@@ -113,20 +113,20 @@ $(document).ready(function(){initNavTree('d9/d4a/class_f4_g_b_aedd49ada6572e10a3
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de5/f4_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../d3/de5/f4_8cpp_source.html">f4.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  118</span>{</div>
-<div class="line"><span class="lineno">  119</span>  <span class="comment">// m is a packed monomial, unique via the hash table H, B.</span></div>
-<div class="line"><span class="lineno">  120</span>  <a class="code hl_struct" href="../../d3/d69/structcolumn__elem.html">column_elem</a> c{};</div>
-<div class="line"><span class="lineno">  121</span>  <span class="keywordtype">int</span> next_column = <a class="code hl_define" href="../../d2/d6f/style_8hpp_ae9befcbff10f3a4ff986f206da609a90.html#ae9befcbff10f3a4ff986f206da609a90">INTSIZE</a>(<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>-&gt;<a class="code hl_variable" href="../../d8/dce/structcoefficient__matrix_a9f500cbee963d19463afecc856945945.html#a9f500cbee963d19463afecc856945945">columns</a>);</div>
-<div class="line"><span class="lineno">  122</span>  m[-1] = next_column;</div>
-<div class="line"><span class="lineno">  123</span>  c.monom = m;</div>
-<div class="line"><span class="lineno">  124</span>  c.head = -2;</div>
-<div class="line"><span class="lineno">  125</span>  <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>-&gt;<a class="code hl_variable" href="../../d8/dce/structcoefficient__matrix_a9f500cbee963d19463afecc856945945.html#a9f500cbee963d19463afecc856945945">columns</a>.push_back(c);</div>
-<div class="line"><span class="lineno">  126</span>  <span class="keywordflow">return</span> next_column;</div>
-<div class="line"><span class="lineno">  127</span>}</div>
-<div class="ttc" id="aclass_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23_html_a22603dbf551ddc04bc867abddb8d9b23"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">F4GB::mat</a></div><div class="ttdeci">coefficient_matrix * mat</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00124">f4.hpp:124</a></div></div>
-<div class="ttc" id="astructcoefficient__matrix_a9f500cbee963d19463afecc856945945_html_a9f500cbee963d19463afecc856945945"><div class="ttname"><a href="../../d8/dce/structcoefficient__matrix_a9f500cbee963d19463afecc856945945.html#a9f500cbee963d19463afecc856945945">coefficient_matrix::columns</a></div><div class="ttdeci">column_array columns</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dfc/f4-types_8hpp_source.html#l00103">f4-types.hpp:103</a></div></div>
-<div class="ttc" id="astructcolumn__elem_html"><div class="ttname"><a href="../../d3/d69/structcolumn__elem.html">column_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/dfc/f4-types_8hpp_source.html#l00090">f4-types.hpp:91</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/de5/f4_8cpp_source.html#l00148">148</a> of file <a class="el" href="../../d3/de5/f4_8cpp_source.html">f4.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  149</span>{</div>
+<div class="line"><span class="lineno">  150</span>  <span class="comment">// m is a packed monomial, unique via the hash table H, B.</span></div>
+<div class="line"><span class="lineno">  151</span>  <a class="code hl_struct" href="../../d3/d69/structcolumn__elem.html">column_elem</a> c{};</div>
+<div class="line"><span class="lineno">  152</span>  <span class="keywordtype">int</span> next_column = <a class="code hl_define" href="../../d2/d6f/style_8hpp_ae9befcbff10f3a4ff986f206da609a90.html#ae9befcbff10f3a4ff986f206da609a90">INTSIZE</a>(<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>-&gt;<a class="code hl_variable" href="../../d8/dce/structcoefficient__matrix_a9f500cbee963d19463afecc856945945.html#a9f500cbee963d19463afecc856945945">columns</a>);</div>
+<div class="line"><span class="lineno">  153</span>  m[-1] = next_column;</div>
+<div class="line"><span class="lineno">  154</span>  c.monom = m;</div>
+<div class="line"><span class="lineno">  155</span>  c.head = -2;</div>
+<div class="line"><span class="lineno">  156</span>  <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>-&gt;<a class="code hl_variable" href="../../d8/dce/structcoefficient__matrix_a9f500cbee963d19463afecc856945945.html#a9f500cbee963d19463afecc856945945">columns</a>.push_back(c);</div>
+<div class="line"><span class="lineno">  157</span>  <span class="keywordflow">return</span> next_column;</div>
+<div class="line"><span class="lineno">  158</span>}</div>
+<div class="ttc" id="aclass_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23_html_a22603dbf551ddc04bc867abddb8d9b23"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">F4GB::mat</a></div><div class="ttdeci">coefficient_matrix * mat</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00123">f4.hpp:123</a></div></div>
+<div class="ttc" id="astructcoefficient__matrix_a9f500cbee963d19463afecc856945945_html_a9f500cbee963d19463afecc856945945"><div class="ttname"><a href="../../d8/dce/structcoefficient__matrix_a9f500cbee963d19463afecc856945945.html#a9f500cbee963d19463afecc856945945">coefficient_matrix::columns</a></div><div class="ttdeci">column_array columns</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dfc/f4-types_8hpp_source.html#l00116">f4-types.hpp:116</a></div></div>
+<div class="ttc" id="astructcolumn__elem_html"><div class="ttname"><a href="../../d3/d69/structcolumn__elem.html">column_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/dfc/f4-types_8hpp_source.html#l00103">f4-types.hpp:104</a></div></div>
 <div class="ttc" id="astyle_8hpp_ae9befcbff10f3a4ff986f206da609a90_html_ae9befcbff10f3a4ff986f206da609a90"><div class="ttname"><a href="../../d2/d6f/style_8hpp_ae9befcbff10f3a4ff986f206da609a90.html#ae9befcbff10f3a4ff986f206da609a90">INTSIZE</a></div><div class="ttdeci">#define INTSIZE(a)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d6f/style_8hpp_source.html#l00008">style.hpp:8</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d8/dce/structcoefficient__matrix_a9f500cbee963d19463afecc856945945.html#a9f500cbee963d19463afecc856945945">coefficient_matrix::columns</a>, <a class="el" href="../../d2/d6f/style_8hpp_ae9befcbff10f3a4ff986f206da609a90.html#ae9befcbff10f3a4ff986f206da609a90">INTSIZE</a>, and <a class="el" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>.</p>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('d9/d4a/class_f4_g_b_aedd49ada6572e10a3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d4a/class_f4_g_b.html">F4GB</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:39 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

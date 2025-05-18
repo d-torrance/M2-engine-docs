@@ -1,7 +1,7 @@
 var class_f4_monomial_lookup_table_t =
 [
     [ "mi_node", "d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node.html", "d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node" ],
-    [ "F4MonomialLookupTableT", "d6/d10/class_f4_monomial_lookup_table_t_ac3d588bea523e5c71f9955208d82441e.html#ac3d588bea523e5c71f9955208d82441e", null ],
+    [ "F4MonomialLookupTableT", "d6/d10/class_f4_monomial_lookup_table_t_a4e7217c4de7d2d7c0e05302c697fc44e.html#a4e7217c4de7d2d7c0e05302c697fc44e", null ],
     [ "~F4MonomialLookupTableT", "d6/d10/class_f4_monomial_lookup_table_t_a205479884c345d8e670e2e4bf4681d99.html#a205479884c345d8e670e2e4bf4681d99", null ],
     [ "debug_check", "d6/d10/class_f4_monomial_lookup_table_t_a1da62cd6b9fb90e9aeec8220ffefdcd0.html#a1da62cd6b9fb90e9aeec8220ffefdcd0", null ],
     [ "debug_check", "d6/d10/class_f4_monomial_lookup_table_t_a160607e3110ddb8b5401829c18f0a30b.html#a160607e3110ddb8b5401829c18f0a30b", null ],
@@ -9,9 +9,9 @@ var class_f4_monomial_lookup_table_t =
     [ "delete_mi_node", "d6/d10/class_f4_monomial_lookup_table_t_aa6b7e08b1d3c82910c29ec11bf001380.html#aa6b7e08b1d3c82910c29ec11bf001380", null ],
     [ "do_node", "d6/d10/class_f4_monomial_lookup_table_t_a165b1e163dfed3c375a7c54278b1ff5b.html#a165b1e163dfed3c375a7c54278b1ff5b", null ],
     [ "do_tree", "d6/d10/class_f4_monomial_lookup_table_t_a2e2144a52f0b21d3680d3fbd5004c390.html#a2e2144a52f0b21d3680d3fbd5004c390", null ],
-    [ "find_all_divisors1", "d6/d10/class_f4_monomial_lookup_table_t_a8e6eba7a553b15987bca615bbf4214fb.html#a8e6eba7a553b15987bca615bbf4214fb", null ],
-    [ "find_all_divisors_packed", "d6/d10/class_f4_monomial_lookup_table_t_ac5c043b1d8aeae2799f8a940120d152e.html#ac5c043b1d8aeae2799f8a940120d152e", null ],
-    [ "find_all_divisors_vp", "d6/d10/class_f4_monomial_lookup_table_t_afb7d0f039cd93fda833d9d62f634ecb4.html#afb7d0f039cd93fda833d9d62f634ecb4", null ],
+    [ "find_all_divisors1", "d6/d10/class_f4_monomial_lookup_table_t_ace33253661a68f4682647a1d2ce619d3.html#ace33253661a68f4682647a1d2ce619d3", null ],
+    [ "find_all_divisors_packed", "d6/d10/class_f4_monomial_lookup_table_t_ad6b3e8a449e8e94e3b228e09ac36ecf5.html#ad6b3e8a449e8e94e3b228e09ac36ecf5", null ],
+    [ "find_all_divisors_vp", "d6/d10/class_f4_monomial_lookup_table_t_a7c3c70c4f7fae51dba9331e13fc274b8.html#a7c3c70c4f7fae51dba9331e13fc274b8", null ],
     [ "find_one_divisor1", "d6/d10/class_f4_monomial_lookup_table_t_a37df511a50c19656bbcb8b5f4afc0d63.html#a37df511a50c19656bbcb8b5f4afc0d63", null ],
     [ "find_one_divisor_packed", "d6/d10/class_f4_monomial_lookup_table_t_a127bc8cd0811454cb8edbf0861bd0beb.html#a127bc8cd0811454cb8edbf0861bd0beb", null ],
     [ "find_one_divisor_vp", "d6/d10/class_f4_monomial_lookup_table_t_afccf1e6c1e76ee5f4cdc881e27ad423f.html#afccf1e6c1e76ee5f4cdc881e27ad423f", null ],
@@ -26,9 +26,8 @@ var class_f4_monomial_lookup_table_t =
     [ "reset_expvector", "d6/d10/class_f4_monomial_lookup_table_t_a017bb6ab8fdb9fb50bcf9588e4750c1d.html#a017bb6ab8fdb9fb50bcf9588e4750c1d", null ],
     [ "text_out", "d6/d10/class_f4_monomial_lookup_table_t_a10e711c0466dd4394b2090a45861322d.html#a10e711c0466dd4394b2090a45861322d", null ],
     [ "update_expvector", "d6/d10/class_f4_monomial_lookup_table_t_a0572bdd2449a0327a4875a562887e51a.html#a0572bdd2449a0327a4875a562887e51a", null ],
-    [ "VECTOR", "d6/d10/class_f4_monomial_lookup_table_t_acaa9bca4a841f2eaab29e339caac8f5d.html#acaa9bca4a841f2eaab29e339caac8f5d", null ],
     [ "count", "d6/d10/class_f4_monomial_lookup_table_t_afffba38dfb969875f4642ace7a7de3d4.html#afffba38dfb969875f4642ace7a7de3d4", null ],
     [ "exp0", "d6/d10/class_f4_monomial_lookup_table_t_addb674c0f30ebdc8585d9850f974621c.html#addb674c0f30ebdc8585d9850f974621c", null ],
-    [ "mi_stash", "d6/d10/class_f4_monomial_lookup_table_t_a6039f9ec10d743f3a11d867a781f3fa8.html#a6039f9ec10d743f3a11d867a781f3fa8", null ],
+    [ "mis", "d6/d10/class_f4_monomial_lookup_table_t_ab183e2e5363f46795cea73c1ed3816b0.html#ab183e2e5363f46795cea73c1ed3816b0", null ],
     [ "size_of_exp", "d6/d10/class_f4_monomial_lookup_table_t_a8ceb47b5ec311905ea4b0f6723e5b6fd.html#a8ceb47b5ec311905ea4b0f6723e5b6fd", null ]
 ];

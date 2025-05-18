@@ -43,7 +43,7 @@ var namespacenewf4 =
     [ "Strategy", "da/db5/namespacenewf4_ada356c272bb077493d6b4256bcb94a8b.html#ada356c272bb077493d6b4256bcb94a8b", [
       [ "Normal", "da/db5/namespacenewf4_ada356c272bb077493d6b4256bcb94a8b.html#ada356c272bb077493d6b4256bcb94a8ba960b44c579bc2f6818d2daaf9e4c16f0", null ]
     ] ],
-    [ "createGBF4Interface", "da/db5/namespacenewf4_a03c0bc954e0b61d057a9f3b673649c77.html#a03c0bc954e0b61d057a9f3b673649c77", null ],
+    [ "createGBF4Interface", "da/db5/namespacenewf4_ad9e87c7e43c34703405b5af98a539f93.html#ad9e87c7e43c34703405b5af98a539f93", null ],
     [ "populateComputation", "da/db5/namespacenewf4_afcb3100a47c86e0a55790661d866255b.html#afcb3100a47c86e0a55790661d866255b", null ],
     [ "toMatrix", "da/db5/namespacenewf4_ad588941e32659bb184078af8a8612da8.html#ad588941e32659bb184078af8a8612da8", null ],
     [ "toStream", "da/db5/namespacenewf4_ab0f2bf6487cec9e3f6f82435f2b15246.html#ab0f2bf6487cec9e3f6f82435f2b15246", null ],

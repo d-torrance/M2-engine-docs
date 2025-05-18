@@ -23,6 +23,7 @@ var class_coefficient_ring_r =
     [ "negate", "d1/d34/class_coefficient_ring_r_aa585dca2d7be123a072e231e8c1452f0.html#aa585dca2d7be123a072e231e8c1452f0", null ],
     [ "set", "d1/d34/class_coefficient_ring_r_ad39131a957167f406627feec7ce7cc5e.html#ad39131a957167f406627feec7ce7cc5e", null ],
     [ "set_from_long", "d1/d34/class_coefficient_ring_r_ad5e5ed790edaf40bc1c4a6acbd825c9a.html#ad5e5ed790edaf40bc1c4a6acbd825c9a", null ],
+    [ "set_from_mpz", "d1/d34/class_coefficient_ring_r_a910f2ff7b991149489e9cea60e527563.html#a910f2ff7b991149489e9cea60e527563", null ],
     [ "set_zero", "d1/d34/class_coefficient_ring_r_a7dde5c0614861b4c47baf0484a8322ca.html#a7dde5c0614861b4c47baf0484a8322ca", null ],
     [ "subtract", "d1/d34/class_coefficient_ring_r_aa82da8d26da8b5baad1b352c5d1a367f.html#aa82da8d26da8b5baad1b352c5d1a367f", null ],
     [ "subtract_multiple", "d1/d34/class_coefficient_ring_r_a618250607f5beb401af79b2d0e1a778e.html#a618250607f5beb401af79b2d0e1a778e", null ],

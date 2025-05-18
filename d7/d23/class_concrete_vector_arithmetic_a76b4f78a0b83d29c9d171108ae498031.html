@@ -115,19 +115,19 @@ template&lt;typename RingType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00129">129</a> of file <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html">VectorArithmetic.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  130</span>  {</div>
-<div class="line"><span class="lineno">  131</span>    <span class="keyword">auto</span> tempPtr = <span class="keyword">new</span> <a class="code hl_typedef" href="../../d7/d23/class_concrete_vector_arithmetic_ae43baeb63ce9c1222e82ec7d6e5a7c96.html#ae43baeb63ce9c1222e82ec7d6e5a7c96">ElementArrayContainer</a>(nelems);</div>
-<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; d : *tempPtr)</div>
-<div class="line"><span class="lineno">  133</span>      {</div>
-<div class="line"><span class="lineno">  134</span>    <a class="code hl_variable" href="../../d7/d23/class_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b.html#a8517130d3ba384cea716493da51c154b">mRing</a>-&gt;init(d);</div>
-<div class="line"><span class="lineno">  135</span>    <a class="code hl_variable" href="../../d7/d23/class_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b.html#a8517130d3ba384cea716493da51c154b">mRing</a>-&gt;set_zero(d);</div>
-<div class="line"><span class="lineno">  136</span>      }</div>
-<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d5/d94/class_element_array.html">ElementArray</a> {tempPtr};    </div>
-<div class="line"><span class="lineno">  138</span>  }</div>
-<div class="ttc" id="aclass_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b_html_a8517130d3ba384cea716493da51c154b"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b.html#a8517130d3ba384cea716493da51c154b">ConcreteVectorArithmetic::mRing</a></div><div class="ttdeci">const RingType * mRing</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00097">VectorArithmetic.hpp:97</a></div></div>
-<div class="ttc" id="aclass_concrete_vector_arithmetic_ae43baeb63ce9c1222e82ec7d6e5a7c96_html_ae43baeb63ce9c1222e82ec7d6e5a7c96"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_ae43baeb63ce9c1222e82ec7d6e5a7c96.html#ae43baeb63ce9c1222e82ec7d6e5a7c96">ConcreteVectorArithmetic::ElementArrayContainer</a></div><div class="ttdeci">typename RingType::ElementContainerType ElementArrayContainer</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00088">VectorArithmetic.hpp:88</a></div></div>
-<div class="ttc" id="aclass_element_array_html"><div class="ttname"><a href="../../d5/d94/class_element_array.html">ElementArray</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00050">VectorArithmetic.hpp:51</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00127">127</a> of file <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html">VectorArithmetic.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>  {</div>
+<div class="line"><span class="lineno">  129</span>    <span class="keyword">auto</span> tempPtr = <span class="keyword">new</span> <a class="code hl_typedef" href="../../d7/d23/class_concrete_vector_arithmetic_ae43baeb63ce9c1222e82ec7d6e5a7c96.html#ae43baeb63ce9c1222e82ec7d6e5a7c96">ElementArrayContainer</a>(nelems);</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; d : *tempPtr)</div>
+<div class="line"><span class="lineno">  131</span>      {</div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_variable" href="../../d7/d23/class_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b.html#a8517130d3ba384cea716493da51c154b">mRing</a>-&gt;init(d);</div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_variable" href="../../d7/d23/class_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b.html#a8517130d3ba384cea716493da51c154b">mRing</a>-&gt;set_zero(d);</div>
+<div class="line"><span class="lineno">  134</span>      }</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d5/d94/class_element_array.html">ElementArray</a> {tempPtr};    </div>
+<div class="line"><span class="lineno">  136</span>  }</div>
+<div class="ttc" id="aclass_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b_html_a8517130d3ba384cea716493da51c154b"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b.html#a8517130d3ba384cea716493da51c154b">ConcreteVectorArithmetic::mRing</a></div><div class="ttdeci">const RingType * mRing</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00095">VectorArithmetic.hpp:95</a></div></div>
+<div class="ttc" id="aclass_concrete_vector_arithmetic_ae43baeb63ce9c1222e82ec7d6e5a7c96_html_ae43baeb63ce9c1222e82ec7d6e5a7c96"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_ae43baeb63ce9c1222e82ec7d6e5a7c96.html#ae43baeb63ce9c1222e82ec7d6e5a7c96">ConcreteVectorArithmetic::ElementArrayContainer</a></div><div class="ttdeci">typename RingType::ElementContainerType ElementArrayContainer</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00086">VectorArithmetic.hpp:86</a></div></div>
+<div class="ttc" id="aclass_element_array_html"><div class="ttname"><a href="../../d5/d94/class_element_array.html">ElementArray</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00048">VectorArithmetic.hpp:49</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/d23/class_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b.html#a8517130d3ba384cea716493da51c154b">ConcreteVectorArithmetic&lt; RingType &gt;::mRing</a>.</p>
 
@@ -139,7 +139,7 @@ template&lt;typename RingType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d23/class_concrete_vector_arithmetic.html">ConcreteVectorArithmetic</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:39 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

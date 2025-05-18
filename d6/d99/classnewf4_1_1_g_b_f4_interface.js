@@ -1,7 +1,7 @@
 var classnewf4_1_1_g_b_f4_interface =
 [
-    [ "GBF4Interface", "d6/d99/classnewf4_1_1_g_b_f4_interface_a3aaed82773f738b3e6a020f1ebbfeb8d.html#a3aaed82773f738b3e6a020f1ebbfeb8d", null ],
-    [ "GBF4Interface", "d6/d99/classnewf4_1_1_g_b_f4_interface_a3eeabd36121419aa941a29c236db2edc.html#a3eeabd36121419aa941a29c236db2edc", null ],
+    [ "GBF4Interface", "d6/d99/classnewf4_1_1_g_b_f4_interface_a09136ceea32672bec0546087f2bc1033.html#a09136ceea32672bec0546087f2bc1033", null ],
+    [ "GBF4Interface", "d6/d99/classnewf4_1_1_g_b_f4_interface_af4284cb2ce01c6a32ca9717e2bf5c039.html#af4284cb2ce01c6a32ca9717e2bf5c039", null ],
     [ "~GBF4Interface", "d6/d99/classnewf4_1_1_g_b_f4_interface_a06f528c4e36ebc465503589f05244e75.html#a06f528c4e36ebc465503589f05244e75", null ],
     [ "complete_thru_degree", "d6/d99/classnewf4_1_1_g_b_f4_interface_a2538a80b0d9cfe220014aec5656aed73.html#a2538a80b0d9cfe220014aec5656aed73", null ],
     [ "computation", "d6/d99/classnewf4_1_1_g_b_f4_interface_aa943a4d842a606f1fe536dd47f7bc73a.html#aa943a4d842a606f1fe536dd47f7bc73a", null ],

@@ -26,11 +26,12 @@ var searchData=
   ['gbringsolvable_23',['GBRingSolvable',['../d5/d5c/class_g_b_ring_solvable.html',1,'']]],
   ['gbringweyl_24',['GBRingWeyl',['../d3/dd1/class_g_b_ring_weyl.html',1,'']]],
   ['gbringweylzz_25',['GBRingWeylZZ',['../d3/d48/class_g_b_ring_weyl_z_z.html',1,'']]],
-  ['gbvector_26',['gbvector',['../d7/d40/structgbvector.html',1,'']]],
-  ['gbvectorheap_27',['gbvectorHeap',['../dc/d58/classgbvector_heap.html',1,'']]],
-  ['gbwalker_28',['GBWalker',['../df/dab/class_g_b_walker.html',1,'']]],
-  ['gbweight_29',['GBWeight',['../d5/d82/class_g_b_weight.html',1,'']]],
-  ['geobucket_30',['geobucket',['../d5/d03/classgeobucket.html',1,'']]],
-  ['gf_31',['GF',['../d1/d35/class_g_f.html',1,'']]],
-  ['gm_5felem_32',['gm_elem',['../d0/dd0/structgm__elem.html',1,'']]]
+  ['gbsorter_26',['GBSorter',['../db/d38/class_g_b_sorter.html',1,'']]],
+  ['gbvector_27',['gbvector',['../d7/d40/structgbvector.html',1,'']]],
+  ['gbvectorheap_28',['gbvectorHeap',['../dc/d58/classgbvector_heap.html',1,'']]],
+  ['gbwalker_29',['GBWalker',['../df/dab/class_g_b_walker.html',1,'']]],
+  ['gbweight_30',['GBWeight',['../d5/d82/class_g_b_weight.html',1,'']]],
+  ['geobucket_31',['geobucket',['../d5/d03/classgeobucket.html',1,'']]],
+  ['gf_32',['GF',['../d1/d35/class_g_f.html',1,'']]],
+  ['gm_5felem_33',['gm_elem',['../d0/dd0/structgm__elem.html',1,'']]]
 ];

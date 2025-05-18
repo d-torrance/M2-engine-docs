@@ -1,7 +1,7 @@
 var searchData=
 [
   ['cc_5fdoubles_5fstruct_0',['cc_doubles_struct',['../db/dae/structcc__doubles__struct.html',1,'']]],
-  ['cc_5fstruct_1',['cc_struct',['../de/d31/structcc__struct.html',1,'cc_struct'],['../d3/d66/struct_c_c__struct.html',1,'CC_struct']]],
+  ['cc_5fstruct_1',['cc_struct',['../d3/d66/struct_c_c__struct.html',1,'CC_struct'],['../de/d31/structcc__struct.html',1,'cc_struct']]],
   ['ccmutable_5fstruct_2',['CCmutable_struct',['../d6/ddb/struct_c_cmutable__struct.html',1,'']]],
   ['chineseremainder_3',['ChineseRemainder',['../d0/d4e/class_chinese_remainder.html',1,'']]],
   ['coefficient_5fmatrix_4',['coefficient_matrix',['../d8/dce/structcoefficient__matrix.html',1,'']]],

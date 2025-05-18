@@ -131,37 +131,37 @@ template&lt;class <a class="el" href="../../df/dcd/class_l_u_util_a146b080d865ee
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d7d/dmat-lu-inplace_8hpp_source.html#l00414">414</a> of file <a class="el" href="../../d0/d7d/dmat-lu-inplace_8hpp_source.html">dmat-lu-inplace.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  415</span>{</div>
-<div class="line"><span class="lineno">  416</span>  <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a> = std::min(<a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numRows(), <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns());</div>
-<div class="line"><span class="lineno">  417</span>  lower.resize(<a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numRows(), min);</div>
-<div class="line"><span class="lineno">  418</span>  upper.resize(min, <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns());</div>
-<div class="line"><span class="lineno">  419</span> </div>
-<div class="line"><span class="lineno">  420</span>  <span class="comment">// At this point, lower and upper should be zero matrices.</span></div>
-<div class="line"><span class="lineno">  421</span>  assert(<a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a37882f800102bd2b037f51de5e0211e0.html#a37882f800102bd2b037f51de5e0211e0">MatrixOps::isZero</a>(lower));</div>
-<div class="line"><span class="lineno">  422</span>  assert(<a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a37882f800102bd2b037f51de5e0211e0.html#a37882f800102bd2b037f51de5e0211e0">MatrixOps::isZero</a>(upper));</div>
-<div class="line"><span class="lineno">  423</span> </div>
-<div class="line"><span class="lineno">  424</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> c = 0; c &lt; <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns(); c++)</div>
-<div class="line"><span class="lineno">  425</span>    {</div>
-<div class="line"><span class="lineno">  426</span>      <span class="keywordflow">if</span> (c &lt; min) <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.ring().set_from_long(lower.entry(c, c), 1);</div>
-<div class="line"><span class="lineno">  427</span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> r = 0; r &lt; <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numRows(); r++)</div>
-<div class="line"><span class="lineno">  428</span>        {</div>
-<div class="line"><span class="lineno">  429</span>          <span class="keywordflow">if</span> (r &lt;= c)</div>
-<div class="line"><span class="lineno">  430</span>            <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.ring().set(upper.entry(r, c), <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.entry(r, c));</div>
-<div class="line"><span class="lineno">  431</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (c &lt; lower.numRows())</div>
-<div class="line"><span class="lineno">  432</span>            {</div>
-<div class="line"><span class="lineno">  433</span>              <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.ring().set(lower.entry(r, c), <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.entry(r, c));</div>
-<div class="line"><span class="lineno">  434</span>            }</div>
-<div class="line"><span class="lineno">  435</span>        }</div>
-<div class="line"><span class="lineno">  436</span>    }</div>
-<div class="line"><span class="lineno">  437</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d7d/dmat-lu-inplace_8hpp_source.html#l00379">379</a> of file <a class="el" href="../../d0/d7d/dmat-lu-inplace_8hpp_source.html">dmat-lu-inplace.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  380</span>{</div>
+<div class="line"><span class="lineno">  381</span>  <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a> = std::min(<a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numRows(), <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns());</div>
+<div class="line"><span class="lineno">  382</span>  lower.resize(<a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numRows(), min);</div>
+<div class="line"><span class="lineno">  383</span>  upper.resize(min, <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns());</div>
+<div class="line"><span class="lineno">  384</span> </div>
+<div class="line"><span class="lineno">  385</span>  <span class="comment">// At this point, lower and upper should be zero matrices.</span></div>
+<div class="line"><span class="lineno">  386</span>  assert(<a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a37882f800102bd2b037f51de5e0211e0.html#a37882f800102bd2b037f51de5e0211e0">MatrixOps::isZero</a>(lower));</div>
+<div class="line"><span class="lineno">  387</span>  assert(<a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a37882f800102bd2b037f51de5e0211e0.html#a37882f800102bd2b037f51de5e0211e0">MatrixOps::isZero</a>(upper));</div>
+<div class="line"><span class="lineno">  388</span> </div>
+<div class="line"><span class="lineno">  389</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> c = 0; c &lt; <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numColumns(); c++)</div>
+<div class="line"><span class="lineno">  390</span>    {</div>
+<div class="line"><span class="lineno">  391</span>      <span class="keywordflow">if</span> (c &lt; min) <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.ring().set_from_long(lower.entry(c, c), 1);</div>
+<div class="line"><span class="lineno">  392</span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> r = 0; r &lt; <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.numRows(); r++)</div>
+<div class="line"><span class="lineno">  393</span>        {</div>
+<div class="line"><span class="lineno">  394</span>          <span class="keywordflow">if</span> (r &lt;= c)</div>
+<div class="line"><span class="lineno">  395</span>            <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.ring().set(upper.entry(r, c), <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.entry(r, c));</div>
+<div class="line"><span class="lineno">  396</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (c &lt; lower.numRows())</div>
+<div class="line"><span class="lineno">  397</span>            {</div>
+<div class="line"><span class="lineno">  398</span>              <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.ring().set(lower.entry(r, c), <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">LU</a>.entry(r, c));</div>
+<div class="line"><span class="lineno">  399</span>            }</div>
+<div class="line"><span class="lineno">  400</span>        }</div>
+<div class="line"><span class="lineno">  401</span>    }</div>
+<div class="line"><span class="lineno">  402</span>}</div>
 <div class="ttc" id="anamespace_matrix_ops_a37882f800102bd2b037f51de5e0211e0_html_a37882f800102bd2b037f51de5e0211e0"><div class="ttname"><a href="../../d8/db5/namespace_matrix_ops_a37882f800102bd2b037f51de5e0211e0.html#a37882f800102bd2b037f51de5e0211e0">MatrixOps::isZero</a></div><div class="ttdeci">bool isZero(const DMat&lt; RT &gt; &amp;A)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d17/mat-arith_8hpp_source.html#l00166">mat-arith.hpp:166</a></div></div>
 <div class="ttc" id="anamespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd_html_a8de3373d524b221e7bc039814af8a2bd"><div class="ttname"><a href="../../d8/db5/namespace_matrix_ops_a8de3373d524b221e7bc039814af8a2bd.html#a8de3373d524b221e7bc039814af8a2bd">MatrixOps::LU</a></div><div class="ttdeci">M2_arrayintOrNull LU(const Mat &amp;A, Mat &amp;L, Mat &amp;U)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d8a/mat-linalg_8hpp_source.html#l00243">mat-linalg.hpp:243</a></div></div>
 <div class="ttc" id="anamespacempfr_a99795794b6c0ff9088d119bf301402ed_html_a99795794b6c0ff9088d119bf301402ed"><div class="ttname"><a href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">mpfr::min</a></div><div class="ttdeci">const mpreal() min(const mpreal &amp;x, const mpreal &amp;y)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l02767">mpreal.h:2767</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">DMat&lt; ACoeffRing &gt;::entry()</a>, <a class="el" href="../../d8/db5/namespace_matrix_ops_a37882f800102bd2b037f51de5e0211e0.html#a37882f800102bd2b037f51de5e0211e0">MatrixOps::isZero()</a>, <a class="el" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat&lt; ACoeffRing &gt;::numRows()</a>, and <a class="el" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">DMat&lt; ACoeffRing &gt;::resize()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/d87/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_01_4_af3611e111de25d578e6b9638595f2cf0.html#af3611e111de25d578e6b9638595f2cf0">DMatLinAlg&lt; M2::ARingZZpFFPACK &gt;::matrixPLU()</a>, and <a class="el" href="../../d1/d10/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_z_zp_flint_01_4_a2f46b9ad6d66c5fa7de208301acfa8fd.html#a2f46b9ad6d66c5fa7de208301acfa8fd">DMatLinAlg&lt; M2::ARingZZpFlint &gt;::matrixPLU()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d2b/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_q_q_01_4_a2f4ed4c5197c114c87be8351efb14f8d.html#a2f4ed4c5197c114c87be8351efb14f8d">DMatLinAlg&lt; M2::ARingQQ &gt;::matrixPLU()</a>, <a class="el" href="../../dc/d87/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_01_4_af3611e111de25d578e6b9638595f2cf0.html#af3611e111de25d578e6b9638595f2cf0">DMatLinAlg&lt; M2::ARingZZpFFPACK &gt;::matrixPLU()</a>, and <a class="el" href="../../d1/d10/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_z_zp_flint_01_4_a2f46b9ad6d66c5fa7de208301acfa8fd.html#a2f46b9ad6d66c5fa7de208301acfa8fd">DMatLinAlg&lt; M2::ARingZZpFlint &gt;::matrixPLU()</a>.</p>
 
 </div>
 </div>
@@ -171,7 +171,7 @@ template&lt;class <a class="el" href="../../df/dcd/class_l_u_util_a146b080d865ee
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/dcd/class_l_u_util.html">LUUtil</a></li>
-    <li class="footer">Generated on Sun May 11 2025 02:10:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 18 2025 02:11:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
