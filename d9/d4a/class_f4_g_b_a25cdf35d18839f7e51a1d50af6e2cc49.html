@@ -105,123 +105,123 @@ $(document).ready(function(){initNavTree('d9/d4a/class_f4_g_b_a25cdf35d18839f7e5
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de5/f4_8cpp_source.html#l01114">1114</a> of file <a class="el" href="../../d3/de5/f4_8cpp_source.html">f4.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1115</span>{</div>
-<div class="line"><span class="lineno"> 1116</span>  <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_aba78951c85915e79c48eb5ccb8ce11ba.html#aba78951c85915e79c48eb5ccb8ce11ba">clock_sort_columns</a> = 0;</div>
-<div class="line"><span class="lineno"> 1117</span>  <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a221872d95bf852ce84368d6f9ec79edf.html#a221872d95bf852ce84368d6f9ec79edf">clock_gauss</a> = 0;</div>
-<div class="line"><span class="lineno"> 1118</span>  <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a534b8c3ff5de38faf728372008411918.html#a534b8c3ff5de38faf728372008411918">clock_make_matrix</a> = 0;</div>
-<div class="line"><span class="lineno"> 1119</span>  <span class="keywordtype">int</span> npairs = 0;</div>
-<div class="line"><span class="lineno"> 1120</span> </div>
-<div class="line"><span class="lineno"> 1121</span>  <span class="comment">//  test_spair_code();</span></div>
-<div class="line"><span class="lineno"> 1122</span> </div>
-<div class="line"><span class="lineno"> 1123</span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213">ComputationStatusCode</a> is_done = <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213acc1882220d0fc15d30917e7479b550df">COMP_COMPUTING</a>;</div>
-<div class="line"><span class="lineno"> 1124</span> </div>
-<div class="line"><span class="lineno"> 1125</span>  <span class="keywordflow">for</span> (;;)</div>
-<div class="line"><span class="lineno"> 1126</span>    {</div>
-<div class="line"><span class="lineno"> 1127</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../dc/de7/interrupted_8cpp_a5035d07c37876dc3b866e1d4457ff390.html#a5035d07c37876dc3b866e1d4457ff390">system_interrupted</a>())</div>
-<div class="line"><span class="lineno"> 1128</span>        {</div>
-<div class="line"><span class="lineno"> 1129</span>          is_done = <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213af7f83acff45b8cb3944b17a21c048b06">COMP_INTERRUPTED</a>;</div>
-<div class="line"><span class="lineno"> 1130</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno"> 1131</span>        }</div>
-<div class="line"><span class="lineno"> 1132</span> </div>
-<div class="line"><span class="lineno"> 1133</span>      is_done = <a class="code hl_function" href="../../d9/d4a/class_f4_g_b_a9bbffa332b1a5b1fc4179106feb550be.html#a9bbffa332b1a5b1fc4179106feb550be">computation_is_complete</a>(stop_);</div>
-<div class="line"><span class="lineno"> 1134</span>      <span class="keywordflow">if</span> (is_done != <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213acc1882220d0fc15d30917e7479b550df">COMP_COMPUTING</a>) <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno"> 1135</span> </div>
-<div class="line"><span class="lineno"> 1136</span>      <span class="comment">//this_degree = mSPairSet.prepare_next_degree(-1, npairs);</span></div>
-<div class="line"><span class="lineno"> 1137</span>      <span class="keyword">auto</span> thisDegInfo = <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_a35efbad3069af8552e30f236e5537a7f.html#a35efbad3069af8552e30f236e5537a7f">setThisDegree</a>();</div>
-<div class="line"><span class="lineno"> 1138</span>      </div>
-<div class="line"><span class="lineno"> 1139</span>      <span class="keywordflow">if</span> (not thisDegInfo.first)</div>
-<div class="line"><span class="lineno"> 1140</span>        {</div>
-<div class="line"><span class="lineno"> 1141</span>          is_done = <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213a45f992597e767ffedbba1563ebfa6045">COMP_DONE</a>;</div>
-<div class="line"><span class="lineno"> 1142</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno"> 1143</span>        }</div>
-<div class="line"><span class="lineno"> 1144</span> </div>
-<div class="line"><span class="lineno"> 1145</span>      <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">this_degree</a> = thisDegInfo.second;</div>
-<div class="line"><span class="lineno"> 1146</span>      </div>
-<div class="line"><span class="lineno"> 1147</span>      <span class="keywordflow">if</span> (stop_.<a class="code hl_variable" href="../../d6/d5d/struct_stop_conditions_ab31e9a85c6fe668b304386e2c197f81c.html#ab31e9a85c6fe668b304386e2c197f81c">stop_after_degree</a> &amp;&amp; <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">this_degree</a> &gt; stop_.<a class="code hl_variable" href="../../d6/d5d/struct_stop_conditions_af0eb8948eacf5b0a485d4df972cf7a6a.html#af0eb8948eacf5b0a485d4df972cf7a6a">degree_limit</a>-&gt;array[0])</div>
-<div class="line"><span class="lineno"> 1148</span>        {</div>
-<div class="line"><span class="lineno"> 1149</span>          is_done = <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213aa8fd27b9f6feb410aa637234ce776867">COMP_DONE_DEGREE_LIMIT</a>;</div>
-<div class="line"><span class="lineno"> 1150</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno"> 1151</span>        }</div>
-<div class="line"><span class="lineno"> 1152</span> </div>
-<div class="line"><span class="lineno"> 1153</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a57567851cf622af1e938b68494ccd6fe.html#a57567851cf622af1e938b68494ccd6fe">hilbert</a>)</div>
-<div class="line"><span class="lineno"> 1154</span>        {</div>
-<div class="line"><span class="lineno"> 1155</span>          <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a57567851cf622af1e938b68494ccd6fe.html#a57567851cf622af1e938b68494ccd6fe">hilbert</a>-&gt;<a class="code hl_function" href="../../dd/dc6/class_hilbert_controller_a88ed4434dd989eeed88b334c68e9d217.html#a88ed4434dd989eeed88b334c68e9d217">setDegree</a>(<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">this_degree</a>))</div>
-<div class="line"><span class="lineno"> 1156</span>            {</div>
-<div class="line"><span class="lineno"> 1157</span>              <span class="keywordflow">if</span> (<a class="code hl_function" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>())</div>
-<div class="line"><span class="lineno"> 1158</span>                is_done = <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213a4d0bf106616c16bfc00b23413067fc63">COMP_ERROR</a>;</div>
-<div class="line"><span class="lineno"> 1159</span>              <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno"> 1160</span>                is_done = <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213af7f83acff45b8cb3944b17a21c048b06">COMP_INTERRUPTED</a>;</div>
-<div class="line"><span class="lineno"> 1161</span>              <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno"> 1162</span>            }</div>
-<div class="line"><span class="lineno"> 1163</span>        }</div>
-<div class="line"><span class="lineno"> 1164</span> </div>
-<div class="line"><span class="lineno"> 1165</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 1)</div>
-<div class="line"><span class="lineno"> 1166</span>        {</div>
-<div class="line"><span class="lineno"> 1167</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a57567851cf622af1e938b68494ccd6fe.html#a57567851cf622af1e938b68494ccd6fe">hilbert</a>)</div>
-<div class="line"><span class="lineno"> 1168</span>            fprintf(stderr,</div>
-<div class="line"><span class="lineno"> 1169</span>                    <span class="stringliteral">&quot;DEGREE %d (nexpected %d npairs %d)\n&quot;</span>,</div>
-<div class="line"><span class="lineno"> 1170</span>                    <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">this_degree</a>,</div>
-<div class="line"><span class="lineno"> 1171</span>                    <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a57567851cf622af1e938b68494ccd6fe.html#a57567851cf622af1e938b68494ccd6fe">hilbert</a>-&gt;<a class="code hl_function" href="../../dd/dc6/class_hilbert_controller_a3de0f9d41005478725628b0c9d4f7e8a.html#a3de0f9d41005478725628b0c9d4f7e8a">nRemainingExpected</a>(),</div>
-<div class="line"><span class="lineno"> 1172</span>                    npairs);</div>
-<div class="line"><span class="lineno"> 1173</span>          <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno"> 1174</span>            fprintf(stderr, <span class="stringliteral">&quot;DEGREE %d (npairs %d)\n&quot;</span>, <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">this_degree</a>, npairs);</div>
-<div class="line"><span class="lineno"> 1175</span>        }</div>
-<div class="line"><span class="lineno"> 1176</span>      <a class="code hl_function" href="../../d9/d4a/class_f4_g_b_a74fcb2759eb53e6fe249c629b5627593.html#a74fcb2759eb53e6fe249c629b5627593">do_spairs</a>();</div>
-<div class="line"><span class="lineno"> 1177</span>      <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a22c33461e643889f29c978c71d952a63.html#a22c33461e643889f29c978c71d952a63">complete_thru_this_degree</a> = <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">this_degree</a>;</div>
-<div class="line"><span class="lineno"> 1178</span>    }</div>
-<div class="line"><span class="lineno"> 1179</span> </div>
-<div class="line"><span class="lineno"> 1180</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 2)</div>
-<div class="line"><span class="lineno"> 1181</span>    {</div>
-<div class="line"><span class="lineno"> 1182</span>      <span class="comment">// fprintf(stderr,</span></div>
-<div class="line"><span class="lineno"> 1183</span>      <span class="comment">//         &quot;number of calls to cancel row       : %ld\n&quot;,</span></div>
-<div class="line"><span class="lineno"> 1184</span>      <span class="comment">//         mGausser-&gt;n_dense_row_cancel);</span></div>
-<div class="line"><span class="lineno"> 1185</span>      <span class="comment">// fprintf(stderr,</span></div>
-<div class="line"><span class="lineno"> 1186</span>      <span class="comment">//         &quot;number of calls to subtract_multiple: %ld\n&quot;,</span></div>
-<div class="line"><span class="lineno"> 1187</span>      <span class="comment">//         mGausser-&gt;n_subtract_multiple);</span></div>
-<div class="line"><span class="lineno"> 1188</span>      fprintf(</div>
-<div class="line"><span class="lineno"> 1189</span>          stderr, <span class="stringliteral">&quot;total time for sorting columns: %f\n&quot;</span>, <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_aba78951c85915e79c48eb5ccb8ce11ba.html#aba78951c85915e79c48eb5ccb8ce11ba">clock_sort_columns</a>);</div>
-<div class="line"><span class="lineno"> 1190</span>      fprintf(stderr,</div>
-<div class="line"><span class="lineno"> 1191</span>              <span class="stringliteral">&quot;total time for making matrix (includes sort): %f\n&quot;</span>,</div>
-<div class="line"><span class="lineno"> 1192</span>              ((<span class="keywordtype">double</span>)<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a534b8c3ff5de38faf728372008411918.html#a534b8c3ff5de38faf728372008411918">clock_make_matrix</a>) / CLOCKS_PER_SEC);</div>
-<div class="line"><span class="lineno"> 1193</span>      fprintf(stderr,</div>
-<div class="line"><span class="lineno"> 1194</span>              <span class="stringliteral">&quot;total time for gauss: %f\n&quot;</span>,</div>
-<div class="line"><span class="lineno"> 1195</span>              ((<span class="keywordtype">double</span>)<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a221872d95bf852ce84368d6f9ec79edf.html#a221872d95bf852ce84368d6f9ec79edf">clock_gauss</a>) / CLOCKS_PER_SEC);</div>
-<div class="line"><span class="lineno"> 1196</span>      fprintf(stderr,</div>
-<div class="line"><span class="lineno"> 1197</span>              <span class="stringliteral">&quot;parallel tbb time for gauss: %g\n&quot;</span>,</div>
-<div class="line"><span class="lineno"> 1198</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ac36e1b91d9ce9bce317a48e690ec8353.html#ac36e1b91d9ce9bce317a48e690ec8353">mParallelGaussTime</a>);</div>
-<div class="line"><span class="lineno"> 1199</span>      fprintf(stderr,</div>
-<div class="line"><span class="lineno"> 1200</span>              <span class="stringliteral">&quot;serial tbb time for gauss: %g\n&quot;</span>,</div>
-<div class="line"><span class="lineno"> 1201</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a1088bab08aeebc8696974ee2679b22eb.html#a1088bab08aeebc8696974ee2679b22eb">mSerialGaussTime</a>);</div>
-<div class="line"><span class="lineno"> 1202</span>      fprintf(stderr,</div>
-<div class="line"><span class="lineno"> 1203</span>              <span class="stringliteral">&quot;total time for finding new spairs: %g\n&quot;</span>,</div>
-<div class="line"><span class="lineno"> 1204</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a0e2d9a795b01c6d4e0eb11c6c378f044.html#a0e2d9a795b01c6d4e0eb11c6c378f044">mNewSPairTime</a>);</div>
-<div class="line"><span class="lineno"> 1205</span>      fprintf(stderr,</div>
-<div class="line"><span class="lineno"> 1206</span>              <span class="stringliteral">&quot;total time for creating pre spairs: %g\n&quot;</span>,</div>
-<div class="line"><span class="lineno"> 1207</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_a467d5ed4a5c908347e53e202122b3305.html#a467d5ed4a5c908347e53e202122b3305">secondsToCreatePrePairs</a>());</div>
-<div class="line"><span class="lineno"> 1208</span>      fprintf(stderr,</div>
-<div class="line"><span class="lineno"> 1209</span>              <span class="stringliteral">&quot;total time for minimizing new spairs: %g\n&quot;</span>,</div>
-<div class="line"><span class="lineno"> 1210</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_a73328f096cf654c370abca16ff8f0e9a.html#a73328f096cf654c370abca16ff8f0e9a">secondsToMinimizePairs</a>());</div>
-<div class="line"><span class="lineno"> 1211</span>      fprintf(stderr,</div>
-<div class="line"><span class="lineno"> 1212</span>              <span class="stringliteral">&quot;total time for inserting new gb elements: %g\n&quot;</span>,</div>
-<div class="line"><span class="lineno"> 1213</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a95dc0ebaf1e91ad086434b8810d4ce0a.html#a95dc0ebaf1e91ad086434b8810d4ce0a">mInsertGBTime</a>);</div>
-<div class="line"><span class="lineno"> 1214</span>      fprintf(stderr,</div>
-<div class="line"><span class="lineno"> 1215</span>              <span class="stringliteral">&quot;number of spairs computed           : %ld\n&quot;</span>,</div>
-<div class="line"><span class="lineno"> 1216</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a5b3e649d86e1c9c0f69bd4d691a28ce1.html#a5b3e649d86e1c9c0f69bd4d691a28ce1">n_pairs_computed</a>);</div>
-<div class="line"><span class="lineno"> 1217</span>      fprintf(stderr,</div>
-<div class="line"><span class="lineno"> 1218</span>              <span class="stringliteral">&quot;number of reduction steps           : %ld\n&quot;</span>,</div>
-<div class="line"><span class="lineno"> 1219</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ad0fa5ecb08b6f02f3f9d64c6f2dc422a.html#ad0fa5ecb08b6f02f3f9d64c6f2dc422a">n_reduction_steps</a>);</div>
-<div class="line"><span class="lineno"> 1220</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
-<div class="line"><span class="lineno"> 1221</span>      {</div>
-<div class="line"><span class="lineno"> 1222</span>        fprintf(stderr,</div>
-<div class="line"><span class="lineno"> 1223</span>              <span class="stringliteral">&quot;number of spairs removed by criterion = %ld\n&quot;</span>,</div>
-<div class="line"><span class="lineno"> 1224</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_aee869978e611b167496b95999b18603c.html#aee869978e611b167496b95999b18603c">n_unneeded_pairs</a>());</div>
-<div class="line"><span class="lineno"> 1225</span>        <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a8f295f582a2dcf25fdfcf201032dc31a.html#a8f295f582a2dcf25fdfcf201032dc31a">mMonomialInfo</a>-&gt;<a class="code hl_function" href="../../dd/dab/class_monomial_info_a332d7315b13d6a2331a29cceafba64c0.html#a332d7315b13d6a2331a29cceafba64c0">show</a>();</div>
-<div class="line"><span class="lineno"> 1226</span>      }</div>
-<div class="line"><span class="lineno"> 1227</span>    }</div>
-<div class="line"><span class="lineno"> 1228</span> </div>
-<div class="line"><span class="lineno"> 1229</span>  <span class="keywordflow">return</span> is_done;</div>
-<div class="line"><span class="lineno"> 1230</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/de5/f4_8cpp_source.html#l01113">1113</a> of file <a class="el" href="../../d3/de5/f4_8cpp_source.html">f4.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1114</span>{</div>
+<div class="line"><span class="lineno"> 1115</span>  <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_aba78951c85915e79c48eb5ccb8ce11ba.html#aba78951c85915e79c48eb5ccb8ce11ba">clock_sort_columns</a> = 0;</div>
+<div class="line"><span class="lineno"> 1116</span>  <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a221872d95bf852ce84368d6f9ec79edf.html#a221872d95bf852ce84368d6f9ec79edf">clock_gauss</a> = 0;</div>
+<div class="line"><span class="lineno"> 1117</span>  <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a534b8c3ff5de38faf728372008411918.html#a534b8c3ff5de38faf728372008411918">clock_make_matrix</a> = 0;</div>
+<div class="line"><span class="lineno"> 1118</span>  <span class="keywordtype">int</span> npairs = 0;</div>
+<div class="line"><span class="lineno"> 1119</span> </div>
+<div class="line"><span class="lineno"> 1120</span>  <span class="comment">//  test_spair_code();</span></div>
+<div class="line"><span class="lineno"> 1121</span> </div>
+<div class="line"><span class="lineno"> 1122</span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213">ComputationStatusCode</a> is_done = <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213acc1882220d0fc15d30917e7479b550df">COMP_COMPUTING</a>;</div>
+<div class="line"><span class="lineno"> 1123</span> </div>
+<div class="line"><span class="lineno"> 1124</span>  <span class="keywordflow">for</span> (;;)</div>
+<div class="line"><span class="lineno"> 1125</span>    {</div>
+<div class="line"><span class="lineno"> 1126</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../dc/de7/interrupted_8cpp_a5035d07c37876dc3b866e1d4457ff390.html#a5035d07c37876dc3b866e1d4457ff390">system_interrupted</a>())</div>
+<div class="line"><span class="lineno"> 1127</span>        {</div>
+<div class="line"><span class="lineno"> 1128</span>          is_done = <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213af7f83acff45b8cb3944b17a21c048b06">COMP_INTERRUPTED</a>;</div>
+<div class="line"><span class="lineno"> 1129</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno"> 1130</span>        }</div>
+<div class="line"><span class="lineno"> 1131</span> </div>
+<div class="line"><span class="lineno"> 1132</span>      is_done = <a class="code hl_function" href="../../d9/d4a/class_f4_g_b_a9bbffa332b1a5b1fc4179106feb550be.html#a9bbffa332b1a5b1fc4179106feb550be">computation_is_complete</a>(stop_);</div>
+<div class="line"><span class="lineno"> 1133</span>      <span class="keywordflow">if</span> (is_done != <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213acc1882220d0fc15d30917e7479b550df">COMP_COMPUTING</a>) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno"> 1134</span> </div>
+<div class="line"><span class="lineno"> 1135</span>      <span class="comment">//this_degree = mSPairSet.prepare_next_degree(-1, npairs);</span></div>
+<div class="line"><span class="lineno"> 1136</span>      <span class="keyword">auto</span> thisDegInfo = <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_a35efbad3069af8552e30f236e5537a7f.html#a35efbad3069af8552e30f236e5537a7f">setThisDegree</a>();</div>
+<div class="line"><span class="lineno"> 1137</span>      </div>
+<div class="line"><span class="lineno"> 1138</span>      <span class="keywordflow">if</span> (not thisDegInfo.first)</div>
+<div class="line"><span class="lineno"> 1139</span>        {</div>
+<div class="line"><span class="lineno"> 1140</span>          is_done = <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213a45f992597e767ffedbba1563ebfa6045">COMP_DONE</a>;</div>
+<div class="line"><span class="lineno"> 1141</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno"> 1142</span>        }</div>
+<div class="line"><span class="lineno"> 1143</span> </div>
+<div class="line"><span class="lineno"> 1144</span>      <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">this_degree</a> = thisDegInfo.second;</div>
+<div class="line"><span class="lineno"> 1145</span>      </div>
+<div class="line"><span class="lineno"> 1146</span>      <span class="keywordflow">if</span> (stop_.<a class="code hl_variable" href="../../d6/d5d/struct_stop_conditions_ab31e9a85c6fe668b304386e2c197f81c.html#ab31e9a85c6fe668b304386e2c197f81c">stop_after_degree</a> &amp;&amp; <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">this_degree</a> &gt; stop_.<a class="code hl_variable" href="../../d6/d5d/struct_stop_conditions_af0eb8948eacf5b0a485d4df972cf7a6a.html#af0eb8948eacf5b0a485d4df972cf7a6a">degree_limit</a>-&gt;array[0])</div>
+<div class="line"><span class="lineno"> 1147</span>        {</div>
+<div class="line"><span class="lineno"> 1148</span>          is_done = <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213aa8fd27b9f6feb410aa637234ce776867">COMP_DONE_DEGREE_LIMIT</a>;</div>
+<div class="line"><span class="lineno"> 1149</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno"> 1150</span>        }</div>
+<div class="line"><span class="lineno"> 1151</span> </div>
+<div class="line"><span class="lineno"> 1152</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a57567851cf622af1e938b68494ccd6fe.html#a57567851cf622af1e938b68494ccd6fe">hilbert</a>)</div>
+<div class="line"><span class="lineno"> 1153</span>        {</div>
+<div class="line"><span class="lineno"> 1154</span>          <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a57567851cf622af1e938b68494ccd6fe.html#a57567851cf622af1e938b68494ccd6fe">hilbert</a>-&gt;<a class="code hl_function" href="../../dd/dc6/class_hilbert_controller_a88ed4434dd989eeed88b334c68e9d217.html#a88ed4434dd989eeed88b334c68e9d217">setDegree</a>(<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">this_degree</a>))</div>
+<div class="line"><span class="lineno"> 1155</span>            {</div>
+<div class="line"><span class="lineno"> 1156</span>              <span class="keywordflow">if</span> (<a class="code hl_function" href="../../db/dcc/error_8c_ad1a5ba420409525ff5ab1be86ac5e526.html#ad1a5ba420409525ff5ab1be86ac5e526">error</a>())</div>
+<div class="line"><span class="lineno"> 1157</span>                is_done = <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213a4d0bf106616c16bfc00b23413067fc63">COMP_ERROR</a>;</div>
+<div class="line"><span class="lineno"> 1158</span>              <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1159</span>                is_done = <a class="code hl_enumvalue" href="../../d3/d00/computation_8h_aed0217a90e756a9ee4da649f09850213.html#aed0217a90e756a9ee4da649f09850213af7f83acff45b8cb3944b17a21c048b06">COMP_INTERRUPTED</a>;</div>
+<div class="line"><span class="lineno"> 1160</span>              <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno"> 1161</span>            }</div>
+<div class="line"><span class="lineno"> 1162</span>        }</div>
+<div class="line"><span class="lineno"> 1163</span> </div>
+<div class="line"><span class="lineno"> 1164</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 1)</div>
+<div class="line"><span class="lineno"> 1165</span>        {</div>
+<div class="line"><span class="lineno"> 1166</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a57567851cf622af1e938b68494ccd6fe.html#a57567851cf622af1e938b68494ccd6fe">hilbert</a>)</div>
+<div class="line"><span class="lineno"> 1167</span>            fprintf(stderr,</div>
+<div class="line"><span class="lineno"> 1168</span>                    <span class="stringliteral">&quot;DEGREE %d (nexpected %d npairs %d)\n&quot;</span>,</div>
+<div class="line"><span class="lineno"> 1169</span>                    <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">this_degree</a>,</div>
+<div class="line"><span class="lineno"> 1170</span>                    <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a57567851cf622af1e938b68494ccd6fe.html#a57567851cf622af1e938b68494ccd6fe">hilbert</a>-&gt;<a class="code hl_function" href="../../dd/dc6/class_hilbert_controller_a3de0f9d41005478725628b0c9d4f7e8a.html#a3de0f9d41005478725628b0c9d4f7e8a">nRemainingExpected</a>(),</div>
+<div class="line"><span class="lineno"> 1171</span>                    npairs);</div>
+<div class="line"><span class="lineno"> 1172</span>          <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1173</span>            fprintf(stderr, <span class="stringliteral">&quot;DEGREE %d (npairs %d)\n&quot;</span>, <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">this_degree</a>, npairs);</div>
+<div class="line"><span class="lineno"> 1174</span>        }</div>
+<div class="line"><span class="lineno"> 1175</span>      <a class="code hl_function" href="../../d9/d4a/class_f4_g_b_a74fcb2759eb53e6fe249c629b5627593.html#a74fcb2759eb53e6fe249c629b5627593">do_spairs</a>();</div>
+<div class="line"><span class="lineno"> 1176</span>      <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a22c33461e643889f29c978c71d952a63.html#a22c33461e643889f29c978c71d952a63">complete_thru_this_degree</a> = <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">this_degree</a>;</div>
+<div class="line"><span class="lineno"> 1177</span>    }</div>
+<div class="line"><span class="lineno"> 1178</span> </div>
+<div class="line"><span class="lineno"> 1179</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 2)</div>
+<div class="line"><span class="lineno"> 1180</span>    {</div>
+<div class="line"><span class="lineno"> 1181</span>      <span class="comment">// fprintf(stderr,</span></div>
+<div class="line"><span class="lineno"> 1182</span>      <span class="comment">//         &quot;number of calls to cancel row       : %ld\n&quot;,</span></div>
+<div class="line"><span class="lineno"> 1183</span>      <span class="comment">//         mGausser-&gt;n_dense_row_cancel);</span></div>
+<div class="line"><span class="lineno"> 1184</span>      <span class="comment">// fprintf(stderr,</span></div>
+<div class="line"><span class="lineno"> 1185</span>      <span class="comment">//         &quot;number of calls to subtract_multiple: %ld\n&quot;,</span></div>
+<div class="line"><span class="lineno"> 1186</span>      <span class="comment">//         mGausser-&gt;n_subtract_multiple);</span></div>
+<div class="line"><span class="lineno"> 1187</span>      fprintf(</div>
+<div class="line"><span class="lineno"> 1188</span>          stderr, <span class="stringliteral">&quot;total time for sorting columns: %f\n&quot;</span>, <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_aba78951c85915e79c48eb5ccb8ce11ba.html#aba78951c85915e79c48eb5ccb8ce11ba">clock_sort_columns</a>);</div>
+<div class="line"><span class="lineno"> 1189</span>      fprintf(stderr,</div>
+<div class="line"><span class="lineno"> 1190</span>              <span class="stringliteral">&quot;total time for making matrix (includes sort): %f\n&quot;</span>,</div>
+<div class="line"><span class="lineno"> 1191</span>              ((<span class="keywordtype">double</span>)<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a534b8c3ff5de38faf728372008411918.html#a534b8c3ff5de38faf728372008411918">clock_make_matrix</a>) / CLOCKS_PER_SEC);</div>
+<div class="line"><span class="lineno"> 1192</span>      fprintf(stderr,</div>
+<div class="line"><span class="lineno"> 1193</span>              <span class="stringliteral">&quot;total time for gauss: %f\n&quot;</span>,</div>
+<div class="line"><span class="lineno"> 1194</span>              ((<span class="keywordtype">double</span>)<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a221872d95bf852ce84368d6f9ec79edf.html#a221872d95bf852ce84368d6f9ec79edf">clock_gauss</a>) / CLOCKS_PER_SEC);</div>
+<div class="line"><span class="lineno"> 1195</span>      fprintf(stderr,</div>
+<div class="line"><span class="lineno"> 1196</span>              <span class="stringliteral">&quot;parallel tbb time for gauss: %g\n&quot;</span>,</div>
+<div class="line"><span class="lineno"> 1197</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ac36e1b91d9ce9bce317a48e690ec8353.html#ac36e1b91d9ce9bce317a48e690ec8353">mParallelGaussTime</a>);</div>
+<div class="line"><span class="lineno"> 1198</span>      fprintf(stderr,</div>
+<div class="line"><span class="lineno"> 1199</span>              <span class="stringliteral">&quot;serial tbb time for gauss: %g\n&quot;</span>,</div>
+<div class="line"><span class="lineno"> 1200</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a1088bab08aeebc8696974ee2679b22eb.html#a1088bab08aeebc8696974ee2679b22eb">mSerialGaussTime</a>);</div>
+<div class="line"><span class="lineno"> 1201</span>      fprintf(stderr,</div>
+<div class="line"><span class="lineno"> 1202</span>              <span class="stringliteral">&quot;total time for finding new spairs: %g\n&quot;</span>,</div>
+<div class="line"><span class="lineno"> 1203</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a0e2d9a795b01c6d4e0eb11c6c378f044.html#a0e2d9a795b01c6d4e0eb11c6c378f044">mNewSPairTime</a>);</div>
+<div class="line"><span class="lineno"> 1204</span>      fprintf(stderr,</div>
+<div class="line"><span class="lineno"> 1205</span>              <span class="stringliteral">&quot;total time for creating pre spairs: %g\n&quot;</span>,</div>
+<div class="line"><span class="lineno"> 1206</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_a467d5ed4a5c908347e53e202122b3305.html#a467d5ed4a5c908347e53e202122b3305">secondsToCreatePrePairs</a>());</div>
+<div class="line"><span class="lineno"> 1207</span>      fprintf(stderr,</div>
+<div class="line"><span class="lineno"> 1208</span>              <span class="stringliteral">&quot;total time for minimizing new spairs: %g\n&quot;</span>,</div>
+<div class="line"><span class="lineno"> 1209</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_a73328f096cf654c370abca16ff8f0e9a.html#a73328f096cf654c370abca16ff8f0e9a">secondsToMinimizePairs</a>());</div>
+<div class="line"><span class="lineno"> 1210</span>      fprintf(stderr,</div>
+<div class="line"><span class="lineno"> 1211</span>              <span class="stringliteral">&quot;total time for inserting new gb elements: %g\n&quot;</span>,</div>
+<div class="line"><span class="lineno"> 1212</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a95dc0ebaf1e91ad086434b8810d4ce0a.html#a95dc0ebaf1e91ad086434b8810d4ce0a">mInsertGBTime</a>);</div>
+<div class="line"><span class="lineno"> 1213</span>      fprintf(stderr,</div>
+<div class="line"><span class="lineno"> 1214</span>              <span class="stringliteral">&quot;number of spairs computed           : %ld\n&quot;</span>,</div>
+<div class="line"><span class="lineno"> 1215</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a5b3e649d86e1c9c0f69bd4d691a28ce1.html#a5b3e649d86e1c9c0f69bd4d691a28ce1">n_pairs_computed</a>);</div>
+<div class="line"><span class="lineno"> 1216</span>      fprintf(stderr,</div>
+<div class="line"><span class="lineno"> 1217</span>              <span class="stringliteral">&quot;number of reduction steps           : %ld\n&quot;</span>,</div>
+<div class="line"><span class="lineno"> 1218</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_ad0fa5ecb08b6f02f3f9d64c6f2dc422a.html#ad0fa5ecb08b6f02f3f9d64c6f2dc422a">n_reduction_steps</a>);</div>
+<div class="line"><span class="lineno"> 1219</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
+<div class="line"><span class="lineno"> 1220</span>      {</div>
+<div class="line"><span class="lineno"> 1221</span>        fprintf(stderr,</div>
+<div class="line"><span class="lineno"> 1222</span>              <span class="stringliteral">&quot;number of spairs removed by criterion = %ld\n&quot;</span>,</div>
+<div class="line"><span class="lineno"> 1223</span>              <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_aee869978e611b167496b95999b18603c.html#aee869978e611b167496b95999b18603c">n_unneeded_pairs</a>());</div>
+<div class="line"><span class="lineno"> 1224</span>        <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a8f295f582a2dcf25fdfcf201032dc31a.html#a8f295f582a2dcf25fdfcf201032dc31a">mMonomialInfo</a>-&gt;<a class="code hl_function" href="../../dd/dab/class_monomial_info_a332d7315b13d6a2331a29cceafba64c0.html#a332d7315b13d6a2331a29cceafba64c0">show</a>();</div>
+<div class="line"><span class="lineno"> 1225</span>      }</div>
+<div class="line"><span class="lineno"> 1226</span>    }</div>
+<div class="line"><span class="lineno"> 1227</span> </div>
+<div class="line"><span class="lineno"> 1228</span>  <span class="keywordflow">return</span> is_done;</div>
+<div class="line"><span class="lineno"> 1229</span>}</div>
 <div class="ttc" id="a_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc_html_aa0f82116567de78d2d8d5cee3a26eebc"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a></div><div class="ttdeci">int M2_gbTrace</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00059">M2-replacement.c:59</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_a0e2d9a795b01c6d4e0eb11c6c378f044_html_a0e2d9a795b01c6d4e0eb11c6c378f044"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a0e2d9a795b01c6d4e0eb11c6c378f044.html#a0e2d9a795b01c6d4e0eb11c6c378f044">F4GB::mNewSPairTime</a></div><div class="ttdeci">double mNewSPairTime</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00137">f4.hpp:137</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_a1088bab08aeebc8696974ee2679b22eb_html_a1088bab08aeebc8696974ee2679b22eb"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a1088bab08aeebc8696974ee2679b22eb.html#a1088bab08aeebc8696974ee2679b22eb">F4GB::mSerialGaussTime</a></div><div class="ttdeci">double mSerialGaussTime</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00135">f4.hpp:135</a></div></div>
@@ -231,10 +231,10 @@ $(document).ready(function(){initNavTree('d9/d4a/class_f4_g_b_a25cdf35d18839f7e5
 <div class="ttc" id="aclass_f4_g_b_a534b8c3ff5de38faf728372008411918_html_a534b8c3ff5de38faf728372008411918"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a534b8c3ff5de38faf728372008411918.html#a534b8c3ff5de38faf728372008411918">F4GB::clock_make_matrix</a></div><div class="ttdeci">clock_t clock_make_matrix</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00139">f4.hpp:139</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_a57567851cf622af1e938b68494ccd6fe_html_a57567851cf622af1e938b68494ccd6fe"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a57567851cf622af1e938b68494ccd6fe.html#a57567851cf622af1e938b68494ccd6fe">F4GB::hilbert</a></div><div class="ttdeci">HilbertController * hilbert</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00112">f4.hpp:112</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_a5b3e649d86e1c9c0f69bd4d691a28ce1_html_a5b3e649d86e1c9c0f69bd4d691a28ce1"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a5b3e649d86e1c9c0f69bd4d691a28ce1.html#a5b3e649d86e1c9c0f69bd4d691a28ce1">F4GB::n_pairs_computed</a></div><div class="ttdeci">long n_pairs_computed</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00103">f4.hpp:103</a></div></div>
-<div class="ttc" id="aclass_f4_g_b_a74fcb2759eb53e6fe249c629b5627593_html_a74fcb2759eb53e6fe249c629b5627593"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a74fcb2759eb53e6fe249c629b5627593.html#a74fcb2759eb53e6fe249c629b5627593">F4GB::do_spairs</a></div><div class="ttdeci">void do_spairs()</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/f4_8cpp_source.html#l00992">f4.cpp:992</a></div></div>
+<div class="ttc" id="aclass_f4_g_b_a74fcb2759eb53e6fe249c629b5627593_html_a74fcb2759eb53e6fe249c629b5627593"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a74fcb2759eb53e6fe249c629b5627593.html#a74fcb2759eb53e6fe249c629b5627593">F4GB::do_spairs</a></div><div class="ttdeci">void do_spairs()</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/f4_8cpp_source.html#l00991">f4.cpp:991</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_a8f295f582a2dcf25fdfcf201032dc31a_html_a8f295f582a2dcf25fdfcf201032dc31a"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a8f295f582a2dcf25fdfcf201032dc31a.html#a8f295f582a2dcf25fdfcf201032dc31a">F4GB::mMonomialInfo</a></div><div class="ttdeci">const MonomialInfo * mMonomialInfo</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00094">f4.hpp:94</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_a95dc0ebaf1e91ad086434b8810d4ce0a_html_a95dc0ebaf1e91ad086434b8810d4ce0a"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a95dc0ebaf1e91ad086434b8810d4ce0a.html#a95dc0ebaf1e91ad086434b8810d4ce0a">F4GB::mInsertGBTime</a></div><div class="ttdeci">double mInsertGBTime</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00138">f4.hpp:138</a></div></div>
-<div class="ttc" id="aclass_f4_g_b_a9bbffa332b1a5b1fc4179106feb550be_html_a9bbffa332b1a5b1fc4179106feb550be"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a9bbffa332b1a5b1fc4179106feb550be.html#a9bbffa332b1a5b1fc4179106feb550be">F4GB::computation_is_complete</a></div><div class="ttdeci">enum ComputationStatusCode computation_is_complete(StopConditions &amp;stop_)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/f4_8cpp_source.html#l01076">f4.cpp:1076</a></div></div>
+<div class="ttc" id="aclass_f4_g_b_a9bbffa332b1a5b1fc4179106feb550be_html_a9bbffa332b1a5b1fc4179106feb550be"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a9bbffa332b1a5b1fc4179106feb550be.html#a9bbffa332b1a5b1fc4179106feb550be">F4GB::computation_is_complete</a></div><div class="ttdeci">enum ComputationStatusCode computation_is_complete(StopConditions &amp;stop_)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/f4_8cpp_source.html#l01075">f4.cpp:1075</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac_html_ab874e2dc554b7a8e6ded5c6ed2d556ac"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_ab874e2dc554b7a8e6ded5c6ed2d556ac.html#ab874e2dc554b7a8e6ded5c6ed2d556ac">F4GB::this_degree</a></div><div class="ttdeci">int this_degree</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00108">f4.hpp:108</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_aba78951c85915e79c48eb5ccb8ce11ba_html_aba78951c85915e79c48eb5ccb8ce11ba"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_aba78951c85915e79c48eb5ccb8ce11ba.html#aba78951c85915e79c48eb5ccb8ce11ba">F4GB::clock_sort_columns</a></div><div class="ttdeci">double clock_sort_columns</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00131">f4.hpp:131</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_ac36e1b91d9ce9bce317a48e690ec8353_html_ac36e1b91d9ce9bce317a48e690ec8353"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_ac36e1b91d9ce9bce317a48e690ec8353.html#ac36e1b91d9ce9bce317a48e690ec8353">F4GB::mParallelGaussTime</a></div><div class="ttdeci">double mParallelGaussTime</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00134">f4.hpp:134</a></div></div>
@@ -269,7 +269,7 @@ $(document).ready(function(){initNavTree('d9/d4a/class_f4_g_b_a25cdf35d18839f7e5
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d4a/class_f4_g_b.html">F4GB</a></li>
-    <li class="footer">Generated on Sun May 18 2025 02:11:39 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 1 2025 02:31:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

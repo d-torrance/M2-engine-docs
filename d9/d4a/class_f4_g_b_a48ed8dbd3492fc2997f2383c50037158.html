@@ -112,21 +112,21 @@ $(document).ready(function(){initNavTree('d9/d4a/class_f4_g_b_a48ed8dbd3492fc299
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de5/f4_8cpp_source.html#l01098">1098</a> of file <a class="el" href="../../d3/de5/f4_8cpp_source.html">f4.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1099</span>{</div>
-<div class="line"><span class="lineno"> 1100</span>  <span class="comment">// This starts out with taking each generator and placing it into the</span></div>
-<div class="line"><span class="lineno"> 1101</span>  <span class="comment">// gb matrix, and then calling find_new_pairs after each one.</span></div>
-<div class="line"><span class="lineno"> 1102</span>  <span class="comment">// It displays the list of spairs after each generator.</span></div>
-<div class="line"><span class="lineno"> 1103</span> </div>
-<div class="line"><span class="lineno"> 1104</span>  <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_af79ae8b00d53ea6933568e34dba2717c.html#af79ae8b00d53ea6933568e34dba2717c">mGroebnerBasis</a>.push_back(<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a2ac3a890a3dfb04713b542469870f2d2.html#a2ac3a890a3dfb04713b542469870f2d2">mGenerators</a>[0]);</div>
-<div class="line"><span class="lineno"> 1105</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a2ac3a890a3dfb04713b542469870f2d2.html#a2ac3a890a3dfb04713b542469870f2d2">mGenerators</a>.size(); i++)</div>
-<div class="line"><span class="lineno"> 1106</span>    {</div>
-<div class="line"><span class="lineno"> 1107</span>      <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_af79ae8b00d53ea6933568e34dba2717c.html#af79ae8b00d53ea6933568e34dba2717c">mGroebnerBasis</a>.push_back(<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a2ac3a890a3dfb04713b542469870f2d2.html#a2ac3a890a3dfb04713b542469870f2d2">mGenerators</a>[i]);</div>
-<div class="line"><span class="lineno"> 1108</span>      <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_af21bcb740c9d8bbf039463325f6a519d.html#af21bcb740c9d8bbf039463325f6a519d">find_new_pairs</a>(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno"> 1109</span>      fprintf(stderr, <span class="stringliteral">&quot;---Just inserted element %d---\n&quot;</span>, i);</div>
-<div class="line"><span class="lineno"> 1110</span>      <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_a5462504c1e16d5ec994c3d4780d685b5.html#a5462504c1e16d5ec994c3d4780d685b5">display</a>();</div>
-<div class="line"><span class="lineno"> 1111</span>    }</div>
-<div class="line"><span class="lineno"> 1112</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/de5/f4_8cpp_source.html#l01097">1097</a> of file <a class="el" href="../../d3/de5/f4_8cpp_source.html">f4.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1098</span>{</div>
+<div class="line"><span class="lineno"> 1099</span>  <span class="comment">// This starts out with taking each generator and placing it into the</span></div>
+<div class="line"><span class="lineno"> 1100</span>  <span class="comment">// gb matrix, and then calling find_new_pairs after each one.</span></div>
+<div class="line"><span class="lineno"> 1101</span>  <span class="comment">// It displays the list of spairs after each generator.</span></div>
+<div class="line"><span class="lineno"> 1102</span> </div>
+<div class="line"><span class="lineno"> 1103</span>  <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_af79ae8b00d53ea6933568e34dba2717c.html#af79ae8b00d53ea6933568e34dba2717c">mGroebnerBasis</a>.push_back(<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a2ac3a890a3dfb04713b542469870f2d2.html#a2ac3a890a3dfb04713b542469870f2d2">mGenerators</a>[0]);</div>
+<div class="line"><span class="lineno"> 1104</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a2ac3a890a3dfb04713b542469870f2d2.html#a2ac3a890a3dfb04713b542469870f2d2">mGenerators</a>.size(); i++)</div>
+<div class="line"><span class="lineno"> 1105</span>    {</div>
+<div class="line"><span class="lineno"> 1106</span>      <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_af79ae8b00d53ea6933568e34dba2717c.html#af79ae8b00d53ea6933568e34dba2717c">mGroebnerBasis</a>.push_back(<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a2ac3a890a3dfb04713b542469870f2d2.html#a2ac3a890a3dfb04713b542469870f2d2">mGenerators</a>[i]);</div>
+<div class="line"><span class="lineno"> 1107</span>      <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_af21bcb740c9d8bbf039463325f6a519d.html#af21bcb740c9d8bbf039463325f6a519d">find_new_pairs</a>(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno"> 1108</span>      fprintf(stderr, <span class="stringliteral">&quot;---Just inserted element %d---\n&quot;</span>, i);</div>
+<div class="line"><span class="lineno"> 1109</span>      <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_a5462504c1e16d5ec994c3d4780d685b5.html#a5462504c1e16d5ec994c3d4780d685b5">display</a>();</div>
+<div class="line"><span class="lineno"> 1110</span>    }</div>
+<div class="line"><span class="lineno"> 1111</span>}</div>
 <div class="ttc" id="aclass_f4_g_b_a2ac3a890a3dfb04713b542469870f2d2_html_a2ac3a890a3dfb04713b542469870f2d2"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a2ac3a890a3dfb04713b542469870f2d2.html#a2ac3a890a3dfb04713b542469870f2d2">F4GB::mGenerators</a></div><div class="ttdeci">gb_array mGenerators</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00117">f4.hpp:117</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_a445b01c0cbc91303670868b848d2336c_html_a445b01c0cbc91303670868b848d2336c"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">F4GB::mSPairSet</a></div><div class="ttdeci">F4SPairSet mSPairSet</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00173">f4.hpp:173</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_af79ae8b00d53ea6933568e34dba2717c_html_af79ae8b00d53ea6933568e34dba2717c"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_af79ae8b00d53ea6933568e34dba2717c.html#af79ae8b00d53ea6933568e34dba2717c">F4GB::mGroebnerBasis</a></div><div class="ttdeci">gb_array mGroebnerBasis</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00118">f4.hpp:118</a></div></div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('d9/d4a/class_f4_g_b_a48ed8dbd3492fc299
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d4a/class_f4_g_b.html">F4GB</a></li>
-    <li class="footer">Generated on Sun May 18 2025 02:11:39 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 1 2025 02:31:27 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
