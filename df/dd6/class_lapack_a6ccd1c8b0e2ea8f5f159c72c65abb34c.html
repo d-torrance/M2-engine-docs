@@ -129,58 +129,58 @@ $(document).ready(function(){initNavTree('df/dd6/class_lapack_a6ccd1c8b0e2ea8f5f
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dfc/lapack_8cpp_source.html#l01941">1941</a> of file <a class="el" href="../../d1/dfc/lapack_8cpp_source.html">lapack.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1942</span>{</div>
-<div class="line"><span class="lineno"> 1943</span>  <span class="keywordtype">int</span> rows = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
-<div class="line"><span class="lineno"> 1944</span>  <span class="keywordtype">int</span> cols = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>());</div>
-<div class="line"><span class="lineno"> 1945</span>  <span class="keywordtype">int</span> info;</div>
-<div class="line"><span class="lineno"> 1946</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a> = (rows &lt;= cols) ? rows : cols;</div>
-<div class="line"><span class="lineno"> 1947</span>  <a class="code hl_class" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a> result = <a class="code hl_function" href="../../d7/dce/_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50.html#a84a8e7c0bac25be533dcc0125ff14c50">M2_makearrayint</a>(rows);</div>
-<div class="line"><span class="lineno"> 1948</span> </div>
-<div class="line"><span class="lineno"> 1949</span>  L-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(rows, min);</div>
-<div class="line"><span class="lineno"> 1950</span>  U-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(min, cols);</div>
-<div class="line"><span class="lineno"> 1951</span> </div>
-<div class="line"><span class="lineno"> 1952</span>  <span class="keywordflow">if</span> (min == 0)</div>
-<div class="line"><span class="lineno"> 1953</span>    {</div>
-<div class="line"><span class="lineno"> 1954</span>      <span class="keywordflow">if</span> (rows &gt; 0)</div>
-<div class="line"><span class="lineno"> 1955</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; rows; i++) result-&gt;array[i] = i;</div>
-<div class="line"><span class="lineno"> 1956</span>      <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno"> 1957</span>    }</div>
-<div class="line"><span class="lineno"> 1958</span> </div>
-<div class="line"><span class="lineno"> 1959</span>  <span class="keywordtype">int</span>* perm = <span class="keyword">new</span> <span class="keywordtype">int</span>[<a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a>];</div>
-<div class="line"><span class="lineno"> 1960</span>  std::vector&lt;double&gt; copyA = <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array</a>(*A);</div>
-<div class="line"><span class="lineno"> 1961</span> </div>
-<div class="line"><span class="lineno"> 1962</span>  <a class="code hl_function" href="../../df/dd2/lapack_8hpp_ac4044d6db62bcdfdcff80617986e3401.html#ac4044d6db62bcdfdcff80617986e3401">dgetrf_</a>(&amp;rows, &amp;cols, copyA.data(), &amp;rows, perm, &amp;info);</div>
-<div class="line"><span class="lineno"> 1963</span> </div>
-<div class="line"><span class="lineno"> 1964</span>  <a class="code hl_function" href="../../d1/dfc/lapack_8cpp_a88cda5abbc8bc638b16e89e1e7e682e5.html#a88cda5abbc8bc638b16e89e1e7e682e5">fill_lower_and_upper</a>(copyA, *L, *U);</div>
-<div class="line"><span class="lineno"> 1965</span> </div>
-<div class="line"><span class="lineno"> 1966</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; rows; i++) result-&gt;array[i] = i;</div>
-<div class="line"><span class="lineno"> 1967</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a>; i++)</div>
-<div class="line"><span class="lineno"> 1968</span>    {</div>
-<div class="line"><span class="lineno"> 1969</span>      <span class="keywordtype">int</span> thisloc = perm[i] - 1;</div>
-<div class="line"><span class="lineno"> 1970</span>      <span class="keywordtype">int</span> tmp = result-&gt;array[thisloc];</div>
-<div class="line"><span class="lineno"> 1971</span>      result-&gt;array[thisloc] = result-&gt;array[i];</div>
-<div class="line"><span class="lineno"> 1972</span>      result-&gt;array[i] = tmp;</div>
-<div class="line"><span class="lineno"> 1973</span>    }</div>
-<div class="line"><span class="lineno"> 1974</span> </div>
-<div class="line"><span class="lineno"> 1975</span>  <span class="keyword">delete</span> [] perm;</div>
-<div class="line"><span class="lineno"> 1976</span> </div>
-<div class="line"><span class="lineno"> 1977</span>  <span class="keywordflow">if</span> (info &lt; 0)</div>
-<div class="line"><span class="lineno"> 1978</span>    {</div>
-<div class="line"><span class="lineno"> 1979</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;argument passed to dgetrf had an illegal value&quot;</span>);</div>
-<div class="line"><span class="lineno"> 1980</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 1981</span>    }</div>
-<div class="line"><span class="lineno"> 1982</span> </div>
-<div class="line"><span class="lineno"> 1983</span>  <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno"> 1984</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/dfc/lapack_8cpp_source.html#l00193">193</a> of file <a class="el" href="../../d1/dfc/lapack_8cpp_source.html">lapack.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  194</span>{</div>
+<div class="line"><span class="lineno">  195</span>  <span class="keywordtype">int</span> rows = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
+<div class="line"><span class="lineno">  196</span>  <span class="keywordtype">int</span> cols = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>());</div>
+<div class="line"><span class="lineno">  197</span>  <span class="keywordtype">int</span> info;</div>
+<div class="line"><span class="lineno">  198</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a> = (rows &lt;= cols) ? rows : cols;</div>
+<div class="line"><span class="lineno">  199</span>  <a class="code hl_class" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a> result = <a class="code hl_function" href="../../d7/dce/_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50.html#a84a8e7c0bac25be533dcc0125ff14c50">M2_makearrayint</a>(rows);</div>
+<div class="line"><span class="lineno">  200</span> </div>
+<div class="line"><span class="lineno">  201</span>  L-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(rows, min);</div>
+<div class="line"><span class="lineno">  202</span>  U-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(min, cols);</div>
+<div class="line"><span class="lineno">  203</span> </div>
+<div class="line"><span class="lineno">  204</span>  <span class="keywordflow">if</span> (min == 0)</div>
+<div class="line"><span class="lineno">  205</span>    {</div>
+<div class="line"><span class="lineno">  206</span>      <span class="keywordflow">if</span> (rows &gt; 0)</div>
+<div class="line"><span class="lineno">  207</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; rows; i++) result-&gt;array[i] = i;</div>
+<div class="line"><span class="lineno">  208</span>      <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  209</span>    }</div>
+<div class="line"><span class="lineno">  210</span> </div>
+<div class="line"><span class="lineno">  211</span>  <span class="keywordtype">int</span>* perm = <span class="keyword">new</span> <span class="keywordtype">int</span>[<a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a>];</div>
+<div class="line"><span class="lineno">  212</span>  std::vector&lt;double&gt; copyA = <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array</a>(*A);</div>
+<div class="line"><span class="lineno">  213</span> </div>
+<div class="line"><span class="lineno">  214</span>  <a class="code hl_function" href="../../df/dd2/lapack_8hpp_ac4044d6db62bcdfdcff80617986e3401.html#ac4044d6db62bcdfdcff80617986e3401">dgetrf_</a>(&amp;rows, &amp;cols, copyA.data(), &amp;rows, perm, &amp;info);</div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span>  <a class="code hl_function" href="../../d1/dfc/lapack_8cpp_a88cda5abbc8bc638b16e89e1e7e682e5.html#a88cda5abbc8bc638b16e89e1e7e682e5">fill_lower_and_upper</a>(copyA, *L, *U);</div>
+<div class="line"><span class="lineno">  217</span> </div>
+<div class="line"><span class="lineno">  218</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; rows; i++) result-&gt;array[i] = i;</div>
+<div class="line"><span class="lineno">  219</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a>; i++)</div>
+<div class="line"><span class="lineno">  220</span>    {</div>
+<div class="line"><span class="lineno">  221</span>      <span class="keywordtype">int</span> thisloc = perm[i] - 1;</div>
+<div class="line"><span class="lineno">  222</span>      <span class="keywordtype">int</span> tmp = result-&gt;array[thisloc];</div>
+<div class="line"><span class="lineno">  223</span>      result-&gt;array[thisloc] = result-&gt;array[i];</div>
+<div class="line"><span class="lineno">  224</span>      result-&gt;array[i] = tmp;</div>
+<div class="line"><span class="lineno">  225</span>    }</div>
+<div class="line"><span class="lineno">  226</span> </div>
+<div class="line"><span class="lineno">  227</span>  <span class="keyword">delete</span> [] perm;</div>
+<div class="line"><span class="lineno">  228</span> </div>
+<div class="line"><span class="lineno">  229</span>  <span class="keywordflow">if</span> (info &lt; 0)</div>
+<div class="line"><span class="lineno">  230</span>    {</div>
+<div class="line"><span class="lineno">  231</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;argument passed to dgetrf had an illegal value&quot;</span>);</div>
+<div class="line"><span class="lineno">  232</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  233</span>    }</div>
+<div class="line"><span class="lineno">  234</span> </div>
+<div class="line"><span class="lineno">  235</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  236</span>}</div>
 <div class="ttc" id="a_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50_html_a84a8e7c0bac25be533dcc0125ff14c50"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50.html#a84a8e7c0bac25be533dcc0125ff14c50">M2_makearrayint</a></div><div class="ttdeci">M2_arrayint M2_makearrayint(int n)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00008">M2-replacement.c:8</a></div></div>
 <div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00107">dmat.hpp:107</a></div></div>
 <div class="ttc" id="aclass_d_mat_a88d2a242efc934b17d6cc94851000627_html_a88d2a242efc934b17d6cc94851000627"><div class="ttname"><a href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">DMat::resize</a></div><div class="ttdeci">void resize(size_t new_nrows, size_t new_ncols)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00120">dmat.hpp:120</a></div></div>
 <div class="ttc" id="aclass_d_mat_aff91923e882c194ecf16030897933e45_html_aff91923e882c194ecf16030897933e45"><div class="ttname"><a href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat::numColumns</a></div><div class="ttdeci">size_t numColumns() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00108">dmat.hpp:108</a></div></div>
 <div class="ttc" id="aclass_m2__arrayint_html"><div class="ttname"><a href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a></div></div>
-<div class="ttc" id="admat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4_html_a1d9fe790cb0cb4f0fe5ec99737d82ed4"><div class="ttname"><a href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array</a></div><div class="ttdeci">std::vector&lt; double &gt; make_lapack_array(const DMatRR &amp;mat)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l01779">lapack.cpp:1779</a></div></div>
+<div class="ttc" id="admat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4_html_a1d9fe790cb0cb4f0fe5ec99737d82ed4"><div class="ttname"><a href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array</a></div><div class="ttdeci">std::vector&lt; double &gt; make_lapack_array(const DMatRR &amp;mat)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l00031">lapack.cpp:31</a></div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
-<div class="ttc" id="alapack_8cpp_a88cda5abbc8bc638b16e89e1e7e682e5_html_a88cda5abbc8bc638b16e89e1e7e682e5"><div class="ttname"><a href="../../d1/dfc/lapack_8cpp_a88cda5abbc8bc638b16e89e1e7e682e5.html#a88cda5abbc8bc638b16e89e1e7e682e5">fill_lower_and_upper</a></div><div class="ttdeci">void fill_lower_and_upper(const std::vector&lt; double &gt; &amp;lapack_numbers, DMatRR &amp;lower, DMatRR &amp;upper)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l01872">lapack.cpp:1872</a></div></div>
+<div class="ttc" id="alapack_8cpp_a88cda5abbc8bc638b16e89e1e7e682e5_html_a88cda5abbc8bc638b16e89e1e7e682e5"><div class="ttname"><a href="../../d1/dfc/lapack_8cpp_a88cda5abbc8bc638b16e89e1e7e682e5.html#a88cda5abbc8bc638b16e89e1e7e682e5">fill_lower_and_upper</a></div><div class="ttdeci">void fill_lower_and_upper(const std::vector&lt; double &gt; &amp;lapack_numbers, DMatRR &amp;lower, DMatRR &amp;upper)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l00124">lapack.cpp:124</a></div></div>
 <div class="ttc" id="alapack_8hpp_ac4044d6db62bcdfdcff80617986e3401_html_ac4044d6db62bcdfdcff80617986e3401"><div class="ttname"><a href="../../df/dd2/lapack_8hpp_ac4044d6db62bcdfdcff80617986e3401.html#ac4044d6db62bcdfdcff80617986e3401">dgetrf_</a></div><div class="ttdeci">void dgetrf_(const int *rows, const int *cols, double *A, const int *ld, int *ipiv, int *info)</div></div>
 <div class="ttc" id="anamespacempfr_a99795794b6c0ff9088d119bf301402ed_html_a99795794b6c0ff9088d119bf301402ed"><div class="ttname"><a href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">mpfr::min</a></div><div class="ttdeci">const mpreal() min(const mpreal &amp;x, const mpreal &amp;y)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l02767">mpreal.h:2767</a></div></div>
 </div><!-- fragment -->
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('df/dd6/class_lapack_a6ccd1c8b0e2ea8f5f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/dd6/class_lapack.html">Lapack</a></li>
-    <li class="footer">Generated on Sun Jun 29 2025 02:26:48 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jul 6 2025 02:25:41 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

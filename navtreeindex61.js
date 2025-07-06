@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"functions_rela_n.html":[5,3,6,11],
+"functions_rela_o.html":[5,3,6,12],
 "functions_rela_p.html":[5,3,6,13],
 "functions_rela_r.html":[5,3,6,14],
 "functions_rela_s.html":[5,3,6,15],
@@ -75,8 +77,8 @@ var NAVTREEINDEX61 =
 "globals_enum.html":[6,1,4],
 "globals_eval.html":[6,1,5],
 "globals_f.html":[6,1,0,6],
-"globals_func.html":[6,1,1],
 "globals_func.html":[6,1,1,0],
+"globals_func.html":[6,1,1],
 "globals_func_b.html":[6,1,1,1],
 "globals_func_c.html":[6,1,1,2],
 "globals_func_d.html":[6,1,1,3],

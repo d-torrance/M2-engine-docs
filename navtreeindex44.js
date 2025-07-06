@@ -1,5 +1,7 @@
 var NAVTREEINDEX44 =
 {
+"da/dc3/class_d_mat_aa16d3c198ca8eb8a18cdfb27c1019d04.html#aa16d3c198ca8eb8a18cdfb27c1019d04":[5,0,44,6],
+"da/dc3/class_d_mat_aa28b1b37aa4b3007d77fd436652c3967.html#aa28b1b37aa4b3007d77fd436652c3967":[5,0,44,4],
 "da/dc3/class_d_mat_ab01d6e06ca7c9ba9ba767ab3947e2de0.html#ab01d6e06ca7c9ba9ba767ab3947e2de0":[5,0,44,1],
 "da/dc3/class_d_mat_acf01e822f8dffcdbc6b48ebcb3090ac3.html#acf01e822f8dffcdbc6b48ebcb3090ac3":[5,0,44,8],
 "da/dc3/class_d_mat_ad0bf74d59141f090291e13948c00a3f0.html#ad0bf74d59141f090291e13948c00a3f0":[5,0,44,17],
@@ -28,8 +30,8 @@ var NAVTREEINDEX44 =
 "da/dd1/struct_tower_polynomial_struct_aac31bcfd8540080d4495e9ab24fe4a67.html#aac31bcfd8540080d4495e9ab24fe4a67":[3,0,2,0,1],
 "da/dd1/struct_tower_polynomial_struct_adebe500398be3c3148d0f1210335dde7.html#adebe500398be3c3148d0f1210335dde7":[3,0,2,0,2],
 "da/dd1/struct_tower_polynomial_struct_af5d66844ab2ef83232c0042c994125f8.html#af5d66844ab2ef83232c0042c994125f8":[3,0,2,0,0],
-"da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4.html":[4,0,6,0,4],
 "da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4.html":[5,0,3,0,4],
+"da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4.html":[4,0,6,0,4],
 "da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4_a03e6287ca4dcd3357f5101859389ffa4.html#a03e6287ca4dcd3357f5101859389ffa4":[5,0,3,0,4,0],
 "da/ddd/structmpfr_1_1internal_1_1result__type_3_01long_01int_01_4_a03e6287ca4dcd3357f5101859389ffa4.html#a03e6287ca4dcd3357f5101859389ffa4":[4,0,6,0,4,0],
 "da/de0/class_s_mat.html":[5,0,314],
@@ -145,12 +147,12 @@ var NAVTREEINDEX44 =
 "da/dfe/struct_eigen_types_ae6dcf70b11b72d77054476977f5dc6a3.html#ae6dcf70b11b72d77054476977f5dc6a3":[5,0,59,3],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct.html":[5,0,2,6],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct.html":[4,0,4,7],
-"db/d05/struct_m2_1_1_a_ring_polynomial_struct_a552ba3616f5b4a33fa777ade2e344eaa.html#a552ba3616f5b4a33fa777ade2e344eaa":[5,0,2,6,1],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_a552ba3616f5b4a33fa777ade2e344eaa.html#a552ba3616f5b4a33fa777ade2e344eaa":[4,0,4,7,1],
-"db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c":[5,0,2,6,2],
+"db/d05/struct_m2_1_1_a_ring_polynomial_struct_a552ba3616f5b4a33fa777ade2e344eaa.html#a552ba3616f5b4a33fa777ade2e344eaa":[5,0,2,6,1],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c":[4,0,4,7,2],
-"db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9":[5,0,2,6,3],
+"db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c":[5,0,2,6,2],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9":[4,0,4,7,3],
+"db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9":[5,0,2,6,3],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_ad92345b7b933d2a73d1619ac95c1580b.html#ad92345b7b933d2a73d1619ac95c1580b":[5,0,2,6,0],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_ad92345b7b933d2a73d1619ac95c1580b.html#ad92345b7b933d2a73d1619ac95c1580b":[4,0,4,7,0],
 "db/d0a/dmat_8hpp.html":[6,0,0,0,95],
@@ -247,7 +249,5 @@ var NAVTREEINDEX44 =
 "db/d22/class_m2_free_algebra_quotient_a9abc6c097b2f2251d65126968766501d.html#a9abc6c097b2f2251d65126968766501d":[5,0,152,30],
 "db/d22/class_m2_free_algebra_quotient_a9d90faefb62bb3a1baaaf186bbd97772.html#a9d90faefb62bb3a1baaaf186bbd97772":[5,0,152,47],
 "db/d22/class_m2_free_algebra_quotient_aa8181a03b509236679c1e879248ff2d4.html#aa8181a03b509236679c1e879248ff2d4":[5,0,152,5],
-"db/d22/class_m2_free_algebra_quotient_aa85fca7d9e0182ff513bb9ca9d98ff4f.html#aa85fca7d9e0182ff513bb9ca9d98ff4f":[5,0,152,51],
-"db/d22/class_m2_free_algebra_quotient_aad9bb42ee384d5dc1184e7a9dcd3c09a.html#aad9bb42ee384d5dc1184e7a9dcd3c09a":[5,0,152,34],
-"db/d22/class_m2_free_algebra_quotient_ab73ee933af993594b086679b5ef4b4a8.html#ab73ee933af993594b086679b5ef4b4a8":[5,0,152,42]
+"db/d22/class_m2_free_algebra_quotient_aa85fca7d9e0182ff513bb9ca9d98ff4f.html#aa85fca7d9e0182ff513bb9ca9d98ff4f":[5,0,152,51]
 };

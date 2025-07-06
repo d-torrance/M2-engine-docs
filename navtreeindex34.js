@@ -1,5 +1,7 @@
 var NAVTREEINDEX34 =
 {
+"d8/d79/class_n_c_groebner_a5bb28c7f31360f35e6fe3408cf10e44f.html#a5bb28c7f31360f35e6fe3408cf10e44f":[5,0,218,14],
+"d8/d79/class_n_c_groebner_a687fe0891f9e6d56995554c21d922794.html#a687fe0891f9e6d56995554c21d922794":[5,0,218,15],
 "d8/d79/class_n_c_groebner_a6b7fc6b0e55486f6815157dd8d0b501b.html#a6b7fc6b0e55486f6815157dd8d0b501b":[5,0,218,16],
 "d8/d79/class_n_c_groebner_a73db36568f014e9a4d5e6c6e0447542f.html#a73db36568f014e9a4d5e6c6e0447542f":[5,0,218,21],
 "d8/d79/class_n_c_groebner_a7f64ec776bbcf63a368bcd86d609115c.html#a7f64ec776bbcf63a368bcd86d609115c":[5,0,218,4],
@@ -189,8 +191,8 @@ var NAVTREEINDEX34 =
 "d8/da4/class_monomial_hash_and_eq_fixed_size_a0e6b96704577c8b544810b8b027ab4c2.html#a0e6b96704577c8b544810b8b027ab4c2":[5,0,188,2],
 "d8/da4/class_monomial_hash_and_eq_fixed_size_a33f65ab02e4839b495335487e6fc07b8.html#a33f65ab02e4839b495335487e6fc07b8":[5,0,188,3],
 "d8/da4/class_monomial_hash_and_eq_fixed_size_a91fbf27a8ee07b5e481cd0b42211b273.html#a91fbf27a8ee07b5e481cd0b42211b273":[5,0,188,0],
-"d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4.html":[4,0,6,0,1],
 "d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4.html":[5,0,3,0,1],
+"d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4.html":[4,0,6,0,1],
 "d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4_a92a6d09db86c0989d04fb4abd2ad709f.html#a92a6d09db86c0989d04fb4abd2ad709f":[5,0,3,0,1,0],
 "d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4_a92a6d09db86c0989d04fb4abd2ad709f.html#a92a6d09db86c0989d04fb4abd2ad709f":[4,0,6,0,1,0],
 "d8/da8/monoid_8h.html":[6,0,0,0,3,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX34 =
 "d8/db5/namespace_matrix_ops_a1fddce779e82000363d19934f65dbf89.html#a1fddce779e82000363d19934f65dbf89":[4,0,5,56],
 "d8/db5/namespace_matrix_ops_a2100eeba95e52ce0e249ae03e9365b54.html#a2100eeba95e52ce0e249ae03e9365b54":[4,0,5,2],
 "d8/db5/namespace_matrix_ops_a21edb918b64a3f8c7dbaf6aba671896e.html#a21edb918b64a3f8c7dbaf6aba671896e":[4,0,5,22],
-"d8/db5/namespace_matrix_ops_a282f886010aee601304c4860fb1af33f.html#a282f886010aee601304c4860fb1af33f":[4,0,5,85],
-"d8/db5/namespace_matrix_ops_a2b23b5d965bf338397dbfef5e4e43ca4.html#a2b23b5d965bf338397dbfef5e4e43ca4":[4,0,5,101],
-"d8/db5/namespace_matrix_ops_a2cba96b6240ac33b5d35f4653215ea40.html#a2cba96b6240ac33b5d35f4653215ea40":[4,0,5,49]
+"d8/db5/namespace_matrix_ops_a282f886010aee601304c4860fb1af33f.html#a282f886010aee601304c4860fb1af33f":[4,0,5,85]
 };

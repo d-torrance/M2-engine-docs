@@ -105,19 +105,19 @@ $(document).ready(function(){initNavTree('d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dfc/lapack_8cpp_source.html#l01779">1779</a> of file <a class="el" href="../../d1/dfc/lapack_8cpp_source.html">lapack.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1780</span>{</div>
-<div class="line"><span class="lineno"> 1781</span>  <span class="keywordtype">size_t</span> len = 2 * mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>() * mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>();</div>
-<div class="line"><span class="lineno"> 1782</span>  std::vector&lt;double&gt; <a class="code hl_variable" href="../../d1/d6f/mem_8cpp_a05e4d9829321b3db5b3dced46a697515.html#a05e4d9829321b3db5b3dced46a697515">doubles</a>(len);</div>
-<div class="line"><span class="lineno"> 1783</span>  <span class="keywordtype">size_t</span> i = 0;</div>
-<div class="line"><span class="lineno"> 1784</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> c = 0; c &lt; mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>(); ++c)</div>
-<div class="line"><span class="lineno"> 1785</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> r = 0; r &lt; mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>(); ++r)</div>
-<div class="line"><span class="lineno"> 1786</span>      {</div>
-<div class="line"><span class="lineno"> 1787</span>        <a class="code hl_variable" href="../../d1/d6f/mem_8cpp_a05e4d9829321b3db5b3dced46a697515.html#a05e4d9829321b3db5b3dced46a697515">doubles</a>[i++] = mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(r, c).re;</div>
-<div class="line"><span class="lineno"> 1788</span>        <a class="code hl_variable" href="../../d1/d6f/mem_8cpp_a05e4d9829321b3db5b3dced46a697515.html#a05e4d9829321b3db5b3dced46a697515">doubles</a>[i++] = mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(r, c).im;</div>
-<div class="line"><span class="lineno"> 1789</span>      }</div>
-<div class="line"><span class="lineno"> 1790</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d1/d6f/mem_8cpp_a05e4d9829321b3db5b3dced46a697515.html#a05e4d9829321b3db5b3dced46a697515">doubles</a>;</div>
-<div class="line"><span class="lineno"> 1791</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/dfc/lapack_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d1/dfc/lapack_8cpp_source.html">lapack.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>{</div>
+<div class="line"><span class="lineno">   33</span>  <span class="keywordtype">size_t</span> len = 2 * mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>() * mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>();</div>
+<div class="line"><span class="lineno">   34</span>  std::vector&lt;double&gt; <a class="code hl_variable" href="../../d1/d6f/mem_8cpp_a05e4d9829321b3db5b3dced46a697515.html#a05e4d9829321b3db5b3dced46a697515">doubles</a>(len);</div>
+<div class="line"><span class="lineno">   35</span>  <span class="keywordtype">size_t</span> i = 0;</div>
+<div class="line"><span class="lineno">   36</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> c = 0; c &lt; mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>(); ++c)</div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> r = 0; r &lt; mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>(); ++r)</div>
+<div class="line"><span class="lineno">   38</span>      {</div>
+<div class="line"><span class="lineno">   39</span>        <a class="code hl_variable" href="../../d1/d6f/mem_8cpp_a05e4d9829321b3db5b3dced46a697515.html#a05e4d9829321b3db5b3dced46a697515">doubles</a>[i++] = mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(r, c).re;</div>
+<div class="line"><span class="lineno">   40</span>        <a class="code hl_variable" href="../../d1/d6f/mem_8cpp_a05e4d9829321b3db5b3dced46a697515.html#a05e4d9829321b3db5b3dced46a697515">doubles</a>[i++] = mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(r, c).im;</div>
+<div class="line"><span class="lineno">   41</span>      }</div>
+<div class="line"><span class="lineno">   42</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d1/d6f/mem_8cpp_a05e4d9829321b3db5b3dced46a697515.html#a05e4d9829321b3db5b3dced46a697515">doubles</a>;</div>
+<div class="line"><span class="lineno">   43</span>}</div>
 <div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00107">dmat.hpp:107</a></div></div>
 <div class="ttc" id="aclass_d_mat_a430faaf604ffe11bf81a35456acc2e97_html_a430faaf604ffe11bf81a35456acc2e97"><div class="ttname"><a href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">DMat::entry</a></div><div class="ttdeci">ElementType &amp; entry(size_t row, size_t column)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00111">dmat.hpp:111</a></div></div>
 <div class="ttc" id="aclass_d_mat_aff91923e882c194ecf16030897933e45_html_aff91923e882c194ecf16030897933e45"><div class="ttname"><a href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat::numColumns</a></div><div class="ttdeci">size_t numColumns() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00108">dmat.hpp:108</a></div></div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d0/d7d/dmat-lu-inplace_8hpp.html">dmat-lu-inplace.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 29 2025 02:26:46 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jul 6 2025 02:25:39 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

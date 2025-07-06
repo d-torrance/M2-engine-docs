@@ -1,5 +1,7 @@
 var NAVTREEINDEX37 =
 {
+"d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9":[6,0,0,0,128,0],
+"d9/d36/gauss_8cpp_source.html":[6,0,0,0,128],
 "d9/d39/interface_2ringmap_8cpp.html":[6,0,0,0,3,34],
 "d9/d39/interface_2ringmap_8cpp_a569991a2fca4404a61d1769f1e98141b.html#a569991a2fca4404a61d1769f1e98141b":[6,0,0,0,3,34,7],
 "d9/d39/interface_2ringmap_8cpp_a634bb05fb6056ecf592682cd79c8369e.html#a634bb05fb6056ecf592682cd79c8369e":[6,0,0,0,3,34,5],
@@ -192,8 +194,8 @@ var NAVTREEINDEX37 =
 "d9/d6a/structmontable__sorter___z_z_a98c21a7d42f4245b0c248e533c186656.html#a98c21a7d42f4245b0c248e533c186656":[5,0,206,1],
 "d9/d6a/structmontable__sorter___z_z_ad2b38e1e64ae664bb828519d92548437.html#ad2b38e1e64ae664bb828519d92548437":[5,0,206,2],
 "d9/d6a/structmontable__sorter___z_z_ae79b8a503efd8f53deca02747e3ee7ce.html#ae79b8a503efd8f53deca02747e3ee7ce":[5,0,206,5],
-"d9/d6c/structmpfr_1_1internal_1_1result__type_3_01mpq__t_01_4.html":[5,0,3,0,6],
 "d9/d6c/structmpfr_1_1internal_1_1result__type_3_01mpq__t_01_4.html":[4,0,6,0,6],
+"d9/d6c/structmpfr_1_1internal_1_1result__type_3_01mpq__t_01_4.html":[5,0,3,0,6],
 "d9/d6c/structmpfr_1_1internal_1_1result__type_3_01mpq__t_01_4_abd0775c680c24f8ffcb22722640edfe9.html#abd0775c680c24f8ffcb22722640edfe9":[5,0,3,0,6,0],
 "d9/d6c/structmpfr_1_1internal_1_1result__type_3_01mpq__t_01_4_abd0775c680c24f8ffcb22722640edfe9.html#abd0775c680c24f8ffcb22722640edfe9":[4,0,6,0,6,0],
 "d9/d6d/struct_term_iterator.html":[5,0,338],
@@ -216,14 +218,14 @@ var NAVTREEINDEX37 =
 "d9/d73/classnewf4_1_1_basis_a4976127929ebd36212c24a0d2bcbef58.html#a4976127929ebd36212c24a0d2bcbef58":[5,0,4,0,0],
 "d9/d73/classnewf4_1_1_basis_a4b812bb7b6258fd1c72c068bca103a70.html#a4b812bb7b6258fd1c72c068bca103a70":[4,0,7,0,1],
 "d9/d73/classnewf4_1_1_basis_a4b812bb7b6258fd1c72c068bca103a70.html#a4b812bb7b6258fd1c72c068bca103a70":[5,0,4,0,1],
-"d9/d73/classnewf4_1_1_basis_a6f7f2615d74713a8f5021fe8968512f6.html#a6f7f2615d74713a8f5021fe8968512f6":[5,0,4,0,5],
 "d9/d73/classnewf4_1_1_basis_a6f7f2615d74713a8f5021fe8968512f6.html#a6f7f2615d74713a8f5021fe8968512f6":[4,0,7,0,5],
+"d9/d73/classnewf4_1_1_basis_a6f7f2615d74713a8f5021fe8968512f6.html#a6f7f2615d74713a8f5021fe8968512f6":[5,0,4,0,5],
 "d9/d73/classnewf4_1_1_basis_ae2b3d5a6bdf9505ea2eac5dc46449dd6.html#ae2b3d5a6bdf9505ea2eac5dc46449dd6":[4,0,7,0,6],
 "d9/d73/classnewf4_1_1_basis_ae2b3d5a6bdf9505ea2eac5dc46449dd6.html#ae2b3d5a6bdf9505ea2eac5dc46449dd6":[5,0,4,0,6],
 "d9/d73/classnewf4_1_1_basis_ae81155a95b3dee83c719df1692d17e72.html#ae81155a95b3dee83c719df1692d17e72":[5,0,4,0,3],
 "d9/d73/classnewf4_1_1_basis_ae81155a95b3dee83c719df1692d17e72.html#ae81155a95b3dee83c719df1692d17e72":[4,0,7,0,3],
-"d9/d73/classnewf4_1_1_basis_afb487c746484bb02cea93068df789b04.html#afb487c746484bb02cea93068df789b04":[4,0,7,0,2],
 "d9/d73/classnewf4_1_1_basis_afb487c746484bb02cea93068df789b04.html#afb487c746484bb02cea93068df789b04":[5,0,4,0,2],
+"d9/d73/classnewf4_1_1_basis_afb487c746484bb02cea93068df789b04.html#afb487c746484bb02cea93068df789b04":[4,0,7,0,2],
 "d9/d84/class_a_ring_element.html":[5,0,9],
 "d9/d84/class_a_ring_element_a170da3b0f50814778c7949683643e28b.html#a170da3b0f50814778c7949683643e28b":[5,0,9,5],
 "d9/d84/class_a_ring_element_a3b85c06aa1f721de5998776690810c3e.html#a3b85c06aa1f721de5998776690810c3e":[5,0,9,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX37 =
 "d9/d8a/class_module_monom_a70920a5c4173250b1b49b0cdc4933864.html#a70920a5c4173250b1b49b0cdc4933864":[5,0,172,11],
 "d9/d8a/class_module_monom_a70f498f68795adf9e348992a3e1f0e47.html#a70f498f68795adf9e348992a3e1f0e47":[5,0,172,18],
 "d9/d8a/class_module_monom_a71c572d540f0c2aad11c14f27d0ee254.html#a71c572d540f0c2aad11c14f27d0ee254":[5,0,172,1],
-"d9/d8a/class_module_monom_a759779960ec5ce59038a907db4b30179.html#a759779960ec5ce59038a907db4b30179":[5,0,172,2],
-"d9/d8a/class_module_monom_a8c6293b379a49d62b12ae89b00891d00.html#a8c6293b379a49d62b12ae89b00891d00":[5,0,172,7],
-"d9/d8a/class_module_monom_a98f193e3093cc4e3d9bd1386183c2efd.html#a98f193e3093cc4e3d9bd1386183c2efd":[5,0,172,3]
+"d9/d8a/class_module_monom_a759779960ec5ce59038a907db4b30179.html#a759779960ec5ce59038a907db4b30179":[5,0,172,2]
 };

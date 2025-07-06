@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"d6/d02/class_matrix_stream_adac9ba46e35a0102872b65634ab14c21.html#adac9ba46e35a0102872b65634ab14c21":[5,0,166,4],
+"d6/d02/class_matrix_stream_adc8a3f775ac700ff27537a9fd20c03da.html#adc8a3f775ac700ff27537a9fd20c03da":[5,0,166,22],
 "d6/d02/class_matrix_stream_ae8f4fa465280f24d8198136d57da76b9.html#ae8f4fa465280f24d8198136d57da76b9":[5,0,166,8],
 "d6/d02/class_matrix_stream_aea27949d7fc72a95165364bddf465b66.html#aea27949d7fc72a95165364bddf465b66":[5,0,166,16],
 "d6/d02/class_matrix_stream_afd1431d6bcb82a30e0efb6f2c31c11d1.html#afd1431d6bcb82a30e0efb6f2c31c11d1":[5,0,166,5],
@@ -27,12 +29,12 @@ var NAVTREEINDEX21 =
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node.html":[4,0,0,4,0],
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_a27e6ebbc6d73553e4cc3ab65c46c45af.html#a27e6ebbc6d73553e4cc3ab65c46c45af":[5,0,0,4,0,6],
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_a27e6ebbc6d73553e4cc3ab65c46c45af.html#a27e6ebbc6d73553e4cc3ab65c46c45af":[4,0,0,4,0,6],
-"d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_a330bcff247e54e61673a29de38bedfed.html#a330bcff247e54e61673a29de38bedfed":[4,0,0,4,0,2],
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_a330bcff247e54e61673a29de38bedfed.html#a330bcff247e54e61673a29de38bedfed":[5,0,0,4,0,2],
+"d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_a330bcff247e54e61673a29de38bedfed.html#a330bcff247e54e61673a29de38bedfed":[4,0,0,4,0,2],
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_a9fd740a4e1797159390f5f2e9dd4df97.html#a9fd740a4e1797159390f5f2e9dd4df97":[4,0,0,4,0,0],
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_a9fd740a4e1797159390f5f2e9dd4df97.html#a9fd740a4e1797159390f5f2e9dd4df97":[5,0,0,4,0,0],
-"d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_ac594748f12111719415d540a3adfe4cd.html#ac594748f12111719415d540a3adfe4cd":[5,0,0,4,0,1],
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_ac594748f12111719415d540a3adfe4cd.html#ac594748f12111719415d540a3adfe4cd":[4,0,0,4,0,1],
+"d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_ac594748f12111719415d540a3adfe4cd.html#ac594748f12111719415d540a3adfe4cd":[5,0,0,4,0,1],
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_ad49b27830fd2c4b31dc9efae1b94f04f.html#ad49b27830fd2c4b31dc9efae1b94f04f":[5,0,0,4,0,3],
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_ad49b27830fd2c4b31dc9efae1b94f04f.html#ad49b27830fd2c4b31dc9efae1b94f04f":[4,0,0,4,0,3],
 "d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_ad94cd89a5774ddecb9cd01102e148e02.html#ad94cd89a5774ddecb9cd01102e148e02":[5,0,0,4,0,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "d6/d3f/class_matrix_a74898469f8537c30551f9357f690747c.html#a74898469f8537c30551f9357f690747c":[3,2,2,18],
 "d6/d3f/class_matrix_a765e89d4d957343ad13b78302dea2b35.html#a765e89d4d957343ad13b78302dea2b35":[3,2,2,9],
 "d6/d3f/class_matrix_a7d3c5f5d258025df9b8f1513a2373611.html#a7d3c5f5d258025df9b8f1513a2373611":[3,2,2,79],
-"d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c":[3,2,2,49],
-"d6/d3f/class_matrix_a7e61aa6104a06f5965c9bd643387428e.html#a7e61aa6104a06f5965c9bd643387428e":[3,2,2,28],
-"d6/d3f/class_matrix_a813a10b540a920fe15f35ba7b5746709.html#a813a10b540a920fe15f35ba7b5746709":[3,2,2,69]
+"d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c":[3,2,2,49]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"d7/df2/class_suffix_tree_a2e4c3934683744f51064a6eefaa8b11b.html#a2e4c3934683744f51064a6eefaa8b11b":[5,0,328,24],
+"d7/df2/class_suffix_tree_a3515cc165379790e190fe7c524a25906.html#a3515cc165379790e190fe7c524a25906":[5,0,328,20],
 "d7/df2/class_suffix_tree_a41adb1c2aa76ef31b1052eb00b544ecb.html#a41adb1c2aa76ef31b1052eb00b544ecb":[5,0,328,8],
 "d7/df2/class_suffix_tree_a4b27551b3fafdd3f83f291e7438d5486.html#a4b27551b3fafdd3f83f291e7438d5486":[5,0,328,16],
 "d7/df2/class_suffix_tree_a4b63778b1af0b2c4f3acd12be8bce777.html#a4b63778b1af0b2c4f3acd12be8bce777":[5,0,328,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "d8/d50/ntl-debugio_8cpp_afade2604fed7053a542867ac45e894e1.html#afade2604fed7053a542867ac45e894e1":[6,0,0,0,226,0],
 "d8/d50/ntl-debugio_8cpp_source.html":[6,0,0,0,226],
 "d8/d51/aring-zz-flint_8hpp.html":[6,0,0,0,36],
-"d8/d51/aring-zz-flint_8hpp_source.html":[6,0,0,0,36],
-"d8/d54/class_monomial_ideal_1_1_iterator.html":[5,0,191,0],
-"d8/d54/class_monomial_ideal_1_1_iterator_a0b09d5b93702c930c7d8c2d54ffad0ff.html#a0b09d5b93702c930c7d8c2d54ffad0ff":[5,0,191,0,11]
+"d8/d51/aring-zz-flint_8hpp_source.html":[6,0,0,0,36]
 };
