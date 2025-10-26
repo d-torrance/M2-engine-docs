@@ -57,7 +57,7 @@ var searchData=
   ['res_2dtasking_2dexample_2ecpp_54',['res-tasking-example.cpp',['../d0/dfb/res-tasking-example_8cpp.html',1,'']]],
   ['restest_2ecpp_55',['ResTest.cpp',['../db/d92/_res_test_8cpp.html',1,'']]],
   ['ring_2dvecs_2ecpp_56',['ring-vecs.cpp',['../df/d36/ring-vecs_8cpp.html',1,'']]],
-  ['ring_2ecpp_57',['ring.cpp',['../d6/da2/interface_2ring_8cpp.html',1,'(Global Namespace)'],['../dd/d2b/ring_8cpp.html',1,'(Global Namespace)']]],
+  ['ring_2ecpp_57',['ring.cpp',['../dd/d2b/ring_8cpp.html',1,'(Global Namespace)'],['../d6/da2/interface_2ring_8cpp.html',1,'(Global Namespace)']]],
   ['ring_2eh_58',['ring.h',['../d0/d6d/ring_8h.html',1,'']]],
   ['ring_2ehpp_59',['ring.hpp',['../db/d10/ring_8hpp.html',1,'']]],
   ['ringccctest_2ecpp_60',['RingCCCTest.cpp',['../dd/d91/_ring_c_c_c_test_8cpp.html',1,'']]],
