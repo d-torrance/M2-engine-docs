@@ -125,19 +125,19 @@ $(document).ready(function(){initNavTree('d8/d2b/class_ring_z_z_a6c826745639b437
 
 <p>Reimplemented from <a class="el" href="../../dd/dcf/class_ring_a9ebfd5efdaae368a94214ba2ff30fd14.html#a9ebfd5efdaae368a94214ba2ff30fd14">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/db8/_z_z_8cpp_source.html#l00266">266</a> of file <a class="el" href="../../d4/db8/_z_z_8cpp_source.html">ZZ.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  267</span>{</div>
-<div class="line"><span class="lineno">  268</span>  mpz_ptr result = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659.html#a8a8bb80c8283c2f727a07c69c6358659">new_elem</a>();</div>
-<div class="line"><span class="lineno">  269</span>  <span class="keywordflow">if</span> (n&lt;0 &amp;&amp; !<a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a4b817d18678e272549c0b7eb2757afc3.html#a4b817d18678e272549c0b7eb2757afc3">is_unit</a>(f))</div>
-<div class="line"><span class="lineno">  270</span>    <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(<span class="stringliteral">&quot;can only raise to a nonnegative power&quot;</span>);</div>
-<div class="line"><span class="lineno">  271</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  272</span>    {</div>
-<div class="line"><span class="lineno">  273</span>      mpz_pow_ui(result, f.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>(), n);</div>
-<div class="line"><span class="lineno">  274</span>      <a class="code hl_function" href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a>(result);</div>
-<div class="line"><span class="lineno">  275</span>    }</div>
-<div class="line"><span class="lineno">  276</span>  <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(result);</div>
-<div class="line"><span class="lineno">  277</span>}</div>
-<div class="ttc" id="aclass_ring_z_z_a4b817d18678e272549c0b7eb2757afc3_html_a4b817d18678e272549c0b7eb2757afc3"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_a4b817d18678e272549c0b7eb2757afc3.html#a4b817d18678e272549c0b7eb2757afc3">RingZZ::is_unit</a></div><div class="ttdeci">virtual bool is_unit(const ring_elem f) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00140">ZZ.cpp:140</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d4/db8/_z_z_8cpp_source.html#l00271">271</a> of file <a class="el" href="../../d4/db8/_z_z_8cpp_source.html">ZZ.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  272</span>{</div>
+<div class="line"><span class="lineno">  273</span>  mpz_ptr result = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659.html#a8a8bb80c8283c2f727a07c69c6358659">new_elem</a>();</div>
+<div class="line"><span class="lineno">  274</span>  <span class="keywordflow">if</span> (n&lt;0 &amp;&amp; !<a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a4b817d18678e272549c0b7eb2757afc3.html#a4b817d18678e272549c0b7eb2757afc3">is_unit</a>(f))</div>
+<div class="line"><span class="lineno">  275</span>    <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(<span class="stringliteral">&quot;can only raise to a nonnegative power&quot;</span>);</div>
+<div class="line"><span class="lineno">  276</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  277</span>    {</div>
+<div class="line"><span class="lineno">  278</span>      mpz_pow_ui(result, f.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>(), n);</div>
+<div class="line"><span class="lineno">  279</span>      <a class="code hl_function" href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a>(result);</div>
+<div class="line"><span class="lineno">  280</span>    }</div>
+<div class="line"><span class="lineno">  281</span>  <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(result);</div>
+<div class="line"><span class="lineno">  282</span>}</div>
+<div class="ttc" id="aclass_ring_z_z_a4b817d18678e272549c0b7eb2757afc3_html_a4b817d18678e272549c0b7eb2757afc3"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_a4b817d18678e272549c0b7eb2757afc3.html#a4b817d18678e272549c0b7eb2757afc3">RingZZ::is_unit</a></div><div class="ttdeci">virtual bool is_unit(const ring_elem f) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00145">ZZ.cpp:145</a></div></div>
 <div class="ttc" id="aclass_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659_html_a8a8bb80c8283c2f727a07c69c6358659"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659.html#a8a8bb80c8283c2f727a07c69c6358659">RingZZ::new_elem</a></div><div class="ttdeci">mpz_ptr new_elem() const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00034">ZZ.cpp:34</a></div></div>
 <div class="ttc" id="agmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c_html_ac1d9cec5a8df3154d9dfbf08b298419c"><div class="ttname"><a href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a></div><div class="ttdeci">void mpz_reallocate_limbs(mpz_ptr _z)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d41/gmp-util_8h_source.html#l00014">gmp-util.h:14</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('d8/d2b/class_ring_z_z_a6c826745639b437
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d2b/class_ring_z_z.html">RingZZ</a></li>
-    <li class="footer">Generated on Sun Nov 2 2025 02:09:41 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Nov 9 2025 02:08:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

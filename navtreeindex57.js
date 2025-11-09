@@ -1,14 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"de/db9/class_path_tracker_af50f313e11d0a83a32c0d31a8e980171.html#af50f313e11d0a83a32c0d31a8e980171":[5,0,233,8],
-"de/db9/class_path_tracker_af9420a8391049441ce3865fa4abde64c.html#af9420a8391049441ce3865fa4abde64c":[5,0,233,54],
-"de/db9/class_path_tracker_afc040ae55e4ca3170715c6d5f5c72213.html#afc040ae55e4ca3170715c6d5f5c72213":[5,0,233,16],
-"de/dba/class_poly_ring_flat.html":[3,0,2,7],
-"de/dba/class_poly_ring_flat_a0072ea273b7de0660004c3698bcd10af.html#a0072ea273b7de0660004c3698bcd10af":[3,0,2,7,0],
-"de/dba/class_poly_ring_flat_a1b37aa83af73c13c178aa3f706ff7609.html#a1b37aa83af73c13c178aa3f706ff7609":[3,0,2,7,2],
-"de/dba/class_poly_ring_flat_a960fedd31b9169153ed63e0a6da4b768.html#a960fedd31b9169153ed63e0a6da4b768":[3,0,2,7,1],
-"de/dbd/class_free_algebra.html":[5,0,87],
-"de/dbd/class_free_algebra_a020e04c88b7cfa1ff575c9089e61464c.html#a020e04c88b7cfa1ff575c9089e61464c":[5,0,87,7],
 "de/dbd/class_free_algebra_a0339b99f7fb6889affe22db355acc386.html#a0339b99f7fb6889affe22db355acc386":[5,0,87,42],
 "de/dbd/class_free_algebra_a06441ff722f34d7bbe7b3633140a5041.html#a06441ff722f34d7bbe7b3633140a5041":[5,0,87,4],
 "de/dbd/class_free_algebra_a071f2f7069022fa5c7b8d2d574aa4853.html#a071f2f7069022fa5c7b8d2d574aa4853":[5,0,87,2],
@@ -249,5 +240,14 @@ var NAVTREEINDEX57 =
 "de/dfb/classhilb__comp_aa6f7d43ec9e4562603957e31a33ee886.html#aa6f7d43ec9e4562603957e31a33ee886":[3,3,2,0,35],
 "de/dfb/classhilb__comp_ab791c2d3fd1945454a81743ef0c5074b.html#ab791c2d3fd1945454a81743ef0c5074b":[3,3,2,0,1],
 "de/dfb/classhilb__comp_ab9b2b669b05273c8dffb865f51d19e07.html#ab9b2b669b05273c8dffb865f51d19e07":[3,3,2,0,18],
-"de/dfb/classhilb__comp_abffabb8ba437e66109360d0cca05c701.html#abffabb8ba437e66109360d0cca05c701":[3,3,2,0,23]
+"de/dfb/classhilb__comp_abffabb8ba437e66109360d0cca05c701.html#abffabb8ba437e66109360d0cca05c701":[3,3,2,0,23],
+"de/dfb/classhilb__comp_ac8ac7f8024616fd5514707edf081b966.html#ac8ac7f8024616fd5514707edf081b966":[3,3,2,0,15],
+"de/dfb/classhilb__comp_ad3894293525272b88e8a3b3a44f79f77.html#ad3894293525272b88e8a3b3a44f79f77":[3,3,2,0,22],
+"de/dfb/classhilb__comp_aea718756e9b698709ed8959488eaf3b7.html#aea718756e9b698709ed8959488eaf3b7":[3,3,2,0,4],
+"de/dfb/classhilb__comp_af0a64bcacdeb9fd78d4eba85ff93cacb.html#af0a64bcacdeb9fd78d4eba85ff93cacb":[3,3,2,0,7],
+"de/dfb/classhilb__comp_af484dd390b9dad53a08d168e9dcfb415.html#af484dd390b9dad53a08d168e9dcfb415":[3,3,2,0,30],
+"de/dfb/classhilb__comp_af736b62155f6e31f3113c370492caa04.html#af736b62155f6e31f3113c370492caa04":[3,3,2,0,24],
+"de/dfb/classhilb__comp_afdeb61bb141b426956ee3ed86bf2427b.html#afdeb61bb141b426956ee3ed86bf2427b":[3,3,2,0,6],
+"de/dfe/class_matrix_1_1column__iterator.html":[3,2,2,0],
+"de/dfe/class_matrix_1_1column__iterator_a2c2782cf52ee3c0db6b94ab6ec84bb26.html#a2c2782cf52ee3c0db6b94ab6ec84bb26":[3,2,2,0,3]
 };

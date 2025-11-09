@@ -169,6 +169,7 @@ var group__matrices =
       [ "operator-", "d6/d3f/class_matrix_ab70138c0a6fb33666ffcb9d2c8ff7b46.html#ab70138c0a6fb33666ffcb9d2c8ff7b46", null ],
       [ "operator[]", "d6/d3f/class_matrix_ac30ebcbc5baa9ca3a6d435f86412e269.html#ac30ebcbc5baa9ca3a6d435f86412e269", null ],
       [ "operator[]", "d6/d3f/class_matrix_a2dd6d30145b6ba4d0a5af10c29d036ae.html#a2dd6d30145b6ba4d0a5af10c29d036ae", null ],
+      [ "pfaffian", "d6/d3f/class_matrix_ab26aa7a5b4f0f94bba8b8ca5bc9ea059.html#ab26aa7a5b4f0f94bba8b8ca5bc9ea059", null ],
       [ "pfaffians", "d6/d3f/class_matrix_a858030441cf3b8aae7109958fd5e2220.html#a858030441cf3b8aae7109958fd5e2220", null ],
       [ "random", "d6/d3f/class_matrix_a821d2d1227e89e33657d7d5e044608aa.html#a821d2d1227e89e33657d7d5e044608aa", null ],
       [ "random", "d6/d3f/class_matrix_ac25043305a942edef6f9379d2a132195.html#ac25043305a942edef6f9379d2a132195", null ],

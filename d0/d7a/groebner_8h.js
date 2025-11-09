@@ -23,7 +23,7 @@ var groebner_8h =
     [ "rawGroebnerWalk", "d0/d7a/groebner_8h_aa36d087811dd37dc2307b222a5e6a9cf.html#aa36d087811dd37dc2307b222a5e6a9cf", null ],
     [ "rawKernelOfGB", "d0/d7a/groebner_8h_a766af2266e8e2931e7508625194ba000.html#a766af2266e8e2931e7508625194ba000", null ],
     [ "rawMarkedGB", "d0/d7a/groebner_8h_aa01d8cbaa7ceb78da4dd462fd3625455.html#aa01d8cbaa7ceb78da4dd462fd3625455", null ],
-    [ "rawMGB", "d0/d7a/groebner_8h_aecef799cb186545d77d17b3c625508ef.html#aecef799cb186545d77d17b3c625508ef", null ],
+    [ "rawMGB", "d0/d7a/groebner_8h_af7090707a9d7e4e18b9a20ded35c73a7.html#af7090707a9d7e4e18b9a20ded35c73a7", null ],
     [ "rawMinimalBetti", "d0/d7a/groebner_8h_ae9f04cbcbe5be5705d7a44a44b93d496.html#ae9f04cbcbe5be5705d7a44a44b93d496", null ],
     [ "rawNCBasis", "d0/d7a/groebner_8h_ae8608278b1dcc7d565ecaa9267049fd8.html#ae8608278b1dcc7d565ecaa9267049fd8", null ],
     [ "rawNCGroebnerBasisTwoSided", "d0/d7a/groebner_8h_a5403ff4bc96fd8253cbb9c75566a97a6.html#a5403ff4bc96fd8253cbb9c75566a97a6", null ],

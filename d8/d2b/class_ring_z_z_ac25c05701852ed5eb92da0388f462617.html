@@ -125,13 +125,13 @@ $(document).ready(function(){initNavTree('d8/d2b/class_ring_z_z_ac25c05701852ed5
 
 <p>Implements <a class="el" href="../../dd/dcf/class_ring_ada0ae7428fbb2d3c0de7d835997d454a.html#ada0ae7428fbb2d3c0de7d835997d454a">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/db8/_z_z_8cpp_source.html#l00258">258</a> of file <a class="el" href="../../d4/db8/_z_z_8cpp_source.html">ZZ.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  259</span>{</div>
-<div class="line"><span class="lineno">  260</span>  mpz_ptr result = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659.html#a8a8bb80c8283c2f727a07c69c6358659">new_elem</a>();</div>
-<div class="line"><span class="lineno">  261</span>  mpz_mul(result, f.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>(), g.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
-<div class="line"><span class="lineno">  262</span>  <a class="code hl_function" href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a>(result);</div>
-<div class="line"><span class="lineno">  263</span>  <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(result);</div>
-<div class="line"><span class="lineno">  264</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/db8/_z_z_8cpp_source.html#l00263">263</a> of file <a class="el" href="../../d4/db8/_z_z_8cpp_source.html">ZZ.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  264</span>{</div>
+<div class="line"><span class="lineno">  265</span>  mpz_ptr result = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659.html#a8a8bb80c8283c2f727a07c69c6358659">new_elem</a>();</div>
+<div class="line"><span class="lineno">  266</span>  mpz_mul(result, f.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>(), g.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
+<div class="line"><span class="lineno">  267</span>  <a class="code hl_function" href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a>(result);</div>
+<div class="line"><span class="lineno">  268</span>  <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(result);</div>
+<div class="line"><span class="lineno">  269</span>}</div>
 <div class="ttc" id="aclass_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659_html_a8a8bb80c8283c2f727a07c69c6358659"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659.html#a8a8bb80c8283c2f727a07c69c6358659">RingZZ::new_elem</a></div><div class="ttdeci">mpz_ptr new_elem() const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00034">ZZ.cpp:34</a></div></div>
 <div class="ttc" id="agmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c_html_ac1d9cec5a8df3154d9dfbf08b298419c"><div class="ttname"><a href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a></div><div class="ttdeci">void mpz_reallocate_limbs(mpz_ptr _z)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d41/gmp-util_8h_source.html#l00014">gmp-util.h:14</a></div></div>
 <div class="ttc" id="aunionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26_html_aeb2b58dce5525fe3f7eb7f3bcb42bc26"><div class="ttname"><a href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">ring_elem::get_mpz</a></div><div class="ttdeci">mpz_srcptr get_mpz() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00083">ringelem.hpp:83</a></div></div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('d8/d2b/class_ring_z_z_ac25c05701852ed5
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d2b/class_ring_z_z.html">RingZZ</a></li>
-    <li class="footer">Generated on Sun Nov 2 2025 02:09:41 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Nov 9 2025 02:08:51 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

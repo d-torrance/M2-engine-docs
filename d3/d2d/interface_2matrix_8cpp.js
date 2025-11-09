@@ -31,6 +31,7 @@ var interface_2matrix_8cpp =
     [ "IM2_Matrix_monomials", "d3/d2d/interface_2matrix_8cpp_a02bd561b56718b19e8e9413555c8d759.html#a02bd561b56718b19e8e9413555c8d759", null ],
     [ "IM2_Matrix_n_cols", "d3/d2d/interface_2matrix_8cpp_a8100dc7983a93d7121815e9c52e00504.html#a8100dc7983a93d7121815e9c52e00504", null ],
     [ "IM2_Matrix_n_rows", "d3/d2d/interface_2matrix_8cpp_a15a0a306654a8dd423a9afcc378fbbf1.html#a15a0a306654a8dd423a9afcc378fbbf1", null ],
+    [ "IM2_Matrix_pfaffian", "d3/d2d/interface_2matrix_8cpp_ab4c6085f7121e46033a48a2bfe2cbea0.html#ab4c6085f7121e46033a48a2bfe2cbea0", null ],
     [ "IM2_Matrix_pfaffians", "d3/d2d/interface_2matrix_8cpp_ad3c47d8fe0f5038b8aeef222eab6aa5b.html#ad3c47d8fe0f5038b8aeef222eab6aa5b", null ],
     [ "IM2_Matrix_promote", "d3/d2d/interface_2matrix_8cpp_ad14051ecc7f0f16e8253832d9678a503.html#ad14051ecc7f0f16e8253832d9678a503", null ],
     [ "IM2_Matrix_random", "d3/d2d/interface_2matrix_8cpp_ae9209abfab4262c1b10cd792a464d1bd.html#ae9209abfab4262c1b10cd792a464d1bd", null ],

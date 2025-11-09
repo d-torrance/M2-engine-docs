@@ -1,17 +1,5 @@
 var NAVTREEINDEX45 =
 {
-"db/d22/class_m2_free_algebra_quotient_aad9bb42ee384d5dc1184e7a9dcd3c09a.html#aad9bb42ee384d5dc1184e7a9dcd3c09a":[5,0,152,34],
-"db/d22/class_m2_free_algebra_quotient_ab73ee933af993594b086679b5ef4b4a8.html#ab73ee933af993594b086679b5ef4b4a8":[5,0,152,42],
-"db/d22/class_m2_free_algebra_quotient_ac01de7af0b41917e023fb5d51451bb1a.html#ac01de7af0b41917e023fb5d51451bb1a":[5,0,152,36],
-"db/d22/class_m2_free_algebra_quotient_ac1def3df6c82b74eb46dc8c490e82cc2.html#ac1def3df6c82b74eb46dc8c490e82cc2":[5,0,152,7],
-"db/d22/class_m2_free_algebra_quotient_acc67e7ed4bf87ebf091bcbeeb7ab3d6e.html#acc67e7ed4bf87ebf091bcbeeb7ab3d6e":[5,0,152,31],
-"db/d22/class_m2_free_algebra_quotient_ace0aaf9803c7ca354b18056644e12672.html#ace0aaf9803c7ca354b18056644e12672":[5,0,152,27],
-"db/d22/class_m2_free_algebra_quotient_ad8eb304c8167f73e73b95f747f92e9f6.html#ad8eb304c8167f73e73b95f747f92e9f6":[5,0,152,0],
-"db/d22/class_m2_free_algebra_quotient_addc3b446896bac1c5038bbe0ad6e4739.html#addc3b446896bac1c5038bbe0ad6e4739":[5,0,152,28],
-"db/d22/class_m2_free_algebra_quotient_adf3b58300e4e05f340d3e041aa4cef11.html#adf3b58300e4e05f340d3e041aa4cef11":[5,0,152,11],
-"db/d22/class_m2_free_algebra_quotient_ae186584eb64542799c0232d94788c1bd.html#ae186584eb64542799c0232d94788c1bd":[5,0,152,2],
-"db/d22/class_m2_free_algebra_quotient_ae573ed357f5d2de61778a049a4b767ca.html#ae573ed357f5d2de61778a049a4b767ca":[5,0,152,6],
-"db/d22/class_m2_free_algebra_quotient_af1fa32db871c063dfbc28de3fe172eb7.html#af1fa32db871c063dfbc28de3fe172eb7":[5,0,152,38],
 "db/d22/class_m2_free_algebra_quotient_af75832fcd6b9fd3ac54e0f263e4815f1.html#af75832fcd6b9fd3ac54e0f263e4815f1":[5,0,152,54],
 "db/d22/class_m2_free_algebra_quotient_af7f4c33378f08e2551f4fa344471b411.html#af7f4c33378f08e2551f4fa344471b411":[5,0,152,26],
 "db/d22/class_m2_free_algebra_quotient_afdcdf2d3a1b6d5220fc0bf053168a4f2.html#afdcdf2d3a1b6d5220fc0bf053168a4f2":[5,0,152,48],
@@ -249,5 +237,17 @@ var NAVTREEINDEX45 =
 "db/d67/_a_ring_c_c_c_test_8cpp_aa24c222c47a48148da91cb9e19e58849.html#aa24c222c47a48148da91cb9e19e58849":[6,0,0,0,7,0,4],
 "db/d67/_a_ring_c_c_c_test_8cpp_aaa980d81e84eb3c6f517cf405ccb65e7.html#aaa980d81e84eb3c6f517cf405ccb65e7":[6,0,0,0,7,0,7],
 "db/d67/_a_ring_c_c_c_test_8cpp_ac159c77e395a5fdd0243f43a40020504.html#ac159c77e395a5fdd0243f43a40020504":[6,0,0,0,7,0,8],
-"db/d67/_a_ring_c_c_c_test_8cpp_ae9bdae880060e6251e33e74cbf189d60.html#ae9bdae880060e6251e33e74cbf189d60":[6,0,0,0,7,0,6]
+"db/d67/_a_ring_c_c_c_test_8cpp_ae9bdae880060e6251e33e74cbf189d60.html#ae9bdae880060e6251e33e74cbf189d60":[6,0,0,0,7,0,6],
+"db/d67/_a_ring_c_c_c_test_8cpp_aff583e237b55bacf34012e1187cef2d8.html#aff583e237b55bacf34012e1187cef2d8":[6,0,0,0,7,0,2],
+"db/d67/_a_ring_c_c_c_test_8cpp_source.html":[6,0,0,0,7,0],
+"db/d6c/gauss_8hpp.html":[6,0,0,0,129],
+"db/d6c/gauss_8hpp_source.html":[6,0,0,0,129],
+"db/d74/memblock_8hpp.html":[6,0,0,0,1,13],
+"db/d74/memblock_8hpp_source.html":[6,0,0,0,1,13],
+"db/d77/struct_table___t_1_1binding.html":[5,0,335,0],
+"db/d77/struct_table___t_1_1binding_aa0f7e271348466f1ddd08cb8c0141906.html#aa0f7e271348466f1ddd08cb8c0141906":[5,0,335,0,0],
+"db/d77/struct_table___t_1_1binding_ac56717a39c852200782ca9f20a41a3b7.html#ac56717a39c852200782ca9f20a41a3b7":[5,0,335,0,2],
+"db/d77/struct_table___t_1_1binding_af207af851f6370113855927fe88ec859.html#af207af851f6370113855927fe88ec859":[5,0,335,0,1],
+"db/d78/class_b_i_basis_1_1_pointer_less_comparator.html":[4,0,0,8],
+"db/d78/class_b_i_basis_1_1_pointer_less_comparator.html":[5,0,0,8]
 };

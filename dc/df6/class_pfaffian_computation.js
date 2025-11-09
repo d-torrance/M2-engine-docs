@@ -4,6 +4,7 @@ var class_pfaffian_computation =
     [ "~PfaffianComputation", "dc/df6/class_pfaffian_computation_af43812eafc842cc83b3a0c1b046f4555.html#af43812eafc842cc83b3a0c1b046f4555", null ],
     [ "calc", "dc/df6/class_pfaffian_computation_acc1456dde448046b2c81d168a858eda9.html#acc1456dde448046b2c81d168a858eda9", null ],
     [ "calc_pfaff", "dc/df6/class_pfaffian_computation_a1b3e37420a67db7b0c07f698ffdedbf6.html#a1b3e37420a67db7b0c07f698ffdedbf6", null ],
+    [ "calc_pfaff", "dc/df6/class_pfaffian_computation_a0b3dcc18cdfc3e0ca6fff9af0840abc9.html#a0b3dcc18cdfc3e0ca6fff9af0840abc9", null ],
     [ "get_ring", "dc/df6/class_pfaffian_computation_aed1b07b87708a6d0d0b0c4707385c94a.html#aed1b07b87708a6d0d0b0c4707385c94a", null ],
     [ "pfaffians", "dc/df6/class_pfaffian_computation_a39f627393808bc0853c7390963b75e6b.html#a39f627393808bc0853c7390963b75e6b", null ],
     [ "step", "dc/df6/class_pfaffian_computation_a7e3fb2bd3b4120cbe667b424aa6651de.html#a7e3fb2bd3b4120cbe667b424aa6651de", null ],

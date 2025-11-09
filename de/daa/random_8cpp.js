@@ -18,6 +18,7 @@ var random_8cpp =
     [ "rawRandomRRUniform", "de/daa/random_8cpp_af90a2934e8c68ef2ec5beff610d0d15b.html#af90a2934e8c68ef2ec5beff610d0d15b", null ],
     [ "rawRandomULong", "de/daa/random_8cpp_a66f2b93023d98b73c6f35e4a5b1d5584.html#a66f2b93023d98b73c6f35e4a5b1d5584", null ],
     [ "rawSetFareyApproximation", "de/daa/random_8cpp_a6fcf352d71c2f199a48eff7fb230f665.html#a6fcf352d71c2f199a48eff7fb230f665", null ],
+    [ "rawSetRandomInteger", "de/daa/random_8cpp_a8e58c954e0af9e43e4bd52081037528e.html#a8e58c954e0af9e43e4bd52081037528e", null ],
     [ "rawSetRandomMax", "de/daa/random_8cpp_a55e5f7aa8672e5b3da476435f85eca94.html#a55e5f7aa8672e5b3da476435f85eca94", null ],
     [ "rawSetRandomQQ", "de/daa/random_8cpp_aaeb097782fc829e917367f7f17d60d32.html#aaeb097782fc829e917367f7f17d60d32", null ],
     [ "rawSetRandomSeed", "de/daa/random_8cpp_a7ee327e356b9819926b911fcb1753952.html#a7ee327e356b9819926b911fcb1753952", null ],

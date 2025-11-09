@@ -105,17 +105,17 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_a858030441cf3b8aae
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d9b/pfaff_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../dc/d9b/pfaff_8cpp_source.html">pfaff.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   97</span>{</div>
-<div class="line"><span class="lineno">   98</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>()-&gt;get_precision() &gt; 0)</div>
-<div class="line"><span class="lineno">   99</span>    {</div>
-<div class="line"><span class="lineno">  100</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;pfaffian computations over RR or CC not yet implemented&quot;</span>);</div>
-<div class="line"><span class="lineno">  101</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  102</span>    }</div>
-<div class="line"><span class="lineno">  103</span>  <a class="code hl_class" href="../../dc/df6/class_pfaffian_computation.html">PfaffianComputation</a> d {<span class="keyword">this</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>};</div>
-<div class="line"><span class="lineno">  104</span>  d.calc();</div>
-<div class="line"><span class="lineno">  105</span>  <span class="keywordflow">return</span> d.pfaffians();</div>
-<div class="line"><span class="lineno">  106</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d9b/pfaff_8cpp_source.html#l00101">101</a> of file <a class="el" href="../../dc/d9b/pfaff_8cpp_source.html">pfaff.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>{</div>
+<div class="line"><span class="lineno">  103</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>()-&gt;get_precision() &gt; 0)</div>
+<div class="line"><span class="lineno">  104</span>    {</div>
+<div class="line"><span class="lineno">  105</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;pfaffian computations over RR or CC not yet implemented&quot;</span>);</div>
+<div class="line"><span class="lineno">  106</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  107</span>    }</div>
+<div class="line"><span class="lineno">  108</span>  <a class="code hl_class" href="../../dc/df6/class_pfaffian_computation.html">PfaffianComputation</a> d {<span class="keyword">this</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>};</div>
+<div class="line"><span class="lineno">  109</span>  d.calc();</div>
+<div class="line"><span class="lineno">  110</span>  <span class="keywordflow">return</span> d.pfaffians();</div>
+<div class="line"><span class="lineno">  111</span>}</div>
 <div class="ttc" id="aclass_matrix_a0bceb9b9d23e40a81ac64f6c112ef441_html_a0bceb9b9d23e40a81ac64f6c112ef441"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">Matrix::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00085">matrix.hpp:85</a></div></div>
 <div class="ttc" id="aclass_pfaffian_computation_html"><div class="ttname"><a href="../../dc/df6/class_pfaffian_computation.html">PfaffianComputation</a></div><div class="ttdoc">Computation of pfaffians of a skew symmetric matrix.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d99/pfaff_8hpp_source.html#l00017">pfaff.hpp:18</a></div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_a858030441cf3b8aae
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a></li>
-    <li class="footer">Generated on Sun Nov 2 2025 02:09:40 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Nov 9 2025 02:08:50 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
