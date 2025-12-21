@@ -7,7 +7,7 @@ var searchData=
   ['m2_5fmo_5foffset_4',['M2_mo_offset',['../d1/df6/monomial-ordering_8cpp_a7dab1707234f43ff5745583bd3f176f6.html#a7dab1707234f43ff5745583bd3f176f6',1,'monomial-ordering.cpp']]],
   ['m2_5ftocharstar_5',['M2_tocharstar',['../d7/dce/_m2-replacement_8c_a8372d8a1f51edec461412bad6fa11bbe.html#a8372d8a1f51edec461412bad6fa11bbe',1,'M2-replacement.c']]],
   ['m2_5ftostring_6',['M2_tostring',['../d7/dce/_m2-replacement_8c_a61784a8de34e141a3c1fba067f5b2a2f.html#a61784a8de34e141a3c1fba067f5b2a2f',1,'M2-replacement.c']]],
-  ['m2_5ftostringn_7',['M2_tostringn',['../d7/dce/_m2-replacement_8c_a11f315241b296017ead0c423d27b6fb4.html#a11f315241b296017ead0c423d27b6fb4',1,'M2-replacement.c']]],
+  ['m2_5ftostringn_7',['M2_tostringn',['../d7/dce/_m2-replacement_8c_a5689c5e2d850ab164086ffa15278a7c9.html#a5689c5e2d850ab164086ffa15278a7c9',1,'M2-replacement.c']]],
   ['m2freealgebra_8',['m2freealgebra',['../db/d22/class_m2_free_algebra_quotient_aad9bb42ee384d5dc1184e7a9dcd3c09a.html#aad9bb42ee384d5dc1184e7a9dcd3c09a',1,'M2FreeAlgebraQuotient::m2FreeAlgebra()'],['../dc/dc0/class_m2_free_algebra_a8e3cf263e97e77a84ffc5e9d760561d6.html#a8e3cf263e97e77a84ffc5e9d760561d6',1,'M2FreeAlgebra::M2FreeAlgebra()']]],
   ['m2freealgebraquotient_9',['M2FreeAlgebraQuotient',['../db/d22/class_m2_free_algebra_quotient_ad8eb304c8167f73e73b95f747f92e9f6.html#ad8eb304c8167f73e73b95f747f92e9f6',1,'M2FreeAlgebraQuotient']]],
   ['m2homotopy_10',['M2Homotopy',['../dc/de6/class_m2_homotopy_ad8fedb175bb75930c459666f0e30590a.html#ad8fedb175bb75930c459666f0e30590a',1,'M2Homotopy']]],
