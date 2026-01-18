@@ -14,6 +14,7 @@ var mutable_matrix_8cpp =
     [ "IM2_MutableMatrix_delete_columns", "d3/dc5/mutable-matrix_8cpp_a3ae6b86d433410dceb4ab68929927d00.html#a3ae6b86d433410dceb4ab68929927d00", null ],
     [ "IM2_MutableMatrix_delete_rows", "d3/dc5/mutable-matrix_8cpp_aee94f0036b680e1bcb91003e49540ef1.html#aee94f0036b680e1bcb91003e49540ef1", null ],
     [ "IM2_MutableMatrix_from_matrix", "d3/dc5/mutable-matrix_8cpp_ae7ca8e5752bb4fe629fb061afd6d43d9.html#ae7ca8e5752bb4fe629fb061afd6d43d9", null ],
+    [ "IM2_MutableMatrix_get_entries", "d3/dc5/mutable-matrix_8cpp_ad6997a9aab026c528115fb76a8ca7dea.html#ad6997a9aab026c528115fb76a8ca7dea", null ],
     [ "IM2_MutableMatrix_get_entry", "d3/dc5/mutable-matrix_8cpp_a09837903d8b8d822b88a84950785917f.html#a09837903d8b8d822b88a84950785917f", null ],
     [ "IM2_MutableMatrix_identity", "d3/dc5/mutable-matrix_8cpp_acf9a3d588e0184696c2311d613218ee9.html#acf9a3d588e0184696c2311d613218ee9", null ],
     [ "IM2_MutableMatrix_insert_columns", "d3/dc5/mutable-matrix_8cpp_a0f3e02a21b7fca7478e25e9af41458f7.html#a0f3e02a21b7fca7478e25e9af41458f7", null ],

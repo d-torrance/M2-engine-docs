@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"d7/df2/class_suffix_tree_a6715fe4abb5247bc83f3e574caa4519f.html#a6715fe4abb5247bc83f3e574caa4519f":[5,0,328,11],
+"d7/df2/class_suffix_tree_a74b1a1fb547b513786aed5e01de2e0ba.html#a74b1a1fb547b513786aed5e01de2e0ba":[5,0,328,34],
 "d7/df2/class_suffix_tree_a78e9b286a2608df3b35361ebf1ddf061.html#a78e9b286a2608df3b35361ebf1ddf061":[5,0,328,15],
 "d7/df2/class_suffix_tree_a7a4b477a12eff85d1b6ab7830839436b.html#a7a4b477a12eff85d1b6ab7830839436b":[5,0,328,13],
 "d7/df2/class_suffix_tree_a7d56a686e05fd382d93f05292e6391f9.html#a7d56a686e05fd382d93f05292e6391f9":[5,0,328,12],
@@ -112,8 +114,8 @@ var NAVTREEINDEX32 =
 "d8/d26/class_g_b_declared_af0018cd7db9cea6dc0f1934f76b281ac.html#af0018cd7db9cea6dc0f1934f76b281ac":[3,3,0,0,0],
 "d8/d26/class_g_b_declared_af030d228c2ef5030430908688f870ebf.html#af030d228c2ef5030430908688f870ebf":[3,3,0,0,9],
 "d8/d26/class_g_b_declared_af12aec54a28bdbc03760393d29374804.html#af12aec54a28bdbc03760393d29374804":[3,3,0,0,13],
-"d8/d27/classnewf4_1_1_s_pair_set_1_1_s_pair_iterator.html":[4,0,7,16,0],
 "d8/d27/classnewf4_1_1_s_pair_set_1_1_s_pair_iterator.html":[5,0,4,16,0],
+"d8/d27/classnewf4_1_1_s_pair_set_1_1_s_pair_iterator.html":[4,0,7,16,0],
 "d8/d28/class_res_monomials_with_component.html":[5,0,280],
 "d8/d28/class_res_monomials_with_component_a2950853438dff8acb60f24e89483b89b.html#a2950853438dff8acb60f24e89483b89b":[5,0,280,1],
 "d8/d28/class_res_monomials_with_component_a614c37eb8f91c4d63b1dac0d44080b87.html#a614c37eb8f91c4d63b1dac0d44080b87":[5,0,280,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "d8/d54/class_monomial_ideal_1_1_iterator_a4b68f1ddfdf4edfe2ec8d4eb633d500e.html#a4b68f1ddfdf4edfe2ec8d4eb633d500e":[5,0,191,0,1],
 "d8/d54/class_monomial_ideal_1_1_iterator_a624c55bfd5b8c4269b3623867c1dfde7.html#a624c55bfd5b8c4269b3623867c1dfde7":[5,0,191,0,7],
 "d8/d54/class_monomial_ideal_1_1_iterator_a656e70e4e4e8f0bdeb06bf4330e18b3c.html#a656e70e4e4e8f0bdeb06bf4330e18b3c":[5,0,191,0,0],
-"d8/d54/class_monomial_ideal_1_1_iterator_a694ac844e3ee717e4c2a59919dc12222.html#a694ac844e3ee717e4c2a59919dc12222":[5,0,191,0,10],
-"d8/d54/class_monomial_ideal_1_1_iterator_a6c4556d93403b4c40458035ff809f870.html#a6c4556d93403b4c40458035ff809f870":[5,0,191,0,2],
-"d8/d54/class_monomial_ideal_1_1_iterator_a7b8e8508603f2093ddbcd787a1f30071.html#a7b8e8508603f2093ddbcd787a1f30071":[5,0,191,0,6]
+"d8/d54/class_monomial_ideal_1_1_iterator_a694ac844e3ee717e4c2a59919dc12222.html#a694ac844e3ee717e4c2a59919dc12222":[5,0,191,0,10]
 };

@@ -106,17 +106,17 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_abadc58fcae7a
 </div><div class="memdoc">
 <p>compute the row reduced echelon form of the matrix A. This is a matrix of the same shape as A. NULL, and an error, is returned if the ring is not equipped to compute this, or if it has not been implemented for that ring type yet </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l00803">803</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  804</span>{</div>
-<div class="line"><span class="lineno">  805</span>  <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  806</span>    {</div>
-<div class="line"><span class="lineno">  807</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/de9/finalize_8cpp_a69ad2638647d139d7c215cbdc820f5cb.html#a69ad2638647d139d7c215cbdc820f5cb">internMutableMatrix</a>(A-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_afb707abdb37c39f8735a08e14099ed4f.html#afb707abdb37c39f8735a08e14099ed4f">rowReducedEchelonForm</a>());</div>
-<div class="line"><span class="lineno">  808</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
-<div class="line"><span class="lineno">  809</span>    {</div>
-<div class="line"><span class="lineno">  810</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><span class="lineno">  811</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  812</span>  }</div>
-<div class="line"><span class="lineno">  813</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l00847">847</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  848</span>{</div>
+<div class="line"><span class="lineno">  849</span>  <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  850</span>    {</div>
+<div class="line"><span class="lineno">  851</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/de9/finalize_8cpp_a69ad2638647d139d7c215cbdc820f5cb.html#a69ad2638647d139d7c215cbdc820f5cb">internMutableMatrix</a>(A-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_afb707abdb37c39f8735a08e14099ed4f.html#afb707abdb37c39f8735a08e14099ed4f">rowReducedEchelonForm</a>());</div>
+<div class="line"><span class="lineno">  852</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><span class="lineno">  853</span>    {</div>
+<div class="line"><span class="lineno">  854</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno">  855</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  856</span>  }</div>
+<div class="line"><span class="lineno">  857</span>}</div>
 <div class="ttc" id="aclass_mutable_matrix_afb707abdb37c39f8735a08e14099ed4f_html_afb707abdb37c39f8735a08e14099ed4f"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_afb707abdb37c39f8735a08e14099ed4f.html#afb707abdb37c39f8735a08e14099ed4f">MutableMatrix::rowReducedEchelonForm</a></div><div class="ttdeci">virtual MutableMatrix * rowReducedEchelonForm() const =0</div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
 <div class="ttc" id="afinalize_8cpp_a69ad2638647d139d7c215cbdc820f5cb_html_a69ad2638647d139d7c215cbdc820f5cb"><div class="ttname"><a href="../../db/de9/finalize_8cpp_a69ad2638647d139d7c215cbdc820f5cb.html#a69ad2638647d139d7c215cbdc820f5cb">internMutableMatrix</a></div><div class="ttdeci">MutableMatrix * internMutableMatrix(MutableMatrix *G)</div><div class="ttdef"><b>Definition</b> <a href="../../db/de9/finalize_8cpp_source.html#l00194">finalize.cpp:194</a></div></div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_abadc58fcae7a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../df/d3c/mutable-matrix_8h.html">mutable-matrix.h</a></li>
-    <li class="footer">Generated on Sun Jan 11 2026 02:33:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jan 18 2026 02:31:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX45 =
 {
+"db/d22/class_m2_free_algebra_quotient_ae573ed357f5d2de61778a049a4b767ca.html#ae573ed357f5d2de61778a049a4b767ca":[5,0,152,6],
+"db/d22/class_m2_free_algebra_quotient_af1fa32db871c063dfbc28de3fe172eb7.html#af1fa32db871c063dfbc28de3fe172eb7":[5,0,152,38],
 "db/d22/class_m2_free_algebra_quotient_af75832fcd6b9fd3ac54e0f263e4815f1.html#af75832fcd6b9fd3ac54e0f263e4815f1":[5,0,152,54],
 "db/d22/class_m2_free_algebra_quotient_af7f4c33378f08e2551f4fa344471b411.html#af7f4c33378f08e2551f4fa344471b411":[5,0,152,26],
 "db/d22/class_m2_free_algebra_quotient_afdcdf2d3a1b6d5220fc0bf053168a4f2.html#afdcdf2d3a1b6d5220fc0bf053168a4f2":[5,0,152,48],
@@ -247,7 +249,5 @@ var NAVTREEINDEX45 =
 "db/d77/struct_table___t_1_1binding.html":[5,0,335,0],
 "db/d77/struct_table___t_1_1binding_aa0f7e271348466f1ddd08cb8c0141906.html#aa0f7e271348466f1ddd08cb8c0141906":[5,0,335,0,0],
 "db/d77/struct_table___t_1_1binding_ac56717a39c852200782ca9f20a41a3b7.html#ac56717a39c852200782ca9f20a41a3b7":[5,0,335,0,2],
-"db/d77/struct_table___t_1_1binding_af207af851f6370113855927fe88ec859.html#af207af851f6370113855927fe88ec859":[5,0,335,0,1],
-"db/d78/class_b_i_basis_1_1_pointer_less_comparator.html":[4,0,0,8],
-"db/d78/class_b_i_basis_1_1_pointer_less_comparator.html":[5,0,0,8]
+"db/d77/struct_table___t_1_1binding_af207af851f6370113855927fe88ec859.html#af207af851f6370113855927fe88ec859":[5,0,335,0,1]
 };

@@ -122,18 +122,18 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_ab292b2bbc0cc
 </div><div class="memdoc">
 <p>A,B,C should be mutable matrices over the same ring, and a,b elements of this ring. C = b*C + a * op(A)*op(B), where op(A) = A or transpose(A), depending on transposeA where op(B) = B or transpose(B), depending on transposeB set C += A*B. If not implemented, or sizes/rings are not compatible then false is returned. Otherwise true is returned. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l00887">887</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  890</span>{</div>
-<div class="line"><span class="lineno">  891</span>  <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  892</span>    {</div>
-<div class="line"><span class="lineno">  893</span>      C-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a569737049ad54740ce60af720cfa8df4.html#a569737049ad54740ce60af720cfa8df4">addMultipleTo</a>(A, B);</div>
-<div class="line"><span class="lineno">  894</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  895</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
-<div class="line"><span class="lineno">  896</span>    {</div>
-<div class="line"><span class="lineno">  897</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><span class="lineno">  898</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  899</span>  }</div>
-<div class="line"><span class="lineno">  900</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l00931">931</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  934</span>{</div>
+<div class="line"><span class="lineno">  935</span>  <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  936</span>    {</div>
+<div class="line"><span class="lineno">  937</span>      C-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a569737049ad54740ce60af720cfa8df4.html#a569737049ad54740ce60af720cfa8df4">addMultipleTo</a>(A, B);</div>
+<div class="line"><span class="lineno">  938</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  939</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><span class="lineno">  940</span>    {</div>
+<div class="line"><span class="lineno">  941</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno">  942</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  943</span>  }</div>
+<div class="line"><span class="lineno">  944</span>}</div>
 <div class="ttc" id="aclass_mutable_matrix_a569737049ad54740ce60af720cfa8df4_html_a569737049ad54740ce60af720cfa8df4"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_a569737049ad54740ce60af720cfa8df4.html#a569737049ad54740ce60af720cfa8df4">MutableMatrix::addMultipleTo</a></div><div class="ttdeci">virtual void addMultipleTo(const MutableMatrix *A, const MutableMatrix *B)=0</div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_ab292b2bbc0cc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../df/d3c/mutable-matrix_8h.html">mutable-matrix.h</a></li>
-    <li class="footer">Generated on Sun Jan 11 2026 02:33:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jan 18 2026 02:31:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

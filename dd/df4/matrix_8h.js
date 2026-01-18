@@ -11,6 +11,7 @@ var matrix_8h =
     [ "IM2_Matrix_exterior", "dd/df4/matrix_8h_a60f8382e3a854aa717f14db13c57e7f0.html#a60f8382e3a854aa717f14db13c57e7f0", null ],
     [ "IM2_Matrix_flip", "dd/df4/matrix_8h_abea3c192347e1030e9e3e54cc8df10f0.html#abea3c192347e1030e9e3e54cc8df10f0", null ],
     [ "IM2_Matrix_get_degree", "dd/df4/matrix_8h_a94d899eef95d6ffbd55c7a80b8e25607.html#a94d899eef95d6ffbd55c7a80b8e25607", null ],
+    [ "IM2_Matrix_get_entries", "dd/df4/matrix_8h_a9c5fdb06f6066f4a2fdaa59bdedca212.html#a9c5fdb06f6066f4a2fdaa59bdedca212", null ],
     [ "IM2_Matrix_get_entry", "dd/df4/matrix_8h_a4a593a710564f442d08667bb39172530.html#a4a593a710564f442d08667bb39172530", null ],
     [ "IM2_Matrix_get_source", "dd/df4/matrix_8h_ae05ad4651f643941c79a249d7bcd19b8.html#ae05ad4651f643941c79a249d7bcd19b8", null ],
     [ "IM2_Matrix_get_target", "dd/df4/matrix_8h_a1d7fcb6a6868ab1dcccec13719e542d7.html#a1d7fcb6a6868ab1dcccec13719e542d7", null ],

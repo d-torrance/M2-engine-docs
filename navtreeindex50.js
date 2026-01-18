@@ -1,5 +1,7 @@
 var NAVTREEINDEX50 =
 {
+"dd/d0a/_givaro_test_8cpp.html":[6,0,0,0,7,15],
+"dd/d0a/_givaro_test_8cpp_a0cdcae3c279645847a1edf1dde509708.html#a0cdcae3c279645847a1edf1dde509708":[6,0,0,0,7,15,1],
 "dd/d0a/_givaro_test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627":[6,0,0,0,7,15,0],
 "dd/d0a/_givaro_test_8cpp_source.html":[6,0,0,0,7,15],
 "dd/d0e/eigen_8cpp.html":[6,0,0,0,98],
@@ -240,14 +242,12 @@ var NAVTREEINDEX50 =
 "dd/d43/_n_c_reduction_8hpp_source.html":[6,0,0,0,4,11],
 "dd/d51/class_b_i_basis_1_1_monom_d_l.html":[4,0,0,5],
 "dd/d51/class_b_i_basis_1_1_monom_d_l.html":[5,0,0,5],
-"dd/d51/class_b_i_basis_1_1_monom_d_l_a0008975ff9bfd4570eb7e23f202576bb.html#a0008975ff9bfd4570eb7e23f202576bb":[5,0,0,5,5],
 "dd/d51/class_b_i_basis_1_1_monom_d_l_a0008975ff9bfd4570eb7e23f202576bb.html#a0008975ff9bfd4570eb7e23f202576bb":[4,0,0,5,5],
+"dd/d51/class_b_i_basis_1_1_monom_d_l_a0008975ff9bfd4570eb7e23f202576bb.html#a0008975ff9bfd4570eb7e23f202576bb":[5,0,0,5,5],
 "dd/d51/class_b_i_basis_1_1_monom_d_l_a16dcbb0f1ce77e40cc4ee4943db99da1.html#a16dcbb0f1ce77e40cc4ee4943db99da1":[4,0,0,5,18],
 "dd/d51/class_b_i_basis_1_1_monom_d_l_a16dcbb0f1ce77e40cc4ee4943db99da1.html#a16dcbb0f1ce77e40cc4ee4943db99da1":[5,0,0,5,18],
-"dd/d51/class_b_i_basis_1_1_monom_d_l_a18fa339f9a248c674238aa1f99af57b6.html#a18fa339f9a248c674238aa1f99af57b6":[4,0,0,5,21],
 "dd/d51/class_b_i_basis_1_1_monom_d_l_a18fa339f9a248c674238aa1f99af57b6.html#a18fa339f9a248c674238aa1f99af57b6":[5,0,0,5,21],
-"dd/d51/class_b_i_basis_1_1_monom_d_l_a1a18cf201e47c57f748029bef92da579.html#a1a18cf201e47c57f748029bef92da579":[5,0,0,5,20],
+"dd/d51/class_b_i_basis_1_1_monom_d_l_a18fa339f9a248c674238aa1f99af57b6.html#a18fa339f9a248c674238aa1f99af57b6":[4,0,0,5,21],
 "dd/d51/class_b_i_basis_1_1_monom_d_l_a1a18cf201e47c57f748029bef92da579.html#a1a18cf201e47c57f748029bef92da579":[4,0,0,5,20],
-"dd/d51/class_b_i_basis_1_1_monom_d_l_a2744e07a8cc257e935a1e990831afc0b.html#a2744e07a8cc257e935a1e990831afc0b":[4,0,0,5,16],
-"dd/d51/class_b_i_basis_1_1_monom_d_l_a2744e07a8cc257e935a1e990831afc0b.html#a2744e07a8cc257e935a1e990831afc0b":[5,0,0,5,16]
+"dd/d51/class_b_i_basis_1_1_monom_d_l_a1a18cf201e47c57f748029bef92da579.html#a1a18cf201e47c57f748029bef92da579":[5,0,0,5,20]
 };

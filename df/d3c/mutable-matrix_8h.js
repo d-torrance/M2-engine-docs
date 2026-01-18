@@ -12,6 +12,7 @@ var mutable_matrix_8h =
     [ "IM2_MutableMatrix_delete_columns", "df/d3c/mutable-matrix_8h_a3ae6b86d433410dceb4ab68929927d00.html#a3ae6b86d433410dceb4ab68929927d00", null ],
     [ "IM2_MutableMatrix_delete_rows", "df/d3c/mutable-matrix_8h_aee94f0036b680e1bcb91003e49540ef1.html#aee94f0036b680e1bcb91003e49540ef1", null ],
     [ "IM2_MutableMatrix_from_matrix", "df/d3c/mutable-matrix_8h_a0558cfef09edf6238896a3d9d043eedb.html#a0558cfef09edf6238896a3d9d043eedb", null ],
+    [ "IM2_MutableMatrix_get_entries", "df/d3c/mutable-matrix_8h_ad6997a9aab026c528115fb76a8ca7dea.html#ad6997a9aab026c528115fb76a8ca7dea", null ],
     [ "IM2_MutableMatrix_get_entry", "df/d3c/mutable-matrix_8h_a09837903d8b8d822b88a84950785917f.html#a09837903d8b8d822b88a84950785917f", null ],
     [ "IM2_MutableMatrix_identity", "df/d3c/mutable-matrix_8h_a3ed4883131ae15bdb73d0e6502caa11e.html#a3ed4883131ae15bdb73d0e6502caa11e", null ],
     [ "IM2_MutableMatrix_insert_columns", "df/d3c/mutable-matrix_8h_a0f3e02a21b7fca7478e25e9af41458f7.html#a0f3e02a21b7fca7478e25e9af41458f7", null ],

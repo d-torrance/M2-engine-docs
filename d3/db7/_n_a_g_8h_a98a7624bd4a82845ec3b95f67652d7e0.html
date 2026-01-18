@@ -163,23 +163,23 @@ $(document).ready(function(){initNavTree('d3/db7/_n_a_g_8h_a98a7624bd4a82845ec3b
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d2d/interface_2matrix_8cpp_source.html#l00776">776</a> of file <a class="el" href="../../d3/d2d/interface_2matrix_8cpp_source.html">matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  786</span>{</div>
-<div class="line"><span class="lineno">  787</span>  <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  788</span>    <span class="keywordflow">return</span> H-&gt;<a class="code hl_function" href="../../dc/de6/class_m2_homotopy_a368f3085486827b014f3f99e31c025a6.html#a368f3085486827b014f3f99e31c025a6">value</a>().<a class="code hl_function" href="../../de/d9d/class_homotopy_a8cdcc093f711671949312489f2e55134.html#a8cdcc093f711671949312489f2e55134">track</a>(inputs,</div>
-<div class="line"><span class="lineno">  789</span>                            outputs,</div>
-<div class="line"><span class="lineno">  790</span>                            output_extras,</div>
-<div class="line"><span class="lineno">  791</span>                            init_dt,</div>
-<div class="line"><span class="lineno">  792</span>                            min_dt,</div>
-<div class="line"><span class="lineno">  793</span>                            epsilon,  <span class="comment">// o.CorrectorTolerance,</span></div>
-<div class="line"><span class="lineno">  794</span>                            max_corr_steps,</div>
-<div class="line"><span class="lineno">  795</span>                            infinity_threshold,</div>
-<div class="line"><span class="lineno">  796</span>                            checkPrecision);</div>
-<div class="line"><span class="lineno">  797</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e) {</div>
-<div class="line"><span class="lineno">  798</span>    <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><span class="lineno">  799</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  800</span>  }</div>
-<div class="line"><span class="lineno">  801</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d2d/interface_2matrix_8cpp_source.html#l00832">832</a> of file <a class="el" href="../../d3/d2d/interface_2matrix_8cpp_source.html">matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  842</span>{</div>
+<div class="line"><span class="lineno">  843</span>  <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  844</span>    <span class="keywordflow">return</span> H-&gt;<a class="code hl_function" href="../../dc/de6/class_m2_homotopy_a368f3085486827b014f3f99e31c025a6.html#a368f3085486827b014f3f99e31c025a6">value</a>().<a class="code hl_function" href="../../de/d9d/class_homotopy_a8cdcc093f711671949312489f2e55134.html#a8cdcc093f711671949312489f2e55134">track</a>(inputs,</div>
+<div class="line"><span class="lineno">  845</span>                            outputs,</div>
+<div class="line"><span class="lineno">  846</span>                            output_extras,</div>
+<div class="line"><span class="lineno">  847</span>                            init_dt,</div>
+<div class="line"><span class="lineno">  848</span>                            min_dt,</div>
+<div class="line"><span class="lineno">  849</span>                            epsilon,  <span class="comment">// o.CorrectorTolerance,</span></div>
+<div class="line"><span class="lineno">  850</span>                            max_corr_steps,</div>
+<div class="line"><span class="lineno">  851</span>                            infinity_threshold,</div>
+<div class="line"><span class="lineno">  852</span>                            checkPrecision);</div>
+<div class="line"><span class="lineno">  853</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e) {</div>
+<div class="line"><span class="lineno">  854</span>    <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno">  855</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  856</span>  }</div>
+<div class="line"><span class="lineno">  857</span>}</div>
 <div class="ttc" id="aclass_homotopy_a8cdcc093f711671949312489f2e55134_html_a8cdcc093f711671949312489f2e55134"><div class="ttname"><a href="../../de/d9d/class_homotopy_a8cdcc093f711671949312489f2e55134.html#a8cdcc093f711671949312489f2e55134">Homotopy::track</a></div><div class="ttdeci">virtual bool track(const MutableMatrix *inputs, MutableMatrix *outputs, MutableMatrix *output_extras, gmp_RR init_dt, gmp_RR min_dt, gmp_RR epsilon, int max_corr_steps, gmp_RR infinity_threshold, bool checkPrecision)=0</div></div>
 <div class="ttc" id="aclass_m2_homotopy_a368f3085486827b014f3f99e31c025a6_html_a368f3085486827b014f3f99e31c025a6"><div class="ttname"><a href="../../dc/de6/class_m2_homotopy_a368f3085486827b014f3f99e31c025a6.html#a368f3085486827b014f3f99e31c025a6">M2Homotopy::value</a></div><div class="ttdeci">Homotopy &amp; value()</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dab/_s_l_p-defs_8hpp_source.html#l00067">SLP-defs.hpp:67</a></div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('d3/db7/_n_a_g_8h_a98a7624bd4a82845ec3b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d3/db7/_n_a_g_8h.html">NAG.h</a></li>
-    <li class="footer">Generated on Sun Jan 11 2026 02:33:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jan 18 2026 02:31:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
