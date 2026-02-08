@@ -123,24 +123,24 @@ template&lt;typename RT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00360">360</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  362</span>{</div>
-<div class="line"><span class="lineno">  363</span>  assert(A.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>() == B.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
-<div class="line"><span class="lineno">  364</span>  assert(A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>() == C.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
-<div class="line"><span class="lineno">  365</span>  assert(B.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>() == C.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>());</div>
-<div class="line"><span class="lineno">  366</span> </div>
-<div class="line"><span class="lineno">  367</span>  <span class="keyword">typename</span> RT::Element tmp(A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">ring</a>());</div>
-<div class="line"><span class="lineno">  368</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>(); i++)</div>
-<div class="line"><span class="lineno">  369</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; B.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>(); j++)</div>
-<div class="line"><span class="lineno">  370</span>      {</div>
-<div class="line"><span class="lineno">  371</span>        <span class="keyword">auto</span>&amp; val = C.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(i,j);</div>
-<div class="line"><span class="lineno">  372</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> k = 0; k &lt; A.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>(); ++k)</div>
-<div class="line"><span class="lineno">  373</span>          {</div>
-<div class="line"><span class="lineno">  374</span>            A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">ring</a>().mult(tmp, A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(i,k), B.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(k,j));</div>
-<div class="line"><span class="lineno">  375</span>            A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">ring</a>().subtract(val, val, tmp);</div>
-<div class="line"><span class="lineno">  376</span>          }</div>
-<div class="line"><span class="lineno">  377</span>      }</div>
-<div class="line"><span class="lineno">  378</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00424">424</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  426</span>{</div>
+<div class="line"><span class="lineno">  427</span>  assert(A.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>() == B.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
+<div class="line"><span class="lineno">  428</span>  assert(A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>() == C.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
+<div class="line"><span class="lineno">  429</span>  assert(B.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>() == C.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>());</div>
+<div class="line"><span class="lineno">  430</span> </div>
+<div class="line"><span class="lineno">  431</span>  <span class="keyword">typename</span> RT::Element tmp(A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">ring</a>());</div>
+<div class="line"><span class="lineno">  432</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>(); i++)</div>
+<div class="line"><span class="lineno">  433</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; B.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>(); j++)</div>
+<div class="line"><span class="lineno">  434</span>      {</div>
+<div class="line"><span class="lineno">  435</span>        <span class="keyword">auto</span>&amp; val = C.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(i,j);</div>
+<div class="line"><span class="lineno">  436</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> k = 0; k &lt; A.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>(); ++k)</div>
+<div class="line"><span class="lineno">  437</span>          {</div>
+<div class="line"><span class="lineno">  438</span>            A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">ring</a>().mult(tmp, A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(i,k), B.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(k,j));</div>
+<div class="line"><span class="lineno">  439</span>            A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">ring</a>().subtract(val, val, tmp);</div>
+<div class="line"><span class="lineno">  440</span>          }</div>
+<div class="line"><span class="lineno">  441</span>      }</div>
+<div class="line"><span class="lineno">  442</span>}</div>
 <div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00107">dmat.hpp:107</a></div></div>
 <div class="ttc" id="aclass_d_mat_a430faaf604ffe11bf81a35456acc2e97_html_a430faaf604ffe11bf81a35456acc2e97"><div class="ttname"><a href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">DMat::entry</a></div><div class="ttdeci">ElementType &amp; entry(size_t row, size_t column)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00111">dmat.hpp:111</a></div></div>
 <div class="ttc" id="aclass_d_mat_a8bfde729efa8a5ba300bd3024dc9a440_html_a8bfde729efa8a5ba300bd3024dc9a440"><div class="ttname"><a href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">DMat::ring</a></div><div class="ttdeci">const ACoeffRing &amp; ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00106">dmat.hpp:106</a></div></div>
@@ -156,7 +156,7 @@ template&lt;typename RT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:26 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

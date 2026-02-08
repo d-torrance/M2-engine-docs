@@ -141,36 +141,36 @@ $(document).ready(function(){initNavTree('dd/dab/class_monomial_info_a1f3736e184
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/moninfo_8hpp_source.html#l00619">619</a> of file <a class="el" href="../../d5/d0a/moninfo_8hpp_source.html">moninfo.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  624</span>  {</div>
-<div class="line"><span class="lineno">  625</span>    <a class="code hl_typedef" href="../../d6/dac/varpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec.html#ac06516f99c07ceb08dbb3d05a8aed2ec">varpower_word</a> deg = <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a8f3281c942d59bbcd8a665b4d204d2f9.html#a8f3281c942d59bbcd8a665b4d204d2f9">mModuleHeftDegrees</a>[<a class="code hl_function" href="../../dd/dab/class_monomial_info_a975f33d350dc5fdf096d959c47ad45d5.html#a975f33d350dc5fdf096d959c47ad45d5">get_component</a>(a)];</div>
-<div class="line"><span class="lineno">  626</span>    <span class="comment">// sets result, deg, are_disjoint</span></div>
-<div class="line"><span class="lineno">  627</span>    <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a35a58cbfbbd3d7407646bd441c1a3a4f.html#a35a58cbfbbd3d7407646bd441c1a3a4f">ncalls_quotient_as_vp</a>++;</div>
-<div class="line"><span class="lineno">  628</span>    are_disjoint = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  629</span>    a += <a class="code hl_variable" href="../../dd/dab/class_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c.html#ab871cfa4ab66344a8de516bf9fe5962c">firstvar</a>;</div>
-<div class="line"><span class="lineno">  630</span>    b += <a class="code hl_variable" href="../../dd/dab/class_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c.html#ab871cfa4ab66344a8de516bf9fe5962c">firstvar</a>;</div>
-<div class="line"><span class="lineno">  631</span>    <span class="keywordtype">int</span> len = 0;</div>
-<div class="line"><span class="lineno">  632</span>    <a class="code hl_typedef" href="../../d6/dac/varpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec.html#ac06516f99c07ceb08dbb3d05a8aed2ec">varpower_word</a> *r = result + 1;</div>
-<div class="line"><span class="lineno">  633</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a68e18bb4033baee1ab6a43913f29d3a6.html#a68e18bb4033baee1ab6a43913f29d3a6">nvars</a> - 1; i &gt;= 0; --i)</div>
-<div class="line"><span class="lineno">  634</span>      {</div>
-<div class="line"><span class="lineno">  635</span>        <span class="keywordflow">if</span> (a[i] != 0 &amp;&amp; b[i] != 0) are_disjoint = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  636</span>        <span class="keywordtype">long</span> c = a[i] - b[i];</div>
-<div class="line"><span class="lineno">  637</span>        <span class="keywordflow">if</span> (c &gt; 0)</div>
-<div class="line"><span class="lineno">  638</span>          {</div>
-<div class="line"><span class="lineno">  639</span>            *r++ = i;</div>
-<div class="line"><span class="lineno">  640</span>            *r++ = c;</div>
-<div class="line"><span class="lineno">  641</span>            deg += c * <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a5d3c70bda0e72a2c330f0dfcd66f489b.html#a5d3c70bda0e72a2c330f0dfcd66f489b">mHeftDegrees</a>[i];</div>
-<div class="line"><span class="lineno">  642</span>            len++;</div>
-<div class="line"><span class="lineno">  643</span>          }</div>
-<div class="line"><span class="lineno">  644</span>      }</div>
-<div class="line"><span class="lineno">  645</span>    result[0] = len;</div>
-<div class="line"><span class="lineno">  646</span>    deg_result = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(deg);</div>
-<div class="line"><span class="lineno">  647</span>  }</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/moninfo_8hpp_source.html#l00624">624</a> of file <a class="el" href="../../d5/d0a/moninfo_8hpp_source.html">moninfo.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  629</span>  {</div>
+<div class="line"><span class="lineno">  630</span>    <a class="code hl_typedef" href="../../d6/dac/varpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec.html#ac06516f99c07ceb08dbb3d05a8aed2ec">varpower_word</a> deg = <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a8f3281c942d59bbcd8a665b4d204d2f9.html#a8f3281c942d59bbcd8a665b4d204d2f9">mModuleHeftDegrees</a>[<a class="code hl_function" href="../../dd/dab/class_monomial_info_a975f33d350dc5fdf096d959c47ad45d5.html#a975f33d350dc5fdf096d959c47ad45d5">get_component</a>(a)];</div>
+<div class="line"><span class="lineno">  631</span>    <span class="comment">// sets result, deg, are_disjoint</span></div>
+<div class="line"><span class="lineno">  632</span>    <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a35a58cbfbbd3d7407646bd441c1a3a4f.html#a35a58cbfbbd3d7407646bd441c1a3a4f">ncalls_quotient_as_vp</a>++;</div>
+<div class="line"><span class="lineno">  633</span>    are_disjoint = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  634</span>    a += <a class="code hl_variable" href="../../dd/dab/class_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c.html#ab871cfa4ab66344a8de516bf9fe5962c">firstvar</a>;</div>
+<div class="line"><span class="lineno">  635</span>    b += <a class="code hl_variable" href="../../dd/dab/class_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c.html#ab871cfa4ab66344a8de516bf9fe5962c">firstvar</a>;</div>
+<div class="line"><span class="lineno">  636</span>    <span class="keywordtype">int</span> len = 0;</div>
+<div class="line"><span class="lineno">  637</span>    <a class="code hl_typedef" href="../../d6/dac/varpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec.html#ac06516f99c07ceb08dbb3d05a8aed2ec">varpower_word</a> *r = result + 1;</div>
+<div class="line"><span class="lineno">  638</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a68e18bb4033baee1ab6a43913f29d3a6.html#a68e18bb4033baee1ab6a43913f29d3a6">nvars</a> - 1; i &gt;= 0; --i)</div>
+<div class="line"><span class="lineno">  639</span>      {</div>
+<div class="line"><span class="lineno">  640</span>        <span class="keywordflow">if</span> (a[i] != 0 &amp;&amp; b[i] != 0) are_disjoint = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  641</span>        <span class="keywordtype">long</span> c = a[i] - b[i];</div>
+<div class="line"><span class="lineno">  642</span>        <span class="keywordflow">if</span> (c &gt; 0)</div>
+<div class="line"><span class="lineno">  643</span>          {</div>
+<div class="line"><span class="lineno">  644</span>            *r++ = i;</div>
+<div class="line"><span class="lineno">  645</span>            *r++ = c;</div>
+<div class="line"><span class="lineno">  646</span>            deg += c * <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a5d3c70bda0e72a2c330f0dfcd66f489b.html#a5d3c70bda0e72a2c330f0dfcd66f489b">mHeftDegrees</a>[i];</div>
+<div class="line"><span class="lineno">  647</span>            len++;</div>
+<div class="line"><span class="lineno">  648</span>          }</div>
+<div class="line"><span class="lineno">  649</span>      }</div>
+<div class="line"><span class="lineno">  650</span>    result[0] = len;</div>
+<div class="line"><span class="lineno">  651</span>    deg_result = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(deg);</div>
+<div class="line"><span class="lineno">  652</span>  }</div>
 <div class="ttc" id="aclass_monomial_info_a35a58cbfbbd3d7407646bd441c1a3a4f_html_a35a58cbfbbd3d7407646bd441c1a3a4f"><div class="ttname"><a href="../../dd/dab/class_monomial_info_a35a58cbfbbd3d7407646bd441c1a3a4f.html#a35a58cbfbbd3d7407646bd441c1a3a4f">MonomialInfo::ncalls_quotient_as_vp</a></div><div class="ttdeci">unsigned long ncalls_quotient_as_vp</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00083">moninfo.hpp:83</a></div></div>
 <div class="ttc" id="aclass_monomial_info_a5d3c70bda0e72a2c330f0dfcd66f489b_html_a5d3c70bda0e72a2c330f0dfcd66f489b"><div class="ttname"><a href="../../dd/dab/class_monomial_info_a5d3c70bda0e72a2c330f0dfcd66f489b.html#a5d3c70bda0e72a2c330f0dfcd66f489b">MonomialInfo::mHeftDegrees</a></div><div class="ttdeci">std::vector&lt; int &gt; mHeftDegrees</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00059">moninfo.hpp:59</a></div></div>
 <div class="ttc" id="aclass_monomial_info_a68e18bb4033baee1ab6a43913f29d3a6_html_a68e18bb4033baee1ab6a43913f29d3a6"><div class="ttname"><a href="../../dd/dab/class_monomial_info_a68e18bb4033baee1ab6a43913f29d3a6.html#a68e18bb4033baee1ab6a43913f29d3a6">MonomialInfo::nvars</a></div><div class="ttdeci">int nvars</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00048">moninfo.hpp:48</a></div></div>
 <div class="ttc" id="aclass_monomial_info_a8f3281c942d59bbcd8a665b4d204d2f9_html_a8f3281c942d59bbcd8a665b4d204d2f9"><div class="ttname"><a href="../../dd/dab/class_monomial_info_a8f3281c942d59bbcd8a665b4d204d2f9.html#a8f3281c942d59bbcd8a665b4d204d2f9">MonomialInfo::mModuleHeftDegrees</a></div><div class="ttdeci">std::vector&lt; int &gt; mModuleHeftDegrees</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00062">moninfo.hpp:62</a></div></div>
-<div class="ttc" id="aclass_monomial_info_a975f33d350dc5fdf096d959c47ad45d5_html_a975f33d350dc5fdf096d959c47ad45d5"><div class="ttname"><a href="../../dd/dab/class_monomial_info_a975f33d350dc5fdf096d959c47ad45d5.html#a975f33d350dc5fdf096d959c47ad45d5">MonomialInfo::get_component</a></div><div class="ttdeci">long get_component(const_packed_monomial m) const</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00119">moninfo.hpp:119</a></div></div>
+<div class="ttc" id="aclass_monomial_info_a975f33d350dc5fdf096d959c47ad45d5_html_a975f33d350dc5fdf096d959c47ad45d5"><div class="ttname"><a href="../../dd/dab/class_monomial_info_a975f33d350dc5fdf096d959c47ad45d5.html#a975f33d350dc5fdf096d959c47ad45d5">MonomialInfo::get_component</a></div><div class="ttdeci">long get_component(const_packed_monomial m) const</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00124">moninfo.hpp:124</a></div></div>
 <div class="ttc" id="aclass_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c_html_ab871cfa4ab66344a8de516bf9fe5962c"><div class="ttname"><a href="../../dd/dab/class_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c.html#ab871cfa4ab66344a8de516bf9fe5962c">MonomialInfo::firstvar</a></div><div class="ttdeci">int firstvar</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00054">moninfo.hpp:54</a></div></div>
 <div class="ttc" id="avarpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec_html_ac06516f99c07ceb08dbb3d05a8aed2ec"><div class="ttname"><a href="../../d6/dac/varpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec.html#ac06516f99c07ceb08dbb3d05a8aed2ec">varpower_word</a></div><div class="ttdeci">varpower_monomials::Exponent varpower_word</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dac/varpower-monomial_8hpp_source.html#l00010">varpower-monomial.hpp:10</a></div></div>
 </div><!-- fragment -->
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('dd/dab/class_monomial_info_a1f3736e184
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dab/class_monomial_info.html">MonomialInfo</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

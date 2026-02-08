@@ -113,24 +113,24 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_adb2ca238a1c47a37a
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html#l00233">233</a> of file <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html">NCF4.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  234</span>{</div>
-<div class="line"><span class="lineno">  235</span>   <span class="keywordflow">for</span> (<span class="keyword">auto</span> newOverlap : newOverlaps)</div>
-<div class="line"><span class="lineno">  236</span>   {</div>
-<div class="line"><span class="lineno">  237</span>     <span class="keywordflow">if</span> (std::get&lt;1&gt;(newOverlap) != -1 &amp;&amp; !<a class="code hl_function" href="../../d0/d92/class_n_c_f4_a13ff1734d6043340a9e20a25f4ccd5f3.html#a13ff1734d6043340a9e20a25f4ccd5f3">isOverlapNecessary</a>(newOverlap))</div>
-<div class="line"><span class="lineno">  238</span>       {</div>
-<div class="line"><span class="lineno">  239</span>         <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
-<div class="line"><span class="lineno">  240</span>           std::cout &lt;&lt; <span class="stringliteral">&quot;Reduction avoided using eager 2nd criterion.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  241</span>         <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  242</span>       }</div>
-<div class="line"><span class="lineno">  243</span>     <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_aedee0280aaa78a6e86185a73afb7b580.html#aedee0280aaa78a6e86185a73afb7b580">mOverlapTable</a>.<a class="code hl_function" href="../../de/d48/class_overlap_table_a2752843e8d338897f2e21987ac79dc3d.html#a2752843e8d338897f2e21987ac79dc3d">insert</a>(<a class="code hl_function" href="../../d0/d92/class_n_c_f4_a09f10302b708b09323cbd3fa5c4ef9d7.html#a09f10302b708b09323cbd3fa5c4ef9d7">overlapHeft</a>(newOverlap),</div>
-<div class="line"><span class="lineno">  244</span>                          <span class="keyword">false</span>,</div>
-<div class="line"><span class="lineno">  245</span>                          newOverlap);</div>
-<div class="line"><span class="lineno">  246</span>   }</div>
-<div class="line"><span class="lineno">  247</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html#l00235">235</a> of file <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html">NCF4.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  236</span>{</div>
+<div class="line"><span class="lineno">  237</span>   <span class="keywordflow">for</span> (<span class="keyword">auto</span> newOverlap : newOverlaps)</div>
+<div class="line"><span class="lineno">  238</span>   {</div>
+<div class="line"><span class="lineno">  239</span>     <span class="keywordflow">if</span> (std::get&lt;1&gt;(newOverlap) != -1 &amp;&amp; !<a class="code hl_function" href="../../d0/d92/class_n_c_f4_a13ff1734d6043340a9e20a25f4ccd5f3.html#a13ff1734d6043340a9e20a25f4ccd5f3">isOverlapNecessary</a>(newOverlap))</div>
+<div class="line"><span class="lineno">  240</span>       {</div>
+<div class="line"><span class="lineno">  241</span>         <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
+<div class="line"><span class="lineno">  242</span>           std::cout &lt;&lt; <span class="stringliteral">&quot;Reduction avoided using eager 2nd criterion.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  243</span>         <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  244</span>       }</div>
+<div class="line"><span class="lineno">  245</span>     <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_aedee0280aaa78a6e86185a73afb7b580.html#aedee0280aaa78a6e86185a73afb7b580">mOverlapTable</a>.<a class="code hl_function" href="../../de/d48/class_overlap_table_a2752843e8d338897f2e21987ac79dc3d.html#a2752843e8d338897f2e21987ac79dc3d">insert</a>(<a class="code hl_function" href="../../d0/d92/class_n_c_f4_a09f10302b708b09323cbd3fa5c4ef9d7.html#a09f10302b708b09323cbd3fa5c4ef9d7">overlapHeft</a>(newOverlap),</div>
+<div class="line"><span class="lineno">  246</span>                          <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  247</span>                          newOverlap);</div>
+<div class="line"><span class="lineno">  248</span>   }</div>
+<div class="line"><span class="lineno">  249</span>}</div>
 <div class="ttc" id="a_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc_html_aa0f82116567de78d2d8d5cee3a26eebc"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a></div><div class="ttdeci">int M2_gbTrace</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00059">M2-replacement.c:59</a></div></div>
-<div class="ttc" id="aclass_n_c_f4_a09f10302b708b09323cbd3fa5c4ef9d7_html_a09f10302b708b09323cbd3fa5c4ef9d7"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a09f10302b708b09323cbd3fa5c4ef9d7.html#a09f10302b708b09323cbd3fa5c4ef9d7">NCF4::overlapHeft</a></div><div class="ttdeci">auto overlapHeft(Overlap o) const -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l00220">NCF4.cpp:220</a></div></div>
-<div class="ttc" id="aclass_n_c_f4_a13ff1734d6043340a9e20a25f4ccd5f3_html_a13ff1734d6043340a9e20a25f4ccd5f3"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a13ff1734d6043340a9e20a25f4ccd5f3.html#a13ff1734d6043340a9e20a25f4ccd5f3">NCF4::isOverlapNecessary</a></div><div class="ttdeci">auto isOverlapNecessary(const Overlap &amp;o) -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l00249">NCF4.cpp:249</a></div></div>
+<div class="ttc" id="aclass_n_c_f4_a09f10302b708b09323cbd3fa5c4ef9d7_html_a09f10302b708b09323cbd3fa5c4ef9d7"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a09f10302b708b09323cbd3fa5c4ef9d7.html#a09f10302b708b09323cbd3fa5c4ef9d7">NCF4::overlapHeft</a></div><div class="ttdeci">auto overlapHeft(Overlap o) const -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l00222">NCF4.cpp:222</a></div></div>
+<div class="ttc" id="aclass_n_c_f4_a13ff1734d6043340a9e20a25f4ccd5f3_html_a13ff1734d6043340a9e20a25f4ccd5f3"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a13ff1734d6043340a9e20a25f4ccd5f3.html#a13ff1734d6043340a9e20a25f4ccd5f3">NCF4::isOverlapNecessary</a></div><div class="ttdeci">auto isOverlapNecessary(const Overlap &amp;o) -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l00251">NCF4.cpp:251</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_aedee0280aaa78a6e86185a73afb7b580_html_aedee0280aaa78a6e86185a73afb7b580"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_aedee0280aaa78a6e86185a73afb7b580.html#aedee0280aaa78a6e86185a73afb7b580">NCF4::mOverlapTable</a></div><div class="ttdeci">OverlapTable mOverlapTable</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00107">NCF4.hpp:107</a></div></div>
 <div class="ttc" id="aclass_overlap_table_a2752843e8d338897f2e21987ac79dc3d_html_a2752843e8d338897f2e21987ac79dc3d"><div class="ttname"><a href="../../de/d48/class_overlap_table_a2752843e8d338897f2e21987ac79dc3d.html#a2752843e8d338897f2e21987ac79dc3d">OverlapTable::insert</a></div><div class="ttdeci">auto insert(int deg, bool isGenerator, Overlap o) -&gt; void</div><div class="ttdef"><b>Definition</b> <a href="../../da/d7b/_overlap_table_8cpp_source.html#l00007">OverlapTable.cpp:7</a></div></div>
 </div><!-- fragment -->
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_adb2ca238a1c47a37a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d92/class_n_c_f4.html">NCF4</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

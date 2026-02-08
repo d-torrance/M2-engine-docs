@@ -123,15 +123,15 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_aca59f330d6da36d
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l01294">1294</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1297</span>{</div>
-<div class="line"><span class="lineno"> 1298</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno"> 1299</span>  <span class="keywordflow">for</span> (; f != <span class="keyword">nullptr</span>; f = f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
-<div class="line"><span class="lineno"> 1300</span>    {</div>
-<div class="line"><span class="lineno"> 1301</span>      mpz_gcd(content, content, f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
-<div class="line"><span class="lineno"> 1302</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/d9a/_z_z_8hpp_a4fdbcec93cf372e693113cc2bd1e2c73.html#a4fdbcec93cf372e693113cc2bd1e2c73">mask_mpz_cmp_si</a>(content, 1) == 0) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno"> 1303</span>    }</div>
-<div class="line"><span class="lineno"> 1304</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l01303">1303</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1306</span>{</div>
+<div class="line"><span class="lineno"> 1307</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno"> 1308</span>  <span class="keywordflow">for</span> (; f != <span class="keyword">nullptr</span>; f = f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>)</div>
+<div class="line"><span class="lineno"> 1309</span>    {</div>
+<div class="line"><span class="lineno"> 1310</span>      mpz_gcd(content, content, f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
+<div class="line"><span class="lineno"> 1311</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/d9a/_z_z_8hpp_a4fdbcec93cf372e693113cc2bd1e2c73.html#a4fdbcec93cf372e693113cc2bd1e2c73">mask_mpz_cmp_si</a>(content, 1) == 0) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno"> 1312</span>    }</div>
+<div class="line"><span class="lineno"> 1313</span>}</div>
 <div class="ttc" id="a_z_z_8hpp_a4fdbcec93cf372e693113cc2bd1e2c73_html_a4fdbcec93cf372e693113cc2bd1e2c73"><div class="ttname"><a href="../../d8/d9a/_z_z_8hpp_a4fdbcec93cf372e693113cc2bd1e2c73.html#a4fdbcec93cf372e693113cc2bd1e2c73">mask_mpz_cmp_si</a></div><div class="ttdeci">int mask_mpz_cmp_si(mpz_srcptr x, long int i)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d9a/_z_z_8hpp_source.html#l00016">ZZ.hpp:16</a></div></div>
 <div class="ttc" id="astructgbvector_a185cb3a8e35ce8178aac8ab39a79c4be_html_a185cb3a8e35ce8178aac8ab39a79c4be"><div class="ttname"><a href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">gbvector::coeff</a></div><div class="ttdeci">ring_elem coeff</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00046">gbring.hpp:46</a></div></div>
 <div class="ttc" id="astructgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26_html_a3cc2bd9a347521ac3e6d6d89de1a3a26"><div class="ttname"><a href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">gbvector::next</a></div><div class="ttdeci">gbvector * next</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00045">gbring.hpp:45</a></div></div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_aca59f330d6da36d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

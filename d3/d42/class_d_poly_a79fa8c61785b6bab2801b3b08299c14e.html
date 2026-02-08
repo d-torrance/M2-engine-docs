@@ -121,16 +121,16 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a79fa8c61785b6bab2
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l01469">1469</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1472</span>{</div>
-<div class="line"><span class="lineno"> 1473</span>  <span class="comment">// Set the values of result_maxdegs at indices: 0..level</span></div>
-<div class="line"><span class="lineno"> 1474</span>  result_maxdegs[level] = std::max(result_maxdegs[level], f-&gt;deg);</div>
-<div class="line"><span class="lineno"> 1475</span>  <span class="keywordflow">if</span> (level == 0) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno"> 1476</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++)</div>
-<div class="line"><span class="lineno"> 1477</span>    <span class="keywordflow">if</span> (f-&gt;arr.polys[i] != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno"> 1478</span>      <a class="code hl_function" href="../../d3/d42/class_d_poly_a79fa8c61785b6bab2801b3b08299c14e.html#a79fa8c61785b6bab2801b3b08299c14e">degrees_of_vars</a>(level - 1, f-&gt;arr.polys[i], result_maxdegs);</div>
-<div class="line"><span class="lineno"> 1479</span>}</div>
-<div class="ttc" id="aclass_d_poly_a79fa8c61785b6bab2801b3b08299c14e_html_a79fa8c61785b6bab2801b3b08299c14e"><div class="ttname"><a href="../../d3/d42/class_d_poly_a79fa8c61785b6bab2801b3b08299c14e.html#a79fa8c61785b6bab2801b3b08299c14e">DPoly::degrees_of_vars</a></div><div class="ttdeci">void degrees_of_vars(int level, const TowerPolynomial f, std::vector&lt; int &gt; &amp;result_max_degs) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l01469">dpoly.cpp:1469</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l01477">1477</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1480</span>{</div>
+<div class="line"><span class="lineno"> 1481</span>  <span class="comment">// Set the values of result_maxdegs at indices: 0..level</span></div>
+<div class="line"><span class="lineno"> 1482</span>  result_maxdegs[level] = std::max(result_maxdegs[level], f-&gt;deg);</div>
+<div class="line"><span class="lineno"> 1483</span>  <span class="keywordflow">if</span> (level == 0) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno"> 1484</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++)</div>
+<div class="line"><span class="lineno"> 1485</span>    <span class="keywordflow">if</span> (f-&gt;arr.polys[i] != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 1486</span>      <a class="code hl_function" href="../../d3/d42/class_d_poly_a79fa8c61785b6bab2801b3b08299c14e.html#a79fa8c61785b6bab2801b3b08299c14e">degrees_of_vars</a>(level - 1, f-&gt;arr.polys[i], result_maxdegs);</div>
+<div class="line"><span class="lineno"> 1487</span>}</div>
+<div class="ttc" id="aclass_d_poly_a79fa8c61785b6bab2801b3b08299c14e_html_a79fa8c61785b6bab2801b3b08299c14e"><div class="ttname"><a href="../../d3/d42/class_d_poly_a79fa8c61785b6bab2801b3b08299c14e.html#a79fa8c61785b6bab2801b3b08299c14e">DPoly::degrees_of_vars</a></div><div class="ttdeci">void degrees_of_vars(int level, const TowerPolynomial f, std::vector&lt; int &gt; &amp;result_max_degs) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l01477">dpoly.cpp:1477</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/d42/class_d_poly_a79fa8c61785b6bab2801b3b08299c14e.html#a79fa8c61785b6bab2801b3b08299c14e">degrees_of_vars()</a>.</p>
 
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a79fa8c61785b6bab2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

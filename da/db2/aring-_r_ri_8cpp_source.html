@@ -109,27 +109,29 @@ $(document).ready(function(){initNavTree('da/db2/aring-_r_ri_8cpp_source.html','
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                             <span class="keywordtype">bool</span> p_plus,</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                             <span class="keywordtype">bool</span> p_parens)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  mpfi_ptr a = &amp;<span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="../../dd/d78/class_m2_1_1_a_ring_r_ri_a86a415cc3939d4c69e0faab511f8ddef.html#a86a415cc3939d4c69e0faab511f8ddef">ElementType</a> &amp;<span class="keyword">&gt;</span>(ap);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  M2_string s1 = (*gmp_tostringRRpointer)(&amp;(a-&gt;left));</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  M2_string s2 = (*gmp_tostringRRpointer)(&amp;(a-&gt;right));</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordflow">if</span>(p_plus) o &lt;&lt; <span class="stringliteral">&quot;+&quot;</span>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  o &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  o.<a class="code hl_function" href="../../da/d40/classbuffer_a951d0ac37be11c66758cd97298c052d9.html#a951d0ac37be11c66758cd97298c052d9">put</a>((<span class="keywordtype">char</span> *)s1-&gt;array, s1-&gt;len);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  o &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  o.<a class="code hl_function" href="../../da/d40/classbuffer_a951d0ac37be11c66758cd97298c052d9.html#a951d0ac37be11c66758cd97298c052d9">put</a>((<span class="keywordtype">char</span> *)s2-&gt;array, s2-&gt;len);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  o &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  (void) p_one;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  (void) p_parens;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  mpfi_ptr a = &amp;<span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="../../dd/d78/class_m2_1_1_a_ring_r_ri_a86a415cc3939d4c69e0faab511f8ddef.html#a86a415cc3939d4c69e0faab511f8ddef">ElementType</a> &amp;<span class="keyword">&gt;</span>(ap);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  M2_string s1 = (*gmp_tostringRRpointer)(&amp;(a-&gt;left));</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  M2_string s2 = (*gmp_tostringRRpointer)(&amp;(a-&gt;right));</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordflow">if</span>(p_plus) o &lt;&lt; <span class="stringliteral">&quot;+&quot;</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  o &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  o.<a class="code hl_function" href="../../da/d40/classbuffer_a951d0ac37be11c66758cd97298c052d9.html#a951d0ac37be11c66758cd97298c052d9">put</a>((<span class="keywordtype">char</span> *)s1-&gt;array, s1-&gt;len);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  o &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  o.<a class="code hl_function" href="../../da/d40/classbuffer_a951d0ac37be11c66758cd97298c052d9.html#a951d0ac37be11c66758cd97298c052d9">put</a>((<span class="keywordtype">char</span> *)s2-&gt;array, s2-&gt;len);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  o &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
 </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};  <span class="comment">// end namespace M2</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Local Variables:</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// compile-command: &quot;make -C $M2BUILDDIR/Macaulay2/e  &quot;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// indent-tabs-mode: nil</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// End:</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};  <span class="comment">// end namespace M2</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Local Variables:</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// compile-command: &quot;make -C $M2BUILDDIR/Macaulay2/e  &quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// indent-tabs-mode: nil</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// End:</span></div>
 <div class="ttc" id="aaring-_r_ri_8hpp_html"><div class="ttname"><a href="../../da/d6b/aring-_r_ri_8hpp.html">aring-RRi.hpp</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_r_ri_a01ff0bd4cb8f06d7d38d079bd1dced36_html_a01ff0bd4cb8f06d7d38d079bd1dced36"><div class="ttname"><a href="../../dd/d78/class_m2_1_1_a_ring_r_ri_a01ff0bd4cb8f06d7d38d079bd1dced36.html#a01ff0bd4cb8f06d7d38d079bd1dced36">M2::ARingRRi::mPrecision</a></div><div class="ttdeci">unsigned long mPrecision</div><div class="ttdef"><b>Definition</b> <a href="../../da/d6b/aring-_r_ri_8hpp_source.html#l00386">aring-RRi.hpp:386</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_r_ri_a01ff0bd4cb8f06d7d38d079bd1dced36_html_a01ff0bd4cb8f06d7d38d079bd1dced36"><div class="ttname"><a href="../../dd/d78/class_m2_1_1_a_ring_r_ri_a01ff0bd4cb8f06d7d38d079bd1dced36.html#a01ff0bd4cb8f06d7d38d079bd1dced36">M2::ARingRRi::mPrecision</a></div><div class="ttdeci">unsigned long mPrecision</div><div class="ttdef"><b>Definition</b> <a href="../../da/d6b/aring-_r_ri_8hpp_source.html#l00391">aring-RRi.hpp:391</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_r_ri_a86a415cc3939d4c69e0faab511f8ddef_html_a86a415cc3939d4c69e0faab511f8ddef"><div class="ttname"><a href="../../dd/d78/class_m2_1_1_a_ring_r_ri_a86a415cc3939d4c69e0faab511f8ddef.html#a86a415cc3939d4c69e0faab511f8ddef">M2::ARingRRi::ElementType</a></div><div class="ttdeci">elem ElementType</div><div class="ttdef"><b>Definition</b> <a href="../../da/d6b/aring-_r_ri_8hpp_source.html#l00031">aring-RRi.hpp:31</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_r_ri_acc5ee6055bc85ce85955713be20af07f_html_acc5ee6055bc85ce85955713be20af07f"><div class="ttname"><a href="../../dd/d78/class_m2_1_1_a_ring_r_ri_acc5ee6055bc85ce85955713be20af07f.html#acc5ee6055bc85ce85955713be20af07f">M2::ARingRRi::elem_text_out</a></div><div class="ttdeci">void elem_text_out(buffer &amp;o, const ElementType &amp;a, bool p_one, bool p_plus, bool p_parens) const</div><div class="ttdef"><b>Definition</b> <a href="../../da/db2/aring-_r_ri_8cpp_source.html#l00006">aring-RRi.cpp:6</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_r_ri_ad097a9b761c0bb3ddade1908ec63b56c_html_ad097a9b761c0bb3ddade1908ec63b56c"><div class="ttname"><a href="../../dd/d78/class_m2_1_1_a_ring_r_ri_ad097a9b761c0bb3ddade1908ec63b56c.html#ad097a9b761c0bb3ddade1908ec63b56c">M2::ARingRRi::text_out</a></div><div class="ttdeci">void text_out(buffer &amp;o) const</div><div class="ttdef"><b>Definition</b> <a href="../../da/db2/aring-_r_ri_8cpp_source.html#l00005">aring-RRi.cpp:5</a></div></div>
@@ -142,7 +144,7 @@ $(document).ready(function(){initNavTree('da/db2/aring-_r_ri_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../da/db2/aring-_r_ri_8cpp.html">aring-RRi.cpp</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:20 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

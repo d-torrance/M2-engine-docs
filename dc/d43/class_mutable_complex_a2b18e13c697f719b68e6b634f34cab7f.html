@@ -115,16 +115,17 @@ $(document).ready(function(){initNavTree('dc/d43/class_mutable_complex_a2b18e13c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d11/mutablecomplex_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d7/d11/mutablecomplex_8cpp_source.html">mutablecomplex.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>{</div>
-<div class="line"><span class="lineno">   69</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> e;</div>
-<div class="line"><span class="lineno">   70</span>  <span class="keywordflow">for</span> (; i &lt; i.end(); ++i)</div>
-<div class="line"><span class="lineno">   71</span>    {</div>
-<div class="line"><span class="lineno">   72</span>      <a class="code hl_variable" href="../../dc/d43/class_mutable_complex_a5f210566fcfe113381c3d13f0d98acab.html#a5f210566fcfe113381c3d13f0d98acab">mDifferential</a>[i.index()]-&gt;get_entry((*i).first, (*i).second, e);</div>
-<div class="line"><span class="lineno">   73</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dc/d43/class_mutable_complex_aa278c6cadaf85ef858b2e990aef432dc.html#aa278c6cadaf85ef858b2e990aef432dc">mRing</a>-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a2d03e8e7a2dc7b935d00c0ed4357cf05.html#a2d03e8e7a2dc7b935d00c0ed4357cf05">is_unit</a>(e)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   74</span>    }</div>
-<div class="line"><span class="lineno">   75</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   76</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d11/mutablecomplex_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d7/d11/mutablecomplex_8cpp_source.html">mutablecomplex.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>{</div>
+<div class="line"><span class="lineno">   70</span>  (void) flags;</div>
+<div class="line"><span class="lineno">   71</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> e;</div>
+<div class="line"><span class="lineno">   72</span>  <span class="keywordflow">for</span> (; i &lt; i.end(); ++i)</div>
+<div class="line"><span class="lineno">   73</span>    {</div>
+<div class="line"><span class="lineno">   74</span>      <a class="code hl_variable" href="../../dc/d43/class_mutable_complex_a5f210566fcfe113381c3d13f0d98acab.html#a5f210566fcfe113381c3d13f0d98acab">mDifferential</a>[i.index()]-&gt;get_entry((*i).first, (*i).second, e);</div>
+<div class="line"><span class="lineno">   75</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dc/d43/class_mutable_complex_aa278c6cadaf85ef858b2e990aef432dc.html#aa278c6cadaf85ef858b2e990aef432dc">mRing</a>-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a2d03e8e7a2dc7b935d00c0ed4357cf05.html#a2d03e8e7a2dc7b935d00c0ed4357cf05">is_unit</a>(e)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   76</span>    }</div>
+<div class="line"><span class="lineno">   77</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   78</span>}</div>
 <div class="ttc" id="aclass_mutable_complex_a5f210566fcfe113381c3d13f0d98acab_html_a5f210566fcfe113381c3d13f0d98acab"><div class="ttname"><a href="../../dc/d43/class_mutable_complex_a5f210566fcfe113381c3d13f0d98acab.html#a5f210566fcfe113381c3d13f0d98acab">MutableComplex::mDifferential</a></div><div class="ttdeci">gc_vector&lt; MutableMatrix * &gt; mDifferential</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d71/mutablecomplex_8hpp_source.html#l00111">mutablecomplex.hpp:111</a></div></div>
 <div class="ttc" id="aclass_mutable_complex_aa278c6cadaf85ef858b2e990aef432dc_html_aa278c6cadaf85ef858b2e990aef432dc"><div class="ttname"><a href="../../dc/d43/class_mutable_complex_aa278c6cadaf85ef858b2e990aef432dc.html#aa278c6cadaf85ef858b2e990aef432dc">MutableComplex::mRing</a></div><div class="ttdeci">const Ring * mRing</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d71/mutablecomplex_8hpp_source.html#l00108">mutablecomplex.hpp:108</a></div></div>
 <div class="ttc" id="aclass_ring_a2d03e8e7a2dc7b935d00c0ed4357cf05_html_a2d03e8e7a2dc7b935d00c0ed4357cf05"><div class="ttname"><a href="../../dd/dcf/class_ring_a2d03e8e7a2dc7b935d00c0ed4357cf05.html#a2d03e8e7a2dc7b935d00c0ed4357cf05">Ring::is_unit</a></div><div class="ttdeci">virtual bool is_unit(const ring_elem f) const =0</div></div>
@@ -142,7 +143,7 @@ $(document).ready(function(){initNavTree('dc/d43/class_mutable_complex_a2b18e13c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d43/class_mutable_complex.html">MutableComplex</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

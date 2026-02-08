@@ -129,34 +129,34 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_acc5125946258
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6f/schur2_8cpp_source.html#l00376">376</a> of file <a class="el" href="../../dc/d6f/schur2_8cpp_source.html">schur2.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  379</span>{</div>
-<div class="line"><span class="lineno">  380</span>  <span class="comment">// Assumption in use: Rf (ring of f) is a Schur ring, with coeff ring coeffRf</span></div>
-<div class="line"><span class="lineno">  381</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d25/classschur__poly.html">schur_poly</a> *f1 = f.<a class="code hl_function" href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">get_schur_poly</a>();</div>
-<div class="line"><span class="lineno">  382</span>  <a class="code hl_class" href="../../d9/d25/classschur__poly.html">schur_poly</a> *result = <span class="keyword">new</span> <a class="code hl_class" href="../../d9/d25/classschur__poly.html">schur_poly</a>;</div>
-<div class="line"><span class="lineno">  383</span> </div>
-<div class="line"><span class="lineno">  384</span>  <span class="keywordflow">for</span> (<a class="code hl_class" href="../../d7/d11/classschur__poly__iterator.html">schur_poly::iterator</a> i = f1-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a79d0d03b94cc34ae7ed6f87dd3434967.html#a79d0d03b94cc34ae7ed6f87dd3434967">begin</a>(); i != f1-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a9632b4958ef2f19d8c48d0ccff6f73fd.html#a9632b4958ef2f19d8c48d0ccff6f73fd">end</a>(); ++i)</div>
-<div class="line"><span class="lineno">  385</span>    {</div>
-<div class="line"><span class="lineno">  386</span>      <span class="keywordflow">if</span> (i.getMonomial()[0] - 1 &gt; <a class="code hl_variable" href="../../df/da2/class_schur_ring2_a10ea2fd976fa4cf1fa027993fa48ab27.html#a10ea2fd976fa4cf1fa027993fa48ab27">nvars</a>) <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  387</span>      <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> a;</div>
-<div class="line"><span class="lineno">  388</span>      <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../df/da2/class_schur_ring2_afd39942f66464c369d1dd602365e1e27.html#afd39942f66464c369d1dd602365e1e27">coefficientRing</a>-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a03f908e0bed75b2c59bfc5cc900a21c6.html#a03f908e0bed75b2c59bfc5cc900a21c6">promote</a>(</div>
-<div class="line"><span class="lineno">  389</span>              Rf-&gt;getCoefficientRing(), i.getCoefficient(), a))</div>
-<div class="line"><span class="lineno">  390</span>        {</div>
-<div class="line"><span class="lineno">  391</span>          <span class="keyword">delete</span> result;</div>
-<div class="line"><span class="lineno">  392</span>          resultRE = <a class="code hl_function" href="../../df/da2/class_schur_ring2_aa90da7b466412942f73622fd71ea7ff1.html#aa90da7b466412942f73622fd71ea7ff1">from_long</a>(0);</div>
-<div class="line"><span class="lineno">  393</span>          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  394</span>        }</div>
-<div class="line"><span class="lineno">  395</span>      result-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a51cb10fb79f730fd9b1885d76c808e97.html#a51cb10fb79f730fd9b1885d76c808e97">appendTerm</a>(a, i.getMonomial());</div>
-<div class="line"><span class="lineno">  396</span>    }</div>
-<div class="line"><span class="lineno">  397</span>  resultRE = <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(result);</div>
-<div class="line"><span class="lineno">  398</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  399</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6f/schur2_8cpp_source.html#l00383">383</a> of file <a class="el" href="../../dc/d6f/schur2_8cpp_source.html">schur2.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  386</span>{</div>
+<div class="line"><span class="lineno">  387</span>  <span class="comment">// Assumption in use: Rf (ring of f) is a Schur ring, with coeff ring coeffRf</span></div>
+<div class="line"><span class="lineno">  388</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d25/classschur__poly.html">schur_poly</a> *f1 = f.<a class="code hl_function" href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">get_schur_poly</a>();</div>
+<div class="line"><span class="lineno">  389</span>  <a class="code hl_class" href="../../d9/d25/classschur__poly.html">schur_poly</a> *result = <span class="keyword">new</span> <a class="code hl_class" href="../../d9/d25/classschur__poly.html">schur_poly</a>;</div>
+<div class="line"><span class="lineno">  390</span> </div>
+<div class="line"><span class="lineno">  391</span>  <span class="keywordflow">for</span> (<a class="code hl_class" href="../../d7/d11/classschur__poly__iterator.html">schur_poly::iterator</a> i = f1-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a79d0d03b94cc34ae7ed6f87dd3434967.html#a79d0d03b94cc34ae7ed6f87dd3434967">begin</a>(); i != f1-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a9632b4958ef2f19d8c48d0ccff6f73fd.html#a9632b4958ef2f19d8c48d0ccff6f73fd">end</a>(); ++i)</div>
+<div class="line"><span class="lineno">  392</span>    {</div>
+<div class="line"><span class="lineno">  393</span>      <span class="keywordflow">if</span> (i.getMonomial()[0] - 1 &gt; <a class="code hl_variable" href="../../df/da2/class_schur_ring2_a10ea2fd976fa4cf1fa027993fa48ab27.html#a10ea2fd976fa4cf1fa027993fa48ab27">nvars</a>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  394</span>      <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> a;</div>
+<div class="line"><span class="lineno">  395</span>      <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../df/da2/class_schur_ring2_afd39942f66464c369d1dd602365e1e27.html#afd39942f66464c369d1dd602365e1e27">coefficientRing</a>-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a03f908e0bed75b2c59bfc5cc900a21c6.html#a03f908e0bed75b2c59bfc5cc900a21c6">promote</a>(</div>
+<div class="line"><span class="lineno">  396</span>              Rf-&gt;getCoefficientRing(), i.getCoefficient(), a))</div>
+<div class="line"><span class="lineno">  397</span>        {</div>
+<div class="line"><span class="lineno">  398</span>          <span class="keyword">delete</span> result;</div>
+<div class="line"><span class="lineno">  399</span>          resultRE = <a class="code hl_function" href="../../df/da2/class_schur_ring2_aa90da7b466412942f73622fd71ea7ff1.html#aa90da7b466412942f73622fd71ea7ff1">from_long</a>(0);</div>
+<div class="line"><span class="lineno">  400</span>          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  401</span>        }</div>
+<div class="line"><span class="lineno">  402</span>      result-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a51cb10fb79f730fd9b1885d76c808e97.html#a51cb10fb79f730fd9b1885d76c808e97">appendTerm</a>(a, i.getMonomial());</div>
+<div class="line"><span class="lineno">  403</span>    }</div>
+<div class="line"><span class="lineno">  404</span>  resultRE = <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(result);</div>
+<div class="line"><span class="lineno">  405</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  406</span>}</div>
 <div class="ttc" id="aclass_ring_a03f908e0bed75b2c59bfc5cc900a21c6_html_a03f908e0bed75b2c59bfc5cc900a21c6"><div class="ttname"><a href="../../dd/dcf/class_ring_a03f908e0bed75b2c59bfc5cc900a21c6.html#a03f908e0bed75b2c59bfc5cc900a21c6">Ring::promote</a></div><div class="ttdeci">virtual bool promote(const Ring *R, const ring_elem f, ring_elem &amp;result) const =0</div></div>
 <div class="ttc" id="aclass_schur_ring2_a10ea2fd976fa4cf1fa027993fa48ab27_html_a10ea2fd976fa4cf1fa027993fa48ab27"><div class="ttname"><a href="../../df/da2/class_schur_ring2_a10ea2fd976fa4cf1fa027993fa48ab27.html#a10ea2fd976fa4cf1fa027993fa48ab27">SchurRing2::nvars</a></div><div class="ttdeci">int nvars</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00107">schur2.hpp:107</a></div></div>
-<div class="ttc" id="aclass_schur_ring2_aa90da7b466412942f73622fd71ea7ff1_html_aa90da7b466412942f73622fd71ea7ff1"><div class="ttname"><a href="../../df/da2/class_schur_ring2_aa90da7b466412942f73622fd71ea7ff1.html#aa90da7b466412942f73622fd71ea7ff1">SchurRing2::from_long</a></div><div class="ttdeci">virtual ring_elem from_long(long n) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00289">schur2.cpp:289</a></div></div>
+<div class="ttc" id="aclass_schur_ring2_aa90da7b466412942f73622fd71ea7ff1_html_aa90da7b466412942f73622fd71ea7ff1"><div class="ttname"><a href="../../df/da2/class_schur_ring2_aa90da7b466412942f73622fd71ea7ff1.html#aa90da7b466412942f73622fd71ea7ff1">SchurRing2::from_long</a></div><div class="ttdeci">virtual ring_elem from_long(long n) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00291">schur2.cpp:291</a></div></div>
 <div class="ttc" id="aclass_schur_ring2_afd39942f66464c369d1dd602365e1e27_html_afd39942f66464c369d1dd602365e1e27"><div class="ttname"><a href="../../df/da2/class_schur_ring2_afd39942f66464c369d1dd602365e1e27.html#afd39942f66464c369d1dd602365e1e27">SchurRing2::coefficientRing</a></div><div class="ttdeci">const Ring * coefficientRing</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00106">schur2.hpp:106</a></div></div>
 <div class="ttc" id="aclassschur__poly__iterator_html"><div class="ttname"><a href="../../d7/d11/classschur__poly__iterator.html">schur_poly_iterator</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00065">schur2.hpp:66</a></div></div>
-<div class="ttc" id="aclassschur__poly_a51cb10fb79f730fd9b1885d76c808e97_html_a51cb10fb79f730fd9b1885d76c808e97"><div class="ttname"><a href="../../d9/d25/classschur__poly_a51cb10fb79f730fd9b1885d76c808e97.html#a51cb10fb79f730fd9b1885d76c808e97">schur_poly::appendTerm</a></div><div class="ttdeci">void appendTerm(ring_elem coeff, const_schur_partition monom)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00117">schur2.cpp:117</a></div></div>
+<div class="ttc" id="aclassschur__poly_a51cb10fb79f730fd9b1885d76c808e97_html_a51cb10fb79f730fd9b1885d76c808e97"><div class="ttname"><a href="../../d9/d25/classschur__poly_a51cb10fb79f730fd9b1885d76c808e97.html#a51cb10fb79f730fd9b1885d76c808e97">schur_poly::appendTerm</a></div><div class="ttdeci">void appendTerm(ring_elem coeff, const_schur_partition monom)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00119">schur2.cpp:119</a></div></div>
 <div class="ttc" id="aclassschur__poly_a79d0d03b94cc34ae7ed6f87dd3434967_html_a79d0d03b94cc34ae7ed6f87dd3434967"><div class="ttname"><a href="../../d9/d25/classschur__poly_a79d0d03b94cc34ae7ed6f87dd3434967.html#a79d0d03b94cc34ae7ed6f87dd3434967">schur_poly::begin</a></div><div class="ttdeci">iterator begin() const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00094">schur2.hpp:94</a></div></div>
 <div class="ttc" id="aclassschur__poly_a9632b4958ef2f19d8c48d0ccff6f73fd_html_a9632b4958ef2f19d8c48d0ccff6f73fd"><div class="ttname"><a href="../../d9/d25/classschur__poly_a9632b4958ef2f19d8c48d0ccff6f73fd.html#a9632b4958ef2f19d8c48d0ccff6f73fd">schur_poly::end</a></div><div class="ttdeci">iterator end() const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00098">schur2.hpp:98</a></div></div>
 <div class="ttc" id="aclassschur__poly_html"><div class="ttname"><a href="../../d9/d25/classschur__poly.html">schur_poly</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00047">schur2.hpp:48</a></div></div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_acc5125946258
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/da2/class_schur_ring2.html">SchurRing2</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

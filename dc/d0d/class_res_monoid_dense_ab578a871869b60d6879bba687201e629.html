@@ -129,27 +129,27 @@ $(document).ready(function(){initNavTree('dc/d0d/class_res_monoid_dense_ab578a87
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00270">270</a> of file <a class="el" href="../../d0/d58/res-moninfo-dense_8hpp_source.html">res-moninfo-dense.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  273</span>  {</div>
-<div class="line"><span class="lineno">  274</span>    <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_a1e417d04ef1132aa11d083a297c8d84d.html#a1e417d04ef1132aa11d083a297c8d84d">ncalls_divide</a>++;</div>
-<div class="line"><span class="lineno">  275</span>    <span class="comment">// First, divide monomials</span></div>
-<div class="line"><span class="lineno">  276</span>    <span class="comment">// Then, if the division is OK, set the component, hash value and rest of</span></div>
-<div class="line"><span class="lineno">  277</span>    <span class="comment">// the monomial</span></div>
-<div class="line"><span class="lineno">  278</span>    <span class="keywordflow">if</span> (m[1] != n[1])  <span class="comment">// components are not equal</span></div>
-<div class="line"><span class="lineno">  279</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  280</span>    <a class="code hl_typedef" href="../../d7/d0a/res-monomial-types_8hpp_a49487411723b81298f85d07cad2b85a4.html#a49487411723b81298f85d07cad2b85a4">res_const_packed_monomial</a> m1 = m + <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">nslots</a>;</div>
-<div class="line"><span class="lineno">  281</span>    <a class="code hl_typedef" href="../../d7/d0a/res-monomial-types_8hpp_a49487411723b81298f85d07cad2b85a4.html#a49487411723b81298f85d07cad2b85a4">res_const_packed_monomial</a> n1 = n + <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">nslots</a>;</div>
-<div class="line"><span class="lineno">  282</span>    <a class="code hl_typedef" href="../../d7/d0a/res-monomial-types_8hpp_af33ca331995cea8124ea3653cfbf069d.html#af33ca331995cea8124ea3653cfbf069d">res_packed_monomial</a> result1 = result + <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">nslots</a>;</div>
-<div class="line"><span class="lineno">  283</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">nslots</a> - 2; i &gt; 0; i--)</div>
-<div class="line"><span class="lineno">  284</span>      {</div>
-<div class="line"><span class="lineno">  285</span>        <a class="code hl_typedef" href="../../d7/d0a/res-monomial-types_8hpp_aeafae28e221cfed9648e85c2b97a56a3.html#aeafae28e221cfed9648e85c2b97a56a3">res_varpower_word</a> cmp = *--m1 - *--n1;</div>
-<div class="line"><span class="lineno">  286</span>        <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  287</span>        *--result1 = cmp;</div>
-<div class="line"><span class="lineno">  288</span>      }</div>
-<div class="line"><span class="lineno">  289</span>    result[1] = 0;  <span class="comment">// the component of a division is in the ring (comp 0).</span></div>
-<div class="line"><span class="lineno">  290</span>    result[0] = m[0] - n[0];  <span class="comment">// subtract hash codes</span></div>
-<div class="line"><span class="lineno">  291</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  292</span>  }</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00275">275</a> of file <a class="el" href="../../d0/d58/res-moninfo-dense_8hpp_source.html">res-moninfo-dense.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  278</span>  {</div>
+<div class="line"><span class="lineno">  279</span>    <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_a1e417d04ef1132aa11d083a297c8d84d.html#a1e417d04ef1132aa11d083a297c8d84d">ncalls_divide</a>++;</div>
+<div class="line"><span class="lineno">  280</span>    <span class="comment">// First, divide monomials</span></div>
+<div class="line"><span class="lineno">  281</span>    <span class="comment">// Then, if the division is OK, set the component, hash value and rest of</span></div>
+<div class="line"><span class="lineno">  282</span>    <span class="comment">// the monomial</span></div>
+<div class="line"><span class="lineno">  283</span>    <span class="keywordflow">if</span> (m[1] != n[1])  <span class="comment">// components are not equal</span></div>
+<div class="line"><span class="lineno">  284</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  285</span>    <a class="code hl_typedef" href="../../d7/d0a/res-monomial-types_8hpp_a49487411723b81298f85d07cad2b85a4.html#a49487411723b81298f85d07cad2b85a4">res_const_packed_monomial</a> m1 = m + <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">nslots</a>;</div>
+<div class="line"><span class="lineno">  286</span>    <a class="code hl_typedef" href="../../d7/d0a/res-monomial-types_8hpp_a49487411723b81298f85d07cad2b85a4.html#a49487411723b81298f85d07cad2b85a4">res_const_packed_monomial</a> n1 = n + <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">nslots</a>;</div>
+<div class="line"><span class="lineno">  287</span>    <a class="code hl_typedef" href="../../d7/d0a/res-monomial-types_8hpp_af33ca331995cea8124ea3653cfbf069d.html#af33ca331995cea8124ea3653cfbf069d">res_packed_monomial</a> result1 = result + <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">nslots</a>;</div>
+<div class="line"><span class="lineno">  288</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">nslots</a> - 2; i &gt; 0; i--)</div>
+<div class="line"><span class="lineno">  289</span>      {</div>
+<div class="line"><span class="lineno">  290</span>        <a class="code hl_typedef" href="../../d7/d0a/res-monomial-types_8hpp_aeafae28e221cfed9648e85c2b97a56a3.html#aeafae28e221cfed9648e85c2b97a56a3">res_varpower_word</a> cmp = *--m1 - *--n1;</div>
+<div class="line"><span class="lineno">  291</span>        <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  292</span>        *--result1 = cmp;</div>
+<div class="line"><span class="lineno">  293</span>      }</div>
+<div class="line"><span class="lineno">  294</span>    result[1] = 0;  <span class="comment">// the component of a division is in the ring (comp 0).</span></div>
+<div class="line"><span class="lineno">  295</span>    result[0] = m[0] - n[0];  <span class="comment">// subtract hash codes</span></div>
+<div class="line"><span class="lineno">  296</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  297</span>  }</div>
 <div class="ttc" id="aclass_res_monoid_dense_a1e417d04ef1132aa11d083a297c8d84d_html_a1e417d04ef1132aa11d083a297c8d84d"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_a1e417d04ef1132aa11d083a297c8d84d.html#a1e417d04ef1132aa11d083a297c8d84d">ResMonoidDense::ncalls_divide</a></div><div class="ttdeci">unsigned long ncalls_divide</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00047">res-moninfo-dense.hpp:47</a></div></div>
 <div class="ttc" id="aclass_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d_html_abc7040059d3293ade8f8180640c1af5d"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_abc7040059d3293ade8f8180640c1af5d.html#abc7040059d3293ade8f8180640c1af5d">ResMonoidDense::nslots</a></div><div class="ttdeci">int nslots</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00016">res-moninfo-dense.hpp:16</a></div></div>
 <div class="ttc" id="ares-monomial-types_8hpp_a49487411723b81298f85d07cad2b85a4_html_a49487411723b81298f85d07cad2b85a4"><div class="ttname"><a href="../../d7/d0a/res-monomial-types_8hpp_a49487411723b81298f85d07cad2b85a4.html#a49487411723b81298f85d07cad2b85a4">res_const_packed_monomial</a></div><div class="ttdeci">const res_monomial_word * res_const_packed_monomial</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d0a/res-monomial-types_8hpp_source.html#l00034">res-monomial-types.hpp:34</a></div></div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('dc/d0d/class_res_monoid_dense_ab578a87
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d0d/class_res_monoid_dense.html">ResMonoidDense</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

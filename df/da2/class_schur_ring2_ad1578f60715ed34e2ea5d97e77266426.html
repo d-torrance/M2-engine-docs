@@ -125,24 +125,24 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_ad1578f60715e
 
 <p>Implements <a class="el" href="../../dd/dcf/class_ring_ac7003d0bc8d7d274777ccfb0bd3ec229.html#ac7003d0bc8d7d274777ccfb0bd3ec229">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6f/schur2_8cpp_source.html#l00358">358</a> of file <a class="el" href="../../dc/d6f/schur2_8cpp_source.html">schur2.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  359</span>{</div>
-<div class="line"><span class="lineno">  360</span><span class="comment">//  assuming the monomials are sorted in the linear order on the partitions</span></div>
-<div class="line"><span class="lineno">  361</span><span class="comment">//  see SchurRing2::compare_partitions</span></div>
-<div class="line"><span class="lineno">  362</span> </div>
-<div class="line"><span class="lineno">  363</span>  <span class="keyword">auto</span> f_it = f.<a class="code hl_function" href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">get_schur_poly</a>()-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a79d0d03b94cc34ae7ed6f87dd3434967.html#a79d0d03b94cc34ae7ed6f87dd3434967">begin</a>(),</div>
-<div class="line"><span class="lineno">  364</span>    f_end = f.<a class="code hl_function" href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">get_schur_poly</a>()-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a9632b4958ef2f19d8c48d0ccff6f73fd.html#a9632b4958ef2f19d8c48d0ccff6f73fd">end</a>();</div>
-<div class="line"><span class="lineno">  365</span>  <span class="keyword">auto</span> g_it = g.<a class="code hl_function" href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">get_schur_poly</a>()-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a79d0d03b94cc34ae7ed6f87dd3434967.html#a79d0d03b94cc34ae7ed6f87dd3434967">begin</a>(),</div>
-<div class="line"><span class="lineno">  366</span>    g_end = g.<a class="code hl_function" href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">get_schur_poly</a>()-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a9632b4958ef2f19d8c48d0ccff6f73fd.html#a9632b4958ef2f19d8c48d0ccff6f73fd">end</a>();</div>
-<div class="line"><span class="lineno">  367</span> </div>
-<div class="line"><span class="lineno">  368</span>  <span class="keywordflow">for</span>(; f_it!=f_end &amp;&amp; g_it!=g_end; ++f_it, ++g_it) {</div>
-<div class="line"><span class="lineno">  369</span>    <span class="keyword">auto</span> cmp = <a class="code hl_function" href="../../df/da2/class_schur_ring2_ad8f2b44dcc4ca35f9e71729fd3210512.html#ad8f2b44dcc4ca35f9e71729fd3210512">compare_partitions</a>(f_it.getMonomial(), g_it.getMonomial());</div>
-<div class="line"><span class="lineno">  370</span>    <span class="keywordflow">if</span>(cmp) <span class="keywordflow">return</span> cmp;</div>
-<div class="line"><span class="lineno">  371</span>  }</div>
-<div class="line"><span class="lineno">  372</span> </div>
-<div class="line"><span class="lineno">  373</span>  <span class="keywordflow">return</span> (f_it!=f_end)-(g_it!=g_end);  <span class="comment">// LT, EQ or GT</span></div>
-<div class="line"><span class="lineno">  374</span>}</div>
-<div class="ttc" id="aclass_schur_ring2_ad8f2b44dcc4ca35f9e71729fd3210512_html_ad8f2b44dcc4ca35f9e71729fd3210512"><div class="ttname"><a href="../../df/da2/class_schur_ring2_ad8f2b44dcc4ca35f9e71729fd3210512.html#ad8f2b44dcc4ca35f9e71729fd3210512">SchurRing2::compare_partitions</a></div><div class="ttdeci">int compare_partitions(const_schur_partition a, const_schur_partition b) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00341">schur2.cpp:341</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6f/schur2_8cpp_source.html#l00365">365</a> of file <a class="el" href="../../dc/d6f/schur2_8cpp_source.html">schur2.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  366</span>{</div>
+<div class="line"><span class="lineno">  367</span><span class="comment">//  assuming the monomials are sorted in the linear order on the partitions</span></div>
+<div class="line"><span class="lineno">  368</span><span class="comment">//  see SchurRing2::compare_partitions</span></div>
+<div class="line"><span class="lineno">  369</span> </div>
+<div class="line"><span class="lineno">  370</span>  <span class="keyword">auto</span> f_it = f.<a class="code hl_function" href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">get_schur_poly</a>()-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a79d0d03b94cc34ae7ed6f87dd3434967.html#a79d0d03b94cc34ae7ed6f87dd3434967">begin</a>(),</div>
+<div class="line"><span class="lineno">  371</span>    f_end = f.<a class="code hl_function" href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">get_schur_poly</a>()-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a9632b4958ef2f19d8c48d0ccff6f73fd.html#a9632b4958ef2f19d8c48d0ccff6f73fd">end</a>();</div>
+<div class="line"><span class="lineno">  372</span>  <span class="keyword">auto</span> g_it = g.<a class="code hl_function" href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">get_schur_poly</a>()-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a79d0d03b94cc34ae7ed6f87dd3434967.html#a79d0d03b94cc34ae7ed6f87dd3434967">begin</a>(),</div>
+<div class="line"><span class="lineno">  373</span>    g_end = g.<a class="code hl_function" href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">get_schur_poly</a>()-&gt;<a class="code hl_function" href="../../d9/d25/classschur__poly_a9632b4958ef2f19d8c48d0ccff6f73fd.html#a9632b4958ef2f19d8c48d0ccff6f73fd">end</a>();</div>
+<div class="line"><span class="lineno">  374</span> </div>
+<div class="line"><span class="lineno">  375</span>  <span class="keywordflow">for</span>(; f_it!=f_end &amp;&amp; g_it!=g_end; ++f_it, ++g_it) {</div>
+<div class="line"><span class="lineno">  376</span>    <span class="keyword">auto</span> cmp = <a class="code hl_function" href="../../df/da2/class_schur_ring2_ad8f2b44dcc4ca35f9e71729fd3210512.html#ad8f2b44dcc4ca35f9e71729fd3210512">compare_partitions</a>(f_it.getMonomial(), g_it.getMonomial());</div>
+<div class="line"><span class="lineno">  377</span>    <span class="keywordflow">if</span>(cmp) <span class="keywordflow">return</span> cmp;</div>
+<div class="line"><span class="lineno">  378</span>  }</div>
+<div class="line"><span class="lineno">  379</span> </div>
+<div class="line"><span class="lineno">  380</span>  <span class="keywordflow">return</span> (f_it!=f_end)-(g_it!=g_end);  <span class="comment">// LT, EQ or GT</span></div>
+<div class="line"><span class="lineno">  381</span>}</div>
+<div class="ttc" id="aclass_schur_ring2_ad8f2b44dcc4ca35f9e71729fd3210512_html_ad8f2b44dcc4ca35f9e71729fd3210512"><div class="ttname"><a href="../../df/da2/class_schur_ring2_ad8f2b44dcc4ca35f9e71729fd3210512.html#ad8f2b44dcc4ca35f9e71729fd3210512">SchurRing2::compare_partitions</a></div><div class="ttdeci">int compare_partitions(const_schur_partition a, const_schur_partition b) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00348">schur2.cpp:348</a></div></div>
 <div class="ttc" id="aclassschur__poly_a79d0d03b94cc34ae7ed6f87dd3434967_html_a79d0d03b94cc34ae7ed6f87dd3434967"><div class="ttname"><a href="../../d9/d25/classschur__poly_a79d0d03b94cc34ae7ed6f87dd3434967.html#a79d0d03b94cc34ae7ed6f87dd3434967">schur_poly::begin</a></div><div class="ttdeci">iterator begin() const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00094">schur2.hpp:94</a></div></div>
 <div class="ttc" id="aclassschur__poly_a9632b4958ef2f19d8c48d0ccff6f73fd_html_a9632b4958ef2f19d8c48d0ccff6f73fd"><div class="ttname"><a href="../../d9/d25/classschur__poly_a9632b4958ef2f19d8c48d0ccff6f73fd.html#a9632b4958ef2f19d8c48d0ccff6f73fd">schur_poly::end</a></div><div class="ttdeci">iterator end() const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00098">schur2.hpp:98</a></div></div>
 <div class="ttc" id="aunionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a_html_ad67fb9c6ea951f5ad43cbff7bc67713a"><div class="ttname"><a href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">ring_elem::get_schur_poly</a></div><div class="ttdeci">const schur_poly * get_schur_poly() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00091">ringelem.hpp:91</a></div></div>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_ad1578f60715e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/da2/class_schur_ring2.html">SchurRing2</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

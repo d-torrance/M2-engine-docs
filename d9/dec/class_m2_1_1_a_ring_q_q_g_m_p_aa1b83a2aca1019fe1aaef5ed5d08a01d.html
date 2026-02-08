@@ -129,13 +129,14 @@ $(document).ready(function(){initNavTree('d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a
 
 <p class="definition">Definition at line <a class="el" href="../../d8/db9/aring-qq-gmp_8cpp_source.html#l00018">18</a> of file <a class="el" href="../../d8/db9/aring-qq-gmp_8cpp_source.html">aring-qq-gmp.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
-<div class="line"><span class="lineno">   23</span>  <span class="keywordtype">bool</span> ok = map-&gt;<a class="code hl_function" href="../../d6/d6a/class_ring_map_aa041dd8442eeac3e1fdf75e6e4d32bf8.html#aa041dd8442eeac3e1fdf75e6e4d32bf8">get_ring</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_afb7c55b4135b669cf01c0134da82114f.html#afb7c55b4135b669cf01c0134da82114f">from_rational</a>(&amp;f, result);</div>
-<div class="line"><span class="lineno">   24</span>  <span class="keywordflow">if</span> (!ok)</div>
-<div class="line"><span class="lineno">   25</span>    {</div>
-<div class="line"><span class="lineno">   26</span>      <span class="comment">// if there is already an error message don&#39;t add in another</span></div>
-<div class="line"><span class="lineno">   27</span>      <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(<span class="stringliteral">&quot;cannot map rational to this ring&quot;</span>);</div>
-<div class="line"><span class="lineno">   28</span>    }</div>
-<div class="line"><span class="lineno">   29</span>}</div>
+<div class="line"><span class="lineno">   23</span>  (void) first_var;</div>
+<div class="line"><span class="lineno">   24</span>  <span class="keywordtype">bool</span> ok = map-&gt;<a class="code hl_function" href="../../d6/d6a/class_ring_map_aa041dd8442eeac3e1fdf75e6e4d32bf8.html#aa041dd8442eeac3e1fdf75e6e4d32bf8">get_ring</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_afb7c55b4135b669cf01c0134da82114f.html#afb7c55b4135b669cf01c0134da82114f">from_rational</a>(&amp;f, result);</div>
+<div class="line"><span class="lineno">   25</span>  <span class="keywordflow">if</span> (!ok)</div>
+<div class="line"><span class="lineno">   26</span>    {</div>
+<div class="line"><span class="lineno">   27</span>      <span class="comment">// if there is already an error message don&#39;t add in another</span></div>
+<div class="line"><span class="lineno">   28</span>      <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(<span class="stringliteral">&quot;cannot map rational to this ring&quot;</span>);</div>
+<div class="line"><span class="lineno">   29</span>    }</div>
+<div class="line"><span class="lineno">   30</span>}</div>
 <div class="ttc" id="aclass_ring_afb7c55b4135b669cf01c0134da82114f_html_afb7c55b4135b669cf01c0134da82114f"><div class="ttname"><a href="../../dd/dcf/class_ring_afb7c55b4135b669cf01c0134da82114f.html#afb7c55b4135b669cf01c0134da82114f">Ring::from_rational</a></div><div class="ttdeci">virtual bool from_rational(const mpq_srcptr q, ring_elem &amp;result) const =0</div></div>
 <div class="ttc" id="aclass_ring_map_aa041dd8442eeac3e1fdf75e6e4d32bf8_html_aa041dd8442eeac3e1fdf75e6e4d32bf8"><div class="ttname"><a href="../../d6/d6a/class_ring_map_aa041dd8442eeac3e1fdf75e6e4d32bf8.html#aa041dd8442eeac3e1fdf75e6e4d32bf8">RingMap::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dcf/ringmap_8hpp_source.html#l00051">ringmap.hpp:51</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
@@ -150,7 +151,7 @@ $(document).ready(function(){initNavTree('d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d9/dec/class_m2_1_1_a_ring_q_q_g_m_p.html">ARingQQGMP</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

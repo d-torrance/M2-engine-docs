@@ -115,19 +115,19 @@ $(document).ready(function(){initNavTree('dd/ddb/class_schur_ring_a57da9e4ccd84c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d63/schur_8cpp_source.html#l00311">311</a> of file <a class="el" href="../../d2/d63/schur_8cpp_source.html">schur.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  316</span>{</div>
-<div class="line"><span class="lineno">  317</span>  <span class="keywordtype">int</span> i, j;</div>
-<div class="line"><span class="lineno">  318</span> </div>
-<div class="line"><span class="lineno">  319</span>  mpz_set_ui(result, 1);</div>
-<div class="line"><span class="lineno">  320</span>  <span class="keywordflow">for</span> (i = 1; i &lt; <a class="code hl_variable" href="../../d5/d58/class_polynomial_ring_af9a783b0abb261d18ab01dc189dcb833.html#af9a783b0abb261d18ab01dc189dcb833">nvars_</a>; i++)</div>
-<div class="line"><span class="lineno">  321</span>    <span class="keywordflow">for</span> (j = i + 1; j &lt;= <a class="code hl_variable" href="../../d5/d58/class_polynomial_ring_af9a783b0abb261d18ab01dc189dcb833.html#af9a783b0abb261d18ab01dc189dcb833">nvars_</a>; j++)</div>
-<div class="line"><span class="lineno">  322</span>      <span class="keywordflow">if</span> (exp[i] != exp[j]) mpz_mul_ui(result, result, exp[i] - exp[j] + j - i);</div>
-<div class="line"><span class="lineno">  323</span> </div>
-<div class="line"><span class="lineno">  324</span>  <span class="keywordflow">for</span> (i = 1; i &lt; <a class="code hl_variable" href="../../d5/d58/class_polynomial_ring_af9a783b0abb261d18ab01dc189dcb833.html#af9a783b0abb261d18ab01dc189dcb833">nvars_</a>; i++)</div>
-<div class="line"><span class="lineno">  325</span>    <span class="keywordflow">for</span> (j = i + 1; j &lt;= <a class="code hl_variable" href="../../d5/d58/class_polynomial_ring_af9a783b0abb261d18ab01dc189dcb833.html#af9a783b0abb261d18ab01dc189dcb833">nvars_</a>; j++)</div>
-<div class="line"><span class="lineno">  326</span>      <span class="keywordflow">if</span> (exp[i] != exp[j]) mpz_fdiv_q_ui(result, result, j - i);</div>
-<div class="line"><span class="lineno">  327</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d63/schur_8cpp_source.html#l00314">314</a> of file <a class="el" href="../../d2/d63/schur_8cpp_source.html">schur.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  319</span>{</div>
+<div class="line"><span class="lineno">  320</span>  <span class="keywordtype">int</span> i, j;</div>
+<div class="line"><span class="lineno">  321</span> </div>
+<div class="line"><span class="lineno">  322</span>  mpz_set_ui(result, 1);</div>
+<div class="line"><span class="lineno">  323</span>  <span class="keywordflow">for</span> (i = 1; i &lt; <a class="code hl_variable" href="../../d5/d58/class_polynomial_ring_af9a783b0abb261d18ab01dc189dcb833.html#af9a783b0abb261d18ab01dc189dcb833">nvars_</a>; i++)</div>
+<div class="line"><span class="lineno">  324</span>    <span class="keywordflow">for</span> (j = i + 1; j &lt;= <a class="code hl_variable" href="../../d5/d58/class_polynomial_ring_af9a783b0abb261d18ab01dc189dcb833.html#af9a783b0abb261d18ab01dc189dcb833">nvars_</a>; j++)</div>
+<div class="line"><span class="lineno">  325</span>      <span class="keywordflow">if</span> (exp[i] != exp[j]) mpz_mul_ui(result, result, exp[i] - exp[j] + j - i);</div>
+<div class="line"><span class="lineno">  326</span> </div>
+<div class="line"><span class="lineno">  327</span>  <span class="keywordflow">for</span> (i = 1; i &lt; <a class="code hl_variable" href="../../d5/d58/class_polynomial_ring_af9a783b0abb261d18ab01dc189dcb833.html#af9a783b0abb261d18ab01dc189dcb833">nvars_</a>; i++)</div>
+<div class="line"><span class="lineno">  328</span>    <span class="keywordflow">for</span> (j = i + 1; j &lt;= <a class="code hl_variable" href="../../d5/d58/class_polynomial_ring_af9a783b0abb261d18ab01dc189dcb833.html#af9a783b0abb261d18ab01dc189dcb833">nvars_</a>; j++)</div>
+<div class="line"><span class="lineno">  329</span>      <span class="keywordflow">if</span> (exp[i] != exp[j]) mpz_fdiv_q_ui(result, result, j - i);</div>
+<div class="line"><span class="lineno">  330</span>}</div>
 <div class="ttc" id="aclass_polynomial_ring_af9a783b0abb261d18ab01dc189dcb833_html_af9a783b0abb261d18ab01dc189dcb833"><div class="ttname"><a href="../../d5/d58/class_polynomial_ring_af9a783b0abb261d18ab01dc189dcb833.html#af9a783b0abb261d18ab01dc189dcb833">PolynomialRing::nvars_</a></div><div class="ttdeci">int nvars_</div><div class="ttdef"><b>Definition</b> <a href="../../de/d6c/polyring_8hpp_source.html#l00063">polyring.hpp:63</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="../../dd/ddb/class_schur_ring_ae6c8417e770b2009a144d865981db919.html#ae6c8417e770b2009a144d865981db919">dimension()</a>, and <a class="el" href="../../d2/d37/ringelement_8cpp_aefefad00811a8c234e0c992617e60ddf.html#aefefad00811a8c234e0c992617e60ddf">rawSchurDimension()</a>.</p>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('dd/ddb/class_schur_ring_a57da9e4ccd84c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/ddb/class_schur_ring.html">SchurRing</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -123,21 +123,21 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_a4b21
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html#l00143">143</a> of file <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html">aring-tower.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  144</span>{</div>
-<div class="line"><span class="lineno">  145</span>  assert(f != 0);</div>
-<div class="line"><span class="lineno">  146</span>  <span class="keywordflow">if</span> (f-&gt;len &lt;= newdeg)</div>
-<div class="line"><span class="lineno">  147</span>    {</div>
-<div class="line"><span class="lineno">  148</span>      <a class="code hl_typedef" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a> *newelems = <a class="code hl_define" href="../../da/d94/newdelete_8hpp_a8e45ca33f2628740d647f3bdf832b96d.html#a8e45ca33f2628740d647f3bdf832b96d">newarray</a>(<a class="code hl_typedef" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a>, newdeg + 1);</div>
-<div class="line"><span class="lineno">  149</span>      <a class="code hl_typedef" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a> *fp = f-&gt;<a class="code hl_variable" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9">polys</a>;</div>
-<div class="line"><span class="lineno">  150</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++) newelems[i] = fp[i];</div>
-<div class="line"><span class="lineno">  151</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg + 1; i &lt; newdeg + 1; i++) newelems[i] = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  152</span>      <span class="keyword">delete</span>[] fp;</div>
-<div class="line"><span class="lineno">  153</span>      f-&gt;<a class="code hl_variable" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9">polys</a> = newelems;</div>
-<div class="line"><span class="lineno">  154</span>      f-&gt;<a class="code hl_variable" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c">len</a> = newdeg + 1;</div>
-<div class="line"><span class="lineno">  155</span>      f-&gt;deg = newdeg;</div>
-<div class="line"><span class="lineno">  156</span>    }</div>
-<div class="line"><span class="lineno">  157</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html#l00145">145</a> of file <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html">aring-tower.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  146</span>{</div>
+<div class="line"><span class="lineno">  147</span>  assert(f != 0);</div>
+<div class="line"><span class="lineno">  148</span>  <span class="keywordflow">if</span> (f-&gt;len &lt;= newdeg)</div>
+<div class="line"><span class="lineno">  149</span>    {</div>
+<div class="line"><span class="lineno">  150</span>      <a class="code hl_typedef" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a> *newelems = <a class="code hl_define" href="../../da/d94/newdelete_8hpp_a8e45ca33f2628740d647f3bdf832b96d.html#a8e45ca33f2628740d647f3bdf832b96d">newarray</a>(<a class="code hl_typedef" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a>, newdeg + 1);</div>
+<div class="line"><span class="lineno">  151</span>      <a class="code hl_typedef" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a> *fp = f-&gt;<a class="code hl_variable" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9">polys</a>;</div>
+<div class="line"><span class="lineno">  152</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++) newelems[i] = fp[i];</div>
+<div class="line"><span class="lineno">  153</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg + 1; i &lt; newdeg + 1; i++) newelems[i] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  154</span>      <span class="keyword">delete</span>[] fp;</div>
+<div class="line"><span class="lineno">  155</span>      f-&gt;<a class="code hl_variable" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9">polys</a> = newelems;</div>
+<div class="line"><span class="lineno">  156</span>      f-&gt;<a class="code hl_variable" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c">len</a> = newdeg + 1;</div>
+<div class="line"><span class="lineno">  157</span>      f-&gt;deg = newdeg;</div>
+<div class="line"><span class="lineno">  158</span>    }</div>
+<div class="line"><span class="lineno">  159</span>}</div>
 <div class="ttc" id="agroup__polynomialrings_ga490857490c2a55400c60f9f0ff498f80_html_ga490857490c2a55400c60f9f0ff498f80"><div class="ttname"><a href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">M2::ARingPolynomial</a></div><div class="ttdeci">struct ARingPolynomialStruct * ARingPolynomial</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dd0/aring-tower_8hpp_source.html#l00020">aring-tower.hpp:20</a></div></div>
 <div class="ttc" id="anewdelete_8hpp_a8e45ca33f2628740d647f3bdf832b96d_html_a8e45ca33f2628740d647f3bdf832b96d"><div class="ttname"><a href="../../da/d94/newdelete_8hpp_a8e45ca33f2628740d647f3bdf832b96d.html#a8e45ca33f2628740d647f3bdf832b96d">newarray</a></div><div class="ttdeci">#define newarray(T, len)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00037">newdelete.hpp:37</a></div></div>
 <div class="ttc" id="astruct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c_html_a8713184b110ed41dc09c92872f37275c"><div class="ttname"><a href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c">M2::ARingPolynomialStruct::len</a></div><div class="ttdeci">int len</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dd0/aring-tower_8hpp_source.html#l00025">aring-tower.hpp:25</a></div></div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_a4b21
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../da/d48/class_m2_1_1_a_ring_tower.html">ARingTower</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

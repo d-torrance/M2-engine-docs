@@ -113,32 +113,32 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_a8fef0bf98f0f3ce72
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html#l00806">806</a> of file <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html">NCF4.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  807</span>{</div>
-<div class="line"><span class="lineno">  808</span>  <span class="comment">// basically the same as above, except with suffixes</span></div>
-<div class="line"><span class="lineno">  809</span> </div>
-<div class="line"><span class="lineno">  810</span>  <span class="comment">// get suffix of m</span></div>
-<div class="line"><span class="lineno">  811</span>  <span class="comment">// search for suffix in mPreviousColumnMonomials</span></div>
-<div class="line"><span class="lineno">  812</span>  <span class="comment">// if it.second.second != -1, then return (true,it.second.first)</span></div>
-<div class="line"><span class="lineno">  813</span>  <span class="comment">// else return (false, -1)</span></div>
-<div class="line"><span class="lineno">  814</span>  <span class="keywordflow">if</span> (w.<a class="code hl_function" href="../../d3/da0/class_word_a58f370b1c978f3f73e9349629ab6dfd3.html#a58f370b1c978f3f73e9349629ab6dfd3">size</a>() == 0) <span class="keywordflow">return</span> std::make_pair(<span class="keyword">false</span>,-1);</div>
-<div class="line"><span class="lineno">  815</span>  </div>
-<div class="line"><span class="lineno">  816</span>  std::pair&lt;bool,int&gt; retval;</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html#l00808">808</a> of file <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html">NCF4.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  809</span>{</div>
+<div class="line"><span class="lineno">  810</span>  <span class="comment">// basically the same as above, except with suffixes</span></div>
+<div class="line"><span class="lineno">  811</span> </div>
+<div class="line"><span class="lineno">  812</span>  <span class="comment">// get suffix of m</span></div>
+<div class="line"><span class="lineno">  813</span>  <span class="comment">// search for suffix in mPreviousColumnMonomials</span></div>
+<div class="line"><span class="lineno">  814</span>  <span class="comment">// if it.second.second != -1, then return (true,it.second.first)</span></div>
+<div class="line"><span class="lineno">  815</span>  <span class="comment">// else return (false, -1)</span></div>
+<div class="line"><span class="lineno">  816</span>  <span class="keywordflow">if</span> (w.<a class="code hl_function" href="../../d3/da0/class_word_a58f370b1c978f3f73e9349629ab6dfd3.html#a58f370b1c978f3f73e9349629ab6dfd3">size</a>() == 0) <span class="keywordflow">return</span> std::make_pair(<span class="keyword">false</span>,-1);</div>
 <div class="line"><span class="lineno">  817</span>  </div>
-<div class="line"><span class="lineno">  818</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> <a class="code hl_function" href="../../da/def/_suffix_tree_8cpp_ad880702bc4b9be6d86a18b463fff2715.html#ad880702bc4b9be6d86a18b463fff2715">suffix</a>(w.<a class="code hl_function" href="../../d3/da0/class_word_a20e33cf76cae20a1b09c6419d6f71ad2.html#a20e33cf76cae20a1b09c6419d6f71ad2">begin</a>()+1,w.<a class="code hl_function" href="../../d3/da0/class_word_a57a3bd2eb17ecc840adc2236a9cfb157.html#a57a3bd2eb17ecc840adc2236a9cfb157">end</a>());</div>
-<div class="line"><span class="lineno">  819</span>  <span class="keyword">const</span> <span class="keyword">auto</span> it = <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_af83a794718c76a24af3f1644d7715dbd.html#af83a794718c76a24af3f1644d7715dbd">mPreviousColumnMonomials</a>.find(<a class="code hl_function" href="../../da/def/_suffix_tree_8cpp_ad880702bc4b9be6d86a18b463fff2715.html#ad880702bc4b9be6d86a18b463fff2715">suffix</a>);</div>
-<div class="line"><span class="lineno">  820</span>  <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_af83a794718c76a24af3f1644d7715dbd.html#af83a794718c76a24af3f1644d7715dbd">mPreviousColumnMonomials</a>.end()) <span class="comment">//not in table</span></div>
-<div class="line"><span class="lineno">  821</span>    retval = std::make_pair(<span class="keyword">false</span>,-1);</div>
-<div class="line"><span class="lineno">  822</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  823</span>  {</div>
-<div class="line"><span class="lineno">  824</span>    <span class="keywordtype">int</span> colNum = (*it).second.first;</div>
-<div class="line"><span class="lineno">  825</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a1b3914061fdf8683566f3ba2b9add06b.html#a1b3914061fdf8683566f3ba2b9add06b">mPreviousColumns</a>[colNum].pivotRow == -1)  <span class="comment">// in column table and not a reducer monomial</span></div>
-<div class="line"><span class="lineno">  826</span>      retval = std::make_pair(<span class="keyword">false</span>,-1);</div>
-<div class="line"><span class="lineno">  827</span>    <span class="keywordflow">else</span>  <span class="comment">// in table and a reducer monomial</span></div>
-<div class="line"><span class="lineno">  828</span>      retval = std::make_pair(<span class="keyword">true</span>,<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a1b3914061fdf8683566f3ba2b9add06b.html#a1b3914061fdf8683566f3ba2b9add06b">mPreviousColumns</a>[colNum].pivotRow);</div>
-<div class="line"><span class="lineno">  829</span>  }</div>
-<div class="line"><span class="lineno">  830</span>  <span class="keywordflow">return</span> retval;</div>
-<div class="line"><span class="lineno">  831</span>}</div>
+<div class="line"><span class="lineno">  818</span>  std::pair&lt;bool,int&gt; retval;</div>
+<div class="line"><span class="lineno">  819</span>  </div>
+<div class="line"><span class="lineno">  820</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> <a class="code hl_function" href="../../da/def/_suffix_tree_8cpp_ad880702bc4b9be6d86a18b463fff2715.html#ad880702bc4b9be6d86a18b463fff2715">suffix</a>(w.<a class="code hl_function" href="../../d3/da0/class_word_a20e33cf76cae20a1b09c6419d6f71ad2.html#a20e33cf76cae20a1b09c6419d6f71ad2">begin</a>()+1,w.<a class="code hl_function" href="../../d3/da0/class_word_a57a3bd2eb17ecc840adc2236a9cfb157.html#a57a3bd2eb17ecc840adc2236a9cfb157">end</a>());</div>
+<div class="line"><span class="lineno">  821</span>  <span class="keyword">const</span> <span class="keyword">auto</span> it = <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_af83a794718c76a24af3f1644d7715dbd.html#af83a794718c76a24af3f1644d7715dbd">mPreviousColumnMonomials</a>.find(<a class="code hl_function" href="../../da/def/_suffix_tree_8cpp_ad880702bc4b9be6d86a18b463fff2715.html#ad880702bc4b9be6d86a18b463fff2715">suffix</a>);</div>
+<div class="line"><span class="lineno">  822</span>  <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_af83a794718c76a24af3f1644d7715dbd.html#af83a794718c76a24af3f1644d7715dbd">mPreviousColumnMonomials</a>.end()) <span class="comment">//not in table</span></div>
+<div class="line"><span class="lineno">  823</span>    retval = std::make_pair(<span class="keyword">false</span>,-1);</div>
+<div class="line"><span class="lineno">  824</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  825</span>  {</div>
+<div class="line"><span class="lineno">  826</span>    <span class="keywordtype">int</span> colNum = (*it).second.first;</div>
+<div class="line"><span class="lineno">  827</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a1b3914061fdf8683566f3ba2b9add06b.html#a1b3914061fdf8683566f3ba2b9add06b">mPreviousColumns</a>[colNum].pivotRow == -1)  <span class="comment">// in column table and not a reducer monomial</span></div>
+<div class="line"><span class="lineno">  828</span>      retval = std::make_pair(<span class="keyword">false</span>,-1);</div>
+<div class="line"><span class="lineno">  829</span>    <span class="keywordflow">else</span>  <span class="comment">// in table and a reducer monomial</span></div>
+<div class="line"><span class="lineno">  830</span>      retval = std::make_pair(<span class="keyword">true</span>,<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a1b3914061fdf8683566f3ba2b9add06b.html#a1b3914061fdf8683566f3ba2b9add06b">mPreviousColumns</a>[colNum].pivotRow);</div>
+<div class="line"><span class="lineno">  831</span>  }</div>
+<div class="line"><span class="lineno">  832</span>  <span class="keywordflow">return</span> retval;</div>
+<div class="line"><span class="lineno">  833</span>}</div>
 <div class="ttc" id="a_suffix_tree_8cpp_ad880702bc4b9be6d86a18b463fff2715_html_ad880702bc4b9be6d86a18b463fff2715"><div class="ttname"><a href="../../da/def/_suffix_tree_8cpp_ad880702bc4b9be6d86a18b463fff2715.html#ad880702bc4b9be6d86a18b463fff2715">suffix</a></div><div class="ttdeci">Word suffix(const Word vec, int indexOfSuffix)</div><div class="ttdef"><b>Definition</b> <a href="../../da/def/_suffix_tree_8cpp_source.html#l00086">SuffixTree.cpp:86</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_a1b3914061fdf8683566f3ba2b9add06b_html_a1b3914061fdf8683566f3ba2b9add06b"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a1b3914061fdf8683566f3ba2b9add06b.html#a1b3914061fdf8683566f3ba2b9add06b">NCF4::mPreviousColumns</a></div><div class="ttdeci">ColumnsVector mPreviousColumns</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00127">NCF4.hpp:127</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_af83a794718c76a24af3f1644d7715dbd_html_af83a794718c76a24af3f1644d7715dbd"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_af83a794718c76a24af3f1644d7715dbd.html#af83a794718c76a24af3f1644d7715dbd">NCF4::mPreviousColumnMonomials</a></div><div class="ttdeci">MonomialHash mPreviousColumnMonomials</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00122">NCF4.hpp:122</a></div></div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_a8fef0bf98f0f3ce72
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d92/class_n_c_f4.html">NCF4</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -141,18 +141,18 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a699ca2946
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l01131">1131</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1136</span>{</div>
-<div class="line"><span class="lineno"> 1137</span><span class="preprocessor">#ifndef NO_LAPACK</span></div>
-<div class="line"><span class="lineno"> 1138</span>  <span class="keywordflow">if</span> (strategy == 1) <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/dd6/class_lapack_a2a78ac0cf6cc5f788fad55436345c4a2.html#a2a78ac0cf6cc5f788fad55436345c4a2">Lapack::SVD_divide_conquer</a>(&amp;A, &amp;Sigma, &amp;U, &amp;Vt);</div>
-<div class="line"><span class="lineno"> 1139</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/dd6/class_lapack_a517a9089ec40fdfca205f019a03c68e0.html#a517a9089ec40fdfca205f019a03c68e0">Lapack::SVD</a>(&amp;A, &amp;Sigma, &amp;U, &amp;Vt);</div>
-<div class="line"><span class="lineno"> 1140</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno"> 1141</span>  <span class="keywordflow">if</span> (strategy == 1) <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d21/namespace_eigen_m2_ab283d0faea8ebc63035e107782d51f0b.html#ab283d0faea8ebc63035e107782d51f0b">EigenM2::SVD_divide_conquer</a>(&amp;A, &amp;Sigma, &amp;U, &amp;Vt);</div>
-<div class="line"><span class="lineno"> 1142</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d21/namespace_eigen_m2_a34fab610792cb64d15deaabff2decae3.html#a34fab610792cb64d15deaabff2decae3">EigenM2::SVD</a>(&amp;A, &amp;Sigma, &amp;U, &amp;Vt);</div>
-<div class="line"><span class="lineno"> 1143</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno"> 1144</span>}</div>
-<div class="ttc" id="aclass_lapack_a2a78ac0cf6cc5f788fad55436345c4a2_html_a2a78ac0cf6cc5f788fad55436345c4a2"><div class="ttname"><a href="../../df/dd6/class_lapack_a2a78ac0cf6cc5f788fad55436345c4a2.html#a2a78ac0cf6cc5f788fad55436345c4a2">Lapack::SVD_divide_conquer</a></div><div class="ttdeci">static bool SVD_divide_conquer(const DMatRRR *A, DMatRRR *Sigma, DMatRRR *U, DMatRRR *VT)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l00634">lapack.cpp:634</a></div></div>
-<div class="ttc" id="aclass_lapack_a517a9089ec40fdfca205f019a03c68e0_html_a517a9089ec40fdfca205f019a03c68e0"><div class="ttname"><a href="../../df/dd6/class_lapack_a517a9089ec40fdfca205f019a03c68e0.html#a517a9089ec40fdfca205f019a03c68e0">Lapack::SVD</a></div><div class="ttdeci">static bool SVD(const DMatRRR *A, DMatRRR *Sigma, DMatRRR *U, DMatRRR *VT)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l00567">lapack.cpp:567</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l01217">1217</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1222</span>{</div>
+<div class="line"><span class="lineno"> 1223</span><span class="preprocessor">#ifndef NO_LAPACK</span></div>
+<div class="line"><span class="lineno"> 1224</span>  <span class="keywordflow">if</span> (strategy == 1) <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/dd6/class_lapack_a2a78ac0cf6cc5f788fad55436345c4a2.html#a2a78ac0cf6cc5f788fad55436345c4a2">Lapack::SVD_divide_conquer</a>(&amp;A, &amp;Sigma, &amp;U, &amp;Vt);</div>
+<div class="line"><span class="lineno"> 1225</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/dd6/class_lapack_a517a9089ec40fdfca205f019a03c68e0.html#a517a9089ec40fdfca205f019a03c68e0">Lapack::SVD</a>(&amp;A, &amp;Sigma, &amp;U, &amp;Vt);</div>
+<div class="line"><span class="lineno"> 1226</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno"> 1227</span>  <span class="keywordflow">if</span> (strategy == 1) <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d21/namespace_eigen_m2_ab283d0faea8ebc63035e107782d51f0b.html#ab283d0faea8ebc63035e107782d51f0b">EigenM2::SVD_divide_conquer</a>(&amp;A, &amp;Sigma, &amp;U, &amp;Vt);</div>
+<div class="line"><span class="lineno"> 1228</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d21/namespace_eigen_m2_a34fab610792cb64d15deaabff2decae3.html#a34fab610792cb64d15deaabff2decae3">EigenM2::SVD</a>(&amp;A, &amp;Sigma, &amp;U, &amp;Vt);</div>
+<div class="line"><span class="lineno"> 1229</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno"> 1230</span>}</div>
+<div class="ttc" id="aclass_lapack_a2a78ac0cf6cc5f788fad55436345c4a2_html_a2a78ac0cf6cc5f788fad55436345c4a2"><div class="ttname"><a href="../../df/dd6/class_lapack_a2a78ac0cf6cc5f788fad55436345c4a2.html#a2a78ac0cf6cc5f788fad55436345c4a2">Lapack::SVD_divide_conquer</a></div><div class="ttdeci">static bool SVD_divide_conquer(const DMatRRR *A, DMatRRR *Sigma, DMatRRR *U, DMatRRR *VT)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l00636">lapack.cpp:636</a></div></div>
+<div class="ttc" id="aclass_lapack_a517a9089ec40fdfca205f019a03c68e0_html_a517a9089ec40fdfca205f019a03c68e0"><div class="ttname"><a href="../../df/dd6/class_lapack_a517a9089ec40fdfca205f019a03c68e0.html#a517a9089ec40fdfca205f019a03c68e0">Lapack::SVD</a></div><div class="ttdeci">static bool SVD(const DMatRRR *A, DMatRRR *Sigma, DMatRRR *U, DMatRRR *VT)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l00569">lapack.cpp:569</a></div></div>
 <div class="ttc" id="anamespace_eigen_m2_a34fab610792cb64d15deaabff2decae3_html_a34fab610792cb64d15deaabff2decae3"><div class="ttname"><a href="../../df/d21/namespace_eigen_m2_a34fab610792cb64d15deaabff2decae3.html#a34fab610792cb64d15deaabff2decae3">EigenM2::SVD</a></div><div class="ttdeci">bool SVD(const LMatrixRRR *A, LMatrixRRR *Sigma, LMatrixRRR *U, LMatrixRRR *VT)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d0e/eigen_8cpp_source.html#l00349">eigen.cpp:349</a></div></div>
 <div class="ttc" id="anamespace_eigen_m2_ab283d0faea8ebc63035e107782d51f0b_html_ab283d0faea8ebc63035e107782d51f0b"><div class="ttname"><a href="../../df/d21/namespace_eigen_m2_ab283d0faea8ebc63035e107782d51f0b.html#ab283d0faea8ebc63035e107782d51f0b">EigenM2::SVD_divide_conquer</a></div><div class="ttdeci">bool SVD_divide_conquer(const LMatrixRRR *A, LMatrixRRR *Sigma, LMatrixRRR *U, LMatrixRRR *VT)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d0e/eigen_8cpp_source.html#l00398">eigen.cpp:398</a></div></div>
 </div><!-- fragment -->
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a699ca2946
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:26 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

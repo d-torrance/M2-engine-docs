@@ -580,22 +580,24 @@ $(document).ready(function(){initNavTree('d0/d17/mat-arith_8hpp_source.html','..
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno"><a class="line" href="../../d8/db5/namespace_matrix_ops_af74da7228b07b2abd9ec03a543fccc89.html#af74da7228b07b2abd9ec03a543fccc89">  412</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_adf30da03679f9d00ec647e6d62babc80.html#adf30da03679f9d00ec647e6d62babc80">transpose</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../da/de0/class_s_mat.html">SMat&lt;RT&gt;</a>&amp; A, <a class="code hl_class" href="../../da/de0/class_s_mat.html">SMat&lt;RT&gt;</a>&amp; result)</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>{</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>  <span class="comment">// result should be the 0 matrix of the correct size.</span></div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>  assert(&amp;A != &amp;result);  <span class="comment">// these cannot be aliased!</span></div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  assert(result.<a class="code hl_function" href="../../da/de0/class_s_mat_ab267714be3d09dad36331f7384aea056.html#ab267714be3d09dad36331f7384aea056">numRows</a>() == A.<a class="code hl_function" href="../../da/de0/class_s_mat_ac2f48ab56ea6880bc030b45abb1f0b33.html#ac2f48ab56ea6880bc030b45abb1f0b33">numColumns</a>());</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>  assert(result.<a class="code hl_function" href="../../da/de0/class_s_mat_ac2f48ab56ea6880bc030b45abb1f0b33.html#ac2f48ab56ea6880bc030b45abb1f0b33">numColumns</a>() == A.<a class="code hl_function" href="../../da/de0/class_s_mat_ab267714be3d09dad36331f7384aea056.html#ab267714be3d09dad36331f7384aea056">numRows</a>());</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>      <span class="stringliteral">&quot;&#39;transpose&#39; not written for sparse mutable matrices&quot;</span>);</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>  <span class="comment">// TODO: MES: write this!!</span></div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>}</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>  (void) A;</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  (void) result;</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>  assert(&amp;A != &amp;result);  <span class="comment">// these cannot be aliased!</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  assert(result.<a class="code hl_function" href="../../da/de0/class_s_mat_ab267714be3d09dad36331f7384aea056.html#ab267714be3d09dad36331f7384aea056">numRows</a>() == A.<a class="code hl_function" href="../../da/de0/class_s_mat_ac2f48ab56ea6880bc030b45abb1f0b33.html#ac2f48ab56ea6880bc030b45abb1f0b33">numColumns</a>());</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>  assert(result.<a class="code hl_function" href="../../da/de0/class_s_mat_ac2f48ab56ea6880bc030b45abb1f0b33.html#ac2f48ab56ea6880bc030b45abb1f0b33">numColumns</a>() == A.<a class="code hl_function" href="../../da/de0/class_s_mat_ab267714be3d09dad36331f7384aea056.html#ab267714be3d09dad36331f7384aea056">numRows</a>());</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>  <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>      <span class="stringliteral">&quot;&#39;transpose&#39; not written for sparse mutable matrices&quot;</span>);</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>  <span class="comment">// TODO: MES: write this!!</span></div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>}</div>
 </div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>};</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>};</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span><span class="comment">// Local Variables:</span></div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span><span class="comment">// compile-command: &quot;make -C $M2BUILDDIR/Macaulay2/e &quot;</span></div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span><span class="comment">// indent-tabs-mode: nil</span></div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="comment">// End:</span></div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span><span class="comment">// Local Variables:</span></div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="comment">// compile-command: &quot;make -C $M2BUILDDIR/Macaulay2/e &quot;</span></div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span><span class="comment">// indent-tabs-mode: nil</span></div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span><span class="comment">// End:</span></div>
 <div class="ttc" id="aclass_a_ring_1_1_element_type_html"><div class="ttname"><a href="../../db/da8/class_a_ring_1_1_element_type.html">ElementType</a></div></div>
 <div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00107">dmat.hpp:107</a></div></div>
 <div class="ttc" id="aclass_d_mat_a430faaf604ffe11bf81a35456acc2e97_html_a430faaf604ffe11bf81a35456acc2e97"><div class="ttname"><a href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">DMat::entry</a></div><div class="ttdeci">ElementType &amp; entry(size_t row, size_t column)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00111">dmat.hpp:111</a></div></div>
@@ -659,7 +661,7 @@ $(document).ready(function(){initNavTree('d0/d17/mat-arith_8hpp_source.html','..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d0/d17/mat-arith_8hpp.html">mat-arith.hpp</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:21 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

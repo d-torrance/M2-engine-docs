@@ -129,33 +129,33 @@ $(document).ready(function(){initNavTree('d4/d61/class_d_poly_traverser_a1489ea2
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l01566">1566</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1567</span>{</div>
-<div class="line"><span class="lineno"> 1568</span>  <span class="keywordflow">if</span> (level == 0)</div>
-<div class="line"><span class="lineno"> 1569</span>    {</div>
-<div class="line"><span class="lineno"> 1570</span>      <span class="keywordtype">long</span> *cfs = f-&gt;arr.ints;</div>
-<div class="line"><span class="lineno"> 1571</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg; i &gt;= 0; --i)</div>
-<div class="line"><span class="lineno"> 1572</span>        <span class="keywordflow">if</span> (cfs[i] != 0)</div>
-<div class="line"><span class="lineno"> 1573</span>          {</div>
-<div class="line"><span class="lineno"> 1574</span>            <a class="code hl_function" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[level] = i;</div>
-<div class="line"><span class="lineno"> 1575</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d4/d61/class_d_poly_traverser_abbf39a17cbb1d00c6dfb26b567571985.html#abbf39a17cbb1d00c6dfb26b567571985">viewTerm</a>(cfs[i], exp)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno"> 1576</span>          }</div>
-<div class="line"><span class="lineno"> 1577</span>      <a class="code hl_function" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[level] = 0;</div>
-<div class="line"><span class="lineno"> 1578</span>    }</div>
-<div class="line"><span class="lineno"> 1579</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno"> 1580</span>    {</div>
-<div class="line"><span class="lineno"> 1581</span>      TowerPolynomial *cfs = f-&gt;arr.polys;</div>
-<div class="line"><span class="lineno"> 1582</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg; i &gt;= 0; --i)</div>
-<div class="line"><span class="lineno"> 1583</span>        <span class="keywordflow">if</span> (cfs[i] != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno"> 1584</span>          {</div>
-<div class="line"><span class="lineno"> 1585</span>            <a class="code hl_function" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[level] = i;</div>
-<div class="line"><span class="lineno"> 1586</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d4/d61/class_d_poly_traverser_a1489ea2b05ac328e6283c34d9a428e14.html#a1489ea2b05ac328e6283c34d9a428e14">traverse1</a>(level - 1, cfs[i], exp)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno"> 1587</span>          }</div>
-<div class="line"><span class="lineno"> 1588</span>      <a class="code hl_function" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[level] = 0;</div>
-<div class="line"><span class="lineno"> 1589</span>    }</div>
-<div class="line"><span class="lineno"> 1590</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno"> 1591</span>}</div>
-<div class="ttc" id="aclass_d_poly_traverser_a1489ea2b05ac328e6283c34d9a428e14_html_a1489ea2b05ac328e6283c34d9a428e14"><div class="ttname"><a href="../../d4/d61/class_d_poly_traverser_a1489ea2b05ac328e6283c34d9a428e14.html#a1489ea2b05ac328e6283c34d9a428e14">DPolyTraverser::traverse1</a></div><div class="ttdeci">bool traverse1(int level, const TowerPolynomial g, exponents_t exp)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l01566">dpoly.cpp:1566</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l01574">1574</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1575</span>{</div>
+<div class="line"><span class="lineno"> 1576</span>  <span class="keywordflow">if</span> (level == 0)</div>
+<div class="line"><span class="lineno"> 1577</span>    {</div>
+<div class="line"><span class="lineno"> 1578</span>      <span class="keywordtype">long</span> *cfs = f-&gt;arr.ints;</div>
+<div class="line"><span class="lineno"> 1579</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg; i &gt;= 0; --i)</div>
+<div class="line"><span class="lineno"> 1580</span>        <span class="keywordflow">if</span> (cfs[i] != 0)</div>
+<div class="line"><span class="lineno"> 1581</span>          {</div>
+<div class="line"><span class="lineno"> 1582</span>            <a class="code hl_function" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[level] = i;</div>
+<div class="line"><span class="lineno"> 1583</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d4/d61/class_d_poly_traverser_abbf39a17cbb1d00c6dfb26b567571985.html#abbf39a17cbb1d00c6dfb26b567571985">viewTerm</a>(cfs[i], exp)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno"> 1584</span>          }</div>
+<div class="line"><span class="lineno"> 1585</span>      <a class="code hl_function" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[level] = 0;</div>
+<div class="line"><span class="lineno"> 1586</span>    }</div>
+<div class="line"><span class="lineno"> 1587</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1588</span>    {</div>
+<div class="line"><span class="lineno"> 1589</span>      TowerPolynomial *cfs = f-&gt;arr.polys;</div>
+<div class="line"><span class="lineno"> 1590</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg; i &gt;= 0; --i)</div>
+<div class="line"><span class="lineno"> 1591</span>        <span class="keywordflow">if</span> (cfs[i] != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 1592</span>          {</div>
+<div class="line"><span class="lineno"> 1593</span>            <a class="code hl_function" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[level] = i;</div>
+<div class="line"><span class="lineno"> 1594</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d4/d61/class_d_poly_traverser_a1489ea2b05ac328e6283c34d9a428e14.html#a1489ea2b05ac328e6283c34d9a428e14">traverse1</a>(level - 1, cfs[i], exp)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno"> 1595</span>          }</div>
+<div class="line"><span class="lineno"> 1596</span>      <a class="code hl_function" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">exp</a>[level] = 0;</div>
+<div class="line"><span class="lineno"> 1597</span>    }</div>
+<div class="line"><span class="lineno"> 1598</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno"> 1599</span>}</div>
+<div class="ttc" id="aclass_d_poly_traverser_a1489ea2b05ac328e6283c34d9a428e14_html_a1489ea2b05ac328e6283c34d9a428e14"><div class="ttname"><a href="../../d4/d61/class_d_poly_traverser_a1489ea2b05ac328e6283c34d9a428e14.html#a1489ea2b05ac328e6283c34d9a428e14">DPolyTraverser::traverse1</a></div><div class="ttdeci">bool traverse1(int level, const TowerPolynomial g, exponents_t exp)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l01574">dpoly.cpp:1574</a></div></div>
 <div class="ttc" id="aclass_d_poly_traverser_abbf39a17cbb1d00c6dfb26b567571985_html_abbf39a17cbb1d00c6dfb26b567571985"><div class="ttname"><a href="../../d4/d61/class_d_poly_traverser_abbf39a17cbb1d00c6dfb26b567571985.html#abbf39a17cbb1d00c6dfb26b567571985">DPolyTraverser::viewTerm</a></div><div class="ttdeci">virtual bool viewTerm(long coeff, const_exponents exp)=0</div></div>
 <div class="ttc" id="anamespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b_html_abe917cc83d7ef362269d6b65bfdf7d4b"><div class="ttname"><a href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">mpfr::exp</a></div><div class="ttdeci">const mpreal exp(const mpreal &amp;x, mp_rnd_t r=mpreal::get_default_rnd())</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l02273">mpreal.h:2273</a></div></div>
 </div><!-- fragment -->
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('d4/d61/class_d_poly_traverser_a1489ea2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d61/class_d_poly_traverser.html">DPolyTraverser</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

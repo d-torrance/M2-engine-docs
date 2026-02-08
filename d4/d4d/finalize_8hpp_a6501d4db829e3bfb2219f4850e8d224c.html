@@ -105,20 +105,20 @@ $(document).ready(function(){initNavTree('d4/d4d/finalize_8hpp_a6501d4db829e3bfb
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/de9/finalize_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../db/de9/finalize_8cpp_source.html">finalize.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>{</div>
-<div class="line"><span class="lineno">   56</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
-<div class="line"><span class="lineno">   57</span>  GC_REGISTER_FINALIZER(M2_debug_to_outer(<a class="code hl_variable" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>), <a class="code hl_function" href="../../db/de9/finalize_8cpp_a8edf5905229d913571c2b764ccf7b057.html#a8edf5905229d913571c2b764ccf7b057">remove_monideal</a>, 0, 0, 0);</div>
-<div class="line"><span class="lineno">   58</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">   59</span>  GC_REGISTER_FINALIZER(<a class="code hl_variable" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>,                    <a class="code hl_function" href="../../db/de9/finalize_8cpp_a8edf5905229d913571c2b764ccf7b057.html#a8edf5905229d913571c2b764ccf7b057">remove_monideal</a>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">   61</span>  std::atomic&lt;int&gt; nfinalized = <a class="code hl_variable" href="../../db/de9/finalize_8cpp_a46a314f1633907ca5517a427746f3be4.html#a46a314f1633907ca5517a427746f3be4">monideals_nfinalized</a>++;</div>
-<div class="line"><span class="lineno">   62</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
-<div class="line"><span class="lineno">   63</span>    fprintf(stderr,</div>
-<div class="line"><span class="lineno">   64</span>            <span class="stringliteral">&quot;\n   -- registering monomial ideal %d at %p\n&quot;</span>,</div>
-<div class="line"><span class="lineno">   65</span>            nfinalized.load(),</div>
-<div class="line"><span class="lineno">   66</span>            (<span class="keywordtype">void</span> *)<a class="code hl_variable" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>);</div>
-<div class="line"><span class="lineno">   67</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../db/de9/finalize_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../db/de9/finalize_8cpp_source.html">finalize.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>{</div>
+<div class="line"><span class="lineno">   57</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
+<div class="line"><span class="lineno">   58</span>  GC_REGISTER_FINALIZER(M2_debug_to_outer(<a class="code hl_variable" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>), <a class="code hl_function" href="../../db/de9/finalize_8cpp_a8edf5905229d913571c2b764ccf7b057.html#a8edf5905229d913571c2b764ccf7b057">remove_monideal</a>, 0, 0, 0);</div>
+<div class="line"><span class="lineno">   59</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">   60</span>  GC_REGISTER_FINALIZER(<a class="code hl_variable" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>,                    <a class="code hl_function" href="../../db/de9/finalize_8cpp_a8edf5905229d913571c2b764ccf7b057.html#a8edf5905229d913571c2b764ccf7b057">remove_monideal</a>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">   62</span>  std::atomic&lt;int&gt; nfinalized = <a class="code hl_variable" href="../../db/de9/finalize_8cpp_a46a314f1633907ca5517a427746f3be4.html#a46a314f1633907ca5517a427746f3be4">monideals_nfinalized</a>++;</div>
+<div class="line"><span class="lineno">   63</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
+<div class="line"><span class="lineno">   64</span>    fprintf(stderr,</div>
+<div class="line"><span class="lineno">   65</span>            <span class="stringliteral">&quot;\n   -- registering monomial ideal %d at %p\n&quot;</span>,</div>
+<div class="line"><span class="lineno">   66</span>            nfinalized.load(),</div>
+<div class="line"><span class="lineno">   67</span>            (<span class="keywordtype">void</span> *)<a class="code hl_variable" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>);</div>
+<div class="line"><span class="lineno">   68</span>}</div>
 <div class="ttc" id="a_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc_html_aa0f82116567de78d2d8d5cee3a26eebc"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a></div><div class="ttdeci">int M2_gbTrace</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00059">M2-replacement.c:59</a></div></div>
 <div class="ttc" id="afinalize_8cpp_a46a314f1633907ca5517a427746f3be4_html_a46a314f1633907ca5517a427746f3be4"><div class="ttname"><a href="../../db/de9/finalize_8cpp_a46a314f1633907ca5517a427746f3be4.html#a46a314f1633907ca5517a427746f3be4">monideals_nfinalized</a></div><div class="ttdeci">static volatile std::atomic&lt; int &gt; monideals_nfinalized</div><div class="ttdef"><b>Definition</b> <a href="../../db/de9/finalize_8cpp_source.html#l00020">finalize.cpp:20</a></div></div>
 <div class="ttc" id="afinalize_8cpp_a8edf5905229d913571c2b764ccf7b057_html_a8edf5905229d913571c2b764ccf7b057"><div class="ttname"><a href="../../db/de9/finalize_8cpp_a8edf5905229d913571c2b764ccf7b057.html#a8edf5905229d913571c2b764ccf7b057">remove_monideal</a></div><div class="ttdeci">void remove_monideal(void *p, void *cd)</div><div class="ttdef"><b>Definition</b> <a href="../../db/de9/finalize_8cpp_source.html#l00042">finalize.cpp:42</a></div></div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('d4/d4d/finalize_8hpp_a6501d4db829e3bfb
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d4/d4d/finalize_8hpp.html">finalize.hpp</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:21 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

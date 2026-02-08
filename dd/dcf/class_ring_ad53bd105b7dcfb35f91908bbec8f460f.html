@@ -125,63 +125,63 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_ad53bd105b7dcfb35f91
 
 <p>Reimplemented in <a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring_ab18ec87f6921c2a68a2f3955c79e52f0.html#ab18ec87f6921c2a68a2f3955c79e52f0">M2::ConcreteRing&lt; RingType &gt;</a>, <a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring_ab18ec87f6921c2a68a2f3955c79e52f0.html#ab18ec87f6921c2a68a2f3955c79e52f0">M2::ConcreteRing&lt; ARingQQ &gt;</a>, <a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring_ab18ec87f6921c2a68a2f3955c79e52f0.html#ab18ec87f6921c2a68a2f3955c79e52f0">M2::ConcreteRing&lt; M2::ARingCC &gt;</a>, <a class="el" href="../../d6/d42/class_fraction_field_a9cc747df6eb0f3c62b218d4c87f78352.html#a9cc747df6eb0f3c62b218d4c87f78352">FractionField</a>, <a class="el" href="../../d1/d35/class_g_f_abe28291ac63309a71dc4b0cb5d93c442.html#abe28291ac63309a71dc4b0cb5d93c442">GF</a>, <a class="el" href="../../d6/dfd/class_local_ring_a7ddee2de1e86bf13ade64beb7afe39e7.html#a7ddee2de1e86bf13ade64beb7afe39e7">LocalRing</a>, <a class="el" href="../../dc/dc0/class_m2_free_algebra_ac205341234f203361dda5a4b4f4a07ee.html#ac205341234f203361dda5a4b4f4a07ee">M2FreeAlgebra</a>, <a class="el" href="../../db/d22/class_m2_free_algebra_quotient_a9d90faefb62bb3a1baaaf186bbd97772.html#a9d90faefb62bb3a1baaaf186bbd97772">M2FreeAlgebraQuotient</a>, <a class="el" href="../../d3/dfc/class_poly_ring_a2c8d855ee69bda82b43000325ced0863.html#a2c8d855ee69bda82b43000325ced0863">PolyRing</a>, <a class="el" href="../../dd/dc9/class_poly_ring_quotient_aa02f07bbd8a74442cbbc3ed53eb19fae.html#aa02f07bbd8a74442cbbc3ed53eb19fae">PolyRingQuotient</a>, <a class="el" href="../../dd/ddb/class_schur_ring_a6fb3ec0abe820d17fee9da3172a89afd.html#a6fb3ec0abe820d17fee9da3172a89afd">SchurRing</a>, <a class="el" href="../../dc/d98/class_skew_polynomial_ring_a1197d0130679824af7a6e6fe2a9ad586.html#a1197d0130679824af7a6e6fe2a9ad586">SkewPolynomialRing</a>, <a class="el" href="../../db/daa/class_solvable_algebra_a9c86616dbc4efbec3afb0865b61a0479.html#a9c86616dbc4efbec3afb0865b61a0479">SolvableAlgebra</a>, <a class="el" href="../../dd/dc2/class_weyl_algebra_a6031292c95910a856d7b1fa52abac807.html#a6031292c95910a856d7b1fa52abac807">WeylAlgebra</a>, <a class="el" href="../../d8/d2b/class_ring_z_z_a33ad6fdfa4619161f217f4006990069c.html#a33ad6fdfa4619161f217f4006990069c">RingZZ</a>, and <a class="el" href="../../d7/d1a/class_z__mod_a1d36713bde359d8bba064fec732efdeb.html#a1d36713bde359d8bba064fec732efdeb">Z_mod</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d2b/ring_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../dd/d2b/ring_8cpp_source.html">ring.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  107</span>{</div>
-<div class="line"><span class="lineno">  108</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> ff = gg;</div>
-<div class="line"><span class="lineno">  109</span>  <span class="keywordtype">int</span> cmp = mpz_sgn(m);  <span class="comment">// the sign of m, &lt;0, ==0, &gt;0</span></div>
-<div class="line"><span class="lineno">  110</span>  <span class="keywordflow">if</span> (cmp == 0) <span class="keywordflow">return</span> <a class="code hl_function" href="../../dd/dcf/class_ring_a480f948242b890421b63365d1ef8d7b8.html#a480f948242b890421b63365d1ef8d7b8">one</a>();</div>
-<div class="line"><span class="lineno">  111</span>  mpz_t n;</div>
-<div class="line"><span class="lineno">  112</span>  mpz_init_set(n, m);</div>
-<div class="line"><span class="lineno">  113</span>  <span class="comment">// @TODO MES: rewrite this so it inverts before creating n.</span></div>
-<div class="line"><span class="lineno">  114</span>  <span class="comment">// That way we don&#39;t have to catch any exceptions here.</span></div>
-<div class="line"><span class="lineno">  115</span>  <span class="comment">// e.g. as</span></div>
-<div class="line"><span class="lineno">  116</span><span class="preprocessor">#if 0  </span></div>
-<div class="line"><span class="lineno">  117</span>  <span class="keywordflow">if</span> (cmp &lt; 0)</div>
-<div class="line"><span class="lineno">  118</span>    ff = <a class="code hl_function" href="../../dd/dcf/class_ring_a6e158a0a10dbc5ab15f38be603ba8d88.html#a6e158a0a10dbc5ab15f38be603ba8d88">invert</a>(ff);</div>
-<div class="line"><span class="lineno">  119</span>  mpz_init_set(n, m);</div>
-<div class="line"><span class="lineno">  120</span>  mpz_t n;</div>
-<div class="line"><span class="lineno">  121</span>  <span class="keywordflow">if</span> (cmp &lt; 0)</div>
-<div class="line"><span class="lineno">  122</span>    mpz_neg(n, n);</div>
-<div class="line"><span class="lineno">  123</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  124</span>  <span class="keywordflow">if</span> (cmp &lt; 0)</div>
-<div class="line"><span class="lineno">  125</span>    {</div>
-<div class="line"><span class="lineno">  126</span>      mpz_neg(n, n);</div>
-<div class="line"><span class="lineno">  127</span>      ff = <a class="code hl_function" href="../../dd/dcf/class_ring_a6e158a0a10dbc5ab15f38be603ba8d88.html#a6e158a0a10dbc5ab15f38be603ba8d88">invert</a>(</div>
-<div class="line"><span class="lineno">  128</span>          ff);  <span class="comment">// this can raise an exception, in which case we need to free n.</span></div>
-<div class="line"><span class="lineno">  129</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(ff))</div>
-<div class="line"><span class="lineno">  130</span>        {</div>
-<div class="line"><span class="lineno">  131</span>          <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
-<div class="line"><span class="lineno">  132</span>              <span class="stringliteral">&quot;either element not invertible, or no method available to &quot;</span></div>
-<div class="line"><span class="lineno">  133</span>              <span class="stringliteral">&quot;compute its inverse&quot;</span>);</div>
-<div class="line"><span class="lineno">  134</span>          mpz_clear(n);</div>
-<div class="line"><span class="lineno">  135</span>          <span class="keywordflow">return</span> ff;</div>
-<div class="line"><span class="lineno">  136</span>        }</div>
-<div class="line"><span class="lineno">  137</span>    }</div>
-<div class="line"><span class="lineno">  138</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> prod = <a class="code hl_function" href="../../dd/dcf/class_ring_a6f6b08df2379200116484876c4fd2d87.html#a6f6b08df2379200116484876c4fd2d87">from_long</a>(1);</div>
-<div class="line"><span class="lineno">  139</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a> = <a class="code hl_function" href="../../dd/dcf/class_ring_a84bd4fdbdd4e1e44b2b24ad800138e1c.html#a84bd4fdbdd4e1e44b2b24ad800138e1c">copy</a>(ff);</div>
-<div class="line"><span class="lineno">  140</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> tmp;</div>
-<div class="line"><span class="lineno">  141</span> </div>
-<div class="line"><span class="lineno">  142</span>  <span class="keywordflow">for</span> (;;)</div>
-<div class="line"><span class="lineno">  143</span>    {</div>
-<div class="line"><span class="lineno">  144</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a56dfe33da6328718f97bec3c02580197.html#a56dfe33da6328718f97bec3c02580197">RingZZ::mod_ui</a>(n, 2) == 1)</div>
-<div class="line"><span class="lineno">  145</span>        {</div>
-<div class="line"><span class="lineno">  146</span>          tmp = <a class="code hl_function" href="../../dd/dcf/class_ring_ada0ae7428fbb2d3c0de7d835997d454a.html#ada0ae7428fbb2d3c0de7d835997d454a">mult</a>(prod, <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>);</div>
-<div class="line"><span class="lineno">  147</span>          prod = tmp;</div>
-<div class="line"><span class="lineno">  148</span>        }</div>
-<div class="line"><span class="lineno">  149</span>      mpz_tdiv_q_2exp(n, n, 1);</div>
-<div class="line"><span class="lineno">  150</span>      <span class="keywordflow">if</span> (mpz_sgn(n) == 0)</div>
-<div class="line"><span class="lineno">  151</span>        {</div>
-<div class="line"><span class="lineno">  152</span>          mpz_clear(n);</div>
-<div class="line"><span class="lineno">  153</span>          <span class="keywordflow">return</span> prod;</div>
-<div class="line"><span class="lineno">  154</span>        }</div>
-<div class="line"><span class="lineno">  155</span>      <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  156</span>        {</div>
-<div class="line"><span class="lineno">  157</span>          tmp = <a class="code hl_function" href="../../dd/dcf/class_ring_ada0ae7428fbb2d3c0de7d835997d454a.html#ada0ae7428fbb2d3c0de7d835997d454a">mult</a>(<a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>, <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>);</div>
-<div class="line"><span class="lineno">  158</span>          <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a> = tmp;</div>
-<div class="line"><span class="lineno">  159</span>        }</div>
-<div class="line"><span class="lineno">  160</span>    }</div>
-<div class="line"><span class="lineno">  161</span>}</div>
-<div class="ttc" id="aclass_ring_a480f948242b890421b63365d1ef8d7b8_html_a480f948242b890421b63365d1ef8d7b8"><div class="ttname"><a href="../../dd/dcf/class_ring_a480f948242b890421b63365d1ef8d7b8.html#a480f948242b890421b63365d1ef8d7b8">Ring::one</a></div><div class="ttdeci">ring_elem one() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d10/ring_8hpp_source.html#l00315">ring.hpp:315</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dd/d2b/ring_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../dd/d2b/ring_8cpp_source.html">ring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>{</div>
+<div class="line"><span class="lineno">  109</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> ff = gg;</div>
+<div class="line"><span class="lineno">  110</span>  <span class="keywordtype">int</span> cmp = mpz_sgn(m);  <span class="comment">// the sign of m, &lt;0, ==0, &gt;0</span></div>
+<div class="line"><span class="lineno">  111</span>  <span class="keywordflow">if</span> (cmp == 0) <span class="keywordflow">return</span> <a class="code hl_function" href="../../dd/dcf/class_ring_a480f948242b890421b63365d1ef8d7b8.html#a480f948242b890421b63365d1ef8d7b8">one</a>();</div>
+<div class="line"><span class="lineno">  112</span>  mpz_t n;</div>
+<div class="line"><span class="lineno">  113</span>  mpz_init_set(n, m);</div>
+<div class="line"><span class="lineno">  114</span>  <span class="comment">// @TODO MES: rewrite this so it inverts before creating n.</span></div>
+<div class="line"><span class="lineno">  115</span>  <span class="comment">// That way we don&#39;t have to catch any exceptions here.</span></div>
+<div class="line"><span class="lineno">  116</span>  <span class="comment">// e.g. as</span></div>
+<div class="line"><span class="lineno">  117</span><span class="preprocessor">#if 0  </span></div>
+<div class="line"><span class="lineno">  118</span>  <span class="keywordflow">if</span> (cmp &lt; 0)</div>
+<div class="line"><span class="lineno">  119</span>    ff = <a class="code hl_function" href="../../dd/dcf/class_ring_a6e158a0a10dbc5ab15f38be603ba8d88.html#a6e158a0a10dbc5ab15f38be603ba8d88">invert</a>(ff);</div>
+<div class="line"><span class="lineno">  120</span>  mpz_init_set(n, m);</div>
+<div class="line"><span class="lineno">  121</span>  mpz_t n;</div>
+<div class="line"><span class="lineno">  122</span>  <span class="keywordflow">if</span> (cmp &lt; 0)</div>
+<div class="line"><span class="lineno">  123</span>    mpz_neg(n, n);</div>
+<div class="line"><span class="lineno">  124</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  125</span>  <span class="keywordflow">if</span> (cmp &lt; 0)</div>
+<div class="line"><span class="lineno">  126</span>    {</div>
+<div class="line"><span class="lineno">  127</span>      mpz_neg(n, n);</div>
+<div class="line"><span class="lineno">  128</span>      ff = <a class="code hl_function" href="../../dd/dcf/class_ring_a6e158a0a10dbc5ab15f38be603ba8d88.html#a6e158a0a10dbc5ab15f38be603ba8d88">invert</a>(</div>
+<div class="line"><span class="lineno">  129</span>          ff);  <span class="comment">// this can raise an exception, in which case we need to free n.</span></div>
+<div class="line"><span class="lineno">  130</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(ff))</div>
+<div class="line"><span class="lineno">  131</span>        {</div>
+<div class="line"><span class="lineno">  132</span>          <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(</div>
+<div class="line"><span class="lineno">  133</span>              <span class="stringliteral">&quot;either element not invertible, or no method available to &quot;</span></div>
+<div class="line"><span class="lineno">  134</span>              <span class="stringliteral">&quot;compute its inverse&quot;</span>);</div>
+<div class="line"><span class="lineno">  135</span>          mpz_clear(n);</div>
+<div class="line"><span class="lineno">  136</span>          <span class="keywordflow">return</span> ff;</div>
+<div class="line"><span class="lineno">  137</span>        }</div>
+<div class="line"><span class="lineno">  138</span>    }</div>
+<div class="line"><span class="lineno">  139</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> prod = <a class="code hl_function" href="../../dd/dcf/class_ring_a6f6b08df2379200116484876c4fd2d87.html#a6f6b08df2379200116484876c4fd2d87">from_long</a>(1);</div>
+<div class="line"><span class="lineno">  140</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a> = <a class="code hl_function" href="../../dd/dcf/class_ring_a84bd4fdbdd4e1e44b2b24ad800138e1c.html#a84bd4fdbdd4e1e44b2b24ad800138e1c">copy</a>(ff);</div>
+<div class="line"><span class="lineno">  141</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> tmp;</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>  <span class="keywordflow">for</span> (;;)</div>
+<div class="line"><span class="lineno">  144</span>    {</div>
+<div class="line"><span class="lineno">  145</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a56dfe33da6328718f97bec3c02580197.html#a56dfe33da6328718f97bec3c02580197">RingZZ::mod_ui</a>(n, 2) == 1)</div>
+<div class="line"><span class="lineno">  146</span>        {</div>
+<div class="line"><span class="lineno">  147</span>          tmp = <a class="code hl_function" href="../../dd/dcf/class_ring_ada0ae7428fbb2d3c0de7d835997d454a.html#ada0ae7428fbb2d3c0de7d835997d454a">mult</a>(prod, <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>);</div>
+<div class="line"><span class="lineno">  148</span>          prod = tmp;</div>
+<div class="line"><span class="lineno">  149</span>        }</div>
+<div class="line"><span class="lineno">  150</span>      mpz_tdiv_q_2exp(n, n, 1);</div>
+<div class="line"><span class="lineno">  151</span>      <span class="keywordflow">if</span> (mpz_sgn(n) == 0)</div>
+<div class="line"><span class="lineno">  152</span>        {</div>
+<div class="line"><span class="lineno">  153</span>          mpz_clear(n);</div>
+<div class="line"><span class="lineno">  154</span>          <span class="keywordflow">return</span> prod;</div>
+<div class="line"><span class="lineno">  155</span>        }</div>
+<div class="line"><span class="lineno">  156</span>      <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  157</span>        {</div>
+<div class="line"><span class="lineno">  158</span>          tmp = <a class="code hl_function" href="../../dd/dcf/class_ring_ada0ae7428fbb2d3c0de7d835997d454a.html#ada0ae7428fbb2d3c0de7d835997d454a">mult</a>(<a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>, <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>);</div>
+<div class="line"><span class="lineno">  159</span>          <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a> = tmp;</div>
+<div class="line"><span class="lineno">  160</span>        }</div>
+<div class="line"><span class="lineno">  161</span>    }</div>
+<div class="line"><span class="lineno">  162</span>}</div>
+<div class="ttc" id="aclass_ring_a480f948242b890421b63365d1ef8d7b8_html_a480f948242b890421b63365d1ef8d7b8"><div class="ttname"><a href="../../dd/dcf/class_ring_a480f948242b890421b63365d1ef8d7b8.html#a480f948242b890421b63365d1ef8d7b8">Ring::one</a></div><div class="ttdeci">ring_elem one() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d10/ring_8hpp_source.html#l00320">ring.hpp:320</a></div></div>
 <div class="ttc" id="aclass_ring_a6e158a0a10dbc5ab15f38be603ba8d88_html_a6e158a0a10dbc5ab15f38be603ba8d88"><div class="ttname"><a href="../../dd/dcf/class_ring_a6e158a0a10dbc5ab15f38be603ba8d88.html#a6e158a0a10dbc5ab15f38be603ba8d88">Ring::invert</a></div><div class="ttdeci">virtual ring_elem invert(const ring_elem f) const =0</div></div>
 <div class="ttc" id="aclass_ring_a6f6b08df2379200116484876c4fd2d87_html_a6f6b08df2379200116484876c4fd2d87"><div class="ttname"><a href="../../dd/dcf/class_ring_a6f6b08df2379200116484876c4fd2d87.html#a6f6b08df2379200116484876c4fd2d87">Ring::from_long</a></div><div class="ttdeci">virtual ring_elem from_long(long n) const =0</div></div>
 <div class="ttc" id="aclass_ring_a84bd4fdbdd4e1e44b2b24ad800138e1c_html_a84bd4fdbdd4e1e44b2b24ad800138e1c"><div class="ttname"><a href="../../dd/dcf/class_ring_a84bd4fdbdd4e1e44b2b24ad800138e1c.html#a84bd4fdbdd4e1e44b2b24ad800138e1c">Ring::copy</a></div><div class="ttdeci">virtual ring_elem copy(const ring_elem f) const =0</div></div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_ad53bd105b7dcfb35f91
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

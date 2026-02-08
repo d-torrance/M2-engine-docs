@@ -123,30 +123,30 @@ $(document).ready(function(){initNavTree('dd/dab/class_monomial_info_a6c7d07f22c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/moninfo_8hpp_source.html#l00423">423</a> of file <a class="el" href="../../d5/d0a/moninfo_8hpp_source.html">moninfo.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  425</span>  {</div>
-<div class="line"><span class="lineno">  426</span>    <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a30db6f0c6c032aa01f398cb44853e842.html#a30db6f0c6c032aa01f398cb44853e842">ncalls_compare</a>++;</div>
-<div class="line"><span class="lineno">  427</span>    <a class="code hl_typedef" href="../../d5/d0a/moninfo_8hpp_a8ebc6aeb2b5443bc5d07ed5cc64b10b6.html#a8ebc6aeb2b5443bc5d07ed5cc64b10b6">const_packed_monomial</a> m1 = m + 2;</div>
-<div class="line"><span class="lineno">  428</span>    <a class="code hl_typedef" href="../../d5/d0a/moninfo_8hpp_a8ebc6aeb2b5443bc5d07ed5cc64b10b6.html#a8ebc6aeb2b5443bc5d07ed5cc64b10b6">const_packed_monomial</a> n1 = n + 2;</div>
-<div class="line"><span class="lineno">  429</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../dd/dab/class_monomial_info_aa561bd63c7b692187dca3b89b8f5e66c.html#aa561bd63c7b692187dca3b89b8f5e66c">mNumWeights</a>; i++)</div>
-<div class="line"><span class="lineno">  430</span>      {</div>
-<div class="line"><span class="lineno">  431</span>        <a class="code hl_typedef" href="../../d6/dac/varpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec.html#ac06516f99c07ceb08dbb3d05a8aed2ec">varpower_word</a> cmp = *m1++ - *n1++;</div>
-<div class="line"><span class="lineno">  432</span>        <span class="keywordflow">if</span> (cmp &gt; 0) <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">  433</span>        <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">  434</span>      }</div>
-<div class="line"><span class="lineno">  435</span>    m1 = m + <a class="code hl_variable" href="../../dd/dab/class_monomial_info_ab2f231b40b18b614c6d53dfb030200ab.html#ab2f231b40b18b614c6d53dfb030200ab">nslots</a>;</div>
-<div class="line"><span class="lineno">  436</span>    n1 = n + <a class="code hl_variable" href="../../dd/dab/class_monomial_info_ab2f231b40b18b614c6d53dfb030200ab.html#ab2f231b40b18b614c6d53dfb030200ab">nslots</a>;</div>
-<div class="line"><span class="lineno">  437</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a68e18bb4033baee1ab6a43913f29d3a6.html#a68e18bb4033baee1ab6a43913f29d3a6">nvars</a> - 1; i &gt; 0; i--)</div>
-<div class="line"><span class="lineno">  438</span>      {</div>
-<div class="line"><span class="lineno">  439</span>        <a class="code hl_typedef" href="../../d6/dac/varpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec.html#ac06516f99c07ceb08dbb3d05a8aed2ec">varpower_word</a> cmp = *--m1 - *--n1;</div>
-<div class="line"><span class="lineno">  440</span>        <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">  441</span>        <span class="keywordflow">if</span> (cmp &gt; 0) <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">  442</span>      }</div>
-<div class="line"><span class="lineno">  443</span>    <a class="code hl_typedef" href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a> cmp = m[1] - n[1];</div>
-<div class="line"><span class="lineno">  444</span>    <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">  445</span>    <span class="keywordflow">if</span> (cmp &gt; 0) <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">  446</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  447</span>  }</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/moninfo_8hpp_source.html#l00428">428</a> of file <a class="el" href="../../d5/d0a/moninfo_8hpp_source.html">moninfo.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  430</span>  {</div>
+<div class="line"><span class="lineno">  431</span>    <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a30db6f0c6c032aa01f398cb44853e842.html#a30db6f0c6c032aa01f398cb44853e842">ncalls_compare</a>++;</div>
+<div class="line"><span class="lineno">  432</span>    <a class="code hl_typedef" href="../../d5/d0a/moninfo_8hpp_a8ebc6aeb2b5443bc5d07ed5cc64b10b6.html#a8ebc6aeb2b5443bc5d07ed5cc64b10b6">const_packed_monomial</a> m1 = m + 2;</div>
+<div class="line"><span class="lineno">  433</span>    <a class="code hl_typedef" href="../../d5/d0a/moninfo_8hpp_a8ebc6aeb2b5443bc5d07ed5cc64b10b6.html#a8ebc6aeb2b5443bc5d07ed5cc64b10b6">const_packed_monomial</a> n1 = n + 2;</div>
+<div class="line"><span class="lineno">  434</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../dd/dab/class_monomial_info_aa561bd63c7b692187dca3b89b8f5e66c.html#aa561bd63c7b692187dca3b89b8f5e66c">mNumWeights</a>; i++)</div>
+<div class="line"><span class="lineno">  435</span>      {</div>
+<div class="line"><span class="lineno">  436</span>        <a class="code hl_typedef" href="../../d6/dac/varpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec.html#ac06516f99c07ceb08dbb3d05a8aed2ec">varpower_word</a> cmp = *m1++ - *n1++;</div>
+<div class="line"><span class="lineno">  437</span>        <span class="keywordflow">if</span> (cmp &gt; 0) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">  438</span>        <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  439</span>      }</div>
+<div class="line"><span class="lineno">  440</span>    m1 = m + <a class="code hl_variable" href="../../dd/dab/class_monomial_info_ab2f231b40b18b614c6d53dfb030200ab.html#ab2f231b40b18b614c6d53dfb030200ab">nslots</a>;</div>
+<div class="line"><span class="lineno">  441</span>    n1 = n + <a class="code hl_variable" href="../../dd/dab/class_monomial_info_ab2f231b40b18b614c6d53dfb030200ab.html#ab2f231b40b18b614c6d53dfb030200ab">nslots</a>;</div>
+<div class="line"><span class="lineno">  442</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a68e18bb4033baee1ab6a43913f29d3a6.html#a68e18bb4033baee1ab6a43913f29d3a6">nvars</a> - 1; i &gt; 0; i--)</div>
+<div class="line"><span class="lineno">  443</span>      {</div>
+<div class="line"><span class="lineno">  444</span>        <a class="code hl_typedef" href="../../d6/dac/varpower-monomial_8hpp_ac06516f99c07ceb08dbb3d05a8aed2ec.html#ac06516f99c07ceb08dbb3d05a8aed2ec">varpower_word</a> cmp = *--m1 - *--n1;</div>
+<div class="line"><span class="lineno">  445</span>        <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">  446</span>        <span class="keywordflow">if</span> (cmp &gt; 0) <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  447</span>      }</div>
+<div class="line"><span class="lineno">  448</span>    <a class="code hl_typedef" href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a> cmp = m[1] - n[1];</div>
+<div class="line"><span class="lineno">  449</span>    <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  450</span>    <span class="keywordflow">if</span> (cmp &gt; 0) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">  451</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  452</span>  }</div>
 <div class="ttc" id="aclass_monomial_info_a30db6f0c6c032aa01f398cb44853e842_html_a30db6f0c6c032aa01f398cb44853e842"><div class="ttname"><a href="../../dd/dab/class_monomial_info_a30db6f0c6c032aa01f398cb44853e842.html#a30db6f0c6c032aa01f398cb44853e842">MonomialInfo::ncalls_compare</a></div><div class="ttdeci">unsigned long ncalls_compare</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00071">moninfo.hpp:71</a></div></div>
 <div class="ttc" id="aclass_monomial_info_a68e18bb4033baee1ab6a43913f29d3a6_html_a68e18bb4033baee1ab6a43913f29d3a6"><div class="ttname"><a href="../../dd/dab/class_monomial_info_a68e18bb4033baee1ab6a43913f29d3a6.html#a68e18bb4033baee1ab6a43913f29d3a6">MonomialInfo::nvars</a></div><div class="ttdeci">int nvars</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00048">moninfo.hpp:48</a></div></div>
 <div class="ttc" id="aclass_monomial_info_aa561bd63c7b692187dca3b89b8f5e66c_html_aa561bd63c7b692187dca3b89b8f5e66c"><div class="ttname"><a href="../../dd/dab/class_monomial_info_aa561bd63c7b692187dca3b89b8f5e66c.html#aa561bd63c7b692187dca3b89b8f5e66c">MonomialInfo::mNumWeights</a></div><div class="ttdeci">int mNumWeights</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00055">moninfo.hpp:55</a></div></div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('dd/dab/class_monomial_info_a6c7d07f22c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dab/class_monomial_info.html">MonomialInfo</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

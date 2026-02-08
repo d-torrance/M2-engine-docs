@@ -113,17 +113,17 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_aeaf04d81756de31
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l00273">273</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  274</span>{</div>
-<div class="line"><span class="lineno">  275</span>  <span class="comment">// It is not clear whether we should try to free elements of K</span></div>
-<div class="line"><span class="lineno">  276</span>  f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  277</span>  f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a> = <a class="code hl_define" href="../../db/d10/ring_8hpp_afc4022fa228930d460b6d19e3988ddf6.html#afc4022fa228930d460b6d19e3988ddf6">ZERO_RINGELEM</a>;</div>
-<div class="line"><span class="lineno">  278</span>  <a class="code hl_variable" href="../../d8/d73/class_g_b_ring_a1614a1bf19d46b9ce7730621d3df9b3b.html#a1614a1bf19d46b9ce7730621d3df9b3b">mem</a>-&gt;<a class="code hl_function" href="../../d1/d5b/classstash_ae4b46df1e16a1459ac79ef4aa4047b68.html#ae4b46df1e16a1459ac79ef4aa4047b68">delete_elem</a>(f);</div>
-<div class="line"><span class="lineno">  279</span>  <span class="comment">// GC_FREE(reinterpret_cast&lt;char *&gt;(f));</span></div>
-<div class="line"><span class="lineno">  280</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l00279">279</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  280</span>{</div>
+<div class="line"><span class="lineno">  281</span>  <span class="comment">// It is not clear whether we should try to free elements of K</span></div>
+<div class="line"><span class="lineno">  282</span>  f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  283</span>  f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a> = <a class="code hl_define" href="../../db/d10/ring_8hpp_afc4022fa228930d460b6d19e3988ddf6.html#afc4022fa228930d460b6d19e3988ddf6">ZERO_RINGELEM</a>;</div>
+<div class="line"><span class="lineno">  284</span>  <a class="code hl_variable" href="../../d8/d73/class_g_b_ring_a1614a1bf19d46b9ce7730621d3df9b3b.html#a1614a1bf19d46b9ce7730621d3df9b3b">mem</a>-&gt;<a class="code hl_function" href="../../d1/d5b/classstash_ae4b46df1e16a1459ac79ef4aa4047b68.html#ae4b46df1e16a1459ac79ef4aa4047b68">delete_elem</a>(f);</div>
+<div class="line"><span class="lineno">  285</span>  <span class="comment">// GC_FREE(reinterpret_cast&lt;char *&gt;(f));</span></div>
+<div class="line"><span class="lineno">  286</span>}</div>
 <div class="ttc" id="aclass_g_b_ring_a1614a1bf19d46b9ce7730621d3df9b3b_html_a1614a1bf19d46b9ce7730621d3df9b3b"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_a1614a1bf19d46b9ce7730621d3df9b3b.html#a1614a1bf19d46b9ce7730621d3df9b3b">GBRing::mem</a></div><div class="ttdeci">stash * mem</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00084">gbring.hpp:84</a></div></div>
 <div class="ttc" id="aclassstash_ae4b46df1e16a1459ac79ef4aa4047b68_html_ae4b46df1e16a1459ac79ef4aa4047b68"><div class="ttname"><a href="../../d1/d5b/classstash_ae4b46df1e16a1459ac79ef4aa4047b68.html#ae4b46df1e16a1459ac79ef4aa4047b68">stash::delete_elem</a></div><div class="ttdeci">void delete_elem(void *p)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00117">mem.hpp:117</a></div></div>
-<div class="ttc" id="aring_8hpp_afc4022fa228930d460b6d19e3988ddf6_html_afc4022fa228930d460b6d19e3988ddf6"><div class="ttname"><a href="../../db/d10/ring_8hpp_afc4022fa228930d460b6d19e3988ddf6.html#afc4022fa228930d460b6d19e3988ddf6">ZERO_RINGELEM</a></div><div class="ttdeci">#define ZERO_RINGELEM</div><div class="ttdef"><b>Definition</b> <a href="../../db/d10/ring_8hpp_source.html#l00618">ring.hpp:618</a></div></div>
+<div class="ttc" id="aring_8hpp_afc4022fa228930d460b6d19e3988ddf6_html_afc4022fa228930d460b6d19e3988ddf6"><div class="ttname"><a href="../../db/d10/ring_8hpp_afc4022fa228930d460b6d19e3988ddf6.html#afc4022fa228930d460b6d19e3988ddf6">ZERO_RINGELEM</a></div><div class="ttdeci">#define ZERO_RINGELEM</div><div class="ttdef"><b>Definition</b> <a href="../../db/d10/ring_8hpp_source.html#l00623">ring.hpp:623</a></div></div>
 <div class="ttc" id="astructgbvector_a185cb3a8e35ce8178aac8ab39a79c4be_html_a185cb3a8e35ce8178aac8ab39a79c4be"><div class="ttname"><a href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">gbvector::coeff</a></div><div class="ttdeci">ring_elem coeff</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00046">gbring.hpp:46</a></div></div>
 <div class="ttc" id="astructgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26_html_a3cc2bd9a347521ac3e6d6d89de1a3a26"><div class="ttname"><a href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">gbvector::next</a></div><div class="ttdeci">gbvector * next</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00045">gbring.hpp:45</a></div></div>
 </div><!-- fragment -->
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_aeaf04d81756de31
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

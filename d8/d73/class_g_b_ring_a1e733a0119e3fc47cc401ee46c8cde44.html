@@ -135,58 +135,58 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_a1e733a0119e3fc4
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l01306">1306</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1313</span>{</div>
-<div class="line"><span class="lineno"> 1314</span>  <span class="comment">// This routine assumes that the coeff ring is ZZ (originally QQ).</span></div>
-<div class="line"><span class="lineno"> 1315</span>  <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *g = f;</div>
-<div class="line"><span class="lineno"> 1316</span>  <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *gsyz = fsyz;</div>
-<div class="line"><span class="lineno"> 1317</span>  mpz_t content;</div>
-<div class="line"><span class="lineno"> 1318</span>  <span class="keywordtype">int</span> leadsign;</div>
-<div class="line"><span class="lineno"> 1319</span>  <span class="keywordflow">if</span> (g != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno"> 1320</span>    {</div>
-<div class="line"><span class="lineno"> 1321</span>      leadsign = mpz_sgn(g-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
-<div class="line"><span class="lineno"> 1322</span>      mpz_init_set(content, g-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
-<div class="line"><span class="lineno"> 1323</span>      g = g-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><span class="lineno"> 1324</span>    }</div>
-<div class="line"><span class="lineno"> 1325</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (gsyz != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno"> 1326</span>    {</div>
-<div class="line"><span class="lineno"> 1327</span>      leadsign = mpz_sgn(gsyz-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
-<div class="line"><span class="lineno"> 1328</span>      mpz_init_set(content, gsyz-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
-<div class="line"><span class="lineno"> 1329</span>      gsyz = gsyz-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><span class="lineno"> 1330</span>    }</div>
-<div class="line"><span class="lineno"> 1331</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno"> 1332</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno"> 1333</span> </div>
-<div class="line"><span class="lineno"> 1334</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_aca59f330d6da36d51307f4e44aeced91.html#aca59f330d6da36d51307f4e44aeced91">lower_content_ZZ</a>(g, content);</div>
-<div class="line"><span class="lineno"> 1335</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_aca59f330d6da36d51307f4e44aeced91.html#aca59f330d6da36d51307f4e44aeced91">lower_content_ZZ</a>(gsyz, content);</div>
-<div class="line"><span class="lineno"> 1336</span> </div>
-<div class="line"><span class="lineno"> 1337</span>  mpz_abs(content, content);</div>
-<div class="line"><span class="lineno"> 1338</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/d9a/_z_z_8hpp_a4fdbcec93cf372e693113cc2bd1e2c73.html#a4fdbcec93cf372e693113cc2bd1e2c73">mask_mpz_cmp_si</a>(content, 1) == 0)</div>
-<div class="line"><span class="lineno"> 1339</span>    {</div>
-<div class="line"><span class="lineno"> 1340</span>      mpz_clear(content);</div>
-<div class="line"><span class="lineno"> 1341</span> </div>
-<div class="line"><span class="lineno"> 1342</span>      <span class="keywordflow">if</span> (leadsign &lt; 0)</div>
-<div class="line"><span class="lineno"> 1343</span>        {</div>
-<div class="line"><span class="lineno"> 1344</span>          <a class="code hl_function" href="../../d8/d73/class_g_b_ring_aca5a23777a32c57fbc2f9ff856bb7ef2.html#aca5a23777a32c57fbc2f9ff856bb7ef2">gbvector_negate_to</a>(f);</div>
-<div class="line"><span class="lineno"> 1345</span>          <a class="code hl_function" href="../../d8/d73/class_g_b_ring_aca5a23777a32c57fbc2f9ff856bb7ef2.html#aca5a23777a32c57fbc2f9ff856bb7ef2">gbvector_negate_to</a>(fsyz);</div>
-<div class="line"><span class="lineno"> 1346</span>        }</div>
-<div class="line"><span class="lineno"> 1347</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno"> 1348</span>    }</div>
-<div class="line"><span class="lineno"> 1349</span> </div>
-<div class="line"><span class="lineno"> 1350</span>  <span class="keywordflow">if</span> (leadsign &lt; 0) mpz_neg(content, content);</div>
-<div class="line"><span class="lineno"> 1351</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_af0c8062a983d5134e774ebdd6134849b.html#af0c8062a983d5134e774ebdd6134849b">divide_coeff_exact_to_ZZ</a>(f, content);</div>
-<div class="line"><span class="lineno"> 1352</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_af0c8062a983d5134e774ebdd6134849b.html#af0c8062a983d5134e774ebdd6134849b">divide_coeff_exact_to_ZZ</a>(fsyz, content);</div>
-<div class="line"><span class="lineno"> 1353</span>  <span class="keywordflow">if</span> (use_denom)</div>
-<div class="line"><span class="lineno"> 1354</span>    {</div>
-<div class="line"><span class="lineno"> 1355</span>      denom = <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code hl_function" href="../../d8/d2b/class_ring_z_z_ac25c05701852ed5eb92da0388f462617.html#ac25c05701852ed5eb92da0388f462617">mult</a>(denom, <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(content));</div>
-<div class="line"><span class="lineno"> 1356</span>    }</div>
-<div class="line"><span class="lineno"> 1357</span>  mpz_clear(content);</div>
-<div class="line"><span class="lineno"> 1358</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l01315">1315</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1322</span>{</div>
+<div class="line"><span class="lineno"> 1323</span>  <span class="comment">// This routine assumes that the coeff ring is ZZ (originally QQ).</span></div>
+<div class="line"><span class="lineno"> 1324</span>  <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *g = f;</div>
+<div class="line"><span class="lineno"> 1325</span>  <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *gsyz = fsyz;</div>
+<div class="line"><span class="lineno"> 1326</span>  mpz_t content;</div>
+<div class="line"><span class="lineno"> 1327</span>  <span class="keywordtype">int</span> leadsign;</div>
+<div class="line"><span class="lineno"> 1328</span>  <span class="keywordflow">if</span> (g != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 1329</span>    {</div>
+<div class="line"><span class="lineno"> 1330</span>      leadsign = mpz_sgn(g-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
+<div class="line"><span class="lineno"> 1331</span>      mpz_init_set(content, g-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
+<div class="line"><span class="lineno"> 1332</span>      g = g-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
+<div class="line"><span class="lineno"> 1333</span>    }</div>
+<div class="line"><span class="lineno"> 1334</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (gsyz != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 1335</span>    {</div>
+<div class="line"><span class="lineno"> 1336</span>      leadsign = mpz_sgn(gsyz-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
+<div class="line"><span class="lineno"> 1337</span>      mpz_init_set(content, gsyz-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
+<div class="line"><span class="lineno"> 1338</span>      gsyz = gsyz-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
+<div class="line"><span class="lineno"> 1339</span>    }</div>
+<div class="line"><span class="lineno"> 1340</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1341</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno"> 1342</span> </div>
+<div class="line"><span class="lineno"> 1343</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_aca59f330d6da36d51307f4e44aeced91.html#aca59f330d6da36d51307f4e44aeced91">lower_content_ZZ</a>(g, content);</div>
+<div class="line"><span class="lineno"> 1344</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_aca59f330d6da36d51307f4e44aeced91.html#aca59f330d6da36d51307f4e44aeced91">lower_content_ZZ</a>(gsyz, content);</div>
+<div class="line"><span class="lineno"> 1345</span> </div>
+<div class="line"><span class="lineno"> 1346</span>  mpz_abs(content, content);</div>
+<div class="line"><span class="lineno"> 1347</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/d9a/_z_z_8hpp_a4fdbcec93cf372e693113cc2bd1e2c73.html#a4fdbcec93cf372e693113cc2bd1e2c73">mask_mpz_cmp_si</a>(content, 1) == 0)</div>
+<div class="line"><span class="lineno"> 1348</span>    {</div>
+<div class="line"><span class="lineno"> 1349</span>      mpz_clear(content);</div>
+<div class="line"><span class="lineno"> 1350</span> </div>
+<div class="line"><span class="lineno"> 1351</span>      <span class="keywordflow">if</span> (leadsign &lt; 0)</div>
+<div class="line"><span class="lineno"> 1352</span>        {</div>
+<div class="line"><span class="lineno"> 1353</span>          <a class="code hl_function" href="../../d8/d73/class_g_b_ring_aca5a23777a32c57fbc2f9ff856bb7ef2.html#aca5a23777a32c57fbc2f9ff856bb7ef2">gbvector_negate_to</a>(f);</div>
+<div class="line"><span class="lineno"> 1354</span>          <a class="code hl_function" href="../../d8/d73/class_g_b_ring_aca5a23777a32c57fbc2f9ff856bb7ef2.html#aca5a23777a32c57fbc2f9ff856bb7ef2">gbvector_negate_to</a>(fsyz);</div>
+<div class="line"><span class="lineno"> 1355</span>        }</div>
+<div class="line"><span class="lineno"> 1356</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno"> 1357</span>    }</div>
+<div class="line"><span class="lineno"> 1358</span> </div>
+<div class="line"><span class="lineno"> 1359</span>  <span class="keywordflow">if</span> (leadsign &lt; 0) mpz_neg(content, content);</div>
+<div class="line"><span class="lineno"> 1360</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_af0c8062a983d5134e774ebdd6134849b.html#af0c8062a983d5134e774ebdd6134849b">divide_coeff_exact_to_ZZ</a>(f, content);</div>
+<div class="line"><span class="lineno"> 1361</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_af0c8062a983d5134e774ebdd6134849b.html#af0c8062a983d5134e774ebdd6134849b">divide_coeff_exact_to_ZZ</a>(fsyz, content);</div>
+<div class="line"><span class="lineno"> 1362</span>  <span class="keywordflow">if</span> (use_denom)</div>
+<div class="line"><span class="lineno"> 1363</span>    {</div>
+<div class="line"><span class="lineno"> 1364</span>      denom = <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code hl_function" href="../../d8/d2b/class_ring_z_z_ac25c05701852ed5eb92da0388f462617.html#ac25c05701852ed5eb92da0388f462617">mult</a>(denom, <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(content));</div>
+<div class="line"><span class="lineno"> 1365</span>    }</div>
+<div class="line"><span class="lineno"> 1366</span>  mpz_clear(content);</div>
+<div class="line"><span class="lineno"> 1367</span>}</div>
 <div class="ttc" id="a_z_z_8hpp_a4fdbcec93cf372e693113cc2bd1e2c73_html_a4fdbcec93cf372e693113cc2bd1e2c73"><div class="ttname"><a href="../../d8/d9a/_z_z_8hpp_a4fdbcec93cf372e693113cc2bd1e2c73.html#a4fdbcec93cf372e693113cc2bd1e2c73">mask_mpz_cmp_si</a></div><div class="ttdeci">int mask_mpz_cmp_si(mpz_srcptr x, long int i)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d9a/_z_z_8hpp_source.html#l00016">ZZ.hpp:16</a></div></div>
-<div class="ttc" id="aclass_g_b_ring_aca59f330d6da36d51307f4e44aeced91_html_aca59f330d6da36d51307f4e44aeced91"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_aca59f330d6da36d51307f4e44aeced91.html#aca59f330d6da36d51307f4e44aeced91">GBRing::lower_content_ZZ</a></div><div class="ttdeci">void lower_content_ZZ(gbvector *f, mpz_ptr content) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l01294">gbring.cpp:1294</a></div></div>
-<div class="ttc" id="aclass_g_b_ring_aca5a23777a32c57fbc2f9ff856bb7ef2_html_aca5a23777a32c57fbc2f9ff856bb7ef2"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_aca5a23777a32c57fbc2f9ff856bb7ef2.html#aca5a23777a32c57fbc2f9ff856bb7ef2">GBRing::gbvector_negate_to</a></div><div class="ttdeci">void gbvector_negate_to(gbvector *f) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00554">gbring.cpp:554</a></div></div>
-<div class="ttc" id="aclass_g_b_ring_af0c8062a983d5134e774ebdd6134849b_html_af0c8062a983d5134e774ebdd6134849b"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_af0c8062a983d5134e774ebdd6134849b.html#af0c8062a983d5134e774ebdd6134849b">GBRing::divide_coeff_exact_to_ZZ</a></div><div class="ttdeci">void divide_coeff_exact_to_ZZ(gbvector *f, gmp_ZZ u) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l01282">gbring.cpp:1282</a></div></div>
-<div class="ttc" id="aclass_ring_z_z_ac25c05701852ed5eb92da0388f462617_html_ac25c05701852ed5eb92da0388f462617"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_ac25c05701852ed5eb92da0388f462617.html#ac25c05701852ed5eb92da0388f462617">RingZZ::mult</a></div><div class="ttdeci">virtual ring_elem mult(const ring_elem f, const ring_elem g) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00263">ZZ.cpp:263</a></div></div>
+<div class="ttc" id="aclass_g_b_ring_aca59f330d6da36d51307f4e44aeced91_html_aca59f330d6da36d51307f4e44aeced91"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_aca59f330d6da36d51307f4e44aeced91.html#aca59f330d6da36d51307f4e44aeced91">GBRing::lower_content_ZZ</a></div><div class="ttdeci">void lower_content_ZZ(gbvector *f, mpz_ptr content) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l01303">gbring.cpp:1303</a></div></div>
+<div class="ttc" id="aclass_g_b_ring_aca5a23777a32c57fbc2f9ff856bb7ef2_html_aca5a23777a32c57fbc2f9ff856bb7ef2"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_aca5a23777a32c57fbc2f9ff856bb7ef2.html#aca5a23777a32c57fbc2f9ff856bb7ef2">GBRing::gbvector_negate_to</a></div><div class="ttdeci">void gbvector_negate_to(gbvector *f) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00562">gbring.cpp:562</a></div></div>
+<div class="ttc" id="aclass_g_b_ring_af0c8062a983d5134e774ebdd6134849b_html_af0c8062a983d5134e774ebdd6134849b"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_af0c8062a983d5134e774ebdd6134849b.html#af0c8062a983d5134e774ebdd6134849b">GBRing::divide_coeff_exact_to_ZZ</a></div><div class="ttdeci">void divide_coeff_exact_to_ZZ(gbvector *f, gmp_ZZ u) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l01291">gbring.cpp:1291</a></div></div>
+<div class="ttc" id="aclass_ring_z_z_ac25c05701852ed5eb92da0388f462617_html_ac25c05701852ed5eb92da0388f462617"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_ac25c05701852ed5eb92da0388f462617.html#ac25c05701852ed5eb92da0388f462617">RingZZ::mult</a></div><div class="ttdeci">virtual ring_elem mult(const ring_elem f, const ring_elem g) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00267">ZZ.cpp:267</a></div></div>
 <div class="ttc" id="agauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9_html_a5ad190417a478c3f15fa01ef9ee9bac9"><div class="ttname"><a href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a></div><div class="ttdeci">RingZZ * globalZZ</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00013">relem.cpp:13</a></div></div>
 <div class="ttc" id="astructgbvector_a185cb3a8e35ce8178aac8ab39a79c4be_html_a185cb3a8e35ce8178aac8ab39a79c4be"><div class="ttname"><a href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">gbvector::coeff</a></div><div class="ttdeci">ring_elem coeff</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00046">gbring.hpp:46</a></div></div>
 <div class="ttc" id="astructgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26_html_a3cc2bd9a347521ac3e6d6d89de1a3a26"><div class="ttname"><a href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">gbvector::next</a></div><div class="ttdeci">gbvector * next</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00045">gbring.hpp:45</a></div></div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_a1e733a0119e3fc4
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

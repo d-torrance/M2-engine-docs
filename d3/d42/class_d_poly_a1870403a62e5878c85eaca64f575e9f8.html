@@ -123,20 +123,20 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a1870403a62e5878c8
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l00871">871</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  872</span>{</div>
-<div class="line"><span class="lineno">  873</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  874</span>  <span class="keywordtype">long</span> *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = f-&gt;arr.ints;</div>
-<div class="line"><span class="lineno">  875</span>  <span class="keywordtype">long</span> deg = f-&gt;deg;</div>
-<div class="line"><span class="lineno">  876</span>  <span class="keywordflow">if</span> (b == 0)</div>
-<div class="line"><span class="lineno">  877</span>    <a class="code hl_function" href="../../d3/d42/class_d_poly_ab6f011d51e611e3d699476d484ff1eb3.html#ab6f011d51e611e3d699476d484ff1eb3">dealloc_poly</a>(f);</div>
-<div class="line"><span class="lineno">  878</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (b != 1)</div>
-<div class="line"><span class="lineno">  879</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= deg; i++)</div>
-<div class="line"><span class="lineno">  880</span>      {</div>
-<div class="line"><span class="lineno">  881</span>        <span class="keywordflow">if</span> (*<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != 0) <a class="code hl_function" href="../../d4/d23/dpoly_8cpp_a11987044555d1530ddbe5e81a94aa94e.html#a11987044555d1530ddbe5e81a94aa94e">ZZp_MULT</a>(<a class="code hl_variable" href="../../d3/d42/class_d_poly_a6a12d50610a9ea007f72420f6a30ce16.html#a6a12d50610a9ea007f72420f6a30ce16">charac</a>, *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, b);</div>
-<div class="line"><span class="lineno">  882</span>        <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>++;</div>
-<div class="line"><span class="lineno">  883</span>      }</div>
-<div class="line"><span class="lineno">  884</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l00872">872</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  873</span>{</div>
+<div class="line"><span class="lineno">  874</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  875</span>  <span class="keywordtype">long</span> *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = f-&gt;arr.ints;</div>
+<div class="line"><span class="lineno">  876</span>  <span class="keywordtype">long</span> deg = f-&gt;deg;</div>
+<div class="line"><span class="lineno">  877</span>  <span class="keywordflow">if</span> (b == 0)</div>
+<div class="line"><span class="lineno">  878</span>    <a class="code hl_function" href="../../d3/d42/class_d_poly_ab6f011d51e611e3d699476d484ff1eb3.html#ab6f011d51e611e3d699476d484ff1eb3">dealloc_poly</a>(f);</div>
+<div class="line"><span class="lineno">  879</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (b != 1)</div>
+<div class="line"><span class="lineno">  880</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= deg; i++)</div>
+<div class="line"><span class="lineno">  881</span>      {</div>
+<div class="line"><span class="lineno">  882</span>        <span class="keywordflow">if</span> (*<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != 0) <a class="code hl_function" href="../../d4/d23/dpoly_8cpp_a11987044555d1530ddbe5e81a94aa94e.html#a11987044555d1530ddbe5e81a94aa94e">ZZp_MULT</a>(<a class="code hl_variable" href="../../d3/d42/class_d_poly_a6a12d50610a9ea007f72420f6a30ce16.html#a6a12d50610a9ea007f72420f6a30ce16">charac</a>, *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, b);</div>
+<div class="line"><span class="lineno">  883</span>        <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>++;</div>
+<div class="line"><span class="lineno">  884</span>      }</div>
+<div class="line"><span class="lineno">  885</span>}</div>
 <div class="ttc" id="aclass_d_poly_a6a12d50610a9ea007f72420f6a30ce16_html_a6a12d50610a9ea007f72420f6a30ce16"><div class="ttname"><a href="../../d3/d42/class_d_poly_a6a12d50610a9ea007f72420f6a30ce16.html#a6a12d50610a9ea007f72420f6a30ce16">DPoly::charac</a></div><div class="ttdeci">long charac</div><div class="ttdef"><b>Definition</b> <a href="../../dc/da9/dpoly_8hpp_source.html#l00049">dpoly.hpp:49</a></div></div>
 <div class="ttc" id="aclass_d_poly_ab6f011d51e611e3d699476d484ff1eb3_html_ab6f011d51e611e3d699476d484ff1eb3"><div class="ttname"><a href="../../d3/d42/class_d_poly_ab6f011d51e611e3d699476d484ff1eb3.html#ab6f011d51e611e3d699476d484ff1eb3">DPoly::dealloc_poly</a></div><div class="ttdeci">static void dealloc_poly(TowerPolynomial &amp;f)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00292">dpoly.cpp:292</a></div></div>
 <div class="ttc" id="adpoly_8cpp_a11987044555d1530ddbe5e81a94aa94e_html_a11987044555d1530ddbe5e81a94aa94e"><div class="ttname"><a href="../../d4/d23/dpoly_8cpp_a11987044555d1530ddbe5e81a94aa94e.html#a11987044555d1530ddbe5e81a94aa94e">ZZp_MULT</a></div><div class="ttdeci">void ZZp_MULT(long charac, long &amp;a, long b)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00063">dpoly.cpp:63</a></div></div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a1870403a62e5878c8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

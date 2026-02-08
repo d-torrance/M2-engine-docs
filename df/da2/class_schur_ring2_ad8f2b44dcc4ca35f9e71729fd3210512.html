@@ -123,21 +123,21 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_ad8f2b44dcc4c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6f/schur2_8cpp_source.html#l00341">341</a> of file <a class="el" href="../../dc/d6f/schur2_8cpp_source.html">schur2.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  343</span>{</div>
-<div class="line"><span class="lineno">  344</span>  <span class="keywordtype">int</span> len = a[0];</div>
-<div class="line"><span class="lineno">  345</span>  <span class="keywordflow">if</span> (b[0] &lt; len) len = b[0];</div>
-<div class="line"><span class="lineno">  346</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; len; i++)</div>
-<div class="line"><span class="lineno">  347</span>    {</div>
-<div class="line"><span class="lineno">  348</span>      <span class="keywordtype">int</span> cmp = a[i] - b[i];</div>
-<div class="line"><span class="lineno">  349</span>      <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
-<div class="line"><span class="lineno">  350</span>      <span class="keywordflow">if</span> (cmp &gt; 0) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
-<div class="line"><span class="lineno">  351</span>    }</div>
-<div class="line"><span class="lineno">  352</span>  <span class="keywordtype">int</span> cmp = a[0] - b[0];</div>
-<div class="line"><span class="lineno">  353</span>  <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
-<div class="line"><span class="lineno">  354</span>  <span class="keywordflow">if</span> (cmp &gt; 0) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
-<div class="line"><span class="lineno">  355</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d6f/style_8hpp_a0f0ab67e043160b4b46de33bff8bb59a.html#a0f0ab67e043160b4b46de33bff8bb59a">EQ</a>;</div>
-<div class="line"><span class="lineno">  356</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6f/schur2_8cpp_source.html#l00348">348</a> of file <a class="el" href="../../dc/d6f/schur2_8cpp_source.html">schur2.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  350</span>{</div>
+<div class="line"><span class="lineno">  351</span>  <span class="keywordtype">int</span> len = a[0];</div>
+<div class="line"><span class="lineno">  352</span>  <span class="keywordflow">if</span> (b[0] &lt; len) len = b[0];</div>
+<div class="line"><span class="lineno">  353</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; len; i++)</div>
+<div class="line"><span class="lineno">  354</span>    {</div>
+<div class="line"><span class="lineno">  355</span>      <span class="keywordtype">int</span> cmp = a[i] - b[i];</div>
+<div class="line"><span class="lineno">  356</span>      <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
+<div class="line"><span class="lineno">  357</span>      <span class="keywordflow">if</span> (cmp &gt; 0) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
+<div class="line"><span class="lineno">  358</span>    }</div>
+<div class="line"><span class="lineno">  359</span>  <span class="keywordtype">int</span> cmp = a[0] - b[0];</div>
+<div class="line"><span class="lineno">  360</span>  <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a>;</div>
+<div class="line"><span class="lineno">  361</span>  <span class="keywordflow">if</span> (cmp &gt; 0) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a>;</div>
+<div class="line"><span class="lineno">  362</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d6f/style_8hpp_a0f0ab67e043160b4b46de33bff8bb59a.html#a0f0ab67e043160b4b46de33bff8bb59a">EQ</a>;</div>
+<div class="line"><span class="lineno">  363</span>}</div>
 <div class="ttc" id="astyle_8hpp_a0f0ab67e043160b4b46de33bff8bb59a_html_a0f0ab67e043160b4b46de33bff8bb59a"><div class="ttname"><a href="../../d2/d6f/style_8hpp_a0f0ab67e043160b4b46de33bff8bb59a.html#a0f0ab67e043160b4b46de33bff8bb59a">EQ</a></div><div class="ttdeci">const int EQ</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d6f/style_8hpp_source.html#l00011">style.hpp:11</a></div></div>
 <div class="ttc" id="astyle_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd_html_a4b12cb41b0dc3083344493a1f6e5e8fd"><div class="ttname"><a href="../../d2/d6f/style_8hpp_a4b12cb41b0dc3083344493a1f6e5e8fd.html#a4b12cb41b0dc3083344493a1f6e5e8fd">GT</a></div><div class="ttdeci">const int GT</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d6f/style_8hpp_source.html#l00012">style.hpp:12</a></div></div>
 <div class="ttc" id="astyle_8hpp_ae4194f03e7e44efa73e9e2cb1176df55_html_ae4194f03e7e44efa73e9e2cb1176df55"><div class="ttname"><a href="../../d2/d6f/style_8hpp_ae4194f03e7e44efa73e9e2cb1176df55.html#ae4194f03e7e44efa73e9e2cb1176df55">LT</a></div><div class="ttdeci">const int LT</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d6f/style_8hpp_source.html#l00010">style.hpp:10</a></div></div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_ad8f2b44dcc4c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/da2/class_schur_ring2.html">SchurRing2</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

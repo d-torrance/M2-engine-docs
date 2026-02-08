@@ -115,28 +115,28 @@ $(document).ready(function(){initNavTree('dd/d43/_n_c_reduction_8hpp_a2e421eefe5
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/_n_c_reduction_8cpp_source.html#l01065">1065</a> of file <a class="el" href="../../d6/d2d/_n_c_reduction_8cpp_source.html">NCReduction.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1066</span>{</div>
-<div class="line"><span class="lineno"> 1067</span>  <span class="keywordflow">switch</span> (type) {</div>
-<div class="line"><span class="lineno"> 1068</span>    <span class="comment">//  case HeapType::HashedGeobucket:</span></div>
-<div class="line"><span class="lineno"> 1069</span>    <span class="comment">//    return std::make_unique&lt;HashedPolynomialHeap&lt;mathic::Geobucket&gt;&gt;(F);</span></div>
-<div class="line"><span class="lineno"> 1070</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa46f3ea056caa3126b91f3f70beea068c">HeapType::Map</a>:</div>
-<div class="line"><span class="lineno"> 1071</span>    <span class="keywordflow">return</span> std::make_unique&lt;MapPolynomialHeap&gt;(F);</div>
-<div class="line"><span class="lineno"> 1072</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa2fecf37c0f01df26349740533a6624fb">HeapType::PriorityQueue</a>:</div>
-<div class="line"><span class="lineno"> 1073</span>    <span class="keywordflow">return</span> std::make_unique&lt;PriorityQueuePolynomialHeap&gt;(F);</div>
-<div class="line"><span class="lineno"> 1074</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa6d2adfdfd6f2a24cc46e5fdbb5679135">HeapType::Trivial</a>:</div>
-<div class="line"><span class="lineno"> 1075</span>    <span class="keywordflow">return</span> std::make_unique&lt;TrivialPolynomialHeap&gt;(F);</div>
-<div class="line"><span class="lineno"> 1076</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa05ef70df553b94dbe52356c28e57055a">HeapType::NaiveDedupGeobucket</a>:</div>
-<div class="line"><span class="lineno"> 1077</span>    <span class="keywordflow">return</span> std::make_unique&lt;NaiveDedupPolynomialHeap&lt;mathic::Geobucket&gt;&gt;(F);</div>
-<div class="line"><span class="lineno"> 1078</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aaa3fa57931ad3bf1714eb3cf0c0746d18">HeapType::NaiveGeobucket</a>:</div>
-<div class="line"><span class="lineno"> 1079</span>    <span class="keywordflow">return</span> std::make_unique&lt;NaivePolynomialHeap&lt;mathic::Geobucket&gt;&gt;(F);</div>
-<div class="line"><span class="lineno"> 1080</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa16d9d3a06b335bdefcb43ee2ecc58c45">HeapType::NaiveTourTree</a>:</div>
-<div class="line"><span class="lineno"> 1081</span>    <span class="keywordflow">return</span> std::make_unique&lt;NaivePolynomialHeap&lt;mathic::TourTree&gt;&gt;(F);</div>
-<div class="line"><span class="lineno"> 1082</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aaa057caed5059a4cdfd792c643d48096a">HeapType::NaiveHeap</a>:</div>
-<div class="line"><span class="lineno"> 1083</span>    <span class="keywordflow">return</span> std::make_unique&lt;NaivePolynomialHeap&lt;mathic::Heap&gt;&gt;(F);</div>
-<div class="line"><span class="lineno"> 1084</span>  };</div>
-<div class="line"><span class="lineno"> 1085</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 1086</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d2d/_n_c_reduction_8cpp_source.html#l01066">1066</a> of file <a class="el" href="../../d6/d2d/_n_c_reduction_8cpp_source.html">NCReduction.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1067</span>{</div>
+<div class="line"><span class="lineno"> 1068</span>  <span class="keywordflow">switch</span> (type) {</div>
+<div class="line"><span class="lineno"> 1069</span>    <span class="comment">//  case HeapType::HashedGeobucket:</span></div>
+<div class="line"><span class="lineno"> 1070</span>    <span class="comment">//    return std::make_unique&lt;HashedPolynomialHeap&lt;mathic::Geobucket&gt;&gt;(F);</span></div>
+<div class="line"><span class="lineno"> 1071</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa46f3ea056caa3126b91f3f70beea068c">HeapType::Map</a>:</div>
+<div class="line"><span class="lineno"> 1072</span>    <span class="keywordflow">return</span> std::make_unique&lt;MapPolynomialHeap&gt;(F);</div>
+<div class="line"><span class="lineno"> 1073</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa2fecf37c0f01df26349740533a6624fb">HeapType::PriorityQueue</a>:</div>
+<div class="line"><span class="lineno"> 1074</span>    <span class="keywordflow">return</span> std::make_unique&lt;PriorityQueuePolynomialHeap&gt;(F);</div>
+<div class="line"><span class="lineno"> 1075</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa6d2adfdfd6f2a24cc46e5fdbb5679135">HeapType::Trivial</a>:</div>
+<div class="line"><span class="lineno"> 1076</span>    <span class="keywordflow">return</span> std::make_unique&lt;TrivialPolynomialHeap&gt;(F);</div>
+<div class="line"><span class="lineno"> 1077</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa05ef70df553b94dbe52356c28e57055a">HeapType::NaiveDedupGeobucket</a>:</div>
+<div class="line"><span class="lineno"> 1078</span>    <span class="keywordflow">return</span> std::make_unique&lt;NaiveDedupPolynomialHeap&lt;mathic::Geobucket&gt;&gt;(F);</div>
+<div class="line"><span class="lineno"> 1079</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aaa3fa57931ad3bf1714eb3cf0c0746d18">HeapType::NaiveGeobucket</a>:</div>
+<div class="line"><span class="lineno"> 1080</span>    <span class="keywordflow">return</span> std::make_unique&lt;NaivePolynomialHeap&lt;mathic::Geobucket&gt;&gt;(F);</div>
+<div class="line"><span class="lineno"> 1081</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa16d9d3a06b335bdefcb43ee2ecc58c45">HeapType::NaiveTourTree</a>:</div>
+<div class="line"><span class="lineno"> 1082</span>    <span class="keywordflow">return</span> std::make_unique&lt;NaivePolynomialHeap&lt;mathic::TourTree&gt;&gt;(F);</div>
+<div class="line"><span class="lineno"> 1083</span>  <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aaa057caed5059a4cdfd792c643d48096a">HeapType::NaiveHeap</a>:</div>
+<div class="line"><span class="lineno"> 1084</span>    <span class="keywordflow">return</span> std::make_unique&lt;NaivePolynomialHeap&lt;mathic::Heap&gt;&gt;(F);</div>
+<div class="line"><span class="lineno"> 1085</span>  };</div>
+<div class="line"><span class="lineno"> 1086</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 1087</span>}</div>
 <div class="ttc" id="a_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a_html_a3323bceff3e6a898901853c6a56f223aa05ef70df553b94dbe52356c28e57055a"><div class="ttname"><a href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa05ef70df553b94dbe52356c28e57055a">HeapType::NaiveDedupGeobucket</a></div><div class="ttdeci">@ NaiveDedupGeobucket</div></div>
 <div class="ttc" id="a_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a_html_a3323bceff3e6a898901853c6a56f223aa16d9d3a06b335bdefcb43ee2ecc58c45"><div class="ttname"><a href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa16d9d3a06b335bdefcb43ee2ecc58c45">HeapType::NaiveTourTree</a></div><div class="ttdeci">@ NaiveTourTree</div></div>
 <div class="ttc" id="a_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a_html_a3323bceff3e6a898901853c6a56f223aa2fecf37c0f01df26349740533a6624fb"><div class="ttname"><a href="../../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa2fecf37c0f01df26349740533a6624fb">HeapType::PriorityQueue</a></div><div class="ttdeci">@ PriorityQueue</div></div>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('dd/d43/_n_c_reduction_8hpp_a2e421eefe5
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_3bd4c1e8abe0cd95d07e5be4652cd377.html">NCAlgebras</a></li><li class="navelem"><a class="el" href="../../dd/d43/_n_c_reduction_8hpp.html">NCReduction.hpp</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:22 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -127,21 +127,21 @@ template&lt;typename Mat &gt; </div>
 
 <p>Implements <a class="el" href="../../dc/db8/class_mutable_matrix_a8f994212c86584efe7ea8aff01aae5a3.html#a8f994212c86584efe7ea8aff01aae5a3">MutableMatrix</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00490">490</a> of file <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_source.html">mutablemat-defs.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  492</span>  {</div>
-<div class="line"><span class="lineno">  493</span>    <span class="keywordtype">size_t</span> nrows = <a class="code hl_function" href="../../d6/db0/class_mutable_mat_a49d50768779051aec4f4bd1bf357f2d3.html#a49d50768779051aec4f4bd1bf357f2d3">n_rows</a>();</div>
-<div class="line"><span class="lineno">  494</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../dd/d5f/mutablemat-defs_8hpp_a96259454ae1104f3f6bd531c0bc6d0df.html#a96259454ae1104f3f6bd531c0bc6d0df">error_row_bound</a>(i, nrows) || <a class="code hl_function" href="../../dd/d5f/mutablemat-defs_8hpp_a96259454ae1104f3f6bd531c0bc6d0df.html#a96259454ae1104f3f6bd531c0bc6d0df">error_row_bound</a>(j, nrows))</div>
-<div class="line"><span class="lineno">  495</span>      {</div>
-<div class="line"><span class="lineno">  496</span>        <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;row index out of range&quot;</span>);</div>
-<div class="line"><span class="lineno">  497</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  498</span>      }</div>
-<div class="line"><span class="lineno">  499</span>    MatOps::delete_rows(<a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>, i, j);</div>
-<div class="line"><span class="lineno">  500</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  501</span>  }</div>
-<div class="ttc" id="aclass_mutable_mat_a49d50768779051aec4f4bd1bf357f2d3_html_a49d50768779051aec4f4bd1bf357f2d3"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a49d50768779051aec4f4bd1bf357f2d3.html#a49d50768779051aec4f4bd1bf357f2d3">MutableMat::n_rows</a></div><div class="ttdeci">virtual size_t n_rows() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00226">mutablemat-defs.hpp:226</a></div></div>
-<div class="ttc" id="aclass_mutable_mat_a852442a68fd752a8e97f8723c65cfe96_html_a852442a68fd752a8e97f8723c65cfe96"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat::mat</a></div><div class="ttdeci">Mat mat</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00181">mutablemat-defs.hpp:181</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00493">493</a> of file <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_source.html">mutablemat-defs.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  495</span>  {</div>
+<div class="line"><span class="lineno">  496</span>    <span class="keywordtype">size_t</span> nrows = <a class="code hl_function" href="../../d6/db0/class_mutable_mat_a49d50768779051aec4f4bd1bf357f2d3.html#a49d50768779051aec4f4bd1bf357f2d3">n_rows</a>();</div>
+<div class="line"><span class="lineno">  497</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../dd/d5f/mutablemat-defs_8hpp_a96259454ae1104f3f6bd531c0bc6d0df.html#a96259454ae1104f3f6bd531c0bc6d0df">error_row_bound</a>(i, nrows) || <a class="code hl_function" href="../../dd/d5f/mutablemat-defs_8hpp_a96259454ae1104f3f6bd531c0bc6d0df.html#a96259454ae1104f3f6bd531c0bc6d0df">error_row_bound</a>(j, nrows))</div>
+<div class="line"><span class="lineno">  498</span>      {</div>
+<div class="line"><span class="lineno">  499</span>        <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;row index out of range&quot;</span>);</div>
+<div class="line"><span class="lineno">  500</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  501</span>      }</div>
+<div class="line"><span class="lineno">  502</span>    MatOps::delete_rows(<a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>, i, j);</div>
+<div class="line"><span class="lineno">  503</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  504</span>  }</div>
+<div class="ttc" id="aclass_mutable_mat_a49d50768779051aec4f4bd1bf357f2d3_html_a49d50768779051aec4f4bd1bf357f2d3"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a49d50768779051aec4f4bd1bf357f2d3.html#a49d50768779051aec4f4bd1bf357f2d3">MutableMat::n_rows</a></div><div class="ttdeci">virtual size_t n_rows() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00228">mutablemat-defs.hpp:228</a></div></div>
+<div class="ttc" id="aclass_mutable_mat_a852442a68fd752a8e97f8723c65cfe96_html_a852442a68fd752a8e97f8723c65cfe96"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat::mat</a></div><div class="ttdeci">Mat mat</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00183">mutablemat-defs.hpp:183</a></div></div>
 <div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
-<div class="ttc" id="amutablemat-defs_8hpp_a96259454ae1104f3f6bd531c0bc6d0df_html_a96259454ae1104f3f6bd531c0bc6d0df"><div class="ttname"><a href="../../dd/d5f/mutablemat-defs_8hpp_a96259454ae1104f3f6bd531c0bc6d0df.html#a96259454ae1104f3f6bd531c0bc6d0df">error_row_bound</a></div><div class="ttdeci">bool error_row_bound(size_t r, size_t nrows)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00146">mutablemat-defs.hpp:146</a></div></div>
+<div class="ttc" id="amutablemat-defs_8hpp_a96259454ae1104f3f6bd531c0bc6d0df_html_a96259454ae1104f3f6bd531c0bc6d0df"><div class="ttname"><a href="../../dd/d5f/mutablemat-defs_8hpp_a96259454ae1104f3f6bd531c0bc6d0df.html#a96259454ae1104f3f6bd531c0bc6d0df">error_row_bound</a></div><div class="ttdeci">bool error_row_bound(size_t r, size_t nrows)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00148">mutablemat-defs.hpp:148</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR()</a>, <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_a96259454ae1104f3f6bd531c0bc6d0df.html#a96259454ae1104f3f6bd531c0bc6d0df">error_row_bound()</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat&lt; Mat &gt;::mat</a>, and <a class="el" href="../../d6/db0/class_mutable_mat_a49d50768779051aec4f4bd1bf357f2d3.html#a49d50768779051aec4f4bd1bf357f2d3">MutableMat&lt; Mat &gt;::n_rows()</a>.</p>
 
@@ -153,7 +153,7 @@ template&lt;typename Mat &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/db0/class_mutable_mat.html">MutableMat</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

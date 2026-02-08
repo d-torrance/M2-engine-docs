@@ -131,39 +131,39 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_a4dfb8d580615
 
 <p>Implements <a class="el" href="../../dd/dcf/class_ring_a6d3d042f950ad9d90bb4ac65814789a1.html#a6d3d042f950ad9d90bb4ac65814789a1">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6f/schur2_8cpp_source.html#l00459">459</a> of file <a class="el" href="../../dc/d6f/schur2_8cpp_source.html">schur2.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  462</span>{</div>
-<div class="line"><span class="lineno">  463</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d25/classschur__poly.html">schur_poly</a> *f1 = f.<a class="code hl_function" href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">get_schur_poly</a>();</div>
-<div class="line"><span class="lineno">  464</span>  <span class="keywordflow">if</span> (Rg == <a class="code hl_variable" href="../../df/da2/class_schur_ring2_afd39942f66464c369d1dd602365e1e27.html#afd39942f66464c369d1dd602365e1e27">coefficientRing</a> || Rg == <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>)</div>
-<div class="line"><span class="lineno">  465</span>    {</div>
-<div class="line"><span class="lineno">  466</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../df/da2/class_schur_ring2_a1fe66926caff2875758c977fe18778d7.html#a1fe66926caff2875758c977fe18778d7">get_scalar</a>(f1, result))</div>
-<div class="line"><span class="lineno">  467</span>        {</div>
-<div class="line"><span class="lineno">  468</span>          <span class="keywordflow">if</span> (Rg == <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>)</div>
-<div class="line"><span class="lineno">  469</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="../../df/da2/class_schur_ring2_afd39942f66464c369d1dd602365e1e27.html#afd39942f66464c369d1dd602365e1e27">coefficientRing</a>-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a6d3d042f950ad9d90bb4ac65814789a1.html#a6d3d042f950ad9d90bb4ac65814789a1">lift</a>(<a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>, result, result);</div>
-<div class="line"><span class="lineno">  470</span>          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  471</span>        }</div>
-<div class="line"><span class="lineno">  472</span>    }</div>
-<div class="line"><span class="lineno">  473</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  474</span>    {</div>
-<div class="line"><span class="lineno">  475</span>      <span class="keyword">const</span> <a class="code hl_class" href="../../df/da2/class_schur_ring2.html">SchurRing2</a> *Sg = Rg-&gt;<a class="code hl_function" href="../../df/da2/class_schur_ring2_a1baf9f364ed76fd0398a6618e0160b44.html#a1baf9f364ed76fd0398a6618e0160b44">cast_to_SchurRing2</a>();</div>
-<div class="line"><span class="lineno">  476</span>      <span class="keywordflow">if</span> (Sg != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  477</span>        {</div>
-<div class="line"><span class="lineno">  478</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../df/da2/class_schur_ring2_afd39942f66464c369d1dd602365e1e27.html#afd39942f66464c369d1dd602365e1e27">coefficientRing</a> == Sg-&gt;<a class="code hl_function" href="../../df/da2/class_schur_ring2_ad93f7261c4f30b5c866343243e67aea0.html#ad93f7261c4f30b5c866343243e67aea0">getCoefficientRing</a>())</div>
-<div class="line"><span class="lineno">  479</span>            {</div>
-<div class="line"><span class="lineno">  480</span>              result = Sg-&gt;<a class="code hl_function" href="../../df/da2/class_schur_ring2_a5680f1d9cc9631ac0726fa835f098114.html#a5680f1d9cc9631ac0726fa835f098114">truncate</a>(f);</div>
-<div class="line"><span class="lineno">  481</span>              <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  482</span>            }</div>
-<div class="line"><span class="lineno">  483</span> </div>
-<div class="line"><span class="lineno">  484</span>          <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/da2/class_schur_ring2_a76c9bdd1a33835cf17c12b2ee2206902.html#a76c9bdd1a33835cf17c12b2ee2206902">lift_coeffs</a>(Sg, f, result);</div>
-<div class="line"><span class="lineno">  485</span>        }</div>
-<div class="line"><span class="lineno">  486</span>    }</div>
-<div class="line"><span class="lineno">  487</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  488</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6f/schur2_8cpp_source.html#l00466">466</a> of file <a class="el" href="../../dc/d6f/schur2_8cpp_source.html">schur2.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  469</span>{</div>
+<div class="line"><span class="lineno">  470</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d25/classschur__poly.html">schur_poly</a> *f1 = f.<a class="code hl_function" href="../../d5/d64/unionring__elem_ad67fb9c6ea951f5ad43cbff7bc67713a.html#ad67fb9c6ea951f5ad43cbff7bc67713a">get_schur_poly</a>();</div>
+<div class="line"><span class="lineno">  471</span>  <span class="keywordflow">if</span> (Rg == <a class="code hl_variable" href="../../df/da2/class_schur_ring2_afd39942f66464c369d1dd602365e1e27.html#afd39942f66464c369d1dd602365e1e27">coefficientRing</a> || Rg == <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>)</div>
+<div class="line"><span class="lineno">  472</span>    {</div>
+<div class="line"><span class="lineno">  473</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../df/da2/class_schur_ring2_a1fe66926caff2875758c977fe18778d7.html#a1fe66926caff2875758c977fe18778d7">get_scalar</a>(f1, result))</div>
+<div class="line"><span class="lineno">  474</span>        {</div>
+<div class="line"><span class="lineno">  475</span>          <span class="keywordflow">if</span> (Rg == <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>)</div>
+<div class="line"><span class="lineno">  476</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="../../df/da2/class_schur_ring2_afd39942f66464c369d1dd602365e1e27.html#afd39942f66464c369d1dd602365e1e27">coefficientRing</a>-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a6d3d042f950ad9d90bb4ac65814789a1.html#a6d3d042f950ad9d90bb4ac65814789a1">lift</a>(<a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>, result, result);</div>
+<div class="line"><span class="lineno">  477</span>          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  478</span>        }</div>
+<div class="line"><span class="lineno">  479</span>    }</div>
+<div class="line"><span class="lineno">  480</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  481</span>    {</div>
+<div class="line"><span class="lineno">  482</span>      <span class="keyword">const</span> <a class="code hl_class" href="../../df/da2/class_schur_ring2.html">SchurRing2</a> *Sg = Rg-&gt;<a class="code hl_function" href="../../df/da2/class_schur_ring2_a1baf9f364ed76fd0398a6618e0160b44.html#a1baf9f364ed76fd0398a6618e0160b44">cast_to_SchurRing2</a>();</div>
+<div class="line"><span class="lineno">  483</span>      <span class="keywordflow">if</span> (Sg != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  484</span>        {</div>
+<div class="line"><span class="lineno">  485</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../df/da2/class_schur_ring2_afd39942f66464c369d1dd602365e1e27.html#afd39942f66464c369d1dd602365e1e27">coefficientRing</a> == Sg-&gt;<a class="code hl_function" href="../../df/da2/class_schur_ring2_ad93f7261c4f30b5c866343243e67aea0.html#ad93f7261c4f30b5c866343243e67aea0">getCoefficientRing</a>())</div>
+<div class="line"><span class="lineno">  486</span>            {</div>
+<div class="line"><span class="lineno">  487</span>              result = Sg-&gt;<a class="code hl_function" href="../../df/da2/class_schur_ring2_a5680f1d9cc9631ac0726fa835f098114.html#a5680f1d9cc9631ac0726fa835f098114">truncate</a>(f);</div>
+<div class="line"><span class="lineno">  488</span>              <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  489</span>            }</div>
+<div class="line"><span class="lineno">  490</span> </div>
+<div class="line"><span class="lineno">  491</span>          <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/da2/class_schur_ring2_a76c9bdd1a33835cf17c12b2ee2206902.html#a76c9bdd1a33835cf17c12b2ee2206902">lift_coeffs</a>(Sg, f, result);</div>
+<div class="line"><span class="lineno">  492</span>        }</div>
+<div class="line"><span class="lineno">  493</span>    }</div>
+<div class="line"><span class="lineno">  494</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  495</span>}</div>
 <div class="ttc" id="aclass_ring_a6d3d042f950ad9d90bb4ac65814789a1_html_a6d3d042f950ad9d90bb4ac65814789a1"><div class="ttname"><a href="../../dd/dcf/class_ring_a6d3d042f950ad9d90bb4ac65814789a1.html#a6d3d042f950ad9d90bb4ac65814789a1">Ring::lift</a></div><div class="ttdeci">virtual bool lift(const Ring *R, const ring_elem f, ring_elem &amp;result) const =0</div></div>
 <div class="ttc" id="aclass_schur_ring2_a1baf9f364ed76fd0398a6618e0160b44_html_a1baf9f364ed76fd0398a6618e0160b44"><div class="ttname"><a href="../../df/da2/class_schur_ring2_a1baf9f364ed76fd0398a6618e0160b44.html#a1baf9f364ed76fd0398a6618e0160b44">SchurRing2::cast_to_SchurRing2</a></div><div class="ttdeci">virtual const SchurRing2 * cast_to_SchurRing2() const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00131">schur2.hpp:131</a></div></div>
-<div class="ttc" id="aclass_schur_ring2_a1fe66926caff2875758c977fe18778d7_html_a1fe66926caff2875758c977fe18778d7"><div class="ttname"><a href="../../df/da2/class_schur_ring2_a1fe66926caff2875758c977fe18778d7.html#a1fe66926caff2875758c977fe18778d7">SchurRing2::get_scalar</a></div><div class="ttdeci">bool get_scalar(const schur_poly *f, ring_elem &amp;result) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00271">schur2.cpp:271</a></div></div>
-<div class="ttc" id="aclass_schur_ring2_a5680f1d9cc9631ac0726fa835f098114_html_a5680f1d9cc9631ac0726fa835f098114"><div class="ttname"><a href="../../df/da2/class_schur_ring2_a5680f1d9cc9631ac0726fa835f098114.html#a5680f1d9cc9631ac0726fa835f098114">SchurRing2::truncate</a></div><div class="ttdeci">ring_elem truncate(const ring_elem f) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00505">schur2.cpp:505</a></div></div>
-<div class="ttc" id="aclass_schur_ring2_a76c9bdd1a33835cf17c12b2ee2206902_html_a76c9bdd1a33835cf17c12b2ee2206902"><div class="ttname"><a href="../../df/da2/class_schur_ring2_a76c9bdd1a33835cf17c12b2ee2206902.html#a76c9bdd1a33835cf17c12b2ee2206902">SchurRing2::lift_coeffs</a></div><div class="ttdeci">bool lift_coeffs(const SchurRing2 *Sg, const ring_elem f, ring_elem &amp;resultRE) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00400">schur2.cpp:400</a></div></div>
+<div class="ttc" id="aclass_schur_ring2_a1fe66926caff2875758c977fe18778d7_html_a1fe66926caff2875758c977fe18778d7"><div class="ttname"><a href="../../df/da2/class_schur_ring2_a1fe66926caff2875758c977fe18778d7.html#a1fe66926caff2875758c977fe18778d7">SchurRing2::get_scalar</a></div><div class="ttdeci">bool get_scalar(const schur_poly *f, ring_elem &amp;result) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00273">schur2.cpp:273</a></div></div>
+<div class="ttc" id="aclass_schur_ring2_a5680f1d9cc9631ac0726fa835f098114_html_a5680f1d9cc9631ac0726fa835f098114"><div class="ttname"><a href="../../df/da2/class_schur_ring2_a5680f1d9cc9631ac0726fa835f098114.html#a5680f1d9cc9631ac0726fa835f098114">SchurRing2::truncate</a></div><div class="ttdeci">ring_elem truncate(const ring_elem f) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00512">schur2.cpp:512</a></div></div>
+<div class="ttc" id="aclass_schur_ring2_a76c9bdd1a33835cf17c12b2ee2206902_html_a76c9bdd1a33835cf17c12b2ee2206902"><div class="ttname"><a href="../../df/da2/class_schur_ring2_a76c9bdd1a33835cf17c12b2ee2206902.html#a76c9bdd1a33835cf17c12b2ee2206902">SchurRing2::lift_coeffs</a></div><div class="ttdeci">bool lift_coeffs(const SchurRing2 *Sg, const ring_elem f, ring_elem &amp;resultRE) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00407">schur2.cpp:407</a></div></div>
 <div class="ttc" id="aclass_schur_ring2_ad93f7261c4f30b5c866343243e67aea0_html_ad93f7261c4f30b5c866343243e67aea0"><div class="ttname"><a href="../../df/da2/class_schur_ring2_ad93f7261c4f30b5c866343243e67aea0.html#ad93f7261c4f30b5c866343243e67aea0">SchurRing2::getCoefficientRing</a></div><div class="ttdeci">const Ring * getCoefficientRing() const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00127">schur2.hpp:127</a></div></div>
 <div class="ttc" id="aclass_schur_ring2_afd39942f66464c369d1dd602365e1e27_html_afd39942f66464c369d1dd602365e1e27"><div class="ttname"><a href="../../df/da2/class_schur_ring2_afd39942f66464c369d1dd602365e1e27.html#afd39942f66464c369d1dd602365e1e27">SchurRing2::coefficientRing</a></div><div class="ttdeci">const Ring * coefficientRing</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00106">schur2.hpp:106</a></div></div>
 <div class="ttc" id="aclass_schur_ring2_html"><div class="ttname"><a href="../../df/da2/class_schur_ring2.html">SchurRing2</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00103">schur2.hpp:104</a></div></div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_a4dfb8d580615
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/da2/class_schur_ring2.html">SchurRing2</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

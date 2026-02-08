@@ -112,23 +112,23 @@ $(document).ready(function(){initNavTree('d6/dfe/class_g_binhom__comp_accd421642
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/db9/gb-sugarless_8cpp_source.html#l00835">835</a> of file <a class="el" href="../../d6/db9/gb-sugarless_8cpp_source.html">gb-sugarless.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  836</span>{</div>
-<div class="line"><span class="lineno">  837</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_aedb47e8cf5027fcba1f4c36565e343e4.html#aedb47e8cf5027fcba1f4c36565e343e4">minimal_gb_valid</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  838</span> </div>
-<div class="line"><span class="lineno">  839</span>  <a class="code hl_define" href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a>(<a class="code hl_struct" href="../../d0/d03/struct_p_o_l_y.html">POLY</a>) polys;</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/db9/gb-sugarless_8cpp_source.html#l00837">837</a> of file <a class="el" href="../../d6/db9/gb-sugarless_8cpp_source.html">gb-sugarless.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  838</span>{</div>
+<div class="line"><span class="lineno">  839</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_aedb47e8cf5027fcba1f4c36565e343e4.html#aedb47e8cf5027fcba1f4c36565e343e4">minimal_gb_valid</a>) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  840</span> </div>
-<div class="line"><span class="lineno">  841</span>  <span class="keywordflow">for</span> (<a class="code hl_struct" href="../../dc/d9c/structgb__elem.html">gb_elem</a> *q = <a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_a84b8c87668bf53ab6c3d07bb8a3e2508.html#a84b8c87668bf53ab6c3d07bb8a3e2508">gb</a>-&gt;<a class="code hl_variable" href="../../dc/d9c/structgb__elem_acd06d3e7ebf5eced04ce650d56f9b31a.html#acd06d3e7ebf5eced04ce650d56f9b31a">next_min</a>; q != <span class="keyword">nullptr</span>; q = q-&gt;next_min)</div>
-<div class="line"><span class="lineno">  842</span>    {</div>
-<div class="line"><span class="lineno">  843</span>      <a class="code hl_struct" href="../../d0/d03/struct_p_o_l_y.html">POLY</a> g;</div>
-<div class="line"><span class="lineno">  844</span>      g.<a class="code hl_variable" href="../../d0/d03/struct_p_o_l_y_a99d4e7b185b16968de58cb6c47ef605e.html#a99d4e7b185b16968de58cb6c47ef605e">f</a> = q-&gt;f;</div>
-<div class="line"><span class="lineno">  845</span>      g.<a class="code hl_variable" href="../../d0/d03/struct_p_o_l_y_a7efdb8993698f844b8afabb2f926eecd.html#a7efdb8993698f844b8afabb2f926eecd">fsyz</a> = q-&gt;fsyz;</div>
-<div class="line"><span class="lineno">  846</span>      polys.push_back(g);</div>
-<div class="line"><span class="lineno">  847</span>    }</div>
-<div class="line"><span class="lineno">  848</span> </div>
-<div class="line"><span class="lineno">  849</span>  <a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_a69ee045c8883b580b9365fae231da8bb.html#a69ee045c8883b580b9365fae231da8bb">minimal_gb</a>-&gt;<a class="code hl_function" href="../../d9/d3f/class_reduced_g_b_a53704a8f23f471289a573eb4e321a537.html#a53704a8f23f471289a573eb4e321a537">minimalize</a>(polys);</div>
-<div class="line"><span class="lineno">  850</span>  <a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_aedb47e8cf5027fcba1f4c36565e343e4.html#aedb47e8cf5027fcba1f4c36565e343e4">minimal_gb_valid</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  851</span>}</div>
+<div class="line"><span class="lineno">  841</span>  <a class="code hl_define" href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a>(<a class="code hl_struct" href="../../d0/d03/struct_p_o_l_y.html">POLY</a>) polys;</div>
+<div class="line"><span class="lineno">  842</span> </div>
+<div class="line"><span class="lineno">  843</span>  <span class="keywordflow">for</span> (<a class="code hl_struct" href="../../dc/d9c/structgb__elem.html">gb_elem</a> *q = <a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_a84b8c87668bf53ab6c3d07bb8a3e2508.html#a84b8c87668bf53ab6c3d07bb8a3e2508">gb</a>-&gt;<a class="code hl_variable" href="../../dc/d9c/structgb__elem_acd06d3e7ebf5eced04ce650d56f9b31a.html#acd06d3e7ebf5eced04ce650d56f9b31a">next_min</a>; q != <span class="keyword">nullptr</span>; q = q-&gt;next_min)</div>
+<div class="line"><span class="lineno">  844</span>    {</div>
+<div class="line"><span class="lineno">  845</span>      <a class="code hl_struct" href="../../d0/d03/struct_p_o_l_y.html">POLY</a> g;</div>
+<div class="line"><span class="lineno">  846</span>      g.<a class="code hl_variable" href="../../d0/d03/struct_p_o_l_y_a99d4e7b185b16968de58cb6c47ef605e.html#a99d4e7b185b16968de58cb6c47ef605e">f</a> = q-&gt;f;</div>
+<div class="line"><span class="lineno">  847</span>      g.<a class="code hl_variable" href="../../d0/d03/struct_p_o_l_y_a7efdb8993698f844b8afabb2f926eecd.html#a7efdb8993698f844b8afabb2f926eecd">fsyz</a> = q-&gt;fsyz;</div>
+<div class="line"><span class="lineno">  848</span>      polys.push_back(g);</div>
+<div class="line"><span class="lineno">  849</span>    }</div>
+<div class="line"><span class="lineno">  850</span> </div>
+<div class="line"><span class="lineno">  851</span>  <a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_a69ee045c8883b580b9365fae231da8bb.html#a69ee045c8883b580b9365fae231da8bb">minimal_gb</a>-&gt;<a class="code hl_function" href="../../d9/d3f/class_reduced_g_b_a53704a8f23f471289a573eb4e321a537.html#a53704a8f23f471289a573eb4e321a537">minimalize</a>(polys);</div>
+<div class="line"><span class="lineno">  852</span>  <a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_aedb47e8cf5027fcba1f4c36565e343e4.html#aedb47e8cf5027fcba1f4c36565e343e4">minimal_gb_valid</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  853</span>}</div>
 <div class="ttc" id="aclass_g_binhom__comp_a69ee045c8883b580b9365fae231da8bb_html_a69ee045c8883b580b9365fae231da8bb"><div class="ttname"><a href="../../d6/dfe/class_g_binhom__comp_a69ee045c8883b580b9365fae231da8bb.html#a69ee045c8883b580b9365fae231da8bb">GBinhom_comp::minimal_gb</a></div><div class="ttdeci">ReducedGB * minimal_gb</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d91/gb-sugarless_8hpp_source.html#l00044">gb-sugarless.hpp:44</a></div></div>
 <div class="ttc" id="aclass_g_binhom__comp_a84b8c87668bf53ab6c3d07bb8a3e2508_html_a84b8c87668bf53ab6c3d07bb8a3e2508"><div class="ttname"><a href="../../d6/dfe/class_g_binhom__comp_a84b8c87668bf53ab6c3d07bb8a3e2508.html#a84b8c87668bf53ab6c3d07bb8a3e2508">GBinhom_comp::gb</a></div><div class="ttdeci">gb_elem * gb</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d91/gb-sugarless_8hpp_source.html#l00039">gb-sugarless.hpp:39</a></div></div>
 <div class="ttc" id="aclass_g_binhom__comp_aedb47e8cf5027fcba1f4c36565e343e4_html_aedb47e8cf5027fcba1f4c36565e343e4"><div class="ttname"><a href="../../d6/dfe/class_g_binhom__comp_aedb47e8cf5027fcba1f4c36565e343e4.html#aedb47e8cf5027fcba1f4c36565e343e4">GBinhom_comp::minimal_gb_valid</a></div><div class="ttdeci">bool minimal_gb_valid</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d91/gb-sugarless_8hpp_source.html#l00045">gb-sugarless.hpp:45</a></div></div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('d6/dfe/class_g_binhom__comp_accd421642
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dfe/class_g_binhom__comp.html">GBinhom_comp</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

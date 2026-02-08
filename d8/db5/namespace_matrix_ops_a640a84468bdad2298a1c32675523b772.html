@@ -129,15 +129,15 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a640a84468
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l01093">1093</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1096</span>{</div>
-<div class="line"><span class="lineno"> 1097</span><span class="preprocessor">#ifndef NO_LAPACK</span></div>
-<div class="line"><span class="lineno"> 1098</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/dd6/class_lapack_a0528bdcc5bba452d7f539934d2bb8eff.html#a0528bdcc5bba452d7f539934d2bb8eff">Lapack::eigenvectors_symmetric</a>(&amp;A, &amp;eigenvals, &amp;eigenvecs);</div>
-<div class="line"><span class="lineno"> 1099</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno"> 1100</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d21/namespace_eigen_m2_a68b3b512faaac33a0c9642950dc2871d.html#a68b3b512faaac33a0c9642950dc2871d">EigenM2::eigenvectors_hermitian</a>(&amp;A, &amp;eigenvals, &amp;eigenvecs);</div>
-<div class="line"><span class="lineno"> 1101</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno"> 1102</span>}</div>
-<div class="ttc" id="aclass_lapack_a0528bdcc5bba452d7f539934d2bb8eff_html_a0528bdcc5bba452d7f539934d2bb8eff"><div class="ttname"><a href="../../df/dd6/class_lapack_a0528bdcc5bba452d7f539934d2bb8eff.html#a0528bdcc5bba452d7f539934d2bb8eff">Lapack::eigenvectors_symmetric</a></div><div class="ttdeci">static bool eigenvectors_symmetric(const DMatRRR *A, DMatRRR *eigenvals, DMatRRR *eigenvecs)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l00511">lapack.cpp:511</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l01179">1179</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1182</span>{</div>
+<div class="line"><span class="lineno"> 1183</span><span class="preprocessor">#ifndef NO_LAPACK</span></div>
+<div class="line"><span class="lineno"> 1184</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/dd6/class_lapack_a0528bdcc5bba452d7f539934d2bb8eff.html#a0528bdcc5bba452d7f539934d2bb8eff">Lapack::eigenvectors_symmetric</a>(&amp;A, &amp;eigenvals, &amp;eigenvecs);</div>
+<div class="line"><span class="lineno"> 1185</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno"> 1186</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d21/namespace_eigen_m2_a68b3b512faaac33a0c9642950dc2871d.html#a68b3b512faaac33a0c9642950dc2871d">EigenM2::eigenvectors_hermitian</a>(&amp;A, &amp;eigenvals, &amp;eigenvecs);</div>
+<div class="line"><span class="lineno"> 1187</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno"> 1188</span>}</div>
+<div class="ttc" id="aclass_lapack_a0528bdcc5bba452d7f539934d2bb8eff_html_a0528bdcc5bba452d7f539934d2bb8eff"><div class="ttname"><a href="../../df/dd6/class_lapack_a0528bdcc5bba452d7f539934d2bb8eff.html#a0528bdcc5bba452d7f539934d2bb8eff">Lapack::eigenvectors_symmetric</a></div><div class="ttdeci">static bool eigenvectors_symmetric(const DMatRRR *A, DMatRRR *eigenvals, DMatRRR *eigenvecs)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l00513">lapack.cpp:513</a></div></div>
 <div class="ttc" id="anamespace_eigen_m2_a68b3b512faaac33a0c9642950dc2871d_html_a68b3b512faaac33a0c9642950dc2871d"><div class="ttname"><a href="../../df/d21/namespace_eigen_m2_a68b3b512faaac33a0c9642950dc2871d.html#a68b3b512faaac33a0c9642950dc2871d">EigenM2::eigenvectors_hermitian</a></div><div class="ttdeci">bool eigenvectors_hermitian(const LMatrixRRR *A, LMatrixRRR *eigenvals, LMatrixRRR *eigenvecs)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d0e/eigen_8cpp_source.html#l00528">eigen.cpp:528</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../df/d21/namespace_eigen_m2_a68b3b512faaac33a0c9642950dc2871d.html#a68b3b512faaac33a0c9642950dc2871d">EigenM2::eigenvectors_hermitian()</a>, and <a class="el" href="../../df/dd6/class_lapack_a0528bdcc5bba452d7f539934d2bb8eff.html#a0528bdcc5bba452d7f539934d2bb8eff">Lapack::eigenvectors_symmetric()</a>.</p>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a640a84468
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:26 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

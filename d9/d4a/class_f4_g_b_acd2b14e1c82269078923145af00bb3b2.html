@@ -112,59 +112,59 @@ $(document).ready(function(){initNavTree('d9/d4a/class_f4_g_b_acd2b14e1c82269078
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/de5/f4_8cpp_source.html#l00463">463</a> of file <a class="el" href="../../d3/de5/f4_8cpp_source.html">f4.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  464</span>{</div>
-<div class="line"><span class="lineno">  465</span>  <span class="comment">/* loop through all spairs, process,</span></div>
-<div class="line"><span class="lineno">  466</span><span class="comment">     then while there are any columns to process, do so,</span></div>
-<div class="line"><span class="lineno">  467</span><span class="comment">     then process rows.</span></div>
-<div class="line"><span class="lineno">  468</span><span class="comment">     Is this the best order to do it in?  Maybe not...</span></div>
-<div class="line"><span class="lineno">  469</span><span class="comment">  */</span></div>
-<div class="line"><span class="lineno">  470</span> </div>
-<div class="line"><span class="lineno">  471</span>  <span class="comment">//spair *p;</span></div>
-<div class="line"><span class="lineno">  472</span>  std::pair&lt;bool,spair&gt; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
-<div class="line"><span class="lineno">  473</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_a2aeae3833ef135fd9171be12b6ce3c7f.html#a2aeae3833ef135fd9171be12b6ce3c7f">get_next_pair</a>();</div>
-<div class="line"><span class="lineno">  474</span>  <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.first)</div>
-<div class="line"><span class="lineno">  475</span>    {</div>
-<div class="line"><span class="lineno">  476</span>      <a class="code hl_function" href="../../d9/d4a/class_f4_g_b_ac0c10752d20c021579b91c3824bfdb09.html#ac0c10752d20c021579b91c3824bfdb09">process_s_pair</a>(&amp;<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.second);</div>
-<div class="line"><span class="lineno">  477</span>      <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_a2aeae3833ef135fd9171be12b6ce3c7f.html#a2aeae3833ef135fd9171be12b6ce3c7f">get_next_pair</a>();</div>
-<div class="line"><span class="lineno">  478</span>    }</div>
-<div class="line"><span class="lineno">  479</span> </div>
-<div class="line"><span class="lineno">  480</span>  <span class="keywordflow">while</span> (next_col_to_process &lt; mat-&gt;columns.size())</div>
-<div class="line"><span class="lineno">  481</span>    <a class="code hl_function" href="../../d9/d4a/class_f4_g_b_aca67989a27eaa35f1e8d67022358188e.html#aca67989a27eaa35f1e8d67022358188e">process_column</a>(<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a0492e7abd8846290ac3701859f8628ea.html#a0492e7abd8846290ac3701859f8628ea">next_col_to_process</a>++);</div>
-<div class="line"><span class="lineno">  482</span> </div>
-<div class="line"><span class="lineno">  483</span>  <span class="comment">// DEBUGGING:</span></div>
-<div class="line"><span class="lineno">  484</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 2)</div>
-<div class="line"><span class="lineno">  485</span>    {</div>
-<div class="line"><span class="lineno">  486</span>      fprintf(stderr,</div>
-<div class="line"><span class="lineno">  487</span>              <span class="stringliteral">&quot;--matrix--%ld by %ld\n&quot;</span>,</div>
-<div class="line"><span class="lineno">  488</span>              (<span class="keywordtype">long</span>)<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>-&gt;<a class="code hl_variable" href="../../d8/dce/structcoefficient__matrix_af5bf4578e96603663cbf257509a9067d.html#af5bf4578e96603663cbf257509a9067d">rows</a>.size(),</div>
-<div class="line"><span class="lineno">  489</span>              (<span class="keywordtype">long</span>)<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>-&gt;<a class="code hl_variable" href="../../d8/dce/structcoefficient__matrix_a9f500cbee963d19463afecc856945945.html#a9f500cbee963d19463afecc856945945">columns</a>.size());</div>
-<div class="line"><span class="lineno">  490</span>    }</div>
-<div class="line"><span class="lineno">  491</span>  <span class="comment">//  show_row_info();</span></div>
-<div class="line"><span class="lineno">  492</span>  <span class="comment">//  show_column_info();</span></div>
-<div class="line"><span class="lineno">  493</span>  <span class="comment">//  show_matrix();</span></div>
-<div class="line"><span class="lineno">  494</span> </div>
-<div class="line"><span class="lineno">  495</span>  <span class="comment">// Now we reorder the columns, possibly rows?</span></div>
-<div class="line"><span class="lineno">  496</span>  <a class="code hl_function" href="../../d9/d4a/class_f4_g_b_a8e003d4628d4cd6f6f16a57c40a1a3dd.html#a8e003d4628d4cd6f6f16a57c40a1a3dd">reorder_columns</a>();</div>
-<div class="line"><span class="lineno">  497</span> </div>
-<div class="line"><span class="lineno">  498</span>  <span class="comment">// reorder_rows();  // This is only here so we can see what we are doing...?</span></div>
-<div class="line"><span class="lineno">  499</span> </div>
-<div class="line"><span class="lineno">  500</span>  <span class="comment">// For debugging: let&#39;s compute the number of non-zero elements above the diagonal in A matrix.</span></div>
-<div class="line"><span class="lineno">  501</span>  <span class="comment">// Also, let&#39;s compute the amount of space used for:</span></div>
-<div class="line"><span class="lineno">  502</span>  <span class="comment">//  column info</span></div>
-<div class="line"><span class="lineno">  503</span>  <span class="comment">//  row info</span></div>
-<div class="line"><span class="lineno">  504</span>  <span class="comment">//  sum of values in each row</span></div>
-<div class="line"><span class="lineno">  505</span>  <span class="comment">// Maybe so A B C D matrices separately.</span></div>
-<div class="line"><span class="lineno">  506</span>  <a class="code hl_function" href="../../d9/d4a/class_f4_g_b_a44651e907f58e535221b535140a33ed5.html#a44651e907f58e535221b535140a33ed5">macaulayMatrixStats</a>();</div>
-<div class="line"><span class="lineno">  507</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/de5/f4_8cpp_source.html#l00469">469</a> of file <a class="el" href="../../d3/de5/f4_8cpp_source.html">f4.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  470</span>{</div>
+<div class="line"><span class="lineno">  471</span>  <span class="comment">/* loop through all spairs, process,</span></div>
+<div class="line"><span class="lineno">  472</span><span class="comment">     then while there are any columns to process, do so,</span></div>
+<div class="line"><span class="lineno">  473</span><span class="comment">     then process rows.</span></div>
+<div class="line"><span class="lineno">  474</span><span class="comment">     Is this the best order to do it in?  Maybe not...</span></div>
+<div class="line"><span class="lineno">  475</span><span class="comment">  */</span></div>
+<div class="line"><span class="lineno">  476</span> </div>
+<div class="line"><span class="lineno">  477</span>  <span class="comment">//spair *p;</span></div>
+<div class="line"><span class="lineno">  478</span>  std::pair&lt;bool,spair&gt; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
+<div class="line"><span class="lineno">  479</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_a2aeae3833ef135fd9171be12b6ce3c7f.html#a2aeae3833ef135fd9171be12b6ce3c7f">get_next_pair</a>();</div>
+<div class="line"><span class="lineno">  480</span>  <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.first)</div>
+<div class="line"><span class="lineno">  481</span>    {</div>
+<div class="line"><span class="lineno">  482</span>      <a class="code hl_function" href="../../d9/d4a/class_f4_g_b_ac0c10752d20c021579b91c3824bfdb09.html#ac0c10752d20c021579b91c3824bfdb09">process_s_pair</a>(&amp;<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.second);</div>
+<div class="line"><span class="lineno">  483</span>      <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">mSPairSet</a>.<a class="code hl_function" href="../../d9/d22/class_f4_s_pair_set_a2aeae3833ef135fd9171be12b6ce3c7f.html#a2aeae3833ef135fd9171be12b6ce3c7f">get_next_pair</a>();</div>
+<div class="line"><span class="lineno">  484</span>    }</div>
+<div class="line"><span class="lineno">  485</span> </div>
+<div class="line"><span class="lineno">  486</span>  <span class="keywordflow">while</span> (next_col_to_process &lt; mat-&gt;columns.size())</div>
+<div class="line"><span class="lineno">  487</span>    <a class="code hl_function" href="../../d9/d4a/class_f4_g_b_aca67989a27eaa35f1e8d67022358188e.html#aca67989a27eaa35f1e8d67022358188e">process_column</a>(<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a0492e7abd8846290ac3701859f8628ea.html#a0492e7abd8846290ac3701859f8628ea">next_col_to_process</a>++);</div>
+<div class="line"><span class="lineno">  488</span> </div>
+<div class="line"><span class="lineno">  489</span>  <span class="comment">// DEBUGGING:</span></div>
+<div class="line"><span class="lineno">  490</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 2)</div>
+<div class="line"><span class="lineno">  491</span>    {</div>
+<div class="line"><span class="lineno">  492</span>      fprintf(stderr,</div>
+<div class="line"><span class="lineno">  493</span>              <span class="stringliteral">&quot;--matrix--%ld by %ld\n&quot;</span>,</div>
+<div class="line"><span class="lineno">  494</span>              (<span class="keywordtype">long</span>)<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>-&gt;<a class="code hl_variable" href="../../d8/dce/structcoefficient__matrix_af5bf4578e96603663cbf257509a9067d.html#af5bf4578e96603663cbf257509a9067d">rows</a>.size(),</div>
+<div class="line"><span class="lineno">  495</span>              (<span class="keywordtype">long</span>)<a class="code hl_variable" href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">mat</a>-&gt;<a class="code hl_variable" href="../../d8/dce/structcoefficient__matrix_a9f500cbee963d19463afecc856945945.html#a9f500cbee963d19463afecc856945945">columns</a>.size());</div>
+<div class="line"><span class="lineno">  496</span>    }</div>
+<div class="line"><span class="lineno">  497</span>  <span class="comment">//  show_row_info();</span></div>
+<div class="line"><span class="lineno">  498</span>  <span class="comment">//  show_column_info();</span></div>
+<div class="line"><span class="lineno">  499</span>  <span class="comment">//  show_matrix();</span></div>
+<div class="line"><span class="lineno">  500</span> </div>
+<div class="line"><span class="lineno">  501</span>  <span class="comment">// Now we reorder the columns, possibly rows?</span></div>
+<div class="line"><span class="lineno">  502</span>  <a class="code hl_function" href="../../d9/d4a/class_f4_g_b_a8e003d4628d4cd6f6f16a57c40a1a3dd.html#a8e003d4628d4cd6f6f16a57c40a1a3dd">reorder_columns</a>();</div>
+<div class="line"><span class="lineno">  503</span> </div>
+<div class="line"><span class="lineno">  504</span>  <span class="comment">// reorder_rows();  // This is only here so we can see what we are doing...?</span></div>
+<div class="line"><span class="lineno">  505</span> </div>
+<div class="line"><span class="lineno">  506</span>  <span class="comment">// For debugging: let&#39;s compute the number of non-zero elements above the diagonal in A matrix.</span></div>
+<div class="line"><span class="lineno">  507</span>  <span class="comment">// Also, let&#39;s compute the amount of space used for:</span></div>
+<div class="line"><span class="lineno">  508</span>  <span class="comment">//  column info</span></div>
+<div class="line"><span class="lineno">  509</span>  <span class="comment">//  row info</span></div>
+<div class="line"><span class="lineno">  510</span>  <span class="comment">//  sum of values in each row</span></div>
+<div class="line"><span class="lineno">  511</span>  <span class="comment">// Maybe so A B C D matrices separately.</span></div>
+<div class="line"><span class="lineno">  512</span>  <a class="code hl_function" href="../../d9/d4a/class_f4_g_b_a44651e907f58e535221b535140a33ed5.html#a44651e907f58e535221b535140a33ed5">macaulayMatrixStats</a>();</div>
+<div class="line"><span class="lineno">  513</span>}</div>
 <div class="ttc" id="a_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc_html_aa0f82116567de78d2d8d5cee3a26eebc"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a></div><div class="ttdeci">int M2_gbTrace</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00059">M2-replacement.c:59</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_a0492e7abd8846290ac3701859f8628ea_html_a0492e7abd8846290ac3701859f8628ea"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a0492e7abd8846290ac3701859f8628ea.html#a0492e7abd8846290ac3701859f8628ea">F4GB::next_col_to_process</a></div><div class="ttdeci">int next_col_to_process</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00122">f4.hpp:122</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23_html_a22603dbf551ddc04bc867abddb8d9b23"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a22603dbf551ddc04bc867abddb8d9b23.html#a22603dbf551ddc04bc867abddb8d9b23">F4GB::mat</a></div><div class="ttdeci">coefficient_matrix * mat</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00123">f4.hpp:123</a></div></div>
 <div class="ttc" id="aclass_f4_g_b_a445b01c0cbc91303670868b848d2336c_html_a445b01c0cbc91303670868b848d2336c"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a445b01c0cbc91303670868b848d2336c.html#a445b01c0cbc91303670868b848d2336c">F4GB::mSPairSet</a></div><div class="ttdeci">F4SPairSet mSPairSet</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d35/f4_8hpp_source.html#l00173">f4.hpp:173</a></div></div>
-<div class="ttc" id="aclass_f4_g_b_a44651e907f58e535221b535140a33ed5_html_a44651e907f58e535221b535140a33ed5"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a44651e907f58e535221b535140a33ed5.html#a44651e907f58e535221b535140a33ed5">F4GB::macaulayMatrixStats</a></div><div class="ttdeci">MacaulayMatrixStats macaulayMatrixStats() const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/f4_8cpp_source.html#l00509">f4.cpp:509</a></div></div>
-<div class="ttc" id="aclass_f4_g_b_a8e003d4628d4cd6f6f16a57c40a1a3dd_html_a8e003d4628d4cd6f6f16a57c40a1a3dd"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a8e003d4628d4cd6f6f16a57c40a1a3dd.html#a8e003d4628d4cd6f6f16a57c40a1a3dd">F4GB::reorder_columns</a></div><div class="ttdeci">void reorder_columns()</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/f4_8cpp_source.html#l00316">f4.cpp:316</a></div></div>
-<div class="ttc" id="aclass_f4_g_b_ac0c10752d20c021579b91c3824bfdb09_html_ac0c10752d20c021579b91c3824bfdb09"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_ac0c10752d20c021579b91c3824bfdb09.html#ac0c10752d20c021579b91c3824bfdb09">F4GB::process_s_pair</a></div><div class="ttdeci">void process_s_pair(spair *p)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/f4_8cpp_source.html#l00284">f4.cpp:284</a></div></div>
-<div class="ttc" id="aclass_f4_g_b_aca67989a27eaa35f1e8d67022358188e_html_aca67989a27eaa35f1e8d67022358188e"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_aca67989a27eaa35f1e8d67022358188e.html#aca67989a27eaa35f1e8d67022358188e">F4GB::process_column</a></div><div class="ttdeci">void process_column(int c)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/f4_8cpp_source.html#l00237">f4.cpp:237</a></div></div>
+<div class="ttc" id="aclass_f4_g_b_a44651e907f58e535221b535140a33ed5_html_a44651e907f58e535221b535140a33ed5"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a44651e907f58e535221b535140a33ed5.html#a44651e907f58e535221b535140a33ed5">F4GB::macaulayMatrixStats</a></div><div class="ttdeci">MacaulayMatrixStats macaulayMatrixStats() const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/f4_8cpp_source.html#l00515">f4.cpp:515</a></div></div>
+<div class="ttc" id="aclass_f4_g_b_a8e003d4628d4cd6f6f16a57c40a1a3dd_html_a8e003d4628d4cd6f6f16a57c40a1a3dd"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_a8e003d4628d4cd6f6f16a57c40a1a3dd.html#a8e003d4628d4cd6f6f16a57c40a1a3dd">F4GB::reorder_columns</a></div><div class="ttdeci">void reorder_columns()</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/f4_8cpp_source.html#l00322">f4.cpp:322</a></div></div>
+<div class="ttc" id="aclass_f4_g_b_ac0c10752d20c021579b91c3824bfdb09_html_ac0c10752d20c021579b91c3824bfdb09"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_ac0c10752d20c021579b91c3824bfdb09.html#ac0c10752d20c021579b91c3824bfdb09">F4GB::process_s_pair</a></div><div class="ttdeci">void process_s_pair(spair *p)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/f4_8cpp_source.html#l00290">f4.cpp:290</a></div></div>
+<div class="ttc" id="aclass_f4_g_b_aca67989a27eaa35f1e8d67022358188e_html_aca67989a27eaa35f1e8d67022358188e"><div class="ttname"><a href="../../d9/d4a/class_f4_g_b_aca67989a27eaa35f1e8d67022358188e.html#aca67989a27eaa35f1e8d67022358188e">F4GB::process_column</a></div><div class="ttdeci">void process_column(int c)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/f4_8cpp_source.html#l00243">f4.cpp:243</a></div></div>
 <div class="ttc" id="aclass_f4_s_pair_set_a2aeae3833ef135fd9171be12b6ce3c7f_html_a2aeae3833ef135fd9171be12b6ce3c7f"><div class="ttname"><a href="../../d9/d22/class_f4_s_pair_set_a2aeae3833ef135fd9171be12b6ce3c7f.html#a2aeae3833ef135fd9171be12b6ce3c7f">F4SPairSet::get_next_pair</a></div><div class="ttdeci">std::pair&lt; bool, spair &gt; get_next_pair()</div><div class="ttdef"><b>Definition</b> <a href="../../db/de6/f4-spairs_8cpp_source.html#l00149">f4-spairs.cpp:149</a></div></div>
 <div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 <div class="ttc" id="astructcoefficient__matrix_a9f500cbee963d19463afecc856945945_html_a9f500cbee963d19463afecc856945945"><div class="ttname"><a href="../../d8/dce/structcoefficient__matrix_a9f500cbee963d19463afecc856945945.html#a9f500cbee963d19463afecc856945945">coefficient_matrix::columns</a></div><div class="ttdeci">column_array columns</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dfc/f4-types_8hpp_source.html#l00116">f4-types.hpp:116</a></div></div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('d9/d4a/class_f4_g_b_acd2b14e1c82269078
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d4a/class_f4_g_b.html">F4GB</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

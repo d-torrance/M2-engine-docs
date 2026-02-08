@@ -133,25 +133,26 @@ $(document).ready(function(){initNavTree('d4/dea/class_m2_1_1_a_ring_z_z_ac27cba
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/dfa/aring-zz-flint_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../de/dfa/aring-zz-flint_8cpp_source.html">aring-zz-flint.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>{</div>
-<div class="line"><span class="lineno">   39</span>  <span class="keywordtype">char</span>* str;</div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>  <span class="keywordtype">bool</span> is_neg = (fmpz_cmp_si(&amp;a, 0) == -1);</div>
-<div class="line"><span class="lineno">   42</span>  <span class="keywordtype">bool</span> is_one = (fmpz_cmp_si(&amp;a, 1) == 0 || fmpz_cmp_si(&amp;a, -1) == 0);</div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span>  <span class="keywordflow">if</span> (!is_neg &amp;&amp; p_plus) o &lt;&lt; <span class="charliteral">&#39;+&#39;</span>;</div>
-<div class="line"><span class="lineno">   45</span>  <span class="keywordflow">if</span> (is_one)</div>
-<div class="line"><span class="lineno">   46</span>    {</div>
-<div class="line"><span class="lineno">   47</span>      <span class="keywordflow">if</span> (is_neg) o &lt;&lt; <span class="charliteral">&#39;-&#39;</span>;</div>
-<div class="line"><span class="lineno">   48</span>      <span class="keywordflow">if</span> (p_one) o &lt;&lt; <span class="charliteral">&#39;1&#39;</span>;</div>
-<div class="line"><span class="lineno">   49</span>    }</div>
-<div class="line"><span class="lineno">   50</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   51</span>    {</div>
-<div class="line"><span class="lineno">   52</span>      str = fmpz_get_str(<span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(<span class="keyword">nullptr</span>), 10, &amp;a);</div>
-<div class="line"><span class="lineno">   53</span>      o &lt;&lt; str;</div>
-<div class="line"><span class="lineno">   54</span>    }</div>
-<div class="line"><span class="lineno">   55</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/dfa/aring-zz-flint_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../de/dfa/aring-zz-flint_8cpp_source.html">aring-zz-flint.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>  <span class="keywordtype">char</span>* str;</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>  (void) p_parens;</div>
+<div class="line"><span class="lineno">   44</span>  <span class="keywordtype">bool</span> is_neg = (fmpz_cmp_si(&amp;a, 0) == -1);</div>
+<div class="line"><span class="lineno">   45</span>  <span class="keywordtype">bool</span> is_one = (fmpz_cmp_si(&amp;a, 1) == 0 || fmpz_cmp_si(&amp;a, -1) == 0);</div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>  <span class="keywordflow">if</span> (!is_neg &amp;&amp; p_plus) o &lt;&lt; <span class="charliteral">&#39;+&#39;</span>;</div>
+<div class="line"><span class="lineno">   48</span>  <span class="keywordflow">if</span> (is_one)</div>
+<div class="line"><span class="lineno">   49</span>    {</div>
+<div class="line"><span class="lineno">   50</span>      <span class="keywordflow">if</span> (is_neg) o &lt;&lt; <span class="charliteral">&#39;-&#39;</span>;</div>
+<div class="line"><span class="lineno">   51</span>      <span class="keywordflow">if</span> (p_one) o &lt;&lt; <span class="charliteral">&#39;1&#39;</span>;</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="line"><span class="lineno">   53</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   54</span>    {</div>
+<div class="line"><span class="lineno">   55</span>      str = fmpz_get_str(<span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(<span class="keyword">nullptr</span>), 10, &amp;a);</div>
+<div class="line"><span class="lineno">   56</span>      o &lt;&lt; str;</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -161,7 +162,7 @@ $(document).ready(function(){initNavTree('d4/dea/class_m2_1_1_a_ring_z_z_ac27cba
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d4/dea/class_m2_1_1_a_ring_z_z.html">ARingZZ</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

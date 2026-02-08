@@ -131,31 +131,31 @@ $(document).ready(function(){initNavTree('d8/d2b/class_ring_z_z_a847a4a779621eb3
 
 <p>Reimplemented from <a class="el" href="../../dd/dcf/class_ring_a5d5a83a2a025ade33c8ded49e39e9312.html#a5d5a83a2a025ade33c8ded49e39e9312">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/db8/_z_z_8cpp_source.html#l00313">313</a> of file <a class="el" href="../../d4/db8/_z_z_8cpp_source.html">ZZ.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  316</span>{</div>
-<div class="line"><span class="lineno">  317</span>  mpz_ptr q = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659.html#a8a8bb80c8283c2f727a07c69c6358659">new_elem</a>();</div>
-<div class="line"><span class="lineno">  318</span>  mpz_ptr r = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659.html#a8a8bb80c8283c2f727a07c69c6358659">new_elem</a>();</div>
-<div class="line"><span class="lineno">  319</span>  <span class="keywordtype">int</span> gsign = mpz_sgn(g.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
-<div class="line"><span class="lineno">  320</span>  mpz_t gg, ghalf;</div>
-<div class="line"><span class="lineno">  321</span>  mpz_init(gg);</div>
-<div class="line"><span class="lineno">  322</span>  mpz_init(ghalf);</div>
-<div class="line"><span class="lineno">  323</span>  mpz_abs(gg, g.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
-<div class="line"><span class="lineno">  324</span>  mpz_fdiv_qr(q, r, f.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>(), gg);</div>
-<div class="line"><span class="lineno">  325</span>  mpz_tdiv_q_2exp(ghalf, gg, 1);</div>
-<div class="line"><span class="lineno">  326</span>  <span class="keywordflow">if</span> (mpz_cmp(r, ghalf) &gt; 0)  <span class="comment">// r &gt; ghalf</span></div>
-<div class="line"><span class="lineno">  327</span>    {</div>
-<div class="line"><span class="lineno">  328</span>      mpz_sub(r, r, gg);</div>
-<div class="line"><span class="lineno">  329</span>      mpz_add_ui(q, q, 1);</div>
-<div class="line"><span class="lineno">  330</span>    }</div>
-<div class="line"><span class="lineno">  331</span>  <span class="keywordflow">if</span> (gsign &lt; 0) mpz_neg(q, q);</div>
-<div class="line"><span class="lineno">  332</span> </div>
-<div class="line"><span class="lineno">  333</span>  mpz_clear(gg);</div>
-<div class="line"><span class="lineno">  334</span>  mpz_clear(ghalf);</div>
-<div class="line"><span class="lineno">  335</span>  <a class="code hl_function" href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a>(q);</div>
-<div class="line"><span class="lineno">  336</span>  <a class="code hl_function" href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a>(r);</div>
-<div class="line"><span class="lineno">  337</span>  quot = <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(q);</div>
-<div class="line"><span class="lineno">  338</span>  <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(r);</div>
-<div class="line"><span class="lineno">  339</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/db8/_z_z_8cpp_source.html#l00317">317</a> of file <a class="el" href="../../d4/db8/_z_z_8cpp_source.html">ZZ.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  320</span>{</div>
+<div class="line"><span class="lineno">  321</span>  mpz_ptr q = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659.html#a8a8bb80c8283c2f727a07c69c6358659">new_elem</a>();</div>
+<div class="line"><span class="lineno">  322</span>  mpz_ptr r = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659.html#a8a8bb80c8283c2f727a07c69c6358659">new_elem</a>();</div>
+<div class="line"><span class="lineno">  323</span>  <span class="keywordtype">int</span> gsign = mpz_sgn(g.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
+<div class="line"><span class="lineno">  324</span>  mpz_t gg, ghalf;</div>
+<div class="line"><span class="lineno">  325</span>  mpz_init(gg);</div>
+<div class="line"><span class="lineno">  326</span>  mpz_init(ghalf);</div>
+<div class="line"><span class="lineno">  327</span>  mpz_abs(gg, g.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>());</div>
+<div class="line"><span class="lineno">  328</span>  mpz_fdiv_qr(q, r, f.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>(), gg);</div>
+<div class="line"><span class="lineno">  329</span>  mpz_tdiv_q_2exp(ghalf, gg, 1);</div>
+<div class="line"><span class="lineno">  330</span>  <span class="keywordflow">if</span> (mpz_cmp(r, ghalf) &gt; 0)  <span class="comment">// r &gt; ghalf</span></div>
+<div class="line"><span class="lineno">  331</span>    {</div>
+<div class="line"><span class="lineno">  332</span>      mpz_sub(r, r, gg);</div>
+<div class="line"><span class="lineno">  333</span>      mpz_add_ui(q, q, 1);</div>
+<div class="line"><span class="lineno">  334</span>    }</div>
+<div class="line"><span class="lineno">  335</span>  <span class="keywordflow">if</span> (gsign &lt; 0) mpz_neg(q, q);</div>
+<div class="line"><span class="lineno">  336</span> </div>
+<div class="line"><span class="lineno">  337</span>  mpz_clear(gg);</div>
+<div class="line"><span class="lineno">  338</span>  mpz_clear(ghalf);</div>
+<div class="line"><span class="lineno">  339</span>  <a class="code hl_function" href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a>(q);</div>
+<div class="line"><span class="lineno">  340</span>  <a class="code hl_function" href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a>(r);</div>
+<div class="line"><span class="lineno">  341</span>  quot = <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(q);</div>
+<div class="line"><span class="lineno">  342</span>  <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(r);</div>
+<div class="line"><span class="lineno">  343</span>}</div>
 <div class="ttc" id="aclass_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659_html_a8a8bb80c8283c2f727a07c69c6358659"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_a8a8bb80c8283c2f727a07c69c6358659.html#a8a8bb80c8283c2f727a07c69c6358659">RingZZ::new_elem</a></div><div class="ttdeci">mpz_ptr new_elem() const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00034">ZZ.cpp:34</a></div></div>
 <div class="ttc" id="agmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c_html_ac1d9cec5a8df3154d9dfbf08b298419c"><div class="ttname"><a href="../../d0/d41/gmp-util_8h_ac1d9cec5a8df3154d9dfbf08b298419c.html#ac1d9cec5a8df3154d9dfbf08b298419c">mpz_reallocate_limbs</a></div><div class="ttdeci">void mpz_reallocate_limbs(mpz_ptr _z)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d41/gmp-util_8h_source.html#l00014">gmp-util.h:14</a></div></div>
 <div class="ttc" id="aunionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26_html_aeb2b58dce5525fe3f7eb7f3bcb42bc26"><div class="ttname"><a href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">ring_elem::get_mpz</a></div><div class="ttdeci">mpz_srcptr get_mpz() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00083">ringelem.hpp:83</a></div></div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('d8/d2b/class_ring_z_z_a847a4a779621eb3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d2b/class_ring_z_z.html">RingZZ</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

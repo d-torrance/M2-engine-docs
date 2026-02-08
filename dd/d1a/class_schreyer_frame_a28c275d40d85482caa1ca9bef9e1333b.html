@@ -123,31 +123,31 @@ $(document).ready(function(){initNavTree('dd/d1a/class_schreyer_frame_a28c275d40
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d16/res-schreyer-frame_8cpp_source.html#l00951">951</a> of file <a class="el" href="../../d0/d16/res-schreyer-frame_8cpp_source.html">res-schreyer-frame.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  952</span>{</div>
-<div class="line"><span class="lineno">  953</span>  <span class="comment">//  std::cout &lt;&lt; &quot;computeRank(&quot; &lt;&lt; slanted_degree &lt;&lt; &quot;,&quot; &lt;&lt; lev &lt;&lt; &quot;)&quot; &lt;&lt;</span></div>
-<div class="line"><span class="lineno">  954</span>  <span class="comment">//  std::endl;</span></div>
-<div class="line"><span class="lineno">  955</span>  <span class="keywordtype">int</span>&amp; status = <a class="code hl_variable" href="../../dd/d1a/class_schreyer_frame_a8766355b95ed1f78b6447a99d76f92c8.html#a8766355b95ed1f78b6447a99d76f92c8">mComputationStatus</a>.<a class="code hl_function" href="../../d6/d45/class_betti_display_ad687aa7e61f89e8eaaa82926c7573780.html#ad687aa7e61f89e8eaaa82926c7573780">entry</a>(slanted_degree, lev);</div>
-<div class="line"><span class="lineno">  956</span>  <span class="keywordflow">if</span> (status == 0) <span class="keywordflow">return</span>;  <span class="comment">// Nothing here</span></div>
-<div class="line"><span class="lineno">  957</span>  <span class="keywordflow">if</span> (status == 1)</div>
-<div class="line"><span class="lineno">  958</span>    {</div>
-<div class="line"><span class="lineno">  959</span>      <a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_af442fec511a0c2e1b4f7073bd801401e.html#af442fec511a0c2e1b4f7073bd801401e">fillinSyzygies</a>(slanted_degree, lev);</div>
-<div class="line"><span class="lineno">  960</span>    }</div>
-<div class="line"><span class="lineno">  961</span>  <span class="keywordflow">if</span> (status == 3) <span class="keywordflow">return</span>;  <span class="comment">// already done</span></div>
-<div class="line"><span class="lineno">  962</span>  <span class="keywordtype">int</span> rk = <a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_a3fe74dec733d6133718823e53def85bd.html#a3fe74dec733d6133718823e53def85bd">rank</a>(slanted_degree, lev);</div>
-<div class="line"><span class="lineno">  963</span>  <span class="keywordflow">if</span> (rk &gt; 0)</div>
-<div class="line"><span class="lineno">  964</span>    {</div>
-<div class="line"><span class="lineno">  965</span>      <a class="code hl_variable" href="../../dd/d1a/class_schreyer_frame_a3a484ea864469d22c88cdca4fc064819.html#a3a484ea864469d22c88cdca4fc064819">mBettiMinimal</a>.<a class="code hl_function" href="../../d6/d45/class_betti_display_ad687aa7e61f89e8eaaa82926c7573780.html#ad687aa7e61f89e8eaaa82926c7573780">entry</a>(slanted_degree, lev) -= rk;</div>
-<div class="line"><span class="lineno">  966</span>      <span class="keywordflow">if</span> (slanted_degree &lt;= mHiSlantedDegree and lev &gt; 0)</div>
-<div class="line"><span class="lineno">  967</span>        <a class="code hl_variable" href="../../dd/d1a/class_schreyer_frame_a3a484ea864469d22c88cdca4fc064819.html#a3a484ea864469d22c88cdca4fc064819">mBettiMinimal</a>.<a class="code hl_function" href="../../d6/d45/class_betti_display_ad687aa7e61f89e8eaaa82926c7573780.html#ad687aa7e61f89e8eaaa82926c7573780">entry</a>(slanted_degree + 1, lev - 1) -= rk;</div>
-<div class="line"><span class="lineno">  968</span>    }</div>
-<div class="line"><span class="lineno">  969</span>  status = 3;</div>
-<div class="line"><span class="lineno">  970</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d16/res-schreyer-frame_8cpp_source.html#l00952">952</a> of file <a class="el" href="../../d0/d16/res-schreyer-frame_8cpp_source.html">res-schreyer-frame.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  953</span>{</div>
+<div class="line"><span class="lineno">  954</span>  <span class="comment">//  std::cout &lt;&lt; &quot;computeRank(&quot; &lt;&lt; slanted_degree &lt;&lt; &quot;,&quot; &lt;&lt; lev &lt;&lt; &quot;)&quot; &lt;&lt;</span></div>
+<div class="line"><span class="lineno">  955</span>  <span class="comment">//  std::endl;</span></div>
+<div class="line"><span class="lineno">  956</span>  <span class="keywordtype">int</span>&amp; status = <a class="code hl_variable" href="../../dd/d1a/class_schreyer_frame_a8766355b95ed1f78b6447a99d76f92c8.html#a8766355b95ed1f78b6447a99d76f92c8">mComputationStatus</a>.<a class="code hl_function" href="../../d6/d45/class_betti_display_ad687aa7e61f89e8eaaa82926c7573780.html#ad687aa7e61f89e8eaaa82926c7573780">entry</a>(slanted_degree, lev);</div>
+<div class="line"><span class="lineno">  957</span>  <span class="keywordflow">if</span> (status == 0) <span class="keywordflow">return</span>;  <span class="comment">// Nothing here</span></div>
+<div class="line"><span class="lineno">  958</span>  <span class="keywordflow">if</span> (status == 1)</div>
+<div class="line"><span class="lineno">  959</span>    {</div>
+<div class="line"><span class="lineno">  960</span>      <a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_af442fec511a0c2e1b4f7073bd801401e.html#af442fec511a0c2e1b4f7073bd801401e">fillinSyzygies</a>(slanted_degree, lev);</div>
+<div class="line"><span class="lineno">  961</span>    }</div>
+<div class="line"><span class="lineno">  962</span>  <span class="keywordflow">if</span> (status == 3) <span class="keywordflow">return</span>;  <span class="comment">// already done</span></div>
+<div class="line"><span class="lineno">  963</span>  <span class="keywordtype">int</span> rk = <a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_a3fe74dec733d6133718823e53def85bd.html#a3fe74dec733d6133718823e53def85bd">rank</a>(slanted_degree, lev);</div>
+<div class="line"><span class="lineno">  964</span>  <span class="keywordflow">if</span> (rk &gt; 0)</div>
+<div class="line"><span class="lineno">  965</span>    {</div>
+<div class="line"><span class="lineno">  966</span>      <a class="code hl_variable" href="../../dd/d1a/class_schreyer_frame_a3a484ea864469d22c88cdca4fc064819.html#a3a484ea864469d22c88cdca4fc064819">mBettiMinimal</a>.<a class="code hl_function" href="../../d6/d45/class_betti_display_ad687aa7e61f89e8eaaa82926c7573780.html#ad687aa7e61f89e8eaaa82926c7573780">entry</a>(slanted_degree, lev) -= rk;</div>
+<div class="line"><span class="lineno">  967</span>      <span class="keywordflow">if</span> (slanted_degree &lt;= mHiSlantedDegree and lev &gt; 0)</div>
+<div class="line"><span class="lineno">  968</span>        <a class="code hl_variable" href="../../dd/d1a/class_schreyer_frame_a3a484ea864469d22c88cdca4fc064819.html#a3a484ea864469d22c88cdca4fc064819">mBettiMinimal</a>.<a class="code hl_function" href="../../d6/d45/class_betti_display_ad687aa7e61f89e8eaaa82926c7573780.html#ad687aa7e61f89e8eaaa82926c7573780">entry</a>(slanted_degree + 1, lev - 1) -= rk;</div>
+<div class="line"><span class="lineno">  969</span>    }</div>
+<div class="line"><span class="lineno">  970</span>  status = 3;</div>
+<div class="line"><span class="lineno">  971</span>}</div>
 <div class="ttc" id="aclass_betti_display_ad687aa7e61f89e8eaaa82926c7573780_html_ad687aa7e61f89e8eaaa82926c7573780"><div class="ttname"><a href="../../d6/d45/class_betti_display_ad687aa7e61f89e8eaaa82926c7573780.html#ad687aa7e61f89e8eaaa82926c7573780">BettiDisplay::entry</a></div><div class="ttdeci">int &amp; entry(int deg, int lev)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dae/betti_8cpp_source.html#l00071">betti.cpp:71</a></div></div>
 <div class="ttc" id="aclass_schreyer_frame_a3a484ea864469d22c88cdca4fc064819_html_a3a484ea864469d22c88cdca4fc064819"><div class="ttname"><a href="../../dd/d1a/class_schreyer_frame_a3a484ea864469d22c88cdca4fc064819.html#a3a484ea864469d22c88cdca4fc064819">SchreyerFrame::mBettiMinimal</a></div><div class="ttdeci">BettiDisplay mBettiMinimal</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/res-schreyer-frame_8hpp_source.html#l00221">res-schreyer-frame.hpp:221</a></div></div>
 <div class="ttc" id="aclass_schreyer_frame_a3fe74dec733d6133718823e53def85bd_html_a3fe74dec733d6133718823e53def85bd"><div class="ttname"><a href="../../dd/d1a/class_schreyer_frame_a3fe74dec733d6133718823e53def85bd.html#a3fe74dec733d6133718823e53def85bd">SchreyerFrame::rank</a></div><div class="ttdeci">int rank(int slanted_degree, int lev)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d4f/res-f4-m2-interface_8cpp_source.html#l00678">res-f4-m2-interface.cpp:678</a></div></div>
 <div class="ttc" id="aclass_schreyer_frame_a8766355b95ed1f78b6447a99d76f92c8_html_a8766355b95ed1f78b6447a99d76f92c8"><div class="ttname"><a href="../../dd/d1a/class_schreyer_frame_a8766355b95ed1f78b6447a99d76f92c8.html#a8766355b95ed1f78b6447a99d76f92c8">SchreyerFrame::mComputationStatus</a></div><div class="ttdeci">BettiDisplay mComputationStatus</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/res-schreyer-frame_8hpp_source.html#l00230">res-schreyer-frame.hpp:230</a></div></div>
-<div class="ttc" id="aclass_schreyer_frame_af442fec511a0c2e1b4f7073bd801401e_html_af442fec511a0c2e1b4f7073bd801401e"><div class="ttname"><a href="../../dd/d1a/class_schreyer_frame_af442fec511a0c2e1b4f7073bd801401e.html#af442fec511a0c2e1b4f7073bd801401e">SchreyerFrame::fillinSyzygies</a></div><div class="ttdeci">void fillinSyzygies(int slanted_deg, int lev)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d16/res-schreyer-frame_8cpp_source.html#l00917">res-schreyer-frame.cpp:917</a></div></div>
+<div class="ttc" id="aclass_schreyer_frame_af442fec511a0c2e1b4f7073bd801401e_html_af442fec511a0c2e1b4f7073bd801401e"><div class="ttname"><a href="../../dd/d1a/class_schreyer_frame_af442fec511a0c2e1b4f7073bd801401e.html#af442fec511a0c2e1b4f7073bd801401e">SchreyerFrame::fillinSyzygies</a></div><div class="ttdeci">void fillinSyzygies(int slanted_deg, int lev)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d16/res-schreyer-frame_8cpp_source.html#l00918">res-schreyer-frame.cpp:918</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d6/d45/class_betti_display_ad687aa7e61f89e8eaaa82926c7573780.html#ad687aa7e61f89e8eaaa82926c7573780">BettiDisplay::entry()</a>, <a class="el" href="../../dd/d1a/class_schreyer_frame_af442fec511a0c2e1b4f7073bd801401e.html#af442fec511a0c2e1b4f7073bd801401e">fillinSyzygies()</a>, <a class="el" href="../../dd/d1a/class_schreyer_frame_a3a484ea864469d22c88cdca4fc064819.html#a3a484ea864469d22c88cdca4fc064819">mBettiMinimal</a>, <a class="el" href="../../dd/d1a/class_schreyer_frame_a8766355b95ed1f78b6447a99d76f92c8.html#a8766355b95ed1f78b6447a99d76f92c8">mComputationStatus</a>, and <a class="el" href="../../dd/d1a/class_schreyer_frame_a3fe74dec733d6133718823e53def85bd.html#a3fe74dec733d6133718823e53def85bd">rank()</a>.</p>
 
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('dd/d1a/class_schreyer_frame_a28c275d40
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d1a/class_schreyer_frame.html">SchreyerFrame</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -113,80 +113,80 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_a864e47e738658fb6a
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html#l00391">391</a> of file <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html">NCF4.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  392</span>{</div>
-<div class="line"><span class="lineno">  393</span>  <span class="comment">// o = (gbLeftIndex, overLapPos, gbRightIndex).</span></div>
-<div class="line"><span class="lineno">  394</span>  <span class="comment">// BUT: if overlapPos &lt; 0, then gbRightIndex is also &lt; 0 (and is ignored), and gbLeftIndex</span></div>
-<div class="line"><span class="lineno">  395</span>  <span class="comment">//   refers to a generator, and we add to mOverlapsTodo in only (1,gbLeftIndex,1).</span></div>
-<div class="line"><span class="lineno">  396</span>  <span class="comment">// where 1 = empty word.</span></div>
-<div class="line"><span class="lineno">  397</span> </div>
-<div class="line"><span class="lineno">  398</span>  <span class="keywordtype">int</span> gbLeftIndex = std::get&lt;0&gt;(o);</div>
-<div class="line"><span class="lineno">  399</span>  <span class="keywordtype">int</span> overlapPos = std::get&lt;1&gt;(o);</div>
-<div class="line"><span class="lineno">  400</span>  <span class="keywordtype">int</span> gbRightIndex = std::get&lt;2&gt;(o);</div>
-<div class="line"><span class="lineno">  401</span> </div>
-<div class="line"><span class="lineno">  402</span>  <span class="keywordflow">if</span> (overlapPos &lt; 0)</div>
-<div class="line"><span class="lineno">  403</span>    {</div>
-<div class="line"><span class="lineno">  404</span>      <span class="comment">// Sneaky trick: a PreRow with index a &lt; 0 refers to generator with index -a-1</span></div>
-<div class="line"><span class="lineno">  405</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>.emplace_back(PreRow {<a class="code hl_class" href="../../d3/da0/class_word.html">Word</a>(),</div>
-<div class="line"><span class="lineno">  406</span>                                         - gbLeftIndex - 1,</div>
-<div class="line"><span class="lineno">  407</span>                                         <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a>(),</div>
-<div class="line"><span class="lineno">  408</span>                                         <a class="code hl_enumvalue" href="../../d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40a8c937e82dbbfc9c9651ff09f66ec7667">OverlapPreRow</a>});</div>
-<div class="line"><span class="lineno">  409</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  410</span>    }</div>
-<div class="line"><span class="lineno">  411</span>  </div>
-<div class="line"><span class="lineno">  412</span>  <span class="comment">// LM(gbLeft) = x^a x^b</span></div>
-<div class="line"><span class="lineno">  413</span>  <span class="comment">// LM(gbRight) = x^b x^c</span></div>
-<div class="line"><span class="lineno">  414</span>  <span class="comment">// overlapPos = starting position of x^b in gbLeft.</span></div>
-<div class="line"><span class="lineno">  415</span>  <span class="comment">// one prerow will be: (1, gbLeftIndex, x^c)</span></div>
-<div class="line"><span class="lineno">  416</span>  <span class="comment">// another prerow will be: (x^a, gbRightIndex, 1)</span></div>
-<div class="line"><span class="lineno">  417</span>      </div>
-<div class="line"><span class="lineno">  418</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> leadWordLeft = <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab17b8eaf5f15a34d886f0843ee002f08.html#ab17b8eaf5f15a34d886f0843ee002f08">mWordTable</a>[gbLeftIndex];</div>
-<div class="line"><span class="lineno">  419</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> leadWordRight = <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab17b8eaf5f15a34d886f0843ee002f08.html#ab17b8eaf5f15a34d886f0843ee002f08">mWordTable</a>[gbRightIndex];</div>
-<div class="line"><span class="lineno">  420</span>  <span class="keywordtype">int</span> overlapLen = leadWordLeft.<a class="code hl_function" href="../../d3/da0/class_word_a58f370b1c978f3f73e9349629ab6dfd3.html#a58f370b1c978f3f73e9349629ab6dfd3">size</a>() - overlapPos;</div>
-<div class="line"><span class="lineno">  421</span> </div>
-<div class="line"><span class="lineno">  422</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> suffix2 {}; <span class="comment">// trivial word</span></div>
-<div class="line"><span class="lineno">  423</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> prefix2(leadWordLeft.<a class="code hl_function" href="../../d3/da0/class_word_a20e33cf76cae20a1b09c6419d6f71ad2.html#a20e33cf76cae20a1b09c6419d6f71ad2">begin</a>(), leadWordLeft.<a class="code hl_function" href="../../d3/da0/class_word_a20e33cf76cae20a1b09c6419d6f71ad2.html#a20e33cf76cae20a1b09c6419d6f71ad2">begin</a>() + overlapPos);</div>
-<div class="line"><span class="lineno">  424</span>  </div>
-<div class="line"><span class="lineno">  425</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> suffix1(leadWordRight.<a class="code hl_function" href="../../d3/da0/class_word_a20e33cf76cae20a1b09c6419d6f71ad2.html#a20e33cf76cae20a1b09c6419d6f71ad2">begin</a>() + overlapLen, leadWordRight.<a class="code hl_function" href="../../d3/da0/class_word_a57a3bd2eb17ecc840adc2236a9cfb157.html#a57a3bd2eb17ecc840adc2236a9cfb157">end</a>());</div>
-<div class="line"><span class="lineno">  426</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> prefix1 {}; <span class="comment">// trivial word</span></div>
-<div class="line"><span class="lineno">  427</span>  </div>
-<div class="line"><span class="lineno">  428</span>  <span class="comment">// need to add in the lead monomial to the mColumnMonomials list now</span></div>
-<div class="line"><span class="lineno">  429</span>  <span class="comment">// so they know which row reduces them</span></div>
-<div class="line"><span class="lineno">  430</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> newWord = <a class="code hl_function" href="../../d0/d92/class_n_c_f4_aef09a2fbd3f08678b5f57e49e94d576a.html#aef09a2fbd3f08678b5f57e49e94d576a">freeAlgebra</a>().<a class="code hl_function" href="../../de/dbd/class_free_algebra_a83c6189fa2b0a76031329377b1cfaa03.html#a83c6189fa2b0a76031329377b1cfaa03">monoid</a>().<a class="code hl_function" href="../../dc/da6/class_free_monoid_a206ea54d605ad31aa0229ad43d3fcf4a.html#a206ea54d605ad31aa0229ad43d3fcf4a">wordProductAsWord</a>(leadWordLeft, suffix1, <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab255efa30560c607d31e6e7963b593d9.html#ab255efa30560c607d31e6e7963b593d9">mMonomialSpace</a>);</div>
-<div class="line"><span class="lineno">  431</span> </div>
-<div class="line"><span class="lineno">  432</span>  <span class="comment">// This overlap may already have lead term in table.</span></div>
-<div class="line"><span class="lineno">  433</span>  <span class="comment">// Only have to add it in if it is not yet present.</span></div>
-<div class="line"><span class="lineno">  434</span>  <span class="keyword">auto</span> it = <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a.html#a7ba9f6eac784d412668cc4d596977c7a">mColumnMonomials</a>.find(newWord);</div>
-<div class="line"><span class="lineno">  435</span>  <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a.html#a7ba9f6eac784d412668cc4d596977c7a">mColumnMonomials</a>.cend())</div>
-<div class="line"><span class="lineno">  436</span>    <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a.html#a7ba9f6eac784d412668cc4d596977c7a">mColumnMonomials</a>.emplace(newWord, std::make_pair(-1,-1));</div>
-<div class="line"><span class="lineno">  437</span> </div>
-<div class="line"><span class="lineno">  438</span>  <span class="comment">// it *matters* which one is a reducer and which one is an overlap.</span></div>
-<div class="line"><span class="lineno">  439</span>  <span class="comment">// this is due to how the word table lookup works -- it searches them</span></div>
-<div class="line"><span class="lineno">  440</span>  <span class="comment">// in the order that they were entered into the word table, which may</span></div>
-<div class="line"><span class="lineno">  441</span>  <span class="comment">// not be sorted in term order.</span></div>
-<div class="line"><span class="lineno">  442</span>  <span class="keywordflow">if</span> (gbLeftIndex &gt; gbRightIndex)</div>
-<div class="line"><span class="lineno">  443</span>    {</div>
-<div class="line"><span class="lineno">  444</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.emplace_back(PreRow {prefix2,</div>
-<div class="line"><span class="lineno">  445</span>                                         gbRightIndex,</div>
-<div class="line"><span class="lineno">  446</span>                                         suffix2,</div>
-<div class="line"><span class="lineno">  447</span>                                         <a class="code hl_enumvalue" href="../../d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40ab2af009459984d359f5e64f8a1d92655">ReducerPreRow</a>});</div>
-<div class="line"><span class="lineno">  448</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>.emplace_back(PreRow {prefix1,</div>
-<div class="line"><span class="lineno">  449</span>                                         gbLeftIndex,</div>
-<div class="line"><span class="lineno">  450</span>                                         suffix1,</div>
-<div class="line"><span class="lineno">  451</span>                                         <a class="code hl_enumvalue" href="../../d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40a8c937e82dbbfc9c9651ff09f66ec7667">OverlapPreRow</a>});</div>
-<div class="line"><span class="lineno">  452</span>    }</div>
-<div class="line"><span class="lineno">  453</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  454</span>    {  </div>
-<div class="line"><span class="lineno">  455</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.emplace_back(PreRow {prefix1,</div>
-<div class="line"><span class="lineno">  456</span>                                         gbLeftIndex,</div>
-<div class="line"><span class="lineno">  457</span>                                         suffix1,</div>
-<div class="line"><span class="lineno">  458</span>                                         <a class="code hl_enumvalue" href="../../d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40ab2af009459984d359f5e64f8a1d92655">ReducerPreRow</a>});</div>
-<div class="line"><span class="lineno">  459</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>.emplace_back(PreRow {prefix2,</div>
-<div class="line"><span class="lineno">  460</span>                                         gbRightIndex,</div>
-<div class="line"><span class="lineno">  461</span>                                         suffix2,</div>
-<div class="line"><span class="lineno">  462</span>                                         <a class="code hl_enumvalue" href="../../d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40a8c937e82dbbfc9c9651ff09f66ec7667">OverlapPreRow</a>});</div>
-<div class="line"><span class="lineno">  463</span>    }</div>
-<div class="line"><span class="lineno">  464</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html#l00393">393</a> of file <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html">NCF4.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  394</span>{</div>
+<div class="line"><span class="lineno">  395</span>  <span class="comment">// o = (gbLeftIndex, overLapPos, gbRightIndex).</span></div>
+<div class="line"><span class="lineno">  396</span>  <span class="comment">// BUT: if overlapPos &lt; 0, then gbRightIndex is also &lt; 0 (and is ignored), and gbLeftIndex</span></div>
+<div class="line"><span class="lineno">  397</span>  <span class="comment">//   refers to a generator, and we add to mOverlapsTodo in only (1,gbLeftIndex,1).</span></div>
+<div class="line"><span class="lineno">  398</span>  <span class="comment">// where 1 = empty word.</span></div>
+<div class="line"><span class="lineno">  399</span> </div>
+<div class="line"><span class="lineno">  400</span>  <span class="keywordtype">int</span> gbLeftIndex = std::get&lt;0&gt;(o);</div>
+<div class="line"><span class="lineno">  401</span>  <span class="keywordtype">int</span> overlapPos = std::get&lt;1&gt;(o);</div>
+<div class="line"><span class="lineno">  402</span>  <span class="keywordtype">int</span> gbRightIndex = std::get&lt;2&gt;(o);</div>
+<div class="line"><span class="lineno">  403</span> </div>
+<div class="line"><span class="lineno">  404</span>  <span class="keywordflow">if</span> (overlapPos &lt; 0)</div>
+<div class="line"><span class="lineno">  405</span>    {</div>
+<div class="line"><span class="lineno">  406</span>      <span class="comment">// Sneaky trick: a PreRow with index a &lt; 0 refers to generator with index -a-1</span></div>
+<div class="line"><span class="lineno">  407</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>.emplace_back(PreRow {<a class="code hl_class" href="../../d3/da0/class_word.html">Word</a>(),</div>
+<div class="line"><span class="lineno">  408</span>                                         - gbLeftIndex - 1,</div>
+<div class="line"><span class="lineno">  409</span>                                         <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a>(),</div>
+<div class="line"><span class="lineno">  410</span>                                         <a class="code hl_enumvalue" href="../../d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40a8c937e82dbbfc9c9651ff09f66ec7667">OverlapPreRow</a>});</div>
+<div class="line"><span class="lineno">  411</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  412</span>    }</div>
+<div class="line"><span class="lineno">  413</span>  </div>
+<div class="line"><span class="lineno">  414</span>  <span class="comment">// LM(gbLeft) = x^a x^b</span></div>
+<div class="line"><span class="lineno">  415</span>  <span class="comment">// LM(gbRight) = x^b x^c</span></div>
+<div class="line"><span class="lineno">  416</span>  <span class="comment">// overlapPos = starting position of x^b in gbLeft.</span></div>
+<div class="line"><span class="lineno">  417</span>  <span class="comment">// one prerow will be: (1, gbLeftIndex, x^c)</span></div>
+<div class="line"><span class="lineno">  418</span>  <span class="comment">// another prerow will be: (x^a, gbRightIndex, 1)</span></div>
+<div class="line"><span class="lineno">  419</span>      </div>
+<div class="line"><span class="lineno">  420</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> leadWordLeft = <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab17b8eaf5f15a34d886f0843ee002f08.html#ab17b8eaf5f15a34d886f0843ee002f08">mWordTable</a>[gbLeftIndex];</div>
+<div class="line"><span class="lineno">  421</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> leadWordRight = <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab17b8eaf5f15a34d886f0843ee002f08.html#ab17b8eaf5f15a34d886f0843ee002f08">mWordTable</a>[gbRightIndex];</div>
+<div class="line"><span class="lineno">  422</span>  <span class="keywordtype">int</span> overlapLen = leadWordLeft.<a class="code hl_function" href="../../d3/da0/class_word_a58f370b1c978f3f73e9349629ab6dfd3.html#a58f370b1c978f3f73e9349629ab6dfd3">size</a>() - overlapPos;</div>
+<div class="line"><span class="lineno">  423</span> </div>
+<div class="line"><span class="lineno">  424</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> suffix2 {}; <span class="comment">// trivial word</span></div>
+<div class="line"><span class="lineno">  425</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> prefix2(leadWordLeft.<a class="code hl_function" href="../../d3/da0/class_word_a20e33cf76cae20a1b09c6419d6f71ad2.html#a20e33cf76cae20a1b09c6419d6f71ad2">begin</a>(), leadWordLeft.<a class="code hl_function" href="../../d3/da0/class_word_a20e33cf76cae20a1b09c6419d6f71ad2.html#a20e33cf76cae20a1b09c6419d6f71ad2">begin</a>() + overlapPos);</div>
+<div class="line"><span class="lineno">  426</span>  </div>
+<div class="line"><span class="lineno">  427</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> suffix1(leadWordRight.<a class="code hl_function" href="../../d3/da0/class_word_a20e33cf76cae20a1b09c6419d6f71ad2.html#a20e33cf76cae20a1b09c6419d6f71ad2">begin</a>() + overlapLen, leadWordRight.<a class="code hl_function" href="../../d3/da0/class_word_a57a3bd2eb17ecc840adc2236a9cfb157.html#a57a3bd2eb17ecc840adc2236a9cfb157">end</a>());</div>
+<div class="line"><span class="lineno">  428</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> prefix1 {}; <span class="comment">// trivial word</span></div>
+<div class="line"><span class="lineno">  429</span>  </div>
+<div class="line"><span class="lineno">  430</span>  <span class="comment">// need to add in the lead monomial to the mColumnMonomials list now</span></div>
+<div class="line"><span class="lineno">  431</span>  <span class="comment">// so they know which row reduces them</span></div>
+<div class="line"><span class="lineno">  432</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> newWord = <a class="code hl_function" href="../../d0/d92/class_n_c_f4_aef09a2fbd3f08678b5f57e49e94d576a.html#aef09a2fbd3f08678b5f57e49e94d576a">freeAlgebra</a>().<a class="code hl_function" href="../../de/dbd/class_free_algebra_a83c6189fa2b0a76031329377b1cfaa03.html#a83c6189fa2b0a76031329377b1cfaa03">monoid</a>().<a class="code hl_function" href="../../dc/da6/class_free_monoid_a206ea54d605ad31aa0229ad43d3fcf4a.html#a206ea54d605ad31aa0229ad43d3fcf4a">wordProductAsWord</a>(leadWordLeft, suffix1, <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab255efa30560c607d31e6e7963b593d9.html#ab255efa30560c607d31e6e7963b593d9">mMonomialSpace</a>);</div>
+<div class="line"><span class="lineno">  433</span> </div>
+<div class="line"><span class="lineno">  434</span>  <span class="comment">// This overlap may already have lead term in table.</span></div>
+<div class="line"><span class="lineno">  435</span>  <span class="comment">// Only have to add it in if it is not yet present.</span></div>
+<div class="line"><span class="lineno">  436</span>  <span class="keyword">auto</span> it = <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a.html#a7ba9f6eac784d412668cc4d596977c7a">mColumnMonomials</a>.find(newWord);</div>
+<div class="line"><span class="lineno">  437</span>  <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a.html#a7ba9f6eac784d412668cc4d596977c7a">mColumnMonomials</a>.cend())</div>
+<div class="line"><span class="lineno">  438</span>    <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a.html#a7ba9f6eac784d412668cc4d596977c7a">mColumnMonomials</a>.emplace(newWord, std::make_pair(-1,-1));</div>
+<div class="line"><span class="lineno">  439</span> </div>
+<div class="line"><span class="lineno">  440</span>  <span class="comment">// it *matters* which one is a reducer and which one is an overlap.</span></div>
+<div class="line"><span class="lineno">  441</span>  <span class="comment">// this is due to how the word table lookup works -- it searches them</span></div>
+<div class="line"><span class="lineno">  442</span>  <span class="comment">// in the order that they were entered into the word table, which may</span></div>
+<div class="line"><span class="lineno">  443</span>  <span class="comment">// not be sorted in term order.</span></div>
+<div class="line"><span class="lineno">  444</span>  <span class="keywordflow">if</span> (gbLeftIndex &gt; gbRightIndex)</div>
+<div class="line"><span class="lineno">  445</span>    {</div>
+<div class="line"><span class="lineno">  446</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.emplace_back(PreRow {prefix2,</div>
+<div class="line"><span class="lineno">  447</span>                                         gbRightIndex,</div>
+<div class="line"><span class="lineno">  448</span>                                         suffix2,</div>
+<div class="line"><span class="lineno">  449</span>                                         <a class="code hl_enumvalue" href="../../d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40ab2af009459984d359f5e64f8a1d92655">ReducerPreRow</a>});</div>
+<div class="line"><span class="lineno">  450</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>.emplace_back(PreRow {prefix1,</div>
+<div class="line"><span class="lineno">  451</span>                                         gbLeftIndex,</div>
+<div class="line"><span class="lineno">  452</span>                                         suffix1,</div>
+<div class="line"><span class="lineno">  453</span>                                         <a class="code hl_enumvalue" href="../../d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40a8c937e82dbbfc9c9651ff09f66ec7667">OverlapPreRow</a>});</div>
+<div class="line"><span class="lineno">  454</span>    }</div>
+<div class="line"><span class="lineno">  455</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  456</span>    {  </div>
+<div class="line"><span class="lineno">  457</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.emplace_back(PreRow {prefix1,</div>
+<div class="line"><span class="lineno">  458</span>                                         gbLeftIndex,</div>
+<div class="line"><span class="lineno">  459</span>                                         suffix1,</div>
+<div class="line"><span class="lineno">  460</span>                                         <a class="code hl_enumvalue" href="../../d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40ab2af009459984d359f5e64f8a1d92655">ReducerPreRow</a>});</div>
+<div class="line"><span class="lineno">  461</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>.emplace_back(PreRow {prefix2,</div>
+<div class="line"><span class="lineno">  462</span>                                         gbRightIndex,</div>
+<div class="line"><span class="lineno">  463</span>                                         suffix2,</div>
+<div class="line"><span class="lineno">  464</span>                                         <a class="code hl_enumvalue" href="../../d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40a8c937e82dbbfc9c9651ff09f66ec7667">OverlapPreRow</a>});</div>
+<div class="line"><span class="lineno">  465</span>    }</div>
+<div class="line"><span class="lineno">  466</span>}</div>
 <div class="ttc" id="aclass_free_algebra_a83c6189fa2b0a76031329377b1cfaa03_html_a83c6189fa2b0a76031329377b1cfaa03"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a83c6189fa2b0a76031329377b1cfaa03.html#a83c6189fa2b0a76031329377b1cfaa03">FreeAlgebra::monoid</a></div><div class="ttdeci">const FreeMonoid &amp; monoid() const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00041">FreeAlgebra.hpp:41</a></div></div>
 <div class="ttc" id="aclass_free_monoid_a206ea54d605ad31aa0229ad43d3fcf4a_html_a206ea54d605ad31aa0229ad43d3fcf4a"><div class="ttname"><a href="../../dc/da6/class_free_monoid_a206ea54d605ad31aa0229ad43d3fcf4a.html#a206ea54d605ad31aa0229ad43d3fcf4a">FreeMonoid::wordProductAsWord</a></div><div class="ttdeci">Word wordProductAsWord(const Word &amp;left, const Word &amp;right, MemoryBlock &amp;memBlock) const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d5e/_free_monoid_8cpp_source.html#l00359">FreeMonoid.cpp:359</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40_html_a51df58acce453ffcd976d4bdfb5e8d40a8c937e82dbbfc9c9651ff09f66ec7667"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40a8c937e82dbbfc9c9651ff09f66ec7667">NCF4::OverlapPreRow</a></div><div class="ttdeci">@ OverlapPreRow</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00053">NCF4.hpp:53</a></div></div>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_a864e47e738658fb6a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d92/class_n_c_f4.html">NCF4</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

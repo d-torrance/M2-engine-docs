@@ -112,25 +112,25 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_a4f2a6618be322b9fc
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html#l00373">373</a> of file <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html">NCF4.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  374</span>{</div>
-<div class="line"><span class="lineno">  375</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.clear();</div>
-<div class="line"><span class="lineno">  376</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>.clear();</div>
-<div class="line"><span class="lineno">  377</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ade05ac2e4ca1242d493a531244985263.html#ade05ac2e4ca1242d493a531244985263">mColumns</a>.clear();</div>
-<div class="line"><span class="lineno">  378</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a.html#a7ba9f6eac784d412668cc4d596977c7a">mColumnMonomials</a>.clear();</div>
-<div class="line"><span class="lineno">  379</span>  <a class="code hl_function" href="../../d0/d92/class_n_c_f4_a487f0daa9b43761a197ff8ee7aeba131.html#a487f0daa9b43761a197ff8ee7aeba131">clearRows</a>(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>);</div>
-<div class="line"><span class="lineno">  380</span>  <span class="comment">// we don&#39;t have to call clearRows on mOverlaps because the coeff vectors</span></div>
-<div class="line"><span class="lineno">  381</span>  <span class="comment">// were moved to mRows first</span></div>
-<div class="line"><span class="lineno">  382</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_add849c3c25a927089658708bd186832a.html#add849c3c25a927089658708bd186832a">mOverlaps</a>.clear();</div>
-<div class="line"><span class="lineno">  383</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a90d6078faeaa2052ad00ba770bbcefb0.html#a90d6078faeaa2052ad00ba770bbcefb0">mFirstOverlap</a> = 0;</div>
-<div class="line"><span class="lineno">  384</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab255efa30560c607d31e6e7963b593d9.html#ab255efa30560c607d31e6e7963b593d9">mMonomialSpace</a>.<a class="code hl_function" href="../../d3/d57/class_memory_block_a8f5505b4505d35f8a6ffec1ee8f44775.html#a8f5505b4505d35f8a6ffec1ee8f44775">deallocateAll</a>();</div>
-<div class="line"><span class="lineno">  385</span> </div>
-<div class="line"><span class="lineno">  386</span>  <span class="comment">// the MemoryBlock objects that were in this vector</span></div>
-<div class="line"><span class="lineno">  387</span>  <span class="comment">// have been passed to mPreviousMemoryBlocks at this point.</span></div>
-<div class="line"><span class="lineno">  388</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a4a8d431fee95f16774e7ebc50a6fb652.html#a4a8d431fee95f16774e7ebc50a6fb652">mMemoryBlocks</a>.clear();</div>
-<div class="line"><span class="lineno">  389</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html#l00375">375</a> of file <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html">NCF4.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  376</span>{</div>
+<div class="line"><span class="lineno">  377</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.clear();</div>
+<div class="line"><span class="lineno">  378</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>.clear();</div>
+<div class="line"><span class="lineno">  379</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ade05ac2e4ca1242d493a531244985263.html#ade05ac2e4ca1242d493a531244985263">mColumns</a>.clear();</div>
+<div class="line"><span class="lineno">  380</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a.html#a7ba9f6eac784d412668cc4d596977c7a">mColumnMonomials</a>.clear();</div>
+<div class="line"><span class="lineno">  381</span>  <a class="code hl_function" href="../../d0/d92/class_n_c_f4_a487f0daa9b43761a197ff8ee7aeba131.html#a487f0daa9b43761a197ff8ee7aeba131">clearRows</a>(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>);</div>
+<div class="line"><span class="lineno">  382</span>  <span class="comment">// we don&#39;t have to call clearRows on mOverlaps because the coeff vectors</span></div>
+<div class="line"><span class="lineno">  383</span>  <span class="comment">// were moved to mRows first</span></div>
+<div class="line"><span class="lineno">  384</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_add849c3c25a927089658708bd186832a.html#add849c3c25a927089658708bd186832a">mOverlaps</a>.clear();</div>
+<div class="line"><span class="lineno">  385</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a90d6078faeaa2052ad00ba770bbcefb0.html#a90d6078faeaa2052ad00ba770bbcefb0">mFirstOverlap</a> = 0;</div>
+<div class="line"><span class="lineno">  386</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab255efa30560c607d31e6e7963b593d9.html#ab255efa30560c607d31e6e7963b593d9">mMonomialSpace</a>.<a class="code hl_function" href="../../d3/d57/class_memory_block_a8f5505b4505d35f8a6ffec1ee8f44775.html#a8f5505b4505d35f8a6ffec1ee8f44775">deallocateAll</a>();</div>
+<div class="line"><span class="lineno">  387</span> </div>
+<div class="line"><span class="lineno">  388</span>  <span class="comment">// the MemoryBlock objects that were in this vector</span></div>
+<div class="line"><span class="lineno">  389</span>  <span class="comment">// have been passed to mPreviousMemoryBlocks at this point.</span></div>
+<div class="line"><span class="lineno">  390</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a4a8d431fee95f16774e7ebc50a6fb652.html#a4a8d431fee95f16774e7ebc50a6fb652">mMemoryBlocks</a>.clear();</div>
+<div class="line"><span class="lineno">  391</span>}</div>
 <div class="ttc" id="aclass_memory_block_a8f5505b4505d35f8a6ffec1ee8f44775_html_a8f5505b4505d35f8a6ffec1ee8f44775"><div class="ttname"><a href="../../d3/d57/class_memory_block_a8f5505b4505d35f8a6ffec1ee8f44775.html#a8f5505b4505d35f8a6ffec1ee8f44775">MemoryBlock::deallocateAll</a></div><div class="ttdeci">void deallocateAll()</div><div class="ttdef"><b>Definition</b> <a href="../../df/d28/_memory_block_8hpp_source.html#l00048">MemoryBlock.hpp:48</a></div></div>
-<div class="ttc" id="aclass_n_c_f4_a487f0daa9b43761a197ff8ee7aeba131_html_a487f0daa9b43761a197ff8ee7aeba131"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a487f0daa9b43761a197ff8ee7aeba131.html#a487f0daa9b43761a197ff8ee7aeba131">NCF4::clearRows</a></div><div class="ttdeci">void clearRows(RowsVector &amp;rowsVector)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l01208">NCF4.cpp:1208</a></div></div>
+<div class="ttc" id="aclass_n_c_f4_a487f0daa9b43761a197ff8ee7aeba131_html_a487f0daa9b43761a197ff8ee7aeba131"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a487f0daa9b43761a197ff8ee7aeba131.html#a487f0daa9b43761a197ff8ee7aeba131">NCF4::clearRows</a></div><div class="ttdeci">void clearRows(RowsVector &amp;rowsVector)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l01210">NCF4.cpp:1210</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_a4a8d431fee95f16774e7ebc50a6fb652_html_a4a8d431fee95f16774e7ebc50a6fb652"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a4a8d431fee95f16774e7ebc50a6fb652.html#a4a8d431fee95f16774e7ebc50a6fb652">NCF4::mMemoryBlocks</a></div><div class="ttdeci">std::vector&lt; MemoryBlock * &gt; mMemoryBlocks</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00146">NCF4.hpp:146</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_a588c59046028d1e67b7fd1f50085cde2_html_a588c59046028d1e67b7fd1f50085cde2"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">NCF4::mOverlapsTodo</a></div><div class="ttdeci">std::vector&lt; PreRow &gt; mOverlapsTodo</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00125">NCF4.hpp:125</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a_html_a7ba9f6eac784d412668cc4d596977c7a"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a.html#a7ba9f6eac784d412668cc4d596977c7a">NCF4::mColumnMonomials</a></div><div class="ttdeci">MonomialHash mColumnMonomials</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00121">NCF4.hpp:121</a></div></div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_a4f2a6618be322b9fc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d92/class_n_c_f4.html">NCF4</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

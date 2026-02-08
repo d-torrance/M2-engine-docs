@@ -129,19 +129,19 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a2cba96b62
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00888">888</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  891</span>{</div>
-<div class="line"><span class="lineno">  892</span>  <span class="comment">//    DMatGFFlint&amp; A1 = const_cast&lt;DMatGFFlint&amp;&gt;(A); // needed because</span></div>
-<div class="line"><span class="lineno">  893</span>  <span class="comment">//    nmod_mat_mul doesn&#39;t declare params const</span></div>
-<div class="line"><span class="lineno">  894</span>  <span class="comment">//    DMatGFFlint&amp; B1 = const_cast&lt;DMatGFFlint&amp;&gt;(B);</span></div>
-<div class="line"><span class="lineno">  895</span>  <span class="comment">// The A1 and B1 on the next line are switched because the memory layout</span></div>
-<div class="line"><span class="lineno">  896</span>  <span class="comment">// expected</span></div>
-<div class="line"><span class="lineno">  897</span>  <span class="comment">// is the transpose of what we have for DMat.</span></div>
-<div class="line"><span class="lineno">  898</span>  fq_zech_mat_mul(result_product.<a class="code hl_function" href="../../d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a5f2e230f7dcb49eaaf30df66da5f24a6.html#a5f2e230f7dcb49eaaf30df66da5f24a6">fq_zech_mat</a>(),</div>
-<div class="line"><span class="lineno">  899</span>                  A.<a class="code hl_function" href="../../d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a5f2e230f7dcb49eaaf30df66da5f24a6.html#a5f2e230f7dcb49eaaf30df66da5f24a6">fq_zech_mat</a>(),</div>
-<div class="line"><span class="lineno">  900</span>                  B.<a class="code hl_function" href="../../d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a5f2e230f7dcb49eaaf30df66da5f24a6.html#a5f2e230f7dcb49eaaf30df66da5f24a6">fq_zech_mat</a>(),</div>
-<div class="line"><span class="lineno">  901</span>                  A.<a class="code hl_function" href="../../d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a9a4e36cea61cdf30fec527ef3e91a58f.html#a9a4e36cea61cdf30fec527ef3e91a58f">ring</a>().<a class="code hl_function" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_a01c3213a871e48143e6f57dcf4357b34.html#a01c3213a871e48143e6f57dcf4357b34">flintContext</a>());</div>
-<div class="line"><span class="lineno">  902</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00969">969</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  972</span>{</div>
+<div class="line"><span class="lineno">  973</span>  <span class="comment">//    DMatGFFlint&amp; A1 = const_cast&lt;DMatGFFlint&amp;&gt;(A); // needed because</span></div>
+<div class="line"><span class="lineno">  974</span>  <span class="comment">//    nmod_mat_mul doesn&#39;t declare params const</span></div>
+<div class="line"><span class="lineno">  975</span>  <span class="comment">//    DMatGFFlint&amp; B1 = const_cast&lt;DMatGFFlint&amp;&gt;(B);</span></div>
+<div class="line"><span class="lineno">  976</span>  <span class="comment">// The A1 and B1 on the next line are switched because the memory layout</span></div>
+<div class="line"><span class="lineno">  977</span>  <span class="comment">// expected</span></div>
+<div class="line"><span class="lineno">  978</span>  <span class="comment">// is the transpose of what we have for DMat.</span></div>
+<div class="line"><span class="lineno">  979</span>  fq_zech_mat_mul(result_product.<a class="code hl_function" href="../../d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a5f2e230f7dcb49eaaf30df66da5f24a6.html#a5f2e230f7dcb49eaaf30df66da5f24a6">fq_zech_mat</a>(),</div>
+<div class="line"><span class="lineno">  980</span>                  A.<a class="code hl_function" href="../../d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a5f2e230f7dcb49eaaf30df66da5f24a6.html#a5f2e230f7dcb49eaaf30df66da5f24a6">fq_zech_mat</a>(),</div>
+<div class="line"><span class="lineno">  981</span>                  B.<a class="code hl_function" href="../../d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a5f2e230f7dcb49eaaf30df66da5f24a6.html#a5f2e230f7dcb49eaaf30df66da5f24a6">fq_zech_mat</a>(),</div>
+<div class="line"><span class="lineno">  982</span>                  A.<a class="code hl_function" href="../../d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a9a4e36cea61cdf30fec527ef3e91a58f.html#a9a4e36cea61cdf30fec527ef3e91a58f">ring</a>().<a class="code hl_function" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_a01c3213a871e48143e6f57dcf4357b34.html#a01c3213a871e48143e6f57dcf4357b34">flintContext</a>());</div>
+<div class="line"><span class="lineno">  983</span>}</div>
 <div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a5f2e230f7dcb49eaaf30df66da5f24a6_html_a5f2e230f7dcb49eaaf30df66da5f24a6"><div class="ttname"><a href="../../d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a5f2e230f7dcb49eaaf30df66da5f24a6.html#a5f2e230f7dcb49eaaf30df66da5f24a6">DMat&lt; M2::ARingGFFlint &gt;::fq_zech_mat</a></div><div class="ttdeci">const fq_zech_mat_t &amp; fq_zech_mat() const</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dd0/dmat-gf-flint_8hpp_source.html#l00088">dmat-gf-flint.hpp:88</a></div></div>
 <div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a9a4e36cea61cdf30fec527ef3e91a58f_html_a9a4e36cea61cdf30fec527ef3e91a58f"><div class="ttname"><a href="../../d3/d1d/class_d_mat_3_01_m2_1_1_a_ring_g_f_flint_01_4_a9a4e36cea61cdf30fec527ef3e91a58f.html#a9a4e36cea61cdf30fec527ef3e91a58f">DMat&lt; M2::ARingGFFlint &gt;::ring</a></div><div class="ttdeci">const ACoeffRing &amp; ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dd0/dmat-gf-flint_8hpp_source.html#l00055">dmat-gf-flint.hpp:55</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_g_f_flint_a01c3213a871e48143e6f57dcf4357b34_html_a01c3213a871e48143e6f57dcf4357b34"><div class="ttname"><a href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_a01c3213a871e48143e6f57dcf4357b34.html#a01c3213a871e48143e6f57dcf4357b34">M2::ARingGFFlint::flintContext</a></div><div class="ttdeci">const fq_zech_ctx_struct * flintContext() const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d9d/aring-gf-flint_8hpp_source.html#l00102">aring-gf-flint.hpp:102</a></div></div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a2cba96b62
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:26 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -121,36 +121,36 @@ $(document).ready(function(){initNavTree('d9/db1/class_monoid_a104ba968dbf181f90
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d5c/monoid_8cpp_source.html#l00574">574</a> of file <a class="el" href="../../d6/d5c/monoid_8cpp_source.html">monoid.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  575</span>{</div>
-<div class="line"><span class="lineno">  576</span>  <a class="code hl_typedef" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> EXP1 = <a class="code hl_define" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>(<a class="code hl_variable" href="../../d9/db1/class_monoid_a6d9822b3c1c33bfa75ff10c239878c41.html#a6d9822b3c1c33bfa75ff10c239878c41">exp_size</a>);</div>
-<div class="line"><span class="lineno">  577</span>  <a class="code hl_function" href="../../d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4">to_expvector</a>(m, EXP1);</div>
-<div class="line"><span class="lineno">  578</span><span class="comment">//   elem_text_out(o, EXP1, p_one);</span></div>
-<div class="line"><span class="lineno">  579</span><span class="comment">// }</span></div>
-<div class="line"><span class="lineno">  580</span><span class="comment">// void Monoid::elem_text_out(buffer &amp;o, const_exponents EXP1, bool p_one) const</span></div>
-<div class="line"><span class="lineno">  581</span><span class="comment">// {</span></div>
-<div class="line"><span class="lineno">  582</span>  <span class="keywordtype">int</span> len_ = 0;</div>
-<div class="line"><span class="lineno">  583</span>  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> v = 0; v &lt; <a class="code hl_variable" href="../../d9/db1/class_monoid_a945cc896405706d6c799587d1d568b89.html#a945cc896405706d6c799587d1d568b89">mVariableCount</a>; v++)</div>
-<div class="line"><span class="lineno">  584</span>    <span class="keywordflow">if</span> (EXP1[v] != 0)</div>
-<div class="line"><span class="lineno">  585</span>      {</div>
-<div class="line"><span class="lineno">  586</span>        len_++;</div>
-<div class="line"><span class="lineno">  587</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/db1/class_monoid_ae05eacdb00b30fe71437e8164f22ee12.html#ae05eacdb00b30fe71437e8164f22ee12">mVariableNames</a>.size() &lt; v)</div>
-<div class="line"><span class="lineno">  588</span>          o &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
-<div class="line"><span class="lineno">  589</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  590</span>          o &lt;&lt; <a class="code hl_variable" href="../../d9/db1/class_monoid_ae05eacdb00b30fe71437e8164f22ee12.html#ae05eacdb00b30fe71437e8164f22ee12">mVariableNames</a>[v];</div>
-<div class="line"><span class="lineno">  591</span>        <span class="keywordtype">int</span> e = EXP1[v];</div>
-<div class="line"><span class="lineno">  592</span>        <span class="keywordtype">int</span> single = (<a class="code hl_variable" href="../../d9/db1/class_monoid_ae05eacdb00b30fe71437e8164f22ee12.html#ae05eacdb00b30fe71437e8164f22ee12">mVariableNames</a>[v].size() == 1);</div>
-<div class="line"><span class="lineno">  593</span>        <span class="keywordflow">if</span> (e &gt; 1 &amp;&amp; single)</div>
-<div class="line"><span class="lineno">  594</span>          o &lt;&lt; e;</div>
-<div class="line"><span class="lineno">  595</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (e &gt; 1)</div>
-<div class="line"><span class="lineno">  596</span>          o &lt;&lt; <span class="stringliteral">&quot;^&quot;</span> &lt;&lt; e;</div>
-<div class="line"><span class="lineno">  597</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (e &lt; 0)</div>
-<div class="line"><span class="lineno">  598</span>          o &lt;&lt; <span class="stringliteral">&quot;^(&quot;</span> &lt;&lt; e &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><span class="lineno">  599</span>      }</div>
-<div class="line"><span class="lineno">  600</span>  <span class="keywordflow">if</span> (len_ == 0 &amp;&amp; p_one) o &lt;&lt; <span class="stringliteral">&quot;1&quot;</span>;</div>
-<div class="line"><span class="lineno">  601</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d5c/monoid_8cpp_source.html#l00575">575</a> of file <a class="el" href="../../d6/d5c/monoid_8cpp_source.html">monoid.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  576</span>{</div>
+<div class="line"><span class="lineno">  577</span>  <a class="code hl_typedef" href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a> EXP1 = <a class="code hl_define" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>(<a class="code hl_variable" href="../../d9/db1/class_monoid_a6d9822b3c1c33bfa75ff10c239878c41.html#a6d9822b3c1c33bfa75ff10c239878c41">exp_size</a>);</div>
+<div class="line"><span class="lineno">  578</span>  <a class="code hl_function" href="../../d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4">to_expvector</a>(m, EXP1);</div>
+<div class="line"><span class="lineno">  579</span><span class="comment">//   elem_text_out(o, EXP1, p_one);</span></div>
+<div class="line"><span class="lineno">  580</span><span class="comment">// }</span></div>
+<div class="line"><span class="lineno">  581</span><span class="comment">// void Monoid::elem_text_out(buffer &amp;o, const_exponents EXP1, bool p_one) const</span></div>
+<div class="line"><span class="lineno">  582</span><span class="comment">// {</span></div>
+<div class="line"><span class="lineno">  583</span>  <span class="keywordtype">int</span> len_ = 0;</div>
+<div class="line"><span class="lineno">  584</span>  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> v = 0; v &lt; <a class="code hl_variable" href="../../d9/db1/class_monoid_a945cc896405706d6c799587d1d568b89.html#a945cc896405706d6c799587d1d568b89">mVariableCount</a>; v++)</div>
+<div class="line"><span class="lineno">  585</span>    <span class="keywordflow">if</span> (EXP1[v] != 0)</div>
+<div class="line"><span class="lineno">  586</span>      {</div>
+<div class="line"><span class="lineno">  587</span>        len_++;</div>
+<div class="line"><span class="lineno">  588</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/db1/class_monoid_ae05eacdb00b30fe71437e8164f22ee12.html#ae05eacdb00b30fe71437e8164f22ee12">mVariableNames</a>.size() &lt; v)</div>
+<div class="line"><span class="lineno">  589</span>          o &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line"><span class="lineno">  590</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  591</span>          o &lt;&lt; <a class="code hl_variable" href="../../d9/db1/class_monoid_ae05eacdb00b30fe71437e8164f22ee12.html#ae05eacdb00b30fe71437e8164f22ee12">mVariableNames</a>[v];</div>
+<div class="line"><span class="lineno">  592</span>        <span class="keywordtype">int</span> e = EXP1[v];</div>
+<div class="line"><span class="lineno">  593</span>        <span class="keywordtype">int</span> single = (<a class="code hl_variable" href="../../d9/db1/class_monoid_ae05eacdb00b30fe71437e8164f22ee12.html#ae05eacdb00b30fe71437e8164f22ee12">mVariableNames</a>[v].size() == 1);</div>
+<div class="line"><span class="lineno">  594</span>        <span class="keywordflow">if</span> (e &gt; 1 &amp;&amp; single)</div>
+<div class="line"><span class="lineno">  595</span>          o &lt;&lt; e;</div>
+<div class="line"><span class="lineno">  596</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (e &gt; 1)</div>
+<div class="line"><span class="lineno">  597</span>          o &lt;&lt; <span class="stringliteral">&quot;^&quot;</span> &lt;&lt; e;</div>
+<div class="line"><span class="lineno">  598</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (e &lt; 0)</div>
+<div class="line"><span class="lineno">  599</span>          o &lt;&lt; <span class="stringliteral">&quot;^(&quot;</span> &lt;&lt; e &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><span class="lineno">  600</span>      }</div>
+<div class="line"><span class="lineno">  601</span>  <span class="keywordflow">if</span> (len_ == 0 &amp;&amp; p_one) o &lt;&lt; <span class="stringliteral">&quot;1&quot;</span>;</div>
+<div class="line"><span class="lineno">  602</span>}</div>
 <div class="ttc" id="a_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12_html_aec09fab2f897ff3d8346961f38331d12"><div class="ttname"><a href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a></div><div class="ttdeci">exponents::Exponents exponents_t</div><div class="ttdef"><b>Definition</b> <a href="../../da/db0/_exponent_vector_8hpp_source.html#l00276">ExponentVector.hpp:276</a></div></div>
-<div class="ttc" id="aclass_monoid_a134514e900a32c809126bf4dd6c891c4_html_a134514e900a32c809126bf4dd6c891c4"><div class="ttname"><a href="../../d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4">Monoid::to_expvector</a></div><div class="ttdeci">void to_expvector(const_monomial m, exponents_t result_exp) const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d5c/monoid_8cpp_source.html#l00746">monoid.cpp:746</a></div></div>
+<div class="ttc" id="aclass_monoid_a134514e900a32c809126bf4dd6c891c4_html_a134514e900a32c809126bf4dd6c891c4"><div class="ttname"><a href="../../d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4">Monoid::to_expvector</a></div><div class="ttdeci">void to_expvector(const_monomial m, exponents_t result_exp) const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d5c/monoid_8cpp_source.html#l00747">monoid.cpp:747</a></div></div>
 <div class="ttc" id="aclass_monoid_a6d9822b3c1c33bfa75ff10c239878c41_html_a6d9822b3c1c33bfa75ff10c239878c41"><div class="ttname"><a href="../../d9/db1/class_monoid_a6d9822b3c1c33bfa75ff10c239878c41.html#a6d9822b3c1c33bfa75ff10c239878c41">Monoid::exp_size</a></div><div class="ttdeci">size_t exp_size</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00069">monoid.hpp:69</a></div></div>
 <div class="ttc" id="aclass_monoid_a945cc896405706d6c799587d1d568b89_html_a945cc896405706d6c799587d1d568b89"><div class="ttname"><a href="../../d9/db1/class_monoid_a945cc896405706d6c799587d1d568b89.html#a945cc896405706d6c799587d1d568b89">Monoid::mVariableCount</a></div><div class="ttdeci">const int mVariableCount</div><div class="ttdoc">number of variables</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00048">monoid.hpp:48</a></div></div>
 <div class="ttc" id="aclass_monoid_ae05eacdb00b30fe71437e8164f22ee12_html_ae05eacdb00b30fe71437e8164f22ee12"><div class="ttname"><a href="../../d9/db1/class_monoid_ae05eacdb00b30fe71437e8164f22ee12.html#ae05eacdb00b30fe71437e8164f22ee12">Monoid::mVariableNames</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; mVariableNames</div><div class="ttdoc">names of variables</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00050">monoid.hpp:50</a></div></div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('d9/db1/class_monoid_a104ba968dbf181f90
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/db1/class_monoid.html">Monoid</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -104,20 +104,20 @@ $(document).ready(function(){initNavTree('d6/d02/class_matrix_stream_ae8f4fa4652
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dd4/matrix-stream_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../db/dd4/matrix-stream_8cpp_source.html">matrix-stream.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>{</div>
-<div class="line"><span class="lineno">   62</span>  <span class="comment">// Time to append a polynomial</span></div>
-<div class="line"><span class="lineno">   63</span>  <span class="comment">//  ring().sort(mCurrentPoly);  // This is just in case the elements come in</span></div>
-<div class="line"><span class="lineno">   64</span>  <span class="comment">//  out of order</span></div>
-<div class="line"><span class="lineno">   65</span>  vec v = <a class="code hl_function" href="../../d6/d02/class_matrix_stream_ab0edc9dcdecadd460ed8b7e394d1f8ec.html#ab0edc9dcdecadd460ed8b7e394d1f8ec">ring</a>().<a class="code hl_function" href="../../dd/dcf/class_ring_a79476d2e8273d0eeaa27dba624bede72.html#a79476d2e8273d0eeaa27dba624bede72">make_vec_from_array</a>(<a class="code hl_variable" href="../../d6/d02/class_matrix_stream_aa428b6693d6ef73acbd0c16df53961f1.html#aa428b6693d6ef73acbd0c16df53961f1">mFreeModule</a>-&gt;<a class="code hl_function" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>(), <a class="code hl_variable" href="../../d6/d02/class_matrix_stream_ab969acac3bf9c8334c6c01ffebba2aba.html#ab969acac3bf9c8334c6c01ffebba2aba">mCurrentColumn</a>);</div>
-<div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>  <a class="code hl_variable" href="../../d6/d02/class_matrix_stream_a6187b890c9b980af98291585c1bb51f1.html#a6187b890c9b980af98291585c1bb51f1">mMatrixConstructor</a>.<a class="code hl_function" href="../../d3/d7a/class_matrix_constructor_a6cac2dfdd6d7e76cb4be7ce3862fcaf6.html#a6cac2dfdd6d7e76cb4be7ce3862fcaf6">append</a>(v);</div>
-<div class="line"><span class="lineno">   68</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../d6/d02/class_matrix_stream_aa428b6693d6ef73acbd0c16df53961f1.html#aa428b6693d6ef73acbd0c16df53961f1">mFreeModule</a>-&gt;<a class="code hl_function" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>(); i++)</div>
-<div class="line"><span class="lineno">   69</span>    {</div>
-<div class="line"><span class="lineno">   70</span>      <a class="code hl_variable" href="../../d6/d02/class_matrix_stream_ab969acac3bf9c8334c6c01ffebba2aba.html#ab969acac3bf9c8334c6c01ffebba2aba">mCurrentColumn</a>[i] = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   71</span>      <a class="code hl_variable" href="../../d6/d02/class_matrix_stream_adc8a3f775ac700ff27537a9fd20c03da.html#adc8a3f775ac700ff27537a9fd20c03da">mLastTerms</a>[i] = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   72</span>    }</div>
-<div class="line"><span class="lineno">   73</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../db/dd4/matrix-stream_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../db/dd4/matrix-stream_8cpp_source.html">matrix-stream.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>{</div>
+<div class="line"><span class="lineno">   60</span>  <span class="comment">// Time to append a polynomial</span></div>
+<div class="line"><span class="lineno">   61</span>  <span class="comment">//  ring().sort(mCurrentPoly);  // This is just in case the elements come in</span></div>
+<div class="line"><span class="lineno">   62</span>  <span class="comment">//  out of order</span></div>
+<div class="line"><span class="lineno">   63</span>  vec v = <a class="code hl_function" href="../../d6/d02/class_matrix_stream_ab0edc9dcdecadd460ed8b7e394d1f8ec.html#ab0edc9dcdecadd460ed8b7e394d1f8ec">ring</a>().<a class="code hl_function" href="../../dd/dcf/class_ring_a79476d2e8273d0eeaa27dba624bede72.html#a79476d2e8273d0eeaa27dba624bede72">make_vec_from_array</a>(<a class="code hl_variable" href="../../d6/d02/class_matrix_stream_aa428b6693d6ef73acbd0c16df53961f1.html#aa428b6693d6ef73acbd0c16df53961f1">mFreeModule</a>-&gt;<a class="code hl_function" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>(), <a class="code hl_variable" href="../../d6/d02/class_matrix_stream_ab969acac3bf9c8334c6c01ffebba2aba.html#ab969acac3bf9c8334c6c01ffebba2aba">mCurrentColumn</a>);</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>  <a class="code hl_variable" href="../../d6/d02/class_matrix_stream_a6187b890c9b980af98291585c1bb51f1.html#a6187b890c9b980af98291585c1bb51f1">mMatrixConstructor</a>.<a class="code hl_function" href="../../d3/d7a/class_matrix_constructor_a6cac2dfdd6d7e76cb4be7ce3862fcaf6.html#a6cac2dfdd6d7e76cb4be7ce3862fcaf6">append</a>(v);</div>
+<div class="line"><span class="lineno">   66</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../d6/d02/class_matrix_stream_aa428b6693d6ef73acbd0c16df53961f1.html#aa428b6693d6ef73acbd0c16df53961f1">mFreeModule</a>-&gt;<a class="code hl_function" href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">rank</a>(); i++)</div>
+<div class="line"><span class="lineno">   67</span>    {</div>
+<div class="line"><span class="lineno">   68</span>      <a class="code hl_variable" href="../../d6/d02/class_matrix_stream_ab969acac3bf9c8334c6c01ffebba2aba.html#ab969acac3bf9c8334c6c01ffebba2aba">mCurrentColumn</a>[i] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   69</span>      <a class="code hl_variable" href="../../d6/d02/class_matrix_stream_adc8a3f775ac700ff27537a9fd20c03da.html#adc8a3f775ac700ff27537a9fd20c03da">mLastTerms</a>[i] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   70</span>    }</div>
+<div class="line"><span class="lineno">   71</span>}</div>
 <div class="ttc" id="aclass_free_module_af359cfc5802d332b199aeca8a79f2107_html_af359cfc5802d332b199aeca8a79f2107"><div class="ttname"><a href="../../d6/df0/class_free_module_af359cfc5802d332b199aeca8a79f2107.html#af359cfc5802d332b199aeca8a79f2107">FreeModule::rank</a></div><div class="ttdeci">int rank() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/freemod_8hpp_source.html#l00055">freemod.hpp:55</a></div></div>
 <div class="ttc" id="aclass_matrix_constructor_a6cac2dfdd6d7e76cb4be7ce3862fcaf6_html_a6cac2dfdd6d7e76cb4be7ce3862fcaf6"><div class="ttname"><a href="../../d3/d7a/class_matrix_constructor_a6cac2dfdd6d7e76cb4be7ce3862fcaf6.html#a6cac2dfdd6d7e76cb4be7ce3862fcaf6">MatrixConstructor::append</a></div><div class="ttdeci">void append(vec v)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d99/matrix-con_8cpp_source.html#l00035">matrix-con.cpp:35</a></div></div>
 <div class="ttc" id="aclass_matrix_stream_a6187b890c9b980af98291585c1bb51f1_html_a6187b890c9b980af98291585c1bb51f1"><div class="ttname"><a href="../../d6/d02/class_matrix_stream_a6187b890c9b980af98291585c1bb51f1.html#a6187b890c9b980af98291585c1bb51f1">MatrixStream::mMatrixConstructor</a></div><div class="ttdeci">MatrixConstructor mMatrixConstructor</div><div class="ttdef"><b>Definition</b> <a href="../../de/dad/matrix-stream_8hpp_source.html#l00076">matrix-stream.hpp:76</a></div></div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('d6/d02/class_matrix_stream_ae8f4fa4652
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d02/class_matrix_stream.html">MatrixStream</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

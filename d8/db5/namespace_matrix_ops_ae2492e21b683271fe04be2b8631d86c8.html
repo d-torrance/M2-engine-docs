@@ -124,12 +124,15 @@ template&lt;typename Mat &gt; </div>
 </div><div class="memdoc">
 <p>Throws an exception if not yet implemented for this ring/matrix type. The sizes of C,A,B must be compatible. These are checked only via assertions. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00234">234</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  236</span>{</div>
-<div class="line"><span class="lineno">  237</span>  <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(</div>
-<div class="line"><span class="lineno">  238</span>      <span class="stringliteral">&quot;&#39;subtractMultipleTo&#39; not implemented for this kind of matrix over this &quot;</span></div>
-<div class="line"><span class="lineno">  239</span>      <span class="stringliteral">&quot;ring&quot;</span>);</div>
-<div class="line"><span class="lineno">  240</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00257">257</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  259</span>{</div>
+<div class="line"><span class="lineno">  260</span>  (void) C;</div>
+<div class="line"><span class="lineno">  261</span>  (void) A;</div>
+<div class="line"><span class="lineno">  262</span>  (void) B;</div>
+<div class="line"><span class="lineno">  263</span>  <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(</div>
+<div class="line"><span class="lineno">  264</span>      <span class="stringliteral">&quot;&#39;subtractMultipleTo&#39; not implemented for this kind of matrix over this &quot;</span></div>
+<div class="line"><span class="lineno">  265</span>      <span class="stringliteral">&quot;ring&quot;</span>);</div>
+<div class="line"><span class="lineno">  266</span>}</div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -140,7 +143,7 @@ template&lt;typename Mat &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:26 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

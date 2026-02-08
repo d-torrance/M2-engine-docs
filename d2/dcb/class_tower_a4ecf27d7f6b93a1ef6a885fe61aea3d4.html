@@ -115,20 +115,20 @@ $(document).ready(function(){initNavTree('d2/dcb/class_tower_a4ecf27d7f6b93a1ef6
 
 <p>Reimplemented from <a class="el" href="../../dd/dcf/class_ring_af5323271605df916d765d2cc9284ded8.html#af5323271605df916d765d2cc9284ded8">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5c/tower_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../de/d5c/tower_8cpp_source.html">tower.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>{</div>
-<div class="line"><span class="lineno">   90</span>  TowerPolynomial f1 = <a class="code hl_define" href="../../de/d5c/tower_8cpp_a6e6fff5c064e4333210c0afaaaa8ab1e.html#a6e6fff5c064e4333210c0afaaaa8ab1e">TOWER_POLYNOMIAL_VAL</a>(a);</div>
-<div class="line"><span class="lineno">   91</span>  std::vector&lt;int&gt; max_degs;</div>
-<div class="line"><span class="lineno">   92</span>  <a class="code hl_variable" href="../../d2/dcb/class_tower_a5346fe49dc75bceebd46c4af1a2ec5e8.html#a5346fe49dc75bceebd46c4af1a2ec5e8">D</a>-&gt;<a class="code hl_function" href="../../d6/de6/class_d_ring_af741f301eecf2ea8323c42a218db323c.html#af741f301eecf2ea8323c42a218db323c">degrees_of_vars</a>(f1, max_degs);</div>
-<div class="line"><span class="lineno">   93</span>  <span class="keywordtype">int</span> nelems = 0;</div>
-<div class="line"><span class="lineno">   94</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; max_degs.size(); i++)</div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span> (max_degs[i] &gt; 0) nelems++;</div>
-<div class="line"><span class="lineno">   96</span>  <a class="code hl_class" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a> result = <a class="code hl_function" href="../../d7/dce/_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50.html#a84a8e7c0bac25be533dcc0125ff14c50">M2_makearrayint</a>(nelems);</div>
-<div class="line"><span class="lineno">   97</span>  <span class="keywordtype">int</span> next = 0;</div>
-<div class="line"><span class="lineno">   98</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; max_degs.size(); i++)</div>
-<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">if</span> (max_degs[i] &gt; 0) result-&gt;array[next++] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(i);</div>
-<div class="line"><span class="lineno">  100</span>  <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  101</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d5c/tower_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../de/d5c/tower_8cpp_source.html">tower.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>{</div>
+<div class="line"><span class="lineno">   93</span>  TowerPolynomial f1 = <a class="code hl_define" href="../../de/d5c/tower_8cpp_a6e6fff5c064e4333210c0afaaaa8ab1e.html#a6e6fff5c064e4333210c0afaaaa8ab1e">TOWER_POLYNOMIAL_VAL</a>(a);</div>
+<div class="line"><span class="lineno">   94</span>  std::vector&lt;int&gt; max_degs;</div>
+<div class="line"><span class="lineno">   95</span>  <a class="code hl_variable" href="../../d2/dcb/class_tower_a5346fe49dc75bceebd46c4af1a2ec5e8.html#a5346fe49dc75bceebd46c4af1a2ec5e8">D</a>-&gt;<a class="code hl_function" href="../../d6/de6/class_d_ring_af741f301eecf2ea8323c42a218db323c.html#af741f301eecf2ea8323c42a218db323c">degrees_of_vars</a>(f1, max_degs);</div>
+<div class="line"><span class="lineno">   96</span>  <span class="keywordtype">int</span> nelems = 0;</div>
+<div class="line"><span class="lineno">   97</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; max_degs.size(); i++)</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">if</span> (max_degs[i] &gt; 0) nelems++;</div>
+<div class="line"><span class="lineno">   99</span>  <a class="code hl_class" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a> result = <a class="code hl_function" href="../../d7/dce/_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50.html#a84a8e7c0bac25be533dcc0125ff14c50">M2_makearrayint</a>(nelems);</div>
+<div class="line"><span class="lineno">  100</span>  <span class="keywordtype">int</span> next = 0;</div>
+<div class="line"><span class="lineno">  101</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; max_degs.size(); i++)</div>
+<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">if</span> (max_degs[i] &gt; 0) result-&gt;array[next++] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(i);</div>
+<div class="line"><span class="lineno">  103</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  104</span>}</div>
 <div class="ttc" id="a_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50_html_a84a8e7c0bac25be533dcc0125ff14c50"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_a84a8e7c0bac25be533dcc0125ff14c50.html#a84a8e7c0bac25be533dcc0125ff14c50">M2_makearrayint</a></div><div class="ttdeci">M2_arrayint M2_makearrayint(int n)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00008">M2-replacement.c:8</a></div></div>
 <div class="ttc" id="aclass_d_ring_af741f301eecf2ea8323c42a218db323c_html_af741f301eecf2ea8323c42a218db323c"><div class="ttname"><a href="../../d6/de6/class_d_ring_af741f301eecf2ea8323c42a218db323c.html#af741f301eecf2ea8323c42a218db323c">DRing::degrees_of_vars</a></div><div class="ttdeci">void degrees_of_vars(const TowerPolynomial f, std::vector&lt; int &gt; &amp;result) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/da9/dpoly_8hpp_source.html#l00361">dpoly.hpp:361</a></div></div>
 <div class="ttc" id="aclass_m2__arrayint_html"><div class="ttname"><a href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a></div></div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('d2/dcb/class_tower_a4ecf27d7f6b93a1ef6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/dcb/class_tower.html">Tower</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

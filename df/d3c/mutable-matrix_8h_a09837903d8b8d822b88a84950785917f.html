@@ -121,22 +121,22 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_a09837903d8b8
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l00182">182</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  183</span>{</div>
-<div class="line"><span class="lineno">  184</span>  <span class="keywordflow">if</span> (r &lt; 0 || r &gt;= M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">n_rows</a>())</div>
-<div class="line"><span class="lineno">  185</span>    {</div>
-<div class="line"><span class="lineno">  186</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix row index %d out of range 0 .. %d&quot;</span>, r, M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">n_rows</a>() - 1);</div>
-<div class="line"><span class="lineno">  187</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  188</span>    }</div>
-<div class="line"><span class="lineno">  189</span>  <span class="keywordflow">if</span> (c &lt; 0 || c &gt;= M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">n_cols</a>())</div>
-<div class="line"><span class="lineno">  190</span>    {</div>
-<div class="line"><span class="lineno">  191</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix column index %d out of range 0 .. %d&quot;</span>, c, M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">n_cols</a>() - 1);</div>
-<div class="line"><span class="lineno">  192</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  193</span>    }</div>
-<div class="line"><span class="lineno">  194</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> result;</div>
-<div class="line"><span class="lineno">  195</span>  M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a56128821c2eb57f3704e59937bd0472e.html#a56128821c2eb57f3704e59937bd0472e">get_entry</a>(r, c, result);</div>
-<div class="line"><span class="lineno">  196</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_ad146cd609596d0a9476679ac859257a3.html#ad146cd609596d0a9476679ac859257a3">get_ring</a>(), result);</div>
-<div class="line"><span class="lineno">  197</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l00186">186</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  187</span>{</div>
+<div class="line"><span class="lineno">  188</span>  <span class="keywordflow">if</span> (r &lt; 0 || r &gt;= M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">n_rows</a>())</div>
+<div class="line"><span class="lineno">  189</span>    {</div>
+<div class="line"><span class="lineno">  190</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix row index %d out of range 0 .. %d&quot;</span>, r, M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">n_rows</a>() - 1);</div>
+<div class="line"><span class="lineno">  191</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  192</span>    }</div>
+<div class="line"><span class="lineno">  193</span>  <span class="keywordflow">if</span> (c &lt; 0 || c &gt;= M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">n_cols</a>())</div>
+<div class="line"><span class="lineno">  194</span>    {</div>
+<div class="line"><span class="lineno">  195</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;matrix column index %d out of range 0 .. %d&quot;</span>, c, M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">n_cols</a>() - 1);</div>
+<div class="line"><span class="lineno">  196</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  197</span>    }</div>
+<div class="line"><span class="lineno">  198</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> result;</div>
+<div class="line"><span class="lineno">  199</span>  M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a56128821c2eb57f3704e59937bd0472e.html#a56128821c2eb57f3704e59937bd0472e">get_entry</a>(r, c, result);</div>
+<div class="line"><span class="lineno">  200</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_ad146cd609596d0a9476679ac859257a3.html#ad146cd609596d0a9476679ac859257a3">get_ring</a>(), result);</div>
+<div class="line"><span class="lineno">  201</span>}</div>
 <div class="ttc" id="aclass_mutable_matrix_a01144944f09b10b128272fc5c2844a32_html_a01144944f09b10b128272fc5c2844a32"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">MutableMatrix::n_rows</a></div><div class="ttdeci">virtual size_t n_rows() const =0</div></div>
 <div class="ttc" id="aclass_mutable_matrix_a30be137116d098d73a677476902998bd_html_a30be137116d098d73a677476902998bd"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">MutableMatrix::n_cols</a></div><div class="ttdeci">virtual size_t n_cols() const =0</div></div>
 <div class="ttc" id="aclass_mutable_matrix_a56128821c2eb57f3704e59937bd0472e_html_a56128821c2eb57f3704e59937bd0472e"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_a56128821c2eb57f3704e59937bd0472e.html#a56128821c2eb57f3704e59937bd0472e">MutableMatrix::get_entry</a></div><div class="ttdeci">virtual bool get_entry(size_t r, size_t c, ring_elem &amp;result) const =0</div></div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_a09837903d8b8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../df/d3c/mutable-matrix_8h.html">mutable-matrix.h</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:22 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

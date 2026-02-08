@@ -115,21 +115,21 @@ $(document).ready(function(){initNavTree('d7/d1a/class_z__mod_a6f408f3b3cc0284ef
 
 <p>Implements <a class="el" href="../../dd/dcf/class_ring_acffb3aa37f626fa37bfa72dd6de4733d.html#acffb3aa37f626fa37bfa72dd6de4733d">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d41/_z_zp_8cpp_source.html#l00139">139</a> of file <a class="el" href="../../dd/d41/_z_zp_8cpp_source.html">ZZp.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  140</span>{</div>
-<div class="line"><span class="lineno">  141</span>  <span class="comment">//  cout &lt;&lt; &quot;from_int(&quot;;</span></div>
-<div class="line"><span class="lineno">  142</span>  <span class="comment">//  bignum_text_out(cout, n);</span></div>
-<div class="line"><span class="lineno">  143</span>  <span class="comment">//  cout &lt;&lt; &quot;) = &quot; &lt;&lt; endl;</span></div>
-<div class="line"><span class="lineno">  144</span>  mpz_t result;</div>
-<div class="line"><span class="lineno">  145</span>  mpz_init(result);</div>
-<div class="line"><span class="lineno">  146</span>  mpz_mod_ui(result, n, <a class="code hl_variable" href="../../d7/d1a/class_z__mod_a0b33adfbf4a60e90b9f6f732540e7819.html#a0b33adfbf4a60e90b9f6f732540e7819">P</a>);</div>
-<div class="line"><span class="lineno">  147</span>  <span class="keywordtype">int</span> m = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(mpz_get_si(result));</div>
-<div class="line"><span class="lineno">  148</span>  mpz_clear(result);</div>
-<div class="line"><span class="lineno">  149</span>  <span class="comment">//  cout &lt;&lt; m &lt;&lt; endl;</span></div>
-<div class="line"><span class="lineno">  150</span>  <span class="keywordflow">if</span> (m &lt; 0) m += <a class="code hl_variable" href="../../d7/d1a/class_z__mod_a0b33adfbf4a60e90b9f6f732540e7819.html#a0b33adfbf4a60e90b9f6f732540e7819">P</a>;</div>
-<div class="line"><span class="lineno">  151</span>  m = <a class="code hl_variable" href="../../d7/d1a/class_z__mod_afb31a069856ae1da42ecfea6277ada5c.html#afb31a069856ae1da42ecfea6277ada5c">_log_table</a>[m];</div>
-<div class="line"><span class="lineno">  152</span>  <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(m);</div>
-<div class="line"><span class="lineno">  153</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/d41/_z_zp_8cpp_source.html#l00140">140</a> of file <a class="el" href="../../dd/d41/_z_zp_8cpp_source.html">ZZp.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  141</span>{</div>
+<div class="line"><span class="lineno">  142</span>  <span class="comment">//  cout &lt;&lt; &quot;from_int(&quot;;</span></div>
+<div class="line"><span class="lineno">  143</span>  <span class="comment">//  bignum_text_out(cout, n);</span></div>
+<div class="line"><span class="lineno">  144</span>  <span class="comment">//  cout &lt;&lt; &quot;) = &quot; &lt;&lt; endl;</span></div>
+<div class="line"><span class="lineno">  145</span>  mpz_t result;</div>
+<div class="line"><span class="lineno">  146</span>  mpz_init(result);</div>
+<div class="line"><span class="lineno">  147</span>  mpz_mod_ui(result, n, <a class="code hl_variable" href="../../d7/d1a/class_z__mod_a0b33adfbf4a60e90b9f6f732540e7819.html#a0b33adfbf4a60e90b9f6f732540e7819">P</a>);</div>
+<div class="line"><span class="lineno">  148</span>  <span class="keywordtype">int</span> m = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(mpz_get_si(result));</div>
+<div class="line"><span class="lineno">  149</span>  mpz_clear(result);</div>
+<div class="line"><span class="lineno">  150</span>  <span class="comment">//  cout &lt;&lt; m &lt;&lt; endl;</span></div>
+<div class="line"><span class="lineno">  151</span>  <span class="keywordflow">if</span> (m &lt; 0) m += <a class="code hl_variable" href="../../d7/d1a/class_z__mod_a0b33adfbf4a60e90b9f6f732540e7819.html#a0b33adfbf4a60e90b9f6f732540e7819">P</a>;</div>
+<div class="line"><span class="lineno">  152</span>  m = <a class="code hl_variable" href="../../d7/d1a/class_z__mod_afb31a069856ae1da42ecfea6277ada5c.html#afb31a069856ae1da42ecfea6277ada5c">_log_table</a>[m];</div>
+<div class="line"><span class="lineno">  153</span>  <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(m);</div>
+<div class="line"><span class="lineno">  154</span>}</div>
 <div class="ttc" id="aclass_z__mod_a0b33adfbf4a60e90b9f6f732540e7819_html_a0b33adfbf4a60e90b9f6f732540e7819"><div class="ttname"><a href="../../d7/d1a/class_z__mod_a0b33adfbf4a60e90b9f6f732540e7819.html#a0b33adfbf4a60e90b9f6f732540e7819">Z_mod::P</a></div><div class="ttdeci">int P</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d23/_z_zp_8hpp_source.html#l00016">ZZp.hpp:16</a></div></div>
 <div class="ttc" id="aclass_z__mod_afb31a069856ae1da42ecfea6277ada5c_html_afb31a069856ae1da42ecfea6277ada5c"><div class="ttname"><a href="../../d7/d1a/class_z__mod_afb31a069856ae1da42ecfea6277ada5c.html#afb31a069856ae1da42ecfea6277ada5c">Z_mod::_log_table</a></div><div class="ttdeci">int * _log_table</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d23/_z_zp_8hpp_source.html#l00024">ZZp.hpp:24</a></div></div>
 <div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00042">ringelem.hpp:43</a></div></div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('d7/d1a/class_z__mod_a6f408f3b3cc0284ef
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d1a/class_z__mod.html">Z_mod</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

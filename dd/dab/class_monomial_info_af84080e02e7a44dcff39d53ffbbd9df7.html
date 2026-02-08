@@ -129,17 +129,17 @@ $(document).ready(function(){initNavTree('dd/dab/class_monomial_info_af84080e02e
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d0a/moninfo_8hpp_source.html#l00192">192</a> of file <a class="el" href="../../d5/d0a/moninfo_8hpp_source.html">moninfo.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  195</span>  {</div>
-<div class="line"><span class="lineno">  196</span>    <span class="comment">// Unpack the monomial m into result, which should already be allocated</span></div>
-<div class="line"><span class="lineno">  197</span>    <span class="comment">// 0..nvars-1</span></div>
-<div class="line"><span class="lineno">  198</span>    <span class="comment">// this is to connect with older &#39;int *&#39; monomials.</span></div>
-<div class="line"><span class="lineno">  199</span>    <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a98a5648ed0a903736b1d675c80208b4b.html#a98a5648ed0a903736b1d675c80208b4b">ncalls_to_expvector</a>++;</div>
-<div class="line"><span class="lineno">  200</span>    result_comp = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m[1]);</div>
-<div class="line"><span class="lineno">  201</span>    m += <a class="code hl_variable" href="../../dd/dab/class_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c.html#ab871cfa4ab66344a8de516bf9fe5962c">firstvar</a>;</div>
-<div class="line"><span class="lineno">  202</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nvars; i++) *result++ = static_cast&lt;int&gt;(*m++);</div>
-<div class="line"><span class="lineno">  203</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  204</span>  }</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d0a/moninfo_8hpp_source.html#l00197">197</a> of file <a class="el" href="../../d5/d0a/moninfo_8hpp_source.html">moninfo.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  200</span>  {</div>
+<div class="line"><span class="lineno">  201</span>    <span class="comment">// Unpack the monomial m into result, which should already be allocated</span></div>
+<div class="line"><span class="lineno">  202</span>    <span class="comment">// 0..nvars-1</span></div>
+<div class="line"><span class="lineno">  203</span>    <span class="comment">// this is to connect with older &#39;int *&#39; monomials.</span></div>
+<div class="line"><span class="lineno">  204</span>    <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a98a5648ed0a903736b1d675c80208b4b.html#a98a5648ed0a903736b1d675c80208b4b">ncalls_to_expvector</a>++;</div>
+<div class="line"><span class="lineno">  205</span>    result_comp = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m[1]);</div>
+<div class="line"><span class="lineno">  206</span>    m += <a class="code hl_variable" href="../../dd/dab/class_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c.html#ab871cfa4ab66344a8de516bf9fe5962c">firstvar</a>;</div>
+<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nvars; i++) *result++ = static_cast&lt;int&gt;(*m++);</div>
+<div class="line"><span class="lineno">  208</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  209</span>  }</div>
 <div class="ttc" id="aclass_monomial_info_a98a5648ed0a903736b1d675c80208b4b_html_a98a5648ed0a903736b1d675c80208b4b"><div class="ttname"><a href="../../dd/dab/class_monomial_info_a98a5648ed0a903736b1d675c80208b4b.html#a98a5648ed0a903736b1d675c80208b4b">MonomialInfo::ncalls_to_expvector</a></div><div class="ttdeci">unsigned long ncalls_to_expvector</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00075">moninfo.hpp:75</a></div></div>
 <div class="ttc" id="aclass_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c_html_ab871cfa4ab66344a8de516bf9fe5962c"><div class="ttname"><a href="../../dd/dab/class_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c.html#ab871cfa4ab66344a8de516bf9fe5962c">MonomialInfo::firstvar</a></div><div class="ttdeci">int firstvar</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00054">moninfo.hpp:54</a></div></div>
 </div><!-- fragment -->
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('dd/dab/class_monomial_info_af84080e02e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dab/class_monomial_info.html">MonomialInfo</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

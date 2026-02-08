@@ -123,37 +123,37 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a982d4a82ade8a75f8
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l00729">729</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  730</span>{</div>
-<div class="line"><span class="lineno">  731</span>  <span class="keywordtype">int</span> i;</div>
-<div class="line"><span class="lineno">  732</span>  <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  733</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  734</span>    {</div>
-<div class="line"><span class="lineno">  735</span>      f = <a class="code hl_function" href="../../d3/d42/class_d_poly_a2f56942fe6577e7c42bae14c3736f3c5.html#a2f56942fe6577e7c42bae14c3736f3c5">copy</a>(0, g);</div>
-<div class="line"><span class="lineno">  736</span>      <a class="code hl_function" href="../../d3/d42/class_d_poly_ac070325884d331e700a2df1457b40840.html#ac070325884d331e700a2df1457b40840">negate_in_place</a>(0, f);</div>
-<div class="line"><span class="lineno">  737</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  738</span>    }</div>
-<div class="line"><span class="lineno">  739</span>  <span class="keywordtype">int</span> fdeg = f-&gt;deg;</div>
-<div class="line"><span class="lineno">  740</span>  <span class="keywordtype">int</span> gdeg = g-&gt;deg;</div>
-<div class="line"><span class="lineno">  741</span> </div>
-<div class="line"><span class="lineno">  742</span>  <a class="code hl_function" href="../../d3/d42/class_d_poly_a8783b9caf34c5b618100ac36a2eef9c4.html#a8783b9caf34c5b618100ac36a2eef9c4">increase_size_0</a>(g-&gt;deg, f);</div>
-<div class="line"><span class="lineno">  743</span>  <span class="keywordflow">for</span> (i = 0; i &lt;= gdeg; i++)</div>
-<div class="line"><span class="lineno">  744</span>    <a class="code hl_function" href="../../d4/d23/dpoly_8cpp_aba4322437473ffd386de25decc26282c.html#aba4322437473ffd386de25decc26282c">ZZp_SUBTRACT_TO</a>(<a class="code hl_variable" href="../../d3/d42/class_d_poly_a6a12d50610a9ea007f72420f6a30ce16.html#a6a12d50610a9ea007f72420f6a30ce16">charac</a>, f-&gt;arr.ints[i], g-&gt;arr.ints[i]);</div>
-<div class="line"><span class="lineno">  745</span>  <span class="keywordflow">if</span> (gdeg &gt; fdeg)</div>
-<div class="line"><span class="lineno">  746</span>    f-&gt;deg = gdeg;</div>
-<div class="line"><span class="lineno">  747</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (gdeg == fdeg)</div>
-<div class="line"><span class="lineno">  748</span>    {</div>
-<div class="line"><span class="lineno">  749</span>      <span class="comment">// need to change the degree</span></div>
-<div class="line"><span class="lineno">  750</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = fdeg; j &gt;= 0; --j)</div>
-<div class="line"><span class="lineno">  751</span>        <span class="keywordflow">if</span> (f-&gt;arr.ints[j] != 0)</div>
-<div class="line"><span class="lineno">  752</span>          {</div>
-<div class="line"><span class="lineno">  753</span>            f-&gt;deg = j;</div>
-<div class="line"><span class="lineno">  754</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  755</span>          }</div>
-<div class="line"><span class="lineno">  756</span>      <span class="comment">// at this point, everything is 0!</span></div>
-<div class="line"><span class="lineno">  757</span>      <a class="code hl_function" href="../../d3/d42/class_d_poly_ab6f011d51e611e3d699476d484ff1eb3.html#ab6f011d51e611e3d699476d484ff1eb3">dealloc_poly</a>(f);</div>
-<div class="line"><span class="lineno">  758</span>    }</div>
-<div class="line"><span class="lineno">  759</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l00730">730</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  731</span>{</div>
+<div class="line"><span class="lineno">  732</span>  <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno">  733</span>  <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  734</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  735</span>    {</div>
+<div class="line"><span class="lineno">  736</span>      f = <a class="code hl_function" href="../../d3/d42/class_d_poly_a2f56942fe6577e7c42bae14c3736f3c5.html#a2f56942fe6577e7c42bae14c3736f3c5">copy</a>(0, g);</div>
+<div class="line"><span class="lineno">  737</span>      <a class="code hl_function" href="../../d3/d42/class_d_poly_ac070325884d331e700a2df1457b40840.html#ac070325884d331e700a2df1457b40840">negate_in_place</a>(0, f);</div>
+<div class="line"><span class="lineno">  738</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  739</span>    }</div>
+<div class="line"><span class="lineno">  740</span>  <span class="keywordtype">int</span> fdeg = f-&gt;deg;</div>
+<div class="line"><span class="lineno">  741</span>  <span class="keywordtype">int</span> gdeg = g-&gt;deg;</div>
+<div class="line"><span class="lineno">  742</span> </div>
+<div class="line"><span class="lineno">  743</span>  <a class="code hl_function" href="../../d3/d42/class_d_poly_a8783b9caf34c5b618100ac36a2eef9c4.html#a8783b9caf34c5b618100ac36a2eef9c4">increase_size_0</a>(g-&gt;deg, f);</div>
+<div class="line"><span class="lineno">  744</span>  <span class="keywordflow">for</span> (i = 0; i &lt;= gdeg; i++)</div>
+<div class="line"><span class="lineno">  745</span>    <a class="code hl_function" href="../../d4/d23/dpoly_8cpp_aba4322437473ffd386de25decc26282c.html#aba4322437473ffd386de25decc26282c">ZZp_SUBTRACT_TO</a>(<a class="code hl_variable" href="../../d3/d42/class_d_poly_a6a12d50610a9ea007f72420f6a30ce16.html#a6a12d50610a9ea007f72420f6a30ce16">charac</a>, f-&gt;arr.ints[i], g-&gt;arr.ints[i]);</div>
+<div class="line"><span class="lineno">  746</span>  <span class="keywordflow">if</span> (gdeg &gt; fdeg)</div>
+<div class="line"><span class="lineno">  747</span>    f-&gt;deg = gdeg;</div>
+<div class="line"><span class="lineno">  748</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (gdeg == fdeg)</div>
+<div class="line"><span class="lineno">  749</span>    {</div>
+<div class="line"><span class="lineno">  750</span>      <span class="comment">// need to change the degree</span></div>
+<div class="line"><span class="lineno">  751</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = fdeg; j &gt;= 0; --j)</div>
+<div class="line"><span class="lineno">  752</span>        <span class="keywordflow">if</span> (f-&gt;arr.ints[j] != 0)</div>
+<div class="line"><span class="lineno">  753</span>          {</div>
+<div class="line"><span class="lineno">  754</span>            f-&gt;deg = j;</div>
+<div class="line"><span class="lineno">  755</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  756</span>          }</div>
+<div class="line"><span class="lineno">  757</span>      <span class="comment">// at this point, everything is 0!</span></div>
+<div class="line"><span class="lineno">  758</span>      <a class="code hl_function" href="../../d3/d42/class_d_poly_ab6f011d51e611e3d699476d484ff1eb3.html#ab6f011d51e611e3d699476d484ff1eb3">dealloc_poly</a>(f);</div>
+<div class="line"><span class="lineno">  759</span>    }</div>
+<div class="line"><span class="lineno">  760</span>}</div>
 <div class="ttc" id="aclass_d_poly_a2f56942fe6577e7c42bae14c3736f3c5_html_a2f56942fe6577e7c42bae14c3736f3c5"><div class="ttname"><a href="../../d3/d42/class_d_poly_a2f56942fe6577e7c42bae14c3736f3c5.html#a2f56942fe6577e7c42bae14c3736f3c5">DPoly::copy</a></div><div class="ttdeci">static TowerPolynomial copy(int level, const TowerPolynomial f)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00483">dpoly.cpp:483</a></div></div>
 <div class="ttc" id="aclass_d_poly_a6a12d50610a9ea007f72420f6a30ce16_html_a6a12d50610a9ea007f72420f6a30ce16"><div class="ttname"><a href="../../d3/d42/class_d_poly_a6a12d50610a9ea007f72420f6a30ce16.html#a6a12d50610a9ea007f72420f6a30ce16">DPoly::charac</a></div><div class="ttdeci">long charac</div><div class="ttdef"><b>Definition</b> <a href="../../dc/da9/dpoly_8hpp_source.html#l00049">dpoly.hpp:49</a></div></div>
 <div class="ttc" id="aclass_d_poly_a8783b9caf34c5b618100ac36a2eef9c4_html_a8783b9caf34c5b618100ac36a2eef9c4"><div class="ttname"><a href="../../d3/d42/class_d_poly_a8783b9caf34c5b618100ac36a2eef9c4.html#a8783b9caf34c5b618100ac36a2eef9c4">DPoly::increase_size_0</a></div><div class="ttdeci">static void increase_size_0(int newdeg, TowerPolynomial &amp;f)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00233">dpoly.cpp:233</a></div></div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a982d4a82ade8a75f8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -123,24 +123,24 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_aee2f
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html#l00289">289</a> of file <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html">aring-tower.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  291</span>{</div>
-<div class="line"><span class="lineno">  292</span>  <span class="keywordflow">if</span> (v &gt; level) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  293</span>  <span class="keywordtype">int</span> which = (v == 0 ? 1 : 0);</div>
-<div class="line"><span class="lineno">  294</span>  <a class="code hl_typedef" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a> result =</div>
-<div class="line"><span class="lineno">  295</span>      <a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_a83749c51d16b797d079f420ef2753516.html#a83749c51d16b797d079f420ef2753516">alloc_poly_0</a>(which);  <span class="comment">// TODO: check that this initializes elements to 0</span></div>
-<div class="line"><span class="lineno">  296</span>  result-&gt;coeffs[which] = 1;</div>
-<div class="line"><span class="lineno">  297</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= level; i++)</div>
-<div class="line"><span class="lineno">  298</span>    {</div>
-<div class="line"><span class="lineno">  299</span>      which = (i == v ? 1 : 0);</div>
-<div class="line"><span class="lineno">  300</span>      <a class="code hl_typedef" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a> a = result;</div>
-<div class="line"><span class="lineno">  301</span>      result = <a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_a6a1a3233b7d279b39ae43cfa68baecd9.html#a6a1a3233b7d279b39ae43cfa68baecd9">alloc_poly_n</a>(which);</div>
-<div class="line"><span class="lineno">  302</span>      result-&gt;polys[which] = a;</div>
-<div class="line"><span class="lineno">  303</span>    }</div>
-<div class="line"><span class="lineno">  304</span>  <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  305</span>}</div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_tower_a6a1a3233b7d279b39ae43cfa68baecd9_html_a6a1a3233b7d279b39ae43cfa68baecd9"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_a6a1a3233b7d279b39ae43cfa68baecd9.html#a6a1a3233b7d279b39ae43cfa68baecd9">M2::ARingTower::alloc_poly_n</a></div><div class="ttdeci">ARingPolynomial alloc_poly_n(int deg) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dcb/aring-tower_8cpp_source.html#l00068">aring-tower.cpp:68</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_tower_a83749c51d16b797d079f420ef2753516_html_a83749c51d16b797d079f420ef2753516"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_a83749c51d16b797d079f420ef2753516.html#a83749c51d16b797d079f420ef2753516">M2::ARingTower::alloc_poly_0</a></div><div class="ttdeci">ARingPolynomial alloc_poly_0(int deg) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dcb/aring-tower_8cpp_source.html#l00079">aring-tower.cpp:79</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html#l00291">291</a> of file <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html">aring-tower.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  293</span>{</div>
+<div class="line"><span class="lineno">  294</span>  <span class="keywordflow">if</span> (v &gt; level) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  295</span>  <span class="keywordtype">int</span> which = (v == 0 ? 1 : 0);</div>
+<div class="line"><span class="lineno">  296</span>  <a class="code hl_typedef" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a> result =</div>
+<div class="line"><span class="lineno">  297</span>      <a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_a83749c51d16b797d079f420ef2753516.html#a83749c51d16b797d079f420ef2753516">alloc_poly_0</a>(which);  <span class="comment">// TODO: check that this initializes elements to 0</span></div>
+<div class="line"><span class="lineno">  298</span>  result-&gt;coeffs[which] = 1;</div>
+<div class="line"><span class="lineno">  299</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= level; i++)</div>
+<div class="line"><span class="lineno">  300</span>    {</div>
+<div class="line"><span class="lineno">  301</span>      which = (i == v ? 1 : 0);</div>
+<div class="line"><span class="lineno">  302</span>      <a class="code hl_typedef" href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">ARingPolynomial</a> a = result;</div>
+<div class="line"><span class="lineno">  303</span>      result = <a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_a6a1a3233b7d279b39ae43cfa68baecd9.html#a6a1a3233b7d279b39ae43cfa68baecd9">alloc_poly_n</a>(which);</div>
+<div class="line"><span class="lineno">  304</span>      result-&gt;polys[which] = a;</div>
+<div class="line"><span class="lineno">  305</span>    }</div>
+<div class="line"><span class="lineno">  306</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  307</span>}</div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_tower_a6a1a3233b7d279b39ae43cfa68baecd9_html_a6a1a3233b7d279b39ae43cfa68baecd9"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_a6a1a3233b7d279b39ae43cfa68baecd9.html#a6a1a3233b7d279b39ae43cfa68baecd9">M2::ARingTower::alloc_poly_n</a></div><div class="ttdeci">ARingPolynomial alloc_poly_n(int deg) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dcb/aring-tower_8cpp_source.html#l00070">aring-tower.cpp:70</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_tower_a83749c51d16b797d079f420ef2753516_html_a83749c51d16b797d079f420ef2753516"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_a83749c51d16b797d079f420ef2753516.html#a83749c51d16b797d079f420ef2753516">M2::ARingTower::alloc_poly_0</a></div><div class="ttdeci">ARingPolynomial alloc_poly_0(int deg) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dcb/aring-tower_8cpp_source.html#l00081">aring-tower.cpp:81</a></div></div>
 <div class="ttc" id="agroup__polynomialrings_ga490857490c2a55400c60f9f0ff498f80_html_ga490857490c2a55400c60f9f0ff498f80"><div class="ttname"><a href="../../da/d37/group__polynomialrings_ga490857490c2a55400c60f9f0ff498f80.html#ga490857490c2a55400c60f9f0ff498f80">M2::ARingPolynomial</a></div><div class="ttdeci">struct ARingPolynomialStruct * ARingPolynomial</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dd0/aring-tower_8hpp_source.html#l00020">aring-tower.hpp:20</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_ad92345b7b933d2a73d1619ac95c1580b.html#ad92345b7b933d2a73d1619ac95c1580b">M2::ARingPolynomialStruct::coeffs</a>, and <a class="el" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9">M2::ARingPolynomialStruct::polys</a>.</p>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_aee2f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../da/d48/class_m2_1_1_a_ring_tower.html">ARingTower</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

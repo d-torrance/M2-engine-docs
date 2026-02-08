@@ -115,36 +115,36 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_ada52875a8c75669
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l00742">742</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  743</span>{</div>
-<div class="line"><span class="lineno">  744</span>  <span class="comment">// Divide f into two lists of equal length, sort each,</span></div>
-<div class="line"><span class="lineno">  745</span>  <span class="comment">// then add them together.  This allows the same monomial</span></div>
-<div class="line"><span class="lineno">  746</span>  <span class="comment">// to appear more than once in &#39;f&#39;.</span></div>
-<div class="line"><span class="lineno">  747</span> </div>
-<div class="line"><span class="lineno">  748</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span> || f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  749</span>  <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *f1 = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  750</span>  <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *f2 = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  751</span>  <span class="keywordflow">while</span> (f != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  752</span>    {</div>
-<div class="line"><span class="lineno">  753</span>      <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *t = f;</div>
-<div class="line"><span class="lineno">  754</span>      f = f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><span class="lineno">  755</span>      t-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = f1;</div>
-<div class="line"><span class="lineno">  756</span>      f1 = t;</div>
-<div class="line"><span class="lineno">  757</span> </div>
-<div class="line"><span class="lineno">  758</span>      <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  759</span>      t = f;</div>
-<div class="line"><span class="lineno">  760</span>      f = f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
-<div class="line"><span class="lineno">  761</span>      t-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = f2;</div>
-<div class="line"><span class="lineno">  762</span>      f2 = t;</div>
-<div class="line"><span class="lineno">  763</span>    }</div>
-<div class="line"><span class="lineno">  764</span> </div>
-<div class="line"><span class="lineno">  765</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_ada52875a8c756693e431a535283be409.html#ada52875a8c756693e431a535283be409">gbvector_sort</a>(F, f1);</div>
-<div class="line"><span class="lineno">  766</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_ada52875a8c756693e431a535283be409.html#ada52875a8c756693e431a535283be409">gbvector_sort</a>(F, f2);</div>
-<div class="line"><span class="lineno">  767</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_ad185a1fa27c0b16d63710fc6bd9dee50.html#ad185a1fa27c0b16d63710fc6bd9dee50">gbvector_add_to</a>(F, f1, f2);</div>
-<div class="line"><span class="lineno">  768</span>  f = f1;</div>
-<div class="line"><span class="lineno">  769</span>}</div>
-<div class="ttc" id="aclass_g_b_ring_ad185a1fa27c0b16d63710fc6bd9dee50_html_ad185a1fa27c0b16d63710fc6bd9dee50"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_ad185a1fa27c0b16d63710fc6bd9dee50.html#ad185a1fa27c0b16d63710fc6bd9dee50">GBRing::gbvector_add_to</a></div><div class="ttdeci">void gbvector_add_to(const FreeModule *F, gbvector *&amp;f, gbvector *&amp;g)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00660">gbring.cpp:660</a></div></div>
-<div class="ttc" id="aclass_g_b_ring_ada52875a8c756693e431a535283be409_html_ada52875a8c756693e431a535283be409"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_ada52875a8c756693e431a535283be409.html#ada52875a8c756693e431a535283be409">GBRing::gbvector_sort</a></div><div class="ttdeci">void gbvector_sort(const FreeModule *F, gbvector *&amp;f)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00742">gbring.cpp:742</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l00750">750</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  751</span>{</div>
+<div class="line"><span class="lineno">  752</span>  <span class="comment">// Divide f into two lists of equal length, sort each,</span></div>
+<div class="line"><span class="lineno">  753</span>  <span class="comment">// then add them together.  This allows the same monomial</span></div>
+<div class="line"><span class="lineno">  754</span>  <span class="comment">// to appear more than once in &#39;f&#39;.</span></div>
+<div class="line"><span class="lineno">  755</span> </div>
+<div class="line"><span class="lineno">  756</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span> || f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  757</span>  <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *f1 = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  758</span>  <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *f2 = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  759</span>  <span class="keywordflow">while</span> (f != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  760</span>    {</div>
+<div class="line"><span class="lineno">  761</span>      <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *t = f;</div>
+<div class="line"><span class="lineno">  762</span>      f = f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
+<div class="line"><span class="lineno">  763</span>      t-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = f1;</div>
+<div class="line"><span class="lineno">  764</span>      f1 = t;</div>
+<div class="line"><span class="lineno">  765</span> </div>
+<div class="line"><span class="lineno">  766</span>      <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  767</span>      t = f;</div>
+<div class="line"><span class="lineno">  768</span>      f = f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>;</div>
+<div class="line"><span class="lineno">  769</span>      t-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a> = f2;</div>
+<div class="line"><span class="lineno">  770</span>      f2 = t;</div>
+<div class="line"><span class="lineno">  771</span>    }</div>
+<div class="line"><span class="lineno">  772</span> </div>
+<div class="line"><span class="lineno">  773</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_ada52875a8c756693e431a535283be409.html#ada52875a8c756693e431a535283be409">gbvector_sort</a>(F, f1);</div>
+<div class="line"><span class="lineno">  774</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_ada52875a8c756693e431a535283be409.html#ada52875a8c756693e431a535283be409">gbvector_sort</a>(F, f2);</div>
+<div class="line"><span class="lineno">  775</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_ad185a1fa27c0b16d63710fc6bd9dee50.html#ad185a1fa27c0b16d63710fc6bd9dee50">gbvector_add_to</a>(F, f1, f2);</div>
+<div class="line"><span class="lineno">  776</span>  f = f1;</div>
+<div class="line"><span class="lineno">  777</span>}</div>
+<div class="ttc" id="aclass_g_b_ring_ad185a1fa27c0b16d63710fc6bd9dee50_html_ad185a1fa27c0b16d63710fc6bd9dee50"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_ad185a1fa27c0b16d63710fc6bd9dee50.html#ad185a1fa27c0b16d63710fc6bd9dee50">GBRing::gbvector_add_to</a></div><div class="ttdeci">void gbvector_add_to(const FreeModule *F, gbvector *&amp;f, gbvector *&amp;g)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00668">gbring.cpp:668</a></div></div>
+<div class="ttc" id="aclass_g_b_ring_ada52875a8c756693e431a535283be409_html_ada52875a8c756693e431a535283be409"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_ada52875a8c756693e431a535283be409.html#ada52875a8c756693e431a535283be409">GBRing::gbvector_sort</a></div><div class="ttdeci">void gbvector_sort(const FreeModule *F, gbvector *&amp;f)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00750">gbring.cpp:750</a></div></div>
 <div class="ttc" id="astructgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26_html_a3cc2bd9a347521ac3e6d6d89de1a3a26"><div class="ttname"><a href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">gbvector::next</a></div><div class="ttdeci">gbvector * next</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00045">gbring.hpp:45</a></div></div>
 <div class="ttc" id="astructgbvector_html"><div class="ttname"><a href="../../d7/d40/structgbvector.html">gbvector</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00043">gbring.hpp:44</a></div></div>
 </div><!-- fragment -->
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_ada52875a8c75669
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

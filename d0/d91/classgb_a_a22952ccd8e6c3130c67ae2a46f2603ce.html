@@ -123,60 +123,60 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_a22952ccd8e6c3130c67a
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html#l00519">519</a> of file <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html">gb-default.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  520</span>{</div>
-<div class="line"><span class="lineno">  521</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> N = 1000;</div>
-<div class="line"><span class="lineno">  522</span>  <span class="keywordtype">char</span> s[N];  <span class="comment">// enough room for all of the non polynomial cases.</span></div>
-<div class="line"><span class="lineno">  523</span>  <span class="keywordflow">switch</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;type)</div>
-<div class="line"><span class="lineno">  524</span>    {</div>
-<div class="line"><span class="lineno">  525</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d0/d91/classgb_a_aedd89f6427d510198ec5b4bb752117df.html#aedd89f6427d510198ec5b4bb752117dfa49e90f77251c56256e33d141e65d960e">SPAIR::SPAIR_GCD_ZZ</a>:</div>
-<div class="line"><span class="lineno">  526</span>        snprintf(s, N, <span class="stringliteral">&quot;spairgcd(g%d,g%d)&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.j, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.i);</div>
-<div class="line"><span class="lineno">  527</span>        o &lt;&lt; s;</div>
-<div class="line"><span class="lineno">  528</span>        snprintf(s, N, <span class="stringliteral">&quot; deg(%d)&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;deg);</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html#l00521">521</a> of file <a class="el" href="../../d5/dd0/gb-default_8cpp_source.html">gb-default.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  522</span>{</div>
+<div class="line"><span class="lineno">  523</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> N = 1000;</div>
+<div class="line"><span class="lineno">  524</span>  <span class="keywordtype">char</span> s[N];  <span class="comment">// enough room for all of the non polynomial cases.</span></div>
+<div class="line"><span class="lineno">  525</span>  <span class="keywordflow">switch</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;type)</div>
+<div class="line"><span class="lineno">  526</span>    {</div>
+<div class="line"><span class="lineno">  527</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d0/d91/classgb_a_aedd89f6427d510198ec5b4bb752117df.html#aedd89f6427d510198ec5b4bb752117dfa49e90f77251c56256e33d141e65d960e">SPAIR::SPAIR_GCD_ZZ</a>:</div>
+<div class="line"><span class="lineno">  528</span>        snprintf(s, N, <span class="stringliteral">&quot;spairgcd(g%d,g%d)&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.j, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.i);</div>
 <div class="line"><span class="lineno">  529</span>        o &lt;&lt; s;</div>
-<div class="line"><span class="lineno">  530</span>        o &lt;&lt; <span class="stringliteral">&quot; lcm[&quot;</span>;</div>
-<div class="line"><span class="lineno">  531</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../d0/d91/classgb_a_a353f29c3c8b3275d9321c28020cb478c.html#a353f29c3c8b3275d9321c28020cb478c">_nvars</a> + 2; i++)</div>
-<div class="line"><span class="lineno">  532</span>          {</div>
-<div class="line"><span class="lineno">  533</span>            snprintf(s, N, <span class="stringliteral">&quot;%d &quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;lcm[i]);</div>
-<div class="line"><span class="lineno">  534</span>            o &lt;&lt; s;</div>
-<div class="line"><span class="lineno">  535</span>          }</div>
-<div class="line"><span class="lineno">  536</span>        o &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line"><span class="lineno">  537</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  538</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d0/d91/classgb_a_aedd89f6427d510198ec5b4bb752117df.html#aedd89f6427d510198ec5b4bb752117dfa167d4b7179061ee66524f1c8a2226791">SPAIR::SPAIR_SPAIR</a>:</div>
-<div class="line"><span class="lineno">  539</span>        snprintf(s, N, <span class="stringliteral">&quot;spair(g%d,g%d):&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.j, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.i);</div>
-<div class="line"><span class="lineno">  540</span>        o &lt;&lt; s;</div>
-<div class="line"><span class="lineno">  541</span>        snprintf(s, N, <span class="stringliteral">&quot; deg %d&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;deg);</div>
+<div class="line"><span class="lineno">  530</span>        snprintf(s, N, <span class="stringliteral">&quot; deg(%d)&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;deg);</div>
+<div class="line"><span class="lineno">  531</span>        o &lt;&lt; s;</div>
+<div class="line"><span class="lineno">  532</span>        o &lt;&lt; <span class="stringliteral">&quot; lcm[&quot;</span>;</div>
+<div class="line"><span class="lineno">  533</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../d0/d91/classgb_a_a353f29c3c8b3275d9321c28020cb478c.html#a353f29c3c8b3275d9321c28020cb478c">_nvars</a> + 2; i++)</div>
+<div class="line"><span class="lineno">  534</span>          {</div>
+<div class="line"><span class="lineno">  535</span>            snprintf(s, N, <span class="stringliteral">&quot;%d &quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;lcm[i]);</div>
+<div class="line"><span class="lineno">  536</span>            o &lt;&lt; s;</div>
+<div class="line"><span class="lineno">  537</span>          }</div>
+<div class="line"><span class="lineno">  538</span>        o &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><span class="lineno">  539</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  540</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d0/d91/classgb_a_aedd89f6427d510198ec5b4bb752117df.html#aedd89f6427d510198ec5b4bb752117dfa167d4b7179061ee66524f1c8a2226791">SPAIR::SPAIR_SPAIR</a>:</div>
+<div class="line"><span class="lineno">  541</span>        snprintf(s, N, <span class="stringliteral">&quot;spair(g%d,g%d):&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.j, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.i);</div>
 <div class="line"><span class="lineno">  542</span>        o &lt;&lt; s;</div>
-<div class="line"><span class="lineno">  543</span>        o &lt;&lt; <span class="stringliteral">&quot; lcm exponents [&quot;</span>;</div>
-<div class="line"><span class="lineno">  544</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../d0/d91/classgb_a_a353f29c3c8b3275d9321c28020cb478c.html#a353f29c3c8b3275d9321c28020cb478c">_nvars</a> + 2; i++)</div>
-<div class="line"><span class="lineno">  545</span>          {</div>
-<div class="line"><span class="lineno">  546</span>            snprintf(s, N, <span class="stringliteral">&quot;%d &quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;lcm[i]);</div>
-<div class="line"><span class="lineno">  547</span>            o &lt;&lt; s;</div>
-<div class="line"><span class="lineno">  548</span>          }</div>
-<div class="line"><span class="lineno">  549</span>        o &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line"><span class="lineno">  550</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  551</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d0/d91/classgb_a_aedd89f6427d510198ec5b4bb752117df.html#aedd89f6427d510198ec5b4bb752117dfa6e11c02c5d28b4723c6555536795b8ca">SPAIR::SPAIR_GEN</a>:</div>
-<div class="line"><span class="lineno">  552</span>        o &lt;&lt; <span class="stringliteral">&quot;generator &quot;</span>;</div>
-<div class="line"><span class="lineno">  553</span>        <a class="code hl_variable" href="../../d0/d91/classgb_a_a247f12a87fe0a021e26161b6d7ffe13f.html#a247f12a87fe0a021e26161b6d7ffe13f">R</a>-&gt;<a class="code hl_function" href="../../d8/d73/class_g_b_ring_a40a465a3de806be7f52d11170de27175.html#a40a465a3de806be7f52d11170de27175">gbvector_text_out</a>(o, <a class="code hl_variable" href="../../d0/d91/classgb_a_a9b9ecd89b87835c4ec5c493eaf097021.html#a9b9ecd89b87835c4ec5c493eaf097021">_F</a>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;f(), 3);</div>
-<div class="line"><span class="lineno">  554</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  555</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d0/d91/classgb_a_aedd89f6427d510198ec5b4bb752117df.html#aedd89f6427d510198ec5b4bb752117dfafb28c96adaa677009d50e4c5e8dd4887">SPAIR::SPAIR_ELEM</a>:</div>
-<div class="line"><span class="lineno">  556</span>        o &lt;&lt; <span class="stringliteral">&quot;elem &quot;</span>;</div>
-<div class="line"><span class="lineno">  557</span>        <a class="code hl_variable" href="../../d0/d91/classgb_a_a247f12a87fe0a021e26161b6d7ffe13f.html#a247f12a87fe0a021e26161b6d7ffe13f">R</a>-&gt;<a class="code hl_function" href="../../d8/d73/class_g_b_ring_a40a465a3de806be7f52d11170de27175.html#a40a465a3de806be7f52d11170de27175">gbvector_text_out</a>(o, <a class="code hl_variable" href="../../d0/d91/classgb_a_a9b9ecd89b87835c4ec5c493eaf097021.html#a9b9ecd89b87835c4ec5c493eaf097021">_F</a>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;f(), 3);</div>
-<div class="line"><span class="lineno">  558</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  559</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d0/d91/classgb_a_aedd89f6427d510198ec5b4bb752117df.html#aedd89f6427d510198ec5b4bb752117dfa619ea322c1a24f5a5d872feabf35149c">SPAIR::SPAIR_RING</a>:</div>
-<div class="line"><span class="lineno">  560</span>        snprintf(s, N, <span class="stringliteral">&quot;rpair(%d,%d)&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.i, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.j);</div>
-<div class="line"><span class="lineno">  561</span>        o &lt;&lt; s;</div>
-<div class="line"><span class="lineno">  562</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  563</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d0/d91/classgb_a_aedd89f6427d510198ec5b4bb752117df.html#aedd89f6427d510198ec5b4bb752117dfab97eca34f55970057b11039e9b24162d">SPAIR::SPAIR_SKEW</a>:</div>
-<div class="line"><span class="lineno">  564</span>        snprintf(s, N, <span class="stringliteral">&quot;skewpair(g%d,g%d)&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.j, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.i);</div>
-<div class="line"><span class="lineno">  565</span>        o &lt;&lt; s;</div>
-<div class="line"><span class="lineno">  566</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  567</span>      <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  568</span>        o &lt;&lt; <span class="stringliteral">&quot;unknown pair&quot;</span>;</div>
-<div class="line"><span class="lineno">  569</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  570</span>    }</div>
-<div class="line"><span class="lineno">  571</span>}</div>
-<div class="ttc" id="aclass_g_b_ring_a40a465a3de806be7f52d11170de27175_html_a40a465a3de806be7f52d11170de27175"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_a40a465a3de806be7f52d11170de27175.html#a40a465a3de806be7f52d11170de27175">GBRing::gbvector_text_out</a></div><div class="ttdeci">void gbvector_text_out(buffer &amp;o, const FreeModule *F, const gbvector *f, int nterms=-1) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00771">gbring.cpp:771</a></div></div>
+<div class="line"><span class="lineno">  543</span>        snprintf(s, N, <span class="stringliteral">&quot; deg %d&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;deg);</div>
+<div class="line"><span class="lineno">  544</span>        o &lt;&lt; s;</div>
+<div class="line"><span class="lineno">  545</span>        o &lt;&lt; <span class="stringliteral">&quot; lcm exponents [&quot;</span>;</div>
+<div class="line"><span class="lineno">  546</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../d0/d91/classgb_a_a353f29c3c8b3275d9321c28020cb478c.html#a353f29c3c8b3275d9321c28020cb478c">_nvars</a> + 2; i++)</div>
+<div class="line"><span class="lineno">  547</span>          {</div>
+<div class="line"><span class="lineno">  548</span>            snprintf(s, N, <span class="stringliteral">&quot;%d &quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;lcm[i]);</div>
+<div class="line"><span class="lineno">  549</span>            o &lt;&lt; s;</div>
+<div class="line"><span class="lineno">  550</span>          }</div>
+<div class="line"><span class="lineno">  551</span>        o &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><span class="lineno">  552</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  553</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d0/d91/classgb_a_aedd89f6427d510198ec5b4bb752117df.html#aedd89f6427d510198ec5b4bb752117dfa6e11c02c5d28b4723c6555536795b8ca">SPAIR::SPAIR_GEN</a>:</div>
+<div class="line"><span class="lineno">  554</span>        o &lt;&lt; <span class="stringliteral">&quot;generator &quot;</span>;</div>
+<div class="line"><span class="lineno">  555</span>        <a class="code hl_variable" href="../../d0/d91/classgb_a_a247f12a87fe0a021e26161b6d7ffe13f.html#a247f12a87fe0a021e26161b6d7ffe13f">R</a>-&gt;<a class="code hl_function" href="../../d8/d73/class_g_b_ring_a40a465a3de806be7f52d11170de27175.html#a40a465a3de806be7f52d11170de27175">gbvector_text_out</a>(o, <a class="code hl_variable" href="../../d0/d91/classgb_a_a9b9ecd89b87835c4ec5c493eaf097021.html#a9b9ecd89b87835c4ec5c493eaf097021">_F</a>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;f(), 3);</div>
+<div class="line"><span class="lineno">  556</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  557</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d0/d91/classgb_a_aedd89f6427d510198ec5b4bb752117df.html#aedd89f6427d510198ec5b4bb752117dfafb28c96adaa677009d50e4c5e8dd4887">SPAIR::SPAIR_ELEM</a>:</div>
+<div class="line"><span class="lineno">  558</span>        o &lt;&lt; <span class="stringliteral">&quot;elem &quot;</span>;</div>
+<div class="line"><span class="lineno">  559</span>        <a class="code hl_variable" href="../../d0/d91/classgb_a_a247f12a87fe0a021e26161b6d7ffe13f.html#a247f12a87fe0a021e26161b6d7ffe13f">R</a>-&gt;<a class="code hl_function" href="../../d8/d73/class_g_b_ring_a40a465a3de806be7f52d11170de27175.html#a40a465a3de806be7f52d11170de27175">gbvector_text_out</a>(o, <a class="code hl_variable" href="../../d0/d91/classgb_a_a9b9ecd89b87835c4ec5c493eaf097021.html#a9b9ecd89b87835c4ec5c493eaf097021">_F</a>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;f(), 3);</div>
+<div class="line"><span class="lineno">  560</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  561</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d0/d91/classgb_a_aedd89f6427d510198ec5b4bb752117df.html#aedd89f6427d510198ec5b4bb752117dfa619ea322c1a24f5a5d872feabf35149c">SPAIR::SPAIR_RING</a>:</div>
+<div class="line"><span class="lineno">  562</span>        snprintf(s, N, <span class="stringliteral">&quot;rpair(%d,%d)&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.i, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.j);</div>
+<div class="line"><span class="lineno">  563</span>        o &lt;&lt; s;</div>
+<div class="line"><span class="lineno">  564</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  565</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d0/d91/classgb_a_aedd89f6427d510198ec5b4bb752117df.html#aedd89f6427d510198ec5b4bb752117dfab97eca34f55970057b11039e9b24162d">SPAIR::SPAIR_SKEW</a>:</div>
+<div class="line"><span class="lineno">  566</span>        snprintf(s, N, <span class="stringliteral">&quot;skewpair(g%d,g%d)&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.j, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;x.pair.i);</div>
+<div class="line"><span class="lineno">  567</span>        o &lt;&lt; s;</div>
+<div class="line"><span class="lineno">  568</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  569</span>      <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  570</span>        o &lt;&lt; <span class="stringliteral">&quot;unknown pair&quot;</span>;</div>
+<div class="line"><span class="lineno">  571</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  572</span>    }</div>
+<div class="line"><span class="lineno">  573</span>}</div>
+<div class="ttc" id="aclass_g_b_ring_a40a465a3de806be7f52d11170de27175_html_a40a465a3de806be7f52d11170de27175"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_a40a465a3de806be7f52d11170de27175.html#a40a465a3de806be7f52d11170de27175">GBRing::gbvector_text_out</a></div><div class="ttdeci">void gbvector_text_out(buffer &amp;o, const FreeModule *F, const gbvector *f, int nterms=-1) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00779">gbring.cpp:779</a></div></div>
 <div class="ttc" id="aclassgb_a_a247f12a87fe0a021e26161b6d7ffe13f_html_a247f12a87fe0a021e26161b6d7ffe13f"><div class="ttname"><a href="../../d0/d91/classgb_a_a247f12a87fe0a021e26161b6d7ffe13f.html#a247f12a87fe0a021e26161b6d7ffe13f">gbA::R</a></div><div class="ttdeci">GBRing * R</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd0/gb-default_8hpp_source.html#l00127">gb-default.hpp:127</a></div></div>
 <div class="ttc" id="aclassgb_a_a353f29c3c8b3275d9321c28020cb478c_html_a353f29c3c8b3275d9321c28020cb478c"><div class="ttname"><a href="../../d0/d91/classgb_a_a353f29c3c8b3275d9321c28020cb478c.html#a353f29c3c8b3275d9321c28020cb478c">gbA::_nvars</a></div><div class="ttdeci">int _nvars</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd0/gb-default_8hpp_source.html#l00135">gb-default.hpp:135</a></div></div>
 <div class="ttc" id="aclassgb_a_a9b9ecd89b87835c4ec5c493eaf097021_html_a9b9ecd89b87835c4ec5c493eaf097021"><div class="ttname"><a href="../../d0/d91/classgb_a_a9b9ecd89b87835c4ec5c493eaf097021.html#a9b9ecd89b87835c4ec5c493eaf097021">gbA::_F</a></div><div class="ttdeci">const FreeModule * _F</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dd0/gb-default_8hpp_source.html#l00133">gb-default.hpp:133</a></div></div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('d0/d91/classgb_a_a22952ccd8e6c3130c67a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d91/classgb_a.html">gbA</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -113,41 +113,41 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_aa449584c2d4b7ebd6
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html#l00265">265</a> of file <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html">NCF4.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  266</span>{</div>
-<div class="line"><span class="lineno">  267</span>  <span class="comment">// this function flags any previous overlaps that properly</span></div>
-<div class="line"><span class="lineno">  268</span>  <span class="comment">// contain newLeadWord as no longer necessary.</span></div>
-<div class="line"><span class="lineno">  269</span> </div>
-<div class="line"><span class="lineno">  270</span>  <span class="comment">// the newest overlaps are not yet added at this point</span></div>
-<div class="line"><span class="lineno">  271</span>  std::vector&lt;int&gt; startIndices;</div>
-<div class="line"><span class="lineno">  272</span> </div>
-<div class="line"><span class="lineno">  273</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> : <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_aedee0280aaa78a6e86185a73afb7b580.html#aedee0280aaa78a6e86185a73afb7b580">mOverlapTable</a>.overlapMap())</div>
-<div class="line"><span class="lineno">  274</span>  {</div>
-<div class="line"><span class="lineno">  275</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; o : <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.second)</div>
-<div class="line"><span class="lineno">  276</span>    {</div>
-<div class="line"><span class="lineno">  277</span>      <span class="keywordflow">if</span> (not std::get&lt;3&gt;(o)) <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  278</span>      <span class="keywordflow">if</span> (std::get&lt;1&gt;(o) == -1) <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  279</span>      <span class="keywordtype">int</span> overlapLen = std::get&lt;1&gt;(o) + <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab17b8eaf5f15a34d886f0843ee002f08.html#ab17b8eaf5f15a34d886f0843ee002f08">mWordTable</a>[std::get&lt;2&gt;(o)].size();</div>
-<div class="line"><span class="lineno">  280</span>      <span class="keywordflow">if</span> (overlapLen &lt;= newLeadWord.<a class="code hl_function" href="../../d3/da0/class_word_a58f370b1c978f3f73e9349629ab6dfd3.html#a58f370b1c978f3f73e9349629ab6dfd3">size</a>()) <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  281</span>      startIndices.<a class="code hl_function" href="../../d6/def/class_word_table_acc1c76390fc0349573e7dcca5c0dd13f.html#acc1c76390fc0349573e7dcca5c0dd13f">clear</a>();</div>
-<div class="line"><span class="lineno">  282</span>      <span class="comment">// this is not optimal.  Should pass info to word table to avoid creation of another word</span></div>
-<div class="line"><span class="lineno">  283</span>      <span class="keyword">auto</span> w = <a class="code hl_function" href="../../d0/d92/class_n_c_f4_a9db64da88a2d4f32a9a1a6a2849148fa.html#a9db64da88a2d4f32a9a1a6a2849148fa">createOverlapLeadWord</a>(o);</div>
-<div class="line"><span class="lineno">  284</span>      <a class="code hl_function" href="../../d6/def/class_word_table_a35265a6b2f65427ce3ea4a4c4da071b8.html#a35265a6b2f65427ce3ea4a4c4da071b8">WordTable::subwordPositions</a>(newLeadWord,w,startIndices);</div>
-<div class="line"><span class="lineno">  285</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : startIndices)</div>
-<div class="line"><span class="lineno">  286</span>      {</div>
-<div class="line"><span class="lineno">  287</span>        <span class="keywordflow">if</span> (j != 0 or j != w.size() - newLeadWord.<a class="code hl_function" href="../../d3/da0/class_word_a58f370b1c978f3f73e9349629ab6dfd3.html#a58f370b1c978f3f73e9349629ab6dfd3">size</a>())</div>
-<div class="line"><span class="lineno">  288</span>        {</div>
-<div class="line"><span class="lineno">  289</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
-<div class="line"><span class="lineno">  290</span>             std::cout &lt;&lt; <span class="stringliteral">&quot;Reduction avoided using lazy 2nd criterion.&quot;</span> &lt;&lt; std::endl;        </div>
-<div class="line"><span class="lineno">  291</span>          std::get&lt;3&gt;(o) = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  292</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  293</span>        }</div>
-<div class="line"><span class="lineno">  294</span>      }</div>
-<div class="line"><span class="lineno">  295</span>    }</div>
-<div class="line"><span class="lineno">  296</span>  }</div>
-<div class="line"><span class="lineno">  297</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html#l00267">267</a> of file <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html">NCF4.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  268</span>{</div>
+<div class="line"><span class="lineno">  269</span>  <span class="comment">// this function flags any previous overlaps that properly</span></div>
+<div class="line"><span class="lineno">  270</span>  <span class="comment">// contain newLeadWord as no longer necessary.</span></div>
+<div class="line"><span class="lineno">  271</span> </div>
+<div class="line"><span class="lineno">  272</span>  <span class="comment">// the newest overlaps are not yet added at this point</span></div>
+<div class="line"><span class="lineno">  273</span>  std::vector&lt;int&gt; startIndices;</div>
+<div class="line"><span class="lineno">  274</span> </div>
+<div class="line"><span class="lineno">  275</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> : <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_aedee0280aaa78a6e86185a73afb7b580.html#aedee0280aaa78a6e86185a73afb7b580">mOverlapTable</a>.overlapMap())</div>
+<div class="line"><span class="lineno">  276</span>  {</div>
+<div class="line"><span class="lineno">  277</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; o : <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.second)</div>
+<div class="line"><span class="lineno">  278</span>    {</div>
+<div class="line"><span class="lineno">  279</span>      <span class="keywordflow">if</span> (not std::get&lt;3&gt;(o)) <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  280</span>      <span class="keywordflow">if</span> (std::get&lt;1&gt;(o) == -1) <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  281</span>      <span class="keywordtype">int</span> overlapLen = std::get&lt;1&gt;(o) + <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab17b8eaf5f15a34d886f0843ee002f08.html#ab17b8eaf5f15a34d886f0843ee002f08">mWordTable</a>[std::get&lt;2&gt;(o)].size();</div>
+<div class="line"><span class="lineno">  282</span>      <span class="keywordflow">if</span> (overlapLen &lt;= newLeadWord.<a class="code hl_function" href="../../d3/da0/class_word_a58f370b1c978f3f73e9349629ab6dfd3.html#a58f370b1c978f3f73e9349629ab6dfd3">size</a>()) <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  283</span>      startIndices.<a class="code hl_function" href="../../d6/def/class_word_table_acc1c76390fc0349573e7dcca5c0dd13f.html#acc1c76390fc0349573e7dcca5c0dd13f">clear</a>();</div>
+<div class="line"><span class="lineno">  284</span>      <span class="comment">// this is not optimal.  Should pass info to word table to avoid creation of another word</span></div>
+<div class="line"><span class="lineno">  285</span>      <span class="keyword">auto</span> w = <a class="code hl_function" href="../../d0/d92/class_n_c_f4_a9db64da88a2d4f32a9a1a6a2849148fa.html#a9db64da88a2d4f32a9a1a6a2849148fa">createOverlapLeadWord</a>(o);</div>
+<div class="line"><span class="lineno">  286</span>      <a class="code hl_function" href="../../d6/def/class_word_table_a35265a6b2f65427ce3ea4a4c4da071b8.html#a35265a6b2f65427ce3ea4a4c4da071b8">WordTable::subwordPositions</a>(newLeadWord,w,startIndices);</div>
+<div class="line"><span class="lineno">  287</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : startIndices)</div>
+<div class="line"><span class="lineno">  288</span>      {</div>
+<div class="line"><span class="lineno">  289</span>        <span class="keywordflow">if</span> (j != 0 or j != w.size() - newLeadWord.<a class="code hl_function" href="../../d3/da0/class_word_a58f370b1c978f3f73e9349629ab6dfd3.html#a58f370b1c978f3f73e9349629ab6dfd3">size</a>())</div>
+<div class="line"><span class="lineno">  290</span>        {</div>
+<div class="line"><span class="lineno">  291</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a> &gt;= 3)</div>
+<div class="line"><span class="lineno">  292</span>             std::cout &lt;&lt; <span class="stringliteral">&quot;Reduction avoided using lazy 2nd criterion.&quot;</span> &lt;&lt; std::endl;        </div>
+<div class="line"><span class="lineno">  293</span>          std::get&lt;3&gt;(o) = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  294</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  295</span>        }</div>
+<div class="line"><span class="lineno">  296</span>      }</div>
+<div class="line"><span class="lineno">  297</span>    }</div>
+<div class="line"><span class="lineno">  298</span>  }</div>
+<div class="line"><span class="lineno">  299</span>}</div>
 <div class="ttc" id="a_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc_html_aa0f82116567de78d2d8d5cee3a26eebc"><div class="ttname"><a href="../../d7/dce/_m2-replacement_8c_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a></div><div class="ttdeci">int M2_gbTrace</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dce/_m2-replacement_8c_source.html#l00059">M2-replacement.c:59</a></div></div>
-<div class="ttc" id="aclass_n_c_f4_a9db64da88a2d4f32a9a1a6a2849148fa_html_a9db64da88a2d4f32a9a1a6a2849148fa"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a9db64da88a2d4f32a9a1a6a2849148fa.html#a9db64da88a2d4f32a9a1a6a2849148fa">NCF4::createOverlapLeadWord</a></div><div class="ttdeci">Word createOverlapLeadWord(const Overlap &amp;o)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l00299">NCF4.cpp:299</a></div></div>
+<div class="ttc" id="aclass_n_c_f4_a9db64da88a2d4f32a9a1a6a2849148fa_html_a9db64da88a2d4f32a9a1a6a2849148fa"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a9db64da88a2d4f32a9a1a6a2849148fa.html#a9db64da88a2d4f32a9a1a6a2849148fa">NCF4::createOverlapLeadWord</a></div><div class="ttdeci">Word createOverlapLeadWord(const Overlap &amp;o)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l00301">NCF4.cpp:301</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_ab17b8eaf5f15a34d886f0843ee002f08_html_ab17b8eaf5f15a34d886f0843ee002f08"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_ab17b8eaf5f15a34d886f0843ee002f08.html#ab17b8eaf5f15a34d886f0843ee002f08">NCF4::mWordTable</a></div><div class="ttdeci">WordTable mWordTable</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00105">NCF4.hpp:105</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_aedee0280aaa78a6e86185a73afb7b580_html_aedee0280aaa78a6e86185a73afb7b580"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_aedee0280aaa78a6e86185a73afb7b580.html#aedee0280aaa78a6e86185a73afb7b580">NCF4::mOverlapTable</a></div><div class="ttdeci">OverlapTable mOverlapTable</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00107">NCF4.hpp:107</a></div></div>
 <div class="ttc" id="aclass_word_a58f370b1c978f3f73e9349629ab6dfd3_html_a58f370b1c978f3f73e9349629ab6dfd3"><div class="ttname"><a href="../../d3/da0/class_word_a58f370b1c978f3f73e9349629ab6dfd3.html#a58f370b1c978f3f73e9349629ab6dfd3">Word::size</a></div><div class="ttdeci">int size() const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd2/_word_8hpp_source.html#l00026">Word.hpp:26</a></div></div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_aa449584c2d4b7ebd6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d92/class_n_c_f4.html">NCF4</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

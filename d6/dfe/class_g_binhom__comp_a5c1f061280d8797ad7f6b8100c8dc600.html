@@ -155,16 +155,18 @@ $(document).ready(function(){initNavTree('d6/dfe/class_g_binhom__comp_a5c1f06128
 
 <p class="definition">Definition at line <a class="el" href="../../d6/db9/gb-sugarless_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../d6/db9/gb-sugarless_8cpp_source.html">gb-sugarless.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  112</span>{</div>
-<div class="line"><span class="lineno">  113</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = m-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a73bec90f6a8598b3c5cdc201b068589a.html#a73bec90f6a8598b3c5cdc201b068589a">cast_to_PolynomialRing</a>();</div>
-<div class="line"><span class="lineno">  114</span>  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span> || P-&gt;<a class="code hl_function" href="../../d5/d58/class_polynomial_ring_ab1df58ad0edec3c434ad9bdd193a1d9e.html#ab1df58ad0edec3c434ad9bdd193a1d9e">getCoefficients</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a0029ed30ca6f682c9d0fe4748a32d32e.html#a0029ed30ca6f682c9d0fe4748a32d32e">is_ZZ</a>())</div>
-<div class="line"><span class="lineno">  115</span>    {</div>
-<div class="line"><span class="lineno">  116</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring over a field&quot;</span>);</div>
-<div class="line"><span class="lineno">  117</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  118</span>    }</div>
-<div class="line"><span class="lineno">  119</span>  <a class="code hl_class" href="../../d6/dfe/class_g_binhom__comp.html">GBinhom_comp</a> *result =</div>
-<div class="line"><span class="lineno">  120</span>      <span class="keyword">new</span> <a class="code hl_class" href="../../d6/dfe/class_g_binhom__comp.html">GBinhom_comp</a>(m, <a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_a5284acdf731a0f97fe5d0f82ed65ea11.html#a5284acdf731a0f97fe5d0f82ed65ea11">collect_syz</a>, n_rows_to_keep, gb_weights, <a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_a0d49925639fb431960db49ae86eff8bb.html#a0d49925639fb431960db49ae86eff8bb">strategy</a>);</div>
-<div class="line"><span class="lineno">  121</span>  <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  122</span>}</div>
+<div class="line"><span class="lineno">  113</span>  (void) use_max_degree_limit;</div>
+<div class="line"><span class="lineno">  114</span>  (void) max_degree_limit;</div>
+<div class="line"><span class="lineno">  115</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = m-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a73bec90f6a8598b3c5cdc201b068589a.html#a73bec90f6a8598b3c5cdc201b068589a">cast_to_PolynomialRing</a>();</div>
+<div class="line"><span class="lineno">  116</span>  <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span> || P-&gt;<a class="code hl_function" href="../../d5/d58/class_polynomial_ring_ab1df58ad0edec3c434ad9bdd193a1d9e.html#ab1df58ad0edec3c434ad9bdd193a1d9e">getCoefficients</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a0029ed30ca6f682c9d0fe4748a32d32e.html#a0029ed30ca6f682c9d0fe4748a32d32e">is_ZZ</a>())</div>
+<div class="line"><span class="lineno">  117</span>    {</div>
+<div class="line"><span class="lineno">  118</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected polynomial ring over a field&quot;</span>);</div>
+<div class="line"><span class="lineno">  119</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  120</span>    }</div>
+<div class="line"><span class="lineno">  121</span>  <a class="code hl_class" href="../../d6/dfe/class_g_binhom__comp.html">GBinhom_comp</a> *result =</div>
+<div class="line"><span class="lineno">  122</span>      <span class="keyword">new</span> <a class="code hl_class" href="../../d6/dfe/class_g_binhom__comp.html">GBinhom_comp</a>(m, <a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_a5284acdf731a0f97fe5d0f82ed65ea11.html#a5284acdf731a0f97fe5d0f82ed65ea11">collect_syz</a>, n_rows_to_keep, gb_weights, <a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_a0d49925639fb431960db49ae86eff8bb.html#a0d49925639fb431960db49ae86eff8bb">strategy</a>);</div>
+<div class="line"><span class="lineno">  123</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  124</span>}</div>
 <div class="ttc" id="aclass_g_binhom__comp_a0d49925639fb431960db49ae86eff8bb_html_a0d49925639fb431960db49ae86eff8bb"><div class="ttname"><a href="../../d6/dfe/class_g_binhom__comp_a0d49925639fb431960db49ae86eff8bb.html#a0d49925639fb431960db49ae86eff8bb">GBinhom_comp::strategy</a></div><div class="ttdeci">int strategy</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d91/gb-sugarless_8hpp_source.html#l00067">gb-sugarless.hpp:67</a></div></div>
 <div class="ttc" id="aclass_g_binhom__comp_a5284acdf731a0f97fe5d0f82ed65ea11_html_a5284acdf731a0f97fe5d0f82ed65ea11"><div class="ttname"><a href="../../d6/dfe/class_g_binhom__comp_a5284acdf731a0f97fe5d0f82ed65ea11.html#a5284acdf731a0f97fe5d0f82ed65ea11">GBinhom_comp::collect_syz</a></div><div class="ttdeci">int collect_syz</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d91/gb-sugarless_8hpp_source.html#l00064">gb-sugarless.hpp:64</a></div></div>
 <div class="ttc" id="aclass_g_binhom__comp_html"><div class="ttname"><a href="../../d6/dfe/class_g_binhom__comp.html">GBinhom_comp</a></div><div class="ttdoc">A Groebner basis computation class for inhomogeneous input modules.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d91/gb-sugarless_8hpp_source.html#l00024">gb-sugarless.hpp:25</a></div></div>
@@ -187,7 +189,7 @@ $(document).ready(function(){initNavTree('d6/dfe/class_g_binhom__comp_a5c1f06128
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dfe/class_g_binhom__comp.html">GBinhom_comp</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

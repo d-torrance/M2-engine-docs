@@ -123,46 +123,46 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_a415e8088a9d1
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6f/schur2_8cpp_source.html#l00858">858</a> of file <a class="el" href="../../dc/d6f/schur2_8cpp_source.html">schur2.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  860</span>{</div>
-<div class="line"><span class="lineno">  861</span>  <span class="keywordtype">int</span> maxsize = (a[0] - 1 + b[0] - 1) + 1;  <span class="comment">// this is the max number of</span></div>
-<div class="line"><span class="lineno">  862</span>                                            <span class="comment">// elements in the output partition,</span></div>
-<div class="line"><span class="lineno">  863</span>                                            <span class="comment">// plus one</span></div>
-<div class="line"><span class="lineno">  864</span> </div>
-<div class="line"><span class="lineno">  865</span>  <a class="code hl_class" href="../../d1/da0/classint.html">schur_partition</a> lambda = <a class="code hl_define" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>(<span class="keyword">sizeof</span>(<a class="code hl_class" href="../../d1/da0/classint.html">schur_word</a>) * maxsize);</div>
-<div class="line"><span class="lineno">  866</span>  <a class="code hl_class" href="../../d1/da0/classint.html">schur_partition</a> <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_define" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>(<span class="keyword">sizeof</span>(<a class="code hl_class" href="../../d1/da0/classint.html">schur_word</a>) * maxsize);</div>
-<div class="line"><span class="lineno">  867</span> </div>
-<div class="line"><span class="lineno">  868</span>  <span class="comment">// Second: make the skew partition (note: r,s&gt;=1)</span></div>
-<div class="line"><span class="lineno">  869</span>  <span class="comment">// this is: if a = r+1 a1 a2 ... ar</span></div>
-<div class="line"><span class="lineno">  870</span>  <span class="comment">//             b = s+1 b1 b2 ... bs</span></div>
-<div class="line"><span class="lineno">  871</span>  <span class="comment">// p is:</span></div>
-<div class="line"><span class="lineno">  872</span>  <span class="comment">//   (r+s+1) b1+a1 b1+a2 ... b1+ar b1 b2 ... bs</span></div>
-<div class="line"><span class="lineno">  873</span>  <span class="comment">// lambda is:</span></div>
-<div class="line"><span class="lineno">  874</span>  <span class="comment">//   (r+1)   b1    b1    ... b1    0  0  ... 0</span></div>
-<div class="line"><span class="lineno">  875</span> </div>
-<div class="line"><span class="lineno">  876</span>  <span class="keywordtype">int</span> r = a[0] - 1;</div>
-<div class="line"><span class="lineno">  877</span>  <span class="keywordtype">int</span> s = b[0] - 1;</div>
-<div class="line"><span class="lineno">  878</span>  <span class="keywordtype">int</span> c = b[1];</div>
-<div class="line"><span class="lineno">  879</span> </div>
-<div class="line"><span class="lineno">  880</span>  assert(r + s + 1 == maxsize);</div>
-<div class="line"><span class="lineno">  881</span> </div>
-<div class="line"><span class="lineno">  882</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= r; i++)</div>
-<div class="line"><span class="lineno">  883</span>    {</div>
-<div class="line"><span class="lineno">  884</span>      assert(i &lt; maxsize);</div>
-<div class="line"><span class="lineno">  885</span>      <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i] = c + a[i];</div>
-<div class="line"><span class="lineno">  886</span>      lambda[i] = c;</div>
-<div class="line"><span class="lineno">  887</span>    }</div>
-<div class="line"><span class="lineno">  888</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = r + 1; i &lt; r + s + 1; i++)</div>
-<div class="line"><span class="lineno">  889</span>    {</div>
-<div class="line"><span class="lineno">  890</span>      assert(i &lt; maxsize);</div>
-<div class="line"><span class="lineno">  891</span>      <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i] = b[i - r];</div>
-<div class="line"><span class="lineno">  892</span>      lambda[i] = 0;</div>
-<div class="line"><span class="lineno">  893</span>    }</div>
-<div class="line"><span class="lineno">  894</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[0] = r + s + 1;</div>
-<div class="line"><span class="lineno">  895</span>  lambda[0] = r + 1;</div>
-<div class="line"><span class="lineno">  896</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/da2/class_schur_ring2_a1525745c2fcecdc172e1fc4dfbd377f1.html#a1525745c2fcecdc172e1fc4dfbd377f1">skew_schur</a>(lambda, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><span class="lineno">  897</span>}</div>
-<div class="ttc" id="aclass_schur_ring2_a1525745c2fcecdc172e1fc4dfbd377f1_html_a1525745c2fcecdc172e1fc4dfbd377f1"><div class="ttname"><a href="../../df/da2/class_schur_ring2_a1525745c2fcecdc172e1fc4dfbd377f1.html#a1525745c2fcecdc172e1fc4dfbd377f1">SchurRing2::skew_schur</a></div><div class="ttdeci">ring_elem skew_schur(const_schur_partition lambda, const_schur_partition p)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00827">schur2.cpp:827</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6f/schur2_8cpp_source.html#l00867">867</a> of file <a class="el" href="../../dc/d6f/schur2_8cpp_source.html">schur2.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  869</span>{</div>
+<div class="line"><span class="lineno">  870</span>  <span class="keywordtype">int</span> maxsize = (a[0] - 1 + b[0] - 1) + 1;  <span class="comment">// this is the max number of</span></div>
+<div class="line"><span class="lineno">  871</span>                                            <span class="comment">// elements in the output partition,</span></div>
+<div class="line"><span class="lineno">  872</span>                                            <span class="comment">// plus one</span></div>
+<div class="line"><span class="lineno">  873</span> </div>
+<div class="line"><span class="lineno">  874</span>  <a class="code hl_class" href="../../d1/da0/classint.html">schur_partition</a> lambda = <a class="code hl_define" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>(<span class="keyword">sizeof</span>(<a class="code hl_class" href="../../d1/da0/classint.html">schur_word</a>) * maxsize);</div>
+<div class="line"><span class="lineno">  875</span>  <a class="code hl_class" href="../../d1/da0/classint.html">schur_partition</a> <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_define" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>(<span class="keyword">sizeof</span>(<a class="code hl_class" href="../../d1/da0/classint.html">schur_word</a>) * maxsize);</div>
+<div class="line"><span class="lineno">  876</span> </div>
+<div class="line"><span class="lineno">  877</span>  <span class="comment">// Second: make the skew partition (note: r,s&gt;=1)</span></div>
+<div class="line"><span class="lineno">  878</span>  <span class="comment">// this is: if a = r+1 a1 a2 ... ar</span></div>
+<div class="line"><span class="lineno">  879</span>  <span class="comment">//             b = s+1 b1 b2 ... bs</span></div>
+<div class="line"><span class="lineno">  880</span>  <span class="comment">// p is:</span></div>
+<div class="line"><span class="lineno">  881</span>  <span class="comment">//   (r+s+1) b1+a1 b1+a2 ... b1+ar b1 b2 ... bs</span></div>
+<div class="line"><span class="lineno">  882</span>  <span class="comment">// lambda is:</span></div>
+<div class="line"><span class="lineno">  883</span>  <span class="comment">//   (r+1)   b1    b1    ... b1    0  0  ... 0</span></div>
+<div class="line"><span class="lineno">  884</span> </div>
+<div class="line"><span class="lineno">  885</span>  <span class="keywordtype">int</span> r = a[0] - 1;</div>
+<div class="line"><span class="lineno">  886</span>  <span class="keywordtype">int</span> s = b[0] - 1;</div>
+<div class="line"><span class="lineno">  887</span>  <span class="keywordtype">int</span> c = b[1];</div>
+<div class="line"><span class="lineno">  888</span> </div>
+<div class="line"><span class="lineno">  889</span>  assert(r + s + 1 == maxsize);</div>
+<div class="line"><span class="lineno">  890</span> </div>
+<div class="line"><span class="lineno">  891</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= r; i++)</div>
+<div class="line"><span class="lineno">  892</span>    {</div>
+<div class="line"><span class="lineno">  893</span>      assert(i &lt; maxsize);</div>
+<div class="line"><span class="lineno">  894</span>      <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i] = c + a[i];</div>
+<div class="line"><span class="lineno">  895</span>      lambda[i] = c;</div>
+<div class="line"><span class="lineno">  896</span>    }</div>
+<div class="line"><span class="lineno">  897</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = r + 1; i &lt; r + s + 1; i++)</div>
+<div class="line"><span class="lineno">  898</span>    {</div>
+<div class="line"><span class="lineno">  899</span>      assert(i &lt; maxsize);</div>
+<div class="line"><span class="lineno">  900</span>      <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i] = b[i - r];</div>
+<div class="line"><span class="lineno">  901</span>      lambda[i] = 0;</div>
+<div class="line"><span class="lineno">  902</span>    }</div>
+<div class="line"><span class="lineno">  903</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[0] = r + s + 1;</div>
+<div class="line"><span class="lineno">  904</span>  lambda[0] = r + 1;</div>
+<div class="line"><span class="lineno">  905</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/da2/class_schur_ring2_a1525745c2fcecdc172e1fc4dfbd377f1.html#a1525745c2fcecdc172e1fc4dfbd377f1">skew_schur</a>(lambda, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><span class="lineno">  906</span>}</div>
+<div class="ttc" id="aclass_schur_ring2_a1525745c2fcecdc172e1fc4dfbd377f1_html_a1525745c2fcecdc172e1fc4dfbd377f1"><div class="ttname"><a href="../../df/da2/class_schur_ring2_a1525745c2fcecdc172e1fc4dfbd377f1.html#a1525745c2fcecdc172e1fc4dfbd377f1">SchurRing2::skew_schur</a></div><div class="ttdeci">ring_elem skew_schur(const_schur_partition lambda, const_schur_partition p)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00836">schur2.cpp:836</a></div></div>
 <div class="ttc" id="aclassint_html"><div class="ttname"><a href="../../d1/da0/classint.html">int</a></div></div>
 <div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 <div class="ttc" id="amonoid_8hpp_a337de43f0792d2f0364a64ba9905116d_html_a337de43f0792d2f0364a64ba9905116d"><div class="ttname"><a href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a></div><div class="ttdeci">#define ALLOCATE_EXPONENTS(byte_len)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00027">monoid.hpp:27</a></div></div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_a415e8088a9d1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/da2/class_schur_ring2.html">SchurRing2</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

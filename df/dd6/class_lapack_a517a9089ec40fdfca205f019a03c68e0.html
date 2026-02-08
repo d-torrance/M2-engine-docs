@@ -135,69 +135,69 @@ $(document).ready(function(){initNavTree('df/dd6/class_lapack_a517a9089ec40fdfca
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dfc/lapack_8cpp_source.html#l00567">567</a> of file <a class="el" href="../../d1/dfc/lapack_8cpp_source.html">lapack.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  571</span>{</div>
-<div class="line"><span class="lineno">  572</span>  <span class="keywordtype">bool</span> ret = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  573</span>  <span class="keywordtype">char</span> doit = <span class="charliteral">&#39;A&#39;</span>;  <span class="comment">// other options are &#39;S&#39; and &#39;O&#39; for singular vectors only</span></div>
-<div class="line"><span class="lineno">  574</span>  <span class="keywordtype">int</span> rows = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
-<div class="line"><span class="lineno">  575</span>  <span class="keywordtype">int</span> cols = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>());</div>
-<div class="line"><span class="lineno">  576</span>  <span class="keywordtype">int</span> info;</div>
-<div class="line"><span class="lineno">  577</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a> = (rows &lt;= cols) ? rows : cols;</div>
-<div class="line"><span class="lineno">  578</span> </div>
-<div class="line"><span class="lineno">  579</span>  <span class="keywordflow">if</span> (min == 0)</div>
-<div class="line"><span class="lineno">  580</span>    {</div>
-<div class="line"><span class="lineno">  581</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a matrix with positive dimensions&quot;</span>);</div>
-<div class="line"><span class="lineno">  582</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  583</span>    }</div>
-<div class="line"><span class="lineno">  584</span> </div>
-<div class="line"><span class="lineno">  585</span>  <span class="keywordtype">int</span> <a class="code hl_define" href="../../d1/df6/polyroots_8cpp_affe776513b24d84b39af8ab0930fef7f.html#affe776513b24d84b39af8ab0930fef7f">max</a> = (rows &gt;= cols) ? rows : cols;</div>
-<div class="line"><span class="lineno">  586</span>  <span class="keywordtype">int</span> wsize = (3 * <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a> + <a class="code hl_define" href="../../d1/df6/polyroots_8cpp_affe776513b24d84b39af8ab0930fef7f.html#affe776513b24d84b39af8ab0930fef7f">max</a> &gt;= 5 * <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a>) ? 3 * min + <a class="code hl_define" href="../../d1/df6/polyroots_8cpp_affe776513b24d84b39af8ab0930fef7f.html#affe776513b24d84b39af8ab0930fef7f">max</a> : 5 * <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a>;</div>
-<div class="line"><span class="lineno">  587</span>  <span class="keywordtype">double</span> *workspace = <span class="keyword">new</span> <span class="keywordtype">double</span>[wsize];</div>
-<div class="line"><span class="lineno">  588</span> </div>
-<div class="line"><span class="lineno">  589</span>  std::vector&lt;double&gt; copyA = <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array</a>(*A);</div>
-<div class="line"><span class="lineno">  590</span>  std::vector&lt;double&gt; u(rows * rows);</div>
-<div class="line"><span class="lineno">  591</span>  std::vector&lt;double&gt; vt(cols * cols);</div>
-<div class="line"><span class="lineno">  592</span>  std::vector&lt;double&gt; sigma(min);</div>
-<div class="line"><span class="lineno">  593</span>  </div>
-<div class="line"><span class="lineno">  594</span>  <a class="code hl_function" href="../../df/dd2/lapack_8hpp_a89ce124f1e0054681e4bafaf0aa2a998.html#a89ce124f1e0054681e4bafaf0aa2a998">dgesvd_</a>(&amp;doit,</div>
-<div class="line"><span class="lineno">  595</span>          &amp;doit,</div>
-<div class="line"><span class="lineno">  596</span>          &amp;rows,</div>
-<div class="line"><span class="lineno">  597</span>          &amp;cols,</div>
-<div class="line"><span class="lineno">  598</span>          copyA.data(),</div>
-<div class="line"><span class="lineno">  599</span>          &amp;rows,</div>
-<div class="line"><span class="lineno">  600</span>          sigma.data(),</div>
-<div class="line"><span class="lineno">  601</span>          u.data(),</div>
-<div class="line"><span class="lineno">  602</span>          &amp;rows,</div>
-<div class="line"><span class="lineno">  603</span>          vt.data(),</div>
-<div class="line"><span class="lineno">  604</span>          &amp;cols,</div>
-<div class="line"><span class="lineno">  605</span>          workspace,</div>
-<div class="line"><span class="lineno">  606</span>          &amp;wsize,</div>
-<div class="line"><span class="lineno">  607</span>          &amp;info);</div>
-<div class="line"><span class="lineno">  608</span> </div>
-<div class="line"><span class="lineno">  609</span>  <span class="keywordflow">if</span> (info &lt; 0)</div>
-<div class="line"><span class="lineno">  610</span>    {</div>
-<div class="line"><span class="lineno">  611</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;argument passed to dgesvd had an illegal value&quot;</span>);</div>
-<div class="line"><span class="lineno">  612</span>      ret = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  613</span>    }</div>
-<div class="line"><span class="lineno">  614</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (info &gt; 0)</div>
-<div class="line"><span class="lineno">  615</span>    {</div>
-<div class="line"><span class="lineno">  616</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;dgesvd did not converge&quot;</span>);</div>
-<div class="line"><span class="lineno">  617</span>      ret = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  618</span>    }</div>
-<div class="line"><span class="lineno">  619</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  620</span>    {</div>
-<div class="line"><span class="lineno">  621</span>      U-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(rows, rows);</div>
-<div class="line"><span class="lineno">  622</span>      VT-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(cols, cols);</div>
-<div class="line"><span class="lineno">  623</span>      Sigma-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(min, 1);</div>
-<div class="line"><span class="lineno">  624</span>      <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70">fill_from_lapack_array</a>(u, *U);</div>
-<div class="line"><span class="lineno">  625</span>      <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70">fill_from_lapack_array</a>(vt, *VT);</div>
-<div class="line"><span class="lineno">  626</span>      <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70">fill_from_lapack_array</a>(sigma, *Sigma);</div>
-<div class="line"><span class="lineno">  627</span>    }</div>
-<div class="line"><span class="lineno">  628</span> </div>
-<div class="line"><span class="lineno">  629</span>  <span class="keyword">delete</span> [] workspace;</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/dfc/lapack_8cpp_source.html#l00569">569</a> of file <a class="el" href="../../d1/dfc/lapack_8cpp_source.html">lapack.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  573</span>{</div>
+<div class="line"><span class="lineno">  574</span>  <span class="keywordtype">bool</span> ret = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  575</span>  <span class="keywordtype">char</span> doit = <span class="charliteral">&#39;A&#39;</span>;  <span class="comment">// other options are &#39;S&#39; and &#39;O&#39; for singular vectors only</span></div>
+<div class="line"><span class="lineno">  576</span>  <span class="keywordtype">int</span> rows = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
+<div class="line"><span class="lineno">  577</span>  <span class="keywordtype">int</span> cols = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>());</div>
+<div class="line"><span class="lineno">  578</span>  <span class="keywordtype">int</span> info;</div>
+<div class="line"><span class="lineno">  579</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a> = (rows &lt;= cols) ? rows : cols;</div>
+<div class="line"><span class="lineno">  580</span> </div>
+<div class="line"><span class="lineno">  581</span>  <span class="keywordflow">if</span> (min == 0)</div>
+<div class="line"><span class="lineno">  582</span>    {</div>
+<div class="line"><span class="lineno">  583</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a matrix with positive dimensions&quot;</span>);</div>
+<div class="line"><span class="lineno">  584</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  585</span>    }</div>
+<div class="line"><span class="lineno">  586</span> </div>
+<div class="line"><span class="lineno">  587</span>  <span class="keywordtype">int</span> <a class="code hl_define" href="../../d1/df6/polyroots_8cpp_affe776513b24d84b39af8ab0930fef7f.html#affe776513b24d84b39af8ab0930fef7f">max</a> = (rows &gt;= cols) ? rows : cols;</div>
+<div class="line"><span class="lineno">  588</span>  <span class="keywordtype">int</span> wsize = (3 * <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a> + <a class="code hl_define" href="../../d1/df6/polyroots_8cpp_affe776513b24d84b39af8ab0930fef7f.html#affe776513b24d84b39af8ab0930fef7f">max</a> &gt;= 5 * <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a>) ? 3 * min + <a class="code hl_define" href="../../d1/df6/polyroots_8cpp_affe776513b24d84b39af8ab0930fef7f.html#affe776513b24d84b39af8ab0930fef7f">max</a> : 5 * <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a>;</div>
+<div class="line"><span class="lineno">  589</span>  <span class="keywordtype">double</span> *workspace = <span class="keyword">new</span> <span class="keywordtype">double</span>[wsize];</div>
+<div class="line"><span class="lineno">  590</span> </div>
+<div class="line"><span class="lineno">  591</span>  std::vector&lt;double&gt; copyA = <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array</a>(*A);</div>
+<div class="line"><span class="lineno">  592</span>  std::vector&lt;double&gt; u(rows * rows);</div>
+<div class="line"><span class="lineno">  593</span>  std::vector&lt;double&gt; vt(cols * cols);</div>
+<div class="line"><span class="lineno">  594</span>  std::vector&lt;double&gt; sigma(min);</div>
+<div class="line"><span class="lineno">  595</span>  </div>
+<div class="line"><span class="lineno">  596</span>  <a class="code hl_function" href="../../df/dd2/lapack_8hpp_a89ce124f1e0054681e4bafaf0aa2a998.html#a89ce124f1e0054681e4bafaf0aa2a998">dgesvd_</a>(&amp;doit,</div>
+<div class="line"><span class="lineno">  597</span>          &amp;doit,</div>
+<div class="line"><span class="lineno">  598</span>          &amp;rows,</div>
+<div class="line"><span class="lineno">  599</span>          &amp;cols,</div>
+<div class="line"><span class="lineno">  600</span>          copyA.data(),</div>
+<div class="line"><span class="lineno">  601</span>          &amp;rows,</div>
+<div class="line"><span class="lineno">  602</span>          sigma.data(),</div>
+<div class="line"><span class="lineno">  603</span>          u.data(),</div>
+<div class="line"><span class="lineno">  604</span>          &amp;rows,</div>
+<div class="line"><span class="lineno">  605</span>          vt.data(),</div>
+<div class="line"><span class="lineno">  606</span>          &amp;cols,</div>
+<div class="line"><span class="lineno">  607</span>          workspace,</div>
+<div class="line"><span class="lineno">  608</span>          &amp;wsize,</div>
+<div class="line"><span class="lineno">  609</span>          &amp;info);</div>
+<div class="line"><span class="lineno">  610</span> </div>
+<div class="line"><span class="lineno">  611</span>  <span class="keywordflow">if</span> (info &lt; 0)</div>
+<div class="line"><span class="lineno">  612</span>    {</div>
+<div class="line"><span class="lineno">  613</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;argument passed to dgesvd had an illegal value&quot;</span>);</div>
+<div class="line"><span class="lineno">  614</span>      ret = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  615</span>    }</div>
+<div class="line"><span class="lineno">  616</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (info &gt; 0)</div>
+<div class="line"><span class="lineno">  617</span>    {</div>
+<div class="line"><span class="lineno">  618</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;dgesvd did not converge&quot;</span>);</div>
+<div class="line"><span class="lineno">  619</span>      ret = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  620</span>    }</div>
+<div class="line"><span class="lineno">  621</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  622</span>    {</div>
+<div class="line"><span class="lineno">  623</span>      U-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(rows, rows);</div>
+<div class="line"><span class="lineno">  624</span>      VT-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(cols, cols);</div>
+<div class="line"><span class="lineno">  625</span>      Sigma-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(min, 1);</div>
+<div class="line"><span class="lineno">  626</span>      <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70">fill_from_lapack_array</a>(u, *U);</div>
+<div class="line"><span class="lineno">  627</span>      <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70">fill_from_lapack_array</a>(vt, *VT);</div>
+<div class="line"><span class="lineno">  628</span>      <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70">fill_from_lapack_array</a>(sigma, *Sigma);</div>
+<div class="line"><span class="lineno">  629</span>    }</div>
 <div class="line"><span class="lineno">  630</span> </div>
-<div class="line"><span class="lineno">  631</span>  <span class="keywordflow">return</span> ret;</div>
-<div class="line"><span class="lineno">  632</span>}</div>
+<div class="line"><span class="lineno">  631</span>  <span class="keyword">delete</span> [] workspace;</div>
+<div class="line"><span class="lineno">  632</span> </div>
+<div class="line"><span class="lineno">  633</span>  <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">  634</span>}</div>
 <div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00107">dmat.hpp:107</a></div></div>
 <div class="ttc" id="aclass_d_mat_a88d2a242efc934b17d6cc94851000627_html_a88d2a242efc934b17d6cc94851000627"><div class="ttname"><a href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">DMat::resize</a></div><div class="ttdeci">void resize(size_t new_nrows, size_t new_ncols)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00120">dmat.hpp:120</a></div></div>
 <div class="ttc" id="aclass_d_mat_aff91923e882c194ecf16030897933e45_html_aff91923e882c194ecf16030897933e45"><div class="ttname"><a href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat::numColumns</a></div><div class="ttdeci">size_t numColumns() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00108">dmat.hpp:108</a></div></div>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('df/dd6/class_lapack_a517a9089ec40fdfca
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/dd6/class_lapack.html">Lapack</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

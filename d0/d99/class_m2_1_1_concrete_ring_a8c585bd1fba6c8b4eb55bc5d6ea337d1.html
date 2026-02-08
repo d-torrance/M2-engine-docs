@@ -115,19 +115,19 @@ template&lt;class RingType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l00513">513</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  515</span>{</div>
-<div class="line"><span class="lineno">  516</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">characteristic</a> = <a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;characteristic();</div>
-<div class="line"><span class="lineno">  517</span>  ConcreteRing&lt;RingType&gt; *result = <span class="keyword">new</span> ConcreteRing&lt;RingType&gt;(std::move(<a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>));</div>
-<div class="line"><span class="lineno">  518</span>  result-&gt;initialize_ring(<a class="code hl_function" href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">characteristic</a>);</div>
-<div class="line"><span class="lineno">  519</span>  result-&gt;declare_field();</div>
-<div class="line"><span class="lineno">  520</span> </div>
-<div class="line"><span class="lineno">  521</span>  result-&gt;zeroV = result-&gt;from_long(0);</div>
-<div class="line"><span class="lineno">  522</span>  result-&gt;oneV = result-&gt;from_long(1);</div>
-<div class="line"><span class="lineno">  523</span>  result-&gt;minus_oneV = result-&gt;from_long(-1);</div>
-<div class="line"><span class="lineno">  524</span> </div>
-<div class="line"><span class="lineno">  525</span>  <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  526</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l00521">521</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  523</span>{</div>
+<div class="line"><span class="lineno">  524</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">characteristic</a> = <a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;characteristic();</div>
+<div class="line"><span class="lineno">  525</span>  ConcreteRing&lt;RingType&gt; *result = <span class="keyword">new</span> ConcreteRing&lt;RingType&gt;(std::move(<a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>));</div>
+<div class="line"><span class="lineno">  526</span>  result-&gt;initialize_ring(<a class="code hl_function" href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">characteristic</a>);</div>
+<div class="line"><span class="lineno">  527</span>  result-&gt;declare_field();</div>
+<div class="line"><span class="lineno">  528</span> </div>
+<div class="line"><span class="lineno">  529</span>  result-&gt;zeroV = result-&gt;from_long(0);</div>
+<div class="line"><span class="lineno">  530</span>  result-&gt;oneV = result-&gt;from_long(1);</div>
+<div class="line"><span class="lineno">  531</span>  result-&gt;minus_oneV = result-&gt;from_long(-1);</div>
+<div class="line"><span class="lineno">  532</span> </div>
+<div class="line"><span class="lineno">  533</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  534</span>}</div>
 <div class="ttc" id="aclass_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf_html_ac5931fcf132c0d43e222045e93f5a0cf"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">M2::ConcreteRing::R</a></div><div class="ttdeci">std::unique_ptr&lt; RingType &gt; R</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00023">aring-glue.hpp:23</a></div></div>
 <div class="ttc" id="aclass_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387_html_a7cd0d24169c1a88e6b93f3d7dbcd3387"><div class="ttname"><a href="../../dd/dcf/class_ring_a7cd0d24169c1a88e6b93f3d7dbcd3387.html#a7cd0d24169c1a88e6b93f3d7dbcd3387">Ring::characteristic</a></div><div class="ttdeci">long characteristic() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d10/ring_8hpp_source.html#l00122">ring.hpp:122</a></div></div>
 </div><!-- fragment -->
@@ -143,7 +143,7 @@ template&lt;class RingType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring.html">ConcreteRing</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

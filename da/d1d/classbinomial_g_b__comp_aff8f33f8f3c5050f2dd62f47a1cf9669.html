@@ -105,41 +105,41 @@ $(document).ready(function(){initNavTree('da/d1d/classbinomial_g_b__comp_aff8f33
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d5c/gb-toric_8cpp_source.html#l01052">1052</a> of file <a class="el" href="../../db/d5c/gb-toric_8cpp_source.html">gb-toric.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1053</span>{</div>
-<div class="line"><span class="lineno"> 1054</span>  <span class="keywordtype">int</span> i;</div>
-<div class="line"><span class="lineno"> 1055</span>  <a class="code hl_struct" href="../../de/df1/structbinomial.html">binomial</a> f;</div>
-<div class="line"><span class="lineno"> 1056</span>  <a class="code hl_struct" href="../../d7/d61/structbinomial__gb__elem.html">binomial_gb_elem</a> *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
-<div class="line"><span class="lineno"> 1057</span>  <span class="keywordflow">if</span> (m-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a0029ed30ca6f682c9d0fe4748a32d32e.html#a0029ed30ca6f682c9d0fe4748a32d32e">is_ZZ</a>())</div>
-<div class="line"><span class="lineno"> 1058</span>    {</div>
-<div class="line"><span class="lineno"> 1059</span>      <span class="keywordflow">for</span> (i = 0; i &lt; m-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
-<div class="line"><span class="lineno"> 1060</span>        {</div>
-<div class="line"><span class="lineno"> 1061</span>          f = <a class="code hl_variable" href="../../da/d1d/classbinomial_g_b__comp_a07766408f7f7ae4ca074de8438f8997a.html#a07766408f7f7ae4ca074de8438f8997a">R</a>-&gt;<a class="code hl_function" href="../../dd/d3a/classbinomial__ring_a58fe4fdc4d15238348a853065a011197.html#a58fe4fdc4d15238348a853065a011197">make_binomial</a>();</div>
-<div class="line"><span class="lineno"> 1062</span>          <a class="code hl_variable" href="../../da/d1d/classbinomial_g_b__comp_a07766408f7f7ae4ca074de8438f8997a.html#a07766408f7f7ae4ca074de8438f8997a">R</a>-&gt;<a class="code hl_function" href="../../dd/d3a/classbinomial__ring_ab62161c932c3f79ca5722e041202b05d.html#ab62161c932c3f79ca5722e041202b05d">intvector_to_binomial</a>((*m)[i], f);</div>
-<div class="line"><span class="lineno"> 1063</span>          <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <span class="keyword">new</span> <a class="code hl_struct" href="../../d7/d61/structbinomial__gb__elem.html">binomial_gb_elem</a>(f);</div>
-<div class="line"><span class="lineno"> 1064</span>          <a class="code hl_variable" href="../../da/d1d/classbinomial_g_b__comp_a523bad8c7ef3e79fb4a6c03be96608b9.html#a523bad8c7ef3e79fb4a6c03be96608b9">Gens</a>.push_back(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><span class="lineno"> 1065</span>          <a class="code hl_typedef" href="../../de/d10/franzi-gb_8cpp_a8818ff25e637ee7d384c122f52a46d62.html#a8818ff25e637ee7d384c122f52a46d62">Pairs</a>-&gt;insert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><span class="lineno"> 1066</span>        }</div>
-<div class="line"><span class="lineno"> 1067</span>    }</div>
-<div class="line"><span class="lineno"> 1068</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno"> 1069</span>    {</div>
-<div class="line"><span class="lineno"> 1070</span>      <span class="keywordflow">for</span> (i = 0; i &lt; m-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
-<div class="line"><span class="lineno"> 1071</span>        {</div>
-<div class="line"><span class="lineno"> 1072</span>          f = <a class="code hl_variable" href="../../da/d1d/classbinomial_g_b__comp_a07766408f7f7ae4ca074de8438f8997a.html#a07766408f7f7ae4ca074de8438f8997a">R</a>-&gt;<a class="code hl_function" href="../../dd/d3a/classbinomial__ring_a58fe4fdc4d15238348a853065a011197.html#a58fe4fdc4d15238348a853065a011197">make_binomial</a>();</div>
-<div class="line"><span class="lineno"> 1073</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../da/d1d/classbinomial_g_b__comp_a07766408f7f7ae4ca074de8438f8997a.html#a07766408f7f7ae4ca074de8438f8997a">R</a>-&gt;<a class="code hl_function" href="../../dd/d3a/classbinomial__ring_a26787526ab35d5f90999653acfe22338.html#a26787526ab35d5f90999653acfe22338">vector_to_binomial</a>((*m)[i], f))</div>
-<div class="line"><span class="lineno"> 1074</span>            {</div>
-<div class="line"><span class="lineno"> 1075</span>              <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <span class="keyword">new</span> <a class="code hl_struct" href="../../d7/d61/structbinomial__gb__elem.html">binomial_gb_elem</a>(f);</div>
-<div class="line"><span class="lineno"> 1076</span>              <a class="code hl_variable" href="../../da/d1d/classbinomial_g_b__comp_a523bad8c7ef3e79fb4a6c03be96608b9.html#a523bad8c7ef3e79fb4a6c03be96608b9">Gens</a>.push_back(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><span class="lineno"> 1077</span>              <a class="code hl_typedef" href="../../de/d10/franzi-gb_8cpp_a8818ff25e637ee7d384c122f52a46d62.html#a8818ff25e637ee7d384c122f52a46d62">Pairs</a>-&gt;insert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><span class="lineno"> 1078</span>            }</div>
-<div class="line"><span class="lineno"> 1079</span>          <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno"> 1080</span>            {</div>
-<div class="line"><span class="lineno"> 1081</span>              <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected binomials&quot;</span>);</div>
-<div class="line"><span class="lineno"> 1082</span>              <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno"> 1083</span>            }</div>
-<div class="line"><span class="lineno"> 1084</span>        }</div>
-<div class="line"><span class="lineno"> 1085</span>    }</div>
-<div class="line"><span class="lineno"> 1086</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../db/d5c/gb-toric_8cpp_source.html#l01056">1056</a> of file <a class="el" href="../../db/d5c/gb-toric_8cpp_source.html">gb-toric.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1057</span>{</div>
+<div class="line"><span class="lineno"> 1058</span>  <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno"> 1059</span>  <a class="code hl_struct" href="../../de/df1/structbinomial.html">binomial</a> f;</div>
+<div class="line"><span class="lineno"> 1060</span>  <a class="code hl_struct" href="../../d7/d61/structbinomial__gb__elem.html">binomial_gb_elem</a> *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
+<div class="line"><span class="lineno"> 1061</span>  <span class="keywordflow">if</span> (m-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a0029ed30ca6f682c9d0fe4748a32d32e.html#a0029ed30ca6f682c9d0fe4748a32d32e">is_ZZ</a>())</div>
+<div class="line"><span class="lineno"> 1062</span>    {</div>
+<div class="line"><span class="lineno"> 1063</span>      <span class="keywordflow">for</span> (i = 0; i &lt; m-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
+<div class="line"><span class="lineno"> 1064</span>        {</div>
+<div class="line"><span class="lineno"> 1065</span>          f = <a class="code hl_variable" href="../../da/d1d/classbinomial_g_b__comp_a07766408f7f7ae4ca074de8438f8997a.html#a07766408f7f7ae4ca074de8438f8997a">R</a>-&gt;<a class="code hl_function" href="../../dd/d3a/classbinomial__ring_a58fe4fdc4d15238348a853065a011197.html#a58fe4fdc4d15238348a853065a011197">make_binomial</a>();</div>
+<div class="line"><span class="lineno"> 1066</span>          <a class="code hl_variable" href="../../da/d1d/classbinomial_g_b__comp_a07766408f7f7ae4ca074de8438f8997a.html#a07766408f7f7ae4ca074de8438f8997a">R</a>-&gt;<a class="code hl_function" href="../../dd/d3a/classbinomial__ring_ab62161c932c3f79ca5722e041202b05d.html#ab62161c932c3f79ca5722e041202b05d">intvector_to_binomial</a>((*m)[i], f);</div>
+<div class="line"><span class="lineno"> 1067</span>          <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <span class="keyword">new</span> <a class="code hl_struct" href="../../d7/d61/structbinomial__gb__elem.html">binomial_gb_elem</a>(f);</div>
+<div class="line"><span class="lineno"> 1068</span>          <a class="code hl_variable" href="../../da/d1d/classbinomial_g_b__comp_a523bad8c7ef3e79fb4a6c03be96608b9.html#a523bad8c7ef3e79fb4a6c03be96608b9">Gens</a>.push_back(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><span class="lineno"> 1069</span>          <a class="code hl_typedef" href="../../de/d10/franzi-gb_8cpp_a8818ff25e637ee7d384c122f52a46d62.html#a8818ff25e637ee7d384c122f52a46d62">Pairs</a>-&gt;insert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><span class="lineno"> 1070</span>        }</div>
+<div class="line"><span class="lineno"> 1071</span>    }</div>
+<div class="line"><span class="lineno"> 1072</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1073</span>    {</div>
+<div class="line"><span class="lineno"> 1074</span>      <span class="keywordflow">for</span> (i = 0; i &lt; m-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); i++)</div>
+<div class="line"><span class="lineno"> 1075</span>        {</div>
+<div class="line"><span class="lineno"> 1076</span>          f = <a class="code hl_variable" href="../../da/d1d/classbinomial_g_b__comp_a07766408f7f7ae4ca074de8438f8997a.html#a07766408f7f7ae4ca074de8438f8997a">R</a>-&gt;<a class="code hl_function" href="../../dd/d3a/classbinomial__ring_a58fe4fdc4d15238348a853065a011197.html#a58fe4fdc4d15238348a853065a011197">make_binomial</a>();</div>
+<div class="line"><span class="lineno"> 1077</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../da/d1d/classbinomial_g_b__comp_a07766408f7f7ae4ca074de8438f8997a.html#a07766408f7f7ae4ca074de8438f8997a">R</a>-&gt;<a class="code hl_function" href="../../dd/d3a/classbinomial__ring_a26787526ab35d5f90999653acfe22338.html#a26787526ab35d5f90999653acfe22338">vector_to_binomial</a>((*m)[i], f))</div>
+<div class="line"><span class="lineno"> 1078</span>            {</div>
+<div class="line"><span class="lineno"> 1079</span>              <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <span class="keyword">new</span> <a class="code hl_struct" href="../../d7/d61/structbinomial__gb__elem.html">binomial_gb_elem</a>(f);</div>
+<div class="line"><span class="lineno"> 1080</span>              <a class="code hl_variable" href="../../da/d1d/classbinomial_g_b__comp_a523bad8c7ef3e79fb4a6c03be96608b9.html#a523bad8c7ef3e79fb4a6c03be96608b9">Gens</a>.push_back(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><span class="lineno"> 1081</span>              <a class="code hl_typedef" href="../../de/d10/franzi-gb_8cpp_a8818ff25e637ee7d384c122f52a46d62.html#a8818ff25e637ee7d384c122f52a46d62">Pairs</a>-&gt;insert(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><span class="lineno"> 1082</span>            }</div>
+<div class="line"><span class="lineno"> 1083</span>          <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1084</span>            {</div>
+<div class="line"><span class="lineno"> 1085</span>              <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected binomials&quot;</span>);</div>
+<div class="line"><span class="lineno"> 1086</span>              <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno"> 1087</span>            }</div>
+<div class="line"><span class="lineno"> 1088</span>        }</div>
+<div class="line"><span class="lineno"> 1089</span>    }</div>
+<div class="line"><span class="lineno"> 1090</span>}</div>
 <div class="ttc" id="aclass_matrix_a0bceb9b9d23e40a81ac64f6c112ef441_html_a0bceb9b9d23e40a81ac64f6c112ef441"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">Matrix::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00085">matrix.hpp:85</a></div></div>
 <div class="ttc" id="aclass_matrix_a6cb4735dadc364c543bb667468b0fac8_html_a6cb4735dadc364c543bb667468b0fac8"><div class="ttname"><a href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">Matrix::n_cols</a></div><div class="ttdeci">int n_cols() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00098">matrix.hpp:98</a></div></div>
 <div class="ttc" id="aclass_ring_a0029ed30ca6f682c9d0fe4748a32d32e_html_a0029ed30ca6f682c9d0fe4748a32d32e"><div class="ttname"><a href="../../dd/dcf/class_ring_a0029ed30ca6f682c9d0fe4748a32d32e.html#a0029ed30ca6f682c9d0fe4748a32d32e">Ring::is_ZZ</a></div><div class="ttdeci">virtual bool is_ZZ() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d10/ring_8hpp_source.html#l00134">ring.hpp:134</a></div></div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('da/d1d/classbinomial_g_b__comp_aff8f33
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d1d/classbinomial_g_b__comp.html">binomialGB_comp</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:22 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -113,87 +113,87 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_a2aa4f82ac8743bdb1
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html#l00508">508</a> of file <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html">NCF4.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  509</span>{</div>
-<div class="line"><span class="lineno">  510</span>  <a class="code hl_function" href="../../d0/d92/class_n_c_f4_a4f2a6618be322b9fc98e56f382fb4b41.html#a4f2a6618be322b9fc98e56f382fb4b41">matrixReset</a>();</div>
-<div class="line"><span class="lineno">  511</span> </div>
-<div class="line"><span class="lineno">  512</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a.html#a7ba9f6eac784d412668cc4d596977c7a">mColumnMonomials</a>.rehash(<a class="code hl_function" href="../../d1/d02/namespacempfr_afbde1c224e1cd6adbfd16f262097279b.html#afbde1c224e1cd6adbfd16f262097279b">pow</a>(2, <a class="code hl_function" href="../../d1/d02/namespacempfr_a0dbd8e40b02501186ee1b9412b6380df.html#a0dbd8e40b02501186ee1b9412b6380df">ceil</a>(<a class="code hl_function" href="../../d1/d02/namespacempfr_ac9b0ee1c7b927de0442a49fa87e00c0e.html#ac9b0ee1c7b927de0442a49fa87e00c0e">log2</a>(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_af83a794718c76a24af3f1644d7715dbd.html#af83a794718c76a24af3f1644d7715dbd">mPreviousColumnMonomials</a>.size()))));</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html#l00510">510</a> of file <a class="el" href="../../d8/df7/_n_c_f4_8cpp_source.html">NCF4.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  511</span>{</div>
+<div class="line"><span class="lineno">  512</span>  <a class="code hl_function" href="../../d0/d92/class_n_c_f4_a4f2a6618be322b9fc98e56f382fb4b41.html#a4f2a6618be322b9fc98e56f382fb4b41">matrixReset</a>();</div>
 <div class="line"><span class="lineno">  513</span> </div>
-<div class="line"><span class="lineno">  514</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> o : overlapsToProcess)</div>
-<div class="line"><span class="lineno">  515</span>    {</div>
-<div class="line"><span class="lineno">  516</span>      <span class="keyword">auto</span> stillValid = std::get&lt;3&gt;(o);</div>
-<div class="line"><span class="lineno">  517</span>      <span class="keywordflow">if</span> (stillValid) <a class="code hl_function" href="../../d0/d92/class_n_c_f4_a864e47e738658fb6aa140e135b9ceed6.html#a864e47e738658fb6aa140e135b9ceed6">preRowsFromOverlap</a>(o);</div>
-<div class="line"><span class="lineno">  518</span>    }</div>
-<div class="line"><span class="lineno">  519</span> </div>
-<div class="line"><span class="lineno">  520</span>  <span class="keyword">struct </span>ThreadData {</div>
-<div class="line"><span class="lineno">  521</span>    RowsVector rowsVector;</div>
-<div class="line"><span class="lineno">  522</span>    <a class="code hl_class" href="../../d3/d57/class_memory_block.html">MemoryBlock</a>* memoryBlock;</div>
-<div class="line"><span class="lineno">  523</span>  };</div>
-<div class="line"><span class="lineno">  524</span> </div>
-<div class="line"><span class="lineno">  525</span>  mtbb::enumerable_thread_specific&lt;ThreadData&gt; threadData([&amp;](){  </div>
-<div class="line"><span class="lineno">  526</span>      mtbb::queuing_mutex::scoped_lock myColumnLock(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a490efbcf80103962659b7facf1279964.html#a490efbcf80103962659b7facf1279964">mColumnMutex</a>);</div>
-<div class="line"><span class="lineno">  527</span>      ThreadData data;</div>
-<div class="line"><span class="lineno">  528</span>      data.memoryBlock = <span class="keyword">new</span> <a class="code hl_class" href="../../d3/d57/class_memory_block.html">MemoryBlock</a>;</div>
-<div class="line"><span class="lineno">  529</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a4a8d431fee95f16774e7ebc50a6fb652.html#a4a8d431fee95f16774e7ebc50a6fb652">mMemoryBlocks</a>.push_back(data.memoryBlock);</div>
-<div class="line"><span class="lineno">  530</span>      <span class="keywordflow">return</span> data;</div>
-<div class="line"><span class="lineno">  531</span>    });</div>
-<div class="line"><span class="lineno">  532</span> </div>
-<div class="line"><span class="lineno">  533</span>  <span class="comment">// can&#39;t do this loop as a range-based for loop since we are adding to it</span></div>
-<div class="line"><span class="lineno">  534</span>  <span class="comment">// during the for loop</span></div>
-<div class="line"><span class="lineno">  535</span>  <span class="comment">// process each element in mReducersTodo</span></div>
-<div class="line"><span class="lineno">  536</span> </div>
-<div class="line"><span class="lineno">  537</span>  mtbb::parallel_for_each(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.begin(), <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.end(),</div>
-<div class="line"><span class="lineno">  538</span>      [&amp;](<span class="keyword">const</span> PreRow&amp; prerow, <a class="code hl_typedef" href="../../d0/d92/class_n_c_f4_a29aed07e436ffd6d9dcf11de82a4d0e0.html#a29aed07e436ffd6d9dcf11de82a4d0e0">PreRowFeeder</a>&amp; feeder)</div>
-<div class="line"><span class="lineno">  539</span>      {</div>
-<div class="line"><span class="lineno">  540</span>        auto&amp; data = threadData.local();</div>
-<div class="line"><span class="lineno">  541</span>        processPreRow(prerow,</div>
-<div class="line"><span class="lineno">  542</span>                      data.rowsVector,</div>
-<div class="line"><span class="lineno">  543</span>                      *data.memoryBlock,</div>
-<div class="line"><span class="lineno">  544</span>                      &amp;feeder);</div>
-<div class="line"><span class="lineno">  545</span>      });</div>
-<div class="line"><span class="lineno">  546</span> </div>
-<div class="line"><span class="lineno">  547</span>  <span class="comment">// combine the thread local rows into mRows</span></div>
-<div class="line"><span class="lineno">  548</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; data : threadData)</div>
-<div class="line"><span class="lineno">  549</span>  {</div>
-<div class="line"><span class="lineno">  550</span>    <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>.reserve(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>.size() + data.rowsVector.size());</div>
-<div class="line"><span class="lineno">  551</span>    std::move(data.rowsVector.begin(),</div>
-<div class="line"><span class="lineno">  552</span>              data.rowsVector.end(),</div>
-<div class="line"><span class="lineno">  553</span>              std::back_inserter(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>));</div>
-<div class="line"><span class="lineno">  554</span>  }</div>
-<div class="line"><span class="lineno">  555</span> </div>
-<div class="line"><span class="lineno">  556</span>  <span class="comment">// WARNING: The feeder doesn&#39;t actually add things to mReducersTodo</span></div>
-<div class="line"><span class="lineno">  557</span>  <span class="comment">//          so in this algorithm there is now a disconnect between the</span></div>
-<div class="line"><span class="lineno">  558</span>  <span class="comment">//          sizes of mReducersTodo and mRows.</span></div>
-<div class="line"><span class="lineno">  559</span> </div>
-<div class="line"><span class="lineno">  560</span>  <span class="keywordtype">int</span> numReducersAtFirst = <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.size();</div>
-<div class="line"><span class="lineno">  561</span>  </div>
-<div class="line"><span class="lineno">  562</span>  <span class="comment">// this can be a parallel_for</span></div>
-<div class="line"><span class="lineno">  563</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> over : <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>)</div>
-<div class="line"><span class="lineno">  564</span>    <a class="code hl_function" href="../../d0/d92/class_n_c_f4_a7a9d4684502e38527a17f4854b802545.html#a7a9d4684502e38527a17f4854b802545">processPreRow</a>(over,<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_add849c3c25a927089658708bd186832a.html#add849c3c25a927089658708bd186832a">mOverlaps</a>);  <span class="comment">// this often adds new elements to mReducersTodo</span></div>
-<div class="line"><span class="lineno">  565</span> </div>
-<div class="line"><span class="lineno">  566</span>  <span class="comment">// this must (eventually) be a parallel_for_each</span></div>
-<div class="line"><span class="lineno">  567</span>  <span class="comment">// can&#39;t do this loop as a range-based for loop since we are adding</span></div>
-<div class="line"><span class="lineno">  568</span>  <span class="comment">// to mReducersTodo during the for loop</span></div>
-<div class="line"><span class="lineno">  569</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=numReducersAtFirst ; i &lt; <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.size(); ++i)</div>
-<div class="line"><span class="lineno">  570</span>    <a class="code hl_function" href="../../d0/d92/class_n_c_f4_a7a9d4684502e38527a17f4854b802545.html#a7a9d4684502e38527a17f4854b802545">processPreRow</a>(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>[i],<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>); <span class="comment">// this often adds new elements to mReducersTodo</span></div>
-<div class="line"><span class="lineno">  571</span> </div>
-<div class="line"><span class="lineno">  572</span>  <span class="comment">// Now we move the overlaps into mRows, and set mFirstOverlap.</span></div>
-<div class="line"><span class="lineno">  573</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a90d6078faeaa2052ad00ba770bbcefb0.html#a90d6078faeaa2052ad00ba770bbcefb0">mFirstOverlap</a> = <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>.size();</div>
-<div class="line"><span class="lineno">  574</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>.size(); ++i)</div>
-<div class="line"><span class="lineno">  575</span>    {</div>
-<div class="line"><span class="lineno">  576</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>.emplace_back(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_add849c3c25a927089658708bd186832a.html#add849c3c25a927089658708bd186832a">mOverlaps</a>[i]);</div>
-<div class="line"><span class="lineno">  577</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.emplace_back(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>[i]);</div>
-<div class="line"><span class="lineno">  578</span>    }</div>
-<div class="line"><span class="lineno">  579</span>}</div>
+<div class="line"><span class="lineno">  514</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a.html#a7ba9f6eac784d412668cc4d596977c7a">mColumnMonomials</a>.rehash(<a class="code hl_function" href="../../d1/d02/namespacempfr_afbde1c224e1cd6adbfd16f262097279b.html#afbde1c224e1cd6adbfd16f262097279b">pow</a>(2, <a class="code hl_function" href="../../d1/d02/namespacempfr_a0dbd8e40b02501186ee1b9412b6380df.html#a0dbd8e40b02501186ee1b9412b6380df">ceil</a>(<a class="code hl_function" href="../../d1/d02/namespacempfr_ac9b0ee1c7b927de0442a49fa87e00c0e.html#ac9b0ee1c7b927de0442a49fa87e00c0e">log2</a>(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_af83a794718c76a24af3f1644d7715dbd.html#af83a794718c76a24af3f1644d7715dbd">mPreviousColumnMonomials</a>.size()))));</div>
+<div class="line"><span class="lineno">  515</span> </div>
+<div class="line"><span class="lineno">  516</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> o : overlapsToProcess)</div>
+<div class="line"><span class="lineno">  517</span>    {</div>
+<div class="line"><span class="lineno">  518</span>      <span class="keyword">auto</span> stillValid = std::get&lt;3&gt;(o);</div>
+<div class="line"><span class="lineno">  519</span>      <span class="keywordflow">if</span> (stillValid) <a class="code hl_function" href="../../d0/d92/class_n_c_f4_a864e47e738658fb6aa140e135b9ceed6.html#a864e47e738658fb6aa140e135b9ceed6">preRowsFromOverlap</a>(o);</div>
+<div class="line"><span class="lineno">  520</span>    }</div>
+<div class="line"><span class="lineno">  521</span> </div>
+<div class="line"><span class="lineno">  522</span>  <span class="keyword">struct </span>ThreadData {</div>
+<div class="line"><span class="lineno">  523</span>    RowsVector rowsVector;</div>
+<div class="line"><span class="lineno">  524</span>    <a class="code hl_class" href="../../d3/d57/class_memory_block.html">MemoryBlock</a>* memoryBlock;</div>
+<div class="line"><span class="lineno">  525</span>  };</div>
+<div class="line"><span class="lineno">  526</span> </div>
+<div class="line"><span class="lineno">  527</span>  mtbb::enumerable_thread_specific&lt;ThreadData&gt; threadData([&amp;](){  </div>
+<div class="line"><span class="lineno">  528</span>      mtbb::queuing_mutex::scoped_lock myColumnLock(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a490efbcf80103962659b7facf1279964.html#a490efbcf80103962659b7facf1279964">mColumnMutex</a>);</div>
+<div class="line"><span class="lineno">  529</span>      ThreadData data;</div>
+<div class="line"><span class="lineno">  530</span>      data.memoryBlock = <span class="keyword">new</span> <a class="code hl_class" href="../../d3/d57/class_memory_block.html">MemoryBlock</a>;</div>
+<div class="line"><span class="lineno">  531</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a4a8d431fee95f16774e7ebc50a6fb652.html#a4a8d431fee95f16774e7ebc50a6fb652">mMemoryBlocks</a>.push_back(data.memoryBlock);</div>
+<div class="line"><span class="lineno">  532</span>      <span class="keywordflow">return</span> data;</div>
+<div class="line"><span class="lineno">  533</span>    });</div>
+<div class="line"><span class="lineno">  534</span> </div>
+<div class="line"><span class="lineno">  535</span>  <span class="comment">// can&#39;t do this loop as a range-based for loop since we are adding to it</span></div>
+<div class="line"><span class="lineno">  536</span>  <span class="comment">// during the for loop</span></div>
+<div class="line"><span class="lineno">  537</span>  <span class="comment">// process each element in mReducersTodo</span></div>
+<div class="line"><span class="lineno">  538</span> </div>
+<div class="line"><span class="lineno">  539</span>  mtbb::parallel_for_each(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.begin(), <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.end(),</div>
+<div class="line"><span class="lineno">  540</span>      [&amp;](<span class="keyword">const</span> PreRow&amp; prerow, <a class="code hl_typedef" href="../../d0/d92/class_n_c_f4_a29aed07e436ffd6d9dcf11de82a4d0e0.html#a29aed07e436ffd6d9dcf11de82a4d0e0">PreRowFeeder</a>&amp; feeder)</div>
+<div class="line"><span class="lineno">  541</span>      {</div>
+<div class="line"><span class="lineno">  542</span>        auto&amp; data = threadData.local();</div>
+<div class="line"><span class="lineno">  543</span>        processPreRow(prerow,</div>
+<div class="line"><span class="lineno">  544</span>                      data.rowsVector,</div>
+<div class="line"><span class="lineno">  545</span>                      *data.memoryBlock,</div>
+<div class="line"><span class="lineno">  546</span>                      &amp;feeder);</div>
+<div class="line"><span class="lineno">  547</span>      });</div>
+<div class="line"><span class="lineno">  548</span> </div>
+<div class="line"><span class="lineno">  549</span>  <span class="comment">// combine the thread local rows into mRows</span></div>
+<div class="line"><span class="lineno">  550</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; data : threadData)</div>
+<div class="line"><span class="lineno">  551</span>  {</div>
+<div class="line"><span class="lineno">  552</span>    <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>.reserve(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>.size() + data.rowsVector.size());</div>
+<div class="line"><span class="lineno">  553</span>    std::move(data.rowsVector.begin(),</div>
+<div class="line"><span class="lineno">  554</span>              data.rowsVector.end(),</div>
+<div class="line"><span class="lineno">  555</span>              std::back_inserter(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>));</div>
+<div class="line"><span class="lineno">  556</span>  }</div>
+<div class="line"><span class="lineno">  557</span> </div>
+<div class="line"><span class="lineno">  558</span>  <span class="comment">// WARNING: The feeder doesn&#39;t actually add things to mReducersTodo</span></div>
+<div class="line"><span class="lineno">  559</span>  <span class="comment">//          so in this algorithm there is now a disconnect between the</span></div>
+<div class="line"><span class="lineno">  560</span>  <span class="comment">//          sizes of mReducersTodo and mRows.</span></div>
+<div class="line"><span class="lineno">  561</span> </div>
+<div class="line"><span class="lineno">  562</span>  <span class="keywordtype">int</span> numReducersAtFirst = <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.size();</div>
+<div class="line"><span class="lineno">  563</span>  </div>
+<div class="line"><span class="lineno">  564</span>  <span class="comment">// this can be a parallel_for</span></div>
+<div class="line"><span class="lineno">  565</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> over : <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>)</div>
+<div class="line"><span class="lineno">  566</span>    <a class="code hl_function" href="../../d0/d92/class_n_c_f4_a7a9d4684502e38527a17f4854b802545.html#a7a9d4684502e38527a17f4854b802545">processPreRow</a>(over,<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_add849c3c25a927089658708bd186832a.html#add849c3c25a927089658708bd186832a">mOverlaps</a>);  <span class="comment">// this often adds new elements to mReducersTodo</span></div>
+<div class="line"><span class="lineno">  567</span> </div>
+<div class="line"><span class="lineno">  568</span>  <span class="comment">// this must (eventually) be a parallel_for_each</span></div>
+<div class="line"><span class="lineno">  569</span>  <span class="comment">// can&#39;t do this loop as a range-based for loop since we are adding</span></div>
+<div class="line"><span class="lineno">  570</span>  <span class="comment">// to mReducersTodo during the for loop</span></div>
+<div class="line"><span class="lineno">  571</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=numReducersAtFirst ; i &lt; <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.size(); ++i)</div>
+<div class="line"><span class="lineno">  572</span>    <a class="code hl_function" href="../../d0/d92/class_n_c_f4_a7a9d4684502e38527a17f4854b802545.html#a7a9d4684502e38527a17f4854b802545">processPreRow</a>(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>[i],<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>); <span class="comment">// this often adds new elements to mReducersTodo</span></div>
+<div class="line"><span class="lineno">  573</span> </div>
+<div class="line"><span class="lineno">  574</span>  <span class="comment">// Now we move the overlaps into mRows, and set mFirstOverlap.</span></div>
+<div class="line"><span class="lineno">  575</span>  <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a90d6078faeaa2052ad00ba770bbcefb0.html#a90d6078faeaa2052ad00ba770bbcefb0">mFirstOverlap</a> = <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>.size();</div>
+<div class="line"><span class="lineno">  576</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>.size(); ++i)</div>
+<div class="line"><span class="lineno">  577</span>    {</div>
+<div class="line"><span class="lineno">  578</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">mRows</a>.emplace_back(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_add849c3c25a927089658708bd186832a.html#add849c3c25a927089658708bd186832a">mOverlaps</a>[i]);</div>
+<div class="line"><span class="lineno">  579</span>      <a class="code hl_variable" href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">mReducersTodo</a>.emplace_back(<a class="code hl_variable" href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">mOverlapsTodo</a>[i]);</div>
+<div class="line"><span class="lineno">  580</span>    }</div>
+<div class="line"><span class="lineno">  581</span>}</div>
 <div class="ttc" id="aclass_memory_block_html"><div class="ttname"><a href="../../d3/d57/class_memory_block.html">MemoryBlock</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d28/_memory_block_8hpp_source.html#l00008">MemoryBlock.hpp:9</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_a29aed07e436ffd6d9dcf11de82a4d0e0_html_a29aed07e436ffd6d9dcf11de82a4d0e0"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a29aed07e436ffd6d9dcf11de82a4d0e0.html#a29aed07e436ffd6d9dcf11de82a4d0e0">NCF4::PreRowFeeder</a></div><div class="ttdeci">mtbb::feeder&lt; PreRow &gt; PreRowFeeder</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00086">NCF4.hpp:86</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_a490efbcf80103962659b7facf1279964_html_a490efbcf80103962659b7facf1279964"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a490efbcf80103962659b7facf1279964.html#a490efbcf80103962659b7facf1279964">NCF4::mColumnMutex</a></div><div class="ttdeci">mtbb::queuing_mutex mColumnMutex</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00148">NCF4.hpp:148</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_a4a8d431fee95f16774e7ebc50a6fb652_html_a4a8d431fee95f16774e7ebc50a6fb652"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a4a8d431fee95f16774e7ebc50a6fb652.html#a4a8d431fee95f16774e7ebc50a6fb652">NCF4::mMemoryBlocks</a></div><div class="ttdeci">std::vector&lt; MemoryBlock * &gt; mMemoryBlocks</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00146">NCF4.hpp:146</a></div></div>
-<div class="ttc" id="aclass_n_c_f4_a4f2a6618be322b9fc98e56f382fb4b41_html_a4f2a6618be322b9fc98e56f382fb4b41"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a4f2a6618be322b9fc98e56f382fb4b41.html#a4f2a6618be322b9fc98e56f382fb4b41">NCF4::matrixReset</a></div><div class="ttdeci">void matrixReset()</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l00373">NCF4.cpp:373</a></div></div>
+<div class="ttc" id="aclass_n_c_f4_a4f2a6618be322b9fc98e56f382fb4b41_html_a4f2a6618be322b9fc98e56f382fb4b41"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a4f2a6618be322b9fc98e56f382fb4b41.html#a4f2a6618be322b9fc98e56f382fb4b41">NCF4::matrixReset</a></div><div class="ttdeci">void matrixReset()</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l00375">NCF4.cpp:375</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_a588c59046028d1e67b7fd1f50085cde2_html_a588c59046028d1e67b7fd1f50085cde2"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a588c59046028d1e67b7fd1f50085cde2.html#a588c59046028d1e67b7fd1f50085cde2">NCF4::mOverlapsTodo</a></div><div class="ttdeci">std::vector&lt; PreRow &gt; mOverlapsTodo</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00125">NCF4.hpp:125</a></div></div>
-<div class="ttc" id="aclass_n_c_f4_a7a9d4684502e38527a17f4854b802545_html_a7a9d4684502e38527a17f4854b802545"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a7a9d4684502e38527a17f4854b802545.html#a7a9d4684502e38527a17f4854b802545">NCF4::processPreRow</a></div><div class="ttdeci">void processPreRow(PreRow r, RowsVector &amp;rowsVector, MemoryBlock &amp;memoryBlock, PreRowFeeder *feeder)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l00581">NCF4.cpp:581</a></div></div>
+<div class="ttc" id="aclass_n_c_f4_a7a9d4684502e38527a17f4854b802545_html_a7a9d4684502e38527a17f4854b802545"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a7a9d4684502e38527a17f4854b802545.html#a7a9d4684502e38527a17f4854b802545">NCF4::processPreRow</a></div><div class="ttdeci">void processPreRow(PreRow r, RowsVector &amp;rowsVector, MemoryBlock &amp;memoryBlock, PreRowFeeder *feeder)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l00583">NCF4.cpp:583</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a_html_a7ba9f6eac784d412668cc4d596977c7a"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a7ba9f6eac784d412668cc4d596977c7a.html#a7ba9f6eac784d412668cc4d596977c7a">NCF4::mColumnMonomials</a></div><div class="ttdeci">MonomialHash mColumnMonomials</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00121">NCF4.hpp:121</a></div></div>
-<div class="ttc" id="aclass_n_c_f4_a864e47e738658fb6aa140e135b9ceed6_html_a864e47e738658fb6aa140e135b9ceed6"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a864e47e738658fb6aa140e135b9ceed6.html#a864e47e738658fb6aa140e135b9ceed6">NCF4::preRowsFromOverlap</a></div><div class="ttdeci">void preRowsFromOverlap(const Overlap &amp;o)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l00391">NCF4.cpp:391</a></div></div>
+<div class="ttc" id="aclass_n_c_f4_a864e47e738658fb6aa140e135b9ceed6_html_a864e47e738658fb6aa140e135b9ceed6"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a864e47e738658fb6aa140e135b9ceed6.html#a864e47e738658fb6aa140e135b9ceed6">NCF4::preRowsFromOverlap</a></div><div class="ttdeci">void preRowsFromOverlap(const Overlap &amp;o)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_n_c_f4_8cpp_source.html#l00393">NCF4.cpp:393</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_a90d6078faeaa2052ad00ba770bbcefb0_html_a90d6078faeaa2052ad00ba770bbcefb0"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a90d6078faeaa2052ad00ba770bbcefb0.html#a90d6078faeaa2052ad00ba770bbcefb0">NCF4::mFirstOverlap</a></div><div class="ttdeci">int mFirstOverlap</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00133">NCF4.hpp:133</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba_html_a992b563e9f6c1d87f74682ad35b103ba"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_a992b563e9f6c1d87f74682ad35b103ba.html#a992b563e9f6c1d87f74682ad35b103ba">NCF4::mRows</a></div><div class="ttdeci">RowsVector mRows</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00129">NCF4.hpp:129</a></div></div>
 <div class="ttc" id="aclass_n_c_f4_ab29e4a22d316ce7d628f59814377b7af_html_ab29e4a22d316ce7d628f59814377b7af"><div class="ttname"><a href="../../d0/d92/class_n_c_f4_ab29e4a22d316ce7d628f59814377b7af.html#ab29e4a22d316ce7d628f59814377b7af">NCF4::mReducersTodo</a></div><div class="ttdeci">std::vector&lt; PreRow &gt; mReducersTodo</div><div class="ttdef"><b>Definition</b> <a href="../../d5/de7/_n_c_f4_8hpp_source.html#l00124">NCF4.hpp:124</a></div></div>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('d0/d92/class_n_c_f4_a2aa4f82ac8743bdb1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d92/class_n_c_f4.html">NCF4</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -135,116 +135,116 @@ $(document).ready(function(){initNavTree('df/dd6/class_lapack_a5b5ced881564f3e63
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dfc/lapack_8cpp_source.html#l00896">896</a> of file <a class="el" href="../../d1/dfc/lapack_8cpp_source.html">lapack.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  897</span>{</div>
-<div class="line"><span class="lineno">  898</span>  <span class="comment">// sizes:</span></div>
-<div class="line"><span class="lineno">  899</span>  <span class="comment">//  input: A[m,n]</span></div>
-<div class="line"><span class="lineno">  900</span>  <span class="comment">//  output for returnQR==true:</span></div>
-<div class="line"><span class="lineno">  901</span>  <span class="comment">//   case m &gt;= n:  Q[m,n], R[n,n]</span></div>
-<div class="line"><span class="lineno">  902</span>  <span class="comment">//   case m &lt; n: Q[m,m], R[m,n]</span></div>
-<div class="line"><span class="lineno">  903</span>  <span class="comment">//  output for returnQR==false:</span></div>
-<div class="line"><span class="lineno">  904</span>  <span class="comment">//   Q[m,n], R[1,min(m,n)]</span></div>
-<div class="line"><span class="lineno">  905</span>  <span class="keywordtype">bool</span> ret = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  906</span>  <span class="keywordtype">int</span> rows = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
-<div class="line"><span class="lineno">  907</span>  <span class="keywordtype">int</span> cols = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>());</div>
-<div class="line"><span class="lineno">  908</span>  <span class="keywordtype">int</span> info1 = 0, info2 = 0, info3 = 0, info4 = 0;</div>
-<div class="line"><span class="lineno">  909</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a> = (rows &lt;= cols) ? rows : cols;</div>
-<div class="line"><span class="lineno">  910</span> </div>
-<div class="line"><span class="lineno">  911</span>  <span class="keywordflow">if</span> (min == 0)</div>
-<div class="line"><span class="lineno">  912</span>    {</div>
-<div class="line"><span class="lineno">  913</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a matrix with positive dimensions&quot;</span>);</div>
-<div class="line"><span class="lineno">  914</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  915</span>    }</div>
-<div class="line"><span class="lineno">  916</span> </div>
-<div class="line"><span class="lineno">  917</span>  std::vector&lt;double&gt; copyA = <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array</a>(*A); </div>
-<div class="line"><span class="lineno">  918</span>  std::vector&lt;double&gt; tau (min); <span class="comment">// TODO: set to 0??</span></div>
-<div class="line"><span class="lineno">  919</span>  <span class="keywordtype">double</span> workspace_size[1];</div>
-<div class="line"><span class="lineno">  920</span>  <span class="keywordtype">int</span> work_size = -1;</div>
-<div class="line"><span class="lineno">  921</span>  <span class="comment">// find optimal workspace</span></div>
-<div class="line"><span class="lineno">  922</span>  <a class="code hl_function" href="../../df/dd2/lapack_8hpp_a63a5b8bba4360fd46c23e1d7aa11548e.html#a63a5b8bba4360fd46c23e1d7aa11548e">dgeqrf_</a>(&amp;rows, &amp;cols, copyA.data(), &amp;rows, tau.data(), workspace_size, &amp;work_size, &amp;info1);</div>
-<div class="line"><span class="lineno">  923</span>  work_size = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(workspace_size[0]);</div>
-<div class="line"><span class="lineno">  924</span>  <span class="comment">// std::cout &lt;&lt; &quot;work size for QR:  &quot; &lt;&lt; work_size &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  925</span>  <span class="keywordtype">double</span> *workspace = <span class="keyword">new</span> <span class="keywordtype">double</span>[work_size];</div>
-<div class="line"><span class="lineno">  926</span> </div>
-<div class="line"><span class="lineno">  927</span>  <a class="code hl_function" href="../../df/dd2/lapack_8hpp_a63a5b8bba4360fd46c23e1d7aa11548e.html#a63a5b8bba4360fd46c23e1d7aa11548e">dgeqrf_</a>(&amp;rows, &amp;cols, copyA.data(), &amp;rows, tau.data(), workspace, &amp;work_size, &amp;info2);</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/dfc/lapack_8cpp_source.html#l00898">898</a> of file <a class="el" href="../../d1/dfc/lapack_8cpp_source.html">lapack.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  899</span>{</div>
+<div class="line"><span class="lineno">  900</span>  <span class="comment">// sizes:</span></div>
+<div class="line"><span class="lineno">  901</span>  <span class="comment">//  input: A[m,n]</span></div>
+<div class="line"><span class="lineno">  902</span>  <span class="comment">//  output for returnQR==true:</span></div>
+<div class="line"><span class="lineno">  903</span>  <span class="comment">//   case m &gt;= n:  Q[m,n], R[n,n]</span></div>
+<div class="line"><span class="lineno">  904</span>  <span class="comment">//   case m &lt; n: Q[m,m], R[m,n]</span></div>
+<div class="line"><span class="lineno">  905</span>  <span class="comment">//  output for returnQR==false:</span></div>
+<div class="line"><span class="lineno">  906</span>  <span class="comment">//   Q[m,n], R[1,min(m,n)]</span></div>
+<div class="line"><span class="lineno">  907</span>  <span class="keywordtype">bool</span> ret = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  908</span>  <span class="keywordtype">int</span> rows = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
+<div class="line"><span class="lineno">  909</span>  <span class="keywordtype">int</span> cols = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>());</div>
+<div class="line"><span class="lineno">  910</span>  <span class="keywordtype">int</span> info1 = 0, info2 = 0, info3 = 0, info4 = 0;</div>
+<div class="line"><span class="lineno">  911</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed">min</a> = (rows &lt;= cols) ? rows : cols;</div>
+<div class="line"><span class="lineno">  912</span> </div>
+<div class="line"><span class="lineno">  913</span>  <span class="keywordflow">if</span> (min == 0)</div>
+<div class="line"><span class="lineno">  914</span>    {</div>
+<div class="line"><span class="lineno">  915</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a matrix with positive dimensions&quot;</span>);</div>
+<div class="line"><span class="lineno">  916</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  917</span>    }</div>
+<div class="line"><span class="lineno">  918</span> </div>
+<div class="line"><span class="lineno">  919</span>  std::vector&lt;double&gt; copyA = <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array</a>(*A); </div>
+<div class="line"><span class="lineno">  920</span>  std::vector&lt;double&gt; tau (min); <span class="comment">// TODO: set to 0??</span></div>
+<div class="line"><span class="lineno">  921</span>  <span class="keywordtype">double</span> workspace_size[1];</div>
+<div class="line"><span class="lineno">  922</span>  <span class="keywordtype">int</span> work_size = -1;</div>
+<div class="line"><span class="lineno">  923</span>  <span class="comment">// find optimal workspace</span></div>
+<div class="line"><span class="lineno">  924</span>  <a class="code hl_function" href="../../df/dd2/lapack_8hpp_a63a5b8bba4360fd46c23e1d7aa11548e.html#a63a5b8bba4360fd46c23e1d7aa11548e">dgeqrf_</a>(&amp;rows, &amp;cols, copyA.data(), &amp;rows, tau.data(), workspace_size, &amp;work_size, &amp;info1);</div>
+<div class="line"><span class="lineno">  925</span>  work_size = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(workspace_size[0]);</div>
+<div class="line"><span class="lineno">  926</span>  <span class="comment">// std::cout &lt;&lt; &quot;work size for QR:  &quot; &lt;&lt; work_size &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  927</span>  <span class="keywordtype">double</span> *workspace = <span class="keyword">new</span> <span class="keywordtype">double</span>[work_size];</div>
 <div class="line"><span class="lineno">  928</span> </div>
-<div class="line"><span class="lineno">  929</span>  <span class="keywordflow">if</span> (info1 &lt; 0 or info2 &lt; 0)</div>
-<div class="line"><span class="lineno">  930</span>    {</div>
-<div class="line"><span class="lineno">  931</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;argument passed to dgeqrf had an illegal value&quot;</span>);</div>
-<div class="line"><span class="lineno">  932</span>      ret = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  933</span>    }</div>
-<div class="line"><span class="lineno">  934</span>  <span class="keywordflow">if</span> (info1 &gt; 0 or info2 &gt; 0)</div>
-<div class="line"><span class="lineno">  935</span>    {</div>
-<div class="line"><span class="lineno">  936</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;can this happen?&quot;</span>);</div>
-<div class="line"><span class="lineno">  937</span>      ret = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  938</span>    }</div>
-<div class="line"><span class="lineno">  939</span> </div>
-<div class="line"><span class="lineno">  940</span>  <span class="keywordflow">if</span> (ret)</div>
-<div class="line"><span class="lineno">  941</span>    {</div>
-<div class="line"><span class="lineno">  942</span>      <span class="keywordflow">if</span> (return_QR)</div>
-<div class="line"><span class="lineno">  943</span>        {</div>
-<div class="line"><span class="lineno">  944</span>          Q-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(rows, cols);</div>
-<div class="line"><span class="lineno">  945</span>          R-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(cols, cols);</div>
-<div class="line"><span class="lineno">  946</span>          <a class="code hl_function" href="../../d1/dfc/lapack_8cpp_a414c2112d924d6793dc2de2898ca97ba.html#a414c2112d924d6793dc2de2898ca97ba">fill_from_lapack_upper</a>(copyA, rows, cols, *R);</div>
-<div class="line"><span class="lineno">  947</span> </div>
-<div class="line"><span class="lineno">  948</span>          <span class="comment">// Reset Q, R, with their values.</span></div>
-<div class="line"><span class="lineno">  949</span>          <span class="keywordtype">int</span> orgqr_work_size = -1;</div>
-<div class="line"><span class="lineno">  950</span>          <a class="code hl_function" href="../../df/dd2/lapack_8hpp_a6bed672d31f71473e084b609634c093d.html#a6bed672d31f71473e084b609634c093d">dorgqr_</a>(&amp;rows,</div>
-<div class="line"><span class="lineno">  951</span>                  &amp;cols,</div>
-<div class="line"><span class="lineno">  952</span>                  &amp;min,</div>
-<div class="line"><span class="lineno">  953</span>                  copyA.data(),</div>
-<div class="line"><span class="lineno">  954</span>                  &amp;rows,  <span class="comment">// lda?</span></div>
-<div class="line"><span class="lineno">  955</span>                  tau.data(),</div>
-<div class="line"><span class="lineno">  956</span>                  workspace_size,</div>
-<div class="line"><span class="lineno">  957</span>                  &amp;orgqr_work_size,</div>
-<div class="line"><span class="lineno">  958</span>                  &amp;info3);</div>
-<div class="line"><span class="lineno">  959</span>          orgqr_work_size = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(workspace_size[0]);</div>
-<div class="line"><span class="lineno">  960</span>          <span class="keywordflow">if</span> (orgqr_work_size &gt; work_size)</div>
-<div class="line"><span class="lineno">  961</span>            {</div>
-<div class="line"><span class="lineno">  962</span>              <span class="keyword">delete</span>[] workspace;</div>
-<div class="line"><span class="lineno">  963</span>              work_size = orgqr_work_size;</div>
-<div class="line"><span class="lineno">  964</span>              workspace = <span class="keyword">new</span> <span class="keywordtype">double</span>[work_size];</div>
-<div class="line"><span class="lineno">  965</span>              std::cout &lt;&lt; <span class="stringliteral">&quot;work size increased to: &quot;</span> &lt;&lt; work_size &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  966</span>            }</div>
-<div class="line"><span class="lineno">  967</span>          <a class="code hl_function" href="../../df/dd2/lapack_8hpp_a6bed672d31f71473e084b609634c093d.html#a6bed672d31f71473e084b609634c093d">dorgqr_</a>(&amp;rows,</div>
-<div class="line"><span class="lineno">  968</span>                  &amp;cols,</div>
-<div class="line"><span class="lineno">  969</span>                  &amp;min,</div>
-<div class="line"><span class="lineno">  970</span>                  copyA.data(),</div>
-<div class="line"><span class="lineno">  971</span>                  &amp;rows,  <span class="comment">// lda?</span></div>
-<div class="line"><span class="lineno">  972</span>                  tau.data(),</div>
-<div class="line"><span class="lineno">  973</span>                  workspace,</div>
-<div class="line"><span class="lineno">  974</span>                  &amp;work_size,</div>
-<div class="line"><span class="lineno">  975</span>                  &amp;info4);</div>
-<div class="line"><span class="lineno">  976</span>          <span class="keywordflow">if</span> (info3 &lt; 0 or info4 &lt; 0)</div>
-<div class="line"><span class="lineno">  977</span>            {</div>
-<div class="line"><span class="lineno">  978</span>              <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;argument passed to dorgqr or dorgqr had an illegal value&quot;</span>);</div>
-<div class="line"><span class="lineno">  979</span>              ret = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  980</span>            }</div>
-<div class="line"><span class="lineno">  981</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (info3 &gt; 0 or info4 &gt; 0)</div>
-<div class="line"><span class="lineno">  982</span>            {</div>
-<div class="line"><span class="lineno">  983</span>              <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;can this happen?&quot;</span>);</div>
-<div class="line"><span class="lineno">  984</span>              ret = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  985</span>            }</div>
-<div class="line"><span class="lineno">  986</span>          <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  987</span>            {</div>
-<div class="line"><span class="lineno">  988</span>              <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70">fill_from_lapack_array</a>(copyA, *Q);</div>
-<div class="line"><span class="lineno">  989</span>            }</div>
-<div class="line"><span class="lineno">  990</span>        }</div>
-<div class="line"><span class="lineno">  991</span>      <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  992</span>        {</div>
-<div class="line"><span class="lineno">  993</span>          <span class="comment">// Return the raw values for QR: the &quot;A&quot; matrix encodes R and the</span></div>
-<div class="line"><span class="lineno">  994</span>          <span class="comment">// Householders, and tau has the multipliers.</span></div>
-<div class="line"><span class="lineno">  995</span>          Q-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(rows, cols);</div>
-<div class="line"><span class="lineno">  996</span>          R-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(1, min);</div>
-<div class="line"><span class="lineno">  997</span>          <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70">fill_from_lapack_array</a>(copyA, *Q);</div>
-<div class="line"><span class="lineno">  998</span>          <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70">fill_from_lapack_array</a>(tau, *R);</div>
-<div class="line"><span class="lineno">  999</span>        }</div>
-<div class="line"><span class="lineno"> 1000</span>    }</div>
-<div class="line"><span class="lineno"> 1001</span> </div>
-<div class="line"><span class="lineno"> 1002</span>  <span class="keyword">delete</span>[] workspace;</div>
+<div class="line"><span class="lineno">  929</span>  <a class="code hl_function" href="../../df/dd2/lapack_8hpp_a63a5b8bba4360fd46c23e1d7aa11548e.html#a63a5b8bba4360fd46c23e1d7aa11548e">dgeqrf_</a>(&amp;rows, &amp;cols, copyA.data(), &amp;rows, tau.data(), workspace, &amp;work_size, &amp;info2);</div>
+<div class="line"><span class="lineno">  930</span> </div>
+<div class="line"><span class="lineno">  931</span>  <span class="keywordflow">if</span> (info1 &lt; 0 or info2 &lt; 0)</div>
+<div class="line"><span class="lineno">  932</span>    {</div>
+<div class="line"><span class="lineno">  933</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;argument passed to dgeqrf had an illegal value&quot;</span>);</div>
+<div class="line"><span class="lineno">  934</span>      ret = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  935</span>    }</div>
+<div class="line"><span class="lineno">  936</span>  <span class="keywordflow">if</span> (info1 &gt; 0 or info2 &gt; 0)</div>
+<div class="line"><span class="lineno">  937</span>    {</div>
+<div class="line"><span class="lineno">  938</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;can this happen?&quot;</span>);</div>
+<div class="line"><span class="lineno">  939</span>      ret = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  940</span>    }</div>
+<div class="line"><span class="lineno">  941</span> </div>
+<div class="line"><span class="lineno">  942</span>  <span class="keywordflow">if</span> (ret)</div>
+<div class="line"><span class="lineno">  943</span>    {</div>
+<div class="line"><span class="lineno">  944</span>      <span class="keywordflow">if</span> (return_QR)</div>
+<div class="line"><span class="lineno">  945</span>        {</div>
+<div class="line"><span class="lineno">  946</span>          Q-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(rows, cols);</div>
+<div class="line"><span class="lineno">  947</span>          R-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(cols, cols);</div>
+<div class="line"><span class="lineno">  948</span>          <a class="code hl_function" href="../../d1/dfc/lapack_8cpp_a414c2112d924d6793dc2de2898ca97ba.html#a414c2112d924d6793dc2de2898ca97ba">fill_from_lapack_upper</a>(copyA, rows, cols, *R);</div>
+<div class="line"><span class="lineno">  949</span> </div>
+<div class="line"><span class="lineno">  950</span>          <span class="comment">// Reset Q, R, with their values.</span></div>
+<div class="line"><span class="lineno">  951</span>          <span class="keywordtype">int</span> orgqr_work_size = -1;</div>
+<div class="line"><span class="lineno">  952</span>          <a class="code hl_function" href="../../df/dd2/lapack_8hpp_a6bed672d31f71473e084b609634c093d.html#a6bed672d31f71473e084b609634c093d">dorgqr_</a>(&amp;rows,</div>
+<div class="line"><span class="lineno">  953</span>                  &amp;cols,</div>
+<div class="line"><span class="lineno">  954</span>                  &amp;min,</div>
+<div class="line"><span class="lineno">  955</span>                  copyA.data(),</div>
+<div class="line"><span class="lineno">  956</span>                  &amp;rows,  <span class="comment">// lda?</span></div>
+<div class="line"><span class="lineno">  957</span>                  tau.data(),</div>
+<div class="line"><span class="lineno">  958</span>                  workspace_size,</div>
+<div class="line"><span class="lineno">  959</span>                  &amp;orgqr_work_size,</div>
+<div class="line"><span class="lineno">  960</span>                  &amp;info3);</div>
+<div class="line"><span class="lineno">  961</span>          orgqr_work_size = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(workspace_size[0]);</div>
+<div class="line"><span class="lineno">  962</span>          <span class="keywordflow">if</span> (orgqr_work_size &gt; work_size)</div>
+<div class="line"><span class="lineno">  963</span>            {</div>
+<div class="line"><span class="lineno">  964</span>              <span class="keyword">delete</span>[] workspace;</div>
+<div class="line"><span class="lineno">  965</span>              work_size = orgqr_work_size;</div>
+<div class="line"><span class="lineno">  966</span>              workspace = <span class="keyword">new</span> <span class="keywordtype">double</span>[work_size];</div>
+<div class="line"><span class="lineno">  967</span>              std::cout &lt;&lt; <span class="stringliteral">&quot;work size increased to: &quot;</span> &lt;&lt; work_size &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  968</span>            }</div>
+<div class="line"><span class="lineno">  969</span>          <a class="code hl_function" href="../../df/dd2/lapack_8hpp_a6bed672d31f71473e084b609634c093d.html#a6bed672d31f71473e084b609634c093d">dorgqr_</a>(&amp;rows,</div>
+<div class="line"><span class="lineno">  970</span>                  &amp;cols,</div>
+<div class="line"><span class="lineno">  971</span>                  &amp;min,</div>
+<div class="line"><span class="lineno">  972</span>                  copyA.data(),</div>
+<div class="line"><span class="lineno">  973</span>                  &amp;rows,  <span class="comment">// lda?</span></div>
+<div class="line"><span class="lineno">  974</span>                  tau.data(),</div>
+<div class="line"><span class="lineno">  975</span>                  workspace,</div>
+<div class="line"><span class="lineno">  976</span>                  &amp;work_size,</div>
+<div class="line"><span class="lineno">  977</span>                  &amp;info4);</div>
+<div class="line"><span class="lineno">  978</span>          <span class="keywordflow">if</span> (info3 &lt; 0 or info4 &lt; 0)</div>
+<div class="line"><span class="lineno">  979</span>            {</div>
+<div class="line"><span class="lineno">  980</span>              <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;argument passed to dorgqr or dorgqr had an illegal value&quot;</span>);</div>
+<div class="line"><span class="lineno">  981</span>              ret = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  982</span>            }</div>
+<div class="line"><span class="lineno">  983</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (info3 &gt; 0 or info4 &gt; 0)</div>
+<div class="line"><span class="lineno">  984</span>            {</div>
+<div class="line"><span class="lineno">  985</span>              <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;can this happen?&quot;</span>);</div>
+<div class="line"><span class="lineno">  986</span>              ret = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  987</span>            }</div>
+<div class="line"><span class="lineno">  988</span>          <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  989</span>            {</div>
+<div class="line"><span class="lineno">  990</span>              <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70">fill_from_lapack_array</a>(copyA, *Q);</div>
+<div class="line"><span class="lineno">  991</span>            }</div>
+<div class="line"><span class="lineno">  992</span>        }</div>
+<div class="line"><span class="lineno">  993</span>      <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  994</span>        {</div>
+<div class="line"><span class="lineno">  995</span>          <span class="comment">// Return the raw values for QR: the &quot;A&quot; matrix encodes R and the</span></div>
+<div class="line"><span class="lineno">  996</span>          <span class="comment">// Householders, and tau has the multipliers.</span></div>
+<div class="line"><span class="lineno">  997</span>          Q-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(rows, cols);</div>
+<div class="line"><span class="lineno">  998</span>          R-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">resize</a>(1, min);</div>
+<div class="line"><span class="lineno">  999</span>          <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70">fill_from_lapack_array</a>(copyA, *Q);</div>
+<div class="line"><span class="lineno"> 1000</span>          <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70">fill_from_lapack_array</a>(tau, *R);</div>
+<div class="line"><span class="lineno"> 1001</span>        }</div>
+<div class="line"><span class="lineno"> 1002</span>    }</div>
 <div class="line"><span class="lineno"> 1003</span> </div>
-<div class="line"><span class="lineno"> 1004</span>  <span class="keywordflow">return</span> ret;</div>
-<div class="line"><span class="lineno"> 1005</span>}</div>
+<div class="line"><span class="lineno"> 1004</span>  <span class="keyword">delete</span>[] workspace;</div>
+<div class="line"><span class="lineno"> 1005</span> </div>
+<div class="line"><span class="lineno"> 1006</span>  <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno"> 1007</span>}</div>
 <div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00107">dmat.hpp:107</a></div></div>
 <div class="ttc" id="aclass_d_mat_a88d2a242efc934b17d6cc94851000627_html_a88d2a242efc934b17d6cc94851000627"><div class="ttname"><a href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">DMat::resize</a></div><div class="ttdeci">void resize(size_t new_nrows, size_t new_ncols)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00120">dmat.hpp:120</a></div></div>
 <div class="ttc" id="aclass_d_mat_aff91923e882c194ecf16030897933e45_html_aff91923e882c194ecf16030897933e45"><div class="ttname"><a href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat::numColumns</a></div><div class="ttdeci">size_t numColumns() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00108">dmat.hpp:108</a></div></div>
@@ -268,7 +268,7 @@ $(document).ready(function(){initNavTree('df/dd6/class_lapack_a5b5ced881564f3e63
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/dd6/class_lapack.html">Lapack</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

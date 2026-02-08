@@ -121,27 +121,27 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a52f9b58452ad1b821cb
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html#l00471">471</a> of file <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html">ring-vecs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  472</span>{</div>
-<div class="line"><span class="lineno">  473</span>  <a class="code hl_struct" href="../../d6/ddd/structvecterm.html">vecterm</a> head;</div>
-<div class="line"><span class="lineno">  474</span>  head.<a class="code hl_variable" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = v;</div>
-<div class="line"><span class="lineno">  475</span>  <span class="keywordflow">for</span> (vec <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = &amp;head; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next != <span class="keyword">nullptr</span>; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next)</div>
-<div class="line"><span class="lineno">  476</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next-&gt;comp &lt; r)</div>
-<div class="line"><span class="lineno">  477</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  478</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next-&gt;comp == r)</div>
-<div class="line"><span class="lineno">  479</span>      {</div>
-<div class="line"><span class="lineno">  480</span>        <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> c =</div>
-<div class="line"><span class="lineno">  481</span>            this-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a2b8cbd8d5bfa9610f5f1070e390ef2c8.html#a2b8cbd8d5bfa9610f5f1070e390ef2c8">divide</a>(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next-&gt;coeff, a);  <span class="comment">// exact or quotient?? MES MES</span></div>
-<div class="line"><span class="lineno">  482</span>        <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next-&gt;coeff = c;</div>
-<div class="line"><span class="lineno">  483</span>        <span class="keywordflow">if</span> (this-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next-&gt;coeff))</div>
-<div class="line"><span class="lineno">  484</span>          {</div>
-<div class="line"><span class="lineno">  485</span>            vec tmp = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next;</div>
-<div class="line"><span class="lineno">  486</span>            <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next = tmp-&gt;next;</div>
-<div class="line"><span class="lineno">  487</span>            <a class="code hl_function" href="../../dd/dcf/class_ring_a310e247bc4db676e4641f02cf2177474.html#a310e247bc4db676e4641f02cf2177474">remove_vec_node</a>(tmp);</div>
-<div class="line"><span class="lineno">  488</span>          }</div>
-<div class="line"><span class="lineno">  489</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  490</span>      }</div>
-<div class="line"><span class="lineno">  491</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html#l00472">472</a> of file <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html">ring-vecs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  473</span>{</div>
+<div class="line"><span class="lineno">  474</span>  <a class="code hl_struct" href="../../d6/ddd/structvecterm.html">vecterm</a> head;</div>
+<div class="line"><span class="lineno">  475</span>  head.<a class="code hl_variable" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = v;</div>
+<div class="line"><span class="lineno">  476</span>  <span class="keywordflow">for</span> (vec <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = &amp;head; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next != <span class="keyword">nullptr</span>; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next)</div>
+<div class="line"><span class="lineno">  477</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next-&gt;comp &lt; r)</div>
+<div class="line"><span class="lineno">  478</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  479</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next-&gt;comp == r)</div>
+<div class="line"><span class="lineno">  480</span>      {</div>
+<div class="line"><span class="lineno">  481</span>        <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> c =</div>
+<div class="line"><span class="lineno">  482</span>            this-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a2b8cbd8d5bfa9610f5f1070e390ef2c8.html#a2b8cbd8d5bfa9610f5f1070e390ef2c8">divide</a>(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next-&gt;coeff, a);  <span class="comment">// exact or quotient?? MES MES</span></div>
+<div class="line"><span class="lineno">  483</span>        <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next-&gt;coeff = c;</div>
+<div class="line"><span class="lineno">  484</span>        <span class="keywordflow">if</span> (this-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next-&gt;coeff))</div>
+<div class="line"><span class="lineno">  485</span>          {</div>
+<div class="line"><span class="lineno">  486</span>            vec tmp = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next;</div>
+<div class="line"><span class="lineno">  487</span>            <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next = tmp-&gt;next;</div>
+<div class="line"><span class="lineno">  488</span>            <a class="code hl_function" href="../../dd/dcf/class_ring_a310e247bc4db676e4641f02cf2177474.html#a310e247bc4db676e4641f02cf2177474">remove_vec_node</a>(tmp);</div>
+<div class="line"><span class="lineno">  489</span>          }</div>
+<div class="line"><span class="lineno">  490</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  491</span>      }</div>
+<div class="line"><span class="lineno">  492</span>}</div>
 <div class="ttc" id="aclass_ring_a2b8cbd8d5bfa9610f5f1070e390ef2c8_html_a2b8cbd8d5bfa9610f5f1070e390ef2c8"><div class="ttname"><a href="../../dd/dcf/class_ring_a2b8cbd8d5bfa9610f5f1070e390ef2c8.html#a2b8cbd8d5bfa9610f5f1070e390ef2c8">Ring::divide</a></div><div class="ttdeci">virtual ring_elem divide(const ring_elem f, const ring_elem g) const =0</div></div>
 <div class="ttc" id="aclass_ring_a310e247bc4db676e4641f02cf2177474_html_a310e247bc4db676e4641f02cf2177474"><div class="ttname"><a href="../../dd/dcf/class_ring_a310e247bc4db676e4641f02cf2177474.html#a310e247bc4db676e4641f02cf2177474">Ring::remove_vec_node</a></div><div class="ttdeci">void remove_vec_node(vec n) const</div><div class="ttdef"><b>Definition</b> <a href="../../df/d36/ring-vecs_8cpp_source.html#l00015">ring-vecs.cpp:15</a></div></div>
 <div class="ttc" id="aclass_ring_aa8d762a00cdea91f8d26cea2b52ebce0_html_aa8d762a00cdea91f8d26cea2b52ebce0"><div class="ttname"><a href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">Ring::is_zero</a></div><div class="ttdeci">virtual bool is_zero(const ring_elem f) const =0</div></div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a52f9b58452ad1b821cb
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

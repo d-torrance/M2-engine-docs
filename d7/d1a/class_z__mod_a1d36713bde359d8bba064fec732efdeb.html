@@ -125,19 +125,19 @@ $(document).ready(function(){initNavTree('d7/d1a/class_z__mod_a1d36713bde359d8bb
 
 <p>Reimplemented from <a class="el" href="../../dd/dcf/class_ring_ad53bd105b7dcfb35f91908bbec8f460f.html#ad53bd105b7dcfb35f91908bbec8f460f">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d41/_z_zp_8cpp_source.html#l00263">263</a> of file <a class="el" href="../../dd/d41/_z_zp_8cpp_source.html">ZZp.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  264</span>{</div>
-<div class="line"><span class="lineno">  265</span>  <span class="keywordflow">if</span> (f.<a class="code hl_function" href="../../d5/d64/unionring__elem_aef4bc99b676c369a6a0a05e13601ced3.html#aef4bc99b676c369a6a0a05e13601ced3">get_int</a>() == <a class="code hl_variable" href="../../d7/d1a/class_z__mod_a4606272220cfc6f2430158d475646aef.html#a4606272220cfc6f2430158d475646aef">_ZERO</a>) {</div>
-<div class="line"><span class="lineno">  266</span>    <span class="keywordflow">if</span> (mpz_sgn(n)&lt;0) <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../d1/daf/structexc_1_1division__by__zero__error.html">exc::division_by_zero_error</a>();</div>
-<div class="line"><span class="lineno">  267</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mpz_sgn(n) == 0)</div>
-<div class="line"><span class="lineno">  268</span>      <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(0);</div>
-<div class="line"><span class="lineno">  269</span>    <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(<a class="code hl_variable" href="../../d7/d1a/class_z__mod_a4606272220cfc6f2430158d475646aef.html#a4606272220cfc6f2430158d475646aef">_ZERO</a>);</div>
-<div class="line"><span class="lineno">  270</span>  }</div>
-<div class="line"><span class="lineno">  271</span>  <span class="keywordtype">int</span> n1 = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a56dfe33da6328718f97bec3c02580197.html#a56dfe33da6328718f97bec3c02580197">RingZZ::mod_ui</a>(n, <a class="code hl_variable" href="../../d7/d1a/class_z__mod_ae48a16d1684ce8b952d3749656849ec6.html#ae48a16d1684ce8b952d3749656849ec6">_P1</a>);</div>
-<div class="line"><span class="lineno">  272</span>  <span class="keywordtype">int</span> m = (f.<a class="code hl_function" href="../../d5/d64/unionring__elem_aef4bc99b676c369a6a0a05e13601ced3.html#aef4bc99b676c369a6a0a05e13601ced3">get_int</a>() * n1) % <a class="code hl_variable" href="../../d7/d1a/class_z__mod_ae48a16d1684ce8b952d3749656849ec6.html#ae48a16d1684ce8b952d3749656849ec6">_P1</a>;</div>
-<div class="line"><span class="lineno">  273</span>  <span class="keywordflow">if</span> (m &lt; 0) m += <a class="code hl_variable" href="../../d7/d1a/class_z__mod_ae48a16d1684ce8b952d3749656849ec6.html#ae48a16d1684ce8b952d3749656849ec6">_P1</a>;</div>
-<div class="line"><span class="lineno">  274</span>  <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(m);</div>
-<div class="line"><span class="lineno">  275</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/d41/_z_zp_8cpp_source.html#l00264">264</a> of file <a class="el" href="../../dd/d41/_z_zp_8cpp_source.html">ZZp.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  265</span>{</div>
+<div class="line"><span class="lineno">  266</span>  <span class="keywordflow">if</span> (f.<a class="code hl_function" href="../../d5/d64/unionring__elem_aef4bc99b676c369a6a0a05e13601ced3.html#aef4bc99b676c369a6a0a05e13601ced3">get_int</a>() == <a class="code hl_variable" href="../../d7/d1a/class_z__mod_a4606272220cfc6f2430158d475646aef.html#a4606272220cfc6f2430158d475646aef">_ZERO</a>) {</div>
+<div class="line"><span class="lineno">  267</span>    <span class="keywordflow">if</span> (mpz_sgn(n)&lt;0) <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../d1/daf/structexc_1_1division__by__zero__error.html">exc::division_by_zero_error</a>();</div>
+<div class="line"><span class="lineno">  268</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mpz_sgn(n) == 0)</div>
+<div class="line"><span class="lineno">  269</span>      <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(0);</div>
+<div class="line"><span class="lineno">  270</span>    <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(<a class="code hl_variable" href="../../d7/d1a/class_z__mod_a4606272220cfc6f2430158d475646aef.html#a4606272220cfc6f2430158d475646aef">_ZERO</a>);</div>
+<div class="line"><span class="lineno">  271</span>  }</div>
+<div class="line"><span class="lineno">  272</span>  <span class="keywordtype">int</span> n1 = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a56dfe33da6328718f97bec3c02580197.html#a56dfe33da6328718f97bec3c02580197">RingZZ::mod_ui</a>(n, <a class="code hl_variable" href="../../d7/d1a/class_z__mod_ae48a16d1684ce8b952d3749656849ec6.html#ae48a16d1684ce8b952d3749656849ec6">_P1</a>);</div>
+<div class="line"><span class="lineno">  273</span>  <span class="keywordtype">int</span> m = (f.<a class="code hl_function" href="../../d5/d64/unionring__elem_aef4bc99b676c369a6a0a05e13601ced3.html#aef4bc99b676c369a6a0a05e13601ced3">get_int</a>() * n1) % <a class="code hl_variable" href="../../d7/d1a/class_z__mod_ae48a16d1684ce8b952d3749656849ec6.html#ae48a16d1684ce8b952d3749656849ec6">_P1</a>;</div>
+<div class="line"><span class="lineno">  274</span>  <span class="keywordflow">if</span> (m &lt; 0) m += <a class="code hl_variable" href="../../d7/d1a/class_z__mod_ae48a16d1684ce8b952d3749656849ec6.html#ae48a16d1684ce8b952d3749656849ec6">_P1</a>;</div>
+<div class="line"><span class="lineno">  275</span>  <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(m);</div>
+<div class="line"><span class="lineno">  276</span>}</div>
 <div class="ttc" id="aclass_ring_z_z_a56dfe33da6328718f97bec3c02580197_html_a56dfe33da6328718f97bec3c02580197"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_a56dfe33da6328718f97bec3c02580197.html#a56dfe33da6328718f97bec3c02580197">RingZZ::mod_ui</a></div><div class="ttdeci">static unsigned int mod_ui(mpz_srcptr n, unsigned int p)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00055">ZZ.cpp:55</a></div></div>
 <div class="ttc" id="aclass_z__mod_a4606272220cfc6f2430158d475646aef_html_a4606272220cfc6f2430158d475646aef"><div class="ttname"><a href="../../d7/d1a/class_z__mod_a4606272220cfc6f2430158d475646aef.html#a4606272220cfc6f2430158d475646aef">Z_mod::_ZERO</a></div><div class="ttdeci">int _ZERO</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d23/_z_zp_8hpp_source.html#l00019">ZZp.hpp:19</a></div></div>
 <div class="ttc" id="aclass_z__mod_ae48a16d1684ce8b952d3749656849ec6_html_ae48a16d1684ce8b952d3749656849ec6"><div class="ttname"><a href="../../d7/d1a/class_z__mod_ae48a16d1684ce8b952d3749656849ec6.html#ae48a16d1684ce8b952d3749656849ec6">Z_mod::_P1</a></div><div class="ttdeci">int _P1</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d23/_z_zp_8hpp_source.html#l00018">ZZp.hpp:18</a></div></div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('d7/d1a/class_z__mod_a1d36713bde359d8bb
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d1a/class_z__mod.html">Z_mod</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

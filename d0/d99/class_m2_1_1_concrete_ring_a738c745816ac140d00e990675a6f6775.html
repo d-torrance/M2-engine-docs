@@ -133,16 +133,16 @@ template&lt;class RingType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="../../dd/dcf/class_ring_a8e5ba3ccbc81ca858dc7907a6167b225.html#a8e5ba3ccbc81ca858dc7907a6167b225">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l00157">157</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  160</span>  {</div>
-<div class="line"><span class="lineno">  161</span>    <a class="code hl_typedef" href="../../d0/d99/class_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b.html#aeeb92bc934137a4ba516dcb24f79ce8b">Element</a> a(*<a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>);</div>
-<div class="line"><span class="lineno">  162</span>    <span class="keywordtype">bool</span> ret = <a class="code hl_function" href="../../d7/d82/namespace_m2_aa61f41de359c0bc92b7289f6387b38f8.html#aa61f41de359c0bc92b7289f6387b38f8">get_from_complex_double</a>(*<a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>, a, re, im);</div>
-<div class="line"><span class="lineno">  163</span>    <span class="keywordflow">if</span> (ret) <a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;to_ring_elem(result, a);</div>
-<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">return</span> ret;</div>
-<div class="line"><span class="lineno">  165</span>  }</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l00164">164</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  167</span>  {</div>
+<div class="line"><span class="lineno">  168</span>    <a class="code hl_typedef" href="../../d0/d99/class_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b.html#aeeb92bc934137a4ba516dcb24f79ce8b">Element</a> a(*<a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>);</div>
+<div class="line"><span class="lineno">  169</span>    <span class="keywordtype">bool</span> ret = <a class="code hl_function" href="../../d7/d82/namespace_m2_aa61f41de359c0bc92b7289f6387b38f8.html#aa61f41de359c0bc92b7289f6387b38f8">get_from_complex_double</a>(*<a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>, a, re, im);</div>
+<div class="line"><span class="lineno">  170</span>    <span class="keywordflow">if</span> (ret) <a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;to_ring_elem(result, a);</div>
+<div class="line"><span class="lineno">  171</span>    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">  172</span>  }</div>
 <div class="ttc" id="aclass_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf_html_ac5931fcf132c0d43e222045e93f5a0cf"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">M2::ConcreteRing::R</a></div><div class="ttdeci">std::unique_ptr&lt; RingType &gt; R</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00023">aring-glue.hpp:23</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b_html_aeeb92bc934137a4ba516dcb24f79ce8b"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b.html#aeeb92bc934137a4ba516dcb24f79ce8b">M2::ConcreteRing::Element</a></div><div class="ttdeci">RingType::Element Element</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00033">aring-glue.hpp:33</a></div></div>
-<div class="ttc" id="anamespace_m2_aa61f41de359c0bc92b7289f6387b38f8_html_aa61f41de359c0bc92b7289f6387b38f8"><div class="ttname"><a href="../../d7/d82/namespace_m2_aa61f41de359c0bc92b7289f6387b38f8.html#aa61f41de359c0bc92b7289f6387b38f8">M2::get_from_complex_double</a></div><div class="ttdeci">bool get_from_complex_double(const RT &amp;R, typename RT::ElementType &amp;a, double re, double im)</div><div class="ttdef"><b>Definition</b> <a href="../../de/df4/aring-translate_8hpp_source.html#l00052">aring-translate.hpp:52</a></div></div>
+<div class="ttc" id="anamespace_m2_aa61f41de359c0bc92b7289f6387b38f8_html_aa61f41de359c0bc92b7289f6387b38f8"><div class="ttname"><a href="../../d7/d82/namespace_m2_aa61f41de359c0bc92b7289f6387b38f8.html#aa61f41de359c0bc92b7289f6387b38f8">M2::get_from_complex_double</a></div><div class="ttdeci">bool get_from_complex_double(const RT &amp;R, typename RT::ElementType &amp;a, double re, double im)</div><div class="ttdef"><b>Definition</b> <a href="../../de/df4/aring-translate_8hpp_source.html#l00064">aring-translate.hpp:64</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/d82/namespace_m2_aa61f41de359c0bc92b7289f6387b38f8.html#aa61f41de359c0bc92b7289f6387b38f8">M2::get_from_complex_double()</a>, and <a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">M2::ConcreteRing&lt; RingType &gt;::R</a>.</p>
 
@@ -154,7 +154,7 @@ template&lt;class RingType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring.html">ConcreteRing</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

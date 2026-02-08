@@ -147,80 +147,80 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_aab30
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html">aring-tower.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  219</span>{</div>
-<div class="line"><span class="lineno">  220</span>  <span class="comment">// o &lt;&lt; to_string(level, f);</span></div>
-<div class="line"><span class="lineno">  221</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  222</span>    {</div>
-<div class="line"><span class="lineno">  223</span>      o &lt;&lt; <span class="stringliteral">&quot;0&quot;</span>;</div>
-<div class="line"><span class="lineno">  224</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  225</span>    }</div>
-<div class="line"><span class="lineno">  226</span> </div>
-<div class="line"><span class="lineno">  227</span>  <span class="keywordtype">int</span> nterms = <a class="code hl_function" href="../../d4/d23/dpoly_8cpp_ae3c36c2ec0da9db992b4e3cbd8ebf863.html#ae3c36c2ec0da9db992b4e3cbd8ebf863">n_nonzero_terms</a>(level, f);</div>
-<div class="line"><span class="lineno">  228</span>  <span class="keywordtype">bool</span> needs_parens = p_parens &amp;&amp; (nterms &gt;= 2);</div>
-<div class="line"><span class="lineno">  229</span> </div>
-<div class="line"><span class="lineno">  230</span>  <span class="keywordflow">if</span> (needs_parens)</div>
-<div class="line"><span class="lineno">  231</span>    {</div>
-<div class="line"><span class="lineno">  232</span>      <span class="keywordflow">if</span> (p_plus) o &lt;&lt; <span class="charliteral">&#39;+&#39;</span>;</div>
-<div class="line"><span class="lineno">  233</span>      o &lt;&lt; <span class="charliteral">&#39;(&#39;</span>;</div>
-<div class="line"><span class="lineno">  234</span>      p_plus = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  235</span>    }</div>
-<div class="line"><span class="lineno">  236</span> </div>
-<div class="line"><span class="lineno">  237</span>  <span class="keywordtype">bool</span> one = <a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_a9cdae35bb988b4742633619746565933.html#a9cdae35bb988b4742633619746565933">is_one</a>(level, f);</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html#l00215">215</a> of file <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html">aring-tower.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  221</span>{</div>
+<div class="line"><span class="lineno">  222</span>  <span class="comment">// o &lt;&lt; to_string(level, f);</span></div>
+<div class="line"><span class="lineno">  223</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  224</span>    {</div>
+<div class="line"><span class="lineno">  225</span>      o &lt;&lt; <span class="stringliteral">&quot;0&quot;</span>;</div>
+<div class="line"><span class="lineno">  226</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  227</span>    }</div>
+<div class="line"><span class="lineno">  228</span> </div>
+<div class="line"><span class="lineno">  229</span>  <span class="keywordtype">int</span> nterms = <a class="code hl_function" href="../../d4/d23/dpoly_8cpp_ae3c36c2ec0da9db992b4e3cbd8ebf863.html#ae3c36c2ec0da9db992b4e3cbd8ebf863">n_nonzero_terms</a>(level, f);</div>
+<div class="line"><span class="lineno">  230</span>  <span class="keywordtype">bool</span> needs_parens = p_parens &amp;&amp; (nterms &gt;= 2);</div>
+<div class="line"><span class="lineno">  231</span> </div>
+<div class="line"><span class="lineno">  232</span>  <span class="keywordflow">if</span> (needs_parens)</div>
+<div class="line"><span class="lineno">  233</span>    {</div>
+<div class="line"><span class="lineno">  234</span>      <span class="keywordflow">if</span> (p_plus) o &lt;&lt; <span class="charliteral">&#39;+&#39;</span>;</div>
+<div class="line"><span class="lineno">  235</span>      o &lt;&lt; <span class="charliteral">&#39;(&#39;</span>;</div>
+<div class="line"><span class="lineno">  236</span>      p_plus = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  237</span>    }</div>
 <div class="line"><span class="lineno">  238</span> </div>
-<div class="line"><span class="lineno">  239</span>  <span class="keywordflow">if</span> (one)</div>
-<div class="line"><span class="lineno">  240</span>    {</div>
-<div class="line"><span class="lineno">  241</span>      <span class="keywordflow">if</span> (p_plus) o &lt;&lt; <span class="stringliteral">&quot;+&quot;</span>;</div>
-<div class="line"><span class="lineno">  242</span>      <span class="keywordflow">if</span> (p_one) o &lt;&lt; <span class="stringliteral">&quot;1&quot;</span>;</div>
-<div class="line"><span class="lineno">  243</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  244</span>    }</div>
-<div class="line"><span class="lineno">  245</span> </div>
-<div class="line"><span class="lineno">  246</span>  <span class="keyword">const</span> std::string &amp;this_varname = <a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_a834feab793e05da098db640eff7f30ae.html#a834feab793e05da098db640eff7f30ae">varNames</a>()[level];</div>
+<div class="line"><span class="lineno">  239</span>  <span class="keywordtype">bool</span> one = <a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_a9cdae35bb988b4742633619746565933.html#a9cdae35bb988b4742633619746565933">is_one</a>(level, f);</div>
+<div class="line"><span class="lineno">  240</span> </div>
+<div class="line"><span class="lineno">  241</span>  <span class="keywordflow">if</span> (one)</div>
+<div class="line"><span class="lineno">  242</span>    {</div>
+<div class="line"><span class="lineno">  243</span>      <span class="keywordflow">if</span> (p_plus) o &lt;&lt; <span class="stringliteral">&quot;+&quot;</span>;</div>
+<div class="line"><span class="lineno">  244</span>      <span class="keywordflow">if</span> (p_one) o &lt;&lt; <span class="stringliteral">&quot;1&quot;</span>;</div>
+<div class="line"><span class="lineno">  245</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  246</span>    }</div>
 <div class="line"><span class="lineno">  247</span> </div>
-<div class="line"><span class="lineno">  248</span>  <span class="keywordflow">if</span> (level == 0)</div>
-<div class="line"><span class="lineno">  249</span>    {</div>
-<div class="line"><span class="lineno">  250</span>      <span class="keywordtype">bool</span> firstterm = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  251</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg; i &gt;= 0; i--)</div>
-<div class="line"><span class="lineno">  252</span>        <span class="keywordflow">if</span> (f-&gt;coeffs[i] != 0)</div>
-<div class="line"><span class="lineno">  253</span>          {</div>
-<div class="line"><span class="lineno">  254</span>            <span class="keywordflow">if</span> (!firstterm || p_plus) o &lt;&lt; <span class="stringliteral">&quot;+&quot;</span>;</div>
-<div class="line"><span class="lineno">  255</span>            firstterm = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  256</span>            <span class="keywordflow">if</span> (i == 0 || f-&gt;coeffs[i] != 1)</div>
-<div class="line"><span class="lineno">  257</span>              <a class="code hl_variable" href="../../da/d48/class_m2_1_1_a_ring_tower_abccea2309d7ab04fc3513e97db6135ee.html#abccea2309d7ab04fc3513e97db6135ee">mBaseRing</a>.<a class="code hl_function" href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a38e2d4d0574d35b1bf35d0be1fc53165.html#a38e2d4d0574d35b1bf35d0be1fc53165">elem_text_out</a>(o, f-&gt;coeffs[i], p_one, p_plus, p_parens);</div>
-<div class="line"><span class="lineno">  258</span>            <span class="keywordflow">if</span> (i &gt; 0) o &lt;&lt; this_varname;</div>
-<div class="line"><span class="lineno">  259</span>            <span class="keywordflow">if</span> (i &gt; 1) o &lt;&lt; i;</div>
-<div class="line"><span class="lineno">  260</span>          }</div>
-<div class="line"><span class="lineno">  261</span>      <span class="keywordflow">if</span> (needs_parens) o &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><span class="lineno">  262</span>    }</div>
-<div class="line"><span class="lineno">  263</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  264</span>    {</div>
-<div class="line"><span class="lineno">  265</span>      <span class="keywordtype">bool</span> firstterm = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  266</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg; i &gt;= 0; i--)</div>
-<div class="line"><span class="lineno">  267</span>        <span class="keywordflow">if</span> (f-&gt;polys[i] != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  268</span>          {</div>
-<div class="line"><span class="lineno">  269</span>            <span class="keywordtype">bool</span> this_p_parens = p_parens || (i &gt; 0);</div>
-<div class="line"><span class="lineno">  270</span> </div>
-<div class="line"><span class="lineno">  271</span>            <span class="keywordflow">if</span> (i == 0 || !<a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_a9cdae35bb988b4742633619746565933.html#a9cdae35bb988b4742633619746565933">is_one</a>(level - 1, f-&gt;polys[i]))</div>
-<div class="line"><span class="lineno">  272</span>              <a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_ad062b5fb96f17e88cd5d3592e7f94005.html#ad062b5fb96f17e88cd5d3592e7f94005">elem_text_out</a>(o,</div>
-<div class="line"><span class="lineno">  273</span>                            level - 1,</div>
-<div class="line"><span class="lineno">  274</span>                            f-&gt;polys[i],</div>
-<div class="line"><span class="lineno">  275</span>                            p_one,</div>
-<div class="line"><span class="lineno">  276</span>                            p_plus || !firstterm,</div>
-<div class="line"><span class="lineno">  277</span>                            this_p_parens);</div>
-<div class="line"><span class="lineno">  278</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p_plus || !firstterm)</div>
-<div class="line"><span class="lineno">  279</span>              o &lt;&lt; <span class="stringliteral">&quot;+&quot;</span>;</div>
-<div class="line"><span class="lineno">  280</span>            <span class="keywordflow">if</span> (i &gt; 0) o &lt;&lt; this_varname;</div>
-<div class="line"><span class="lineno">  281</span>            <span class="keywordflow">if</span> (i &gt; 1) o &lt;&lt; i;</div>
-<div class="line"><span class="lineno">  282</span> </div>
-<div class="line"><span class="lineno">  283</span>            firstterm = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  284</span>          }</div>
-<div class="line"><span class="lineno">  285</span>      <span class="keywordflow">if</span> (needs_parens) o &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><span class="lineno">  286</span>    }</div>
-<div class="line"><span class="lineno">  287</span>}</div>
+<div class="line"><span class="lineno">  248</span>  <span class="keyword">const</span> std::string &amp;this_varname = <a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_a834feab793e05da098db640eff7f30ae.html#a834feab793e05da098db640eff7f30ae">varNames</a>()[level];</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>  <span class="keywordflow">if</span> (level == 0)</div>
+<div class="line"><span class="lineno">  251</span>    {</div>
+<div class="line"><span class="lineno">  252</span>      <span class="keywordtype">bool</span> firstterm = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  253</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg; i &gt;= 0; i--)</div>
+<div class="line"><span class="lineno">  254</span>        <span class="keywordflow">if</span> (f-&gt;coeffs[i] != 0)</div>
+<div class="line"><span class="lineno">  255</span>          {</div>
+<div class="line"><span class="lineno">  256</span>            <span class="keywordflow">if</span> (!firstterm || p_plus) o &lt;&lt; <span class="stringliteral">&quot;+&quot;</span>;</div>
+<div class="line"><span class="lineno">  257</span>            firstterm = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  258</span>            <span class="keywordflow">if</span> (i == 0 || f-&gt;coeffs[i] != 1)</div>
+<div class="line"><span class="lineno">  259</span>              <a class="code hl_variable" href="../../da/d48/class_m2_1_1_a_ring_tower_abccea2309d7ab04fc3513e97db6135ee.html#abccea2309d7ab04fc3513e97db6135ee">mBaseRing</a>.<a class="code hl_function" href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a38e2d4d0574d35b1bf35d0be1fc53165.html#a38e2d4d0574d35b1bf35d0be1fc53165">elem_text_out</a>(o, f-&gt;coeffs[i], p_one, p_plus, p_parens);</div>
+<div class="line"><span class="lineno">  260</span>            <span class="keywordflow">if</span> (i &gt; 0) o &lt;&lt; this_varname;</div>
+<div class="line"><span class="lineno">  261</span>            <span class="keywordflow">if</span> (i &gt; 1) o &lt;&lt; i;</div>
+<div class="line"><span class="lineno">  262</span>          }</div>
+<div class="line"><span class="lineno">  263</span>      <span class="keywordflow">if</span> (needs_parens) o &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><span class="lineno">  264</span>    }</div>
+<div class="line"><span class="lineno">  265</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  266</span>    {</div>
+<div class="line"><span class="lineno">  267</span>      <span class="keywordtype">bool</span> firstterm = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  268</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = f-&gt;deg; i &gt;= 0; i--)</div>
+<div class="line"><span class="lineno">  269</span>        <span class="keywordflow">if</span> (f-&gt;polys[i] != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  270</span>          {</div>
+<div class="line"><span class="lineno">  271</span>            <span class="keywordtype">bool</span> this_p_parens = p_parens || (i &gt; 0);</div>
+<div class="line"><span class="lineno">  272</span> </div>
+<div class="line"><span class="lineno">  273</span>            <span class="keywordflow">if</span> (i == 0 || !<a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_a9cdae35bb988b4742633619746565933.html#a9cdae35bb988b4742633619746565933">is_one</a>(level - 1, f-&gt;polys[i]))</div>
+<div class="line"><span class="lineno">  274</span>              <a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_ad062b5fb96f17e88cd5d3592e7f94005.html#ad062b5fb96f17e88cd5d3592e7f94005">elem_text_out</a>(o,</div>
+<div class="line"><span class="lineno">  275</span>                            level - 1,</div>
+<div class="line"><span class="lineno">  276</span>                            f-&gt;polys[i],</div>
+<div class="line"><span class="lineno">  277</span>                            p_one,</div>
+<div class="line"><span class="lineno">  278</span>                            p_plus || !firstterm,</div>
+<div class="line"><span class="lineno">  279</span>                            this_p_parens);</div>
+<div class="line"><span class="lineno">  280</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p_plus || !firstterm)</div>
+<div class="line"><span class="lineno">  281</span>              o &lt;&lt; <span class="stringliteral">&quot;+&quot;</span>;</div>
+<div class="line"><span class="lineno">  282</span>            <span class="keywordflow">if</span> (i &gt; 0) o &lt;&lt; this_varname;</div>
+<div class="line"><span class="lineno">  283</span>            <span class="keywordflow">if</span> (i &gt; 1) o &lt;&lt; i;</div>
+<div class="line"><span class="lineno">  284</span> </div>
+<div class="line"><span class="lineno">  285</span>            firstterm = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  286</span>          }</div>
+<div class="line"><span class="lineno">  287</span>      <span class="keywordflow">if</span> (needs_parens) o &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><span class="lineno">  288</span>    }</div>
+<div class="line"><span class="lineno">  289</span>}</div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_tower_a834feab793e05da098db640eff7f30ae_html_a834feab793e05da098db640eff7f30ae"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_a834feab793e05da098db640eff7f30ae.html#a834feab793e05da098db640eff7f30ae">M2::ARingTower::varNames</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; &amp; varNames() const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dd0/aring-tower_8hpp_source.html#l00126">aring-tower.hpp:126</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_tower_a9cdae35bb988b4742633619746565933_html_a9cdae35bb988b4742633619746565933"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_a9cdae35bb988b4742633619746565933.html#a9cdae35bb988b4742633619746565933">M2::ARingTower::is_one</a></div><div class="ttdeci">bool is_one(int level, const ARingPolynomial f) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dcb/aring-tower_8cpp_source.html#l00203">aring-tower.cpp:203</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_tower_abccea2309d7ab04fc3513e97db6135ee_html_abccea2309d7ab04fc3513e97db6135ee"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_abccea2309d7ab04fc3513e97db6135ee.html#abccea2309d7ab04fc3513e97db6135ee">M2::ARingTower::mBaseRing</a></div><div class="ttdeci">const ARingZZpFFPACK &amp; mBaseRing</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dd0/aring-tower_8hpp_source.html#l00321">aring-tower.hpp:321</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_tower_ad062b5fb96f17e88cd5d3592e7f94005_html_ad062b5fb96f17e88cd5d3592e7f94005"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_ad062b5fb96f17e88cd5d3592e7f94005.html#ad062b5fb96f17e88cd5d3592e7f94005">M2::ARingTower::elem_text_out</a></div><div class="ttdeci">void elem_text_out(buffer &amp;o, ElementType a, bool p_one=true, bool p_plus=false, bool p_parens=false) const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dd0/aring-tower_8hpp_source.html#l00244">aring-tower.hpp:244</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_tower_a9cdae35bb988b4742633619746565933_html_a9cdae35bb988b4742633619746565933"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_a9cdae35bb988b4742633619746565933.html#a9cdae35bb988b4742633619746565933">M2::ARingTower::is_one</a></div><div class="ttdeci">bool is_one(int level, const ARingPolynomial f) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dcb/aring-tower_8cpp_source.html#l00205">aring-tower.cpp:205</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_tower_abccea2309d7ab04fc3513e97db6135ee_html_abccea2309d7ab04fc3513e97db6135ee"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_abccea2309d7ab04fc3513e97db6135ee.html#abccea2309d7ab04fc3513e97db6135ee">M2::ARingTower::mBaseRing</a></div><div class="ttdeci">const ARingZZpFFPACK &amp; mBaseRing</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dd0/aring-tower_8hpp_source.html#l00401">aring-tower.hpp:401</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_tower_ad062b5fb96f17e88cd5d3592e7f94005_html_ad062b5fb96f17e88cd5d3592e7f94005"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_ad062b5fb96f17e88cd5d3592e7f94005.html#ad062b5fb96f17e88cd5d3592e7f94005">M2::ARingTower::elem_text_out</a></div><div class="ttdeci">void elem_text_out(buffer &amp;o, ElementType a, bool p_one=true, bool p_plus=false, bool p_parens=false) const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dd0/aring-tower_8hpp_source.html#l00312">aring-tower.hpp:312</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a38e2d4d0574d35b1bf35d0be1fc53165_html_a38e2d4d0574d35b1bf35d0be1fc53165"><div class="ttname"><a href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a38e2d4d0574d35b1bf35d0be1fc53165.html#a38e2d4d0574d35b1bf35d0be1fc53165">M2::ARingZZpFFPACK::elem_text_out</a></div><div class="ttdeci">void elem_text_out(buffer &amp;o, const ElementType a, bool p_one=true, bool p_plus=false, bool p_parens=false) const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9b/aring-zzp-ffpack_8cpp_source.html#l00019">aring-zzp-ffpack.cpp:19</a></div></div>
 <div class="ttc" id="adpoly_8cpp_ae3c36c2ec0da9db992b4e3cbd8ebf863_html_ae3c36c2ec0da9db992b4e3cbd8ebf863"><div class="ttname"><a href="../../d4/d23/dpoly_8cpp_ae3c36c2ec0da9db992b4e3cbd8ebf863.html#ae3c36c2ec0da9db992b4e3cbd8ebf863">n_nonzero_terms</a></div><div class="ttdeci">static int n_nonzero_terms(int level, const TowerPolynomial f)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00127">dpoly.cpp:127</a></div></div>
 </div><!-- fragment -->
@@ -234,7 +234,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_aab30
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../da/d48/class_m2_1_1_a_ring_tower.html">ARingTower</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

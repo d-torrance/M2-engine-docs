@@ -125,11 +125,14 @@ template&lt;typename Mat &gt; </div>
 <p>result_product is set to the product A*B result_product should be a Mat, with the same ring/type as the input matrices A,B. result_product does not need to be the same size as A*B, it will be resized if needed.</p>
 <p>throws an engine_error for ring/matrix types where the function is not implemented. throws an error if the number of columns of A is not the number of rows of B. result_prod should not be the same as A or B (assertion error). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00149">149</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  150</span>{</div>
-<div class="line"><span class="lineno">  151</span>  <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(</div>
-<div class="line"><span class="lineno">  152</span>      <span class="stringliteral">&quot;&#39;mult matrices&#39; not implemented for this kind of matrix over this ring&quot;</span>);</div>
-<div class="line"><span class="lineno">  153</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l00156">156</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  157</span>{</div>
+<div class="line"><span class="lineno">  158</span>  (void) A;</div>
+<div class="line"><span class="lineno">  159</span>  (void) B;</div>
+<div class="line"><span class="lineno">  160</span>  (void) result_product;</div>
+<div class="line"><span class="lineno">  161</span>  <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(</div>
+<div class="line"><span class="lineno">  162</span>      <span class="stringliteral">&quot;&#39;mult matrices&#39; not implemented for this kind of matrix over this ring&quot;</span>);</div>
+<div class="line"><span class="lineno">  163</span>}</div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -140,7 +143,7 @@ template&lt;typename Mat &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:26 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

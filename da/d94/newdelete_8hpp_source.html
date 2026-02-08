@@ -200,103 +200,108 @@ $(document).ready(function(){initNavTree('da/d94/newdelete_8hpp_source.html','..
 <div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../da/dcc/structour__new__delete_a9c98f166b6028261e2cb4a753faa2e3d.html#a9c98f166b6028261e2cb4a753faa2e3d">  100</a></span>  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> *<span class="keyword">operator</span> <span class="keyword">new</span>(<span class="keywordtype">size_t</span> size, <span class="keywordtype">void</span> *existing_memory)</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">return</span> existing_memory;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    (void) size;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">return</span> existing_memory;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  }</div>
 </div>
-<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../da/dcc/structour__new__delete_a4652cb3fca8b1c34be67afdf2ab2feb1.html#a4652cb3fca8b1c34be67afdf2ab2feb1">  104</a></span>  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> *<span class="keyword">operator</span> <span class="keyword">new</span>[](<span class="keywordtype">size_t</span> size, <span class="keywordtype">void</span> *existing_memory)</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> existing_memory;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  }</div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../da/dcc/structour__new__delete_a4652cb3fca8b1c34be67afdf2ab2feb1.html#a4652cb3fca8b1c34be67afdf2ab2feb1">  105</a></span>  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> *<span class="keyword">operator</span> <span class="keyword">new</span>[](<span class="keywordtype">size_t</span> size, <span class="keywordtype">void</span> *existing_memory)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    (void) size;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">return</span> existing_memory;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  }</div>
 </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../da/dcc/structour__new__delete_a6a9bd401c73bb4d433c63f8cfeccdf89.html#a6a9bd401c73bb4d433c63f8cfeccdf89">  109</a></span>  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>(<span class="keywordtype">void</span> *obj, <span class="keywordtype">void</span> *existing_memory)</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  {</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    TRAPCHK(obj);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../da/dcc/structour__new__delete_a6a9bd401c73bb4d433c63f8cfeccdf89.html#a6a9bd401c73bb4d433c63f8cfeccdf89">  111</a></span>  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>(<span class="keywordtype">void</span> *obj, <span class="keywordtype">void</span> *existing_memory)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    (void) existing_memory;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    TRAPCHK(obj);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  }</div>
 </div>
-<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../da/dcc/structour__new__delete_afab4c8d83fd2bd59db3be7b1f5354eae.html#afab4c8d83fd2bd59db3be7b1f5354eae">  113</a></span>  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>[](<span class="keywordtype">void</span> *obj, <span class="keywordtype">void</span> *existing_memory)</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    TRAPCHK(obj);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  }</div>
+<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../da/dcc/structour__new__delete_afab4c8d83fd2bd59db3be7b1f5354eae.html#afab4c8d83fd2bd59db3be7b1f5354eae">  116</a></span>  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>[](<span class="keywordtype">void</span> *obj, <span class="keywordtype">void</span> *existing_memory)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    (void) existing_memory;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    TRAPCHK(obj);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  }</div>
 </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#if !defined(__GNUC__) || defined(__INTEL_COMPILER)</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">// see Scott Meyers, Effective C++, item 14!  This avoids something really bad</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">// in the c++ standard.</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">// ... but it slows down destructors in every class inheriting from this one</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">// gnu cc does it right, running all the destructors, so we don&#39;t bother with</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">// this.</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>      <span class="comment">// But this will put a pointer to the table of virtual methods at the start of every instance,</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>      <span class="comment">// and we don&#39;t want that, because we want to pass these pointers to C routines.</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>      <span class="comment">// So we can&#39;t have any virtual methods here.</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      <span class="keyword">virtual</span> <a class="code hl_struct" href="../../da/dcc/structour__new__delete.html">~our_new_delete</a>() {}</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>};</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#if !defined(__GNUC__) || defined(__INTEL_COMPILER)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">// see Scott Meyers, Effective C++, item 14!  This avoids something really bad</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">// in the c++ standard.</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">// ... but it slows down destructors in every class inheriting from this one</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">// gnu cc does it right, running all the destructors, so we don&#39;t bother with</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// this.</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">#if 0</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>      <span class="comment">// But this will put a pointer to the table of virtual methods at the start of every instance,</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>      <span class="comment">// and we don&#39;t want that, because we want to pass these pointers to C routines.</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>      <span class="comment">// So we can&#39;t have any virtual methods here.</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>      <span class="keyword">virtual</span> <a class="code hl_struct" href="../../da/dcc/structour__new__delete.html">~our_new_delete</a>() {}</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>};</div>
 </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="foldopen" id="foldopen00135" data-start="{" data-end="};">
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="../../d3/d31/classour__gc__cleanup.html">  135</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d3/d31/classour__gc__cleanup.html">our_gc_cleanup</a>: <span class="keyword">public</span> <a class="code hl_struct" href="../../da/dcc/structour__new__delete.html">our_new_delete</a></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>{</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <a class="code hl_function" href="../../d3/d31/classour__gc__cleanup_a06cce0c7e15ef83312d0b5240cd0d474.html#a06cce0c7e15ef83312d0b5240cd0d474">our_gc_cleanup</a>();</div>
-<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="../../d3/d31/classour__gc__cleanup_a0c022cf1e062422acd36ecc63f51f87b.html#a0c022cf1e062422acd36ecc63f51f87b">  139</a></span>  <span class="keyword">virtual</span> <a class="code hl_function" href="../../d3/d31/classour__gc__cleanup_a0c022cf1e062422acd36ecc63f51f87b.html#a0c022cf1e062422acd36ecc63f51f87b">~our_gc_cleanup</a>()</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  {</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <span class="keywordflow">if</span> (0 == GC_base(<span class="keyword">this</span>)) <span class="keywordflow">return</span>; <span class="comment">// Non-heap object.</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    GC_REGISTER_FINALIZER_IGNORE_SELF(M2_debug_to_outer((<span class="keywordtype">void</span>*)<span class="keyword">this</span>), 0, 0, 0, 0);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    GC_REGISTER_FINALIZER_IGNORE_SELF(<span class="keyword">this</span>,                           0, 0, 0, 0);</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="};">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="../../d3/d31/classour__gc__cleanup.html">  139</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d3/d31/classour__gc__cleanup.html">our_gc_cleanup</a>: <span class="keyword">public</span> <a class="code hl_struct" href="../../da/dcc/structour__new__delete.html">our_new_delete</a></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>{</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <a class="code hl_function" href="../../d3/d31/classour__gc__cleanup_a06cce0c7e15ef83312d0b5240cd0d474.html#a06cce0c7e15ef83312d0b5240cd0d474">our_gc_cleanup</a>();</div>
+<div class="foldopen" id="foldopen00143" data-start="{" data-end="}">
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="../../d3/d31/classour__gc__cleanup_a0c022cf1e062422acd36ecc63f51f87b.html#a0c022cf1e062422acd36ecc63f51f87b">  143</a></span>  <span class="keyword">virtual</span> <a class="code hl_function" href="../../d3/d31/classour__gc__cleanup_a0c022cf1e062422acd36ecc63f51f87b.html#a0c022cf1e062422acd36ecc63f51f87b">~our_gc_cleanup</a>()</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keywordflow">if</span> (0 == GC_base(<span class="keyword">this</span>)) <span class="keywordflow">return</span>; <span class="comment">// Non-heap object.</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    GC_REGISTER_FINALIZER_IGNORE_SELF(M2_debug_to_outer((<span class="keywordtype">void</span>*)<span class="keyword">this</span>), 0, 0, 0, 0);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    GC_REGISTER_FINALIZER_IGNORE_SELF(<span class="keyword">this</span>,                           0, 0, 0, 0);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  }</div>
 </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>};</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>};</div>
 </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="foldopen" id="foldopen00150" data-start="{" data-end="}">
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="../../da/d94/newdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81.html#ad38fe33a33b16397111c18ee7e216f81">  150</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../da/d94/newdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81.html#ad38fe33a33b16397111c18ee7e216f81">cleanup</a>(<span class="keywordtype">void</span>* obj, <span class="keywordtype">void</span>* displ)</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>{</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  obj = M2_debug_to_inner(obj);</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  ((<a class="code hl_class" href="../../d3/d31/classour__gc__cleanup.html">our_gc_cleanup</a>*) obj) -&gt; <a class="code hl_class" href="../../d3/d31/classour__gc__cleanup.html">~our_gc_cleanup</a>();</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="foldopen" id="foldopen00154" data-start="{" data-end="}">
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="../../da/d94/newdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81.html#ad38fe33a33b16397111c18ee7e216f81">  154</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../da/d94/newdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81.html#ad38fe33a33b16397111c18ee7e216f81">cleanup</a>(<span class="keywordtype">void</span>* obj, <span class="keywordtype">void</span>* displ)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>{</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  (void) displ;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  obj = M2_debug_to_inner(obj);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  ((<a class="code hl_class" href="../../d3/d31/classour__gc__cleanup.html">our_gc_cleanup</a>*) obj) -&gt; <a class="code hl_class" href="../../d3/d31/classour__gc__cleanup.html">~our_gc_cleanup</a>();</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>}</div>
 </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="foldopen" id="foldopen00158" data-start="{" data-end="}">
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="../../d3/d31/classour__gc__cleanup_a06cce0c7e15ef83312d0b5240cd0d474.html#a06cce0c7e15ef83312d0b5240cd0d474">  158</a></span><span class="keyword">inline</span> <a class="code hl_function" href="../../d3/d31/classour__gc__cleanup_a06cce0c7e15ef83312d0b5240cd0d474.html#a06cce0c7e15ef83312d0b5240cd0d474">our_gc_cleanup::our_gc_cleanup</a>()</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>{</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keywordflow">if</span> (0 == GC_base(<span class="keyword">this</span>)) <span class="keywordflow">return</span>; <span class="comment">// Non-heap object.</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  GC_REGISTER_FINALIZER_IGNORE_SELF(M2_debug_to_outer(<span class="keyword">this</span>), (GC_finalization_proc) <a class="code hl_function" href="../../da/d94/newdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81.html#ad38fe33a33b16397111c18ee7e216f81">cleanup</a>, 0, 0, 0);</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  GC_REGISTER_FINALIZER_IGNORE_SELF(<span class="keyword">this</span>,                    (GC_finalization_proc) <a class="code hl_function" href="../../da/d94/newdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81.html#ad38fe33a33b16397111c18ee7e216f81">cleanup</a>, 0, 0, 0);</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="foldopen" id="foldopen00163" data-start="{" data-end="}">
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="../../d3/d31/classour__gc__cleanup_a06cce0c7e15ef83312d0b5240cd0d474.html#a06cce0c7e15ef83312d0b5240cd0d474">  163</a></span><span class="keyword">inline</span> <a class="code hl_function" href="../../d3/d31/classour__gc__cleanup_a06cce0c7e15ef83312d0b5240cd0d474.html#a06cce0c7e15ef83312d0b5240cd0d474">our_gc_cleanup::our_gc_cleanup</a>()</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>{</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="keywordflow">if</span> (0 == GC_base(<span class="keyword">this</span>)) <span class="keywordflow">return</span>; <span class="comment">// Non-heap object.</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  GC_REGISTER_FINALIZER_IGNORE_SELF(M2_debug_to_outer(<span class="keyword">this</span>), (GC_finalization_proc) <a class="code hl_function" href="../../da/d94/newdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81.html#ad38fe33a33b16397111c18ee7e216f81">cleanup</a>, 0, 0, 0);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  GC_REGISTER_FINALIZER_IGNORE_SELF(<span class="keyword">this</span>,                    (GC_finalization_proc) <a class="code hl_function" href="../../da/d94/newdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81.html#ad38fe33a33b16397111c18ee7e216f81">cleanup</a>, 0, 0, 0);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>}</div>
 </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">// Local Variables:</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">// compile-command: &quot;make -C $M2BUILDDIR/Macaulay2/e &quot;</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">// indent-tabs-mode: nil</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">// End:</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">// Local Variables:</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">// compile-command: &quot;make -C $M2BUILDDIR/Macaulay2/e &quot;</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">// indent-tabs-mode: nil</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">// End:</span></div>
 <div class="ttc" id="a_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba_html_a1c6306973edadb50294a656e3927fcba"><div class="ttname"><a href="../../d9/df2/_m2mem-replacement_8c_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a></div><div class="ttdeci">void freemem(void *s)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/df2/_m2mem-replacement_8c_source.html#l00063">M2mem-replacement.c:63</a></div></div>
 <div class="ttc" id="a_m2mem-replacement_8c_a6807bb51e1c9f3335f018dd77f7e9d5b_html_a6807bb51e1c9f3335f018dd77f7e9d5b"><div class="ttname"><a href="../../d9/df2/_m2mem-replacement_8c_a6807bb51e1c9f3335f018dd77f7e9d5b.html#a6807bb51e1c9f3335f018dd77f7e9d5b">getmem</a></div><div class="ttdeci">char * getmem(size_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/df2/_m2mem-replacement_8c_source.html#l00044">M2mem-replacement.c:44</a></div></div>
 <div class="ttc" id="a_m2mem-replacement_8c_ad07d5f5aa24bfcea916182723310c873_html_ad07d5f5aa24bfcea916182723310c873"><div class="ttname"><a href="../../d9/df2/_m2mem-replacement_8c_ad07d5f5aa24bfcea916182723310c873.html#ad07d5f5aa24bfcea916182723310c873">outofmem2</a></div><div class="ttdeci">void outofmem2(size_t new)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/df2/_m2mem-replacement_8c_source.html#l00035">M2mem-replacement.c:35</a></div></div>
-<div class="ttc" id="aclassour__gc__cleanup_a06cce0c7e15ef83312d0b5240cd0d474_html_a06cce0c7e15ef83312d0b5240cd0d474"><div class="ttname"><a href="../../d3/d31/classour__gc__cleanup_a06cce0c7e15ef83312d0b5240cd0d474.html#a06cce0c7e15ef83312d0b5240cd0d474">our_gc_cleanup::our_gc_cleanup</a></div><div class="ttdeci">our_gc_cleanup()</div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00158">newdelete.hpp:158</a></div></div>
-<div class="ttc" id="aclassour__gc__cleanup_a0c022cf1e062422acd36ecc63f51f87b_html_a0c022cf1e062422acd36ecc63f51f87b"><div class="ttname"><a href="../../d3/d31/classour__gc__cleanup_a0c022cf1e062422acd36ecc63f51f87b.html#a0c022cf1e062422acd36ecc63f51f87b">our_gc_cleanup::~our_gc_cleanup</a></div><div class="ttdeci">virtual ~our_gc_cleanup()</div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00139">newdelete.hpp:139</a></div></div>
-<div class="ttc" id="aclassour__gc__cleanup_html"><div class="ttname"><a href="../../d3/d31/classour__gc__cleanup.html">our_gc_cleanup</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00135">newdelete.hpp:136</a></div></div>
+<div class="ttc" id="aclassour__gc__cleanup_a06cce0c7e15ef83312d0b5240cd0d474_html_a06cce0c7e15ef83312d0b5240cd0d474"><div class="ttname"><a href="../../d3/d31/classour__gc__cleanup_a06cce0c7e15ef83312d0b5240cd0d474.html#a06cce0c7e15ef83312d0b5240cd0d474">our_gc_cleanup::our_gc_cleanup</a></div><div class="ttdeci">our_gc_cleanup()</div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00163">newdelete.hpp:163</a></div></div>
+<div class="ttc" id="aclassour__gc__cleanup_a0c022cf1e062422acd36ecc63f51f87b_html_a0c022cf1e062422acd36ecc63f51f87b"><div class="ttname"><a href="../../d3/d31/classour__gc__cleanup_a0c022cf1e062422acd36ecc63f51f87b.html#a0c022cf1e062422acd36ecc63f51f87b">our_gc_cleanup::~our_gc_cleanup</a></div><div class="ttdeci">virtual ~our_gc_cleanup()</div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00143">newdelete.hpp:143</a></div></div>
+<div class="ttc" id="aclassour__gc__cleanup_html"><div class="ttname"><a href="../../d3/d31/classour__gc__cleanup.html">our_gc_cleanup</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00139">newdelete.hpp:140</a></div></div>
 <div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 <div class="ttc" id="anewdelete_8hpp_a2f57de967a25a07781a4d50fa2cc1a1b_html_a2f57de967a25a07781a4d50fa2cc1a1b"><div class="ttname"><a href="../../da/d94/newdelete_8hpp_a2f57de967a25a07781a4d50fa2cc1a1b.html#a2f57de967a25a07781a4d50fa2cc1a1b">gc_vector</a></div><div class="ttdeci">typename std::vector&lt; T, gc_allocator&lt; T &gt; &gt; gc_vector</div><div class="ttdoc">a version of the STL vector, which allocates its backing memory with gc.</div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00031">newdelete.hpp:31</a></div></div>
-<div class="ttc" id="anewdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81_html_ad38fe33a33b16397111c18ee7e216f81"><div class="ttname"><a href="../../da/d94/newdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81.html#ad38fe33a33b16397111c18ee7e216f81">cleanup</a></div><div class="ttdeci">static void cleanup(void *obj, void *displ)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00150">newdelete.hpp:150</a></div></div>
+<div class="ttc" id="anewdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81_html_ad38fe33a33b16397111c18ee7e216f81"><div class="ttname"><a href="../../da/d94/newdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81.html#ad38fe33a33b16397111c18ee7e216f81">cleanup</a></div><div class="ttdeci">static void cleanup(void *obj, void *displ)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00154">newdelete.hpp:154</a></div></div>
 <div class="ttc" id="astructour__new__delete_html"><div class="ttname"><a href="../../da/dcc/structour__new__delete.html">our_new_delete</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00070">newdelete.hpp:71</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -304,7 +309,7 @@ $(document).ready(function(){initNavTree('da/d94/newdelete_8hpp_source.html','..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../da/d94/newdelete_8hpp.html">newdelete.hpp</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:21 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

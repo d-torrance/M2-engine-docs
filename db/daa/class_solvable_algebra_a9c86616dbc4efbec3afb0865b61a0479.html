@@ -125,16 +125,16 @@ $(document).ready(function(){initNavTree('db/daa/class_solvable_algebra_a9c86616
 
 <p>Reimplemented from <a class="el" href="../../d3/dfc/class_poly_ring_a2c8d855ee69bda82b43000325ced0863.html#a2c8d855ee69bda82b43000325ced0863">PolyRing</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d65/solvable_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d4/d65/solvable_8cpp_source.html">solvable.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>{</div>
-<div class="line"><span class="lineno">   67</span>  std::pair&lt;bool, int&gt; n1 = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a93f60c7348caad7f332820b455fb3735.html#a93f60c7348caad7f332820b455fb3735">RingZZ::get_si</a>(n);</div>
-<div class="line"><span class="lineno">   68</span>  <span class="keywordflow">if</span> (n1.first)</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/daa/class_solvable_algebra_a9c86616dbc4efbec3afb0865b61a0479.html#a9c86616dbc4efbec3afb0865b61a0479">power</a>(f, n1.second);</div>
-<div class="line"><span class="lineno">   70</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(<span class="stringliteral">&quot;exponent too large&quot;</span>);</div>
-<div class="line"><span class="lineno">   72</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d65/solvable_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d4/d65/solvable_8cpp_source.html">solvable.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>{</div>
+<div class="line"><span class="lineno">   70</span>  std::pair&lt;bool, int&gt; n1 = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a93f60c7348caad7f332820b455fb3735.html#a93f60c7348caad7f332820b455fb3735">RingZZ::get_si</a>(n);</div>
+<div class="line"><span class="lineno">   71</span>  <span class="keywordflow">if</span> (n1.first)</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/daa/class_solvable_algebra_a9c86616dbc4efbec3afb0865b61a0479.html#a9c86616dbc4efbec3afb0865b61a0479">power</a>(f, n1.second);</div>
+<div class="line"><span class="lineno">   73</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(<span class="stringliteral">&quot;exponent too large&quot;</span>);</div>
+<div class="line"><span class="lineno">   75</span>}</div>
 <div class="ttc" id="aclass_ring_z_z_a93f60c7348caad7f332820b455fb3735_html_a93f60c7348caad7f332820b455fb3735"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_a93f60c7348caad7f332820b455fb3735.html#a93f60c7348caad7f332820b455fb3735">RingZZ::get_si</a></div><div class="ttdeci">static std::pair&lt; bool, int &gt; get_si(mpz_srcptr n)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00046">ZZ.cpp:46</a></div></div>
-<div class="ttc" id="aclass_solvable_algebra_a9c86616dbc4efbec3afb0865b61a0479_html_a9c86616dbc4efbec3afb0865b61a0479"><div class="ttname"><a href="../../db/daa/class_solvable_algebra_a9c86616dbc4efbec3afb0865b61a0479.html#a9c86616dbc4efbec3afb0865b61a0479">SolvableAlgebra::power</a></div><div class="ttdeci">virtual ring_elem power(const ring_elem f, mpz_srcptr n) const</div><div class="ttdoc">Exponentiation. This is the default function, if a class doesn't define this.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d65/solvable_8cpp_source.html#l00065">solvable.cpp:65</a></div></div>
+<div class="ttc" id="aclass_solvable_algebra_a9c86616dbc4efbec3afb0865b61a0479_html_a9c86616dbc4efbec3afb0865b61a0479"><div class="ttname"><a href="../../db/daa/class_solvable_algebra_a9c86616dbc4efbec3afb0865b61a0479.html#a9c86616dbc4efbec3afb0865b61a0479">SolvableAlgebra::power</a></div><div class="ttdeci">virtual ring_elem power(const ring_elem f, mpz_srcptr n) const</div><div class="ttdoc">Exponentiation. This is the default function, if a class doesn't define this.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d65/solvable_8cpp_source.html#l00068">solvable.cpp:68</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d8/d2b/class_ring_z_z_a93f60c7348caad7f332820b455fb3735.html#a93f60c7348caad7f332820b455fb3735">RingZZ::get_si()</a>, and <a class="el" href="../../db/daa/class_solvable_algebra_a9c86616dbc4efbec3afb0865b61a0479.html#a9c86616dbc4efbec3afb0865b61a0479">power()</a>.</p>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('db/daa/class_solvable_algebra_a9c86616
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/daa/class_solvable_algebra.html">SolvableAlgebra</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

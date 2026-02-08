@@ -113,20 +113,20 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_a3ef6
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html">aring-tower.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  117</span>{</div>
-<div class="line"><span class="lineno">  118</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  119</span>  <span class="keywordtype">int</span> fdeg = f-&gt;deg;</div>
-<div class="line"><span class="lineno">  120</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = fdeg; j &gt;= 0; --j)</div>
-<div class="line"><span class="lineno">  121</span>    <span class="keywordflow">if</span> (f-&gt;polys[j] != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  122</span>      {</div>
-<div class="line"><span class="lineno">  123</span>        f-&gt;deg = j;</div>
-<div class="line"><span class="lineno">  124</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  125</span>      }</div>
-<div class="line"><span class="lineno">  126</span>  <span class="comment">// at this point, everything is 0!</span></div>
-<div class="line"><span class="lineno">  127</span>  <a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_a3193fda24a34681a3cfc631059f0d2e2.html#a3193fda24a34681a3cfc631059f0d2e2">dealloc_poly</a>(f);  <span class="comment">// sets f to 0</span></div>
-<div class="line"><span class="lineno">  128</span>}</div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_tower_a3193fda24a34681a3cfc631059f0d2e2_html_a3193fda24a34681a3cfc631059f0d2e2"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_a3193fda24a34681a3cfc631059f0d2e2.html#a3193fda24a34681a3cfc631059f0d2e2">M2::ARingTower::dealloc_poly</a></div><div class="ttdeci">void dealloc_poly(ARingPolynomial &amp;f) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dcb/aring-tower_8cpp_source.html#l00089">aring-tower.cpp:89</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html#l00118">118</a> of file <a class="el" href="../../d0/dcb/aring-tower_8cpp_source.html">aring-tower.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  119</span>{</div>
+<div class="line"><span class="lineno">  120</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  121</span>  <span class="keywordtype">int</span> fdeg = f-&gt;deg;</div>
+<div class="line"><span class="lineno">  122</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = fdeg; j &gt;= 0; --j)</div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">if</span> (f-&gt;polys[j] != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  124</span>      {</div>
+<div class="line"><span class="lineno">  125</span>        f-&gt;deg = j;</div>
+<div class="line"><span class="lineno">  126</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  127</span>      }</div>
+<div class="line"><span class="lineno">  128</span>  <span class="comment">// at this point, everything is 0!</span></div>
+<div class="line"><span class="lineno">  129</span>  <a class="code hl_function" href="../../da/d48/class_m2_1_1_a_ring_tower_a3193fda24a34681a3cfc631059f0d2e2.html#a3193fda24a34681a3cfc631059f0d2e2">dealloc_poly</a>(f);  <span class="comment">// sets f to 0</span></div>
+<div class="line"><span class="lineno">  130</span>}</div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_tower_a3193fda24a34681a3cfc631059f0d2e2_html_a3193fda24a34681a3cfc631059f0d2e2"><div class="ttname"><a href="../../da/d48/class_m2_1_1_a_ring_tower_a3193fda24a34681a3cfc631059f0d2e2.html#a3193fda24a34681a3cfc631059f0d2e2">M2::ARingTower::dealloc_poly</a></div><div class="ttdeci">void dealloc_poly(ARingPolynomial &amp;f) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dcb/aring-tower_8cpp_source.html#l00091">aring-tower.cpp:91</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../da/d48/class_m2_1_1_a_ring_tower_a3193fda24a34681a3cfc631059f0d2e2.html#a3193fda24a34681a3cfc631059f0d2e2">dealloc_poly()</a>, <a class="el" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_a552ba3616f5b4a33fa777ade2e344eaa.html#a552ba3616f5b4a33fa777ade2e344eaa">M2::ARingPolynomialStruct::deg</a>, and <a class="el" href="../../db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9">M2::ARingPolynomialStruct::polys</a>.</p>
 
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('da/d48/class_m2_1_1_a_ring_tower_a3ef6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../da/d48/class_m2_1_1_a_ring_tower.html">ARingTower</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

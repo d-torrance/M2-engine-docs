@@ -131,40 +131,40 @@ $(document).ready(function(){initNavTree('db/d22/class_m2_free_algebra_quotient_
 
 <p>Implements <a class="el" href="../../dd/dcf/class_ring_a6d3d042f950ad9d90bb4ac65814789a1.html#a6d3d042f950ad9d90bb4ac65814789a1">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d37/_m2_free_algebra_quotient_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../d5/d37/_m2_free_algebra_quotient_8cpp_source.html">M2FreeAlgebraQuotient.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  123</span>{</div>
-<div class="line"><span class="lineno">  124</span>  <span class="comment">// R is the target ring</span></div>
-<div class="line"><span class="lineno">  125</span>  <span class="comment">// f1 is an element of &#39;this&#39;.</span></div>
-<div class="line"><span class="lineno">  126</span>  <span class="comment">// set result to be the &quot;lift&quot; of f in the ring R, return true if this is possible.</span></div>
-<div class="line"><span class="lineno">  127</span>  <span class="comment">// otherwise return false.</span></div>
-<div class="line"><span class="lineno">  128</span> </div>
-<div class="line"><span class="lineno">  129</span>  <span class="comment">// case: R is the coefficient ring of &#39;this&#39;.</span></div>
-<div class="line"><span class="lineno">  130</span>  <span class="keywordflow">if</span> (R == <a class="code hl_function" href="../../db/d22/class_m2_free_algebra_quotient_a916835d3a4d8d2fa22cb0604c925aaf8.html#a916835d3a4d8d2fa22cb0604c925aaf8">coefficientRing</a>())</div>
-<div class="line"><span class="lineno">  131</span>    {</div>
-<div class="line"><span class="lineno">  132</span>      <span class="keyword">auto</span> f = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>*<span class="keyword">&gt;</span>(f1.get_Poly());</div>
-<div class="line"><span class="lineno">  133</span>      <span class="keywordflow">if</span> (f-&gt;numTerms() != 1) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  134</span>      <span class="keyword">auto</span> i = f-&gt;cbegin();</div>
-<div class="line"><span class="lineno">  135</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../db/d22/class_m2_free_algebra_quotient_af1fa32db871c063dfbc28de3fe172eb7.html#af1fa32db871c063dfbc28de3fe172eb7">monoid</a>().<a class="code hl_function" href="../../dc/da6/class_free_monoid_aec354700d1b9f216a3b5a3aa4822e0a3.html#aec354700d1b9f216a3b5a3aa4822e0a3">is_one</a>(i.monom()))</div>
-<div class="line"><span class="lineno">  136</span>        {</div>
-<div class="line"><span class="lineno">  137</span>          result = <a class="code hl_function" href="../../db/d22/class_m2_free_algebra_quotient_a916835d3a4d8d2fa22cb0604c925aaf8.html#a916835d3a4d8d2fa22cb0604c925aaf8">coefficientRing</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a84bd4fdbdd4e1e44b2b24ad800138e1c.html#a84bd4fdbdd4e1e44b2b24ad800138e1c">copy</a>(i.coeff());</div>
-<div class="line"><span class="lineno">  138</span>          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  139</span>        }</div>
-<div class="line"><span class="lineno">  140</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  141</span>    }</div>
-<div class="line"><span class="lineno">  142</span>  <span class="keywordflow">if</span> (R == &amp;<a class="code hl_function" href="../../db/d22/class_m2_free_algebra_quotient_aad9bb42ee384d5dc1184e7a9dcd3c09a.html#aad9bb42ee384d5dc1184e7a9dcd3c09a">m2FreeAlgebra</a>())</div>
-<div class="line"><span class="lineno">  143</span>    {</div>
-<div class="line"><span class="lineno">  144</span>      <span class="comment">// just copy the element into result, considered in the free algebra.</span></div>
-<div class="line"><span class="lineno">  145</span>      <span class="keyword">auto</span> f = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>*<span class="keyword">&gt;</span>(f1.get_Poly());</div>
-<div class="line"><span class="lineno">  146</span>      <span class="keyword">auto</span> resultf = <span class="keyword">new</span> <a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>;</div>
-<div class="line"><span class="lineno">  147</span>      <a class="code hl_function" href="../../db/d22/class_m2_free_algebra_quotient_a4e3b884dd6a46fc51d7e295a2ab40b7a.html#a4e3b884dd6a46fc51d7e295a2ab40b7a">freeAlgebra</a>().<a class="code hl_function" href="../../de/dbd/class_free_algebra_a17afa5d75091e8e358f9bac23e5d38d3.html#a17afa5d75091e8e358f9bac23e5d38d3">copy</a>(*resultf, *f);</div>
-<div class="line"><span class="lineno">  148</span>      result = <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span> *<span class="keyword">&gt;</span>(resultf));</div>
-<div class="line"><span class="lineno">  149</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  150</span>    }</div>
-<div class="line"><span class="lineno">  151</span>  </div>
-<div class="line"><span class="lineno">  152</span>  <span class="comment">// at this point, we can&#39;t lift it.</span></div>
-<div class="line"><span class="lineno">  153</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  154</span>}</div>
-<div class="ttc" id="a_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30_html_aa2e1f459d90ab6e50fc0b8c642dceb30"><div class="ttname"><a href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a></div><div class="ttdeci">Polynomial&lt; CoefficientRingType &gt; Poly</div><div class="ttdef"><b>Definition</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00263">Polynomial.hpp:263</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d37/_m2_free_algebra_quotient_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../d5/d37/_m2_free_algebra_quotient_8cpp_source.html">M2FreeAlgebraQuotient.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  124</span>{</div>
+<div class="line"><span class="lineno">  125</span>  <span class="comment">// R is the target ring</span></div>
+<div class="line"><span class="lineno">  126</span>  <span class="comment">// f1 is an element of &#39;this&#39;.</span></div>
+<div class="line"><span class="lineno">  127</span>  <span class="comment">// set result to be the &quot;lift&quot; of f in the ring R, return true if this is possible.</span></div>
+<div class="line"><span class="lineno">  128</span>  <span class="comment">// otherwise return false.</span></div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>  <span class="comment">// case: R is the coefficient ring of &#39;this&#39;.</span></div>
+<div class="line"><span class="lineno">  131</span>  <span class="keywordflow">if</span> (R == <a class="code hl_function" href="../../db/d22/class_m2_free_algebra_quotient_a916835d3a4d8d2fa22cb0604c925aaf8.html#a916835d3a4d8d2fa22cb0604c925aaf8">coefficientRing</a>())</div>
+<div class="line"><span class="lineno">  132</span>    {</div>
+<div class="line"><span class="lineno">  133</span>      <span class="keyword">auto</span> f = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>*<span class="keyword">&gt;</span>(f1.get_Poly());</div>
+<div class="line"><span class="lineno">  134</span>      <span class="keywordflow">if</span> (f-&gt;numTerms() != 1) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  135</span>      <span class="keyword">auto</span> i = f-&gt;cbegin();</div>
+<div class="line"><span class="lineno">  136</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../db/d22/class_m2_free_algebra_quotient_af1fa32db871c063dfbc28de3fe172eb7.html#af1fa32db871c063dfbc28de3fe172eb7">monoid</a>().<a class="code hl_function" href="../../dc/da6/class_free_monoid_aec354700d1b9f216a3b5a3aa4822e0a3.html#aec354700d1b9f216a3b5a3aa4822e0a3">is_one</a>(i.monom()))</div>
+<div class="line"><span class="lineno">  137</span>        {</div>
+<div class="line"><span class="lineno">  138</span>          result = <a class="code hl_function" href="../../db/d22/class_m2_free_algebra_quotient_a916835d3a4d8d2fa22cb0604c925aaf8.html#a916835d3a4d8d2fa22cb0604c925aaf8">coefficientRing</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a84bd4fdbdd4e1e44b2b24ad800138e1c.html#a84bd4fdbdd4e1e44b2b24ad800138e1c">copy</a>(i.coeff());</div>
+<div class="line"><span class="lineno">  139</span>          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  140</span>        }</div>
+<div class="line"><span class="lineno">  141</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  142</span>    }</div>
+<div class="line"><span class="lineno">  143</span>  <span class="keywordflow">if</span> (R == &amp;<a class="code hl_function" href="../../db/d22/class_m2_free_algebra_quotient_aad9bb42ee384d5dc1184e7a9dcd3c09a.html#aad9bb42ee384d5dc1184e7a9dcd3c09a">m2FreeAlgebra</a>())</div>
+<div class="line"><span class="lineno">  144</span>    {</div>
+<div class="line"><span class="lineno">  145</span>      <span class="comment">// just copy the element into result, considered in the free algebra.</span></div>
+<div class="line"><span class="lineno">  146</span>      <span class="keyword">auto</span> f = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>*<span class="keyword">&gt;</span>(f1.get_Poly());</div>
+<div class="line"><span class="lineno">  147</span>      <span class="keyword">auto</span> resultf = <span class="keyword">new</span> <a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>;</div>
+<div class="line"><span class="lineno">  148</span>      <a class="code hl_function" href="../../db/d22/class_m2_free_algebra_quotient_a4e3b884dd6a46fc51d7e295a2ab40b7a.html#a4e3b884dd6a46fc51d7e295a2ab40b7a">freeAlgebra</a>().<a class="code hl_function" href="../../de/dbd/class_free_algebra_a17afa5d75091e8e358f9bac23e5d38d3.html#a17afa5d75091e8e358f9bac23e5d38d3">copy</a>(*resultf, *f);</div>
+<div class="line"><span class="lineno">  149</span>      result = <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span> *<span class="keyword">&gt;</span>(resultf));</div>
+<div class="line"><span class="lineno">  150</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  151</span>    }</div>
+<div class="line"><span class="lineno">  152</span>  </div>
+<div class="line"><span class="lineno">  153</span>  <span class="comment">// at this point, we can&#39;t lift it.</span></div>
+<div class="line"><span class="lineno">  154</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  155</span>}</div>
+<div class="ttc" id="a_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30_html_aa2e1f459d90ab6e50fc0b8c642dceb30"><div class="ttname"><a href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a></div><div class="ttdeci">Polynomial&lt; CoefficientRingType &gt; Poly</div><div class="ttdef"><b>Definition</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00265">Polynomial.hpp:265</a></div></div>
 <div class="ttc" id="aclass_free_algebra_a17afa5d75091e8e358f9bac23e5d38d3_html_a17afa5d75091e8e358f9bac23e5d38d3"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a17afa5d75091e8e358f9bac23e5d38d3.html#a17afa5d75091e8e358f9bac23e5d38d3">FreeAlgebra::copy</a></div><div class="ttdeci">void copy(Poly &amp;result, Poly::const_iterator fBegin, Poly::const_iterator fEnd) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00157">FreeAlgebra.cpp:157</a></div></div>
 <div class="ttc" id="aclass_free_monoid_aec354700d1b9f216a3b5a3aa4822e0a3_html_aec354700d1b9f216a3b5a3aa4822e0a3"><div class="ttname"><a href="../../dc/da6/class_free_monoid_aec354700d1b9f216a3b5a3aa4822e0a3.html#aec354700d1b9f216a3b5a3aa4822e0a3">FreeMonoid::is_one</a></div><div class="ttdeci">bool is_one(const Monom &amp;m) const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d5e/_free_monoid_8cpp_source.html#l00062">FreeMonoid.cpp:62</a></div></div>
 <div class="ttc" id="aclass_m2_free_algebra_quotient_a4e3b884dd6a46fc51d7e295a2ab40b7a_html_a4e3b884dd6a46fc51d7e295a2ab40b7a"><div class="ttname"><a href="../../db/d22/class_m2_free_algebra_quotient_a4e3b884dd6a46fc51d7e295a2ab40b7a.html#a4e3b884dd6a46fc51d7e295a2ab40b7a">M2FreeAlgebraQuotient::freeAlgebra</a></div><div class="ttdeci">const FreeAlgebra &amp; freeAlgebra() const</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dcb/_m2_free_algebra_quotient_8hpp_source.html#l00041">M2FreeAlgebraQuotient.hpp:41</a></div></div>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('db/d22/class_m2_free_algebra_quotient_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d22/class_m2_free_algebra_quotient.html">M2FreeAlgebraQuotient</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -127,33 +127,33 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_aa165ba7fd8fae65
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l01360">1360</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1368</span>{</div>
-<div class="line"><span class="lineno"> 1369</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d8/d73/class_g_b_ring_a295f3854f35179b3097db2be224f608c.html#a295f3854f35179b3097db2be224f608c">_coeffs_ZZ</a>)</div>
-<div class="line"><span class="lineno"> 1370</span>    {</div>
-<div class="line"><span class="lineno"> 1371</span>      <a class="code hl_function" href="../../d8/d73/class_g_b_ring_a1e733a0119e3fc47cc401ee46c8cde44.html#a1e733a0119e3fc47cc401ee46c8cde44">gbvector_remove_content_ZZ</a>(f, fsyz, use_denom, denom);</div>
-<div class="line"><span class="lineno"> 1372</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno"> 1373</span>    }</div>
-<div class="line"><span class="lineno"> 1374</span>  <span class="comment">// At this point, our coefficient ring is a field (What about</span></div>
-<div class="line"><span class="lineno"> 1375</span>  <span class="comment">// finite extensions of ZZ?)</span></div>
-<div class="line"><span class="lineno"> 1376</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> c, cinv;</div>
-<div class="line"><span class="lineno"> 1377</span>  <span class="keywordflow">if</span> (f != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno"> 1378</span>    c = f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>;</div>
-<div class="line"><span class="lineno"> 1379</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (fsyz != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno"> 1380</span>    c = fsyz-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>;</div>
-<div class="line"><span class="lineno"> 1381</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno"> 1382</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno"> 1383</span>  cinv = <a class="code hl_variable" href="../../d8/d73/class_g_b_ring_ad095d4e9734992cec2bb1101d200f270.html#ad095d4e9734992cec2bb1101d200f270">K</a>-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a6e158a0a10dbc5ab15f38be603ba8d88.html#a6e158a0a10dbc5ab15f38be603ba8d88">invert</a>(c);</div>
-<div class="line"><span class="lineno"> 1384</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_a01f58677cb88684cb222496e809ca37a.html#a01f58677cb88684cb222496e809ca37a">gbvector_mult_by_coeff_to</a>(f, cinv);</div>
-<div class="line"><span class="lineno"> 1385</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_a01f58677cb88684cb222496e809ca37a.html#a01f58677cb88684cb222496e809ca37a">gbvector_mult_by_coeff_to</a>(fsyz, cinv);</div>
-<div class="line"><span class="lineno"> 1386</span>  <span class="keywordflow">if</span> (use_denom) <a class="code hl_variable" href="../../d8/d73/class_g_b_ring_ad095d4e9734992cec2bb1101d200f270.html#ad095d4e9734992cec2bb1101d200f270">K</a>-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_ad03d14925b01de133086ac7c61fb53dd.html#ad03d14925b01de133086ac7c61fb53dd">mult_to</a>(denom, c);</div>
-<div class="line"><span class="lineno"> 1387</span>}</div>
-<div class="ttc" id="aclass_g_b_ring_a01f58677cb88684cb222496e809ca37a_html_a01f58677cb88684cb222496e809ca37a"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_a01f58677cb88684cb222496e809ca37a.html#a01f58677cb88684cb222496e809ca37a">GBRing::gbvector_mult_by_coeff_to</a></div><div class="ttdeci">void gbvector_mult_by_coeff_to(gbvector *f, ring_elem u)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00549">gbring.cpp:549</a></div></div>
-<div class="ttc" id="aclass_g_b_ring_a1e733a0119e3fc47cc401ee46c8cde44_html_a1e733a0119e3fc47cc401ee46c8cde44"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_a1e733a0119e3fc47cc401ee46c8cde44.html#a1e733a0119e3fc47cc401ee46c8cde44">GBRing::gbvector_remove_content_ZZ</a></div><div class="ttdeci">void gbvector_remove_content_ZZ(gbvector *f, gbvector *fsyz, bool use_denom, ring_elem &amp;denom) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l01306">gbring.cpp:1306</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l01369">1369</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1377</span>{</div>
+<div class="line"><span class="lineno"> 1378</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d8/d73/class_g_b_ring_a295f3854f35179b3097db2be224f608c.html#a295f3854f35179b3097db2be224f608c">_coeffs_ZZ</a>)</div>
+<div class="line"><span class="lineno"> 1379</span>    {</div>
+<div class="line"><span class="lineno"> 1380</span>      <a class="code hl_function" href="../../d8/d73/class_g_b_ring_a1e733a0119e3fc47cc401ee46c8cde44.html#a1e733a0119e3fc47cc401ee46c8cde44">gbvector_remove_content_ZZ</a>(f, fsyz, use_denom, denom);</div>
+<div class="line"><span class="lineno"> 1381</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno"> 1382</span>    }</div>
+<div class="line"><span class="lineno"> 1383</span>  <span class="comment">// At this point, our coefficient ring is a field (What about</span></div>
+<div class="line"><span class="lineno"> 1384</span>  <span class="comment">// finite extensions of ZZ?)</span></div>
+<div class="line"><span class="lineno"> 1385</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> c, cinv;</div>
+<div class="line"><span class="lineno"> 1386</span>  <span class="keywordflow">if</span> (f != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 1387</span>    c = f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>;</div>
+<div class="line"><span class="lineno"> 1388</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (fsyz != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 1389</span>    c = fsyz-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">coeff</a>;</div>
+<div class="line"><span class="lineno"> 1390</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1391</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno"> 1392</span>  cinv = <a class="code hl_variable" href="../../d8/d73/class_g_b_ring_ad095d4e9734992cec2bb1101d200f270.html#ad095d4e9734992cec2bb1101d200f270">K</a>-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a6e158a0a10dbc5ab15f38be603ba8d88.html#a6e158a0a10dbc5ab15f38be603ba8d88">invert</a>(c);</div>
+<div class="line"><span class="lineno"> 1393</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_a01f58677cb88684cb222496e809ca37a.html#a01f58677cb88684cb222496e809ca37a">gbvector_mult_by_coeff_to</a>(f, cinv);</div>
+<div class="line"><span class="lineno"> 1394</span>  <a class="code hl_function" href="../../d8/d73/class_g_b_ring_a01f58677cb88684cb222496e809ca37a.html#a01f58677cb88684cb222496e809ca37a">gbvector_mult_by_coeff_to</a>(fsyz, cinv);</div>
+<div class="line"><span class="lineno"> 1395</span>  <span class="keywordflow">if</span> (use_denom) <a class="code hl_variable" href="../../d8/d73/class_g_b_ring_ad095d4e9734992cec2bb1101d200f270.html#ad095d4e9734992cec2bb1101d200f270">K</a>-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_ad03d14925b01de133086ac7c61fb53dd.html#ad03d14925b01de133086ac7c61fb53dd">mult_to</a>(denom, c);</div>
+<div class="line"><span class="lineno"> 1396</span>}</div>
+<div class="ttc" id="aclass_g_b_ring_a01f58677cb88684cb222496e809ca37a_html_a01f58677cb88684cb222496e809ca37a"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_a01f58677cb88684cb222496e809ca37a.html#a01f58677cb88684cb222496e809ca37a">GBRing::gbvector_mult_by_coeff_to</a></div><div class="ttdeci">void gbvector_mult_by_coeff_to(gbvector *f, ring_elem u)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00557">gbring.cpp:557</a></div></div>
+<div class="ttc" id="aclass_g_b_ring_a1e733a0119e3fc47cc401ee46c8cde44_html_a1e733a0119e3fc47cc401ee46c8cde44"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_a1e733a0119e3fc47cc401ee46c8cde44.html#a1e733a0119e3fc47cc401ee46c8cde44">GBRing::gbvector_remove_content_ZZ</a></div><div class="ttdeci">void gbvector_remove_content_ZZ(gbvector *f, gbvector *fsyz, bool use_denom, ring_elem &amp;denom) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l01315">gbring.cpp:1315</a></div></div>
 <div class="ttc" id="aclass_g_b_ring_a295f3854f35179b3097db2be224f608c_html_a295f3854f35179b3097db2be224f608c"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_a295f3854f35179b3097db2be224f608c.html#a295f3854f35179b3097db2be224f608c">GBRing::_coeffs_ZZ</a></div><div class="ttdeci">bool _coeffs_ZZ</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00080">gbring.hpp:80</a></div></div>
 <div class="ttc" id="aclass_g_b_ring_ad095d4e9734992cec2bb1101d200f270_html_ad095d4e9734992cec2bb1101d200f270"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_ad095d4e9734992cec2bb1101d200f270.html#ad095d4e9734992cec2bb1101d200f270">GBRing::K</a></div><div class="ttdeci">const Ring * K</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00078">gbring.hpp:78</a></div></div>
 <div class="ttc" id="aclass_ring_a6e158a0a10dbc5ab15f38be603ba8d88_html_a6e158a0a10dbc5ab15f38be603ba8d88"><div class="ttname"><a href="../../dd/dcf/class_ring_a6e158a0a10dbc5ab15f38be603ba8d88.html#a6e158a0a10dbc5ab15f38be603ba8d88">Ring::invert</a></div><div class="ttdeci">virtual ring_elem invert(const ring_elem f) const =0</div></div>
-<div class="ttc" id="aclass_ring_ad03d14925b01de133086ac7c61fb53dd_html_ad03d14925b01de133086ac7c61fb53dd"><div class="ttname"><a href="../../dd/dcf/class_ring_ad03d14925b01de133086ac7c61fb53dd.html#ad03d14925b01de133086ac7c61fb53dd">Ring::mult_to</a></div><div class="ttdeci">void mult_to(ring_elem &amp;f, const ring_elem g) const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d2b/ring_8cpp_source.html#l00201">ring.cpp:201</a></div></div>
+<div class="ttc" id="aclass_ring_ad03d14925b01de133086ac7c61fb53dd_html_ad03d14925b01de133086ac7c61fb53dd"><div class="ttname"><a href="../../dd/dcf/class_ring_ad03d14925b01de133086ac7c61fb53dd.html#ad03d14925b01de133086ac7c61fb53dd">Ring::mult_to</a></div><div class="ttdeci">void mult_to(ring_elem &amp;f, const ring_elem g) const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d2b/ring_8cpp_source.html#l00202">ring.cpp:202</a></div></div>
 <div class="ttc" id="astructgbvector_a185cb3a8e35ce8178aac8ab39a79c4be_html_a185cb3a8e35ce8178aac8ab39a79c4be"><div class="ttname"><a href="../../d7/d40/structgbvector_a185cb3a8e35ce8178aac8ab39a79c4be.html#a185cb3a8e35ce8178aac8ab39a79c4be">gbvector::coeff</a></div><div class="ttdeci">ring_elem coeff</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00046">gbring.hpp:46</a></div></div>
 <div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00042">ringelem.hpp:43</a></div></div>
 </div><!-- fragment -->
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('d8/d73/class_g_b_ring_aa165ba7fd8fae65
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:23 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

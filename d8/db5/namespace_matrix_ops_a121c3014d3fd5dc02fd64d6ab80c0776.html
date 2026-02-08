@@ -123,14 +123,14 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a121c3014d
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l01156">1156</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1157</span>{</div>
-<div class="line"><span class="lineno"> 1158</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> r = 0; r &lt; mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>(); ++r)</div>
-<div class="line"><span class="lineno"> 1159</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> c = 0; c &lt; mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>(); ++c)</div>
-<div class="line"><span class="lineno"> 1160</span>      {</div>
-<div class="line"><span class="lineno"> 1161</span>        mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">ring</a>().zeroize_tiny(epsilon, mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(r,c));</div>
-<div class="line"><span class="lineno"> 1162</span>      }</div>
-<div class="line"><span class="lineno"> 1163</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l01242">1242</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1243</span>{</div>
+<div class="line"><span class="lineno"> 1244</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> r = 0; r &lt; mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>(); ++r)</div>
+<div class="line"><span class="lineno"> 1245</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> c = 0; c &lt; mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>(); ++c)</div>
+<div class="line"><span class="lineno"> 1246</span>      {</div>
+<div class="line"><span class="lineno"> 1247</span>        mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">ring</a>().zeroize_tiny(epsilon, mat.<a class="code hl_function" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">entry</a>(r,c));</div>
+<div class="line"><span class="lineno"> 1248</span>      }</div>
+<div class="line"><span class="lineno"> 1249</span>}</div>
 <div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00107">dmat.hpp:107</a></div></div>
 <div class="ttc" id="aclass_d_mat_a430faaf604ffe11bf81a35456acc2e97_html_a430faaf604ffe11bf81a35456acc2e97"><div class="ttname"><a href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">DMat::entry</a></div><div class="ttdeci">ElementType &amp; entry(size_t row, size_t column)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00111">dmat.hpp:111</a></div></div>
 <div class="ttc" id="aclass_d_mat_a8bfde729efa8a5ba300bd3024dc9a440_html_a8bfde729efa8a5ba300bd3024dc9a440"><div class="ttname"><a href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">DMat::ring</a></div><div class="ttdeci">const ACoeffRing &amp; ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00106">dmat.hpp:106</a></div></div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a121c3014d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:26 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

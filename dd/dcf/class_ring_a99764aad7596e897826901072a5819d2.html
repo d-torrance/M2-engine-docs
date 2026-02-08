@@ -121,25 +121,25 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a99764aad7596e897826
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html#l00721">721</a> of file <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html">ring-vecs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  722</span>{</div>
-<div class="line"><span class="lineno">  723</span>  <a class="code hl_struct" href="../../d6/ddd/structvecterm.html">vecterm</a> head;</div>
-<div class="line"><span class="lineno">  724</span>  <a class="code hl_struct" href="../../d6/ddd/structvecterm.html">vecterm</a> *result = &amp;head;</div>
-<div class="line"><span class="lineno">  725</span>  <span class="keywordflow">for</span> (vec w = v; w != <span class="keyword">nullptr</span>; w = w-&gt;next)</div>
-<div class="line"><span class="lineno">  726</span>    {</div>
-<div class="line"><span class="lineno">  727</span>      <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> a = <a class="code hl_function" href="../../dd/dcf/class_ring_a9506152db714ef40d2f7acf8773a8d7a.html#a9506152db714ef40d2f7acf8773a8d7a">divide_by_var</a>(n, d, w-&gt;coeff);</div>
-<div class="line"><span class="lineno">  728</span>      <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(a))</div>
-<div class="line"><span class="lineno">  729</span>        {</div>
-<div class="line"><span class="lineno">  730</span>          vec t = <a class="code hl_function" href="../../dd/dcf/class_ring_a2ab579eb49ebe28eed42e2a083c96c03.html#a2ab579eb49ebe28eed42e2a083c96c03">make_vec</a>(w-&gt;comp, a);</div>
-<div class="line"><span class="lineno">  731</span>          result-&gt;<a class="code hl_variable" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = t;</div>
-<div class="line"><span class="lineno">  732</span>          result = t;</div>
-<div class="line"><span class="lineno">  733</span>        }</div>
-<div class="line"><span class="lineno">  734</span>    }</div>
-<div class="line"><span class="lineno">  735</span>  result-&gt;<a class="code hl_variable" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  736</span>  <span class="keywordflow">return</span> head.<a class="code hl_variable" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a>;</div>
-<div class="line"><span class="lineno">  737</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html#l00724">724</a> of file <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html">ring-vecs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  725</span>{</div>
+<div class="line"><span class="lineno">  726</span>  <a class="code hl_struct" href="../../d6/ddd/structvecterm.html">vecterm</a> head;</div>
+<div class="line"><span class="lineno">  727</span>  <a class="code hl_struct" href="../../d6/ddd/structvecterm.html">vecterm</a> *result = &amp;head;</div>
+<div class="line"><span class="lineno">  728</span>  <span class="keywordflow">for</span> (vec w = v; w != <span class="keyword">nullptr</span>; w = w-&gt;next)</div>
+<div class="line"><span class="lineno">  729</span>    {</div>
+<div class="line"><span class="lineno">  730</span>      <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> a = <a class="code hl_function" href="../../dd/dcf/class_ring_a9506152db714ef40d2f7acf8773a8d7a.html#a9506152db714ef40d2f7acf8773a8d7a">divide_by_var</a>(n, d, w-&gt;coeff);</div>
+<div class="line"><span class="lineno">  731</span>      <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(a))</div>
+<div class="line"><span class="lineno">  732</span>        {</div>
+<div class="line"><span class="lineno">  733</span>          vec t = <a class="code hl_function" href="../../dd/dcf/class_ring_a2ab579eb49ebe28eed42e2a083c96c03.html#a2ab579eb49ebe28eed42e2a083c96c03">make_vec</a>(w-&gt;comp, a);</div>
+<div class="line"><span class="lineno">  734</span>          result-&gt;<a class="code hl_variable" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = t;</div>
+<div class="line"><span class="lineno">  735</span>          result = t;</div>
+<div class="line"><span class="lineno">  736</span>        }</div>
+<div class="line"><span class="lineno">  737</span>    }</div>
+<div class="line"><span class="lineno">  738</span>  result-&gt;<a class="code hl_variable" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  739</span>  <span class="keywordflow">return</span> head.<a class="code hl_variable" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a>;</div>
+<div class="line"><span class="lineno">  740</span>}</div>
 <div class="ttc" id="aclass_ring_a2ab579eb49ebe28eed42e2a083c96c03_html_a2ab579eb49ebe28eed42e2a083c96c03"><div class="ttname"><a href="../../dd/dcf/class_ring_a2ab579eb49ebe28eed42e2a083c96c03.html#a2ab579eb49ebe28eed42e2a083c96c03">Ring::make_vec</a></div><div class="ttdeci">vec make_vec(int r, ring_elem a) const</div><div class="ttdef"><b>Definition</b> <a href="../../df/d36/ring-vecs_8cpp_source.html#l00020">ring-vecs.cpp:20</a></div></div>
-<div class="ttc" id="aclass_ring_a9506152db714ef40d2f7acf8773a8d7a_html_a9506152db714ef40d2f7acf8773a8d7a"><div class="ttname"><a href="../../dd/dcf/class_ring_a9506152db714ef40d2f7acf8773a8d7a.html#a9506152db714ef40d2f7acf8773a8d7a">Ring::divide_by_var</a></div><div class="ttdeci">virtual ring_elem divide_by_var(int n, int d, const ring_elem a) const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d2b/ring_8cpp_source.html#l00350">ring.cpp:350</a></div></div>
+<div class="ttc" id="aclass_ring_a9506152db714ef40d2f7acf8773a8d7a_html_a9506152db714ef40d2f7acf8773a8d7a"><div class="ttname"><a href="../../dd/dcf/class_ring_a9506152db714ef40d2f7acf8773a8d7a.html#a9506152db714ef40d2f7acf8773a8d7a">Ring::divide_by_var</a></div><div class="ttdeci">virtual ring_elem divide_by_var(int n, int d, const ring_elem a) const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d2b/ring_8cpp_source.html#l00368">ring.cpp:368</a></div></div>
 <div class="ttc" id="aclass_ring_aa8d762a00cdea91f8d26cea2b52ebce0_html_aa8d762a00cdea91f8d26cea2b52ebce0"><div class="ttname"><a href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">Ring::is_zero</a></div><div class="ttdeci">virtual bool is_zero(const ring_elem f) const =0</div></div>
 <div class="ttc" id="astructvecterm_a0097010847a0593f115ad08738a72b3a_html_a0097010847a0593f115ad08738a72b3a"><div class="ttname"><a href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">vecterm::next</a></div><div class="ttdeci">vec next</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00108">ringelem.hpp:108</a></div></div>
 <div class="ttc" id="astructvecterm_html"><div class="ttname"><a href="../../d6/ddd/structvecterm.html">vecterm</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00106">ringelem.hpp:107</a></div></div>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a99764aad7596e897826
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:25 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -121,33 +121,33 @@ $(document).ready(function(){initNavTree('dd/df4/matrix_8h_aedbcae08b1e63e63178c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d2d/interface_2matrix_8cpp_source.html#l00781">781</a> of file <a class="el" href="../../d3/d2d/interface_2matrix_8cpp_source.html">matrix.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  784</span>{</div>
-<div class="line"><span class="lineno">  785</span>  <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  786</span>    {</div>
-<div class="line"><span class="lineno">  787</span>      <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> a;</div>
-<div class="line"><span class="lineno">  788</span>      <span class="keyword">const</span> <a class="code hl_class" href="../../dd/dcf/class_ring.html">Ring</a> *R = f-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>();</div>
-<div class="line"><span class="lineno">  789</span>      <span class="keyword">const</span> <a class="code hl_class" href="../../dd/dcf/class_ring.html">Ring</a> *S = newTarget-&gt;<a class="code hl_function" href="../../d6/df0/class_free_module_a4d2867218464947a9455e8533f6f8e51.html#a4d2867218464947a9455e8533f6f8e51">get_ring</a>();</div>
-<div class="line"><span class="lineno">  790</span>      <a class="code hl_class" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(newTarget, f-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>());</div>
-<div class="line"><span class="lineno">  791</span>      <a class="code hl_class" href="../../d2/d54/class_matrix_1_1iterator.html">Matrix::iterator</a> i(f);</div>
-<div class="line"><span class="lineno">  792</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 0; c &lt; f-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); c++)</div>
-<div class="line"><span class="lineno">  793</span>        <span class="keywordflow">for</span> (i.set(c); i.valid(); i.next())</div>
-<div class="line"><span class="lineno">  794</span>          <span class="keywordflow">if</span> (R-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a6d3d042f950ad9d90bb4ac65814789a1.html#a6d3d042f950ad9d90bb4ac65814789a1">lift</a>(S, i.entry(), a))</div>
-<div class="line"><span class="lineno">  795</span>            mat.set_entry(i.row(), c, a);</div>
-<div class="line"><span class="lineno">  796</span>          <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  797</span>            {</div>
-<div class="line"><span class="lineno">  798</span>              <span class="comment">// ERROR(&quot;cannot lift given matrix&quot;);</span></div>
-<div class="line"><span class="lineno">  799</span>              <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  800</span>            }</div>
-<div class="line"><span class="lineno">  801</span>      mat.compute_column_degrees();</div>
-<div class="line"><span class="lineno">  802</span>      *success_return = 1;</div>
-<div class="line"><span class="lineno">  803</span>      <span class="keywordflow">return</span> mat.to_matrix();</div>
-<div class="line"><span class="lineno">  804</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
-<div class="line"><span class="lineno">  805</span>    {</div>
-<div class="line"><span class="lineno">  806</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
-<div class="line"><span class="lineno">  807</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  808</span>  }</div>
-<div class="line"><span class="lineno">  809</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d2d/interface_2matrix_8cpp_source.html#l00792">792</a> of file <a class="el" href="../../d3/d2d/interface_2matrix_8cpp_source.html">matrix.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  795</span>{</div>
+<div class="line"><span class="lineno">  796</span>  <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  797</span>    {</div>
+<div class="line"><span class="lineno">  798</span>      <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> a;</div>
+<div class="line"><span class="lineno">  799</span>      <span class="keyword">const</span> <a class="code hl_class" href="../../dd/dcf/class_ring.html">Ring</a> *R = f-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>();</div>
+<div class="line"><span class="lineno">  800</span>      <span class="keyword">const</span> <a class="code hl_class" href="../../dd/dcf/class_ring.html">Ring</a> *S = newTarget-&gt;<a class="code hl_function" href="../../d6/df0/class_free_module_a4d2867218464947a9455e8533f6f8e51.html#a4d2867218464947a9455e8533f6f8e51">get_ring</a>();</div>
+<div class="line"><span class="lineno">  801</span>      <a class="code hl_class" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> mat(newTarget, f-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>());</div>
+<div class="line"><span class="lineno">  802</span>      <a class="code hl_class" href="../../d2/d54/class_matrix_1_1iterator.html">Matrix::iterator</a> i(f);</div>
+<div class="line"><span class="lineno">  803</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 0; c &lt; f-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a6cb4735dadc364c543bb667468b0fac8.html#a6cb4735dadc364c543bb667468b0fac8">n_cols</a>(); c++)</div>
+<div class="line"><span class="lineno">  804</span>        <span class="keywordflow">for</span> (i.set(c); i.valid(); i.next())</div>
+<div class="line"><span class="lineno">  805</span>          <span class="keywordflow">if</span> (R-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a6d3d042f950ad9d90bb4ac65814789a1.html#a6d3d042f950ad9d90bb4ac65814789a1">lift</a>(S, i.entry(), a))</div>
+<div class="line"><span class="lineno">  806</span>            mat.set_entry(i.row(), c, a);</div>
+<div class="line"><span class="lineno">  807</span>          <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  808</span>            {</div>
+<div class="line"><span class="lineno">  809</span>              <span class="comment">// ERROR(&quot;cannot lift given matrix&quot;);</span></div>
+<div class="line"><span class="lineno">  810</span>              <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  811</span>            }</div>
+<div class="line"><span class="lineno">  812</span>      mat.compute_column_degrees();</div>
+<div class="line"><span class="lineno">  813</span>      *success_return = 1;</div>
+<div class="line"><span class="lineno">  814</span>      <span class="keywordflow">return</span> mat.to_matrix();</div>
+<div class="line"><span class="lineno">  815</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><span class="lineno">  816</span>    {</div>
+<div class="line"><span class="lineno">  817</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno">  818</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  819</span>  }</div>
+<div class="line"><span class="lineno">  820</span>}</div>
 <div class="ttc" id="aclass_free_module_a4d2867218464947a9455e8533f6f8e51_html_a4d2867218464947a9455e8533f6f8e51"><div class="ttname"><a href="../../d6/df0/class_free_module_a4d2867218464947a9455e8533f6f8e51.html#a4d2867218464947a9455e8533f6f8e51">FreeModule::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/freemod_8hpp_source.html#l00052">freemod.hpp:52</a></div></div>
 <div class="ttc" id="aclass_matrix_1_1iterator_html"><div class="ttname"><a href="../../d2/d54/class_matrix_1_1iterator.html">Matrix::iterator</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00241">matrix.hpp:242</a></div></div>
 <div class="ttc" id="aclass_matrix_a0bceb9b9d23e40a81ac64f6c112ef441_html_a0bceb9b9d23e40a81ac64f6c112ef441"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">Matrix::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00085">matrix.hpp:85</a></div></div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('dd/df4/matrix_8h_aedbcae08b1e63e63178c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../dd/df4/matrix_8h.html">matrix.h</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:22 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

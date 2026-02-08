@@ -123,54 +123,54 @@ $(document).ready(function(){initNavTree('db/d26/class_minimal_primes_ac10ea2564
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/ded/monideal-minprimes_8cpp_source.html#l00110">110</a> of file <a class="el" href="../../d4/ded/monideal-minprimes_8cpp_source.html">monideal-minprimes.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  119</span>{</div>
-<div class="line"><span class="lineno">  120</span>  <span class="keywordflow">for</span> (;;)</div>
-<div class="line"><span class="lineno">  121</span>    {</div>
-<div class="line"><span class="lineno">  122</span>      <span class="keywordflow">if</span> (*which == 0)</div>
-<div class="line"><span class="lineno">  123</span>        {</div>
-<div class="line"><span class="lineno">  124</span>          <a class="code hl_function" href="../../db/d26/class_minimal_primes_aa1dbdd47388447984593c2ee96ae24e7.html#aa1dbdd47388447984593c2ee96ae24e7">alg1_grab_prime</a>(depth);</div>
-<div class="line"><span class="lineno">  125</span>          <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  126</span>        }</div>
-<div class="line"><span class="lineno">  127</span>      <span class="keywordflow">switch</span> (<a class="code hl_function" href="../../d4/ded/monideal-minprimes_8cpp_aed68fc388602d5eb37e9299214d6a8db.html#aed68fc388602d5eb37e9299214d6a8db">alg1_reduce_exp</a>(which + 1, <a class="code hl_variable" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>))</div>
-<div class="line"><span class="lineno">  128</span>        {</div>
-<div class="line"><span class="lineno">  129</span>          <span class="keywordflow">case</span> 0:</div>
-<div class="line"><span class="lineno">  130</span>            which = which + *which;</div>
-<div class="line"><span class="lineno">  131</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  132</span>          <span class="keywordflow">case</span> -1:</div>
-<div class="line"><span class="lineno">  133</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  134</span>          <span class="keywordflow">case</span> 1:</div>
-<div class="line"><span class="lineno">  135</span>            <span class="keywordflow">if</span> (depth &gt; <a class="code hl_variable" href="../../db/d26/class_minimal_primes_aa78563d5be67c76d1d70fd9add9398e6.html#aa78563d5be67c76d1d70fd9add9398e6">depth_limit</a>)</div>
-<div class="line"><span class="lineno">  136</span>              {</div>
-<div class="line"><span class="lineno">  137</span>                <span class="keywordtype">int</span> *m = which + 1;</div>
-<div class="line"><span class="lineno">  138</span>                <span class="keywordflow">while</span> (*m != 0)</div>
-<div class="line"><span class="lineno">  139</span>                  {</div>
-<div class="line"><span class="lineno">  140</span>                    <span class="keywordtype">int</span> v = *m;</div>
-<div class="line"><span class="lineno">  141</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>[v] == 0)</div>
-<div class="line"><span class="lineno">  142</span>                      {</div>
-<div class="line"><span class="lineno">  143</span>                        <a class="code hl_variable" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>[v] = 1;</div>
-<div class="line"><span class="lineno">  144</span>                        <a class="code hl_function" href="../../db/d26/class_minimal_primes_ac10ea2564eaabb9f0eda25a559caf72e.html#ac10ea2564eaabb9f0eda25a559caf72e">alg1_min_prime_generator</a>(which + *which, depth - 1);</div>
-<div class="line"><span class="lineno">  145</span>                        <a class="code hl_variable" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>[v] = depth;</div>
-<div class="line"><span class="lineno">  146</span>                      }</div>
-<div class="line"><span class="lineno">  147</span>                    m++;</div>
-<div class="line"><span class="lineno">  148</span>                  }</div>
-<div class="line"><span class="lineno">  149</span>                <span class="comment">// This code sets the &#39;exp&#39; array back to the way it was</span></div>
-<div class="line"><span class="lineno">  150</span>                m = which + 1;</div>
-<div class="line"><span class="lineno">  151</span>                <span class="keywordflow">while</span> (*m != 0)</div>
-<div class="line"><span class="lineno">  152</span>                  {</div>
-<div class="line"><span class="lineno">  153</span>                    <span class="keywordtype">int</span> v = *m;</div>
-<div class="line"><span class="lineno">  154</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>[v] == depth) <a class="code hl_variable" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>[v] = 0;</div>
-<div class="line"><span class="lineno">  155</span>                    m++;</div>
-<div class="line"><span class="lineno">  156</span>                  }</div>
-<div class="line"><span class="lineno">  157</span>              }</div>
-<div class="line"><span class="lineno">  158</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  159</span>        }</div>
-<div class="line"><span class="lineno">  160</span>    }</div>
-<div class="line"><span class="lineno">  161</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/ded/monideal-minprimes_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../d4/ded/monideal-minprimes_8cpp_source.html">monideal-minprimes.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  120</span>{</div>
+<div class="line"><span class="lineno">  121</span>  <span class="keywordflow">for</span> (;;)</div>
+<div class="line"><span class="lineno">  122</span>    {</div>
+<div class="line"><span class="lineno">  123</span>      <span class="keywordflow">if</span> (*which == 0)</div>
+<div class="line"><span class="lineno">  124</span>        {</div>
+<div class="line"><span class="lineno">  125</span>          <a class="code hl_function" href="../../db/d26/class_minimal_primes_aa1dbdd47388447984593c2ee96ae24e7.html#aa1dbdd47388447984593c2ee96ae24e7">alg1_grab_prime</a>(depth);</div>
+<div class="line"><span class="lineno">  126</span>          <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  127</span>        }</div>
+<div class="line"><span class="lineno">  128</span>      <span class="keywordflow">switch</span> (<a class="code hl_function" href="../../d4/ded/monideal-minprimes_8cpp_aed68fc388602d5eb37e9299214d6a8db.html#aed68fc388602d5eb37e9299214d6a8db">alg1_reduce_exp</a>(which + 1, <a class="code hl_variable" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>))</div>
+<div class="line"><span class="lineno">  129</span>        {</div>
+<div class="line"><span class="lineno">  130</span>          <span class="keywordflow">case</span> 0:</div>
+<div class="line"><span class="lineno">  131</span>            which = which + *which;</div>
+<div class="line"><span class="lineno">  132</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  133</span>          <span class="keywordflow">case</span> -1:</div>
+<div class="line"><span class="lineno">  134</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  135</span>          <span class="keywordflow">case</span> 1:</div>
+<div class="line"><span class="lineno">  136</span>            <span class="keywordflow">if</span> (depth &gt; <a class="code hl_variable" href="../../db/d26/class_minimal_primes_aa78563d5be67c76d1d70fd9add9398e6.html#aa78563d5be67c76d1d70fd9add9398e6">depth_limit</a>)</div>
+<div class="line"><span class="lineno">  137</span>              {</div>
+<div class="line"><span class="lineno">  138</span>                <span class="keywordtype">int</span> *m = which + 1;</div>
+<div class="line"><span class="lineno">  139</span>                <span class="keywordflow">while</span> (*m != 0)</div>
+<div class="line"><span class="lineno">  140</span>                  {</div>
+<div class="line"><span class="lineno">  141</span>                    <span class="keywordtype">int</span> v = *m;</div>
+<div class="line"><span class="lineno">  142</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>[v] == 0)</div>
+<div class="line"><span class="lineno">  143</span>                      {</div>
+<div class="line"><span class="lineno">  144</span>                        <a class="code hl_variable" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>[v] = 1;</div>
+<div class="line"><span class="lineno">  145</span>                        <a class="code hl_function" href="../../db/d26/class_minimal_primes_ac10ea2564eaabb9f0eda25a559caf72e.html#ac10ea2564eaabb9f0eda25a559caf72e">alg1_min_prime_generator</a>(which + *which, depth - 1);</div>
+<div class="line"><span class="lineno">  146</span>                        <a class="code hl_variable" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>[v] = depth;</div>
+<div class="line"><span class="lineno">  147</span>                      }</div>
+<div class="line"><span class="lineno">  148</span>                    m++;</div>
+<div class="line"><span class="lineno">  149</span>                  }</div>
+<div class="line"><span class="lineno">  150</span>                <span class="comment">// This code sets the &#39;exp&#39; array back to the way it was</span></div>
+<div class="line"><span class="lineno">  151</span>                m = which + 1;</div>
+<div class="line"><span class="lineno">  152</span>                <span class="keywordflow">while</span> (*m != 0)</div>
+<div class="line"><span class="lineno">  153</span>                  {</div>
+<div class="line"><span class="lineno">  154</span>                    <span class="keywordtype">int</span> v = *m;</div>
+<div class="line"><span class="lineno">  155</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>[v] == depth) <a class="code hl_variable" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>[v] = 0;</div>
+<div class="line"><span class="lineno">  156</span>                    m++;</div>
+<div class="line"><span class="lineno">  157</span>                  }</div>
+<div class="line"><span class="lineno">  158</span>              }</div>
+<div class="line"><span class="lineno">  159</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  160</span>        }</div>
+<div class="line"><span class="lineno">  161</span>    }</div>
+<div class="line"><span class="lineno">  162</span>}</div>
 <div class="ttc" id="aclass_minimal_primes_a16273326d505d981d20ce208e28cc310_html_a16273326d505d981d20ce208e28cc310"><div class="ttname"><a href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">MinimalPrimes::exp</a></div><div class="ttdeci">exponents_t exp</div><div class="ttdef"><b>Definition</b> <a href="../../d8/de0/monideal-minprimes_8hpp_source.html#l00033">monideal-minprimes.hpp:33</a></div></div>
 <div class="ttc" id="aclass_minimal_primes_aa1dbdd47388447984593c2ee96ae24e7_html_aa1dbdd47388447984593c2ee96ae24e7"><div class="ttname"><a href="../../db/d26/class_minimal_primes_aa1dbdd47388447984593c2ee96ae24e7.html#aa1dbdd47388447984593c2ee96ae24e7">MinimalPrimes::alg1_grab_prime</a></div><div class="ttdeci">void alg1_grab_prime(int depth)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/ded/monideal-minprimes_8cpp_source.html#l00098">monideal-minprimes.cpp:98</a></div></div>
 <div class="ttc" id="aclass_minimal_primes_aa78563d5be67c76d1d70fd9add9398e6_html_aa78563d5be67c76d1d70fd9add9398e6"><div class="ttname"><a href="../../db/d26/class_minimal_primes_aa78563d5be67c76d1d70fd9add9398e6.html#aa78563d5be67c76d1d70fd9add9398e6">MinimalPrimes::depth_limit</a></div><div class="ttdeci">int depth_limit</div><div class="ttdef"><b>Definition</b> <a href="../../d8/de0/monideal-minprimes_8hpp_source.html#l00032">monideal-minprimes.hpp:32</a></div></div>
-<div class="ttc" id="aclass_minimal_primes_ac10ea2564eaabb9f0eda25a559caf72e_html_ac10ea2564eaabb9f0eda25a559caf72e"><div class="ttname"><a href="../../db/d26/class_minimal_primes_ac10ea2564eaabb9f0eda25a559caf72e.html#ac10ea2564eaabb9f0eda25a559caf72e">MinimalPrimes::alg1_min_prime_generator</a></div><div class="ttdeci">void alg1_min_prime_generator(int *which, int depth)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/ded/monideal-minprimes_8cpp_source.html#l00110">monideal-minprimes.cpp:110</a></div></div>
+<div class="ttc" id="aclass_minimal_primes_ac10ea2564eaabb9f0eda25a559caf72e_html_ac10ea2564eaabb9f0eda25a559caf72e"><div class="ttname"><a href="../../db/d26/class_minimal_primes_ac10ea2564eaabb9f0eda25a559caf72e.html#ac10ea2564eaabb9f0eda25a559caf72e">MinimalPrimes::alg1_min_prime_generator</a></div><div class="ttdeci">void alg1_min_prime_generator(int *which, int depth)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/ded/monideal-minprimes_8cpp_source.html#l00111">monideal-minprimes.cpp:111</a></div></div>
 <div class="ttc" id="amonideal-minprimes_8cpp_aed68fc388602d5eb37e9299214d6a8db_html_aed68fc388602d5eb37e9299214d6a8db"><div class="ttname"><a href="../../d4/ded/monideal-minprimes_8cpp_aed68fc388602d5eb37e9299214d6a8db.html#aed68fc388602d5eb37e9299214d6a8db">alg1_reduce_exp</a></div><div class="ttdeci">static int alg1_reduce_exp(const int *m, const int *exp)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/ded/monideal-minprimes_8cpp_source.html#l00076">monideal-minprimes.cpp:76</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../db/d26/class_minimal_primes_aa1dbdd47388447984593c2ee96ae24e7.html#aa1dbdd47388447984593c2ee96ae24e7">alg1_grab_prime()</a>, <a class="el" href="../../db/d26/class_minimal_primes_ac10ea2564eaabb9f0eda25a559caf72e.html#ac10ea2564eaabb9f0eda25a559caf72e">alg1_min_prime_generator()</a>, <a class="el" href="../../d4/ded/monideal-minprimes_8cpp_aed68fc388602d5eb37e9299214d6a8db.html#aed68fc388602d5eb37e9299214d6a8db">alg1_reduce_exp()</a>, <a class="el" href="../../db/d26/class_minimal_primes_aa78563d5be67c76d1d70fd9add9398e6.html#aa78563d5be67c76d1d70fd9add9398e6">depth_limit</a>, and <a class="el" href="../../db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310">exp</a>.</p>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('db/d26/class_minimal_primes_ac10ea2564
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d26/class_minimal_primes.html">MinimalPrimes</a></li>
-    <li class="footer">Generated on Sun Feb 1 2026 03:21:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Feb 8 2026 03:26:24 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
