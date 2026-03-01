@@ -141,10 +141,10 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_a415e8088a9d1
 <div class="line"><span class="lineno">  883</span>  <span class="comment">//   (r+1)   b1    b1    ... b1    0  0  ... 0</span></div>
 <div class="line"><span class="lineno">  884</span> </div>
 <div class="line"><span class="lineno">  885</span>  <span class="keywordtype">int</span> r = a[0] - 1;</div>
-<div class="line"><span class="lineno">  886</span>  <span class="keywordtype">int</span> s = b[0] - 1;</div>
+<div class="line"><span class="lineno">  886</span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a> = b[0] - 1;</div>
 <div class="line"><span class="lineno">  887</span>  <span class="keywordtype">int</span> c = b[1];</div>
 <div class="line"><span class="lineno">  888</span> </div>
-<div class="line"><span class="lineno">  889</span>  assert(r + s + 1 == maxsize);</div>
+<div class="line"><span class="lineno">  889</span>  assert(r + <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a> + 1 == maxsize);</div>
 <div class="line"><span class="lineno">  890</span> </div>
 <div class="line"><span class="lineno">  891</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= r; i++)</div>
 <div class="line"><span class="lineno">  892</span>    {</div>
@@ -152,22 +152,23 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_a415e8088a9d1
 <div class="line"><span class="lineno">  894</span>      <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i] = c + a[i];</div>
 <div class="line"><span class="lineno">  895</span>      lambda[i] = c;</div>
 <div class="line"><span class="lineno">  896</span>    }</div>
-<div class="line"><span class="lineno">  897</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = r + 1; i &lt; r + s + 1; i++)</div>
+<div class="line"><span class="lineno">  897</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = r + 1; i &lt; r + <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a> + 1; i++)</div>
 <div class="line"><span class="lineno">  898</span>    {</div>
 <div class="line"><span class="lineno">  899</span>      assert(i &lt; maxsize);</div>
 <div class="line"><span class="lineno">  900</span>      <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i] = b[i - r];</div>
 <div class="line"><span class="lineno">  901</span>      lambda[i] = 0;</div>
 <div class="line"><span class="lineno">  902</span>    }</div>
-<div class="line"><span class="lineno">  903</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[0] = r + s + 1;</div>
+<div class="line"><span class="lineno">  903</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[0] = r + <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a> + 1;</div>
 <div class="line"><span class="lineno">  904</span>  lambda[0] = r + 1;</div>
 <div class="line"><span class="lineno">  905</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/da2/class_schur_ring2_a1525745c2fcecdc172e1fc4dfbd377f1.html#a1525745c2fcecdc172e1fc4dfbd377f1">skew_schur</a>(lambda, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
 <div class="line"><span class="lineno">  906</span>}</div>
 <div class="ttc" id="aclass_schur_ring2_a1525745c2fcecdc172e1fc4dfbd377f1_html_a1525745c2fcecdc172e1fc4dfbd377f1"><div class="ttname"><a href="../../df/da2/class_schur_ring2_a1525745c2fcecdc172e1fc4dfbd377f1.html#a1525745c2fcecdc172e1fc4dfbd377f1">SchurRing2::skew_schur</a></div><div class="ttdeci">ring_elem skew_schur(const_schur_partition lambda, const_schur_partition p)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d6f/schur2_8cpp_source.html#l00836">schur2.cpp:836</a></div></div>
 <div class="ttc" id="aclassint_html"><div class="ttname"><a href="../../d1/da0/classint.html">int</a></div></div>
 <div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5_html_a2fc91f4e89bc37f261db820d231da2e5"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a></div><div class="ttdeci">void size_t s</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00274">m2-mem.cpp:274</a></div></div>
 <div class="ttc" id="amonoid_8hpp_a337de43f0792d2f0364a64ba9905116d_html_a337de43f0792d2f0364a64ba9905116d"><div class="ttname"><a href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a></div><div class="ttdeci">#define ALLOCATE_EXPONENTS(byte_len)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00027">monoid.hpp:27</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>, <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, and <a class="el" href="../../df/da2/class_schur_ring2_a1525745c2fcecdc172e1fc4dfbd377f1.html#a1525745c2fcecdc172e1fc4dfbd377f1">skew_schur()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dd0/monoid_8hpp_a337de43f0792d2f0364a64ba9905116d.html#a337de43f0792d2f0364a64ba9905116d">ALLOCATE_EXPONENTS</a>, <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>, and <a class="el" href="../../df/da2/class_schur_ring2_a1525745c2fcecdc172e1fc4dfbd377f1.html#a1525745c2fcecdc172e1fc4dfbd377f1">skew_schur()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/da2/class_schur_ring2_ac7a95d6e8429f5bd0b3e1ac4521d0b45.html#ac7a95d6e8429f5bd0b3e1ac4521d0b45">mult()</a>.</p>
 
@@ -179,7 +180,7 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_a415e8088a9d1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/da2/class_schur_ring2.html">SchurRing2</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:33 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

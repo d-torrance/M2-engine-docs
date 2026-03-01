@@ -151,18 +151,21 @@ $(document).ready(function(){initNavTree('d0/d4e/class_chinese_remainder_aea4ead
 <div class="fragment"><div class="line"><span class="lineno">   21</span>{</div>
 <div class="line"><span class="lineno">   22</span>  mpz_t mn_half;</div>
 <div class="line"><span class="lineno">   23</span>  mpz_init(mn_half);</div>
-<div class="line"><span class="lineno">   24</span>  mpz_mul(result, um, b);</div>
-<div class="line"><span class="lineno">   25</span>  mpz_addmul(result, vn, a);</div>
-<div class="line"><span class="lineno">   26</span>  mpz_mod(result, result, mn);</div>
+<div class="line"><span class="lineno">   24</span>  mpz_mul(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, um, b);</div>
+<div class="line"><span class="lineno">   25</span>  mpz_addmul(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, vn, a);</div>
+<div class="line"><span class="lineno">   26</span>  mpz_mod(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, mn);</div>
 <div class="line"><span class="lineno">   27</span>  mpz_tdiv_q_2exp(mn_half, mn, 1);</div>
 <div class="line"><span class="lineno">   28</span>  <span class="comment">// get canonical representative</span></div>
-<div class="line"><span class="lineno">   29</span>  <span class="keywordflow">if</span> (mpz_cmp(result, mn_half) &gt; 0)</div>
+<div class="line"><span class="lineno">   29</span>  <span class="keywordflow">if</span> (mpz_cmp(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, mn_half) &gt; 0)</div>
 <div class="line"><span class="lineno">   30</span>    {</div>
-<div class="line"><span class="lineno">   31</span>      mpz_sub(result, result, mn);</div>
+<div class="line"><span class="lineno">   31</span>      mpz_sub(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, mn);</div>
 <div class="line"><span class="lineno">   32</span>    }</div>
 <div class="line"><span class="lineno">   33</span>  mpz_clear(mn_half);</div>
 <div class="line"><span class="lineno">   34</span>}</div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../d0/d4e/class_chinese_remainder_ab8b9b6c5f2bb1bf62617decc4b548e53.html#ab8b9b6c5f2bb1bf62617decc4b548e53">CRA()</a>.</p>
 
 </div>
@@ -173,7 +176,7 @@ $(document).ready(function(){initNavTree('d0/d4e/class_chinese_remainder_aea4ead
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d4e/class_chinese_remainder.html">ChineseRemainder</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

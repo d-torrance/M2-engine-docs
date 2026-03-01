@@ -129,13 +129,14 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_af8653f6dae674ad49
 <div class="line"><span class="lineno">  420</span>  <a class="code hl_function" href="../../d3/d42/class_d_poly_a5680758ab8dd22b08fdfc26c3cd12467.html#a5680758ab8dd22b08fdfc26c3cd12467">append_to_stream</a>(o, level, f);</div>
 <div class="line"><span class="lineno">  421</span>  o &lt;&lt; <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><span class="lineno">  422</span>  <span class="keywordtype">size_t</span> n = o.str().length();</div>
-<div class="line"><span class="lineno">  423</span>  <span class="keywordtype">char</span> *result = <span class="keyword">new</span> <span class="keywordtype">char</span>[n + 1];</div>
-<div class="line"><span class="lineno">  424</span>  memcpy(result, o.str().c_str(), n);</div>
-<div class="line"><span class="lineno">  425</span>  <span class="keywordflow">return</span> result;  </div>
+<div class="line"><span class="lineno">  423</span>  <span class="keywordtype">char</span> *<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[n + 1];</div>
+<div class="line"><span class="lineno">  424</span>  memcpy(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, o.str().c_str(), n);</div>
+<div class="line"><span class="lineno">  425</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;  </div>
 <div class="line"><span class="lineno">  426</span>}</div>
 <div class="ttc" id="aclass_d_poly_a5680758ab8dd22b08fdfc26c3cd12467_html_a5680758ab8dd22b08fdfc26c3cd12467"><div class="ttname"><a href="../../d3/d42/class_d_poly_a5680758ab8dd22b08fdfc26c3cd12467.html#a5680758ab8dd22b08fdfc26c3cd12467">DPoly::append_to_stream</a></div><div class="ttdeci">static std::ostream &amp; append_to_stream(std::ostream &amp;o, int level, const TowerPolynomial f)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00389">dpoly.cpp:389</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d42/class_d_poly_a5680758ab8dd22b08fdfc26c3cd12467.html#a5680758ab8dd22b08fdfc26c3cd12467">append_to_stream()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d42/class_d_poly_a5680758ab8dd22b08fdfc26c3cd12467.html#a5680758ab8dd22b08fdfc26c3cd12467">append_to_stream()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d42/class_d_poly_a99e50313c740837df62a66e143430c26.html#a99e50313c740837df62a66e143430c26">gcd()</a>, and <a class="el" href="../../d3/d42/class_d_poly_a3e03b2c66d7a2f38028b8f5d5ac1b559.html#a3e03b2c66d7a2f38028b8f5d5ac1b559">gcd_coefficients()</a>.</p>
 
@@ -147,7 +148,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_af8653f6dae674ad49
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

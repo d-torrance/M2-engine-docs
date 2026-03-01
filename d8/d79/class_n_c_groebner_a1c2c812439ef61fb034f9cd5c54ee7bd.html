@@ -107,14 +107,17 @@ $(document).ready(function(){initNavTree('d8/d79/class_n_c_groebner_a1c2c812439e
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc7/_n_c_groebner_8cpp_source.html#l00326">326</a> of file <a class="el" href="../../df/dc7/_n_c_groebner_8cpp_source.html">NCGroebner.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  327</span>{</div>
-<div class="line"><span class="lineno">  328</span>  <a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_a80a194ce0dfa5aa6521f4035725c628a.html#a80a194ce0dfa5aa6521f4035725c628a">ConstPolyList</a> result;</div>
+<div class="line"><span class="lineno">  328</span>  <a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_a80a194ce0dfa5aa6521f4035725c628a.html#a80a194ce0dfa5aa6521f4035725c628a">ConstPolyList</a> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><span class="lineno">  329</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = reducees.cbegin(); i != reducees.cend(); ++i)</div>
-<div class="line"><span class="lineno">  330</span>    result.push_back(<a class="code hl_function" href="../../d8/d79/class_n_c_groebner_a1c2c812439ef61fb034f9cd5c54ee7bd.html#a1c2c812439ef61fb034f9cd5c54ee7bd">twoSidedReduction</a>(*i));</div>
-<div class="line"><span class="lineno">  331</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  330</span>    <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.push_back(<a class="code hl_function" href="../../d8/d79/class_n_c_groebner_a1c2c812439ef61fb034f9cd5c54ee7bd.html#a1c2c812439ef61fb034f9cd5c54ee7bd">twoSidedReduction</a>(*i));</div>
+<div class="line"><span class="lineno">  331</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><span class="lineno">  332</span>}</div>
 <div class="ttc" id="a_polynomial_8hpp_a80a194ce0dfa5aa6521f4035725c628a_html_a80a194ce0dfa5aa6521f4035725c628a"><div class="ttname"><a href="../../db/d99/_polynomial_8hpp_a80a194ce0dfa5aa6521f4035725c628a.html#a80a194ce0dfa5aa6521f4035725c628a">ConstPolyList</a></div><div class="ttdeci">gc_vector&lt; const Poly * &gt; ConstPolyList</div><div class="ttdef"><b>Definition</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00267">Polynomial.hpp:267</a></div></div>
 <div class="ttc" id="aclass_n_c_groebner_a1c2c812439ef61fb034f9cd5c54ee7bd_html_a1c2c812439ef61fb034f9cd5c54ee7bd"><div class="ttname"><a href="../../d8/d79/class_n_c_groebner_a1c2c812439ef61fb034f9cd5c54ee7bd.html#a1c2c812439ef61fb034f9cd5c54ee7bd">NCGroebner::twoSidedReduction</a></div><div class="ttdeci">auto twoSidedReduction(const ConstPolyList &amp;reducees) const -&gt; ConstPolyList</div><div class="ttdef"><b>Definition</b> <a href="../../df/dc7/_n_c_groebner_8cpp_source.html#l00326">NCGroebner.cpp:326</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../d8/d79/class_n_c_groebner_a7f64ec776bbcf63a368bcd86d609115c.html#a7f64ec776bbcf63a368bcd86d609115c">computeHomogeneous()</a>, <a class="el" href="../../d8/d79/class_n_c_groebner_a1b57d9ef47c03a06b4cc62df62f71ff1.html#a1b57d9ef47c03a06b4cc62df62f71ff1">computeInhomogeneous()</a>, and <a class="el" href="../../d0/d77/class_free_algebra_quotient_af626b33dd255f129bdd3a3a3c071cef6.html#af626b33dd255f129bdd3a3a3c071cef6">FreeAlgebraQuotient::normalizeInPlace()</a>.</p>
 
 </div>
@@ -125,7 +128,7 @@ $(document).ready(function(){initNavTree('d8/d79/class_n_c_groebner_a1c2c812439e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d79/class_n_c_groebner.html">NCGroebner</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

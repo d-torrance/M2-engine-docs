@@ -133,9 +133,9 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_so
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>          <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  std::string_view result = str.substr(0, last);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  std::string_view <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = str.substr(0, last);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  str = str.substr(last+1);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
 </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
@@ -150,16 +150,16 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_so
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="comment">// if str[0] is a digit, find the value, and increment str past the number.</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="comment">// if it is not: return 1, leave str unchanged.</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordflow">if</span> (not isdigit(str[begin_loc])) <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">long</span> result = 0;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">long</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = 0;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">size_t</span> loc = begin_loc;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">while</span> (loc &lt; end_loc and isdigit(str[loc]))</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      result = 10 * result + (str[loc] - <span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = 10 * <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> + (str[loc] - <span class="charliteral">&#39;0&#39;</span>);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      loc++;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  begin_loc = loc;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
@@ -185,18 +185,18 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_so
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="comment">// if str[0] is a digit, find the value, and increment str past the number.</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="comment">// if it is not: return 1, leave str unchanged.</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  mpz_class result;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">if</span> (not isdigit(str[begin_loc])) <span class="keywordflow">return</span> result = 1;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  result = 0;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  mpz_class <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">if</span> (not isdigit(str[begin_loc])) <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = 1;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = 0;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordtype">size_t</span> loc = begin_loc;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordflow">while</span> (loc &lt; end_loc and isdigit(str[loc]))</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      result *= 10;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      result += str[loc] - <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> *= 10;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> += str[loc] - <span class="charliteral">&#39;0&#39;</span>;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      loc++;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  begin_loc = loc;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
 </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_so
 <div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../d8/d5d/_basic_poly_list_parser_8cpp_a8838076fa3e4bd00374f84757c0d2e5b.html#a8838076fa3e4bd00374f84757c0d2e5b">  113</a></span>std::vector&lt;std::string&gt; <a class="code hl_function" href="../../d8/d5d/_basic_poly_list_parser_8cpp_a8838076fa3e4bd00374f84757c0d2e5b.html#a8838076fa3e4bd00374f84757c0d2e5b">readIdentifierList</a>(<span class="keyword">const</span> std::string_view line)</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>{</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  std::vector&lt;std::string&gt; result;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  std::vector&lt;std::string&gt; <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; line.size(); ++i)</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    {</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      <span class="keywordtype">char</span> c = line[i];</div>
@@ -233,9 +233,9 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_so
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>          loc++;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        }</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      std::string iden {line.substr(i, loc-i)};</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>      result.push_back(iden);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>      <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.push_back(iden);</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
 </div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
@@ -246,12 +246,12 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_so
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">// TODO: check for errors!</span></div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">// TODO: ignore white space</span></div>
 <div class="foldopen" id="foldopen00137" data-start="{" data-end="}">
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../d7/d65/_basic_poly_8hpp_a8ef11cc15535d7f1788ed83c0cd24c96.html#a8ef11cc15535d7f1788ed83c0cd24c96">  137</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d5d/_basic_poly_list_parser_8cpp_a8ef11cc15535d7f1788ed83c0cd24c96.html#a8ef11cc15535d7f1788ed83c0cd24c96">parseBasicPoly</a>(<span class="keyword">const</span> std::string_view&amp; str, <span class="keyword">const</span> <a class="code hl_class" href="../../da/d49/class_identifier_hash.html">IdentifierHash</a>&amp; idenHash, <a class="code hl_class" href="../../d3/d9f/class_basic_poly.html">BasicPoly</a>&amp; result)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../d7/d65/_basic_poly_8hpp_a8ef11cc15535d7f1788ed83c0cd24c96.html#a8ef11cc15535d7f1788ed83c0cd24c96">  137</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d5d/_basic_poly_list_parser_8cpp_a8ef11cc15535d7f1788ed83c0cd24c96.html#a8ef11cc15535d7f1788ed83c0cd24c96">parseBasicPoly</a>(<span class="keyword">const</span> std::string_view&amp; str, <span class="keyword">const</span> <a class="code hl_class" href="../../da/d49/class_identifier_hash.html">IdentifierHash</a>&amp; idenHash, <a class="code hl_class" href="../../d3/d9f/class_basic_poly.html">BasicPoly</a>&amp; <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>)</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>{</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <span class="keywordtype">size_t</span> begin_loc = 0;</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keywordtype">size_t</span> end_loc = str.size();</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  result.<a class="code hl_function" href="../../d3/d9f/class_basic_poly_a75d2fa5b8d7e5c81e8da9f937a7a5ee1.html#a75d2fa5b8d7e5c81e8da9f937a7a5ee1">clear</a>();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.clear();</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  </div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <span class="keywordflow">if</span> (end_loc &gt; begin_loc and str[begin_loc] == <span class="charliteral">&#39;[&#39;</span>)</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    {</div>
@@ -282,11 +282,11 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_so
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      mpz_class coeff{<a class="code hl_function" href="../../d8/d5d/_basic_poly_list_parser_8cpp_a367c3d3ce2c3ea98d44753dddaa5373b.html#a367c3d3ce2c3ea98d44753dddaa5373b">readInteger_mpz_class</a>(str, begin_loc, end_loc)}; <span class="comment">// defaults to 1 if no integer present.</span></div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      <span class="keywordflow">if</span> (sign == -1) coeff = -coeff;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      result.<a class="code hl_variable" href="../../d3/d9f/class_basic_poly_ad5e6df290f9c75deda9574600ef77ad5.html#ad5e6df290f9c75deda9574600ef77ad5">mCoefficients</a>.push_back(coeff); <span class="comment">// do not clear(coeff) !</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.mCoefficients.push_back(coeff); <span class="comment">// do not clear(coeff) !</span></div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      <span class="comment">// Now we read the monomial part.</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>      <span class="keywordtype">long</span> loc = result.<a class="code hl_variable" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>.size(); <span class="comment">// this is where the length field will go.</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      result.<a class="code hl_variable" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>.push_back(1); <span class="comment">// 1 means that the monomial is `1`.</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>      <span class="keywordtype">long</span> loc = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.mMonomials.size(); <span class="comment">// this is where the length field will go.</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.mMonomials.push_back(1); <span class="comment">// 1 means that the monomial is `1`.</span></div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>      <span class="comment">// We expect the first character to be an identifier char.</span></div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>      <span class="comment">// then right after that a `*` or `^&#39;.</span></div>
@@ -334,9 +334,9 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_so
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>          <span class="comment">// if exponent is zero, don&#39;t add anything to monomial.</span></div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>          <span class="keywordflow">if</span> (e != 0)</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            {</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>              result.<a class="code hl_variable" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>.push_back(v);</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>              result.<a class="code hl_variable" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>.push_back(e);</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>              result.<a class="code hl_variable" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>[loc] += 2;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>              <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.mMonomials.push_back(v);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>              <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.mMonomials.push_back(e);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>              <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.mMonomials[loc] += 2;</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            }</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        }</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    }</div>
@@ -348,9 +348,9 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_so
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>{</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  std::string_view str { poly};</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <a class="code hl_class" href="../../da/d49/class_identifier_hash.html">IdentifierHash</a> idenMap {varnames};</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <a class="code hl_class" href="../../d3/d9f/class_basic_poly.html">BasicPoly</a> result;</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <a class="code hl_function" href="../../d8/d5d/_basic_poly_list_parser_8cpp_a8ef11cc15535d7f1788ed83c0cd24c96.html#a8ef11cc15535d7f1788ed83c0cd24c96">parseBasicPoly</a>(str, idenMap, result);</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <a class="code hl_class" href="../../d3/d9f/class_basic_poly.html">BasicPoly</a> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <a class="code hl_function" href="../../d8/d5d/_basic_poly_list_parser_8cpp_a8ef11cc15535d7f1788ed83c0cd24c96.html#a8ef11cc15535d7f1788ed83c0cd24c96">parseBasicPoly</a>(str, idenMap, <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>}</div>
 </div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
@@ -476,12 +476,10 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_so
 <div class="ttc" id="a_basic_poly_list_parser_8cpp_abf790415d37a863639c120d0858cd04f_html_abf790415d37a863639c120d0858cd04f"><div class="ttname"><a href="../../d8/d5d/_basic_poly_list_parser_8cpp_abf790415d37a863639c120d0858cd04f.html#abf790415d37a863639c120d0858cd04f">parseMsolveFromString</a></div><div class="ttdeci">BasicPolyList parseMsolveFromString(std::string contents)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d5d/_basic_poly_list_parser_8cpp_source.html#l00282">BasicPolyListParser.cpp:282</a></div></div>
 <div class="ttc" id="a_basic_poly_list_parser_8cpp_adcc9b7284b86315c071505f7a3ad3d71_html_adcc9b7284b86315c071505f7a3ad3d71"><div class="ttname"><a href="../../d8/d5d/_basic_poly_list_parser_8cpp_adcc9b7284b86315c071505f7a3ad3d71.html#adcc9b7284b86315c071505f7a3ad3d71">parseBasicPolyListFromString</a></div><div class="ttdeci">BasicPolyList parseBasicPolyListFromString(std::string contents, const IdentifierHash &amp;idenMap)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d5d/_basic_poly_list_parser_8cpp_source.html#l00242">BasicPolyListParser.cpp:242</a></div></div>
 <div class="ttc" id="a_basic_poly_list_parser_8hpp_html"><div class="ttname"><a href="../../d1/de7/_basic_poly_list_parser_8hpp.html">BasicPolyListParser.hpp</a></div></div>
-<div class="ttc" id="aclass_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c_html_a62c9a46760d40a4eb2bfc0bdf2b5d75c"><div class="ttname"><a href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">BasicPoly::mMonomials</a></div><div class="ttdeci">std::vector&lt; int &gt; mMonomials</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00018">BasicPoly.hpp:18</a></div></div>
-<div class="ttc" id="aclass_basic_poly_a75d2fa5b8d7e5c81e8da9f937a7a5ee1_html_a75d2fa5b8d7e5c81e8da9f937a7a5ee1"><div class="ttname"><a href="../../d3/d9f/class_basic_poly_a75d2fa5b8d7e5c81e8da9f937a7a5ee1.html#a75d2fa5b8d7e5c81e8da9f937a7a5ee1">BasicPoly::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition</b> <a href="../../d5/dae/_basic_poly_8cpp_source.html#l00005">BasicPoly.cpp:5</a></div></div>
-<div class="ttc" id="aclass_basic_poly_ad5e6df290f9c75deda9574600ef77ad5_html_ad5e6df290f9c75deda9574600ef77ad5"><div class="ttname"><a href="../../d3/d9f/class_basic_poly_ad5e6df290f9c75deda9574600ef77ad5.html#ad5e6df290f9c75deda9574600ef77ad5">BasicPoly::mCoefficients</a></div><div class="ttdeci">std::vector&lt; mpz_class &gt; mCoefficients</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00016">BasicPoly.hpp:16</a></div></div>
 <div class="ttc" id="aclass_basic_poly_html"><div class="ttname"><a href="../../d3/d9f/class_basic_poly.html">BasicPoly</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00013">BasicPoly.hpp:14</a></div></div>
 <div class="ttc" id="aclass_identifier_hash_a19f73cee41bebee1372d40b41ffef836_html_a19f73cee41bebee1372d40b41ffef836"><div class="ttname"><a href="../../da/d49/class_identifier_hash_a19f73cee41bebee1372d40b41ffef836.html#a19f73cee41bebee1372d40b41ffef836">IdentifierHash::find</a></div><div class="ttdeci">auto find(std::string_view s) const -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00077">BasicPoly.hpp:77</a></div></div>
 <div class="ttc" id="aclass_identifier_hash_html"><div class="ttname"><a href="../../da/d49/class_identifier_hash.html">IdentifierHash</a></div><div class="ttdoc">IdentifierHash: used to facilitate parsing of polynomials from strings and files.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00060">BasicPoly.hpp:61</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 <div class="ttc" id="astructparsing__error_html"><div class="ttname"><a href="../../d8/d84/structparsing__error.html">parsing_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00054">BasicPoly.hpp:55</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -489,7 +487,7 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp.html">BasicPolyListParser.cpp</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:28 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

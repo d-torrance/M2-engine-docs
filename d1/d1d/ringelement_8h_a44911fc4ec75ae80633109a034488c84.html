@@ -110,13 +110,13 @@ $(document).ready(function(){initNavTree('d1/d1d/ringelement_8h_a44911fc4ec75ae8
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">M2_bool&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d28/m2-types_8h_a7070aa7b07cda16d387ba6be4bd917fa.html#a7070aa7b07cda16d387ba6be4bd917fa">M2_bool</a>&#160;</td>
           <td class="paramname"><em>lobound_given</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">M2_bool&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d28/m2-types_8h_a7070aa7b07cda16d387ba6be4bd917fa.html#a7070aa7b07cda16d387ba6be4bd917fa">M2_bool</a>&#160;</td>
           <td class="paramname"><em>hibound_given</em>, </td>
         </tr>
         <tr>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('d1/d1d/ringelement_8h_a44911fc4ec75ae8
 <div class="line"><span class="lineno">  735</span>      <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d58/class_polynomial_ring.html">PolynomialRing</a> *P = f-&gt;<a class="code hl_function" href="../../d6/de2/class_ring_element_aeeacf97a0fec2e1e7ea86d9050a84d83.html#aeeacf97a0fec2e1e7ea86d9050a84d83">get_ring</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a73bec90f6a8598b3c5cdc201b068589a.html#a73bec90f6a8598b3c5cdc201b068589a">cast_to_PolynomialRing</a>();</div>
 <div class="line"><span class="lineno">  736</span>      <span class="keywordflow">if</span> (P == <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">  737</span>        {</div>
-<div class="line"><span class="lineno">  738</span>          <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a polynomial&quot;</span>);</div>
+<div class="line"><span class="lineno">  738</span>          <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;expected a polynomial&quot;</span>);</div>
 <div class="line"><span class="lineno">  739</span>          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  740</span>        }</div>
 <div class="line"><span class="lineno">  741</span>      <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> g = P-&gt;<a class="code hl_function" href="../../d5/d58/class_polynomial_ring_a4034691bb822f8b29c5dd0293f57a5e4.html#a4034691bb822f8b29c5dd0293f57a5e4">get_part</a>(M2_arrayint_to_stdvector&lt;int&gt;(wts),</div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('d1/d1d/ringelement_8h_a44911fc4ec75ae8
 <div class="line"><span class="lineno">  747</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(P, g);</div>
 <div class="line"><span class="lineno">  748</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><span class="lineno">  749</span>    {</div>
-<div class="line"><span class="lineno">  750</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno">  750</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(e.what());</div>
 <div class="line"><span class="lineno">  751</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  752</span>  }</div>
 <div class="line"><span class="lineno">  753</span>}</div>
@@ -168,11 +168,11 @@ $(document).ready(function(){initNavTree('d1/d1d/ringelement_8h_a44911fc4ec75ae8
 <div class="ttc" id="aclass_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b_html_a82fc5ddcc26a6f2efe867bff0088d54b"><div class="ttname"><a href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">RingElement::get_value</a></div><div class="ttdeci">ring_elem get_value() const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d5a/relem_8hpp_source.html#l00023">relem.hpp:23</a></div></div>
 <div class="ttc" id="aclass_ring_element_ab978463e39096a4e0d1ecc0720f9acf3_html_ab978463e39096a4e0d1ecc0720f9acf3"><div class="ttname"><a href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a></div><div class="ttdeci">static RingElement * make_raw(const Ring *R, ring_elem f)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00020">relem.cpp:20</a></div></div>
 <div class="ttc" id="aclass_ring_element_aeeacf97a0fec2e1e7ea86d9050a84d83_html_aeeacf97a0fec2e1e7ea86d9050a84d83"><div class="ttname"><a href="../../d6/de2/class_ring_element_aeeacf97a0fec2e1e7ea86d9050a84d83.html#aeeacf97a0fec2e1e7ea86d9050a84d83">RingElement::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d5a/relem_8hpp_source.html#l00025">relem.hpp:25</a></div></div>
-<div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 <div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00042">ringelem.hpp:43</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dd/dcf/class_ring_a73bec90f6a8598b3c5cdc201b068589a.html#a73bec90f6a8598b3c5cdc201b068589a">Ring::cast_to_PolynomialRing()</a>, <a class="el" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR()</a>, <a class="el" href="../../d5/d58/class_polynomial_ring_a4034691bb822f8b29c5dd0293f57a5e4.html#a4034691bb822f8b29c5dd0293f57a5e4">PolynomialRing::get_part()</a>, <a class="el" href="../../d6/de2/class_ring_element_aeeacf97a0fec2e1e7ea86d9050a84d83.html#aeeacf97a0fec2e1e7ea86d9050a84d83">RingElement::get_ring()</a>, and <a class="el" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">RingElement::get_value()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dcf/class_ring_a73bec90f6a8598b3c5cdc201b068589a.html#a73bec90f6a8598b3c5cdc201b068589a">Ring::cast_to_PolynomialRing()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, <a class="el" href="../../d5/d58/class_polynomial_ring_a4034691bb822f8b29c5dd0293f57a5e4.html#a4034691bb822f8b29c5dd0293f57a5e4">PolynomialRing::get_part()</a>, <a class="el" href="../../d6/de2/class_ring_element_aeeacf97a0fec2e1e7ea86d9050a84d83.html#aeeacf97a0fec2e1e7ea86d9050a84d83">RingElement::get_ring()</a>, <a class="el" href="../../d6/de2/class_ring_element_a82fc5ddcc26a6f2efe867bff0088d54b.html#a82fc5ddcc26a6f2efe867bff0088d54b">RingElement::get_value()</a>, and <a class="el" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw()</a>.</p>
 
 </div>
 </div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('d1/d1d/ringelement_8h_a44911fc4ec75ae8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d1/d1d/ringelement_8h.html">ringelement.h</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

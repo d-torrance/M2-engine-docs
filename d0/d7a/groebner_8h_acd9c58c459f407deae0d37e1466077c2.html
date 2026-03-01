@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_acd9c58c459f407deae
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">M2_arrayintOrNull rawResolutionBetti </td>
+          <td class="memname"><a class="el" href="../../de/d28/m2-types_8h_a071c143092bff3ecfb25de7581dfba58.html#a071c143092bff3ecfb25de7581dfba58">M2_arrayintOrNull</a> rawResolutionBetti </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d6/dea/class_computation.html">Computation</a> *&#160;</td>
           <td class="paramname"><em>C</em>, </td>
@@ -121,18 +121,18 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_acd9c58c459f407deae
 <div class="line"><span class="lineno">  621</span>    {</div>
 <div class="line"><span class="lineno">  622</span>      <a class="code hl_class" href="../../dd/d51/class_resolution_computation.html">ResolutionComputation</a> *<a class="code hl_variable" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a> = C-&gt;<a class="code hl_function" href="../../d6/dea/class_computation_a4d7b512061b6d0cfe740ee06e160bba9.html#a4d7b512061b6d0cfe740ee06e160bba9">cast_to_ResolutionComputation</a>();</div>
 <div class="line"><span class="lineno">  623</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a> != <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>-&gt;<a class="code hl_function" href="../../dd/d51/class_resolution_computation_a5b52c222f7a75924a9d0d1c586da44f8.html#a5b52c222f7a75924a9d0d1c586da44f8">get_betti</a>(type);</div>
-<div class="line"><span class="lineno">  624</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected resolution computation type&quot;</span>);</div>
+<div class="line"><span class="lineno">  624</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;expected resolution computation type&quot;</span>);</div>
 <div class="line"><span class="lineno">  625</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  626</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
 <div class="line"><span class="lineno">  627</span>    {</div>
-<div class="line"><span class="lineno">  628</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno">  628</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(e.what());</div>
 <div class="line"><span class="lineno">  629</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  630</span>  }</div>
 <div class="line"><span class="lineno">  631</span>}</div>
 <div class="ttc" id="aclass_computation_a4d7b512061b6d0cfe740ee06e160bba9_html_a4d7b512061b6d0cfe740ee06e160bba9"><div class="ttname"><a href="../../d6/dea/class_computation_a4d7b512061b6d0cfe740ee06e160bba9.html#a4d7b512061b6d0cfe740ee06e160bba9">Computation::cast_to_ResolutionComputation</a></div><div class="ttdeci">virtual ResolutionComputation * cast_to_ResolutionComputation()</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/comp_8hpp_source.html#l00061">comp.hpp:61</a></div></div>
 <div class="ttc" id="aclass_resolution_computation_a5b52c222f7a75924a9d0d1c586da44f8_html_a5b52c222f7a75924a9d0d1c586da44f8"><div class="ttname"><a href="../../dd/d51/class_resolution_computation_a5b52c222f7a75924a9d0d1c586da44f8.html#a5b52c222f7a75924a9d0d1c586da44f8">ResolutionComputation::get_betti</a></div><div class="ttdeci">virtual M2_arrayint get_betti(int type) const =0</div></div>
 <div class="ttc" id="aclass_resolution_computation_html"><div class="ttname"><a href="../../dd/d51/class_resolution_computation.html">ResolutionComputation</a></div><div class="ttdoc">Base class for free resolution computation classes.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0b/comp-res_8hpp_source.html#l00015">comp-res.hpp:17</a></div></div>
-<div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
 <div class="ttc" id="ares-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903_html_acc0eea0b8cd2df09e6f3c2bade95a903"><div class="ttname"><a href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a></div><div class="ttdeci">tbb::flow::graph G</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dfb/res-tasking-example_8cpp_source.html#l00017">res-tasking-example.cpp:17</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 </div><!-- fragment -->
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('d0/d7a/groebner_8h_acd9c58c459f407deae
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d0/d7a/groebner_8h.html">groebner.h</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -133,8 +133,8 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a0a846f13824ad2
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d96/poly_8cpp_source.html#l00628">628</a> of file <a class="el" href="../../d3/d96/poly_8cpp_source.html">poly.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  631</span>{</div>
-<div class="line"><span class="lineno">  632</span>  <a class="code hl_struct" href="../../d0/dbc/struct_nterm.html">Nterm</a> *result = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  633</span>  <span class="keywordflow">if</span> (<a class="code hl_define" href="../../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809">POLY</a>(f) == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  632</span>  <a class="code hl_struct" href="../../d0/dbc/struct_nterm.html">Nterm</a> *<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  633</span>  <span class="keywordflow">if</span> (<a class="code hl_define" href="../../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809">POLY</a>(f) == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><span class="lineno">  634</span>  <span class="keywordtype">int</span> lo, hi;</div>
 <div class="line"><span class="lineno">  635</span>  <a class="code hl_function" href="../../d3/dfc/class_poly_ring_a268ffbd716206c7e8925633171d8cea2.html#a268ffbd716206c7e8925633171d8cea2">degree_weights</a>(f, wts, lo, hi);</div>
 <div class="line"><span class="lineno">  636</span>  assert(wts[v] != 0);</div>
@@ -143,10 +143,11 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a0a846f13824ad2
 <div class="line"><span class="lineno">  639</span>}</div>
 <div class="ttc" id="aclass_poly_ring_a268ffbd716206c7e8925633171d8cea2_html_a268ffbd716206c7e8925633171d8cea2"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_a268ffbd716206c7e8925633171d8cea2.html#a268ffbd716206c7e8925633171d8cea2">PolyRing::degree_weights</a></div><div class="ttdeci">virtual void degree_weights(const ring_elem f, const std::vector&lt; int &gt; &amp;wts, int &amp;lo, int &amp;hi) const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d96/poly_8cpp_source.html#l00568">poly.cpp:568</a></div></div>
 <div class="ttc" id="aclass_poly_ring_a45458c49e0fa73eeba2ef24437bc5552_html_a45458c49e0fa73eeba2ef24437bc5552"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_a45458c49e0fa73eeba2ef24437bc5552.html#a45458c49e0fa73eeba2ef24437bc5552">PolyRing::homogenize</a></div><div class="ttdeci">virtual ring_elem homogenize(const ring_elem f, int v, int deg, const std::vector&lt; int &gt; &amp;wts) const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d96/poly_8cpp_source.html#l00591">poly.cpp:591</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 <div class="ttc" id="apoly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809_html_af4c97ae01895f6d3290e9c2ec19a5809"><div class="ttname"><a href="../../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809">POLY</a></div><div class="ttdeci">#define POLY(q)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d96/poly_8cpp_source.html#l00023">poly.cpp:23</a></div></div>
 <div class="ttc" id="astruct_nterm_html"><div class="ttname"><a href="../../d0/dbc/struct_nterm.html">Nterm</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00095">ringelem.hpp:96</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/dfc/class_poly_ring_a268ffbd716206c7e8925633171d8cea2.html#a268ffbd716206c7e8925633171d8cea2">degree_weights()</a>, <a class="el" href="../../d3/dfc/class_poly_ring_a45458c49e0fa73eeba2ef24437bc5552.html#a45458c49e0fa73eeba2ef24437bc5552">homogenize()</a>, and <a class="el" href="../../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809">POLY</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/dfc/class_poly_ring_a268ffbd716206c7e8925633171d8cea2.html#a268ffbd716206c7e8925633171d8cea2">degree_weights()</a>, <a class="el" href="../../d3/dfc/class_poly_ring_a45458c49e0fa73eeba2ef24437bc5552.html#a45458c49e0fa73eeba2ef24437bc5552">homogenize()</a>, <a class="el" href="../../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809">POLY</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 </div>
 </div>
@@ -156,7 +157,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_a0a846f13824ad2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

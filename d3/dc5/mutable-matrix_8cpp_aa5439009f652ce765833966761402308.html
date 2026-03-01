@@ -118,17 +118,19 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_aa5439009f6
 <p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l00992">992</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  995</span>{</div>
 <div class="line"><span class="lineno">  996</span>  <span class="keywordtype">size_t</span> len = elems.size();</div>
-<div class="line"><span class="lineno">  997</span>  engine_RawRingElementArray result =</div>
-<div class="line"><span class="lineno">  998</span>      <a class="code hl_define" href="../../d1/d81/_m2mem-replacement_8h_a31dcc58936c13ff01270d6ee43733178.html#a31dcc58936c13ff01270d6ee43733178">getmemarraytype</a>(engine_RawRingElementArray, len);</div>
-<div class="line"><span class="lineno">  999</span>  result-&gt;len = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(len);</div>
+<div class="line"><span class="lineno">  997</span>  engine_RawRingElementArray <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> =</div>
+<div class="line"><span class="lineno">  998</span>      <a class="code hl_define" href="../../db/d07/m2-mem_8h_a31dcc58936c13ff01270d6ee43733178.html#a31dcc58936c13ff01270d6ee43733178">getmemarraytype</a>(engine_RawRingElementArray, len);</div>
+<div class="line"><span class="lineno">  999</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>-&gt;len = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(len);</div>
 <div class="line"><span class="lineno"> 1000</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; len; i++)</div>
-<div class="line"><span class="lineno"> 1001</span>    result-&gt;array[i] = RingElement::make_raw(R, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(elems[i]));</div>
+<div class="line"><span class="lineno"> 1001</span>    <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>-&gt;array[i] = <a class="code hl_function" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(elems[i]));</div>
 <div class="line"><span class="lineno"> 1002</span> </div>
-<div class="line"><span class="lineno"> 1003</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno"> 1003</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><span class="lineno"> 1004</span>}</div>
-<div class="ttc" id="a_m2mem-replacement_8h_a31dcc58936c13ff01270d6ee43733178_html_a31dcc58936c13ff01270d6ee43733178"><div class="ttname"><a href="../../d1/d81/_m2mem-replacement_8h_a31dcc58936c13ff01270d6ee43733178.html#a31dcc58936c13ff01270d6ee43733178">getmemarraytype</a></div><div class="ttdeci">#define getmemarraytype(S, len)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d81/_m2mem-replacement_8h_source.html#l00034">M2mem-replacement.h:34</a></div></div>
+<div class="ttc" id="aclass_ring_element_ab978463e39096a4e0d1ecc0720f9acf3_html_ab978463e39096a4e0d1ecc0720f9acf3"><div class="ttname"><a href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a></div><div class="ttdeci">static RingElement * make_raw(const Ring *R, ring_elem f)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00020">relem.cpp:20</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="am2-mem_8h_a31dcc58936c13ff01270d6ee43733178_html_a31dcc58936c13ff01270d6ee43733178"><div class="ttname"><a href="../../db/d07/m2-mem_8h_a31dcc58936c13ff01270d6ee43733178.html#a31dcc58936c13ff01270d6ee43733178">getmemarraytype</a></div><div class="ttdeci">#define getmemarraytype(S, len)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d07/m2-mem_8h_source.html#l00103">m2-mem.h:103</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d1/d81/_m2mem-replacement_8h_a31dcc58936c13ff01270d6ee43733178.html#a31dcc58936c13ff01270d6ee43733178">getmemarraytype</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d07/m2-mem_8h_a31dcc58936c13ff01270d6ee43733178.html#a31dcc58936c13ff01270d6ee43733178">getmemarraytype</a>, <a class="el" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_a5e84c027add019c7cf647544eaf29d2a.html#a5e84c027add019c7cf647544eaf29d2a">rawLinAlgCharPoly()</a>, and <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_a09e54ec60f2f17ff32b8f65dcad41d95.html#a09e54ec60f2f17ff32b8f65dcad41d95">rawLinAlgMinPoly()</a>.</p>
 
@@ -140,7 +142,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_aa5439009f6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d3/dc5/mutable-matrix_8cpp.html">mutable-matrix.cpp</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

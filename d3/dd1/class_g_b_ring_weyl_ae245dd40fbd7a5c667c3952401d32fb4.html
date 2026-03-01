@@ -148,14 +148,15 @@ $(document).ready(function(){initNavTree('d3/dd1/class_g_b_ring_weyl_ae245dd40fb
 <p class="definition">Definition at line <a class="el" href="../../d0/d29/gbring_8cpp_source.html#l00216">216</a> of file <a class="el" href="../../d0/d29/gbring_8cpp_source.html">gbring.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  221</span>{</div>
 <div class="line"><span class="lineno">  222</span>  <span class="comment">// Remember: this multiplies w/o regard to any quotient elements</span></div>
-<div class="line"><span class="lineno">  223</span>  <a class="code hl_class" href="../../dc/d58/classgbvector_heap.html">gbvectorHeap</a> result(<span class="keyword">this</span>, F);</div>
-<div class="line"><span class="lineno">  224</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d8/d73/class_g_b_ring_a08290dc9e64e8e63c1bcb8339ea0ed6f.html#a08290dc9e64e8e63c1bcb8339ea0ed6f">weyl</a>-&gt;<a class="code hl_function" href="../../dd/dc2/class_weyl_algebra_a6520caea68c3e8510e5ad17b5249552c.html#a6520caea68c3e8510e5ad17b5249552c">gbvector_mult_by_term</a>(result, f, u, monom, comp);</div>
+<div class="line"><span class="lineno">  223</span>  <a class="code hl_class" href="../../dc/d58/classgbvector_heap.html">gbvectorHeap</a> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>(<span class="keyword">this</span>, F);</div>
+<div class="line"><span class="lineno">  224</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d8/d73/class_g_b_ring_a08290dc9e64e8e63c1bcb8339ea0ed6f.html#a08290dc9e64e8e63c1bcb8339ea0ed6f">weyl</a>-&gt;<a class="code hl_function" href="../../dd/dc2/class_weyl_algebra_a6520caea68c3e8510e5ad17b5249552c.html#a6520caea68c3e8510e5ad17b5249552c">gbvector_mult_by_term</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, f, u, monom, comp);</div>
 <div class="line"><span class="lineno">  225</span>}</div>
 <div class="ttc" id="aclass_g_b_ring_a08290dc9e64e8e63c1bcb8339ea0ed6f_html_a08290dc9e64e8e63c1bcb8339ea0ed6f"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_a08290dc9e64e8e63c1bcb8339ea0ed6f.html#a08290dc9e64e8e63c1bcb8339ea0ed6f">GBRing::weyl</a></div><div class="ttdeci">const WeylAlgebra * weyl</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00098">gbring.hpp:98</a></div></div>
 <div class="ttc" id="aclass_weyl_algebra_a6520caea68c3e8510e5ad17b5249552c_html_a6520caea68c3e8510e5ad17b5249552c"><div class="ttname"><a href="../../dd/dc2/class_weyl_algebra_a6520caea68c3e8510e5ad17b5249552c.html#a6520caea68c3e8510e5ad17b5249552c">WeylAlgebra::gbvector_mult_by_term</a></div><div class="ttdeci">gbvector * gbvector_mult_by_term(gbvectorHeap &amp;result, const gbvector *f, const ring_elem c, const_monomial m, int comp) const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dee/weylalg_8cpp_source.html#l00541">weylalg.cpp:541</a></div></div>
 <div class="ttc" id="aclassgbvector_heap_html"><div class="ttname"><a href="../../dc/d58/classgbvector_heap.html">gbvectorHeap</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00578">gbring.hpp:579</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dd/dc2/class_weyl_algebra_a6520caea68c3e8510e5ad17b5249552c.html#a6520caea68c3e8510e5ad17b5249552c">WeylAlgebra::gbvector_mult_by_term()</a>, and <a class="el" href="../../d8/d73/class_g_b_ring_a08290dc9e64e8e63c1bcb8339ea0ed6f.html#a08290dc9e64e8e63c1bcb8339ea0ed6f">GBRing::weyl</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dc2/class_weyl_algebra_a6520caea68c3e8510e5ad17b5249552c.html#a6520caea68c3e8510e5ad17b5249552c">WeylAlgebra::gbvector_mult_by_term()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>, and <a class="el" href="../../d8/d73/class_g_b_ring_a08290dc9e64e8e63c1bcb8339ea0ed6f.html#a08290dc9e64e8e63c1bcb8339ea0ed6f">GBRing::weyl</a>.</p>
 
 </div>
 </div>
@@ -165,7 +166,7 @@ $(document).ready(function(){initNavTree('d3/dd1/class_g_b_ring_weyl_ae245dd40fb
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dd1/class_g_b_ring_weyl.html">GBRingWeyl</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:31 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

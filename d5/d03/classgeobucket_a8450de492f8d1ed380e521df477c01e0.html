@@ -116,20 +116,23 @@ template&lt;class FREEMODULETYPE , class VECTYPE &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/d90/geobucket_8hpp_source.html#l00143">143</a> of file <a class="el" href="../../d8/d90/geobucket_8hpp_source.html">geobucket.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  144</span>{</div>
-<div class="line"><span class="lineno">  145</span>  VECTYPE result = NULL;</div>
+<div class="line"><span class="lineno">  145</span>  VECTYPE <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = NULL;</div>
 <div class="line"><span class="lineno">  146</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;=<a class="code hl_variable" href="../../d5/d03/classgeobucket_a6ace0bb5d70b1b1f3b88fc794a577e88.html#a6ace0bb5d70b1b1f3b88fc794a577e88">top_of_heap</a>; i++)</div>
 <div class="line"><span class="lineno">  147</span>    {</div>
 <div class="line"><span class="lineno">  148</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d5/d03/classgeobucket_a22c74d5df52a2d763561dc2eec03354e.html#a22c74d5df52a2d763561dc2eec03354e">heap</a>[i] == NULL) <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  149</span>      <a class="code hl_variable" href="../../d5/d03/classgeobucket_a2ea766f7b612887f12436fb31ae0a642.html#a2ea766f7b612887f12436fb31ae0a642">F</a>-&gt;add_to(result, <a class="code hl_variable" href="../../d5/d03/classgeobucket_a22c74d5df52a2d763561dc2eec03354e.html#a22c74d5df52a2d763561dc2eec03354e">heap</a>[i]);</div>
+<div class="line"><span class="lineno">  149</span>      <a class="code hl_variable" href="../../d5/d03/classgeobucket_a2ea766f7b612887f12436fb31ae0a642.html#a2ea766f7b612887f12436fb31ae0a642">F</a>-&gt;add_to(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, <a class="code hl_variable" href="../../d5/d03/classgeobucket_a22c74d5df52a2d763561dc2eec03354e.html#a22c74d5df52a2d763561dc2eec03354e">heap</a>[i]);</div>
 <div class="line"><span class="lineno">  150</span>      <a class="code hl_variable" href="../../d5/d03/classgeobucket_a22c74d5df52a2d763561dc2eec03354e.html#a22c74d5df52a2d763561dc2eec03354e">heap</a>[i] = NULL;</div>
 <div class="line"><span class="lineno">  151</span>    }</div>
 <div class="line"><span class="lineno">  152</span>  <a class="code hl_variable" href="../../d5/d03/classgeobucket_a6ace0bb5d70b1b1f3b88fc794a577e88.html#a6ace0bb5d70b1b1f3b88fc794a577e88">top_of_heap</a> = -1;</div>
-<div class="line"><span class="lineno">  153</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  153</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><span class="lineno">  154</span>}</div>
 <div class="ttc" id="aclassgeobucket_a22c74d5df52a2d763561dc2eec03354e_html_a22c74d5df52a2d763561dc2eec03354e"><div class="ttname"><a href="../../d5/d03/classgeobucket_a22c74d5df52a2d763561dc2eec03354e.html#a22c74d5df52a2d763561dc2eec03354e">geobucket::heap</a></div><div class="ttdeci">VECTYPE heap[GEOHEAP_SIZE]</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d90/geobucket_8hpp_source.html#l00024">geobucket.hpp:24</a></div></div>
 <div class="ttc" id="aclassgeobucket_a2ea766f7b612887f12436fb31ae0a642_html_a2ea766f7b612887f12436fb31ae0a642"><div class="ttname"><a href="../../d5/d03/classgeobucket_a2ea766f7b612887f12436fb31ae0a642.html#a2ea766f7b612887f12436fb31ae0a642">geobucket::F</a></div><div class="ttdeci">FREEMODULETYPE * F</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d90/geobucket_8hpp_source.html#l00022">geobucket.hpp:22</a></div></div>
 <div class="ttc" id="aclassgeobucket_a6ace0bb5d70b1b1f3b88fc794a577e88_html_a6ace0bb5d70b1b1f3b88fc794a577e88"><div class="ttname"><a href="../../d5/d03/classgeobucket_a6ace0bb5d70b1b1f3b88fc794a577e88.html#a6ace0bb5d70b1b1f3b88fc794a577e88">geobucket::top_of_heap</a></div><div class="ttdeci">int top_of_heap</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d90/geobucket_8hpp_source.html#l00025">geobucket.hpp:25</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -138,7 +141,7 @@ template&lt;class FREEMODULETYPE , class VECTYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d03/classgeobucket.html">geobucket</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:31 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

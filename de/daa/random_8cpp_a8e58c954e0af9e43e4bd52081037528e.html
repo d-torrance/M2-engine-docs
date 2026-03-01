@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('de/daa/random_8cpp_a8e58c954e0af9e43e4
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">gmp_ZZ&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d28/m2-types_8h_a8a5e1d7abe325f6446ab419df1e1dc31.html#a8a5e1d7abe325f6446ab419df1e1dc31">gmp_ZZ</a>&#160;</td>
           <td class="paramname"><em>maxN</em>&#160;</td>
         </tr>
         <tr>
@@ -121,13 +121,14 @@ $(document).ready(function(){initNavTree('de/daa/random_8cpp_a8e58c954e0af9e43e4
 <div class="line"><span class="lineno">   60</span>  <span class="keywordflow">if</span> (mpz_cmp_si(maxN, 0) &lt;= 0)</div>
 <div class="line"><span class="lineno">   61</span>    <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(<span class="stringliteral">&quot;expected a positive height&quot;</span>);</div>
 <div class="line"><span class="lineno">   62</span> </div>
-<div class="line"><span class="lineno">   63</span>  mpz_urandomm(result, <a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>, maxN);</div>
+<div class="line"><span class="lineno">   63</span>  mpz_urandomm(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, <a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>, maxN);</div>
 <div class="line"><span class="lineno">   64</span>}</div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 <div class="ttc" id="arandom_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3_html_a2b3a315978345e6081d8a9d6e9ab2ab3"><div class="ttname"><a href="../../de/daa/random_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3.html#a2b3a315978345e6081d8a9d6e9ab2ab3">maxHeight</a></div><div class="ttdeci">static mpz_t maxHeight</div><div class="ttdef"><b>Definition</b> <a href="../../de/daa/random_8cpp_source.html#l00017">random.cpp:17</a></div></div>
 <div class="ttc" id="arandom_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d_html_a9f8b71742e74bcfa6c4b6d38a690329d"><div class="ttname"><a href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a></div><div class="ttdeci">static gmp_randstate_t state</div><div class="ttdef"><b>Definition</b> <a href="../../de/daa/random_8cpp_source.html#l00018">random.cpp:18</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../de/daa/random_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3.html#a2b3a315978345e6081d8a9d6e9ab2ab3">maxHeight</a>, and <a class="el" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>.</p>
+<p class="reference">References <a class="el" href="../../de/daa/random_8cpp_a2b3a315978345e6081d8a9d6e9ab2ab3.html#a2b3a315978345e6081d8a9d6e9ab2ab3">maxHeight</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>, and <a class="el" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d2b/class_ring_z_z_a8e4dc21105e9afc1a2191904a23eed50.html#a8e4dc21105e9afc1a2191904a23eed50">RingZZ::random()</a>, <a class="el" href="../../db/d2e/class_m2_1_1_a_ring_z_z_g_m_p_abd855370ab0ef3bfc0a5400096989df6.html#abd855370ab0ef3bfc0a5400096989df6">M2::ARingZZGMP::random()</a>, and <a class="el" href="../../de/daa/random_8cpp_ac0944224ddc5f22acd4a9c9532de3f5c.html#ac0944224ddc5f22acd4a9c9532de3f5c">rawRandomInteger()</a>.</p>
 
@@ -139,7 +140,7 @@ $(document).ready(function(){initNavTree('de/daa/random_8cpp_a8e58c954e0af9e43e4
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../de/daa/random_8cpp.html">random.cpp</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

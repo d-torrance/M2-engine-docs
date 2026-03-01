@@ -117,16 +117,19 @@ $(document).ready(function(){initNavTree('dd/d3a/classbinomial__ring_ac0a9ab39b8
 
 <p class="definition">Definition at line <a class="el" href="../../db/d5c/gb-toric_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../db/d5c/gb-toric_8cpp_source.html">gb-toric.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  144</span>{</div>
-<div class="line"><span class="lineno">  145</span>  <a class="code hl_typedef" href="../../d8/d11/gbring_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a> result = <a class="code hl_function" href="../../dd/d3a/classbinomial__ring_a40f763f9a0aa799eef7a20b4b5d5afe5.html#a40f763f9a0aa799eef7a20b4b5d5afe5">new_monomial</a>();</div>
-<div class="line"><span class="lineno">  146</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../dd/d3a/classbinomial__ring_a457b1aa95e47c7d4bfa43778088613cc.html#a457b1aa95e47c7d4bfa43778088613cc">nvars</a>; i++) result[i] = (m[i] &gt; n[i] ? m[i] : n[i]);</div>
-<div class="line"><span class="lineno">  147</span>  <a class="code hl_function" href="../../dd/d3a/classbinomial__ring_a19b3c9d75f6507f7ba7ddc8fdfe4ff2c.html#a19b3c9d75f6507f7ba7ddc8fdfe4ff2c">set_weights</a>(result);</div>
-<div class="line"><span class="lineno">  148</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  145</span>  <a class="code hl_typedef" href="../../d8/d11/gbring_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <a class="code hl_function" href="../../dd/d3a/classbinomial__ring_a40f763f9a0aa799eef7a20b4b5d5afe5.html#a40f763f9a0aa799eef7a20b4b5d5afe5">new_monomial</a>();</div>
+<div class="line"><span class="lineno">  146</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../dd/d3a/classbinomial__ring_a457b1aa95e47c7d4bfa43778088613cc.html#a457b1aa95e47c7d4bfa43778088613cc">nvars</a>; i++) <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>[i] = (m[i] &gt; n[i] ? m[i] : n[i]);</div>
+<div class="line"><span class="lineno">  147</span>  <a class="code hl_function" href="../../dd/d3a/classbinomial__ring_a19b3c9d75f6507f7ba7ddc8fdfe4ff2c.html#a19b3c9d75f6507f7ba7ddc8fdfe4ff2c">set_weights</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>);</div>
+<div class="line"><span class="lineno">  148</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><span class="lineno">  149</span>}</div>
 <div class="ttc" id="aclassbinomial__ring_a19b3c9d75f6507f7ba7ddc8fdfe4ff2c_html_a19b3c9d75f6507f7ba7ddc8fdfe4ff2c"><div class="ttname"><a href="../../dd/d3a/classbinomial__ring_a19b3c9d75f6507f7ba7ddc8fdfe4ff2c.html#a19b3c9d75f6507f7ba7ddc8fdfe4ff2c">binomial_ring::set_weights</a></div><div class="ttdeci">void set_weights(monomial0 m) const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d5c/gb-toric_8cpp_source.html#l00073">gb-toric.cpp:73</a></div></div>
 <div class="ttc" id="aclassbinomial__ring_a40f763f9a0aa799eef7a20b4b5d5afe5_html_a40f763f9a0aa799eef7a20b4b5d5afe5"><div class="ttname"><a href="../../dd/d3a/classbinomial__ring_a40f763f9a0aa799eef7a20b4b5d5afe5.html#a40f763f9a0aa799eef7a20b4b5d5afe5">binomial_ring::new_monomial</a></div><div class="ttdeci">monomial0 new_monomial() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d5c/gb-toric_8cpp_source.html#l00061">gb-toric.cpp:61</a></div></div>
 <div class="ttc" id="aclassbinomial__ring_a457b1aa95e47c7d4bfa43778088613cc_html_a457b1aa95e47c7d4bfa43778088613cc"><div class="ttname"><a href="../../dd/d3a/classbinomial__ring_a457b1aa95e47c7d4bfa43778088613cc.html#a457b1aa95e47c7d4bfa43778088613cc">binomial_ring::nvars</a></div><div class="ttdeci">int nvars</div><div class="ttdef"><b>Definition</b> <a href="../../de/d75/gb-toric_8hpp_source.html#l00063">gb-toric.hpp:63</a></div></div>
 <div class="ttc" id="agbring_8hpp_a4b3f8e88af1cc26075f7af0f961adb96_html_a4b3f8e88af1cc26075f7af0f961adb96"><div class="ttname"><a href="../../d8/d11/gbring_8hpp_a4b3f8e88af1cc26075f7af0f961adb96.html#a4b3f8e88af1cc26075f7af0f961adb96">monomial</a></div><div class="ttdeci">int * monomial</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00057">gbring.hpp:57</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -135,7 +138,7 @@ $(document).ready(function(){initNavTree('dd/d3a/classbinomial__ring_ac0a9ab39b8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d3a/classbinomial__ring.html">binomial_ring</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

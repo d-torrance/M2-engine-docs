@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('da/d91/class_subsets_abfac6d0c91d0c370
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Subsets::encodeBoundary </td>
+          <td class="memname"><a class="el" href="../../db/d07/m2-mem_8h_afb0843d0fb27ea1b89117293f9a01605.html#afb0843d0fb27ea1b89117293f9a01605">size_t</a> Subsets::encodeBoundary </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/d07/m2-mem_8h_afb0843d0fb27ea1b89117293f9a01605.html#afb0843d0fb27ea1b89117293f9a01605">size_t</a>&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
@@ -120,19 +120,20 @@ $(document).ready(function(){initNavTree('da/d91/class_subsets_abfac6d0c91d0c370
 <div class="line"><span class="lineno">   84</span>  assert(a.size() &lt;= <a class="code hl_variable" href="../../da/d91/class_subsets_aeea92cf722643c3523013f5dd1018fef.html#aeea92cf722643c3523013f5dd1018fef">mMaxSubsetSize</a>);</div>
 <div class="line"><span class="lineno">   85</span>  assert(<a class="code hl_function" href="../../da/d91/class_subsets_a41312beb3e0e61e36cac7c32ddd7c81e.html#a41312beb3e0e61e36cac7c32ddd7c81e">isValid</a>(a));</div>
 <div class="line"><span class="lineno">   86</span> </div>
-<div class="line"><span class="lineno">   87</span>  <span class="keywordtype">size_t</span> result = 0;</div>
+<div class="line"><span class="lineno">   87</span>  <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = 0;</div>
 <div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; e; i++) result += <a class="code hl_function" href="../../da/d91/class_subsets_aaa823944360f6f13123382df2d46b081.html#aaa823944360f6f13123382df2d46b081">binom</a>(a[i], i + 1);</div>
+<div class="line"><span class="lineno">   89</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; e; i++) <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> += <a class="code hl_function" href="../../da/d91/class_subsets_aaa823944360f6f13123382df2d46b081.html#aaa823944360f6f13123382df2d46b081">binom</a>(a[i], i + 1);</div>
 <div class="line"><span class="lineno">   90</span> </div>
-<div class="line"><span class="lineno">   91</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = e + 1; i &lt; a.size(); i++) result += <a class="code hl_function" href="../../da/d91/class_subsets_aaa823944360f6f13123382df2d46b081.html#aaa823944360f6f13123382df2d46b081">binom</a>(a[i], i);</div>
+<div class="line"><span class="lineno">   91</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = e + 1; i &lt; a.size(); i++) <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> += <a class="code hl_function" href="../../da/d91/class_subsets_aaa823944360f6f13123382df2d46b081.html#aaa823944360f6f13123382df2d46b081">binom</a>(a[i], i);</div>
 <div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">   93</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><span class="lineno">   94</span>}</div>
 <div class="ttc" id="aclass_subsets_a41312beb3e0e61e36cac7c32ddd7c81e_html_a41312beb3e0e61e36cac7c32ddd7c81e"><div class="ttname"><a href="../../da/d91/class_subsets_a41312beb3e0e61e36cac7c32ddd7c81e.html#a41312beb3e0e61e36cac7c32ddd7c81e">Subsets::isValid</a></div><div class="ttdeci">bool isValid(const Subset &amp;a)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dc0/comb_8cpp_source.html#l00041">comb.cpp:41</a></div></div>
 <div class="ttc" id="aclass_subsets_aaa823944360f6f13123382df2d46b081_html_aaa823944360f6f13123382df2d46b081"><div class="ttname"><a href="../../da/d91/class_subsets_aaa823944360f6f13123382df2d46b081.html#aaa823944360f6f13123382df2d46b081">Subsets::binom</a></div><div class="ttdeci">size_t binom(size_t n, size_t p)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d23/comb_8hpp_source.html#l00079">comb.hpp:79</a></div></div>
 <div class="ttc" id="aclass_subsets_aeea92cf722643c3523013f5dd1018fef_html_aeea92cf722643c3523013f5dd1018fef"><div class="ttname"><a href="../../da/d91/class_subsets_aeea92cf722643c3523013f5dd1018fef.html#aeea92cf722643c3523013f5dd1018fef">Subsets::mMaxSubsetSize</a></div><div class="ttdeci">size_t mMaxSubsetSize</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d23/comb_8hpp_source.html#l00089">comb.hpp:89</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d91/class_subsets_aaa823944360f6f13123382df2d46b081.html#aaa823944360f6f13123382df2d46b081">binom()</a>, <a class="el" href="../../da/d91/class_subsets_a41312beb3e0e61e36cac7c32ddd7c81e.html#a41312beb3e0e61e36cac7c32ddd7c81e">isValid()</a>, and <a class="el" href="../../da/d91/class_subsets_aeea92cf722643c3523013f5dd1018fef.html#aeea92cf722643c3523013f5dd1018fef">mMaxSubsetSize</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d91/class_subsets_aaa823944360f6f13123382df2d46b081.html#aaa823944360f6f13123382df2d46b081">binom()</a>, <a class="el" href="../../da/d91/class_subsets_a41312beb3e0e61e36cac7c32ddd7c81e.html#a41312beb3e0e61e36cac7c32ddd7c81e">isValid()</a>, <a class="el" href="../../da/d91/class_subsets_aeea92cf722643c3523013f5dd1018fef.html#aeea92cf722643c3523013f5dd1018fef">mMaxSubsetSize</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/d3f/class_matrix_abd996365eea61c89cbe9fec5106137d5.html#abd996365eea61c89cbe9fec5106137d5">Matrix::koszul()</a>, and <a class="el" href="../../d8/da9/_subset_test_8cpp_a304771f20f162265cb98328248883502.html#a304771f20f162265cb98328248883502">TEST()</a>.</p>
 
@@ -144,7 +145,7 @@ $(document).ready(function(){initNavTree('da/d91/class_subsets_abfac6d0c91d0c370
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d91/class_subsets.html">Subsets</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:33 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

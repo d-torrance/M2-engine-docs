@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_a8f437d9a2d8a
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">M2_bool IM2_MutableMatrix_column_permute </td>
+          <td class="memname"><a class="el" href="../../de/d28/m2-types_8h_a7070aa7b07cda16d387ba6be4bd917fa.html#a7070aa7b07cda16d387ba6be4bd917fa">M2_bool</a> IM2_MutableMatrix_column_permute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/db8/class_mutable_matrix.html">MutableMatrix</a> *&#160;</td>
           <td class="paramname"><em>M</em>, </td>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_a8f437d9a2d8a
 <div class="line"><span class="lineno">  503</span>  <span class="keywordtype">size_t</span> ncols = M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">n_cols</a>();</div>
 <div class="line"><span class="lineno">  504</span>  <span class="keywordflow">if</span> (start &lt; 0 || start + perm-&gt;len &gt; ncols)</div>
 <div class="line"><span class="lineno">  505</span>    {</div>
-<div class="line"><span class="lineno">  506</span>      <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;column indices out of range&quot;</span>);</div>
+<div class="line"><span class="lineno">  506</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;column indices out of range&quot;</span>);</div>
 <div class="line"><span class="lineno">  507</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  508</span>    }</div>
 <div class="line"><span class="lineno">  509</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; perm-&gt;len; i++)</div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_a8f437d9a2d8a
 <div class="line"><span class="lineno">  511</span>      <span class="keywordtype">int</span> r = start + perm-&gt;array[i];</div>
 <div class="line"><span class="lineno">  512</span>      <span class="keywordflow">if</span> (r &lt; 0 || r &gt;= ncols)</div>
 <div class="line"><span class="lineno">  513</span>        {</div>
-<div class="line"><span class="lineno">  514</span>          <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;column indices out of range&quot;</span>);</div>
+<div class="line"><span class="lineno">  514</span>          <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;column indices out of range&quot;</span>);</div>
 <div class="line"><span class="lineno">  515</span>          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  516</span>        }</div>
 <div class="line"><span class="lineno">  517</span>    }</div>
@@ -142,9 +142,9 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_a8f437d9a2d8a
 <div class="line"><span class="lineno">  519</span>}</div>
 <div class="ttc" id="aclass_mutable_matrix_a30be137116d098d73a677476902998bd_html_a30be137116d098d73a677476902998bd"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">MutableMatrix::n_cols</a></div><div class="ttdeci">virtual size_t n_cols() const =0</div></div>
 <div class="ttc" id="aclass_mutable_matrix_a7e0ff8af2aa64bc5ab38eef473b1ba6c_html_a7e0ff8af2aa64bc5ab38eef473b1ba6c"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_a7e0ff8af2aa64bc5ab38eef473b1ba6c.html#a7e0ff8af2aa64bc5ab38eef473b1ba6c">MutableMatrix::column_permute</a></div><div class="ttdeci">virtual bool column_permute(size_t start_col, M2_arrayint perm)=0</div></div>
-<div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dc/db8/class_mutable_matrix_a7e0ff8af2aa64bc5ab38eef473b1ba6c.html#a7e0ff8af2aa64bc5ab38eef473b1ba6c">MutableMatrix::column_permute()</a>, <a class="el" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR()</a>, and <a class="el" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">MutableMatrix::n_cols()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/db8/class_mutable_matrix_a7e0ff8af2aa64bc5ab38eef473b1ba6c.html#a7e0ff8af2aa64bc5ab38eef473b1ba6c">MutableMatrix::column_permute()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, and <a class="el" href="../../dc/db8/class_mutable_matrix_a30be137116d098d73a677476902998bd.html#a30be137116d098d73a677476902998bd">MutableMatrix::n_cols()</a>.</p>
 
 </div>
 </div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('df/d3c/mutable-matrix_8h_a8f437d9a2d8a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../df/d3c/mutable-matrix_8h.html">mutable-matrix.h</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

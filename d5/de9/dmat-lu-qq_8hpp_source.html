@@ -346,8 +346,8 @@ $(document).ready(function(){initNavTree('d5/de9/dmat-lu-qq_8hpp_source.html','.
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    fmpz_mat_init(invZZ, nrows, nrows);</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    fmpq_mat_get_fmpz_mat_matwise(matZZ, D, A.<a class="code hl_function" href="../../d2/d11/class_flint_q_q_mat_a3a263e83042fdcd86c4def0fe7ca3cee.html#a3a263e83042fdcd86c4def0fe7ca3cee">value</a>());</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordtype">int</span> result = fmpz_mat_inv(invZZ, den, matZZ);  <span class="comment">// sets invZZ, den</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keywordflow">if</span> (result != 0)</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = fmpz_mat_inv(invZZ, den, matZZ);  <span class="comment">// sets invZZ, den</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> != 0)</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>      {</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        fmpq_mat_set_fmpz_mat_div_fmpz(inv.<a class="code hl_function" href="../../d2/d11/class_flint_q_q_mat_a3a263e83042fdcd86c4def0fe7ca3cee.html#a3a263e83042fdcd86c4def0fe7ca3cee">value</a>(), invZZ, den);</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        fmpq_mat_scalar_mul_fmpz(inv.<a class="code hl_function" href="../../d2/d11/class_flint_q_q_mat_a3a263e83042fdcd86c4def0fe7ca3cee.html#a3a263e83042fdcd86c4def0fe7ca3cee">value</a>(), inv.<a class="code hl_function" href="../../d2/d11/class_flint_q_q_mat_a3a263e83042fdcd86c4def0fe7ca3cee.html#a3a263e83042fdcd86c4def0fe7ca3cee">value</a>(), D);</div>
@@ -357,7 +357,7 @@ $(document).ready(function(){initNavTree('d5/de9/dmat-lu-qq_8hpp_source.html','.
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    fmpz_clear(den);</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    fmpz_mat_clear(matZZ);</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    fmpz_mat_clear(invZZ);</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keywordflow">return</span> (result != 0);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> != 0);</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  }</div>
 </div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
@@ -427,6 +427,7 @@ $(document).ready(function(){initNavTree('d5/de9/dmat-lu-qq_8hpp_source.html','.
 <div class="ttc" id="aclass_m2_1_1_a_ring_q_q_g_m_p_ae2d30dc8390b77b42b89aa0b10dae502_html_ae2d30dc8390b77b42b89aa0b10dae502"><div class="ttname"><a href="../../d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_ae2d30dc8390b77b42b89aa0b10dae502.html#ae2d30dc8390b77b42b89aa0b10dae502">M2::ARingQQGMP::ElementType</a></div><div class="ttdeci">__mpq_struct ElementType</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d64/aring-qq-gmp_8hpp_source.html#l00030">aring-qq-gmp.hpp:30</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_q_q_g_m_p_html"><div class="ttname"><a href="../../d9/dec/class_m2_1_1_a_ring_q_q_g_m_p.html">M2::ARingQQGMP</a></div><div class="ttdoc">wrapper for the gmp mpq_t integer representation</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d64/aring-qq-gmp_8hpp_source.html#l00025">aring-qq-gmp.hpp:26</a></div></div>
 <div class="ttc" id="admat-qq-interface-flint_8hpp_html"><div class="ttname"><a href="../../d1/d6d/dmat-qq-interface-flint_8hpp.html">dmat-qq-interface-flint.hpp</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 <div class="ttc" id="anamespace_m2_html"><div class="ttname"><a href="../../d7/d82/namespace_m2.html">M2</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/dba/aring-_c_c_8cpp_source.html#l00003">aring-CC.cpp:3</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -434,7 +435,7 @@ $(document).ready(function(){initNavTree('d5/de9/dmat-lu-qq_8hpp_source.html','.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d5/de9/dmat-lu-qq_8hpp.html">dmat-lu-qq.hpp</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:28 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

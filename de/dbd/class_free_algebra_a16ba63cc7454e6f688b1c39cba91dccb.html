@@ -130,8 +130,8 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a16ba63cc745
 <p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00613">613</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  617</span>{</div>
 <div class="line"><span class="lineno">  618</span>  <span class="comment">// return (c*leftM)*f*rightM</span></div>
-<div class="line"><span class="lineno">  619</span>  <span class="keyword">auto</span>&amp; outcoeff = result.getCoeffInserter();</div>
-<div class="line"><span class="lineno">  620</span>  <span class="keyword">auto</span>&amp; outmonom = result.getMonomInserter();</div>
+<div class="line"><span class="lineno">  619</span>  <span class="keyword">auto</span>&amp; outcoeff = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.getCoeffInserter();</div>
+<div class="line"><span class="lineno">  620</span>  <span class="keyword">auto</span>&amp; outmonom = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.getMonomInserter();</div>
 <div class="line"><span class="lineno">  621</span>  <span class="keywordflow">for</span>(<span class="keyword">auto</span> i=f.cbegin(); i != f.cend(); i++)</div>
 <div class="line"><span class="lineno">  622</span>    {</div>
 <div class="line"><span class="lineno">  623</span>      outcoeff.push_back(i.coeff());</div>
@@ -140,8 +140,9 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a16ba63cc745
 <div class="line"><span class="lineno">  626</span>}</div>
 <div class="ttc" id="aclass_free_algebra_a83c6189fa2b0a76031329377b1cfaa03_html_a83c6189fa2b0a76031329377b1cfaa03"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a83c6189fa2b0a76031329377b1cfaa03.html#a83c6189fa2b0a76031329377b1cfaa03">FreeAlgebra::monoid</a></div><div class="ttdeci">const FreeMonoid &amp; monoid() const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00041">FreeAlgebra.hpp:41</a></div></div>
 <div class="ttc" id="aclass_free_monoid_a2ab5842a16804d6faf929c84f1f2efda_html_a2ab5842a16804d6faf929c84f1f2efda"><div class="ttname"><a href="../../dc/da6/class_free_monoid_a2ab5842a16804d6faf929c84f1f2efda.html#a2ab5842a16804d6faf929c84f1f2efda">FreeMonoid::mult3</a></div><div class="ttdeci">void mult3(const Monom &amp;m1, const Monom &amp;m2, const Monom &amp;m3, MonomialInserter &amp;result) const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d5e/_free_monoid_8cpp_source.html#l00088">FreeMonoid.cpp:88</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../de/dbd/class_free_algebra_a83c6189fa2b0a76031329377b1cfaa03.html#a83c6189fa2b0a76031329377b1cfaa03">monoid()</a>, and <a class="el" href="../../dc/da6/class_free_monoid_a2ab5842a16804d6faf929c84f1f2efda.html#a2ab5842a16804d6faf929c84f1f2efda">FreeMonoid::mult3()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dbd/class_free_algebra_a83c6189fa2b0a76031329377b1cfaa03.html#a83c6189fa2b0a76031329377b1cfaa03">monoid()</a>, <a class="el" href="../../dc/da6/class_free_monoid_a2ab5842a16804d6faf929c84f1f2efda.html#a2ab5842a16804d6faf929c84f1f2efda">FreeMonoid::mult3()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 </div>
 </div>
@@ -151,7 +152,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a16ba63cc745
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:31 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -6,7 +6,7 @@ var monomial_ideal_8h =
     [ "IM2_MonomialIdeal_intersect", "d9/d92/monomial-ideal_8h_ab6cc1e0297c528f554cf3db686993b1e.html#ab6cc1e0297c528f554cf3db686993b1e", null ],
     [ "IM2_MonomialIdeal_is_borel", "d9/d92/monomial-ideal_8h_a8617ff9372c2d90c8b8cf497acb740f5.html#a8617ff9372c2d90c8b8cf497acb740f5", null ],
     [ "IM2_MonomialIdeal_is_equal", "d9/d92/monomial-ideal_8h_aeafef855b118d9c653cb54ff5ad1a8c1.html#aeafef855b118d9c653cb54ff5ad1a8c1", null ],
-    [ "IM2_MonomialIdeal_make", "d9/d92/monomial-ideal_8h_a3abc4e90d8bbb3ab85d94c62b36d51bd.html#a3abc4e90d8bbb3ab85d94c62b36d51bd", null ],
+    [ "IM2_MonomialIdeal_make", "d9/d92/monomial-ideal_8h_ae11b81ca7d712e3834893198e907ef5e.html#ae11b81ca7d712e3834893198e907ef5e", null ],
     [ "IM2_MonomialIdeal_n_gens", "d9/d92/monomial-ideal_8h_a6ae969e372149dcae0149e5602d01d18.html#a6ae969e372149dcae0149e5602d01d18", null ],
     [ "IM2_MonomialIdeal_to_matrix", "d9/d92/monomial-ideal_8h_afaed046204bef41cda9521adb26b2564.html#afaed046204bef41cda9521adb26b2564", null ],
     [ "IM2_MonomialIdeal_to_string", "d9/d92/monomial-ideal_8h_a01d36c88629bbe81d06875fe6b915af3.html#a01d36c88629bbe81d06875fe6b915af3", null ],

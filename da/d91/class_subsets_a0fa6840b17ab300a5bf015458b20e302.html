@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('da/d91/class_subsets_a0fa6840b17ab300a
         <tr>
           <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> Subsets::increment </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/d07/m2-mem_8h_afb0843d0fb27ea1b89117293f9a01605.html#afb0843d0fb27ea1b89117293f9a01605">size_t</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -125,19 +125,19 @@ $(document).ready(function(){initNavTree('da/d91/class_subsets_a0fa6840b17ab300a
 
 <p class="definition">Definition at line <a class="el" href="../../db/dc0/comb_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../db/dc0/comb_8cpp_source.html">comb.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  125</span>{</div>
-<div class="line"><span class="lineno">  126</span>  <span class="keywordflow">if</span> (s.size() == 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  127</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/d91/class_subsets_a0fa6840b17ab300a5bf015458b20e302.html#a0fa6840b17ab300a5bf015458b20e302">increment</a>(n, s.size(), &amp;(s[0]));</div>
+<div class="line"><span class="lineno">  126</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>.size() == 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  127</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/d91/class_subsets_a0fa6840b17ab300a5bf015458b20e302.html#a0fa6840b17ab300a5bf015458b20e302">increment</a>(n, <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>.size(), &amp;(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>[0]));</div>
 <div class="line"><span class="lineno">  128</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><span class="lineno">  129</span>  <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = s.size();</div>
+<div class="line"><span class="lineno">  129</span>  <span class="keywordtype">size_t</span> <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>.size();</div>
 <div class="line"><span class="lineno">  130</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i=0; i&lt;<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>; i++)</div>
 <div class="line"><span class="lineno">  131</span>    {</div>
 <div class="line"><span class="lineno">  132</span>      <span class="comment">// Attempt to increment this one element</span></div>
-<div class="line"><span class="lineno">  133</span>      <span class="keywordflow">if</span> ((i &lt; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-1 &amp;&amp; s[i]+1 &lt; s[i+1])</div>
-<div class="line"><span class="lineno">  134</span>          || (i == <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-1 &amp;&amp; s[i]+1 &lt; n))</div>
+<div class="line"><span class="lineno">  133</span>      <span class="keywordflow">if</span> ((i &lt; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-1 &amp;&amp; <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>[i]+1 &lt; <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>[i+1])</div>
+<div class="line"><span class="lineno">  134</span>          || (i == <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-1 &amp;&amp; <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>[i]+1 &lt; n))</div>
 <div class="line"><span class="lineno">  135</span>        {</div>
-<div class="line"><span class="lineno">  136</span>          s[i]++;</div>
+<div class="line"><span class="lineno">  136</span>          <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>[i]++;</div>
 <div class="line"><span class="lineno">  137</span>          <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j=0; j&lt;i; j++)</div>
-<div class="line"><span class="lineno">  138</span>            s[j] = j;</div>
+<div class="line"><span class="lineno">  138</span>            <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>[j] = j;</div>
 <div class="line"><span class="lineno">  139</span>          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  140</span>        }</div>
 <div class="line"><span class="lineno">  141</span>    }</div>
@@ -146,8 +146,9 @@ $(document).ready(function(){initNavTree('da/d91/class_subsets_a0fa6840b17ab300a
 <div class="line"><span class="lineno">  144</span>}</div>
 <div class="ttc" id="aclass_subsets_a0fa6840b17ab300a5bf015458b20e302_html_a0fa6840b17ab300a5bf015458b20e302"><div class="ttname"><a href="../../da/d91/class_subsets_a0fa6840b17ab300a5bf015458b20e302.html#a0fa6840b17ab300a5bf015458b20e302">Subsets::increment</a></div><div class="ttdeci">static bool increment(size_t n, Subset &amp;s)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dc0/comb_8cpp_source.html#l00124">comb.cpp:124</a></div></div>
 <div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5_html_a2fc91f4e89bc37f261db820d231da2e5"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a></div><div class="ttdeci">void size_t s</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00274">m2-mem.cpp:274</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d91/class_subsets_a0fa6840b17ab300a5bf015458b20e302.html#a0fa6840b17ab300a5bf015458b20e302">increment()</a>, and <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d91/class_subsets_a0fa6840b17ab300a5bf015458b20e302.html#a0fa6840b17ab300a5bf015458b20e302">increment()</a>, <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/df0/class_free_module_a767ad41f904f0f32bcff1d709d4fc951.html#a767ad41f904f0f32bcff1d709d4fc951">FreeModule::exterior()</a>, <a class="el" href="../../d4/d92/class_schreyer_order_a36106f60d98ac77110e8b8beb0114792.html#a36106f60d98ac77110e8b8beb0114792">SchreyerOrder::exterior()</a>, <a class="el" href="../../da/d91/class_subsets_a0fa6840b17ab300a5bf015458b20e302.html#a0fa6840b17ab300a5bf015458b20e302">increment()</a>, <a class="el" href="../../d7/d9a/class_det_computation_a61a2fe69fa74a11faa8ffaf8e18c47ce.html#a61a2fe69fa74a11faa8ffaf8e18c47ce">DetComputation::step()</a>, <a class="el" href="../../dc/df6/class_pfaffian_computation_a7e3fb2bd3b4120cbe667b424aa6651de.html#a7e3fb2bd3b4120cbe667b424aa6651de">PfaffianComputation::step()</a>, and <a class="el" href="../../d8/da9/_subset_test_8cpp_afd3a32071985530437e3645825101026.html#afd3a32071985530437e3645825101026">TEST()</a>.</p>
 
@@ -159,7 +160,7 @@ $(document).ready(function(){initNavTree('da/d91/class_subsets_a0fa6840b17ab300a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d91/class_subsets.html">Subsets</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:33 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -127,9 +127,9 @@ $(document).ready(function(){initNavTree('d1/d39/class_exponent_list_ac08907b18c
 <div class="fragment"><div class="line"><span class="lineno">  439</span>{</div>
 <div class="line"><span class="lineno">  440</span>  <span class="comment">// TODO: should result be cleared?</span></div>
 <div class="line"><span class="lineno">  441</span>  <span class="comment">// length of result is the same as that of a</span></div>
-<div class="line"><span class="lineno">  442</span>  result.resize(<a class="code hl_function" href="../../d1/d39/class_exponent_list_aac8e99dc487f106581be327f116c3953.html#aac8e99dc487f106581be327f116c3953">length</a>(a));</div>
-<div class="line"><span class="lineno">  443</span>  <span class="keywordtype">int</span> *result_vp = result.data();</div>
-<div class="line"><span class="lineno">  444</span>  *result_vp++ = result.size();</div>
+<div class="line"><span class="lineno">  442</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.resize(<a class="code hl_function" href="../../d1/d39/class_exponent_list_aac8e99dc487f106581be327f116c3953.html#aac8e99dc487f106581be327f116c3953">length</a>(a));</div>
+<div class="line"><span class="lineno">  443</span>  <span class="keywordtype">int</span> *result_vp = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.data();</div>
+<div class="line"><span class="lineno">  444</span>  *result_vp++ = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.size();</div>
 <div class="line"><span class="lineno">  445</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="../../d6/df2/_exponent_list_8hpp_acc701ea969ffb5b5413fe32f6e20afe2.html#acc701ea969ffb5b5413fe32f6e20afe2">index_varpower</a> i = a; i.valid(); ++i)</div>
 <div class="line"><span class="lineno">  446</span>    {</div>
 <div class="line"><span class="lineno">  447</span>      *result_vp++ = i.var();  <span class="comment">// var</span></div>
@@ -138,8 +138,9 @@ $(document).ready(function(){initNavTree('d1/d39/class_exponent_list_ac08907b18c
 <div class="line"><span class="lineno">  450</span>}</div>
 <div class="ttc" id="a_exponent_list_8hpp_acc701ea969ffb5b5413fe32f6e20afe2_html_acc701ea969ffb5b5413fe32f6e20afe2"><div class="ttname"><a href="../../d6/df2/_exponent_list_8hpp_acc701ea969ffb5b5413fe32f6e20afe2.html#acc701ea969ffb5b5413fe32f6e20afe2">index_varpower</a></div><div class="ttdeci">ExponentListIterator&lt; int, true &gt; index_varpower</div><div class="ttdef"><b>Definition</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00195">ExponentList.hpp:195</a></div></div>
 <div class="ttc" id="aclass_exponent_list_aac8e99dc487f106581be327f116c3953_html_aac8e99dc487f106581be327f116c3953"><div class="ttname"><a href="../../d1/d39/class_exponent_list_aac8e99dc487f106581be327f116c3953.html#aac8e99dc487f106581be327f116c3953">ExponentList::length</a></div><div class="ttdeci">static const Exponent length(ConstExponents m)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00071">ExponentList.hpp:71</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d1/d39/class_exponent_list_aac8e99dc487f106581be327f116c3953.html#aac8e99dc487f106581be327f116c3953">ExponentList&lt; E, L &gt;::length()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d39/class_exponent_list_aac8e99dc487f106581be327f116c3953.html#aac8e99dc487f106581be327f116c3953">ExponentList&lt; E, L &gt;::length()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/ddb/class_monomial_ideal_af0e6bcb007b3e6d8869e820d08e5b3bc.html#af0e6bcb007b3e6d8869e820d08e5b3bc">MonomialIdeal::radical()</a>, and <a class="el" href="../../d7/def/class_engine_monomial_a8cf5fbfc917b3bb1d369f7f93c1c9144.html#a8cf5fbfc917b3bb1d369f7f93c1c9144">EngineMonomial::radical()</a>.</p>
 
@@ -151,7 +152,7 @@ $(document).ready(function(){initNavTree('d1/d39/class_exponent_list_ac08907b18c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d39/class_exponent_list.html">ExponentList</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

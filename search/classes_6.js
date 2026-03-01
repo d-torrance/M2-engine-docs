@@ -10,7 +10,7 @@ var searchData=
   ['gba_7',['gbA',['../d0/d91/classgb_a.html',1,'']]],
   ['gbcomputation_8',['GBComputation',['../de/ded/class_g_b_computation.html',1,'']]],
   ['gbdeclared_9',['GBDeclared',['../d8/d26/class_g_b_declared.html',1,'']]],
-  ['gbelem_10',['gbelem',['../d7/dce/structgb_a_1_1gbelem.html',1,'gbA::gbelem'],['../dc/dc0/structgbelem.html',1,'gbelem']]],
+  ['gbelem_10',['gbelem',['../dc/dc0/structgbelem.html',1,'gbelem'],['../d7/dce/structgb_a_1_1gbelem.html',1,'gbA::gbelem']]],
   ['gbf4computation_11',['GBF4Computation',['../d1/dc4/classnewf4_1_1_g_b_f4_computation.html',1,'newf4']]],
   ['gbf4interface_12',['GBF4Interface',['../d6/d99/classnewf4_1_1_g_b_f4_interface.html',1,'newf4']]],
   ['gbf4polynomial_13',['GBF4Polynomial',['../d5/d39/struct_g_b_f4_polynomial.html',1,'']]],
@@ -33,5 +33,9 @@ var searchData=
   ['gbweight_30',['GBWeight',['../d5/d82/class_g_b_weight.html',1,'']]],
   ['geobucket_31',['geobucket',['../d5/d03/classgeobucket.html',1,'']]],
   ['gf_32',['GF',['../d1/d35/class_g_f.html',1,'']]],
-  ['gm_5felem_33',['gm_elem',['../d0/dd0/structgm__elem.html',1,'']]]
+  ['gm_5felem_33',['gm_elem',['../d0/dd0/structgm__elem.html',1,'']]],
+  ['gmp_5farrayzz_5fstruct_34',['gmp_arrayZZ_struct',['../d3/d3e/structgmp__array_z_z__struct.html',1,'']]],
+  ['gmp_5fcc_5fstruct_35',['gmp_CC_struct',['../d6/d00/structgmp___c_c__struct.html',1,'']]],
+  ['gmp_5fccmutable_5fstruct_36',['gmp_CCmutable_struct',['../df/df4/structgmp___c_cmutable__struct.html',1,'']]],
+  ['gmp_5fzzpair_5fstruct_37',['gmp_ZZpair_struct',['../d7/d03/structgmp___z_zpair__struct.html',1,'']]]
 ];

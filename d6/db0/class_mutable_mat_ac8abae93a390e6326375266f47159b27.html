@@ -103,13 +103,13 @@ template&lt;typename Mat &gt; </div>
         <tr>
           <td class="memname">virtual <a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../d6/db0/class_mutable_mat.html">MutableMat</a>&lt; Mat &gt;::insert_columns </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/d07/m2-mem_8h_afb0843d0fb27ea1b89117293f9a01605.html#afb0843d0fb27ea1b89117293f9a01605">size_t</a>&#160;</td>
           <td class="paramname"><em>i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/d07/m2-mem_8h_afb0843d0fb27ea1b89117293f9a01605.html#afb0843d0fb27ea1b89117293f9a01605">size_t</a>&#160;</td>
           <td class="paramname"><em>n_to_add</em>&#160;</td>
         </tr>
         <tr>
@@ -131,7 +131,7 @@ template&lt;typename Mat &gt; </div>
 <div class="fragment"><div class="line"><span class="lineno">  457</span>  {</div>
 <div class="line"><span class="lineno">  458</span>    <span class="keywordflow">if</span> (i &gt; <a class="code hl_function" href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">n_cols</a>())</div>
 <div class="line"><span class="lineno">  459</span>      {</div>
-<div class="line"><span class="lineno">  460</span>        <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;cannot insert %l columns before column %ln&quot;</span>, n_to_add, i);</div>
+<div class="line"><span class="lineno">  460</span>        <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;cannot insert %l columns before column %ln&quot;</span>, n_to_add, i);</div>
 <div class="line"><span class="lineno">  461</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  462</span>      }</div>
 <div class="line"><span class="lineno">  463</span>    MatOps::insert_columns(<a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>, i, n_to_add);</div>
@@ -139,9 +139,9 @@ template&lt;typename Mat &gt; </div>
 <div class="line"><span class="lineno">  465</span>  }</div>
 <div class="ttc" id="aclass_mutable_mat_a852442a68fd752a8e97f8723c65cfe96_html_a852442a68fd752a8e97f8723c65cfe96"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat::mat</a></div><div class="ttdeci">Mat mat</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00183">mutablemat-defs.hpp:183</a></div></div>
 <div class="ttc" id="aclass_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004_html_a8d9f7c1f50394782209a1f9a8a073004"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">MutableMat::n_cols</a></div><div class="ttdeci">virtual size_t n_cols() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00229">mutablemat-defs.hpp:229</a></div></div>
-<div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR()</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat&lt; Mat &gt;::mat</a>, and <a class="el" href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">MutableMat&lt; Mat &gt;::n_cols()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat&lt; Mat &gt;::mat</a>, and <a class="el" href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">MutableMat&lt; Mat &gt;::n_cols()</a>.</p>
 
 </div>
 </div>
@@ -151,7 +151,7 @@ template&lt;typename Mat &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/db0/class_mutable_mat.html">MutableMat</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

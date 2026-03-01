@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('d8/d76/ntl-interface_8hpp_a8f6dfc3055f
 <div class="fragment"><div class="line"><span class="lineno">   19</span>{</div>
 <div class="line"><span class="lineno">   20</span>  <span class="keywordflow">if</span> (a == 0)</div>
 <div class="line"><span class="lineno">   21</span>    {</div>
-<div class="line"><span class="lineno">   22</span>      mpz_set_ui(result, 0);</div>
+<div class="line"><span class="lineno">   22</span>      mpz_set_ui(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, 0);</div>
 <div class="line"><span class="lineno">   23</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   24</span>    }</div>
 <div class="line"><span class="lineno">   25</span> </div>
@@ -135,11 +135,14 @@ $(document).ready(function(){initNavTree('d8/d76/ntl-interface_8hpp_a8f6dfc3055f
 <div class="line"><span class="lineno">   27</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *byte_array = <span class="keyword">new</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>[len];</div>
 <div class="line"><span class="lineno">   28</span>  <span class="keywordtype">bool</span> is_neg = (a &lt; 0);</div>
 <div class="line"><span class="lineno">   29</span>  NTL::BytesFromZZ(byte_array, a, len);</div>
-<div class="line"><span class="lineno">   30</span>  mpz_import(result, len, -1, <span class="keyword">sizeof</span>(byte_array[0]), 0, 0, byte_array);</div>
+<div class="line"><span class="lineno">   30</span>  mpz_import(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, len, -1, <span class="keyword">sizeof</span>(byte_array[0]), 0, 0, byte_array);</div>
 <div class="line"><span class="lineno">   31</span>  <span class="keyword">delete</span>[] byte_array;</div>
-<div class="line"><span class="lineno">   32</span>  <span class="keywordflow">if</span> (is_neg) mpz_neg(result, result);</div>
+<div class="line"><span class="lineno">   32</span>  <span class="keywordflow">if</span> (is_neg) mpz_neg(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>);</div>
 <div class="line"><span class="lineno">   33</span>}</div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../d8/d76/ntl-interface_8hpp_a3ac092ab05a7db07c6fd9ad39f695c01.html#a3ac092ab05a7db07c6fd9ad39f695c01">mat_ZZ_get_entry()</a>.</p>
 
 </div>
@@ -150,7 +153,7 @@ $(document).ready(function(){initNavTree('d8/d76/ntl-interface_8hpp_a8f6dfc3055f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d8/d76/ntl-interface_8hpp.html">ntl-interface.hpp</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

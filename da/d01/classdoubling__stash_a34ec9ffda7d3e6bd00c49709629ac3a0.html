@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('da/d01/classdoubling__stash_a34ec9ffda
         <tr>
           <td class="memname">void * doubling_stash::new_elem </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/d07/m2-mem_8h_afb0843d0fb27ea1b89117293f9a01605.html#afb0843d0fb27ea1b89117293f9a01605">size_t</a>&#160;</td>
           <td class="paramname"><em>size</em></td><td>)</td>
           <td></td>
         </tr>
@@ -111,16 +111,17 @@ $(document).ready(function(){initNavTree('da/d01/classdoubling__stash_a34ec9ffda
 <div class="line"><span class="lineno">  148</span>  <span class="keywordtype">int</span> st = 0;</div>
 <div class="line"><span class="lineno">  149</span>  <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../da/d01/classdoubling__stash_a8a336d1fc410b984768e913f041600a3.html#a8a336d1fc410b984768e913f041600a3">double_size</a>[st] &lt; size) st++;</div>
 <div class="line"><span class="lineno">  150</span> </div>
-<div class="line"><span class="lineno">  151</span>  <span class="keywordtype">int</span> *result = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">int</span> *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="../../da/d01/classdoubling__stash_aa0a5d02a1e5a4d59f989c7ab8d205c97.html#aa0a5d02a1e5a4d59f989c7ab8d205c97">doubles</a>[st]-&gt;<a class="code hl_function" href="../../d1/d5b/classstash_a7caad862ee0282823e4a735988375634.html#a7caad862ee0282823e4a735988375634">new_elem</a>());</div>
-<div class="line"><span class="lineno">  152</span>  result[0] = st;</div>
-<div class="line"><span class="lineno">  153</span>  result++;</div>
-<div class="line"><span class="lineno">  154</span>  <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span> *<span class="keyword">&gt;</span>(result);</div>
+<div class="line"><span class="lineno">  151</span>  <span class="keywordtype">int</span> *<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">int</span> *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="../../da/d01/classdoubling__stash_aa0a5d02a1e5a4d59f989c7ab8d205c97.html#aa0a5d02a1e5a4d59f989c7ab8d205c97">doubles</a>[st]-&gt;<a class="code hl_function" href="../../d1/d5b/classstash_a7caad862ee0282823e4a735988375634.html#a7caad862ee0282823e4a735988375634">new_elem</a>());</div>
+<div class="line"><span class="lineno">  152</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>[0] = st;</div>
+<div class="line"><span class="lineno">  153</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>++;</div>
+<div class="line"><span class="lineno">  154</span>  <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span> *<span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>);</div>
 <div class="line"><span class="lineno">  155</span>}</div>
 <div class="ttc" id="aclassdoubling__stash_a8a336d1fc410b984768e913f041600a3_html_a8a336d1fc410b984768e913f041600a3"><div class="ttname"><a href="../../da/d01/classdoubling__stash_a8a336d1fc410b984768e913f041600a3.html#a8a336d1fc410b984768e913f041600a3">doubling_stash::double_size</a></div><div class="ttdeci">size_t double_size[NDOUBLES]</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00172">mem.hpp:172</a></div></div>
 <div class="ttc" id="aclassdoubling__stash_aa0a5d02a1e5a4d59f989c7ab8d205c97_html_aa0a5d02a1e5a4d59f989c7ab8d205c97"><div class="ttname"><a href="../../da/d01/classdoubling__stash_aa0a5d02a1e5a4d59f989c7ab8d205c97.html#aa0a5d02a1e5a4d59f989c7ab8d205c97">doubling_stash::doubles</a></div><div class="ttdeci">stash * doubles[NDOUBLES]</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00171">mem.hpp:171</a></div></div>
 <div class="ttc" id="aclassstash_a7caad862ee0282823e4a735988375634_html_a7caad862ee0282823e4a735988375634"><div class="ttname"><a href="../../d1/d5b/classstash_a7caad862ee0282823e4a735988375634.html#a7caad862ee0282823e4a735988375634">stash::new_elem</a></div><div class="ttdeci">void * new_elem()</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00091">mem.hpp:91</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d01/classdoubling__stash_a8a336d1fc410b984768e913f041600a3.html#a8a336d1fc410b984768e913f041600a3">double_size</a>, <a class="el" href="../../da/d01/classdoubling__stash_aa0a5d02a1e5a4d59f989c7ab8d205c97.html#aa0a5d02a1e5a4d59f989c7ab8d205c97">doubles</a>, and <a class="el" href="../../d1/d5b/classstash_a7caad862ee0282823e4a735988375634.html#a7caad862ee0282823e4a735988375634">stash::new_elem()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d01/classdoubling__stash_a8a336d1fc410b984768e913f041600a3.html#a8a336d1fc410b984768e913f041600a3">double_size</a>, <a class="el" href="../../da/d01/classdoubling__stash_aa0a5d02a1e5a4d59f989c7ab8d205c97.html#aa0a5d02a1e5a4d59f989c7ab8d205c97">doubles</a>, <a class="el" href="../../d1/d5b/classstash_a7caad862ee0282823e4a735988375634.html#a7caad862ee0282823e4a735988375634">stash::new_elem()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 </div>
 </div>
@@ -130,7 +131,7 @@ $(document).ready(function(){initNavTree('da/d01/classdoubling__stash_a34ec9ffda
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d01/classdoubling__stash.html">doubling_stash</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

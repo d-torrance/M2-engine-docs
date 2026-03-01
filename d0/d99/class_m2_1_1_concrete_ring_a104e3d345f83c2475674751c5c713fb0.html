@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('d0/d99/class_m2_1_1_concrete_ring_a104
 <div class="line"><span class="lineno">  963</span>      <span class="keywordtype">bool</span> retval = <a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;lift_to_mpz(b, a);</div>
 <div class="line"><span class="lineno">  964</span>      <span class="keywordflow">if</span> (retval)</div>
 <div class="line"><span class="lineno">  965</span>        {</div>
-<div class="line"><span class="lineno">  966</span>          result = <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">from_int</a>(b);</div>
+<div class="line"><span class="lineno">  966</span>          <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">from_int</a>(b);</div>
 <div class="line"><span class="lineno">  967</span>        }</div>
 <div class="line"><span class="lineno">  968</span>      mpz_clear(b);</div>
 <div class="line"><span class="lineno">  969</span>      <span class="keywordflow">return</span> retval;</div>
@@ -155,8 +155,9 @@ $(document).ready(function(){initNavTree('d0/d99/class_m2_1_1_concrete_ring_a104
 <div class="ttc" id="aclass_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b_html_aeeb92bc934137a4ba516dcb24f79ce8b"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b.html#aeeb92bc934137a4ba516dcb24f79ce8b">M2::ConcreteRing::Element</a></div><div class="ttdeci">RingType::Element Element</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00033">aring-glue.hpp:33</a></div></div>
 <div class="ttc" id="aclass_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52_html_a8ee5f1281f1f753bd5e64aaed8393b52"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">RingZZ::from_int</a></div><div class="ttdeci">virtual ring_elem from_int(mpz_srcptr n) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00119">ZZ.cpp:119</a></div></div>
 <div class="ttc" id="agauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9_html_a5ad190417a478c3f15fa01ef9ee9bac9"><div class="ttname"><a href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a></div><div class="ttdeci">RingZZ * globalZZ</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00013">relem.cpp:13</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">RingZZ::from_int()</a>, and <a class="el" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">RingZZ::from_int()</a>, <a class="el" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 </div>
 </div>
@@ -166,7 +167,7 @@ $(document).ready(function(){initNavTree('d0/d99/class_m2_1_1_concrete_ring_a104
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring.html">ConcreteRing</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:33 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

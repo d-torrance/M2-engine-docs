@@ -127,15 +127,18 @@ $(document).ready(function(){initNavTree('d0/d29/class_skew_multiplication_af4aa
 <div class="line"><span class="lineno">  137</span>    {</div>
 <div class="line"><span class="lineno">  138</span>      <span class="keywordtype">int</span> cmp = exp1[i] - <a class="code hl_function" href="../../d1/d02/namespacempfr_a82b24efa4d83b94b587f0d184288d643.html#a82b24efa4d83b94b587f0d184288d643">exp2</a>[i];</div>
 <div class="line"><span class="lineno">  139</span>      <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  140</span>      result[i] = cmp;</div>
+<div class="line"><span class="lineno">  140</span>      <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>[i] = cmp;</div>
 <div class="line"><span class="lineno">  141</span>    }</div>
-<div class="line"><span class="lineno">  142</span>  <span class="keywordtype">int</span> sign = <a class="code hl_function" href="../../d0/d29/class_skew_multiplication_a869bde7ea8e5d3c68e5a95c25e5c0c26.html#a869bde7ea8e5d3c68e5a95c25e5c0c26">mult_sign</a>(result, exp2);</div>
+<div class="line"><span class="lineno">  142</span>  <span class="keywordtype">int</span> sign = <a class="code hl_function" href="../../d0/d29/class_skew_multiplication_a869bde7ea8e5d3c68e5a95c25e5c0c26.html#a869bde7ea8e5d3c68e5a95c25e5c0c26">mult_sign</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, exp2);</div>
 <div class="line"><span class="lineno">  143</span>  <span class="keywordflow">return</span> sign;</div>
 <div class="line"><span class="lineno">  144</span>}</div>
 <div class="ttc" id="aclass_skew_multiplication_a2fff480f50592edd6ffb5ce9bb6f4d36_html_a2fff480f50592edd6ffb5ce9bb6f4d36"><div class="ttname"><a href="../../d0/d29/class_skew_multiplication_a2fff480f50592edd6ffb5ce9bb6f4d36.html#a2fff480f50592edd6ffb5ce9bb6f4d36">SkewMultiplication::_n_vars</a></div><div class="ttdeci">int _n_vars</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dc7/skew_8hpp_source.html#l00009">skew.hpp:9</a></div></div>
 <div class="ttc" id="aclass_skew_multiplication_a869bde7ea8e5d3c68e5a95c25e5c0c26_html_a869bde7ea8e5d3c68e5a95c25e5c0c26"><div class="ttname"><a href="../../d0/d29/class_skew_multiplication_a869bde7ea8e5d3c68e5a95c25e5c0c26.html#a869bde7ea8e5d3c68e5a95c25e5c0c26">SkewMultiplication::mult_sign</a></div><div class="ttdeci">int mult_sign(const int *exp1, const int *exp2) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d5c/skew_8cpp_source.html#l00091">skew.cpp:91</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 <div class="ttc" id="anamespacempfr_a82b24efa4d83b94b587f0d184288d643_html_a82b24efa4d83b94b587f0d184288d643"><div class="ttname"><a href="../../d1/d02/namespacempfr_a82b24efa4d83b94b587f0d184288d643.html#a82b24efa4d83b94b587f0d184288d643">mpfr::exp2</a></div><div class="ttdeci">const mpreal exp2(const mpreal &amp;x, mp_rnd_t r=mpreal::get_default_rnd())</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l02274">mpreal.h:2274</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../d3/dfc/class_poly_ring_ab865e7645d472cd33b2c7c2c75e9296b.html#ab865e7645d472cd33b2c7c2c75e9296b">PolyRing::imp_attempt_to_cancel_lead_term()</a>.</p>
 
 </div>
@@ -146,7 +149,7 @@ $(document).ready(function(){initNavTree('d0/d29/class_skew_multiplication_af4aa
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d29/class_skew_multiplication.html">SkewMultiplication</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:33 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

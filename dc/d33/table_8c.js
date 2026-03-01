@@ -2,6 +2,8 @@ var table_8c =
 [
     [ "Table_T", "d6/d47/struct_table___t.html", "d6/d47/struct_table___t" ],
     [ "Table_T::binding", "db/d77/struct_table___t_1_1binding.html", "db/d77/struct_table___t_1_1binding" ],
+    [ "FREE", "dc/d33/table_8c_a105949c59c998e38aad80266afac92bf.html#a105949c59c998e38aad80266afac92bf", null ],
+    [ "NEW", "dc/d33/table_8c_a6dcbdd586f47a62900804da2a6102a2e.html#a6dcbdd586f47a62900804da2a6102a2e", null ],
     [ "T", "dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5", null ],
     [ "cmpatom", "dc/d33/table_8c_a46002fa21bef6b07e4b0b8093cd7b4cd.html#a46002fa21bef6b07e4b0b8093cd7b4cd", null ],
     [ "hashatom", "dc/d33/table_8c_a8b92f9ce10af3b50b5c2e0067ac2b535.html#a8b92f9ce10af3b50b5c2e0067ac2b535", null ],

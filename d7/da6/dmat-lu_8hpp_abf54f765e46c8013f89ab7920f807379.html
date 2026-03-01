@@ -106,7 +106,7 @@ template&lt;class Mat &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; size_t &gt;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../db/d07/m2-mem_8h_afb0843d0fb27ea1b89117293f9a01605.html#afb0843d0fb27ea1b89117293f9a01605">size_t</a> &gt;&#160;</td>
           <td class="paramname"><em>permutation</em>, </td>
         </tr>
         <tr>
@@ -126,13 +126,16 @@ template&lt;class Mat &gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../d7/da6/dmat-lu_8hpp_source.html#l00430">430</a> of file <a class="el" href="../../d7/da6/dmat-lu_8hpp_source.html">dmat-lu.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  433</span>{</div>
 <div class="line"><span class="lineno">  434</span>  <span class="comment">// Better would be if the Mat type allows easy swapping of rows...</span></div>
-<div class="line"><span class="lineno">  435</span>  result.resize(B.numRows(),</div>
+<div class="line"><span class="lineno">  435</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.resize(B.numRows(),</div>
 <div class="line"><span class="lineno">  436</span>                B.numColumns());  <span class="comment">// leaves B alone if correct size already...</span></div>
 <div class="line"><span class="lineno">  437</span>  <span class="keywordflow">for</span> (<span class="keywordtype">long</span> r = 0; r &lt; B.numRows(); r++)</div>
 <div class="line"><span class="lineno">  438</span>    <span class="keywordflow">for</span> (<span class="keywordtype">long</span> c = 0; c &lt; B.numColumns(); c++)</div>
-<div class="line"><span class="lineno">  439</span>      B.ring().set(result.entry(r, c), B.entry(permutation[r], c));</div>
+<div class="line"><span class="lineno">  439</span>      B.ring().set(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.entry(r, c), B.entry(permutation[r], c));</div>
 <div class="line"><span class="lineno">  440</span>}</div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -141,7 +144,7 @@ template&lt;class Mat &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d7/da6/dmat-lu_8hpp.html">dmat-lu.hpp</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,8 @@
 var exptable_8c =
 [
     [ "exponent_table", "d7/db5/structexponent__table.html", "d7/db5/structexponent__table" ],
+    [ "FREE", "d6/da0/exptable_8c_a105949c59c998e38aad80266afac92bf.html#a105949c59c998e38aad80266afac92bf", null ],
+    [ "NEW", "d6/da0/exptable_8c_a6dcbdd586f47a62900804da2a6102a2e.html#a6dcbdd586f47a62900804da2a6102a2e", null ],
     [ "exp_cmp", "d6/da0/exptable_8c_a8f7cd2c8868618fd1a074a831a849d2d.html#a8f7cd2c8868618fd1a074a831a849d2d", null ],
     [ "exp_hash", "d6/da0/exptable_8c_a8f5d6deb2f09c83ade6001e0ae0dfd6c.html#a8f5d6deb2f09c83ade6001e0ae0dfd6c", null ],
     [ "exponent_table_free", "d6/da0/exptable_8c_a6354a9626ea1b930de3390324591e2c6.html#a6354a9626ea1b930de3390324591e2c6", null ],

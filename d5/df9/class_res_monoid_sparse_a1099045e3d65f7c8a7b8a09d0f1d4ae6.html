@@ -134,9 +134,9 @@ $(document).ready(function(){initNavTree('d5/df9/class_res_monoid_sparse_a109904
 <div class="line"><span class="lineno">  123</span>    <span class="comment">// Pack the vector e[0]..e[mNumVars-1],comp.  Create the hash value at the</span></div>
 <div class="line"><span class="lineno">  124</span>    <span class="comment">// same time.</span></div>
 <div class="line"><span class="lineno">  125</span>    <a class="code hl_variable" href="../../d5/df9/class_res_monoid_sparse_a0d2afe3e5efaa944a605ba36e2a4c5e6.html#a0d2afe3e5efaa944a605ba36e2a4c5e6">ncalls_from_expvector</a>++;</div>
-<div class="line"><span class="lineno">  126</span>    result[0] = 0;     <span class="comment">// length</span></div>
-<div class="line"><span class="lineno">  127</span>    result[1] = 0;     <span class="comment">// hash value, not set here (other than this...)</span></div>
-<div class="line"><span class="lineno">  128</span>    result[2] = comp;  <span class="comment">// component</span></div>
+<div class="line"><span class="lineno">  126</span>    <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>[0] = 0;     <span class="comment">// length</span></div>
+<div class="line"><span class="lineno">  127</span>    <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>[1] = 0;     <span class="comment">// hash value, not set here (other than this...)</span></div>
+<div class="line"><span class="lineno">  128</span>    <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>[2] = comp;  <span class="comment">// component</span></div>
 <div class="line"><span class="lineno">  129</span> </div>
 <div class="line"><span class="lineno">  130</span>    <span class="keywordtype">int</span> next_var_slot = <a class="code hl_variable" href="../../d5/df9/class_res_monoid_sparse_ae74ccb6358dca8261f2b0c9d0cb4fc5f.html#ae74ccb6358dca8261f2b0c9d0cb4fc5f">mFirstVar</a>;</div>
 <div class="line"><span class="lineno">  131</span> </div>
@@ -146,14 +146,14 @@ $(document).ready(function(){initNavTree('d5/df9/class_res_monoid_sparse_a109904
 <div class="line"><span class="lineno">  135</span>          {</div>
 <div class="line"><span class="lineno">  136</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; e[i]; j++)</div>
 <div class="line"><span class="lineno">  137</span>              {</div>
-<div class="line"><span class="lineno">  138</span>                result[1] += <a class="code hl_variable" href="../../d5/df9/class_res_monoid_sparse_afb6635e65bab28e0d0e8ce446eb1f2ce.html#afb6635e65bab28e0d0e8ce446eb1f2ce">hashfcn</a>[i];</div>
-<div class="line"><span class="lineno">  139</span>                result[next_var_slot] = i;</div>
+<div class="line"><span class="lineno">  138</span>                <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>[1] += <a class="code hl_variable" href="../../d5/df9/class_res_monoid_sparse_afb6635e65bab28e0d0e8ce446eb1f2ce.html#afb6635e65bab28e0d0e8ce446eb1f2ce">hashfcn</a>[i];</div>
+<div class="line"><span class="lineno">  139</span>                <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>[next_var_slot] = i;</div>
 <div class="line"><span class="lineno">  140</span>                next_var_slot++;</div>
 <div class="line"><span class="lineno">  141</span>              }</div>
 <div class="line"><span class="lineno">  142</span>          }</div>
 <div class="line"><span class="lineno">  143</span>      }</div>
-<div class="line"><span class="lineno">  144</span>    result[0] = next_var_slot;  <span class="comment">// this is the length of this monomial</span></div>
-<div class="line"><span class="lineno">  145</span>    <a class="code hl_function" href="../../d5/df9/class_res_monoid_sparse_a685158f9d6f73b809bb31f9929caec37.html#a685158f9d6f73b809bb31f9929caec37">setWeightAndHash</a>(result);</div>
+<div class="line"><span class="lineno">  144</span>    <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>[0] = next_var_slot;  <span class="comment">// this is the length of this monomial</span></div>
+<div class="line"><span class="lineno">  145</span>    <a class="code hl_function" href="../../d5/df9/class_res_monoid_sparse_a685158f9d6f73b809bb31f9929caec37.html#a685158f9d6f73b809bb31f9929caec37">setWeightAndHash</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>);</div>
 <div class="line"><span class="lineno">  146</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  147</span>  }</div>
 <div class="ttc" id="aclass_res_monoid_sparse_a0b7338d8ecabd93eedeeb08289986326_html_a0b7338d8ecabd93eedeeb08289986326"><div class="ttname"><a href="../../d5/df9/class_res_monoid_sparse_a0b7338d8ecabd93eedeeb08289986326.html#a0b7338d8ecabd93eedeeb08289986326">ResMonoidSparse::mNumVars</a></div><div class="ttdeci">int mNumVars</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html#l00025">res-moninfo-sparse.hpp:25</a></div></div>
@@ -161,8 +161,9 @@ $(document).ready(function(){initNavTree('d5/df9/class_res_monoid_sparse_a109904
 <div class="ttc" id="aclass_res_monoid_sparse_a685158f9d6f73b809bb31f9929caec37_html_a685158f9d6f73b809bb31f9929caec37"><div class="ttname"><a href="../../d5/df9/class_res_monoid_sparse_a685158f9d6f73b809bb31f9929caec37.html#a685158f9d6f73b809bb31f9929caec37">ResMonoidSparse::setWeightAndHash</a></div><div class="ttdeci">void setWeightAndHash(res_packed_monomial result) const</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html#l00097">res-moninfo-sparse.hpp:97</a></div></div>
 <div class="ttc" id="aclass_res_monoid_sparse_ae74ccb6358dca8261f2b0c9d0cb4fc5f_html_ae74ccb6358dca8261f2b0c9d0cb4fc5f"><div class="ttname"><a href="../../d5/df9/class_res_monoid_sparse_ae74ccb6358dca8261f2b0c9d0cb4fc5f.html#ae74ccb6358dca8261f2b0c9d0cb4fc5f">ResMonoidSparse::mFirstVar</a></div><div class="ttdeci">int mFirstVar</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html#l00033">res-moninfo-sparse.hpp:33</a></div></div>
 <div class="ttc" id="aclass_res_monoid_sparse_afb6635e65bab28e0d0e8ce446eb1f2ce_html_afb6635e65bab28e0d0e8ce446eb1f2ce"><div class="ttname"><a href="../../d5/df9/class_res_monoid_sparse_afb6635e65bab28e0d0e8ce446eb1f2ce.html#afb6635e65bab28e0d0e8ce446eb1f2ce">ResMonoidSparse::hashfcn</a></div><div class="ttdeci">std::unique_ptr&lt; res_monomial_word[]&gt; hashfcn</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d3f/res-moninfo-sparse_8hpp_source.html#l00028">res-moninfo-sparse.hpp:28</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/df9/class_res_monoid_sparse_afb6635e65bab28e0d0e8ce446eb1f2ce.html#afb6635e65bab28e0d0e8ce446eb1f2ce">hashfcn</a>, <a class="el" href="../../d5/df9/class_res_monoid_sparse_ae74ccb6358dca8261f2b0c9d0cb4fc5f.html#ae74ccb6358dca8261f2b0c9d0cb4fc5f">mFirstVar</a>, <a class="el" href="../../d5/df9/class_res_monoid_sparse_a0b7338d8ecabd93eedeeb08289986326.html#a0b7338d8ecabd93eedeeb08289986326">mNumVars</a>, <a class="el" href="../../d5/df9/class_res_monoid_sparse_a0d2afe3e5efaa944a605ba36e2a4c5e6.html#a0d2afe3e5efaa944a605ba36e2a4c5e6">ncalls_from_expvector</a>, and <a class="el" href="../../d5/df9/class_res_monoid_sparse_a685158f9d6f73b809bb31f9929caec37.html#a685158f9d6f73b809bb31f9929caec37">setWeightAndHash()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/df9/class_res_monoid_sparse_afb6635e65bab28e0d0e8ce446eb1f2ce.html#afb6635e65bab28e0d0e8ce446eb1f2ce">hashfcn</a>, <a class="el" href="../../d5/df9/class_res_monoid_sparse_ae74ccb6358dca8261f2b0c9d0cb4fc5f.html#ae74ccb6358dca8261f2b0c9d0cb4fc5f">mFirstVar</a>, <a class="el" href="../../d5/df9/class_res_monoid_sparse_a0b7338d8ecabd93eedeeb08289986326.html#a0b7338d8ecabd93eedeeb08289986326">mNumVars</a>, <a class="el" href="../../d5/df9/class_res_monoid_sparse_a0d2afe3e5efaa944a605ba36e2a4c5e6.html#a0d2afe3e5efaa944a605ba36e2a4c5e6">ncalls_from_expvector</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>, and <a class="el" href="../../d5/df9/class_res_monoid_sparse_a685158f9d6f73b809bb31f9929caec37.html#a685158f9d6f73b809bb31f9929caec37">setWeightAndHash()</a>.</p>
 
 </div>
 </div>
@@ -172,7 +173,7 @@ $(document).ready(function(){initNavTree('d5/df9/class_res_monoid_sparse_a109904
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/df9/class_res_monoid_sparse.html">ResMonoidSparse</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

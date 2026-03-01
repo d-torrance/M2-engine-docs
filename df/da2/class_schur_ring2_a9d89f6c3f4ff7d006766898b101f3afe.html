@@ -119,26 +119,26 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_a9d89f6c3f4ff
 <div class="fragment"><div class="line"><span class="lineno">  158</span>{</div>
 <div class="line"><span class="lineno">  159</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../df/da2/class_schur_ring2_a10ea2fd976fa4cf1fa027993fa48ab27.html#a10ea2fd976fa4cf1fa027993fa48ab27">nvars</a> &gt;= 0 &amp;&amp; part-&gt;len &gt; <a class="code hl_variable" href="../../df/da2/class_schur_ring2_a10ea2fd976fa4cf1fa027993fa48ab27.html#a10ea2fd976fa4cf1fa027993fa48ab27">nvars</a>)</div>
 <div class="line"><span class="lineno">  160</span>    {</div>
-<div class="line"><span class="lineno">  161</span>      <span class="keywordflow">if</span> (set_error) <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a partition of size at most %d\n&quot;</span>, <a class="code hl_variable" href="../../df/da2/class_schur_ring2_a10ea2fd976fa4cf1fa027993fa48ab27.html#a10ea2fd976fa4cf1fa027993fa48ab27">nvars</a>);</div>
+<div class="line"><span class="lineno">  161</span>      <span class="keywordflow">if</span> (set_error) <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;expected a partition of size at most %d\n&quot;</span>, <a class="code hl_variable" href="../../df/da2/class_schur_ring2_a10ea2fd976fa4cf1fa027993fa48ab27.html#a10ea2fd976fa4cf1fa027993fa48ab27">nvars</a>);</div>
 <div class="line"><span class="lineno">  162</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  163</span>    }</div>
 <div class="line"><span class="lineno">  164</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; part-&gt;len; i++)</div>
 <div class="line"><span class="lineno">  165</span>    <span class="keywordflow">if</span> (part-&gt;array[i - 1] &lt; part-&gt;array[i])</div>
 <div class="line"><span class="lineno">  166</span>      {</div>
-<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">if</span> (set_error) <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected a non-increasing sequence of integers&quot;</span>);</div>
+<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">if</span> (set_error) <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;expected a non-increasing sequence of integers&quot;</span>);</div>
 <div class="line"><span class="lineno">  168</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  169</span>      }</div>
 <div class="line"><span class="lineno">  170</span>  <span class="keywordflow">if</span> (part-&gt;len &gt; 0 &amp;&amp; part-&gt;array[part-&gt;len - 1] &lt; 0)</div>
 <div class="line"><span class="lineno">  171</span>    {</div>
-<div class="line"><span class="lineno">  172</span>      <span class="keywordflow">if</span> (set_error) <a class="code hl_function" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a>(<span class="stringliteral">&quot;expected nonnegative integers only&quot;</span>);</div>
+<div class="line"><span class="lineno">  172</span>      <span class="keywordflow">if</span> (set_error) <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;expected nonnegative integers only&quot;</span>);</div>
 <div class="line"><span class="lineno">  173</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  174</span>    }</div>
 <div class="line"><span class="lineno">  175</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  176</span>}</div>
 <div class="ttc" id="aclass_schur_ring2_a10ea2fd976fa4cf1fa027993fa48ab27_html_a10ea2fd976fa4cf1fa027993fa48ab27"><div class="ttname"><a href="../../df/da2/class_schur_ring2_a10ea2fd976fa4cf1fa027993fa48ab27.html#a10ea2fd976fa4cf1fa027993fa48ab27">SchurRing2::nvars</a></div><div class="ttdeci">int nvars</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dc2/schur2_8hpp_source.html#l00107">schur2.hpp:107</a></div></div>
-<div class="ttc" id="aerror_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a_html_aa1e71b9c0f1bdf1cee4fc0998db66c7a"><div class="ttname"><a href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR</a></div><div class="ttdeci">void ERROR(const char *s,...)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00026">error.c:26</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../db/dcc/error_8c_aa1e71b9c0f1bdf1cee4fc0998db66c7a.html#aa1e71b9c0f1bdf1cee4fc0998db66c7a">ERROR()</a>, and <a class="el" href="../../df/da2/class_schur_ring2_a10ea2fd976fa4cf1fa027993fa48ab27.html#a10ea2fd976fa4cf1fa027993fa48ab27">nvars</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, and <a class="el" href="../../df/da2/class_schur_ring2_a10ea2fd976fa4cf1fa027993fa48ab27.html#a10ea2fd976fa4cf1fa027993fa48ab27">nvars</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d37/ringelement_8cpp_ab57d680975b7f306e8933cf0d9053732.html#ab57d680975b7f306e8933cf0d9053732">rawSchurFromPartition()</a>.</p>
 
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('df/da2/class_schur_ring2_a9d89f6c3f4ff
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/da2/class_schur_ring2.html">SchurRing2</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:33 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

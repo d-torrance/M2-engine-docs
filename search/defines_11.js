@@ -7,5 +7,7 @@ var searchData=
   ['tower_5fpolynomial_5fval_4',['TOWER_POLYNOMIAL_VAL',['../de/d5c/tower_8cpp_a6e6fff5c064e4333210c0afaaaa8ab1e.html#a6e6fff5c064e4333210c0afaaaa8ab1e',1,'tower.cpp']]],
   ['tower_5fringelem_5',['TOWER_RINGELEM',['../dd/dc9/ringelem_8hpp_a1803b45d6c9cd803ee8f0cd04fbf586a.html#a1803b45d6c9cd803ee8f0cd04fbf586a',1,'ringelem.hpp']]],
   ['tower_5fval_6',['TOWER_VAL',['../dd/dc9/ringelem_8hpp_aa78206e01eb49432b509c2907cdfcbd9.html#aa78206e01eb49432b509c2907cdfcbd9',1,'ringelem.hpp']]],
-  ['try_7',['TRY',['../da/d49/exceptions_8hpp_ad2746371528bdf15c3910b7bf217dac0.html#ad2746371528bdf15c3910b7bf217dac0',1,'exceptions.hpp']]]
+  ['trapchk_7',['TRAPCHK',['../db/d07/m2-mem_8h_adaf6556f73c67c45dc41be78630bbaa8.html#adaf6556f73c67c45dc41be78630bbaa8',1,'m2-mem.h']]],
+  ['trapchk_5fsize_8',['TRAPCHK_SIZE',['../db/d07/m2-mem_8h_a393a016545bf2c4123e8a462013c5dee.html#a393a016545bf2c4123e8a462013c5dee',1,'m2-mem.h']]],
+  ['try_9',['TRY',['../da/d49/exceptions_8hpp_ad2746371528bdf15c3910b7bf217dac0.html#ad2746371528bdf15c3910b7bf217dac0',1,'exceptions.hpp']]]
 ];

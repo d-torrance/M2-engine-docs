@@ -123,8 +123,8 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a690c7c60f2f
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00234">234</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  235</span>{</div>
-<div class="line"><span class="lineno">  236</span>  <span class="keyword">auto</span>&amp; resultCoeff = result.getCoeffInserter();</div>
-<div class="line"><span class="lineno">  237</span>  <span class="keyword">auto</span>&amp; resultMonom = result.getMonomInserter();</div>
+<div class="line"><span class="lineno">  236</span>  <span class="keyword">auto</span>&amp; resultCoeff = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.getCoeffInserter();</div>
+<div class="line"><span class="lineno">  237</span>  <span class="keyword">auto</span>&amp; resultMonom = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.getMonomInserter();</div>
 <div class="line"><span class="lineno">  238</span>  resultCoeff.push_back(coeff);</div>
 <div class="line"><span class="lineno">  239</span> </div>
 <div class="line"><span class="lineno">  240</span>  <a class="code hl_function" href="../../de/dbd/class_free_algebra_a83c6189fa2b0a76031329377b1cfaa03.html#a83c6189fa2b0a76031329377b1cfaa03">monoid</a>().<a class="code hl_function" href="../../dc/da6/class_free_monoid_a766975e78f608f432708be383a553158.html#a766975e78f608f432708be383a553158">monomInsertFromWord</a>(resultMonom,<a class="code hl_variable" href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a>);</div>
@@ -132,8 +132,9 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a690c7c60f2f
 <div class="ttc" id="a_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e_html_ad7ff07a5d062e08684d658ddd7ebe35e"><div class="ttname"><a href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a></div><div class="ttdeci">std::vector&lt; int &gt; word</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dc0/_n_c_groebner_test_8cpp_source.html#l00063">NCGroebnerTest.cpp:63</a></div></div>
 <div class="ttc" id="aclass_free_algebra_a83c6189fa2b0a76031329377b1cfaa03_html_a83c6189fa2b0a76031329377b1cfaa03"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a83c6189fa2b0a76031329377b1cfaa03.html#a83c6189fa2b0a76031329377b1cfaa03">FreeAlgebra::monoid</a></div><div class="ttdeci">const FreeMonoid &amp; monoid() const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00041">FreeAlgebra.hpp:41</a></div></div>
 <div class="ttc" id="aclass_free_monoid_a766975e78f608f432708be383a553158_html_a766975e78f608f432708be383a553158"><div class="ttname"><a href="../../dc/da6/class_free_monoid_a766975e78f608f432708be383a553158.html#a766975e78f608f432708be383a553158">FreeMonoid::monomInsertFromWord</a></div><div class="ttdeci">void monomInsertFromWord(MonomialInserter &amp;result, const Word &amp;w) const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d5e/_free_monoid_8cpp_source.html#l00304">FreeMonoid.cpp:304</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../de/dbd/class_free_algebra_a83c6189fa2b0a76031329377b1cfaa03.html#a83c6189fa2b0a76031329377b1cfaa03">monoid()</a>, <a class="el" href="../../dc/da6/class_free_monoid_a766975e78f608f432708be383a553158.html#a766975e78f608f432708be383a553158">FreeMonoid::monomInsertFromWord()</a>, and <a class="el" href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dbd/class_free_algebra_a83c6189fa2b0a76031329377b1cfaa03.html#a83c6189fa2b0a76031329377b1cfaa03">monoid()</a>, <a class="el" href="../../dc/da6/class_free_monoid_a766975e78f608f432708be383a553158.html#a766975e78f608f432708be383a553158">FreeMonoid::monomInsertFromWord()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>, and <a class="el" href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a>.</p>
 
 </div>
 </div>
@@ -143,7 +144,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a690c7c60f2f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:31 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:59 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

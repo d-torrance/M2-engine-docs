@@ -1,7 +1,5 @@
 var table_8h =
 [
-    [ "FREE", "dd/d98/table_8h_a105949c59c998e38aad80266afac92bf.html#a105949c59c998e38aad80266afac92bf", null ],
-    [ "NEW", "dd/d98/table_8h_a6dcbdd586f47a62900804da2a6102a2e.html#a6dcbdd586f47a62900804da2a6102a2e", null ],
     [ "T", "dd/d98/table_8h_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5", null ],
     [ "Table_free", "dd/d98/table_8h_a0008da77977fbf197e608cfa3f84db4e.html#a0008da77977fbf197e608cfa3f84db4e", null ],
     [ "Table_get", "dd/d98/table_8h_a581905dc741ef3fdea1cdc5426e89a3e.html#a581905dc741ef3fdea1cdc5426e89a3e", null ],

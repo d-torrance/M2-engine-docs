@@ -178,10 +178,10 @@ $(document).ready(function(){initNavTree('dd/d15/_basic_poly_list_8cpp_source.ht
 <div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../dd/d15/_basic_poly_list_8cpp_adabb67be5dcfa3ec3f3aa6c970288b33.html#adabb67be5dcfa3ec3f3aa6c970288b33">   63</a></span><span class="keywordtype">long</span> <a class="code hl_function" href="../../dd/d15/_basic_poly_list_8cpp_adabb67be5dcfa3ec3f3aa6c970288b33.html#adabb67be5dcfa3ec3f3aa6c970288b33">bytesUsed</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d4/d6d/_basic_poly_list_8hpp_a24fbc5f5eec7472cd3ee08f9f323741e.html#a24fbc5f5eec7472cd3ee08f9f323741e">BasicPolyList</a>&amp; F)</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">long</span> result = <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../d4/d6d/_basic_poly_list_8hpp_a24fbc5f5eec7472cd3ee08f9f323741e.html#a24fbc5f5eec7472cd3ee08f9f323741e">BasicPolyList</a>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">long</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../d4/d6d/_basic_poly_list_8hpp_a24fbc5f5eec7472cd3ee08f9f323741e.html#a24fbc5f5eec7472cd3ee08f9f323741e">BasicPolyList</a>);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; f : F)</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    result += f.bytesUsed();</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> += f.bytesUsed();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
@@ -214,6 +214,7 @@ $(document).ready(function(){initNavTree('dd/d15/_basic_poly_list_8cpp_source.ht
 <div class="ttc" id="aclass_matrix_stream_aea27949d7fc72a95165364bddf465b66_html_aea27949d7fc72a95165364bddf465b66"><div class="ttname"><a href="../../d6/d02/class_matrix_stream_aea27949d7fc72a95165364bddf465b66.html#aea27949d7fc72a95165364bddf465b66">MatrixStream::value</a></div><div class="ttdeci">const Matrix * value() const</div><div class="ttdef"><b>Definition</b> <a href="../../de/dad/matrix-stream_8hpp_source.html#l00042">matrix-stream.hpp:42</a></div></div>
 <div class="ttc" id="aclass_matrix_stream_html"><div class="ttname"><a href="../../d6/d02/class_matrix_stream.html">MatrixStream</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/dad/matrix-stream_8hpp_source.html#l00035">matrix-stream.hpp:36</a></div></div>
 <div class="ttc" id="aclassint_html"><div class="ttname"><a href="../../d1/da0/classint.html">int</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 <div class="ttc" id="amatrix-stream_8hpp_html"><div class="ttname"><a href="../../de/dad/matrix-stream_8hpp.html">matrix-stream.hpp</a></div></div>
 <div class="ttc" id="amatrix_8hpp_html"><div class="ttname"><a href="../../df/dce/matrix_8hpp.html">matrix.hpp</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
@@ -223,7 +224,7 @@ $(document).ready(function(){initNavTree('dd/d15/_basic_poly_list_8cpp_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dd/d15/_basic_poly_list_8cpp.html">BasicPolyList.cpp</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:28 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:56 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

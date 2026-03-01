@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('dc/d0d/class_res_monoid_dense_adf61cdf
 <div class="line"><span class="lineno">  423</span>    a += <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_a27b0c25b3b8d6f352223af93e28febbe.html#a27b0c25b3b8d6f352223af93e28febbe">firstvar</a>;</div>
 <div class="line"><span class="lineno">  424</span>    b += <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_a27b0c25b3b8d6f352223af93e28febbe.html#a27b0c25b3b8d6f352223af93e28febbe">firstvar</a>;</div>
 <div class="line"><span class="lineno">  425</span>    <span class="keywordtype">int</span> len = 0;</div>
-<div class="line"><span class="lineno">  426</span>    <a class="code hl_typedef" href="../../d7/d0a/res-monomial-types_8hpp_aeafae28e221cfed9648e85c2b97a56a3.html#aeafae28e221cfed9648e85c2b97a56a3">res_varpower_word</a>* r = result + 1;</div>
+<div class="line"><span class="lineno">  426</span>    <a class="code hl_typedef" href="../../d7/d0a/res-monomial-types_8hpp_aeafae28e221cfed9648e85c2b97a56a3.html#aeafae28e221cfed9648e85c2b97a56a3">res_varpower_word</a>* r = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> + 1;</div>
 <div class="line"><span class="lineno">  427</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_variable" href="../../dc/d0d/class_res_monoid_dense_adddcc3e79aca1c92d1f515048deed888.html#adddcc3e79aca1c92d1f515048deed888">nvars</a> - 1; i &gt;= 0; --i)</div>
 <div class="line"><span class="lineno">  428</span>      {</div>
 <div class="line"><span class="lineno">  429</span>        <a class="code hl_typedef" href="../../d7/d0a/res-monomial-types_8hpp_aeafae28e221cfed9648e85c2b97a56a3.html#aeafae28e221cfed9648e85c2b97a56a3">res_varpower_word</a> c = a[i] - b[i];</div>
@@ -147,14 +147,15 @@ $(document).ready(function(){initNavTree('dc/d0d/class_res_monoid_dense_adf61cdf
 <div class="line"><span class="lineno">  434</span>            len++;</div>
 <div class="line"><span class="lineno">  435</span>          }</div>
 <div class="line"><span class="lineno">  436</span>      }</div>
-<div class="line"><span class="lineno">  437</span>    result[0] = len;</div>
+<div class="line"><span class="lineno">  437</span>    <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>[0] = len;</div>
 <div class="line"><span class="lineno">  438</span>  }</div>
 <div class="ttc" id="aclass_res_monoid_dense_a050db3af42464bcb555462693cfa751d_html_a050db3af42464bcb555462693cfa751d"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_a050db3af42464bcb555462693cfa751d.html#a050db3af42464bcb555462693cfa751d">ResMonoidDense::ncalls_quotient_as_vp</a></div><div class="ttdeci">unsigned long ncalls_quotient_as_vp</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00050">res-moninfo-dense.hpp:50</a></div></div>
 <div class="ttc" id="aclass_res_monoid_dense_a27b0c25b3b8d6f352223af93e28febbe_html_a27b0c25b3b8d6f352223af93e28febbe"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_a27b0c25b3b8d6f352223af93e28febbe.html#a27b0c25b3b8d6f352223af93e28febbe">ResMonoidDense::firstvar</a></div><div class="ttdeci">int firstvar</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00023">res-moninfo-dense.hpp:23</a></div></div>
 <div class="ttc" id="aclass_res_monoid_dense_adddcc3e79aca1c92d1f515048deed888_html_adddcc3e79aca1c92d1f515048deed888"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_adddcc3e79aca1c92d1f515048deed888.html#adddcc3e79aca1c92d1f515048deed888">ResMonoidDense::nvars</a></div><div class="ttdeci">int nvars</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00015">res-moninfo-dense.hpp:15</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 <div class="ttc" id="ares-monomial-types_8hpp_aeafae28e221cfed9648e85c2b97a56a3_html_aeafae28e221cfed9648e85c2b97a56a3"><div class="ttname"><a href="../../d7/d0a/res-monomial-types_8hpp_aeafae28e221cfed9648e85c2b97a56a3.html#aeafae28e221cfed9648e85c2b97a56a3">res_varpower_word</a></div><div class="ttdeci">res_varpower_monomials::Exponent res_varpower_word</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d0a/res-monomial-types_8hpp_source.html#l00027">res-monomial-types.hpp:27</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dc/d0d/class_res_monoid_dense_a27b0c25b3b8d6f352223af93e28febbe.html#a27b0c25b3b8d6f352223af93e28febbe">firstvar</a>, <a class="el" href="../../dc/d0d/class_res_monoid_dense_a050db3af42464bcb555462693cfa751d.html#a050db3af42464bcb555462693cfa751d">ncalls_quotient_as_vp</a>, and <a class="el" href="../../dc/d0d/class_res_monoid_dense_adddcc3e79aca1c92d1f515048deed888.html#adddcc3e79aca1c92d1f515048deed888">nvars</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d0d/class_res_monoid_dense_a27b0c25b3b8d6f352223af93e28febbe.html#a27b0c25b3b8d6f352223af93e28febbe">firstvar</a>, <a class="el" href="../../dc/d0d/class_res_monoid_dense_a050db3af42464bcb555462693cfa751d.html#a050db3af42464bcb555462693cfa751d">ncalls_quotient_as_vp</a>, <a class="el" href="../../dc/d0d/class_res_monoid_dense_adddcc3e79aca1c92d1f515048deed888.html#adddcc3e79aca1c92d1f515048deed888">nvars</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dd/d1a/class_schreyer_frame_aa634f33290f6e5a896a6585d9c24e4f4.html#aa634f33290f6e5a896a6585d9c24e4f4">SchreyerFrame::createQuotientElement()</a>.</p>
 
@@ -166,7 +167,7 @@ $(document).ready(function(){initNavTree('dc/d0d/class_res_monoid_dense_adf61cdf
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d0d/class_res_monoid_dense.html">ResMonoidDense</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:01 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

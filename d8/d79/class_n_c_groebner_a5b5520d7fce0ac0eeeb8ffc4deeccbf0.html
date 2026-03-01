@@ -111,9 +111,9 @@ $(document).ready(function(){initNavTree('d8/d79/class_n_c_groebner_a5b5520d7fce
 <div class="line"><span class="lineno">  374</span>    {</div>
 <div class="line"><span class="lineno">  375</span>      <span class="comment">// if we are here, then &#39;overlap&#39; represents a generator</span></div>
 <div class="line"><span class="lineno">  376</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>* f = <a class="code hl_variable" href="../../d8/d79/class_n_c_groebner_aed5664d11e34c2682b86bf9ef810494a.html#aed5664d11e34c2682b86bf9ef810494a">mInput</a>[std::get&lt;0&gt;(overlap)];</div>
-<div class="line"><span class="lineno">  377</span>      <a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a> * result = <span class="keyword">new</span> <a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>;</div>
-<div class="line"><span class="lineno">  378</span>      <a class="code hl_function" href="../../d8/d79/class_n_c_groebner_ad142d233db2dede08c28314a23187228.html#ad142d233db2dede08c28314a23187228">freeAlgebra</a>().<a class="code hl_function" href="../../de/dbd/class_free_algebra_a17afa5d75091e8e358f9bac23e5d38d3.html#a17afa5d75091e8e358f9bac23e5d38d3">copy</a>(*result, *f);</div>
-<div class="line"><span class="lineno">  379</span>      <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  377</span>      <a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a> * <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <span class="keyword">new</span> <a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>;</div>
+<div class="line"><span class="lineno">  378</span>      <a class="code hl_function" href="../../d8/d79/class_n_c_groebner_ad142d233db2dede08c28314a23187228.html#ad142d233db2dede08c28314a23187228">freeAlgebra</a>().<a class="code hl_function" href="../../de/dbd/class_free_algebra_a17afa5d75091e8e358f9bac23e5d38d3.html#a17afa5d75091e8e358f9bac23e5d38d3">copy</a>(*<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, *f);</div>
+<div class="line"><span class="lineno">  379</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><span class="lineno">  380</span>    }</div>
 <div class="line"><span class="lineno">  381</span>  <span class="keywordflow">else</span> <span class="keywordflow">return</span> <a class="code hl_function" href="../../d8/d79/class_n_c_groebner_ab62796ac971ea5dfde81bf93604b5e84.html#ab62796ac971ea5dfde81bf93604b5e84">createOverlapPoly</a>(<a class="code hl_function" href="../../d8/d79/class_n_c_groebner_ad142d233db2dede08c28314a23187228.html#ad142d233db2dede08c28314a23187228">freeAlgebra</a>(),</div>
 <div class="line"><span class="lineno">  382</span>                                <a class="code hl_variable" href="../../d8/d79/class_n_c_groebner_ab6491c0cc167222e08843b65df3aa2bd.html#ab6491c0cc167222e08843b65df3aa2bd">mGroebner</a>,</div>
@@ -127,7 +127,10 @@ $(document).ready(function(){initNavTree('d8/d79/class_n_c_groebner_a5b5520d7fce
 <div class="ttc" id="aclass_n_c_groebner_ab6491c0cc167222e08843b65df3aa2bd_html_ab6491c0cc167222e08843b65df3aa2bd"><div class="ttname"><a href="../../d8/d79/class_n_c_groebner_ab6491c0cc167222e08843b65df3aa2bd.html#ab6491c0cc167222e08843b65df3aa2bd">NCGroebner::mGroebner</a></div><div class="ttdeci">PolyList mGroebner</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d37/_n_c_groebner_8hpp_source.html#l00032">NCGroebner.hpp:32</a></div></div>
 <div class="ttc" id="aclass_n_c_groebner_ad142d233db2dede08c28314a23187228_html_ad142d233db2dede08c28314a23187228"><div class="ttname"><a href="../../d8/d79/class_n_c_groebner_ad142d233db2dede08c28314a23187228.html#ad142d233db2dede08c28314a23187228">NCGroebner::freeAlgebra</a></div><div class="ttdeci">const FreeAlgebra &amp; freeAlgebra() const</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d37/_n_c_groebner_8hpp_source.html#l00048">NCGroebner.hpp:48</a></div></div>
 <div class="ttc" id="aclass_n_c_groebner_aed5664d11e34c2682b86bf9ef810494a_html_aed5664d11e34c2682b86bf9ef810494a"><div class="ttname"><a href="../../d8/d79/class_n_c_groebner_aed5664d11e34c2682b86bf9ef810494a.html#aed5664d11e34c2682b86bf9ef810494a">NCGroebner::mInput</a></div><div class="ttdeci">const ConstPolyList mInput</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d37/_n_c_groebner_8hpp_source.html#l00028">NCGroebner.hpp:28</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -136,7 +139,7 @@ $(document).ready(function(){initNavTree('d8/d79/class_n_c_groebner_a5b5520d7fce
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d79/class_n_c_groebner.html">NCGroebner</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

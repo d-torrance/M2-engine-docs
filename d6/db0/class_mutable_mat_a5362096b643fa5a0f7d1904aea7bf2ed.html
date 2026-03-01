@@ -103,13 +103,13 @@ template&lt;typename Mat &gt; </div>
         <tr>
           <td class="memname">virtual <a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../d6/db0/class_mutable_mat.html">MutableMat</a>&lt; Mat &gt;::dot_product </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/d07/m2-mem_8h_afb0843d0fb27ea1b89117293f9a01605.html#afb0843d0fb27ea1b89117293f9a01605">size_t</a>&#160;</td>
           <td class="paramname"><em>c1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/d07/m2-mem_8h_afb0843d0fb27ea1b89117293f9a01605.html#afb0843d0fb27ea1b89117293f9a01605">size_t</a>&#160;</td>
           <td class="paramname"><em>c2</em>, </td>
         </tr>
         <tr>
@@ -141,15 +141,16 @@ template&lt;typename Mat &gt; </div>
 <div class="line"><span class="lineno">  438</span>    <a class="code hl_typedef" href="../../d6/db0/class_mutable_mat_ad93785d6485a1219043832f4a4b73e68.html#ad93785d6485a1219043832f4a4b73e68">Element</a> a(<a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>.ring());</div>
 <div class="line"><span class="lineno">  439</span>    <a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>.ring().set_zero(a);</div>
 <div class="line"><span class="lineno">  440</span>    MatOps::dot_product(<a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>, c1, c2, a);</div>
-<div class="line"><span class="lineno">  441</span>    <a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>.ring().to_ring_elem(result, a);</div>
+<div class="line"><span class="lineno">  441</span>    <a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>.ring().to_ring_elem(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, a);</div>
 <div class="line"><span class="lineno">  442</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  443</span>  }</div>
 <div class="ttc" id="aclass_mutable_mat_a852442a68fd752a8e97f8723c65cfe96_html_a852442a68fd752a8e97f8723c65cfe96"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat::mat</a></div><div class="ttdeci">Mat mat</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00183">mutablemat-defs.hpp:183</a></div></div>
 <div class="ttc" id="aclass_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004_html_a8d9f7c1f50394782209a1f9a8a073004"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">MutableMat::n_cols</a></div><div class="ttdeci">virtual size_t n_cols() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00229">mutablemat-defs.hpp:229</a></div></div>
 <div class="ttc" id="aclass_mutable_mat_ad93785d6485a1219043832f4a4b73e68_html_ad93785d6485a1219043832f4a4b73e68"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_ad93785d6485a1219043832f4a4b73e68.html#ad93785d6485a1219043832f4a4b73e68">MutableMat::Element</a></div><div class="ttdeci">CoeffRing::Element Element</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00169">mutablemat-defs.hpp:169</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 <div class="ttc" id="amutablemat-defs_8hpp_a285ba07805845e4a7f61d291fe199143_html_a285ba07805845e4a7f61d291fe199143"><div class="ttname"><a href="../../dd/d5f/mutablemat-defs_8hpp_a285ba07805845e4a7f61d291fe199143.html#a285ba07805845e4a7f61d291fe199143">error_column_bound</a></div><div class="ttdeci">bool error_column_bound(size_t c, size_t ncols)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00138">mutablemat-defs.hpp:138</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_a285ba07805845e4a7f61d291fe199143.html#a285ba07805845e4a7f61d291fe199143">error_column_bound()</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat&lt; Mat &gt;::mat</a>, and <a class="el" href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">MutableMat&lt; Mat &gt;::n_cols()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_a285ba07805845e4a7f61d291fe199143.html#a285ba07805845e4a7f61d291fe199143">error_column_bound()</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat&lt; Mat &gt;::mat</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">MutableMat&lt; Mat &gt;::n_cols()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 </div>
 </div>
@@ -159,7 +160,7 @@ template&lt;typename Mat &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/db0/class_mutable_mat.html">MutableMat</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:32 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:00 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -6,10 +6,10 @@ var searchData=
   ['geoheap_5fsize_3',['GEOHEAP_SIZE',['../d2/d6f/style_8hpp_a7ad908ecb2518165a3f24d63b222140e.html#a7ad908ecb2518165a3f24d63b222140e',1,'style.hpp']]],
   ['getmem_4',['GETMEM',['../da/d94/newdelete_8hpp_a7ceed03f3acdf8c10d3d65ef4ceb5ce4.html#a7ceed03f3acdf8c10d3d65ef4ceb5ce4',1,'newdelete.hpp']]],
   ['getmem_5fatomic_5',['GETMEM_ATOMIC',['../da/d94/newdelete_8hpp_acc8a7054d17eb3cf10afd9facbab1c94.html#acc8a7054d17eb3cf10afd9facbab1c94',1,'newdelete.hpp']]],
-  ['getmemarraytype_6',['getmemarraytype',['../d1/d81/_m2mem-replacement_8h_a31dcc58936c13ff01270d6ee43733178.html#a31dcc58936c13ff01270d6ee43733178',1,'M2mem-replacement.h']]],
-  ['getmematomicarraytype_7',['getmematomicarraytype',['../d1/d81/_m2mem-replacement_8h_aa00b634fc07061717d2d21491c45da6b.html#aa00b634fc07061717d2d21491c45da6b',1,'M2mem-replacement.h']]],
-  ['getmematomicstructtype_8',['getmematomicstructtype',['../d1/d81/_m2mem-replacement_8h_a653a1bbeeb6c5eb11bf0dbe21117bd91.html#a653a1bbeeb6c5eb11bf0dbe21117bd91',1,'M2mem-replacement.h']]],
-  ['getmematomicvectortype_9',['getmematomicvectortype',['../d1/d81/_m2mem-replacement_8h_a188b99d9d8fc1a149e42b4491bb9662c.html#a188b99d9d8fc1a149e42b4491bb9662c',1,'M2mem-replacement.h']]],
-  ['getmemstructtype_10',['getmemstructtype',['../d1/d81/_m2mem-replacement_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57',1,'M2mem-replacement.h']]],
-  ['getmemvectortype_11',['getmemvectortype',['../d1/d81/_m2mem-replacement_8h_a343597a45ce5e5a6f71bb99842c06375.html#a343597a45ce5e5a6f71bb99842c06375',1,'M2mem-replacement.h']]]
+  ['getmemarraytype_6',['getmemarraytype',['../db/d07/m2-mem_8h_a31dcc58936c13ff01270d6ee43733178.html#a31dcc58936c13ff01270d6ee43733178',1,'m2-mem.h']]],
+  ['getmematomicarraytype_7',['getmematomicarraytype',['../db/d07/m2-mem_8h_aa00b634fc07061717d2d21491c45da6b.html#aa00b634fc07061717d2d21491c45da6b',1,'m2-mem.h']]],
+  ['getmematomicstructtype_8',['getmematomicstructtype',['../db/d07/m2-mem_8h_a653a1bbeeb6c5eb11bf0dbe21117bd91.html#a653a1bbeeb6c5eb11bf0dbe21117bd91',1,'m2-mem.h']]],
+  ['getmematomicvectortype_9',['getmematomicvectortype',['../db/d07/m2-mem_8h_a188b99d9d8fc1a149e42b4491bb9662c.html#a188b99d9d8fc1a149e42b4491bb9662c',1,'m2-mem.h']]],
+  ['getmemstructtype_10',['getmemstructtype',['../db/d07/m2-mem_8h_a6ca24b55fd05d728fa63a538c8f0ec57.html#a6ca24b55fd05d728fa63a538c8f0ec57',1,'m2-mem.h']]],
+  ['getmemvectortype_11',['getmemvectortype',['../db/d07/m2-mem_8h_a343597a45ce5e5a6f71bb99842c06375.html#a343597a45ce5e5a6f71bb99842c06375',1,'m2-mem.h']]]
 ];

@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d1/d81/complex_8c_a79eb85083c9b12a5777
         <tr>
           <td class="memname">void mpfc_abs </td>
           <td>(</td>
-          <td class="paramtype">gmp_RRmutable&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d28/m2-types_8h_a2d6319c53ceeac9063c5f8ed6e1dff40.html#a2d6319c53ceeac9063c5f8ed6e1dff40">gmp_RRmutable</a>&#160;</td>
           <td class="paramname"><em>result</em>, </td>
         </tr>
         <tr>
@@ -115,67 +115,68 @@ $(document).ready(function(){initNavTree('d1/d81/complex_8c_a79eb85083c9b12a5777
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d81/complex_8c_source.html#l00224">224</a> of file <a class="el" href="../../d1/d81/complex_8c_source.html">complex.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  225</span>{</div>
-<div class="line"><span class="lineno">  226</span>  mpfr_t a, b;</div>
-<div class="line"><span class="lineno">  227</span> </div>
-<div class="line"><span class="lineno">  228</span>  mpfr_init2(a, mpfr_get_prec(c-&gt;re));</div>
-<div class="line"><span class="lineno">  229</span>  mpfr_init2(b, mpfr_get_prec(c-&gt;re));</div>
-<div class="line"><span class="lineno">  230</span>  mpfr_abs(a, c-&gt;re, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  231</span>  mpfr_abs(b, c-&gt;im, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  232</span>  <span class="keywordflow">if</span> (mpfr_zero_p(a))</div>
-<div class="line"><span class="lineno">  233</span>    mpfr_set(result, b, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  234</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mpfr_zero_p(b))</div>
-<div class="line"><span class="lineno">  235</span>    mpfr_set(result, a, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  236</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mpfr_greater_p(a, b))</div>
-<div class="line"><span class="lineno">  237</span>    {</div>
-<div class="line"><span class="lineno">  238</span>      <span class="comment">// double d = b/a;</span></div>
-<div class="line"><span class="lineno">  239</span>      <span class="comment">// But use b for d, as it is not needed later.</span></div>
-<div class="line"><span class="lineno">  240</span>      <span class="comment">// result = a * ::sqrt(1.0 + d*d);</span></div>
-<div class="line"><span class="lineno">  241</span>      mpfr_div(b, b, a, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  242</span>      mpfr_sqr(b, b, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  243</span>      mpfr_add_si(b, b, 1, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  244</span>      mpfr_sqrt(b, b, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  245</span>      mpfr_mul(result, a, b, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  246</span>    }</div>
-<div class="line"><span class="lineno">  247</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  248</span>    {</div>
-<div class="line"><span class="lineno">  249</span>      <span class="comment">// double d = a/b;</span></div>
-<div class="line"><span class="lineno">  250</span>      <span class="comment">// But use a for d, as it is not needed later.</span></div>
-<div class="line"><span class="lineno">  251</span>      <span class="comment">// result = b * ::sqrt(1.0 + d*d);</span></div>
-<div class="line"><span class="lineno">  252</span>      mpfr_div(a, a, b, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  253</span>      mpfr_sqr(a, a, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  254</span>      mpfr_add_si(a, a, 1, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  255</span>      mpfr_sqrt(a, a, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  256</span>      mpfr_mul(result, b, a, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  257</span>    }</div>
-<div class="line"><span class="lineno">  258</span>  mpfr_clear(a);</div>
-<div class="line"><span class="lineno">  259</span>  mpfr_clear(b);</div>
-<div class="line"><span class="lineno">  260</span> </div>
-<div class="line"><span class="lineno">  261</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><span class="lineno">  262</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_define" href="../../d1/df6/polyroots_8cpp_a3aa069ac3980707dae1e0530f50d59e4.html#a3aa069ac3980707dae1e0530f50d59e4">abs</a>(<span class="keywordtype">double</span> &amp;result, elem c)</div>
-<div class="line"><span class="lineno">  263</span>  {</div>
-<div class="line"><span class="lineno">  264</span>    <span class="keywordtype">double</span> a = <a class="code hl_function" href="../../d1/d02/namespacempfr_a7af670164065bb2be4855f16210e6572.html#a7af670164065bb2be4855f16210e6572">fabs</a>(c.re);</div>
-<div class="line"><span class="lineno">  265</span>    <span class="keywordtype">double</span> b = <a class="code hl_function" href="../../d1/d02/namespacempfr_a7af670164065bb2be4855f16210e6572.html#a7af670164065bb2be4855f16210e6572">fabs</a>(c.im);</div>
-<div class="line"><span class="lineno">  266</span>    <span class="keywordflow">if</span> (a == 0.0) result = b;</div>
-<div class="line"><span class="lineno">  267</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (b == 0.0) result = a;</div>
-<div class="line"><span class="lineno">  268</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a &gt; b)</div>
-<div class="line"><span class="lineno">  269</span>      {</div>
-<div class="line"><span class="lineno">  270</span>        <span class="keywordtype">double</span> d = b/a;</div>
-<div class="line"><span class="lineno">  271</span>        result = a * ::sqrt(1.0 + d*d);</div>
-<div class="line"><span class="lineno">  272</span>      }</div>
-<div class="line"><span class="lineno">  273</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  274</span>      {</div>
-<div class="line"><span class="lineno">  275</span>        <span class="keywordtype">double</span> d = a/b;</div>
-<div class="line"><span class="lineno">  276</span>        result = b * ::sqrt(1.0 + d*d);</div>
-<div class="line"><span class="lineno">  277</span>      }</div>
-<div class="line"><span class="lineno">  278</span>  }</div>
-<div class="line"><span class="lineno">  279</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  280</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/d81/complex_8c_source.html#l00225">225</a> of file <a class="el" href="../../d1/d81/complex_8c_source.html">complex.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  226</span>{</div>
+<div class="line"><span class="lineno">  227</span>  mpfr_t a, b;</div>
+<div class="line"><span class="lineno">  228</span> </div>
+<div class="line"><span class="lineno">  229</span>  mpfr_init2(a, mpfr_get_prec(c-&gt;re));</div>
+<div class="line"><span class="lineno">  230</span>  mpfr_init2(b, mpfr_get_prec(c-&gt;re));</div>
+<div class="line"><span class="lineno">  231</span>  mpfr_abs(a, c-&gt;re, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  232</span>  mpfr_abs(b, c-&gt;im, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  233</span>  <span class="keywordflow">if</span> (mpfr_zero_p(a))</div>
+<div class="line"><span class="lineno">  234</span>    mpfr_set(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, b, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  235</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mpfr_zero_p(b))</div>
+<div class="line"><span class="lineno">  236</span>    mpfr_set(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, a, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  237</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mpfr_greater_p(a, b))</div>
+<div class="line"><span class="lineno">  238</span>    {</div>
+<div class="line"><span class="lineno">  239</span>      <span class="comment">// double d = b/a;</span></div>
+<div class="line"><span class="lineno">  240</span>      <span class="comment">// But use b for d, as it is not needed later.</span></div>
+<div class="line"><span class="lineno">  241</span>      <span class="comment">// result = a * ::sqrt(1.0 + d*d);</span></div>
+<div class="line"><span class="lineno">  242</span>      mpfr_div(b, b, a, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  243</span>      mpfr_sqr(b, b, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  244</span>      mpfr_add_si(b, b, 1, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  245</span>      mpfr_sqrt(b, b, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  246</span>      mpfr_mul(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, a, b, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  247</span>    }</div>
+<div class="line"><span class="lineno">  248</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  249</span>    {</div>
+<div class="line"><span class="lineno">  250</span>      <span class="comment">// double d = a/b;</span></div>
+<div class="line"><span class="lineno">  251</span>      <span class="comment">// But use a for d, as it is not needed later.</span></div>
+<div class="line"><span class="lineno">  252</span>      <span class="comment">// result = b * ::sqrt(1.0 + d*d);</span></div>
+<div class="line"><span class="lineno">  253</span>      mpfr_div(a, a, b, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  254</span>      mpfr_sqr(a, a, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  255</span>      mpfr_add_si(a, a, 1, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  256</span>      mpfr_sqrt(a, a, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  257</span>      mpfr_mul(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, b, a, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  258</span>    }</div>
+<div class="line"><span class="lineno">  259</span>  mpfr_clear(a);</div>
+<div class="line"><span class="lineno">  260</span>  mpfr_clear(b);</div>
+<div class="line"><span class="lineno">  261</span> </div>
+<div class="line"><span class="lineno">  262</span><span class="preprocessor">#if 0</span></div>
+<div class="line"><span class="lineno">  263</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_define" href="../../d1/df6/polyroots_8cpp_a3aa069ac3980707dae1e0530f50d59e4.html#a3aa069ac3980707dae1e0530f50d59e4">abs</a>(<span class="keywordtype">double</span> &amp;<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, elem c)</div>
+<div class="line"><span class="lineno">  264</span>  {</div>
+<div class="line"><span class="lineno">  265</span>    <span class="keywordtype">double</span> a = <a class="code hl_function" href="../../d1/d02/namespacempfr_a7af670164065bb2be4855f16210e6572.html#a7af670164065bb2be4855f16210e6572">fabs</a>(c.re);</div>
+<div class="line"><span class="lineno">  266</span>    <span class="keywordtype">double</span> b = <a class="code hl_function" href="../../d1/d02/namespacempfr_a7af670164065bb2be4855f16210e6572.html#a7af670164065bb2be4855f16210e6572">fabs</a>(c.im);</div>
+<div class="line"><span class="lineno">  267</span>    <span class="keywordflow">if</span> (a == 0.0) <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = b;</div>
+<div class="line"><span class="lineno">  268</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (b == 0.0) <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = a;</div>
+<div class="line"><span class="lineno">  269</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a &gt; b)</div>
+<div class="line"><span class="lineno">  270</span>      {</div>
+<div class="line"><span class="lineno">  271</span>        <span class="keywordtype">double</span> d = b/a;</div>
+<div class="line"><span class="lineno">  272</span>        <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = a * ::sqrt(1.0 + d*d);</div>
+<div class="line"><span class="lineno">  273</span>      }</div>
+<div class="line"><span class="lineno">  274</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  275</span>      {</div>
+<div class="line"><span class="lineno">  276</span>        <span class="keywordtype">double</span> d = a/b;</div>
+<div class="line"><span class="lineno">  277</span>        <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = b * ::sqrt(1.0 + d*d);</div>
+<div class="line"><span class="lineno">  278</span>      }</div>
+<div class="line"><span class="lineno">  279</span>  }</div>
+<div class="line"><span class="lineno">  280</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  281</span>}</div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 <div class="ttc" id="anamespacempfr_a7af670164065bb2be4855f16210e6572_html_a7af670164065bb2be4855f16210e6572"><div class="ttname"><a href="../../d1/d02/namespacempfr_a7af670164065bb2be4855f16210e6572.html#a7af670164065bb2be4855f16210e6572">mpfr::fabs</a></div><div class="ttdeci">const mpreal fabs(const mpreal &amp;x, mp_rnd_t r=mpreal::get_default_rnd())</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l02268">mpreal.h:2268</a></div></div>
 <div class="ttc" id="apolyroots_8cpp_a3aa069ac3980707dae1e0530f50d59e4_html_a3aa069ac3980707dae1e0530f50d59e4"><div class="ttname"><a href="../../d1/df6/polyroots_8cpp_a3aa069ac3980707dae1e0530f50d59e4.html#a3aa069ac3980707dae1e0530f50d59e4">abs</a></div><div class="ttdeci">#define abs(x)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df6/polyroots_8cpp_source.html#l00020">polyroots.cpp:20</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d1/df6/polyroots_8cpp_a3aa069ac3980707dae1e0530f50d59e4.html#a3aa069ac3980707dae1e0530f50d59e4">abs</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/df6/polyroots_8cpp_a3aa069ac3980707dae1e0530f50d59e4.html#a3aa069ac3980707dae1e0530f50d59e4">abs</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 </div>
 </div>
@@ -185,7 +186,7 @@ $(document).ready(function(){initNavTree('d1/d81/complex_8c_a79eb85083c9b12a5777
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d1/d81/complex_8c.html">complex.c</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:29 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

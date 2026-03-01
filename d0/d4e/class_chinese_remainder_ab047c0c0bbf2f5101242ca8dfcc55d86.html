@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('d0/d4e/class_chinese_remainder_ab047c0
 <div class="line"><span class="lineno">  320</span>      <span class="keywordflow">if</span> (mpz_cmp(u2sqr, mhalf) &gt;= 0)  <span class="comment">// u2sqr &gt;= mhalf</span></div>
 <div class="line"><span class="lineno">  321</span>        {</div>
 <div class="line"><span class="lineno">  322</span>          retVal = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  323</span>          mpq_set_z(result, c);</div>
+<div class="line"><span class="lineno">  323</span>          mpq_set_z(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, c);</div>
 <div class="line"><span class="lineno">  324</span>          <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  325</span>        }</div>
 <div class="line"><span class="lineno">  326</span> </div>
@@ -161,9 +161,9 @@ $(document).ready(function(){initNavTree('d0/d4e/class_chinese_remainder_ab047c0
 <div class="line"><span class="lineno">  329</span>      <span class="keywordflow">if</span> (mpz_cmp(a2sqr, mhalf) &lt; 0)  <span class="comment">// a2sqr &lt; half</span></div>
 <div class="line"><span class="lineno">  330</span>        {</div>
 <div class="line"><span class="lineno">  331</span>          retVal = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  332</span>          mpq_set_num(result, a2);</div>
-<div class="line"><span class="lineno">  333</span>          mpq_set_den(result, u2);</div>
-<div class="line"><span class="lineno">  334</span>          mpq_canonicalize(result);</div>
+<div class="line"><span class="lineno">  332</span>          mpq_set_num(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, a2);</div>
+<div class="line"><span class="lineno">  333</span>          mpq_set_den(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, u2);</div>
+<div class="line"><span class="lineno">  334</span>          mpq_canonicalize(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>);</div>
 <div class="line"><span class="lineno">  335</span>          <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  336</span>        }</div>
 <div class="line"><span class="lineno">  337</span> </div>
@@ -187,7 +187,10 @@ $(document).ready(function(){initNavTree('d0/d4e/class_chinese_remainder_ab047c0
 <div class="line"><span class="lineno">  355</span> </div>
 <div class="line"><span class="lineno">  356</span>  <span class="keywordflow">return</span> retVal;</div>
 <div class="line"><span class="lineno">  357</span>}</div>
+<div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../d0/d4e/class_chinese_remainder_add4f0163eb72d9c5c061a50eaff9d9bf.html#add4f0163eb72d9c5c061a50eaff9d9bf">ratConversion()</a>, <a class="el" href="../../d0/d4e/class_chinese_remainder_a5a2b28be700be4e6669cd4d46b23c2c0.html#a5a2b28be700be4e6669cd4d46b23c2c0">ratConversion()</a>, <a class="el" href="../../dd/d31/interface_2cra_8cpp_a967f03939281af0574fb1be295c76f2a.html#a967f03939281af0574fb1be295c76f2a">rawMatrixRatConversion()</a>, and <a class="el" href="../../dd/d31/interface_2cra_8cpp_a5327cd55a5ef849a4d37224af92eb314.html#a5327cd55a5ef849a4d37224af92eb314">rawRingElementRatConversion()</a>.</p>
 
 </div>
@@ -198,7 +201,7 @@ $(document).ready(function(){initNavTree('d0/d4e/class_chinese_remainder_ab047c0
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d4e/class_chinese_remainder.html">ChineseRemainder</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:30 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:19:58 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

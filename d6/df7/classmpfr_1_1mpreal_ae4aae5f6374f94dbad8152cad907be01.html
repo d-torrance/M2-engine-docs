@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_ae4aae5f637
 <div class="line"><span class="lineno"> 1789</span> </div>
 <div class="line"><span class="lineno"> 1790</span><span class="preprocessor">#else</span></div>
 <div class="line"><span class="lineno"> 1791</span> </div>
-<div class="line"><span class="lineno"> 1792</span>    <span class="keywordtype">char</span> *s, *ns = NULL;</div>
+<div class="line"><span class="lineno"> 1792</span>    <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>, *ns = NULL;</div>
 <div class="line"><span class="lineno"> 1793</span>    <span class="keywordtype">size_t</span> slen, nslen;</div>
 <div class="line"><span class="lineno"> 1794</span>    mp_exp_t <a class="code hl_friend" href="../../d6/df7/classmpfr_1_1mpreal_abf9dc90b44b12c1b6aa0fe57bd088e8b.html#abf9dc90b44b12c1b6aa0fe57bd088e8b">exp</a>;</div>
 <div class="line"><span class="lineno"> 1795</span>    std::string out;</div>
@@ -161,17 +161,17 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_ae4aae5f637
 <div class="line"><span class="lineno"> 1803</span>    <span class="keywordflow">if</span>(mpfr_zero_p(mp)) <span class="keywordflow">return</span> <span class="stringliteral">&quot;0&quot;</span>;</div>
 <div class="line"><span class="lineno"> 1804</span>    <span class="keywordflow">if</span>(mpfr_nan_p(mp))  <span class="keywordflow">return</span> <span class="stringliteral">&quot;NaN&quot;</span>;</div>
 <div class="line"><span class="lineno"> 1805</span> </div>
-<div class="line"><span class="lineno"> 1806</span>    s  = mpfr_get_str(NULL, &amp;exp, b, 0, mp, mode);</div>
+<div class="line"><span class="lineno"> 1806</span>    <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>  = mpfr_get_str(NULL, &amp;exp, b, 0, mp, mode);</div>
 <div class="line"><span class="lineno"> 1807</span>    ns = mpfr_get_str(NULL, &amp;exp, b, (std::max)(0,n), mp, mode);</div>
 <div class="line"><span class="lineno"> 1808</span> </div>
-<div class="line"><span class="lineno"> 1809</span>    <span class="keywordflow">if</span>(s!=NULL &amp;&amp; ns!=NULL)</div>
+<div class="line"><span class="lineno"> 1809</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>!=NULL &amp;&amp; ns!=NULL)</div>
 <div class="line"><span class="lineno"> 1810</span>    {</div>
-<div class="line"><span class="lineno"> 1811</span>        slen  = strlen(s);</div>
+<div class="line"><span class="lineno"> 1811</span>        slen  = strlen(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
 <div class="line"><span class="lineno"> 1812</span>        nslen = strlen(ns);</div>
 <div class="line"><span class="lineno"> 1813</span>        <span class="keywordflow">if</span>(nslen&lt;=slen)</div>
 <div class="line"><span class="lineno"> 1814</span>        {</div>
-<div class="line"><span class="lineno"> 1815</span>            mpfr_free_str(s);</div>
-<div class="line"><span class="lineno"> 1816</span>            s = ns;</div>
+<div class="line"><span class="lineno"> 1815</span>            mpfr_free_str(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
+<div class="line"><span class="lineno"> 1816</span>            <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a> = ns;</div>
 <div class="line"><span class="lineno"> 1817</span>            slen = nslen;</div>
 <div class="line"><span class="lineno"> 1818</span>        }</div>
 <div class="line"><span class="lineno"> 1819</span>        <span class="keywordflow">else</span> {</div>
@@ -181,49 +181,49 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_ae4aae5f637
 <div class="line"><span class="lineno"> 1823</span>        <span class="comment">// Make human eye-friendly formatting if possible</span></div>
 <div class="line"><span class="lineno"> 1824</span>        <span class="keywordflow">if</span> (exp&gt;0 &amp;&amp; <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(exp)&lt;slen)</div>
 <div class="line"><span class="lineno"> 1825</span>        {</div>
-<div class="line"><span class="lineno"> 1826</span>            <span class="keywordflow">if</span>(s[0]==<span class="charliteral">&#39;-&#39;</span>)</div>
+<div class="line"><span class="lineno"> 1826</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>[0]==<span class="charliteral">&#39;-&#39;</span>)</div>
 <div class="line"><span class="lineno"> 1827</span>            {</div>
 <div class="line"><span class="lineno"> 1828</span>                <span class="comment">// Remove zeros starting from right end</span></div>
-<div class="line"><span class="lineno"> 1829</span>                <span class="keywordtype">char</span>* ptr = s+slen-1;</div>
-<div class="line"><span class="lineno"> 1830</span>                <span class="keywordflow">while</span> (*ptr==<span class="charliteral">&#39;0&#39;</span> &amp;&amp; ptr&gt;s+exp) ptr--;</div>
+<div class="line"><span class="lineno"> 1829</span>                <span class="keywordtype">char</span>* ptr = <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+slen-1;</div>
+<div class="line"><span class="lineno"> 1830</span>                <span class="keywordflow">while</span> (*ptr==<span class="charliteral">&#39;0&#39;</span> &amp;&amp; ptr&gt;<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+exp) ptr--;</div>
 <div class="line"><span class="lineno"> 1831</span> </div>
-<div class="line"><span class="lineno"> 1832</span>                <span class="keywordflow">if</span>(ptr==s+exp) out = std::string(s,exp+1);</div>
-<div class="line"><span class="lineno"> 1833</span>                <span class="keywordflow">else</span>           out = std::string(s,exp+1)+<span class="charliteral">&#39;.&#39;</span>+std::string(s+exp+1,ptr-(s+exp+1)+1);</div>
+<div class="line"><span class="lineno"> 1832</span>                <span class="keywordflow">if</span>(ptr==<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+exp) out = std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>,exp+1);</div>
+<div class="line"><span class="lineno"> 1833</span>                <span class="keywordflow">else</span>           out = std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>,exp+1)+<span class="charliteral">&#39;.&#39;</span>+std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+exp+1,ptr-(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+exp+1)+1);</div>
 <div class="line"><span class="lineno"> 1834</span> </div>
 <div class="line"><span class="lineno"> 1835</span>                <span class="comment">//out = string(s,exp+1)+&#39;.&#39;+string(s+exp+1);</span></div>
 <div class="line"><span class="lineno"> 1836</span>            }</div>
 <div class="line"><span class="lineno"> 1837</span>            <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 1838</span>            {</div>
 <div class="line"><span class="lineno"> 1839</span>                <span class="comment">// Remove zeros starting from right end</span></div>
-<div class="line"><span class="lineno"> 1840</span>                <span class="keywordtype">char</span>* ptr = s+slen-1;</div>
-<div class="line"><span class="lineno"> 1841</span>                <span class="keywordflow">while</span> (*ptr==<span class="charliteral">&#39;0&#39;</span> &amp;&amp; ptr&gt;s+exp-1) ptr--;</div>
+<div class="line"><span class="lineno"> 1840</span>                <span class="keywordtype">char</span>* ptr = <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+slen-1;</div>
+<div class="line"><span class="lineno"> 1841</span>                <span class="keywordflow">while</span> (*ptr==<span class="charliteral">&#39;0&#39;</span> &amp;&amp; ptr&gt;<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+exp-1) ptr--;</div>
 <div class="line"><span class="lineno"> 1842</span> </div>
-<div class="line"><span class="lineno"> 1843</span>                <span class="keywordflow">if</span>(ptr==s+exp-1) out = std::string(s,exp);</div>
-<div class="line"><span class="lineno"> 1844</span>                <span class="keywordflow">else</span>             out = std::string(s,exp)+<span class="charliteral">&#39;.&#39;</span>+std::string(s+exp,ptr-(s+exp)+1);</div>
+<div class="line"><span class="lineno"> 1843</span>                <span class="keywordflow">if</span>(ptr==<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+exp-1) out = std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>,exp);</div>
+<div class="line"><span class="lineno"> 1844</span>                <span class="keywordflow">else</span>             out = std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>,exp)+<span class="charliteral">&#39;.&#39;</span>+std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+exp,ptr-(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+exp)+1);</div>
 <div class="line"><span class="lineno"> 1845</span> </div>
 <div class="line"><span class="lineno"> 1846</span>                <span class="comment">//out = string(s,exp)+&#39;.&#39;+string(s+exp);</span></div>
 <div class="line"><span class="lineno"> 1847</span>            }</div>
 <div class="line"><span class="lineno"> 1848</span> </div>
 <div class="line"><span class="lineno"> 1849</span>        }<span class="keywordflow">else</span>{ <span class="comment">// exp&lt;0 || exp&gt;slen</span></div>
-<div class="line"><span class="lineno"> 1850</span>            <span class="keywordflow">if</span>(s[0]==<span class="charliteral">&#39;-&#39;</span>)</div>
+<div class="line"><span class="lineno"> 1850</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>[0]==<span class="charliteral">&#39;-&#39;</span>)</div>
 <div class="line"><span class="lineno"> 1851</span>            {</div>
 <div class="line"><span class="lineno"> 1852</span>                <span class="comment">// Remove zeros starting from right end</span></div>
-<div class="line"><span class="lineno"> 1853</span>                <span class="keywordtype">char</span>* ptr = s+slen-1;</div>
-<div class="line"><span class="lineno"> 1854</span>                <span class="keywordflow">while</span> (*ptr==<span class="charliteral">&#39;0&#39;</span> &amp;&amp; ptr&gt;s+1) ptr--;</div>
+<div class="line"><span class="lineno"> 1853</span>                <span class="keywordtype">char</span>* ptr = <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+slen-1;</div>
+<div class="line"><span class="lineno"> 1854</span>                <span class="keywordflow">while</span> (*ptr==<span class="charliteral">&#39;0&#39;</span> &amp;&amp; ptr&gt;<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+1) ptr--;</div>
 <div class="line"><span class="lineno"> 1855</span> </div>
-<div class="line"><span class="lineno"> 1856</span>                <span class="keywordflow">if</span>(ptr==s+1) out = std::string(s,2);</div>
-<div class="line"><span class="lineno"> 1857</span>                <span class="keywordflow">else</span>         out = std::string(s,2)+<span class="charliteral">&#39;.&#39;</span>+std::string(s+2,ptr-(s+2)+1);</div>
+<div class="line"><span class="lineno"> 1856</span>                <span class="keywordflow">if</span>(ptr==<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+1) out = std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>,2);</div>
+<div class="line"><span class="lineno"> 1857</span>                <span class="keywordflow">else</span>         out = std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>,2)+<span class="charliteral">&#39;.&#39;</span>+std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+2,ptr-(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+2)+1);</div>
 <div class="line"><span class="lineno"> 1858</span> </div>
 <div class="line"><span class="lineno"> 1859</span>                <span class="comment">//out = string(s,2)+&#39;.&#39;+string(s+2);</span></div>
 <div class="line"><span class="lineno"> 1860</span>            }</div>
 <div class="line"><span class="lineno"> 1861</span>            <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 1862</span>            {</div>
 <div class="line"><span class="lineno"> 1863</span>                <span class="comment">// Remove zeros starting from right end</span></div>
-<div class="line"><span class="lineno"> 1864</span>                <span class="keywordtype">char</span>* ptr = s+slen-1;</div>
-<div class="line"><span class="lineno"> 1865</span>                <span class="keywordflow">while</span> (*ptr==<span class="charliteral">&#39;0&#39;</span> &amp;&amp; ptr&gt;s) ptr--;</div>
+<div class="line"><span class="lineno"> 1864</span>                <span class="keywordtype">char</span>* ptr = <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+slen-1;</div>
+<div class="line"><span class="lineno"> 1865</span>                <span class="keywordflow">while</span> (*ptr==<span class="charliteral">&#39;0&#39;</span> &amp;&amp; ptr&gt;<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>) ptr--;</div>
 <div class="line"><span class="lineno"> 1866</span> </div>
-<div class="line"><span class="lineno"> 1867</span>                <span class="keywordflow">if</span>(ptr==s) out = std::string(s,1);</div>
-<div class="line"><span class="lineno"> 1868</span>                <span class="keywordflow">else</span>       out = std::string(s,1)+<span class="charliteral">&#39;.&#39;</span>+std::string(s+1,ptr-(s+1)+1);</div>
+<div class="line"><span class="lineno"> 1867</span>                <span class="keywordflow">if</span>(ptr==<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>) out = std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>,1);</div>
+<div class="line"><span class="lineno"> 1868</span>                <span class="keywordflow">else</span>       out = std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>,1)+<span class="charliteral">&#39;.&#39;</span>+std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+1,ptr-(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>+1)+1);</div>
 <div class="line"><span class="lineno"> 1869</span> </div>
 <div class="line"><span class="lineno"> 1870</span>                <span class="comment">//out = string(s,1)+&#39;.&#39;+string(s+1);</span></div>
 <div class="line"><span class="lineno"> 1871</span>            }</div>
@@ -236,7 +236,7 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_ae4aae5f637
 <div class="line"><span class="lineno"> 1878</span>            }</div>
 <div class="line"><span class="lineno"> 1879</span>        }</div>
 <div class="line"><span class="lineno"> 1880</span> </div>
-<div class="line"><span class="lineno"> 1881</span>        mpfr_free_str(s);</div>
+<div class="line"><span class="lineno"> 1881</span>        mpfr_free_str(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
 <div class="line"><span class="lineno"> 1882</span>        <span class="keywordflow">return</span> out;</div>
 <div class="line"><span class="lineno"> 1883</span>    }<span class="keywordflow">else</span>{</div>
 <div class="line"><span class="lineno"> 1884</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;conversion error!&quot;</span>;</div>
@@ -245,10 +245,11 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_ae4aae5f637
 <div class="line"><span class="lineno"> 1887</span>}</div>
 <div class="ttc" id="aclassmpfr_1_1mpreal_a566f64ca066c54923d19c11d6c3d15cd_html_a566f64ca066c54923d19c11d6c3d15cd"><div class="ttname"><a href="../../d6/df7/classmpfr_1_1mpreal_a566f64ca066c54923d19c11d6c3d15cd.html#a566f64ca066c54923d19c11d6c3d15cd">mpfr::mpreal::mpfr_srcptr</a></div><div class="ttdeci">::mpfr_srcptr mpfr_srcptr() const</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l01742">mpreal.h:1742</a></div></div>
 <div class="ttc" id="aclassmpfr_1_1mpreal_abf9dc90b44b12c1b6aa0fe57bd088e8b_html_abf9dc90b44b12c1b6aa0fe57bd088e8b"><div class="ttname"><a href="../../d6/df7/classmpfr_1_1mpreal_abf9dc90b44b12c1b6aa0fe57bd088e8b.html#abf9dc90b44b12c1b6aa0fe57bd088e8b">mpfr::mpreal::exp</a></div><div class="ttdeci">friend const mpreal exp(const mpreal &amp;v, mp_rnd_t rnd_mode)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l02273">mpreal.h:2273</a></div></div>
+<div class="ttc" id="am2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5_html_a2fc91f4e89bc37f261db820d231da2e5"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a></div><div class="ttdeci">void size_t s</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00274">m2-mem.cpp:274</a></div></div>
 <div class="ttc" id="amonomial-ordering_8cpp_a2df59f2ce4ad9361c691ca93d9108955_html_a2df59f2ce4ad9361c691ca93d9108955"><div class="ttname"><a href="../../d1/df6/monomial-ordering_8cpp_a2df59f2ce4ad9361c691ca93d9108955.html#a2df59f2ce4ad9361c691ca93d9108955">toString</a></div><div class="ttdeci">std::ostringstream &amp; toString(std::ostringstream &amp;o, int len, int *p)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df6/monomial-ordering_8cpp_source.html#l00269">monomial-ordering.cpp:269</a></div></div>
 <div class="ttc" id="anamespacempfr_a322b667b6a505b839f673d3a36792895_html_a322b667b6a505b839f673d3a36792895"><div class="ttname"><a href="../../d1/d02/namespacempfr_a322b667b6a505b839f673d3a36792895.html#a322b667b6a505b839f673d3a36792895">mpfr::bits2digits</a></div><div class="ttdeci">int bits2digits(mp_prec_t b)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l01944">mpreal.h:1944</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d1/d02/namespacempfr_a322b667b6a505b839f673d3a36792895.html#a322b667b6a505b839f673d3a36792895">mpfr::bits2digits()</a>, <a class="el" href="../../d6/df7/classmpfr_1_1mpreal_abf9dc90b44b12c1b6aa0fe57bd088e8b.html#abf9dc90b44b12c1b6aa0fe57bd088e8b">exp</a>, <a class="el" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">mpfr::exp()</a>, <a class="el" href="../../d6/df7/classmpfr_1_1mpreal_a566f64ca066c54923d19c11d6c3d15cd.html#a566f64ca066c54923d19c11d6c3d15cd">mpfr_srcptr()</a>, and <a class="el" href="../../d1/df6/monomial-ordering_8cpp_a2df59f2ce4ad9361c691ca93d9108955.html#a2df59f2ce4ad9361c691ca93d9108955">toString()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d02/namespacempfr_a322b667b6a505b839f673d3a36792895.html#a322b667b6a505b839f673d3a36792895">mpfr::bits2digits()</a>, <a class="el" href="../../d6/df7/classmpfr_1_1mpreal_abf9dc90b44b12c1b6aa0fe57bd088e8b.html#abf9dc90b44b12c1b6aa0fe57bd088e8b">exp</a>, <a class="el" href="../../d1/d02/namespacempfr_abe917cc83d7ef362269d6b65bfdf7d4b.html#abe917cc83d7ef362269d6b65bfdf7d4b">mpfr::exp()</a>, <a class="el" href="../../d6/df7/classmpfr_1_1mpreal_a566f64ca066c54923d19c11d6c3d15cd.html#a566f64ca066c54923d19c11d6c3d15cd">mpfr_srcptr()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>, and <a class="el" href="../../d1/df6/monomial-ordering_8cpp_a2df59f2ce4ad9361c691ca93d9108955.html#a2df59f2ce4ad9361c691ca93d9108955">toString()</a>.</p>
 
 </div>
 </div>
@@ -258,7 +259,7 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_ae4aae5f637
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d02/namespacempfr.html">mpfr</a></li><li class="navelem"><a class="el" href="../../d6/df7/classmpfr_1_1mpreal.html">mpreal</a></li>
-    <li class="footer">Generated on Sun Feb 22 2026 02:53:34 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 1 2026 03:20:02 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

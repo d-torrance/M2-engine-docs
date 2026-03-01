@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['new_0',['NEW',['../dd/d98/table_8h_a6dcbdd586f47a62900804da2a6102a2e.html#a6dcbdd586f47a62900804da2a6102a2e',1,'table.h']]],
+  ['new_0',['new',['../d6/da0/exptable_8c_a6dcbdd586f47a62900804da2a6102a2e.html#a6dcbdd586f47a62900804da2a6102a2e',1,'NEW:&#160;exptable.c'],['../dc/d33/table_8c_a6dcbdd586f47a62900804da2a6102a2e.html#a6dcbdd586f47a62900804da2a6102a2e',1,'NEW:&#160;table.c']]],
   ['newarray_1',['newarray',['../da/d94/newdelete_8hpp_a8e45ca33f2628740d647f3bdf832b96d.html#a8e45ca33f2628740d647f3bdf832b96d',1,'newdelete.hpp']]],
   ['newarray_5fatomic_2',['newarray_atomic',['../da/d94/newdelete_8hpp_aaf4886e5c6f155b7532a0dff02d13591.html#aaf4886e5c6f155b7532a0dff02d13591',1,'newdelete.hpp']]],
   ['newarray_5fatomic_5fclear_3',['newarray_atomic_clear',['../da/d94/newdelete_8hpp_a2b649d56ac729e3aeea956a89d0c03ea.html#a2b649d56ac729e3aeea956a89d0c03ea',1,'newdelete.hpp']]],
