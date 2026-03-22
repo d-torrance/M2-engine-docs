@@ -125,19 +125,18 @@ $(document).ready(function(){initNavTree('db/d07/m2-mem_8h_a58be8ab7133936146da5
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dcc/m2-mem_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../d4/dcc/m2-mem_8cpp_source.html">m2-mem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   93</span>                                     {</div>
-<div class="line"><span class="lineno">   94</span><span class="preprocessor">#    ifndef NDEBUG</span></div>
-<div class="line"><span class="lineno">   95</span>     <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_a229bb05ca9a514c60182129020a00e72.html#a229bb05ca9a514c60182129020a00e72">trapchk</a>(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
-<div class="line"><span class="lineno">   96</span><span class="preprocessor">#    endif</span></div>
-<div class="line"><span class="lineno">   97</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
-<div class="line"><span class="lineno">   98</span>     M2_debug_free(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
-<div class="line"><span class="lineno">   99</span><span class="preprocessor">#else     </span></div>
-<div class="line"><span class="lineno">  100</span>     <span class="comment">/* GC_FREE(s); */</span></div>
-<div class="line"><span class="lineno">  101</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  102</span>}</div>
-<div class="ttc" id="am2-mem_8cpp_a229bb05ca9a514c60182129020a00e72_html_a229bb05ca9a514c60182129020a00e72"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a229bb05ca9a514c60182129020a00e72.html#a229bb05ca9a514c60182129020a00e72">trapchk</a></div><div class="ttdeci">void trapchk(void *p)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00040">m2-mem.cpp:40</a></div></div>
-<div class="ttc" id="am2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5_html_a2fc91f4e89bc37f261db820d231da2e5"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a></div><div class="ttdeci">void size_t s</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00274">m2-mem.cpp:274</a></div></div>
+<div class="line"><span class="lineno">   94</span>     (void)old;</div>
+<div class="line"><span class="lineno">   95</span>     <a class="code hl_define" href="../../db/d07/m2-mem_8h_adaf6556f73c67c45dc41be78630bbaa8.html#adaf6556f73c67c45dc41be78630bbaa8">TRAPCHK</a>(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
+<div class="line"><span class="lineno">   96</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
+<div class="line"><span class="lineno">   97</span>     M2_debug_free(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
+<div class="line"><span class="lineno">   98</span><span class="preprocessor">#else     </span></div>
+<div class="line"><span class="lineno">   99</span>     <span class="comment">/* GC_FREE(s); */</span></div>
+<div class="line"><span class="lineno">  100</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  101</span>}</div>
+<div class="ttc" id="am2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5_html_a2fc91f4e89bc37f261db820d231da2e5"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a></div><div class="ttdeci">void size_t s</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00271">m2-mem.cpp:271</a></div></div>
+<div class="ttc" id="am2-mem_8h_adaf6556f73c67c45dc41be78630bbaa8_html_adaf6556f73c67c45dc41be78630bbaa8"><div class="ttname"><a href="../../db/d07/m2-mem_8h_adaf6556f73c67c45dc41be78630bbaa8.html#adaf6556f73c67c45dc41be78630bbaa8">TRAPCHK</a></div><div class="ttdeci">#define TRAPCHK(p)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d07/m2-mem_8h_source.html#l00027">m2-mem.h:27</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_a229bb05ca9a514c60182129020a00e72.html#a229bb05ca9a514c60182129020a00e72">trapchk()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>, and <a class="el" href="../../db/d07/m2-mem_8h_adaf6556f73c67c45dc41be78630bbaa8.html#adaf6556f73c67c45dc41be78630bbaa8">TRAPCHK</a>.</p>
 
 </div>
 </div>
@@ -147,7 +146,7 @@ $(document).ready(function(){initNavTree('db/d07/m2-mem_8h_a58be8ab7133936146da5
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../db/d07/m2-mem_8h.html">m2-mem.h</a></li>
-    <li class="footer">Generated on Sun Mar 15 2026 03:23:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 22 2026 02:57:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

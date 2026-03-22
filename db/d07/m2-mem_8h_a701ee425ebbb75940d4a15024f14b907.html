@@ -113,28 +113,28 @@ $(document).ready(function(){initNavTree('db/d07/m2-mem_8h_a701ee425ebbb75940d4a
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcc/m2-mem_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../d4/dcc/m2-mem_8cpp_source.html">m2-mem.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  116</span>{</div>
-<div class="line"><span class="lineno">  117</span>  <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
-<div class="line"><span class="lineno">  118</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aa59704cd1ce008dbf9268936cd6f4a04.html#aa59704cd1ce008dbf9268936cd6f4a04">enter_getmem</a>();</div>
-<div class="line"><span class="lineno">  119</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
-<div class="line"><span class="lineno">  120</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = M2_debug_malloc(n);</div>
-<div class="line"><span class="lineno">  121</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">  122</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(GC_MALLOC(n));</div>
-<div class="line"><span class="lineno">  123</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  124</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> == NULL) <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_ad00ef9ec0e097ef400af1980ce69991d.html#ad00ef9ec0e097ef400af1980ce69991d">outofmem2</a>(n);</div>
-<div class="line"><span class="lineno">  125</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
-<div class="line"><span class="lineno">  126</span>  memset(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>,0,n);</div>
-<div class="line"><span class="lineno">  127</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">  128</span>  <span class="comment">/* note: GC_MALLOC clears memory before returning.</span></div>
-<div class="line"><span class="lineno">  129</span><span class="comment">     If you switch to another memory allocator, you must clear it explicitly here */</span></div>
-<div class="line"><span class="lineno">  130</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  131</span><span class="preprocessor">  #ifndef NDEBUG</span></div>
-<div class="line"><span class="lineno">  132</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_a229bb05ca9a514c60182129020a00e72.html#a229bb05ca9a514c60182129020a00e72">trapchk</a>(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><span class="lineno">  133</span><span class="preprocessor">  #endif</span></div>
-<div class="line"><span class="lineno">  134</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aa3241fa98eb353f08c1fc598e17d6edb.html#aa3241fa98eb353f08c1fc598e17d6edb">exit_getmem</a>();</div>
-<div class="line"><span class="lineno">  135</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
-<div class="line"><span class="lineno">  136</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcc/m2-mem_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../d4/dcc/m2-mem_8cpp_source.html">m2-mem.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  113</span>{</div>
+<div class="line"><span class="lineno">  114</span>  <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
+<div class="line"><span class="lineno">  115</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aa59704cd1ce008dbf9268936cd6f4a04.html#aa59704cd1ce008dbf9268936cd6f4a04">enter_getmem</a>();</div>
+<div class="line"><span class="lineno">  116</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
+<div class="line"><span class="lineno">  117</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = M2_debug_malloc(n);</div>
+<div class="line"><span class="lineno">  118</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">  119</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(GC_MALLOC(n));</div>
+<div class="line"><span class="lineno">  120</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  121</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> == NULL) <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_ad00ef9ec0e097ef400af1980ce69991d.html#ad00ef9ec0e097ef400af1980ce69991d">outofmem2</a>(n);</div>
+<div class="line"><span class="lineno">  122</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
+<div class="line"><span class="lineno">  123</span>  memset(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>,0,n);</div>
+<div class="line"><span class="lineno">  124</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">  125</span>  <span class="comment">/* note: GC_MALLOC clears memory before returning.</span></div>
+<div class="line"><span class="lineno">  126</span><span class="comment">     If you switch to another memory allocator, you must clear it explicitly here */</span></div>
+<div class="line"><span class="lineno">  127</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  128</span><span class="preprocessor">  #ifndef NDEBUG</span></div>
+<div class="line"><span class="lineno">  129</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_a229bb05ca9a514c60182129020a00e72.html#a229bb05ca9a514c60182129020a00e72">trapchk</a>(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><span class="lineno">  130</span><span class="preprocessor">  #endif</span></div>
+<div class="line"><span class="lineno">  131</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aa3241fa98eb353f08c1fc598e17d6edb.html#aa3241fa98eb353f08c1fc598e17d6edb">exit_getmem</a>();</div>
+<div class="line"><span class="lineno">  132</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
+<div class="line"><span class="lineno">  133</span>}</div>
 <div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_a229bb05ca9a514c60182129020a00e72_html_a229bb05ca9a514c60182129020a00e72"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a229bb05ca9a514c60182129020a00e72.html#a229bb05ca9a514c60182129020a00e72">trapchk</a></div><div class="ttdeci">void trapchk(void *p)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00040">m2-mem.cpp:40</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_aa3241fa98eb353f08c1fc598e17d6edb_html_aa3241fa98eb353f08c1fc598e17d6edb"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aa3241fa98eb353f08c1fc598e17d6edb.html#aa3241fa98eb353f08c1fc598e17d6edb">exit_getmem</a></div><div class="ttdeci">static void exit_getmem()</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00022">m2-mem.cpp:22</a></div></div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('db/d07/m2-mem_8h_a701ee425ebbb75940d4a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../db/d07/m2-mem_8h.html">m2-mem.h</a></li>
-    <li class="footer">Generated on Sun Mar 15 2026 03:23:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 22 2026 02:57:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

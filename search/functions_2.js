@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['back_0',['Back',['../d3/d5c/class_b_i_basis_1_1_t_set_aa993def42a3301065f5301f5508b55e7.html#aa993def42a3301065f5301f5508b55e7',1,'BIBasis::TSet']]],
+  ['back_0',['Back',['../d3/d5c/class_b_i_basis_1_1_t_set_a478732ab1b3f8b59a78dcd8ae4ecafdf.html#a478732ab1b3f8b59a78dcd8ae4ecafdf',1,'BIBasis::TSet']]],
   ['backtrack_1',['backtrack',['../d9/dd1/class_k_basis_a803025d9f3d7b390784b1ae52893a085.html#a803025d9f3d7b390784b1ae52893a085',1,'KBasis']]],
   ['backtrack_5fmg_2',['backtrack_mg',['../d9/dd1/class_k_basis_a4e6ff64844ba1c73946e8cee93d8f510.html#a4e6ff64844ba1c73946e8cee93d8f510',1,'KBasis']]],
   ['badblock_3',['badBlock',['../db/d07/m2-mem_8h_a4e1f9c2b6e6cb7ec3d151a20844f77e0.html#a4e1f9c2b6e6cb7ec3d151a20844f77e0',1,'m2-mem.h']]],

@@ -3,7 +3,7 @@ var searchData=
   ['b_0',['b',['../d8/dbd/structengine___raw_matrix_pair__struct_a689bc75a54cde9f13106e15a82e82087.html#a689bc75a54cde9f13106e15a82e82087',1,'engine_RawMatrixPair_struct::b'],['../d8/d34/structengine___raw_array_int_pair__struct_a7b838aa7be99e686016e3d555f4e9f96.html#a7b838aa7be99e686016e3d555f4e9f96',1,'engine_RawArrayIntPair_struct::b'],['../df/d4f/structengine___raw_ring_element_pair__struct_a4e4ee5bcdc0b77941b51d2df9e334b1f.html#a4e4ee5bcdc0b77941b51d2df9e334b1f',1,'engine_RawRingElementPair_struct::b'],['../d7/d03/structgmp___z_zpair__struct_adec5bf88db9c90993336e23e0c20892e.html#adec5bf88db9c90993336e23e0c20892e',1,'gmp_ZZpair_struct::b']]],
   ['b_5felem_1',['b_elem',['../df/d8c/classint__bag_af227c4da59eb987122b7d9095f21dbd3.html#af227c4da59eb987122b7d9095f21dbd3',1,'int_bag']]],
   ['b_5fptr_2',['b_ptr',['../df/d8c/classint__bag_af9f2351100134da087ae6c7e7fc4cae4.html#af9f2351100134da087ae6c7e7fc4cae4',1,'int_bag']]],
-  ['back_3',['Back',['../d3/d5c/class_b_i_basis_1_1_t_set_aa993def42a3301065f5301f5508b55e7.html#aa993def42a3301065f5301f5508b55e7',1,'BIBasis::TSet']]],
+  ['back_3',['Back',['../d3/d5c/class_b_i_basis_1_1_t_set_a478732ab1b3f8b59a78dcd8ae4ecafdf.html#a478732ab1b3f8b59a78dcd8ae4ecafdf',1,'BIBasis::TSet']]],
   ['backtrack_4',['backtrack',['../d9/dd1/class_k_basis_a803025d9f3d7b390784b1ae52893a085.html#a803025d9f3d7b390784b1ae52893a085',1,'KBasis']]],
   ['backtrack_5fmg_5',['backtrack_mg',['../d9/dd1/class_k_basis_a4e6ff64844ba1c73946e8cee93d8f510.html#a4e6ff64844ba1c73946e8cee93d8f510',1,'KBasis']]],
   ['bad_5fpattern_6',['bad_pattern',['../d1/d2c/mem_8hpp_ad17ca910f8bb913bb2cf633d74d7d5c8.html#ad17ca910f8bb913bb2cf633d74d7d5c8',1,'mem.hpp']]],

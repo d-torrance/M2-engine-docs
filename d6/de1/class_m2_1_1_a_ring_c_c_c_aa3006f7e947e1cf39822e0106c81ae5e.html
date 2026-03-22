@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('d6/de1/class_m2_1_1_a_ring_c_c_c_aa300
 <p class="definition">Definition at line <a class="el" href="../../da/d89/aring-_c_c_c_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../da/d89/aring-_c_c_c_8cpp_source.html">aring-CCC.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   12</span>{</div>
 <div class="line"><span class="lineno">   13</span>  <span class="keywordflow">if</span> (p_plus &amp;&amp; (mpfr_cmp_si(&amp;f.re, 0) &gt; 0 ||</div>
-<div class="line"><span class="lineno">   14</span>                 mpfr_cmp_si(&amp;f.re, 0) == 0 &amp;&amp; mpfr_cmp_si(&amp;f.im, 0) &gt; 0))</div>
+<div class="line"><span class="lineno">   14</span>                 (mpfr_cmp_si(&amp;f.re, 0) == 0 &amp;&amp; mpfr_cmp_si(&amp;f.im, 0) &gt; 0)))</div>
 <div class="line"><span class="lineno">   15</span>    o &lt;&lt; <span class="stringliteral">&quot;+&quot;</span>;</div>
 <div class="line"><span class="lineno">   16</span> </div>
 <div class="line"><span class="lineno">   17</span>  <span class="keywordflow">if</span> (p_parens &amp;&amp; mpfr_cmp_si(&amp;f.re, 0) != 0 &amp;&amp; mpfr_cmp_si(&amp;f.im, 0) != 0) {</div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('d6/de1/class_m2_1_1_a_ring_c_c_c_aa300
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c.html">ARingCCC</a></li>
-    <li class="footer">Generated on Sun Mar 15 2026 03:23:18 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 22 2026 02:57:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

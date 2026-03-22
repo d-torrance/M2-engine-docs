@@ -170,18 +170,19 @@ $(document).ready(function(){initNavTree('d8/d76/class_hermite_computation_a992d
 <div class="line"><span class="lineno">  168</span>              <span class="keywordflow">return</span> head.<a class="code hl_variable" href="../../db/dde/structhm__elem_a9fe91b83c7d7367fe85ff78c2b9d1d4d.html#a9fe91b83c7d7367fe85ff78c2b9d1d4d">next</a>;</div>
 <div class="line"><span class="lineno">  169</span>            }</div>
 <div class="line"><span class="lineno">  170</span>        <span class="comment">// Now fall through to merge f into the result:</span></div>
-<div class="line"><span class="lineno">  171</span>        <span class="keywordflow">case</span> -1:</div>
-<div class="line"><span class="lineno">  172</span>          <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>-&gt;<a class="code hl_variable" href="../../db/dde/structhm__elem_a9fe91b83c7d7367fe85ff78c2b9d1d4d.html#a9fe91b83c7d7367fe85ff78c2b9d1d4d">next</a> = f;</div>
-<div class="line"><span class="lineno">  173</span>          <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>-&gt;<a class="code hl_variable" href="../../db/dde/structhm__elem_a9fe91b83c7d7367fe85ff78c2b9d1d4d.html#a9fe91b83c7d7367fe85ff78c2b9d1d4d">next</a>;</div>
-<div class="line"><span class="lineno">  174</span>          f = f-&gt;<a class="code hl_variable" href="../../db/dde/structhm__elem_a9fe91b83c7d7367fe85ff78c2b9d1d4d.html#a9fe91b83c7d7367fe85ff78c2b9d1d4d">next</a>;</div>
-<div class="line"><span class="lineno">  175</span>          <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  176</span>            {</div>
-<div class="line"><span class="lineno">  177</span>              <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>-&gt;<a class="code hl_variable" href="../../db/dde/structhm__elem_a9fe91b83c7d7367fe85ff78c2b9d1d4d.html#a9fe91b83c7d7367fe85ff78c2b9d1d4d">next</a> = g;</div>
-<div class="line"><span class="lineno">  178</span>              <span class="keywordflow">return</span> head.<a class="code hl_variable" href="../../db/dde/structhm__elem_a9fe91b83c7d7367fe85ff78c2b9d1d4d.html#a9fe91b83c7d7367fe85ff78c2b9d1d4d">next</a>;</div>
-<div class="line"><span class="lineno">  179</span>            }</div>
-<div class="line"><span class="lineno">  180</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  181</span>      }</div>
-<div class="line"><span class="lineno">  182</span>}</div>
+<div class="line"><span class="lineno">  171</span>          [[fallthrough]];</div>
+<div class="line"><span class="lineno">  172</span>        <span class="keywordflow">case</span> -1:</div>
+<div class="line"><span class="lineno">  173</span>          <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>-&gt;<a class="code hl_variable" href="../../db/dde/structhm__elem_a9fe91b83c7d7367fe85ff78c2b9d1d4d.html#a9fe91b83c7d7367fe85ff78c2b9d1d4d">next</a> = f;</div>
+<div class="line"><span class="lineno">  174</span>          <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>-&gt;<a class="code hl_variable" href="../../db/dde/structhm__elem_a9fe91b83c7d7367fe85ff78c2b9d1d4d.html#a9fe91b83c7d7367fe85ff78c2b9d1d4d">next</a>;</div>
+<div class="line"><span class="lineno">  175</span>          f = f-&gt;<a class="code hl_variable" href="../../db/dde/structhm__elem_a9fe91b83c7d7367fe85ff78c2b9d1d4d.html#a9fe91b83c7d7367fe85ff78c2b9d1d4d">next</a>;</div>
+<div class="line"><span class="lineno">  176</span>          <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  177</span>            {</div>
+<div class="line"><span class="lineno">  178</span>              <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>-&gt;<a class="code hl_variable" href="../../db/dde/structhm__elem_a9fe91b83c7d7367fe85ff78c2b9d1d4d.html#a9fe91b83c7d7367fe85ff78c2b9d1d4d">next</a> = g;</div>
+<div class="line"><span class="lineno">  179</span>              <span class="keywordflow">return</span> head.<a class="code hl_variable" href="../../db/dde/structhm__elem_a9fe91b83c7d7367fe85ff78c2b9d1d4d.html#a9fe91b83c7d7367fe85ff78c2b9d1d4d">next</a>;</div>
+<div class="line"><span class="lineno">  180</span>            }</div>
+<div class="line"><span class="lineno">  181</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  182</span>      }</div>
+<div class="line"><span class="lineno">  183</span>}</div>
 <div class="ttc" id="aclass_hermite_computation_a8a20ee6a46d6a4a61ffa4003a2db2559_html_a8a20ee6a46d6a4a61ffa4003a2db2559"><div class="ttname"><a href="../../d8/d76/class_hermite_computation_a8a20ee6a46d6a4a61ffa4003a2db2559.html#a8a20ee6a46d6a4a61ffa4003a2db2559">HermiteComputation::insert</a></div><div class="ttdeci">void insert(hm_elem *p)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df4/hermite_8cpp_source.html#l00042">hermite.cpp:42</a></div></div>
 <div class="ttc" id="aclass_hermite_computation_a93bb467ccb738eafd172194a56ccc74d_html_a93bb467ccb738eafd172194a56ccc74d"><div class="ttname"><a href="../../d8/d76/class_hermite_computation_a93bb467ccb738eafd172194a56ccc74d.html#a93bb467ccb738eafd172194a56ccc74d">HermiteComputation::compare_elems</a></div><div class="ttdeci">int compare_elems(hm_elem *f, hm_elem *g) const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df4/hermite_8cpp_source.html#l00116">hermite.cpp:116</a></div></div>
 <div class="ttc" id="aclass_ring_a7cc9dae3e74c326607674bd2f083e1ae_html_a7cc9dae3e74c326607674bd2f083e1ae"><div class="ttname"><a href="../../dd/dcf/class_ring_a7cc9dae3e74c326607674bd2f083e1ae.html#a7cc9dae3e74c326607674bd2f083e1ae">Ring::subtract_vec_to</a></div><div class="ttdeci">void subtract_vec_to(vec &amp;v, vec &amp;w) const</div><div class="ttdef"><b>Definition</b> <a href="../../df/d36/ring-vecs_8cpp_source.html#l00504">ring-vecs.cpp:504</a></div></div>
@@ -207,7 +208,7 @@ $(document).ready(function(){initNavTree('d8/d76/class_hermite_computation_a992d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d76/class_hermite_computation.html">HermiteComputation</a></li>
-    <li class="footer">Generated on Sun Mar 15 2026 03:23:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Mar 22 2026 02:57:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
