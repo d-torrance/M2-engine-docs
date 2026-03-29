@@ -27,7 +27,7 @@ var searchData=
   ['matrix_2dstream_2ecpp_24',['matrix-stream.cpp',['../db/dd4/matrix-stream_8cpp.html',1,'']]],
   ['matrix_2dstream_2ehpp_25',['matrix-stream.hpp',['../de/dad/matrix-stream_8hpp.html',1,'']]],
   ['matrix_2dsymm_2ecpp_26',['matrix-symm.cpp',['../d6/ded/matrix-symm_8cpp.html',1,'']]],
-  ['matrix_2ecpp_27',['matrix.cpp',['../d5/d84/matrix_8cpp.html',1,'(Global Namespace)'],['../d3/d2d/interface_2matrix_8cpp.html',1,'(Global Namespace)']]],
+  ['matrix_2ecpp_27',['matrix.cpp',['../d3/d2d/interface_2matrix_8cpp.html',1,'(Global Namespace)'],['../d5/d84/matrix_8cpp.html',1,'(Global Namespace)']]],
   ['matrix_2eh_28',['matrix.h',['../dd/df4/matrix_8h.html',1,'']]],
   ['matrix_2ehpp_29',['matrix.hpp',['../df/dce/matrix_8hpp.html',1,'']]],
   ['matrixiotest_2ecpp_30',['MatrixIOTest.cpp',['../de/d5f/_matrix_i_o_test_8cpp.html',1,'']]],
