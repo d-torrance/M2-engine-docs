@@ -6,5 +6,6 @@ var searchData=
   ['vecheap_3',['vecHeap',['../d1/d2c/classvec_heap.html',1,'']]],
   ['vecterm_4',['vecterm',['../d6/ddd/structvecterm.html',1,'']]],
   ['vectorarithmetic_5',['VectorArithmetic',['../d1/df6/class_vector_arithmetic.html',1,'']]],
-  ['vectorarithmeticstats_6',['VectorArithmeticStats',['../d6/d59/class_vector_arithmetic_stats.html',1,'']]]
+  ['vectorarithmeticstats_6',['VectorArithmeticStats',['../d6/d59/class_vector_arithmetic_stats.html',1,'']]],
+  ['vectorhash_7',['VectorHash',['../d5/d30/struct_vector_hash.html',1,'']]]
 ];

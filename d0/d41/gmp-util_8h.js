@@ -2,7 +2,10 @@ var gmp_util_8h =
 [
     [ "CC_struct", "d3/d66/struct_c_c__struct.html", "d3/d66/struct_c_c__struct" ],
     [ "CCmutable_struct", "d6/ddb/struct_c_cmutable__struct.html", "d6/ddb/struct_c_cmutable__struct" ],
+    [ "CCi_struct", "de/dd7/struct_c_ci__struct.html", "de/dd7/struct_c_ci__struct" ],
+    [ "CCimutable_struct", "d0/d78/struct_c_cimutable__struct.html", "d0/d78/struct_c_cimutable__struct" ],
     [ "moveTo_gmpCC", "d0/d41/gmp-util_8h_a5666f6a5496dd378bc6502276f87008c.html#a5666f6a5496dd378bc6502276f87008c", null ],
+    [ "moveTo_gmpCCi", "d0/d41/gmp-util_8h_a144a6fe81c1f749337ed188f8e4ec7f2.html#a144a6fe81c1f749337ed188f8e4ec7f2", null ],
     [ "moveTo_gmpQQ", "d0/d41/gmp-util_8h_ab51faa0b4366c69f6e1a3dacd6f17c99.html#ab51faa0b4366c69f6e1a3dacd6f17c99", null ],
     [ "moveTo_gmpRR", "d0/d41/gmp-util_8h_a8eb5bf01e101b45627045ebad26a4b1c.html#a8eb5bf01e101b45627045ebad26a4b1c", null ],
     [ "moveTo_gmpRRi", "d0/d41/gmp-util_8h_abbf5d8d47dab8ed850eecee2cc3578f7.html#abbf5d8d47dab8ed850eecee2cc3578f7", null ],

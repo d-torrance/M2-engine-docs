@@ -1,6 +1,7 @@
 var ring_8h =
 [
     [ "IM2_Ring_CCC", "d0/d6d/ring_8h_a4b32c8e4d53648fb8982b0259224cd68.html#a4b32c8e4d53648fb8982b0259224cd68", null ],
+    [ "IM2_Ring_CCi", "d0/d6d/ring_8h_ab2e38769e70641af4fa2e97744cfd3d3.html#ab2e38769e70641af4fa2e97744cfd3d3", null ],
     [ "IM2_Ring_declare_field", "d0/d6d/ring_8h_a8b4034b2e73007ca517ddb6f64ff25cf.html#a8b4034b2e73007ca517ddb6f64ff25cf", null ],
     [ "IM2_Ring_frac", "d0/d6d/ring_8h_ada4435bb637843b9ed3613f5b74f2be9.html#ada4435bb637843b9ed3613f5b74f2be9", null ],
     [ "IM2_Ring_is_field", "d0/d6d/ring_8h_a9358102a6a6f43db7d2c1c25b4e1c2d4.html#a9358102a6a6f43db7d2c1c25b4e1c2d4", null ],

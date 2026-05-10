@@ -87,6 +87,7 @@ var class_ring =
     [ "from_BigComplex", "dd/dcf/class_ring_a627647d4e37d375a95f7308fa57565aa.html#a627647d4e37d375a95f7308fa57565aa", null ],
     [ "from_BigReal", "dd/dcf/class_ring_a21be379569c91492bf6b1f61c1e1d3d2.html#a21be379569c91492bf6b1f61c1e1d3d2", null ],
     [ "from_complex_double", "dd/dcf/class_ring_a8e5ba3ccbc81ca858dc7907a6167b225.html#a8e5ba3ccbc81ca858dc7907a6167b225", null ],
+    [ "from_ComplexInterval", "dd/dcf/class_ring_a47decefbc3228ac363e3adcaba71544a.html#a47decefbc3228ac363e3adcaba71544a", null ],
     [ "from_double", "dd/dcf/class_ring_a94e77fa14d8cfeef323da02290cb4448.html#a94e77fa14d8cfeef323da02290cb4448", null ],
     [ "from_int", "dd/dcf/class_ring_acffb3aa37f626fa37bfa72dd6de4733d.html#acffb3aa37f626fa37bfa72dd6de4733d", null ],
     [ "from_Interval", "dd/dcf/class_ring_a28c61dd3bd079e86e155df7f72d94864.html#a28c61dd3bd079e86e155df7f72d94864", null ],

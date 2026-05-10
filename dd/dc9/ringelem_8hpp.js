@@ -2,6 +2,7 @@ var ringelem_8hpp =
 [
     [ "cc_struct", "de/d31/structcc__struct.html", "de/d31/structcc__struct" ],
     [ "cc_doubles_struct", "db/dae/structcc__doubles__struct.html", "db/dae/structcc__doubles__struct" ],
+    [ "cci_struct", "d7/dd4/structcci__struct.html", "d7/dd4/structcci__struct" ],
     [ "ring_elem", "d5/d64/unionring__elem.html", "d5/d64/unionring__elem" ],
     [ "Nterm", "d0/dbc/struct_nterm.html", "d0/dbc/struct_nterm" ],
     [ "vec", "d6/ddd/structvecterm.html", "d6/ddd/structvecterm" ],
@@ -15,6 +16,8 @@ var ringelem_8hpp =
     [ "cc_doubles_srcptr", "dd/dc9/ringelem_8hpp_acb643c14d91da1672bddeb106a658d14.html#acb643c14d91da1672bddeb106a658d14", null ],
     [ "cc_ptr", "dd/dc9/ringelem_8hpp_a4fc9613c51458feac620985131522c86.html#a4fc9613c51458feac620985131522c86", null ],
     [ "cc_srcptr", "dd/dc9/ringelem_8hpp_ac41157afaee715b7ffc149faaba9d28e.html#ac41157afaee715b7ffc149faaba9d28e", null ],
+    [ "cci_ptr", "dd/dc9/ringelem_8hpp_a3bd2aa6c8901770b7dde28ba6632bb0c.html#a3bd2aa6c8901770b7dde28ba6632bb0c", null ],
+    [ "cci_srcptr", "dd/dc9/ringelem_8hpp_ace048798efa4909b65cc9258352a79e9.html#ace048798efa4909b65cc9258352a79e9", null ],
     [ "QQ", "dd/dc9/ringelem_8hpp_a845589cbe81fb92f0ca26c8b911f8f38.html#a845589cbe81fb92f0ca26c8b911f8f38", null ],
     [ "QQmutable", "dd/dc9/ringelem_8hpp_aa5d5500afd1f71d6375b54e272c03748.html#aa5d5500afd1f71d6375b54e272c03748", null ],
     [ "RRielement", "dd/dc9/ringelem_8hpp_ae8a8b1a5e976663d49e3f3b5a3f77ce3.html#ae8a8b1a5e976663d49e3f3b5a3f77ce3", null ],

@@ -22,6 +22,9 @@ var hierarchy =
     [ "cc_doubles_struct", "db/dae/structcc__doubles__struct.html", null ],
     [ "cc_struct", "de/d31/structcc__struct.html", null ],
     [ "CC_struct", "d3/d66/struct_c_c__struct.html", null ],
+    [ "cci_struct", "d7/dd4/structcci__struct.html", null ],
+    [ "CCi_struct", "de/dd7/struct_c_ci__struct.html", null ],
+    [ "CCimutable_struct", "d0/d78/struct_c_cimutable__struct.html", null ],
     [ "CCmutable_struct", "d6/ddb/struct_c_cmutable__struct.html", null ],
     [ "ChineseRemainder", "d0/d4e/class_chinese_remainder.html", null ],
     [ "coefficient_matrix", "d8/dce/structcoefficient__matrix.html", null ],
@@ -35,6 +38,7 @@ var hierarchy =
     [ "complex", "d6/d3b/classcomplex.html", null ],
     [ "ComplexField", "d5/d7d/class_complex_field.html", null ],
     [ "ConcreteVectorArithmetic< RingType >", "d7/d23/class_concrete_vector_arithmetic.html", null ],
+    [ "ConeResult", "d5/d22/struct_cone_result.html", null ],
     [ "Polynomial< CoefficientRingType >::const_iterator", "d3/d58/class_polynomial_1_1const__iterator.html", null ],
     [ "BIBasis::JanetTree< MonomType >::ConstIterator", "df/da9/class_b_i_basis_1_1_janet_tree_1_1_const_iterator.html", null ],
     [ "ConstZipIterator< U, T >", "da/dfd/class_const_zip_iterator.html", null ],
@@ -131,6 +135,8 @@ var hierarchy =
     [ "geobucket< FREEMODULETYPE, VECTYPE >", "d5/d03/classgeobucket.html", null ],
     [ "gmp_arrayZZ", "d3/d3e/structgmp__array_z_z__struct.html", null ],
     [ "gmp_CC", "d6/d00/structgmp___c_c__struct.html", null ],
+    [ "gmp_CCi", "db/d3a/structgmp___c_ci__struct.html", null ],
+    [ "gmp_CCimutable", "d1/dcf/structgmp___c_cimutable__struct.html", null ],
     [ "gmp_CCmutable", "df/df4/structgmp___c_cmutable__struct.html", null ],
     [ "gmp_ZZpair", "d7/d03/structgmp___z_zpair__struct.html", null ],
     [ "newf4::HashTableStats", "dd/db9/structnewf4_1_1_hash_table_stats.html", null ],
@@ -152,6 +158,8 @@ var hierarchy =
     [ "BIBasis::JanetTree< MonomType >", "d2/d19/class_b_i_basis_1_1_janet_tree.html", null ],
     [ "KBasis", "d9/dd1/class_k_basis.html", null ],
     [ "Lapack", "df/dd6/class_lapack.html", null ],
+    [ "M2::cytools::LatticePointsNormalizResult", "d7/d7e/struct_m2_1_1cytools_1_1_lattice_points_normaliz_result.html", null ],
+    [ "M2::cytools::LatticePointsResult", "d0/de7/struct_m2_1_1cytools_1_1_lattice_points_result.html", null ],
     [ "BIBasis::Launcher", "d7/d07/class_b_i_basis_1_1_launcher.html", null ],
     [ "SchreyerFrame::Level", "da/d4d/struct_schreyer_frame_1_1_level.html", null ],
     [ "lex", "d2/dfa/structlex.html", null ],
@@ -273,6 +281,9 @@ var hierarchy =
         [ "M2::SimpleARing< ARingCCC >", "de/db5/class_m2_1_1_simple_a_ring.html", [
           [ "M2::ARingCCC", "d6/de1/class_m2_1_1_a_ring_c_c_c.html", null ]
         ] ],
+        [ "M2::SimpleARing< ARingCCi >", "de/db5/class_m2_1_1_simple_a_ring.html", [
+          [ "M2::ARingCCi", "d0/d25/class_m2_1_1_a_ring_c_ci.html", null ]
+        ] ],
         [ "M2::SimpleARing< ARingGFM2 >", "de/db5/class_m2_1_1_simple_a_ring.html", [
           [ "M2::ARingGFM2", "dd/df1/class_m2_1_1_a_ring_g_f_m2.html", null ]
         ] ],
@@ -325,7 +336,7 @@ var hierarchy =
       [ "NCGroebner", "d8/d79/class_n_c_groebner.html", null ],
       [ "Nmi_node", "d0/d1b/class_nmi__node.html", null ],
       [ "PfaffianComputation", "dc/df6/class_pfaffian_computation.html", null ],
-      [ "Polynomial< CoefficientRingType >", "d6/db7/class_polynomial.html", null ],
+      [ "Polynomial< CoefficientRingType >", "df/d41/struct_polynomial.html", null ],
       [ "PolynomialHeap", "d7/d5e/class_polynomial_heap.html", [
         [ "MapPolynomialHeap", "d3/d6a/class_map_polynomial_heap.html", null ],
         [ "NaiveDedupPolynomialHeap< Queue >", "d8/ded/class_naive_dedup_polynomial_heap.html", null ],
@@ -588,6 +599,7 @@ var hierarchy =
     [ "vecHeap", "d1/d2c/classvec_heap.html", null ],
     [ "VectorArithmetic", "d1/df6/class_vector_arithmetic.html", null ],
     [ "VectorArithmeticStats", "d6/d59/class_vector_arithmetic_stats.html", null ],
+    [ "VectorHash", "d5/d30/struct_vector_hash.html", null ],
     [ "Word", "d3/da0/class_word.html", null ],
     [ "WordTable", "d6/def/class_word_table.html", null ],
     [ "WordWithData", "d2/d05/class_word_with_data.html", null ],

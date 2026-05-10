@@ -18,11 +18,12 @@ var aring_8hpp =
       [ "ring_GFM2", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfa25e0d626c3446375b3224d16814ce8b4", null ],
       [ "ring_GFFlintBig", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfa97624d00c9dc91dda558fac28b4fa809", null ],
       [ "ring_GFFlintZech", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfa5f5da4f778a4e97318806b3ae28b422e", null ],
-      [ "ring_RRi", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfa646a9896bde9550bdf77632b33bc027f", null ],
       [ "ring_RR", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfa3e42af1fd103e1b4e061d1aac25b9123", null ],
       [ "ring_CC", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfae3283673c779b58f21d35cecdfc37bf1", null ],
       [ "ring_RRR", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfa60332457dc08ae4b704de61966b23f21", null ],
       [ "ring_CCC", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfa02b488368ddfd24233cfbc43dd8f56f7", null ],
+      [ "ring_RRi", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfa646a9896bde9550bdf77632b33bc027f", null ],
+      [ "ring_CCi", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfa9979fe804f3c60808b45cb411479b2ee", null ],
       [ "ring_tower_ZZp", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfab5ce038494d6de705c89a252206b82ea", null ],
       [ "ring_old", "d5/d40/aring_8hpp.html#gga7579b18152595d75b0bce712fbd605dfa09f7c113b039c5ad53f2057a27a40ff1", null ]
     ] ]

@@ -131,18 +131,18 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a5d5a83a2a025ade33c8
 
 <p>Reimplemented in <a class="el" href="../../d3/dfc/class_poly_ring_a8a472fb94b938c6f035afec1bda21fa2.html#a8a472fb94b938c6f035afec1bda21fa2">PolyRing</a>, <a class="el" href="../../dd/dc9/class_poly_ring_quotient_aad7528a2a270f5d19b12cbf41be4a837.html#aad7528a2a270f5d19b12cbf41be4a837">PolyRingQuotient</a>, and <a class="el" href="../../d8/d2b/class_ring_z_z_a847a4a779621eb3a64600203aaf879f3.html#a847a4a779621eb3a64600203aaf879f3">RingZZ</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d2b/ring_8cpp_source.html#l00221">221</a> of file <a class="el" href="../../dd/d2b/ring_8cpp_source.html">ring.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  224</span>{</div>
-<div class="line"><span class="lineno">  225</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(g))</div>
-<div class="line"><span class="lineno">  226</span>    {</div>
-<div class="line"><span class="lineno">  227</span>      quot = g;  <span class="comment">// zero</span></div>
-<div class="line"><span class="lineno">  228</span>      <span class="keywordflow">return</span> f;</div>
-<div class="line"><span class="lineno">  229</span>    }</div>
-<div class="line"><span class="lineno">  230</span>  quot = <a class="code hl_function" href="../../dd/dcf/class_ring_a2b8cbd8d5bfa9610f5f1070e390ef2c8.html#a2b8cbd8d5bfa9610f5f1070e390ef2c8">divide</a>(f, g);</div>
-<div class="line"><span class="lineno">  231</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../dd/dcf/class_ring_a56c4dbffcc7bba98da2103f70a0e8602.html#a56c4dbffcc7bba98da2103f70a0e8602">zero</a>();</div>
-<div class="line"><span class="lineno">  232</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/d2b/ring_8cpp_source.html#l00223">223</a> of file <a class="el" href="../../dd/d2b/ring_8cpp_source.html">ring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  226</span>{</div>
+<div class="line"><span class="lineno">  227</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero</a>(g))</div>
+<div class="line"><span class="lineno">  228</span>    {</div>
+<div class="line"><span class="lineno">  229</span>      quot = g;  <span class="comment">// zero</span></div>
+<div class="line"><span class="lineno">  230</span>      <span class="keywordflow">return</span> f;</div>
+<div class="line"><span class="lineno">  231</span>    }</div>
+<div class="line"><span class="lineno">  232</span>  quot = <a class="code hl_function" href="../../dd/dcf/class_ring_a2b8cbd8d5bfa9610f5f1070e390ef2c8.html#a2b8cbd8d5bfa9610f5f1070e390ef2c8">divide</a>(f, g);</div>
+<div class="line"><span class="lineno">  233</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../dd/dcf/class_ring_a56c4dbffcc7bba98da2103f70a0e8602.html#a56c4dbffcc7bba98da2103f70a0e8602">zero</a>();</div>
+<div class="line"><span class="lineno">  234</span>}</div>
 <div class="ttc" id="aclass_ring_a2b8cbd8d5bfa9610f5f1070e390ef2c8_html_a2b8cbd8d5bfa9610f5f1070e390ef2c8"><div class="ttname"><a href="../../dd/dcf/class_ring_a2b8cbd8d5bfa9610f5f1070e390ef2c8.html#a2b8cbd8d5bfa9610f5f1070e390ef2c8">Ring::divide</a></div><div class="ttdeci">virtual ring_elem divide(const ring_elem f, const ring_elem g) const =0</div></div>
-<div class="ttc" id="aclass_ring_a56c4dbffcc7bba98da2103f70a0e8602_html_a56c4dbffcc7bba98da2103f70a0e8602"><div class="ttname"><a href="../../dd/dcf/class_ring_a56c4dbffcc7bba98da2103f70a0e8602.html#a56c4dbffcc7bba98da2103f70a0e8602">Ring::zero</a></div><div class="ttdeci">ring_elem zero() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d10/ring_8hpp_source.html#l00322">ring.hpp:322</a></div></div>
+<div class="ttc" id="aclass_ring_a56c4dbffcc7bba98da2103f70a0e8602_html_a56c4dbffcc7bba98da2103f70a0e8602"><div class="ttname"><a href="../../dd/dcf/class_ring_a56c4dbffcc7bba98da2103f70a0e8602.html#a56c4dbffcc7bba98da2103f70a0e8602">Ring::zero</a></div><div class="ttdeci">ring_elem zero() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d10/ring_8hpp_source.html#l00323">ring.hpp:323</a></div></div>
 <div class="ttc" id="aclass_ring_aa8d762a00cdea91f8d26cea2b52ebce0_html_aa8d762a00cdea91f8d26cea2b52ebce0"><div class="ttname"><a href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">Ring::is_zero</a></div><div class="ttdeci">virtual bool is_zero(const ring_elem f) const =0</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../dd/dcf/class_ring_a2b8cbd8d5bfa9610f5f1070e390ef2c8.html#a2b8cbd8d5bfa9610f5f1070e390ef2c8">divide()</a>, <a class="el" href="../../dd/dcf/class_ring_aa8d762a00cdea91f8d26cea2b52ebce0.html#aa8d762a00cdea91f8d26cea2b52ebce0">is_zero()</a>, and <a class="el" href="../../dd/dcf/class_ring_a56c4dbffcc7bba98da2103f70a0e8602.html#a56c4dbffcc7bba98da2103f70a0e8602">zero()</a>.</p>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a5d5a83a2a025ade33c8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun Apr 26 2026 03:47:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 10 2026 04:02:28 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

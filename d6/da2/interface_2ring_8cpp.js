@@ -2,6 +2,7 @@ var interface_2ring_8cpp =
 [
     [ "findConwayPolynomial", "d6/da2/interface_2ring_8cpp_a4bda1685e4809f8e9b86ed952929de7d.html#a4bda1685e4809f8e9b86ed952929de7d", null ],
     [ "IM2_Ring_CCC", "d6/da2/interface_2ring_8cpp_a4b32c8e4d53648fb8982b0259224cd68.html#a4b32c8e4d53648fb8982b0259224cd68", null ],
+    [ "IM2_Ring_CCi", "d6/da2/interface_2ring_8cpp_ab2e38769e70641af4fa2e97744cfd3d3.html#ab2e38769e70641af4fa2e97744cfd3d3", null ],
     [ "IM2_Ring_declare_field", "d6/da2/interface_2ring_8cpp_a8b4034b2e73007ca517ddb6f64ff25cf.html#a8b4034b2e73007ca517ddb6f64ff25cf", null ],
     [ "IM2_Ring_frac", "d6/da2/interface_2ring_8cpp_ada4435bb637843b9ed3613f5b74f2be9.html#ada4435bb637843b9ed3613f5b74f2be9", null ],
     [ "IM2_Ring_is_field", "d6/da2/interface_2ring_8cpp_a9358102a6a6f43db7d2c1c25b4e1c2d4.html#a9358102a6a6f43db7d2c1c25b4e1c2d4", null ],

@@ -30,6 +30,7 @@ var class_poly_ring =
     [ "from_BigComplex", "d3/dfc/class_poly_ring_a41189ace19c9cfc07c0781c4e97e1046.html#a41189ace19c9cfc07c0781c4e97e1046", null ],
     [ "from_BigReal", "d3/dfc/class_poly_ring_ab736af85c3266c5d7e71adeeebe0ba3c.html#ab736af85c3266c5d7e71adeeebe0ba3c", null ],
     [ "from_complex_double", "d3/dfc/class_poly_ring_a5a4f3901b8f035c6260bb253f0557e39.html#a5a4f3901b8f035c6260bb253f0557e39", null ],
+    [ "from_ComplexInterval", "d3/dfc/class_poly_ring_a01b10169c4a0ae4c084f331ee7cf7681.html#a01b10169c4a0ae4c084f331ee7cf7681", null ],
     [ "from_double", "d3/dfc/class_poly_ring_a904f16ced1ba64f70848450c1bbf64ce.html#a904f16ced1ba64f70848450c1bbf64ce", null ],
     [ "from_int", "d3/dfc/class_poly_ring_a7210a4a0516edec58a77acf78f3fa497.html#a7210a4a0516edec58a77acf78f3fa497", null ],
     [ "from_Interval", "d3/dfc/class_poly_ring_ada7e6bbd6a9e35ff745f7963683dc681.html#ada7e6bbd6a9e35ff745f7963683dc681", null ],

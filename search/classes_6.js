@@ -36,6 +36,8 @@ var searchData=
   ['gm_5felem_33',['gm_elem',['../d0/dd0/structgm__elem.html',1,'']]],
   ['gmp_5farrayzz_5fstruct_34',['gmp_arrayZZ_struct',['../d3/d3e/structgmp__array_z_z__struct.html',1,'']]],
   ['gmp_5fcc_5fstruct_35',['gmp_CC_struct',['../d6/d00/structgmp___c_c__struct.html',1,'']]],
-  ['gmp_5fccmutable_5fstruct_36',['gmp_CCmutable_struct',['../df/df4/structgmp___c_cmutable__struct.html',1,'']]],
-  ['gmp_5fzzpair_5fstruct_37',['gmp_ZZpair_struct',['../d7/d03/structgmp___z_zpair__struct.html',1,'']]]
+  ['gmp_5fcci_5fstruct_36',['gmp_CCi_struct',['../db/d3a/structgmp___c_ci__struct.html',1,'']]],
+  ['gmp_5fccimutable_5fstruct_37',['gmp_CCimutable_struct',['../d1/dcf/structgmp___c_cimutable__struct.html',1,'']]],
+  ['gmp_5fccmutable_5fstruct_38',['gmp_CCmutable_struct',['../df/df4/structgmp___c_cmutable__struct.html',1,'']]],
+  ['gmp_5fzzpair_5fstruct_39',['gmp_ZZpair_struct',['../d7/d03/structgmp___z_zpair__struct.html',1,'']]]
 ];

@@ -104,69 +104,69 @@ $(document).ready(function(){initNavTree('dd/d1a/class_schreyer_frame_ac754b3462
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d16/res-schreyer-frame_8cpp_source.html#l00702">702</a> of file <a class="el" href="../../d0/d16/res-schreyer-frame_8cpp_source.html">res-schreyer-frame.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  703</span>{</div>
-<div class="line"><span class="lineno">  704</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;Frame memory usage&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  705</span>  <span class="comment">// widths: level: 6, #elems: 8, used: 6, allocated: 11</span></div>
-<div class="line"><span class="lineno">  706</span>  std::cout &lt;&lt; <span class="stringliteral">&quot; level&quot;</span></div>
-<div class="line"><span class="lineno">  707</span>            &lt;&lt; <span class="stringliteral">&quot;   #elems&quot;</span></div>
-<div class="line"><span class="lineno">  708</span>            &lt;&lt; <span class="stringliteral">&quot;   used&quot;</span></div>
-<div class="line"><span class="lineno">  709</span>            &lt;&lt; <span class="stringliteral">&quot;   allocated&quot;</span></div>
-<div class="line"><span class="lineno">  710</span>            &lt;&lt; <span class="stringliteral">&quot;     nterms&quot;</span></div>
-<div class="line"><span class="lineno">  711</span>            &lt;&lt; <span class="stringliteral">&quot;       poly&quot;</span></div>
-<div class="line"><span class="lineno">  712</span>            &lt;&lt; <span class="stringliteral">&quot;   polalloc&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  713</span>  <span class="keywordtype">long</span> alloc = 0;</div>
-<div class="line"><span class="lineno">  714</span>  <span class="keywordtype">long</span> used = 0;</div>
-<div class="line"><span class="lineno">  715</span>  <span class="keywordtype">long</span> nelems = 0;</div>
-<div class="line"><span class="lineno">  716</span>  <span class="keywordtype">long</span> poly_used = 0;</div>
-<div class="line"><span class="lineno">  717</span>  <span class="keywordtype">long</span> poly_alloc = 0;</div>
-<div class="line"><span class="lineno">  718</span>  <span class="keywordtype">long</span> poly_nterms = 0;</div>
-<div class="line"><span class="lineno">  719</span>  <span class="keywordtype">long</span> poly_used_level = 0;</div>
-<div class="line"><span class="lineno">  720</span>  <span class="keywordtype">long</span> poly_alloc_level = 0;</div>
-<div class="line"><span class="lineno">  721</span>  <span class="keywordtype">long</span> poly_nterms_level = 0;</div>
-<div class="line"><span class="lineno">  722</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../dd/d1a/class_schreyer_frame_ad813b46bc863a2c7bc9374020af2d846.html#ad813b46bc863a2c7bc9374020af2d846">mFrame</a>.<a class="code hl_variable" href="../../d7/df5/struct_schreyer_frame_1_1_frame_aa0e2b7d4d0f4dbc705c0f09946466d19.html#aa0e2b7d4d0f4dbc705c0f09946466d19">mLevels</a>.size(); i++)</div>
-<div class="line"><span class="lineno">  723</span>    {</div>
-<div class="line"><span class="lineno">  724</span>      <span class="keywordtype">long</span> nelems_level = <a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_a99408c321fa57d359c96af412a59282a.html#a99408c321fa57d359c96af412a59282a">level</a>(i).size();</div>
-<div class="line"><span class="lineno">  725</span>      <span class="keywordflow">if</span> (nelems_level == 0) <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  726</span>      <span class="keywordtype">long</span> used_level = nelems_level * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/d1a/class_schreyer_frame_a2e81a03992e5beca83586384f3200cfb.html#a2e81a03992e5beca83586384f3200cfb">FrameElement</a>);</div>
-<div class="line"><span class="lineno">  727</span>      <span class="keywordtype">long</span> alloc_level = <a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_a99408c321fa57d359c96af412a59282a.html#a99408c321fa57d359c96af412a59282a">level</a>(i).capacity() * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/d1a/class_schreyer_frame_a2e81a03992e5beca83586384f3200cfb.html#a2e81a03992e5beca83586384f3200cfb">FrameElement</a>);</div>
-<div class="line"><span class="lineno">  728</span>      poly_nterms_level = 0;</div>
-<div class="line"><span class="lineno">  729</span>      poly_used_level = 0;</div>
-<div class="line"><span class="lineno">  730</span>      poly_alloc_level = 0;</div>
-<div class="line"><span class="lineno">  731</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; nelems_level; j++)</div>
-<div class="line"><span class="lineno">  732</span>        {</div>
-<div class="line"><span class="lineno">  733</span>          <a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_aa4036667603792e583e4431ed359810b.html#aa4036667603792e583e4431ed359810b">ring</a>().<a class="code hl_function" href="../../d1/d4c/class_res_poly_ring_a89cfefa9ef82222276a3825a99ab3e76.html#a89cfefa9ef82222276a3825a99ab3e76">memUsage</a>(<a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_a99408c321fa57d359c96af412a59282a.html#a99408c321fa57d359c96af412a59282a">level</a>(i)[j].mSyzygy,</div>
-<div class="line"><span class="lineno">  734</span>                          poly_nterms_level,</div>
-<div class="line"><span class="lineno">  735</span>                          poly_used_level,</div>
-<div class="line"><span class="lineno">  736</span>                          poly_alloc_level);</div>
-<div class="line"><span class="lineno">  737</span>        }</div>
-<div class="line"><span class="lineno">  738</span>      poly_nterms += poly_nterms_level;</div>
-<div class="line"><span class="lineno">  739</span>      poly_used += poly_used_level;</div>
-<div class="line"><span class="lineno">  740</span>      poly_alloc += poly_alloc_level;</div>
-<div class="line"><span class="lineno">  741</span>      std::cout &lt;&lt; std::setw(6) &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(8) &lt;&lt; nelems_level</div>
-<div class="line"><span class="lineno">  742</span>                &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(6) &lt;&lt; used_level &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(11)</div>
-<div class="line"><span class="lineno">  743</span>                &lt;&lt; alloc_level &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(10) &lt;&lt; poly_nterms_level</div>
-<div class="line"><span class="lineno">  744</span>                &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(10) &lt;&lt; poly_used_level &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
-<div class="line"><span class="lineno">  745</span>                &lt;&lt; std::setw(10) &lt;&lt; poly_alloc_level &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  746</span>      nelems += nelems_level;</div>
-<div class="line"><span class="lineno">  747</span>      used += used_level;</div>
-<div class="line"><span class="lineno">  748</span>      alloc += alloc_level;</div>
-<div class="line"><span class="lineno">  749</span>    }</div>
-<div class="line"><span class="lineno">  750</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;   all&quot;</span></div>
-<div class="line"><span class="lineno">  751</span>            &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(8) &lt;&lt; nelems &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(6) &lt;&lt; used</div>
-<div class="line"><span class="lineno">  752</span>            &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(11) &lt;&lt; alloc &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(10)</div>
-<div class="line"><span class="lineno">  753</span>            &lt;&lt; poly_nterms &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(10) &lt;&lt; poly_used &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
-<div class="line"><span class="lineno">  754</span>            &lt;&lt; std::setw(10) &lt;&lt; poly_alloc &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  755</span> </div>
-<div class="line"><span class="lineno">  756</span>  <span class="keywordtype">long</span> monomSpace = <a class="code hl_variable" href="../../dd/d1a/class_schreyer_frame_abc958584e8fac21126082f5f5f1a6842.html#abc958584e8fac21126082f5f5f1a6842">mMonomialSpace</a>.<a class="code hl_function" href="../../d9/d2f/class_res_memory_block_a08634ff3f15991d24affd3ec6d163d2c.html#a08634ff3f15991d24affd3ec6d163d2c">memoryUsage</a>();</div>
-<div class="line"><span class="lineno">  757</span>  <span class="keywordtype">long</span> monomUsed =</div>
-<div class="line"><span class="lineno">  758</span>      nelems * <a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_a731247b5784a97f9855ec62b64ba7e9a.html#a731247b5784a97f9855ec62b64ba7e9a">monoid</a>().<a class="code hl_function" href="../../dc/d0d/class_res_monoid_dense_a0c7137f6e207e748ec1fea7f3268fc3e.html#a0c7137f6e207e748ec1fea7f3268fc3e">max_monomial_size</a>() * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a>);</div>
-<div class="line"><span class="lineno">  759</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;monomials     &quot;</span> &lt;&lt; std::setw(6) &lt;&lt; monomUsed &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
-<div class="line"><span class="lineno">  760</span>            &lt;&lt; std::setw(11) &lt;&lt; monomSpace &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  761</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;total mem     &quot;</span> &lt;&lt; std::setw(6)</div>
-<div class="line"><span class="lineno">  762</span>            &lt;&lt; (used + monomUsed + poly_used) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(11)</div>
-<div class="line"><span class="lineno">  763</span>            &lt;&lt; (alloc + monomSpace + poly_alloc) &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  764</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d16/res-schreyer-frame_8cpp_source.html#l00712">712</a> of file <a class="el" href="../../d0/d16/res-schreyer-frame_8cpp_source.html">res-schreyer-frame.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  713</span>{</div>
+<div class="line"><span class="lineno">  714</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;Frame memory usage&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  715</span>  <span class="comment">// widths: level: 6, #elems: 8, used: 6, allocated: 11</span></div>
+<div class="line"><span class="lineno">  716</span>  std::cout &lt;&lt; <span class="stringliteral">&quot; level&quot;</span></div>
+<div class="line"><span class="lineno">  717</span>            &lt;&lt; <span class="stringliteral">&quot;   #elems&quot;</span></div>
+<div class="line"><span class="lineno">  718</span>            &lt;&lt; <span class="stringliteral">&quot;   used&quot;</span></div>
+<div class="line"><span class="lineno">  719</span>            &lt;&lt; <span class="stringliteral">&quot;   allocated&quot;</span></div>
+<div class="line"><span class="lineno">  720</span>            &lt;&lt; <span class="stringliteral">&quot;     nterms&quot;</span></div>
+<div class="line"><span class="lineno">  721</span>            &lt;&lt; <span class="stringliteral">&quot;       poly&quot;</span></div>
+<div class="line"><span class="lineno">  722</span>            &lt;&lt; <span class="stringliteral">&quot;   polalloc&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  723</span>  <span class="keywordtype">long</span> alloc = 0;</div>
+<div class="line"><span class="lineno">  724</span>  <span class="keywordtype">long</span> used = 0;</div>
+<div class="line"><span class="lineno">  725</span>  <span class="keywordtype">long</span> nelems = 0;</div>
+<div class="line"><span class="lineno">  726</span>  <span class="keywordtype">long</span> poly_used = 0;</div>
+<div class="line"><span class="lineno">  727</span>  <span class="keywordtype">long</span> poly_alloc = 0;</div>
+<div class="line"><span class="lineno">  728</span>  <span class="keywordtype">long</span> poly_nterms = 0;</div>
+<div class="line"><span class="lineno">  729</span>  <span class="keywordtype">long</span> poly_used_level = 0;</div>
+<div class="line"><span class="lineno">  730</span>  <span class="keywordtype">long</span> poly_alloc_level = 0;</div>
+<div class="line"><span class="lineno">  731</span>  <span class="keywordtype">long</span> poly_nterms_level = 0;</div>
+<div class="line"><span class="lineno">  732</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../dd/d1a/class_schreyer_frame_ad813b46bc863a2c7bc9374020af2d846.html#ad813b46bc863a2c7bc9374020af2d846">mFrame</a>.<a class="code hl_variable" href="../../d7/df5/struct_schreyer_frame_1_1_frame_aa0e2b7d4d0f4dbc705c0f09946466d19.html#aa0e2b7d4d0f4dbc705c0f09946466d19">mLevels</a>.size(); i++)</div>
+<div class="line"><span class="lineno">  733</span>    {</div>
+<div class="line"><span class="lineno">  734</span>      <span class="keywordtype">long</span> nelems_level = <a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_a99408c321fa57d359c96af412a59282a.html#a99408c321fa57d359c96af412a59282a">level</a>(i).size();</div>
+<div class="line"><span class="lineno">  735</span>      <span class="keywordflow">if</span> (nelems_level == 0) <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  736</span>      <span class="keywordtype">long</span> used_level = nelems_level * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/d1a/class_schreyer_frame_a2e81a03992e5beca83586384f3200cfb.html#a2e81a03992e5beca83586384f3200cfb">FrameElement</a>);</div>
+<div class="line"><span class="lineno">  737</span>      <span class="keywordtype">long</span> alloc_level = <a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_a99408c321fa57d359c96af412a59282a.html#a99408c321fa57d359c96af412a59282a">level</a>(i).capacity() * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../dd/d1a/class_schreyer_frame_a2e81a03992e5beca83586384f3200cfb.html#a2e81a03992e5beca83586384f3200cfb">FrameElement</a>);</div>
+<div class="line"><span class="lineno">  738</span>      poly_nterms_level = 0;</div>
+<div class="line"><span class="lineno">  739</span>      poly_used_level = 0;</div>
+<div class="line"><span class="lineno">  740</span>      poly_alloc_level = 0;</div>
+<div class="line"><span class="lineno">  741</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; nelems_level; j++)</div>
+<div class="line"><span class="lineno">  742</span>        {</div>
+<div class="line"><span class="lineno">  743</span>          <a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_aa4036667603792e583e4431ed359810b.html#aa4036667603792e583e4431ed359810b">ring</a>().<a class="code hl_function" href="../../d1/d4c/class_res_poly_ring_a89cfefa9ef82222276a3825a99ab3e76.html#a89cfefa9ef82222276a3825a99ab3e76">memUsage</a>(<a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_a99408c321fa57d359c96af412a59282a.html#a99408c321fa57d359c96af412a59282a">level</a>(i)[j].mSyzygy,</div>
+<div class="line"><span class="lineno">  744</span>                          poly_nterms_level,</div>
+<div class="line"><span class="lineno">  745</span>                          poly_used_level,</div>
+<div class="line"><span class="lineno">  746</span>                          poly_alloc_level);</div>
+<div class="line"><span class="lineno">  747</span>        }</div>
+<div class="line"><span class="lineno">  748</span>      poly_nterms += poly_nterms_level;</div>
+<div class="line"><span class="lineno">  749</span>      poly_used += poly_used_level;</div>
+<div class="line"><span class="lineno">  750</span>      poly_alloc += poly_alloc_level;</div>
+<div class="line"><span class="lineno">  751</span>      std::cout &lt;&lt; std::setw(6) &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(8) &lt;&lt; nelems_level</div>
+<div class="line"><span class="lineno">  752</span>                &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(6) &lt;&lt; used_level &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(11)</div>
+<div class="line"><span class="lineno">  753</span>                &lt;&lt; alloc_level &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(10) &lt;&lt; poly_nterms_level</div>
+<div class="line"><span class="lineno">  754</span>                &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(10) &lt;&lt; poly_used_level &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><span class="lineno">  755</span>                &lt;&lt; std::setw(10) &lt;&lt; poly_alloc_level &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  756</span>      nelems += nelems_level;</div>
+<div class="line"><span class="lineno">  757</span>      used += used_level;</div>
+<div class="line"><span class="lineno">  758</span>      alloc += alloc_level;</div>
+<div class="line"><span class="lineno">  759</span>    }</div>
+<div class="line"><span class="lineno">  760</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;   all&quot;</span></div>
+<div class="line"><span class="lineno">  761</span>            &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(8) &lt;&lt; nelems &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(6) &lt;&lt; used</div>
+<div class="line"><span class="lineno">  762</span>            &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(11) &lt;&lt; alloc &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(10)</div>
+<div class="line"><span class="lineno">  763</span>            &lt;&lt; poly_nterms &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(10) &lt;&lt; poly_used &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><span class="lineno">  764</span>            &lt;&lt; std::setw(10) &lt;&lt; poly_alloc &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  765</span> </div>
+<div class="line"><span class="lineno">  766</span>  <span class="keywordtype">long</span> monomSpace = <a class="code hl_variable" href="../../dd/d1a/class_schreyer_frame_abc958584e8fac21126082f5f5f1a6842.html#abc958584e8fac21126082f5f5f1a6842">mMonomialSpace</a>.<a class="code hl_function" href="../../d9/d2f/class_res_memory_block_a08634ff3f15991d24affd3ec6d163d2c.html#a08634ff3f15991d24affd3ec6d163d2c">memoryUsage</a>();</div>
+<div class="line"><span class="lineno">  767</span>  <span class="keywordtype">long</span> monomUsed =</div>
+<div class="line"><span class="lineno">  768</span>      nelems * <a class="code hl_function" href="../../dd/d1a/class_schreyer_frame_a731247b5784a97f9855ec62b64ba7e9a.html#a731247b5784a97f9855ec62b64ba7e9a">monoid</a>().<a class="code hl_function" href="../../dc/d0d/class_res_monoid_dense_a0c7137f6e207e748ec1fea7f3268fc3e.html#a0c7137f6e207e748ec1fea7f3268fc3e">max_monomial_size</a>() * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../d5/d0a/moninfo_8hpp_afe2d8fe59c70630e71d82733c3f8ddcb.html#afe2d8fe59c70630e71d82733c3f8ddcb">monomial_word</a>);</div>
+<div class="line"><span class="lineno">  769</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;monomials     &quot;</span> &lt;&lt; std::setw(6) &lt;&lt; monomUsed &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><span class="lineno">  770</span>            &lt;&lt; std::setw(11) &lt;&lt; monomSpace &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  771</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;total mem     &quot;</span> &lt;&lt; std::setw(6)</div>
+<div class="line"><span class="lineno">  772</span>            &lt;&lt; (used + monomUsed + poly_used) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(11)</div>
+<div class="line"><span class="lineno">  773</span>            &lt;&lt; (alloc + monomSpace + poly_alloc) &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  774</span>}</div>
 <div class="ttc" id="aclass_res_memory_block_a08634ff3f15991d24affd3ec6d163d2c_html_a08634ff3f15991d24affd3ec6d163d2c"><div class="ttname"><a href="../../d9/d2f/class_res_memory_block_a08634ff3f15991d24affd3ec6d163d2c.html#a08634ff3f15991d24affd3ec6d163d2c">ResMemoryBlock::memoryUsage</a></div><div class="ttdeci">long memoryUsage() const</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d36/res-memblock_8hpp_source.html#l00126">res-memblock.hpp:126</a></div></div>
 <div class="ttc" id="aclass_res_monoid_dense_a0c7137f6e207e748ec1fea7f3268fc3e_html_a0c7137f6e207e748ec1fea7f3268fc3e"><div class="ttname"><a href="../../dc/d0d/class_res_monoid_dense_a0c7137f6e207e748ec1fea7f3268fc3e.html#a0c7137f6e207e748ec1fea7f3268fc3e">ResMonoidDense::max_monomial_size</a></div><div class="ttdeci">int max_monomial_size() const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d58/res-moninfo-dense_8hpp_source.html#l00065">res-moninfo-dense.hpp:65</a></div></div>
 <div class="ttc" id="aclass_res_poly_ring_a89cfefa9ef82222276a3825a99ab3e76_html_a89cfefa9ef82222276a3825a99ab3e76"><div class="ttname"><a href="../../d1/d4c/class_res_poly_ring_a89cfefa9ef82222276a3825a99ab3e76.html#a89cfefa9ef82222276a3825a99ab3e76">ResPolyRing::memUsage</a></div><div class="ttdeci">void memUsage(const ResPolynomial &amp;f, long &amp;nterms, long &amp;bytes_used, long &amp;bytes_alloc) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd3/res-poly-ring_8cpp_source.html#l00011">res-poly-ring.cpp:11</a></div></div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('dd/d1a/class_schreyer_frame_ac754b3462
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d1a/class_schreyer_frame.html">SchreyerFrame</a></li>
-    <li class="footer">Generated on Sun Apr 26 2026 03:47:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun May 10 2026 04:02:28 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
