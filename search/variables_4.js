@@ -37,6 +37,5 @@ var searchData=
   ['down_34',['down',['../d9/dc9/struct_res_f4_monomial_lookup_table_t_1_1mi__node_ac8bfdce3807af39555b01255bec548bd.html#ac8bfdce3807af39555b01255bec548bd',1,'ResF4MonomialLookupTableT::mi_node::down'],['../d0/d1b/class_nmi__node_a9030b175554762d3fe3259f866cba0aa.html#a9030b175554762d3fe3259f866cba0aa',1,'Nmi_node::down'],['../d3/de1/structhilb__step_a428f6975f057b250dbe6aad87ce97749.html#a428f6975f057b250dbe6aad87ce97749',1,'hilb_step::down'],['../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a61a52b243bb68ec213be76a69254a672.html#a61a52b243bb68ec213be76a69254a672',1,'F4MonomialLookupTableT::mi_node::down']]],
   ['dt_5fdecrease_5ffactor_35',['dt_decrease_factor',['../de/db9/class_path_tracker_a87a7c5a2b8f68e0a1a749b4cfcd34d4a.html#a87a7c5a2b8f68e0a1a749b4cfcd34d4a',1,'PathTracker']]],
   ['dt_5fincrease_5ffactor_36',['dt_increase_factor',['../de/db9/class_path_tracker_adeb837651e78dfe4cf85dfdf46581eb2.html#adeb837651e78dfe4cf85dfdf46581eb2',1,'PathTracker']]],
-  ['dualcert_37',['dualCert',['../d5/d22/struct_cone_result_ae1e070fb5ea0599bc1070ed3a85f7457.html#ae1e070fb5ea0599bc1070ed3a85f7457',1,'ConeResult']]],
-  ['dynamic_5fcache_38',['dynamic_cache',['../d7/d9a/class_det_computation_a211d3dc537ff5c46d0a83379b6bf5abf.html#a211d3dc537ff5c46d0a83379b6bf5abf',1,'DetComputation']]]
+  ['dynamic_5fcache_37',['dynamic_cache',['../d7/d9a/class_det_computation_a211d3dc537ff5c46d0a83379b6bf5abf.html#a211d3dc537ff5c46d0a83379b6bf5abf',1,'DetComputation']]]
 ];

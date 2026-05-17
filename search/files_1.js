@@ -13,8 +13,6 @@ var searchData=
   ['betti_2ehpp_10',['betti.hpp',['../d7/d41/betti_8hpp.html',1,'']]],
   ['bibasis_2ecpp_11',['bibasis.cpp',['../d9/db0/bibasis_8cpp.html',1,'']]],
   ['bibasis_2ehpp_12',['bibasis.hpp',['../d8/df2/bibasis_8hpp.html',1,'']]],
-  ['box_5fenum_2ec_13',['box_enum.c',['../d7/dd1/box__enum_8c.html',1,'']]],
-  ['box_5fenum_2eh_14',['box_enum.h',['../db/d61/box__enum_8h.html',1,'']]],
-  ['buffer_2ecpp_15',['buffer.cpp',['../dd/d85/buffer_8cpp.html',1,'']]],
-  ['buffer_2ehpp_16',['buffer.hpp',['../da/d1d/buffer_8hpp.html',1,'']]]
+  ['buffer_2ecpp_13',['buffer.cpp',['../dd/d85/buffer_8cpp.html',1,'']]],
+  ['buffer_2ehpp_14',['buffer.hpp',['../da/d1d/buffer_8hpp.html',1,'']]]
 ];

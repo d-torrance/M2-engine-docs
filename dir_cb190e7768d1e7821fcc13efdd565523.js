@@ -16,7 +16,6 @@ var dir_cb190e7768d1e7821fcc13efdd565523 =
     [ "DMatZZpTest.cpp", "d6/d28/_d_mat_z_zp_test_8cpp.html", "d6/d28/_d_mat_z_zp_test_8cpp" ],
     [ "fromStream.cpp", "d5/d88/from_stream_8cpp.html", "d5/d88/from_stream_8cpp" ],
     [ "GivaroTest.cpp", "dd/d0a/_givaro_test_8cpp.html", "dd/d0a/_givaro_test_8cpp" ],
-    [ "LatticePointsTest.cpp", "d5/d4a/_lattice_points_test_8cpp.html", "d5/d4a/_lattice_points_test_8cpp" ],
     [ "M2-cpp-replacement.cpp", "dd/de1/_m2-cpp-replacement_8cpp.html", "dd/de1/_m2-cpp-replacement_8cpp" ],
     [ "MatrixIOTest.cpp", "de/d5f/_matrix_i_o_test_8cpp.html", "de/d5f/_matrix_i_o_test_8cpp" ],
     [ "MonoidTest.cpp", "d7/db1/_monoid_test_8cpp.html", "d7/db1/_monoid_test_8cpp" ],

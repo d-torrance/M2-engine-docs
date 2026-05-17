@@ -10,6 +10,6 @@ var searchData=
   ['fmod_7',['fmod',['../d6/df7/classmpfr_1_1mpreal_a4c1a7ff6327558cf2fb2101f8c4ff2a2.html#a4c1a7ff6327558cf2fb2101f8c4ff2a2',1,'mpfr::mpreal']]],
   ['fms_8',['fms',['../d6/df7/classmpfr_1_1mpreal_a912bc2903eda39e264e302e884e0f509.html#a912bc2903eda39e264e302e884e0f509',1,'mpfr::mpreal']]],
   ['frac_9',['frac',['../d6/df7/classmpfr_1_1mpreal_a7fe97c8636a036f36cb1e98f782bf287.html#a7fe97c8636a036f36cb1e98f782bf287',1,'mpfr::mpreal']]],
-  ['freealgebra_10',['FreeAlgebra',['../df/d41/struct_polynomial_a35d93f57fdd5ab4298b4bfa1df5f6cc4.html#a35d93f57fdd5ab4298b4bfa1df5f6cc4',1,'Polynomial']]],
+  ['freealgebra_10',['FreeAlgebra',['../d6/db7/class_polynomial_a35d93f57fdd5ab4298b4bfa1df5f6cc4.html#a35d93f57fdd5ab4298b4bfa1df5f6cc4',1,'Polynomial']]],
   ['freemodule_11',['freemodule',['../d6/d3f/class_matrix_a014da1c5587b9ee49412c862584d312d.html#a014da1c5587b9ee49412c862584d312d',1,'Matrix::FreeModule'],['../d3/dfc/class_poly_ring_a014da1c5587b9ee49412c862584d312d.html#a014da1c5587b9ee49412c862584d312d',1,'PolyRing::FreeModule']]]
 ];

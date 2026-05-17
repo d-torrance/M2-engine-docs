@@ -1,8 +1,8 @@
 var searchData=
 [
   ['m2_3a_3aaringzzgmp_0',['ARingZZGMP',['../d8/d2b/class_ring_z_z_ad3ff00679a0c4c1d840207a4abed7ced.html#ad3ff00679a0c4c1d840207a4abed7ced',1,'RingZZ']]],
-  ['m2freealgebra_1',['M2FreeAlgebra',['../df/d41/struct_polynomial_a4ae4e8604a482bb95955b0db6f0401dc.html#a4ae4e8604a482bb95955b0db6f0401dc',1,'Polynomial']]],
-  ['m2freealgebraorquotient_2',['M2FreeAlgebraOrQuotient',['../df/d41/struct_polynomial_a1bbdbe363c09655d85954c061ba6f448.html#a1bbdbe363c09655d85954c061ba6f448',1,'Polynomial']]],
+  ['m2freealgebra_1',['M2FreeAlgebra',['../d6/db7/class_polynomial_a4ae4e8604a482bb95955b0db6f0401dc.html#a4ae4e8604a482bb95955b0db6f0401dc',1,'Polynomial']]],
+  ['m2freealgebraorquotient_2',['M2FreeAlgebraOrQuotient',['../d6/db7/class_polynomial_a1bbdbe363c09655d85954c061ba6f448.html#a1bbdbe363c09655d85954c061ba6f448',1,'Polynomial']]],
   ['matelementaryops_3c_20smat_20_3e_3',['MatElementaryOps&lt; SMat &gt;',['../da/de0/class_s_mat_a9eb2fc6a7b662643973921516bcd4dc4.html#a9eb2fc6a7b662643973921516bcd4dc4',1,'SMat']]],
   ['matrixconstructor_4',['MatrixConstructor',['../d6/d3f/class_matrix_a632b1ee3208e0b6f1b3d4c2d91e28817.html#a632b1ee3208e0b6f1b3d4c2d91e28817',1,'Matrix']]],
   ['matrixstream_5',['MatrixStream',['../d3/dfc/class_poly_ring_a1351de427adc85de0703978ce712bb79.html#a1351de427adc85de0703978ce712bb79',1,'PolyRing']]],

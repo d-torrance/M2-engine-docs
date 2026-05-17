@@ -14,7 +14,7 @@ var searchData=
   ['poly_11',['POLY',['../d0/d03/struct_p_o_l_y.html',1,'']]],
   ['polyheap_12',['polyheap',['../d3/d5a/classpolyheap.html',1,'']]],
   ['polynom_13',['Polynom',['../d9/d02/class_b_i_basis_1_1_polynom.html',1,'BIBasis']]],
-  ['polynomial_14',['polynomial',['../d4/d1b/classnewf4_1_1_polynomial.html',1,'newf4::Polynomial'],['../df/d41/struct_polynomial.html',1,'Polynomial&lt; CoefficientRingType &gt;']]],
+  ['polynomial_14',['polynomial',['../d4/d1b/classnewf4_1_1_polynomial.html',1,'newf4::Polynomial'],['../d6/db7/class_polynomial.html',1,'Polynomial&lt; CoefficientRingType &gt;']]],
   ['polynomialheap_15',['PolynomialHeap',['../d7/d5e/class_polynomial_heap.html',1,'']]],
   ['polynomialiterator_16',['PolynomialIterator',['../d6/d58/classnewf4_1_1_polynomial_1_1_polynomial_iterator.html',1,'newf4::Polynomial']]],
   ['polynomiallist_17',['PolynomialList',['../d2/d47/classnewf4_1_1_polynomial_list.html',1,'newf4']]],
