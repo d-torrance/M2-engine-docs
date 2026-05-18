@@ -31,8 +31,6 @@ jobs:
           ../configure
       - name: Build engine documentation
         run: |
-          make -C M2/BUILD/Macaulay2/c scc1
-          make -C M2/BUILD/Macaulay2/d engine-exports.h.tmp
           make -C M2/BUILD/Macaulay2/e tinydoc
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
