@@ -95,13 +95,13 @@ $(document).ready(function(){initNavTree('d1/d42/class_exponent_vector_a62596796
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , <a class="el" href="../../d9/db9/classbool.html">bool</a> OC&gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">class</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">E</a> , <a class="el" href="../../d9/db9/classbool.html">bool</a> OC&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="../../d1/d42/class_exponent_vector.html">ExponentVector</a>&lt; E, OC &gt;::power </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> <a class="el" href="../../d1/d42/class_exponent_vector.html">ExponentVector</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">E</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">OC</a> &gt;::power </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td>
           <td class="paramname"><em>nvars</em>, </td>
@@ -115,7 +115,7 @@ template&lt;class E , <a class="el" href="../../d9/db9/classbool.html">bool</a> 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d1/d42/class_exponent_vector_a044e2127bc4c3969a4f7a45f798411c4.html#a044e2127bc4c3969a4f7a45f798411c4">Exponent</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d1/d42/class_exponent_vector_a044e2127bc4c3969a4f7a45f798411c4.html#a044e2127bc4c3969a4f7a45f798411c4">Exponent</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -137,17 +137,18 @@ template&lt;class E , <a class="el" href="../../d9/db9/classbool.html">bool</a> 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/db0/_exponent_vector_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../da/db0/_exponent_vector_8hpp_source.html">ExponentVector.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>  {</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (OC)</div>
-<div class="line"><span class="lineno">   83</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = nvars; i &gt; 0; i--) *<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>++ = <a class="code hl_function" href="../../d6/dcb/namespacesafe_a145feb05f9904060dc91bef00892b0b4.html#a145feb05f9904060dc91bef00892b0b4">safe::mult</a>(*a++, n);</div>
-<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   85</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = nvars; i &gt; 0; i--) *<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>++ = *a++ * n;</div>
-<div class="line"><span class="lineno">   86</span>  }</div>
+<p class="definition">Definition at line <a class="el" href="../../da/db0/_exponent_vector_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../da/db0/_exponent_vector_8hpp_source.html">ExponentVector.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>  {</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">OC</a>)</div>
+<div class="line"><span class="lineno">   84</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = nvars; i &gt; 0; i--) *<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>++ = <a class="code hl_function" href="../../d6/dcb/namespacesafe_a145feb05f9904060dc91bef00892b0b4.html#a145feb05f9904060dc91bef00892b0b4">safe::mult</a>(*a++, n);</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   86</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = nvars; i &gt; 0; i--) *<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>++ = *a++ * n;</div>
+<div class="line"><span class="lineno">   87</span>  }</div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
-<div class="ttc" id="anamespacesafe_a145feb05f9904060dc91bef00892b0b4_html_a145feb05f9904060dc91bef00892b0b4"><div class="ttname"><a href="../../d6/dcb/namespacesafe_a145feb05f9904060dc91bef00892b0b4.html#a145feb05f9904060dc91bef00892b0b4">safe::mult</a></div><div class="ttdeci">static int32_t mult(int32_t x, int32_t y, const char *msg)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d03/overflow_8hpp_source.html#l00205">overflow.hpp:205</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
+<div class="ttc" id="anamespacesafe_a145feb05f9904060dc91bef00892b0b4_html_a145feb05f9904060dc91bef00892b0b4"><div class="ttname"><a href="../../d6/dcb/namespacesafe_a145feb05f9904060dc91bef00892b0b4.html#a145feb05f9904060dc91bef00892b0b4">safe::mult</a></div><div class="ttdeci">static int32_t mult(int32_t x, int32_t y, const char *msg)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d03/overflow_8hpp_source.html#l00208">overflow.hpp:208</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/dcb/namespacesafe_a145feb05f9904060dc91bef00892b0b4.html#a145feb05f9904060dc91bef00892b0b4">safe::mult()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d6/dcb/namespacesafe_a145feb05f9904060dc91bef00892b0b4.html#a145feb05f9904060dc91bef00892b0b4">safe::mult()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/db1/class_monoid_a222e952fcafee4f1373e464c82b7e754.html#a222e952fcafee4f1373e464c82b7e754">Monoid::power()</a>, and <a class="el" href="../../d7/db1/_monoid_test_8cpp_a5daa3fcba18a37c51a93a35146bb619c.html#a5daa3fcba18a37c51a93a35146bb619c">TEST()</a>.</p>
 
@@ -159,7 +160,7 @@ template&lt;class E , <a class="el" href="../../d9/db9/classbool.html">bool</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d42/class_exponent_vector.html">ExponentVector</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

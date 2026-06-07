@@ -96,28 +96,28 @@ $(document).ready(function(){initNavTree('d8/d79/class_n_c_groebner_a5bb28c7f313
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto NCGroebner::insertNewOverlaps </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">auto</a> NCGroebner::insertNewOverlaps </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; <a class="el" href="../../d6/d1a/_overlap_table_8hpp_a6137b15715e0fc6d08b1936ca1f48e85.html#a6137b15715e0fc6d08b1936ca1f48e85">Overlap</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>newOverlaps</em></td><td>)</td>
-          <td> -&gt; void</td>
+          <td> -&gt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc7/_n_c_groebner_8cpp_source.html#l00438">438</a> of file <a class="el" href="../../df/dc7/_n_c_groebner_8cpp_source.html">NCGroebner.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  439</span>{</div>
-<div class="line"><span class="lineno">  440</span>   <span class="keywordflow">for</span> (<span class="keyword">auto</span> newOverlap : newOverlaps)</div>
+<div class="line"><span class="lineno">  440</span>   <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newOverlap</a> : <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newOverlaps</a>)</div>
 <div class="line"><span class="lineno">  441</span>     {</div>
 <div class="line"><span class="lineno">  442</span>       <span class="comment">// check to see if the overlap is necessary before insertion</span></div>
 <div class="line"><span class="lineno">  443</span>       <span class="comment">// FM: not sure if we should do this here, or in the loop.</span></div>
 <div class="line"><span class="lineno">  444</span>       <span class="comment">// std::cout &lt;&lt; &quot;Checking overlap: &quot; &lt;&lt; newOverlap &lt;&lt; std::endl;</span></div>
 <div class="line"><span class="lineno">  445</span>       <span class="comment">// printOverlapData(std::cout, newOverlap);</span></div>
-<div class="line"><span class="lineno">  446</span>       <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/d79/class_n_c_groebner_a687fe0891f9e6d56995554c21d922794.html#a687fe0891f9e6d56995554c21d922794">isOverlapNecessary</a>(newOverlap))</div>
+<div class="line"><span class="lineno">  446</span>       <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/d79/class_n_c_groebner_a687fe0891f9e6d56995554c21d922794.html#a687fe0891f9e6d56995554c21d922794">isOverlapNecessary</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newOverlap</a>))</div>
 <div class="line"><span class="lineno">  447</span>         {</div>
-<div class="line"><span class="lineno">  448</span>           <a class="code hl_variable" href="../../d8/d79/class_n_c_groebner_a9655444c14c6912c19dd2542014167aa.html#a9655444c14c6912c19dd2542014167aa">mOverlapTable</a>.<a class="code hl_function" href="../../de/d48/class_overlap_table_a2752843e8d338897f2e21987ac79dc3d.html#a2752843e8d338897f2e21987ac79dc3d">insert</a>(<a class="code hl_function" href="../../d8/d79/class_n_c_groebner_a6b7fc6b0e55486f6815157dd8d0b501b.html#a6b7fc6b0e55486f6815157dd8d0b501b">overlapHeft</a>(newOverlap),</div>
+<div class="line"><span class="lineno">  448</span>           <a class="code hl_variable" href="../../d8/d79/class_n_c_groebner_a9655444c14c6912c19dd2542014167aa.html#a9655444c14c6912c19dd2542014167aa">mOverlapTable</a>.<a class="code hl_function" href="../../de/d48/class_overlap_table_a2752843e8d338897f2e21987ac79dc3d.html#a2752843e8d338897f2e21987ac79dc3d">insert</a>(<a class="code hl_function" href="../../d8/d79/class_n_c_groebner_a6b7fc6b0e55486f6815157dd8d0b501b.html#a6b7fc6b0e55486f6815157dd8d0b501b">overlapHeft</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newOverlap</a>),</div>
 <div class="line"><span class="lineno">  449</span>                                <span class="keyword">false</span>,</div>
-<div class="line"><span class="lineno">  450</span>                                newOverlap);</div>
+<div class="line"><span class="lineno">  450</span>                                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newOverlap</a>);</div>
 <div class="line"><span class="lineno">  451</span>         }</div>
 <div class="line"><span class="lineno">  452</span>       <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  453</span>         {</div>
@@ -134,8 +134,9 @@ $(document).ready(function(){initNavTree('d8/d79/class_n_c_groebner_a5bb28c7f313
 <div class="ttc" id="aclass_n_c_groebner_a9655444c14c6912c19dd2542014167aa_html_a9655444c14c6912c19dd2542014167aa"><div class="ttname"><a href="../../d8/d79/class_n_c_groebner_a9655444c14c6912c19dd2542014167aa.html#a9655444c14c6912c19dd2542014167aa">NCGroebner::mOverlapTable</a></div><div class="ttdeci">OverlapTable mOverlapTable</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d37/_n_c_groebner_8hpp_source.html#l00026">NCGroebner.hpp:26</a></div></div>
 <div class="ttc" id="aclass_overlap_table_a2752843e8d338897f2e21987ac79dc3d_html_a2752843e8d338897f2e21987ac79dc3d"><div class="ttname"><a href="../../de/d48/class_overlap_table_a2752843e8d338897f2e21987ac79dc3d.html#a2752843e8d338897f2e21987ac79dc3d">OverlapTable::insert</a></div><div class="ttdeci">auto insert(int deg, bool isGenerator, Overlap o) -&gt; void</div><div class="ttdef"><b>Definition</b> <a href="../../da/d7b/_overlap_table_8cpp_source.html#l00007">OverlapTable.cpp:7</a></div></div>
 <div class="ttc" id="am2-types_8cpp_aa0f82116567de78d2d8d5cee3a26eebc_html_aa0f82116567de78d2d8d5cee3a26eebc"><div class="ttname"><a href="../../d4/d46/m2-types_8cpp_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a></div><div class="ttdeci">int M2_gbTrace</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d46/m2-types_8cpp_source.html#l00052">m2-types.cpp:52</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d46/m2-types_8cpp_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d4/d46/m2-types_8cpp_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d79/class_n_c_groebner_a32628ad1d86f7719f69e26d2df5445cf.html#a32628ad1d86f7719f69e26d2df5445cf">updateOverlaps()</a>.</p>
 
@@ -147,7 +148,7 @@ $(document).ready(function(){initNavTree('d8/d79/class_n_c_groebner_a5bb28c7f313
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d79/class_n_c_groebner.html">NCGroebner</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

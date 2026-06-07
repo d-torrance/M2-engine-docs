@@ -95,21 +95,21 @@ $(document).ready(function(){initNavTree('da/d09/class_b_i_basis_1_1_triple_ae50
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MonomType &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple.html">BIBasis::Triple</a>&lt; MonomType &gt;::Compare </td>
+          <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple.html">BIBasis::Triple</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt;::Compare </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple.html">Triple</a>&lt; MonomType &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple.html">Triple</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; *&#160;</td>
           <td class="paramname"><em>tripleA</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple.html">Triple</a>&lt; MonomType &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple.html">Triple</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; *&#160;</td>
           <td class="paramname"><em>tripleB</em>&#160;</td>
         </tr>
         <tr>
@@ -127,14 +127,15 @@ template&lt;typename MonomType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d7a/triple_8hpp_source.html#l00176">176</a> of file <a class="el" href="../../d6/d7a/triple_8hpp_source.html">triple.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  177</span>    {</div>
-<div class="line"><span class="lineno">  178</span>        <span class="keywordflow">if</span> (!tripleA || !tripleB)</div>
+<div class="line"><span class="lineno">  178</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tripleA</a> || !<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tripleB</a>)</div>
 <div class="line"><span class="lineno">  179</span>        {</div>
 <div class="line"><span class="lineno">  180</span>            <span class="keywordflow">throw</span> std::string(<span class="stringliteral">&quot;BIBasis::Triple::Compare(): at least one argument is NULL.&quot;</span>);</div>
 <div class="line"><span class="lineno">  181</span>        }</div>
-<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">return</span> *tripleA-&gt;Lm &gt; *tripleB-&gt;Lm;</div>
+<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">return</span> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tripleA</a>-&gt;Lm &gt; *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tripleB</a>-&gt;Lm;</div>
 <div class="line"><span class="lineno">  183</span>    }</div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple_ace1f1a0fdeceec5cdffc458868efe3e9.html#ace1f1a0fdeceec5cdffc458868efe3e9">BIBasis::Triple&lt; MonomType &gt;::Lm</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
 
 </div>
 </div>
@@ -144,7 +145,7 @@ template&lt;typename MonomType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d30/namespace_b_i_basis.html">BIBasis</a></li><li class="navelem"><a class="el" href="../../da/d09/class_b_i_basis_1_1_triple.html">Triple</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

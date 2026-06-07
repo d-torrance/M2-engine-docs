@@ -95,13 +95,13 @@ $(document).ready(function(){initNavTree('d1/ddf/class_mat_elementary_ops_3_01_d
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RT &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">RT</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../db/d2e/class_mat_elementary_ops.html">MatElementaryOps</a>&lt; <a class="el" href="../../da/dc3/class_d_mat.html">DMat</a>&lt; RT &gt; &gt;::column_permute </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../db/d2e/class_mat_elementary_ops.html">MatElementaryOps</a>&lt; <a class="el" href="../../da/dc3/class_d_mat.html">DMat</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">RT</a> &gt; &gt;::column_permute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4_a86d9d46de12f0d9f8ce29eeea0725076.html#a86d9d46de12f0d9f8ce29eeea0725076">Mat</a> &amp;&#160;</td>
           <td class="paramname"><em>mat</em>, </td>
@@ -134,13 +134,13 @@ template&lt;typename RT &gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html#l00306">306</a> of file <a class="el" href="../../de/d24/mat-elem-ops_8hpp_source.html">mat-elem-ops.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  307</span>  {</div>
 <div class="line"><span class="lineno">  308</span>    <span class="comment">// We copy one col to another location for each cycle in &#39;perm&#39; of length &gt; 1</span></div>
-<div class="line"><span class="lineno">  309</span>    <span class="keywordtype">size_t</span> ncols_to_permute = perm-&gt;len;</div>
-<div class="line"><span class="lineno">  310</span>    std::unique_ptr&lt;bool[]&gt; done(<span class="keyword">new</span> <span class="keywordtype">bool</span>[ncols_to_permute]);</div>
-<div class="line"><span class="lineno">  311</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; ncols_to_permute; i++) done[i] = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  309</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ncols_to_permute</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">perm</a>-&gt;len;</div>
+<div class="line"><span class="lineno">  310</span>    std::unique_ptr&lt;bool[]&gt; done(<span class="keyword">new</span> <span class="keywordtype">bool</span>[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ncols_to_permute</a>]);</div>
+<div class="line"><span class="lineno">  311</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ncols_to_permute</a>; i++) done[i] = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  312</span>    <span class="comment">// We check that this is a permutation</span></div>
-<div class="line"><span class="lineno">  313</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; ncols_to_permute; i++)</div>
+<div class="line"><span class="lineno">  313</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ncols_to_permute</a>; i++)</div>
 <div class="line"><span class="lineno">  314</span>      {</div>
-<div class="line"><span class="lineno">  315</span>        <span class="keywordtype">size_t</span> j = perm-&gt;array[i];</div>
+<div class="line"><span class="lineno">  315</span>        <span class="keywordtype">size_t</span> j = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">perm</a>-&gt;array[i];</div>
 <div class="line"><span class="lineno">  316</span>        <span class="keywordflow">if</span> (!done[j])</div>
 <div class="line"><span class="lineno">  317</span>          {</div>
 <div class="line"><span class="lineno">  318</span>            <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;expected permutation&quot;</span>);</div>
@@ -148,41 +148,42 @@ template&lt;typename RT &gt; </div>
 <div class="line"><span class="lineno">  320</span>          }</div>
 <div class="line"><span class="lineno">  321</span>        done[j] = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  322</span>      }</div>
-<div class="line"><span class="lineno">  323</span>    <span class="keyword">typename</span> RT::ElementArray tmp(mat.ring(), mat.numRows());</div>
+<div class="line"><span class="lineno">  323</span>    <span class="keyword">typename</span> RT::ElementArray <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>(mat.ring(), mat.numRows());</div>
 <div class="line"><span class="lineno">  324</span>    <span class="keywordtype">size_t</span> next = 0;</div>
 <div class="line"><span class="lineno">  325</span> </div>
-<div class="line"><span class="lineno">  326</span>    <span class="keywordflow">while</span> (next &lt; ncols_to_permute)</div>
+<div class="line"><span class="lineno">  326</span>    <span class="keywordflow">while</span> (next &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ncols_to_permute</a>)</div>
 <div class="line"><span class="lineno">  327</span>      {</div>
-<div class="line"><span class="lineno">  328</span>        <span class="keywordflow">if</span> (done[next] || perm-&gt;array[next] == next)</div>
+<div class="line"><span class="lineno">  328</span>        <span class="keywordflow">if</span> (done[next] || <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">perm</a>-&gt;array[next] == next)</div>
 <div class="line"><span class="lineno">  329</span>          {</div>
 <div class="line"><span class="lineno">  330</span>            next++;</div>
 <div class="line"><span class="lineno">  331</span>          }</div>
 <div class="line"><span class="lineno">  332</span>        <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  333</span>          {</div>
 <div class="line"><span class="lineno">  334</span>            <span class="comment">// store col &#39;next&#39; into tmp</span></div>
-<div class="line"><span class="lineno">  335</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;mat.numRows(); ++i) <a class="code hl_function" href="../../d8/dcc/namespacestd_ad33a269e67f055aaa18f57f76b015387.html#ad33a269e67f055aaa18f57f76b015387">std::swap</a>(tmp[i], mat.entry(i, start_col + next));</div>
+<div class="line"><span class="lineno">  335</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;mat.numRows(); ++i) <a class="code hl_function" href="../../d8/dcc/namespacestd_ad33a269e67f055aaa18f57f76b015387.html#ad33a269e67f055aaa18f57f76b015387">std::swap</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>[i], mat.entry(i, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">start_col</a> + next));</div>
 <div class="line"><span class="lineno">  336</span>            </div>
-<div class="line"><span class="lineno">  337</span>            <span class="keywordtype">size_t</span> c = next;</div>
-<div class="line"><span class="lineno">  338</span>            <span class="keywordflow">while</span> (perm-&gt;array[c] != next)</div>
+<div class="line"><span class="lineno">  337</span>            <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a> = next;</div>
+<div class="line"><span class="lineno">  338</span>            <span class="keywordflow">while</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">perm</a>-&gt;array[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>] != next)</div>
 <div class="line"><span class="lineno">  339</span>              {</div>
 <div class="line"><span class="lineno">  340</span>                <span class="comment">// swap col perm[c] to col c</span></div>
 <div class="line"><span class="lineno">  341</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; mat.numRows(); ++i)</div>
-<div class="line"><span class="lineno">  342</span>                  <a class="code hl_function" href="../../d8/dcc/namespacestd_ad33a269e67f055aaa18f57f76b015387.html#ad33a269e67f055aaa18f57f76b015387">std::swap</a>(mat.entry(i, start_col + perm-&gt;array[c]),</div>
-<div class="line"><span class="lineno">  343</span>                            mat.entry(i, start_col + c));</div>
-<div class="line"><span class="lineno">  344</span>                done[c] = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  345</span>                c = perm-&gt;array[c];</div>
+<div class="line"><span class="lineno">  342</span>                  <a class="code hl_function" href="../../d8/dcc/namespacestd_ad33a269e67f055aaa18f57f76b015387.html#ad33a269e67f055aaa18f57f76b015387">std::swap</a>(mat.entry(i, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">start_col</a> + <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">perm</a>-&gt;array[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>]),</div>
+<div class="line"><span class="lineno">  343</span>                            mat.entry(i, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">start_col</a> + <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>));</div>
+<div class="line"><span class="lineno">  344</span>                done[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>] = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  345</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">perm</a>-&gt;array[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>];</div>
 <div class="line"><span class="lineno">  346</span>              }</div>
 <div class="line"><span class="lineno">  347</span>            <span class="comment">// we swap tmp and c</span></div>
-<div class="line"><span class="lineno">  348</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;mat.numRows(); ++i) <a class="code hl_function" href="../../d8/dcc/namespacestd_ad33a269e67f055aaa18f57f76b015387.html#ad33a269e67f055aaa18f57f76b015387">std::swap</a>(tmp[i], mat.entry(i, start_col + c));</div>
-<div class="line"><span class="lineno">  349</span>            done[c] = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  348</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;mat.numRows(); ++i) <a class="code hl_function" href="../../d8/dcc/namespacestd_ad33a269e67f055aaa18f57f76b015387.html#ad33a269e67f055aaa18f57f76b015387">std::swap</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>[i], mat.entry(i, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">start_col</a> + <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>));</div>
+<div class="line"><span class="lineno">  349</span>            done[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>] = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  350</span>          }</div>
 <div class="line"><span class="lineno">  351</span>      }</div>
 <div class="line"><span class="lineno">  352</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  353</span>  }</div>
 <div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="anamespacestd_ad33a269e67f055aaa18f57f76b015387_html_ad33a269e67f055aaa18f57f76b015387"><div class="ttname"><a href="../../d8/dcc/namespacestd_ad33a269e67f055aaa18f57f76b015387.html#ad33a269e67f055aaa18f57f76b015387">std::swap</a></div><div class="ttdeci">void swap(mpfr::mpreal &amp;x, mpfr::mpreal &amp;y)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l03219">mpreal.h:3219</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, and <a class="el" href="../../d8/dcc/namespacestd_ad33a269e67f055aaa18f57f76b015387.html#ad33a269e67f055aaa18f57f76b015387">std::swap()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">DMat&lt; ACoeffRing &gt;::entry()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, <a class="el" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat&lt; ACoeffRing &gt;::numRows()</a>, <a class="el" href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">DMat&lt; ACoeffRing &gt;::ring()</a>, and <a class="el" href="../../d8/dcc/namespacestd_ad33a269e67f055aaa18f57f76b015387.html#ad33a269e67f055aaa18f57f76b015387">std::swap()</a>.</p>
 
 </div>
 </div>
@@ -192,7 +193,7 @@ template&lt;typename RT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/ddf/class_mat_elementary_ops_3_01_d_mat_3_01_r_t_01_4_01_4.html">MatElementaryOps&lt; DMat&lt; RT &gt; &gt;</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

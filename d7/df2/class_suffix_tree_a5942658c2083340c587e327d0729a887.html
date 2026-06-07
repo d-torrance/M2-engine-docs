@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a5942658c2083
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto SuffixTree::superwords </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">auto</a> SuffixTree::superwords </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d3/da0/class_word.html">Word</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d3/da0/class_word.html">Word</a> &amp;&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
@@ -123,23 +123,23 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a5942658c2083
 
 <p class="definition">Definition at line <a class="el" href="../../da/def/_suffix_tree_8cpp_source.html#l00567">567</a> of file <a class="el" href="../../da/def/_suffix_tree_8cpp_source.html">SuffixTree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  568</span>{</div>
-<div class="line"><span class="lineno">  569</span>  <span class="keyword">auto</span> clType = <a class="code hl_function" href="../../d7/df2/class_suffix_tree_a0cd79d838b66368a3b573a5940e10ae8.html#a0cd79d838b66368a3b573a5940e10ae8">contractedLocus</a>(<a class="code hl_variable" href="../../d7/df2/class_suffix_tree_a80e8a4c2280c1e507def1d39c345396c.html#a80e8a4c2280c1e507def1d39c345396c">mRoot</a>,w);</div>
-<div class="line"><span class="lineno">  570</span>  <span class="keyword">auto</span> y = std::get&lt;0&gt;(clType);</div>
-<div class="line"><span class="lineno">  571</span>  <span class="keyword">auto</span> f = std::get&lt;1&gt;(clType);</div>
-<div class="line"><span class="lineno">  572</span>  <span class="keyword">auto</span> pre = std::get&lt;2&gt;(clType);</div>
+<div class="line"><span class="lineno">  569</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">clType</a> = <a class="code hl_function" href="../../d7/df2/class_suffix_tree_a0cd79d838b66368a3b573a5940e10ae8.html#a0cd79d838b66368a3b573a5940e10ae8">contractedLocus</a>(<a class="code hl_variable" href="../../d7/df2/class_suffix_tree_a80e8a4c2280c1e507def1d39c345396c.html#a80e8a4c2280c1e507def1d39c345396c">mRoot</a>,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a>);</div>
+<div class="line"><span class="lineno">  570</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">y</a> = std::get&lt;0&gt;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">clType</a>);</div>
+<div class="line"><span class="lineno">  571</span>  <span class="keyword">auto</span> f = std::get&lt;1&gt;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">clType</a>);</div>
+<div class="line"><span class="lineno">  572</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pre</a> = std::get&lt;2&gt;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">clType</a>);</div>
 <div class="line"><span class="lineno">  573</span> </div>
-<div class="line"><span class="lineno">  574</span>  <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/def/_suffix_tree_8cpp_aa3918ea0069a3c7434d892096616f30a.html#aa3918ea0069a3c7434d892096616f30a">concatenatesTo</a>(<a class="code hl_class" href="../../d3/da0/class_word.html">Word</a>(y-&gt;label()),pre,w)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  574</span>  <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/def/_suffix_tree_8cpp_aa3918ea0069a3c7434d892096616f30a.html#aa3918ea0069a3c7434d892096616f30a">concatenatesTo</a>(<a class="code hl_class" href="../../d3/da0/class_word.html">Word</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">y</a>-&gt;label()),<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pre</a>,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  575</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">  576</span>    {</div>
-<div class="line"><span class="lineno">  577</span>      <span class="keyword">auto</span> leaves = std::vector&lt;SuffixTreeNode*&gt; {};</div>
-<div class="line"><span class="lineno">  578</span>      <a class="code hl_function" href="../../d7/df2/class_suffix_tree_ac999c5f76449af9657780f0d5aa2ef5c.html#ac999c5f76449af9657780f0d5aa2ef5c">allLeaves</a>(y,leaves);</div>
-<div class="line"><span class="lineno">  579</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> g : leaves)</div>
+<div class="line"><span class="lineno">  577</span>      <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">leaves</a> = std::vector&lt;SuffixTreeNode*&gt; {};</div>
+<div class="line"><span class="lineno">  578</span>      <a class="code hl_function" href="../../d7/df2/class_suffix_tree_ac999c5f76449af9657780f0d5aa2ef5c.html#ac999c5f76449af9657780f0d5aa2ef5c">allLeaves</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">y</a>,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">leaves</a>);</div>
+<div class="line"><span class="lineno">  579</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> g : <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">leaves</a>)</div>
 <div class="line"><span class="lineno">  580</span>        {</div>
 <div class="line"><span class="lineno">  581</span>          output.push_back(std::make_pair(g-&gt;getPatternNumber(),<a class="code hl_variable" href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">mMonomials</a>[g-&gt;getPatternNumber()].size() - g-&gt;label().size() + 1));</div>
-<div class="line"><span class="lineno">  582</span>          <span class="keywordflow">if</span> (onlyFirst) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  582</span>          <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">onlyFirst</a>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  583</span>        }</div>
 <div class="line"><span class="lineno">  584</span>    }</div>
-<div class="line"><span class="lineno">  585</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (f-&gt;isLeaf() &amp;&amp; f-&gt;label().size() == w.<a class="code hl_function" href="../../d3/da0/class_word_a58f370b1c978f3f73e9349629ab6dfd3.html#a58f370b1c978f3f73e9349629ab6dfd3">size</a>() + 1)</div>
+<div class="line"><span class="lineno">  585</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (f-&gt;isLeaf() &amp;&amp; f-&gt;label().size() == <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a>.size() + 1)</div>
 <div class="line"><span class="lineno">  586</span>    {</div>
 <div class="line"><span class="lineno">  587</span>      output.push_back(std::make_pair(f-&gt;getPatternNumber(),<a class="code hl_variable" href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">mMonomials</a>[f-&gt;getPatternNumber()].size() - f-&gt;label().size() + 1));</div>
 <div class="line"><span class="lineno">  588</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -151,10 +151,10 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a5942658c2083
 <div class="ttc" id="aclass_suffix_tree_a80e8a4c2280c1e507def1d39c345396c_html_a80e8a4c2280c1e507def1d39c345396c"><div class="ttname"><a href="../../d7/df2/class_suffix_tree_a80e8a4c2280c1e507def1d39c345396c.html#a80e8a4c2280c1e507def1d39c345396c">SuffixTree::mRoot</a></div><div class="ttdeci">SuffixTreeNode * mRoot</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d33/_suffix_tree_8hpp_source.html#l00318">SuffixTree.hpp:318</a></div></div>
 <div class="ttc" id="aclass_suffix_tree_ab48f6caf49da318521c984dd6348cc3d_html_ab48f6caf49da318521c984dd6348cc3d"><div class="ttname"><a href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">SuffixTree::mMonomials</a></div><div class="ttdeci">std::vector&lt; Label &gt; mMonomials</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d33/_suffix_tree_8hpp_source.html#l00323">SuffixTree.hpp:323</a></div></div>
 <div class="ttc" id="aclass_suffix_tree_ac999c5f76449af9657780f0d5aa2ef5c_html_ac999c5f76449af9657780f0d5aa2ef5c"><div class="ttname"><a href="../../d7/df2/class_suffix_tree_ac999c5f76449af9657780f0d5aa2ef5c.html#ac999c5f76449af9657780f0d5aa2ef5c">SuffixTree::allLeaves</a></div><div class="ttdeci">auto allLeaves(SuffixTreeNode *v, std::vector&lt; SuffixTreeNode * &gt; &amp;output) const -&gt; void</div><div class="ttdef"><b>Definition</b> <a href="../../da/def/_suffix_tree_8cpp_source.html#l00441">SuffixTree.cpp:441</a></div></div>
-<div class="ttc" id="aclass_word_a58f370b1c978f3f73e9349629ab6dfd3_html_a58f370b1c978f3f73e9349629ab6dfd3"><div class="ttname"><a href="../../d3/da0/class_word_a58f370b1c978f3f73e9349629ab6dfd3.html#a58f370b1c978f3f73e9349629ab6dfd3">Word::size</a></div><div class="ttdeci">int size() const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd2/_word_8hpp_source.html#l00026">Word.hpp:26</a></div></div>
 <div class="ttc" id="aclass_word_html"><div class="ttname"><a href="../../d3/da0/class_word.html">Word</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd2/_word_8hpp_source.html#l00007">Word.hpp:8</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/def/_suffix_tree_8cpp_aa3918ea0069a3c7434d892096616f30a.html#aa3918ea0069a3c7434d892096616f30a">concatenatesTo()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../da/def/_suffix_tree_8cpp_aa3918ea0069a3c7434d892096616f30a.html#aa3918ea0069a3c7434d892096616f30a">concatenatesTo()</a>.</p>
 
 </div>
 </div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a5942658c2083
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/df2/class_suffix_tree.html">SuffixTree</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

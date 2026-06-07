@@ -1,0 +1,25 @@
+var dir_a671d1730dac5de491bd41b2aba2e233 =
+[
+    [ "ExponentList.cpp", "d7/daf/_exponent_list_8cpp.html", "d7/daf/_exponent_list_8cpp" ],
+    [ "ExponentList.hpp", "d6/df2/_exponent_list_8hpp.html", "d6/df2/_exponent_list_8hpp" ],
+    [ "ExponentVector.hpp", "da/db0/_exponent_vector_8hpp.html", "da/db0/_exponent_vector_8hpp" ],
+    [ "monideal-minprimes.cpp", "d4/ded/monideal-minprimes_8cpp.html", "d4/ded/monideal-minprimes_8cpp" ],
+    [ "monideal-minprimes.hpp", "d8/de0/monideal-minprimes_8hpp.html", "d8/de0/monideal-minprimes_8hpp" ],
+    [ "monideal.cpp", "d5/d89/monideal_8cpp.html", "d5/d89/monideal_8cpp" ],
+    [ "monideal.hpp", "da/d4f/monideal_8hpp.html", "da/d4f/monideal_8hpp" ],
+    [ "monomial-collection.cpp", "d0/da2/monomial-collection_8cpp.html", null ],
+    [ "monomial-collection.hpp", "d3/d60/monomial-collection_8hpp.html", "d3/d60/monomial-collection_8hpp" ],
+    [ "monomial-sets.cpp", "d7/d4a/monomial-sets_8cpp.html", null ],
+    [ "monomial-sets.hpp", "d2/d2b/monomial-sets_8hpp.html", "d2/d2b/monomial-sets_8hpp" ],
+    [ "monomial.cpp", "db/daa/monomial_8cpp.html", null ],
+    [ "monomial.hpp", "d6/da9/monomial_8hpp.html", "d6/da9/monomial_8hpp" ],
+    [ "monordering.hpp", "d4/d38/monordering_8hpp.html", "d4/d38/monordering_8hpp" ],
+    [ "monsort.cpp", "d9/d69/monsort_8cpp.html", null ],
+    [ "monsort.hpp", "df/d3b/monsort_8hpp.html", "df/d3b/monsort_8hpp" ],
+    [ "montable.cpp", "df/d3c/montable_8cpp.html", "df/d3c/montable_8cpp" ],
+    [ "montable.hpp", "dd/dcc/montable_8hpp.html", "dd/dcc/montable_8hpp" ],
+    [ "montableZZ.cpp", "d8/dfa/montable_z_z_8cpp.html", "d8/dfa/montable_z_z_8cpp" ],
+    [ "montableZZ.hpp", "d3/d55/montable_z_z_8hpp.html", "d3/d55/montable_z_z_8hpp" ],
+    [ "overflow.cpp", "d8/d7b/overflow_8cpp.html", "d8/d7b/overflow_8cpp" ],
+    [ "overflow.hpp", "d3/d03/overflow_8hpp.html", "d3/d03/overflow_8hpp" ]
+];

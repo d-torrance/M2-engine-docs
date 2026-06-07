@@ -25,6 +25,7 @@ var class_weyl_algebra =
     [ "weyl_diff", "dd/dc2/class_weyl_algebra_a2092d113cbc8c3ccc10a6359da36f693.html#a2092d113cbc8c3ccc10a6359da36f693", null ],
     [ "weyl_diff", "dd/dc2/class_weyl_algebra_acf31136d0f728707da46f31aadd16648.html#acf31136d0f728707da46f31aadd16648", null ],
     [ "weyl_diff", "dd/dc2/class_weyl_algebra_ab16673ef483801173c409e1c58e3378c.html#ab16673ef483801173c409e1c58e3378c", null ],
+    [ "WeylAlgebraTestAccessor", "dd/dc2/class_weyl_algebra_af05076247d52033aa99c3d18c55e942a.html#af05076247d52033aa99c3d18c55e942a", null ],
     [ "_commutative", "dd/dc2/class_weyl_algebra_aa995c550222cdac58afed80712a41e67.html#aa995c550222cdac58afed80712a41e67", null ],
     [ "_derivative", "dd/dc2/class_weyl_algebra_a39db0889b6eaaeb383aaa5d651768066.html#a39db0889b6eaaeb383aaa5d651768066", null ],
     [ "_homog_var", "dd/dc2/class_weyl_algebra_a5d81da57d07fb97b80eb514e9eaef03b.html#a5d81da57d07fb97b80eb514e9eaef03b", null ],

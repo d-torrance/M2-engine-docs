@@ -95,10 +95,10 @@ $(document).ready(function(){initNavTree('d7/d7e/class_b_i_basis_1_1_boolean_inv
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MonomType &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a>&lt; MonomType &gt; &amp; <a class="el" href="../../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis.html">BIBasis::BooleanInvolutiveBasis</a>&lt; MonomType &gt;::operator[] </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; &amp; <a class="el" href="../../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis.html">BIBasis::BooleanInvolutiveBasis</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">::operator</a>[] </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td>
           <td class="paramname"><em>number</em></td><td>)</td>
@@ -109,16 +109,19 @@ template&lt;typename MonomType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d24/involutive_8hpp_source.html#l00092">92</a> of file <a class="el" href="../../dd/d24/involutive_8hpp_source.html">involutive.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   93</span>    {</div>
-<div class="line"><span class="lineno">   94</span>        <span class="keyword">typename</span> std::list&lt;Polynom&lt;MonomType&gt;*&gt;::const_iterator it(<a class="code hl_variable" href="../../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis_a2699399d6811282ef4b261b37131ea03.html#a2699399d6811282ef4b261b37131ea03">GBasis</a>.begin());</div>
-<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = <a class="code hl_function" href="../../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis_afb431a99717ccba3eb9219fd8095dd3d.html#afb431a99717ccba3eb9219fd8095dd3d">Length</a>()-1-num; i &gt; 0; i--) </div>
+<div class="line"><span class="lineno">   94</span>        <span class="keyword">typename</span> std::list&lt;Polynom&lt;MonomType&gt;*&gt;::const_iterator <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">it</a>(<a class="code hl_variable" href="../../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis_a2699399d6811282ef4b261b37131ea03.html#a2699399d6811282ef4b261b37131ea03">GBasis</a>.begin());</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = <a class="code hl_function" href="../../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis_afb431a99717ccba3eb9219fd8095dd3d.html#afb431a99717ccba3eb9219fd8095dd3d">Length</a>()-1-<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">num</a>; i &gt; 0; i--) </div>
 <div class="line"><span class="lineno">   96</span>        {</div>
-<div class="line"><span class="lineno">   97</span>            ++it;</div>
+<div class="line"><span class="lineno">   97</span>            ++<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">it</a>;</div>
 <div class="line"><span class="lineno">   98</span>        }</div>
-<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">return</span> **it;</div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">return</span> **<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">it</a>;</div>
 <div class="line"><span class="lineno">  100</span>    }</div>
 <div class="ttc" id="aclass_b_i_basis_1_1_boolean_involutive_basis_a2699399d6811282ef4b261b37131ea03_html_a2699399d6811282ef4b261b37131ea03"><div class="ttname"><a href="../../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis_a2699399d6811282ef4b261b37131ea03.html#a2699399d6811282ef4b261b37131ea03">BIBasis::BooleanInvolutiveBasis::GBasis</a></div><div class="ttdeci">std::list&lt; Polynom&lt; MonomType &gt; * &gt; GBasis</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d24/involutive_8hpp_source.html#l00027">involutive.hpp:27</a></div></div>
 <div class="ttc" id="aclass_b_i_basis_1_1_boolean_involutive_basis_afb431a99717ccba3eb9219fd8095dd3d_html_afb431a99717ccba3eb9219fd8095dd3d"><div class="ttname"><a href="../../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis_afb431a99717ccba3eb9219fd8095dd3d.html#afb431a99717ccba3eb9219fd8095dd3d">BIBasis::BooleanInvolutiveBasis::Length</a></div><div class="ttdeci">unsigned Length() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d24/involutive_8hpp_source.html#l00103">involutive.hpp:103</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -127,7 +130,7 @@ template&lt;typename MonomType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d30/namespace_b_i_basis.html">BIBasis</a></li><li class="navelem"><a class="el" href="../../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis.html">BooleanInvolutiveBasis</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

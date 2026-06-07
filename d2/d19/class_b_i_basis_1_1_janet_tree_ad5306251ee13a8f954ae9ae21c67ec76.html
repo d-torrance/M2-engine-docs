@@ -95,12 +95,12 @@ $(document).ready(function(){initNavTree('d2/d19/class_b_i_basis_1_1_janet_tree_
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MonomType &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d2/d19/class_b_i_basis_1_1_janet_tree.html">BIBasis::JanetTree</a>&lt; MonomType &gt;::Delete </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> <a class="el" href="../../d2/d19/class_b_i_basis_1_1_janet_tree.html">BIBasis::JanetTree</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt;::Delete </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple.html">Triple</a>&lt; MonomType &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple.html">Triple</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; *&#160;</td>
           <td class="paramname"><em>triple</em></td><td>)</td>
           <td></td>
         </tr>
@@ -109,39 +109,39 @@ template&lt;typename MonomType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../df/de3/janettree_8hpp_source.html#l00390">390</a> of file <a class="el" href="../../df/de3/janettree_8hpp_source.html">janettree.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  391</span>    {</div>
-<div class="line"><span class="lineno">  392</span>        <span class="keywordflow">if</span> (!triple)</div>
+<div class="line"><span class="lineno">  392</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">triple</a>)</div>
 <div class="line"><span class="lineno">  393</span>        {</div>
 <div class="line"><span class="lineno">  394</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  395</span>        }</div>
 <div class="line"><span class="lineno">  396</span> </div>
-<div class="line"><span class="lineno">  397</span>        Iterator nodeIterator = <a class="code hl_variable" href="../../d2/d19/class_b_i_basis_1_1_janet_tree_a279133ee4142558f68012dd7dcaf46f7.html#a279133ee4142558f68012dd7dcaf46f7">Root</a>;</div>
+<div class="line"><span class="lineno">  397</span>        Iterator <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a> = <a class="code hl_variable" href="../../d2/d19/class_b_i_basis_1_1_janet_tree_a279133ee4142558f68012dd7dcaf46f7.html#a279133ee4142558f68012dd7dcaf46f7">Root</a>;</div>
 <div class="line"><span class="lineno">  398</span>        <span class="comment">//count bifurcations</span></div>
 <div class="line"><span class="lineno">  399</span>        <span class="keyword">typename</span> MonomType::Integer var = 0; </div>
-<div class="line"><span class="lineno">  400</span>        <span class="keywordtype">unsigned</span> bifurcations = 0;</div>
+<div class="line"><span class="lineno">  400</span>        <span class="keywordtype">unsigned</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">bifurcations</a> = 0;</div>
 <div class="line"><span class="lineno">  401</span> </div>
-<div class="line"><span class="lineno">  402</span>        <span class="keywordflow">if</span> (nodeIterator.HasNextDegree() &amp;&amp; nodeIterator.HasNextVariable()) </div>
+<div class="line"><span class="lineno">  402</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextDegree() &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextVariable()) </div>
 <div class="line"><span class="lineno">  403</span>        {</div>
-<div class="line"><span class="lineno">  404</span>            ++bifurcations;</div>
+<div class="line"><span class="lineno">  404</span>            ++<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">bifurcations</a>;</div>
 <div class="line"><span class="lineno">  405</span>        }</div>
 <div class="line"><span class="lineno">  406</span> </div>
 <div class="line"><span class="lineno">  407</span>        <span class="keywordflow">do</span> </div>
 <div class="line"><span class="lineno">  408</span>        {</div>
-<div class="line"><span class="lineno">  409</span>            <span class="keywordflow">while</span>(nodeIterator.GetDegree() &lt; triple-&gt;GetPolynomLm()[var])</div>
+<div class="line"><span class="lineno">  409</span>            <span class="keywordflow">while</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.GetDegree() &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">triple</a>-&gt;GetPolynomLm()[var])</div>
 <div class="line"><span class="lineno">  410</span>            {</div>
-<div class="line"><span class="lineno">  411</span>                nodeIterator.StepNextDegree();</div>
-<div class="line"><span class="lineno">  412</span>                <span class="keywordflow">if</span> (nodeIterator.HasNextDegree() &amp;&amp; nodeIterator.HasNextVariable()) </div>
+<div class="line"><span class="lineno">  411</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.StepNextDegree();</div>
+<div class="line"><span class="lineno">  412</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextDegree() &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextVariable()) </div>
 <div class="line"><span class="lineno">  413</span>                {</div>
-<div class="line"><span class="lineno">  414</span>                    ++bifurcations;</div>
+<div class="line"><span class="lineno">  414</span>                    ++<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">bifurcations</a>;</div>
 <div class="line"><span class="lineno">  415</span>                }</div>
 <div class="line"><span class="lineno">  416</span>            }</div>
 <div class="line"><span class="lineno">  417</span> </div>
-<div class="line"><span class="lineno">  418</span>            <span class="keywordflow">if</span> (nodeIterator.HasNextVariable()) </div>
+<div class="line"><span class="lineno">  418</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextVariable()) </div>
 <div class="line"><span class="lineno">  419</span>            {</div>
 <div class="line"><span class="lineno">  420</span>                ++var;</div>
-<div class="line"><span class="lineno">  421</span>                nodeIterator.StepNextVariable(); </div>
-<div class="line"><span class="lineno">  422</span>                <span class="keywordflow">if</span> (nodeIterator.HasNextDegree() &amp;&amp; nodeIterator.HasNextVariable()) </div>
+<div class="line"><span class="lineno">  421</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.StepNextVariable(); </div>
+<div class="line"><span class="lineno">  422</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextDegree() &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextVariable()) </div>
 <div class="line"><span class="lineno">  423</span>                {</div>
-<div class="line"><span class="lineno">  424</span>                    ++bifurcations;</div>
+<div class="line"><span class="lineno">  424</span>                    ++<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">bifurcations</a>;</div>
 <div class="line"><span class="lineno">  425</span>                }</div>
 <div class="line"><span class="lineno">  426</span>            }</div>
 <div class="line"><span class="lineno">  427</span>            <span class="keywordflow">else</span> </div>
@@ -151,87 +151,88 @@ template&lt;typename MonomType &gt; </div>
 <div class="line"><span class="lineno">  431</span>        } <span class="keywordflow">while</span>(<span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  432</span>      </div>
 <div class="line"><span class="lineno">  433</span>        <span class="comment">//deletion</span></div>
-<div class="line"><span class="lineno">  434</span>        nodeIterator = <a class="code hl_variable" href="../../d2/d19/class_b_i_basis_1_1_janet_tree_a279133ee4142558f68012dd7dcaf46f7.html#a279133ee4142558f68012dd7dcaf46f7">Root</a>;</div>
+<div class="line"><span class="lineno">  434</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a> = <a class="code hl_variable" href="../../d2/d19/class_b_i_basis_1_1_janet_tree_a279133ee4142558f68012dd7dcaf46f7.html#a279133ee4142558f68012dd7dcaf46f7">Root</a>;</div>
 <div class="line"><span class="lineno">  435</span>        var = 0;</div>
-<div class="line"><span class="lineno">  436</span>        <span class="keywordtype">bool</span> varDirection = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  436</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">varDirection</a> = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  437</span> </div>
-<div class="line"><span class="lineno">  438</span>        <span class="keywordflow">if</span> (nodeIterator.HasNextDegree() &amp;&amp; nodeIterator.HasNextVariable()) </div>
+<div class="line"><span class="lineno">  438</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextDegree() &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextVariable()) </div>
 <div class="line"><span class="lineno">  439</span>        {</div>
-<div class="line"><span class="lineno">  440</span>            --bifurcations;</div>
+<div class="line"><span class="lineno">  440</span>            --<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">bifurcations</a>;</div>
 <div class="line"><span class="lineno">  441</span>        }</div>
-<div class="line"><span class="lineno">  442</span>        <span class="keywordflow">if</span> (!bifurcations)</div>
+<div class="line"><span class="lineno">  442</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">bifurcations</a>)</div>
 <div class="line"><span class="lineno">  443</span>        {</div>
-<div class="line"><span class="lineno">  444</span>            <span class="keywordflow">if</span> (nodeIterator.GetDegree() &lt; triple-&gt;GetPolynomLm()[var])</div>
+<div class="line"><span class="lineno">  444</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.GetDegree() &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">triple</a>-&gt;GetPolynomLm()[var])</div>
 <div class="line"><span class="lineno">  445</span>            {</div>
-<div class="line"><span class="lineno">  446</span>                nodeIterator.StepNextDegree();</div>
+<div class="line"><span class="lineno">  446</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.StepNextDegree();</div>
 <div class="line"><span class="lineno">  447</span>            }</div>
 <div class="line"><span class="lineno">  448</span>            <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  449</span>            {</div>
-<div class="line"><span class="lineno">  450</span>                varDirection = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  450</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">varDirection</a> = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  451</span>            }</div>
 <div class="line"><span class="lineno">  452</span>        }</div>
 <div class="line"><span class="lineno">  453</span> </div>
-<div class="line"><span class="lineno">  454</span>        <span class="keywordflow">while</span> (bifurcations &gt; 0) </div>
+<div class="line"><span class="lineno">  454</span>        <span class="keywordflow">while</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">bifurcations</a> &gt; 0) </div>
 <div class="line"><span class="lineno">  455</span>        {</div>
-<div class="line"><span class="lineno">  456</span>            <span class="keywordflow">while</span>(nodeIterator.GetDegree() &lt; triple-&gt;GetPolynomLm()[var] &amp;&amp; bifurcations &gt; 0)</div>
+<div class="line"><span class="lineno">  456</span>            <span class="keywordflow">while</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.GetDegree() &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">triple</a>-&gt;GetPolynomLm()[var] &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">bifurcations</a> &gt; 0)</div>
 <div class="line"><span class="lineno">  457</span>            {</div>
-<div class="line"><span class="lineno">  458</span>                nodeIterator.StepNextDegree();</div>
-<div class="line"><span class="lineno">  459</span>                <span class="keywordflow">if</span> (nodeIterator.HasNextDegree() &amp;&amp; nodeIterator.HasNextVariable()) </div>
+<div class="line"><span class="lineno">  458</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.StepNextDegree();</div>
+<div class="line"><span class="lineno">  459</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextDegree() &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextVariable()) </div>
 <div class="line"><span class="lineno">  460</span>                {</div>
-<div class="line"><span class="lineno">  461</span>                    --bifurcations;</div>
+<div class="line"><span class="lineno">  461</span>                    --<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">bifurcations</a>;</div>
 <div class="line"><span class="lineno">  462</span>                }</div>
 <div class="line"><span class="lineno">  463</span>            }</div>
 <div class="line"><span class="lineno">  464</span>            </div>
-<div class="line"><span class="lineno">  465</span>            <span class="keywordflow">if</span> (!bifurcations)</div>
+<div class="line"><span class="lineno">  465</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">bifurcations</a>)</div>
 <div class="line"><span class="lineno">  466</span>            {</div>
-<div class="line"><span class="lineno">  467</span>                <span class="keywordflow">if</span> (nodeIterator.GetDegree() &lt; triple-&gt;GetPolynomLm()[var])</div>
+<div class="line"><span class="lineno">  467</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.GetDegree() &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">triple</a>-&gt;GetPolynomLm()[var])</div>
 <div class="line"><span class="lineno">  468</span>                {</div>
-<div class="line"><span class="lineno">  469</span>                    nodeIterator.StepNextDegree();</div>
+<div class="line"><span class="lineno">  469</span>                    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.StepNextDegree();</div>
 <div class="line"><span class="lineno">  470</span>                    <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  471</span>                } </div>
 <div class="line"><span class="lineno">  472</span>                <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  473</span>                { </div>
-<div class="line"><span class="lineno">  474</span>                    varDirection = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  474</span>                    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">varDirection</a> = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  475</span>                    <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  476</span>                }</div>
 <div class="line"><span class="lineno">  477</span>            }</div>
 <div class="line"><span class="lineno">  478</span>        </div>
 <div class="line"><span class="lineno">  479</span>            ++var;</div>
-<div class="line"><span class="lineno">  480</span>            nodeIterator.StepNextVariable(); </div>
-<div class="line"><span class="lineno">  481</span>            <span class="keywordflow">if</span> (nodeIterator.HasNextDegree() &amp;&amp; nodeIterator.HasNextVariable()) </div>
+<div class="line"><span class="lineno">  480</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.StepNextVariable(); </div>
+<div class="line"><span class="lineno">  481</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextDegree() &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.HasNextVariable()) </div>
 <div class="line"><span class="lineno">  482</span>            {</div>
-<div class="line"><span class="lineno">  483</span>                --bifurcations;</div>
+<div class="line"><span class="lineno">  483</span>                --<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">bifurcations</a>;</div>
 <div class="line"><span class="lineno">  484</span>            }</div>
-<div class="line"><span class="lineno">  485</span>            <span class="keywordflow">if</span> (!bifurcations)</div>
+<div class="line"><span class="lineno">  485</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">bifurcations</a>)</div>
 <div class="line"><span class="lineno">  486</span>            {</div>
-<div class="line"><span class="lineno">  487</span>                <span class="keywordflow">if</span> (nodeIterator.GetDegree() &lt; triple-&gt;GetPolynomLm()[var])</div>
+<div class="line"><span class="lineno">  487</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.GetDegree() &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">triple</a>-&gt;GetPolynomLm()[var])</div>
 <div class="line"><span class="lineno">  488</span>                {</div>
-<div class="line"><span class="lineno">  489</span>                    nodeIterator.StepNextDegree();</div>
+<div class="line"><span class="lineno">  489</span>                    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.StepNextDegree();</div>
 <div class="line"><span class="lineno">  490</span>                    <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  491</span>                } </div>
 <div class="line"><span class="lineno">  492</span>                <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  493</span>                {</div>
-<div class="line"><span class="lineno">  494</span>                    varDirection = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  494</span>                    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">varDirection</a> = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  495</span>                    <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  496</span>                }</div>
 <div class="line"><span class="lineno">  497</span>            }</div>
 <div class="line"><span class="lineno">  498</span>        }</div>
 <div class="line"><span class="lineno">  499</span> </div>
-<div class="line"><span class="lineno">  500</span>        <span class="keywordflow">if</span> (varDirection)</div>
+<div class="line"><span class="lineno">  500</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">varDirection</a>)</div>
 <div class="line"><span class="lineno">  501</span>        {</div>
-<div class="line"><span class="lineno">  502</span>            Iterator tmpIterator = nodeIterator;</div>
-<div class="line"><span class="lineno">  503</span>            tmpIterator.StepNextVariable();</div>
-<div class="line"><span class="lineno">  504</span>            tmpIterator.Clear();</div>
-<div class="line"><span class="lineno">  505</span>            nodeIterator.Delete();</div>
+<div class="line"><span class="lineno">  502</span>            Iterator <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpIterator</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>;</div>
+<div class="line"><span class="lineno">  503</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpIterator</a>.StepNextVariable();</div>
+<div class="line"><span class="lineno">  504</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpIterator</a>.Clear();</div>
+<div class="line"><span class="lineno">  505</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.Delete();</div>
 <div class="line"><span class="lineno">  506</span>        }</div>
 <div class="line"><span class="lineno">  507</span>        <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  508</span>        {</div>
-<div class="line"><span class="lineno">  509</span>            nodeIterator.Clear();</div>
+<div class="line"><span class="lineno">  509</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nodeIterator</a>.Clear();</div>
 <div class="line"><span class="lineno">  510</span>        }</div>
 <div class="line"><span class="lineno">  511</span>    }</div>
 <div class="ttc" id="aclass_b_i_basis_1_1_janet_tree_a279133ee4142558f68012dd7dcaf46f7_html_a279133ee4142558f68012dd7dcaf46f7"><div class="ttname"><a href="../../d2/d19/class_b_i_basis_1_1_janet_tree_a279133ee4142558f68012dd7dcaf46f7.html#a279133ee4142558f68012dd7dcaf46f7">BIBasis::JanetTree::Root</a></div><div class="ttdeci">Node * Root</div><div class="ttdef"><b>Definition</b> <a href="../../df/de3/janettree_8hpp_source.html#l00077">janettree.hpp:77</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_accabffb159a1139908ab9f77cf8ab7ed.html#accabffb159a1139908ab9f77cf8ab7ed">BIBasis::JanetTree&lt; MonomType &gt;::Iterator::Clear()</a>, <a class="el" href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_a2944f63a276095cedddc57e9c42f425b.html#a2944f63a276095cedddc57e9c42f425b">BIBasis::JanetTree&lt; MonomType &gt;::Iterator::Delete()</a>, <a class="el" href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_abbaf262aad0177f13f24f23aaf4ee055.html#abbaf262aad0177f13f24f23aaf4ee055">BIBasis::JanetTree&lt; MonomType &gt;::Iterator::GetDegree()</a>, <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple_af48b57c12a175c35d6d1bde3d88c4325.html#af48b57c12a175c35d6d1bde3d88c4325">BIBasis::Triple&lt; MonomType &gt;::GetPolynomLm()</a>, <a class="el" href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_ad0b071dc1c1539e4760ce92f921613f1.html#ad0b071dc1c1539e4760ce92f921613f1">BIBasis::JanetTree&lt; MonomType &gt;::Iterator::HasNextDegree()</a>, <a class="el" href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_a9ea307d8eda28603fb1e0057a81ee061.html#a9ea307d8eda28603fb1e0057a81ee061">BIBasis::JanetTree&lt; MonomType &gt;::Iterator::HasNextVariable()</a>, <a class="el" href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_a3beb7640ffa1e3bc33a43b48ab13a1d3.html#a3beb7640ffa1e3bc33a43b48ab13a1d3">BIBasis::JanetTree&lt; MonomType &gt;::Iterator::StepNextDegree()</a>, and <a class="el" href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_aa4e021645b2f11a34672c38fd1119e63.html#aa4e021645b2f11a34672c38fd1119e63">BIBasis::JanetTree&lt; MonomType &gt;::Iterator::StepNextVariable()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_a3beb7640ffa1e3bc33a43b48ab13a1d3.html#a3beb7640ffa1e3bc33a43b48ab13a1d3">BIBasis::JanetTree&lt; MonomType &gt;::Iterator::StepNextDegree()</a>, and <a class="el" href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_aa4e021645b2f11a34672c38fd1119e63.html#aa4e021645b2f11a34672c38fd1119e63">BIBasis::JanetTree&lt; MonomType &gt;::Iterator::StepNextVariable()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator_accabffb159a1139908ab9f77cf8ab7ed.html#accabffb159a1139908ab9f77cf8ab7ed">BIBasis::JanetTree&lt; MonomType &gt;::Iterator::Clear()</a>.</p>
 
@@ -243,7 +244,7 @@ template&lt;typename MonomType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d30/namespace_b_i_basis.html">BIBasis</a></li><li class="navelem"><a class="el" href="../../d2/d19/class_b_i_basis_1_1_janet_tree.html">JanetTree</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

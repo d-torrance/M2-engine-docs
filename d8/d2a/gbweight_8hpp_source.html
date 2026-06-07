@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/gbweight.hpp Source File</title>
+<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/groebner-computations/gbweight.hpp Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -99,12 +99,12 @@ $(document).ready(function(){initNavTree('d8/d2a/gbweight_8hpp_source.html','../
 <div class="contents">
 <a href="../../d8/d2a/gbweight_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright 2004.  Michael E. Stillman</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef _gbweight_hpp_</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define _gbweight_hpp_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef M2_GROEBNER_COMPUTATIONS_GBWEIGHT_HPP_</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define M2_GROEBNER_COMPUTATIONS_GBWEIGHT_HPP_</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/db4/engine-includes_8hpp.html">engine-includes.hpp</a>&quot;</span>  <span class="comment">// for M2_arrayint</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/db0/_exponent_vector_8hpp.html">ExponentVector.hpp</a>&quot;</span>   <span class="comment">// for const_exponents</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/db0/_exponent_vector_8hpp.html">monomials/ExponentVector.hpp</a>&quot;</span>   <span class="comment">// for const_exponents</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/dd0/monoid_8hpp.html">monoid.hpp</a>&quot;</span>           <span class="comment">// for const_monomial</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/d94/newdelete_8hpp.html">newdelete.hpp</a>&quot;</span>        <span class="comment">// for our_new_delete</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -136,13 +136,13 @@ $(document).ready(function(){initNavTree('d8/d2a/gbweight_8hpp_source.html','../
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="comment">// or, if the component is 0, then it is in the ring, not in the</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="comment">// free module F_</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d5/d82/class_g_b_weight_afc7e9ca0cec09ff4dd815f981930389a.html#afc7e9ca0cec09ff4dd815f981930389a">exponents_weight</a>(<a class="code hl_typedef" href="../../da/db0/_exponent_vector_8hpp_a21989b3e062e85cbe627cf36cf1bb395.html#a21989b3e062e85cbe627cf36cf1bb395">const_exponents</a> e, <span class="keywordtype">int</span> comp) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d5/d82/class_g_b_weight_afc7e9ca0cec09ff4dd815f981930389a.html#afc7e9ca0cec09ff4dd815f981930389a">exponents_weight</a>(<a class="code hl_typedef" href="../../da/db0/_exponent_vector_8hpp_a21989b3e062e85cbe627cf36cf1bb395.html#a21989b3e062e85cbe627cf36cf1bb395">const_exponents</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>, <span class="keywordtype">int</span> comp) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d5/d82/class_g_b_weight_a18b2a054eb6bb1846e76dd0d6ecccfd9.html#a18b2a054eb6bb1846e76dd0d6ecccfd9">gbvector_term_weight</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *f) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d5/d82/class_g_b_weight_abc6bce853dab9c86c8488a5deb642ab1.html#abc6bce853dab9c86c8488a5deb642ab1">gbvector_weight</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *f) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d5/d82/class_g_b_weight_abc6bce853dab9c86c8488a5deb642ab1.html#abc6bce853dab9c86c8488a5deb642ab1">gbvector_weight</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *f, <span class="keywordtype">int</span> &amp;lead_term_weight) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d5/d82/class_g_b_weight_abc6bce853dab9c86c8488a5deb642ab1.html#abc6bce853dab9c86c8488a5deb642ab1">gbvector_weight</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *f, <span class="keywordtype">int</span> &amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lead_term_weight</a>) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d5/d82/class_g_b_weight_a2667e2f66ccbbcc0259bd19fc7c3e73f.html#a2667e2f66ccbbcc0259bd19fc7c3e73f">monomial_weight</a>(<a class="code hl_typedef" href="../../d9/d64/imonorder_8hpp_a478c7f9d1b96319cce705c05e567cc29.html#a478c7f9d1b96319cce705c05e567cc29">const_monomial</a> m, <span class="keywordtype">int</span> comp) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('d8/d2a/gbweight_8hpp_source.html','../
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// compile-command: &quot;make -C $M2BUILDDIR/Macaulay2/e &quot;</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// indent-tabs-mode: nil</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// End:</span></div>
-<div class="ttc" id="a_exponent_vector_8hpp_a21989b3e062e85cbe627cf36cf1bb395_html_a21989b3e062e85cbe627cf36cf1bb395"><div class="ttname"><a href="../../da/db0/_exponent_vector_8hpp_a21989b3e062e85cbe627cf36cf1bb395.html#a21989b3e062e85cbe627cf36cf1bb395">const_exponents</a></div><div class="ttdeci">exponents::ConstExponents const_exponents</div><div class="ttdef"><b>Definition</b> <a href="../../da/db0/_exponent_vector_8hpp_source.html#l00277">ExponentVector.hpp:277</a></div></div>
+<div class="ttc" id="a_exponent_vector_8hpp_a21989b3e062e85cbe627cf36cf1bb395_html_a21989b3e062e85cbe627cf36cf1bb395"><div class="ttname"><a href="../../da/db0/_exponent_vector_8hpp_a21989b3e062e85cbe627cf36cf1bb395.html#a21989b3e062e85cbe627cf36cf1bb395">const_exponents</a></div><div class="ttdeci">exponents::ConstExponents const_exponents</div><div class="ttdef"><b>Definition</b> <a href="../../da/db0/_exponent_vector_8hpp_source.html#l00278">ExponentVector.hpp:278</a></div></div>
 <div class="ttc" id="a_exponent_vector_8hpp_html"><div class="ttname"><a href="../../da/db0/_exponent_vector_8hpp.html">ExponentVector.hpp</a></div></div>
 <div class="ttc" id="aclass_free_module_html"><div class="ttname"><a href="../../d6/df0/class_free_module.html">FreeModule</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/freemod_8hpp_source.html#l00015">freemod.hpp:16</a></div></div>
 <div class="ttc" id="aclass_g_b_ring_html"><div class="ttname"><a href="../../d8/d73/class_g_b_ring.html">GBRing</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00059">gbring.hpp:60</a></div></div>
@@ -175,6 +175,7 @@ $(document).ready(function(){initNavTree('d8/d2a/gbweight_8hpp_source.html','../
 <div class="ttc" id="aclass_m2__arrayint_html"><div class="ttname"><a href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a></div></div>
 <div class="ttc" id="aengine-includes_8hpp_html"><div class="ttname"><a href="../../d1/db4/engine-includes_8hpp.html">engine-includes.hpp</a></div></div>
 <div class="ttc" id="aimonorder_8hpp_a478c7f9d1b96319cce705c05e567cc29_html_a478c7f9d1b96319cce705c05e567cc29"><div class="ttname"><a href="../../d9/d64/imonorder_8hpp_a478c7f9d1b96319cce705c05e567cc29.html#a478c7f9d1b96319cce705c05e567cc29">const_monomial</a></div><div class="ttdeci">const int * const_monomial</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d64/imonorder_8hpp_source.html#l00020">imonorder.hpp:20</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="amonoid_8hpp_html"><div class="ttname"><a href="../../d1/dd0/monoid_8hpp.html">monoid.hpp</a></div></div>
 <div class="ttc" id="anewdelete_8hpp_html"><div class="ttname"><a href="../../da/d94/newdelete_8hpp.html">newdelete.hpp</a></div></div>
 <div class="ttc" id="astructgbvector_html"><div class="ttname"><a href="../../d7/d40/structgbvector.html">gbvector</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00043">gbring.hpp:44</a></div></div>
@@ -184,8 +185,8 @@ $(document).ready(function(){initNavTree('d8/d2a/gbweight_8hpp_source.html','../
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d8/d2a/gbweight_8hpp.html">gbweight.hpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_64a5a84e685b0d343f77bbf9741b61a7.html">groebner-computations</a></li><li class="navelem"><a class="el" href="../../d8/d2a/gbweight_8hpp.html">gbweight.hpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -2,7 +2,7 @@ var class_matrix =
 [
     [ "column_iterator", "de/dfe/class_matrix_1_1column__iterator.html", "de/dfe/class_matrix_1_1column__iterator" ],
     [ "iterator", "d2/d54/class_matrix_1_1iterator.html", "d2/d54/class_matrix_1_1iterator" ],
-    [ "Matrix", "d6/d3f/class_matrix_af09ebf5b6398dbae10cb696620da7a1c.html#af09ebf5b6398dbae10cb696620da7a1c", null ],
+    [ "Matrix", "d6/d3f/class_matrix_a6d2f108b075f1abe1c9e17a9057636e6.html#a6d2f108b075f1abe1c9e17a9057636e6", null ],
     [ "auto_reduce", "d6/d3f/class_matrix_a51da2242500927ed75c85ac920d50eed.html#a51da2242500927ed75c85ac920d50eed", null ],
     [ "basis", "d6/d3f/class_matrix_ae50f6a2e816d7a9a4f92ab92415f0826.html#ae50f6a2e816d7a9a4f92ab92415f0826", null ],
     [ "clean", "d6/d3f/class_matrix_a3b6756621170dc71e85d96865f1d1f34.html#a3b6756621170dc71e85d96865f1d1f34", null ],

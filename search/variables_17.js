@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['w_5fhistory_0',['w_history',['../df/dab/class_g_b_walker_a069498c3eee906f972ca82aac8ad04b8.html#a069498c3eee906f972ca82aac8ad04b8',1,'GBWalker']]],
+  ['w_0',['W',['../dc/d0b/class_weyl_algebra_test_afa063d2a3732e2c587b67c24b644a247.html#afa063d2a3732e2c587b67c24b644a247',1,'WeylAlgebraTest']]],
   ['warning_5fgiven_5ffor_5fgb_5for_5fres_5fover_5frr_5for_5fcc_1',['warning_given_for_gb_or_res_over_RR_or_CC',['../d2/dc8/groebner_8cpp_ade797eea648990fd07e9132eaf43efb6.html#ade797eea648990fd07e9132eaf43efb6',1,'groebner.cpp']]],
   ['weakancestor_2',['WeakAncestor',['../da/d09/class_b_i_basis_1_1_triple_a6707a23a992a58f5a1c8d90f44fa448c.html#a6707a23a992a58f5a1c8d90f44fa448c',1,'BIBasis::Triple']]],
   ['weight_5fhas_5fzeros_3',['weight_has_zeros',['../d9/dd1/class_k_basis_ad049d88e36c8192e57d399dddb34e838.html#ad049d88e36c8192e57d399dddb34e838',1,'KBasis']]],
@@ -10,7 +10,7 @@ var searchData=
   ['weyl_7',['weyl',['../d8/d73/class_g_b_ring_a08290dc9e64e8e63c1bcb8339ea0ed6f.html#a08290dc9e64e8e63c1bcb8339ea0ed6f',1,'GBRing']]],
   ['word_8',['word',['../d8/dcb/struct_n_c_f4_1_1_column_a6f51b869eb61651dbf3eaff18ef4241a.html#a6f51b869eb61651dbf3eaff18ef4241a',1,'NCF4::Column::word'],['../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e',1,'word:&#160;NCGroebnerTest.cpp']]],
   ['word_5fsize_9',['word_size',['../d1/d2c/mem_8hpp_aca2b58b464f2a314aba4cee850d0c170.html#aca2b58b464f2a314aba4cee850d0c170',1,'mem.hpp']]],
-  ['wt_10',['wt',['../d8/dee/classtableau_a45a115942513c130ec56f0bff991da2d.html#a45a115942513c130ec56f0bff991da2d',1,'tableau::wt'],['../dd/d69/classtableau2_adf6733f424582e6401d143b159e52f59.html#adf6733f424582e6401d143b159e52f59',1,'tableau2::wt'],['../dd/dcb/class_reduced_g_b___field___local_a1f4919206de474493385faf4b2bcc0cb.html#a1f4919206de474493385faf4b2bcc0cb',1,'ReducedGB_Field_Local::wt'],['../d4/d27/structpart__elem_a8a144187139236f92cf031a8ce73f84d.html#a8a144187139236f92cf031a8ce73f84d',1,'part_elem::wt']]],
+  ['wt_10',['wt',['../d8/dee/classtableau_a45a115942513c130ec56f0bff991da2d.html#a45a115942513c130ec56f0bff991da2d',1,'tableau::wt'],['../dd/d69/classtableau2_adf6733f424582e6401d143b159e52f59.html#adf6733f424582e6401d143b159e52f59',1,'tableau2::wt'],['../d4/d27/structpart__elem_a8a144187139236f92cf031a8ce73f84d.html#a8a144187139236f92cf031a8ce73f84d',1,'part_elem::wt'],['../dd/dcb/class_reduced_g_b___field___local_a1f4919206de474493385faf4b2bcc0cb.html#a1f4919206de474493385faf4b2bcc0cb',1,'ReducedGB_Field_Local::wt']]],
   ['wts_11',['wts',['../d3/de9/structmon__part__rec___a36eb8d0ef18017295d2b7b176dcf04af.html#a36eb8d0ef18017295d2b7b176dcf04af',1,'mon_part_rec_']]],
   ['wts_5f_12',['wts_',['../d5/d82/class_g_b_weight_a572e12e69303925a5bcbd1546becd11c.html#a572e12e69303925a5bcbd1546becd11c',1,'GBWeight']]],
   ['ww_13',['ww',['../df/dab/class_g_b_walker_aa33bf94fccac102946c200fee868a2d6.html#aa33bf94fccac102946c200fee868a2d6',1,'GBWalker']]]

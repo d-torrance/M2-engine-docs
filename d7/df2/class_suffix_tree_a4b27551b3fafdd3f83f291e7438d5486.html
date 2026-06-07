@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a4b27551b3faf
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto SuffixTree::isNontrivialSuperword </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">auto</a> SuffixTree::isNontrivialSuperword </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d3/da0/class_word.html">Word</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d3/da0/class_word.html">Word</a> &amp;&#160;</td>
           <td class="paramname"><em>word</em>, </td>
         </tr>
         <tr>
@@ -124,23 +124,24 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a4b27551b3faf
 <p class="definition">Definition at line <a class="el" href="../../da/def/_suffix_tree_8cpp_source.html#l00679">679</a> of file <a class="el" href="../../da/def/_suffix_tree_8cpp_source.html">SuffixTree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  680</span>{</div>
 <div class="line"><span class="lineno">  681</span>  <span class="comment">//Label tmp(word.begin(),word.end());</span></div>
-<div class="line"><span class="lineno">  682</span>  std::vector&lt;std::pair&lt;int,int&gt;&gt; subs {};</div>
-<div class="line"><span class="lineno">  683</span>  <a class="code hl_function" href="../../d7/df2/class_suffix_tree_a19cdbe5db06b93cee5bc97c258447103.html#a19cdbe5db06b93cee5bc97c258447103">subwords</a>(<a class="code hl_variable" href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a>, subs);</div>
-<div class="line"><span class="lineno">  684</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> sw : subs)</div>
+<div class="line"><span class="lineno">  682</span>  std::vector&lt;std::pair&lt;int,int&gt;&gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">subs</a> {};</div>
+<div class="line"><span class="lineno">  683</span>  <a class="code hl_function" href="../../d7/df2/class_suffix_tree_a19cdbe5db06b93cee5bc97c258447103.html#a19cdbe5db06b93cee5bc97c258447103">subwords</a>(<a class="code hl_variable" href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">subs</a>);</div>
+<div class="line"><span class="lineno">  684</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">sw</a> : <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">subs</a>)</div>
 <div class="line"><span class="lineno">  685</span>    {</div>
-<div class="line"><span class="lineno">  686</span>      <span class="keyword">auto</span> index = std::get&lt;0&gt;(sw);</div>
-<div class="line"><span class="lineno">  687</span>      <span class="keyword">auto</span> pos = std::get&lt;1&gt;(sw);</div>
-<div class="line"><span class="lineno">  688</span>      <span class="keywordflow">if</span> (index != index1 &amp;&amp; index != index2) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  689</span>      <span class="keywordflow">if</span> (index != index1 &amp;&amp; pos == 0) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  690</span>      <span class="keywordflow">if</span> (index != index2 &amp;&amp; pos == <a class="code hl_variable" href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a>.size() - <a class="code hl_variable" href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">mMonomials</a>[index2].size()) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  686</span>      <span class="keyword">auto</span> index = std::get&lt;0&gt;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">sw</a>);</div>
+<div class="line"><span class="lineno">  687</span>      <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pos</a> = std::get&lt;1&gt;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">sw</a>);</div>
+<div class="line"><span class="lineno">  688</span>      <span class="keywordflow">if</span> (index != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">index1</a> &amp;&amp; index != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">index2</a>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  689</span>      <span class="keywordflow">if</span> (index != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">index1</a> &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pos</a> == 0) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  690</span>      <span class="keywordflow">if</span> (index != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">index2</a> &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pos</a> == <a class="code hl_variable" href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a>.size() - <a class="code hl_variable" href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">mMonomials</a>[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">index2</a>].size()) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  691</span>    }</div>
 <div class="line"><span class="lineno">  692</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  693</span>}</div>
 <div class="ttc" id="a_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e_html_ad7ff07a5d062e08684d658ddd7ebe35e"><div class="ttname"><a href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a></div><div class="ttdeci">std::vector&lt; int &gt; word</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dc0/_n_c_groebner_test_8cpp_source.html#l00063">NCGroebnerTest.cpp:63</a></div></div>
 <div class="ttc" id="aclass_suffix_tree_a19cdbe5db06b93cee5bc97c258447103_html_a19cdbe5db06b93cee5bc97c258447103"><div class="ttname"><a href="../../d7/df2/class_suffix_tree_a19cdbe5db06b93cee5bc97c258447103.html#a19cdbe5db06b93cee5bc97c258447103">SuffixTree::subwords</a></div><div class="ttdeci">bool subwords(const Word &amp;word, std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;output) const</div><div class="ttdef"><b>Definition</b> <a href="../../da/def/_suffix_tree_8cpp_source.html#l00472">SuffixTree.cpp:472</a></div></div>
 <div class="ttc" id="aclass_suffix_tree_ab48f6caf49da318521c984dd6348cc3d_html_ab48f6caf49da318521c984dd6348cc3d"><div class="ttname"><a href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">SuffixTree::mMonomials</a></div><div class="ttdeci">std::vector&lt; Label &gt; mMonomials</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d33/_suffix_tree_8hpp_source.html#l00323">SuffixTree.hpp:323</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a>.</p>
 
 </div>
 </div>
@@ -150,7 +151,7 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a4b27551b3faf
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/df2/class_suffix_tree.html">SuffixTree</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

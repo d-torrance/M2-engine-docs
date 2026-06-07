@@ -125,17 +125,18 @@ $(document).ready(function(){initNavTree('dd/d51/class_resolution_computation_a0
 
 <p>Reimplemented in <a class="el" href="../../da/dc1/class_n_c_res_computation_a9442cdda62f6442802c78b7b95466b35.html#a9442cdda62f6442802c78b7b95466b35">NCResComputation</a>, and <a class="el" href="../../d6/d1e/class_f4_res_computation_a63eaf1e1b8be43ca8b43246639fad2fa.html#a63eaf1e1b8be43ca8b43246639fad2fa">F4ResComputation</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/dcb/comp-res_8cpp_source.html#l00241">241</a> of file <a class="el" href="../../da/dcb/comp-res_8cpp_source.html">comp-res.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  243</span>{</div>
-<div class="line"><span class="lineno">  244</span>  (void) level;</div>
-<div class="line"><span class="lineno">  245</span>  (void) degree;</div>
-<div class="line"><span class="lineno">  246</span>  <span class="comment">// the default version gives an error that it isn&#39;t defined</span></div>
-<div class="line"><span class="lineno">  247</span>  <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;this function not defined for this resolution type&quot;</span>);</div>
-<div class="line"><span class="lineno">  248</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  249</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/dcb/comp-res_8cpp_source.html#l00246">246</a> of file <a class="el" href="../../da/dcb/comp-res_8cpp_source.html">comp-res.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  248</span>{</div>
+<div class="line"><span class="lineno">  249</span>  (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a>) level;</div>
+<div class="line"><span class="lineno">  250</span>  (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a>) degree;</div>
+<div class="line"><span class="lineno">  251</span>  <span class="comment">// the default version gives an error that it isn&#39;t defined</span></div>
+<div class="line"><span class="lineno">  252</span>  <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;this function not defined for this resolution type&quot;</span>);</div>
+<div class="line"><span class="lineno">  253</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  254</span>}</div>
 <div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>.</p>
 
 </div>
 </div>
@@ -145,7 +146,7 @@ $(document).ready(function(){initNavTree('dd/d51/class_resolution_computation_a0
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d51/class_resolution_computation.html">ResolutionComputation</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

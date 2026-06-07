@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('d6/de1/class_m2_1_1_a_ring_c_c_c_a70fa
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void M2::ARingCCC::mult </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> M2::ARingCCC::mult </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a14ee82a8ccec5980d2e78ed1845dc50a.html#a14ee82a8ccec5980d2e78ed1845dc50a">ElementType</a> &amp;&#160;</td>
           <td class="paramname"><em>res</em>, </td>
@@ -107,13 +107,13 @@ $(document).ready(function(){initNavTree('d6/de1/class_m2_1_1_a_ring_c_c_c_a70fa
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a14ee82a8ccec5980d2e78ed1845dc50a.html#a14ee82a8ccec5980d2e78ed1845dc50a">ElementType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a14ee82a8ccec5980d2e78ed1845dc50a.html#a14ee82a8ccec5980d2e78ed1845dc50a">ElementType</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a691abc9efb4e96aaf7045721904a0b51.html#a691abc9efb4e96aaf7045721904a0b51">RealElementType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a691abc9efb4e96aaf7045721904a0b51.html#a691abc9efb4e96aaf7045721904a0b51">RealElementType</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -131,26 +131,27 @@ $(document).ready(function(){initNavTree('d6/de1/class_m2_1_1_a_ring_c_c_c_a70fa
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00280">280</a> of file <a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html">aring-CCC.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  283</span>  {</div>
-<div class="line"><span class="lineno">  284</span>    mpfr_t tmp;</div>
+<div class="line"><span class="lineno">  284</span>    mpfr_t <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>;</div>
 <div class="line"><span class="lineno">  285</span>    Element <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">  286</span>    mpfr_init2(tmp, <a class="code hl_function" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision</a>());</div>
+<div class="line"><span class="lineno">  286</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpfr_init2</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>, <a class="code hl_function" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision</a>());</div>
 <div class="line"><span class="lineno">  287</span> </div>
 <div class="line"><span class="lineno">  288</span>    <span class="comment">// &amp;result.re = &amp;a.re*&amp;b;</span></div>
-<div class="line"><span class="lineno">  289</span>    mpfr_mul(tmp, &amp;a.re, &amp;b, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  290</span>    mpfr_set(&amp;<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.value().re, tmp, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  289</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpfr_mul</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>, &amp;a.re, &amp;b, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MPFR_RNDN</a>);</div>
+<div class="line"><span class="lineno">  290</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpfr_set</a>(&amp;<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.value().re, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MPFR_RNDN</a>);</div>
 <div class="line"><span class="lineno">  291</span> </div>
 <div class="line"><span class="lineno">  292</span>    <span class="comment">// &amp;result.im = &amp;a.im*&amp;b;</span></div>
-<div class="line"><span class="lineno">  293</span>    mpfr_mul(tmp, &amp;a.im, &amp;b, MPFR_RNDN);</div>
-<div class="line"><span class="lineno">  294</span>    mpfr_set(&amp;<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.value().im, tmp, MPFR_RNDN);</div>
+<div class="line"><span class="lineno">  293</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpfr_mul</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>, &amp;a.im, &amp;b, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MPFR_RNDN</a>);</div>
+<div class="line"><span class="lineno">  294</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpfr_set</a>(&amp;<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.value().im, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MPFR_RNDN</a>);</div>
 <div class="line"><span class="lineno">  295</span> </div>
 <div class="line"><span class="lineno">  296</span>    <a class="code hl_function" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">set</a>(res, <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>);</div>
-<div class="line"><span class="lineno">  297</span>    mpfr_clear(tmp);</div>
+<div class="line"><span class="lineno">  297</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpfr_clear</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>);</div>
 <div class="line"><span class="lineno">  298</span>  }</div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf_html_a6ca36f68691d04e4535212cbb3a963cf"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">M2::ARingCCC::get_precision</a></div><div class="ttdeci">unsigned long get_precision() const</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00040">aring-CCC.hpp:40</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470_html_ad4163b5010df51b6ff9fba518d028470"><div class="ttname"><a href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">M2::ARingCCC::set</a></div><div class="ttdeci">void set(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d9c/aring-_c_c_c_8hpp_source.html#l00115">aring-CCC.hpp:115</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision()</a>, <a class="el" href="../../de/d31/structcc__struct_a01c7e0ae1aa6afdb88e34089b44e315c.html#a01c7e0ae1aa6afdb88e34089b44e315c">cc_struct::im</a>, <a class="el" href="../../de/d31/structcc__struct_ab0d0e122986378302dd93f5fb27ec281.html#ab0d0e122986378302dd93f5fb27ec281">cc_struct::re</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>, and <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">set()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a6ca36f68691d04e4535212cbb3a963cf.html#a6ca36f68691d04e4535212cbb3a963cf">get_precision()</a>, <a class="el" href="../../de/d31/structcc__struct_a01c7e0ae1aa6afdb88e34089b44e315c.html#a01c7e0ae1aa6afdb88e34089b44e315c">cc_struct::im</a>, <a class="el" href="../../de/d31/structcc__struct_ab0d0e122986378302dd93f5fb27ec281.html#ab0d0e122986378302dd93f5fb27ec281">cc_struct::re</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>, and <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ad4163b5010df51b6ff9fba518d028470.html#ad4163b5010df51b6ff9fba518d028470">set()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_ae5727cd5401948e193b1cc11e15282db.html#ae5727cd5401948e193b1cc11e15282db">addMultipleTo()</a>, <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a9fd8071b462878df33bbc8514de2d488.html#a9fd8071b462878df33bbc8514de2d488">power()</a>, <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a8c4f80ae24ee3b75ff6b931d20460cbd.html#a8c4f80ae24ee3b75ff6b931d20460cbd">subtract_multiple()</a>, <a class="el" href="../../db/d67/_a_ring_c_c_c_test_8cpp_a640fe51a95a9fb95ce209b1bf1045efc.html#a640fe51a95a9fb95ce209b1bf1045efc">TEST()</a>, <a class="el" href="../../db/d67/_a_ring_c_c_c_test_8cpp_a4dff8411a8d071a5c648abf643a97d95.html#a4dff8411a8d071a5c648abf643a97d95">TEST()</a>, <a class="el" href="../../db/d67/_a_ring_c_c_c_test_8cpp_aaa980d81e84eb3c6f517cf405ccb65e7.html#aaa980d81e84eb3c6f517cf405ccb65e7">TEST()</a>, and <a class="el" href="../../db/d67/_a_ring_c_c_c_test_8cpp_ac159c77e395a5fdd0243f43a40020504.html#ac159c77e395a5fdd0243f43a40020504">TEST()</a>.</p>
 
@@ -162,7 +163,7 @@ $(document).ready(function(){initNavTree('d6/de1/class_m2_1_1_a_ring_c_c_c_a70fa
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c.html">ARingCCC</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

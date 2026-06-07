@@ -99,15 +99,15 @@ $(document).ready(function(){initNavTree('de/dd9/res-f4_8cpp_a1284aecf4343d22e40
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void applyPermutation </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> applyPermutation </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../df/dd9/res-schreyer-frame_8hpp_a46aff60fe9e7b02cb075b491f6e3af7b.html#a46aff60fe9e7b02cb075b491f6e3af7b">ComponentIndex</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dd/df2/vector-arithmetic_8hpp_a4713dd04822968b76d3212d522fcc982.html#a4713dd04822968b76d3212d522fcc982">ComponentIndex</a> *&#160;</td>
           <td class="paramname"><em>permutation</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="../../df/dd9/res-schreyer-frame_8hpp_a46aff60fe9e7b02cb075b491f6e3af7b.html#a46aff60fe9e7b02cb075b491f6e3af7b">ComponentIndex</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../dd/df2/vector-arithmetic_8hpp_a4713dd04822968b76d3212d522fcc982.html#a4713dd04822968b76d3212d522fcc982">ComponentIndex</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>entries</em>&#160;</td>
         </tr>
         <tr>
@@ -127,21 +127,24 @@ $(document).ready(function(){initNavTree('de/dd9/res-f4_8cpp_a1284aecf4343d22e40
 <div class="fragment"><div class="line"><span class="lineno">  283</span>{</div>
 <div class="line"><span class="lineno">  284</span>  <span class="comment">// TODO: permutation should be a std::vector too,</span></div>
 <div class="line"><span class="lineno">  285</span>  <span class="comment">// and we should check the values of the permutation.</span></div>
-<div class="line"><span class="lineno">  286</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="../../df/dd9/res-schreyer-frame_8hpp_a46aff60fe9e7b02cb075b491f6e3af7b.html#a46aff60fe9e7b02cb075b491f6e3af7b">ComponentIndex</a> i = 0; i &lt; entries.size(); i++)</div>
-<div class="line"><span class="lineno">  287</span>    entries[i] = permutation[entries[i]];</div>
+<div class="line"><span class="lineno">  286</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="../../dd/df2/vector-arithmetic_8hpp_a4713dd04822968b76d3212d522fcc982.html#a4713dd04822968b76d3212d522fcc982">ComponentIndex</a> i = 0; i &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">entries</a>.size(); i++)</div>
+<div class="line"><span class="lineno">  287</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">entries</a>[i] = permutation[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">entries</a>[i]];</div>
 <div class="line"><span class="lineno">  288</span> </div>
 <div class="line"><span class="lineno">  289</span>  <span class="comment">// The next is just a consistency check, that maybe can be removed later.</span></div>
-<div class="line"><span class="lineno">  290</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="../../df/dd9/res-schreyer-frame_8hpp_a46aff60fe9e7b02cb075b491f6e3af7b.html#a46aff60fe9e7b02cb075b491f6e3af7b">ComponentIndex</a> i = 1; i &lt; entries.size(); i++)</div>
+<div class="line"><span class="lineno">  290</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="../../dd/df2/vector-arithmetic_8hpp_a4713dd04822968b76d3212d522fcc982.html#a4713dd04822968b76d3212d522fcc982">ComponentIndex</a> i = 1; i &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">entries</a>.size(); i++)</div>
 <div class="line"><span class="lineno">  291</span>    {</div>
-<div class="line"><span class="lineno">  292</span>      <span class="keywordflow">if</span> (entries[i] &lt;= entries[i - 1])</div>
+<div class="line"><span class="lineno">  292</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">entries</a>[i] &lt;= <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">entries</a>[i - 1])</div>
 <div class="line"><span class="lineno">  293</span>        {</div>
-<div class="line"><span class="lineno">  294</span>          fprintf(stderr, <span class="stringliteral">&quot;Internal error: array out of order\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  294</span>          <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fprintf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">stderr</a>, <span class="stringliteral">&quot;Internal error: array out of order\n&quot;</span>);</div>
 <div class="line"><span class="lineno">  295</span>          <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  296</span>        }</div>
 <div class="line"><span class="lineno">  297</span>    }</div>
 <div class="line"><span class="lineno">  298</span>}</div>
-<div class="ttc" id="ares-schreyer-frame_8hpp_a46aff60fe9e7b02cb075b491f6e3af7b_html_a46aff60fe9e7b02cb075b491f6e3af7b"><div class="ttname"><a href="../../df/dd9/res-schreyer-frame_8hpp_a46aff60fe9e7b02cb075b491f6e3af7b.html#a46aff60fe9e7b02cb075b491f6e3af7b">ComponentIndex</a></div><div class="ttdeci">int ComponentIndex</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/res-schreyer-frame_8hpp_source.html#l00039">res-schreyer-frame.hpp:39</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
+<div class="ttc" id="avector-arithmetic_8hpp_a4713dd04822968b76d3212d522fcc982_html_a4713dd04822968b76d3212d522fcc982"><div class="ttname"><a href="../../dd/df2/vector-arithmetic_8hpp_a4713dd04822968b76d3212d522fcc982.html#a4713dd04822968b76d3212d522fcc982">ComponentIndex</a></div><div class="ttdeci">int ComponentIndex</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df2/vector-arithmetic_8hpp_source.html#l00046">vector-arithmetic.hpp:46</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../d0/dd7/class_f4_res_a1d6c6ee5f0156d2795a4d417827adb2d.html#a1d6c6ee5f0156d2795a4d417827adb2d">F4Res::reorderColumns()</a>.</p>
 
 </div>
@@ -151,8 +154,8 @@ $(document).ready(function(){initNavTree('de/dd9/res-f4_8cpp_a1284aecf4343d22e40
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_208df166e208656f2e3436240a4845e8.html">schreyer-resolution</a></li><li class="navelem"><a class="el" href="../../de/dd9/res-f4_8cpp.html">res-f4.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_b9fb7e9634d0525ba40579ac5dc0678f.html">schreyer-resolutions</a></li><li class="navelem"><a class="el" href="../../de/dd9/res-f4_8cpp.html">res-f4.cpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

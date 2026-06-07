@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a2976bf376fb4
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto SuffixTree::leftOverlaps </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">auto</a> SuffixTree::leftOverlaps </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d3/da0/class_word.html">Word</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d3/da0/class_word.html">Word</a> &amp;&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
@@ -111,55 +111,55 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a2976bf376fb4
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d9/db9/classbool.html">bool</a>&#160;</td>
-          <td class="paramname"><em>avoidLast</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>avoidLast</em> = <code><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">false</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; void</td>
+          <td></td><td> const -&gt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../da/def/_suffix_tree_8cpp_source.html#l00595">595</a> of file <a class="el" href="../../da/def/_suffix_tree_8cpp_source.html">SuffixTree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  598</span>{</div>
-<div class="line"><span class="lineno">  599</span>  <span class="keyword">auto</span> tmpNode = <a class="code hl_variable" href="../../d7/df2/class_suffix_tree_a80e8a4c2280c1e507def1d39c345396c.html#a80e8a4c2280c1e507def1d39c345396c">mRoot</a>;</div>
-<div class="line"><span class="lineno">  600</span>  <span class="keyword">auto</span> tmpLabel = w;</div>
-<div class="line"><span class="lineno">  601</span>  <span class="keyword">auto</span> match = <a class="code hl_function" href="../../d7/df2/class_suffix_tree_a5ecfb3e23fb06d0e4159c492b324f39e.html#a5ecfb3e23fb06d0e4159c492b324f39e">findMatch</a>(tmpNode,tmpLabel);</div>
-<div class="line"><span class="lineno">  602</span>  <span class="keyword">auto</span> f = std::get&lt;0&gt;(match);</div>
-<div class="line"><span class="lineno">  603</span>  <span class="keyword">auto</span> pre = std::get&lt;1&gt;(match);</div>
-<div class="line"><span class="lineno">  604</span>  <span class="keywordtype">int</span> patternNum = -1;</div>
-<div class="line"><span class="lineno">  605</span>  <span class="keywordflow">while</span> (f != <span class="keyword">nullptr</span> &amp;&amp; pre == <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a>(f-&gt;arcLabel()))</div>
+<div class="line"><span class="lineno">  599</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpNode</a> = <a class="code hl_variable" href="../../d7/df2/class_suffix_tree_a80e8a4c2280c1e507def1d39c345396c.html#a80e8a4c2280c1e507def1d39c345396c">mRoot</a>;</div>
+<div class="line"><span class="lineno">  600</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpLabel</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a>;</div>
+<div class="line"><span class="lineno">  601</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">match</a> = <a class="code hl_function" href="../../d7/df2/class_suffix_tree_a5ecfb3e23fb06d0e4159c492b324f39e.html#a5ecfb3e23fb06d0e4159c492b324f39e">findMatch</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpNode</a>,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpLabel</a>);</div>
+<div class="line"><span class="lineno">  602</span>  <span class="keyword">auto</span> f = std::get&lt;0&gt;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">match</a>);</div>
+<div class="line"><span class="lineno">  603</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pre</a> = std::get&lt;1&gt;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">match</a>);</div>
+<div class="line"><span class="lineno">  604</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">patternNum</a> = -1;</div>
+<div class="line"><span class="lineno">  605</span>  <span class="keywordflow">while</span> (f != <span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pre</a> == <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a>(f-&gt;arcLabel()))</div>
 <div class="line"><span class="lineno">  606</span>    {</div>
 <div class="line"><span class="lineno">  607</span>      <span class="comment">// in this case, the prefix found matches the arc label, so we move down</span></div>
 <div class="line"><span class="lineno">  608</span>      <span class="comment">// the tree</span></div>
-<div class="line"><span class="lineno">  609</span>      tmpNode = f;</div>
-<div class="line"><span class="lineno">  610</span>      tmpLabel = <a class="code hl_function" href="../../da/def/_suffix_tree_8cpp_ad880702bc4b9be6d86a18b463fff2715.html#ad880702bc4b9be6d86a18b463fff2715">suffix</a>(tmpLabel,pre.size());</div>
+<div class="line"><span class="lineno">  609</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpNode</a> = f;</div>
+<div class="line"><span class="lineno">  610</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpLabel</a> = <a class="code hl_function" href="../../da/def/_suffix_tree_8cpp_ad880702bc4b9be6d86a18b463fff2715.html#ad880702bc4b9be6d86a18b463fff2715">suffix</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpLabel</a>,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pre</a>.size());</div>
 <div class="line"><span class="lineno">  611</span>      <span class="comment">// after we move down add all children of tmpNode that are suffix leaves to leftOverlaps</span></div>
 <div class="line"><span class="lineno">  612</span>      <span class="comment">// as long as tmpNode is not the root</span></div>
-<div class="line"><span class="lineno">  613</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = tmpNode-&gt;childrenBegin(); i != tmpNode-&gt;childrenEnd(); ++i)</div>
+<div class="line"><span class="lineno">  613</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpNode</a>-&gt;childrenBegin(); i != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpNode</a>-&gt;childrenEnd(); ++i)</div>
 <div class="line"><span class="lineno">  614</span>        {</div>
 <div class="line"><span class="lineno">  615</span>          <span class="keywordflow">if</span> (i-&gt;second-&gt;isLeaf() &amp;&amp; !i-&gt;second-&gt;isFullPattern())</div>
 <div class="line"><span class="lineno">  616</span>            {</div>
-<div class="line"><span class="lineno">  617</span>              patternNum = i-&gt;second-&gt;getPatternNumber();</div>
-<div class="line"><span class="lineno">  618</span>              <span class="keywordflow">if</span> (!(avoidLast &amp;&amp; patternNum == <a class="code hl_variable" href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">mMonomials</a>.size()-1))</div>
-<div class="line"><span class="lineno">  619</span>                output.push_back(std::make_pair(patternNum,</div>
-<div class="line"><span class="lineno">  620</span>                                                 <a class="code hl_variable" href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">mMonomials</a>[patternNum].size()-tmpNode-&gt;label().size()));</div>
+<div class="line"><span class="lineno">  617</span>              <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">patternNum</a> = i-&gt;second-&gt;getPatternNumber();</div>
+<div class="line"><span class="lineno">  618</span>              <span class="keywordflow">if</span> (!(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">avoidLast</a> &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">patternNum</a> == <a class="code hl_variable" href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">mMonomials</a>.size()-1))</div>
+<div class="line"><span class="lineno">  619</span>                output.push_back(std::make_pair(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">patternNum</a>,</div>
+<div class="line"><span class="lineno">  620</span>                                                 <a class="code hl_variable" href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">mMonomials</a>[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">patternNum</a>].size()-<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpNode</a>-&gt;label().size()));</div>
 <div class="line"><span class="lineno">  621</span>            }</div>
 <div class="line"><span class="lineno">  622</span>        }</div>
-<div class="line"><span class="lineno">  623</span>      match = <a class="code hl_function" href="../../d7/df2/class_suffix_tree_a5ecfb3e23fb06d0e4159c492b324f39e.html#a5ecfb3e23fb06d0e4159c492b324f39e">findMatch</a>(tmpNode,tmpLabel);</div>
-<div class="line"><span class="lineno">  624</span>      f = std::get&lt;0&gt;(match);</div>
-<div class="line"><span class="lineno">  625</span>      pre = std::get&lt;1&gt;(match);</div>
+<div class="line"><span class="lineno">  623</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">match</a> = <a class="code hl_function" href="../../d7/df2/class_suffix_tree_a5ecfb3e23fb06d0e4159c492b324f39e.html#a5ecfb3e23fb06d0e4159c492b324f39e">findMatch</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpNode</a>,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpLabel</a>);</div>
+<div class="line"><span class="lineno">  624</span>      f = std::get&lt;0&gt;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">match</a>);</div>
+<div class="line"><span class="lineno">  625</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pre</a> = std::get&lt;1&gt;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">match</a>);</div>
 <div class="line"><span class="lineno">  626</span>     }</div>
 <div class="line"><span class="lineno">  627</span>  <span class="comment">// At this point, if pre != {} then there is a common prefix to a child, but</span></div>
 <div class="line"><span class="lineno">  628</span>  <span class="comment">// the label is not a full match to s.  In this case, we add</span></div>
 <div class="line"><span class="lineno">  629</span>  <span class="comment">// the unique suffix leaf that shares a prefix to our list,</span></div>
 <div class="line"><span class="lineno">  630</span>  <span class="comment">// as long as it is not a full pattern</span></div>
-<div class="line"><span class="lineno">  631</span>  <span class="keywordflow">if</span> (pre.size() != 0 &amp;&amp; !f-&gt;isFullPattern())</div>
+<div class="line"><span class="lineno">  631</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pre</a>.size() != 0 &amp;&amp; !f-&gt;isFullPattern())</div>
 <div class="line"><span class="lineno">  632</span>    {</div>
-<div class="line"><span class="lineno">  633</span>      patternNum = f-&gt;getPatternNumber();</div>
-<div class="line"><span class="lineno">  634</span>      <span class="keywordflow">if</span> (!(avoidLast &amp;&amp; patternNum == <a class="code hl_variable" href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">mMonomials</a>.size()-1))</div>
-<div class="line"><span class="lineno">  635</span>        output.push_back(std::make_pair(patternNum,<a class="code hl_variable" href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">mMonomials</a>[patternNum].size()-pre.size()));</div>
+<div class="line"><span class="lineno">  633</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">patternNum</a> = f-&gt;getPatternNumber();</div>
+<div class="line"><span class="lineno">  634</span>      <span class="keywordflow">if</span> (!(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">avoidLast</a> &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">patternNum</a> == <a class="code hl_variable" href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">mMonomials</a>.size()-1))</div>
+<div class="line"><span class="lineno">  635</span>        output.push_back(std::make_pair(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">patternNum</a>,<a class="code hl_variable" href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">mMonomials</a>[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">patternNum</a>].size()-<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pre</a>.size()));</div>
 <div class="line"><span class="lineno">  636</span>    }</div>
 <div class="line"><span class="lineno">  637</span>  <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  638</span>}</div>
@@ -168,8 +168,9 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a2976bf376fb4
 <div class="ttc" id="aclass_suffix_tree_a80e8a4c2280c1e507def1d39c345396c_html_a80e8a4c2280c1e507def1d39c345396c"><div class="ttname"><a href="../../d7/df2/class_suffix_tree_a80e8a4c2280c1e507def1d39c345396c.html#a80e8a4c2280c1e507def1d39c345396c">SuffixTree::mRoot</a></div><div class="ttdeci">SuffixTreeNode * mRoot</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d33/_suffix_tree_8hpp_source.html#l00318">SuffixTree.hpp:318</a></div></div>
 <div class="ttc" id="aclass_suffix_tree_ab48f6caf49da318521c984dd6348cc3d_html_ab48f6caf49da318521c984dd6348cc3d"><div class="ttname"><a href="../../d7/df2/class_suffix_tree_ab48f6caf49da318521c984dd6348cc3d.html#ab48f6caf49da318521c984dd6348cc3d">SuffixTree::mMonomials</a></div><div class="ttdeci">std::vector&lt; Label &gt; mMonomials</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d33/_suffix_tree_8hpp_source.html#l00323">SuffixTree.hpp:323</a></div></div>
 <div class="ttc" id="aclass_word_html"><div class="ttname"><a href="../../d3/da0/class_word.html">Word</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd2/_word_8hpp_source.html#l00007">Word.hpp:8</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/def/_suffix_tree_8cpp_ad880702bc4b9be6d86a18b463fff2715.html#ad880702bc4b9be6d86a18b463fff2715">suffix()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../da/def/_suffix_tree_8cpp_ad880702bc4b9be6d86a18b463fff2715.html#ad880702bc4b9be6d86a18b463fff2715">suffix()</a>.</p>
 
 </div>
 </div>
@@ -179,7 +180,7 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a2976bf376fb4
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/df2/class_suffix_tree.html">SuffixTree</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

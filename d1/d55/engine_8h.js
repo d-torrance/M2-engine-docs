@@ -11,7 +11,6 @@ var engine_8h =
     [ "rawBIBasis", "d1/d55/engine_8h_a235d160c27ba48f4ab6ff271afc09ff2.html#a235d160c27ba48f4ab6ff271afc09ff2", null ],
     [ "rawComputationHash", "d1/d55/engine_8h_a1592737baf5c42746b4cb22b004301e9.html#a1592737baf5c42746b4cb22b004301e9", null ],
     [ "rawGbBoolean", "d1/d55/engine_8h_adcfbd82f581fb14d565049bee25fb138.html#adcfbd82f581fb14d565049bee25fb138", null ],
-    [ "rawIdealOfPoints", "d1/d55/engine_8h_ae9099efa6dc7a56d6f4c6b85692aebfb.html#ae9099efa6dc7a56d6f4c6b85692aebfb", null ],
     [ "rawIsLocalUnit", "d1/d55/engine_8h_a72df1ec0727f6b638ada77c81bece981.html#a72df1ec0727f6b638ada77c81bece981", null ],
     [ "rawLiftLocalMatrix", "d1/d55/engine_8h_aa1ccc386030fc6b3c0c14f99c409b6fe.html#aa1ccc386030fc6b3c0c14f99c409b6fe", null ],
     [ "rawMutableComplex", "d1/d55/engine_8h_a913e92c1eee1c1b2f4efa0dd7a1a905c.html#a913e92c1eee1c1b2f4efa0dd7a1a905c", null ],

@@ -26,6 +26,6 @@ var finalize_8cpp =
     [ "polyrings_nremoved", "db/de9/finalize_8cpp_ac4645ba49214a02fc684fdb2ae8d9622.html#ac4645ba49214a02fc684fdb2ae8d9622", null ],
     [ "res_nfinalized", "db/de9/finalize_8cpp_ad95576c322083b766d5056a956cf927e.html#ad95576c322083b766d5056a956cf927e", null ],
     [ "res_nremoved", "db/de9/finalize_8cpp_ad90de081147ba0e7b0f6fb9632661386.html#ad90de081147ba0e7b0f6fb9632661386", null ],
-    [ "schorder_nfinalized", "db/de9/finalize_8cpp_ae8c08bdbbed36d87bb9e769980701b56.html#ae8c08bdbbed36d87bb9e769980701b56", null ],
-    [ "schorder_nremoved", "db/de9/finalize_8cpp_ac462517a041d654511f5e70e96a61c79.html#ac462517a041d654511f5e70e96a61c79", null ]
+    [ "schreyer_order_nfinalized", "db/de9/finalize_8cpp_a4b03d5e7754bb58d6ce8c96494685f3d.html#a4b03d5e7754bb58d6ce8c96494685f3d", null ],
+    [ "schreyer_order_nremoved", "db/de9/finalize_8cpp_aa62481bcbb8a51df8b6975bb1cafd079.html#aa62481bcbb8a51df8b6975bb1cafd079", null ]
 ];

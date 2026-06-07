@@ -52,7 +52,6 @@ var group__coeffrings =
         [ "mData", "df/d9d/class_coefficient_ring_r_1_1_element_array_ab99969951417f319b676d605da8dba79.html#ab99969951417f319b676d605da8dba79", null ]
       ] ],
       [ "elem", "d1/d34/class_coefficient_ring_r_ae321a637e6c1f4963d11af50eb4dc98b.html#ae321a637e6c1f4963d11af50eb4dc98b", null ],
-      [ "ElementContainerType", "d1/d34/class_coefficient_ring_r_a087053664b28848df4da849555cc3867.html#a087053664b28848df4da849555cc3867", null ],
       [ "ElementType", "d1/d34/class_coefficient_ring_r_a6bcaa5a3c7d169e85c912a77509ae6a6.html#a6bcaa5a3c7d169e85c912a77509ae6a6", null ],
       [ "ring_type", "d1/d34/class_coefficient_ring_r_a1f4407e4d69c728bd677194772f1e07a.html#a1f4407e4d69c728bd677194772f1e07a", null ],
       [ "CoefficientRingR", "d1/d34/class_coefficient_ring_r_a9427f02492b6b9156c467a4746047256.html#a9427f02492b6b9156c467a4746047256", null ],
@@ -79,6 +78,7 @@ var group__coeffrings =
       [ "swap", "d1/d34/class_coefficient_ring_r_afaa4fe1095ab5c5e43a6f3a00329b6f9.html#afaa4fe1095ab5c5e43a6f3a00329b6f9", null ],
       [ "text_out", "d1/d34/class_coefficient_ring_r_afaecd76a3211d309dd872fb9c7dd8cd2.html#afaecd76a3211d309dd872fb9c7dd8cd2", null ],
       [ "to_ring_elem", "d1/d34/class_coefficient_ring_r_a243c74a922e310c12a44c12455d2e59e.html#a243c74a922e310c12a44c12455d2e59e", null ],
+      [ "VECTOR", "d1/d34/class_coefficient_ring_r_af1dc85cfb7a831bb231084e0ac6e9ac0.html#af1dc85cfb7a831bb231084e0ac6e9ac0", null ],
       [ "R", "d1/d34/class_coefficient_ring_r_a6939e55c37adde8de8f97b984363c44d.html#a6939e55c37adde8de8f97b984363c44d", null ]
     ] ]
 ];

@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('df/ddb/class_monomial_ideal_acaa837a32
         <tr>
           <td class="memname"><a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> * MonomialIdeal::operator- </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> &amp;&#160;</td>
           <td class="paramname"><em>F</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -108,15 +108,15 @@ $(document).ready(function(){initNavTree('df/ddb/class_monomial_ideal_acaa837a32
 <p class="definition">Definition at line <a class="el" href="../../d5/d89/monideal_8cpp_source.html#l00742">742</a> of file <a class="el" href="../../d5/d89/monideal_8cpp_source.html">monideal.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  745</span>{</div>
 <div class="line"><span class="lineno">  746</span>  <a class="code hl_class" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <span class="keyword">new</span> <a class="code hl_class" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a>(<a class="code hl_function" href="../../df/ddb/class_monomial_ideal_aef478e527af8db4406c3114b63e30c46.html#aef478e527af8db4406c3114b63e30c46">get_ring</a>());</div>
-<div class="line"><span class="lineno">  747</span>  <span class="keywordflow">for</span> (<a class="code hl_class" href="../../df/d8c/classint__bag.html">Bag</a>&amp; a : *this)</div>
+<div class="line"><span class="lineno">  747</span>  <span class="keywordflow">for</span> (<a class="code hl_class" href="../../df/d8c/classint__bag.html">Bag</a>&amp; a : *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">this</a>)</div>
 <div class="line"><span class="lineno">  748</span>    {</div>
-<div class="line"><span class="lineno">  749</span>      <a class="code hl_class" href="../../df/d8c/classint__bag.html">Bag</a> *c;</div>
-<div class="line"><span class="lineno">  750</span>      <span class="keywordflow">if</span> (!J.search(a.monom().data(), c))</div>
+<div class="line"><span class="lineno">  749</span>      <a class="code hl_class" href="../../df/d8c/classint__bag.html">Bag</a> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>;</div>
+<div class="line"><span class="lineno">  750</span>      <span class="keywordflow">if</span> (!J.search(a.monom().data(), <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>))</div>
 <div class="line"><span class="lineno">  751</span>        {</div>
 <div class="line"><span class="lineno">  752</span>          <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>-&gt;insert_minimal(<span class="keyword">new</span> <a class="code hl_typedef" href="../../dc/db6/int-bag_8hpp_a6c11c4c974bbcebff5c4b81ae6c7e62e.html#a6c11c4c974bbcebff5c4b81ae6c7e62e">Bag</a>(a));</div>
 <div class="line"><span class="lineno">  753</span>        }</div>
 <div class="line"><span class="lineno">  754</span>    }</div>
-<div class="line"><span class="lineno">  755</span>  GC_reachable_here(&amp;J);</div>
+<div class="line"><span class="lineno">  755</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">GC_reachable_here</a>(&amp;J);</div>
 <div class="line"><span class="lineno">  756</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><span class="lineno">  757</span>}</div>
 <div class="ttc" id="aclass_monomial_ideal_aef478e527af8db4406c3114b63e30c46_html_aef478e527af8db4406c3114b63e30c46"><div class="ttname"><a href="../../df/ddb/class_monomial_ideal_aef478e527af8db4406c3114b63e30c46.html#aef478e527af8db4406c3114b63e30c46">MonomialIdeal::get_ring</a></div><div class="ttdeci">const PolynomialRing * get_ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d4f/monideal_8hpp_source.html#l00125">monideal.hpp:125</a></div></div>
@@ -124,8 +124,9 @@ $(document).ready(function(){initNavTree('df/ddb/class_monomial_ideal_acaa837a32
 <div class="ttc" id="aclassint__bag_html"><div class="ttname"><a href="../../df/d8c/classint__bag.html">int_bag</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/db6/int-bag_8hpp_source.html#l00007">int-bag.hpp:8</a></div></div>
 <div class="ttc" id="aint-bag_8hpp_a6c11c4c974bbcebff5c4b81ae6c7e62e_html_a6c11c4c974bbcebff5c4b81ae6c7e62e"><div class="ttname"><a href="../../dc/db6/int-bag_8hpp_a6c11c4c974bbcebff5c4b81ae6c7e62e.html#a6c11c4c974bbcebff5c4b81ae6c7e62e">Bag</a></div><div class="ttdeci">int_bag Bag</div><div class="ttdef"><b>Definition</b> <a href="../../dc/db6/int-bag_8hpp_source.html#l00035">int-bag.hpp:35</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 </div>
 </div>
@@ -135,7 +136,7 @@ $(document).ready(function(){initNavTree('df/ddb/class_monomial_ideal_acaa837a32
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

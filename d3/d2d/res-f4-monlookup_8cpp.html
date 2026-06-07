@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/schreyer-resolution/res-f4-monlookup.cpp File Reference</title>
+<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/schreyer-resolutions/res-f4-monlookup.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -95,11 +95,11 @@ $(document).ready(function(){initNavTree('d3/d2d/res-f4-monlookup_8cpp.html','..
   <div class="headertitle"><div class="title">res-f4-monlookup.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d1/d79/res-f4-monlookup_8hpp_source.html">schreyer-resolution/res-f4-monlookup.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d1/d79/res-f4-monlookup_8hpp_source.html">schreyer-resolutions/res-f4-monlookup.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d1d/buffer_8hpp_source.html">buffer.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../de/d28/m2-types_8h_source.html">interface/m2-types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/d2c/mem_8hpp_source.html">mem.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/d0a/res-monomial-types_8hpp_source.html">schreyer-resolution/res-monomial-types.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d0a/res-monomial-types_8hpp_source.html">schreyer-resolutions/res-monomial-types.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d2/d6f/style_8hpp_source.html">style.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d5c/text-io_8hpp_source.html">text-io.hpp</a>&quot;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
@@ -111,18 +111,18 @@ $(document).ready(function(){initNavTree('d3/d2d/res-f4-monlookup_8cpp.html','..
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab0b464de6dd148214b23783b5f2ee934" id="r_ab0b464de6dd148214b23783b5f2ee934"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_ab0b464de6dd148214b23783b5f2ee934.html#ab0b464de6dd148214b23783b5f2ee934">minimalize_res_varpower_monomials</a> (const <a class="el" href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a>(<a class="el" href="../../d7/d0a/res-monomial-types_8hpp_a184f0cb454f74a5f8e8a0a16136ae244.html#a184f0cb454f74a5f8e8a0a16136ae244">res_varpower_monomial</a>) &amp;elems, <a class="el" href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a>(<a class="el" href="../../d1/da0/classint.html">int</a>) &amp;result_minimals, <a class="el" href="../../d1/d5b/classstash.html">stash</a> *mi_stash)</td></tr>
+<tr class="memitem:ab0b464de6dd148214b23783b5f2ee934" id="r_ab0b464de6dd148214b23783b5f2ee934"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_ab0b464de6dd148214b23783b5f2ee934.html#ab0b464de6dd148214b23783b5f2ee934">minimalize_res_varpower_monomials</a> (<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a>(<a class="el" href="../../d7/d0a/res-monomial-types_8hpp_a184f0cb454f74a5f8e8a0a16136ae244.html#a184f0cb454f74a5f8e8a0a16136ae244">res_varpower_monomial</a>) &amp;elems, <a class="el" href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a>(<a class="el" href="../../d1/da0/classint.html">int</a>) &amp;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_minimals</a>, <a class="el" href="../../d1/d5b/classstash.html">stash</a> *mi_stash)</td></tr>
 <tr class="separator:ab0b464de6dd148214b23783b5f2ee934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac134bfbf116039338b60c67ccdf3451e" id="r_ac134bfbf116039338b60c67ccdf3451e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_ac134bfbf116039338b60c67ccdf3451e.html#ac134bfbf116039338b60c67ccdf3451e">nlists</a> = 0</td></tr>
+<tr class="memitem:ac134bfbf116039338b60c67ccdf3451e" id="r_ac134bfbf116039338b60c67ccdf3451e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_ac134bfbf116039338b60c67ccdf3451e.html#ac134bfbf116039338b60c67ccdf3451e">nlists</a> = 0</td></tr>
 <tr class="separator:ac134bfbf116039338b60c67ccdf3451e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfd66b90d07734873d6bb6fd61e566a6" id="r_abfd66b90d07734873d6bb6fd61e566a6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_abfd66b90d07734873d6bb6fd61e566a6.html#abfd66b90d07734873d6bb6fd61e566a6">nleaves</a> = 0</td></tr>
+<tr class="memitem:abfd66b90d07734873d6bb6fd61e566a6" id="r_abfd66b90d07734873d6bb6fd61e566a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_abfd66b90d07734873d6bb6fd61e566a6.html#abfd66b90d07734873d6bb6fd61e566a6">nleaves</a> = 0</td></tr>
 <tr class="separator:abfd66b90d07734873d6bb6fd61e566a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a824ac1af8a4229ed37411081a1ffd928" id="r_a824ac1af8a4229ed37411081a1ffd928"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_a824ac1af8a4229ed37411081a1ffd928.html#a824ac1af8a4229ed37411081a1ffd928">nnodes</a> = 0</td></tr>
+<tr class="memitem:a824ac1af8a4229ed37411081a1ffd928" id="r_a824ac1af8a4229ed37411081a1ffd928"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_a824ac1af8a4229ed37411081a1ffd928.html#a824ac1af8a4229ed37411081a1ffd928">nnodes</a> = 0</td></tr>
 <tr class="separator:a824ac1af8a4229ed37411081a1ffd928"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78993852177787f3c04a9f3c686f074f" id="r_a78993852177787f3c04a9f3c686f074f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_a78993852177787f3c04a9f3c686f074f.html#a78993852177787f3c04a9f3c686f074f">ndepth</a> = 0</td></tr>
+<tr class="memitem:a78993852177787f3c04a9f3c686f074f" id="r_a78993852177787f3c04a9f3c686f074f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_a78993852177787f3c04a9f3c686f074f.html#a78993852177787f3c04a9f3c686f074f">ndepth</a> = 0</td></tr>
 <tr class="separator:a78993852177787f3c04a9f3c686f074f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -130,8 +130,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_208df166e208656f2e3436240a4845e8.html">schreyer-resolution</a></li><li class="navelem"><a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp.html">res-f4-monlookup.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_b9fb7e9634d0525ba40579ac5dc0678f.html">schreyer-resolutions</a></li><li class="navelem"><a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp.html">res-f4-monlookup.cpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

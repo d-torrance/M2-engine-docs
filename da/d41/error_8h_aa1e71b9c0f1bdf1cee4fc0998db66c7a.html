@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('da/d41/error_8h_aa1e71b9c0f1bdf1cee4fc
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ERROR </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> ERROR </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> char *&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
@@ -117,18 +117,19 @@ $(document).ready(function(){initNavTree('da/d41/error_8h_aa1e71b9c0f1bdf1cee4fc
 
 <p class="definition">Definition at line <a class="el" href="../../db/dcc/error_8c_source.html#l00026">26</a> of file <a class="el" href="../../db/dcc/error_8c_source.html">error.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
-<div class="line"><span class="lineno">   28</span>  va_list ap;</div>
-<div class="line"><span class="lineno">   29</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/dcc/error_8c_a6b43cbb0b1293b10e9323567e52627bf.html#a6b43cbb0b1293b10e9323567e52627bf">iserror</a>) fprintf(stderr, <span class="stringliteral">&quot;--error message bumped: %s\n&quot;</span>, <a class="code hl_variable" href="../../db/dcc/error_8c_a5b536f67c70f2d4886484f6aa3e1b90d.html#a5b536f67c70f2d4886484f6aa3e1b90d">errmsg</a>);</div>
+<div class="line"><span class="lineno">   28</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">va_list</a> ap;</div>
+<div class="line"><span class="lineno">   29</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/dcc/error_8c_a6b43cbb0b1293b10e9323567e52627bf.html#a6b43cbb0b1293b10e9323567e52627bf">iserror</a>) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fprintf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">stderr</a>, <span class="stringliteral">&quot;--error message bumped: %s\n&quot;</span>, <a class="code hl_variable" href="../../db/dcc/error_8c_a5b536f67c70f2d4886484f6aa3e1b90d.html#a5b536f67c70f2d4886484f6aa3e1b90d">errmsg</a>);</div>
 <div class="line"><span class="lineno">   30</span>  <a class="code hl_variable" href="../../db/dcc/error_8c_a6b43cbb0b1293b10e9323567e52627bf.html#a6b43cbb0b1293b10e9323567e52627bf">iserror</a> = 1;</div>
-<div class="line"><span class="lineno">   31</span>  va_start(ap, <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
-<div class="line"><span class="lineno">   32</span>  vsprintf(<a class="code hl_variable" href="../../db/dcc/error_8c_a5b536f67c70f2d4886484f6aa3e1b90d.html#a5b536f67c70f2d4886484f6aa3e1b90d">errmsg</a>, <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>, ap);</div>
-<div class="line"><span class="lineno">   33</span>  va_end(ap);</div>
+<div class="line"><span class="lineno">   31</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">va_start</a>(ap, <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
+<div class="line"><span class="lineno">   32</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">vsprintf</a>(<a class="code hl_variable" href="../../db/dcc/error_8c_a5b536f67c70f2d4886484f6aa3e1b90d.html#a5b536f67c70f2d4886484f6aa3e1b90d">errmsg</a>, <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>, ap);</div>
+<div class="line"><span class="lineno">   33</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">va_end</a>(ap);</div>
 <div class="line"><span class="lineno">   34</span>}</div>
 <div class="ttc" id="aerror_8c_a5b536f67c70f2d4886484f6aa3e1b90d_html_a5b536f67c70f2d4886484f6aa3e1b90d"><div class="ttname"><a href="../../db/dcc/error_8c_a5b536f67c70f2d4886484f6aa3e1b90d.html#a5b536f67c70f2d4886484f6aa3e1b90d">errmsg</a></div><div class="ttdeci">static char errmsg[200]</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00024">error.c:24</a></div></div>
 <div class="ttc" id="aerror_8c_a6b43cbb0b1293b10e9323567e52627bf_html_a6b43cbb0b1293b10e9323567e52627bf"><div class="ttname"><a href="../../db/dcc/error_8c_a6b43cbb0b1293b10e9323567e52627bf.html#a6b43cbb0b1293b10e9323567e52627bf">iserror</a></div><div class="ttdeci">static int iserror</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00023">error.c:23</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5_html_a2fc91f4e89bc37f261db820d231da2e5"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a></div><div class="ttdeci">void size_t s</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00271">m2-mem.cpp:271</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../db/dcc/error_8c_a5b536f67c70f2d4886484f6aa3e1b90d.html#a5b536f67c70f2d4886484f6aa3e1b90d">errmsg</a>, <a class="el" href="../../db/dcc/error_8c_a6b43cbb0b1293b10e9323567e52627bf.html#a6b43cbb0b1293b10e9323567e52627bf">iserror</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../db/dcc/error_8c_a5b536f67c70f2d4886484f6aa3e1b90d.html#a5b536f67c70f2d4886484f6aa3e1b90d">errmsg</a>, <a class="el" href="../../db/dcc/error_8c_a6b43cbb0b1293b10e9323567e52627bf.html#a6b43cbb0b1293b10e9323567e52627bf">iserror</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>.</p>
 
 </div>
 </div>
@@ -138,7 +139,7 @@ $(document).ready(function(){initNavTree('da/d41/error_8h_aa1e71b9c0f1bdf1cee4fc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../da/d41/error_8h.html">error.h</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/schreyer-resolution/res-f4-m2-interface.cpp File Reference</title>
+<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/schreyer-resolutions/res-f4-m2-interface.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -96,37 +96,37 @@ $(document).ready(function(){initNavTree('dc/d4f/res-f4-m2-interface_8cpp.html',
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d7/d61/m2tbb_8hpp_source.html">m2tbb.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/db7/res-f4-m2-interface_8hpp_source.html">schreyer-resolution/res-f4-m2-interface.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d8/d9a/_z_z_8hpp_source.html">ZZ.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d2/df7/aring-_r_r_r_8hpp_source.html">aring-RRR.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/df6/aring-zz-gmp_8hpp_source.html">aring-zz-gmp.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d77/aring-zzp-ffpack_8hpp_source.html">aring-zzp-ffpack.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/d49/aring-zzp-flint_8hpp_source.html">aring-zzp-flint.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/d40/aring_8hpp_source.html">aring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/db7/res-f4-m2-interface_8hpp_source.html">schreyer-resolutions/res-f4-m2-interface.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d9a/_z_z_8hpp_source.html">rings/ZZ.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/df7/aring-_r_r_r_8hpp_source.html">basic-rings/aring-RRR.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dc3/aring-_z_z-gmp_8hpp_source.html">basic-rings/aring-ZZ-gmp.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d4a/aring-_z_zp-ffpack_8hpp_source.html">basic-rings/aring-ZZp-ffpack.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/df7/aring-_z_zp-flint_8hpp_source.html">basic-rings/aring-ZZp-flint.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d40/aring_8hpp_source.html">basic-rings/aring.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/d07/coeffrings_8hpp_source.html">coeffrings.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/dc9/comp_8hpp_source.html">comp.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d0a/dmat_8hpp_source.html">dmat.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/dc9/comp_8hpp_source.html">computations/comp.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">basic-mutable-matrices/mat-linalg.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d0a/dmat_8hpp_source.html">basic-mutable-matrices/dmat.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../de/d28/m2-types_8h_source.html">interface/m2-types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d41/error_8h_source.html">error.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d49/exceptions_8hpp_source.html">exceptions.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/dcb/freemod_8hpp_source.html">freemod.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/dcb/freemod_8hpp_source.html">free-modules/freemod.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d6c/gauss_8hpp_source.html">gauss.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d8/d11/gbring_8hpp_source.html">gbring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d11/gbring_8hpp_source.html">groebner-computations/gbring.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d0/d7a/groebner_8h_source.html">interface/groebner.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/dc2/mat_8hpp_source.html">mat.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d2/d80/matrix-con_8hpp_source.html">matrix-con.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/dc2/mat_8hpp_source.html">basic-mutable-matrices/mat.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d80/matrix-con_8hpp_source.html">matrices/matrix-con.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrices/matrix.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/dd0/monoid_8hpp_source.html">monoid.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d94/newdelete_8hpp_source.html">newdelete.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d6c/polyring_8hpp_source.html">polyring.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d10/ring_8hpp_source.html">ring.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/d2f/res-f4-computation_8hpp_source.html">schreyer-resolution/res-f4-computation.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/db7/res-moninfo_8hpp_source.html">schreyer-resolution/res-moninfo.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/d0a/res-monomial-types_8hpp_source.html">schreyer-resolution/res-monomial-types.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/d96/res-poly-ring_8hpp_source.html">schreyer-resolution/res-poly-ring.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dd9/res-schreyer-frame_8hpp_source.html">schreyer-resolution/res-schreyer-frame.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/d7b/res-schreyer-order_8hpp_source.html">schreyer-resolution/res-schreyer-order.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d6c/polyring_8hpp_source.html">rings/polyring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d10/ring_8hpp_source.html">rings/ring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d2f/res-f4-computation_8hpp_source.html">schreyer-resolutions/res-f4-computation.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/db7/res-moninfo_8hpp_source.html">schreyer-resolutions/res-moninfo.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d0a/res-monomial-types_8hpp_source.html">schreyer-resolutions/res-monomial-types.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d96/res-poly-ring_8hpp_source.html">schreyer-resolutions/res-poly-ring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dd9/res-schreyer-frame_8hpp_source.html">schreyer-resolutions/res-schreyer-frame.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d7b/res-schreyer-order_8hpp_source.html">schreyer-resolutions/res-schreyer-order.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/d05/timing_8hpp_source.html">timing.hpp</a>&quot;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
@@ -145,16 +145,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4a5feab94146cc669b508ea3e550c4bb" id="r_a4a5feab94146cc669b508ea3e550c4bb"><td class="memTemplParams" colspan="2">template&lt;typename Gen &gt; </td></tr>
+<tr class="memitem:a4a5feab94146cc669b508ea3e550c4bb" id="r_a4a5feab94146cc669b508ea3e550c4bb"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> Gen &gt; </td></tr>
 <tr class="memitem:a4a5feab94146cc669b508ea3e550c4bb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_a4a5feab94146cc669b508ea3e550c4bb.html#a4a5feab94146cc669b508ea3e550c4bb">matrixFromSparseMatrixGenerator</a> (Gen &amp;<a class="el" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>)</td></tr>
 <tr class="separator:a4a5feab94146cc669b508ea3e550c4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae931170547e656946abc459bf1404fe8" id="r_ae931170547e656946abc459bf1404fe8"><td class="memTemplParams" colspan="2">template&lt;typename RingType , typename Gen &gt; </td></tr>
-<tr class="memitem:ae931170547e656946abc459bf1404fe8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_ae931170547e656946abc459bf1404fe8.html#ae931170547e656946abc459bf1404fe8">setDMatFromSparseMatrixGenerator</a> (Gen &amp;<a class="el" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>, <a class="el" href="../../da/dc3/class_d_mat.html">DMat</a>&lt; RingType &gt; &amp;M)</td></tr>
+<tr class="memitem:ae931170547e656946abc459bf1404fe8" id="r_ae931170547e656946abc459bf1404fe8"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> RingType , <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> Gen &gt; </td></tr>
+<tr class="memitem:ae931170547e656946abc459bf1404fe8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_ae931170547e656946abc459bf1404fe8.html#ae931170547e656946abc459bf1404fe8">setDMatFromSparseMatrixGenerator</a> (Gen &amp;<a class="el" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>, <a class="el" href="../../da/dc3/class_d_mat.html">DMat</a>&lt; RingType &gt; &amp;M)</td></tr>
 <tr class="separator:ae931170547e656946abc459bf1404fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a758bbaf19ae1d0a2ea7e0ccfe5a73b0e" id="r_a758bbaf19ae1d0a2ea7e0ccfe5a73b0e"><td class="memTemplParams" colspan="2">template&lt;typename RingType , typename Gen &gt; </td></tr>
-<tr class="memitem:a758bbaf19ae1d0a2ea7e0ccfe5a73b0e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_a758bbaf19ae1d0a2ea7e0ccfe5a73b0e.html#a758bbaf19ae1d0a2ea7e0ccfe5a73b0e">setDMatFromSparseMatrixGeneratorTransposed</a> (Gen &amp;<a class="el" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>, <a class="el" href="../../da/dc3/class_d_mat.html">DMat</a>&lt; RingType &gt; &amp;M)</td></tr>
+<tr class="memitem:a758bbaf19ae1d0a2ea7e0ccfe5a73b0e" id="r_a758bbaf19ae1d0a2ea7e0ccfe5a73b0e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> RingType , <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> Gen &gt; </td></tr>
+<tr class="memitem:a758bbaf19ae1d0a2ea7e0ccfe5a73b0e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_a758bbaf19ae1d0a2ea7e0ccfe5a73b0e.html#a758bbaf19ae1d0a2ea7e0ccfe5a73b0e">setDMatFromSparseMatrixGeneratorTransposed</a> (Gen &amp;<a class="el" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>, <a class="el" href="../../da/dc3/class_d_mat.html">DMat</a>&lt; RingType &gt; &amp;M)</td></tr>
 <tr class="separator:a758bbaf19ae1d0a2ea7e0ccfe5a73b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eced05e8b2e32da2124287a6138a9a6" id="r_a1eced05e8b2e32da2124287a6138a9a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_a1eced05e8b2e32da2124287a6138a9a6.html#a1eced05e8b2e32da2124287a6138a9a6">rawMinimalBetti</a> (<a class="el" href="../../d6/dea/class_computation.html">Computation</a> *C, <a class="el" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a> slanted_degree_limit, <a class="el" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a> length_limit)</td></tr>
+<tr class="memitem:a1eced05e8b2e32da2124287a6138a9a6" id="r_a1eced05e8b2e32da2124287a6138a9a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp_a1eced05e8b2e32da2124287a6138a9a6.html#a1eced05e8b2e32da2124287a6138a9a6">rawMinimalBetti</a> (<a class="el" href="../../d6/dea/class_computation.html">Computation</a> *C, <a class="el" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">slanted_degree_limit</a>, <a class="el" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a> length_limit)</td></tr>
 <tr class="separator:a1eced05e8b2e32da2124287a6138a9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -162,8 +162,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_208df166e208656f2e3436240a4845e8.html">schreyer-resolution</a></li><li class="navelem"><a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp.html">res-f4-m2-interface.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_b9fb7e9634d0525ba40579ac5dc0678f.html">schreyer-resolutions</a></li><li class="navelem"><a class="el" href="../../dc/d4f/res-f4-m2-interface_8cpp.html">res-f4-m2-interface.cpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/tower.cpp File Reference</title>
+<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/rings/tower.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -96,14 +96,14 @@ $(document).ready(function(){initNavTree('de/d5c/tower_8cpp.html','../../'); ini
   <div class="headertitle"><div class="title">tower.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/de0/tower_8hpp_source.html">tower.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/df2/_exponent_list_8hpp_source.html">ExponentList.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/de0/tower_8hpp_source.html">rings/tower.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/df2/_exponent_list_8hpp_source.html">monomials/ExponentList.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/da9/dpoly_8hpp_source.html">dpoly.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d10/ring_8hpp_source.html">ring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d10/ring_8hpp_source.html">rings/ring.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d0/dcf/ringmap_8hpp_source.html">ringmap.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d6c/polyring_8hpp_source.html">polyring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d6c/polyring_8hpp_source.html">rings/polyring.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/dd0/monoid_8hpp_source.html">monoid.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/d5a/relem_8hpp_source.html">relem.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d2e/ring-element_8hpp_source.html">ring-elements/ring-element.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../de/d5c/tower_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -114,16 +114,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a6e6fff5c064e4333210c0afaaaa8ab1e" id="r_a6e6fff5c064e4333210c0afaaaa8ab1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/tower_8cpp_a6e6fff5c064e4333210c0afaaaa8ab1e.html#a6e6fff5c064e4333210c0afaaaa8ab1e">TOWER_POLYNOMIAL_VAL</a>(f)&#160;&#160;&#160;reinterpret_cast&lt;TowerPolynomial&gt;((f).poly_val)</td></tr>
+<tr class="memitem:a6e6fff5c064e4333210c0afaaaa8ab1e" id="r_a6e6fff5c064e4333210c0afaaaa8ab1e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/tower_8cpp_a6e6fff5c064e4333210c0afaaaa8ab1e.html#a6e6fff5c064e4333210c0afaaaa8ab1e">TOWER_POLYNOMIAL_VAL</a>(f)&#160;&#160;&#160;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">reinterpret_cast</a>&lt;TowerPolynomial&gt;((f).poly_val)</td></tr>
 <tr class="separator:a6e6fff5c064e4333210c0afaaaa8ab1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a37239f38e0a22bfafae94ae312efd2da" id="r_a37239f38e0a22bfafae94ae312efd2da"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/tower_8cpp_a37239f38e0a22bfafae94ae312efd2da.html#a37239f38e0a22bfafae94ae312efd2da">towerGCD</a> (const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *F, const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *<a class="el" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>)</td></tr>
+<tr class="memitem:a37239f38e0a22bfafae94ae312efd2da" id="r_a37239f38e0a22bfafae94ae312efd2da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/tower_8cpp_a37239f38e0a22bfafae94ae312efd2da.html#a37239f38e0a22bfafae94ae312efd2da">towerGCD</a> (<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *F, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *<a class="el" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>)</td></tr>
 <tr class="separator:a37239f38e0a22bfafae94ae312efd2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01245f37001ac9d9f7f704de568280e0" id="r_a01245f37001ac9d9f7f704de568280e0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/tower_8cpp_a01245f37001ac9d9f7f704de568280e0.html#a01245f37001ac9d9f7f704de568280e0">towerExtendedGCD</a> (const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *F, const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *<a class="el" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>, const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> **A, const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> **B)</td></tr>
+<tr class="memitem:a01245f37001ac9d9f7f704de568280e0" id="r_a01245f37001ac9d9f7f704de568280e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/tower_8cpp_a01245f37001ac9d9f7f704de568280e0.html#a01245f37001ac9d9f7f704de568280e0">towerExtendedGCD</a> (<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *F, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *<a class="el" href="../../d0/dfb/res-tasking-example_8cpp_acc0eea0b8cd2df09e6f3c2bade95a903.html#acc0eea0b8cd2df09e6f3c2bade95a903">G</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> **<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> **<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">B</a>)</td></tr>
 <tr class="separator:a01245f37001ac9d9f7f704de568280e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ea9c59713bed6bb4684531819bdd7d6" id="r_a5ea9c59713bed6bb4684531819bdd7d6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/tower_8cpp_a5ea9c59713bed6bb4684531819bdd7d6.html#a5ea9c59713bed6bb4684531819bdd7d6">rawTowerTranslatePoly</a> (const <a class="el" href="../../dd/dcf/class_ring.html">Ring</a> *newRing, const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *F)</td></tr>
+<tr class="memitem:a5ea9c59713bed6bb4684531819bdd7d6" id="r_a5ea9c59713bed6bb4684531819bdd7d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/tower_8cpp_a5ea9c59713bed6bb4684531819bdd7d6.html#a5ea9c59713bed6bb4684531819bdd7d6">rawTowerTranslatePoly</a> (<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/dcf/class_ring.html">Ring</a> *<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newRing</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> *F)</td></tr>
 <tr class="separator:a5ea9c59713bed6bb4684531819bdd7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -131,8 +131,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../de/d5c/tower_8cpp.html">tower.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_6df2cdd0f9fadc35f84e5151c08650b8.html">rings</a></li><li class="navelem"><a class="el" href="../../de/d5c/tower_8cpp.html">tower.cpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

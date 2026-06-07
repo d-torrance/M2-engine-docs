@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('d4/d7c/class_monomial_collection_var_s
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt; const <a class="el" href="../../d1/da0/classint.html">int</a> *, <a class="el" href="../../d9/db9/classbool.html">bool</a> &gt; MonomialCollectionVarSize::findOrInsert </td>
+          <td class="memname">std::pair&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d1/da0/classint.html">int</a> *, <a class="el" href="../../d9/db9/classbool.html">bool</a> &gt; MonomialCollectionVarSize::findOrInsert </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/da0/classint.html">int</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d1/da0/classint.html">int</a> *&#160;</td>
           <td class="paramname"><em>monom</em></td><td>)</td>
           <td></td>
         </tr>
@@ -117,14 +117,15 @@ $(document).ready(function(){initNavTree('d4/d7c/class_monomial_collection_var_s
 <div class="fragment"><div class="line"><span class="lineno">  270</span>  {</div>
 <div class="line"><span class="lineno">  271</span>    std::pair&lt;int*, int*&gt; mon { <a class="code hl_variable" href="../../d4/d7c/class_monomial_collection_var_size_ae17dbea2ff0677073d1ddd9f24f454f3.html#ae17dbea2ff0677073d1ddd9f24f454f3">mMonomialMemory</a>.<a class="code hl_function" href="../../d3/d43/class_monomial_memory_space_a18fb83f3bf2263ab3ebd6de0ce08cb56.html#a18fb83f3bf2263ab3ebd6de0ce08cb56">alloc</a>(*monom) };</div>
 <div class="line"><span class="lineno">  272</span>    std::copy(monom, monom + *monom, mon.first);</div>
-<div class="line"><span class="lineno">  273</span>    assert(mon.second - mon.first &gt;= *monom);</div>
+<div class="line"><span class="lineno">  273</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">assert</a>(mon.second - mon.first &gt;= *monom);</div>
 <div class="line"><span class="lineno">  274</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/d7c/class_monomial_collection_var_size_afc4d0d8b0767d19d9f0bb1756a1e3bfb.html#afc4d0d8b0767d19d9f0bb1756a1e3bfb">findOrInsertTopInternedMonomial</a>(mon.first);</div>
 <div class="line"><span class="lineno">  275</span>  }</div>
 <div class="ttc" id="aclass_monomial_collection_var_size_ae17dbea2ff0677073d1ddd9f24f454f3_html_ae17dbea2ff0677073d1ddd9f24f454f3"><div class="ttname"><a href="../../d4/d7c/class_monomial_collection_var_size_ae17dbea2ff0677073d1ddd9f24f454f3.html#ae17dbea2ff0677073d1ddd9f24f454f3">MonomialCollectionVarSize::mMonomialMemory</a></div><div class="ttdeci">MonomialMemorySpace mMonomialMemory</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d2b/monomial-sets_8hpp_source.html#l00300">monomial-sets.hpp:300</a></div></div>
 <div class="ttc" id="aclass_monomial_collection_var_size_afc4d0d8b0767d19d9f0bb1756a1e3bfb_html_afc4d0d8b0767d19d9f0bb1756a1e3bfb"><div class="ttname"><a href="../../d4/d7c/class_monomial_collection_var_size_afc4d0d8b0767d19d9f0bb1756a1e3bfb.html#afc4d0d8b0767d19d9f0bb1756a1e3bfb">MonomialCollectionVarSize::findOrInsertTopInternedMonomial</a></div><div class="ttdeci">std::pair&lt; const int *, bool &gt; findOrInsertTopInternedMonomial(int *&amp;monom)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d2b/monomial-sets_8hpp_source.html#l00279">monomial-sets.hpp:279</a></div></div>
 <div class="ttc" id="aclass_monomial_memory_space_a18fb83f3bf2263ab3ebd6de0ce08cb56_html_a18fb83f3bf2263ab3ebd6de0ce08cb56"><div class="ttname"><a href="../../d3/d43/class_monomial_memory_space_a18fb83f3bf2263ab3ebd6de0ce08cb56.html#a18fb83f3bf2263ab3ebd6de0ce08cb56">MonomialMemorySpace::alloc</a></div><div class="ttdeci">std::pair&lt; int *, int * &gt; alloc(int size)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d2b/monomial-sets_8hpp_source.html#l00033">monomial-sets.hpp:33</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d43/class_monomial_memory_space_a18fb83f3bf2263ab3ebd6de0ce08cb56.html#a18fb83f3bf2263ab3ebd6de0ce08cb56">MonomialMemorySpace::alloc()</a>, <a class="el" href="../../d4/d7c/class_monomial_collection_var_size_afc4d0d8b0767d19d9f0bb1756a1e3bfb.html#afc4d0d8b0767d19d9f0bb1756a1e3bfb">findOrInsertTopInternedMonomial()</a>, and <a class="el" href="../../d4/d7c/class_monomial_collection_var_size_ae17dbea2ff0677073d1ddd9f24f454f3.html#ae17dbea2ff0677073d1ddd9f24f454f3">mMonomialMemory</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d43/class_monomial_memory_space_a18fb83f3bf2263ab3ebd6de0ce08cb56.html#a18fb83f3bf2263ab3ebd6de0ce08cb56">MonomialMemorySpace::alloc()</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d4/d7c/class_monomial_collection_var_size_afc4d0d8b0767d19d9f0bb1756a1e3bfb.html#afc4d0d8b0767d19d9f0bb1756a1e3bfb">findOrInsertTopInternedMonomial()</a>, and <a class="el" href="../../d4/d7c/class_monomial_collection_var_size_ae17dbea2ff0677073d1ddd9f24f454f3.html#ae17dbea2ff0677073d1ddd9f24f454f3">mMonomialMemory</a>.</p>
 
 </div>
 </div>
@@ -134,7 +135,7 @@ $(document).ready(function(){initNavTree('d4/d7c/class_monomial_collection_var_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d7c/class_monomial_collection_var_size.html">MonomialCollectionVarSize</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

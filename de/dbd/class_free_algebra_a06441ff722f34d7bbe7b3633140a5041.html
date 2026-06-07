@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a06441ff722f
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FreeAlgebra::add_to_end </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> FreeAlgebra::add_to_end </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a> &amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a06441ff722f
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/d21/struct_monom.html">Monom</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/d21/struct_monom.html">Monom</a> &amp;&#160;</td>
           <td class="paramname"><em>monom</em>&#160;</td>
         </tr>
         <tr>
@@ -124,17 +124,18 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a06441ff722f
 <p class="definition">Definition at line <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html#l00687">687</a> of file <a class="el" href="../../dc/d2e/_free_algebra_8cpp_source.html">FreeAlgebra.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  688</span>{</div>
 <div class="line"><span class="lineno">  689</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../de/dbd/class_free_algebra_a020e04c88b7cfa1ff575c9089e61464c.html#a020e04c88b7cfa1ff575c9089e61464c">coefficientRing</a>()-&gt;<a class="code hl_function" href="../../de/dbd/class_free_algebra_a8d2c48d5d414cf01f078623b2892f2d3.html#a8d2c48d5d414cf01f078623b2892f2d3">is_zero</a>(coeff)) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  690</span>  <span class="keyword">auto</span>&amp; outcoeff = f.getCoeffInserter();</div>
-<div class="line"><span class="lineno">  691</span>  <span class="keyword">auto</span>&amp; outmonom = f.getMonomInserter();</div>
-<div class="line"><span class="lineno">  692</span>  outcoeff.push_back(coeff);</div>
-<div class="line"><span class="lineno">  693</span>  outmonom.insert(outmonom.end(),monom.<a class="code hl_function" href="../../dd/d21/struct_monom_a9cb7b2ad287344fbfc6e0f48afe2d7e0.html#a9cb7b2ad287344fbfc6e0f48afe2d7e0">begin</a>(), monom.<a class="code hl_function" href="../../dd/d21/struct_monom_a83d0330247dcd7d494d1cf46695578d0.html#a83d0330247dcd7d494d1cf46695578d0">end</a>());</div>
+<div class="line"><span class="lineno">  690</span>  <span class="keyword">auto</span>&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">outcoeff</a> = f.getCoeffInserter();</div>
+<div class="line"><span class="lineno">  691</span>  <span class="keyword">auto</span>&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">outmonom</a> = f.getMonomInserter();</div>
+<div class="line"><span class="lineno">  692</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">outcoeff</a>.push_back(coeff);</div>
+<div class="line"><span class="lineno">  693</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">outmonom</a>.insert(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">outmonom</a>.end(),monom.<a class="code hl_function" href="../../dd/d21/struct_monom_a9cb7b2ad287344fbfc6e0f48afe2d7e0.html#a9cb7b2ad287344fbfc6e0f48afe2d7e0">begin</a>(), monom.<a class="code hl_function" href="../../dd/d21/struct_monom_a83d0330247dcd7d494d1cf46695578d0.html#a83d0330247dcd7d494d1cf46695578d0">end</a>());</div>
 <div class="line"><span class="lineno">  694</span>}</div>
 <div class="ttc" id="aclass_free_algebra_a020e04c88b7cfa1ff575c9089e61464c_html_a020e04c88b7cfa1ff575c9089e61464c"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a020e04c88b7cfa1ff575c9089e61464c.html#a020e04c88b7cfa1ff575c9089e61464c">FreeAlgebra::coefficientRing</a></div><div class="ttdeci">const Ring * coefficientRing() const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00040">FreeAlgebra.hpp:40</a></div></div>
 <div class="ttc" id="aclass_free_algebra_a8d2c48d5d414cf01f078623b2892f2d3_html_a8d2c48d5d414cf01f078623b2892f2d3"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a8d2c48d5d414cf01f078623b2892f2d3.html#a8d2c48d5d414cf01f078623b2892f2d3">FreeAlgebra::is_zero</a></div><div class="ttdeci">bool is_zero(const Poly &amp;f) const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dc4/_free_algebra_8hpp_source.html#l00070">FreeAlgebra.hpp:70</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="astruct_monom_a83d0330247dcd7d494d1cf46695578d0_html_a83d0330247dcd7d494d1cf46695578d0"><div class="ttname"><a href="../../dd/d21/struct_monom_a83d0330247dcd7d494d1cf46695578d0.html#a83d0330247dcd7d494d1cf46695578d0">Monom::end</a></div><div class="ttdeci">const int * end() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00037">Polynomial.hpp:37</a></div></div>
 <div class="ttc" id="astruct_monom_a9cb7b2ad287344fbfc6e0f48afe2d7e0_html_a9cb7b2ad287344fbfc6e0f48afe2d7e0"><div class="ttname"><a href="../../dd/d21/struct_monom_a9cb7b2ad287344fbfc6e0f48afe2d7e0.html#a9cb7b2ad287344fbfc6e0f48afe2d7e0">Monom::begin</a></div><div class="ttdeci">const int * begin() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00036">Polynomial.hpp:36</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dd/d21/struct_monom_a9cb7b2ad287344fbfc6e0f48afe2d7e0.html#a9cb7b2ad287344fbfc6e0f48afe2d7e0">Monom::begin()</a>, <a class="el" href="../../de/dbd/class_free_algebra_a020e04c88b7cfa1ff575c9089e61464c.html#a020e04c88b7cfa1ff575c9089e61464c">coefficientRing()</a>, <a class="el" href="../../dd/d21/struct_monom_a83d0330247dcd7d494d1cf46695578d0.html#a83d0330247dcd7d494d1cf46695578d0">Monom::end()</a>, and <a class="el" href="../../de/dbd/class_free_algebra_a8d2c48d5d414cf01f078623b2892f2d3.html#a8d2c48d5d414cf01f078623b2892f2d3">is_zero()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d21/struct_monom_a9cb7b2ad287344fbfc6e0f48afe2d7e0.html#a9cb7b2ad287344fbfc6e0f48afe2d7e0">Monom::begin()</a>, <a class="el" href="../../de/dbd/class_free_algebra_a020e04c88b7cfa1ff575c9089e61464c.html#a020e04c88b7cfa1ff575c9089e61464c">coefficientRing()</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../dd/d21/struct_monom_a83d0330247dcd7d494d1cf46695578d0.html#a83d0330247dcd7d494d1cf46695578d0">Monom::end()</a>, and <a class="el" href="../../de/dbd/class_free_algebra_a8d2c48d5d414cf01f078623b2892f2d3.html#a8d2c48d5d414cf01f078623b2892f2d3">is_zero()</a>.</p>
 
 </div>
 </div>
@@ -144,7 +145,7 @@ $(document).ready(function(){initNavTree('de/dbd/class_free_algebra_a06441ff722f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dbd/class_free_algebra.html">FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

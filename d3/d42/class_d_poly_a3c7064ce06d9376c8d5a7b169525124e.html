@@ -108,15 +108,16 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a3c7064ce06d9376c8
 <p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  101</span>{</div>
 <div class="line"><span class="lineno">  102</span>  <span class="comment">// if negative, then that variable is transcendental over lower vars</span></div>
-<div class="line"><span class="lineno">  103</span>  <span class="keywordflow">if</span> (level &lt; 0 || level &gt;= <a class="code hl_variable" href="../../d3/d42/class_d_poly_ae16cc47ff6c3e6a7e8e72d714a5665db.html#ae16cc47ff6c3e6a7e8e72d714a5665db">nlevels</a>) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">  103</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">level &lt; 0 || level &gt;</a>= <a class="code hl_variable" href="../../d3/d42/class_d_poly_ae16cc47ff6c3e6a7e8e72d714a5665db.html#ae16cc47ff6c3e6a7e8e72d714a5665db">nlevels</a>) <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">  104</span>  TowerPolynomial f = <a class="code hl_variable" href="../../d3/d42/class_d_poly_a04698c503b7101aca77b17ca1f9684b8.html#a04698c503b7101aca77b17ca1f9684b8">extensions</a>[level];</div>
 <div class="line"><span class="lineno">  105</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">  106</span>  <span class="keywordflow">return</span> f-&gt;deg;</div>
 <div class="line"><span class="lineno">  107</span>}</div>
 <div class="ttc" id="aclass_d_poly_a04698c503b7101aca77b17ca1f9684b8_html_a04698c503b7101aca77b17ca1f9684b8"><div class="ttname"><a href="../../d3/d42/class_d_poly_a04698c503b7101aca77b17ca1f9684b8.html#a04698c503b7101aca77b17ca1f9684b8">DPoly::extensions</a></div><div class="ttdeci">TowerPolynomial * extensions</div><div class="ttdef"><b>Definition</b> <a href="../../dc/da9/dpoly_8hpp_source.html#l00048">dpoly.hpp:48</a></div></div>
 <div class="ttc" id="aclass_d_poly_ae16cc47ff6c3e6a7e8e72d714a5665db_html_ae16cc47ff6c3e6a7e8e72d714a5665db"><div class="ttname"><a href="../../d3/d42/class_d_poly_ae16cc47ff6c3e6a7e8e72d714a5665db.html#ae16cc47ff6c3e6a7e8e72d714a5665db">DPoly::nlevels</a></div><div class="ttdeci">int nlevels</div><div class="ttdef"><b>Definition</b> <a href="../../dc/da9/dpoly_8hpp_source.html#l00047">dpoly.hpp:47</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d42/class_d_poly_a04698c503b7101aca77b17ca1f9684b8.html#a04698c503b7101aca77b17ca1f9684b8">extensions</a>, and <a class="el" href="../../d3/d42/class_d_poly_ae16cc47ff6c3e6a7e8e72d714a5665db.html#ae16cc47ff6c3e6a7e8e72d714a5665db">nlevels</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d3/d42/class_d_poly_a04698c503b7101aca77b17ca1f9684b8.html#a04698c503b7101aca77b17ca1f9684b8">extensions</a>, and <a class="el" href="../../d3/d42/class_d_poly_ae16cc47ff6c3e6a7e8e72d714a5665db.html#ae16cc47ff6c3e6a7e8e72d714a5665db">nlevels</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/de6/class_d_ring_a6bbd19399442a01935a486b27de05c7d.html#a6bbd19399442a01935a486b27de05c7d">DRing::extension_degree()</a>, <a class="el" href="../../d3/d42/class_d_poly_aabed8cf60a08a021306072a189ad68a6.html#aabed8cf60a08a021306072a189ad68a6">lowerP()</a>, and <a class="el" href="../../d3/d42/class_d_poly_a7ece0faadeb4400ee873eb4529fcc89a.html#a7ece0faadeb4400ee873eb4529fcc89a">random()</a>.</p>
 
@@ -128,7 +129,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a3c7064ce06d9376c8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

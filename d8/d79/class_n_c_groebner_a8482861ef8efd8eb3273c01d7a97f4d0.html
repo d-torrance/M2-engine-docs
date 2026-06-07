@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('d8/d79/class_n_c_groebner_a8482861ef8e
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto NCGroebner::createOverlapLeadWord </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">auto</a> NCGroebner::createOverlapLeadWord </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a> &amp;&#160;</td>
           <td class="paramname"><em>wordAsPoly</em>, </td>
@@ -110,26 +110,27 @@ $(document).ready(function(){initNavTree('d8/d79/class_n_c_groebner_a8482861ef8e
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; void</td>
+          <td></td><td> const -&gt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc7/_n_c_groebner_8cpp_source.html#l00388">388</a> of file <a class="el" href="../../df/dc7/_n_c_groebner_8cpp_source.html">NCGroebner.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  389</span>{</div>
-<div class="line"><span class="lineno">  390</span>  <span class="keyword">auto</span> A = <a class="code hl_function" href="../../d8/d79/class_n_c_groebner_ad142d233db2dede08c28314a23187228.html#ad142d233db2dede08c28314a23187228">freeAlgebra</a>();</div>
-<div class="line"><span class="lineno">  391</span>  <a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a> tmp;</div>
-<div class="line"><span class="lineno">  392</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> <a class="code hl_function" href="../../da/def/_suffix_tree_8cpp_a268cb68e13e7e5362dae595c483ad349.html#a268cb68e13e7e5362dae595c483ad349">prefix</a> = A.lead_word_prefix(*<a class="code hl_variable" href="../../d8/d79/class_n_c_groebner_ab6491c0cc167222e08843b65df3aa2bd.html#ab6491c0cc167222e08843b65df3aa2bd">mGroebner</a>[std::get&lt;0&gt;(o)], std::get&lt;1&gt;(o));</div>
-<div class="line"><span class="lineno">  393</span>  A.lead_term_as_poly(tmp, *<a class="code hl_variable" href="../../d8/d79/class_n_c_groebner_ab6491c0cc167222e08843b65df3aa2bd.html#ab6491c0cc167222e08843b65df3aa2bd">mGroebner</a>[std::get&lt;2&gt;(o)]);</div>
-<div class="line"><span class="lineno">  394</span>  A.mult_by_term_left(wordAsPoly, tmp, A.coefficientRing()-&gt;from_long(1), <a class="code hl_function" href="../../da/def/_suffix_tree_8cpp_a268cb68e13e7e5362dae595c483ad349.html#a268cb68e13e7e5362dae595c483ad349">prefix</a>);</div>
+<div class="line"><span class="lineno">  390</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a> = <a class="code hl_function" href="../../d8/d79/class_n_c_groebner_ad142d233db2dede08c28314a23187228.html#ad142d233db2dede08c28314a23187228">freeAlgebra</a>();</div>
+<div class="line"><span class="lineno">  391</span>  <a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>;</div>
+<div class="line"><span class="lineno">  392</span>  <a class="code hl_class" href="../../d3/da0/class_word.html">Word</a> <a class="code hl_function" href="../../da/def/_suffix_tree_8cpp_a268cb68e13e7e5362dae595c483ad349.html#a268cb68e13e7e5362dae595c483ad349">prefix</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a>.lead_word_prefix(*<a class="code hl_variable" href="../../d8/d79/class_n_c_groebner_ab6491c0cc167222e08843b65df3aa2bd.html#ab6491c0cc167222e08843b65df3aa2bd">mGroebner</a>[std::get&lt;0&gt;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a>)], std::get&lt;1&gt;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a>));</div>
+<div class="line"><span class="lineno">  393</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a>.lead_term_as_poly(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>, *<a class="code hl_variable" href="../../d8/d79/class_n_c_groebner_ab6491c0cc167222e08843b65df3aa2bd.html#ab6491c0cc167222e08843b65df3aa2bd">mGroebner</a>[std::get&lt;2&gt;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a>)]);</div>
+<div class="line"><span class="lineno">  394</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a>.mult_by_term_left(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">wordAsPoly</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a>.coefficientRing()-&gt;from_long(1), <a class="code hl_function" href="../../da/def/_suffix_tree_8cpp_a268cb68e13e7e5362dae595c483ad349.html#a268cb68e13e7e5362dae595c483ad349">prefix</a>);</div>
 <div class="line"><span class="lineno">  395</span>}</div>
 <div class="ttc" id="a_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30_html_aa2e1f459d90ab6e50fc0b8c642dceb30"><div class="ttname"><a href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a></div><div class="ttdeci">Polynomial&lt; CoefficientRingType &gt; Poly</div><div class="ttdef"><b>Definition</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00265">Polynomial.hpp:265</a></div></div>
 <div class="ttc" id="a_suffix_tree_8cpp_a268cb68e13e7e5362dae595c483ad349_html_a268cb68e13e7e5362dae595c483ad349"><div class="ttname"><a href="../../da/def/_suffix_tree_8cpp_a268cb68e13e7e5362dae595c483ad349.html#a268cb68e13e7e5362dae595c483ad349">prefix</a></div><div class="ttdeci">Word prefix(const Word vec, int lengthOfPrefix)</div><div class="ttdef"><b>Definition</b> <a href="../../da/def/_suffix_tree_8cpp_source.html#l00080">SuffixTree.cpp:80</a></div></div>
 <div class="ttc" id="aclass_n_c_groebner_ab6491c0cc167222e08843b65df3aa2bd_html_ab6491c0cc167222e08843b65df3aa2bd"><div class="ttname"><a href="../../d8/d79/class_n_c_groebner_ab6491c0cc167222e08843b65df3aa2bd.html#ab6491c0cc167222e08843b65df3aa2bd">NCGroebner::mGroebner</a></div><div class="ttdeci">PolyList mGroebner</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d37/_n_c_groebner_8hpp_source.html#l00032">NCGroebner.hpp:32</a></div></div>
 <div class="ttc" id="aclass_n_c_groebner_ad142d233db2dede08c28314a23187228_html_ad142d233db2dede08c28314a23187228"><div class="ttname"><a href="../../d8/d79/class_n_c_groebner_ad142d233db2dede08c28314a23187228.html#ad142d233db2dede08c28314a23187228">NCGroebner::freeAlgebra</a></div><div class="ttdeci">const FreeAlgebra &amp; freeAlgebra() const</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d37/_n_c_groebner_8hpp_source.html#l00048">NCGroebner.hpp:48</a></div></div>
 <div class="ttc" id="aclass_word_html"><div class="ttname"><a href="../../d3/da0/class_word.html">Word</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd2/_word_8hpp_source.html#l00007">Word.hpp:8</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/def/_suffix_tree_8cpp_a268cb68e13e7e5362dae595c483ad349.html#a268cb68e13e7e5362dae595c483ad349">prefix()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../da/def/_suffix_tree_8cpp_a268cb68e13e7e5362dae595c483ad349.html#a268cb68e13e7e5362dae595c483ad349">prefix()</a>.</p>
 
 </div>
 </div>
@@ -139,7 +140,7 @@ $(document).ready(function(){initNavTree('d8/d79/class_n_c_groebner_a8482861ef8e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d79/class_n_c_groebner.html">NCGroebner</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a540eeca65a8f33a72
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const TowerPolynomial&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> TowerPolynomial&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a540eeca65a8f33a72
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const TowerPolynomial&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> TowerPolynomial&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -131,10 +131,10 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a540eeca65a8f33a72
 <div class="fragment"><div class="line"><span class="lineno"> 1377</span>{</div>
 <div class="line"><span class="lineno"> 1378</span>  <span class="comment">// We assume that m &gt; 0. THIS IS NOT CHECKED!!</span></div>
 <div class="line"><span class="lineno"> 1379</span>  mpz_t n;</div>
-<div class="line"><span class="lineno"> 1380</span>  mpz_init_set(n, m);</div>
-<div class="line"><span class="lineno"> 1381</span>  TowerPolynomial prod = <a class="code hl_function" href="../../d3/d42/class_d_poly_afd5f4ee7b004b491f1222ee6ce5df52e.html#afd5f4ee7b004b491f1222ee6ce5df52e">from_long</a>(level, 1);</div>
+<div class="line"><span class="lineno"> 1380</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpz_init_set</a>(n, m);</div>
+<div class="line"><span class="lineno"> 1381</span>  TowerPolynomial <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prod</a> = <a class="code hl_function" href="../../d3/d42/class_d_poly_afd5f4ee7b004b491f1222ee6ce5df52e.html#afd5f4ee7b004b491f1222ee6ce5df52e">from_long</a>(level, 1);</div>
 <div class="line"><span class="lineno"> 1382</span>  TowerPolynomial <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a> = <a class="code hl_function" href="../../d3/d42/class_d_poly_a2f56942fe6577e7c42bae14c3736f3c5.html#a2f56942fe6577e7c42bae14c3736f3c5">copy</a>(level, f);</div>
-<div class="line"><span class="lineno"> 1383</span>  TowerPolynomial tmp;</div>
+<div class="line"><span class="lineno"> 1383</span>  TowerPolynomial <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>;</div>
 <div class="line"><span class="lineno"> 1384</span> </div>
 <div class="line"><span class="lineno"> 1385</span>  <span class="keywordflow">for</span> (;;)</div>
 <div class="line"><span class="lineno"> 1386</span>    {</div>
@@ -145,29 +145,29 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a540eeca65a8f33a72
 <div class="line"><span class="lineno"> 1391</span>      <span class="comment">//      fprintf(stdout, &quot;\n&quot;);</span></div>
 <div class="line"><span class="lineno"> 1392</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a56dfe33da6328718f97bec3c02580197.html#a56dfe33da6328718f97bec3c02580197">RingZZ::mod_ui</a>(n, 2) == 1)</div>
 <div class="line"><span class="lineno"> 1393</span>        {</div>
-<div class="line"><span class="lineno"> 1394</span>          tmp = <a class="code hl_function" href="../../d3/d42/class_d_poly_a97309a372254a403991876f5aa8ed4e0.html#a97309a372254a403991876f5aa8ed4e0">mult</a>(level, prod, <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno"> 1395</span>          <a class="code hl_function" href="../../d3/d42/class_d_poly_a487268acddc5563c8a3dc17f8cc72d0f.html#a487268acddc5563c8a3dc17f8cc72d0f">remainder</a>(level, tmp, g);</div>
+<div class="line"><span class="lineno"> 1394</span>          <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a> = <a class="code hl_function" href="../../d3/d42/class_d_poly_a97309a372254a403991876f5aa8ed4e0.html#a97309a372254a403991876f5aa8ed4e0">mult</a>(level, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prod</a>, <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno"> 1395</span>          <a class="code hl_function" href="../../d3/d42/class_d_poly_a487268acddc5563c8a3dc17f8cc72d0f.html#a487268acddc5563c8a3dc17f8cc72d0f">remainder</a>(level, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>, g);</div>
 <div class="line"><span class="lineno"> 1396</span>          <span class="comment">// TODO: free prod</span></div>
-<div class="line"><span class="lineno"> 1397</span>          prod = tmp;</div>
+<div class="line"><span class="lineno"> 1397</span>          <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prod</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>;</div>
 <div class="line"><span class="lineno"> 1398</span>        }</div>
-<div class="line"><span class="lineno"> 1399</span>      mpz_tdiv_q_2exp(n, n, 1);</div>
-<div class="line"><span class="lineno"> 1400</span>      <span class="keywordflow">if</span> (mpz_sgn(n) == 0)</div>
+<div class="line"><span class="lineno"> 1399</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpz_tdiv_q_2exp</a>(n, n, 1);</div>
+<div class="line"><span class="lineno"> 1400</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpz_sgn</a>(n) == 0)</div>
 <div class="line"><span class="lineno"> 1401</span>        {</div>
-<div class="line"><span class="lineno"> 1402</span>          mpz_clear(n);</div>
+<div class="line"><span class="lineno"> 1402</span>          <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpz_clear</a>(n);</div>
 <div class="line"><span class="lineno"> 1403</span>          <span class="comment">//      fprintf(stdout, &quot;final prod = &quot;);</span></div>
 <div class="line"><span class="lineno"> 1404</span>          <span class="comment">//      dpoly(level,prod);</span></div>
 <div class="line"><span class="lineno"> 1405</span>          <span class="comment">//              fprintf(stdout, &quot;\nbase = &quot;);</span></div>
 <div class="line"><span class="lineno"> 1406</span>          <span class="comment">//              dpoly(level,base);</span></div>
 <div class="line"><span class="lineno"> 1407</span>          <span class="comment">//              fprintf(stdout, &quot;\n&quot;);</span></div>
 <div class="line"><span class="lineno"> 1408</span>          <span class="comment">// TODO: free base</span></div>
-<div class="line"><span class="lineno"> 1409</span>          <span class="keywordflow">return</span> prod;</div>
+<div class="line"><span class="lineno"> 1409</span>          <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prod</a>;</div>
 <div class="line"><span class="lineno"> 1410</span>        }</div>
 <div class="line"><span class="lineno"> 1411</span>      <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 1412</span>        {</div>
-<div class="line"><span class="lineno"> 1413</span>          tmp = <a class="code hl_function" href="../../d3/d42/class_d_poly_a97309a372254a403991876f5aa8ed4e0.html#a97309a372254a403991876f5aa8ed4e0">mult</a>(level, <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>, <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno"> 1414</span>          <a class="code hl_function" href="../../d3/d42/class_d_poly_a487268acddc5563c8a3dc17f8cc72d0f.html#a487268acddc5563c8a3dc17f8cc72d0f">remainder</a>(level, tmp, g);</div>
+<div class="line"><span class="lineno"> 1413</span>          <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a> = <a class="code hl_function" href="../../d3/d42/class_d_poly_a97309a372254a403991876f5aa8ed4e0.html#a97309a372254a403991876f5aa8ed4e0">mult</a>(level, <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>, <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno"> 1414</span>          <a class="code hl_function" href="../../d3/d42/class_d_poly_a487268acddc5563c8a3dc17f8cc72d0f.html#a487268acddc5563c8a3dc17f8cc72d0f">remainder</a>(level, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>, g);</div>
 <div class="line"><span class="lineno"> 1415</span>          <span class="comment">// TODO: free base</span></div>
-<div class="line"><span class="lineno"> 1416</span>          <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a> = tmp;</div>
+<div class="line"><span class="lineno"> 1416</span>          <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>;</div>
 <div class="line"><span class="lineno"> 1417</span>        }</div>
 <div class="line"><span class="lineno"> 1418</span>    }</div>
 <div class="line"><span class="lineno"> 1419</span>}</div>
@@ -177,8 +177,9 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a540eeca65a8f33a72
 <div class="ttc" id="aclass_d_poly_afd5f4ee7b004b491f1222ee6ce5df52e_html_afd5f4ee7b004b491f1222ee6ce5df52e"><div class="ttname"><a href="../../d3/d42/class_d_poly_afd5f4ee7b004b491f1222ee6ce5df52e.html#afd5f4ee7b004b491f1222ee6ce5df52e">DPoly::from_long</a></div><div class="ttdeci">static TowerPolynomial from_long(int level, long c)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00501">dpoly.cpp:501</a></div></div>
 <div class="ttc" id="aclass_ring_z_z_a56dfe33da6328718f97bec3c02580197_html_a56dfe33da6328718f97bec3c02580197"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_a56dfe33da6328718f97bec3c02580197.html#a56dfe33da6328718f97bec3c02580197">RingZZ::mod_ui</a></div><div class="ttdeci">static unsigned int mod_ui(mpz_srcptr n, unsigned int p)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00055">ZZ.cpp:55</a></div></div>
 <div class="ttc" id="afactory_8cpp_a4f4813fca034f6aee039295c5e1f4d48_html_a4f4813fca034f6aee039295c5e1f4d48"><div class="ttname"><a href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a></div><div class="ttdeci">static CanonicalForm base</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dc2/factory_8cpp_source.html#l00289">factory.cpp:289</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>, <a class="el" href="../../d3/d42/class_d_poly_a2f56942fe6577e7c42bae14c3736f3c5.html#a2f56942fe6577e7c42bae14c3736f3c5">copy()</a>, <a class="el" href="../../d3/d42/class_d_poly_afd5f4ee7b004b491f1222ee6ce5df52e.html#afd5f4ee7b004b491f1222ee6ce5df52e">from_long()</a>, <a class="el" href="../../d8/d2b/class_ring_z_z_a56dfe33da6328718f97bec3c02580197.html#a56dfe33da6328718f97bec3c02580197">RingZZ::mod_ui()</a>, <a class="el" href="../../d3/d42/class_d_poly_a97309a372254a403991876f5aa8ed4e0.html#a97309a372254a403991876f5aa8ed4e0">mult()</a>, and <a class="el" href="../../d3/d42/class_d_poly_a487268acddc5563c8a3dc17f8cc72d0f.html#a487268acddc5563c8a3dc17f8cc72d0f">remainder()</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d3/d42/class_d_poly_a2f56942fe6577e7c42bae14c3736f3c5.html#a2f56942fe6577e7c42bae14c3736f3c5">copy()</a>, <a class="el" href="../../d3/d42/class_d_poly_afd5f4ee7b004b491f1222ee6ce5df52e.html#afd5f4ee7b004b491f1222ee6ce5df52e">from_long()</a>, <a class="el" href="../../d8/d2b/class_ring_z_z_a56dfe33da6328718f97bec3c02580197.html#a56dfe33da6328718f97bec3c02580197">RingZZ::mod_ui()</a>, <a class="el" href="../../d3/d42/class_d_poly_a97309a372254a403991876f5aa8ed4e0.html#a97309a372254a403991876f5aa8ed4e0">mult()</a>, and <a class="el" href="../../d3/d42/class_d_poly_a487268acddc5563c8a3dc17f8cc72d0f.html#a487268acddc5563c8a3dc17f8cc72d0f">remainder()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d42/class_d_poly_aabed8cf60a08a021306072a189ad68a6.html#aabed8cf60a08a021306072a189ad68a6">lowerP()</a>, and <a class="el" href="../../d6/de6/class_d_ring_a3ae9918d1f793640a0d19712e16391e7.html#a3ae9918d1f793640a0d19712e16391e7">DRing::power_mod()</a>.</p>
 
@@ -190,7 +191,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a540eeca65a8f33a72
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

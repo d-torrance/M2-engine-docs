@@ -90,15 +90,15 @@ $(document).ready(function(){initNavTree('d6/da9/namespaceffpack_interface_ab709
 
 <div class="contents">
 <a id="ab709d659fca8d3ae5fa9794a9ccc1ef7" name="ab709d659fca8d3ae5fa9794a9ccc1ef7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab709d659fca8d3ae5fa9794a9ccc1ef7">&#9670;&#160;</a></span>rankProfile() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab709d659fca8d3ae5fa9794a9ccc1ef7">&#9670;&#160;</a></span>rankProfile() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ffpackInterface::rankProfile </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> ffpackInterface::rankProfile </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a846148954610b60694ad60d414507a16.html#a846148954610b60694ad60d414507a16">DMatZZpFFPACK</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a846148954610b60694ad60d414507a16.html#a846148954610b60694ad60d414507a16">DMatZZpFFPACK</a> &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
@@ -121,6 +121,37 @@ $(document).ready(function(){initNavTree('d6/da9/namespaceffpack_interface_ab709
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="../../d4/d2f/dmat_8cpp_source.html#l00266">266</a> of file <a class="el" href="../../d4/d2f/dmat_8cpp_source.html">dmat.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  270</span>{</div>
+<div class="line"><span class="lineno">  271</span>  <a class="code hl_define" href="../../d9/d8a/mat-linalg_8hpp_a846148954610b60694ad60d414507a16.html#a846148954610b60694ad60d414507a16">DMatZZpFFPACK</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">N</a>(mat);</div>
+<div class="line"><span class="lineno">  272</span> </div>
+<div class="line"><span class="lineno">  273</span>  <span class="keywordtype">size_t</span>* <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prof</a>;  <span class="comment">// this is where the result will be placed</span></div>
+<div class="line"><span class="lineno">  274</span>  <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">rk</a>;</div>
+<div class="line"><span class="lineno">  275</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">row_profile</a>)</div>
+<div class="line"><span class="lineno">  276</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">rk</a> = FFPACK::RowRankProfile(mat.ring().field(),</div>
+<div class="line"><span class="lineno">  277</span>                                mat.numRows(),</div>
+<div class="line"><span class="lineno">  278</span>                                mat.numColumns(),</div>
+<div class="line"><span class="lineno">  279</span>                                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">N</a>.rowMajorArray(),</div>
+<div class="line"><span class="lineno">  280</span>                                mat.numColumns(),</div>
+<div class="line"><span class="lineno">  281</span>                                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prof</a>);</div>
+<div class="line"><span class="lineno">  282</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  283</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">rk</a> = FFPACK::ColumnRankProfile(mat.ring().field(),</div>
+<div class="line"><span class="lineno">  284</span>                                   mat.numRows(),</div>
+<div class="line"><span class="lineno">  285</span>                                   mat.numColumns(),</div>
+<div class="line"><span class="lineno">  286</span>                                   <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">N</a>.rowMajorArray(),</div>
+<div class="line"><span class="lineno">  287</span>                                   mat.numColumns(),</div>
+<div class="line"><span class="lineno">  288</span>                                   <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prof</a>);</div>
+<div class="line"><span class="lineno">  289</span> </div>
+<div class="line"><span class="lineno">  290</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_profile</a>.resize(0);</div>
+<div class="line"><span class="lineno">  291</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">rk</a>; i++) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_profile</a>.push_back(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prof</a>[i]);</div>
+<div class="line"><span class="lineno">  292</span> </div>
+<div class="line"><span class="lineno">  293</span>  <span class="keyword">delete</span>[] <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prof</a>;</div>
+<div class="line"><span class="lineno">  294</span>}</div>
+<div class="ttc" id="amat-linalg_8hpp_a846148954610b60694ad60d414507a16_html_a846148954610b60694ad60d414507a16"><div class="ttname"><a href="../../d9/d8a/mat-linalg_8hpp_a846148954610b60694ad60d414507a16.html#a846148954610b60694ad60d414507a16">DMatZZpFFPACK</a></div><div class="ttdeci">#define DMatZZpFFPACK</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d8a/mat-linalg_8hpp_source.html#l00026">mat-linalg.hpp:26</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a846148954610b60694ad60d414507a16.html#a846148954610b60694ad60d414507a16">DMatZZpFFPACK</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -129,7 +160,7 @@ $(document).ready(function(){initNavTree('d6/da9/namespaceffpack_interface_ab709
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/da9/namespaceffpack_interface.html">ffpackInterface</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

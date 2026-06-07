@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('d7/d82/namespace_m2_abdfde18c0f087572a
 
 <div class="contents">
 <a id="abdfde18c0f087572a4cc02e5b16d29e7" name="abdfde18c0f087572a4cc02e5b16d29e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdfde18c0f087572a4cc02e5b16d29e7">&#9670;&#160;</a></span>mylift() <span class="overload">[2/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abdfde18c0f087572a4cc02e5b16d29e7">&#9670;&#160;</a></span>mylift() <span class="overload">[2/18]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -101,13 +101,13 @@ $(document).ready(function(){initNavTree('d7/d82/namespace_m2_abdfde18c0f087572a
         <tr>
           <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> M2::mylift </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/dfa/class_m2_1_1_a_ring_c_c.html">ARingCC</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d1/dfa/class_m2_1_1_a_ring_c_c.html">ARingCC</a> &amp;&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c.html">ARingCCC</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c.html">ARingCCC</a> &amp;&#160;</td>
           <td class="paramname"><em>S</em>, </td>
         </tr>
         <tr>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('d7/d82/namespace_m2_abdfde18c0f087572a
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a14ee82a8ccec5980d2e78ed1845dc50a.html#a14ee82a8ccec5980d2e78ed1845dc50a">ARingCCC::ElementType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de1/class_m2_1_1_a_ring_c_c_c_a14ee82a8ccec5980d2e78ed1845dc50a.html#a14ee82a8ccec5980d2e78ed1845dc50a">ARingCCC::ElementType</a> &amp;&#160;</td>
           <td class="paramname"><em>gS</em>&#160;</td>
         </tr>
         <tr>
@@ -135,17 +135,18 @@ $(document).ready(function(){initNavTree('d7/d82/namespace_m2_abdfde18c0f087572a
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/df4/aring-translate_8hpp_source.html#l00589">589</a> of file <a class="el" href="../../de/df4/aring-translate_8hpp_source.html">aring-translate.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  593</span>{</div>
-<div class="line"><span class="lineno">  594</span>  (void) S;</div>
-<div class="line"><span class="lineno">  595</span>  <span class="keyword">auto</span> gS1 = <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="../../de/d31/structcc__struct.html">ARingCCC::ElementType</a>&amp;<span class="keyword">&gt;</span>(gS);</div>
-<div class="line"><span class="lineno">  596</span>  R.<a class="code hl_function" href="../../d1/dfa/class_m2_1_1_a_ring_c_c_abf8cd93457699951da251641c1394859.html#abf8cd93457699951da251641c1394859">set_from_BigReals</a>(result_gR, &amp;gS1.re, &amp;gS1.im);</div>
-<div class="line"><span class="lineno">  597</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  598</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/df4/aring-translate_8hpp_source.html#l00596">596</a> of file <a class="el" href="../../de/df4/aring-translate_8hpp_source.html">aring-translate.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  600</span>{</div>
+<div class="line"><span class="lineno">  601</span>  (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a>) S;</div>
+<div class="line"><span class="lineno">  602</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gS1</a> = <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="../../de/d31/structcc__struct.html">ARingCCC::ElementType</a>&amp;<span class="keyword">&gt;</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gS</a>);</div>
+<div class="line"><span class="lineno">  603</span>  R.<a class="code hl_function" href="../../d1/dfa/class_m2_1_1_a_ring_c_c_abf8cd93457699951da251641c1394859.html#abf8cd93457699951da251641c1394859">set_from_BigReals</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_gR</a>, &amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gS1</a>.re, &amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gS1</a>.im);</div>
+<div class="line"><span class="lineno">  604</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  605</span>}</div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_c_c_abf8cd93457699951da251641c1394859_html_abf8cd93457699951da251641c1394859"><div class="ttname"><a href="../../d1/dfa/class_m2_1_1_a_ring_c_c_abf8cd93457699951da251641c1394859.html#abf8cd93457699951da251641c1394859">M2::ARingCC::set_from_BigReals</a></div><div class="ttdeci">bool set_from_BigReals(ElementType &amp;result, gmp_RR re, gmp_RR im) const</div><div class="ttdef"><b>Definition</b> <a href="../../da/dbc/aring-_c_c_8hpp_source.html#l00154">aring-CC.hpp:154</a></div></div>
-<div class="ttc" id="astructcc__struct_html"><div class="ttname"><a href="../../de/d31/structcc__struct.html">cc_struct</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00021">ringelem.hpp:22</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
+<div class="ttc" id="astructcc__struct_html"><div class="ttname"><a href="../../de/d31/structcc__struct.html">cc_struct</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00021">ringelem.hpp:22</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../db/dae/structcc__doubles__struct_a2f569ccf956f3b6ab7353348affd9239.html#a2f569ccf956f3b6ab7353348affd9239">cc_doubles_struct::re</a>, and <a class="el" href="../../d1/dfa/class_m2_1_1_a_ring_c_c_abf8cd93457699951da251641c1394859.html#abf8cd93457699951da251641c1394859">M2::ARingCC::set_from_BigReals()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d1/dfa/class_m2_1_1_a_ring_c_c_abf8cd93457699951da251641c1394859.html#abf8cd93457699951da251641c1394859">M2::ARingCC::set_from_BigReals()</a>.</p>
 
 </div>
 </div>
@@ -155,7 +156,7 @@ $(document).ready(function(){initNavTree('d7/d82/namespace_m2_abdfde18c0f087572a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

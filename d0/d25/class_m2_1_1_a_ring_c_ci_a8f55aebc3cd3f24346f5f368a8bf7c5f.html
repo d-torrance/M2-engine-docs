@@ -101,13 +101,13 @@ $(document).ready(function(){initNavTree('d0/d25/class_m2_1_1_a_ring_c_ci_a8f55a
         <tr>
           <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> M2::ARingCCi::is_equal </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d0/d25/class_m2_1_1_a_ring_c_ci_a7a2629b0f4a6cb099d7ee4571c27ee65.html#a7a2629b0f4a6cb099d7ee4571c27ee65">ElementType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d0/d25/class_m2_1_1_a_ring_c_ci_a7a2629b0f4a6cb099d7ee4571c27ee65.html#a7a2629b0f4a6cb099d7ee4571c27ee65">ElementType</a> &amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d0/d25/class_m2_1_1_a_ring_c_ci_a7a2629b0f4a6cb099d7ee4571c27ee65.html#a7a2629b0f4a6cb099d7ee4571c27ee65">ElementType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d0/d25/class_m2_1_1_a_ring_c_ci_a7a2629b0f4a6cb099d7ee4571c27ee65.html#a7a2629b0f4a6cb099d7ee4571c27ee65">ElementType</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -125,11 +125,12 @@ $(document).ready(function(){initNavTree('d0/d25/class_m2_1_1_a_ring_c_ci_a8f55a
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d8d/aring-_c_ci_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../dc/d8d/aring-_c_ci_8hpp_source.html">aring-CCi.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   61</span>    { <span class="keywordflow">return</span></div>
-<div class="line"><span class="lineno">   62</span>        mpfr_cmp(&amp;(f.re.left), &amp;(g.re.left)) == 0 and mpfr_cmp(&amp;(f.re.right), &amp;(g.re.right)) == 0 and</div>
-<div class="line"><span class="lineno">   63</span>            mpfr_cmp(&amp;(f.im.left), &amp;(g.im.left)) == 0 and mpfr_cmp(&amp;(f.im.right), &amp;(g.im.right)) == 0;</div>
+<div class="line"><span class="lineno">   62</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpfr_cmp</a>(&amp;(f.re.left), &amp;(g.re.left)) == 0 <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">and</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpfr_cmp</a>(&amp;(f.re.right), &amp;(g.re.right)) == 0 <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">and</a></div>
+<div class="line"><span class="lineno">   63</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpfr_cmp</a>(&amp;(f.im.left), &amp;(g.im.left)) == 0 <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">and</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpfr_cmp</a>(&amp;(f.im.right), &amp;(g.im.right)) == 0;</div>
 <div class="line"><span class="lineno">   64</span>  }</div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/dd4/structcci__struct_a0abadd873ac39e3aefaac4b839bf4b09.html#a0abadd873ac39e3aefaac4b839bf4b09">cci_struct::im</a>, and <a class="el" href="../../d7/dd4/structcci__struct_a4f14f6d26ff9cb3128f2dead907f7cb1.html#a4f14f6d26ff9cb3128f2dead907f7cb1">cci_struct::re</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d7/dd4/structcci__struct_a0abadd873ac39e3aefaac4b839bf4b09.html#a0abadd873ac39e3aefaac4b839bf4b09">cci_struct::im</a>, and <a class="el" href="../../d7/dd4/structcci__struct_a4f14f6d26ff9cb3128f2dead907f7cb1.html#a4f14f6d26ff9cb3128f2dead907f7cb1">cci_struct::re</a>.</p>
 
 </div>
 </div>
@@ -139,7 +140,7 @@ $(document).ready(function(){initNavTree('d0/d25/class_m2_1_1_a_ring_c_ci_a8f55a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d0/d25/class_m2_1_1_a_ring_c_ci.html">ARingCCi</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

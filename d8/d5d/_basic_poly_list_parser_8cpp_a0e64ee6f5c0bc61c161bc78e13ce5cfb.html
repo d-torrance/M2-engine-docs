@@ -98,13 +98,13 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_a0
         <tr>
           <td class="memname"><a class="el" href="../../d1/da0/classint.html">int</a> readIdentifier </td>
           <td>(</td>
-          <td class="paramtype">const std::string_view &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> std::string_view &amp;&#160;</td>
           <td class="paramname"><em>str</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../da/d49/class_identifier_hash.html">IdentifierHash</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/d49/class_identifier_hash.html">IdentifierHash</a> &amp;&#160;</td>
           <td class="paramname"><em>map</em>, </td>
         </tr>
         <tr>
@@ -133,19 +133,20 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_a0
 <div class="line"><span class="lineno">   99</span><span class="comment">    std::cout &lt;&lt; str &lt;&lt; &quot;(begin=&quot; &lt;&lt; begin_loc &lt;&lt; &quot;, end=&quot; &lt;&lt; end_loc &lt;&lt; &quot; )&quot; &lt;&lt; std::endl;</span></div>
 <div class="line"><span class="lineno">  100</span><span class="comment">  */</span></div>
 <div class="line"><span class="lineno">  101</span>    <span class="comment">// if str[0] is a character, find the identifier, and increment str past that,</span></div>
-<div class="line"><span class="lineno">  102</span>  <span class="keywordflow">if</span> (begin_loc &gt;= end_loc or not isalpha(str[begin_loc])) <span class="keywordflow">return</span> -1; <span class="comment">// TODO: throw an error here?</span></div>
-<div class="line"><span class="lineno">  103</span>  <span class="keywordtype">size_t</span> loc = begin_loc;</div>
-<div class="line"><span class="lineno">  104</span>  <span class="keywordflow">while</span> (loc &lt; end_loc and (isdigit(str[loc]) or isalpha(str[loc]) or str[loc] == <span class="charliteral">&#39;_&#39;</span>))</div>
+<div class="line"><span class="lineno">  102</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">begin_loc</a> &gt;= <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">end_loc</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">or</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">not</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">isalpha</a>(str[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">begin_loc</a>])) <span class="keywordflow">return</span> -1; <span class="comment">// TODO: throw an error here?</span></div>
+<div class="line"><span class="lineno">  103</span>  <span class="keywordtype">size_t</span> loc = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">begin_loc</a>;</div>
+<div class="line"><span class="lineno">  104</span>  <span class="keywordflow">while</span> (loc &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">end_loc</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">and</a> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">isdigit</a>(str[loc]) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">or</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">isalpha</a>(str[loc]) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">or</a> str[loc] == <span class="charliteral">&#39;_&#39;</span>))</div>
 <div class="line"><span class="lineno">  105</span>    {</div>
 <div class="line"><span class="lineno">  106</span>      loc++;</div>
 <div class="line"><span class="lineno">  107</span>    }</div>
-<div class="line"><span class="lineno">  108</span>  std::string_view iden = str.substr(begin_loc, loc-begin_loc);</div>
-<div class="line"><span class="lineno">  109</span>  begin_loc = loc;</div>
-<div class="line"><span class="lineno">  110</span>  <span class="keywordflow">return</span> map.<a class="code hl_function" href="../../da/d49/class_identifier_hash_a19f73cee41bebee1372d40b41ffef836.html#a19f73cee41bebee1372d40b41ffef836">find</a>(iden);</div>
+<div class="line"><span class="lineno">  108</span>  std::string_view <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iden</a> = str.substr(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">begin_loc</a>, loc-<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">begin_loc</a>);</div>
+<div class="line"><span class="lineno">  109</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">begin_loc</a> = loc;</div>
+<div class="line"><span class="lineno">  110</span>  <span class="keywordflow">return</span> map.<a class="code hl_function" href="../../da/d49/class_identifier_hash_a19f73cee41bebee1372d40b41ffef836.html#a19f73cee41bebee1372d40b41ffef836">find</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iden</a>);</div>
 <div class="line"><span class="lineno">  111</span>}</div>
-<div class="ttc" id="aclass_identifier_hash_a19f73cee41bebee1372d40b41ffef836_html_a19f73cee41bebee1372d40b41ffef836"><div class="ttname"><a href="../../da/d49/class_identifier_hash_a19f73cee41bebee1372d40b41ffef836.html#a19f73cee41bebee1372d40b41ffef836">IdentifierHash::find</a></div><div class="ttdeci">auto find(std::string_view s) const -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00077">BasicPoly.hpp:77</a></div></div>
+<div class="ttc" id="aclass_identifier_hash_a19f73cee41bebee1372d40b41ffef836_html_a19f73cee41bebee1372d40b41ffef836"><div class="ttname"><a href="../../da/d49/class_identifier_hash_a19f73cee41bebee1372d40b41ffef836.html#a19f73cee41bebee1372d40b41ffef836">IdentifierHash::find</a></div><div class="ttdeci">auto find(std::string_view s) const -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00078">BasicPoly.hpp:78</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d49/class_identifier_hash_a19f73cee41bebee1372d40b41ffef836.html#a19f73cee41bebee1372d40b41ffef836">IdentifierHash::find()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../da/d49/class_identifier_hash_a19f73cee41bebee1372d40b41ffef836.html#a19f73cee41bebee1372d40b41ffef836">IdentifierHash::find()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d65/_basic_poly_8hpp_a8ef11cc15535d7f1788ed83c0cd24c96.html#a8ef11cc15535d7f1788ed83c0cd24c96">parseBasicPoly()</a>.</p>
 
@@ -157,7 +158,7 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_a0
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp.html">BasicPolyListParser.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

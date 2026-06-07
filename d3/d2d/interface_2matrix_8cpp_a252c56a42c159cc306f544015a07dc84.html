@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d3/d2d/interface_2matrix_8cpp_a252c56a
         <tr>
           <td class="memname"><a class="el" href="../../de/d28/m2-types_8h_a071c143092bff3ecfb25de7581dfba58.html#a071c143092bff3ecfb25de7581dfba58">M2_arrayintOrNull</a> IM2_Matrix_sort_columns </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *&#160;</td>
           <td class="paramname"><em>M</em>, </td>
         </tr>
         <tr>
@@ -125,18 +125,19 @@ $(document).ready(function(){initNavTree('d3/d2d/interface_2matrix_8cpp_a252c56a
 <div class="fragment"><div class="line"><span class="lineno">  570</span>{</div>
 <div class="line"><span class="lineno">  571</span>  <span class="keywordflow">try</span></div>
 <div class="line"><span class="lineno">  572</span>    {</div>
-<div class="line"><span class="lineno">  573</span>      <span class="keywordflow">return</span> M-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_ab30d1e96d66eea298e2b58d98be0807e.html#ab30d1e96d66eea298e2b58d98be0807e">sort</a>(deg_order, mon_order);</div>
-<div class="line"><span class="lineno">  574</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><span class="lineno">  573</span>      <span class="keywordflow">return</span> M-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_ab30d1e96d66eea298e2b58d98be0807e.html#ab30d1e96d66eea298e2b58d98be0807e">sort</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">deg_order</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mon_order</a>);</div>
+<div class="line"><span class="lineno">  574</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>)</div>
 <div class="line"><span class="lineno">  575</span>    {</div>
-<div class="line"><span class="lineno">  576</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno">  576</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>.what());</div>
 <div class="line"><span class="lineno">  577</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  578</span>    }</div>
 <div class="line"><span class="lineno">  579</span>}</div>
 <div class="ttc" id="aclass_matrix_ab30d1e96d66eea298e2b58d98be0807e_html_ab30d1e96d66eea298e2b58d98be0807e"><div class="ttname"><a href="../../d6/d3f/class_matrix_ab30d1e96d66eea298e2b58d98be0807e.html#ab30d1e96d66eea298e2b58d98be0807e">Matrix::sort</a></div><div class="ttdeci">M2_arrayint sort(int degorder, int monorder) const</div><div class="ttdef"><b>Definition</b> <a href="../../df/d13/matrix-sort_8cpp_source.html#l00107">matrix-sort.cpp:107</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, and <a class="el" href="../../d6/d3f/class_matrix_ab30d1e96d66eea298e2b58d98be0807e.html#ab30d1e96d66eea298e2b58d98be0807e">Matrix::sort()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, and <a class="el" href="../../d6/d3f/class_matrix_ab30d1e96d66eea298e2b58d98be0807e.html#ab30d1e96d66eea298e2b58d98be0807e">Matrix::sort()</a>.</p>
 
 </div>
 </div>
@@ -146,7 +147,7 @@ $(document).ready(function(){initNavTree('d3/d2d/interface_2matrix_8cpp_a252c56a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d3/d2d/interface_2matrix_8cpp.html">matrix.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

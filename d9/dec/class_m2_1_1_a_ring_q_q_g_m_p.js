@@ -31,6 +31,7 @@ var class_m2_1_1_a_ring_q_q_g_m_p =
     [ "random", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a550cb5ebf39954ed02570972c0adb009.html#a550cb5ebf39954ed02570972c0adb009", null ],
     [ "set", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a451ad199129d4a3669985fdb8a4eaa19.html#a451ad199129d4a3669985fdb8a4eaa19", null ],
     [ "set_from_BigReal", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a1d3211293c8b12e32c6d2d55b03b0fd5.html#a1d3211293c8b12e32c6d2d55b03b0fd5", null ],
+    [ "set_from_double", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a55097b1d5f8320bd7b27cd5042e8d00c.html#a55097b1d5f8320bd7b27cd5042e8d00c", null ],
     [ "set_from_long", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a680384ad0b2c967e8488e06b259f43cc.html#a680384ad0b2c967e8488e06b259f43cc", null ],
     [ "set_from_mpq", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a40893a3841a366693b3d8cd0ee401c7f.html#a40893a3841a366693b3d8cd0ee401c7f", null ],
     [ "set_from_mpz", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a0332d3b3254d5751a8a8f833a5c481d7.html#a0332d3b3254d5751a8a8f833a5c481d7", null ],

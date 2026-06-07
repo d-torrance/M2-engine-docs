@@ -95,12 +95,12 @@ $(document).ready(function(){initNavTree('d9/d02/class_b_i_basis_1_1_polynom_a89
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MonomType &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">BIBasis::Polynom</a>&lt; MonomType &gt;::MergeWith </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">BIBasis::Polynom</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt;::MergeWith </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a>&lt; MonomType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>anotherPolynom</em></td><td>)</td>
           <td></td>
         </tr>
@@ -109,28 +109,28 @@ template&lt;typename MonomType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d7e/polynom_8hpp_source.html#l00591">591</a> of file <a class="el" href="../../dc/d7e/polynom_8hpp_source.html">polynom.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  592</span>    {</div>
-<div class="line"><span class="lineno">  593</span>        MonomType **iterator = &amp;<a class="code hl_variable" href="../../d9/d02/class_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c.html#a4c2ec185d6e040f76691dde6f091b11c">MonomListHead</a>,</div>
-<div class="line"><span class="lineno">  594</span>                  *iteratorAnother = anotherPolynom.MonomListHead,</div>
-<div class="line"><span class="lineno">  595</span>                  *tmpPointer = 0;</div>
+<div class="line"><span class="lineno">  593</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> **iterator = &amp;<a class="code hl_variable" href="../../d9/d02/class_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c.html#a4c2ec185d6e040f76691dde6f091b11c">MonomListHead</a>,</div>
+<div class="line"><span class="lineno">  594</span>                  *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iteratorAnother</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherPolynom</a>.MonomListHead,</div>
+<div class="line"><span class="lineno">  595</span>                  *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpPointer</a> = 0;</div>
 <div class="line"><span class="lineno">  596</span> </div>
-<div class="line"><span class="lineno">  597</span>        <span class="keywordflow">while</span> (*iterator &amp;&amp; iteratorAnother)</div>
+<div class="line"><span class="lineno">  597</span>        <span class="keywordflow">while</span> (*iterator &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iteratorAnother</a>)</div>
 <div class="line"><span class="lineno">  598</span>        {</div>
-<div class="line"><span class="lineno">  599</span>            <span class="keywordflow">switch</span> ((**iterator).Compare(*iteratorAnother))</div>
+<div class="line"><span class="lineno">  599</span>            <span class="keywordflow">switch</span> ((**iterator).Compare(*<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iteratorAnother</a>))</div>
 <div class="line"><span class="lineno">  600</span>            {</div>
 <div class="line"><span class="lineno">  601</span>            <span class="keywordflow">case</span> -1:</div>
-<div class="line"><span class="lineno">  602</span>                tmpPointer = iteratorAnother;</div>
-<div class="line"><span class="lineno">  603</span>                iteratorAnother = iteratorAnother-&gt;Next;</div>
-<div class="line"><span class="lineno">  604</span>                tmpPointer-&gt;Next = *iterator;</div>
-<div class="line"><span class="lineno">  605</span>                *iterator = tmpPointer;</div>
-<div class="line"><span class="lineno">  606</span>                iterator = &amp;(tmpPointer-&gt;Next);</div>
+<div class="line"><span class="lineno">  602</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpPointer</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iteratorAnother</a>;</div>
+<div class="line"><span class="lineno">  603</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iteratorAnother</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iteratorAnother</a>-&gt;Next;</div>
+<div class="line"><span class="lineno">  604</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpPointer</a>-&gt;Next = *iterator;</div>
+<div class="line"><span class="lineno">  605</span>                *iterator = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpPointer</a>;</div>
+<div class="line"><span class="lineno">  606</span>                iterator = &amp;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpPointer</a>-&gt;Next);</div>
 <div class="line"><span class="lineno">  607</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  608</span>            <span class="keywordflow">case</span> 0:</div>
-<div class="line"><span class="lineno">  609</span>                tmpPointer = *iterator;</div>
+<div class="line"><span class="lineno">  609</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpPointer</a> = *iterator;</div>
 <div class="line"><span class="lineno">  610</span>                *iterator = (*iterator)-&gt;Next;</div>
-<div class="line"><span class="lineno">  611</span>                <span class="keyword">delete</span> tmpPointer;</div>
-<div class="line"><span class="lineno">  612</span>                tmpPointer = iteratorAnother;</div>
-<div class="line"><span class="lineno">  613</span>                iteratorAnother = iteratorAnother-&gt;Next;</div>
-<div class="line"><span class="lineno">  614</span>                <span class="keyword">delete</span> tmpPointer;</div>
+<div class="line"><span class="lineno">  611</span>                <span class="keyword">delete</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpPointer</a>;</div>
+<div class="line"><span class="lineno">  612</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpPointer</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iteratorAnother</a>;</div>
+<div class="line"><span class="lineno">  613</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iteratorAnother</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iteratorAnother</a>-&gt;Next;</div>
+<div class="line"><span class="lineno">  614</span>                <span class="keyword">delete</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpPointer</a>;</div>
 <div class="line"><span class="lineno">  615</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  616</span>            <span class="keywordflow">case</span> 1:</div>
 <div class="line"><span class="lineno">  617</span>                iterator = &amp;((*iterator)-&gt;Next);</div>
@@ -138,18 +138,17 @@ template&lt;typename MonomType &gt; </div>
 <div class="line"><span class="lineno">  619</span>            }</div>
 <div class="line"><span class="lineno">  620</span>        }</div>
 <div class="line"><span class="lineno">  621</span> </div>
-<div class="line"><span class="lineno">  622</span>        <span class="keywordflow">if</span> (iteratorAnother)</div>
+<div class="line"><span class="lineno">  622</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iteratorAnother</a>)</div>
 <div class="line"><span class="lineno">  623</span>        {</div>
-<div class="line"><span class="lineno">  624</span>            *iterator = iteratorAnother;</div>
+<div class="line"><span class="lineno">  624</span>            *iterator = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iteratorAnother</a>;</div>
 <div class="line"><span class="lineno">  625</span>        }</div>
 <div class="line"><span class="lineno">  626</span> </div>
-<div class="line"><span class="lineno">  627</span>        anotherPolynom.MonomListHead = 0;</div>
+<div class="line"><span class="lineno">  627</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherPolynom</a>.MonomListHead = 0;</div>
 <div class="line"><span class="lineno">  628</span>    }</div>
 <div class="ttc" id="aclass_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c_html_a4c2ec185d6e040f76691dde6f091b11c"><div class="ttname"><a href="../../d9/d02/class_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c.html#a4c2ec185d6e040f76691dde6f091b11c">BIBasis::Polynom::MonomListHead</a></div><div class="ttdeci">MonomType * MonomListHead</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7e/polynom_8hpp_source.html#l00022">polynom.hpp:22</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c.html#a4c2ec185d6e040f76691dde6f091b11c">BIBasis::Polynom&lt; MonomType &gt;::MonomListHead</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom_aed11cef9e43af0518d08eeef2f90c6cf.html#aed11cef9e43af0518d08eeef2f90c6cf">BIBasis::Polynom&lt; MonomType &gt;::operator*=()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
 
 </div>
 </div>
@@ -159,7 +158,7 @@ template&lt;typename MonomType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d30/namespace_b_i_basis.html">BIBasis</a></li><li class="navelem"><a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

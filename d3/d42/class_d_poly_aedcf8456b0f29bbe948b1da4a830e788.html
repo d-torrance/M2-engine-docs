@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_aedcf8456b0f29bbe9
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DPoly::display_poly </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> DPoly::display_poly </td>
           <td>(</td>
-          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">FILE</a> *&#160;</td>
           <td class="paramname"><em>fil</em>, </td>
         </tr>
         <tr>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_aedcf8456b0f29bbe9
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const TowerPolynomial&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> TowerPolynomial&#160;</td>
           <td class="paramname"><em>f</em>&#160;</td>
         </tr>
         <tr>
@@ -132,36 +132,36 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_aedcf8456b0f29bbe9
 <p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l00428">428</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  429</span>{</div>
 <div class="line"><span class="lineno">  430</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  431</span>    fprintf(fil, <span class="stringliteral">&quot;0&quot;</span>);</div>
+<div class="line"><span class="lineno">  431</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fprintf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fil</a>, <span class="stringliteral">&quot;0&quot;</span>);</div>
 <div class="line"><span class="lineno">  432</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (level == 0)</div>
 <div class="line"><span class="lineno">  433</span>    {</div>
-<div class="line"><span class="lineno">  434</span>      <span class="keywordtype">long</span> *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = f-&gt;arr.ints;</div>
+<div class="line"><span class="lineno">  434</span>      <span class="keywordtype">long</span> *p = f-&gt;arr.ints;</div>
 <div class="line"><span class="lineno">  435</span>      <span class="comment">// fprintf(fil, &quot;[(%ld)&quot;, f-&gt;deg);</span></div>
-<div class="line"><span class="lineno">  436</span>      fprintf(fil, <span class="stringliteral">&quot;[&quot;</span>);</div>
+<div class="line"><span class="lineno">  436</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fprintf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fil</a>, <span class="stringliteral">&quot;[&quot;</span>);</div>
 <div class="line"><span class="lineno">  437</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++)</div>
 <div class="line"><span class="lineno">  438</span>        {</div>
-<div class="line"><span class="lineno">  439</span>          <span class="keywordflow">if</span> (i &gt; 0) fprintf(fil, <span class="stringliteral">&quot;,&quot;</span>);</div>
-<div class="line"><span class="lineno">  440</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i] != 0) fprintf(fil, <span class="stringliteral">&quot;%ld&quot;</span>, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i]);</div>
+<div class="line"><span class="lineno">  439</span>          <span class="keywordflow">if</span> (i &gt; 0) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fprintf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fil</a>, <span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><span class="lineno">  440</span>          <span class="keywordflow">if</span> (p[i] != 0) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fprintf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fil</a>, <span class="stringliteral">&quot;%ld&quot;</span>, p[i]);</div>
 <div class="line"><span class="lineno">  441</span>        }</div>
-<div class="line"><span class="lineno">  442</span>      fprintf(fil, <span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line"><span class="lineno">  442</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fprintf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fil</a>, <span class="stringliteral">&quot;]&quot;</span>);</div>
 <div class="line"><span class="lineno">  443</span>    }</div>
 <div class="line"><span class="lineno">  444</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  445</span>    {</div>
-<div class="line"><span class="lineno">  446</span>      TowerPolynomial *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = f-&gt;arr.polys;</div>
+<div class="line"><span class="lineno">  446</span>      TowerPolynomial *p = f-&gt;arr.polys;</div>
 <div class="line"><span class="lineno">  447</span>      <span class="comment">// fprintf(fil, &quot;[(%ld)&quot;, f-&gt;deg);</span></div>
-<div class="line"><span class="lineno">  448</span>      fprintf(fil, <span class="stringliteral">&quot;[&quot;</span>);</div>
+<div class="line"><span class="lineno">  448</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fprintf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fil</a>, <span class="stringliteral">&quot;[&quot;</span>);</div>
 <div class="line"><span class="lineno">  449</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++)</div>
 <div class="line"><span class="lineno">  450</span>        {</div>
-<div class="line"><span class="lineno">  451</span>          <span class="keywordflow">if</span> (i &gt; 0) fprintf(fil, <span class="stringliteral">&quot;,&quot;</span>);</div>
-<div class="line"><span class="lineno">  452</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i] != <span class="keyword">nullptr</span>) <a class="code hl_function" href="../../d3/d42/class_d_poly_aedcf8456b0f29bbe948b1da4a830e788.html#aedcf8456b0f29bbe948b1da4a830e788">display_poly</a>(fil, level - 1, <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>[i]);</div>
+<div class="line"><span class="lineno">  451</span>          <span class="keywordflow">if</span> (i &gt; 0) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fprintf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fil</a>, <span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><span class="lineno">  452</span>          <span class="keywordflow">if</span> (p[i] != <span class="keyword">nullptr</span>) <a class="code hl_function" href="../../d3/d42/class_d_poly_aedcf8456b0f29bbe948b1da4a830e788.html#aedcf8456b0f29bbe948b1da4a830e788">display_poly</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fil</a>, level - 1, p[i]);</div>
 <div class="line"><span class="lineno">  453</span>        }</div>
-<div class="line"><span class="lineno">  454</span>      fprintf(fil, <span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line"><span class="lineno">  454</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fprintf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fil</a>, <span class="stringliteral">&quot;]&quot;</span>);</div>
 <div class="line"><span class="lineno">  455</span>    }</div>
 <div class="line"><span class="lineno">  456</span>}</div>
 <div class="ttc" id="aclass_d_poly_aedcf8456b0f29bbe948b1da4a830e788_html_aedcf8456b0f29bbe948b1da4a830e788"><div class="ttname"><a href="../../d3/d42/class_d_poly_aedcf8456b0f29bbe948b1da4a830e788.html#aedcf8456b0f29bbe948b1da4a830e788">DPoly::display_poly</a></div><div class="ttdeci">static void display_poly(FILE *fil, int level, const TowerPolynomial f)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00428">dpoly.cpp:428</a></div></div>
-<div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d42/class_d_poly_aedcf8456b0f29bbe948b1da4a830e788.html#aedcf8456b0f29bbe948b1da4a830e788">display_poly()</a>, and <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d3/d42/class_d_poly_aedcf8456b0f29bbe948b1da4a830e788.html#aedcf8456b0f29bbe948b1da4a830e788">display_poly()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d42/class_d_poly_aedcf8456b0f29bbe948b1da4a830e788.html#aedcf8456b0f29bbe948b1da4a830e788">display_poly()</a>, and <a class="el" href="../../d4/d23/dpoly_8cpp_a807d6f34b589b7e024561a56fab03386.html#a807d6f34b589b7e024561a56fab03386">dpoly()</a>.</p>
 
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_aedcf8456b0f29bbe9
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

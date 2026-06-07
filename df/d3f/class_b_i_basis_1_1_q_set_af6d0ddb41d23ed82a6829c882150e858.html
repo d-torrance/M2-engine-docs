@@ -95,12 +95,12 @@ $(document).ready(function(){initNavTree('df/d3f/class_b_i_basis_1_1_q_set_af6d0
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MonomType &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d3f/class_b_i_basis_1_1_q_set.html">BIBasis::QSet</a>&lt; MonomType &gt;::QSet </td>
+          <td class="memname"><a class="el" href="../../df/d3f/class_b_i_basis_1_1_q_set.html">BIBasis::QSet</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt;::QSet </td>
           <td>(</td>
-          <td class="paramtype">const std::list&lt; <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a>&lt; MonomType &gt; * &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> std::list&lt; <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; * &gt; &amp;&#160;</td>
           <td class="paramname"><em>basis</em></td><td>)</td>
           <td></td>
         </tr>
@@ -110,21 +110,22 @@ template&lt;typename MonomType &gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../d2/d09/qset_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../d2/d09/qset_8hpp_source.html">qset.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   49</span>        : <a class="code hl_variable" href="../../df/d3f/class_b_i_basis_1_1_q_set_ac4106516a245082520f9a48964ae1636.html#ac4106516a245082520f9a48964ae1636">TripleList</a>()</div>
 <div class="line"><span class="lineno">   50</span>    {</div>
-<div class="line"><span class="lineno">   51</span>        <span class="keyword">typename</span> std::list&lt;Polynom&lt;MonomType&gt;*&gt;::const_iterator itBasis(basis.begin());</div>
-<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">while</span> (itBasis != basis.end())</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keyword">typename</span> std::list&lt;Polynom&lt;MonomType&gt;*&gt;::const_iterator <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">itBasis</a>(basis.begin());</div>
+<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">while</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">itBasis</a> != basis.end())</div>
 <div class="line"><span class="lineno">   53</span>        {</div>
-<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">if</span> (*itBasis)</div>
+<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">if</span> (*<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">itBasis</a>)</div>
 <div class="line"><span class="lineno">   55</span>            {</div>
-<div class="line"><span class="lineno">   56</span>                <a class="code hl_variable" href="../../df/d3f/class_b_i_basis_1_1_q_set_ac4106516a245082520f9a48964ae1636.html#ac4106516a245082520f9a48964ae1636">TripleList</a>.push_back(<span class="keyword">new</span> Triple&lt;MonomType&gt;(*itBasis));</div>
+<div class="line"><span class="lineno">   56</span>                <a class="code hl_variable" href="../../df/d3f/class_b_i_basis_1_1_q_set_ac4106516a245082520f9a48964ae1636.html#ac4106516a245082520f9a48964ae1636">TripleList</a>.push_back(<span class="keyword">new</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Triple&lt;MonomType&gt;</a>(*<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">itBasis</a>));</div>
 <div class="line"><span class="lineno">   57</span>            }</div>
-<div class="line"><span class="lineno">   58</span>            ++itBasis;</div>
+<div class="line"><span class="lineno">   58</span>            ++<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">itBasis</a>;</div>
 <div class="line"><span class="lineno">   59</span>        }</div>
 <div class="line"><span class="lineno">   60</span>        <a class="code hl_variable" href="../../df/d3f/class_b_i_basis_1_1_q_set_ac4106516a245082520f9a48964ae1636.html#ac4106516a245082520f9a48964ae1636">TripleList</a>.sort(<a class="code hl_function" href="../../da/d09/class_b_i_basis_1_1_triple_ae50a0e582021ec022e9b8a7ee0bbb67b.html#ae50a0e582021ec022e9b8a7ee0bbb67b">Triple&lt;MonomType&gt;::Compare</a>);</div>
 <div class="line"><span class="lineno">   61</span>    }</div>
 <div class="ttc" id="aclass_b_i_basis_1_1_q_set_ac4106516a245082520f9a48964ae1636_html_ac4106516a245082520f9a48964ae1636"><div class="ttname"><a href="../../df/d3f/class_b_i_basis_1_1_q_set_ac4106516a245082520f9a48964ae1636.html#ac4106516a245082520f9a48964ae1636">BIBasis::QSet::TripleList</a></div><div class="ttdeci">std::list&lt; Triple&lt; MonomType &gt; * &gt; TripleList</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d09/qset_8hpp_source.html#l00023">qset.hpp:23</a></div></div>
 <div class="ttc" id="aclass_b_i_basis_1_1_triple_ae50a0e582021ec022e9b8a7ee0bbb67b_html_ae50a0e582021ec022e9b8a7ee0bbb67b"><div class="ttname"><a href="../../da/d09/class_b_i_basis_1_1_triple_ae50a0e582021ec022e9b8a7ee0bbb67b.html#ae50a0e582021ec022e9b8a7ee0bbb67b">BIBasis::Triple::Compare</a></div><div class="ttdeci">static bool Compare(const Triple *tripleA, const Triple *tripleB)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d7a/triple_8hpp_source.html#l00176">triple.hpp:176</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/d3f/class_b_i_basis_1_1_q_set_ac4106516a245082520f9a48964ae1636.html#ac4106516a245082520f9a48964ae1636">BIBasis::QSet&lt; MonomType &gt;::TripleList</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../df/d3f/class_b_i_basis_1_1_q_set_ac4106516a245082520f9a48964ae1636.html#ac4106516a245082520f9a48964ae1636">BIBasis::QSet&lt; MonomType &gt;::TripleList</a>.</p>
 
 </div>
 </div>
@@ -134,7 +135,7 @@ template&lt;typename MonomType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d30/namespace_b_i_basis.html">BIBasis</a></li><li class="navelem"><a class="el" href="../../df/d3f/class_b_i_basis_1_1_q_set.html">QSet</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

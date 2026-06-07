@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/schreyer-resolution/res-f4-computation.cpp File Reference</title>
+<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/schreyer-resolutions/res-f4-computation.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -97,17 +97,17 @@ $(document).ready(function(){initNavTree('d8/dff/res-f4-computation_8cpp.html','
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../de/daf/monomial-ordering_8h_source.html">interface/monomial-ordering.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/db7/res-f4-m2-interface_8hpp_source.html">res-f4-m2-interface.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/d2f/res-f4-computation_8hpp_source.html">res-f4-computation.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dd9/res-schreyer-frame_8hpp_source.html">res-schreyer-frame.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/db7/res-f4-m2-interface_8hpp_source.html">schreyer-resolutions/res-f4-m2-interface.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d2f/res-f4-computation_8hpp_source.html">schreyer-resolutions/res-f4-computation.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dd9/res-schreyer-frame_8hpp_source.html">schreyer-resolutions/res-schreyer-frame.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrices/matrix.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d49/exceptions_8hpp_source.html">exceptions.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../d8/dff/res-f4-computation_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9c3580d6511ef6ce8b3e1bffa07c7b57" id="r_a9c3580d6511ef6ce8b3e1bffa07c7b57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/class_resolution_computation.html">ResolutionComputation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dff/res-f4-computation_8cpp_a9c3580d6511ef6ce8b3e1bffa07c7b57.html#a9c3580d6511ef6ce8b3e1bffa07c7b57">createF4Res</a> (const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *groebnerBasisMatrix, <a class="el" href="../../d1/da0/classint.html">int</a> max_level, <a class="el" href="../../d1/da0/classint.html">int</a> strategy, <a class="el" href="../../d1/da0/classint.html">int</a> numThreads, <a class="el" href="../../d9/db9/classbool.html">bool</a> parallelizeByDegree)</td></tr>
+<tr class="memitem:a9c3580d6511ef6ce8b3e1bffa07c7b57" id="r_a9c3580d6511ef6ce8b3e1bffa07c7b57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/class_resolution_computation.html">ResolutionComputation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dff/res-f4-computation_8cpp_a9c3580d6511ef6ce8b3e1bffa07c7b57.html#a9c3580d6511ef6ce8b3e1bffa07c7b57">createF4Res</a> (<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">groebnerBasisMatrix</a>, <a class="el" href="../../d1/da0/classint.html">int</a> max_level, <a class="el" href="../../d1/da0/classint.html">int</a> strategy, <a class="el" href="../../d1/da0/classint.html">int</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">numThreads</a>, <a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">parallelizeByDegree</a>)</td></tr>
 <tr class="separator:a9c3580d6511ef6ce8b3e1bffa07c7b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -122,8 +122,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_208df166e208656f2e3436240a4845e8.html">schreyer-resolution</a></li><li class="navelem"><a class="el" href="../../d8/dff/res-f4-computation_8cpp.html">res-f4-computation.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_b9fb7e9634d0525ba40579ac5dc0678f.html">schreyer-resolutions</a></li><li class="navelem"><a class="el" href="../../d8/dff/res-f4-computation_8cpp.html">res-f4-computation.cpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

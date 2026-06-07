@@ -134,9 +134,9 @@ $(document).ready(function(){initNavTree('dd/d98/table_8h_a32e9f6d7e202b1cf387e3
 <div class="line"><span class="lineno">   34</span>  <a class="code hl_define" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *table;</div>
 <div class="line"><span class="lineno">   35</span>  <span class="keywordtype">int</span> i;</div>
 <div class="line"><span class="lineno">   36</span>  <span class="keyword">static</span> <span class="keywordtype">int</span> primes[] = {</div>
-<div class="line"><span class="lineno">   37</span>      509, 509, 1021, 2053, 4093, 8191, 16381, 32771, 65521, INT_MAX};</div>
-<div class="line"><span class="lineno">   38</span>  assert(hint &gt;= 0);</div>
-<div class="line"><span class="lineno">   39</span>  <span class="keywordflow">for</span> (i = 1; primes[i] &lt; hint; i++)</div>
+<div class="line"><span class="lineno">   37</span>      509, 509, 1021, 2053, 4093, 8191, 16381, 32771, 65521, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">INT_MAX</a>};</div>
+<div class="line"><span class="lineno">   38</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">assert</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">hint</a> &gt;= 0);</div>
+<div class="line"><span class="lineno">   39</span>  <span class="keywordflow">for</span> (i = 1; primes[i] &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">hint</a>; i++)</div>
 <div class="line"><span class="lineno">   40</span>    ;</div>
 <div class="line"><span class="lineno">   41</span>  table =</div>
 <div class="line"><span class="lineno">   42</span>      (<a class="code hl_define" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *)<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_a6807bb51e1c9f3335f018dd77f7e9d5b.html#a6807bb51e1c9f3335f018dd77f7e9d5b">getmem</a>(<span class="keyword">sizeof</span>(*table) + primes[i - 1] * <span class="keyword">sizeof</span>(table-&gt;buckets[0]));</div>
@@ -144,17 +144,18 @@ $(document).ready(function(){initNavTree('dd/d98/table_8h_a32e9f6d7e202b1cf387e3
 <div class="line"><span class="lineno">   44</span>  table-&gt;cmp = cmp ? cmp : <a class="code hl_function" href="../../dc/d33/table_8c_a46002fa21bef6b07e4b0b8093cd7b4cd.html#a46002fa21bef6b07e4b0b8093cd7b4cd">cmpatom</a>;</div>
 <div class="line"><span class="lineno">   45</span>  table-&gt;hash = hash ? hash : <a class="code hl_function" href="../../dc/d33/table_8c_a8b92f9ce10af3b50b5c2e0067ac2b535.html#a8b92f9ce10af3b50b5c2e0067ac2b535">hashatom</a>;</div>
 <div class="line"><span class="lineno">   46</span>  table-&gt;buckets = (<span class="keyword">struct </span>binding **)(table + 1);</div>
-<div class="line"><span class="lineno">   47</span>  <span class="keywordflow">for</span> (i = 0; i &lt; table-&gt;size; i++) table-&gt;buckets[i] = NULL;</div>
+<div class="line"><span class="lineno">   47</span>  <span class="keywordflow">for</span> (i = 0; i &lt; table-&gt;size; i++) table-&gt;buckets[i] = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">NULL</a>;</div>
 <div class="line"><span class="lineno">   48</span>  table-&gt;length = 0;</div>
 <div class="line"><span class="lineno">   49</span>  table-&gt;timestamp = 0;</div>
 <div class="line"><span class="lineno">   50</span>  <span class="keywordflow">return</span> table;</div>
 <div class="line"><span class="lineno">   51</span>}</div>
 <div class="ttc" id="am2-mem_8cpp_a6807bb51e1c9f3335f018dd77f7e9d5b_html_a6807bb51e1c9f3335f018dd77f7e9d5b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a6807bb51e1c9f3335f018dd77f7e9d5b.html#a6807bb51e1c9f3335f018dd77f7e9d5b">getmem</a></div><div class="ttdeci">char * getmem(size_t n)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00074">m2-mem.cpp:74</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="atable_8c_a0acb682b8260ab1c60b918599864e2e5_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d33/table_8c_source.html#l00013">table.c:13</a></div></div>
 <div class="ttc" id="atable_8c_a46002fa21bef6b07e4b0b8093cd7b4cd_html_a46002fa21bef6b07e4b0b8093cd7b4cd"><div class="ttname"><a href="../../dc/d33/table_8c_a46002fa21bef6b07e4b0b8093cd7b4cd.html#a46002fa21bef6b07e4b0b8093cd7b4cd">cmpatom</a></div><div class="ttdeci">static int cmpatom(const void *x, const void *y)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d33/table_8c_source.html#l00028">table.c:28</a></div></div>
 <div class="ttc" id="atable_8c_a8b92f9ce10af3b50b5c2e0067ac2b535_html_a8b92f9ce10af3b50b5c2e0067ac2b535"><div class="ttname"><a href="../../dc/d33/table_8c_a8b92f9ce10af3b50b5c2e0067ac2b535.html#a8b92f9ce10af3b50b5c2e0067ac2b535">hashatom</a></div><div class="ttdeci">static unsigned hashatom(const void *key)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d33/table_8c_source.html#l00029">table.c:29</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dc/d33/table_8c_a46002fa21bef6b07e4b0b8093cd7b4cd.html#a46002fa21bef6b07e4b0b8093cd7b4cd">cmpatom()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_a6807bb51e1c9f3335f018dd77f7e9d5b.html#a6807bb51e1c9f3335f018dd77f7e9d5b">getmem()</a>, <a class="el" href="../../dc/d33/table_8c_a8b92f9ce10af3b50b5c2e0067ac2b535.html#a8b92f9ce10af3b50b5c2e0067ac2b535">hashatom()</a>, and <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d33/table_8c_a46002fa21bef6b07e4b0b8093cd7b4cd.html#a46002fa21bef6b07e4b0b8093cd7b4cd">cmpatom()</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_a6807bb51e1c9f3335f018dd77f7e9d5b.html#a6807bb51e1c9f3335f018dd77f7e9d5b">getmem()</a>, <a class="el" href="../../dc/d33/table_8c_a8b92f9ce10af3b50b5c2e0067ac2b535.html#a8b92f9ce10af3b50b5c2e0067ac2b535">hashatom()</a>, and <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/da0/exptable_8c_a6bcb88df4d99aba58b5c577283a67172.html#a6bcb88df4d99aba58b5c577283a67172">exponent_table_new()</a>.</p>
 
@@ -166,7 +167,7 @@ $(document).ready(function(){initNavTree('dd/d98/table_8h_a32e9f6d7e202b1cf387e3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dd/d98/table_8h.html">table.h</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

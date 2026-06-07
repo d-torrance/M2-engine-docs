@@ -72,6 +72,7 @@ var class_monoid =
     [ "text_out", "d9/db1/class_monoid_a4ba7dc36a41c837125be881988840f43.html#a4ba7dc36a41c837125be881988840f43", null ],
     [ "to_expvector", "d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4", null ],
     [ "to_varpower", "d9/db1/class_monoid_a3d065cc7c2feb3802554175995ef34aa.html#a3d065cc7c2feb3802554175995ef34aa", null ],
+    [ "variableNames", "d9/db1/class_monoid_aa4ec862c09ebdfe5d744abd91abafe62.html#aa4ec862c09ebdfe5d744abd91abafe62", null ],
     [ "weight_value_exists", "d9/db1/class_monoid_ac23ffdad3ae3ad504a9ff15a30f3526b.html#ac23ffdad3ae3ad504a9ff15a30f3526b", null ],
     [ "component_up_", "d9/db1/class_monoid_a00cdd843d67272887765610130c10a4a.html#a00cdd843d67272887765610130c10a4a", null ],
     [ "exp_size", "d9/db1/class_monoid_a6d9822b3c1c33bfa75ff10c239878c41.html#a6d9822b3c1c33bfa75ff10c239878c41", null ],

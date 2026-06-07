@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('d6/d05/classbinomial_g_b_a2db434f5e423
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void binomialGB::remove_monomial_list </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> binomialGB::remove_monomial_list </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d6/d0d/structbinomial_g_b_1_1monomial__list.html">monomial_list</a> *&#160;</td>
           <td class="paramname"><em>mm</em></td><td>)</td>
@@ -107,19 +107,20 @@ $(document).ready(function(){initNavTree('d6/d05/classbinomial_g_b_a2db434f5e423
 
 <p class="definition">Definition at line <a class="el" href="../../db/d5c/gb-toric_8cpp_source.html#l00836">836</a> of file <a class="el" href="../../db/d5c/gb-toric_8cpp_source.html">gb-toric.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  837</span>{</div>
-<div class="line"><span class="lineno">  838</span>  <span class="keywordflow">while</span> (mm != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  838</span>  <span class="keywordflow">while</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mm</a> != <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">  839</span>    {</div>
-<div class="line"><span class="lineno">  840</span>      <a class="code hl_variable" href="../../d6/d05/classbinomial_g_b_ad2e317194e45de767911f5a7a7a1d66d.html#ad2e317194e45de767911f5a7a7a1d66d">R</a>-&gt;<a class="code hl_function" href="../../dd/d3a/classbinomial__ring_acd69f43992136be4ba8379449822ebdf.html#acd69f43992136be4ba8379449822ebdf">remove_monomial</a>(mm-&gt;m);</div>
-<div class="line"><span class="lineno">  841</span>      monomial_list *tmp = mm;</div>
-<div class="line"><span class="lineno">  842</span>      mm = mm-&gt;next;</div>
-<div class="line"><span class="lineno">  843</span>      <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(tmp);</div>
+<div class="line"><span class="lineno">  840</span>      <a class="code hl_variable" href="../../d6/d05/classbinomial_g_b_ad2e317194e45de767911f5a7a7a1d66d.html#ad2e317194e45de767911f5a7a7a1d66d">R</a>-&gt;<a class="code hl_function" href="../../dd/d3a/classbinomial__ring_acd69f43992136be4ba8379449822ebdf.html#acd69f43992136be4ba8379449822ebdf">remove_monomial</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mm</a>-&gt;m);</div>
+<div class="line"><span class="lineno">  841</span>      monomial_list *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mm</a>;</div>
+<div class="line"><span class="lineno">  842</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mm</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mm</a>-&gt;next;</div>
+<div class="line"><span class="lineno">  843</span>      <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>);</div>
 <div class="line"><span class="lineno">  844</span>    }</div>
 <div class="line"><span class="lineno">  845</span>}</div>
 <div class="ttc" id="aclassbinomial__ring_acd69f43992136be4ba8379449822ebdf_html_acd69f43992136be4ba8379449822ebdf"><div class="ttname"><a href="../../dd/d3a/classbinomial__ring_acd69f43992136be4ba8379449822ebdf.html#acd69f43992136be4ba8379449822ebdf">binomial_ring::remove_monomial</a></div><div class="ttdeci">void remove_monomial(monomial0 &amp;m) const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d5c/gb-toric_8cpp_source.html#l00054">gb-toric.cpp:54</a></div></div>
 <div class="ttc" id="aclassbinomial_g_b_ad2e317194e45de767911f5a7a7a1d66d_html_ad2e317194e45de767911f5a7a7a1d66d"><div class="ttname"><a href="../../d6/d05/classbinomial_g_b_ad2e317194e45de767911f5a7a7a1d66d.html#ad2e317194e45de767911f5a7a7a1d66d">binomialGB::R</a></div><div class="ttdeci">const binomial_ring * R</div><div class="ttdef"><b>Definition</b> <a href="../../de/d75/gb-toric_8hpp_source.html#l00220">gb-toric.hpp:220</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_a1c6306973edadb50294a656e3927fcba_html_a1c6306973edadb50294a656e3927fcba"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a></div><div class="ttdeci">void freemem(void *s)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00103">m2-mem.cpp:103</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem()</a>, <a class="el" href="../../d6/d0d/structbinomial_g_b_1_1monomial__list_aad7dd95a359cd8b03523d4b53cf201a6.html#aad7dd95a359cd8b03523d4b53cf201a6">binomialGB::monomial_list::m</a>, <a class="el" href="../../d6/d0d/structbinomial_g_b_1_1monomial__list_a9a39005ca88bb941b2c11a3f1725b2dc.html#a9a39005ca88bb941b2c11a3f1725b2dc">binomialGB::monomial_list::next</a>, <a class="el" href="../../d6/d05/classbinomial_g_b_ad2e317194e45de767911f5a7a7a1d66d.html#ad2e317194e45de767911f5a7a7a1d66d">R</a>, and <a class="el" href="../../dd/d3a/classbinomial__ring_acd69f43992136be4ba8379449822ebdf.html#acd69f43992136be4ba8379449822ebdf">binomial_ring::remove_monomial()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem()</a>, <a class="el" href="../../d6/d0d/structbinomial_g_b_1_1monomial__list_a9a39005ca88bb941b2c11a3f1725b2dc.html#a9a39005ca88bb941b2c11a3f1725b2dc">binomialGB::monomial_list::next</a>, <a class="el" href="../../d6/d05/classbinomial_g_b_ad2e317194e45de767911f5a7a7a1d66d.html#ad2e317194e45de767911f5a7a7a1d66d">R</a>, and <a class="el" href="../../dd/d3a/classbinomial__ring_acd69f43992136be4ba8379449822ebdf.html#acd69f43992136be4ba8379449822ebdf">binomial_ring::remove_monomial()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/d05/classbinomial_g_b_af9eef7673c48c15fab53b12f53daad49.html#af9eef7673c48c15fab53b12f53daad49">make_new_pairs()</a>.</p>
 
@@ -131,7 +132,7 @@ $(document).ready(function(){initNavTree('d6/d05/classbinomial_g_b_a2db434f5e423
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d05/classbinomial_g_b.html">binomialGB</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

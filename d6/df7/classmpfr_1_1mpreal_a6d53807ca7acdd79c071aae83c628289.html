@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_a6d53807ca7
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d6/df7/classmpfr_1_1mpreal.html">mpreal</a> grandom </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/df7/classmpfr_1_1mpreal.html">mpreal</a> grandom </td>
           <td>(</td>
           <td class="paramtype">unsigned <a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td>
           <td class="paramname"><em>seed</em> = <code>0</code></td><td>)</td>
@@ -120,15 +120,16 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_a6d53807ca7
 <div class="line"><span class="lineno"> 2871</span> </div>
 <div class="line"><span class="lineno"> 2872</span>    <span class="keywordflow">if</span>(initialize)</div>
 <div class="line"><span class="lineno"> 2873</span>    {</div>
-<div class="line"><span class="lineno"> 2874</span>        gmp_randinit_default(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>);</div>
-<div class="line"><span class="lineno"> 2875</span>        gmp_randseed_ui(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>,0);</div>
+<div class="line"><span class="lineno"> 2874</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gmp_randinit_default</a>(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>);</div>
+<div class="line"><span class="lineno"> 2875</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gmp_randseed_ui</a>(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>,0);</div>
 <div class="line"><span class="lineno"> 2876</span>        initialize = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno"> 2877</span>    }</div>
 <div class="line"><span class="lineno"> 2878</span> </div>
-<div class="line"><span class="lineno"> 2879</span>    <span class="keywordflow">if</span>(seed != 0) gmp_randseed_ui(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>,seed);</div>
+<div class="line"><span class="lineno"> 2879</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">seed</a> != 0) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gmp_randseed_ui</a>(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">seed</a>);</div>
 <div class="line"><span class="lineno"> 2880</span> </div>
 <div class="line"><span class="lineno"> 2881</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d1/d02/namespacempfr_a2332105a6f28521ed8f32078f36de5c2.html#a2332105a6f28521ed8f32078f36de5c2">mpfr::grandom</a>(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>);</div>
 <div class="line"><span class="lineno"> 2882</span>}</div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="anamespacempfr_a2332105a6f28521ed8f32078f36de5c2_html_a2332105a6f28521ed8f32078f36de5c2"><div class="ttname"><a href="../../d1/d02/namespacempfr_a2332105a6f28521ed8f32078f36de5c2.html#a2332105a6f28521ed8f32078f36de5c2">mpfr::grandom</a></div><div class="ttdeci">const mpreal grandom(gmp_randstate_t &amp;state, mp_rnd_t rnd_mode=mpreal::get_default_rnd())</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l02856">mpreal.h:2856</a></div></div>
 <div class="ttc" id="arandom_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d_html_a9f8b71742e74bcfa6c4b6d38a690329d"><div class="ttname"><a href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a></div><div class="ttdeci">static gmp_randstate_t state</div><div class="ttdef"><b>Definition</b> <a href="../../de/daa/random_8cpp_source.html#l00018">random.cpp:18</a></div></div>
 </div><!-- fragment -->
@@ -140,7 +141,7 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_a6d53807ca7
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d02/namespacempfr.html">mpfr</a></li><li class="navelem"><a class="el" href="../../d6/df7/classmpfr_1_1mpreal.html">mpreal</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

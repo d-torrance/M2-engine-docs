@@ -14,10 +14,10 @@ var class_q_ring_info =
     [ "normal_form", "d2/da2/class_q_ring_info_aa24d2e1f02a62b6ecff7fdc2c7497799.html#aa24d2e1f02a62b6ecff7fdc2c7497799", null ],
     [ "quotient_element", "d2/da2/class_q_ring_info_a1557c27f67f80eac6e099cc9635534d5.html#a1557c27f67f80eac6e099cc9635534d5", null ],
     [ "quotient_gbvector", "d2/da2/class_q_ring_info_aa49eb1dd521fef793d9b354648c8c1ce.html#aa49eb1dd521fef793d9b354648c8c1ce", null ],
+    [ "VECTOR", "d2/da2/class_q_ring_info_a263594109988c64aae349412663e64fc.html#a263594109988c64aae349412663e64fc", null ],
+    [ "VECTOR", "d2/da2/class_q_ring_info_a37c37334c5c2969d88c4a90aa2697d5c.html#a37c37334c5c2969d88c4a90aa2697d5c", null ],
     [ "exp_size", "d2/da2/class_q_ring_info_aa170af4960326f48e87bb751987b744a.html#aa170af4960326f48e87bb751987b744a", null ],
     [ "monom_size", "d2/da2/class_q_ring_info_aad9507d8f998575c6bb9f5bb9d7ccc02.html#aad9507d8f998575c6bb9f5bb9d7ccc02", null ],
     [ "overZZ_", "d2/da2/class_q_ring_info_ae3b093a73fcccd5aa0d71a3e55fddd8d.html#ae3b093a73fcccd5aa0d71a3e55fddd8d", null ],
-    [ "quotient_gbvectors", "d2/da2/class_q_ring_info_a81bdc0d9141f552fe1622287317ad25e.html#a81bdc0d9141f552fe1622287317ad25e", null ],
-    [ "quotient_ideal", "d2/da2/class_q_ring_info_a5068e2563c65bb240db1b9e1984e10c6.html#a5068e2563c65bb240db1b9e1984e10c6", null ],
     [ "R", "d2/da2/class_q_ring_info_a5a86c4737078b7522d075b672f31c1ce.html#a5a86c4737078b7522d075b672f31c1ce", null ]
 ];

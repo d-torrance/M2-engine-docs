@@ -125,18 +125,19 @@ $(document).ready(function(){initNavTree('db/dc0/comb_8cpp_a095a0a3658d469f34d9c
 
 <p class="definition">Definition at line <a class="el" href="../../db/dc0/comb_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../db/dc0/comb_8cpp_source.html">comb.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   10</span>{</div>
-<div class="line"><span class="lineno">   11</span>  <a class="code hl_typedef" href="../../db/dc0/comb_8cpp_a9c34ac44da309b004570530c8cec8a0e.html#a9c34ac44da309b004570530c8cec8a0e">ulong</a> c = a + b;</div>
-<div class="line"><span class="lineno">   12</span>  <span class="keywordflow">if</span> (c &lt; a)</div>
+<div class="line"><span class="lineno">   11</span>  <a class="code hl_typedef" href="../../db/dc0/comb_8cpp_a9c34ac44da309b004570530c8cec8a0e.html#a9c34ac44da309b004570530c8cec8a0e">ulong</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a> = a + b;</div>
+<div class="line"><span class="lineno">   12</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a> &lt; a)</div>
 <div class="line"><span class="lineno">   13</span>    {</div>
 <div class="line"><span class="lineno">   14</span>      <a class="code hl_function" href="../../d4/d7a/text-io_8cpp_a50bad2957f4c4b58ef08be4006017467.html#a50bad2957f4c4b58ef08be4006017467">emit_line</a>(<span class="stringliteral">&quot;ulong integer addition overflow&quot;</span>);</div>
 <div class="line"><span class="lineno">   15</span>      exit(-1);</div>
 <div class="line"><span class="lineno">   16</span>    }</div>
-<div class="line"><span class="lineno">   17</span>  <span class="keywordflow">return</span> c;</div>
+<div class="line"><span class="lineno">   17</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>;</div>
 <div class="line"><span class="lineno">   18</span>}</div>
 <div class="ttc" id="acomb_8cpp_a9c34ac44da309b004570530c8cec8a0e_html_a9c34ac44da309b004570530c8cec8a0e"><div class="ttname"><a href="../../db/dc0/comb_8cpp_a9c34ac44da309b004570530c8cec8a0e.html#a9c34ac44da309b004570530c8cec8a0e">ulong</a></div><div class="ttdeci">unsigned long int ulong</div><div class="ttdef"><b>Definition</b> <a href="../../db/dc0/comb_8cpp_source.html#l00007">comb.cpp:7</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="atext-io_8cpp_a50bad2957f4c4b58ef08be4006017467_html_a50bad2957f4c4b58ef08be4006017467"><div class="ttname"><a href="../../d4/d7a/text-io_8cpp_a50bad2957f4c4b58ef08be4006017467.html#a50bad2957f4c4b58ef08be4006017467">emit_line</a></div><div class="ttdeci">void emit_line(const char *s)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7a/text-io_8cpp_source.html#l00047">text-io.cpp:47</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d7a/text-io_8cpp_a50bad2957f4c4b58ef08be4006017467.html#a50bad2957f4c4b58ef08be4006017467">emit_line()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d4/d7a/text-io_8cpp_a50bad2957f4c4b58ef08be4006017467.html#a50bad2957f4c4b58ef08be4006017467">emit_line()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/d91/class_subsets_a580b78e7e03a10efb91a9a1b59a1a610.html#a580b78e7e03a10efb91a9a1b59a1a610">Subsets::Subsets()</a>.</p>
 
@@ -148,7 +149,7 @@ $(document).ready(function(){initNavTree('db/dc0/comb_8cpp_a095a0a3658d469f34d9c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../db/dc0/comb_8cpp.html">comb.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

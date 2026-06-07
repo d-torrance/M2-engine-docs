@@ -9,7 +9,7 @@ var class_polynomial_ring =
     [ "computeHashValue", "d5/d58/class_polynomial_ring_ac197ed71022ead1aa87f7d3f8864282b.html#ac197ed71022ead1aa87f7d3f8864282b", null ],
     [ "create_quotient", "d5/d58/class_polynomial_ring_a3ea9243821250f45eed989ee225e52d6.html#a3ea9243821250f45eed989ee225e52d6", null ],
     [ "create_quotient", "d5/d58/class_polynomial_ring_a4d56986fe519b58e474c3317f1e8e0c5.html#a4d56986fe519b58e474c3317f1e8e0c5", null ],
-    [ "create_quotient", "d5/d58/class_polynomial_ring_af407dd2f122064c1ec6ee1fae50343f4.html#af407dd2f122064c1ec6ee1fae50343f4", null ],
+    [ "create_quotient", "d5/d58/class_polynomial_ring_a6a1ba18bebe7385d4393c012c1d71183.html#a6a1ba18bebe7385d4393c012c1d71183", null ],
     [ "create_quotient_ring", "d5/d58/class_polynomial_ring_a83af71a7a85b7b8c5f864eb0a8b6fc5a.html#a83af71a7a85b7b8c5f864eb0a8b6fc5a", null ],
     [ "degree_of_var", "d5/d58/class_polynomial_ring_ab7eef982c7afc21dd8296d5653ac7e8d.html#ab7eef982c7afc21dd8296d5653ac7e8d", null ],
     [ "degree_weights", "d5/d58/class_polynomial_ring_aac7a38c2292d92770fd19d003cd29d9c.html#aac7a38c2292d92770fd19d003cd29d9c", null ],

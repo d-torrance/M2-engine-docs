@@ -127,15 +127,16 @@ $(document).ready(function(){initNavTree('d8/d2b/class_ring_z_z_a7a0bb92a97cc91d
 
 <p class="definition">Definition at line <a class="el" href="../../d4/db8/_z_z_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../d4/db8/_z_z_8cpp_source.html">ZZ.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  129</span>{</div>
-<div class="line"><span class="lineno">  130</span>  <span class="keywordtype">bool</span> ok = mpz_cmp_si(mpq_denref(q), 1) == 0;</div>
-<div class="line"><span class="lineno">  131</span>  <span class="keywordflow">if</span> (not ok) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  132</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">RingZZ::from_int</a>(mpq_numref(q));</div>
+<div class="line"><span class="lineno">  130</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ok</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpz_cmp_si</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpq_denref</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a>), 1) == 0;</div>
+<div class="line"><span class="lineno">  131</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">not</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ok</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  132</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">RingZZ::from_int</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpq_numref</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a>));</div>
 <div class="line"><span class="lineno">  133</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  134</span>}</div>
 <div class="ttc" id="aclass_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52_html_a8ee5f1281f1f753bd5e64aaed8393b52"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">RingZZ::from_int</a></div><div class="ttdeci">virtual ring_elem from_int(mpz_srcptr n) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00119">ZZ.cpp:119</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">from_int()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">from_int()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 </div>
 </div>
@@ -145,7 +146,7 @@ $(document).ready(function(){initNavTree('d8/d2b/class_ring_z_z_a7a0bb92a97cc91d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d2b/class_ring_z_z.html">RingZZ</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

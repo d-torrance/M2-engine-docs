@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('d2/da2/class_q_ring_info_a752c08579b46
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void QRingInfo::destroy </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> QRingInfo::destroy </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d8/d73/class_g_b_ring.html">GBRing</a> *&#160;</td>
           <td class="paramname"><em>GR</em></td><td>)</td>
@@ -117,17 +117,17 @@ $(document).ready(function(){initNavTree('d2/da2/class_q_ring_info_a752c08579b46
 
 <p class="definition">Definition at line <a class="el" href="../../d6/dcf/qring_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d6/dcf/qring_8cpp_source.html">qring.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   25</span>{</div>
-<div class="line"><span class="lineno">   26</span>  <span class="comment">// remove the gbvector&#39;s as they are stashed in gbrings.</span></div>
-<div class="line"><span class="lineno">   27</span>  <span class="comment">// WARNING: these need to be deleted only if the gbring is non-NULL.</span></div>
+<div class="line"><span class="lineno">   26</span>  <span class="comment">// remove the gbvector&#39;s as they are stashed in groebner-computations/gbrings.</span></div>
+<div class="line"><span class="lineno">   27</span>  <span class="comment">// WARNING: these need to be deleted only if the groebner-computations/gbring is non-NULL.</span></div>
 <div class="line"><span class="lineno">   28</span> </div>
 <div class="line"><span class="lineno">   29</span>  <span class="keywordflow">if</span> (GR == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   30</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../d2/da2/class_q_ring_info_a81bdc0d9141f552fe1622287317ad25e.html#a81bdc0d9141f552fe1622287317ad25e">quotient_gbvectors</a>.size(); i++)</div>
-<div class="line"><span class="lineno">   31</span>    GR-&gt;<a class="code hl_function" href="../../d8/d73/class_g_b_ring_a15a21edcd629abbde8800b5d793d3efc.html#a15a21edcd629abbde8800b5d793d3efc">gbvector_remove</a>(<a class="code hl_variable" href="../../d2/da2/class_q_ring_info_a81bdc0d9141f552fe1622287317ad25e.html#a81bdc0d9141f552fe1622287317ad25e">quotient_gbvectors</a>[i]);</div>
+<div class="line"><span class="lineno">   30</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">quotient_gbvectors</a>.size(); i++)</div>
+<div class="line"><span class="lineno">   31</span>    GR-&gt;<a class="code hl_function" href="../../d8/d73/class_g_b_ring_a15a21edcd629abbde8800b5d793d3efc.html#a15a21edcd629abbde8800b5d793d3efc">gbvector_remove</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">quotient_gbvectors</a>[i]);</div>
 <div class="line"><span class="lineno">   32</span>}</div>
 <div class="ttc" id="aclass_g_b_ring_a15a21edcd629abbde8800b5d793d3efc_html_a15a21edcd629abbde8800b5d793d3efc"><div class="ttname"><a href="../../d8/d73/class_g_b_ring_a15a21edcd629abbde8800b5d793d3efc.html#a15a21edcd629abbde8800b5d793d3efc">GBRing::gbvector_remove</a></div><div class="ttdeci">void gbvector_remove(gbvector *f)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d29/gbring_8cpp_source.html#l00288">gbring.cpp:288</a></div></div>
-<div class="ttc" id="aclass_q_ring_info_a81bdc0d9141f552fe1622287317ad25e_html_a81bdc0d9141f552fe1622287317ad25e"><div class="ttname"><a href="../../d2/da2/class_q_ring_info_a81bdc0d9141f552fe1622287317ad25e.html#a81bdc0d9141f552fe1622287317ad25e">QRingInfo::quotient_gbvectors</a></div><div class="ttdeci">gc_vector&lt; gbvector * &gt; quotient_gbvectors</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dd7/qring_8hpp_source.html#l00024">qring.hpp:24</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/d73/class_g_b_ring_a15a21edcd629abbde8800b5d793d3efc.html#a15a21edcd629abbde8800b5d793d3efc">GBRing::gbvector_remove()</a>, and <a class="el" href="../../d2/da2/class_q_ring_info_a81bdc0d9141f552fe1622287317ad25e.html#a81bdc0d9141f552fe1622287317ad25e">quotient_gbvectors</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d8/d73/class_g_b_ring_a15a21edcd629abbde8800b5d793d3efc.html#a15a21edcd629abbde8800b5d793d3efc">GBRing::gbvector_remove()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d58/class_polynomial_ring_ac7d02c16a850422f90b08e1781b3885d.html#ac7d02c16a850422f90b08e1781b3885d">PolynomialRing::clear()</a>, <a class="el" href="../../d5/d13/class_q_ring_info__field_a0876f377450f32cabdea7c7344b06b5f.html#a0876f377450f32cabdea7c7344b06b5f">QRingInfo_field::destroy()</a>, and <a class="el" href="../../dc/d6c/class_q_ring_info___z_z_aee83fc338c83a3d2f2e486bc5c299b96.html#aee83fc338c83a3d2f2e486bc5c299b96">QRingInfo_ZZ::destroy()</a>.</p>
 
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('d2/da2/class_q_ring_info_a752c08579b46
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/da2/class_q_ring_info.html">QRingInfo</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

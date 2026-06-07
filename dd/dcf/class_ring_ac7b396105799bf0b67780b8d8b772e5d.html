@@ -117,25 +117,26 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_ac7b396105799bf0b677
 
 <p class="definition">Definition at line <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../df/d36/ring-vecs_8cpp_source.html">ring-vecs.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   97</span>{</div>
-<div class="line"><span class="lineno">   98</span>  <span class="keywordflow">for</span> (;; v = v-&gt;next, w = w-&gt;next)</div>
+<div class="line"><span class="lineno">   98</span>  <span class="keywordflow">for</span> (;; v = v-&gt;next, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a>-&gt;next)</div>
 <div class="line"><span class="lineno">   99</span>    {</div>
 <div class="line"><span class="lineno">  100</span>      <span class="keywordflow">if</span> (v == <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">  101</span>        {</div>
-<div class="line"><span class="lineno">  102</span>          <span class="keywordflow">if</span> (w == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  102</span>          <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a> == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  103</span>          <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">  104</span>        }</div>
-<div class="line"><span class="lineno">  105</span>      <span class="keywordflow">if</span> (w == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">  106</span>      <span class="keywordtype">int</span> cmp = v-&gt;comp - w-&gt;comp;</div>
+<div class="line"><span class="lineno">  105</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a> == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  106</span>      <span class="keywordtype">int</span> cmp = v-&gt;comp - <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a>-&gt;comp;</div>
 <div class="line"><span class="lineno">  107</span>      <span class="keywordflow">if</span> (cmp &gt; 0) <span class="keywordflow">return</span> cmp;</div>
 <div class="line"><span class="lineno">  108</span>      <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> cmp;</div>
-<div class="line"><span class="lineno">  109</span>      cmp = this-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_ac7003d0bc8d7d274777ccfb0bd3ec229.html#ac7003d0bc8d7d274777ccfb0bd3ec229">compare_elems</a>(v-&gt;coeff, w-&gt;coeff);</div>
+<div class="line"><span class="lineno">  109</span>      cmp = this-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_ac7003d0bc8d7d274777ccfb0bd3ec229.html#ac7003d0bc8d7d274777ccfb0bd3ec229">compare_elems</a>(v-&gt;coeff, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a>-&gt;coeff);</div>
 <div class="line"><span class="lineno">  110</span>      <span class="keywordflow">if</span> (cmp &gt; 0) <span class="keywordflow">return</span> cmp;</div>
 <div class="line"><span class="lineno">  111</span>      <span class="keywordflow">if</span> (cmp &lt; 0) <span class="keywordflow">return</span> cmp;</div>
 <div class="line"><span class="lineno">  112</span>    }</div>
 <div class="line"><span class="lineno">  113</span>}</div>
 <div class="ttc" id="aclass_ring_ac7003d0bc8d7d274777ccfb0bd3ec229_html_ac7003d0bc8d7d274777ccfb0bd3ec229"><div class="ttname"><a href="../../dd/dcf/class_ring_ac7003d0bc8d7d274777ccfb0bd3ec229.html#ac7003d0bc8d7d274777ccfb0bd3ec229">Ring::compare_elems</a></div><div class="ttdeci">virtual int compare_elems(const ring_elem f, const ring_elem g) const =0</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dd/dcf/class_ring_ac7003d0bc8d7d274777ccfb0bd3ec229.html#ac7003d0bc8d7d274777ccfb0bd3ec229">compare_elems()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/dcf/class_ring_ac7003d0bc8d7d274777ccfb0bd3ec229.html#ac7003d0bc8d7d274777ccfb0bd3ec229">compare_elems()</a>, and <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/d1d/class_matrix_sorter_a05e1111a1a6f95a7d0b4478fe927e838.html#a05e1111a1a6f95a7d0b4478fe927e838">MatrixSorter::sort_compare()</a>.</p>
 
@@ -147,7 +148,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_ac7b396105799bf0b677
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

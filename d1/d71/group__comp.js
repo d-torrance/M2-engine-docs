@@ -54,11 +54,5 @@ var group__comp =
       [ "pfaffs", "dc/df6/class_pfaffian_computation_a4e895f3505748f76bf9b4f8532a1755a.html#a4e895f3505748f76bf9b4f8532a1755a", null ],
       [ "R", "dc/df6/class_pfaffian_computation_a030d878549e94839c152d75c57bd7d26.html#a030d878549e94839c152d75c57bd7d26", null ],
       [ "row_set", "dc/df6/class_pfaffian_computation_a51067a968e1e5fb68d16cf25e80f7f90.html#a51067a968e1e5fb68d16cf25e80f7f90", null ]
-    ] ],
-    [ "sagbi", "dc/d5a/classsagbi.html", [
-      [ "subduct", "dc/d5a/classsagbi_a5ed0f492b56ddf205914fc40911ac07f.html#a5ed0f492b56ddf205914fc40911ac07f", null ],
-      [ "subduct", "dc/d5a/classsagbi_a64a8b4a6e105fb866603f7635109cb9d.html#a64a8b4a6e105fb866603f7635109cb9d", null ],
-      [ "subduct1", "dc/d5a/classsagbi_a46fdc62b4d511ef235d0604872a6e700.html#a46fdc62b4d511ef235d0604872a6e700", null ],
-      [ "subduct1", "dc/d5a/classsagbi_a7b41ac511b69cf5dd55581f10945c0e8.html#a7b41ac511b69cf5dd55581f10945c0e8", null ]
     ] ]
 ];

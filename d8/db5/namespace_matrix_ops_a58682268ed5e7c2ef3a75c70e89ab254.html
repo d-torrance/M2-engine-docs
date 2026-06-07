@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a58682268e
         <tr>
           <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> MatrixOps::eigenvaluesHermitian </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../df/dd2/lapack_8hpp_af08ee838e04db100344bab171255dbdc.html#af08ee838e04db100344bab171255dbdc">DMatRR</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../df/dd2/lapack_8hpp_af08ee838e04db100344bab171255dbdc.html#af08ee838e04db100344bab171255dbdc">DMatRR</a> &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
@@ -126,15 +126,16 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a58682268e
 <p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l01161">1161</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1162</span>{</div>
 <div class="line"><span class="lineno"> 1163</span><span class="preprocessor">#ifndef NO_LAPACK</span></div>
-<div class="line"><span class="lineno"> 1164</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/dd6/class_lapack_aeac99bab00fbff46c7188a9612b30af6.html#aeac99bab00fbff46c7188a9612b30af6">Lapack::eigenvalues_symmetric</a>(&amp;A, &amp;eigenvals);</div>
+<div class="line"><span class="lineno"> 1164</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/dd6/class_lapack_aeac99bab00fbff46c7188a9612b30af6.html#aeac99bab00fbff46c7188a9612b30af6">Lapack::eigenvalues_symmetric</a>(&amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a>, &amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigenvals</a>);</div>
 <div class="line"><span class="lineno"> 1165</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno"> 1166</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d21/namespace_eigen_m2_af62f1a1bf68deb784d2ae1b784fd25de.html#af62f1a1bf68deb784d2ae1b784fd25de">EigenM2::eigenvalues_hermitian</a>(&amp;A, &amp;eigenvals);</div>
+<div class="line"><span class="lineno"> 1166</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d21/namespace_eigen_m2_af62f1a1bf68deb784d2ae1b784fd25de.html#af62f1a1bf68deb784d2ae1b784fd25de">EigenM2::eigenvalues_hermitian</a>(&amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a>, &amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigenvals</a>);</div>
 <div class="line"><span class="lineno"> 1167</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno"> 1168</span>}</div>
 <div class="ttc" id="aclass_lapack_aeac99bab00fbff46c7188a9612b30af6_html_aeac99bab00fbff46c7188a9612b30af6"><div class="ttname"><a href="../../df/dd6/class_lapack_aeac99bab00fbff46c7188a9612b30af6.html#aeac99bab00fbff46c7188a9612b30af6">Lapack::eigenvalues_symmetric</a></div><div class="ttdeci">static bool eigenvalues_symmetric(const DMatRRR *A, DMatRRR *eigenvals)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l00462">lapack.cpp:462</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="anamespace_eigen_m2_af62f1a1bf68deb784d2ae1b784fd25de_html_af62f1a1bf68deb784d2ae1b784fd25de"><div class="ttname"><a href="../../df/d21/namespace_eigen_m2_af62f1a1bf68deb784d2ae1b784fd25de.html#af62f1a1bf68deb784d2ae1b784fd25de">EigenM2::eigenvalues_hermitian</a></div><div class="ttdeci">bool eigenvalues_hermitian(const LMatrixRRR *A, LMatrixRRR *eigenvals)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d0e/eigen_8cpp_source.html#l00470">eigen.cpp:470</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/d21/namespace_eigen_m2_af62f1a1bf68deb784d2ae1b784fd25de.html#af62f1a1bf68deb784d2ae1b784fd25de">EigenM2::eigenvalues_hermitian()</a>, and <a class="el" href="../../df/dd6/class_lapack_aeac99bab00fbff46c7188a9612b30af6.html#aeac99bab00fbff46c7188a9612b30af6">Lapack::eigenvalues_symmetric()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../df/d21/namespace_eigen_m2_af62f1a1bf68deb784d2ae1b784fd25de.html#af62f1a1bf68deb784d2ae1b784fd25de">EigenM2::eigenvalues_hermitian()</a>, and <a class="el" href="../../df/dd6/class_lapack_aeac99bab00fbff46c7188a9612b30af6.html#aeac99bab00fbff46c7188a9612b30af6">Lapack::eigenvalues_symmetric()</a>.</p>
 
 </div>
 </div>
@@ -144,7 +145,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a58682268e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

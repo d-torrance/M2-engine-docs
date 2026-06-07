@@ -109,19 +109,20 @@ $(document).ready(function(){initNavTree('d8/de6/flint_8cpp_aa6d50580684413c3a42
 <p class="definition">Definition at line <a class="el" href="../../d8/de6/flint_8cpp_source.html#l00018">18</a> of file <a class="el" href="../../d8/de6/flint_8cpp_source.html">flint.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   19</span>{</div>
 <div class="line"><span class="lineno">   20</span>  fmpz_t n;</div>
-<div class="line"><span class="lineno">   21</span>  fmpz_init(n);</div>
-<div class="line"><span class="lineno">   22</span>  fmpz_set_mpz(n, a);</div>
-<div class="line"><span class="lineno">   23</span>  <span class="keyword">auto</span> ret = fmpz_is_prime(n);</div>
-<div class="line"><span class="lineno">   24</span>  fmpz_clear(n);</div>
-<div class="line"><span class="lineno">   25</span>  <span class="keywordflow">if</span>(ret&lt;0) {</div>
+<div class="line"><span class="lineno">   21</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fmpz_init</a>(n);</div>
+<div class="line"><span class="lineno">   22</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fmpz_set_mpz</a>(n, a);</div>
+<div class="line"><span class="lineno">   23</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ret</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fmpz_is_prime</a>(n);</div>
+<div class="line"><span class="lineno">   24</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fmpz_clear</a>(n);</div>
+<div class="line"><span class="lineno">   25</span>  <span class="keywordflow">if</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ret</a>&lt;0) {</div>
 <div class="line"><span class="lineno">   26</span>    <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;flint&#39;s is_prime failed&quot;</span>);</div>
-<div class="line"><span class="lineno">   27</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;fmpz_is_prime returned &quot;</span> &lt;&lt; ret &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   27</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;fmpz_is_prime returned &quot;</span> &lt;&lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ret</a> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   28</span>  }</div>
-<div class="line"><span class="lineno">   29</span>  <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">   29</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ret</a>;</div>
 <div class="line"><span class="lineno">   30</span>}</div>
 <div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>.</p>
 
 </div>
 </div>
@@ -131,7 +132,7 @@ $(document).ready(function(){initNavTree('d8/de6/flint_8cpp_aa6d50580684413c3a42
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d8/de6/flint_8cpp.html">flint.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

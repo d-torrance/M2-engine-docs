@@ -99,15 +99,15 @@ $(document).ready(function(){initNavTree('d2/d49/class_pair_af0423f8c9aba97457ca
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> operator&lt; </td>
+          <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">operator</a>&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/d49/class_pair.html">Pair</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d2/d49/class_pair.html">Pair</a> &amp;&#160;</td>
           <td class="paramname"><em>pair1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d2/d49/class_pair.html">Pair</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d2/d49/class_pair.html">Pair</a> &amp;&#160;</td>
           <td class="paramname"><em>pair2</em>&#160;</td>
         </tr>
         <tr>
@@ -123,35 +123,33 @@ $(document).ready(function(){initNavTree('d2/d49/class_pair_af0423f8c9aba97457ca
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d10/franzi-gb_8cpp_source.html#l00015">15</a> of file <a class="el" href="../../de/d10/franzi-gb_8cpp_source.html">franzi-gb.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d48/_b_r_p-gb_8cpp_source.html#l00015">15</a> of file <a class="el" href="../../db/d48/_b_r_p-gb_8cpp_source.html">BRP-gb.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   16</span>  {</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">if</span> (pair1.<a class="code hl_variable" href="../../d2/d49/class_pair_affb8bd419fe581fdb84ae0d545fce302.html#affb8bd419fe581fdb84ae0d545fce302">lcm</a> &lt; pair2.<a class="code hl_variable" href="../../d2/d49/class_pair_affb8bd419fe581fdb84ae0d545fce302.html#affb8bd419fe581fdb84ae0d545fce302">lcm</a>)</div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pair1</a>.lcm &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pair2</a>.lcm)</div>
 <div class="line"><span class="lineno">   18</span>      {</div>
 <div class="line"><span class="lineno">   19</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   20</span>      }</div>
-<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pair1.<a class="code hl_variable" href="../../d2/d49/class_pair_affb8bd419fe581fdb84ae0d545fce302.html#affb8bd419fe581fdb84ae0d545fce302">lcm</a> &gt; pair2.<a class="code hl_variable" href="../../d2/d49/class_pair_affb8bd419fe581fdb84ae0d545fce302.html#affb8bd419fe581fdb84ae0d545fce302">lcm</a>)</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pair1</a>.lcm &gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pair2</a>.lcm)</div>
 <div class="line"><span class="lineno">   22</span>      {</div>
 <div class="line"><span class="lineno">   23</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   24</span>      }</div>
 <div class="line"><span class="lineno">   25</span>    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">   26</span>      {</div>
-<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">if</span> (pair1.<a class="code hl_variable" href="../../d2/d49/class_pair_a5cc7c357fa4c81c5760aa8e07d68918d.html#a5cc7c357fa4c81c5760aa8e07d68918d">j</a> &lt; pair2.<a class="code hl_variable" href="../../d2/d49/class_pair_a5cc7c357fa4c81c5760aa8e07d68918d.html#a5cc7c357fa4c81c5760aa8e07d68918d">j</a>)</div>
+<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pair1</a>.j &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pair2</a>.j)</div>
 <div class="line"><span class="lineno">   28</span>          {</div>
 <div class="line"><span class="lineno">   29</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   30</span>          }</div>
-<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pair1.<a class="code hl_variable" href="../../d2/d49/class_pair_a5cc7c357fa4c81c5760aa8e07d68918d.html#a5cc7c357fa4c81c5760aa8e07d68918d">j</a> &gt; pair2.<a class="code hl_variable" href="../../d2/d49/class_pair_a5cc7c357fa4c81c5760aa8e07d68918d.html#a5cc7c357fa4c81c5760aa8e07d68918d">j</a>)</div>
+<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pair1</a>.j &gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pair2</a>.j)</div>
 <div class="line"><span class="lineno">   32</span>          {</div>
 <div class="line"><span class="lineno">   33</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   34</span>          }</div>
 <div class="line"><span class="lineno">   35</span>        <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">   36</span>          {</div>
-<div class="line"><span class="lineno">   37</span>            <span class="keywordflow">return</span> pair1.<a class="code hl_variable" href="../../d2/d49/class_pair_a174e8c0f0ff85f24f98253a134c085d1.html#a174e8c0f0ff85f24f98253a134c085d1">i</a> &lt; pair2.<a class="code hl_variable" href="../../d2/d49/class_pair_a174e8c0f0ff85f24f98253a134c085d1.html#a174e8c0f0ff85f24f98253a134c085d1">i</a>;</div>
+<div class="line"><span class="lineno">   37</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pair1</a>.i &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pair2</a>.i;</div>
 <div class="line"><span class="lineno">   38</span>          }</div>
 <div class="line"><span class="lineno">   39</span>      }</div>
 <div class="line"><span class="lineno">   40</span>  }</div>
-<div class="ttc" id="aclass_pair_a174e8c0f0ff85f24f98253a134c085d1_html_a174e8c0f0ff85f24f98253a134c085d1"><div class="ttname"><a href="../../d2/d49/class_pair_a174e8c0f0ff85f24f98253a134c085d1.html#a174e8c0f0ff85f24f98253a134c085d1">Pair::i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition</b> <a href="../../de/d10/franzi-gb_8cpp_source.html#l00043">franzi-gb.cpp:43</a></div></div>
-<div class="ttc" id="aclass_pair_a5cc7c357fa4c81c5760aa8e07d68918d_html_a5cc7c357fa4c81c5760aa8e07d68918d"><div class="ttname"><a href="../../d2/d49/class_pair_a5cc7c357fa4c81c5760aa8e07d68918d.html#a5cc7c357fa4c81c5760aa8e07d68918d">Pair::j</a></div><div class="ttdeci">int j</div><div class="ttdef"><b>Definition</b> <a href="../../de/d10/franzi-gb_8cpp_source.html#l00044">franzi-gb.cpp:44</a></div></div>
-<div class="ttc" id="aclass_pair_affb8bd419fe581fdb84ae0d545fce302_html_affb8bd419fe581fdb84ae0d545fce302"><div class="ttname"><a href="../../d2/d49/class_pair_affb8bd419fe581fdb84ae0d545fce302.html#affb8bd419fe581fdb84ae0d545fce302">Pair::lcm</a></div><div class="ttdeci">brMonomial lcm</div><div class="ttdef"><b>Definition</b> <a href="../../de/d10/franzi-gb_8cpp_source.html#l00046">franzi-gb.cpp:46</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -161,7 +159,7 @@ $(document).ready(function(){initNavTree('d2/d49/class_pair_af0423f8c9aba97457ca
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d49/class_pair.html">Pair</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

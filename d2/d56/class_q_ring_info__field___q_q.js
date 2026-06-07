@@ -1,6 +1,6 @@
 var class_q_ring_info__field___q_q =
 [
-    [ "QRingInfo_field_QQ", "d2/d56/class_q_ring_info__field___q_q_ab81b847f9056d5becdabd5f6ab134aa0.html#ab81b847f9056d5becdabd5f6ab134aa0", null ],
+    [ "QRingInfo_field_QQ", "d2/d56/class_q_ring_info__field___q_q_a038cfae53a613deb7face6501836c45b.html#a038cfae53a613deb7face6501836c45b", null ],
     [ "~QRingInfo_field_QQ", "d2/d56/class_q_ring_info__field___q_q_a0b8075d58e9b9419b02554945962bc9a.html#a0b8075d58e9b9419b02554945962bc9a", null ],
     [ "gbvector_normal_form", "d2/d56/class_q_ring_info__field___q_q_a6346f042060bf7d77a25c1e3ed588c44.html#a6346f042060bf7d77a25c1e3ed588c44", null ],
     [ "gbvector_normal_form", "d2/d56/class_q_ring_info__field___q_q_a7661437faf6c6254d48a068f709814cc.html#a7661437faf6c6254d48a068f709814cc", null ],

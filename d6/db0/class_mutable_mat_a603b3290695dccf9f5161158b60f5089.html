@@ -95,13 +95,13 @@ $(document).ready(function(){initNavTree('d6/db0/class_mutable_mat_a603b3290695d
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Mat &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> Mat &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../d6/db0/class_mutable_mat.html">MutableMat</a>&lt; Mat &gt;::get_entry </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">virtual</a> <a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../d6/db0/class_mutable_mat.html">MutableMat</a>&lt; Mat &gt;::get_entry </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../db/d07/m2-mem_8h_afb0843d0fb27ea1b89117293f9a01605.html#afb0843d0fb27ea1b89117293f9a01605">size_t</a>&#160;</td>
           <td class="paramname"><em>r</em>, </td>
@@ -135,14 +135,14 @@ template&lt;typename Mat &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00274">274</a> of file <a class="el" href="../../dd/d5f/mutablemat-defs_8hpp_source.html">mutablemat-defs.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  277</span>  {</div>
-<div class="line"><span class="lineno">  278</span>    <span class="keywordflow">if</span> (r &lt; <a class="code hl_function" href="../../d6/db0/class_mutable_mat_a49d50768779051aec4f4bd1bf357f2d3.html#a49d50768779051aec4f4bd1bf357f2d3">n_rows</a>() &amp;&amp; c &lt; <a class="code hl_function" href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">n_cols</a>())</div>
+<div class="line"><span class="lineno">  278</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">r</a> &lt; <a class="code hl_function" href="../../d6/db0/class_mutable_mat_a49d50768779051aec4f4bd1bf357f2d3.html#a49d50768779051aec4f4bd1bf357f2d3">n_rows</a>() &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a> &lt; <a class="code hl_function" href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">n_cols</a>())</div>
 <div class="line"><span class="lineno">  279</span>      {</div>
 <div class="line"><span class="lineno">  280</span>        <a class="code hl_typedef" href="../../d6/db0/class_mutable_mat_ad93785d6485a1219043832f4a4b73e68.html#ad93785d6485a1219043832f4a4b73e68">Element</a> a(<a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>.ring());</div>
 <div class="line"><span class="lineno">  281</span> </div>
-<div class="line"><span class="lineno">  282</span>        MatOps::getEntry(<a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>, r, c, a);</div>
-<div class="line"><span class="lineno">  283</span>        <span class="keywordtype">bool</span> is_nonzero = not <a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>.ring().is_zero(a);</div>
+<div class="line"><span class="lineno">  282</span>        MatOps::getEntry(<a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">r</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>, a);</div>
+<div class="line"><span class="lineno">  283</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">is_nonzero</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">not</a> <a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>.ring().is_zero(a);</div>
 <div class="line"><span class="lineno">  284</span>        <a class="code hl_variable" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">mat</a>.ring().to_ring_elem(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, a);</div>
-<div class="line"><span class="lineno">  285</span>        <span class="keywordflow">return</span> is_nonzero;</div>
+<div class="line"><span class="lineno">  285</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">is_nonzero</a>;</div>
 <div class="line"><span class="lineno">  286</span>      }</div>
 <div class="line"><span class="lineno">  287</span> </div>
 <div class="line"><span class="lineno">  288</span>    <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <a class="code hl_function" href="../../d6/db0/class_mutable_mat_ac793a84f55ab595e10cf36be2e54235e.html#ac793a84f55ab595e10cf36be2e54235e">get_ring</a>()-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a56c4dbffcc7bba98da2103f70a0e8602.html#a56c4dbffcc7bba98da2103f70a0e8602">zero</a>();</div>
@@ -155,8 +155,9 @@ template&lt;typename Mat &gt; </div>
 <div class="ttc" id="aclass_mutable_mat_ad93785d6485a1219043832f4a4b73e68_html_ad93785d6485a1219043832f4a4b73e68"><div class="ttname"><a href="../../d6/db0/class_mutable_mat_ad93785d6485a1219043832f4a4b73e68.html#ad93785d6485a1219043832f4a4b73e68">MutableMat::Element</a></div><div class="ttdeci">CoeffRing::Element Element</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d5f/mutablemat-defs_8hpp_source.html#l00169">mutablemat-defs.hpp:169</a></div></div>
 <div class="ttc" id="aclass_ring_a56c4dbffcc7bba98da2103f70a0e8602_html_a56c4dbffcc7bba98da2103f70a0e8602"><div class="ttname"><a href="../../dd/dcf/class_ring_a56c4dbffcc7bba98da2103f70a0e8602.html#a56c4dbffcc7bba98da2103f70a0e8602">Ring::zero</a></div><div class="ttdeci">ring_elem zero() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d10/ring_8hpp_source.html#l00323">ring.hpp:323</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/db0/class_mutable_mat_ac793a84f55ab595e10cf36be2e54235e.html#ac793a84f55ab595e10cf36be2e54235e">MutableMat&lt; Mat &gt;::get_ring()</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat&lt; Mat &gt;::mat</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">MutableMat&lt; Mat &gt;::n_cols()</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a49d50768779051aec4f4bd1bf357f2d3.html#a49d50768779051aec4f4bd1bf357f2d3">MutableMat&lt; Mat &gt;::n_rows()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>, and <a class="el" href="../../dd/dcf/class_ring_a56c4dbffcc7bba98da2103f70a0e8602.html#a56c4dbffcc7bba98da2103f70a0e8602">Ring::zero()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d6/db0/class_mutable_mat_ac793a84f55ab595e10cf36be2e54235e.html#ac793a84f55ab595e10cf36be2e54235e">MutableMat&lt; Mat &gt;::get_ring()</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a852442a68fd752a8e97f8723c65cfe96.html#a852442a68fd752a8e97f8723c65cfe96">MutableMat&lt; Mat &gt;::mat</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a8d9f7c1f50394782209a1f9a8a073004.html#a8d9f7c1f50394782209a1f9a8a073004">MutableMat&lt; Mat &gt;::n_cols()</a>, <a class="el" href="../../d6/db0/class_mutable_mat_a49d50768779051aec4f4bd1bf357f2d3.html#a49d50768779051aec4f4bd1bf357f2d3">MutableMat&lt; Mat &gt;::n_rows()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>, and <a class="el" href="../../dd/dcf/class_ring_a56c4dbffcc7bba98da2103f70a0e8602.html#a56c4dbffcc7bba98da2103f70a0e8602">Ring::zero()</a>.</p>
 
 </div>
 </div>
@@ -166,7 +167,7 @@ template&lt;typename Mat &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/db0/class_mutable_mat.html">MutableMat</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

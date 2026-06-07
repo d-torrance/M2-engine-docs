@@ -90,13 +90,13 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a521d6d7f6
 
 <div class="contents">
 <a id="a521d6d7f6b4bbbbb6196d89b68be1d57" name="a521d6d7f6b4bbbbb6196d89b68be1d57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a521d6d7f6b4bbbbb6196d89b68be1d57">&#9670;&#160;</a></span>addMultipleTo() <span class="overload">[3/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a521d6d7f6b4bbbbb6196d89b68be1d57">&#9670;&#160;</a></span>addMultipleTo() <span class="overload">[3/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void MatrixOps::addMultipleTo </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> MatrixOps::addMultipleTo </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../da/dc3/class_d_mat.html">DMat</a>&lt; <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a01bc2562d515aad709529a426c495d11.html#a01bc2562d515aad709529a426c495d11">ZZpFFPACK</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>C</em>, </td>
@@ -104,13 +104,13 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a521d6d7f6
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../da/dc3/class_d_mat.html">DMat</a>&lt; <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a01bc2562d515aad709529a426c495d11.html#a01bc2562d515aad709529a426c495d11">ZZpFFPACK</a> &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/dc3/class_d_mat.html">DMat</a>&lt; <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a01bc2562d515aad709529a426c495d11.html#a01bc2562d515aad709529a426c495d11">ZZpFFPACK</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../da/dc3/class_d_mat.html">DMat</a>&lt; <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a01bc2562d515aad709529a426c495d11.html#a01bc2562d515aad709529a426c495d11">ZZpFFPACK</a> &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/dc3/class_d_mat.html">DMat</a>&lt; <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a01bc2562d515aad709529a426c495d11.html#a01bc2562d515aad709529a426c495d11">ZZpFFPACK</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>B</em>&#160;</td>
         </tr>
         <tr>
@@ -121,18 +121,6 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a521d6d7f6
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d2f/dmat_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d4/d2f/dmat_8cpp_source.html">dmat.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>{</div>
-<div class="line"><span class="lineno">   57</span>  DMatZZpFFPACK::ElementType one;</div>
-<div class="line"><span class="lineno">   58</span>  A.<a class="code hl_function" href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">ring</a>().set_from_long(one, 1);</div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>  <a class="code hl_function" href="../../d8/db5/namespace_matrix_ops_a7d8e2d518af658a8765a3920b1b7dde3.html#a7d8e2d518af658a8765a3920b1b7dde3">addMultipleTo</a>(C, one, A, B);</div>
-<div class="line"><span class="lineno">   61</span>}</div>
-<div class="ttc" id="aclass_d_mat_a8bfde729efa8a5ba300bd3024dc9a440_html_a8bfde729efa8a5ba300bd3024dc9a440"><div class="ttname"><a href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">DMat::ring</a></div><div class="ttdeci">const ACoeffRing &amp; ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00106">dmat.hpp:106</a></div></div>
-<div class="ttc" id="anamespace_matrix_ops_a7d8e2d518af658a8765a3920b1b7dde3_html_a7d8e2d518af658a8765a3920b1b7dde3"><div class="ttname"><a href="../../d8/db5/namespace_matrix_ops_a7d8e2d518af658a8765a3920b1b7dde3.html#a7d8e2d518af658a8765a3920b1b7dde3">MatrixOps::addMultipleTo</a></div><div class="ttdeci">void addMultipleTo(DMat&lt; ZZpFFPACK &gt; &amp;C, const DMat&lt; ZZpFFPACK &gt; ::ElementType &amp;a, const DMat&lt; ZZpFFPACK &gt; &amp;A, const DMat&lt; ZZpFFPACK &gt; &amp;B)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d2f/dmat_8cpp_source.html#l00013">dmat.cpp:13</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/db5/namespace_matrix_ops_a7d8e2d518af658a8765a3920b1b7dde3.html#a7d8e2d518af658a8765a3920b1b7dde3">addMultipleTo()</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -141,7 +129,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a521d6d7f6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

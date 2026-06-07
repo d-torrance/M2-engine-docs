@@ -135,15 +135,16 @@ $(document).ready(function(){initNavTree('dd/dab/class_monomial_info_af84080e02e
 <div class="line"><span class="lineno">  202</span>    <span class="comment">// 0..nvars-1</span></div>
 <div class="line"><span class="lineno">  203</span>    <span class="comment">// this is to connect with older &#39;int *&#39; monomials.</span></div>
 <div class="line"><span class="lineno">  204</span>    <a class="code hl_variable" href="../../dd/dab/class_monomial_info_a98a5648ed0a903736b1d675c80208b4b.html#a98a5648ed0a903736b1d675c80208b4b">ncalls_to_expvector</a>++;</div>
-<div class="line"><span class="lineno">  205</span>    result_comp = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m[1]);</div>
+<div class="line"><span class="lineno">  205</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_comp</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m[1]);</div>
 <div class="line"><span class="lineno">  206</span>    m += <a class="code hl_variable" href="../../dd/dab/class_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c.html#ab871cfa4ab66344a8de516bf9fe5962c">firstvar</a>;</div>
-<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nvars; i++) *result++ = static_cast&lt;int&gt;(*m++);</div>
+<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">i &lt; nvars; i++) *result++ = static_cast&lt;int&gt;</a>(*m++);</div>
 <div class="line"><span class="lineno">  208</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  209</span>  }</div>
 <div class="ttc" id="aclass_monomial_info_a98a5648ed0a903736b1d675c80208b4b_html_a98a5648ed0a903736b1d675c80208b4b"><div class="ttname"><a href="../../dd/dab/class_monomial_info_a98a5648ed0a903736b1d675c80208b4b.html#a98a5648ed0a903736b1d675c80208b4b">MonomialInfo::ncalls_to_expvector</a></div><div class="ttdeci">unsigned long ncalls_to_expvector</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00075">moninfo.hpp:75</a></div></div>
 <div class="ttc" id="aclass_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c_html_ab871cfa4ab66344a8de516bf9fe5962c"><div class="ttname"><a href="../../dd/dab/class_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c.html#ab871cfa4ab66344a8de516bf9fe5962c">MonomialInfo::firstvar</a></div><div class="ttdeci">int firstvar</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/moninfo_8hpp_source.html#l00054">moninfo.hpp:54</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dd/dab/class_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c.html#ab871cfa4ab66344a8de516bf9fe5962c">firstvar</a>, and <a class="el" href="../../dd/dab/class_monomial_info_a98a5648ed0a903736b1d675c80208b4b.html#a98a5648ed0a903736b1d675c80208b4b">ncalls_to_expvector</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../dd/dab/class_monomial_info_ab871cfa4ab66344a8de516bf9fe5962c.html#ab871cfa4ab66344a8de516bf9fe5962c">firstvar</a>, and <a class="el" href="../../dd/dab/class_monomial_info_a98a5648ed0a903736b1d675c80208b4b.html#a98a5648ed0a903736b1d675c80208b4b">ncalls_to_expvector</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d4a/class_f4_g_b_ac129a0a9d0bf6e59362e6110405af6b1.html#ac129a0a9d0bf6e59362e6110405af6b1">F4GB::insert_gb_element()</a>.</p>
 
@@ -155,7 +156,7 @@ $(document).ready(function(){initNavTree('dd/dab/class_monomial_info_af84080e02e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dab/class_monomial_info.html">MonomialInfo</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

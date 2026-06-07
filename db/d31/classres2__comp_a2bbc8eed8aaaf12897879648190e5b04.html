@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('db/d31/classres2__comp_a2bbc8eed8aaaf1
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void res2_comp::remove_res2_level </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> res2_comp::remove_res2_level </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/dcd/structres2__level.html">res2_level</a> *&#160;</td>
           <td class="paramname"><em>lev</em></td><td>)</td>
@@ -118,19 +118,19 @@ $(document).ready(function(){initNavTree('db/d31/classres2__comp_a2bbc8eed8aaaf1
 <div class="line"><span class="lineno">  580</span>  <span class="keywordflow">if</span> (lev == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  581</span>  <span class="keywordflow">while</span> (lev-&gt;<a class="code hl_variable" href="../../d7/dcd/structres2__level_a45b9e9f11578c24a3f6650ee3a79c157.html#a45b9e9f11578c24a3f6650ee3a79c157">pairs</a> != <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">  582</span>    {</div>
-<div class="line"><span class="lineno">  583</span>      <a class="code hl_struct" href="../../d0/d5c/structres2__pair.html">res2_pair</a> *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = lev-&gt;<a class="code hl_variable" href="../../d7/dcd/structres2__level_a45b9e9f11578c24a3f6650ee3a79c157.html#a45b9e9f11578c24a3f6650ee3a79c157">pairs</a>;</div>
-<div class="line"><span class="lineno">  584</span>      lev-&gt;<a class="code hl_variable" href="../../d7/dcd/structres2__level_a45b9e9f11578c24a3f6650ee3a79c157.html#a45b9e9f11578c24a3f6650ee3a79c157">pairs</a> = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next;</div>
-<div class="line"><span class="lineno">  585</span>      <a class="code hl_function" href="../../db/d31/classres2__comp_a2b9894764b202a93ae015cbca7c58f02.html#a2b9894764b202a93ae015cbca7c58f02">remove_res2_pair</a>(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><span class="lineno">  583</span>      <a class="code hl_struct" href="../../d0/d5c/structres2__pair.html">res2_pair</a> *p = lev-&gt;<a class="code hl_variable" href="../../d7/dcd/structres2__level_a45b9e9f11578c24a3f6650ee3a79c157.html#a45b9e9f11578c24a3f6650ee3a79c157">pairs</a>;</div>
+<div class="line"><span class="lineno">  584</span>      lev-&gt;<a class="code hl_variable" href="../../d7/dcd/structres2__level_a45b9e9f11578c24a3f6650ee3a79c157.html#a45b9e9f11578c24a3f6650ee3a79c157">pairs</a> = p-&gt;<a class="code hl_variable" href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">next</a>;</div>
+<div class="line"><span class="lineno">  585</span>      <a class="code hl_function" href="../../db/d31/classres2__comp_a2b9894764b202a93ae015cbca7c58f02.html#a2b9894764b202a93ae015cbca7c58f02">remove_res2_pair</a>(p);</div>
 <div class="line"><span class="lineno">  586</span>    }</div>
 <div class="line"><span class="lineno">  587</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(lev);</div>
 <div class="line"><span class="lineno">  588</span>}</div>
 <div class="ttc" id="aclassres2__comp_a2b9894764b202a93ae015cbca7c58f02_html_a2b9894764b202a93ae015cbca7c58f02"><div class="ttname"><a href="../../db/d31/classres2__comp_a2b9894764b202a93ae015cbca7c58f02.html#a2b9894764b202a93ae015cbca7c58f02">res2_comp::remove_res2_pair</a></div><div class="ttdeci">void remove_res2_pair(res2_pair *p)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dde/res-a0_8cpp_source.html#l00570">res-a0.cpp:570</a></div></div>
-<div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_a1c6306973edadb50294a656e3927fcba_html_a1c6306973edadb50294a656e3927fcba"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a></div><div class="ttdeci">void freemem(void *s)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00103">m2-mem.cpp:103</a></div></div>
 <div class="ttc" id="astructres2__level_a45b9e9f11578c24a3f6650ee3a79c157_html_a45b9e9f11578c24a3f6650ee3a79c157"><div class="ttname"><a href="../../d7/dcd/structres2__level_a45b9e9f11578c24a3f6650ee3a79c157.html#a45b9e9f11578c24a3f6650ee3a79c157">res2_level::pairs</a></div><div class="ttdeci">res2_pair * pairs</div><div class="ttdef"><b>Definition</b> <a href="../../dc/db4/res-a0_8hpp_source.html#l00070">res-a0.hpp:70</a></div></div>
+<div class="ttc" id="astructres2__pair_ac9d36b180e8abc8f4d85c50195c68fda_html_ac9d36b180e8abc8f4d85c50195c68fda"><div class="ttname"><a href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">res2_pair::next</a></div><div class="ttdeci">res2_pair * next</div><div class="ttdef"><b>Definition</b> <a href="../../da/d2a/res-a0-pair_8hpp_source.html#l00026">res-a0-pair.hpp:26</a></div></div>
 <div class="ttc" id="astructres2__pair_html"><div class="ttname"><a href="../../d0/d5c/structres2__pair.html">res2_pair</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d2a/res-a0-pair_8hpp_source.html#l00024">res-a0-pair.hpp:25</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem()</a>, <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, <a class="el" href="../../d7/dcd/structres2__level_a45b9e9f11578c24a3f6650ee3a79c157.html#a45b9e9f11578c24a3f6650ee3a79c157">res2_level::pairs</a>, and <a class="el" href="../../db/d31/classres2__comp_a2b9894764b202a93ae015cbca7c58f02.html#a2b9894764b202a93ae015cbca7c58f02">remove_res2_pair()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem()</a>, <a class="el" href="../../d0/d5c/structres2__pair_ac9d36b180e8abc8f4d85c50195c68fda.html#ac9d36b180e8abc8f4d85c50195c68fda">res2_pair::next</a>, <a class="el" href="../../d7/dcd/structres2__level_a45b9e9f11578c24a3f6650ee3a79c157.html#a45b9e9f11578c24a3f6650ee3a79c157">res2_level::pairs</a>, and <a class="el" href="../../db/d31/classres2__comp_a2b9894764b202a93ae015cbca7c58f02.html#a2b9894764b202a93ae015cbca7c58f02">remove_res2_pair()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d31/classres2__comp_a8cc2527e31fd15cb5c461f3960afa5da.html#a8cc2527e31fd15cb5c461f3960afa5da">~res2_comp()</a>.</p>
 
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('db/d31/classres2__comp_a2bbc8eed8aaaf1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d31/classres2__comp.html">res2_comp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_a8
         <tr>
           <td class="memname">std::vector&lt; std::string &gt; readIdentifierList </td>
           <td>(</td>
-          <td class="paramtype">const std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> std::string_view&#160;</td>
           <td class="paramname"><em>line</em></td><td>)</td>
           <td></td>
         </tr>
@@ -108,23 +108,24 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_a8
 <p class="definition">Definition at line <a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp_source.html#l00113">113</a> of file <a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp_source.html">BasicPolyListParser.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  114</span>{</div>
 <div class="line"><span class="lineno">  115</span>  std::vector&lt;std::string&gt; <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
-<div class="line"><span class="lineno">  116</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; line.size(); ++i)</div>
+<div class="line"><span class="lineno">  116</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">line</a>.size(); ++i)</div>
 <div class="line"><span class="lineno">  117</span>    {</div>
-<div class="line"><span class="lineno">  118</span>      <span class="keywordtype">char</span> c = line[i];</div>
-<div class="line"><span class="lineno">  119</span>      <span class="keywordflow">if</span> (not isalpha(c)) <span class="keywordflow">continue</span>; <span class="comment">// possibly should give an error if we see a number? or non-identifieer start char?</span></div>
+<div class="line"><span class="lineno">  118</span>      <span class="keywordtype">char</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">line</a>[i];</div>
+<div class="line"><span class="lineno">  119</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">not</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">isalpha</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>)) <span class="keywordflow">continue</span>; <span class="comment">// possibly should give an error if we see a number? or non-identifieer start char?</span></div>
 <div class="line"><span class="lineno">  120</span>      <span class="keyword">auto</span> loc = i+1;</div>
-<div class="line"><span class="lineno">  121</span>      <span class="keywordflow">while</span> (loc &lt; line.size() and (isalpha(line[loc]) or isdigit(line[loc]) or line[loc] == <span class="charliteral">&#39;_&#39;</span>))</div>
+<div class="line"><span class="lineno">  121</span>      <span class="keywordflow">while</span> (loc &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">line</a>.size() <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">and</a> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">isalpha</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">line</a>[loc]) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">or</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">isdigit</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">line</a>[loc]) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">or</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">line</a>[loc] == <span class="charliteral">&#39;_&#39;</span>))</div>
 <div class="line"><span class="lineno">  122</span>        {</div>
 <div class="line"><span class="lineno">  123</span>          loc++;</div>
 <div class="line"><span class="lineno">  124</span>        }</div>
-<div class="line"><span class="lineno">  125</span>      std::string iden {line.substr(i, loc-i)};</div>
-<div class="line"><span class="lineno">  126</span>      <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.push_back(iden);</div>
+<div class="line"><span class="lineno">  125</span>      std::string <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iden</a> {<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">line</a>.substr(i, loc-i)};</div>
+<div class="line"><span class="lineno">  126</span>      <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.push_back(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iden</a>);</div>
 <div class="line"><span class="lineno">  127</span>    }</div>
 <div class="line"><span class="lineno">  128</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><span class="lineno">  129</span>}</div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp_abf790415d37a863639c120d0858cd04f.html#abf790415d37a863639c120d0858cd04f">parseMsolveFromString()</a>.</p>
 
@@ -136,7 +137,7 @@ $(document).ready(function(){initNavTree('d8/d5d/_basic_poly_list_parser_8cpp_a8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d8/d5d/_basic_poly_list_parser_8cpp.html">BasicPolyListParser.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

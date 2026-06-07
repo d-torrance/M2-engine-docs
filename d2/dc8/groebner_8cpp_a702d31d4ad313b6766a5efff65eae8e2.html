@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d2/dc8/groebner_8cpp_a702d31d4ad313b67
         <tr>
           <td class="memname"><a class="el" href="../../d6/dea/class_computation.html">Computation</a> * IM2_GB_make </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
@@ -164,20 +164,20 @@ $(document).ready(function(){initNavTree('d2/dc8/groebner_8cpp_a702d31d4ad313b67
 <div class="line"><span class="lineno">  103</span>    {</div>
 <div class="line"><span class="lineno">  104</span>      <a class="code hl_function" href="../../d2/dc8/groebner_8cpp_a9bee2cf033993a389a55db5f889b89a4.html#a9bee2cf033993a389a55db5f889b89a4">test_over_RR_or_CC</a>(m-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">get_ring</a>());</div>
 <div class="line"><span class="lineno">  105</span>      <a class="code hl_function" href="../../d4/d7a/text-io_8cpp_a8284cb28c22ece6792116bf485c18324.html#a8284cb28c22ece6792116bf485c18324">clear_emit_size</a>();</div>
-<div class="line"><span class="lineno">  106</span>      <span class="keywordtype">int</span> numThreads = <a class="code hl_variable" href="../../d4/d46/m2-types_8cpp_afa50d77369ce57c74c1ecb78f2642fe1.html#afa50d77369ce57c74c1ecb78f2642fe1">M2_numTBBThreads</a>; <span class="comment">// settable from front end.</span></div>
+<div class="line"><span class="lineno">  106</span>      <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">numThreads</a> = <a class="code hl_variable" href="../../d4/d46/m2-types_8cpp_afa50d77369ce57c74c1ecb78f2642fe1.html#afa50d77369ce57c74c1ecb78f2642fe1">M2_numTBBThreads</a>; <span class="comment">// settable from front end.</span></div>
 <div class="line"><span class="lineno">  107</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/ded/class_g_b_computation_aaff7a8f858cded7550f977b4bf34f01b.html#aaff7a8f858cded7550f977b4bf34f01b">GBComputation::choose_gb</a>(m,</div>
 <div class="line"><span class="lineno">  108</span>                                      collect_syz,</div>
-<div class="line"><span class="lineno">  109</span>                                      n_rows_to_keep,</div>
+<div class="line"><span class="lineno">  109</span>                                      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">n_rows_to_keep</a>,</div>
 <div class="line"><span class="lineno">  110</span>                                      gb_weights,</div>
-<div class="line"><span class="lineno">  111</span>                                      use_max_degree,</div>
+<div class="line"><span class="lineno">  111</span>                                      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">use_max_degree</a>,</div>
 <div class="line"><span class="lineno">  112</span>                                      max_degree,</div>
-<div class="line"><span class="lineno">  113</span>                                      algorithm,</div>
+<div class="line"><span class="lineno">  113</span>                                      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">algorithm</a>,</div>
 <div class="line"><span class="lineno">  114</span>                                      strategy,</div>
-<div class="line"><span class="lineno">  115</span>                                      numThreads,</div>
+<div class="line"><span class="lineno">  115</span>                                      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">numThreads</a>,</div>
 <div class="line"><span class="lineno">  116</span>                                      max_reduction_count);</div>
-<div class="line"><span class="lineno">  117</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><span class="lineno">  117</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>)</div>
 <div class="line"><span class="lineno">  118</span>    {</div>
-<div class="line"><span class="lineno">  119</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno">  119</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>.what());</div>
 <div class="line"><span class="lineno">  120</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  121</span>  }</div>
 <div class="line"><span class="lineno">  122</span>}</div>
@@ -186,10 +186,13 @@ $(document).ready(function(){initNavTree('d2/dc8/groebner_8cpp_a702d31d4ad313b67
 <div class="ttc" id="agroebner_8cpp_a9bee2cf033993a389a55db5f889b89a4_html_a9bee2cf033993a389a55db5f889b89a4"><div class="ttname"><a href="../../d2/dc8/groebner_8cpp_a9bee2cf033993a389a55db5f889b89a4.html#a9bee2cf033993a389a55db5f889b89a4">test_over_RR_or_CC</a></div><div class="ttdeci">void test_over_RR_or_CC(const Ring *R)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dc8/groebner_8cpp_source.html#l00038">groebner.cpp:38</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
 <div class="ttc" id="am2-types_8cpp_afa50d77369ce57c74c1ecb78f2642fe1_html_afa50d77369ce57c74c1ecb78f2642fe1"><div class="ttname"><a href="../../d4/d46/m2-types_8cpp_afa50d77369ce57c74c1ecb78f2642fe1.html#afa50d77369ce57c74c1ecb78f2642fe1">M2_numTBBThreads</a></div><div class="ttdeci">int M2_numTBBThreads</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d46/m2-types_8cpp_source.html#l00051">m2-types.cpp:51</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 <div class="ttc" id="atext-io_8cpp_a8284cb28c22ece6792116bf485c18324_html_a8284cb28c22ece6792116bf485c18324"><div class="ttname"><a href="../../d4/d7a/text-io_8cpp_a8284cb28c22ece6792116bf485c18324.html#a8284cb28c22ece6792116bf485c18324">clear_emit_size</a></div><div class="ttdeci">void clear_emit_size()</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d7a/text-io_8cpp_source.html#l00026">text-io.cpp:26</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../de/ded/class_g_b_computation_aaff7a8f858cded7550f977b4bf34f01b.html#aaff7a8f858cded7550f977b4bf34f01b">GBComputation::choose_gb()</a>, <a class="el" href="../../d4/d7a/text-io_8cpp_a8284cb28c22ece6792116bf485c18324.html#a8284cb28c22ece6792116bf485c18324">clear_emit_size()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, <a class="el" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">Matrix::get_ring()</a>, <a class="el" href="../../d4/d46/m2-types_8cpp_afa50d77369ce57c74c1ecb78f2642fe1.html#afa50d77369ce57c74c1ecb78f2642fe1">M2_numTBBThreads</a>, and <a class="el" href="../../d2/dc8/groebner_8cpp_a9bee2cf033993a389a55db5f889b89a4.html#a9bee2cf033993a389a55db5f889b89a4">test_over_RR_or_CC()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/ded/class_g_b_computation_aaff7a8f858cded7550f977b4bf34f01b.html#aaff7a8f858cded7550f977b4bf34f01b">GBComputation::choose_gb()</a>, <a class="el" href="../../d4/d7a/text-io_8cpp_a8284cb28c22ece6792116bf485c18324.html#a8284cb28c22ece6792116bf485c18324">clear_emit_size()</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, <a class="el" href="../../d6/d3f/class_matrix_a0bceb9b9d23e40a81ac64f6c112ef441.html#a0bceb9b9d23e40a81ac64f6c112ef441">Matrix::get_ring()</a>, <a class="el" href="../../d4/d46/m2-types_8cpp_afa50d77369ce57c74c1ecb78f2642fe1.html#afa50d77369ce57c74c1ecb78f2642fe1">M2_numTBBThreads</a>, and <a class="el" href="../../d2/dc8/groebner_8cpp_a9bee2cf033993a389a55db5f889b89a4.html#a9bee2cf033993a389a55db5f889b89a4">test_over_RR_or_CC()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d70/util-polyring-creation_8cpp_acb194e30343b5f13ea25bdd713e30f61.html#acb194e30343b5f13ea25bdd713e30f61">computeGB()</a>.</p>
 
 </div>
 </div>
@@ -199,7 +202,7 @@ $(document).ready(function(){initNavTree('d2/dc8/groebner_8cpp_a702d31d4ad313b67
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d2/dc8/groebner_8cpp.html">groebner.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

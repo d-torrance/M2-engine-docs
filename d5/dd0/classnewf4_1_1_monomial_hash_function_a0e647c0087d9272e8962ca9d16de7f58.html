@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('d5/dd0/classnewf4_1_1_monomial_hash_fu
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto newf4::MonomialHashFunction::hashValue </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">auto</a> newf4::MonomialHashFunction::hashValue </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view.html">MonomialView</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view.html">MonomialView</a> &amp;&#160;</td>
           <td class="paramname"><em>w</em></td><td>)</td>
           <td> -&gt; <a class="el" href="../../da/db5/namespacenewf4_aa3033eff96fc49a7330f9cdf71270848.html#aa3033eff96fc49a7330f9cdf71270848">HashInt</a>
     </td>
@@ -114,20 +114,21 @@ $(document).ready(function(){initNavTree('d5/dd0/classnewf4_1_1_monomial_hash_fu
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dfa/_monomial_hash_table_8hpp_source.html#l00041">41</a> of file <a class="el" href="../../d6/dfa/_monomial_hash_table_8hpp_source.html">MonomialHashTable.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>    {</div>
-<div class="line"><span class="lineno">   43</span>      <a class="code hl_typedef" href="../../da/db5/namespacenewf4_aa3033eff96fc49a7330f9cdf71270848.html#aa3033eff96fc49a7330f9cdf71270848">HashInt</a> val = 0;</div>
-<div class="line"><span class="lineno">   44</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = w.begin(); i != w.end(); ++i)</div>
-<div class="line"><span class="lineno">   45</span>        <span class="comment">// TODO: check that the variables are in range in mHashValues.</span></div>
-<div class="line"><span class="lineno">   46</span>        <span class="comment">//  if not, increase the size by adding in new HashInt&#39;s (uint64_t).</span></div>
-<div class="line"><span class="lineno">   47</span>        <span class="comment">// val += mHashValues[(*i)%64] * (*(i+1));</span></div>
-<div class="line"><span class="lineno">   48</span>        val += <a class="code hl_variable" href="../../d5/dd0/classnewf4_1_1_monomial_hash_function_ad197bb6587392d43b3ec5574f8ff738c.html#ad197bb6587392d43b3ec5574f8ff738c">mHashValues</a>[i.var() % 64] * i.power();</div>
-<div class="line"><span class="lineno">   49</span>      <span class="keywordflow">return</span> val;</div>
-<div class="line"><span class="lineno">   50</span>    }</div>
-<div class="ttc" id="aclassnewf4_1_1_monomial_hash_function_ad197bb6587392d43b3ec5574f8ff738c_html_ad197bb6587392d43b3ec5574f8ff738c"><div class="ttname"><a href="../../d5/dd0/classnewf4_1_1_monomial_hash_function_ad197bb6587392d43b3ec5574f8ff738c.html#ad197bb6587392d43b3ec5574f8ff738c">newf4::MonomialHashFunction::mHashValues</a></div><div class="ttdeci">std::vector&lt; HashInt &gt; mHashValues</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dfa/_monomial_hash_table_8hpp_source.html#l00014">MonomialHashTable.hpp:14</a></div></div>
-<div class="ttc" id="anamespacenewf4_aa3033eff96fc49a7330f9cdf71270848_html_aa3033eff96fc49a7330f9cdf71270848"><div class="ttname"><a href="../../da/db5/namespacenewf4_aa3033eff96fc49a7330f9cdf71270848.html#aa3033eff96fc49a7330f9cdf71270848">newf4::HashInt</a></div><div class="ttdeci">uint64_t HashInt</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3e/_monomial_types_8hpp_source.html#l00024">MonomialTypes.hpp:24</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dfa/_monomial_hash_table_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../d6/dfa/_monomial_hash_table_8hpp_source.html">MonomialHashTable.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>    {</div>
+<div class="line"><span class="lineno">   44</span>      <a class="code hl_typedef" href="../../da/db5/namespacenewf4_aa3033eff96fc49a7330f9cdf71270848.html#aa3033eff96fc49a7330f9cdf71270848">HashInt</a> val = 0;</div>
+<div class="line"><span class="lineno">   45</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a>.begin(); i != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a>.end(); ++i)</div>
+<div class="line"><span class="lineno">   46</span>        <span class="comment">// TODO: check that the variables are in range in mHashValues.</span></div>
+<div class="line"><span class="lineno">   47</span>        <span class="comment">//  if not, increase the size by adding in new HashInt&#39;s (uint64_t).</span></div>
+<div class="line"><span class="lineno">   48</span>        <span class="comment">// val += mHashValues[(*i)%64] * (*(i+1));</span></div>
+<div class="line"><span class="lineno">   49</span>        val += <a class="code hl_variable" href="../../d5/dd0/classnewf4_1_1_monomial_hash_function_ad197bb6587392d43b3ec5574f8ff738c.html#ad197bb6587392d43b3ec5574f8ff738c">mHashValues</a>[i.var() % 64] * i.power();</div>
+<div class="line"><span class="lineno">   50</span>      <span class="keywordflow">return</span> val;</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="ttc" id="aclassnewf4_1_1_monomial_hash_function_ad197bb6587392d43b3ec5574f8ff738c_html_ad197bb6587392d43b3ec5574f8ff738c"><div class="ttname"><a href="../../d5/dd0/classnewf4_1_1_monomial_hash_function_ad197bb6587392d43b3ec5574f8ff738c.html#ad197bb6587392d43b3ec5574f8ff738c">newf4::MonomialHashFunction::mHashValues</a></div><div class="ttdeci">std::vector&lt; HashInt &gt; mHashValues</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dfa/_monomial_hash_table_8hpp_source.html#l00015">MonomialHashTable.hpp:15</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
+<div class="ttc" id="anamespacenewf4_aa3033eff96fc49a7330f9cdf71270848_html_aa3033eff96fc49a7330f9cdf71270848"><div class="ttname"><a href="../../da/db5/namespacenewf4_aa3033eff96fc49a7330f9cdf71270848.html#aa3033eff96fc49a7330f9cdf71270848">newf4::HashInt</a></div><div class="ttdeci">uint64_t HashInt</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3e/_monomial_types_8hpp_source.html#l00025">MonomialTypes.hpp:25</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/dd0/classnewf4_1_1_monomial_hash_function_ad197bb6587392d43b3ec5574f8ff738c.html#ad197bb6587392d43b3ec5574f8ff738c">mHashValues</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d5/dd0/classnewf4_1_1_monomial_hash_function_ad197bb6587392d43b3ec5574f8ff738c.html#ad197bb6587392d43b3ec5574f8ff738c">mHashValues</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d1e/classnewf4_1_1_monomial_hash_table_afe6c270791bfa8d10df8ed582474f119.html#afe6c270791bfa8d10df8ed582474f119">newf4::MonomialHashTable::find()</a>.</p>
 
@@ -139,7 +140,7 @@ $(document).ready(function(){initNavTree('d5/dd0/classnewf4_1_1_monomial_hash_fu
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/db5/namespacenewf4.html">newf4</a></li><li class="navelem"><a class="el" href="../../d5/dd0/classnewf4_1_1_monomial_hash_function.html">MonomialHashFunction</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

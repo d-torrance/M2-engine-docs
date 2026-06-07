@@ -101,13 +101,13 @@ $(document).ready(function(){initNavTree('d0/d99/class_m2_1_1_concrete_ring_a104
         <tr>
           <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring.html">M2::ConcreteRing</a>&lt; <a class="el" href="../../d7/d82/namespace_m2_a4020664aefa28984a9e3e19b16a31981.html#a4020664aefa28984a9e3e19b16a31981">ARingQQ</a> &gt;::lift </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/dcf/class_ring.html">Ring</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/dcf/class_ring.html">Ring</a> *&#160;</td>
           <td class="paramname"><em>Rg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a>&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
@@ -131,33 +131,34 @@ $(document).ready(function(){initNavTree('d0/d99/class_m2_1_1_concrete_ring_a104
 
 <p>Implements <a class="el" href="../../dd/dcf/class_ring_a6d3d042f950ad9d90bb4ac65814789a1.html#a6d3d042f950ad9d90bb4ac65814789a1">Ring</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l00979">979</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  982</span>{</div>
-<div class="line"><span class="lineno">  983</span>  <span class="keywordflow">if</span> (Rg == <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>)</div>
-<div class="line"><span class="lineno">  984</span>    {</div>
-<div class="line"><span class="lineno">  985</span>      mpz_t b;</div>
-<div class="line"><span class="lineno">  986</span>      mpz_init(b);</div>
-<div class="line"><span class="lineno">  987</span> </div>
-<div class="line"><span class="lineno">  988</span>      <a class="code hl_typedef" href="../../d0/d99/class_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b.html#aeeb92bc934137a4ba516dcb24f79ce8b">Element</a> a(*<a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>);</div>
-<div class="line"><span class="lineno">  989</span>      <a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;from_ring_elem(a, f);</div>
-<div class="line"><span class="lineno">  990</span> </div>
-<div class="line"><span class="lineno">  991</span>      <span class="keywordtype">bool</span> retval = <a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;lift_to_mpz(b, a);</div>
-<div class="line"><span class="lineno">  992</span>      <span class="keywordflow">if</span> (retval)</div>
-<div class="line"><span class="lineno">  993</span>        {</div>
-<div class="line"><span class="lineno">  994</span>          <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">from_int</a>(b);</div>
-<div class="line"><span class="lineno">  995</span>        }</div>
-<div class="line"><span class="lineno">  996</span>      mpz_clear(b);</div>
-<div class="line"><span class="lineno">  997</span>      <span class="keywordflow">return</span> retval;</div>
-<div class="line"><span class="lineno">  998</span>    }</div>
-<div class="line"><span class="lineno">  999</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno"> 1000</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l00988">988</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  991</span>{</div>
+<div class="line"><span class="lineno">  992</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Rg</a> == <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>)</div>
+<div class="line"><span class="lineno">  993</span>    {</div>
+<div class="line"><span class="lineno">  994</span>      mpz_t b;</div>
+<div class="line"><span class="lineno">  995</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpz_init</a>(b);</div>
+<div class="line"><span class="lineno">  996</span> </div>
+<div class="line"><span class="lineno">  997</span>      <a class="code hl_typedef" href="../../d0/d99/class_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b.html#aeeb92bc934137a4ba516dcb24f79ce8b">Element</a> a(*<a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>);</div>
+<div class="line"><span class="lineno">  998</span>      <a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;from_ring_elem(a, f);</div>
+<div class="line"><span class="lineno">  999</span> </div>
+<div class="line"><span class="lineno"> 1000</span>      <span class="keywordtype">bool</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">retval</a> = <a class="code hl_variable" href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">R</a>-&gt;lift_to_mpz(b, a);</div>
+<div class="line"><span class="lineno"> 1001</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">retval</a>)</div>
+<div class="line"><span class="lineno"> 1002</span>        {</div>
+<div class="line"><span class="lineno"> 1003</span>          <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">from_int</a>(b);</div>
+<div class="line"><span class="lineno"> 1004</span>        }</div>
+<div class="line"><span class="lineno"> 1005</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpz_clear</a>(b);</div>
+<div class="line"><span class="lineno"> 1006</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">retval</a>;</div>
+<div class="line"><span class="lineno"> 1007</span>    }</div>
+<div class="line"><span class="lineno"> 1008</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno"> 1009</span>}</div>
 <div class="ttc" id="aclass_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf_html_ac5931fcf132c0d43e222045e93f5a0cf"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_ac5931fcf132c0d43e222045e93f5a0cf.html#ac5931fcf132c0d43e222045e93f5a0cf">M2::ConcreteRing::R</a></div><div class="ttdeci">std::unique_ptr&lt; RingType &gt; R</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00023">aring-glue.hpp:23</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b_html_aeeb92bc934137a4ba516dcb24f79ce8b"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_aeeb92bc934137a4ba516dcb24f79ce8b.html#aeeb92bc934137a4ba516dcb24f79ce8b">M2::ConcreteRing::Element</a></div><div class="ttdeci">RingType::Element Element</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00033">aring-glue.hpp:33</a></div></div>
 <div class="ttc" id="aclass_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52_html_a8ee5f1281f1f753bd5e64aaed8393b52"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">RingZZ::from_int</a></div><div class="ttdeci">virtual ring_elem from_int(mpz_srcptr n) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00119">ZZ.cpp:119</a></div></div>
-<div class="ttc" id="agauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9_html_a5ad190417a478c3f15fa01ef9ee9bac9"><div class="ttname"><a href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a></div><div class="ttdeci">RingZZ * globalZZ</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00013">relem.cpp:13</a></div></div>
+<div class="ttc" id="agauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9_html_a5ad190417a478c3f15fa01ef9ee9bac9"><div class="ttname"><a href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a></div><div class="ttdeci">RingZZ * globalZZ</div><div class="ttdef"><b>Definition</b> <a href="../../de/d31/ring-element_8cpp_source.html#l00013">ring-element.cpp:13</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">RingZZ::from_int()</a>, <a class="el" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d8/d2b/class_ring_z_z_a8ee5f1281f1f753bd5e64aaed8393b52.html#a8ee5f1281f1f753bd5e64aaed8393b52">RingZZ::from_int()</a>, <a class="el" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 </div>
 </div>
@@ -167,7 +168,7 @@ $(document).ready(function(){initNavTree('d0/d99/class_m2_1_1_concrete_ring_a104
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring.html">ConcreteRing</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

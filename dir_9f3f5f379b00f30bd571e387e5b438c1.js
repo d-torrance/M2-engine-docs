@@ -1,0 +1,26 @@
+var dir_9f3f5f379b00f30bd571e387e5b438c1 =
+[
+    [ "dmat-ffpack.cpp", "d0/d90/dmat-ffpack_8cpp.html", null ],
+    [ "dmat-gf-flint-big.hpp", "dd/dca/dmat-gf-flint-big_8hpp.html", "dd/dca/dmat-gf-flint-big_8hpp" ],
+    [ "dmat-gf-flint.hpp", "d2/dd0/dmat-gf-flint_8hpp.html", "d2/dd0/dmat-gf-flint_8hpp" ],
+    [ "dmat-lu-inplace.hpp", "d0/d7d/dmat-lu-inplace_8hpp.html", "d0/d7d/dmat-lu-inplace_8hpp" ],
+    [ "dmat-lu-qq.hpp", "d5/de9/dmat-lu-qq_8hpp.html", "d5/de9/dmat-lu-qq_8hpp" ],
+    [ "dmat-lu-zzp-ffpack.hpp", "dd/dc7/dmat-lu-zzp-ffpack_8hpp.html", "dd/dc7/dmat-lu-zzp-ffpack_8hpp" ],
+    [ "dmat-lu-zzp-flint.hpp", "d0/d14/dmat-lu-zzp-flint_8hpp.html", "d0/d14/dmat-lu-zzp-flint_8hpp" ],
+    [ "dmat-lu.hpp", "d7/da6/dmat-lu_8hpp.html", "d7/da6/dmat-lu_8hpp" ],
+    [ "dmat-qq-flint.hpp", "de/de2/dmat-qq-flint_8hpp.html", "de/de2/dmat-qq-flint_8hpp" ],
+    [ "dmat-qq-interface-flint.hpp", "d1/d6d/dmat-qq-interface-flint_8hpp.html", "d1/d6d/dmat-qq-interface-flint_8hpp" ],
+    [ "dmat-zz-flint.hpp", "df/d56/dmat-zz-flint_8hpp.html", "df/d56/dmat-zz-flint_8hpp" ],
+    [ "dmat-zzp-flint.hpp", "db/d98/dmat-zzp-flint_8hpp.html", "db/d98/dmat-zzp-flint_8hpp" ],
+    [ "dmat.cpp", "d4/d2f/dmat_8cpp.html", "d4/d2f/dmat_8cpp" ],
+    [ "dmat.hpp", "db/d0a/dmat_8hpp.html", "db/d0a/dmat_8hpp" ],
+    [ "lapack.cpp", "d1/dfc/lapack_8cpp.html", "d1/dfc/lapack_8cpp" ],
+    [ "lapack.hpp", "df/dd2/lapack_8hpp.html", "df/dd2/lapack_8hpp" ],
+    [ "mat-arith.hpp", "d0/d17/mat-arith_8hpp.html", "d0/d17/mat-arith_8hpp" ],
+    [ "mat-elem-ops.hpp", "de/d24/mat-elem-ops_8hpp.html", "de/d24/mat-elem-ops_8hpp" ],
+    [ "mat-linalg.hpp", "d9/d8a/mat-linalg_8hpp.html", "d9/d8a/mat-linalg_8hpp" ],
+    [ "mat-util.hpp", "da/df0/mat-util_8hpp.html", "da/df0/mat-util_8hpp" ],
+    [ "mat.cpp", "d1/dea/mat_8cpp.html", null ],
+    [ "mat.hpp", "dc/dc2/mat_8hpp.html", null ],
+    [ "smat.hpp", "da/dc0/smat_8hpp.html", "da/dc0/smat_8hpp" ]
+];

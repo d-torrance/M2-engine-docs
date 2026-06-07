@@ -107,13 +107,13 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a5abceb27035dc0a1f
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const TowerPolynomial&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> TowerPolynomial&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const TowerPolynomial&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> TowerPolynomial&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -139,22 +139,23 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a5abceb27035dc0a1f
 <div class="line"><span class="lineno">  466</span>  <span class="keywordflow">if</span> (g == <span class="keyword">nullptr</span> || f-&gt;deg != g-&gt;deg) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  467</span>  <span class="keywordflow">if</span> (level == 0)</div>
 <div class="line"><span class="lineno">  468</span>    {</div>
-<div class="line"><span class="lineno">  469</span>      <span class="keywordtype">long</span> *fp = f-&gt;arr.ints;</div>
-<div class="line"><span class="lineno">  470</span>      <span class="keywordtype">long</span> *gp = g-&gt;arr.ints;</div>
+<div class="line"><span class="lineno">  469</span>      <span class="keywordtype">long</span> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fp</a> = f-&gt;arr.ints;</div>
+<div class="line"><span class="lineno">  470</span>      <span class="keywordtype">long</span> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gp</a> = g-&gt;arr.ints;</div>
 <div class="line"><span class="lineno">  471</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++)</div>
-<div class="line"><span class="lineno">  472</span>        <span class="keywordflow">if</span> (fp[i] != gp[i]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  472</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fp</a>[i] != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gp</a>[i]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  473</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  474</span>    }</div>
 <div class="line"><span class="lineno">  475</span>  <span class="comment">// level &gt; 0</span></div>
-<div class="line"><span class="lineno">  476</span>  TowerPolynomial *fp = f-&gt;arr.polys;</div>
-<div class="line"><span class="lineno">  477</span>  TowerPolynomial *gp = g-&gt;arr.polys;</div>
+<div class="line"><span class="lineno">  476</span>  TowerPolynomial *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fp</a> = f-&gt;arr.polys;</div>
+<div class="line"><span class="lineno">  477</span>  TowerPolynomial *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gp</a> = g-&gt;arr.polys;</div>
 <div class="line"><span class="lineno">  478</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= f-&gt;deg; i++)</div>
-<div class="line"><span class="lineno">  479</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d3/d42/class_d_poly_a5abceb27035dc0a1f35199259e0aa169.html#a5abceb27035dc0a1f35199259e0aa169">is_equal</a>(level - 1, fp[i], gp[i])) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  479</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d3/d42/class_d_poly_a5abceb27035dc0a1f35199259e0aa169.html#a5abceb27035dc0a1f35199259e0aa169">is_equal</a>(level - 1, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fp</a>[i], <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gp</a>[i])) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  480</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  481</span>}</div>
 <div class="ttc" id="aclass_d_poly_a5abceb27035dc0a1f35199259e0aa169_html_a5abceb27035dc0a1f35199259e0aa169"><div class="ttname"><a href="../../d3/d42/class_d_poly_a5abceb27035dc0a1f35199259e0aa169.html#a5abceb27035dc0a1f35199259e0aa169">DPoly::is_equal</a></div><div class="ttdeci">static bool is_equal(int level, const TowerPolynomial f, const TowerPolynomial g)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00459">dpoly.cpp:459</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d42/class_d_poly_a5abceb27035dc0a1f35199259e0aa169.html#a5abceb27035dc0a1f35199259e0aa169">is_equal()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d3/d42/class_d_poly_a5abceb27035dc0a1f35199259e0aa169.html#a5abceb27035dc0a1f35199259e0aa169">is_equal()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/de6/class_d_ring_a787b63e51d5601e82b9c543b515dc6c3.html#a787b63e51d5601e82b9c543b515dc6c3">DRing::is_equal()</a>, and <a class="el" href="../../d3/d42/class_d_poly_a5abceb27035dc0a1f35199259e0aa169.html#a5abceb27035dc0a1f35199259e0aa169">is_equal()</a>.</p>
 
@@ -166,7 +167,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_a5abceb27035dc0a1f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

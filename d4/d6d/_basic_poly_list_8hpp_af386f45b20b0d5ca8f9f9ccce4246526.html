@@ -95,12 +95,12 @@ $(document).ready(function(){initNavTree('d4/d6d/_basic_poly_list_8hpp_af386f45b
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename S &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> S &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void toStream </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> toStream </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d4/d6d/_basic_poly_list_8hpp_a24fbc5f5eec7472cd3ee08f9f323741e.html#a24fbc5f5eec7472cd3ee08f9f323741e">BasicPolyList</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d4/d6d/_basic_poly_list_8hpp_a24fbc5f5eec7472cd3ee08f9f323741e.html#a24fbc5f5eec7472cd3ee08f9f323741e">BasicPolyList</a> &amp;&#160;</td>
           <td class="paramname"><em>Fs</em>, </td>
         </tr>
         <tr>
@@ -117,30 +117,33 @@ template&lt;typename S &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d6d/_basic_poly_list_8hpp_source.html#l00075">75</a> of file <a class="el" href="../../d4/d6d/_basic_poly_list_8hpp_source.html">BasicPolyList.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>{</div>
-<div class="line"><span class="lineno">   77</span>  str.idealBegin(Fs.size());</div>
-<div class="line"><span class="lineno">   78</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; F : Fs)</div>
-<div class="line"><span class="lineno">   79</span>    {</div>
-<div class="line"><span class="lineno">   80</span>      str.appendPolynomialBegin(F.mCoefficients.size());</div>
-<div class="line"><span class="lineno">   81</span>      <span class="keywordtype">int</span> monomStart = 0;</div>
-<div class="line"><span class="lineno">   82</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=0; i&lt;F.mCoefficients.size(); ++i)</div>
-<div class="line"><span class="lineno">   83</span>        {</div>
-<div class="line"><span class="lineno">   84</span>          <span class="keyword">auto</span> monomEnd = monomStart + F.mMonomials[monomStart];</div>
-<div class="line"><span class="lineno">   85</span>          <span class="keywordflow">if</span> (F.mComponents.empty())</div>
-<div class="line"><span class="lineno">   86</span>            str.appendTermBegin(0);</div>
-<div class="line"><span class="lineno">   87</span>          <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   88</span>            str.appendTermBegin(F.mComponents[i]);</div>
-<div class="line"><span class="lineno">   89</span>          <span class="keywordflow">for</span> (<span class="keyword">auto</span> j=monomStart+1; j&lt;monomEnd; j += 2)</div>
-<div class="line"><span class="lineno">   90</span>            str.appendExponent(F.mMonomials[j], F.mMonomials[j+1]);</div>
-<div class="line"><span class="lineno">   91</span>          str.appendTermDone(F.mCoefficients[i]);</div>
-<div class="line"><span class="lineno">   92</span>          monomStart = monomEnd;</div>
-<div class="line"><span class="lineno">   93</span>        }</div>
-<div class="line"><span class="lineno">   94</span>      str.appendPolynomialDone();</div>
-<div class="line"><span class="lineno">   95</span>    }</div>
-<div class="line"><span class="lineno">   96</span>  str.idealDone();</div>
-<div class="line"><span class="lineno">   97</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d6d/_basic_poly_list_8hpp_source.html#l00076">76</a> of file <a class="el" href="../../d4/d6d/_basic_poly_list_8hpp_source.html">BasicPolyList.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>{</div>
+<div class="line"><span class="lineno">   78</span>  str.idealBegin(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Fs</a>.size());</div>
+<div class="line"><span class="lineno">   79</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; F : <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Fs</a>)</div>
+<div class="line"><span class="lineno">   80</span>    {</div>
+<div class="line"><span class="lineno">   81</span>      str.appendPolynomialBegin(F.mCoefficients.size());</div>
+<div class="line"><span class="lineno">   82</span>      <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">monomStart</a> = 0;</div>
+<div class="line"><span class="lineno">   83</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=0; i&lt;F.mCoefficients.size(); ++i)</div>
+<div class="line"><span class="lineno">   84</span>        {</div>
+<div class="line"><span class="lineno">   85</span>          <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">monomEnd</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">monomStart</a> + F.mMonomials[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">monomStart</a>];</div>
+<div class="line"><span class="lineno">   86</span>          <span class="keywordflow">if</span> (F.mComponents.empty())</div>
+<div class="line"><span class="lineno">   87</span>            str.appendTermBegin(0);</div>
+<div class="line"><span class="lineno">   88</span>          <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   89</span>            str.appendTermBegin(F.mComponents[i]);</div>
+<div class="line"><span class="lineno">   90</span>          <span class="keywordflow">for</span> (<span class="keyword">auto</span> j=<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">monomStart</a>+1; j&lt;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">monomEnd</a>; j += 2)</div>
+<div class="line"><span class="lineno">   91</span>            str.appendExponent(F.mMonomials[j], F.mMonomials[j+1]);</div>
+<div class="line"><span class="lineno">   92</span>          str.appendTermDone(F.mCoefficients[i]);</div>
+<div class="line"><span class="lineno">   93</span>          <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">monomStart</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">monomEnd</a>;</div>
+<div class="line"><span class="lineno">   94</span>        }</div>
+<div class="line"><span class="lineno">   95</span>      str.appendPolynomialDone();</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+<div class="line"><span class="lineno">   97</span>  str.idealDone();</div>
+<div class="line"><span class="lineno">   98</span>}</div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../d1/d26/_new_f4_test_8cpp_a5edbdfff9c79120e8062ea62cf33e349.html#a5edbdfff9c79120e8062ea62cf33e349">TEST()</a>, and <a class="el" href="../../dd/d15/_basic_poly_list_8cpp_add39902a0f08679d5ca6c53bf2f752ac.html#add39902a0f08679d5ca6c53bf2f752ac">toMatrix()</a>.</p>
 
 </div>
@@ -151,7 +154,7 @@ template&lt;typename S &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d4/d6d/_basic_poly_list_8hpp.html">BasicPolyList.hpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -95,10 +95,10 @@ $(document).ready(function(){initNavTree('da/d5f/class_res_f4_monomial_lookup_ta
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Key &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> Key &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../da/d5f/class_res_f4_monomial_lookup_table_t.html">ResF4MonomialLookupTableT</a>&lt; Key &gt;::text_out </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> <a class="el" href="../../da/d5f/class_res_f4_monomial_lookup_table_t.html">ResF4MonomialLookupTableT</a>&lt; Key &gt;::text_out </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../da/d40/classbuffer.html">buffer</a> &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
@@ -109,27 +109,27 @@ template&lt;typename Key &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_source.html#l00523">523</a> of file <a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_source.html">res-f4-monlookup.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  524</span>{</div>
-<div class="line"><span class="lineno">  525</span>  o &lt;&lt; <span class="stringliteral">&quot;ResF4MonomialLookupTableT (&quot;</span>;</div>
-<div class="line"><span class="lineno">  526</span>  o &lt;&lt; <a class="code hl_variable" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_a745a68dc27f7a5da9de7915130952e2b.html#a745a68dc27f7a5da9de7915130952e2b">count</a> / 2 &lt;&lt; <span class="stringliteral">&quot; entries)\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  525</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <span class="stringliteral">&quot;ResF4MonomialLookupTableT (&quot;</span>;</div>
+<div class="line"><span class="lineno">  526</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <a class="code hl_variable" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_a745a68dc27f7a5da9de7915130952e2b.html#a745a68dc27f7a5da9de7915130952e2b">count</a> / 2 &lt;&lt; <span class="stringliteral">&quot; entries)\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  527</span>  <span class="keywordtype">int</span> a = 0;</div>
 <div class="line"><span class="lineno">  528</span>  <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_define" href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a>(mi_node *)::const_iterator i = mis.begin();</div>
 <div class="line"><span class="lineno">  529</span>       i != mis.end();</div>
 <div class="line"><span class="lineno">  530</span>       i++)</div>
 <div class="line"><span class="lineno">  531</span>    {</div>
-<div class="line"><span class="lineno">  532</span>      <span class="keywordflow">for</span> (mi_node *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = *i; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != <span class="keyword">nullptr</span>; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_function" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_a73403cb9b17a349e16dc0013bcec18af.html#a73403cb9b17a349e16dc0013bcec18af">next</a>(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>))</div>
+<div class="line"><span class="lineno">  532</span>      <span class="keywordflow">for</span> (mi_node *p = *i; p != <span class="keyword">nullptr</span>; p = <a class="code hl_function" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_a73403cb9b17a349e16dc0013bcec18af.html#a73403cb9b17a349e16dc0013bcec18af">next</a>(p))</div>
 <div class="line"><span class="lineno">  533</span>        {</div>
-<div class="line"><span class="lineno">  534</span>          <span class="keywordflow">if</span> ((++a) % 15 == 0) o &lt;&lt; <a class="code hl_variable" href="../../d4/d46/m2-types_8cpp_a9652bd683300dd969acdf07396e1c1dd.html#a9652bd683300dd969acdf07396e1c1dd">newline</a>;</div>
-<div class="line"><span class="lineno">  535</span>          o &lt;&lt; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;key() &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><span class="lineno">  534</span>          <span class="keywordflow">if</span> ((++a) % 15 == 0) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <a class="code hl_variable" href="../../d4/d46/m2-types_8cpp_a9652bd683300dd969acdf07396e1c1dd.html#a9652bd683300dd969acdf07396e1c1dd">newline</a>;</div>
+<div class="line"><span class="lineno">  535</span>          <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; p-&gt;key() &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
 <div class="line"><span class="lineno">  536</span>        }</div>
 <div class="line"><span class="lineno">  537</span>    }</div>
 <div class="line"><span class="lineno">  538</span>}</div>
 <div class="ttc" id="aclass_res_f4_monomial_lookup_table_t_a73403cb9b17a349e16dc0013bcec18af_html_a73403cb9b17a349e16dc0013bcec18af"><div class="ttname"><a href="../../da/d5f/class_res_f4_monomial_lookup_table_t_a73403cb9b17a349e16dc0013bcec18af.html#a73403cb9b17a349e16dc0013bcec18af">ResF4MonomialLookupTableT::next</a></div><div class="ttdeci">mi_node * next(mi_node *p) const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d2d/res-f4-monlookup_8cpp_source.html#l00366">res-f4-monlookup.cpp:366</a></div></div>
 <div class="ttc" id="aclass_res_f4_monomial_lookup_table_t_a745a68dc27f7a5da9de7915130952e2b_html_a745a68dc27f7a5da9de7915130952e2b"><div class="ttname"><a href="../../da/d5f/class_res_f4_monomial_lookup_table_t_a745a68dc27f7a5da9de7915130952e2b.html#a745a68dc27f7a5da9de7915130952e2b">ResF4MonomialLookupTableT::count</a></div><div class="ttdeci">int count</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d79/res-f4-monlookup_8hpp_source.html#l00056">res-f4-monlookup.hpp:56</a></div></div>
-<div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 <div class="ttc" id="am2-types_8cpp_a9652bd683300dd969acdf07396e1c1dd_html_a9652bd683300dd969acdf07396e1c1dd"><div class="ttname"><a href="../../d4/d46/m2-types_8cpp_a9652bd683300dd969acdf07396e1c1dd.html#a9652bd683300dd969acdf07396e1c1dd">newline</a></div><div class="ttdeci">char newline[]</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d46/m2-types_8cpp_source.html#l00049">m2-types.cpp:49</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="anewdelete_8hpp_a5eb7456054852de52b377090e128822e_html_a5eb7456054852de52b377090e128822e"><div class="ttname"><a href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a></div><div class="ttdeci">#define VECTOR(T)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00033">newdelete.hpp:33</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d46/m2-types_8cpp_a9652bd683300dd969acdf07396e1c1dd.html#a9652bd683300dd969acdf07396e1c1dd">newline</a>, <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, and <a class="el" href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d4/d46/m2-types_8cpp_a9652bd683300dd969acdf07396e1c1dd.html#a9652bd683300dd969acdf07396e1c1dd">newline</a>, and <a class="el" href="../../da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e">VECTOR</a>.</p>
 
 </div>
 </div>
@@ -139,7 +139,7 @@ template&lt;typename Key &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d5f/class_res_f4_monomial_lookup_table_t.html">ResF4MonomialLookupTableT</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

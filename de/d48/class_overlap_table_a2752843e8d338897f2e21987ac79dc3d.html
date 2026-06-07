@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('de/d48/class_overlap_table_a2752843e8d
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto OverlapTable::insert </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">auto</a> OverlapTable::insert </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td>
           <td class="paramname"><em>deg</em>, </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('de/d48/class_overlap_table_a2752843e8d
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; void</td>
+          <td></td><td> -&gt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -127,22 +127,23 @@ $(document).ready(function(){initNavTree('de/d48/class_overlap_table_a2752843e8d
 <div class="line"><span class="lineno">   10</span>    {</div>
 <div class="line"><span class="lineno">   11</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;overlapTable: inserting deg=&quot;</span></div>
 <div class="line"><span class="lineno">   12</span>                &lt;&lt; deg</div>
-<div class="line"><span class="lineno">   13</span>                &lt;&lt; <span class="stringliteral">&quot; isGenerator=&quot;</span> &lt;&lt; isGenerator</div>
-<div class="line"><span class="lineno">   14</span>                &lt;&lt; <span class="stringliteral">&quot; overlap=&quot;</span> &lt;&lt; o</div>
+<div class="line"><span class="lineno">   13</span>                &lt;&lt; <span class="stringliteral">&quot; isGenerator=&quot;</span> &lt;&lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">isGenerator</a></div>
+<div class="line"><span class="lineno">   14</span>                &lt;&lt; <span class="stringliteral">&quot; overlap=&quot;</span> &lt;&lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a></div>
 <div class="line"><span class="lineno">   15</span>                &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   16</span>    }</div>
-<div class="line"><span class="lineno">   17</span>  std::deque&lt;Overlap&gt; emptyDeque;</div>
-<div class="line"><span class="lineno">   18</span>  <span class="keyword">auto</span> ret = <a class="code hl_variable" href="../../de/d48/class_overlap_table_aeeb6746353dfcd0cd0fc4cefc211d98d.html#aeeb6746353dfcd0cd0fc4cefc211d98d">mOverlapMap</a>.insert(std::make_pair(std::make_pair(deg,isGenerator),</div>
-<div class="line"><span class="lineno">   19</span>                                               emptyDeque));</div>
+<div class="line"><span class="lineno">   17</span>  std::deque&lt;Overlap&gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">emptyDeque</a>;</div>
+<div class="line"><span class="lineno">   18</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ret</a> = <a class="code hl_variable" href="../../de/d48/class_overlap_table_aeeb6746353dfcd0cd0fc4cefc211d98d.html#aeeb6746353dfcd0cd0fc4cefc211d98d">mOverlapMap</a>.insert(std::make_pair(std::make_pair(deg,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">isGenerator</a>),</div>
+<div class="line"><span class="lineno">   19</span>                                               <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">emptyDeque</a>));</div>
 <div class="line"><span class="lineno">   20</span>  <span class="comment">// ret is a std::pair&lt;iterator,bool&gt;</span></div>
 <div class="line"><span class="lineno">   21</span>  <span class="comment">// ret.first is the iterator into mOverlapMap, which itself is a pair &lt;key,value&gt;</span></div>
 <div class="line"><span class="lineno">   22</span>  <span class="comment">// the keys are std::pair&lt;deg,bool&gt; value is deque.  So we push_back o on the deque.</span></div>
-<div class="line"><span class="lineno">   23</span>  (ret.first)-&gt;second.push_back(o);</div>
+<div class="line"><span class="lineno">   23</span>  (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ret</a>.first)-&gt;second.push_back(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a>);</div>
 <div class="line"><span class="lineno">   24</span>}</div>
 <div class="ttc" id="aclass_overlap_table_aeeb6746353dfcd0cd0fc4cefc211d98d_html_aeeb6746353dfcd0cd0fc4cefc211d98d"><div class="ttname"><a href="../../de/d48/class_overlap_table_aeeb6746353dfcd0cd0fc4cefc211d98d.html#aeeb6746353dfcd0cd0fc4cefc211d98d">OverlapTable::mOverlapMap</a></div><div class="ttdeci">OverlapMap mOverlapMap</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d1a/_overlap_table_8hpp_source.html#l00057">OverlapTable.hpp:57</a></div></div>
 <div class="ttc" id="am2-types_8cpp_aa0f82116567de78d2d8d5cee3a26eebc_html_aa0f82116567de78d2d8d5cee3a26eebc"><div class="ttname"><a href="../../d4/d46/m2-types_8cpp_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a></div><div class="ttdeci">int M2_gbTrace</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d46/m2-types_8cpp_source.html#l00052">m2-types.cpp:52</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d46/m2-types_8cpp_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d4/d46/m2-types_8cpp_aa0f82116567de78d2d8d5cee3a26eebc.html#aa0f82116567de78d2d8d5cee3a26eebc">M2_gbTrace</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d92/class_n_c_f4_a058e605577274481ca3e3e5dd66d8533.html#a058e605577274481ca3e3e5dd66d8533">NCF4::NCF4()</a>, <a class="el" href="../../d8/d79/class_n_c_groebner_a33d2a73e07da6dd988e5d9f4029dab95.html#a33d2a73e07da6dd988e5d9f4029dab95">NCGroebner::NCGroebner()</a>, and <a class="el" href="../../d2/dc0/_n_c_groebner_test_8cpp_a9675aa19e00375099008a0d48d4605a6.html#a9675aa19e00375099008a0d48d4605a6">TEST()</a>.</p>
 
@@ -154,7 +155,7 @@ $(document).ready(function(){initNavTree('de/d48/class_overlap_table_a2752843e8d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d48/class_overlap_table.html">OverlapTable</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

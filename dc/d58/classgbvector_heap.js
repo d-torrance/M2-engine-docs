@@ -14,8 +14,8 @@ var classgbvector_heap =
     [ "value", "dc/d58/classgbvector_heap_a3ad45a6d042499d4fe36a3eb9271b602.html#a3ad45a6d042499d4fe36a3eb9271b602", null ],
     [ "F", "dc/d58/classgbvector_heap_a4429265f3add4c989fd9d189fc2bfec6.html#a4429265f3add4c989fd9d189fc2bfec6", null ],
     [ "GR", "dc/d58/classgbvector_heap_add1dd7aa2ef4f1e908c79f0a38b12662.html#add1dd7aa2ef4f1e908c79f0a38b12662", null ],
-    [ "heap", "dc/d58/classgbvector_heap_ac548ed0dbe1a6674991a0cc29a0e3da9.html#ac548ed0dbe1a6674991a0cc29a0e3da9", null ],
-    [ "heap_coeff", "dc/d58/classgbvector_heap_a3438f1efb8aa71abff782c37943ae00d.html#a3438f1efb8aa71abff782c37943ae00d", null ],
+    [ "heap", "dc/d58/classgbvector_heap_a18b61d3ff37dc107c830ab0dcf8252ae.html#a18b61d3ff37dc107c830ab0dcf8252ae", null ],
+    [ "heap_coeff", "dc/d58/classgbvector_heap_a417a61d9f33238e61a5ff6a3a8ced0b8.html#a417a61d9f33238e61a5ff6a3a8ced0b8", null ],
     [ "K", "dc/d58/classgbvector_heap_a3508db4ad336ffc6a2cbd9e9c9c0c59f.html#a3508db4ad336ffc6a2cbd9e9c9c0c59f", null ],
     [ "mLead", "dc/d58/classgbvector_heap_a3b6023904d426df7d9620e6912d096c6.html#a3b6023904d426df7d9620e6912d096c6", null ],
     [ "top_of_heap", "dc/d58/classgbvector_heap_a71e5462503f5606dd593ee984b8f8caf.html#a71e5462503f5606dd593ee984b8f8caf", null ]

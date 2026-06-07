@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d5/d82/class_g_b_weight_a5143994ecbb4f
         <tr>
           <td class="memname"><a class="el" href="../../d1/da0/classint.html">int</a> GBWeight::gbvector_weight </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d40/structgbvector.html">gbvector</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d7/d40/structgbvector.html">gbvector</a> *&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
@@ -121,24 +121,25 @@ $(document).ready(function(){initNavTree('d5/d82/class_g_b_weight_a5143994ecbb4f
 <div class="line"><span class="lineno">   76</span> </div>
 <div class="line"><span class="lineno">   77</span>  <span class="keywordflow">if</span> (f == <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">   78</span>    {</div>
-<div class="line"><span class="lineno">   79</span>      initial_term_weight = 0;</div>
+<div class="line"><span class="lineno">   79</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">initial_term_weight</a> = 0;</div>
 <div class="line"><span class="lineno">   80</span>      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   81</span>    }</div>
 <div class="line"><span class="lineno">   82</span>  <span class="keywordtype">int</span> deg = <a class="code hl_function" href="../../d5/d82/class_g_b_weight_a18b2a054eb6bb1846e76dd0d6ecccfd9.html#a18b2a054eb6bb1846e76dd0d6ecccfd9">gbvector_term_weight</a>(f);</div>
-<div class="line"><span class="lineno">   83</span>  initial_term_weight = deg;</div>
+<div class="line"><span class="lineno">   83</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">initial_term_weight</a> = deg;</div>
 <div class="line"><span class="lineno">   84</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../d7/d40/structgbvector.html">gbvector</a> *t = f-&gt;<a class="code hl_variable" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">next</a>; t != <span class="keyword">nullptr</span>; t = t-&gt;next)</div>
 <div class="line"><span class="lineno">   85</span>    {</div>
-<div class="line"><span class="lineno">   86</span>      <span class="keywordtype">int</span> tdeg = <a class="code hl_function" href="../../d5/d82/class_g_b_weight_a18b2a054eb6bb1846e76dd0d6ecccfd9.html#a18b2a054eb6bb1846e76dd0d6ecccfd9">gbvector_term_weight</a>(t);</div>
-<div class="line"><span class="lineno">   87</span>      <span class="keywordflow">if</span> (tdeg &gt; deg) deg = tdeg;</div>
+<div class="line"><span class="lineno">   86</span>      <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tdeg</a> = <a class="code hl_function" href="../../d5/d82/class_g_b_weight_a18b2a054eb6bb1846e76dd0d6ecccfd9.html#a18b2a054eb6bb1846e76dd0d6ecccfd9">gbvector_term_weight</a>(t);</div>
+<div class="line"><span class="lineno">   87</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tdeg</a> &gt; deg) deg = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tdeg</a>;</div>
 <div class="line"><span class="lineno">   88</span>    }</div>
 <div class="line"><span class="lineno">   89</span> </div>
 <div class="line"><span class="lineno">   90</span>  <span class="keywordflow">return</span> deg;</div>
 <div class="line"><span class="lineno">   91</span>}</div>
 <div class="ttc" id="aclass_g_b_weight_a18b2a054eb6bb1846e76dd0d6ecccfd9_html_a18b2a054eb6bb1846e76dd0d6ecccfd9"><div class="ttname"><a href="../../d5/d82/class_g_b_weight_a18b2a054eb6bb1846e76dd0d6ecccfd9.html#a18b2a054eb6bb1846e76dd0d6ecccfd9">GBWeight::gbvector_term_weight</a></div><div class="ttdeci">int gbvector_term_weight(const gbvector *f) const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d1f/gbweight_8cpp_source.html#l00065">gbweight.cpp:65</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="astructgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26_html_a3cc2bd9a347521ac3e6d6d89de1a3a26"><div class="ttname"><a href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">gbvector::next</a></div><div class="ttdeci">gbvector * next</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00045">gbring.hpp:45</a></div></div>
 <div class="ttc" id="astructgbvector_html"><div class="ttname"><a href="../../d7/d40/structgbvector.html">gbvector</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d11/gbring_8hpp_source.html#l00043">gbring.hpp:44</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d82/class_g_b_weight_a18b2a054eb6bb1846e76dd0d6ecccfd9.html#a18b2a054eb6bb1846e76dd0d6ecccfd9">gbvector_term_weight()</a>, and <a class="el" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">gbvector::next</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d5/d82/class_g_b_weight_a18b2a054eb6bb1846e76dd0d6ecccfd9.html#a18b2a054eb6bb1846e76dd0d6ecccfd9">gbvector_term_weight()</a>, and <a class="el" href="../../d7/d40/structgbvector_a3cc2bd9a347521ac3e6d6d89de1a3a26.html#a3cc2bd9a347521ac3e6d6d89de1a3a26">gbvector::next</a>.</p>
 
 </div>
 </div>
@@ -148,7 +149,7 @@ $(document).ready(function(){initNavTree('d5/d82/class_g_b_weight_a5143994ecbb4f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d82/class_g_b_weight.html">GBWeight</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('da/d01/classdoubling__stash_af3d73df22
         <tr>
           <td class="memname"><a class="el" href="../../db/d07/m2-mem_8h_afb0843d0fb27ea1b89117293f9a01605.html#afb0843d0fb27ea1b89117293f9a01605">size_t</a> doubling_stash::allocated_size </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
@@ -107,16 +107,16 @@ $(document).ready(function(){initNavTree('da/d01/classdoubling__stash_af3d73df22
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d6f/mem_8cpp_source.html#l00165">165</a> of file <a class="el" href="../../d1/d6f/mem_8cpp_source.html">mem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  166</span>{</div>
-<div class="line"><span class="lineno">  167</span>  <span class="keywordtype">int</span> *q = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">int</span> *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
-<div class="line"><span class="lineno">  168</span>  assert(q[-1] &gt;= 0);</div>
-<div class="line"><span class="lineno">  169</span>  assert(q[-1] &lt;= <a class="code hl_variable" href="../../d1/d2c/mem_8hpp_a68f338430f08beb25d341e25ad038cbf.html#a68f338430f08beb25d341e25ad038cbf">NDOUBLES</a>);</div>
-<div class="line"><span class="lineno">  170</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../da/d01/classdoubling__stash_a8a336d1fc410b984768e913f041600a3.html#a8a336d1fc410b984768e913f041600a3">double_size</a>[q[-1]];</div>
+<div class="line"><span class="lineno">  167</span>  <span class="keywordtype">int</span> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a> = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">int</span> *<span class="keyword">&gt;</span>(p);</div>
+<div class="line"><span class="lineno">  168</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">assert</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a>[-1] &gt;= 0);</div>
+<div class="line"><span class="lineno">  169</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">assert</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a>[-1] &lt;= <a class="code hl_variable" href="../../d1/d2c/mem_8hpp_a68f338430f08beb25d341e25ad038cbf.html#a68f338430f08beb25d341e25ad038cbf">NDOUBLES</a>);</div>
+<div class="line"><span class="lineno">  170</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../da/d01/classdoubling__stash_a8a336d1fc410b984768e913f041600a3.html#a8a336d1fc410b984768e913f041600a3">double_size</a>[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a>[-1]];</div>
 <div class="line"><span class="lineno">  171</span>}</div>
 <div class="ttc" id="aclassdoubling__stash_a8a336d1fc410b984768e913f041600a3_html_a8a336d1fc410b984768e913f041600a3"><div class="ttname"><a href="../../da/d01/classdoubling__stash_a8a336d1fc410b984768e913f041600a3.html#a8a336d1fc410b984768e913f041600a3">doubling_stash::double_size</a></div><div class="ttdeci">size_t double_size[NDOUBLES]</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00172">mem.hpp:172</a></div></div>
-<div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="amem_8hpp_a68f338430f08beb25d341e25ad038cbf_html_a68f338430f08beb25d341e25ad038cbf"><div class="ttname"><a href="../../d1/d2c/mem_8hpp_a68f338430f08beb25d341e25ad038cbf.html#a68f338430f08beb25d341e25ad038cbf">NDOUBLES</a></div><div class="ttdeci">const int NDOUBLES</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00012">mem.hpp:12</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d01/classdoubling__stash_a8a336d1fc410b984768e913f041600a3.html#a8a336d1fc410b984768e913f041600a3">double_size</a>, <a class="el" href="../../d1/d2c/mem_8hpp_a68f338430f08beb25d341e25ad038cbf.html#a68f338430f08beb25d341e25ad038cbf">NDOUBLES</a>, and <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../da/d01/classdoubling__stash_a8a336d1fc410b984768e913f041600a3.html#a8a336d1fc410b984768e913f041600a3">double_size</a>, and <a class="el" href="../../d1/d2c/mem_8hpp_a68f338430f08beb25d341e25ad038cbf.html#a68f338430f08beb25d341e25ad038cbf">NDOUBLES</a>.</p>
 
 </div>
 </div>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('da/d01/classdoubling__stash_af3d73df22
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d01/classdoubling__stash.html">doubling_stash</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

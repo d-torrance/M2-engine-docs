@@ -107,13 +107,13 @@ $(document).ready(function(){initNavTree('dc/d5a/classsagbi_a7b41ac511b69cf5dd55
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a> *&#160;</td>
           <td class="paramname"><em>T</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a> *&#160;</td>
           <td class="paramname"><em>S</em>, </td>
         </tr>
         <tr>
@@ -125,19 +125,19 @@ $(document).ready(function(){initNavTree('dc/d5a/classsagbi_a7b41ac511b69cf5dd55
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/d6a/class_ring_map.html">RingMap</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/d6a/class_ring_map.html">RingMap</a> *&#160;</td>
           <td class="paramname"><em>inclusionAmbient</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/d6a/class_ring_map.html">RingMap</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/d6a/class_ring_map.html">RingMap</a> *&#160;</td>
           <td class="paramname"><em>fullSubstitution</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/d6a/class_ring_map.html">RingMap</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/d6a/class_ring_map.html">RingMap</a> *&#160;</td>
           <td class="paramname"><em>substitutionInclusion</em>, </td>
         </tr>
         <tr>
@@ -164,78 +164,91 @@ $(document).ready(function(){initNavTree('dc/d5a/classsagbi_a7b41ac511b69cf5dd55
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>this is the tensor ring (containing original variables for subalgebra and extra variables tagging algebra generators)  </td></tr>
+    <tr><td class="paramname">S</td><td>polynomial ring containing original variables  </td></tr>
+    <tr><td class="paramname">a</td><td>this is the ring element to be subducteda  </td></tr>
+    <tr><td class="paramname">inclusionAmbient</td><td>the inclusion map reprensenting a subalgebra  </td></tr>
+    <tr><td class="paramname">fullSubstitution</td><td>substitution map sending tag variables to generators  </td></tr>
+    <tr><td class="paramname">substitutionInclusion</td><td>combined  </td></tr>
+    <tr><td class="paramname">gbI</td><td>Groebner basis of ideal in S encoding quotient ideal  </td></tr>
+    <tr><td class="paramname">gbReductionIdeal</td><td>Groebner basis of ideal in T encoding generator reductions and lead term of I </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/de2/sagbi_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d0/de2/sagbi_8cpp_source.html">sagbi.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   80</span>{</div>
 <div class="line"><span class="lineno">   81</span>    <a class="code hl_struct" href="../../d0/dbc/struct_nterm.html">Nterm</a> *f = a;</div>
-<div class="line"><span class="lineno">   82</span>    <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> fr = f;</div>
-<div class="line"><span class="lineno">   83</span>    <a class="code hl_class" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> matT(<a class="code hl_define" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>-&gt;make_FreeModule(1), 1);</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_class" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> matS(S-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>(1), 1);</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordtype">bool</span> breakFlag = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fr</a> = f;</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_class" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">matT</a>(<a class="code hl_define" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>-&gt;make_FreeModule(1), 1);</div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_class" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">matS</a>(S-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">make_FreeModule</a>(1), 1);</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">breakFlag</a> = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   86</span> </div>
-<div class="line"><span class="lineno">   87</span>    (void) numslots;</div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">while</span> ((f != <span class="keyword">nullptr</span>) &amp;&amp; (breakFlag == <span class="keyword">false</span>))</div>
+<div class="line"><span class="lineno">   87</span>    (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a>) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">numslots</a>;</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">while</span> ((f != <span class="keyword">nullptr</span>) &amp;&amp; (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">breakFlag</a> == <span class="keyword">false</span>))</div>
 <div class="line"><span class="lineno">   89</span>    {</div>
 <div class="line"><span class="lineno">   90</span>        <span class="comment">// tensorRingg = S#&quot;inclusionAmbient&quot; liftg</span></div>
 <div class="line"><span class="lineno">   91</span>        <span class="comment">// tesnorRingg = gInT</span></div>
-<div class="line"><span class="lineno">   92</span>        <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> gInT = S-&gt;<a class="code hl_function" href="../../d3/dfc/class_poly_ring_a62d2ed20aa3e354a639db5ce8461975a.html#a62d2ed20aa3e354a639db5ce8461975a">eval</a>(inclusionAmbient,fr,0);</div>
+<div class="line"><span class="lineno">   92</span>        <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gInT</a> = S-&gt;<a class="code hl_function" href="../../d3/dfc/class_poly_ring_a62d2ed20aa3e354a639db5ce8461975a.html#a62d2ed20aa3e354a639db5ce8461975a">eval</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">inclusionAmbient</a>,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fr</a>,0);</div>
 <div class="line"><span class="lineno">   93</span> </div>
 <div class="line"><span class="lineno">   94</span>        <span class="comment">// This might be the wrong way to deal with this issue.</span></div>
 <div class="line"><span class="lineno">   95</span>        <span class="comment">// I don&#39;t know what to do, however.</span></div>
-<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">if</span>(gInT != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gInT</a> != <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">   97</span>          {</div>
 <div class="line"><span class="lineno">   98</span>              <span class="comment">// tensorRingLTg = leadTerm tensorRingg</span></div>
 <div class="line"><span class="lineno">   99</span>              <span class="comment">// tensorRingLTg = LTgInT</span></div>
-<div class="line"><span class="lineno">  100</span>              <a class="code hl_struct" href="../../d0/dbc/struct_nterm.html">Nterm</a> *LTgInT = gInT;</div>
-<div class="line"><span class="lineno">  101</span>              LTgInT-&gt;<a class="code hl_variable" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  100</span>              <a class="code hl_struct" href="../../d0/dbc/struct_nterm.html">Nterm</a> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">LTgInT</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gInT</a>;</div>
+<div class="line"><span class="lineno">  101</span>              <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">LTgInT</a>-&gt;<a class="code hl_variable" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">next</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  102</span>        </div>
 <div class="line"><span class="lineno">  103</span>            <span class="comment">// h = tensorRingLTg % (inAIdeal)</span></div>
 <div class="line"><span class="lineno">  104</span>            <span class="comment">// h = h1</span></div>
-<div class="line"><span class="lineno">  105</span>            matT.set_entry(0,0,LTgInT);</div>
-<div class="line"><span class="lineno">  106</span>            <a class="code hl_class" href="../../d6/d3f/class_matrix.html">Matrix</a> *m = matT.to_matrix();</div>
-<div class="line"><span class="lineno">  107</span>            <span class="keyword">const</span> <a class="code hl_class" href="../../d6/d3f/class_matrix.html">Matrix</a> *n = gbReductionIdeal-&gt;<a class="code hl_function" href="../../de/ded/class_g_b_computation_a8059a1ac68ead3c80ee7d8ddd2175560.html#a8059a1ac68ead3c80ee7d8ddd2175560">matrix_remainder</a>(m);</div>
+<div class="line"><span class="lineno">  105</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">matT</a>.set_entry(0,0,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">LTgInT</a>);</div>
+<div class="line"><span class="lineno">  106</span>            <a class="code hl_class" href="../../d6/d3f/class_matrix.html">Matrix</a> *m = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">matT</a>.to_matrix();</div>
+<div class="line"><span class="lineno">  107</span>            <span class="keyword">const</span> <a class="code hl_class" href="../../d6/d3f/class_matrix.html">Matrix</a> *n = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gbReductionIdeal</a>-&gt;matrix_remainder(m);</div>
 <div class="line"><span class="lineno">  108</span>            <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> h1 = n-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(0,0);</div>
 <div class="line"><span class="lineno">  109</span>            <span class="keyword">delete</span> m;</div>
 <div class="line"><span class="lineno">  110</span>            <span class="keyword">delete</span> n;</div>
 <div class="line"><span class="lineno">  111</span> </div>
-<div class="line"><span class="lineno">  112</span>            <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> projectionh = <a class="code hl_define" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>-&gt;eval(substitutionInclusion,h1,0);</div>
+<div class="line"><span class="lineno">  112</span>            <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">projectionh</a> = <a class="code hl_define" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>-&gt;eval(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">substitutionInclusion</a>,h1,0);</div>
 <div class="line"><span class="lineno">  113</span>            </div>
-<div class="line"><span class="lineno">  114</span>            <span class="keywordflow">if</span>(projectionh != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  114</span>            <span class="keywordflow">if</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">projectionh</a> != <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">  115</span>            {</div>
 <div class="line"><span class="lineno">  116</span>                <span class="comment">// hSub = (S#&quot;fullSubstitution&quot; h) % I</span></div>
-<div class="line"><span class="lineno">  117</span>                <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> hInS = <a class="code hl_define" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>-&gt;eval(fullSubstitution,h1,0);</div>
-<div class="line"><span class="lineno">  118</span>                matS.set_entry(0,0,hInS);</div>
-<div class="line"><span class="lineno">  119</span>                <a class="code hl_class" href="../../d6/d3f/class_matrix.html">Matrix</a> *k = matS.to_matrix();</div>
-<div class="line"><span class="lineno">  120</span>                <span class="keyword">const</span> <a class="code hl_class" href="../../d6/d3f/class_matrix.html">Matrix</a> *l = gbI-&gt;<a class="code hl_function" href="../../de/ded/class_g_b_computation_a8059a1ac68ead3c80ee7d8ddd2175560.html#a8059a1ac68ead3c80ee7d8ddd2175560">matrix_remainder</a>(k);</div>
-<div class="line"><span class="lineno">  121</span>                <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> h1InS = l-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(0,0);</div>
-<div class="line"><span class="lineno">  122</span>                <span class="keyword">delete</span> k;</div>
-<div class="line"><span class="lineno">  123</span>                <span class="keyword">delete</span> l;</div>
+<div class="line"><span class="lineno">  117</span>                <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">hInS</a> = <a class="code hl_define" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>-&gt;eval(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fullSubstitution</a>,h1,0);</div>
+<div class="line"><span class="lineno">  118</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">matS</a>.set_entry(0,0,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">hInS</a>);</div>
+<div class="line"><span class="lineno">  119</span>                <a class="code hl_class" href="../../d6/d3f/class_matrix.html">Matrix</a> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">k</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">matS</a>.to_matrix();</div>
+<div class="line"><span class="lineno">  120</span>                <span class="keyword">const</span> <a class="code hl_class" href="../../d6/d3f/class_matrix.html">Matrix</a> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">l</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gbI</a>-&gt;matrix_remainder(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">k</a>);</div>
+<div class="line"><span class="lineno">  121</span>                <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">h1InS</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">l</a>-&gt;elem(0,0);</div>
+<div class="line"><span class="lineno">  122</span>                <span class="keyword">delete</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">k</a>;</div>
+<div class="line"><span class="lineno">  123</span>                <span class="keyword">delete</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">l</a>;</div>
 <div class="line"><span class="lineno">  124</span>                </div>
-<div class="line"><span class="lineno">  125</span>                S-&gt;<a class="code hl_function" href="../../d3/dfc/class_poly_ring_afd1c02f2c75f784348fbf73ec2910888.html#afd1c02f2c75f784348fbf73ec2910888">internal_subtract_to</a>(fr,h1InS);</div>
-<div class="line"><span class="lineno">  126</span>                f = fr;</div>
+<div class="line"><span class="lineno">  125</span>                S-&gt;<a class="code hl_function" href="../../d3/dfc/class_poly_ring_afd1c02f2c75f784348fbf73ec2910888.html#afd1c02f2c75f784348fbf73ec2910888">internal_subtract_to</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fr</a>,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">h1InS</a>);</div>
+<div class="line"><span class="lineno">  126</span>                f = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fr</a>;</div>
 <div class="line"><span class="lineno">  127</span>            }</div>
 <div class="line"><span class="lineno">  128</span>            <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  129</span>                breakFlag = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  129</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">breakFlag</a> = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  130</span>          }</div>
 <div class="line"><span class="lineno">  131</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  132</span>            breakFlag = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  132</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">breakFlag</a> = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  133</span>    }</div>
 <div class="line"><span class="lineno">  134</span>    </div>
 <div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span> <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a>(f);</div>
 <div class="line"><span class="lineno">  136</span>}</div>
-<div class="ttc" id="aclass_g_b_computation_a8059a1ac68ead3c80ee7d8ddd2175560_html_a8059a1ac68ead3c80ee7d8ddd2175560"><div class="ttname"><a href="../../de/ded/class_g_b_computation_a8059a1ac68ead3c80ee7d8ddd2175560.html#a8059a1ac68ead3c80ee7d8ddd2175560">GBComputation::matrix_remainder</a></div><div class="ttdeci">virtual const Matrix * matrix_remainder(const Matrix *m)=0</div></div>
-<div class="ttc" id="aclass_matrix_a0dd3516d8526ad736fe69848aacd1406_html_a0dd3516d8526ad736fe69848aacd1406"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem</a></div><div class="ttdeci">ring_elem elem(int i, int j) const</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d84/matrix_8cpp_source.html#l00307">matrix.cpp:307</a></div></div>
+<div class="ttc" id="aclass_matrix_a0dd3516d8526ad736fe69848aacd1406_html_a0dd3516d8526ad736fe69848aacd1406"><div class="ttname"><a href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem</a></div><div class="ttdeci">ring_elem elem(int i, int j) const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dcd/matrices_2matrix_8cpp_source.html#l00307">matrix.cpp:307</a></div></div>
 <div class="ttc" id="aclass_matrix_constructor_html"><div class="ttname"><a href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/d80/matrix-con_8hpp_source.html#l00013">matrix-con.hpp:14</a></div></div>
 <div class="ttc" id="aclass_matrix_html"><div class="ttname"><a href="../../d6/d3f/class_matrix.html">Matrix</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/dce/matrix_8hpp_source.html#l00017">matrix.hpp:18</a></div></div>
 <div class="ttc" id="aclass_poly_ring_a62d2ed20aa3e354a639db5ce8461975a_html_a62d2ed20aa3e354a639db5ce8461975a"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_a62d2ed20aa3e354a639db5ce8461975a.html#a62d2ed20aa3e354a639db5ce8461975a">PolyRing::eval</a></div><div class="ttdeci">virtual ring_elem eval(const RingMap *map, const ring_elem f, int first_var) const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d96/poly_8cpp_source.html#l01346">poly.cpp:1346</a></div></div>
 <div class="ttc" id="aclass_poly_ring_afd1c02f2c75f784348fbf73ec2910888_html_afd1c02f2c75f784348fbf73ec2910888"><div class="ttname"><a href="../../d3/dfc/class_poly_ring_afd1c02f2c75f784348fbf73ec2910888.html#afd1c02f2c75f784348fbf73ec2910888">PolyRing::internal_subtract_to</a></div><div class="ttdeci">void internal_subtract_to(ring_elem &amp;f, ring_elem &amp;g) const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d96/poly_8cpp_source.html#l00744">poly.cpp:744</a></div></div>
-<div class="ttc" id="aclass_ring_a246965acb6f313f82aa3059a7c43091a_html_a246965acb6f313f82aa3059a7c43091a"><div class="ttname"><a href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">Ring::make_FreeModule</a></div><div class="ttdeci">virtual FreeModule * make_FreeModule() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d2b/ring_8cpp_source.html#l00053">ring.cpp:53</a></div></div>
-<div class="ttc" id="astruct_nterm_a395044af0f071742b5d1fdeb74a9efa2_html_a395044af0f071742b5d1fdeb74a9efa2"><div class="ttname"><a href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">Nterm::next</a></div><div class="ttdeci">Nterm * next</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00109">ringelem.hpp:109</a></div></div>
-<div class="ttc" id="astruct_nterm_html"><div class="ttname"><a href="../../d0/dbc/struct_nterm.html">Nterm</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00107">ringelem.hpp:108</a></div></div>
+<div class="ttc" id="aclass_ring_a246965acb6f313f82aa3059a7c43091a_html_a246965acb6f313f82aa3059a7c43091a"><div class="ttname"><a href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">Ring::make_FreeModule</a></div><div class="ttdeci">virtual FreeModule * make_FreeModule() const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d00/rings_2ring_8cpp_source.html#l00053">ring.cpp:53</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
+<div class="ttc" id="astruct_nterm_a395044af0f071742b5d1fdeb74a9efa2_html_a395044af0f071742b5d1fdeb74a9efa2"><div class="ttname"><a href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">Nterm::next</a></div><div class="ttdeci">Nterm * next</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00109">ringelem.hpp:109</a></div></div>
+<div class="ttc" id="astruct_nterm_html"><div class="ttname"><a href="../../d0/dbc/struct_nterm.html">Nterm</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00107">ringelem.hpp:108</a></div></div>
 <div class="ttc" id="atable_8c_a0acb682b8260ab1c60b918599864e2e5_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d33/table_8c_source.html#l00013">table.c:13</a></div></div>
-<div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00050">ringelem.hpp:51</a></div></div>
+<div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00050">ringelem.hpp:51</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem()</a>, <a class="el" href="../../d3/dfc/class_poly_ring_a62d2ed20aa3e354a639db5ce8461975a.html#a62d2ed20aa3e354a639db5ce8461975a">PolyRing::eval()</a>, <a class="el" href="../../d3/dfc/class_poly_ring_afd1c02f2c75f784348fbf73ec2910888.html#afd1c02f2c75f784348fbf73ec2910888">PolyRing::internal_subtract_to()</a>, <a class="el" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">Ring::make_FreeModule()</a>, <a class="el" href="../../de/ded/class_g_b_computation_a8059a1ac68ead3c80ee7d8ddd2175560.html#a8059a1ac68ead3c80ee7d8ddd2175560">GBComputation::matrix_remainder()</a>, <a class="el" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">Nterm::next</a>, <a class="el" href="../../d3/d7a/class_matrix_constructor_a719118a871e65c356db8ea6ce844d6ce.html#a719118a871e65c356db8ea6ce844d6ce">MatrixConstructor::set_entry()</a>, <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>, and <a class="el" href="../../d3/d7a/class_matrix_constructor_a2ff836da11f7fe8a125a7aa73ee95651.html#a2ff836da11f7fe8a125a7aa73ee95651">MatrixConstructor::to_matrix()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">Matrix::elem()</a>, <a class="el" href="../../d3/dfc/class_poly_ring_a62d2ed20aa3e354a639db5ce8461975a.html#a62d2ed20aa3e354a639db5ce8461975a">PolyRing::eval()</a>, <a class="el" href="../../d3/dfc/class_poly_ring_afd1c02f2c75f784348fbf73ec2910888.html#afd1c02f2c75f784348fbf73ec2910888">PolyRing::internal_subtract_to()</a>, <a class="el" href="../../dd/dcf/class_ring_a246965acb6f313f82aa3059a7c43091a.html#a246965acb6f313f82aa3059a7c43091a">Ring::make_FreeModule()</a>, <a class="el" href="../../d0/dbc/struct_nterm_a395044af0f071742b5d1fdeb74a9efa2.html#a395044af0f071742b5d1fdeb74a9efa2">Nterm::next</a>, and <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/dc8/groebner_8cpp_ad8c03a741da2e849ee6d5c6892a8d384.html#ad8c03a741da2e849ee6d5c6892a8d384">rawSubduction1()</a>, and <a class="el" href="../../dc/d5a/classsagbi_a46fdc62b4d511ef235d0604872a6e700.html#a46fdc62b4d511ef235d0604872a6e700">subduct1()</a>.</p>
 
@@ -247,7 +260,7 @@ $(document).ready(function(){initNavTree('dc/d5a/classsagbi_a7b41ac511b69cf5dd55
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d5a/classsagbi.html">sagbi</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

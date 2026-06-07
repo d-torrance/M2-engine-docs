@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/ExponentList.hpp File Reference</title>
+<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/monomials/ExponentList.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d6/df2/_exponent_list_8hpp.html','../.
 <div class="textblock"><code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/db4/engine-includes_8hpp_source.html">engine-includes.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/db0/_exponent_vector_8hpp_source.html">ExponentVector.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/db0/_exponent_vector_8hpp_source.html">monomials/ExponentVector.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d1d/buffer_8hpp_source.html">buffer.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../d6/df2/_exponent_list_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -112,11 +112,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a721373951f1019b322fa624dad2d258c" id="r_a721373951f1019b322fa624dad2d258c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df2/_exponent_list_8hpp_a721373951f1019b322fa624dad2d258c.html#a721373951f1019b322fa624dad2d258c">varpower</a> = <a class="el" href="../../d1/d39/class_exponent_list.html">ExponentList</a>&lt; <a class="el" href="../../d1/da0/classint.html">int</a>, true &gt;</td></tr>
+<tr class="memitem:a721373951f1019b322fa624dad2d258c" id="r_a721373951f1019b322fa624dad2d258c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df2/_exponent_list_8hpp_a721373951f1019b322fa624dad2d258c.html#a721373951f1019b322fa624dad2d258c">varpower</a> = <a class="el" href="../../d1/d39/class_exponent_list.html">ExponentList</a>&lt; <a class="el" href="../../d1/da0/classint.html">int</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">true</a> &gt;</td></tr>
 <tr class="separator:a721373951f1019b322fa624dad2d258c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc701ea969ffb5b5413fe32f6e20afe2" id="r_acc701ea969ffb5b5413fe32f6e20afe2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df2/_exponent_list_8hpp_acc701ea969ffb5b5413fe32f6e20afe2.html#acc701ea969ffb5b5413fe32f6e20afe2">index_varpower</a> = <a class="el" href="../../dc/d51/class_exponent_list_iterator.html">ExponentListIterator</a>&lt; <a class="el" href="../../d1/da0/classint.html">int</a>, true &gt;</td></tr>
+<tr class="memitem:acc701ea969ffb5b5413fe32f6e20afe2" id="r_acc701ea969ffb5b5413fe32f6e20afe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df2/_exponent_list_8hpp_acc701ea969ffb5b5413fe32f6e20afe2.html#acc701ea969ffb5b5413fe32f6e20afe2">index_varpower</a> = <a class="el" href="../../dc/d51/class_exponent_list_iterator.html">ExponentListIterator</a>&lt; <a class="el" href="../../d1/da0/classint.html">int</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">true</a> &gt;</td></tr>
 <tr class="separator:acc701ea969ffb5b5413fe32f6e20afe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32c7462759c905470880b0dba58f00ad" id="r_a32c7462759c905470880b0dba58f00ad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df2/_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad.html#a32c7462759c905470880b0dba58f00ad">const_varpower</a> = <a class="el" href="../../d1/d39/class_exponent_list_a5550766d027348c2a12398694cb9f103.html#a5550766d027348c2a12398694cb9f103">varpower::ConstExponents</a></td></tr>
+<tr class="memitem:a32c7462759c905470880b0dba58f00ad" id="r_a32c7462759c905470880b0dba58f00ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df2/_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad.html#a32c7462759c905470880b0dba58f00ad">const_varpower</a> = <a class="el" href="../../d1/d39/class_exponent_list_a5550766d027348c2a12398694cb9f103.html#a5550766d027348c2a12398694cb9f103">varpower::ConstExponents</a></td></tr>
 <tr class="separator:a32c7462759c905470880b0dba58f00ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -124,8 +124,8 @@ Typedefs</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d6/df2/_exponent_list_8hpp.html">ExponentList.hpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_a671d1730dac5de491bd41b2aba2e233.html">monomials</a></li><li class="navelem"><a class="el" href="../../d6/df2/_exponent_list_8hpp.html">ExponentList.hpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

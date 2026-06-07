@@ -95,13 +95,13 @@ $(document).ready(function(){initNavTree('d5/d18/class_quick_sorter_ad5a455e7df8
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Sorter &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Sorter</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">long <a class="el" href="../../d5/d18/class_quick_sorter.html">QuickSorter</a>&lt; Sorter &gt;::sort_partition </td>
+          <td class="memname">long <a class="el" href="../../d5/d18/class_quick_sorter.html">QuickSorter</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Sorter</a> &gt;::sort_partition </td>
           <td>(</td>
           <td class="paramtype">long&#160;</td>
           <td class="paramname"><em>lo</em>, </td>
@@ -127,8 +127,8 @@ template&lt;typename Sorter &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d3b/monsort_8hpp_source.html#l00054">54</a> of file <a class="el" href="../../df/d3b/monsort_8hpp_source.html">monsort.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   55</span>{</div>
-<div class="line"><span class="lineno">   56</span>  <a class="code hl_typedef" href="../../d5/d18/class_quick_sorter_abaefec981673f1ebc0995ff4a0d282d2.html#abaefec981673f1ebc0995ff4a0d282d2">value</a> pivot = <a class="code hl_variable" href="../../d5/d18/class_quick_sorter_a23fc644df86d45fa5ef2c73b5ff85fdb.html#a23fc644df86d45fa5ef2c73b5ff85fdb">elems</a>[lo];</div>
-<div class="line"><span class="lineno">   57</span>  <span class="keywordtype">long</span> i = lo - 1;</div>
+<div class="line"><span class="lineno">   56</span>  <a class="code hl_typedef" href="../../d5/d18/class_quick_sorter_abaefec981673f1ebc0995ff4a0d282d2.html#abaefec981673f1ebc0995ff4a0d282d2">value</a> pivot = <a class="code hl_variable" href="../../d5/d18/class_quick_sorter_a23fc644df86d45fa5ef2c73b5ff85fdb.html#a23fc644df86d45fa5ef2c73b5ff85fdb">elems</a>[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lo</a>];</div>
+<div class="line"><span class="lineno">   57</span>  <span class="keywordtype">long</span> i = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lo</a> - 1;</div>
 <div class="line"><span class="lineno">   58</span>  <span class="keywordtype">long</span> j = hi + 1;</div>
 <div class="line"><span class="lineno">   59</span>  <span class="keywordflow">for</span> (;;)</div>
 <div class="line"><span class="lineno">   60</span>    {</div>
@@ -145,9 +145,9 @@ template&lt;typename Sorter &gt; </div>
 <div class="line"><span class="lineno">   71</span> </div>
 <div class="line"><span class="lineno">   72</span>      <span class="keywordflow">if</span> (i &lt; j)</div>
 <div class="line"><span class="lineno">   73</span>        {</div>
-<div class="line"><span class="lineno">   74</span>          <a class="code hl_typedef" href="../../d5/d18/class_quick_sorter_abaefec981673f1ebc0995ff4a0d282d2.html#abaefec981673f1ebc0995ff4a0d282d2">value</a> tmp = <a class="code hl_variable" href="../../d5/d18/class_quick_sorter_a23fc644df86d45fa5ef2c73b5ff85fdb.html#a23fc644df86d45fa5ef2c73b5ff85fdb">elems</a>[j];</div>
+<div class="line"><span class="lineno">   74</span>          <a class="code hl_typedef" href="../../d5/d18/class_quick_sorter_abaefec981673f1ebc0995ff4a0d282d2.html#abaefec981673f1ebc0995ff4a0d282d2">value</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a> = <a class="code hl_variable" href="../../d5/d18/class_quick_sorter_a23fc644df86d45fa5ef2c73b5ff85fdb.html#a23fc644df86d45fa5ef2c73b5ff85fdb">elems</a>[j];</div>
 <div class="line"><span class="lineno">   75</span>          <a class="code hl_variable" href="../../d5/d18/class_quick_sorter_a23fc644df86d45fa5ef2c73b5ff85fdb.html#a23fc644df86d45fa5ef2c73b5ff85fdb">elems</a>[j] = <a class="code hl_variable" href="../../d5/d18/class_quick_sorter_a23fc644df86d45fa5ef2c73b5ff85fdb.html#a23fc644df86d45fa5ef2c73b5ff85fdb">elems</a>[i];</div>
-<div class="line"><span class="lineno">   76</span>          <a class="code hl_variable" href="../../d5/d18/class_quick_sorter_a23fc644df86d45fa5ef2c73b5ff85fdb.html#a23fc644df86d45fa5ef2c73b5ff85fdb">elems</a>[i] = tmp;</div>
+<div class="line"><span class="lineno">   76</span>          <a class="code hl_variable" href="../../d5/d18/class_quick_sorter_a23fc644df86d45fa5ef2c73b5ff85fdb.html#a23fc644df86d45fa5ef2c73b5ff85fdb">elems</a>[i] = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmp</a>;</div>
 <div class="line"><span class="lineno">   77</span>        }</div>
 <div class="line"><span class="lineno">   78</span>      <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span> j;</div>
@@ -156,7 +156,10 @@ template&lt;typename Sorter &gt; </div>
 <div class="ttc" id="aclass_quick_sorter_a0ac19750a30a6dd517ec1740ee634f3c_html_a0ac19750a30a6dd517ec1740ee634f3c"><div class="ttname"><a href="../../d5/d18/class_quick_sorter_a0ac19750a30a6dd517ec1740ee634f3c.html#a0ac19750a30a6dd517ec1740ee634f3c">QuickSorter::M</a></div><div class="ttdeci">Sorter * M</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3b/monsort_8hpp_source.html#l00024">monsort.hpp:24</a></div></div>
 <div class="ttc" id="aclass_quick_sorter_a23fc644df86d45fa5ef2c73b5ff85fdb_html_a23fc644df86d45fa5ef2c73b5ff85fdb"><div class="ttname"><a href="../../d5/d18/class_quick_sorter_a23fc644df86d45fa5ef2c73b5ff85fdb.html#a23fc644df86d45fa5ef2c73b5ff85fdb">QuickSorter::elems</a></div><div class="ttdeci">value * elems</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3b/monsort_8hpp_source.html#l00025">monsort.hpp:25</a></div></div>
 <div class="ttc" id="aclass_quick_sorter_abaefec981673f1ebc0995ff4a0d282d2_html_abaefec981673f1ebc0995ff4a0d282d2"><div class="ttname"><a href="../../d5/d18/class_quick_sorter_abaefec981673f1ebc0995ff4a0d282d2.html#abaefec981673f1ebc0995ff4a0d282d2">QuickSorter::value</a></div><div class="ttdeci">Sorter::value value</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3b/monsort_8hpp_source.html#l00023">monsort.hpp:23</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -165,7 +168,7 @@ template&lt;typename Sorter &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d18/class_quick_sorter.html">QuickSorter</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

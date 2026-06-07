@@ -95,15 +95,15 @@ $(document).ready(function(){initNavTree('d7/d7e/class_b_i_basis_1_1_boolean_inv
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MonomType &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a>&lt; MonomType &gt; * <a class="el" href="../../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis.html">BIBasis::BooleanInvolutiveBasis</a>&lt; MonomType &gt;::NormalForm </td>
+          <td class="memname"><a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; * <a class="el" href="../../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis.html">BIBasis::BooleanInvolutiveBasis</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt;::NormalForm </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple.html">Triple</a>&lt; MonomType &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple.html">Triple</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; *&#160;</td>
           <td class="paramname"><em>triple</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -121,49 +121,50 @@ template&lt;typename MonomType &gt; </div>
 <div class="line"><span class="lineno">  205</span><span class="comment">         * no need to check for NULL pointer. </span></div>
 <div class="line"><span class="lineno">  206</span><span class="comment">         */</span></div>
 <div class="line"><span class="lineno">  207</span> </div>
-<div class="line"><span class="lineno">  208</span>        <span class="keyword">const</span> Triple&lt;MonomType&gt;* involutiveDivisor = 0;</div>
-<div class="line"><span class="lineno">  209</span>        Polynom&lt;MonomType&gt;* originalForm = 0;</div>
-<div class="line"><span class="lineno">  210</span>        Polynom&lt;MonomType&gt;* normalForm = <span class="keyword">new</span> Polynom&lt;MonomType&gt;();</div>
+<div class="line"><span class="lineno">  208</span>        <span class="keyword">const</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Triple&lt;MonomType&gt;</a>* <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">involutiveDivisor</a> = 0;</div>
+<div class="line"><span class="lineno">  209</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Polynom&lt;MonomType&gt;</a>* <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">originalForm</a> = 0;</div>
+<div class="line"><span class="lineno">  210</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Polynom&lt;MonomType&gt;</a>* <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">normalForm</a> = <span class="keyword">new</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Polynom&lt;MonomType&gt;</a>();</div>
 <div class="line"><span class="lineno">  211</span> </div>
-<div class="line"><span class="lineno">  212</span>        <span class="keywordflow">if</span> (triple-&gt;GetVariable() == -1)</div>
+<div class="line"><span class="lineno">  212</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">triple</a>-&gt;GetVariable() == -1)</div>
 <div class="line"><span class="lineno">  213</span>        {</div>
-<div class="line"><span class="lineno">  214</span>            originalForm = <span class="keyword">new</span> Polynom&lt;MonomType&gt;(*triple-&gt;GetPolynom());</div>
+<div class="line"><span class="lineno">  214</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">originalForm</a> = <span class="keyword">new</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Polynom&lt;MonomType&gt;</a>(*<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">triple</a>-&gt;GetPolynom());</div>
 <div class="line"><span class="lineno">  215</span>        }</div>
 <div class="line"><span class="lineno">  216</span>        <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  217</span>        {</div>
-<div class="line"><span class="lineno">  218</span>            originalForm = <span class="keyword">new</span> Polynom&lt;MonomType&gt;(*triple-&gt;GetWeakAncestor()-&gt;GetPolynom());</div>
-<div class="line"><span class="lineno">  219</span>            (*originalForm) *= triple-&gt;GetVariable();</div>
+<div class="line"><span class="lineno">  218</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">originalForm</a> = <span class="keyword">new</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Polynom&lt;MonomType&gt;</a>(*<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">triple</a>-&gt;GetWeakAncestor()-&gt;GetPolynom());</div>
+<div class="line"><span class="lineno">  219</span>            (*originalForm) *= <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">triple</a>-&gt;GetVariable();</div>
 <div class="line"><span class="lineno">  220</span>        }</div>
 <div class="line"><span class="lineno">  221</span> </div>
-<div class="line"><span class="lineno">  222</span>        <span class="keywordflow">while</span> (!originalForm-&gt;IsZero())</div>
+<div class="line"><span class="lineno">  222</span>        <span class="keywordflow">while</span> (!<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">originalForm</a>-&gt;IsZero())</div>
 <div class="line"><span class="lineno">  223</span>        {</div>
-<div class="line"><span class="lineno">  224</span>            involutiveDivisor = <a class="code hl_typedef" href="../../db/d40/franzi-brp_8hpp_ab757760310571764b5752f09c0e29abc.html#ab757760310571764b5752f09c0e29abc">IntermediateBasis</a>.Find(originalForm-&gt;Lm());</div>
-<div class="line"><span class="lineno">  225</span>            <span class="keywordflow">while</span> (involutiveDivisor)</div>
+<div class="line"><span class="lineno">  224</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">involutiveDivisor</a> = <a class="code hl_typedef" href="../../d7/ddf/_b_r_p_8hpp_ab757760310571764b5752f09c0e29abc.html#ab757760310571764b5752f09c0e29abc">IntermediateBasis</a>.Find(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">originalForm</a>-&gt;Lm());</div>
+<div class="line"><span class="lineno">  225</span>            <span class="keywordflow">while</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">involutiveDivisor</a>)</div>
 <div class="line"><span class="lineno">  226</span>            {</div>
-<div class="line"><span class="lineno">  227</span>                originalForm-&gt;HeadReduction(*involutiveDivisor-&gt;GetPolynom());</div>
-<div class="line"><span class="lineno">  228</span>                <span class="keywordflow">if</span> (!originalForm-&gt;IsZero())</div>
+<div class="line"><span class="lineno">  227</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">originalForm</a>-&gt;HeadReduction(*<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">involutiveDivisor</a>-&gt;GetPolynom());</div>
+<div class="line"><span class="lineno">  228</span>                <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">originalForm</a>-&gt;IsZero())</div>
 <div class="line"><span class="lineno">  229</span>                {</div>
-<div class="line"><span class="lineno">  230</span>                    involutiveDivisor = <a class="code hl_typedef" href="../../db/d40/franzi-brp_8hpp_ab757760310571764b5752f09c0e29abc.html#ab757760310571764b5752f09c0e29abc">IntermediateBasis</a>.Find(originalForm-&gt;Lm());</div>
+<div class="line"><span class="lineno">  230</span>                    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">involutiveDivisor</a> = <a class="code hl_typedef" href="../../d7/ddf/_b_r_p_8hpp_ab757760310571764b5752f09c0e29abc.html#ab757760310571764b5752f09c0e29abc">IntermediateBasis</a>.Find(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">originalForm</a>-&gt;Lm());</div>
 <div class="line"><span class="lineno">  231</span>                }</div>
 <div class="line"><span class="lineno">  232</span>                <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  233</span>                {</div>
-<div class="line"><span class="lineno">  234</span>                    involutiveDivisor = 0;</div>
+<div class="line"><span class="lineno">  234</span>                    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">involutiveDivisor</a> = 0;</div>
 <div class="line"><span class="lineno">  235</span>                }</div>
 <div class="line"><span class="lineno">  236</span>            }</div>
 <div class="line"><span class="lineno">  237</span> </div>
-<div class="line"><span class="lineno">  238</span>            <span class="keywordflow">if</span> (!originalForm-&gt;IsZero())</div>
+<div class="line"><span class="lineno">  238</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">originalForm</a>-&gt;IsZero())</div>
 <div class="line"><span class="lineno">  239</span>            {</div>
-<div class="line"><span class="lineno">  240</span>                (*normalForm) += originalForm-&gt;Lm();</div>
-<div class="line"><span class="lineno">  241</span>                originalForm-&gt;RidOfLm();</div>
+<div class="line"><span class="lineno">  240</span>                (*normalForm) += <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">originalForm</a>-&gt;Lm();</div>
+<div class="line"><span class="lineno">  241</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">originalForm</a>-&gt;RidOfLm();</div>
 <div class="line"><span class="lineno">  242</span>            }</div>
 <div class="line"><span class="lineno">  243</span>        }</div>
 <div class="line"><span class="lineno">  244</span> </div>
-<div class="line"><span class="lineno">  245</span>        <span class="keyword">delete</span> originalForm;</div>
-<div class="line"><span class="lineno">  246</span>        <span class="keywordflow">return</span> normalForm;</div>
+<div class="line"><span class="lineno">  245</span>        <span class="keyword">delete</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">originalForm</a>;</div>
+<div class="line"><span class="lineno">  246</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">normalForm</a>;</div>
 <div class="line"><span class="lineno">  247</span>    }</div>
-<div class="ttc" id="afranzi-brp_8hpp_ab757760310571764b5752f09c0e29abc_html_ab757760310571764b5752f09c0e29abc"><div class="ttname"><a href="../../db/d40/franzi-brp_8hpp_ab757760310571764b5752f09c0e29abc.html#ab757760310571764b5752f09c0e29abc">IntermediateBasis</a></div><div class="ttdeci">std::map&lt; int, BRP &gt; IntermediateBasis</div><div class="ttdef"><b>Definition</b> <a href="../../db/d40/franzi-brp_8hpp_source.html#l00093">franzi-brp.hpp:93</a></div></div>
+<div class="ttc" id="a_b_r_p_8hpp_ab757760310571764b5752f09c0e29abc_html_ab757760310571764b5752f09c0e29abc"><div class="ttname"><a href="../../d7/ddf/_b_r_p_8hpp_ab757760310571764b5752f09c0e29abc.html#ab757760310571764b5752f09c0e29abc">IntermediateBasis</a></div><div class="ttdeci">std::map&lt; int, BRP &gt; IntermediateBasis</div><div class="ttdef"><b>Definition</b> <a href="../../d7/ddf/_b_r_p_8hpp_source.html#l00093">BRP.hpp:93</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple_a182d4f2d6c02147dfcd882b57f4b8301.html#a182d4f2d6c02147dfcd882b57f4b8301">BIBasis::Triple&lt; MonomType &gt;::GetPolynom()</a>, <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple_a8be17d60f7413dcf79a85a1e3999fa31.html#a8be17d60f7413dcf79a85a1e3999fa31">BIBasis::Triple&lt; MonomType &gt;::GetVariable()</a>, <a class="el" href="../../da/d09/class_b_i_basis_1_1_triple_a13b57ddc86c7a10457440058fffb5679.html#a13b57ddc86c7a10457440058fffb5679">BIBasis::Triple&lt; MonomType &gt;::GetWeakAncestor()</a>, <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom_afc4e27c24e98adb4a0c336c65498e655.html#afc4e27c24e98adb4a0c336c65498e655">BIBasis::Polynom&lt; MonomType &gt;::HeadReduction()</a>, <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom_a851f427e4c35d4c0a1ca848132908523.html#a851f427e4c35d4c0a1ca848132908523">BIBasis::Polynom&lt; MonomType &gt;::IsZero()</a>, <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom_a9f8b68ca0728a15c615fc9187ed764e6.html#a9f8b68ca0728a15c615fc9187ed764e6">BIBasis::Polynom&lt; MonomType &gt;::Lm()</a>, and <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom_a1fccfd8f64b21694ec5f03c544f230cb.html#a1fccfd8f64b21694ec5f03c544f230cb">BIBasis::Polynom&lt; MonomType &gt;::RidOfLm()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
 
 </div>
 </div>
@@ -173,7 +174,7 @@ template&lt;typename MonomType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d30/namespace_b_i_basis.html">BIBasis</a></li><li class="navelem"><a class="el" href="../../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis.html">BooleanInvolutiveBasis</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

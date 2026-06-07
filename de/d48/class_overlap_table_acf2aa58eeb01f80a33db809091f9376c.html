@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('de/d48/class_overlap_table_acf2aa58eeb
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto OverlapTable::nextDegreeOverlaps </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">auto</a> OverlapTable::nextDegreeOverlaps </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> -&gt; std::pair&lt;<a class="el" href="../../d1/da0/classint.html">int</a>,std::deque&lt;<a class="el" href="../../d6/d1a/_overlap_table_8hpp_a6137b15715e0fc6d08b1936ca1f48e85.html#a6137b15715e0fc6d08b1936ca1f48e85">Overlap</a>&gt;*&gt;</td>
@@ -106,12 +106,15 @@ $(document).ready(function(){initNavTree('de/d48/class_overlap_table_acf2aa58eeb
 
 <p class="definition">Definition at line <a class="el" href="../../da/d7b/_overlap_table_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../da/d7b/_overlap_table_8cpp_source.html">OverlapTable.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   44</span>{</div>
-<div class="line"><span class="lineno">   45</span>  <span class="keyword">auto</span> iter = <a class="code hl_variable" href="../../de/d48/class_overlap_table_aeeb6746353dfcd0cd0fc4cefc211d98d.html#aeeb6746353dfcd0cd0fc4cefc211d98d">mOverlapMap</a>.begin();</div>
-<div class="line"><span class="lineno">   46</span>  <span class="keywordflow">if</span> (iter == <a class="code hl_variable" href="../../de/d48/class_overlap_table_aeeb6746353dfcd0cd0fc4cefc211d98d.html#aeeb6746353dfcd0cd0fc4cefc211d98d">mOverlapMap</a>.end()) <span class="keywordflow">return</span> std::make_pair(-1,<span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">   47</span>  <span class="keywordflow">return</span> std::make_pair(iter-&gt;first.first, &amp;(iter-&gt;second));</div>
+<div class="line"><span class="lineno">   45</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iter</a> = <a class="code hl_variable" href="../../de/d48/class_overlap_table_aeeb6746353dfcd0cd0fc4cefc211d98d.html#aeeb6746353dfcd0cd0fc4cefc211d98d">mOverlapMap</a>.begin();</div>
+<div class="line"><span class="lineno">   46</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iter</a> == <a class="code hl_variable" href="../../de/d48/class_overlap_table_aeeb6746353dfcd0cd0fc4cefc211d98d.html#aeeb6746353dfcd0cd0fc4cefc211d98d">mOverlapMap</a>.end()) <span class="keywordflow">return</span> std::make_pair(-1,<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   47</span>  <span class="keywordflow">return</span> std::make_pair(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iter</a>-&gt;first.first, &amp;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">iter</a>-&gt;second));</div>
 <div class="line"><span class="lineno">   48</span>}</div>
 <div class="ttc" id="aclass_overlap_table_aeeb6746353dfcd0cd0fc4cefc211d98d_html_aeeb6746353dfcd0cd0fc4cefc211d98d"><div class="ttname"><a href="../../de/d48/class_overlap_table_aeeb6746353dfcd0cd0fc4cefc211d98d.html#aeeb6746353dfcd0cd0fc4cefc211d98d">OverlapTable::mOverlapMap</a></div><div class="ttdeci">OverlapMap mOverlapMap</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d1a/_overlap_table_8hpp_source.html#l00057">OverlapTable.hpp:57</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../d0/d92/class_n_c_f4_ace006b34a202dc6443913465e192d34f.html#ace006b34a202dc6443913465e192d34f">NCF4::compute()</a>, <a class="el" href="../../d8/d79/class_n_c_groebner_a7f64ec776bbcf63a368bcd86d609115c.html#a7f64ec776bbcf63a368bcd86d609115c">NCGroebner::computeHomogeneous()</a>, and <a class="el" href="../../d8/d79/class_n_c_groebner_a1b57d9ef47c03a06b4cc62df62f71ff1.html#a1b57d9ef47c03a06b4cc62df62f71ff1">NCGroebner::computeInhomogeneous()</a>.</p>
 
 </div>
@@ -122,7 +125,7 @@ $(document).ready(function(){initNavTree('de/d48/class_overlap_table_acf2aa58eeb
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d48/class_overlap_table.html">OverlapTable</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

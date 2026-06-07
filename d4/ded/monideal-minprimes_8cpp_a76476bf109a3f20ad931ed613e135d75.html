@@ -99,15 +99,15 @@ $(document).ready(function(){initNavTree('d4/ded/monideal-minprimes_8cpp_a76476b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d1/da0/classint.html">int</a> reduce_exp </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../d1/da0/classint.html">int</a> reduce_exp </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/da0/classint.html">int</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d1/da0/classint.html">int</a> *&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d1/da0/classint.html">int</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d1/da0/classint.html">int</a> *&#160;</td>
           <td class="paramname"><em>exp</em>&#160;</td>
         </tr>
         <tr>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('d4/ded/monideal-minprimes_8cpp_a76476b
 <p class="definition">Definition at line <a class="el" href="../../d4/ded/monideal-minprimes_8cpp_source.html#l00244">244</a> of file <a class="el" href="../../d4/ded/monideal-minprimes_8cpp_source.html">monideal-minprimes.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  254</span>{</div>
 <div class="line"><span class="lineno">  255</span>  <span class="keywordtype">int</span> is_one = 1;</div>
-<div class="line"><span class="lineno">  256</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="../../d6/df2/_exponent_list_8hpp_acc701ea969ffb5b5413fe32f6e20afe2.html#acc701ea969ffb5b5413fe32f6e20afe2">index_varpower</a> i = m; i.valid(); ++i)</div>
+<div class="line"><span class="lineno">  256</span>  <span class="keywordflow">for</span> (<a class="code hl_class" href="../../dc/d51/class_exponent_list_iterator.html">index_varpower</a> i = m; i.<a class="code hl_function" href="../../dc/d51/class_exponent_list_iterator_aa4b917e0ca8f707730b8bc452fd51a42.html#aa4b917e0ca8f707730b8bc452fd51a42">valid</a>(); ++i)</div>
 <div class="line"><span class="lineno">  257</span>    {</div>
 <div class="line"><span class="lineno">  258</span>      <span class="keywordflow">if</span> (exp[i.var()] == 1) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  259</span>      <span class="keywordflow">if</span> (exp[i.var()] == 0) is_one = 0;</div>
@@ -134,7 +134,8 @@ $(document).ready(function(){initNavTree('d4/ded/monideal-minprimes_8cpp_a76476b
 <div class="line"><span class="lineno">  261</span>  <span class="keywordflow">if</span> (is_one) <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">  262</span>  <span class="keywordflow">return</span> 1;</div>
 <div class="line"><span class="lineno">  263</span>}</div>
-<div class="ttc" id="a_exponent_list_8hpp_acc701ea969ffb5b5413fe32f6e20afe2_html_acc701ea969ffb5b5413fe32f6e20afe2"><div class="ttname"><a href="../../d6/df2/_exponent_list_8hpp_acc701ea969ffb5b5413fe32f6e20afe2.html#acc701ea969ffb5b5413fe32f6e20afe2">index_varpower</a></div><div class="ttdeci">ExponentListIterator&lt; int, true &gt; index_varpower</div><div class="ttdef"><b>Definition</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00195">ExponentList.hpp:195</a></div></div>
+<div class="ttc" id="aclass_exponent_list_iterator_aa4b917e0ca8f707730b8bc452fd51a42_html_aa4b917e0ca8f707730b8bc452fd51a42"><div class="ttname"><a href="../../dc/d51/class_exponent_list_iterator_aa4b917e0ca8f707730b8bc452fd51a42.html#aa4b917e0ca8f707730b8bc452fd51a42">ExponentListIterator::valid</a></div><div class="ttdeci">bool valid()</div><div class="ttdef"><b>Definition</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00219">ExponentList.hpp:219</a></div></div>
+<div class="ttc" id="aclass_exponent_list_iterator_html"><div class="ttname"><a href="../../dc/d51/class_exponent_list_iterator.html">ExponentListIterator</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00203">ExponentList.hpp:204</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -143,8 +144,8 @@ $(document).ready(function(){initNavTree('d4/ded/monideal-minprimes_8cpp_a76476b
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d4/ded/monideal-minprimes_8cpp.html">monideal-minprimes.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_a671d1730dac5de491bd41b2aba2e233.html">monomials</a></li><li class="navelem"><a class="el" href="../../d4/ded/monideal-minprimes_8cpp.html">monideal-minprimes.cpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

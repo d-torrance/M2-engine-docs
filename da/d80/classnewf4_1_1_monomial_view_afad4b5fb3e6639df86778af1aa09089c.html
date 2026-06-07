@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('da/d80/classnewf4_1_1_monomial_view_af
         <tr>
           <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> newf4::MonomialView::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view.html">MonomialView</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view.html">MonomialView</a> &amp;&#160;</td>
           <td class="paramname"><em>monom</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -113,23 +113,23 @@ $(document).ready(function(){initNavTree('da/d80/classnewf4_1_1_monomial_view_af
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d70/_monomial_view_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../da/d70/_monomial_view_8hpp_source.html">MonomialView.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>  {</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/d80/classnewf4_1_1_monomial_view_ac5b8196f5540c82dc210c7fae05a27db.html#ac5b8196f5540c82dc210c7fae05a27db">size</a>() != monom.size()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   38</span>    </div>
-<div class="line"><span class="lineno">   39</span>    <span class="comment">// for loop version</span></div>
-<div class="line"><span class="lineno">   40</span>    <span class="comment">//for (auto i = 1; i &lt; size(); ++i)</span></div>
-<div class="line"><span class="lineno">   41</span>    <span class="comment">//  if (mData[i] != monom.mData[i]) return false;</span></div>
-<div class="line"><span class="lineno">   42</span>    <span class="comment">//return true;</span></div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span>    <span class="comment">// memcmp version</span></div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> ((<a class="code hl_function" href="../../da/d80/classnewf4_1_1_monomial_view_ac5b8196f5540c82dc210c7fae05a27db.html#ac5b8196f5540c82dc210c7fae05a27db">size</a>() != 0) &amp;&amp; ((std::memcmp(<a class="code hl_variable" href="../../da/d80/classnewf4_1_1_monomial_view_a271dc025d514d26d202f120a52dbb2d8.html#a271dc025d514d26d202f120a52dbb2d8">mData</a> + 1,</div>
-<div class="line"><span class="lineno">   46</span>                                           monom.mData + 1,</div>
-<div class="line"><span class="lineno">   47</span>                                           <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../da/db5/namespacenewf4_a32041ac7b6f89f7d5bd6973a45ab9eb7.html#a32041ac7b6f89f7d5bd6973a45ab9eb7">MonomialInt</a>)*(<a class="code hl_function" href="../../da/d80/classnewf4_1_1_monomial_view_ac5b8196f5540c82dc210c7fae05a27db.html#ac5b8196f5540c82dc210c7fae05a27db">size</a>()-1)) == 0)));</div>
-<div class="line"><span class="lineno">   48</span>  }</div>
-<div class="ttc" id="aclassnewf4_1_1_monomial_view_a271dc025d514d26d202f120a52dbb2d8_html_a271dc025d514d26d202f120a52dbb2d8"><div class="ttname"><a href="../../da/d80/classnewf4_1_1_monomial_view_a271dc025d514d26d202f120a52dbb2d8.html#a271dc025d514d26d202f120a52dbb2d8">newf4::MonomialView::mData</a></div><div class="ttdeci">MonomialInt * mData</div><div class="ttdef"><b>Definition</b> <a href="../../da/d70/_monomial_view_8hpp_source.html#l00014">MonomialView.hpp:14</a></div></div>
-<div class="ttc" id="aclassnewf4_1_1_monomial_view_ac5b8196f5540c82dc210c7fae05a27db_html_ac5b8196f5540c82dc210c7fae05a27db"><div class="ttname"><a href="../../da/d80/classnewf4_1_1_monomial_view_ac5b8196f5540c82dc210c7fae05a27db.html#ac5b8196f5540c82dc210c7fae05a27db">newf4::MonomialView::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d70/_monomial_view_8hpp_source.html#l00033">MonomialView.hpp:33</a></div></div>
-<div class="ttc" id="anamespacenewf4_a32041ac7b6f89f7d5bd6973a45ab9eb7_html_a32041ac7b6f89f7d5bd6973a45ab9eb7"><div class="ttname"><a href="../../da/db5/namespacenewf4_a32041ac7b6f89f7d5bd6973a45ab9eb7.html#a32041ac7b6f89f7d5bd6973a45ab9eb7">newf4::MonomialInt</a></div><div class="ttdeci">int32_t MonomialInt</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3e/_monomial_types_8hpp_source.html#l00018">MonomialTypes.hpp:18</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../da/d70/_monomial_view_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../da/d70/_monomial_view_8hpp_source.html">MonomialView.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>  {</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/d80/classnewf4_1_1_monomial_view_ac5b8196f5540c82dc210c7fae05a27db.html#ac5b8196f5540c82dc210c7fae05a27db">size</a>() != monom.size()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   39</span>    </div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// for loop version</span></div>
+<div class="line"><span class="lineno">   41</span>    <span class="comment">//for (auto i = 1; i &lt; size(); ++i)</span></div>
+<div class="line"><span class="lineno">   42</span>    <span class="comment">//  if (mData[i] != monom.mData[i]) return false;</span></div>
+<div class="line"><span class="lineno">   43</span>    <span class="comment">//return true;</span></div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    <span class="comment">// memcmp version</span></div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">return</span> ((<a class="code hl_function" href="../../da/d80/classnewf4_1_1_monomial_view_ac5b8196f5540c82dc210c7fae05a27db.html#ac5b8196f5540c82dc210c7fae05a27db">size</a>() != 0) &amp;&amp; ((std::memcmp(<a class="code hl_variable" href="../../da/d80/classnewf4_1_1_monomial_view_a271dc025d514d26d202f120a52dbb2d8.html#a271dc025d514d26d202f120a52dbb2d8">mData</a> + 1,</div>
+<div class="line"><span class="lineno">   47</span>                                           monom.mData + 1,</div>
+<div class="line"><span class="lineno">   48</span>                                           <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../da/db5/namespacenewf4_a32041ac7b6f89f7d5bd6973a45ab9eb7.html#a32041ac7b6f89f7d5bd6973a45ab9eb7">MonomialInt</a>)*(<a class="code hl_function" href="../../da/d80/classnewf4_1_1_monomial_view_ac5b8196f5540c82dc210c7fae05a27db.html#ac5b8196f5540c82dc210c7fae05a27db">size</a>()-1)) == 0)));</div>
+<div class="line"><span class="lineno">   49</span>  }</div>
+<div class="ttc" id="aclassnewf4_1_1_monomial_view_a271dc025d514d26d202f120a52dbb2d8_html_a271dc025d514d26d202f120a52dbb2d8"><div class="ttname"><a href="../../da/d80/classnewf4_1_1_monomial_view_a271dc025d514d26d202f120a52dbb2d8.html#a271dc025d514d26d202f120a52dbb2d8">newf4::MonomialView::mData</a></div><div class="ttdeci">MonomialInt * mData</div><div class="ttdef"><b>Definition</b> <a href="../../da/d70/_monomial_view_8hpp_source.html#l00015">MonomialView.hpp:15</a></div></div>
+<div class="ttc" id="aclassnewf4_1_1_monomial_view_ac5b8196f5540c82dc210c7fae05a27db_html_ac5b8196f5540c82dc210c7fae05a27db"><div class="ttname"><a href="../../da/d80/classnewf4_1_1_monomial_view_ac5b8196f5540c82dc210c7fae05a27db.html#ac5b8196f5540c82dc210c7fae05a27db">newf4::MonomialView::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d70/_monomial_view_8hpp_source.html#l00034">MonomialView.hpp:34</a></div></div>
+<div class="ttc" id="anamespacenewf4_a32041ac7b6f89f7d5bd6973a45ab9eb7_html_a32041ac7b6f89f7d5bd6973a45ab9eb7"><div class="ttname"><a href="../../da/db5/namespacenewf4_a32041ac7b6f89f7d5bd6973a45ab9eb7.html#a32041ac7b6f89f7d5bd6973a45ab9eb7">newf4::MonomialInt</a></div><div class="ttdeci">int32_t MonomialInt</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3e/_monomial_types_8hpp_source.html#l00019">MonomialTypes.hpp:19</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view_a271dc025d514d26d202f120a52dbb2d8.html#a271dc025d514d26d202f120a52dbb2d8">mData</a>, and <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view_ac5b8196f5540c82dc210c7fae05a27db.html#ac5b8196f5540c82dc210c7fae05a27db">size()</a>.</p>
 
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('da/d80/classnewf4_1_1_monomial_view_af
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/db5/namespacenewf4.html">newf4</a></li><li class="navelem"><a class="el" href="../../da/d80/classnewf4_1_1_monomial_view.html">MonomialView</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

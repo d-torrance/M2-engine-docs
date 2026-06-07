@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('dd/d3a/classbinomial__ring_ab62161c932
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void binomial_ring::intvector_to_binomial </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> binomial_ring::intvector_to_binomial </td>
           <td>(</td>
           <td class="paramtype">vec&#160;</td>
           <td class="paramname"><em>f</em>, </td>
@@ -126,13 +126,13 @@ $(document).ready(function(){initNavTree('dd/d3a/classbinomial__ring_ab62161c932
 <div class="line"><span class="lineno">  365</span>  <span class="keywordflow">for</span> (; f != <span class="keyword">nullptr</span>; f = f-&gt;next)</div>
 <div class="line"><span class="lineno">  366</span>    {</div>
 <div class="line"><span class="lineno">  367</span>      std::pair&lt;bool, long&gt; res = <a class="code hl_variable" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>-&gt;<a class="code hl_function" href="../../d8/d2b/class_ring_z_z_ac912f3da751d61f94950c2ccff6d74c0.html#ac912f3da751d61f94950c2ccff6d74c0">coerceToLongInteger</a>(f-&gt;coeff);</div>
-<div class="line"><span class="lineno">  368</span>      assert(res.first);</div>
-<div class="line"><span class="lineno">  369</span>      <span class="keywordtype">int</span> e = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(res.second);</div>
+<div class="line"><span class="lineno">  368</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">assert</a>(res.first);</div>
+<div class="line"><span class="lineno">  369</span>      <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(res.second);</div>
 <div class="line"><span class="lineno">  370</span> </div>
-<div class="line"><span class="lineno">  371</span>      <span class="keywordflow">if</span> (e &gt; 0)</div>
-<div class="line"><span class="lineno">  372</span>        <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.lead[f-&gt;comp] = e;</div>
-<div class="line"><span class="lineno">  373</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (e &lt; 0)</div>
-<div class="line"><span class="lineno">  374</span>        <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.tail[f-&gt;comp] = -e;</div>
+<div class="line"><span class="lineno">  371</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a> &gt; 0)</div>
+<div class="line"><span class="lineno">  372</span>        <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.lead[f-&gt;comp] = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>;</div>
+<div class="line"><span class="lineno">  373</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a> &lt; 0)</div>
+<div class="line"><span class="lineno">  374</span>        <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.tail[f-&gt;comp] = -<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>;</div>
 <div class="line"><span class="lineno">  375</span>    }</div>
 <div class="line"><span class="lineno">  376</span> </div>
 <div class="line"><span class="lineno">  377</span>  <a class="code hl_function" href="../../dd/d3a/classbinomial__ring_a19b3c9d75f6507f7ba7ddc8fdfe4ff2c.html#a19b3c9d75f6507f7ba7ddc8fdfe4ff2c">set_weights</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.lead);</div>
@@ -143,10 +143,11 @@ $(document).ready(function(){initNavTree('dd/d3a/classbinomial__ring_ab62161c932
 <div class="ttc" id="aclassbinomial__ring_a19b3c9d75f6507f7ba7ddc8fdfe4ff2c_html_a19b3c9d75f6507f7ba7ddc8fdfe4ff2c"><div class="ttname"><a href="../../dd/d3a/classbinomial__ring_a19b3c9d75f6507f7ba7ddc8fdfe4ff2c.html#a19b3c9d75f6507f7ba7ddc8fdfe4ff2c">binomial_ring::set_weights</a></div><div class="ttdeci">void set_weights(monomial0 m) const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d5c/gb-toric_8cpp_source.html#l00073">gb-toric.cpp:73</a></div></div>
 <div class="ttc" id="aclassbinomial__ring_a2e4b5bee7aa3e7ab0a762a7e653492e8_html_a2e4b5bee7aa3e7ab0a762a7e653492e8"><div class="ttname"><a href="../../dd/d3a/classbinomial__ring_a2e4b5bee7aa3e7ab0a762a7e653492e8.html#a2e4b5bee7aa3e7ab0a762a7e653492e8">binomial_ring::normalize</a></div><div class="ttdeci">bool normalize(binomial &amp;f) const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d5c/gb-toric_8cpp_source.html#l00382">gb-toric.cpp:382</a></div></div>
 <div class="ttc" id="aclassbinomial__ring_a5700acb429c667bb1e6dfcf810ab5d57_html_a5700acb429c667bb1e6dfcf810ab5d57"><div class="ttname"><a href="../../dd/d3a/classbinomial__ring_a5700acb429c667bb1e6dfcf810ab5d57.html#a5700acb429c667bb1e6dfcf810ab5d57">binomial_ring::nslots</a></div><div class="ttdeci">int nslots</div><div class="ttdef"><b>Definition</b> <a href="../../de/d75/gb-toric_8hpp_source.html#l00065">gb-toric.hpp:65</a></div></div>
-<div class="ttc" id="agauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9_html_a5ad190417a478c3f15fa01ef9ee9bac9"><div class="ttname"><a href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a></div><div class="ttdeci">RingZZ * globalZZ</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00013">relem.cpp:13</a></div></div>
+<div class="ttc" id="agauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9_html_a5ad190417a478c3f15fa01ef9ee9bac9"><div class="ttname"><a href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a></div><div class="ttdeci">RingZZ * globalZZ</div><div class="ttdef"><b>Definition</b> <a href="../../de/d31/ring-element_8cpp_source.html#l00013">ring-element.cpp:13</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/d2b/class_ring_z_z_ac912f3da751d61f94950c2ccff6d74c0.html#ac912f3da751d61f94950c2ccff6d74c0">RingZZ::coerceToLongInteger()</a>, <a class="el" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d2b/class_ring_z_z_ac912f3da751d61f94950c2ccff6d74c0.html#ac912f3da751d61f94950c2ccff6d74c0">RingZZ::coerceToLongInteger()</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d9/d36/gauss_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9">globalZZ</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/d1d/classbinomial_g_b__comp_aff8f33f8f3c5050f2dd62f47a1cf9669.html#aff8f33f8f3c5050f2dd62f47a1cf9669">binomialGB_comp::add_generators()</a>.</p>
 
@@ -158,7 +159,7 @@ $(document).ready(function(){initNavTree('dd/d3a/classbinomial__ring_ab62161c932
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d3a/classbinomial__ring.html">binomial_ring</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

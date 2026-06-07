@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('dd/d1b/class_m2_1_1_a_ring_q_q_flint_a
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void M2::ARingQQFlint::power_mpz </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> M2::ARingQQFlint::power_mpz </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dd/d1b/class_m2_1_1_a_ring_q_q_flint_a4914eebb41efa48fcd7b0a35ba063432.html#a4914eebb41efa48fcd7b0a35ba063432">ElementType</a> &amp;&#160;</td>
           <td class="paramname"><em>result</em>, </td>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('dd/d1b/class_m2_1_1_a_ring_q_q_flint_a
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/d1b/class_m2_1_1_a_ring_q_q_flint_a4914eebb41efa48fcd7b0a35ba063432.html#a4914eebb41efa48fcd7b0a35ba063432">ElementType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/d1b/class_m2_1_1_a_ring_q_q_flint_a4914eebb41efa48fcd7b0a35ba063432.html#a4914eebb41efa48fcd7b0a35ba063432">ElementType</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
@@ -129,20 +129,21 @@ $(document).ready(function(){initNavTree('dd/d1b/class_m2_1_1_a_ring_q_q_flint_a
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d16/aring-qq-flint_8hpp_source.html#l00194">194</a> of file <a class="el" href="../../d0/d16/aring-qq-flint_8hpp_source.html">aring-qq-flint.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/de8/aring-_q_q-flint_8hpp_source.html#l00194">194</a> of file <a class="el" href="../../d4/de8/aring-_q_q-flint_8hpp_source.html">aring-QQ-flint.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  197</span>  {</div>
-<div class="line"><span class="lineno">  198</span>    std::pair&lt;bool, int&gt; n1 = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a93f60c7348caad7f332820b455fb3735.html#a93f60c7348caad7f332820b455fb3735">RingZZ::get_si</a>(n);</div>
-<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">if</span> (n1.first)</div>
-<div class="line"><span class="lineno">  200</span>      <a class="code hl_function" href="../../dd/d1b/class_m2_1_1_a_ring_q_q_flint_a952edf79439c95b248032198b3ccfe0e.html#a952edf79439c95b248032198b3ccfe0e">power</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, a, n1.second);</div>
+<div class="line"><span class="lineno">  198</span>    std::pair&lt;bool, int&gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">n1</a> = <a class="code hl_function" href="../../d8/d2b/class_ring_z_z_a93f60c7348caad7f332820b455fb3735.html#a93f60c7348caad7f332820b455fb3735">RingZZ::get_si</a>(n);</div>
+<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">n1</a>.first)</div>
+<div class="line"><span class="lineno">  200</span>      <a class="code hl_function" href="../../dd/d1b/class_m2_1_1_a_ring_q_q_flint_a952edf79439c95b248032198b3ccfe0e.html#a952edf79439c95b248032198b3ccfe0e">power</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, a, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">n1</a>.second);</div>
 <div class="line"><span class="lineno">  201</span>    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  202</span>      <span class="keywordflow">throw</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>(<span class="stringliteral">&quot;exponent too large&quot;</span>);</div>
 <div class="line"><span class="lineno">  203</span>  }</div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_q_q_flint_a952edf79439c95b248032198b3ccfe0e_html_a952edf79439c95b248032198b3ccfe0e"><div class="ttname"><a href="../../dd/d1b/class_m2_1_1_a_ring_q_q_flint_a952edf79439c95b248032198b3ccfe0e.html#a952edf79439c95b248032198b3ccfe0e">M2::ARingQQFlint::power</a></div><div class="ttdeci">void power(ElementType &amp;result, const ElementType &amp;a, long n) const</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d16/aring-qq-flint_8hpp_source.html#l00189">aring-qq-flint.hpp:189</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_q_q_flint_a952edf79439c95b248032198b3ccfe0e_html_a952edf79439c95b248032198b3ccfe0e"><div class="ttname"><a href="../../dd/d1b/class_m2_1_1_a_ring_q_q_flint_a952edf79439c95b248032198b3ccfe0e.html#a952edf79439c95b248032198b3ccfe0e">M2::ARingQQFlint::power</a></div><div class="ttdeci">void power(ElementType &amp;result, const ElementType &amp;a, long n) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/de8/aring-_q_q-flint_8hpp_source.html#l00189">aring-QQ-flint.hpp:189</a></div></div>
 <div class="ttc" id="aclass_ring_z_z_a93f60c7348caad7f332820b455fb3735_html_a93f60c7348caad7f332820b455fb3735"><div class="ttname"><a href="../../d8/d2b/class_ring_z_z_a93f60c7348caad7f332820b455fb3735.html#a93f60c7348caad7f332820b455fb3735">RingZZ::get_si</a></div><div class="ttdeci">static std::pair&lt; bool, int &gt; get_si(mpz_srcptr n)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/db8/_z_z_8cpp_source.html#l00046">ZZ.cpp:46</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/d2b/class_ring_z_z_a93f60c7348caad7f332820b455fb3735.html#a93f60c7348caad7f332820b455fb3735">RingZZ::get_si()</a>, <a class="el" href="../../dd/d1b/class_m2_1_1_a_ring_q_q_flint_a952edf79439c95b248032198b3ccfe0e.html#a952edf79439c95b248032198b3ccfe0e">power()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d8/d2b/class_ring_z_z_a93f60c7348caad7f332820b455fb3735.html#a93f60c7348caad7f332820b455fb3735">RingZZ::get_si()</a>, <a class="el" href="../../dd/d1b/class_m2_1_1_a_ring_q_q_flint_a952edf79439c95b248032198b3ccfe0e.html#a952edf79439c95b248032198b3ccfe0e">power()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 </div>
 </div>
@@ -152,7 +153,7 @@ $(document).ready(function(){initNavTree('dd/d1b/class_m2_1_1_a_ring_q_q_flint_a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../dd/d1b/class_m2_1_1_a_ring_q_q_flint.html">ARingQQFlint</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

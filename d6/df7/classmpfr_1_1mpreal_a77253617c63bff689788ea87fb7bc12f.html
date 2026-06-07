@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_a77253617c6
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d6/df7/classmpfr_1_1mpreal.html">mpreal</a> random </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/df7/classmpfr_1_1mpreal.html">mpreal</a> random </td>
           <td>(</td>
           <td class="paramtype">unsigned <a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td>
           <td class="paramname"><em>seed</em> = <code>0</code></td><td>)</td>
@@ -121,20 +121,21 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_a77253617c6
 <div class="line"><span class="lineno"> 2838</span> </div>
 <div class="line"><span class="lineno"> 2839</span>    <span class="keywordflow">if</span>(initialize)</div>
 <div class="line"><span class="lineno"> 2840</span>    {</div>
-<div class="line"><span class="lineno"> 2841</span>        gmp_randinit_default(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>);</div>
-<div class="line"><span class="lineno"> 2842</span>        gmp_randseed_ui(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>,0);</div>
+<div class="line"><span class="lineno"> 2841</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gmp_randinit_default</a>(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>);</div>
+<div class="line"><span class="lineno"> 2842</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gmp_randseed_ui</a>(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>,0);</div>
 <div class="line"><span class="lineno"> 2843</span>        initialize = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno"> 2844</span>    }</div>
 <div class="line"><span class="lineno"> 2845</span> </div>
-<div class="line"><span class="lineno"> 2846</span>    <span class="keywordflow">if</span>(seed != 0) gmp_randseed_ui(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>,seed);</div>
+<div class="line"><span class="lineno"> 2846</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">seed</a> != 0) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gmp_randseed_ui</a>(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">seed</a>);</div>
 <div class="line"><span class="lineno"> 2847</span> </div>
 <div class="line"><span class="lineno"> 2848</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d1/d02/namespacempfr_a335951da3e36f93915a300c884ae3483.html#a335951da3e36f93915a300c884ae3483">mpfr::urandom</a>(<a class="code hl_variable" href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a>);</div>
 <div class="line"><span class="lineno"> 2849</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno"> 2850</span>    <span class="keywordflow">if</span>(seed != 0)    std::srand(seed);</div>
-<div class="line"><span class="lineno"> 2851</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d6/df7/classmpfr_1_1mpreal.html">mpfr::mpreal</a>(std::rand()/(<span class="keywordtype">double</span>)RAND_MAX);</div>
+<div class="line"><span class="lineno"> 2850</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">seed</a> != 0)    std::srand(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">seed</a>);</div>
+<div class="line"><span class="lineno"> 2851</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d6/df7/classmpfr_1_1mpreal.html">mpfr::mpreal</a>(std::rand()/(<span class="keywordtype">double</span>)<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">RAND_MAX</a>);</div>
 <div class="line"><span class="lineno"> 2852</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno"> 2853</span>}</div>
 <div class="ttc" id="aclassmpfr_1_1mpreal_html"><div class="ttname"><a href="../../d6/df7/classmpfr_1_1mpreal.html">mpfr::mpreal</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l00150">mpreal.h:150</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="anamespacempfr_a335951da3e36f93915a300c884ae3483_html_a335951da3e36f93915a300c884ae3483"><div class="ttname"><a href="../../d1/d02/namespacempfr_a335951da3e36f93915a300c884ae3483.html#a335951da3e36f93915a300c884ae3483">mpfr::urandom</a></div><div class="ttdeci">const mpreal urandom(gmp_randstate_t &amp;state, mp_rnd_t rnd_mode=mpreal::get_default_rnd())</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l02812">mpreal.h:2812</a></div></div>
 <div class="ttc" id="arandom_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d_html_a9f8b71742e74bcfa6c4b6d38a690329d"><div class="ttname"><a href="../../de/daa/random_8cpp_a9f8b71742e74bcfa6c4b6d38a690329d.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a></div><div class="ttdeci">static gmp_randstate_t state</div><div class="ttdef"><b>Definition</b> <a href="../../de/daa/random_8cpp_source.html#l00018">random.cpp:18</a></div></div>
 </div><!-- fragment -->
@@ -146,7 +147,7 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_a77253617c6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d02/namespacempfr.html">mpfr</a></li><li class="navelem"><a class="el" href="../../d6/df7/classmpfr_1_1mpreal.html">mpreal</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

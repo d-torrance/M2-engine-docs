@@ -107,21 +107,22 @@ $(document).ready(function(){initNavTree('d9/db1/class_monoid_a78250e6ab25051810
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d5c/monoid_8cpp_source.html#l00349">349</a> of file <a class="el" href="../../d6/d5c/monoid_8cpp_source.html">monoid.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  350</span>{</div>
-<div class="line"><span class="lineno">  351</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> seed = 0x3124252;</div>
+<div class="line"><span class="lineno">  351</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">seed</a> = 0x3124252;</div>
 <div class="line"><span class="lineno">  352</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d7b/class_mutable_engine_object_ac1b947c41e24e71d14a66a9c4db5cf83.html#ac1b947c41e24e71d14a66a9c4db5cf83">hash</a> = 0x43435728;</div>
 <div class="line"><span class="lineno">  353</span>  <span class="keywordtype">int</span> len = <a class="code hl_function" href="../../d9/db1/class_monoid_a282111a932810a1220eda85324966f53.html#a282111a932810a1220eda85324966f53">monomial_size</a>();</div>
 <div class="line"><span class="lineno">  354</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; len; i++)</div>
 <div class="line"><span class="lineno">  355</span>    {</div>
 <div class="line"><span class="lineno">  356</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> val = *m++;</div>
-<div class="line"><span class="lineno">  357</span>      <a class="code hl_function" href="../../d3/d7b/class_mutable_engine_object_ac1b947c41e24e71d14a66a9c4db5cf83.html#ac1b947c41e24e71d14a66a9c4db5cf83">hash</a> += seed * val;</div>
-<div class="line"><span class="lineno">  358</span>      seed = seed + 1342234;</div>
+<div class="line"><span class="lineno">  357</span>      <a class="code hl_function" href="../../d3/d7b/class_mutable_engine_object_ac1b947c41e24e71d14a66a9c4db5cf83.html#ac1b947c41e24e71d14a66a9c4db5cf83">hash</a> += <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">seed</a> * val;</div>
+<div class="line"><span class="lineno">  358</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">seed</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">seed</a> + 1342234;</div>
 <div class="line"><span class="lineno">  359</span>    }</div>
 <div class="line"><span class="lineno">  360</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d3/d7b/class_mutable_engine_object_ac1b947c41e24e71d14a66a9c4db5cf83.html#ac1b947c41e24e71d14a66a9c4db5cf83">hash</a>;</div>
 <div class="line"><span class="lineno">  361</span>}</div>
-<div class="ttc" id="aclass_monoid_a282111a932810a1220eda85324966f53_html_a282111a932810a1220eda85324966f53"><div class="ttname"><a href="../../d9/db1/class_monoid_a282111a932810a1220eda85324966f53.html#a282111a932810a1220eda85324966f53">Monoid::monomial_size</a></div><div class="ttdeci">int monomial_size() const</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00158">monoid.hpp:158</a></div></div>
+<div class="ttc" id="aclass_monoid_a282111a932810a1220eda85324966f53_html_a282111a932810a1220eda85324966f53"><div class="ttname"><a href="../../d9/db1/class_monoid_a282111a932810a1220eda85324966f53.html#a282111a932810a1220eda85324966f53">Monoid::monomial_size</a></div><div class="ttdeci">int monomial_size() const</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dd0/monoid_8hpp_source.html#l00160">monoid.hpp:160</a></div></div>
 <div class="ttc" id="aclass_mutable_engine_object_ac1b947c41e24e71d14a66a9c4db5cf83_html_ac1b947c41e24e71d14a66a9c4db5cf83"><div class="ttname"><a href="../../d3/d7b/class_mutable_engine_object_ac1b947c41e24e71d14a66a9c4db5cf83.html#ac1b947c41e24e71d14a66a9c4db5cf83">MutableEngineObject::hash</a></div><div class="ttdeci">unsigned int hash() const</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d04/hash_8hpp_source.html#l00042">hash.hpp:42</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d7b/class_mutable_engine_object_ac1b947c41e24e71d14a66a9c4db5cf83.html#ac1b947c41e24e71d14a66a9c4db5cf83">MutableEngineObject::hash()</a>, and <a class="el" href="../../d9/db1/class_monoid_a282111a932810a1220eda85324966f53.html#a282111a932810a1220eda85324966f53">monomial_size()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d3/d7b/class_mutable_engine_object_ac1b947c41e24e71d14a66a9c4db5cf83.html#ac1b947c41e24e71d14a66a9c4db5cf83">MutableEngineObject::hash()</a>, and <a class="el" href="../../d9/db1/class_monoid_a282111a932810a1220eda85324966f53.html#a282111a932810a1220eda85324966f53">monomial_size()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d58/class_polynomial_ring_ac197ed71022ead1aa87f7d3f8864282b.html#ac197ed71022ead1aa87f7d3f8864282b">PolynomialRing::computeHashValue()</a>.</p>
 
@@ -133,7 +134,7 @@ $(document).ready(function(){initNavTree('d9/db1/class_monoid_a78250e6ab25051810
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/db1/class_monoid.html">Monoid</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

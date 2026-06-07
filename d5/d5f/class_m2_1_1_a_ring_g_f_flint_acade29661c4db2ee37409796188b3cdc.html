@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('d5/d5f/class_m2_1_1_a_ring_g_f_flint_a
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void M2::ARingGFFlint::power </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> M2::ARingGFFlint::power </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_a1d6793f12ba7ff455e9e90348f303393.html#a1d6793f12ba7ff455e9e90348f303393">ElementType</a> &amp;&#160;</td>
           <td class="paramname"><em>result</em>, </td>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('d5/d5f/class_m2_1_1_a_ring_g_f_flint_a
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_a1d6793f12ba7ff455e9e90348f303393.html#a1d6793f12ba7ff455e9e90348f303393">ElementType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_a1d6793f12ba7ff455e9e90348f303393.html#a1d6793f12ba7ff455e9e90348f303393">ElementType</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
@@ -129,23 +129,24 @@ $(document).ready(function(){initNavTree('d5/d5f/class_m2_1_1_a_ring_g_f_flint_a
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d9d/aring-gf-flint_8hpp_source.html#l00291">291</a> of file <a class="el" href="../../da/d9d/aring-gf-flint_8hpp_source.html">aring-gf-flint.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d76/aring-_g_f-flint_8hpp_source.html#l00291">291</a> of file <a class="el" href="../../da/d76/aring-_g_f-flint_8hpp_source.html">aring-GF-flint.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  292</span>  {</div>
 <div class="line"><span class="lineno">  293</span>    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><span class="lineno">  294</span>      {</div>
 <div class="line"><span class="lineno">  295</span>        <a class="code hl_function" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b.html#af5fba8d049dc15cf24dd83fe8dd7963b">invert</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, a);</div>
-<div class="line"><span class="lineno">  296</span>        fq_zech_pow_ui(&amp;<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, &amp;<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, -n, <a class="code hl_variable" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">mContext</a>);</div>
+<div class="line"><span class="lineno">  296</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fq_zech_pow_ui</a>(&amp;<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, &amp;<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, -n, <a class="code hl_variable" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">mContext</a>);</div>
 <div class="line"><span class="lineno">  297</span>      }</div>
 <div class="line"><span class="lineno">  298</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  299</span>      fq_zech_pow_ui(&amp;<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, &amp;a, n, <a class="code hl_variable" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">mContext</a>);</div>
+<div class="line"><span class="lineno">  299</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fq_zech_pow_ui</a>(&amp;<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, &amp;a, n, <a class="code hl_variable" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">mContext</a>);</div>
 <div class="line"><span class="lineno">  300</span>  }</div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364_html_ad4c7e36421be7df07b49a2e27b120364"><div class="ttname"><a href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">M2::ARingGFFlint::mContext</a></div><div class="ttdeci">fq_zech_ctx_t mContext</div><div class="ttdef"><b>Definition</b> <a href="../../da/d9d/aring-gf-flint_8hpp_source.html#l00111">aring-gf-flint.hpp:111</a></div></div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b_html_af5fba8d049dc15cf24dd83fe8dd7963b"><div class="ttname"><a href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b.html#af5fba8d049dc15cf24dd83fe8dd7963b">M2::ARingGFFlint::invert</a></div><div class="ttdeci">void invert(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d9d/aring-gf-flint_8hpp_source.html#l00222">aring-gf-flint.hpp:222</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364_html_ad4c7e36421be7df07b49a2e27b120364"><div class="ttname"><a href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">M2::ARingGFFlint::mContext</a></div><div class="ttdeci">fq_zech_ctx_t mContext</div><div class="ttdef"><b>Definition</b> <a href="../../da/d76/aring-_g_f-flint_8hpp_source.html#l00111">aring-GF-flint.hpp:111</a></div></div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b_html_af5fba8d049dc15cf24dd83fe8dd7963b"><div class="ttname"><a href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b.html#af5fba8d049dc15cf24dd83fe8dd7963b">M2::ARingGFFlint::invert</a></div><div class="ttdeci">void invert(ElementType &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d76/aring-_g_f-flint_8hpp_source.html#l00222">aring-GF-flint.hpp:222</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b.html#af5fba8d049dc15cf24dd83fe8dd7963b">invert()</a>, <a class="el" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">mContext</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_af5fba8d049dc15cf24dd83fe8dd7963b.html#af5fba8d049dc15cf24dd83fe8dd7963b">invert()</a>, <a class="el" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint_ad4c7e36421be7df07b49a2e27b120364.html#ad4c7e36421be7df07b49a2e27b120364">mContext</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d8e/_a_ring_g_f_test_8cpp_a3e0d9f2d590264966466734aac869f2a.html#a3e0d9f2d590264966466734aac869f2a">getElement&lt; M2::ARingGFFlint &gt;()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d8e/_a_ring_g_f_test_8cpp_af61f5d8ce6db391c5797e3c2e6ba1bab.html#af61f5d8ce6db391c5797e3c2e6ba1bab">getElement&lt; M2::ARingGFFlint &gt;()</a>.</p>
 
 </div>
 </div>
@@ -155,7 +156,7 @@ $(document).ready(function(){initNavTree('d5/d5f/class_m2_1_1_a_ring_g_f_flint_a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li><li class="navelem"><a class="el" href="../../d5/d5f/class_m2_1_1_a_ring_g_f_flint.html">ARingGFFlint</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

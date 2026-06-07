@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('d3/d31/classour__gc__cleanup_a0c022cf1
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual our_gc_cleanup::~our_gc_cleanup </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">virtual</a> our_gc_cleanup::~our_gc_cleanup </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -114,14 +114,17 @@ $(document).ready(function(){initNavTree('d3/d31/classour__gc__cleanup_a0c022cf1
 
 <p class="definition">Definition at line <a class="el" href="../../da/d94/newdelete_8hpp_source.html#l00143">143</a> of file <a class="el" href="../../da/d94/newdelete_8hpp_source.html">newdelete.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  144</span>  {</div>
-<div class="line"><span class="lineno">  145</span>  <span class="keywordflow">if</span> (0 == GC_base(<span class="keyword">this</span>)) <span class="keywordflow">return</span>; <span class="comment">// Non-heap object.</span></div>
+<div class="line"><span class="lineno">  145</span>  <span class="keywordflow">if</span> (0 == <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">GC_base</a>(<span class="keyword">this</span>)) <span class="keywordflow">return</span>; <span class="comment">// Non-heap object.</span></div>
 <div class="line"><span class="lineno">  146</span><span class="preprocessor">#ifdef MEMDEBUG</span></div>
-<div class="line"><span class="lineno">  147</span>    GC_REGISTER_FINALIZER_IGNORE_SELF(M2_debug_to_outer((<span class="keywordtype">void</span>*)<span class="keyword">this</span>), 0, 0, 0, 0);</div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">GC_REGISTER_FINALIZER_IGNORE_SELF</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">M2_debug_to_outer</a>((<span class="keywordtype">void</span>*)<span class="keyword">this</span>), 0, 0, 0, 0);</div>
 <div class="line"><span class="lineno">  148</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">  149</span>    GC_REGISTER_FINALIZER_IGNORE_SELF(<span class="keyword">this</span>,                           0, 0, 0, 0);</div>
+<div class="line"><span class="lineno">  149</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">GC_REGISTER_FINALIZER_IGNORE_SELF</a>(<span class="keyword">this</span>,                           0, 0, 0, 0);</div>
 <div class="line"><span class="lineno">  150</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">  151</span>  }</div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -130,7 +133,7 @@ $(document).ready(function(){initNavTree('d3/d31/classour__gc__cleanup_a0c022cf1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d31/classour__gc__cleanup.html">our_gc_cleanup</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

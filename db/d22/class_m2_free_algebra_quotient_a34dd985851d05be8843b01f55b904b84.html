@@ -101,13 +101,13 @@ $(document).ready(function(){initNavTree('db/d22/class_m2_free_algebra_quotient_
         <tr>
           <td class="memname"><a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a> M2FreeAlgebraQuotient::eval </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d6/d6a/class_ring_map.html">RingMap</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/d6a/class_ring_map.html">RingMap</a> *&#160;</td>
           <td class="paramname"><em>map</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a>&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
@@ -137,15 +137,16 @@ $(document).ready(function(){initNavTree('db/d22/class_m2_free_algebra_quotient_
 <div class="line"><span class="lineno">  322</span>  <span class="comment">// f is an ele ment in R</span></div>
 <div class="line"><span class="lineno">  323</span>  <span class="comment">// return an element of S.</span></div>
 <div class="line"><span class="lineno">  324</span> </div>
-<div class="line"><span class="lineno">  325</span>  <span class="keyword">auto</span> f = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>*<span class="keyword">&gt;</span>(ff.get_Poly());</div>
+<div class="line"><span class="lineno">  325</span>  <span class="keyword">auto</span> f = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>*<span class="keyword">&gt;</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ff</a>.get_Poly());</div>
 <div class="line"><span class="lineno">  326</span>  <span class="keyword">auto</span> g = <a class="code hl_function" href="../../db/d22/class_m2_free_algebra_quotient_a69b8d3dd60acdaef6afacfa6c361ffa2.html#a69b8d3dd60acdaef6afacfa6c361ffa2">freeAlgebraQuotient</a>().<a class="code hl_function" href="../../d0/d77/class_free_algebra_quotient_a3de185c5a05db32a87d6baf6850ae0f5.html#a3de185c5a05db32a87d6baf6850ae0f5">eval</a>(map, *f, first_var);</div>
 <div class="line"><span class="lineno">  327</span>  <span class="keywordflow">return</span> g;</div>
 <div class="line"><span class="lineno">  328</span>}</div>
 <div class="ttc" id="a_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30_html_aa2e1f459d90ab6e50fc0b8c642dceb30"><div class="ttname"><a href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a></div><div class="ttdeci">Polynomial&lt; CoefficientRingType &gt; Poly</div><div class="ttdef"><b>Definition</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00265">Polynomial.hpp:265</a></div></div>
 <div class="ttc" id="aclass_free_algebra_quotient_a3de185c5a05db32a87d6baf6850ae0f5_html_a3de185c5a05db32a87d6baf6850ae0f5"><div class="ttname"><a href="../../d0/d77/class_free_algebra_quotient_a3de185c5a05db32a87d6baf6850ae0f5.html#a3de185c5a05db32a87d6baf6850ae0f5">FreeAlgebraQuotient::eval</a></div><div class="ttdeci">ring_elem eval(const RingMap *map, const Poly &amp;f, int first_var) const</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/_free_algebra_quotient_8cpp_source.html#l00143">FreeAlgebraQuotient.cpp:143</a></div></div>
 <div class="ttc" id="aclass_m2_free_algebra_quotient_a69b8d3dd60acdaef6afacfa6c361ffa2_html_a69b8d3dd60acdaef6afacfa6c361ffa2"><div class="ttname"><a href="../../db/d22/class_m2_free_algebra_quotient_a69b8d3dd60acdaef6afacfa6c361ffa2.html#a69b8d3dd60acdaef6afacfa6c361ffa2">M2FreeAlgebraQuotient::freeAlgebraQuotient</a></div><div class="ttdeci">const FreeAlgebraQuotient &amp; freeAlgebraQuotient() const</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dcb/_m2_free_algebra_quotient_8hpp_source.html#l00039">M2FreeAlgebraQuotient.hpp:39</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d0/d77/class_free_algebra_quotient_a3de185c5a05db32a87d6baf6850ae0f5.html#a3de185c5a05db32a87d6baf6850ae0f5">FreeAlgebraQuotient::eval()</a>, <a class="el" href="../../db/d22/class_m2_free_algebra_quotient_a69b8d3dd60acdaef6afacfa6c361ffa2.html#a69b8d3dd60acdaef6afacfa6c361ffa2">freeAlgebraQuotient()</a>, and <a class="el" href="../../d5/d64/unionring__elem_af1b89d106cf5a41f44c69092b44a8871.html#af1b89d106cf5a41f44c69092b44a8871">ring_elem::get_Poly()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d0/d77/class_free_algebra_quotient_a3de185c5a05db32a87d6baf6850ae0f5.html#a3de185c5a05db32a87d6baf6850ae0f5">FreeAlgebraQuotient::eval()</a>, and <a class="el" href="../../db/d22/class_m2_free_algebra_quotient_a69b8d3dd60acdaef6afacfa6c361ffa2.html#a69b8d3dd60acdaef6afacfa6c361ffa2">freeAlgebraQuotient()</a>.</p>
 
 </div>
 </div>
@@ -155,7 +156,7 @@ $(document).ready(function(){initNavTree('db/d22/class_m2_free_algebra_quotient_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d22/class_m2_free_algebra_quotient.html">M2FreeAlgebraQuotient</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

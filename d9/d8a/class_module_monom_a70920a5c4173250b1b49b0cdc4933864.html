@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d9/d8a/class_module_monom_a70920a5c417
         <tr>
           <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> ModuleMonom::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d9/d8a/class_module_monom.html">ModuleMonom</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d9/d8a/class_module_monom.html">ModuleMonom</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -115,14 +115,15 @@ $(document).ready(function(){initNavTree('d9/d8a/class_module_monom_a70920a5c417
 
 <p class="definition">Definition at line <a class="el" href="../../db/d99/_polynomial_8hpp_source.html#l00103">103</a> of file <a class="el" href="../../db/d99/_polynomial_8hpp_source.html">Polynomial.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  104</span>  {</div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/d8a/class_module_monom_a70f498f68795adf9e348992a3e1f0e47.html#a70f498f68795adf9e348992a3e1f0e47">mValue</a>[0] != rhs[0]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/d8a/class_module_monom_a70f498f68795adf9e348992a3e1f0e47.html#a70f498f68795adf9e348992a3e1f0e47">mValue</a>[0] != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">rhs</a>[0]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  106</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=2; i &lt; <a class="code hl_variable" href="../../d9/d8a/class_module_monom_a70f498f68795adf9e348992a3e1f0e47.html#a70f498f68795adf9e348992a3e1f0e47">mValue</a>[0]; ++i)</div>
-<div class="line"><span class="lineno">  107</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/d8a/class_module_monom_a70f498f68795adf9e348992a3e1f0e47.html#a70f498f68795adf9e348992a3e1f0e47">mValue</a>[i] != rhs[i]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  107</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/d8a/class_module_monom_a70f498f68795adf9e348992a3e1f0e47.html#a70f498f68795adf9e348992a3e1f0e47">mValue</a>[i] != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">rhs</a>[i]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  108</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  109</span>  }</div>
 <div class="ttc" id="aclass_module_monom_a70f498f68795adf9e348992a3e1f0e47_html_a70f498f68795adf9e348992a3e1f0e47"><div class="ttname"><a href="../../d9/d8a/class_module_monom_a70f498f68795adf9e348992a3e1f0e47.html#a70f498f68795adf9e348992a3e1f0e47">ModuleMonom::mValue</a></div><div class="ttdeci">int * mValue</div><div class="ttdef"><b>Definition</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00120">Polynomial.hpp:120</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d9/d8a/class_module_monom_a70f498f68795adf9e348992a3e1f0e47.html#a70f498f68795adf9e348992a3e1f0e47">mValue</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d9/d8a/class_module_monom_a70f498f68795adf9e348992a3e1f0e47.html#a70f498f68795adf9e348992a3e1f0e47">mValue</a>.</p>
 
 </div>
 </div>
@@ -132,7 +133,7 @@ $(document).ready(function(){initNavTree('d9/d8a/class_module_monom_a70920a5c417
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d8a/class_module_monom.html">ModuleMonom</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

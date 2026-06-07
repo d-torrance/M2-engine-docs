@@ -95,10 +95,10 @@ $(document).ready(function(){initNavTree('d0/d1f/class_monomial_hash_table_a3575
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ValueType &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ValueType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d0/d1f/class_monomial_hash_table.html">MonomialHashTable</a>&lt; ValueType &gt;::show </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> <a class="el" href="../../d0/d1f/class_monomial_hash_table.html">MonomialHashTable</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ValueType</a> &gt;::show </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -108,31 +108,34 @@ template&lt;typename ValueType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d42/monhashtable_8cpp_source.html#l00139">139</a> of file <a class="el" href="../../d0/d42/monhashtable_8cpp_source.html">monhashtable.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  140</span>{</div>
-<div class="line"><span class="lineno">  141</span>  <span class="keywordtype">long</span> nzeros = 0;</div>
+<div class="line"><span class="lineno">  141</span>  <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nzeros</a> = 0;</div>
 <div class="line"><span class="lineno">  142</span>  <span class="keywordflow">for</span> (<span class="keywordtype">long</span> i = 0; i &lt; <a class="code hl_variable" href="../../d0/d1f/class_monomial_hash_table_a2c476ae3bbcd26f05e640ea49e9afb04.html#a2c476ae3bbcd26f05e640ea49e9afb04">size</a>; i++)</div>
 <div class="line"><span class="lineno">  143</span>    {</div>
 <div class="line"><span class="lineno">  144</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d0/d1f/class_monomial_hash_table_a2b3373e28e1263d38a379e0d3e6970bf.html#a2b3373e28e1263d38a379e0d3e6970bf">hashtab</a>[i] == 0)</div>
-<div class="line"><span class="lineno">  145</span>        nzeros++;</div>
+<div class="line"><span class="lineno">  145</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nzeros</a>++;</div>
 <div class="line"><span class="lineno">  146</span>      <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  147</span>        {</div>
 <div class="line"><span class="lineno">  148</span>          <a class="code hl_typedef" href="../../d0/d1f/class_monomial_hash_table_a71f89e6c4f29940ac93c44a36fcc7689.html#a71f89e6c4f29940ac93c44a36fcc7689">value</a> m = <a class="code hl_variable" href="../../d0/d1f/class_monomial_hash_table_a2b3373e28e1263d38a379e0d3e6970bf.html#a2b3373e28e1263d38a379e0d3e6970bf">hashtab</a>[i];</div>
-<div class="line"><span class="lineno">  149</span>          <span class="keywordflow">if</span> (nzeros &gt; 0)</div>
+<div class="line"><span class="lineno">  149</span>          <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nzeros</a> &gt; 0)</div>
 <div class="line"><span class="lineno">  150</span>            {</div>
-<div class="line"><span class="lineno">  151</span>              std::cerr &lt;&lt; <span class="stringliteral">&quot;-- &quot;</span> &lt;&lt; nzeros &lt;&lt; <span class="stringliteral">&quot; zero elements --&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  152</span>              nzeros = 0;</div>
+<div class="line"><span class="lineno">  151</span>              std::cerr &lt;&lt; <span class="stringliteral">&quot;-- &quot;</span> &lt;&lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nzeros</a> &lt;&lt; <span class="stringliteral">&quot; zero elements --&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  152</span>              <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nzeros</a> = 0;</div>
 <div class="line"><span class="lineno">  153</span>            }</div>
 <div class="line"><span class="lineno">  154</span>          std::cerr &lt;&lt; <span class="stringliteral">&quot;hash &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d0/d1f/class_monomial_hash_table_a4d29137ca3f676e944716f20ad52e430.html#a4d29137ca3f676e944716f20ad52e430">M</a>-&gt;hash_value(m) &lt;&lt; <span class="stringliteral">&quot; monomial &quot;</span>;</div>
 <div class="line"><span class="lineno">  155</span>          <a class="code hl_variable" href="../../d0/d1f/class_monomial_hash_table_a4d29137ca3f676e944716f20ad52e430.html#a4d29137ca3f676e944716f20ad52e430">M</a>-&gt;show(m);</div>
 <div class="line"><span class="lineno">  156</span>          std::cerr &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  157</span>        }</div>
 <div class="line"><span class="lineno">  158</span>    }</div>
-<div class="line"><span class="lineno">  159</span>  <span class="keywordflow">if</span> (nzeros &gt; 0) std::cerr &lt;&lt; <span class="stringliteral">&quot;-- &quot;</span> &lt;&lt; nzeros &lt;&lt; <span class="stringliteral">&quot; zero elements --&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  159</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nzeros</a> &gt; 0) std::cerr &lt;&lt; <span class="stringliteral">&quot;-- &quot;</span> &lt;&lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nzeros</a> &lt;&lt; <span class="stringliteral">&quot; zero elements --&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  160</span>}</div>
 <div class="ttc" id="aclass_monomial_hash_table_a2b3373e28e1263d38a379e0d3e6970bf_html_a2b3373e28e1263d38a379e0d3e6970bf"><div class="ttname"><a href="../../d0/d1f/class_monomial_hash_table_a2b3373e28e1263d38a379e0d3e6970bf.html#a2b3373e28e1263d38a379e0d3e6970bf">MonomialHashTable::hashtab</a></div><div class="ttdeci">std::unique_ptr&lt; value[]&gt; hashtab</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dfe/monhashtable_8hpp_source.html#l00082">monhashtable.hpp:82</a></div></div>
 <div class="ttc" id="aclass_monomial_hash_table_a2c476ae3bbcd26f05e640ea49e9afb04_html_a2c476ae3bbcd26f05e640ea49e9afb04"><div class="ttname"><a href="../../d0/d1f/class_monomial_hash_table_a2c476ae3bbcd26f05e640ea49e9afb04.html#a2c476ae3bbcd26f05e640ea49e9afb04">MonomialHashTable::size</a></div><div class="ttdeci">unsigned long size</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dfe/monhashtable_8hpp_source.html#l00084">monhashtable.hpp:84</a></div></div>
 <div class="ttc" id="aclass_monomial_hash_table_a4d29137ca3f676e944716f20ad52e430_html_a4d29137ca3f676e944716f20ad52e430"><div class="ttname"><a href="../../d0/d1f/class_monomial_hash_table_a4d29137ca3f676e944716f20ad52e430.html#a4d29137ca3f676e944716f20ad52e430">MonomialHashTable::M</a></div><div class="ttdeci">const ValueType * M</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dfe/monhashtable_8hpp_source.html#l00081">monhashtable.hpp:81</a></div></div>
 <div class="ttc" id="aclass_monomial_hash_table_a71f89e6c4f29940ac93c44a36fcc7689_html_a71f89e6c4f29940ac93c44a36fcc7689"><div class="ttname"><a href="../../d0/d1f/class_monomial_hash_table_a71f89e6c4f29940ac93c44a36fcc7689.html#a71f89e6c4f29940ac93c44a36fcc7689">MonomialHashTable::value</a></div><div class="ttdeci">ValueType::value value</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dfe/monhashtable_8hpp_source.html#l00078">monhashtable.hpp:78</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -141,7 +144,7 @@ template&lt;typename ValueType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d1f/class_monomial_hash_table.html">MonomialHashTable</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

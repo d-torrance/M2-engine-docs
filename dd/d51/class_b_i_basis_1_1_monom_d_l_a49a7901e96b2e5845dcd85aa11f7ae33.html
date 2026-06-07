@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('dd/d51/class_b_i_basis_1_1_monom_d_l_a
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../dd/d51/class_b_i_basis_1_1_monom_d_l.html">MonomDL</a> &amp; BIBasis::MonomDL::operator*= </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/d51/class_b_i_basis_1_1_monom_d_l.html">MonomDL</a> &amp; BIBasis::MonomDL::operator*= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/d51/class_b_i_basis_1_1_monom_d_l.html">MonomDL</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/d51/class_b_i_basis_1_1_monom_d_l.html">MonomDL</a> &amp;&#160;</td>
           <td class="paramname"><em>anotherMonom</em></td><td>)</td>
           <td></td>
         </tr>
@@ -117,47 +117,47 @@ $(document).ready(function(){initNavTree('dd/d51/class_b_i_basis_1_1_monom_d_l_a
 <div class="fragment"><div class="line"><span class="lineno">  232</span>    {</div>
 <div class="line"><span class="lineno">  233</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d4/d58/class_b_i_basis_1_1_monom_ace5c7e7f9d408c26588328d3d9b772e4.html#ace5c7e7f9d408c26588328d3d9b772e4">ListHead</a>) </div>
 <div class="line"><span class="lineno">  234</span>        {</div>
-<div class="line"><span class="lineno">  235</span>            *<span class="keyword">this</span> = anotherMonom;</div>
+<div class="line"><span class="lineno">  235</span>            *<span class="keyword">this</span> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherMonom</a>;</div>
 <div class="line"><span class="lineno">  236</span>        }</div>
 <div class="line"><span class="lineno">  237</span>        <span class="keywordflow">else</span> </div>
 <div class="line"><span class="lineno">  238</span>        {</div>
-<div class="line"><span class="lineno">  239</span>            <span class="keywordflow">if</span> (anotherMonom.ListHead)</div>
+<div class="line"><span class="lineno">  239</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherMonom</a>.ListHead)</div>
 <div class="line"><span class="lineno">  240</span>            {</div>
 <div class="line"><span class="lineno">  241</span>                VarsListNode **iterator = &amp;<a class="code hl_variable" href="../../d4/d58/class_b_i_basis_1_1_monom_ace5c7e7f9d408c26588328d3d9b772e4.html#ace5c7e7f9d408c26588328d3d9b772e4">ListHead</a>,</div>
-<div class="line"><span class="lineno">  242</span>                             *anotherIterator = anotherMonom.ListHead;</div>
+<div class="line"><span class="lineno">  242</span>                             *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherMonom</a>.ListHead;</div>
 <div class="line"><span class="lineno">  243</span> </div>
-<div class="line"><span class="lineno">  244</span>                <span class="keywordflow">while</span> (*iterator &amp;&amp; anotherIterator)</div>
+<div class="line"><span class="lineno">  244</span>                <span class="keywordflow">while</span> (*iterator &amp;&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a>)</div>
 <div class="line"><span class="lineno">  245</span>                {</div>
-<div class="line"><span class="lineno">  246</span>                    <span class="keywordflow">if</span> ((*iterator)-&gt;Value == anotherIterator-&gt;Value)</div>
+<div class="line"><span class="lineno">  246</span>                    <span class="keywordflow">if</span> ((*iterator)-&gt;Value == <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a>-&gt;Value)</div>
 <div class="line"><span class="lineno">  247</span>                    {</div>
 <div class="line"><span class="lineno">  248</span>                        iterator = &amp;((*iterator)-&gt;Next);</div>
-<div class="line"><span class="lineno">  249</span>                        anotherIterator = anotherIterator-&gt;<a class="code hl_variable" href="../../d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_ad94cd89a5774ddecb9cd01102e148e02.html#ad94cd89a5774ddecb9cd01102e148e02">Next</a>;</div>
+<div class="line"><span class="lineno">  249</span>                        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a>-&gt;<a class="code hl_variable" href="../../d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_ad94cd89a5774ddecb9cd01102e148e02.html#ad94cd89a5774ddecb9cd01102e148e02">Next</a>;</div>
 <div class="line"><span class="lineno">  250</span>                    }</div>
-<div class="line"><span class="lineno">  251</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((*iterator)-&gt;Value &lt; anotherIterator-&gt;Value)</div>
+<div class="line"><span class="lineno">  251</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((*iterator)-&gt;Value &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a>-&gt;Value)</div>
 <div class="line"><span class="lineno">  252</span>                    {</div>
 <div class="line"><span class="lineno">  253</span>                        iterator = &amp;((*iterator)-&gt;Next);</div>
 <div class="line"><span class="lineno">  254</span>                    }</div>
 <div class="line"><span class="lineno">  255</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  256</span>                    {</div>
-<div class="line"><span class="lineno">  257</span>                        VarsListNode* newNode = <span class="keyword">new</span> VarsListNode();</div>
-<div class="line"><span class="lineno">  258</span>                        newNode-&gt;Value = anotherIterator-&gt;Value;</div>
-<div class="line"><span class="lineno">  259</span>                        newNode-&gt;Next = *iterator;</div>
-<div class="line"><span class="lineno">  260</span>                        *iterator = newNode;</div>
+<div class="line"><span class="lineno">  257</span>                        VarsListNode* <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newNode</a> = <span class="keyword">new</span> VarsListNode();</div>
+<div class="line"><span class="lineno">  258</span>                        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newNode</a>-&gt;Value = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a>-&gt;Value;</div>
+<div class="line"><span class="lineno">  259</span>                        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newNode</a>-&gt;Next = *iterator;</div>
+<div class="line"><span class="lineno">  260</span>                        *iterator = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newNode</a>;</div>
 <div class="line"><span class="lineno">  261</span>                        ++<a class="code hl_variable" href="../../d4/d58/class_b_i_basis_1_1_monom_aa0046595752d9d293c84b9146bc701e0.html#aa0046595752d9d293c84b9146bc701e0">TotalDegree</a>;</div>
 <div class="line"><span class="lineno">  262</span> </div>
-<div class="line"><span class="lineno">  263</span>                        iterator = &amp;(newNode-&gt;Next);</div>
-<div class="line"><span class="lineno">  264</span>                        anotherIterator = anotherIterator-&gt;Next;</div>
+<div class="line"><span class="lineno">  263</span>                        iterator = &amp;(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newNode</a>-&gt;Next);</div>
+<div class="line"><span class="lineno">  264</span>                        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a>-&gt;Next;</div>
 <div class="line"><span class="lineno">  265</span>                    }</div>
 <div class="line"><span class="lineno">  266</span>                }</div>
 <div class="line"><span class="lineno">  267</span> </div>
-<div class="line"><span class="lineno">  268</span>                <span class="keywordflow">while</span> (anotherIterator)</div>
+<div class="line"><span class="lineno">  268</span>                <span class="keywordflow">while</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a>)</div>
 <div class="line"><span class="lineno">  269</span>                {</div>
 <div class="line"><span class="lineno">  270</span>                    *iterator = <span class="keyword">new</span> VarsListNode();</div>
-<div class="line"><span class="lineno">  271</span>                    (*iterator)-&gt;Value = anotherIterator-&gt;Value;</div>
+<div class="line"><span class="lineno">  271</span>                    (*iterator)-&gt;Value = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a>-&gt;Value;</div>
 <div class="line"><span class="lineno">  272</span>                    ++<a class="code hl_variable" href="../../d4/d58/class_b_i_basis_1_1_monom_aa0046595752d9d293c84b9146bc701e0.html#aa0046595752d9d293c84b9146bc701e0">TotalDegree</a>;</div>
 <div class="line"><span class="lineno">  273</span> </div>
 <div class="line"><span class="lineno">  274</span>                    iterator = &amp;((*iterator)-&gt;Next);</div>
-<div class="line"><span class="lineno">  275</span>                    anotherIterator = anotherIterator-&gt;Next;</div>
+<div class="line"><span class="lineno">  275</span>                    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">anotherIterator</a>-&gt;Next;</div>
 <div class="line"><span class="lineno">  276</span>                }</div>
 <div class="line"><span class="lineno">  277</span>            }</div>
 <div class="line"><span class="lineno">  278</span>        }</div>
@@ -166,9 +166,10 @@ $(document).ready(function(){initNavTree('dd/d51/class_b_i_basis_1_1_monom_d_l_a
 <div class="line"><span class="lineno">  281</span>    }</div>
 <div class="ttc" id="aclass_b_i_basis_1_1_monom_aa0046595752d9d293c84b9146bc701e0_html_aa0046595752d9d293c84b9146bc701e0"><div class="ttname"><a href="../../d4/d58/class_b_i_basis_1_1_monom_aa0046595752d9d293c84b9146bc701e0.html#aa0046595752d9d293c84b9146bc701e0">BIBasis::Monom::TotalDegree</a></div><div class="ttdeci">Integer TotalDegree</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d95/monom_8hpp_source.html#l00044">monom.hpp:44</a></div></div>
 <div class="ttc" id="aclass_b_i_basis_1_1_monom_ace5c7e7f9d408c26588328d3d9b772e4_html_ace5c7e7f9d408c26588328d3d9b772e4"><div class="ttname"><a href="../../d4/d58/class_b_i_basis_1_1_monom_ace5c7e7f9d408c26588328d3d9b772e4.html#ace5c7e7f9d408c26588328d3d9b772e4">BIBasis::Monom::ListHead</a></div><div class="ttdeci">VarsListNode * ListHead</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d95/monom_8hpp_source.html#l00043">monom.hpp:43</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="astruct_b_i_basis_1_1_monom_1_1_vars_list_node_ad94cd89a5774ddecb9cd01102e148e02_html_ad94cd89a5774ddecb9cd01102e148e02"><div class="ttname"><a href="../../d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_ad94cd89a5774ddecb9cd01102e148e02.html#ad94cd89a5774ddecb9cd01102e148e02">BIBasis::Monom::VarsListNode::Next</a></div><div class="ttdeci">VarsListNode * Next</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d95/monom_8hpp_source.html#l00034">monom.hpp:34</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d58/class_b_i_basis_1_1_monom_ace5c7e7f9d408c26588328d3d9b772e4.html#ace5c7e7f9d408c26588328d3d9b772e4">BIBasis::Monom::ListHead</a>, <a class="el" href="../../d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_ad94cd89a5774ddecb9cd01102e148e02.html#ad94cd89a5774ddecb9cd01102e148e02">BIBasis::Monom::VarsListNode::Next</a>, <a class="el" href="../../d4/d58/class_b_i_basis_1_1_monom_aa0046595752d9d293c84b9146bc701e0.html#aa0046595752d9d293c84b9146bc701e0">BIBasis::Monom::TotalDegree</a>, and <a class="el" href="../../d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_a27e6ebbc6d73553e4cc3ab65c46c45af.html#a27e6ebbc6d73553e4cc3ab65c46c45af">BIBasis::Monom::VarsListNode::Value</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d4/d58/class_b_i_basis_1_1_monom_ace5c7e7f9d408c26588328d3d9b772e4.html#ace5c7e7f9d408c26588328d3d9b772e4">BIBasis::Monom::ListHead</a>, <a class="el" href="../../d6/d0c/struct_b_i_basis_1_1_monom_1_1_vars_list_node_ad94cd89a5774ddecb9cd01102e148e02.html#ad94cd89a5774ddecb9cd01102e148e02">BIBasis::Monom::VarsListNode::Next</a>, and <a class="el" href="../../d4/d58/class_b_i_basis_1_1_monom_aa0046595752d9d293c84b9146bc701e0.html#aa0046595752d9d293c84b9146bc701e0">BIBasis::Monom::TotalDegree</a>.</p>
 
 </div>
 </div>
@@ -178,7 +179,7 @@ $(document).ready(function(){initNavTree('dd/d51/class_b_i_basis_1_1_monom_d_l_a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d30/namespace_b_i_basis.html">BIBasis</a></li><li class="navelem"><a class="el" href="../../dd/d51/class_b_i_basis_1_1_monom_d_l.html">MonomDL</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

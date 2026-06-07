@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('d7/d9e/aring_8h_a40418e40ffb8a725b9127
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../dd/dcf/class_ring.html">Ring</a> * rawARingGaloisField </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/dcf/class_ring.html">Ring</a> * rawARingGaloisField </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td>
           <td class="paramname"><em>prime</em>, </td>
@@ -121,64 +121,65 @@ $(document).ready(function(){initNavTree('d7/d9e/aring_8h_a40418e40ffb8a725b9127
 <p class="enddd">return Macaulay Galois field in some cases. </p>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d92/interface_2aring_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../d6/d92/interface_2aring_8cpp_source.html">aring.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  139</span>{</div>
-<div class="line"><span class="lineno">  140</span>  <span class="keywordflow">if</span> (dimension &lt; 0)</div>
-<div class="line"><span class="lineno">  141</span>    {</div>
-<div class="line"><span class="lineno">  142</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot; givaroGF/FFPACK: help, dimension is negative ! &quot;</span>);</div>
-<div class="line"><span class="lineno">  143</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  144</span>    }</div>
-<div class="line"><span class="lineno">  145</span>  <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  146</span>    {</div>
-<div class="line"><span class="lineno">  147</span><span class="preprocessor">#if 1</span></div>
-<div class="line"><span class="lineno">  148</span> </div>
-<div class="line"><span class="lineno">  149</span>      <span class="keywordflow">if</span> (prime &lt;= 1)</div>
-<div class="line"><span class="lineno">  150</span>        {</div>
-<div class="line"><span class="lineno">  151</span>          <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;givaroGF/FFPACK: expected a prime number p &quot;</span>);</div>
-<div class="line"><span class="lineno">  152</span>          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  153</span>        }</div>
-<div class="line"><span class="lineno">  154</span> </div>
-<div class="line"><span class="lineno">  155</span>      <span class="comment">//-- NEED_POLYNOMIAL_REPRESENTATION is not usable(namespace problems) and</span></div>
-<div class="line"><span class="lineno">  156</span>      <span class="comment">// is not correct, because the answer depends on the template used for</span></div>
-<div class="line"><span class="lineno">  157</span>      <span class="comment">// Givaro::GFqDom.</span></div>
-<div class="line"><span class="lineno">  158</span>      <span class="comment">/*if (Givaro::NEED_POLYNOMIAL_REPRESENTATION(prime,dimension) )</span></div>
-<div class="line"><span class="lineno">  159</span><span class="comment">      {</span></div>
-<div class="line"><span class="lineno">  160</span><span class="comment">          ERROR(&quot;givaro Galois Field: polynomial representation is needed  -</span></div>
-<div class="line"><span class="lineno">  161</span><span class="comment">      todo &quot;);</span></div>
-<div class="line"><span class="lineno">  162</span><span class="comment">          return 0;</span></div>
-<div class="line"><span class="lineno">  163</span><span class="comment">      }*/</span></div>
-<div class="line"><span class="lineno">  164</span>      <span class="keywordflow">if</span> (dimension == 1 &amp;&amp; <a class="code hl_function" href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_ac56e09851ba1bc32569731b816f92c7f.html#ac56e09851ba1bc32569731b816f92c7f">M2::ARingZZpFFPACK::getMaxModulus</a>() &gt; prime)</div>
-<div class="line"><span class="lineno">  165</span>        {</div>
-<div class="line"><span class="lineno">  166</span>          <span class="comment">// std::cout &lt;&lt; &quot;maximum modulus = &quot; &lt;&lt;</span></div>
-<div class="line"><span class="lineno">  167</span>          <span class="comment">// M2::ARingZZpFFPACK::getMaxModulus() &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  168</span>          <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/d99/class_m2_1_1_concrete_ring_a8c585bd1fba6c8b4eb55bc5d6ea337d1.html#a8c585bd1fba6c8b4eb55bc5d6ea337d1">M2::ConcreteRing&lt;M2::ARingZZpFFPACK&gt;::create</a>(prime);</div>
-<div class="line"><span class="lineno">  169</span>        }</div>
-<div class="line"><span class="lineno">  170</span>      <span class="keywordflow">if</span> (dimension == 1)</div>
-<div class="line"><span class="lineno">  171</span>        {</div>
-<div class="line"><span class="lineno">  172</span>          <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;maximum modulus = %f\n&quot;</span>, <a class="code hl_function" href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_ac56e09851ba1bc32569731b816f92c7f.html#ac56e09851ba1bc32569731b816f92c7f">M2::ARingZZpFFPACK::getMaxModulus</a>());</div>
-<div class="line"><span class="lineno">  173</span>          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  174</span>        }</div>
-<div class="line"><span class="lineno">  175</span><span class="preprocessor">      #if 0</span></div>
-<div class="line"><span class="lineno">  176</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/d99/class_m2_1_1_concrete_ring_a8c585bd1fba6c8b4eb55bc5d6ea337d1.html#a8c585bd1fba6c8b4eb55bc5d6ea337d1">M2::ConcreteRing&lt;M2::ARingGFGivaro&gt;::create</a>(prime, dimension);</div>
-<div class="line"><span class="lineno">  177</span><span class="preprocessor">      #endif</span></div>
-<div class="line"><span class="lineno">  178</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;calling rawARingGaloisField with no longer allowed values, givaro is no longer available&quot;</span>);</div>
-<div class="line"><span class="lineno">  179</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  180</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">  181</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;add --enable-fflas-ffpack --enable-givaro when building M2&quot;</span>);</div>
-<div class="line"><span class="lineno">  182</span>      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  183</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  184</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
-<div class="line"><span class="lineno">  185</span>    {</div>
-<div class="line"><span class="lineno">  186</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(e.what());</div>
-<div class="line"><span class="lineno">  187</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  188</span>  }</div>
-<div class="line"><span class="lineno">  189</span>}</div>
-<div class="ttc" id="aclass_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_ac56e09851ba1bc32569731b816f92c7f_html_ac56e09851ba1bc32569731b816f92c7f"><div class="ttname"><a href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_ac56e09851ba1bc32569731b816f92c7f.html#ac56e09851ba1bc32569731b816f92c7f">M2::ARingZZpFFPACK::getMaxModulus</a></div><div class="ttdeci">static double getMaxModulus()</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d77/aring-zzp-ffpack_8hpp_source.html#l00236">aring-zzp-ffpack.hpp:236</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d92/interface_2aring_8cpp_source.html#l00139">139</a> of file <a class="el" href="../../d6/d92/interface_2aring_8cpp_source.html">aring.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>{</div>
+<div class="line"><span class="lineno">  141</span>  <span class="keywordflow">if</span> (dimension &lt; 0)</div>
+<div class="line"><span class="lineno">  142</span>    {</div>
+<div class="line"><span class="lineno">  143</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot; givaroGF/FFPACK: help, dimension is negative ! &quot;</span>);</div>
+<div class="line"><span class="lineno">  144</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  145</span>    }</div>
+<div class="line"><span class="lineno">  146</span>  <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  147</span>    {</div>
+<div class="line"><span class="lineno">  148</span><span class="preprocessor">#if 1</span></div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prime</a> &lt;= 1)</div>
+<div class="line"><span class="lineno">  151</span>        {</div>
+<div class="line"><span class="lineno">  152</span>          <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;givaroGF/FFPACK: expected a prime number p &quot;</span>);</div>
+<div class="line"><span class="lineno">  153</span>          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  154</span>        }</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>      <span class="comment">//-- NEED_POLYNOMIAL_REPRESENTATION is not usable(namespace problems) and</span></div>
+<div class="line"><span class="lineno">  157</span>      <span class="comment">// is not correct, because the answer depends on the template used for</span></div>
+<div class="line"><span class="lineno">  158</span>      <span class="comment">// Givaro::GFqDom.</span></div>
+<div class="line"><span class="lineno">  159</span>      <span class="comment">/*if (Givaro::NEED_POLYNOMIAL_REPRESENTATION(prime,dimension) )</span></div>
+<div class="line"><span class="lineno">  160</span><span class="comment">      {</span></div>
+<div class="line"><span class="lineno">  161</span><span class="comment">          ERROR(&quot;givaro Galois Field: polynomial representation is needed  -</span></div>
+<div class="line"><span class="lineno">  162</span><span class="comment">      todo &quot;);</span></div>
+<div class="line"><span class="lineno">  163</span><span class="comment">          return 0;</span></div>
+<div class="line"><span class="lineno">  164</span><span class="comment">      }*/</span></div>
+<div class="line"><span class="lineno">  165</span>      <span class="keywordflow">if</span> (dimension == 1 &amp;&amp; <a class="code hl_function" href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_ac56e09851ba1bc32569731b816f92c7f.html#ac56e09851ba1bc32569731b816f92c7f">M2::ARingZZpFFPACK::getMaxModulus</a>() &gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prime</a>)</div>
+<div class="line"><span class="lineno">  166</span>        {</div>
+<div class="line"><span class="lineno">  167</span>          <span class="comment">// std::cout &lt;&lt; &quot;maximum modulus = &quot; &lt;&lt;</span></div>
+<div class="line"><span class="lineno">  168</span>          <span class="comment">// M2::ARingZZpFFPACK::getMaxModulus() &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  169</span>          <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/d99/class_m2_1_1_concrete_ring_a8c585bd1fba6c8b4eb55bc5d6ea337d1.html#a8c585bd1fba6c8b4eb55bc5d6ea337d1">M2::ConcreteRing&lt;M2::ARingZZpFFPACK&gt;::create</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prime</a>);</div>
+<div class="line"><span class="lineno">  170</span>        }</div>
+<div class="line"><span class="lineno">  171</span>      <span class="keywordflow">if</span> (dimension == 1)</div>
+<div class="line"><span class="lineno">  172</span>        {</div>
+<div class="line"><span class="lineno">  173</span>          <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;maximum modulus = %f\n&quot;</span>, <a class="code hl_function" href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_ac56e09851ba1bc32569731b816f92c7f.html#ac56e09851ba1bc32569731b816f92c7f">M2::ARingZZpFFPACK::getMaxModulus</a>());</div>
+<div class="line"><span class="lineno">  174</span>          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  175</span>        }</div>
+<div class="line"><span class="lineno">  176</span><span class="preprocessor">      #if 0</span></div>
+<div class="line"><span class="lineno">  177</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/d99/class_m2_1_1_concrete_ring_a8c585bd1fba6c8b4eb55bc5d6ea337d1.html#a8c585bd1fba6c8b4eb55bc5d6ea337d1">M2::ConcreteRing&lt;M2::ARingGFGivaro&gt;::create</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">prime</a>, dimension);</div>
+<div class="line"><span class="lineno">  178</span><span class="preprocessor">      #endif</span></div>
+<div class="line"><span class="lineno">  179</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;calling rawARingGaloisField with no longer allowed values, givaro is no longer available&quot;</span>);</div>
+<div class="line"><span class="lineno">  180</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  181</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">  182</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;add --enable-fflas-ffpack --enable-givaro when building M2&quot;</span>);</div>
+<div class="line"><span class="lineno">  183</span>      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  184</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  185</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>)</div>
+<div class="line"><span class="lineno">  186</span>    {</div>
+<div class="line"><span class="lineno">  187</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>.what());</div>
+<div class="line"><span class="lineno">  188</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  189</span>  }</div>
+<div class="line"><span class="lineno">  190</span>}</div>
+<div class="ttc" id="aclass_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_ac56e09851ba1bc32569731b816f92c7f_html_ac56e09851ba1bc32569731b816f92c7f"><div class="ttname"><a href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_ac56e09851ba1bc32569731b816f92c7f.html#ac56e09851ba1bc32569731b816f92c7f">M2::ARingZZpFFPACK::getMaxModulus</a></div><div class="ttdeci">static double getMaxModulus()</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d4a/aring-_z_zp-ffpack_8hpp_source.html#l00236">aring-ZZp-ffpack.hpp:236</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_concrete_ring_a8c585bd1fba6c8b4eb55bc5d6ea337d1_html_a8c585bd1fba6c8b4eb55bc5d6ea337d1"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_a8c585bd1fba6c8b4eb55bc5d6ea337d1.html#a8c585bd1fba6c8b4eb55bc5d6ea337d1">M2::ConcreteRing::create</a></div><div class="ttdeci">static ConcreteRing&lt; RingType &gt; * create(std::unique_ptr&lt; RingType &gt; R)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00529">aring-glue.hpp:529</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring_a8c585bd1fba6c8b4eb55bc5d6ea337d1.html#a8c585bd1fba6c8b4eb55bc5d6ea337d1">M2::ConcreteRing&lt; RingType &gt;::create()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, and <a class="el" href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_ac56e09851ba1bc32569731b816f92c7f.html#ac56e09851ba1bc32569731b816f92c7f">M2::ARingZZpFFPACK::getMaxModulus()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring_a8c585bd1fba6c8b4eb55bc5d6ea337d1.html#a8c585bd1fba6c8b4eb55bc5d6ea337d1">M2::ConcreteRing&lt; RingType &gt;::create()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, and <a class="el" href="../../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_ac56e09851ba1bc32569731b816f92c7f.html#ac56e09851ba1bc32569731b816f92c7f">M2::ARingZZpFFPACK::getMaxModulus()</a>.</p>
 
 </div>
 </div>
@@ -188,7 +189,7 @@ $(document).ready(function(){initNavTree('d7/d9e/aring_8h_a40418e40ffb8a725b9127
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d7/d9e/aring_8h.html">aring.h</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

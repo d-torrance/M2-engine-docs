@@ -95,15 +95,15 @@ $(document).ready(function(){initNavTree('d9/d02/class_b_i_basis_1_1_polynom_ae7
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MonomType &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const MonomType *const  * <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">BIBasis::Polynom</a>&lt; MonomType &gt;::Find </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> *<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a>  * <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">BIBasis::Polynom</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt;::Find </td>
           <td>(</td>
-          <td class="paramtype">const MonomType &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &amp;&#160;</td>
           <td class="paramname"><em>monom</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -122,37 +122,40 @@ template&lt;typename MonomType &gt; </div>
 <div class="line"><span class="lineno">  635</span>            <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  636</span>        }</div>
 <div class="line"><span class="lineno">  637</span> </div>
-<div class="line"><span class="lineno">  638</span>        MonomType * <span class="keyword">const</span> *previousPointer = &amp;<a class="code hl_variable" href="../../d9/d02/class_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c.html#a4c2ec185d6e040f76691dde6f091b11c">MonomListHead</a>,</div>
-<div class="line"><span class="lineno">  639</span>                  * <span class="keyword">const</span> *currentPointer = 0;</div>
-<div class="line"><span class="lineno">  640</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> range(<a class="code hl_function" href="../../d9/d02/class_b_i_basis_1_1_polynom_aaa3c7392b3a891af030cdf619eaeaf9e.html#aaa3c7392b3a891af030cdf619eaeaf9e">Length</a>()), middle;</div>
+<div class="line"><span class="lineno">  638</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> * <span class="keyword">const</span> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">previousPointer</a> = &amp;<a class="code hl_variable" href="../../d9/d02/class_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c.html#a4c2ec185d6e040f76691dde6f091b11c">MonomListHead</a>,</div>
+<div class="line"><span class="lineno">  639</span>                  * <span class="keyword">const</span> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">currentPointer</a> = 0;</div>
+<div class="line"><span class="lineno">  640</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">range</a>(<a class="code hl_function" href="../../d9/d02/class_b_i_basis_1_1_polynom_aaa3c7392b3a891af030cdf619eaeaf9e.html#aaa3c7392b3a891af030cdf619eaeaf9e">Length</a>()), <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">middle</a>;</div>
 <div class="line"><span class="lineno">  641</span> </div>
-<div class="line"><span class="lineno">  642</span>        <span class="keywordflow">while</span> ((middle = range &gt;&gt; 1) &gt; 0)</div>
+<div class="line"><span class="lineno">  642</span>        <span class="keywordflow">while</span> ((<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">middle</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">range</a> &gt;&gt; 1) &gt; 0)</div>
 <div class="line"><span class="lineno">  643</span>        {</div>
-<div class="line"><span class="lineno">  644</span>            currentPointer = previousPointer;</div>
-<div class="line"><span class="lineno">  645</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> i = 0; i &lt; middle; ++i)</div>
+<div class="line"><span class="lineno">  644</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">currentPointer</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">previousPointer</a>;</div>
+<div class="line"><span class="lineno">  645</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> i = 0; i &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">middle</a>; ++i)</div>
 <div class="line"><span class="lineno">  646</span>            {</div>
-<div class="line"><span class="lineno">  647</span>                currentPointer = &amp;((*currentPointer)-&gt;Next);</div>
+<div class="line"><span class="lineno">  647</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">currentPointer</a> = &amp;((*currentPointer)-&gt;Next);</div>
 <div class="line"><span class="lineno">  648</span>            }</div>
 <div class="line"><span class="lineno">  649</span> </div>
 <div class="line"><span class="lineno">  650</span>            <span class="keywordflow">switch</span> ((**currentPointer).Compare(monom))</div>
 <div class="line"><span class="lineno">  651</span>            {</div>
 <div class="line"><span class="lineno">  652</span>            <span class="keywordflow">case</span> 1:</div>
-<div class="line"><span class="lineno">  653</span>                previousPointer = currentPointer;</div>
-<div class="line"><span class="lineno">  654</span>                range -= middle;</div>
+<div class="line"><span class="lineno">  653</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">previousPointer</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">currentPointer</a>;</div>
+<div class="line"><span class="lineno">  654</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">range</a> -= <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">middle</a>;</div>
 <div class="line"><span class="lineno">  655</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  656</span>            <span class="keywordflow">case</span> -1:</div>
-<div class="line"><span class="lineno">  657</span>                range = middle;</div>
+<div class="line"><span class="lineno">  657</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">range</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">middle</a>;</div>
 <div class="line"><span class="lineno">  658</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  659</span>            <span class="keywordflow">case</span> 0:</div>
-<div class="line"><span class="lineno">  660</span>                <span class="keywordflow">return</span> currentPointer;</div>
+<div class="line"><span class="lineno">  660</span>                <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">currentPointer</a>;</div>
 <div class="line"><span class="lineno">  661</span>            }</div>
 <div class="line"><span class="lineno">  662</span>        }</div>
 <div class="line"><span class="lineno">  663</span> </div>
-<div class="line"><span class="lineno">  664</span>        <span class="keywordflow">return</span> previousPointer;</div>
+<div class="line"><span class="lineno">  664</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">previousPointer</a>;</div>
 <div class="line"><span class="lineno">  665</span>    }</div>
 <div class="ttc" id="aclass_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c_html_a4c2ec185d6e040f76691dde6f091b11c"><div class="ttname"><a href="../../d9/d02/class_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c.html#a4c2ec185d6e040f76691dde6f091b11c">BIBasis::Polynom::MonomListHead</a></div><div class="ttdeci">MonomType * MonomListHead</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7e/polynom_8hpp_source.html#l00022">polynom.hpp:22</a></div></div>
 <div class="ttc" id="aclass_b_i_basis_1_1_polynom_aaa3c7392b3a891af030cdf619eaeaf9e_html_aaa3c7392b3a891af030cdf619eaeaf9e"><div class="ttname"><a href="../../d9/d02/class_b_i_basis_1_1_polynom_aaa3c7392b3a891af030cdf619eaeaf9e.html#aaa3c7392b3a891af030cdf619eaeaf9e">BIBasis::Polynom::Length</a></div><div class="ttdeci">unsigned long Length() const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7e/polynom_8hpp_source.html#l00132">polynom.hpp:132</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -161,7 +164,7 @@ template&lt;typename MonomType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d30/namespace_b_i_basis.html">BIBasis</a></li><li class="navelem"><a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

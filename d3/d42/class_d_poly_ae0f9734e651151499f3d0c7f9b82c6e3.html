@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_ae0f9734e651151499
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DPoly::subtract_in_place_n </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> DPoly::subtract_in_place_n </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td>
           <td class="paramname"><em>level</em>, </td>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_ae0f9734e651151499
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const TowerPolynomial&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> TowerPolynomial&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -139,18 +139,18 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_ae0f9734e651151499
 <div class="line"><span class="lineno">  769</span>      <a class="code hl_function" href="../../d3/d42/class_d_poly_ac070325884d331e700a2df1457b40840.html#ac070325884d331e700a2df1457b40840">negate_in_place</a>(level, f);</div>
 <div class="line"><span class="lineno">  770</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  771</span>    }</div>
-<div class="line"><span class="lineno">  772</span>  <span class="keywordtype">int</span> fdeg = f-&gt;deg;</div>
-<div class="line"><span class="lineno">  773</span>  <span class="keywordtype">int</span> gdeg = g-&gt;deg;</div>
+<div class="line"><span class="lineno">  772</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fdeg</a> = f-&gt;deg;</div>
+<div class="line"><span class="lineno">  773</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gdeg</a> = g-&gt;deg;</div>
 <div class="line"><span class="lineno">  774</span> </div>
 <div class="line"><span class="lineno">  775</span>  <a class="code hl_function" href="../../d3/d42/class_d_poly_a11cffb4214fe41f97b3b6fdbd5e21ef9.html#a11cffb4214fe41f97b3b6fdbd5e21ef9">increase_size_n</a>(g-&gt;deg, f);</div>
-<div class="line"><span class="lineno">  776</span>  <span class="keywordflow">for</span> (i = 0; i &lt;= gdeg; i++)</div>
+<div class="line"><span class="lineno">  776</span>  <span class="keywordflow">for</span> (i = 0; i &lt;= <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gdeg</a>; i++)</div>
 <div class="line"><span class="lineno">  777</span>    <a class="code hl_function" href="../../d3/d42/class_d_poly_a010da65b56b456403c4f6117eb8c415b.html#a010da65b56b456403c4f6117eb8c415b">subtract_in_place</a>(level - 1, f-&gt;arr.polys[i], g-&gt;arr.polys[i]);</div>
-<div class="line"><span class="lineno">  778</span>  <span class="keywordflow">if</span> (gdeg &gt; fdeg)</div>
-<div class="line"><span class="lineno">  779</span>    f-&gt;deg = gdeg;</div>
-<div class="line"><span class="lineno">  780</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (gdeg == fdeg)</div>
+<div class="line"><span class="lineno">  778</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gdeg</a> &gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fdeg</a>)</div>
+<div class="line"><span class="lineno">  779</span>    f-&gt;deg = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gdeg</a>;</div>
+<div class="line"><span class="lineno">  780</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gdeg</a> == <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fdeg</a>)</div>
 <div class="line"><span class="lineno">  781</span>    {</div>
 <div class="line"><span class="lineno">  782</span>      <span class="comment">// need to change the degree</span></div>
-<div class="line"><span class="lineno">  783</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = fdeg; j &gt;= 0; --j)</div>
+<div class="line"><span class="lineno">  783</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fdeg</a>; j &gt;= 0; --j)</div>
 <div class="line"><span class="lineno">  784</span>        <span class="keywordflow">if</span> (f-&gt;arr.polys[j] != <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">  785</span>          {</div>
 <div class="line"><span class="lineno">  786</span>            f-&gt;deg = j;</div>
@@ -165,8 +165,9 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_ae0f9734e651151499
 <div class="ttc" id="aclass_d_poly_a2f56942fe6577e7c42bae14c3736f3c5_html_a2f56942fe6577e7c42bae14c3736f3c5"><div class="ttname"><a href="../../d3/d42/class_d_poly_a2f56942fe6577e7c42bae14c3736f3c5.html#a2f56942fe6577e7c42bae14c3736f3c5">DPoly::copy</a></div><div class="ttdeci">static TowerPolynomial copy(int level, const TowerPolynomial f)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00483">dpoly.cpp:483</a></div></div>
 <div class="ttc" id="aclass_d_poly_ab6f011d51e611e3d699476d484ff1eb3_html_ab6f011d51e611e3d699476d484ff1eb3"><div class="ttname"><a href="../../d3/d42/class_d_poly_ab6f011d51e611e3d699476d484ff1eb3.html#ab6f011d51e611e3d699476d484ff1eb3">DPoly::dealloc_poly</a></div><div class="ttdeci">static void dealloc_poly(TowerPolynomial &amp;f)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00292">dpoly.cpp:292</a></div></div>
 <div class="ttc" id="aclass_d_poly_ac070325884d331e700a2df1457b40840_html_ac070325884d331e700a2df1457b40840"><div class="ttname"><a href="../../d3/d42/class_d_poly_ac070325884d331e700a2df1457b40840.html#ac070325884d331e700a2df1457b40840">DPoly::negate_in_place</a></div><div class="ttdeci">void negate_in_place(int level, TowerPolynomial &amp;f)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d23/dpoly_8cpp_source.html#l00604">dpoly.cpp:604</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d42/class_d_poly_a2f56942fe6577e7c42bae14c3736f3c5.html#a2f56942fe6577e7c42bae14c3736f3c5">copy()</a>, <a class="el" href="../../d3/d42/class_d_poly_ab6f011d51e611e3d699476d484ff1eb3.html#ab6f011d51e611e3d699476d484ff1eb3">dealloc_poly()</a>, <a class="el" href="../../d3/d42/class_d_poly_a11cffb4214fe41f97b3b6fdbd5e21ef9.html#a11cffb4214fe41f97b3b6fdbd5e21ef9">increase_size_n()</a>, <a class="el" href="../../d3/d42/class_d_poly_ac070325884d331e700a2df1457b40840.html#ac070325884d331e700a2df1457b40840">negate_in_place()</a>, and <a class="el" href="../../d3/d42/class_d_poly_a010da65b56b456403c4f6117eb8c415b.html#a010da65b56b456403c4f6117eb8c415b">subtract_in_place()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d3/d42/class_d_poly_a2f56942fe6577e7c42bae14c3736f3c5.html#a2f56942fe6577e7c42bae14c3736f3c5">copy()</a>, <a class="el" href="../../d3/d42/class_d_poly_ab6f011d51e611e3d699476d484ff1eb3.html#ab6f011d51e611e3d699476d484ff1eb3">dealloc_poly()</a>, <a class="el" href="../../d3/d42/class_d_poly_a11cffb4214fe41f97b3b6fdbd5e21ef9.html#a11cffb4214fe41f97b3b6fdbd5e21ef9">increase_size_n()</a>, <a class="el" href="../../d3/d42/class_d_poly_ac070325884d331e700a2df1457b40840.html#ac070325884d331e700a2df1457b40840">negate_in_place()</a>, and <a class="el" href="../../d3/d42/class_d_poly_a010da65b56b456403c4f6117eb8c415b.html#a010da65b56b456403c4f6117eb8c415b">subtract_in_place()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d42/class_d_poly_a010da65b56b456403c4f6117eb8c415b.html#a010da65b56b456403c4f6117eb8c415b">subtract_in_place()</a>.</p>
 
@@ -178,7 +179,7 @@ $(document).ready(function(){initNavTree('d3/d42/class_d_poly_ae0f9734e651151499
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d42/class_d_poly.html">DPoly</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

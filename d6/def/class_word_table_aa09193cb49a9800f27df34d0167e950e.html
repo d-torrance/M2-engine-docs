@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('d6/def/class_word_table_aa09193cb49a98
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void WordTable::leftOverlaps </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> WordTable::leftOverlaps </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; <a class="el" href="../../d8/dd8/_word_table_8hpp_a6137b15715e0fc6d08b1936ca1f48e85.html#a6137b15715e0fc6d08b1936ca1f48e85">Overlap</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>newLeftOverlaps</em></td><td>)</td>
@@ -116,22 +116,23 @@ $(document).ready(function(){initNavTree('d6/def/class_word_table_aa09193cb49a98
 <div class="line"><span class="lineno">  235</span>  <span class="comment">// A returned triple:</span></div>
 <div class="line"><span class="lineno">  236</span>  <span class="comment">//   (left overlap):</span></div>
 <div class="line"><span class="lineno">  237</span> </div>
-<div class="line"><span class="lineno">  238</span>  <span class="keywordtype">int</span> word_index = <a class="code hl_variable" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>.size()-1;</div>
-<div class="line"><span class="lineno">  239</span>  std::vector&lt;int&gt; overlap_indices;</div>
-<div class="line"><span class="lineno">  240</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;word_index; ++i)</div>
+<div class="line"><span class="lineno">  238</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">word_index</a> = <a class="code hl_variable" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>.size()-1;</div>
+<div class="line"><span class="lineno">  239</span>  std::vector&lt;int&gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">overlap_indices</a>;</div>
+<div class="line"><span class="lineno">  240</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">word_index</a>; ++i)</div>
 <div class="line"><span class="lineno">  241</span>    {</div>
-<div class="line"><span class="lineno">  242</span>      overlap_indices.clear();</div>
-<div class="line"><span class="lineno">  243</span>      <a class="code hl_function" href="../../d6/def/class_word_table_a96cc81810bed8bd2709e4f345a5d214c.html#a96cc81810bed8bd2709e4f345a5d214c">overlaps</a>(<a class="code hl_variable" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>[i], <a class="code hl_variable" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>[word_index], overlap_indices);</div>
-<div class="line"><span class="lineno">  244</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : overlap_indices)</div>
-<div class="line"><span class="lineno">  245</span>        newLeftOverlaps.push_back(<a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::make_tuple(i, j, word_index,true));</div>
+<div class="line"><span class="lineno">  242</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">overlap_indices</a>.clear();</div>
+<div class="line"><span class="lineno">  243</span>      <a class="code hl_function" href="../../d6/def/class_word_table_a96cc81810bed8bd2709e4f345a5d214c.html#a96cc81810bed8bd2709e4f345a5d214c">overlaps</a>(<a class="code hl_variable" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>[i], <a class="code hl_variable" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>[<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">word_index</a>], <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">overlap_indices</a>);</div>
+<div class="line"><span class="lineno">  244</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">overlap_indices</a>)</div>
+<div class="line"><span class="lineno">  245</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newLeftOverlaps</a>.push_back(<a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">make_tuple</a>(i, j, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">word_index</a>,<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">true</a>));</div>
 <div class="line"><span class="lineno">  246</span>    }</div>
 <div class="line"><span class="lineno">  247</span>  <span class="comment">// triples will be &lt;dict word index, index into dict word where suffix starts, word_index&gt;.</span></div>
 <div class="line"><span class="lineno">  248</span>}</div>
 <div class="ttc" id="aclass_word_table_a894f7b53057ea6290b3b15d5c97d2e4d_html_a894f7b53057ea6290b3b15d5c97d2e4d"><div class="ttname"><a href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">WordTable::mMonomials</a></div><div class="ttdeci">std::vector&lt; Word &gt; mMonomials</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dd8/_word_table_8hpp_source.html#l00112">WordTable.hpp:112</a></div></div>
 <div class="ttc" id="aclass_word_table_a96cc81810bed8bd2709e4f345a5d214c_html_a96cc81810bed8bd2709e4f345a5d214c"><div class="ttname"><a href="../../d6/def/class_word_table_a96cc81810bed8bd2709e4f345a5d214c.html#a96cc81810bed8bd2709e4f345a5d214c">WordTable::overlaps</a></div><div class="ttdeci">static void overlaps(Word word1, Word word2, std::vector&lt; int &gt; &amp;result_overlaps)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d61/_word_table_8cpp_source.html#l00213">WordTable.cpp:213</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="../../d8/dcc/namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>, and <a class="el" href="../../d6/def/class_word_table_a96cc81810bed8bd2709e4f345a5d214c.html#a96cc81810bed8bd2709e4f345a5d214c">overlaps()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>, and <a class="el" href="../../d6/def/class_word_table_a96cc81810bed8bd2709e4f345a5d214c.html#a96cc81810bed8bd2709e4f345a5d214c">overlaps()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/dc0/_n_c_groebner_test_8cpp_a00c9e6091933592c76e0a46c29759ada.html#a00c9e6091933592c76e0a46c29759ada">TEST()</a>, <a class="el" href="../../d0/d92/class_n_c_f4_a4e479dad979465bf857f4236b497bf20.html#a4e479dad979465bf857f4236b497bf20">NCF4::updateOverlaps()</a>, and <a class="el" href="../../d8/d79/class_n_c_groebner_a32628ad1d86f7719f69e26d2df5445cf.html#a32628ad1d86f7719f69e26d2df5445cf">NCGroebner::updateOverlaps()</a>.</p>
 
@@ -143,7 +144,7 @@ $(document).ready(function(){initNavTree('d6/def/class_word_table_aa09193cb49a98
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/def/class_word_table.html">WordTable</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

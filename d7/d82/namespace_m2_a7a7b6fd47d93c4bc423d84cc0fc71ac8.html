@@ -101,19 +101,19 @@ $(document).ready(function(){initNavTree('d7/d82/namespace_m2_a7a7b6fd47d93c4bc4
         <tr>
           <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> M2::mypromote </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/d9e/class_m2_1_1_a_ring_r_r_r.html">ARingRRR</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/d9e/class_m2_1_1_a_ring_r_r_r.html">ARingRRR</a> &amp;&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d0/d48/class_m2_1_1_a_ring_r_r.html">ARingRR</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d0/d48/class_m2_1_1_a_ring_r_r.html">ARingRR</a> &amp;&#160;</td>
           <td class="paramname"><em>S</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/d9e/class_m2_1_1_a_ring_r_r_r_aa47716308a33493ab12c0b87b48151e4.html#aa47716308a33493ab12c0b87b48151e4">ARingRRR::ElementType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/d9e/class_m2_1_1_a_ring_r_r_r_aa47716308a33493ab12c0b87b48151e4.html#aa47716308a33493ab12c0b87b48151e4">ARingRRR::ElementType</a> &amp;&#160;</td>
           <td class="paramname"><em>fR</em>, </td>
         </tr>
         <tr>
@@ -135,17 +135,18 @@ $(document).ready(function(){initNavTree('d7/d82/namespace_m2_a7a7b6fd47d93c4bc4
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/df4/aring-translate_8hpp_source.html#l00347">347</a> of file <a class="el" href="../../de/df4/aring-translate_8hpp_source.html">aring-translate.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  351</span>{</div>
-<div class="line"><span class="lineno">  352</span>  (void) R;</div>
-<div class="line"><span class="lineno">  353</span>  <span class="keyword">auto</span> fR1 = <span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="../../dd/d9e/class_m2_1_1_a_ring_r_r_r_aa47716308a33493ab12c0b87b48151e4.html#aa47716308a33493ab12c0b87b48151e4">ARingRRR::ElementType</a>&amp;<span class="keyword">&gt;</span>(fR);</div>
-<div class="line"><span class="lineno">  354</span>  S.<a class="code hl_function" href="../../d0/d48/class_m2_1_1_a_ring_r_r_a4e12848d31d635ab07bde9922d7ea4cb.html#a4e12848d31d635ab07bde9922d7ea4cb">set_from_BigReal</a>(fS, &amp;fR1);</div>
-<div class="line"><span class="lineno">  355</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  356</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/df4/aring-translate_8hpp_source.html#l00354">354</a> of file <a class="el" href="../../de/df4/aring-translate_8hpp_source.html">aring-translate.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  358</span>{</div>
+<div class="line"><span class="lineno">  359</span>  (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a>) R;</div>
+<div class="line"><span class="lineno">  360</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fR1</a> = <span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="../../dd/d9e/class_m2_1_1_a_ring_r_r_r_aa47716308a33493ab12c0b87b48151e4.html#aa47716308a33493ab12c0b87b48151e4">ARingRRR::ElementType</a>&amp;<span class="keyword">&gt;</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fR</a>);</div>
+<div class="line"><span class="lineno">  361</span>  S.<a class="code hl_function" href="../../d0/d48/class_m2_1_1_a_ring_r_r_a4e12848d31d635ab07bde9922d7ea4cb.html#a4e12848d31d635ab07bde9922d7ea4cb">set_from_BigReal</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fS</a>, &amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fR1</a>);</div>
+<div class="line"><span class="lineno">  362</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  363</span>}</div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_r_r_a4e12848d31d635ab07bde9922d7ea4cb_html_a4e12848d31d635ab07bde9922d7ea4cb"><div class="ttname"><a href="../../d0/d48/class_m2_1_1_a_ring_r_r_a4e12848d31d635ab07bde9922d7ea4cb.html#a4e12848d31d635ab07bde9922d7ea4cb">M2::ARingRR::set_from_BigReal</a></div><div class="ttdeci">bool set_from_BigReal(ElementType &amp;result, gmp_RR a) const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d29/aring-_r_r_8hpp_source.html#l00114">aring-RR.hpp:114</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_r_r_r_aa47716308a33493ab12c0b87b48151e4_html_aa47716308a33493ab12c0b87b48151e4"><div class="ttname"><a href="../../dd/d9e/class_m2_1_1_a_ring_r_r_r_aa47716308a33493ab12c0b87b48151e4.html#aa47716308a33493ab12c0b87b48151e4">M2::ARingRRR::ElementType</a></div><div class="ttdeci">elem ElementType</div><div class="ttdef"><b>Definition</b> <a href="../../d2/df7/aring-_r_r_r_8hpp_source.html#l00029">aring-RRR.hpp:29</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d0/d48/class_m2_1_1_a_ring_r_r_a4e12848d31d635ab07bde9922d7ea4cb.html#a4e12848d31d635ab07bde9922d7ea4cb">M2::ARingRR::set_from_BigReal()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d0/d48/class_m2_1_1_a_ring_r_r_a4e12848d31d635ab07bde9922d7ea4cb.html#a4e12848d31d635ab07bde9922d7ea4cb">M2::ARingRR::set_from_BigReal()</a>.</p>
 
 </div>
 </div>
@@ -155,7 +156,7 @@ $(document).ready(function(){initNavTree('d7/d82/namespace_m2_a7a7b6fd47d93c4bc4
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

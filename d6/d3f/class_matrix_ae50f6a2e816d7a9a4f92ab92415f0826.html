@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_ae50f6a2e816d7a9a4
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> * Matrix::basis </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> * Matrix::basis </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a>&#160;</td>
           <td class="paramname"><em>lo_degree</em>, </td>
@@ -141,14 +141,15 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_ae50f6a2e816d7a9a4
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d31/matrix-kbasis_8cpp_source.html#l00535">535</a> of file <a class="el" href="../../d6/d31/matrix-kbasis_8cpp_source.html">matrix-kbasis.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  541</span>{</div>
-<div class="line"><span class="lineno">  542</span>  <span class="keyword">auto</span> heft = M2_arrayint_to_stdvector&lt;int&gt;(heftvec);</div>
-<div class="line"><span class="lineno">  543</span>  <span class="keyword">auto</span> vars = M2_arrayint_to_stdvector&lt;int&gt;(varlist);</div>
+<div class="line"><span class="lineno">  542</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">heft</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">M2_arrayint_to_stdvector&lt;int&gt;</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">heftvec</a>);</div>
+<div class="line"><span class="lineno">  543</span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">vars</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">M2_arrayint_to_stdvector&lt;int&gt;</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">varlist</a>);</div>
 <div class="line"><span class="lineno">  544</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d9/dd1/class_k_basis_abb0d3ac3f4aa489984b8112ccb4bbe96.html#abb0d3ac3f4aa489984b8112ccb4bbe96">KBasis::k_basis</a>(</div>
-<div class="line"><span class="lineno">  545</span>      <span class="keyword">this</span>, lo_degree, hi_degree, heft, vars, do_truncation, limit);</div>
+<div class="line"><span class="lineno">  545</span>      <span class="keyword">this</span>, lo_degree, hi_degree, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">heft</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">vars</a>, do_truncation, limit);</div>
 <div class="line"><span class="lineno">  546</span>}</div>
 <div class="ttc" id="aclass_k_basis_abb0d3ac3f4aa489984b8112ccb4bbe96_html_abb0d3ac3f4aa489984b8112ccb4bbe96"><div class="ttname"><a href="../../d9/dd1/class_k_basis_abb0d3ac3f4aa489984b8112ccb4bbe96.html#abb0d3ac3f4aa489984b8112ccb4bbe96">KBasis::k_basis</a></div><div class="ttdeci">static Matrix * k_basis(const Matrix *bottom, M2_arrayint lo_degree, M2_arrayint hi_degree, std::vector&lt; int &gt; heftvec, std::vector&lt; int &gt; varlist, bool do_truncation, int limit)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d31/matrix-kbasis_8cpp_source.html#l00444">matrix-kbasis.cpp:444</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/d3f/class_matrix_ae50f6a2e816d7a9a4f92ab92415f0826.html#ae50f6a2e816d7a9a4f92ab92415f0826">basis()</a>, and <a class="el" href="../../d9/dd1/class_k_basis_abb0d3ac3f4aa489984b8112ccb4bbe96.html#abb0d3ac3f4aa489984b8112ccb4bbe96">KBasis::k_basis()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d3f/class_matrix_ae50f6a2e816d7a9a4f92ab92415f0826.html#ae50f6a2e816d7a9a4f92ab92415f0826">basis()</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d9/dd1/class_k_basis_abb0d3ac3f4aa489984b8112ccb4bbe96.html#abb0d3ac3f4aa489984b8112ccb4bbe96">KBasis::k_basis()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/d3f/class_matrix_ae50f6a2e816d7a9a4f92ab92415f0826.html#ae50f6a2e816d7a9a4f92ab92415f0826">basis()</a>.</p>
 
@@ -160,7 +161,7 @@ $(document).ready(function(){initNavTree('d6/d3f/class_matrix_ae50f6a2e816d7a9a4
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

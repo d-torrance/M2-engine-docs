@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/mat.cpp File Reference</title>
+<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/basic-mutable-matrices/mat.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,27 +93,27 @@ $(document).ready(function(){initNavTree('d1/dea/mat_8cpp.html','../../'); initR
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d0/d3f/util_8hpp_source.html">util.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d0a/dmat_8hpp_source.html">dmat.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/dc0/smat_8hpp_source.html">smat.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/dc2/mat_8hpp_source.html">mat.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d09/mutablemat_8hpp_source.html">mutablemat.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d0a/dmat_8hpp_source.html">basic-mutable-matrices/dmat.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/dc0/smat_8hpp_source.html">basic-mutable-matrices/smat.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/dc2/mat_8hpp_source.html">basic-mutable-matrices/mat.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d09/mutablemat_8hpp_source.html">mutable-matrices/mutablemat.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/d07/coeffrings_8hpp_source.html">coeffrings.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d2/d80/matrix-con_8hpp_source.html">matrix-con.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d2/df7/aring-_r_r_r_8hpp_source.html">aring-RRR.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/d29/aring-_r_r_8hpp_source.html">aring-RR.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html">aring-CCC.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/df6/aring-zz-gmp_8hpp_source.html">aring-zz-gmp.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d8/d51/aring-zz-flint_8hpp_source.html">aring-zz-flint.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/d4e/aring-zzp_8hpp_source.html">aring-zzp.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d77/aring-zzp-ffpack_8hpp_source.html">aring-zzp-ffpack.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/d49/aring-zzp-flint_8hpp_source.html">aring-zzp-flint.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/dfb/aring-m2-gf_8hpp_source.html">aring-m2-gf.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/dd0/aring-tower_8hpp_source.html">aring-tower.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d2/d09/aring-qq_8hpp_source.html">aring-qq.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dd2/lapack_8hpp_source.html">lapack.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d23/_z_zp_8hpp_source.html">ZZp.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d80/matrix-con_8hpp_source.html">matrices/matrix-con.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrices/matrix.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/df7/aring-_r_r_r_8hpp_source.html">basic-rings/aring-RRR.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d29/aring-_r_r_8hpp_source.html">basic-rings/aring-RR.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d9c/aring-_c_c_c_8hpp_source.html">basic-rings/aring-CCC.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dc3/aring-_z_z-gmp_8hpp_source.html">basic-rings/aring-ZZ-gmp.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d13/aring-_z_z-flint_8hpp_source.html">basic-rings/aring-ZZ-flint.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d72/aring-_z_zp_8hpp_source.html">basic-rings/aring-ZZp.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d4a/aring-_z_zp-ffpack_8hpp_source.html">basic-rings/aring-ZZp-ffpack.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/df7/aring-_z_zp-flint_8hpp_source.html">basic-rings/aring-ZZp-flint.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d75/aring-m2-_g_f_8hpp_source.html">basic-rings/aring-m2-GF.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">basic-rings/aring-glue.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/dd0/aring-tower_8hpp_source.html">basic-rings/aring-tower.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d73/aring-_q_q_8hpp_source.html">basic-rings/aring-QQ.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dd2/lapack_8hpp_source.html">basic-mutable-matrices/lapack.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d23/_z_zp_8hpp_source.html">rings/ZZp.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../d1/dea/mat_8cpp_source.html">Go to the source code of this file.</a></p>
 </div><!-- contents -->
@@ -121,8 +121,8 @@ $(document).ready(function(){initNavTree('d1/dea/mat_8cpp.html','../../'); initR
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d1/dea/mat_8cpp.html">mat.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_9f3f5f379b00f30bd571e387e5b438c1.html">basic-mutable-matrices</a></li><li class="navelem"><a class="el" href="../../d1/dea/mat_8cpp.html">mat.cpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:11 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

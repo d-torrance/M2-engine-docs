@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_a8fe441981d
         <tr>
           <td class="memname"><a class="el" href="../../d1/da0/classint.html">int</a> IM2_MutableMatrix_n_rows </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dc/db8/class_mutable_matrix.html">MutableMatrix</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dc/db8/class_mutable_matrix.html">MutableMatrix</a> *&#160;</td>
           <td class="paramname"><em>M</em></td><td>)</td>
           <td></td>
         </tr>
@@ -107,12 +107,13 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_a8fe441981d
 
 <p class="definition">Definition at line <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../d3/dc5/mutable-matrix_8cpp_source.html">mutable-matrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  109</span>{</div>
-<div class="line"><span class="lineno">  110</span>  <span class="keywordtype">size_t</span> nrows = M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">n_rows</a>();</div>
-<div class="line"><span class="lineno">  111</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(nrows);</div>
+<div class="line"><span class="lineno">  110</span>  <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nrows</a> = M-&gt;<a class="code hl_function" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">n_rows</a>();</div>
+<div class="line"><span class="lineno">  111</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nrows</a>);</div>
 <div class="line"><span class="lineno">  112</span>}</div>
 <div class="ttc" id="aclass_mutable_matrix_a01144944f09b10b128272fc5c2844a32_html_a01144944f09b10b128272fc5c2844a32"><div class="ttname"><a href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">MutableMatrix::n_rows</a></div><div class="ttdeci">virtual size_t n_rows() const =0</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">MutableMatrix::n_rows()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../dc/db8/class_mutable_matrix_a01144944f09b10b128272fc5c2844a32.html#a01144944f09b10b128272fc5c2844a32">MutableMatrix::n_rows()</a>.</p>
 
 </div>
 </div>
@@ -122,7 +123,7 @@ $(document).ready(function(){initNavTree('d3/dc5/mutable-matrix_8cpp_a8fe441981d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d3/dc5/mutable-matrix_8cpp.html">mutable-matrix.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

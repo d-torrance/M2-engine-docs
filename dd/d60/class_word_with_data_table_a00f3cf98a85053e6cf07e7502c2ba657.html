@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('dd/d60/class_word_with_data_table_a00f
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td class="memname">std::ostream &amp; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">operator</a>&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em>, </td>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('dd/d60/class_word_with_data_table_a00f
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/d60/class_word_with_data_table.html">WordWithDataTable</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/d60/class_word_with_data_table.html">WordWithDataTable</a> &amp;&#160;</td>
           <td class="paramname"><em>wordWithDataTable</em>&#160;</td>
         </tr>
         <tr>
@@ -125,16 +125,17 @@ $(document).ready(function(){initNavTree('dd/d60/class_word_with_data_table_a00f
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d61/_word_table_8cpp_source.html#l00264">264</a> of file <a class="el" href="../../d6/d61/_word_table_8cpp_source.html">WordTable.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  265</span>{</div>
-<div class="line"><span class="lineno">  266</span>  <span class="keywordflow">if</span> (wordTable.mMonomials.size() == 0) <span class="keywordflow">return</span> o;</div>
+<div class="line"><span class="lineno">  266</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">wordTable</a>.mMonomials.size() == 0) <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a>;</div>
 <div class="line"><span class="lineno">  267</span> </div>
 <div class="line"><span class="lineno">  268</span>  <span class="keywordtype">int</span> j = 0;</div>
-<div class="line"><span class="lineno">  269</span>  <span class="keywordflow">for</span> (; j &lt; wordTable.mMonomials.size() - 1; ++j)</div>
+<div class="line"><span class="lineno">  269</span>  <span class="keywordflow">for</span> (; j &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">wordTable</a>.mMonomials.size() - 1; ++j)</div>
 <div class="line"><span class="lineno">  270</span>    {</div>
-<div class="line"><span class="lineno">  271</span>      o &lt;&lt; wordTable.mMonomials[j] &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><span class="lineno">  271</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">wordTable</a>.mMonomials[j] &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
 <div class="line"><span class="lineno">  272</span>    }</div>
-<div class="line"><span class="lineno">  273</span>  o &lt;&lt; wordTable.mMonomials[j];</div>
-<div class="line"><span class="lineno">  274</span>  <span class="keywordflow">return</span> o;</div>
+<div class="line"><span class="lineno">  273</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">wordTable</a>.mMonomials[j];</div>
+<div class="line"><span class="lineno">  274</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a>;</div>
 <div class="line"><span class="lineno">  275</span>}</div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -144,7 +145,7 @@ $(document).ready(function(){initNavTree('dd/d60/class_word_with_data_table_a00f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d60/class_word_with_data_table.html">WordWithDataTable</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

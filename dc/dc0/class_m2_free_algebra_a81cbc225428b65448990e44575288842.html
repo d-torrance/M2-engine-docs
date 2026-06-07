@@ -101,13 +101,13 @@ $(document).ready(function(){initNavTree('dc/dc0/class_m2_free_algebra_a81cbc225
         <tr>
           <td class="memname"><a class="el" href="../../d1/da0/classint.html">int</a> M2FreeAlgebra::compare_elems </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a>&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a>&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -128,14 +128,15 @@ $(document).ready(function(){initNavTree('dc/dc0/class_m2_free_algebra_a81cbc225
 <p class="definition">Definition at line <a class="el" href="../../df/d52/_m2_free_algebra_8cpp_source.html#l00191">191</a> of file <a class="el" href="../../df/d52/_m2_free_algebra_8cpp_source.html">M2FreeAlgebra.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  192</span>{</div>
 <div class="line"><span class="lineno">  193</span>  <span class="keyword">auto</span> f = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>*<span class="keyword">&gt;</span>(f1.get_Poly());</div>
-<div class="line"><span class="lineno">  194</span>  <span class="keyword">auto</span> g = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>*<span class="keyword">&gt;</span>(g1.get_Poly());</div>
+<div class="line"><span class="lineno">  194</span>  <span class="keyword">auto</span> g = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a>*<span class="keyword">&gt;</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">g1</a>.get_Poly());</div>
 <div class="line"><span class="lineno">  195</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../dc/dc0/class_m2_free_algebra_a5dc8ed403e1126aca5b3d56c5f63b374.html#a5dc8ed403e1126aca5b3d56c5f63b374">freeAlgebra</a>().<a class="code hl_function" href="../../de/dbd/class_free_algebra_ac0836fb3874f893383f5df64373a3e3b.html#ac0836fb3874f893383f5df64373a3e3b">compare_elems</a>(*f,*g);</div>
 <div class="line"><span class="lineno">  196</span>}</div>
 <div class="ttc" id="a_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30_html_aa2e1f459d90ab6e50fc0b8c642dceb30"><div class="ttname"><a href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a></div><div class="ttdeci">Polynomial&lt; CoefficientRingType &gt; Poly</div><div class="ttdef"><b>Definition</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00265">Polynomial.hpp:265</a></div></div>
 <div class="ttc" id="aclass_free_algebra_ac0836fb3874f893383f5df64373a3e3b_html_ac0836fb3874f893383f5df64373a3e3b"><div class="ttname"><a href="../../de/dbd/class_free_algebra_ac0836fb3874f893383f5df64373a3e3b.html#ac0836fb3874f893383f5df64373a3e3b">FreeAlgebra::compare_elems</a></div><div class="ttdeci">int compare_elems(const Poly &amp;f, const Poly &amp;g) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00260">FreeAlgebra.cpp:260</a></div></div>
 <div class="ttc" id="aclass_m2_free_algebra_a5dc8ed403e1126aca5b3d56c5f63b374_html_a5dc8ed403e1126aca5b3d56c5f63b374"><div class="ttname"><a href="../../dc/dc0/class_m2_free_algebra_a5dc8ed403e1126aca5b3d56c5f63b374.html#a5dc8ed403e1126aca5b3d56c5f63b374">M2FreeAlgebra::freeAlgebra</a></div><div class="ttdeci">const FreeAlgebra &amp; freeAlgebra() const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d34/_m2_free_algebra_8hpp_source.html#l00073">M2FreeAlgebra.hpp:73</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../de/dbd/class_free_algebra_ac0836fb3874f893383f5df64373a3e3b.html#ac0836fb3874f893383f5df64373a3e3b">FreeAlgebra::compare_elems()</a>, <a class="el" href="../../dc/dc0/class_m2_free_algebra_a5dc8ed403e1126aca5b3d56c5f63b374.html#a5dc8ed403e1126aca5b3d56c5f63b374">freeAlgebra()</a>, and <a class="el" href="../../d5/d64/unionring__elem_af1b89d106cf5a41f44c69092b44a8871.html#af1b89d106cf5a41f44c69092b44a8871">ring_elem::get_Poly()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/dbd/class_free_algebra_ac0836fb3874f893383f5df64373a3e3b.html#ac0836fb3874f893383f5df64373a3e3b">FreeAlgebra::compare_elems()</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../dc/dc0/class_m2_free_algebra_a5dc8ed403e1126aca5b3d56c5f63b374.html#a5dc8ed403e1126aca5b3d56c5f63b374">freeAlgebra()</a>, and <a class="el" href="../../d5/d64/unionring__elem_af1b89d106cf5a41f44c69092b44a8871.html#af1b89d106cf5a41f44c69092b44a8871">ring_elem::get_Poly()</a>.</p>
 
 </div>
 </div>
@@ -145,7 +146,7 @@ $(document).ready(function(){initNavTree('dc/dc0/class_m2_free_algebra_a81cbc225
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/dc0/class_m2_free_algebra.html">M2FreeAlgebra</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

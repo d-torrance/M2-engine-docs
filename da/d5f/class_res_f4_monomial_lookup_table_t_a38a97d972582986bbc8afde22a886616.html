@@ -95,13 +95,13 @@ $(document).ready(function(){initNavTree('da/d5f/class_res_f4_monomial_lookup_ta
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Key &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> Key &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../da/d5f/class_res_f4_monomial_lookup_table_t.html">ResF4MonomialLookupTableT</a>&lt; Key &gt;::reset_expvector </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> <a class="el" href="../../da/d5f/class_res_f4_monomial_lookup_table_t.html">ResF4MonomialLookupTableT</a>&lt; Key &gt;::reset_expvector </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_ab870aca99d5d88a77d297d48d08f6df6.html#ab870aca99d5d88a77d297d48d08f6df6">const_varpower_monomial</a>&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -117,14 +117,17 @@ template&lt;typename Key &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_source.html#l00266">266</a> of file <a class="el" href="../../d3/d2d/res-f4-monlookup_8cpp_source.html">res-f4-monlookup.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  268</span>{</div>
-<div class="line"><span class="lineno">  269</span>  <span class="keywordtype">int</span> nparts = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(*m++);</div>
-<div class="line"><span class="lineno">  270</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = nparts; i &gt; 0; i--, m += 2)</div>
+<div class="line"><span class="lineno">  269</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nparts</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(*m++);</div>
+<div class="line"><span class="lineno">  270</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nparts</a>; i &gt; 0; i--, m += 2)</div>
 <div class="line"><span class="lineno">  271</span>    {</div>
 <div class="line"><span class="lineno">  272</span>      <a class="code hl_variable" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_abd7c1d1a2952e24f27820010363f1550.html#abd7c1d1a2952e24f27820010363f1550">exp0</a>[*m] = 0;</div>
 <div class="line"><span class="lineno">  273</span>    }</div>
 <div class="line"><span class="lineno">  274</span>}</div>
 <div class="ttc" id="aclass_res_f4_monomial_lookup_table_t_abd7c1d1a2952e24f27820010363f1550_html_abd7c1d1a2952e24f27820010363f1550"><div class="ttname"><a href="../../da/d5f/class_res_f4_monomial_lookup_table_t_abd7c1d1a2952e24f27820010363f1550.html#abd7c1d1a2952e24f27820010363f1550">ResF4MonomialLookupTableT::exp0</a></div><div class="ttdeci">ntuple_word * exp0</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d79/res-f4-monlookup_8hpp_source.html#l00060">res-f4-monlookup.hpp:60</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_a84f527c5ba523cb91f1cd306fb883776.html#a84f527c5ba523cb91f1cd306fb883776">ResF4MonomialLookupTableT&lt; Key &gt;::find_all_divisors_vp()</a>, and <a class="el" href="../../da/d5f/class_res_f4_monomial_lookup_table_t_ac30f1b5c31d18b16812c0a67bb70813d.html#ac30f1b5c31d18b16812c0a67bb70813d">ResF4MonomialLookupTableT&lt; Key &gt;::find_one_divisor_vp()</a>.</p>
 
 </div>
@@ -135,7 +138,7 @@ template&lt;typename Key &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d5f/class_res_f4_monomial_lookup_table_t.html">ResF4MonomialLookupTableT</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

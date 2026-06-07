@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/gb-toric.hpp File Reference</title>
+<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/groebner-computations/gb-toric.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -96,8 +96,8 @@ $(document).ready(function(){initNavTree('de/d75/gb-toric_8hpp.html','../../'); 
   <div class="headertitle"><div class="title">gb-toric.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/ddf/comp-gb_8hpp_source.html">comp-gb.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/ddf/comp-gb_8hpp_source.html">groebner-computations/comp-gb.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrices/matrix.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../de/d75/gb-toric_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -133,16 +133,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a82ca405a1ac4b899cc5b9230767ad0d1" id="r_a82ca405a1ac4b899cc5b9230767ad0d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d75/gb-toric_8hpp_a82ca405a1ac4b899cc5b9230767ad0d1.html#a82ca405a1ac4b899cc5b9230767ad0d1">GB_FLAG_IS_HOMOGENEOUS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a82ca405a1ac4b899cc5b9230767ad0d1" id="r_a82ca405a1ac4b899cc5b9230767ad0d1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d75/gb-toric_8hpp_a82ca405a1ac4b899cc5b9230767ad0d1.html#a82ca405a1ac4b899cc5b9230767ad0d1">GB_FLAG_IS_HOMOGENEOUS</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a82ca405a1ac4b899cc5b9230767ad0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad761315a64e816d8e19c3456df7a4898" id="r_ad761315a64e816d8e19c3456df7a4898"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d75/gb-toric_8hpp_ad761315a64e816d8e19c3456df7a4898.html#ad761315a64e816d8e19c3456df7a4898">GB_FLAG_IS_NONDEGENERATE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:ad761315a64e816d8e19c3456df7a4898" id="r_ad761315a64e816d8e19c3456df7a4898"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d75/gb-toric_8hpp_ad761315a64e816d8e19c3456df7a4898.html#ad761315a64e816d8e19c3456df7a4898">GB_FLAG_IS_NONDEGENERATE</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:ad761315a64e816d8e19c3456df7a4898"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a326a54b33781c76298166bb81a208c39" id="r_a326a54b33781c76298166bb81a208c39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d75/gb-toric_8hpp_a326a54b33781c76298166bb81a208c39.html#a326a54b33781c76298166bb81a208c39">GB_FLAG_BIGCELL</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memitem:a326a54b33781c76298166bb81a208c39" id="r_a326a54b33781c76298166bb81a208c39"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d75/gb-toric_8hpp_a326a54b33781c76298166bb81a208c39.html#a326a54b33781c76298166bb81a208c39">GB_FLAG_BIGCELL</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:a326a54b33781c76298166bb81a208c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a3667498ea82610ba25996f8ccd3d1dc5" id="r_a3667498ea82610ba25996f8ccd3d1dc5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d1/da0/classint.html">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d75/gb-toric_8hpp_a3667498ea82610ba25996f8ccd3d1dc5.html#a3667498ea82610ba25996f8ccd3d1dc5">monomial0</a></td></tr>
+<tr class="memitem:a3667498ea82610ba25996f8ccd3d1dc5" id="r_a3667498ea82610ba25996f8ccd3d1dc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typedef</a> <a class="el" href="../../d1/da0/classint.html">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d75/gb-toric_8hpp_a3667498ea82610ba25996f8ccd3d1dc5.html#a3667498ea82610ba25996f8ccd3d1dc5">monomial0</a></td></tr>
 <tr class="separator:a3667498ea82610ba25996f8ccd3d1dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -150,8 +150,8 @@ Typedefs</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../de/d75/gb-toric_8hpp.html">gb-toric.hpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_64a5a84e685b0d343f77bbf9741b61a7.html">groebner-computations</a></li><li class="navelem"><a class="el" href="../../de/d75/gb-toric_8hpp.html">gb-toric.hpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

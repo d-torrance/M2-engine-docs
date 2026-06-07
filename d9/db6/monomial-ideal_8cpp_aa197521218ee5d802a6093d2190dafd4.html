@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('d9/db6/monomial-ideal_8cpp_aa197521218
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> * IM2_MonomialIdeal_borel </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> * IM2_MonomialIdeal_borel </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *&#160;</td>
           <td class="paramname"><em>I</em></td><td>)</td>
           <td></td>
         </tr>
@@ -109,12 +109,12 @@ $(document).ready(function(){initNavTree('d9/db6/monomial-ideal_8cpp_aa197521218
 <div class="fragment"><div class="line"><span class="lineno">  198</span>{</div>
 <div class="line"><span class="lineno">  199</span>  <span class="keywordflow">try</span></div>
 <div class="line"><span class="lineno">  200</span>    {</div>
-<div class="line"><span class="lineno">  201</span>      <a class="code hl_class" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = I-&gt;<a class="code hl_function" href="../../df/ddb/class_monomial_ideal_ace268b0b230a62016132569aed1d3248.html#ace268b0b230a62016132569aed1d3248">borel</a>();</div>
+<div class="line"><span class="lineno">  201</span>      <a class="code hl_class" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> *<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">I</a>-&gt;<a class="code hl_function" href="../../df/ddb/class_monomial_ideal_ace268b0b230a62016132569aed1d3248.html#ace268b0b230a62016132569aed1d3248">borel</a>();</div>
 <div class="line"><span class="lineno">  202</span>      <a class="code hl_function" href="../../db/de9/finalize_8cpp_a6501d4db829e3bfb2219f4850e8d224c.html#a6501d4db829e3bfb2219f4850e8d224c">intern_monideal</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>);</div>
 <div class="line"><span class="lineno">  203</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
-<div class="line"><span class="lineno">  204</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; e)</div>
+<div class="line"><span class="lineno">  204</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a>&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>)</div>
 <div class="line"><span class="lineno">  205</span>    {</div>
-<div class="line"><span class="lineno">  206</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(e.what());</div>
+<div class="line"><span class="lineno">  206</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>.what());</div>
 <div class="line"><span class="lineno">  207</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  208</span>  }</div>
 <div class="line"><span class="lineno">  209</span>}</div>
@@ -123,9 +123,10 @@ $(document).ready(function(){initNavTree('d9/db6/monomial-ideal_8cpp_aa197521218
 <div class="ttc" id="afinalize_8cpp_a6501d4db829e3bfb2219f4850e8d224c_html_a6501d4db829e3bfb2219f4850e8d224c"><div class="ttname"><a href="../../db/de9/finalize_8cpp_a6501d4db829e3bfb2219f4850e8d224c.html#a6501d4db829e3bfb2219f4850e8d224c">intern_monideal</a></div><div class="ttdeci">void intern_monideal(MonomialIdeal *G)</div><div class="ttdef"><b>Definition</b> <a href="../../db/de9/finalize_8cpp_source.html#l00055">finalize.cpp:55</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="astructexc_1_1engine__error_html"><div class="ttname"><a href="../../da/dbb/structexc_1_1engine__error.html">exc::engine_error</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d49/exceptions_8hpp_source.html#l00008">exceptions.hpp:9</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/ddb/class_monomial_ideal_ace268b0b230a62016132569aed1d3248.html#ace268b0b230a62016132569aed1d3248">MonomialIdeal::borel()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, <a class="el" href="../../db/de9/finalize_8cpp_a6501d4db829e3bfb2219f4850e8d224c.html#a6501d4db829e3bfb2219f4850e8d224c">intern_monideal()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/ddb/class_monomial_ideal_ace268b0b230a62016132569aed1d3248.html#ace268b0b230a62016132569aed1d3248">MonomialIdeal::borel()</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, <a class="el" href="../../db/de9/finalize_8cpp_a6501d4db829e3bfb2219f4850e8d224c.html#a6501d4db829e3bfb2219f4850e8d224c">intern_monideal()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 </div>
 </div>
@@ -135,7 +136,7 @@ $(document).ready(function(){initNavTree('d9/db6/monomial-ideal_8cpp_aa197521218
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d9/db6/monomial-ideal_8cpp.html">monomial-ideal.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

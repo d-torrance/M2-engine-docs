@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('d3/d9f/class_basic_poly_aee1139f5125ea
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void BasicPoly::debug_display </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> BasicPoly::debug_display </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
@@ -107,31 +107,32 @@ $(document).ready(function(){initNavTree('d3/d9f/class_basic_poly_aee1139f5125ea
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dae/_basic_poly_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d5/dae/_basic_poly_8cpp_source.html">BasicPoly.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   32</span>  {</div>
-<div class="line"><span class="lineno">   33</span>    o &lt;&lt; <span class="stringliteral">&quot;Poly([&quot;</span>;</div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordtype">bool</span> first_term = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   33</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <span class="stringliteral">&quot;Poly([&quot;</span>;</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">first_term</a> = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   35</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> a : <a class="code hl_variable" href="../../d3/d9f/class_basic_poly_ad5e6df290f9c75deda9574600ef77ad5.html#ad5e6df290f9c75deda9574600ef77ad5">mCoefficients</a>)</div>
 <div class="line"><span class="lineno">   36</span>      {</div>
-<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">if</span> (first_term) </div>
-<div class="line"><span class="lineno">   38</span>          first_term = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">first_term</a>) </div>
+<div class="line"><span class="lineno">   38</span>          <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">first_term</a> = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   39</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   40</span>          o &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
-<div class="line"><span class="lineno">   41</span>        o &lt;&lt; a;</div>
+<div class="line"><span class="lineno">   40</span>          <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><span class="lineno">   41</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; a;</div>
 <div class="line"><span class="lineno">   42</span>      }</div>
-<div class="line"><span class="lineno">   43</span>    o &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordtype">int</span> nextloc = 0;</div>
-<div class="line"><span class="lineno">   45</span>    o &lt;&lt; <span class="stringliteral">&quot;  monomials[&quot;</span>;</div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nextloc</a> = 0;</div>
+<div class="line"><span class="lineno">   45</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <span class="stringliteral">&quot;  monomials[&quot;</span>;</div>
 <div class="line"><span class="lineno">   46</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code hl_variable" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>.size(); ++i)</div>
 <div class="line"><span class="lineno">   47</span>      {</div>
-<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">if</span> (i == nextloc) o &lt;&lt; <span class="stringliteral">&quot; .&quot;</span>;</div>
-<div class="line"><span class="lineno">   49</span>        nextloc += <a class="code hl_variable" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>[i];</div>
-<div class="line"><span class="lineno">   50</span>        o &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>[i];</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">if</span> (i == <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nextloc</a>) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <span class="stringliteral">&quot; .&quot;</span>;</div>
+<div class="line"><span class="lineno">   49</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nextloc</a> += <a class="code hl_variable" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>[i];</div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>[i];</div>
 <div class="line"><span class="lineno">   51</span>      }</div>
-<div class="line"><span class="lineno">   52</span>    o &lt;&lt; <span class="stringliteral">&quot;])&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   52</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <span class="stringliteral">&quot;])&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   53</span>  }</div>
-<div class="ttc" id="aclass_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c_html_a62c9a46760d40a4eb2bfc0bdf2b5d75c"><div class="ttname"><a href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">BasicPoly::mMonomials</a></div><div class="ttdeci">std::vector&lt; int &gt; mMonomials</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00018">BasicPoly.hpp:18</a></div></div>
-<div class="ttc" id="aclass_basic_poly_ad5e6df290f9c75deda9574600ef77ad5_html_ad5e6df290f9c75deda9574600ef77ad5"><div class="ttname"><a href="../../d3/d9f/class_basic_poly_ad5e6df290f9c75deda9574600ef77ad5.html#ad5e6df290f9c75deda9574600ef77ad5">BasicPoly::mCoefficients</a></div><div class="ttdeci">std::vector&lt; mpz_class &gt; mCoefficients</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00016">BasicPoly.hpp:16</a></div></div>
+<div class="ttc" id="aclass_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c_html_a62c9a46760d40a4eb2bfc0bdf2b5d75c"><div class="ttname"><a href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">BasicPoly::mMonomials</a></div><div class="ttdeci">std::vector&lt; int &gt; mMonomials</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00019">BasicPoly.hpp:19</a></div></div>
+<div class="ttc" id="aclass_basic_poly_ad5e6df290f9c75deda9574600ef77ad5_html_ad5e6df290f9c75deda9574600ef77ad5"><div class="ttname"><a href="../../d3/d9f/class_basic_poly_ad5e6df290f9c75deda9574600ef77ad5.html#ad5e6df290f9c75deda9574600ef77ad5">BasicPoly::mCoefficients</a></div><div class="ttdeci">std::vector&lt; mpz_class &gt; mCoefficients</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d65/_basic_poly_8hpp_source.html#l00017">BasicPoly.hpp:17</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d9f/class_basic_poly_ad5e6df290f9c75deda9574600ef77ad5.html#ad5e6df290f9c75deda9574600ef77ad5">mCoefficients</a>, and <a class="el" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d3/d9f/class_basic_poly_ad5e6df290f9c75deda9574600ef77ad5.html#ad5e6df290f9c75deda9574600ef77ad5">mCoefficients</a>, and <a class="el" href="../../d3/d9f/class_basic_poly_a62c9a46760d40a4eb2bfc0bdf2b5d75c.html#a62c9a46760d40a4eb2bfc0bdf2b5d75c">mMonomials</a>.</p>
 
 </div>
 </div>
@@ -141,7 +142,7 @@ $(document).ready(function(){initNavTree('d3/d9f/class_basic_poly_aee1139f5125ea
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d9f/class_basic_poly.html">BasicPoly</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

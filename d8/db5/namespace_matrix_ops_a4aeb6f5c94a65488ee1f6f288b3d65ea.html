@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a4aeb6f5c9
         <tr>
           <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> MatrixOps::QR </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../df/dd2/lapack_8hpp_af08ee838e04db100344bab171255dbdc.html#af08ee838e04db100344bab171255dbdc">DMatRR</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../df/dd2/lapack_8hpp_af08ee838e04db100344bab171255dbdc.html#af08ee838e04db100344bab171255dbdc">DMatRR</a> &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
@@ -137,11 +137,12 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a4aeb6f5c9
 
 <p class="definition">Definition at line <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html#l01232">1232</a> of file <a class="el" href="../../d9/d8a/mat-linalg_8hpp_source.html">mat-linalg.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1233</span>{</div>
-<div class="line"><span class="lineno"> 1234</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/dd6/class_lapack_a5b5ced881564f3e639f5990b066f0e6e.html#a5b5ced881564f3e639f5990b066f0e6e">Lapack::QR</a>(&amp;A, &amp;Q, &amp;R, return_QR);</div>
+<div class="line"><span class="lineno"> 1234</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/dd6/class_lapack_a5b5ced881564f3e639f5990b066f0e6e.html#a5b5ced881564f3e639f5990b066f0e6e">Lapack::QR</a>(&amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a>, &amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Q</a>, &amp;R, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">return_QR</a>);</div>
 <div class="line"><span class="lineno"> 1235</span>}</div>
 <div class="ttc" id="aclass_lapack_a5b5ced881564f3e639f5990b066f0e6e_html_a5b5ced881564f3e639f5990b066f0e6e"><div class="ttname"><a href="../../df/dd6/class_lapack_a5b5ced881564f3e639f5990b066f0e6e.html#a5b5ced881564f3e639f5990b066f0e6e">Lapack::QR</a></div><div class="ttdeci">static bool QR(const DMatRR *A, DMatRR *Q, DMatRR *R, bool return_QR)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l00898">lapack.cpp:898</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/dd6/class_lapack_a5b5ced881564f3e639f5990b066f0e6e.html#a5b5ced881564f3e639f5990b066f0e6e">Lapack::QR()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../df/dd6/class_lapack_a5b5ced881564f3e639f5990b066f0e6e.html#a5b5ced881564f3e639f5990b066f0e6e">Lapack::QR()</a>.</p>
 
 </div>
 </div>
@@ -151,7 +152,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_a4aeb6f5c9
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

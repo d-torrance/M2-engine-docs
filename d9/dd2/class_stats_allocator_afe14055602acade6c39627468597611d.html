@@ -95,13 +95,13 @@ $(document).ready(function(){initNavTree('d9/dd2/class_stats_allocator_afe140556
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d9/dd2/class_stats_allocator.html">StatsAllocator</a>&lt; <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt;::deallocate </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> <a class="el" href="../../d9/dd2/class_stats_allocator.html">StatsAllocator</a>&lt; <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt;::deallocate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
@@ -127,14 +127,14 @@ template&lt;typename <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d97/myalloc_8hpp_source.html#l00075">75</a> of file <a class="el" href="../../d3/d97/myalloc_8hpp_source.html">myalloc.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   76</span>  {</div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_function" href="../../d4/d6d/class_alloc_logger_af9c6b46dbd1b16e054a09ebe9c6be0f9.html#af9c6b46dbd1b16e054a09ebe9c6be0f9">AllocLogger::logDealloc</a>(num, <span class="keyword">sizeof</span>(<a class="code hl_define" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>));</div>
-<div class="line"><span class="lineno">   78</span>    ::operator <span class="keyword">delete</span>(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_function" href="../../d4/d6d/class_alloc_logger_af9c6b46dbd1b16e054a09ebe9c6be0f9.html#af9c6b46dbd1b16e054a09ebe9c6be0f9">AllocLogger::logDealloc</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">num</a>, <span class="keyword">sizeof</span>(<a class="code hl_define" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>));</div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">::operator</a> <span class="keyword">delete</span>(p);</div>
 <div class="line"><span class="lineno">   79</span>  }</div>
 <div class="ttc" id="aclass_alloc_logger_af9c6b46dbd1b16e054a09ebe9c6be0f9_html_af9c6b46dbd1b16e054a09ebe9c6be0f9"><div class="ttname"><a href="../../d4/d6d/class_alloc_logger_af9c6b46dbd1b16e054a09ebe9c6be0f9.html#af9c6b46dbd1b16e054a09ebe9c6be0f9">AllocLogger::logDealloc</a></div><div class="ttdeci">static void logDealloc(size_t num, size_t sz)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d97/myalloc_8hpp_source.html#l00044">myalloc.hpp:44</a></div></div>
-<div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="atable_8c_a0acb682b8260ab1c60b918599864e2e5_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d33/table_8c_source.html#l00013">table.c:13</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d6d/class_alloc_logger_af9c6b46dbd1b16e054a09ebe9c6be0f9.html#af9c6b46dbd1b16e054a09ebe9c6be0f9">AllocLogger::logDealloc()</a>, <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, and <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d4/d6d/class_alloc_logger_af9c6b46dbd1b16e054a09ebe9c6be0f9.html#af9c6b46dbd1b16e054a09ebe9c6be0f9">AllocLogger::logDealloc()</a>, and <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>.</p>
 
 </div>
 </div>
@@ -144,7 +144,7 @@ template&lt;typename <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/dd2/class_stats_allocator.html">StatsAllocator</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

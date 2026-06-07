@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('d6/d10/class_f4_monomial_lookup_table_
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Key &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> Key &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -133,20 +133,20 @@ template&lt;typename Key &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/d46/f4-monlookup_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d8/d46/f4-monlookup_8cpp_source.html">f4-monlookup.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
-<div class="line"><span class="lineno">   37</span>  mi_node *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <span class="keyword">new</span> mi_node;</div>
-<div class="line"><span class="lineno">   38</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;var = v;</div>
-<div class="line"><span class="lineno">   39</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;exp = e;</div>
-<div class="line"><span class="lineno">   40</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;left = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   41</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;right = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   42</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;header = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   43</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;tag = <a class="code hl_enumvalue" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a67ca4f8d620b7d16c521b4165fde4cd9.html#a67ca4f8d620b7d16c521b4165fde4cd9a54882bdabd7be01dd7f4ec835f5a02ea">mi_node::leaf</a>;</div>
-<div class="line"><span class="lineno">   44</span>  <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;val.key = k;</div>
-<div class="line"><span class="lineno">   45</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
+<div class="line"><span class="lineno">   37</span>  mi_node *p = <span class="keyword">new</span> mi_node;</div>
+<div class="line"><span class="lineno">   38</span>  p-&gt;var = v;</div>
+<div class="line"><span class="lineno">   39</span>  p-&gt;exp = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>;</div>
+<div class="line"><span class="lineno">   40</span>  p-&gt;left = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   41</span>  p-&gt;right = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   42</span>  p-&gt;header = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   43</span>  p-&gt;tag = <a class="code hl_enumvalue" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_aef48befaecd19327041c658a63e2a1ff.html#aef48befaecd19327041c658a63e2a1ffa54882bdabd7be01dd7f4ec835f5a02ea">mi_node::leaf</a>;</div>
+<div class="line"><span class="lineno">   44</span>  p-&gt;val.key = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">k</a>;</div>
+<div class="line"><span class="lineno">   45</span>  <span class="keywordflow">return</span> p;</div>
 <div class="line"><span class="lineno">   46</span>}</div>
-<div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
-<div class="ttc" id="astruct_f4_monomial_lookup_table_t_1_1mi__node_a67ca4f8d620b7d16c521b4165fde4cd9_html_a67ca4f8d620b7d16c521b4165fde4cd9a54882bdabd7be01dd7f4ec835f5a02ea"><div class="ttname"><a href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a67ca4f8d620b7d16c521b4165fde4cd9.html#a67ca4f8d620b7d16c521b4165fde4cd9a54882bdabd7be01dd7f4ec835f5a02ea">F4MonomialLookupTableT::mi_node::leaf</a></div><div class="ttdeci">@ leaf</div><div class="ttdef"><b>Definition</b> <a href="../../db/da3/f4-monlookup_8hpp_source.html#l00022">f4-monlookup.hpp:22</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
+<div class="ttc" id="astruct_f4_monomial_lookup_table_t_1_1mi__node_aef48befaecd19327041c658a63e2a1ff_html_aef48befaecd19327041c658a63e2a1ffa54882bdabd7be01dd7f4ec835f5a02ea"><div class="ttname"><a href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_aef48befaecd19327041c658a63e2a1ff.html#aef48befaecd19327041c658a63e2a1ffa54882bdabd7be01dd7f4ec835f5a02ea">F4MonomialLookupTableT::mi_node::leaf</a></div><div class="ttdeci">@ leaf</div><div class="ttdef"><b>Definition</b> <a href="../../db/da3/f4-monlookup_8hpp_source.html#l00022">f4-monlookup.hpp:22</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_aacacf9e1032fe9416ce399e207cfe3bd.html#aacacf9e1032fe9416ce399e207cfe3bd">F4MonomialLookupTableT&lt; Key &gt;::mi_node::exp</a>, <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a02aaf919c0635f586acf6a31633c3d92.html#a02aaf919c0635f586acf6a31633c3d92">F4MonomialLookupTableT&lt; Key &gt;::mi_node::header</a>, <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_ad4f55b3019ebfb12e2182145b29b4f8b.html#ad4f55b3019ebfb12e2182145b29b4f8b">F4MonomialLookupTableT&lt; Key &gt;::mi_node::key</a>, <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_ab27237a816db25f23a8174edf8b26a59.html#ab27237a816db25f23a8174edf8b26a59">F4MonomialLookupTableT&lt; Key &gt;::mi_node::left</a>, <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_aa09dccc82e4d2bbb72badc416dfca882.html#aa09dccc82e4d2bbb72badc416dfca882">F4MonomialLookupTableT&lt; Key &gt;::mi_node::right</a>, <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a5d0e9a28bc8c54b81a459e718784e042.html#a5d0e9a28bc8c54b81a459e718784e042">F4MonomialLookupTableT&lt; Key &gt;::mi_node::tag</a>, <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_a31ddd0719a09534bb2aef427a036fbd6.html#a31ddd0719a09534bb2aef427a036fbd6">F4MonomialLookupTableT&lt; Key &gt;::mi_node::val</a>, and <a class="el" href="../../d9/dc7/struct_f4_monomial_lookup_table_t_1_1mi__node_acc48bfbd42687e45c28ee57b98289a24.html#acc48bfbd42687e45c28ee57b98289a24">F4MonomialLookupTableT&lt; Key &gt;::mi_node::var</a>.</p>
 
 </div>
 </div>
@@ -156,7 +156,7 @@ template&lt;typename Key &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d10/class_f4_monomial_lookup_table_t.html">F4MonomialLookupTableT</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

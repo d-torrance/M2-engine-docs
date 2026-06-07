@@ -99,15 +99,15 @@ $(document).ready(function(){initNavTree('da/d80/classnewf4_1_1_monomial_view_ae
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d9/db9/classbool.html">bool</a> newf4::MonomialView::monomialDivides </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../d9/db9/classbool.html">bool</a> newf4::MonomialView::monomialDivides </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view.html">MonomialView</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view.html">MonomialView</a> &amp;&#160;</td>
           <td class="paramname"><em>divisor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view.html">MonomialView</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view.html">MonomialView</a> &amp;&#160;</td>
           <td class="paramname"><em>divisee</em>&#160;</td>
         </tr>
         <tr>
@@ -123,32 +123,33 @@ $(document).ready(function(){initNavTree('da/d80/classnewf4_1_1_monomial_view_ae
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d70/_monomial_view_8hpp_source.html#l00050">50</a> of file <a class="el" href="../../da/d70/_monomial_view_8hpp_source.html">MonomialView.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>  {</div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (divisor.size() &gt; divisee.size()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keyword">auto</span> divisorIt = divisor.begin();</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keyword">auto</span> diviseeIt = divisee.begin();</div>
-<div class="line"><span class="lineno">   56</span>    <span class="keyword">auto</span> divisorEnd = divisor.end();</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keyword">auto</span> diviseeEnd = divisee.end();</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">while</span> (divisorIt != divisorEnd)</div>
-<div class="line"><span class="lineno">   59</span>    {</div>
-<div class="line"><span class="lineno">   60</span>      <span class="keyword">auto</span> divisorVar = divisorIt.var();</div>
-<div class="line"><span class="lineno">   61</span>      <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
-<div class="line"><span class="lineno">   62</span>      {</div>
-<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (diviseeIt == diviseeEnd) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">if</span> (diviseeIt.var() &gt; divisorVar) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">if</span> (diviseeIt.var() == divisorVar) <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   66</span>        ++diviseeIt;</div>
-<div class="line"><span class="lineno">   67</span>      }</div>
-<div class="line"><span class="lineno">   68</span>      <span class="comment">// at this point, both diviseeIt.var() and divisorIt.var() are equal</span></div>
-<div class="line"><span class="lineno">   69</span>      <span class="keywordflow">if</span> (divisorIt.power() &gt; diviseeIt.power()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   70</span>      ++divisorIt;</div>
-<div class="line"><span class="lineno">   71</span>      ++diviseeIt;</div>
-<div class="line"><span class="lineno">   72</span>    }</div>
-<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   74</span>  }</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d70/_monomial_view_8hpp_source.html#l00051">51</a> of file <a class="el" href="../../da/d70/_monomial_view_8hpp_source.html">MonomialView.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>  {</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisor</a>.size() &gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisee</a>.size()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisorIt</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisor</a>.begin();</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">diviseeIt</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisee</a>.begin();</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisorEnd</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisor</a>.end();</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">diviseeEnd</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisee</a>.end();</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">while</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisorIt</a> != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisorEnd</a>)</div>
+<div class="line"><span class="lineno">   60</span>    {</div>
+<div class="line"><span class="lineno">   61</span>      <span class="keyword">auto</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisorVar</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisorIt</a>.var();</div>
+<div class="line"><span class="lineno">   62</span>      <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
+<div class="line"><span class="lineno">   63</span>      {</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">diviseeIt</a> == <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">diviseeEnd</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">diviseeIt</a>.var() &gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisorVar</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">diviseeIt</a>.var() == <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisorVar</a>) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   67</span>        ++<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">diviseeIt</a>;</div>
+<div class="line"><span class="lineno">   68</span>      }</div>
+<div class="line"><span class="lineno">   69</span>      <span class="comment">// at this point, both diviseeIt.var() and divisorIt.var() are equal</span></div>
+<div class="line"><span class="lineno">   70</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisorIt</a>.power() &gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">diviseeIt</a>.power()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   71</span>      ++<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">divisorIt</a>;</div>
+<div class="line"><span class="lineno">   72</span>      ++<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">diviseeIt</a>;</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   75</span>  }</div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view_a713ad7180edaecbd813181327d9f4273.html#a713ad7180edaecbd813181327d9f4273">begin()</a>, <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view_a8cc3f7e15991947a17025d991516b041.html#a8cc3f7e15991947a17025d991516b041">end()</a>, and <a class="el" href="../../da/d80/classnewf4_1_1_monomial_view_ac5b8196f5540c82dc210c7fae05a27db.html#ac5b8196f5540c82dc210c7fae05a27db">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d90/classnewf4_1_1_monomial_lookup_table_ae58a99293e21efcc0e4f900a39a9b1a3.html#ae58a99293e21efcc0e4f900a39a9b1a3">newf4::MonomialLookupTable::findAllDivisees()</a>, <a class="el" href="../../db/d90/classnewf4_1_1_monomial_lookup_table_af09bdbceb3819a6a457f5e605f1b5f33.html#af09bdbceb3819a6a457f5e605f1b5f33">newf4::MonomialLookupTable::findAllDivisors()</a>, <a class="el" href="../../d1/d26/_new_f4_test_8cpp_a81e1774b7822e16338b9b58e1407fbb5.html#a81e1774b7822e16338b9b58e1407fbb5">TEST()</a>, and <a class="el" href="../../d1/d26/_new_f4_test_8cpp_a3acddebfd667dc54d9793914fa3ffb0b.html#a3acddebfd667dc54d9793914fa3ffb0b">TEST()</a>.</p>
 
@@ -160,7 +161,7 @@ $(document).ready(function(){initNavTree('da/d80/classnewf4_1_1_monomial_view_ae
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/db5/namespacenewf4.html">newf4</a></li><li class="navelem"><a class="el" href="../../da/d80/classnewf4_1_1_monomial_view.html">MonomialView</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -130,32 +130,35 @@ $(document).ready(function(){initNavTree('d4/d23/dpoly_8cpp_aaf235cbe153c2735142
 <p class="definition">Definition at line <a class="el" href="../../d4/d23/dpoly_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../d4/d23/dpoly_8cpp_source.html">dpoly.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
 <div class="line"><span class="lineno">   16</span>  <span class="keywordtype">long</span> g;</div>
-<div class="line"><span class="lineno">   17</span>  <span class="keywordtype">long</span> q;</div>
-<div class="line"><span class="lineno">   18</span>  <span class="keywordtype">long</span> u1, v1, g1;</div>
-<div class="line"><span class="lineno">   19</span>  <span class="keywordtype">long</span> utemp, vtemp, gtemp;</div>
+<div class="line"><span class="lineno">   17</span>  <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a>;</div>
+<div class="line"><span class="lineno">   18</span>  <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">u1</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">v1</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">g1</a>;</div>
+<div class="line"><span class="lineno">   19</span>  <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">utemp</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">vtemp</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gtemp</a>;</div>
 <div class="line"><span class="lineno">   20</span> </div>
-<div class="line"><span class="lineno">   21</span>  g1 = b;</div>
-<div class="line"><span class="lineno">   22</span>  u1 = 0;</div>
-<div class="line"><span class="lineno">   23</span>  v1 = 1;</div>
+<div class="line"><span class="lineno">   21</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">g1</a> = b;</div>
+<div class="line"><span class="lineno">   22</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">u1</a> = 0;</div>
+<div class="line"><span class="lineno">   23</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">v1</a> = 1;</div>
 <div class="line"><span class="lineno">   24</span>  g = a;</div>
-<div class="line"><span class="lineno">   25</span>  u = 1;</div>
+<div class="line"><span class="lineno">   25</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">u</a> = 1;</div>
 <div class="line"><span class="lineno">   26</span>  v = 0;</div>
-<div class="line"><span class="lineno">   27</span>  <span class="keywordflow">while</span> (g1 != 0)</div>
+<div class="line"><span class="lineno">   27</span>  <span class="keywordflow">while</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">g1</a> != 0)</div>
 <div class="line"><span class="lineno">   28</span>    {</div>
-<div class="line"><span class="lineno">   29</span>      q = g / g1;</div>
-<div class="line"><span class="lineno">   30</span>      gtemp = g - q * g1;</div>
-<div class="line"><span class="lineno">   31</span>      utemp = u - q * u1;</div>
-<div class="line"><span class="lineno">   32</span>      vtemp = v - q * v1;</div>
-<div class="line"><span class="lineno">   33</span>      g = g1;</div>
-<div class="line"><span class="lineno">   34</span>      u = u1;</div>
-<div class="line"><span class="lineno">   35</span>      v = v1;</div>
-<div class="line"><span class="lineno">   36</span>      g1 = gtemp;</div>
-<div class="line"><span class="lineno">   37</span>      u1 = utemp;</div>
-<div class="line"><span class="lineno">   38</span>      v1 = vtemp;</div>
+<div class="line"><span class="lineno">   29</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a> = g / <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">g1</a>;</div>
+<div class="line"><span class="lineno">   30</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gtemp</a> = g - <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a> * <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">g1</a>;</div>
+<div class="line"><span class="lineno">   31</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">utemp</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">u</a> - <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a> * <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">u1</a>;</div>
+<div class="line"><span class="lineno">   32</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">vtemp</a> = v - <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a> * <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">v1</a>;</div>
+<div class="line"><span class="lineno">   33</span>      g = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">g1</a>;</div>
+<div class="line"><span class="lineno">   34</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">u</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">u1</a>;</div>
+<div class="line"><span class="lineno">   35</span>      v = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">v1</a>;</div>
+<div class="line"><span class="lineno">   36</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">g1</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">gtemp</a>;</div>
+<div class="line"><span class="lineno">   37</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">u1</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">utemp</a>;</div>
+<div class="line"><span class="lineno">   38</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">v1</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">vtemp</a>;</div>
 <div class="line"><span class="lineno">   39</span>    }</div>
 <div class="line"><span class="lineno">   40</span>  <span class="keywordflow">return</span> g;</div>
 <div class="line"><span class="lineno">   41</span>}</div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="../../d4/d23/dpoly_8cpp_a8c4fcaf22837ffd9fee910a19ae9c0d7.html#a8c4fcaf22837ffd9fee910a19ae9c0d7">ZZp_INVERT()</a>.</p>
 
 </div>
@@ -165,8 +168,8 @@ $(document).ready(function(){initNavTree('d4/d23/dpoly_8cpp_aaf235cbe153c2735142
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d4/d23/dpoly_8cpp.html">dpoly.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_6df2cdd0f9fadc35f84e5151c08650b8.html">rings</a></li><li class="navelem"><a class="el" href="../../d4/d23/dpoly_8cpp.html">dpoly.cpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

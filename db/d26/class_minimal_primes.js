@@ -13,6 +13,7 @@ var class_minimal_primes =
     [ "max_indep_sets", "db/d26/class_minimal_primes_a82be87e2c477ce3d2d0817b44059ccc9.html#a82be87e2c477ce3d2d0817b44059ccc9", null ],
     [ "min_primes", "db/d26/class_minimal_primes_ad7e4669565c0acb7902e2586c6d636f2.html#ad7e4669565c0acb7902e2586c6d636f2", null ],
     [ "min_primes", "db/d26/class_minimal_primes_ae77843aea178e8b2688e75a38f33a432.html#ae77843aea178e8b2688e75a38f33a432", null ],
+    [ "VECTOR", "db/d26/class_minimal_primes_a04d827478ce03d6b425d2ccd154b2011.html#a04d827478ce03d6b425d2ccd154b2011", null ],
     [ "codim_limit", "db/d26/class_minimal_primes_a0890424811f4b144f5b911d81b42c89d.html#a0890424811f4b144f5b911d81b42c89d", null ],
     [ "depth_limit", "db/d26/class_minimal_primes_aa78563d5be67c76d1d70fd9add9398e6.html#aa78563d5be67c76d1d70fd9add9398e6", null ],
     [ "exp", "db/d26/class_minimal_primes_a16273326d505d981d20ce208e28cc310.html#a16273326d505d981d20ce208e28cc310", null ],
@@ -25,6 +26,5 @@ var class_minimal_primes =
     [ "n_minprimes", "db/d26/class_minimal_primes_a9ada46bf0253139643207044d25361fe.html#a9ada46bf0253139643207044d25361fe", null ],
     [ "nvars", "db/d26/class_minimal_primes_ab5574decb3c386150c5732e5f653f8c0.html#ab5574decb3c386150c5732e5f653f8c0", null ],
     [ "primes", "db/d26/class_minimal_primes_a1ada5c52885eb44c2f2cbeced61b9ee7.html#a1ada5c52885eb44c2f2cbeced61b9ee7", null ],
-    [ "Q", "db/d26/class_minimal_primes_a580165f7a6af10600073a73fbcb3335d.html#a580165f7a6af10600073a73fbcb3335d", null ],
-    [ "state", "db/d26/class_minimal_primes_a33e09f64c2115722cf5e55d1983b6963.html#a33e09f64c2115722cf5e55d1983b6963", null ]
+    [ "state", "db/d26/class_minimal_primes_a40c53554971e151547ab725df8431124.html#a40c53554971e151547ab725df8431124", null ]
 ];

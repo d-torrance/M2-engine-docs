@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_ac11eb4d2067afe35c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static CanonicalForm convertToFactory </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">CanonicalForm</a> convertToFactory </td>
           <td>(</td>
           <td class="paramtype">mpz_srcptr&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
@@ -115,39 +115,39 @@ $(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_ac11eb4d2067afe35c
 
 <p class="definition">Definition at line <a class="el" href="../../d2/dc2/factory_8cpp_source.html#l00312">312</a> of file <a class="el" href="../../d2/dc2/factory_8cpp_source.html">factory.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  313</span>{</div>
-<div class="line"><span class="lineno">  314</span>  <span class="keyword">struct </span><a class="code hl_struct" href="../../db/d86/structenter__factory.html">enter_factory</a> foo;</div>
-<div class="line"><span class="lineno">  315</span>  <span class="keywordtype">int</span> size = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;_mp_size;</div>
-<div class="line"><span class="lineno">  316</span>  <span class="keywordtype">int</span> sign = size &lt; 0 ? -1 : 1;</div>
+<div class="line"><span class="lineno">  314</span>  <span class="keyword">struct </span><a class="code hl_struct" href="../../db/d86/structenter__factory.html">enter_factory</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">foo</a>;</div>
+<div class="line"><span class="lineno">  315</span>  <span class="keywordtype">int</span> size = p-&gt;_mp_size;</div>
+<div class="line"><span class="lineno">  316</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">sign</a> = size &lt; 0 ? -1 : 1;</div>
 <div class="line"><span class="lineno">  317</span>  <span class="keywordflow">if</span> (size &lt; 0) size = -size;</div>
 <div class="line"><span class="lineno">  318</span>  <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a865d7112a2f9ad2435167669f680f535.html#a865d7112a2f9ad2435167669f680f535">base_set</a>)</div>
 <div class="line"><span class="lineno">  319</span>    {</div>
 <div class="line"><span class="lineno">  320</span>      <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a865d7112a2f9ad2435167669f680f535.html#a865d7112a2f9ad2435167669f680f535">base_set</a> = 1;</div>
 <div class="line"><span class="lineno">  321</span>      <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a> = 1;</div>
-<div class="line"><span class="lineno">  322</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; mp_bits_per_limb; i++) <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a> *= 2;</div>
+<div class="line"><span class="lineno">  322</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mp_bits_per_limb</a>; i++) <a class="code hl_variable" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a> *= 2;</div>
 <div class="line"><span class="lineno">  323</span>    }</div>
-<div class="line"><span class="lineno">  324</span>  CanonicalForm m = 0;</div>
+<div class="line"><span class="lineno">  324</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">CanonicalForm</a> m = 0;</div>
 <div class="line"><span class="lineno">  325</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = size - 1; i &gt;= 0; i--)</div>
 <div class="line"><span class="lineno">  326</span>    {</div>
-<div class="line"><span class="lineno">  327</span>      mp_limb_t digit = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;_mp_d[i];</div>
-<div class="line"><span class="lineno">  328</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = mp_bits_per_limb; j &gt; 0;)</div>
+<div class="line"><span class="lineno">  327</span>      mp_limb_t <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">digit</a> = p-&gt;_mp_d[i];</div>
+<div class="line"><span class="lineno">  328</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mp_bits_per_limb</a>; j &gt; 0;)</div>
 <div class="line"><span class="lineno">  329</span>        {</div>
-<div class="line"><span class="lineno">  330</span>          <span class="keywordtype">int</span> k = j - 16;</div>
-<div class="line"><span class="lineno">  331</span>          <span class="keywordflow">if</span> (k &lt; 0) k = 0;</div>
-<div class="line"><span class="lineno">  332</span>          <span class="keywordtype">int</span> n = j - k;</div>
-<div class="line"><span class="lineno">  333</span>          <span class="keywordtype">int</span> subbase = 1 &lt;&lt; n;</div>
-<div class="line"><span class="lineno">  334</span>          m = subbase * m + (<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(digit &gt;&gt; k) &amp; (subbase - 1));</div>
-<div class="line"><span class="lineno">  335</span>          j = k;</div>
+<div class="line"><span class="lineno">  330</span>          <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">k</a> = j - 16;</div>
+<div class="line"><span class="lineno">  331</span>          <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">k</a> &lt; 0) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">k</a> = 0;</div>
+<div class="line"><span class="lineno">  332</span>          <span class="keywordtype">int</span> n = j - <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">k</a>;</div>
+<div class="line"><span class="lineno">  333</span>          <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">subbase</a> = 1 &lt;&lt; n;</div>
+<div class="line"><span class="lineno">  334</span>          m = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">subbase</a> * m + (<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">digit</a> &gt;&gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">k</a>) &amp; (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">subbase</a> - 1));</div>
+<div class="line"><span class="lineno">  335</span>          j = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">k</a>;</div>
 <div class="line"><span class="lineno">  336</span>        }</div>
 <div class="line"><span class="lineno">  337</span>    }</div>
-<div class="line"><span class="lineno">  338</span>  m = m * sign;</div>
+<div class="line"><span class="lineno">  338</span>  m = m * <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">sign</a>;</div>
 <div class="line"><span class="lineno">  339</span>  <span class="keywordflow">return</span> m;</div>
 <div class="line"><span class="lineno">  340</span>}</div>
 <div class="ttc" id="afactory_8cpp_a4f4813fca034f6aee039295c5e1f4d48_html_a4f4813fca034f6aee039295c5e1f4d48"><div class="ttname"><a href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a></div><div class="ttdeci">static CanonicalForm base</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dc2/factory_8cpp_source.html#l00289">factory.cpp:289</a></div></div>
 <div class="ttc" id="afactory_8cpp_a865d7112a2f9ad2435167669f680f535_html_a865d7112a2f9ad2435167669f680f535"><div class="ttname"><a href="../../d2/dc2/factory_8cpp_a865d7112a2f9ad2435167669f680f535.html#a865d7112a2f9ad2435167669f680f535">base_set</a></div><div class="ttdeci">static int base_set</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dc2/factory_8cpp_source.html#l00288">factory.cpp:288</a></div></div>
-<div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="astructenter__factory_html"><div class="ttname"><a href="../../db/d86/structenter__factory.html">enter_factory</a></div><div class="ttdef"><b>Definition</b> <a href="../../d2/dc2/factory_8cpp_source.html#l00083">factory.cpp:84</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>, <a class="el" href="../../d2/dc2/factory_8cpp_a865d7112a2f9ad2435167669f680f535.html#a865d7112a2f9ad2435167669f680f535">base_set</a>, and <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/dc2/factory_8cpp_a4f4813fca034f6aee039295c5e1f4d48.html#a4f4813fca034f6aee039295c5e1f4d48">base</a>, <a class="el" href="../../d2/dc2/factory_8cpp_a865d7112a2f9ad2435167669f680f535.html#a865d7112a2f9ad2435167669f680f535">base_set</a>, and <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/dc2/factory_8cpp_a89e5ab8480eb0440fbef0ed42e501395.html#a89e5ab8480eb0440fbef0ed42e501395">convertToCFList()</a>, <a class="el" href="../../d2/dc2/factory_8cpp_ad189cd2538bef9cfb5279e9bcbafae34.html#ad189cd2538bef9cfb5279e9bcbafae34">convertToFactory()</a>, <a class="el" href="../../d2/dc2/factory_8cpp_a277eb27756a88af857772363f77b3e19.html#a277eb27756a88af857772363f77b3e19">rawCharSeries()</a>, <a class="el" href="../../d2/dc2/factory_8cpp_a169ce4c376b30270249b4551fdfb05f8.html#a169ce4c376b30270249b4551fdfb05f8">rawExtendedGCDRingElement()</a>, <a class="el" href="../../d2/dc2/factory_8cpp_a5f8ca45d58516b4ff1758715081e9795.html#a5f8ca45d58516b4ff1758715081e9795">rawFactorBase()</a>, <a class="el" href="../../d2/dc2/factory_8cpp_af04b0de40c3a49e0d68bca62193a8a8a.html#af04b0de40c3a49e0d68bca62193a8a8a">rawGCDRingElement()</a>, <a class="el" href="../../d2/dc2/factory_8cpp_abe0a4b95e1beb3d121ecb439fc0584ab.html#abe0a4b95e1beb3d121ecb439fc0584ab">rawIdealReorder()</a>, <a class="el" href="../../d2/dc2/factory_8cpp_a660a2555972e970e2e55578aee2cc514.html#a660a2555972e970e2e55578aee2cc514">rawPseudoRemainder()</a>, and <a class="el" href="../../d2/dc2/factory_8cpp_ac24c4350eccd2a37a0ffa1f35e2a6126.html#ac24c4350eccd2a37a0ffa1f35e2a6126">set_GF_minimal_poly()</a>.</p>
 
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('d2/dc2/factory_8cpp_ac11eb4d2067afe35c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d2/dc2/factory_8cpp.html">factory.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

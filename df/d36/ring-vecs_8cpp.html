@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/ring-vecs.cpp File Reference</title>
+<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/rings/ring-vecs.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,19 +94,19 @@ $(document).ready(function(){initNavTree('df/d36/ring-vecs_8cpp.html','../../');
   <div class="headertitle"><div class="title">ring-vecs.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../db/d10/ring_8hpp_source.html">ring.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../db/d10/ring_8hpp_source.html">rings/ring.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d5c/text-io_8hpp_source.html">text-io.hpp</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/d33/geovec_8hpp_source.html">geovec.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrices/matrix.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d33/geovec_8hpp_source.html">rings/geovec.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d0/dcf/ringmap_8hpp_source.html">ringmap.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/dc0/poly_8hpp_source.html">poly.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/dc0/poly_8hpp_source.html">rings/poly.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../df/d36/ring-vecs_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae807ccf8c6b59e940896bb8b24e78ba3" id="r_ae807ccf8c6b59e940896bb8b24e78ba3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/db9/classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d36/ring-vecs_8cpp_ae807ccf8c6b59e940896bb8b24e78ba3.html#ae807ccf8c6b59e940896bb8b24e78ba3">check_nterm_multiples</a> (const <a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a> *R, <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a> f1, <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a> g1, <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a> c, <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a> d)</td></tr>
+<tr class="memitem:ae807ccf8c6b59e940896bb8b24e78ba3" id="r_ae807ccf8c6b59e940896bb8b24e78ba3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../d9/db9/classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d36/ring-vecs_8cpp_ae807ccf8c6b59e940896bb8b24e78ba3.html#ae807ccf8c6b59e940896bb8b24e78ba3">check_nterm_multiples</a> (<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a> *R, <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a> f1, <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">g1</a>, <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>, <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">d</a>)</td></tr>
 <tr class="separator:ae807ccf8c6b59e940896bb8b24e78ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -114,8 +114,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../df/d36/ring-vecs_8cpp.html">ring-vecs.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_6df2cdd0f9fadc35f84e5151c08650b8.html">rings</a></li><li class="navelem"><a class="el" href="../../df/d36/ring-vecs_8cpp.html">ring-vecs.cpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

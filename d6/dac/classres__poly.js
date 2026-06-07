@@ -8,7 +8,7 @@ var classres__poly =
     [ "copy", "d6/dac/classres__poly_a1b2444cf0ce4c1b392242af25f2cf9a8.html#a1b2444cf0ce4c1b392242af25f2cf9a8", null ],
     [ "elem_text_out", "d6/dac/classres__poly_a1380dad30c0b60123ae7ca4746c415b9.html#a1380dad30c0b60123ae7ca4746c415b9", null ],
     [ "elem_text_out", "d6/dac/classres__poly_a9d2d5006c54d14f7c57732f5821503fb.html#a9d2d5006c54d14f7c57732f5821503fb", null ],
-    [ "from_vector", "d6/dac/classres__poly_a1e484b215718527ac0b959f7de614fa5.html#a1e484b215718527ac0b959f7de614fa5", null ],
+    [ "from_vector", "d6/dac/classres__poly_a4d76d31e3698b7018dc265d0f5159ddf.html#a4d76d31e3698b7018dc265d0f5159ddf", null ],
     [ "lead_component", "d6/dac/classres__poly_a86237d5ac29868e7c4bf79c9a985a49b.html#a86237d5ac29868e7c4bf79c9a985a49b", null ],
     [ "lead_monomial", "d6/dac/classres__poly_a04621317e0fa0817f3268e876a3f1736.html#a04621317e0fa0817f3268e876a3f1736", null ],
     [ "make_monic", "d6/dac/classres__poly_a8d673d957e850961ec9ee0d7bfbe2b14.html#a8d673d957e850961ec9ee0d7bfbe2b14", null ],

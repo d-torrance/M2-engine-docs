@@ -1,7 +1,7 @@
 var searchData=
 [
   ['packed_5fmonomial_0',['packed_monomial',['../da/d5f/class_res_f4_monomial_lookup_table_t_aca11272fd62226c87789f483606dd668.html#aca11272fd62226c87789f483606dd668',1,'ResF4MonomialLookupTableT::packed_monomial'],['../d5/d0a/moninfo_8hpp_a75641a782b0ba6d753ef03651b07b5c2.html#a75641a782b0ba6d753ef03651b07b5c2',1,'packed_monomial:&#160;moninfo.hpp']]],
-  ['pairs_1',['Pairs',['../de/d10/franzi-gb_8cpp_a8818ff25e637ee7d384c122f52a46d62.html#a8818ff25e637ee7d384c122f52a46d62',1,'franzi-gb.cpp']]],
+  ['pairs_1',['Pairs',['../db/d48/_b_r_p-gb_8cpp_a8818ff25e637ee7d384c122f52a46d62.html#a8818ff25e637ee7d384c122f52a46d62',1,'BRP-gb.cpp']]],
   ['pointer_2',['pointer',['../d2/daf/classnewf4_1_1_monomial_view_1_1_monomial_iterator_afc039d3760ac97567e7c560fa31e91bf.html#afc039d3760ac97567e7c560fa31e91bf',1,'newf4::MonomialView::MonomialIterator::pointer'],['../d8/d54/class_monomial_ideal_1_1_iterator_a6c4556d93403b4c40458035ff809f870.html#a6c4556d93403b4c40458035ff809f870',1,'MonomialIdeal::Iterator::pointer']]],
   ['poly_3',['Poly',['../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30',1,'Polynomial.hpp']]],
   ['polylist_4',['PolyList',['../db/d99/_polynomial_8hpp_ade64611ddd0168ea1239a00cdf89d6df.html#ade64611ddd0168ea1239a00cdf89d6df',1,'Polynomial.hpp']]],

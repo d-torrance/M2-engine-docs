@@ -98,13 +98,13 @@ $(document).ready(function(){initNavTree('dc/da6/class_free_monoid_a08103c830d5a
         <tr>
           <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> FreeMonoid::isEqual </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/d21/struct_monom.html">Monom</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/d21/struct_monom.html">Monom</a> &amp;&#160;</td>
           <td class="paramname"><em>m1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/d21/struct_monom.html">Monom</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/d21/struct_monom.html">Monom</a> &amp;&#160;</td>
           <td class="paramname"><em>m2</em>&#160;</td>
         </tr>
         <tr>
@@ -118,12 +118,11 @@ $(document).ready(function(){initNavTree('dc/da6/class_free_monoid_a08103c830d5a
 <p class="definition">Definition at line <a class="el" href="../../d8/d5e/_free_monoid_8cpp_source.html#l00162">162</a> of file <a class="el" href="../../d8/d5e/_free_monoid_8cpp_source.html">FreeMonoid.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  163</span>{</div>
 <div class="line"><span class="lineno">  164</span>  <span class="comment">//if (wordLength(m1) != wordLength(m2)) return false;</span></div>
-<div class="line"><span class="lineno">  165</span>  <span class="keywordflow">return</span> std::equal(m1.<a class="code hl_function" href="../../dd/d21/struct_monom_a9cb7b2ad287344fbfc6e0f48afe2d7e0.html#a9cb7b2ad287344fbfc6e0f48afe2d7e0">begin</a>(),m1.<a class="code hl_function" href="../../dd/d21/struct_monom_a83d0330247dcd7d494d1cf46695578d0.html#a83d0330247dcd7d494d1cf46695578d0">end</a>(),m2.<a class="code hl_function" href="../../dd/d21/struct_monom_a9cb7b2ad287344fbfc6e0f48afe2d7e0.html#a9cb7b2ad287344fbfc6e0f48afe2d7e0">begin</a>(),m2.<a class="code hl_function" href="../../dd/d21/struct_monom_a83d0330247dcd7d494d1cf46695578d0.html#a83d0330247dcd7d494d1cf46695578d0">end</a>());</div>
+<div class="line"><span class="lineno">  165</span>  <span class="keywordflow">return</span> std::equal(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">m1</a>.begin(),<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">m1</a>.end(),<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">m2</a>.begin(),<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">m2</a>.end());</div>
 <div class="line"><span class="lineno">  166</span>}</div>
-<div class="ttc" id="astruct_monom_a83d0330247dcd7d494d1cf46695578d0_html_a83d0330247dcd7d494d1cf46695578d0"><div class="ttname"><a href="../../dd/d21/struct_monom_a83d0330247dcd7d494d1cf46695578d0.html#a83d0330247dcd7d494d1cf46695578d0">Monom::end</a></div><div class="ttdeci">const int * end() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00037">Polynomial.hpp:37</a></div></div>
-<div class="ttc" id="astruct_monom_a9cb7b2ad287344fbfc6e0f48afe2d7e0_html_a9cb7b2ad287344fbfc6e0f48afe2d7e0"><div class="ttname"><a href="../../dd/d21/struct_monom_a9cb7b2ad287344fbfc6e0f48afe2d7e0.html#a9cb7b2ad287344fbfc6e0f48afe2d7e0">Monom::begin</a></div><div class="ttdeci">const int * begin() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d99/_polynomial_8hpp_source.html#l00036">Polynomial.hpp:36</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dd/d21/struct_monom_a9cb7b2ad287344fbfc6e0f48afe2d7e0.html#a9cb7b2ad287344fbfc6e0f48afe2d7e0">Monom::begin()</a>, and <a class="el" href="../../dd/d21/struct_monom_a83d0330247dcd7d494d1cf46695578d0.html#a83d0330247dcd7d494d1cf46695578d0">Monom::end()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d79/class_n_c_groebner_ae58e5c936027664dfe17ef40e20b4e5e.html#ae58e5c936027664dfe17ef40e20b4e5e">NCGroebner::getCoeffOfMonom()</a>, <a class="el" href="../../d0/d92/class_n_c_f4_a48771c0ae91504968dde06118ab56cdc.html#a48771c0ae91504968dde06118ab56cdc">NCF4::getCoeffOfMonom()</a>, and <a class="el" href="../../dc/dd6/class_monom_hash_equal_a8bee2848b00309ccd7fb147a38c4850f.html#a8bee2848b00309ccd7fb147a38c4850f">MonomHashEqual::operator()()</a>.</p>
 
@@ -135,7 +134,7 @@ $(document).ready(function(){initNavTree('dc/da6/class_free_monoid_a08103c830d5a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/da6/class_free_monoid.html">FreeMonoid</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

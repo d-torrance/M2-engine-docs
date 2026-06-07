@@ -25,9 +25,7 @@ var searchData=
   ['geovec_2ehpp_22',['geovec.hpp',['../d4/d33/geovec_8hpp.html',1,'']]],
   ['gf_2ecpp_23',['GF.cpp',['../df/dfb/_g_f_8cpp.html',1,'']]],
   ['gf_2ehpp_24',['GF.hpp',['../d4/d37/_g_f_8hpp.html',1,'']]],
-  ['givarotest_2ecpp_25',['GivaroTest.cpp',['../dd/d0a/_givaro_test_8cpp.html',1,'']]],
-  ['gmp_2dutil_2eh_26',['gmp-util.h',['../d0/d41/gmp-util_8h.html',1,'']]],
-  ['godbolttest_2ecpp_27',['godboltTest.cpp',['../d4/d12/godbolt_test_8cpp.html',1,'']]],
-  ['groebner_2ecpp_28',['groebner.cpp',['../d2/dc8/groebner_8cpp.html',1,'']]],
-  ['groebner_2eh_29',['groebner.h',['../d0/d7a/groebner_8h.html',1,'']]]
+  ['gmp_2dutil_2eh_25',['gmp-util.h',['../d0/d41/gmp-util_8h.html',1,'']]],
+  ['groebner_2ecpp_26',['groebner.cpp',['../d2/dc8/groebner_8cpp.html',1,'']]],
+  ['groebner_2eh_27',['groebner.h',['../d0/d7a/groebner_8h.html',1,'']]]
 ];

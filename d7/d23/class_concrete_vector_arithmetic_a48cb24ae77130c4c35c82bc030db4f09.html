@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d7/d23/class_concrete_vector_arithmeti
         <tr>
           <td class="memname">long <a class="el" href="../../d7/d23/class_concrete_vector_arithmetic.html">ConcreteVectorArithmetic</a>&lt; <a class="el" href="../../d1/d21/class_m2_1_1_a_ring_z_zp_flint.html">M2::ARingZZpFlint</a> &gt;::to_modp_long </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/d94/class_element_array.html">ElementArray</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d5/d94/class_element_array.html">ElementArray</a> &amp;&#160;</td>
           <td class="paramname"><em>coeffs</em>, </td>
         </tr>
         <tr>
@@ -123,14 +123,17 @@ $(document).ready(function(){initNavTree('d7/d23/class_concrete_vector_arithmeti
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00533">533</a> of file <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html">VectorArithmetic.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/df2/vector-arithmetic_8hpp_source.html#l00533">533</a> of file <a class="el" href="../../dd/df2/vector-arithmetic_8hpp_source.html">vector-arithmetic.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  534</span>{</div>
-<div class="line"><span class="lineno">  535</span>  <span class="keyword">auto</span>&amp; svec = * <a class="code hl_function" href="../../d7/d23/class_concrete_vector_arithmetic_a972b0c376867451274e65c210318750c.html#a972b0c376867451274e65c210318750c">elementArray</a>(coeffs);</div>
-<div class="line"><span class="lineno">  536</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d7/d23/class_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b.html#a8517130d3ba384cea716493da51c154b">mRing</a>-&gt;coerceToLongInteger(svec[loc]);</div>
+<div class="line"><span class="lineno">  535</span>  <span class="keyword">auto</span>&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">svec</a> = * <a class="code hl_function" href="../../d7/d23/class_concrete_vector_arithmetic_a972b0c376867451274e65c210318750c.html#a972b0c376867451274e65c210318750c">elementArray</a>(coeffs);</div>
+<div class="line"><span class="lineno">  536</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d7/d23/class_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b.html#a8517130d3ba384cea716493da51c154b">mRing</a>-&gt;coerceToLongInteger(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">svec</a>[loc]);</div>
 <div class="line"><span class="lineno">  537</span>}</div>
-<div class="ttc" id="aclass_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b_html_a8517130d3ba384cea716493da51c154b"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b.html#a8517130d3ba384cea716493da51c154b">ConcreteVectorArithmetic::mRing</a></div><div class="ttdeci">const RingType * mRing</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00095">VectorArithmetic.hpp:95</a></div></div>
-<div class="ttc" id="aclass_concrete_vector_arithmetic_a972b0c376867451274e65c210318750c_html_a972b0c376867451274e65c210318750c"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a972b0c376867451274e65c210318750c.html#a972b0c376867451274e65c210318750c">ConcreteVectorArithmetic::elementArray</a></div><div class="ttdeci">ElementArrayContainer * elementArray(const ElementArray &amp;f) const</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00098">VectorArithmetic.hpp:98</a></div></div>
+<div class="ttc" id="aclass_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b_html_a8517130d3ba384cea716493da51c154b"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a8517130d3ba384cea716493da51c154b.html#a8517130d3ba384cea716493da51c154b">ConcreteVectorArithmetic::mRing</a></div><div class="ttdeci">const RingType * mRing</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df2/vector-arithmetic_8hpp_source.html#l00095">vector-arithmetic.hpp:95</a></div></div>
+<div class="ttc" id="aclass_concrete_vector_arithmetic_a972b0c376867451274e65c210318750c_html_a972b0c376867451274e65c210318750c"><div class="ttname"><a href="../../d7/d23/class_concrete_vector_arithmetic_a972b0c376867451274e65c210318750c.html#a972b0c376867451274e65c210318750c">ConcreteVectorArithmetic::elementArray</a></div><div class="ttdeci">ElementArrayContainer * elementArray(const ElementArray &amp;f) const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df2/vector-arithmetic_8hpp_source.html#l00098">vector-arithmetic.hpp:98</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -139,7 +142,7 @@ $(document).ready(function(){initNavTree('d7/d23/class_concrete_vector_arithmeti
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d23/class_concrete_vector_arithmetic.html">ConcreteVectorArithmetic</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

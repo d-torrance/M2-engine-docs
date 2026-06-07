@@ -2,8 +2,8 @@ var searchData=
 [
   ['sagbi_2ecpp_0',['sagbi.cpp',['../d0/de2/sagbi_8cpp.html',1,'']]],
   ['sagbi_2ehpp_1',['sagbi.hpp',['../d0/d56/sagbi_8hpp.html',1,'']]],
-  ['schorder_2ecpp_2',['schorder.cpp',['../d9/da5/schorder_8cpp.html',1,'']]],
-  ['schorder_2ehpp_3',['schorder.hpp',['../d9/dc2/schorder_8hpp.html',1,'']]],
+  ['schreyer_2dorders_2ecpp_2',['schreyer-orders.cpp',['../d2/d8d/schreyer-orders_8cpp.html',1,'']]],
+  ['schreyer_2dorders_2ehpp_3',['schreyer-orders.hpp',['../dc/dfc/schreyer-orders_8hpp.html',1,'']]],
   ['schur_2dpoly_2dheap_2ehpp_4',['schur-poly-heap.hpp',['../d0/d0a/schur-poly-heap_8hpp.html',1,'']]],
   ['schur_2ecpp_5',['schur.cpp',['../d2/d63/schur_8cpp.html',1,'']]],
   ['schur_2ehpp_6',['schur.hpp',['../dd/d2b/schur_8hpp.html',1,'']]],

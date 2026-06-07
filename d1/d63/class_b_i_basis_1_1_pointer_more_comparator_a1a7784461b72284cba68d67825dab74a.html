@@ -95,21 +95,21 @@ $(document).ready(function(){initNavTree('d1/d63/class_b_i_basis_1_1_pointer_mor
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">class</a> <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../d1/d63/class_b_i_basis_1_1_pointer_more_comparator.html">BIBasis::PointerMoreComparator</a>&lt; <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt;::operator() </td>
+          <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> <a class="el" href="../../d1/d63/class_b_i_basis_1_1_pointer_more_comparator.html">BIBasis::PointerMoreComparator</a>&lt; <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">::operator</a>() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> &amp;&#160;</td>
           <td class="paramname"><em>p1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> *<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> &amp;&#160;</td>
           <td class="paramname"><em>p2</em>&#160;</td>
         </tr>
         <tr>
@@ -127,15 +127,15 @@ template&lt;class <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b
 
 <p class="definition">Definition at line <a class="el" href="../../d8/dec/pcomparator_8hpp_source.html#l00034">34</a> of file <a class="el" href="../../d8/dec/pcomparator_8hpp_source.html">pcomparator.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   35</span>        {</div>
-<div class="line"><span class="lineno">   36</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a8d5504470de9fec69f0389092910c500.html#a8d5504470de9fec69f0389092910c500">p1</a> || !p2)</div>
+<div class="line"><span class="lineno">   36</span>            <span class="keywordflow">if</span> (!p1 || !<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">p2</a>)</div>
 <div class="line"><span class="lineno">   37</span>            {</div>
 <div class="line"><span class="lineno">   38</span>                <span class="keywordflow">throw</span> std::string(<span class="stringliteral">&quot;BIBasis::PointerMoreComparator::operator(): at least one argument is NULL.&quot;</span>);</div>
 <div class="line"><span class="lineno">   39</span>            }</div>
-<div class="line"><span class="lineno">   40</span>            <span class="keywordflow">return</span> *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a8d5504470de9fec69f0389092910c500.html#a8d5504470de9fec69f0389092910c500">p1</a> &gt; *p2;</div>
+<div class="line"><span class="lineno">   40</span>            <span class="keywordflow">return</span> *p1 &gt; *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">p2</a>;</div>
 <div class="line"><span class="lineno">   41</span>        }</div>
-<div class="ttc" id="agodbolt_test_8cpp_a8d5504470de9fec69f0389092910c500_html_a8d5504470de9fec69f0389092910c500"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a8d5504470de9fec69f0389092910c500.html#a8d5504470de9fec69f0389092910c500">p1</a></div><div class="ttdeci">int p1</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00009">godboltTest.cpp:9</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d12/godbolt_test_8cpp_a8d5504470de9fec69f0389092910c500.html#a8d5504470de9fec69f0389092910c500">p1</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
 
 </div>
 </div>
@@ -145,7 +145,7 @@ template&lt;class <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d30/namespace_b_i_basis.html">BIBasis</a></li><li class="navelem"><a class="el" href="../../d1/d63/class_b_i_basis_1_1_pointer_more_comparator.html">PointerMoreComparator</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

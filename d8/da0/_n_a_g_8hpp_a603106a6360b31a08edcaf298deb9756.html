@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d8/da0/_n_a_g_8hpp_a603106a6360b31a08e
         <tr>
           <td class="memname"><a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a> from_doubles </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring.html">M2::ConcreteRing</a>&lt; <a class="el" href="../../d1/dfa/class_m2_1_1_a_ring_c_c.html">M2::ARingCC</a> &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d0/d99/class_m2_1_1_concrete_ring.html">M2::ConcreteRing</a>&lt; <a class="el" href="../../d1/dfa/class_m2_1_1_a_ring_c_c.html">M2::ARingCC</a> &gt; *&#160;</td>
           <td class="paramname"><em>C</em>, </td>
         </tr>
         <tr>
@@ -128,20 +128,27 @@ $(document).ready(function(){initNavTree('d8/da0/_n_a_g_8hpp_a603106a6360b31a08e
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">re</td><td>the real part </td></tr>
+    <tr><td class="paramname">im</td><td>the imaginary part </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da0/_n_a_g_8hpp_source.html#l00140">140</a> of file <a class="el" href="../../d8/da0/_n_a_g_8hpp_source.html">NAG.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  141</span>{</div>
-<div class="line"><span class="lineno">  142</span>  M2::ARingCC::Element a(C-&gt;<a class="code hl_function" href="../../d0/d99/class_m2_1_1_concrete_ring_a3b8ceec9959665c4effe2340eca4d139.html#a3b8ceec9959665c4effe2340eca4d139">ring</a>());</div>
-<div class="line"><span class="lineno">  143</span>  C-&gt;<a class="code hl_function" href="../../d0/d99/class_m2_1_1_concrete_ring_a3b8ceec9959665c4effe2340eca4d139.html#a3b8ceec9959665c4effe2340eca4d139">ring</a>().<a class="code hl_function" href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a673054c884b0231116d463009544b053.html#a673054c884b0231116d463009544b053">set_from_doubles</a>(a, re, im);</div>
-<div class="line"><span class="lineno">  144</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
-<div class="line"><span class="lineno">  145</span>  C-&gt;<a class="code hl_function" href="../../d0/d99/class_m2_1_1_concrete_ring_a3b8ceec9959665c4effe2340eca4d139.html#a3b8ceec9959665c4effe2340eca4d139">ring</a>().<a class="code hl_function" href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a75fa06e6981d8375c49191bc1c5a2cce.html#a75fa06e6981d8375c49191bc1c5a2cce">to_ring_elem</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, a);</div>
-<div class="line"><span class="lineno">  146</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
-<div class="line"><span class="lineno">  147</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/da0/_n_a_g_8hpp_source.html#l00149">149</a> of file <a class="el" href="../../d8/da0/_n_a_g_8hpp_source.html">NAG.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  150</span>{</div>
+<div class="line"><span class="lineno">  151</span>  M2::ARingCC::Element a(C-&gt;<a class="code hl_function" href="../../d0/d99/class_m2_1_1_concrete_ring_a3b8ceec9959665c4effe2340eca4d139.html#a3b8ceec9959665c4effe2340eca4d139">ring</a>());</div>
+<div class="line"><span class="lineno">  152</span>  C-&gt;<a class="code hl_function" href="../../d0/d99/class_m2_1_1_concrete_ring_a3b8ceec9959665c4effe2340eca4d139.html#a3b8ceec9959665c4effe2340eca4d139">ring</a>().<a class="code hl_function" href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a673054c884b0231116d463009544b053.html#a673054c884b0231116d463009544b053">set_from_doubles</a>(a, re, im);</div>
+<div class="line"><span class="lineno">  153</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
+<div class="line"><span class="lineno">  154</span>  C-&gt;<a class="code hl_function" href="../../d0/d99/class_m2_1_1_concrete_ring_a3b8ceec9959665c4effe2340eca4d139.html#a3b8ceec9959665c4effe2340eca4d139">ring</a>().<a class="code hl_function" href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a75fa06e6981d8375c49191bc1c5a2cce.html#a75fa06e6981d8375c49191bc1c5a2cce">to_ring_elem</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>, a);</div>
+<div class="line"><span class="lineno">  155</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
+<div class="line"><span class="lineno">  156</span>}</div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_c_c_a673054c884b0231116d463009544b053_html_a673054c884b0231116d463009544b053"><div class="ttname"><a href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a673054c884b0231116d463009544b053.html#a673054c884b0231116d463009544b053">M2::ARingCC::set_from_doubles</a></div><div class="ttdeci">void set_from_doubles(ElementType &amp;result, double re, double im) const</div><div class="ttdef"><b>Definition</b> <a href="../../da/dbc/aring-_c_c_8hpp_source.html#l00407">aring-CC.hpp:407</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_a_ring_c_c_a75fa06e6981d8375c49191bc1c5a2cce_html_a75fa06e6981d8375c49191bc1c5a2cce"><div class="ttname"><a href="../../d1/dfa/class_m2_1_1_a_ring_c_c_a75fa06e6981d8375c49191bc1c5a2cce.html#a75fa06e6981d8375c49191bc1c5a2cce">M2::ARingCC::to_ring_elem</a></div><div class="ttdeci">void to_ring_elem(ring_elem &amp;result, const ElementType &amp;a) const</div><div class="ttdef"><b>Definition</b> <a href="../../da/dbc/aring-_c_c_8hpp_source.html#l00083">aring-CC.hpp:83</a></div></div>
 <div class="ttc" id="aclass_m2_1_1_concrete_ring_a3b8ceec9959665c4effe2340eca4d139_html_a3b8ceec9959665c4effe2340eca4d139"><div class="ttname"><a href="../../d0/d99/class_m2_1_1_concrete_ring_a3b8ceec9959665c4effe2340eca4d139.html#a3b8ceec9959665c4effe2340eca4d139">M2::ConcreteRing::ring</a></div><div class="ttdeci">const RingType &amp; ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da4/aring-glue_8hpp_source.html#l00041">aring-glue.hpp:41</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
-<div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00050">ringelem.hpp:51</a></div></div>
+<div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00050">ringelem.hpp:51</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
@@ -154,8 +161,8 @@ $(document).ready(function(){initNavTree('d8/da0/_n_a_g_8hpp_a603106a6360b31a08e
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d8/da0/_n_a_g_8hpp.html">NAG.hpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_91c1f5eeb6d694d036e7c1602e066098.html">NAG</a></li><li class="navelem"><a class="el" href="../../d8/da0/_n_a_g_8hpp.html">NAG.hpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

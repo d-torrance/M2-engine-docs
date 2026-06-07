@@ -95,21 +95,21 @@ $(document).ready(function(){initNavTree('d7/d82/namespace_m2_a1f20f9a3244cfdf32
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RT &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">RT</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> * M2::getLiftedRepresentation </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> * M2::getLiftedRepresentation </td>
           <td>(</td>
-          <td class="paramtype">const RT &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">RT</a> &amp;&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>&#160;</td>
         </tr>
         <tr>
@@ -125,18 +125,19 @@ template&lt;typename RT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l01226">1226</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1229</span>{</div>
-<div class="line"><span class="lineno"> 1230</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> c;                <span class="comment">// in originalRing()</span></div>
-<div class="line"><span class="lineno"> 1231</span>  <span class="keyword">typename</span> RT::Element b(R);  <span class="comment">// in ring()</span></div>
-<div class="line"><span class="lineno"> 1232</span>  R.from_ring_elem(b, a);</div>
-<div class="line"><span class="lineno"> 1233</span>  R.lift_to_original_ring(c, b);</div>
-<div class="line"><span class="lineno"> 1234</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(&amp;R.originalRing(), c);</div>
-<div class="line"><span class="lineno"> 1235</span>}</div>
-<div class="ttc" id="aclass_ring_element_ab978463e39096a4e0d1ecc0720f9acf3_html_ab978463e39096a4e0d1ecc0720f9acf3"><div class="ttname"><a href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a></div><div class="ttdeci">static RingElement * make_raw(const Ring *R, ring_elem f)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00020">relem.cpp:20</a></div></div>
-<div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00050">ringelem.hpp:51</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html#l01235">1235</a> of file <a class="el" href="../../dd/da4/aring-glue_8hpp_source.html">aring-glue.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1238</span>{</div>
+<div class="line"><span class="lineno"> 1239</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>;                <span class="comment">// in originalRing()</span></div>
+<div class="line"><span class="lineno"> 1240</span>  <span class="keyword">typename</span> RT::Element b(R);  <span class="comment">// in ring()</span></div>
+<div class="line"><span class="lineno"> 1241</span>  R.from_ring_elem(b, a);</div>
+<div class="line"><span class="lineno"> 1242</span>  R.lift_to_original_ring(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>, b);</div>
+<div class="line"><span class="lineno"> 1243</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(&amp;R.originalRing(), <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">c</a>);</div>
+<div class="line"><span class="lineno"> 1244</span>}</div>
+<div class="ttc" id="aclass_ring_element_ab978463e39096a4e0d1ecc0720f9acf3_html_ab978463e39096a4e0d1ecc0720f9acf3"><div class="ttname"><a href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a></div><div class="ttdeci">static RingElement * make_raw(const Ring *R, ring_elem f)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d31/ring-element_8cpp_source.html#l00020">ring-element.cpp:20</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
+<div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00050">ringelem.hpp:51</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw()</a>.</p>
 
 </div>
 </div>
@@ -146,7 +147,7 @@ template&lt;typename RT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d82/namespace_m2.html">M2</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

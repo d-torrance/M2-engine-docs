@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('da/d41/error_8h_ab0cecac1cffe548767895
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void INTERNAL_ERROR </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> INTERNAL_ERROR </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> char *&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
@@ -117,19 +117,20 @@ $(document).ready(function(){initNavTree('da/d41/error_8h_ab0cecac1cffe548767895
 
 <p class="definition">Definition at line <a class="el" href="../../db/dcc/error_8c_source.html#l00036">36</a> of file <a class="el" href="../../db/dcc/error_8c_source.html">error.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   37</span>{</div>
-<div class="line"><span class="lineno">   38</span>  <span class="keywordtype">char</span> buf[<a class="code hl_define" href="../../db/dcc/error_8c_a1e180be6d62e5412353162d2917de91b.html#a1e180be6d62e5412353162d2917de91b">MAXERROR</a>];</div>
-<div class="line"><span class="lineno">   39</span>  buf[0] = 0;</div>
-<div class="line"><span class="lineno">   40</span>  va_list ap;</div>
-<div class="line"><span class="lineno">   41</span>  va_start(ap, <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
-<div class="line"><span class="lineno">   42</span>  vsprintf(buf, <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>, ap);</div>
-<div class="line"><span class="lineno">   43</span>  va_end(ap);</div>
-<div class="line"><span class="lineno">   44</span>  fprintf(stderr, <span class="stringliteral">&quot;--internal error: %s\n&quot;</span>, buf);</div>
-<div class="line"><span class="lineno">   45</span>  abort(); <span class="comment">/* we should exit after an internal error, to avoid crashing */</span></div>
+<div class="line"><span class="lineno">   38</span>  <span class="keywordtype">char</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">buf</a>[<a class="code hl_define" href="../../db/dcc/error_8c_a1e180be6d62e5412353162d2917de91b.html#a1e180be6d62e5412353162d2917de91b">MAXERROR</a>];</div>
+<div class="line"><span class="lineno">   39</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">buf</a>[0] = 0;</div>
+<div class="line"><span class="lineno">   40</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">va_list</a> ap;</div>
+<div class="line"><span class="lineno">   41</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">va_start</a>(ap, <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
+<div class="line"><span class="lineno">   42</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">vsprintf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">buf</a>, <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>, ap);</div>
+<div class="line"><span class="lineno">   43</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">va_end</a>(ap);</div>
+<div class="line"><span class="lineno">   44</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fprintf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">stderr</a>, <span class="stringliteral">&quot;--internal error: %s\n&quot;</span>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">buf</a>);</div>
+<div class="line"><span class="lineno">   45</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">abort</a>(); <span class="comment">/* we should exit after an internal error, to avoid crashing */</span></div>
 <div class="line"><span class="lineno">   46</span>}</div>
 <div class="ttc" id="aerror_8c_a1e180be6d62e5412353162d2917de91b_html_a1e180be6d62e5412353162d2917de91b"><div class="ttname"><a href="../../db/dcc/error_8c_a1e180be6d62e5412353162d2917de91b.html#a1e180be6d62e5412353162d2917de91b">MAXERROR</a></div><div class="ttdeci">#define MAXERROR</div><div class="ttdef"><b>Definition</b> <a href="../../db/dcc/error_8c_source.html#l00022">error.c:22</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5_html_a2fc91f4e89bc37f261db820d231da2e5"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a></div><div class="ttdeci">void size_t s</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00271">m2-mem.cpp:271</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../db/dcc/error_8c_a1e180be6d62e5412353162d2917de91b.html#a1e180be6d62e5412353162d2917de91b">MAXERROR</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../db/dcc/error_8c_a1e180be6d62e5412353162d2917de91b.html#a1e180be6d62e5412353162d2917de91b">MAXERROR</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d7a/class_matrix_constructor_a82cd5af150336ac9a4cb9c5670e4c0ea.html#a82cd5af150336ac9a4cb9c5670e4c0ea">MatrixConstructor::append()</a>, <a class="el" href="../../d3/d7a/class_matrix_constructor_a1122ebc8257b13640765fc82c123cfc0.html#a1122ebc8257b13640765fc82c123cfc0">MatrixConstructor::compute_column_degree()</a>, <a class="el" href="../../d3/d7a/class_matrix_constructor_a311858d44ddec547261944efff8a2d06.html#a311858d44ddec547261944efff8a2d06">MatrixConstructor::compute_column_degrees()</a>, <a class="el" href="../../dd/dc9/class_poly_ring_quotient_a854c5c1cd3a4286efa4a439c8bcea812.html#a854c5c1cd3a4286efa4a439c8bcea812">PolyRingQuotient::invert()</a>, <a class="el" href="../../d1/df6/monomial-ordering_8cpp_a7028fe71c0766b170379a73bd87f67f5.html#a7028fe71c0766b170379a73bd87f67f5">rawNonTermOrderVariables()</a>, <a class="el" href="../../d3/d7a/class_matrix_constructor_a66338637400fc34b573d35d09649ba86.html#a66338637400fc34b573d35d09649ba86">MatrixConstructor::set_column_degree()</a>, and <a class="el" href="../../d9/db6/monomial-ideal_8cpp_a0c99b1bfe85ace39ed31c13a9d025988.html#a0c99b1bfe85ace39ed31c13a9d025988">wrapperFrobbyAlexanderDual()</a>.</p>
 
@@ -141,7 +142,7 @@ $(document).ready(function(){initNavTree('da/d41/error_8h_ab0cecac1cffe548767895
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../da/d41/error_8h.html">error.h</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d8/d2b/class_ring_z_z_ab4c2830e31e788a
         <tr>
           <td class="memname"><a class="el" href="../../d1/da0/classint.html">int</a> RingZZ::is_positive </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a>&#160;</td>
           <td class="paramname"><em>a</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -108,11 +108,12 @@ $(document).ready(function(){initNavTree('d8/d2b/class_ring_z_z_ab4c2830e31e788a
 <p class="definition">Definition at line <a class="el" href="../../d4/db8/_z_z_8cpp_source.html#l00177">177</a> of file <a class="el" href="../../d4/db8/_z_z_8cpp_source.html">ZZ.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  178</span>{</div>
 <div class="line"><span class="lineno">  179</span>  mpz_srcptr a = f.<a class="code hl_function" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">get_mpz</a>();</div>
-<div class="line"><span class="lineno">  180</span>  <span class="keywordflow">return</span> mpz_sgn(a) &gt; 0;</div>
+<div class="line"><span class="lineno">  180</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpz_sgn</a>(a) &gt; 0;</div>
 <div class="line"><span class="lineno">  181</span>}</div>
-<div class="ttc" id="aunionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26_html_aeb2b58dce5525fe3f7eb7f3bcb42bc26"><div class="ttname"><a href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">ring_elem::get_mpz</a></div><div class="ttdeci">mpz_srcptr get_mpz() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00093">ringelem.hpp:93</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
+<div class="ttc" id="aunionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26_html_aeb2b58dce5525fe3f7eb7f3bcb42bc26"><div class="ttname"><a href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">ring_elem::get_mpz</a></div><div class="ttdeci">mpz_srcptr get_mpz() const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00093">ringelem.hpp:93</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">ring_elem::get_mpz()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d5/d64/unionring__elem_aeb2b58dce5525fe3f7eb7f3bcb42bc26.html#aeb2b58dce5525fe3f7eb7f3bcb42bc26">ring_elem::get_mpz()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/d76/class_hermite_computation_a49e74d40b4ee508a4f37f14e70ea0557.html#a49e74d40b4ee508a4f37f14e70ea0557">HermiteComputation::start_computation()</a>, and <a class="el" href="../../db/dc4/_ring_z_z_test_8cpp_a4b32401370d576730c26f91eaa86ec17.html#a4b32401370d576730c26f91eaa86ec17">TEST()</a>.</p>
 
@@ -124,7 +125,7 @@ $(document).ready(function(){initNavTree('d8/d2b/class_ring_z_z_ab4c2830e31e788a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d2b/class_ring_z_z.html">RingZZ</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

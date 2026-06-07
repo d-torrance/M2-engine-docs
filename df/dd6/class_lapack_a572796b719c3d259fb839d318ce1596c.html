@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('df/dd6/class_lapack_a572796b719c3d259f
         <tr>
           <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> Lapack::eigenvectors </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../df/dd2/lapack_8hpp_ae4409a556af09875ac6d38e77f5ab7d5.html#ae4409a556af09875ac6d38e77f5ab7d5">DMatRRR</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../df/dd2/lapack_8hpp_ae4409a556af09875ac6d38e77f5ab7d5.html#ae4409a556af09875ac6d38e77f5ab7d5">DMatRRR</a> *&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
@@ -131,8 +131,8 @@ $(document).ready(function(){initNavTree('df/dd6/class_lapack_a572796b719c3d259f
 
 <p class="definition">Definition at line <a class="el" href="../../d1/dfc/lapack_8cpp_source.html#l00365">365</a> of file <a class="el" href="../../d1/dfc/lapack_8cpp_source.html">lapack.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  368</span>{</div>
-<div class="line"><span class="lineno">  369</span>  <span class="keywordtype">int</span> size = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">numRows</a>());</div>
-<div class="line"><span class="lineno">  370</span>  <span class="keywordflow">if</span> (size != <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A-&gt;<a class="code hl_function" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">numColumns</a>()))</div>
+<div class="line"><span class="lineno">  369</span>  <span class="keywordtype">int</span> size = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a>-&gt;numRows());</div>
+<div class="line"><span class="lineno">  370</span>  <span class="keywordflow">if</span> (size != <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a>-&gt;numColumns()))</div>
 <div class="line"><span class="lineno">  371</span>    {</div>
 <div class="line"><span class="lineno">  372</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;expected a square matrix&quot;</span>);</div>
 <div class="line"><span class="lineno">  373</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -140,96 +140,95 @@ $(document).ready(function(){initNavTree('df/dd6/class_lapack_a572796b719c3d259f
 <div class="line"><span class="lineno">  375</span> </div>
 <div class="line"><span class="lineno">  376</span>  <span class="keywordflow">if</span> (size == 0)</div>
 <div class="line"><span class="lineno">  377</span>    {</div>
-<div class="line"><span class="lineno">  378</span>      eigvals-&gt;resize(0, 1); <span class="comment">// TODO: is this 1 correct?</span></div>
-<div class="line"><span class="lineno">  379</span>      eigvecs-&gt;resize(0, 0);</div>
+<div class="line"><span class="lineno">  378</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigvals</a>-&gt;resize(0, 1); <span class="comment">// TODO: is this 1 correct?</span></div>
+<div class="line"><span class="lineno">  379</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigvecs</a>-&gt;resize(0, 0);</div>
 <div class="line"><span class="lineno">  380</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  381</span>    }</div>
 <div class="line"><span class="lineno">  382</span> </div>
-<div class="line"><span class="lineno">  383</span>  <span class="keywordtype">bool</span> ret = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  384</span>  <span class="keywordtype">char</span> dont = <span class="charliteral">&#39;N&#39;</span>;</div>
-<div class="line"><span class="lineno">  385</span>  <span class="keywordtype">char</span> doit = <span class="charliteral">&#39;V&#39;</span>;</div>
-<div class="line"><span class="lineno">  386</span>  <span class="keywordtype">int</span> wsize = 4 * size;</div>
+<div class="line"><span class="lineno">  383</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ret</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  384</span>  <span class="keywordtype">char</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">dont</a> = <span class="charliteral">&#39;N&#39;</span>;</div>
+<div class="line"><span class="lineno">  385</span>  <span class="keywordtype">char</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">doit</a> = <span class="charliteral">&#39;V&#39;</span>;</div>
+<div class="line"><span class="lineno">  386</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">wsize</a> = 4 * size;</div>
 <div class="line"><span class="lineno">  387</span> </div>
-<div class="line"><span class="lineno">  388</span>  <span class="keywordtype">double</span> *workspace = <span class="keyword">new</span> <span class="keywordtype">double</span>[2*wsize]; </div>
-<div class="line"><span class="lineno">  389</span>  <span class="keywordtype">int</span> info;</div>
+<div class="line"><span class="lineno">  388</span>  <span class="keywordtype">double</span> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">workspace</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[2*<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">wsize</a>]; </div>
+<div class="line"><span class="lineno">  389</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">info</a>;</div>
 <div class="line"><span class="lineno">  390</span> </div>
-<div class="line"><span class="lineno">  391</span>  std::vector&lt;double&gt; copyA = <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array</a>(*A);</div>
+<div class="line"><span class="lineno">  391</span>  std::vector&lt;double&gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">copyA</a> = <a class="code hl_function" href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array</a>(*<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a>);</div>
 <div class="line"><span class="lineno">  392</span>  <span class="keywordtype">double</span> *real = <span class="keyword">new</span> <span class="keywordtype">double</span>[size]; <span class="comment">// real components of eigvals</span></div>
 <div class="line"><span class="lineno">  393</span>  <span class="keywordtype">double</span> *imag = <span class="keyword">new</span> <span class="keywordtype">double</span>[size];  <span class="comment">// imaginary components</span></div>
-<div class="line"><span class="lineno">  394</span>  <span class="keywordtype">double</span> *eigen = <span class="keyword">new</span> <span class="keywordtype">double</span>[size * size]; <span class="comment">// eigvecs</span></div>
+<div class="line"><span class="lineno">  394</span>  <span class="keywordtype">double</span> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigen</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[size * size]; <span class="comment">// eigvecs</span></div>
 <div class="line"><span class="lineno">  395</span> </div>
-<div class="line"><span class="lineno">  396</span>  <a class="code hl_function" href="../../df/dd2/lapack_8hpp_a78bfbb73591905d2bb6aa45e9c4295a8.html#a78bfbb73591905d2bb6aa45e9c4295a8">dgeev_</a>(&amp;dont, <span class="comment">/* left e-vectors */</span></div>
-<div class="line"><span class="lineno">  397</span>         &amp;doit, <span class="comment">/* right e-vectors */</span></div>
+<div class="line"><span class="lineno">  396</span>  <a class="code hl_function" href="../../df/dd2/lapack_8hpp_a78bfbb73591905d2bb6aa45e9c4295a8.html#a78bfbb73591905d2bb6aa45e9c4295a8">dgeev_</a>(&amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">dont</a>, <span class="comment">/* left e-vectors */</span></div>
+<div class="line"><span class="lineno">  397</span>         &amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">doit</a>, <span class="comment">/* right e-vectors */</span></div>
 <div class="line"><span class="lineno">  398</span>         &amp;size,</div>
-<div class="line"><span class="lineno">  399</span>         copyA.data(),</div>
+<div class="line"><span class="lineno">  399</span>         <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">copyA</a>.data(),</div>
 <div class="line"><span class="lineno">  400</span>         &amp;size,</div>
 <div class="line"><span class="lineno">  401</span>         real,</div>
 <div class="line"><span class="lineno">  402</span>         imag,</div>
 <div class="line"><span class="lineno">  403</span>         <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span> *<span class="keyword">&gt;</span>(<span class="keyword">nullptr</span>),</div>
 <div class="line"><span class="lineno">  404</span>         &amp;size, <span class="comment">/* left eigvecs */</span></div>
-<div class="line"><span class="lineno">  405</span>         eigen,</div>
+<div class="line"><span class="lineno">  405</span>         <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigen</a>,</div>
 <div class="line"><span class="lineno">  406</span>         &amp;size, <span class="comment">/* right eigvecs */</span></div>
-<div class="line"><span class="lineno">  407</span>         workspace,</div>
-<div class="line"><span class="lineno">  408</span>         &amp;wsize,</div>
-<div class="line"><span class="lineno">  409</span>         &amp;info);</div>
+<div class="line"><span class="lineno">  407</span>         <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">workspace</a>,</div>
+<div class="line"><span class="lineno">  408</span>         &amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">wsize</a>,</div>
+<div class="line"><span class="lineno">  409</span>         &amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">info</a>);</div>
 <div class="line"><span class="lineno">  410</span> </div>
-<div class="line"><span class="lineno">  411</span>  <span class="keywordflow">if</span> (info &lt; 0)</div>
+<div class="line"><span class="lineno">  411</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">info</a> &lt; 0)</div>
 <div class="line"><span class="lineno">  412</span>    {</div>
 <div class="line"><span class="lineno">  413</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;argument passed to dgeev had an illegal value&quot;</span>);</div>
-<div class="line"><span class="lineno">  414</span>      ret = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  414</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ret</a> = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  415</span>    }</div>
-<div class="line"><span class="lineno">  416</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (info &gt; 0)</div>
+<div class="line"><span class="lineno">  416</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">info</a> &gt; 0)</div>
 <div class="line"><span class="lineno">  417</span>    {</div>
 <div class="line"><span class="lineno">  418</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;the QR algorithm in dgeev failed to compute all eigvals&quot;</span>);</div>
-<div class="line"><span class="lineno">  419</span>      ret = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  419</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ret</a> = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  420</span>    }</div>
 <div class="line"><span class="lineno">  421</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  422</span>    {</div>
 <div class="line"><span class="lineno">  423</span>      <span class="comment">// Make the complex arrays of eigvals and eigvecs</span></div>
-<div class="line"><span class="lineno">  424</span>      eigvals-&gt;resize(size, 1);</div>
-<div class="line"><span class="lineno">  425</span>      eigvecs-&gt;resize(size, size);</div>
+<div class="line"><span class="lineno">  424</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigvals</a>-&gt;resize(size, 1);</div>
+<div class="line"><span class="lineno">  425</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigvecs</a>-&gt;resize(size, size);</div>
 <div class="line"><span class="lineno">  426</span>      <span class="comment">//      DMatCC::ElementType *elems = eigvals-&gt;rowMajorArray();</span></div>
-<div class="line"><span class="lineno">  427</span>      <span class="keywordtype">double</span>* eigenLoc = eigen; <span class="comment">// current row (eigenvector) in the eigen array</span></div>
-<div class="line"><span class="lineno">  428</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; size; j++, eigenLoc += size)</div>
+<div class="line"><span class="lineno">  427</span>      <span class="keywordtype">double</span>* <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigenLoc</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigen</a>; <span class="comment">// current row (eigenvector) in the eigen array</span></div>
+<div class="line"><span class="lineno">  428</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; size; j++, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigenLoc</a> += size)</div>
 <div class="line"><span class="lineno">  429</span>        {</div>
-<div class="line"><span class="lineno">  430</span>          eigvals-&gt;ring().set_from_doubles(eigvals-&gt;entry(j,0), real[j], imag[j]);</div>
+<div class="line"><span class="lineno">  430</span>          <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigvals</a>-&gt;ring().set_from_doubles(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigvals</a>-&gt;entry(j,0), real[j], imag[j]);</div>
 <div class="line"><span class="lineno">  431</span> </div>
 <div class="line"><span class="lineno">  432</span>          <span class="comment">// now set j-th column of eigvecs</span></div>
 <div class="line"><span class="lineno">  433</span>          <span class="keywordflow">if</span> (imag[j] == 0)</div>
 <div class="line"><span class="lineno">  434</span>            {</div>
 <div class="line"><span class="lineno">  435</span>              <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i)</div>
 <div class="line"><span class="lineno">  436</span>                {</div>
-<div class="line"><span class="lineno">  437</span>                  eigvecs-&gt;entry(i,j).re = eigenLoc[i];</div>
-<div class="line"><span class="lineno">  438</span>                  eigvecs-&gt;entry(i,j).im = 0;</div>
+<div class="line"><span class="lineno">  437</span>                  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigvecs</a>-&gt;entry(i,j).re = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigenLoc</a>[i];</div>
+<div class="line"><span class="lineno">  438</span>                  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigvecs</a>-&gt;entry(i,j).im = 0;</div>
 <div class="line"><span class="lineno">  439</span>                }</div>
 <div class="line"><span class="lineno">  440</span>            }</div>
 <div class="line"><span class="lineno">  441</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (imag[j] &gt; 0)</div>
 <div class="line"><span class="lineno">  442</span>            {</div>
 <div class="line"><span class="lineno">  443</span>              <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i)</div>
 <div class="line"><span class="lineno">  444</span>                {</div>
-<div class="line"><span class="lineno">  445</span>                  eigvecs-&gt;ring().set_from_doubles(eigvecs-&gt;entry(i,j),</div>
-<div class="line"><span class="lineno">  446</span>                                                   eigenLoc[i], eigenLoc[size + i]);</div>
-<div class="line"><span class="lineno">  447</span>                  eigvecs-&gt;ring().set_from_doubles(eigvecs-&gt;entry(i,j+1),</div>
-<div class="line"><span class="lineno">  448</span>                                                   eigenLoc[i], - eigenLoc[size + i]);</div>
+<div class="line"><span class="lineno">  445</span>                  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigvecs</a>-&gt;ring().set_from_doubles(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigvecs</a>-&gt;entry(i,j),</div>
+<div class="line"><span class="lineno">  446</span>                                                   <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigenLoc</a>[i], <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigenLoc</a>[size + i]);</div>
+<div class="line"><span class="lineno">  447</span>                  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigvecs</a>-&gt;ring().set_from_doubles(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigvecs</a>-&gt;entry(i,j+1),</div>
+<div class="line"><span class="lineno">  448</span>                                                   <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigenLoc</a>[i], - <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigenLoc</a>[size + i]);</div>
 <div class="line"><span class="lineno">  449</span>                }</div>
 <div class="line"><span class="lineno">  450</span>            }</div>
 <div class="line"><span class="lineno">  451</span>        }</div>
 <div class="line"><span class="lineno">  452</span>    }</div>
 <div class="line"><span class="lineno">  453</span> </div>
-<div class="line"><span class="lineno">  454</span>  <span class="keyword">delete</span> [] workspace;</div>
+<div class="line"><span class="lineno">  454</span>  <span class="keyword">delete</span> [] <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">workspace</a>;</div>
 <div class="line"><span class="lineno">  455</span>  <span class="keyword">delete</span> [] real;</div>
 <div class="line"><span class="lineno">  456</span>  <span class="keyword">delete</span> [] imag;</div>
-<div class="line"><span class="lineno">  457</span>  <span class="keyword">delete</span> [] eigen;</div>
+<div class="line"><span class="lineno">  457</span>  <span class="keyword">delete</span> [] <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">eigen</a>;</div>
 <div class="line"><span class="lineno">  458</span> </div>
-<div class="line"><span class="lineno">  459</span>  <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">  459</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">ret</a>;</div>
 <div class="line"><span class="lineno">  460</span>}</div>
-<div class="ttc" id="aclass_d_mat_a29d6106319cc01e580c0ddee6f3ddb29_html_a29d6106319cc01e580c0ddee6f3ddb29"><div class="ttname"><a href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat::numRows</a></div><div class="ttdeci">size_t numRows() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00107">dmat.hpp:107</a></div></div>
-<div class="ttc" id="aclass_d_mat_aff91923e882c194ecf16030897933e45_html_aff91923e882c194ecf16030897933e45"><div class="ttname"><a href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat::numColumns</a></div><div class="ttdeci">size_t numColumns() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d0a/dmat_8hpp_source.html#l00108">dmat.hpp:108</a></div></div>
 <div class="ttc" id="admat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4_html_a1d9fe790cb0cb4f0fe5ec99737d82ed4"><div class="ttname"><a href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array</a></div><div class="ttdeci">std::vector&lt; double &gt; make_lapack_array(const DMatRR &amp;mat)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfc/lapack_8cpp_source.html#l00031">lapack.cpp:31</a></div></div>
 <div class="ttc" id="alapack_8hpp_a78bfbb73591905d2bb6aa45e9c4295a8_html_a78bfbb73591905d2bb6aa45e9c4295a8"><div class="ttname"><a href="../../df/dd2/lapack_8hpp_a78bfbb73591905d2bb6aa45e9c4295a8.html#a78bfbb73591905d2bb6aa45e9c4295a8">dgeev_</a></div><div class="ttdeci">int dgeev_(char *n, char *n2, int *size, double *M, int *size1, double *E, double *E2, double *, int *, double *, int *, double *, int *, int *)</div></div>
 <div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/dd2/lapack_8hpp_a78bfbb73591905d2bb6aa45e9c4295a8.html#a78bfbb73591905d2bb6aa45e9c4295a8">dgeev_()</a>, <a class="el" href="../../da/dc3/class_d_mat_a430faaf604ffe11bf81a35456acc2e97.html#a430faaf604ffe11bf81a35456acc2e97">DMat&lt; ACoeffRing &gt;::entry()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, <a class="el" href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array()</a>, <a class="el" href="../../da/dc3/class_d_mat_aff91923e882c194ecf16030897933e45.html#aff91923e882c194ecf16030897933e45">DMat&lt; ACoeffRing &gt;::numColumns()</a>, <a class="el" href="../../da/dc3/class_d_mat_a29d6106319cc01e580c0ddee6f3ddb29.html#a29d6106319cc01e580c0ddee6f3ddb29">DMat&lt; ACoeffRing &gt;::numRows()</a>, <a class="el" href="../../da/dc3/class_d_mat_a88d2a242efc934b17d6cc94851000627.html#a88d2a242efc934b17d6cc94851000627">DMat&lt; ACoeffRing &gt;::resize()</a>, and <a class="el" href="../../da/dc3/class_d_mat_a8bfde729efa8a5ba300bd3024dc9a440.html#a8bfde729efa8a5ba300bd3024dc9a440">DMat&lt; ACoeffRing &gt;::ring()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../df/dd2/lapack_8hpp_a78bfbb73591905d2bb6aa45e9c4295a8.html#a78bfbb73591905d2bb6aa45e9c4295a8">dgeev_()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, and <a class="el" href="../../d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4">make_lapack_array()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d8/db5/namespace_matrix_ops_a0569dc4b5486467bda0492e7757980a6.html#a0569dc4b5486467bda0492e7757980a6">MatrixOps::eigenvectors()</a>.</p>
 
@@ -241,7 +240,7 @@ $(document).ready(function(){initNavTree('df/dd6/class_lapack_a572796b719c3d259f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/dd6/class_lapack.html">Lapack</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

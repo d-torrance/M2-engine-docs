@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d1/df6/class_vector_arithmetic_adc1142
         <tr>
           <td class="memname"><a class="el" href="../../db/d07/m2-mem_8h_afb0843d0fb27ea1b89117293f9a01605.html#afb0843d0fb27ea1b89117293f9a01605">size_t</a> VectorArithmetic::size </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/d94/class_element_array.html">ElementArray</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d5/d94/class_element_array.html">ElementArray</a> &amp;&#160;</td>
           <td class="paramname"><em>coeffs</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -113,13 +113,14 @@ $(document).ready(function(){initNavTree('d1/df6/class_vector_arithmetic_adc1142
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00668">668</a> of file <a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html">VectorArithmetic.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/df2/vector-arithmetic_8hpp_source.html#l00668">668</a> of file <a class="el" href="../../dd/df2/vector-arithmetic_8hpp_source.html">vector-arithmetic.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  668</span>                                                {</div>
-<div class="line"><span class="lineno">  669</span>    <span class="keywordflow">return</span> std::visit([&amp;](<span class="keyword">auto</span>&amp; arg) -&gt; <span class="keywordtype">size_t</span> { <span class="keywordflow">return</span> arg-&gt;size(coeffs); }, <a class="code hl_variable" href="../../d1/df6/class_vector_arithmetic_af10dea27e715b69b5b5ea3d3f31f5197.html#af10dea27e715b69b5b5ea3d3f31f5197">mConcreteVector</a>);</div>
+<div class="line"><span class="lineno">  669</span>    <span class="keywordflow">return</span> std::visit([&amp;](<span class="keyword">auto</span>&amp; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">arg</a>) -&gt; <span class="keywordtype">size_t</span> { <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">arg</a>-&gt;size(coeffs); }, <a class="code hl_variable" href="../../d1/df6/class_vector_arithmetic_af10dea27e715b69b5b5ea3d3f31f5197.html#af10dea27e715b69b5b5ea3d3f31f5197">mConcreteVector</a>);</div>
 <div class="line"><span class="lineno">  670</span>  }</div>
-<div class="ttc" id="aclass_vector_arithmetic_af10dea27e715b69b5b5ea3d3f31f5197_html_af10dea27e715b69b5b5ea3d3f31f5197"><div class="ttname"><a href="../../d1/df6/class_vector_arithmetic_af10dea27e715b69b5b5ea3d3f31f5197.html#af10dea27e715b69b5b5ea3d3f31f5197">VectorArithmetic::mConcreteVector</a></div><div class="ttdeci">CVA_Type mConcreteVector</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df1/_vector_arithmetic_8hpp_source.html#l00604">VectorArithmetic.hpp:604</a></div></div>
+<div class="ttc" id="aclass_vector_arithmetic_af10dea27e715b69b5b5ea3d3f31f5197_html_af10dea27e715b69b5b5ea3d3f31f5197"><div class="ttname"><a href="../../d1/df6/class_vector_arithmetic_af10dea27e715b69b5b5ea3d3f31f5197.html#af10dea27e715b69b5b5ea3d3f31f5197">VectorArithmetic::mConcreteVector</a></div><div class="ttdeci">CVA_Type mConcreteVector</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df2/vector-arithmetic_8hpp_source.html#l00604">vector-arithmetic.hpp:604</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d1/df6/class_vector_arithmetic_af10dea27e715b69b5b5ea3d3f31f5197.html#af10dea27e715b69b5b5ea3d3f31f5197">mConcreteVector</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d1/df6/class_vector_arithmetic_af10dea27e715b69b5b5ea3d3f31f5197.html#af10dea27e715b69b5b5ea3d3f31f5197">mConcreteVector</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d92/class_n_c_f4_a0e01690991f27c0bbe74c97a9f3f971d.html#a0e01690991f27c0bbe74c97a9f3f971d">NCF4::displayF4Matrix()</a>, <a class="el" href="../../d0/d92/class_n_c_f4_a9eec2b57b36080765dc13ab46aeffd74.html#a9eec2b57b36080765dc13ab46aeffd74">NCF4::displayF4MatrixSize()</a>, <a class="el" href="../../d0/d92/class_n_c_f4_a98d392730231d1979934bcd437981d58.html#a98d392730231d1979934bcd437981d58">NCF4::displayFullF4Matrix()</a>, <a class="el" href="../../d4/d1b/classnewf4_1_1_polynomial_a4061c0b45e818e8d314636825eed19f1.html#a4061c0b45e818e8d314636825eed19f1">newf4::Polynomial::end()</a>, <a class="el" href="../../d4/d1b/classnewf4_1_1_polynomial_a28e76b801b0cc438c97b670d77608c7e.html#a28e76b801b0cc438c97b670d77608c7e">newf4::Polynomial::end()</a>, <a class="el" href="../../d9/d4a/class_f4_g_b_af8a814037b954b343cbdfa95cc862a4c.html#af8a814037b954b343cbdfa95cc862a4c">F4GB::gauss_reduce_row()</a>, <a class="el" href="../../d0/dd7/class_f4_res_aaf4caef994780061adfe102535ea2fe4.html#aaf4caef994780061adfe102535ea2fe4">F4Res::gaussReduceRow()</a>, <a class="el" href="../../d0/d92/class_n_c_f4_a3b18b77182a8875e17395153176d38ff.html#a3b18b77182a8875e17395153176d38ff">NCF4::generalReduceF4Row()</a>, <a class="el" href="../../d7/d3d/class_res_polynomial_constructor_ad9e6922c47e3dd1faed3c39fca13b579.html#ad9e6922c47e3dd1faed3c39fca13b579">ResPolynomialConstructor::setPoly()</a>, and <a class="el" href="../../d9/d4a/class_f4_g_b_a0171bead5acbebb00213e0378fb06443.html#a0171bead5acbebb00213e0378fb06443">F4GB::tail_reduce()</a>.</p>
 
@@ -131,7 +132,7 @@ $(document).ready(function(){initNavTree('d1/df6/class_vector_arithmetic_adc1142
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/df6/class_vector_arithmetic.html">VectorArithmetic</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

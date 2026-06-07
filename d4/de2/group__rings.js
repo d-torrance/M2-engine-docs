@@ -591,6 +591,7 @@ var group__rings =
       [ "random", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a550cb5ebf39954ed02570972c0adb009.html#a550cb5ebf39954ed02570972c0adb009", null ],
       [ "set", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a451ad199129d4a3669985fdb8a4eaa19.html#a451ad199129d4a3669985fdb8a4eaa19", null ],
       [ "set_from_BigReal", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a1d3211293c8b12e32c6d2d55b03b0fd5.html#a1d3211293c8b12e32c6d2d55b03b0fd5", null ],
+      [ "set_from_double", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a55097b1d5f8320bd7b27cd5042e8d00c.html#a55097b1d5f8320bd7b27cd5042e8d00c", null ],
       [ "set_from_long", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a680384ad0b2c967e8488e06b259f43cc.html#a680384ad0b2c967e8488e06b259f43cc", null ],
       [ "set_from_mpq", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a40893a3841a366693b3d8cd0ee401c7f.html#a40893a3841a366693b3d8cd0ee401c7f", null ],
       [ "set_from_mpz", "d9/dec/class_m2_1_1_a_ring_q_q_g_m_p_a0332d3b3254d5751a8a8f833a5c481d7.html#a0332d3b3254d5751a8a8f833a5c481d7", null ],
@@ -858,29 +859,6 @@ var group__rings =
       [ "mStartLevel", "da/d48/class_m2_1_1_a_ring_tower_a38231ea8fcbaf31d1db3002f31728074.html#a38231ea8fcbaf31d1db3002f31728074", null ],
       [ "mVarNames", "da/d48/class_m2_1_1_a_ring_tower_a4fc10e04a0f9101cfda140fb33f14f69.html#a4fc10e04a0f9101cfda140fb33f14f69", null ],
       [ "ringID", "da/d48/class_m2_1_1_a_ring_tower_a3d7f4bf454b3d8de60cbc966c3533a31.html#a3d7f4bf454b3d8de60cbc966c3533a31", null ]
-    ] ],
-    [ "M2::RElementWrap< RingType >", "d1/da0/class_m2_1_1_r_element_wrap.html", [
-      [ "element_type", "d1/da0/class_m2_1_1_r_element_wrap_afce7b7a022172dc5d88d11257c0cc3ec.html#afce7b7a022172dc5d88d11257c0cc3ec", null ],
-      [ "~RElementWrap", "d1/da0/class_m2_1_1_r_element_wrap_ae177a8d8799a9b5f4cdcc5ac68aab144.html#ae177a8d8799a9b5f4cdcc5ac68aab144", null ],
-      [ "RElementWrap", "d1/da0/class_m2_1_1_r_element_wrap_a552cb79f7dd262b3703a9d20e9a2a885.html#a552cb79f7dd262b3703a9d20e9a2a885", null ],
-      [ "RElementWrap", "d1/da0/class_m2_1_1_r_element_wrap_ac6dc2af6891e61958b342369bc7108e9.html#ac6dc2af6891e61958b342369bc7108e9", null ],
-      [ "RElementWrap", "d1/da0/class_m2_1_1_r_element_wrap_abcb3be3d05263ac2592f1a42a7dc38b8.html#abcb3be3d05263ac2592f1a42a7dc38b8", null ],
-      [ "AConcreteRing< RingType >", "d1/da0/class_m2_1_1_r_element_wrap_a3aaded1d004a372d4c4b1974740d6b48.html#a3aaded1d004a372d4c4b1974740d6b48", null ],
-      [ "ARing::converter", "d1/da0/class_m2_1_1_r_element_wrap_a7b14209a90774e2151c6f1568b8c48d2.html#a7b14209a90774e2151c6f1568b8c48d2", null ],
-      [ "val_", "d1/da0/class_m2_1_1_r_element_wrap_a562e734dad3c6e9ac76a4c4c142b259b.html#a562e734dad3c6e9ac76a4c4c142b259b", null ]
-    ] ],
-    [ "M2::AConcreteRing< RingType >", "d3/dd1/class_m2_1_1_a_concrete_ring.html", [
-      [ "element_type", "d3/dd1/class_m2_1_1_a_concrete_ring_a12721cc0016788484f7977bef8c3e49a.html#a12721cc0016788484f7977bef8c3e49a", null ],
-      [ "ringelem_type", "d3/dd1/class_m2_1_1_a_concrete_ring_a27383b85ffed63d0245d2c9928491956.html#a27383b85ffed63d0245d2c9928491956", null ],
-      [ "AConcreteRing", "d3/dd1/class_m2_1_1_a_concrete_ring_a415b26267a2dabf86a1d1ead15df31f1.html#a415b26267a2dabf86a1d1ead15df31f1", null ],
-      [ "AConcreteRing", "d3/dd1/class_m2_1_1_a_concrete_ring_a8820312969ee8bb5b7329031c2101e4d.html#a8820312969ee8bb5b7329031c2101e4d", null ],
-      [ "add_to", "d3/dd1/class_m2_1_1_a_concrete_ring_a4f01852b51cda0cc8a4f884441f676da.html#a4f01852b51cda0cc8a4f884441f676da", null ],
-      [ "getInternalRing", "d3/dd1/class_m2_1_1_a_concrete_ring_a33a5d49407a33fac4aead80d840b2806.html#a33a5d49407a33fac4aead80d840b2806", null ],
-      [ "getInternalRing", "d3/dd1/class_m2_1_1_a_concrete_ring_ae8bca5762356ee8e0ffa732eca509445.html#ae8bca5762356ee8e0ffa732eca509445", null ],
-      [ "getRingID", "d3/dd1/class_m2_1_1_a_concrete_ring_a99032e5058d42a72690a0e9e058e85be.html#a99032e5058d42a72690a0e9e058e85be", null ],
-      [ "init_set", "d3/dd1/class_m2_1_1_a_concrete_ring_a9d2468dbb607297ea9b09c97dbb2a86f.html#a9d2468dbb607297ea9b09c97dbb2a86f", null ],
-      [ "ARing::converter", "d3/dd1/class_m2_1_1_a_concrete_ring_a7b14209a90774e2151c6f1568b8c48d2.html#a7b14209a90774e2151c6f1568b8c48d2", null ],
-      [ "R_", "d3/dd1/class_m2_1_1_a_concrete_ring_a77d4eabec57d0369bbc7b5c3eaf39c59.html#a77d4eabec57d0369bbc7b5c3eaf39c59", null ]
     ] ],
     [ "M2::ARingZZ", "d4/dea/class_m2_1_1_a_ring_z_z.html", [
       [ "elem", "d4/dea/class_m2_1_1_a_ring_z_z_a344fe037d2542395059da25fabca5672.html#a344fe037d2542395059da25fabca5672", null ],

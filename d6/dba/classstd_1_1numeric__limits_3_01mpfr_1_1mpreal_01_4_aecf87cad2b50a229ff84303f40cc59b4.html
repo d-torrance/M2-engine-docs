@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('d6/dba/classstd_1_1numeric__limits_3_0
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static float_round_style std::numeric_limits&lt; <a class="el" href="../../d6/df7/classmpfr_1_1mpreal.html">mpfr::mpreal</a> &gt;::round_style </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">float_round_style</a> std::numeric_limits&lt; <a class="el" href="../../d6/df7/classmpfr_1_1mpreal.html">mpfr::mpreal</a> &gt;::round_style </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -114,19 +114,22 @@ $(document).ready(function(){initNavTree('d6/dba/classstd_1_1numeric__limits_3_0
 
 <p class="definition">Definition at line <a class="el" href="../../d9/de1/mpreal_8h_source.html#l03283">3283</a> of file <a class="el" href="../../d9/de1/mpreal_8h_source.html">mpreal.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 3284</span>        {</div>
-<div class="line"><span class="lineno"> 3285</span>            mp_rnd_t r = <a class="code hl_function" href="../../d6/df7/classmpfr_1_1mpreal_ae0bdf9ca1838bd5851ac1c7c6b360553.html#ae0bdf9ca1838bd5851ac1c7c6b360553">mpfr::mpreal::get_default_rnd</a>();</div>
+<div class="line"><span class="lineno"> 3285</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mp_rnd_t</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">r</a> = <a class="code hl_function" href="../../d6/df7/classmpfr_1_1mpreal_ae0bdf9ca1838bd5851ac1c7c6b360553.html#ae0bdf9ca1838bd5851ac1c7c6b360553">mpfr::mpreal::get_default_rnd</a>();</div>
 <div class="line"><span class="lineno"> 3286</span> </div>
-<div class="line"><span class="lineno"> 3287</span>            <span class="keywordflow">switch</span> (r)</div>
+<div class="line"><span class="lineno"> 3287</span>            <span class="keywordflow">switch</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">r</a>)</div>
 <div class="line"><span class="lineno"> 3288</span>            {</div>
-<div class="line"><span class="lineno"> 3289</span>            <span class="keywordflow">case</span> GMP_RNDN: <span class="keywordflow">return</span> round_to_nearest;</div>
-<div class="line"><span class="lineno"> 3290</span>            <span class="keywordflow">case</span> GMP_RNDZ: <span class="keywordflow">return</span> round_toward_zero;</div>
-<div class="line"><span class="lineno"> 3291</span>            <span class="keywordflow">case</span> GMP_RNDU: <span class="keywordflow">return</span> round_toward_infinity;</div>
-<div class="line"><span class="lineno"> 3292</span>            <span class="keywordflow">case</span> GMP_RNDD: <span class="keywordflow">return</span> round_toward_neg_infinity;</div>
-<div class="line"><span class="lineno"> 3293</span>            <span class="keywordflow">default</span>: <span class="keywordflow">return</span> round_indeterminate;</div>
+<div class="line"><span class="lineno"> 3289</span>            <span class="keywordflow">case</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">GMP_RNDN</a>: <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">round_to_nearest</a>;</div>
+<div class="line"><span class="lineno"> 3290</span>            <span class="keywordflow">case</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">GMP_RNDZ</a>: <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">round_toward_zero</a>;</div>
+<div class="line"><span class="lineno"> 3291</span>            <span class="keywordflow">case</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">GMP_RNDU</a>: <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">round_toward_infinity</a>;</div>
+<div class="line"><span class="lineno"> 3292</span>            <span class="keywordflow">case</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">GMP_RNDD</a>: <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">round_toward_neg_infinity</a>;</div>
+<div class="line"><span class="lineno"> 3293</span>            <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">round_indeterminate</a>;</div>
 <div class="line"><span class="lineno"> 3294</span>            }</div>
 <div class="line"><span class="lineno"> 3295</span>        }</div>
 <div class="ttc" id="aclassmpfr_1_1mpreal_ae0bdf9ca1838bd5851ac1c7c6b360553_html_ae0bdf9ca1838bd5851ac1c7c6b360553"><div class="ttname"><a href="../../d6/df7/classmpfr_1_1mpreal_ae0bdf9ca1838bd5851ac1c7c6b360553.html#ae0bdf9ca1838bd5851ac1c7c6b360553">mpfr::mpreal::get_default_rnd</a></div><div class="ttdeci">static mp_rnd_t get_default_rnd()</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l00157">mpreal.h:157</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -135,7 +138,7 @@ $(document).ready(function(){initNavTree('d6/dba/classstd_1_1numeric__limits_3_0
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../d6/dba/classstd_1_1numeric__limits_3_01mpfr_1_1mpreal_01_4.html">numeric_limits&lt; mpfr::mpreal &gt;</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

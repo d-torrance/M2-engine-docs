@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_ae316b7ca3
 
 <div class="contents">
 <a id="ae316b7ca3ff64cab849528a3d10b0d19" name="ae316b7ca3ff64cab849528a3d10b0d19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae316b7ca3ff64cab849528a3d10b0d19">&#9670;&#160;</a></span>mult() <span class="overload">[8/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae316b7ca3ff64cab849528a3d10b0d19">&#9670;&#160;</a></span>mult() <span class="overload">[9/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -99,15 +99,15 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_ae316b7ca3
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MatrixOps::mult </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> MatrixOps::mult </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a23735958301089d211bdda087d23f38b.html#a23735958301089d211bdda087d23f38b">DMatZZpFlint</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a23735958301089d211bdda087d23f38b.html#a23735958301089d211bdda087d23f38b">DMatZZpFlint</a> &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a23735958301089d211bdda087d23f38b.html#a23735958301089d211bdda087d23f38b">DMatZZpFlint</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d9/d8a/mat-linalg_8hpp_a23735958301089d211bdda087d23f38b.html#a23735958301089d211bdda087d23f38b">DMatZZpFlint</a> &amp;&#160;</td>
           <td class="paramname"><em>B</em>, </td>
         </tr>
         <tr>
@@ -137,11 +137,11 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_ae316b7ca3
 <div class="line"><span class="lineno">  853</span>  <span class="comment">// The A1 and B1 on the next line are switched because the memory layout</span></div>
 <div class="line"><span class="lineno">  854</span>  <span class="comment">// expected</span></div>
 <div class="line"><span class="lineno">  855</span>  <span class="comment">// is the transpose of what we have for DMat.</span></div>
-<div class="line"><span class="lineno">  856</span>  nmod_mat_mul(result_product.<a class="code hl_function" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_afdb2c08a511b87b79ed02e059b143339.html#afdb2c08a511b87b79ed02e059b143339">nmod_mat</a>(), A.<a class="code hl_function" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_afdb2c08a511b87b79ed02e059b143339.html#afdb2c08a511b87b79ed02e059b143339">nmod_mat</a>(), B.<a class="code hl_function" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_afdb2c08a511b87b79ed02e059b143339.html#afdb2c08a511b87b79ed02e059b143339">nmod_mat</a>());</div>
+<div class="line"><span class="lineno">  856</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nmod_mat_mul</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_product</a>.nmod_mat(), <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">A</a>.nmod_mat(), <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">B</a>.nmod_mat());</div>
 <div class="line"><span class="lineno">  857</span>}</div>
-<div class="ttc" id="aclass_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_afdb2c08a511b87b79ed02e059b143339_html_afdb2c08a511b87b79ed02e059b143339"><div class="ttname"><a href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_afdb2c08a511b87b79ed02e059b143339.html#afdb2c08a511b87b79ed02e059b143339">DMat&lt; M2::ARingZZpFlint &gt;::nmod_mat</a></div><div class="ttdeci">const nmod_mat_t &amp; nmod_mat() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d98/dmat-zzp-flint_8hpp_source.html#l00081">dmat-zzp-flint.hpp:81</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/d70/class_d_mat_3_01_m2_1_1_a_ring_z_zp_flint_01_4_afdb2c08a511b87b79ed02e059b143339.html#afdb2c08a511b87b79ed02e059b143339">DMat&lt; M2::ARingZZpFlint &gt;::nmod_mat()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
 
 </div>
 </div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_matrix_ops_ae316b7ca3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db5/namespace_matrix_ops.html">MatrixOps</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

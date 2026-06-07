@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('dd/d98/table_8h_a0008da77977fbf197e608
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Table_free </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> Table_free </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d6/d47/struct_table___t.html">Table_T</a> **&#160;</td>
           <td class="paramname"><em>table</em></td><td>)</td>
@@ -115,24 +115,24 @@ $(document).ready(function(){initNavTree('dd/d98/table_8h_a0008da77977fbf197e608
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d33/table_8c_source.html#l00150">150</a> of file <a class="el" href="../../dc/d33/table_8c_source.html">table.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
-<div class="line"><span class="lineno">  152</span>  assert(table &amp;&amp; *table);</div>
+<div class="line"><span class="lineno">  152</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">assert</a>(table &amp;&amp; *table);</div>
 <div class="line"><span class="lineno">  153</span>  <span class="keywordflow">if</span> ((*table)-&gt;length &gt; 0)</div>
 <div class="line"><span class="lineno">  154</span>    {</div>
 <div class="line"><span class="lineno">  155</span>      <span class="keywordtype">int</span> i;</div>
-<div class="line"><span class="lineno">  156</span>      <span class="keyword">struct </span>binding *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, *q;</div>
+<div class="line"><span class="lineno">  156</span>      <span class="keyword">struct </span>binding *p, *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a>;</div>
 <div class="line"><span class="lineno">  157</span>      <span class="keywordflow">for</span> (i = 0; i &lt; (*table)-&gt;size; i++)</div>
-<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">for</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = (*table)-&gt;buckets[i]; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = q)</div>
+<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">for</span> (p = (*table)-&gt;buckets[i]; p; p = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a>)</div>
 <div class="line"><span class="lineno">  159</span>          {</div>
-<div class="line"><span class="lineno">  160</span>            q = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;link;</div>
-<div class="line"><span class="lineno">  161</span>            <a class="code hl_define" href="../../dc/d33/table_8c_a105949c59c998e38aad80266afac92bf.html#a105949c59c998e38aad80266afac92bf">FREE</a>(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>);</div>
+<div class="line"><span class="lineno">  160</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a> = p-&gt;link;</div>
+<div class="line"><span class="lineno">  161</span>            <a class="code hl_define" href="../../dc/d33/table_8c_a105949c59c998e38aad80266afac92bf.html#a105949c59c998e38aad80266afac92bf">FREE</a>(p);</div>
 <div class="line"><span class="lineno">  162</span>          }</div>
 <div class="line"><span class="lineno">  163</span>    }</div>
 <div class="line"><span class="lineno">  164</span>  <a class="code hl_define" href="../../dc/d33/table_8c_a105949c59c998e38aad80266afac92bf.html#a105949c59c998e38aad80266afac92bf">FREE</a>(*table);</div>
 <div class="line"><span class="lineno">  165</span>}</div>
-<div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="atable_8c_a105949c59c998e38aad80266afac92bf_html_a105949c59c998e38aad80266afac92bf"><div class="ttname"><a href="../../dc/d33/table_8c_a105949c59c998e38aad80266afac92bf.html#a105949c59c998e38aad80266afac92bf">FREE</a></div><div class="ttdeci">#define FREE(ptr)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d33/table_8c_source.html#l00011">table.c:11</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dc/d33/table_8c_a105949c59c998e38aad80266afac92bf.html#a105949c59c998e38aad80266afac92bf">FREE</a>, and <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../dc/d33/table_8c_a105949c59c998e38aad80266afac92bf.html#a105949c59c998e38aad80266afac92bf">FREE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/da0/exptable_8c_a6354a9626ea1b930de3390324591e2c6.html#a6354a9626ea1b930de3390324591e2c6">exponent_table_free()</a>.</p>
 
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('dd/d98/table_8h_a0008da77977fbf197e608
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dd/d98/table_8h.html">table.h</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

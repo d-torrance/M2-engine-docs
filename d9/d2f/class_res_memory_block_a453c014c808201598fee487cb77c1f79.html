@@ -95,10 +95,10 @@ $(document).ready(function(){initNavTree('d9/d2f/class_res_memory_block_a453c014
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> , long <a class="el" href="../../d1/da0/classint.html">int</a> NSLAB&gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a> , long <a class="el" href="../../d1/da0/classint.html">int</a> NSLAB&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d1/da0/classint.html">int</a> <a class="el" href="../../d9/d2f/class_res_memory_block.html">ResMemoryBlock</a>&lt; <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>, NSLAB &gt;::n_slabs </td>
+          <td class="memname"><a class="el" href="../../d1/da0/classint.html">int</a> <a class="el" href="../../d9/d2f/class_res_memory_block.html">ResMemoryBlock</a>&lt; <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c60b918599864e2e5.html#a0acb682b8260ab1c60b918599864e2e5">T</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">NSLAB</a> &gt;::n_slabs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -109,15 +109,15 @@ template&lt;typename <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c
 <p class="definition">Definition at line <a class="el" href="../../d1/d36/res-memblock_8hpp_source.html#l00118">118</a> of file <a class="el" href="../../d1/d36/res-memblock_8hpp_source.html">res-memblock.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  119</span>{</div>
 <div class="line"><span class="lineno">  120</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = 0;</div>
-<div class="line"><span class="lineno">  121</span>  <span class="keywordflow">for</span> (<a class="code hl_class" href="../../dc/d02/classslab.html">slab</a> *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_variable" href="../../d9/d2f/class_res_memory_block_af51d113ab6e7a3119e0ab412d80846cc.html#af51d113ab6e7a3119e0ab412d80846cc">first_slab</a>; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> != <span class="keyword">nullptr</span>; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;next) <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>++;</div>
+<div class="line"><span class="lineno">  121</span>  <span class="keywordflow">for</span> (<a class="code hl_class" href="../../dc/d02/classslab.html">slab</a> *p = <a class="code hl_variable" href="../../d9/d2f/class_res_memory_block_af51d113ab6e7a3119e0ab412d80846cc.html#af51d113ab6e7a3119e0ab412d80846cc">first_slab</a>; p != <span class="keyword">nullptr</span>; p = p-&gt;<a class="code hl_variable" href="../../d3/d86/struct_res_memory_block_1_1slab_aae7338667727bc95f63989235fdca084.html#aae7338667727bc95f63989235fdca084">next</a>) <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>++;</div>
 <div class="line"><span class="lineno">  122</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
 <div class="line"><span class="lineno">  123</span>}</div>
 <div class="ttc" id="aclass_res_memory_block_af51d113ab6e7a3119e0ab412d80846cc_html_af51d113ab6e7a3119e0ab412d80846cc"><div class="ttname"><a href="../../d9/d2f/class_res_memory_block_af51d113ab6e7a3119e0ab412d80846cc.html#af51d113ab6e7a3119e0ab412d80846cc">ResMemoryBlock::first_slab</a></div><div class="ttdeci">slab * first_slab</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d36/res-memblock_8hpp_source.html#l00014">res-memblock.hpp:14</a></div></div>
 <div class="ttc" id="aclassslab_html"><div class="ttname"><a href="../../dc/d02/classslab.html">slab</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d2c/mem_8hpp_source.html#l00036">mem.hpp:37</a></div></div>
-<div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="astruct_res_memory_block_1_1slab_aae7338667727bc95f63989235fdca084_html_aae7338667727bc95f63989235fdca084"><div class="ttname"><a href="../../d3/d86/struct_res_memory_block_1_1slab_aae7338667727bc95f63989235fdca084.html#aae7338667727bc95f63989235fdca084">ResMemoryBlock::slab::next</a></div><div class="ttdeci">slab * next</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d36/res-memblock_8hpp_source.html#l00010">res-memblock.hpp:10</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d86/struct_res_memory_block_1_1slab_aae7338667727bc95f63989235fdca084.html#aae7338667727bc95f63989235fdca084">ResMemoryBlock&lt; T, NSLAB &gt;::slab::next</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 </div>
 </div>
@@ -127,7 +127,7 @@ template&lt;typename <a class="el" href="../../dc/d33/table_8c_a0acb682b8260ab1c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d2f/class_res_memory_block.html">ResMemoryBlock</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

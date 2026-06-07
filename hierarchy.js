@@ -1,9 +1,6 @@
 var hierarchy =
 [
     [ "AllocLogger", "d4/d6d/class_alloc_logger.html", null ],
-    [ "ARing", "d1/d7e/class_a_ring.html", [
-      [ "M2::AConcreteRing< RingType >", "d3/dd1/class_m2_1_1_a_concrete_ring.html", null ]
-    ] ],
     [ "ARingElement< RT >", "d9/d84/class_a_ring_element.html", null ],
     [ "ARingElementGenerator< RingType >", "df/dc2/class_a_ring_element_generator.html", null ],
     [ "M2::ARingPolynomialStruct", "db/d05/struct_m2_1_1_a_ring_polynomial_struct.html", null ],
@@ -22,8 +19,8 @@ var hierarchy =
     [ "cc_doubles_struct", "db/dae/structcc__doubles__struct.html", null ],
     [ "CC_struct", "d3/d66/struct_c_c__struct.html", null ],
     [ "cc_struct", "de/d31/structcc__struct.html", null ],
-    [ "CCi_struct", "de/dd7/struct_c_ci__struct.html", null ],
     [ "cci_struct", "d7/dd4/structcci__struct.html", null ],
+    [ "CCi_struct", "de/dd7/struct_c_ci__struct.html", null ],
     [ "CCimutable_struct", "d0/d78/struct_c_cimutable__struct.html", null ],
     [ "CCmutable_struct", "d6/ddb/struct_c_cmutable__struct.html", null ],
     [ "ChineseRemainder", "d0/d4e/class_chinese_remainder.html", null ],
@@ -194,7 +191,6 @@ var hierarchy =
       [ "BIBasis::MonomLex", "d7/dc5/class_b_i_basis_1_1_monom_lex.html", null ]
     ] ],
     [ "Monom", "dd/d21/struct_monom.html", null ],
-    [ "monom_int_list", "d4/d08/classmonom__int__list.html", null ],
     [ "MonomEq", "d7/d79/class_monom_eq.html", null ],
     [ "MonomHash", "d0/da5/class_monom_hash.html", null ],
     [ "MonomHashEqual", "dc/dd6/class_monom_hash_equal.html", null ],
@@ -497,7 +493,6 @@ var hierarchy =
     [ "PointArray", "d2/dbf/class_point_array.html", null ],
     [ "BIBasis::PointerLessComparator< T >", "db/d78/class_b_i_basis_1_1_pointer_less_comparator.html", null ],
     [ "BIBasis::PointerMoreComparator< T >", "d1/d63/class_b_i_basis_1_1_pointer_more_comparator.html", null ],
-    [ "PointsComputation< CoeffRing >", "d2/d6c/class_points_computation.html", null ],
     [ "POLY", "d0/d03/struct_p_o_l_y.html", null ],
     [ "polyheap", "d3/d5a/classpolyheap.html", null ],
     [ "BIBasis::Polynom< MonomType >", "d9/d02/class_b_i_basis_1_1_polynom.html", null ],
@@ -519,9 +514,6 @@ var hierarchy =
     [ "ReducedGB_Field_Local_sorter", "da/da4/struct_reduced_g_b___field___local__sorter.html", null ],
     [ "ReducedGB_Field_sorter", "db/dd8/struct_reduced_g_b___field__sorter.html", null ],
     [ "ReducedGB_ZZ_sorter", "d8/d0a/struct_reduced_g_b___z_z__sorter.html", null ],
-    [ "RElement", "d5/de8/class_r_element.html", [
-      [ "M2::RElementWrap< RingType >", "d1/da0/class_m2_1_1_r_element_wrap.html", null ]
-    ] ],
     [ "res_pair", "dc/d2a/classres__pair.html", null ],
     [ "ResF4toM2Interface", "d2/d32/class_res_f4to_m2_interface.html", null ],
     [ "ResMemoryBlock< T, NSLAB >", "d9/d2f/class_res_memory_block.html", null ],
@@ -551,6 +543,7 @@ var hierarchy =
     [ "mpfr::internal::result_type< unsigned long int >", "dc/db2/structmpfr_1_1internal_1_1result__type_3_01unsigned_01long_01int_01_4.html", null ],
     [ "mpfr::internal::result_type< unsigned long long >", "db/df4/structmpfr_1_1internal_1_1result__type_3_01unsigned_01long_01long_01_4.html", null ],
     [ "ring_elem", "d5/d64/unionring__elem.html", null ],
+    [ "RingElem", "d1/d3d/class_ring_elem.html", null ],
     [ "RingElementGenerator< RingType >", "df/d9f/class_ring_element_generator.html", null ],
     [ "F4Res::Row", "d9/d66/struct_f4_res_1_1_row.html", null ],
     [ "NCF4::Row", "d8/d29/struct_n_c_f4_1_1_row.html", null ],
@@ -588,6 +581,9 @@ var hierarchy =
     [ "tableau", "d8/dee/classtableau.html", null ],
     [ "tableau2", "dd/d69/classtableau2.html", null ],
     [ "TermIterator< T >", "d9/d6d/struct_term_iterator.html", null ],
+    [ "testing::Test", null, [
+      [ "WeylAlgebraTest", "dc/d0b/class_weyl_algebra_test.html", null ]
+    ] ],
     [ "BIBasis::Triple< MonomType >", "da/d09/class_b_i_basis_1_1_triple.html", null ],
     [ "TrivialHomotopyAlgorithm", "d5/da7/class_trivial_homotopy_algorithm.html", null ],
     [ "BIBasis::TSet< MonomType >", "d3/d5c/class_b_i_basis_1_1_t_set.html", null ],
@@ -596,6 +592,7 @@ var hierarchy =
     [ "vecHeap", "d1/d2c/classvec_heap.html", null ],
     [ "VectorArithmetic", "d1/df6/class_vector_arithmetic.html", null ],
     [ "VectorArithmeticStats", "d6/d59/class_vector_arithmetic_stats.html", null ],
+    [ "WeylAlgebraTestAccessor", "d8/dff/class_weyl_algebra_test_accessor.html", null ],
     [ "Word", "d3/da0/class_word.html", null ],
     [ "WordTable", "d6/def/class_word_table.html", null ],
     [ "WordWithData", "d2/d05/class_word_with_data.html", null ],

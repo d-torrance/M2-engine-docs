@@ -25,13 +25,13 @@ var class_hermite_computation =
     [ "start_computation", "d8/d76/class_hermite_computation_a49e74d40b4ee508a4f37f14e70ea0557.html#a49e74d40b4ee508a4f37f14e70ea0557", null ],
     [ "stop_conditions_ok", "d8/d76/class_hermite_computation_a6eea8fe9d4a7a1b59c38d04deb415f7c.html#a6eea8fe9d4a7a1b59c38d04deb415f7c", null ],
     [ "text_out", "d8/d76/class_hermite_computation_a31662941ebf429ccb37bf61f6522356e.html#a31662941ebf429ccb37bf61f6522356e", null ],
+    [ "VECTOR", "d8/d76/class_hermite_computation_aabf0f4cd1209fac3fae4c5063020ccf0.html#aabf0f4cd1209fac3fae4c5063020ccf0", null ],
+    [ "VECTOR", "d8/d76/class_hermite_computation_aff9d45bcc8ab5956d5faa3a32cd4c81a.html#aff9d45bcc8ab5956d5faa3a32cd4c81a", null ],
     [ "collect_syz", "d8/d76/class_hermite_computation_a8c6901609e2f305955a890442c4a59fa.html#a8c6901609e2f305955a890442c4a59fa", null ],
     [ "Fsyz", "d8/d76/class_hermite_computation_a6cc8e86f4949619b2c2a4ac73d5d644b.html#a6cc8e86f4949619b2c2a4ac73d5d644b", null ],
     [ "GB_list", "d8/d76/class_hermite_computation_ab2a39fa582d94959275b6e7b0f8ddccb.html#ab2a39fa582d94959275b6e7b0f8ddccb", null ],
     [ "gens", "d8/d76/class_hermite_computation_a8f3b83e3d517935a89ff457714a59347.html#a8f3b83e3d517935a89ff457714a59347", null ],
-    [ "initial", "d8/d76/class_hermite_computation_a80979f0614a80e9ea86b198ca37b3e6f.html#a80979f0614a80e9ea86b198ca37b3e6f", null ],
     [ "n_comps_per_syz", "d8/d76/class_hermite_computation_a1e1b8ff45ae263271c22e51e30cd344f.html#a1e1b8ff45ae263271c22e51e30cd344f", null ],
     [ "n_gb", "d8/d76/class_hermite_computation_a410ca40db2d428ef11f5bcb8b1223299.html#a410ca40db2d428ef11f5bcb8b1223299", null ],
-    [ "row", "d8/d76/class_hermite_computation_ae972e9abb549c747e78ba1d54a384441.html#ae972e9abb549c747e78ba1d54a384441", null ],
-    [ "syz_list", "d8/d76/class_hermite_computation_ad4e5a8992001d7a4071c6613086bfe93.html#ad4e5a8992001d7a4071c6613086bfe93", null ]
+    [ "row", "d8/d76/class_hermite_computation_ae972e9abb549c747e78ba1d54a384441.html#ae972e9abb549c747e78ba1d54a384441", null ]
 ];

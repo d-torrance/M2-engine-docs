@@ -95,13 +95,13 @@ $(document).ready(function(){initNavTree('d8/ded/class_naive_dedup_polynomial_he
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename &gt; class Queue&gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">template</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> &gt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">class</a> Queue&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d8/ded/class_naive_dedup_polynomial_heap.html">NaiveDedupPolynomialHeap</a> &amp; <a class="el" href="../../d8/ded/class_naive_dedup_polynomial_heap.html">NaiveDedupPolynomialHeap</a>&lt; Queue &gt;::addPolynomial </td>
+          <td class="memname"><a class="el" href="../../d8/ded/class_naive_dedup_polynomial_heap.html">NaiveDedupPolynomialHeap</a> &amp; <a class="el" href="../../d8/ded/class_naive_dedup_polynomial_heap.html">NaiveDedupPolynomialHeap</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Queue</a> &gt;::addPolynomial </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a>&#160;</td>
           <td class="paramname"><em>coeff</em>, </td>
@@ -121,7 +121,7 @@ template&lt;template&lt; typename &gt; class Queue&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a> &amp;&#160;</td>
           <td class="paramname"><em>poly</em>&#160;</td>
         </tr>
         <tr>
@@ -142,7 +142,7 @@ template&lt;template&lt; typename &gt; class Queue&gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../d6/d2d/_n_c_reduction_8cpp_source.html#l00491">491</a> of file <a class="el" href="../../d6/d2d/_n_c_reduction_8cpp_source.html">NCReduction.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  495</span>  {</div>
 <div class="line"><span class="lineno">  496</span>    <a class="code hl_typedef" href="../../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30">Poly</a> f;</div>
-<div class="line"><span class="lineno">  497</span>    <a class="code hl_variable" href="../../d8/ded/class_naive_dedup_polynomial_heap_a3e534a50fcea8d45e6413d074b594b50.html#a3e534a50fcea8d45e6413d074b594b50">mRing</a>.<a class="code hl_function" href="../../de/dbd/class_free_algebra_a96ee0b556866779dc5f3c1feef864e09.html#a96ee0b556866779dc5f3c1feef864e09">mult_by_term_left_and_right</a>(f, poly, coeff, left, right);</div>
+<div class="line"><span class="lineno">  497</span>    <a class="code hl_variable" href="../../d8/ded/class_naive_dedup_polynomial_heap_a3e534a50fcea8d45e6413d074b594b50.html#a3e534a50fcea8d45e6413d074b594b50">mRing</a>.<a class="code hl_function" href="../../de/dbd/class_free_algebra_a96ee0b556866779dc5f3c1feef864e09.html#a96ee0b556866779dc5f3c1feef864e09">mult_by_term_left_and_right</a>(f, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">poly</a>, coeff, left, right);</div>
 <div class="line"><span class="lineno">  498</span>    <a class="code hl_function" href="../../d8/ded/class_naive_dedup_polynomial_heap_a903481418fc5ac9907a6758ea4d72775.html#a903481418fc5ac9907a6758ea4d72775">addPolynomial</a>(f);</div>
 <div class="line"><span class="lineno">  499</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><span class="lineno">  500</span>  }</div>
@@ -150,8 +150,9 @@ template&lt;template&lt; typename &gt; class Queue&gt; </div>
 <div class="ttc" id="aclass_free_algebra_a96ee0b556866779dc5f3c1feef864e09_html_a96ee0b556866779dc5f3c1feef864e09"><div class="ttname"><a href="../../de/dbd/class_free_algebra_a96ee0b556866779dc5f3c1feef864e09.html#a96ee0b556866779dc5f3c1feef864e09">FreeAlgebra::mult_by_term_left_and_right</a></div><div class="ttdeci">void mult_by_term_left_and_right(Poly &amp;result, const Poly &amp;f, const ring_elem c, const Monom leftM, const Monom rightM) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d2e/_free_algebra_8cpp_source.html#l00594">FreeAlgebra.cpp:594</a></div></div>
 <div class="ttc" id="aclass_naive_dedup_polynomial_heap_a3e534a50fcea8d45e6413d074b594b50_html_a3e534a50fcea8d45e6413d074b594b50"><div class="ttname"><a href="../../d8/ded/class_naive_dedup_polynomial_heap_a3e534a50fcea8d45e6413d074b594b50.html#a3e534a50fcea8d45e6413d074b594b50">NaiveDedupPolynomialHeap::mRing</a></div><div class="ttdeci">FreeAlgebra mRing</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d2d/_n_c_reduction_8cpp_source.html#l00547">NCReduction.cpp:547</a></div></div>
 <div class="ttc" id="aclass_naive_dedup_polynomial_heap_a903481418fc5ac9907a6758ea4d72775_html_a903481418fc5ac9907a6758ea4d72775"><div class="ttname"><a href="../../d8/ded/class_naive_dedup_polynomial_heap_a903481418fc5ac9907a6758ea4d72775.html#a903481418fc5ac9907a6758ea4d72775">NaiveDedupPolynomialHeap::addPolynomial</a></div><div class="ttdeci">NaiveDedupPolynomialHeap &amp; addPolynomial(const Poly &amp;poly) override</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d2d/_n_c_reduction_8cpp_source.html#l00480">NCReduction.cpp:480</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/ded/class_naive_dedup_polynomial_heap_a903481418fc5ac9907a6758ea4d72775.html#a903481418fc5ac9907a6758ea4d72775">NaiveDedupPolynomialHeap&lt; Queue &gt;::addPolynomial()</a>, <a class="el" href="../../d8/ded/class_naive_dedup_polynomial_heap_a3e534a50fcea8d45e6413d074b594b50.html#a3e534a50fcea8d45e6413d074b594b50">NaiveDedupPolynomialHeap&lt; Queue &gt;::mRing</a>, and <a class="el" href="../../de/dbd/class_free_algebra_a96ee0b556866779dc5f3c1feef864e09.html#a96ee0b556866779dc5f3c1feef864e09">FreeAlgebra::mult_by_term_left_and_right()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/ded/class_naive_dedup_polynomial_heap_a903481418fc5ac9907a6758ea4d72775.html#a903481418fc5ac9907a6758ea4d72775">NaiveDedupPolynomialHeap&lt; Queue &gt;::addPolynomial()</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d8/ded/class_naive_dedup_polynomial_heap_a3e534a50fcea8d45e6413d074b594b50.html#a3e534a50fcea8d45e6413d074b594b50">NaiveDedupPolynomialHeap&lt; Queue &gt;::mRing</a>, and <a class="el" href="../../de/dbd/class_free_algebra_a96ee0b556866779dc5f3c1feef864e09.html#a96ee0b556866779dc5f3c1feef864e09">FreeAlgebra::mult_by_term_left_and_right()</a>.</p>
 
 </div>
 </div>
@@ -161,7 +162,7 @@ template&lt;template&lt; typename &gt; class Queue&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/ded/class_naive_dedup_polynomial_heap.html">NaiveDedupPolynomialHeap</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

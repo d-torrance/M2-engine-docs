@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('d7/d2b/class_d_mat_lin_alg_3_01_m2_1_1
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="../../d8/df6/class_d_mat_lin_alg.html">DMatLinAlg</a>&lt; <a class="el" href="../../d7/d82/namespace_m2_a4020664aefa28984a9e3e19b16a31981.html#a4020664aefa28984a9e3e19b16a31981">M2::ARingQQ</a> &gt;::findColumnRankProfileFromLU </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">static</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> <a class="el" href="../../d8/df6/class_d_mat_lin_alg.html">DMatLinAlg</a>&lt; <a class="el" href="../../d7/d82/namespace_m2_a4020664aefa28984a9e3e19b16a31981.html#a4020664aefa28984a9e3e19b16a31981">M2::ARingQQ</a> &gt;::findColumnRankProfileFromLU </td>
           <td>(</td>
-          <td class="paramtype">const fmpq_mat_t&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> fmpq_mat_t&#160;</td>
           <td class="paramname"><em>B</em>, </td>
         </tr>
         <tr>
@@ -125,21 +125,22 @@ $(document).ready(function(){initNavTree('d7/d2b/class_d_mat_lin_alg_3_01_m2_1_1
 
 <p class="definition">Definition at line <a class="el" href="../../d5/de9/dmat-lu-qq_8hpp_source.html#l00040">40</a> of file <a class="el" href="../../d5/de9/dmat-lu-qq_8hpp_source.html">dmat-lu-qq.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   42</span>  {</div>
-<div class="line"><span class="lineno">   43</span>    profile.clear();</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordtype">long</span> nrows = fmpq_mat_nrows(B);</div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordtype">long</span> ncols = fmpq_mat_ncols(B);</div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordtype">long</span> thiscol = 0;</div>
-<div class="line"><span class="lineno">   47</span>    <span class="keywordtype">long</span> thisrow = 0;</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">while</span> (thisrow &lt; nrows and thiscol &lt; ncols)</div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">profile</a>.clear();</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nrows</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fmpq_mat_nrows</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">B</a>);</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordtype">long</span> ncols = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fmpq_mat_ncols</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">B</a>);</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">thiscol</a> = 0;</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">thisrow</a> = 0;</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">while</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">thisrow</a> &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nrows</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">and</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">thiscol</a> &lt; ncols)</div>
 <div class="line"><span class="lineno">   49</span>      {</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">if</span> (not fmpq_is_zero(fmpq_mat_entry(B, thisrow, thiscol)))</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">not</a> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fmpq_is_zero</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">fmpq_mat_entry</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">B</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">thisrow</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">thiscol</a>)))</div>
 <div class="line"><span class="lineno">   51</span>          {</div>
-<div class="line"><span class="lineno">   52</span>            profile.push_back(thiscol);</div>
-<div class="line"><span class="lineno">   53</span>            thisrow++;</div>
+<div class="line"><span class="lineno">   52</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">profile</a>.push_back(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">thiscol</a>);</div>
+<div class="line"><span class="lineno">   53</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">thisrow</a>++;</div>
 <div class="line"><span class="lineno">   54</span>          }</div>
-<div class="line"><span class="lineno">   55</span>        thiscol++;</div>
+<div class="line"><span class="lineno">   55</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">thiscol</a>++;</div>
 <div class="line"><span class="lineno">   56</span>      }</div>
 <div class="line"><span class="lineno">   57</span>  }</div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -149,7 +150,7 @@ $(document).ready(function(){initNavTree('d7/d2b/class_d_mat_lin_alg_3_01_m2_1_1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d2b/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_q_q_01_4.html">DMatLinAlg&lt; M2::ARingQQ &gt;</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

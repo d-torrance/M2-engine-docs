@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_aea24367a127006
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PolyRing::determine_common_denominator_QQ </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> PolyRing::determine_common_denominator_QQ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d5/d64/unionring__elem.html">ring_elem</a>&#160;</td>
           <td class="paramname"><em>f</em>, </td>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_aea24367a127006
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">mpz_ptr&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpz_ptr</a>&#160;</td>
           <td class="paramname"><em>denom_so_far</em>&#160;</td>
         </tr>
         <tr>
@@ -122,16 +122,17 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_aea24367a127006
 <div class="line"><span class="lineno"> 2423</span> </div>
 <div class="line"><span class="lineno"> 2424</span>  <span class="keywordflow">for</span> (<a class="code hl_struct" href="../../d0/dbc/struct_nterm.html">Nterm</a>&amp; t : f)</div>
 <div class="line"><span class="lineno"> 2425</span>    {</div>
-<div class="line"><span class="lineno"> 2426</span>      mpq_srcptr a = <a class="code hl_define" href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a>(t.coeff);</div>
-<div class="line"><span class="lineno"> 2427</span>      mpz_lcm(denom_so_far, denom_so_far, mpq_denref(a));</div>
+<div class="line"><span class="lineno"> 2426</span>      mpq_srcptr a = <a class="code hl_define" href="../../dc/dec/rings_2ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a>(t.coeff);</div>
+<div class="line"><span class="lineno"> 2427</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpz_lcm</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">denom_so_far</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">denom_so_far</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpq_denref</a>(a));</div>
 <div class="line"><span class="lineno"> 2428</span>    }</div>
 <div class="line"><span class="lineno"> 2429</span>}</div>
-<div class="ttc" id="aaring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857_html_ab88d3ea2a9742f382a17da830d0b7857"><div class="ttname"><a href="../../dd/da4/aring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857.html#ab88d3ea2a9742f382a17da830d0b7857">globalQQ</a></div><div class="ttdeci">const RingQQ * globalQQ</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d92/interface_2aring_8cpp_source.html#l00024">aring.cpp:24</a></div></div>
+<div class="ttc" id="aaring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857_html_ab88d3ea2a9742f382a17da830d0b7857"><div class="ttname"><a href="../../dd/da4/aring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857.html#ab88d3ea2a9742f382a17da830d0b7857">globalQQ</a></div><div class="ttdeci">const RingQQ * globalQQ</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d92/interface_2aring_8cpp_source.html#l00025">aring.cpp:25</a></div></div>
 <div class="ttc" id="aclass_polynomial_ring_ab1df58ad0edec3c434ad9bdd193a1d9e_html_ab1df58ad0edec3c434ad9bdd193a1d9e"><div class="ttname"><a href="../../d5/d58/class_polynomial_ring_ab1df58ad0edec3c434ad9bdd193a1d9e.html#ab1df58ad0edec3c434ad9bdd193a1d9e">PolynomialRing::getCoefficients</a></div><div class="ttdeci">virtual const Ring * getCoefficients() const</div><div class="ttdef"><b>Definition</b> <a href="../../de/d6c/polyring_8hpp_source.html#l00220">polyring.hpp:220</a></div></div>
-<div class="ttc" id="aringelem_8hpp_a763804a1f716888d0f6362e483ca41c3_html_a763804a1f716888d0f6362e483ca41c3"><div class="ttname"><a href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a></div><div class="ttdeci">#define MPQ_VAL(f)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00156">ringelem.hpp:156</a></div></div>
-<div class="ttc" id="astruct_nterm_html"><div class="ttname"><a href="../../d0/dbc/struct_nterm.html">Nterm</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00107">ringelem.hpp:108</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
+<div class="ttc" id="arings_2ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3_html_a763804a1f716888d0f6362e483ca41c3"><div class="ttname"><a href="../../dc/dec/rings_2ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a></div><div class="ttdeci">#define MPQ_VAL(f)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00156">ringelem.hpp:156</a></div></div>
+<div class="ttc" id="astruct_nterm_html"><div class="ttname"><a href="../../d0/dbc/struct_nterm.html">Nterm</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00107">ringelem.hpp:108</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d58/class_polynomial_ring_ab1df58ad0edec3c434ad9bdd193a1d9e.html#ab1df58ad0edec3c434ad9bdd193a1d9e">PolynomialRing::getCoefficients()</a>, <a class="el" href="../../dd/da4/aring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857.html#ab88d3ea2a9742f382a17da830d0b7857">globalQQ</a>, and <a class="el" href="../../dd/dc9/ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d5/d58/class_polynomial_ring_ab1df58ad0edec3c434ad9bdd193a1d9e.html#ab1df58ad0edec3c434ad9bdd193a1d9e">PolynomialRing::getCoefficients()</a>, <a class="el" href="../../dd/da4/aring-glue_8hpp_ab88d3ea2a9742f382a17da830d0b7857.html#ab88d3ea2a9742f382a17da830d0b7857">globalQQ</a>, and <a class="el" href="../../dc/dec/rings_2ringelem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3">MPQ_VAL</a>.</p>
 
 </div>
 </div>
@@ -141,7 +142,7 @@ $(document).ready(function(){initNavTree('d3/dfc/class_poly_ring_aea24367a127006
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dfc/class_poly_ring.html">PolyRing</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

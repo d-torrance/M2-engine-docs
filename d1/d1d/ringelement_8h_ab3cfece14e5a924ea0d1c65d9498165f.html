@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('d1/d1d/ringelement_8h_ab3cfece14e5a924
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> * IM2_RingElement_from_BigReal </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/de2/class_ring_element.html">RingElement</a> * IM2_RingElement_from_BigReal </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/dcf/class_ring.html">Ring</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../dd/dcf/class_ring.html">Ring</a> *&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
@@ -118,16 +118,17 @@ $(document).ready(function(){initNavTree('d1/d1d/ringelement_8h_ab3cfece14e5a924
 <p class="definition">Definition at line <a class="el" href="../../d2/d37/ringelement_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d2/d37/ringelement_8cpp_source.html">ringelement.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   77</span>{</div>
 <div class="line"><span class="lineno">   78</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> f;</div>
-<div class="line"><span class="lineno">   79</span>  <span class="keywordflow">if</span> (R-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a21be379569c91492bf6b1f61c1e1d3d2.html#a21be379569c91492bf6b1f61c1e1d3d2">from_BigReal</a>(z, f)) <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, f);</div>
+<div class="line"><span class="lineno">   79</span>  <span class="keywordflow">if</span> (R-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a21be379569c91492bf6b1f61c1e1d3d2.html#a21be379569c91492bf6b1f61c1e1d3d2">from_BigReal</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">z</a>, f)) <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a>(R, f);</div>
 <div class="line"><span class="lineno">   80</span>  <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;cannot create element of this ring from an element of RR&quot;</span>);</div>
 <div class="line"><span class="lineno">   81</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">   82</span>}</div>
-<div class="ttc" id="aclass_ring_a21be379569c91492bf6b1f61c1e1d3d2_html_a21be379569c91492bf6b1f61c1e1d3d2"><div class="ttname"><a href="../../dd/dcf/class_ring_a21be379569c91492bf6b1f61c1e1d3d2.html#a21be379569c91492bf6b1f61c1e1d3d2">Ring::from_BigReal</a></div><div class="ttdeci">virtual bool from_BigReal(gmp_RR a, ring_elem &amp;result) const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d2b/ring_8cpp_source.html#l00250">ring.cpp:250</a></div></div>
-<div class="ttc" id="aclass_ring_element_ab978463e39096a4e0d1ecc0720f9acf3_html_ab978463e39096a4e0d1ecc0720f9acf3"><div class="ttname"><a href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a></div><div class="ttdeci">static RingElement * make_raw(const Ring *R, ring_elem f)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dfc/relem_8cpp_source.html#l00020">relem.cpp:20</a></div></div>
+<div class="ttc" id="aclass_ring_a21be379569c91492bf6b1f61c1e1d3d2_html_a21be379569c91492bf6b1f61c1e1d3d2"><div class="ttname"><a href="../../dd/dcf/class_ring_a21be379569c91492bf6b1f61c1e1d3d2.html#a21be379569c91492bf6b1f61c1e1d3d2">Ring::from_BigReal</a></div><div class="ttdeci">virtual bool from_BigReal(gmp_RR a, ring_elem &amp;result) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d00/rings_2ring_8cpp_source.html#l00250">ring.cpp:250</a></div></div>
+<div class="ttc" id="aclass_ring_element_ab978463e39096a4e0d1ecc0720f9acf3_html_ab978463e39096a4e0d1ecc0720f9acf3"><div class="ttname"><a href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw</a></div><div class="ttdeci">static RingElement * make_raw(const Ring *R, ring_elem f)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d31/ring-element_8cpp_source.html#l00020">ring-element.cpp:20</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
-<div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00050">ringelem.hpp:51</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
+<div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00050">ringelem.hpp:51</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, <a class="el" href="../../dd/dcf/class_ring_a21be379569c91492bf6b1f61c1e1d3d2.html#a21be379569c91492bf6b1f61c1e1d3d2">Ring::from_BigReal()</a>, and <a class="el" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>, <a class="el" href="../../dd/dcf/class_ring_a21be379569c91492bf6b1f61c1e1d3d2.html#a21be379569c91492bf6b1f61c1e1d3d2">Ring::from_BigReal()</a>, and <a class="el" href="../../d6/de2/class_ring_element_ab978463e39096a4e0d1ecc0720f9acf3.html#ab978463e39096a4e0d1ecc0720f9acf3">RingElement::make_raw()</a>.</p>
 
 </div>
 </div>
@@ -137,7 +138,7 @@ $(document).ready(function(){initNavTree('d1/d1d/ringelement_8h_ab3cfece14e5a924
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8587dbd6c5a5c081f70c427936cccafd.html">interface</a></li><li class="navelem"><a class="el" href="../../d1/d1d/ringelement_8h.html">ringelement.h</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

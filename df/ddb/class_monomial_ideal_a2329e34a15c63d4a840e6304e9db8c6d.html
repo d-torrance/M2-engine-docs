@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('df/ddb/class_monomial_ideal_a2329e34a1
         <tr>
           <td class="memname"><a class="el" href="../../d9/db9/classbool.html">bool</a> MonomialIdeal::is_equal </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a> &amp;&#160;</td>
           <td class="paramname"><em>mi</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -107,12 +107,12 @@ $(document).ready(function(){initNavTree('df/ddb/class_monomial_ideal_a2329e34a1
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d89/monideal_8cpp_source.html#l00195">195</a> of file <a class="el" href="../../d5/d89/monideal_8cpp_source.html">monideal.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  196</span>{</div>
-<div class="line"><span class="lineno">  197</span>  <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;mi0) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  198</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../df/ddb/class_monomial_ideal_a8b45926eb887916f25218f4c74cf5f86.html#a8b45926eb887916f25218f4c74cf5f86">size</a>() != mi0.size()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  197</span>  <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mi0</a>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  198</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../df/ddb/class_monomial_ideal_a8b45926eb887916f25218f4c74cf5f86.html#a8b45926eb887916f25218f4c74cf5f86">size</a>() != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mi0</a>.size()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  199</span>  Iterator i = <a class="code hl_function" href="../../df/ddb/class_monomial_ideal_afba0f6c1667440b2514ead6de383617f.html#afba0f6c1667440b2514ead6de383617f">begin</a>();</div>
-<div class="line"><span class="lineno">  200</span>  Iterator j = mi0.begin();</div>
-<div class="line"><span class="lineno">  201</span>  Iterator sentinel = <a class="code hl_function" href="../../df/ddb/class_monomial_ideal_ad13aeeffd2276c94403679df19314ba2.html#ad13aeeffd2276c94403679df19314ba2">end</a>();</div>
-<div class="line"><span class="lineno">  202</span>  <span class="keywordflow">while</span> (i != sentinel)</div>
+<div class="line"><span class="lineno">  200</span>  Iterator j = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mi0</a>.begin();</div>
+<div class="line"><span class="lineno">  201</span>  Iterator <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">sentinel</a> = <a class="code hl_function" href="../../df/ddb/class_monomial_ideal_ad13aeeffd2276c94403679df19314ba2.html#ad13aeeffd2276c94403679df19314ba2">end</a>();</div>
+<div class="line"><span class="lineno">  202</span>  <span class="keywordflow">while</span> (i != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">sentinel</a>)</div>
 <div class="line"><span class="lineno">  203</span>    {</div>
 <div class="line"><span class="lineno">  204</span>      <a class="code hl_typedef" href="../../d6/df2/_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad.html#a32c7462759c905470880b0dba58f00ad">const_varpower</a> m = (*i).monom().data();</div>
 <div class="line"><span class="lineno">  205</span>      <a class="code hl_typedef" href="../../d6/df2/_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad.html#a32c7462759c905470880b0dba58f00ad">const_varpower</a> n = (*j).monom().data();</div>
@@ -120,18 +120,17 @@ $(document).ready(function(){initNavTree('df/ddb/class_monomial_ideal_a2329e34a1
 <div class="line"><span class="lineno">  207</span>      i++;</div>
 <div class="line"><span class="lineno">  208</span>      j++;</div>
 <div class="line"><span class="lineno">  209</span>    }</div>
-<div class="line"><span class="lineno">  210</span>  GC_reachable_here(&amp;mi0);</div>
+<div class="line"><span class="lineno">  210</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">GC_reachable_here</a>(&amp;<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mi0</a>);</div>
 <div class="line"><span class="lineno">  211</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  212</span>}</div>
-<div class="ttc" id="a_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad_html_a32c7462759c905470880b0dba58f00ad"><div class="ttname"><a href="../../d6/df2/_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad.html#a32c7462759c905470880b0dba58f00ad">const_varpower</a></div><div class="ttdeci">varpower::ConstExponents const_varpower</div><div class="ttdef"><b>Definition</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00196">ExponentList.hpp:196</a></div></div>
-<div class="ttc" id="aclass_exponent_list_ae5f5da2ea1046f06369a00e1658b83e1_html_ae5f5da2ea1046f06369a00e1658b83e1"><div class="ttname"><a href="../../d1/d39/class_exponent_list_ae5f5da2ea1046f06369a00e1658b83e1.html#ae5f5da2ea1046f06369a00e1658b83e1">ExponentList::is_equal</a></div><div class="ttdeci">static bool is_equal(ConstExponents a, ConstExponents b)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00088">ExponentList.hpp:88</a></div></div>
+<div class="ttc" id="a_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad_html_a32c7462759c905470880b0dba58f00ad"><div class="ttname"><a href="../../d6/df2/_exponent_list_8hpp_a32c7462759c905470880b0dba58f00ad.html#a32c7462759c905470880b0dba58f00ad">const_varpower</a></div><div class="ttdeci">varpower::ConstExponents const_varpower</div><div class="ttdef"><b>Definition</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00197">ExponentList.hpp:197</a></div></div>
+<div class="ttc" id="aclass_exponent_list_ae5f5da2ea1046f06369a00e1658b83e1_html_ae5f5da2ea1046f06369a00e1658b83e1"><div class="ttname"><a href="../../d1/d39/class_exponent_list_ae5f5da2ea1046f06369a00e1658b83e1.html#ae5f5da2ea1046f06369a00e1658b83e1">ExponentList::is_equal</a></div><div class="ttdeci">static bool is_equal(ConstExponents a, ConstExponents b)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/df2/_exponent_list_8hpp_source.html#l00089">ExponentList.hpp:89</a></div></div>
 <div class="ttc" id="aclass_monomial_ideal_a8b45926eb887916f25218f4c74cf5f86_html_a8b45926eb887916f25218f4c74cf5f86"><div class="ttname"><a href="../../df/ddb/class_monomial_ideal_a8b45926eb887916f25218f4c74cf5f86.html#a8b45926eb887916f25218f4c74cf5f86">MonomialIdeal::size</a></div><div class="ttdeci">int size() const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d4f/monideal_8hpp_source.html#l00121">monideal.hpp:121</a></div></div>
 <div class="ttc" id="aclass_monomial_ideal_ad13aeeffd2276c94403679df19314ba2_html_ad13aeeffd2276c94403679df19314ba2"><div class="ttname"><a href="../../df/ddb/class_monomial_ideal_ad13aeeffd2276c94403679df19314ba2.html#ad13aeeffd2276c94403679df19314ba2">MonomialIdeal::end</a></div><div class="ttdeci">Iterator end() const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d4f/monideal_8hpp_source.html#l00202">monideal.hpp:202</a></div></div>
 <div class="ttc" id="aclass_monomial_ideal_afba0f6c1667440b2514ead6de383617f_html_afba0f6c1667440b2514ead6de383617f"><div class="ttname"><a href="../../df/ddb/class_monomial_ideal_afba0f6c1667440b2514ead6de383617f.html#afba0f6c1667440b2514ead6de383617f">MonomialIdeal::begin</a></div><div class="ttdeci">Iterator begin() const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d4f/monideal_8hpp_source.html#l00200">monideal.hpp:200</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/ddb/class_monomial_ideal_afba0f6c1667440b2514ead6de383617f.html#afba0f6c1667440b2514ead6de383617f">begin()</a>, <a class="el" href="../../df/ddb/class_monomial_ideal_ad13aeeffd2276c94403679df19314ba2.html#ad13aeeffd2276c94403679df19314ba2">end()</a>, <a class="el" href="../../d1/d39/class_exponent_list_ae5f5da2ea1046f06369a00e1658b83e1.html#ae5f5da2ea1046f06369a00e1658b83e1">ExponentList&lt; E, L &gt;::is_equal()</a>, and <a class="el" href="../../df/ddb/class_monomial_ideal_a8b45926eb887916f25218f4c74cf5f86.html#a8b45926eb887916f25218f4c74cf5f86">size()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d9/db6/monomial-ideal_8cpp_adaa92d316b340223cf422b8d104475ce.html#adaa92d316b340223cf422b8d104475ce">IM2_MonomialIdeal_is_equal()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/ddb/class_monomial_ideal_afba0f6c1667440b2514ead6de383617f.html#afba0f6c1667440b2514ead6de383617f">begin()</a>, <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../df/ddb/class_monomial_ideal_ad13aeeffd2276c94403679df19314ba2.html#ad13aeeffd2276c94403679df19314ba2">end()</a>, <a class="el" href="../../d1/d39/class_exponent_list_ae5f5da2ea1046f06369a00e1658b83e1.html#ae5f5da2ea1046f06369a00e1658b83e1">ExponentList&lt; E, L &gt;::is_equal()</a>, and <a class="el" href="../../df/ddb/class_monomial_ideal_a8b45926eb887916f25218f4c74cf5f86.html#a8b45926eb887916f25218f4c74cf5f86">size()</a>.</p>
 
 </div>
 </div>
@@ -141,7 +140,7 @@ $(document).ready(function(){initNavTree('df/ddb/class_monomial_ideal_a2329e34a1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/ddb/class_monomial_ideal.html">MonomialIdeal</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

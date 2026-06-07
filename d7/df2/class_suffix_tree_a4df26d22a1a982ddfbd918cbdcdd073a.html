@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a4df26d22a1a9
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SuffixTree::destroyChildren </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> SuffixTree::destroyChildren </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/dad/class_suffix_tree_node.html">SuffixTreeNode</a> *&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
@@ -107,14 +107,13 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a4df26d22a1a9
 
 <p class="definition">Definition at line <a class="el" href="../../da/def/_suffix_tree_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../da/def/_suffix_tree_8cpp_source.html">SuffixTree.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  124</span>{</div>
-<div class="line"><span class="lineno">  125</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;childrenBegin(); i != <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;childrenEnd(); ++i)</div>
+<div class="line"><span class="lineno">  125</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = p-&gt;childrenBegin(); i != p-&gt;childrenEnd(); ++i)</div>
 <div class="line"><span class="lineno">  126</span>      <a class="code hl_function" href="../../d7/df2/class_suffix_tree_a4df26d22a1a982ddfbd918cbdcdd073a.html#a4df26d22a1a982ddfbd918cbdcdd073a">destroyChildren</a>(i-&gt;second);</div>
-<div class="line"><span class="lineno">  127</span>  <span class="keyword">delete</span> <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
+<div class="line"><span class="lineno">  127</span>  <span class="keyword">delete</span> p;</div>
 <div class="line"><span class="lineno">  128</span>}</div>
 <div class="ttc" id="aclass_suffix_tree_a4df26d22a1a982ddfbd918cbdcdd073a_html_a4df26d22a1a982ddfbd918cbdcdd073a"><div class="ttname"><a href="../../d7/df2/class_suffix_tree_a4df26d22a1a982ddfbd918cbdcdd073a.html#a4df26d22a1a982ddfbd918cbdcdd073a">SuffixTree::destroyChildren</a></div><div class="ttdeci">void destroyChildren(SuffixTreeNode *node) const</div><div class="ttdef"><b>Definition</b> <a href="../../da/def/_suffix_tree_8cpp_source.html#l00123">SuffixTree.cpp:123</a></div></div>
-<div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/df2/class_suffix_tree_a4df26d22a1a982ddfbd918cbdcdd073a.html#a4df26d22a1a982ddfbd918cbdcdd073a">destroyChildren()</a>, and <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/dad/class_suffix_tree_node_a48ae60caa07d577bf0014478f7ab877f.html#a48ae60caa07d577bf0014478f7ab877f">SuffixTreeNode::childrenBegin()</a>, <a class="el" href="../../dc/dad/class_suffix_tree_node_a3478d565be3d980c8f2ae0261bf149d8.html#a3478d565be3d980c8f2ae0261bf149d8">SuffixTreeNode::childrenEnd()</a>, and <a class="el" href="../../d7/df2/class_suffix_tree_a4df26d22a1a982ddfbd918cbdcdd073a.html#a4df26d22a1a982ddfbd918cbdcdd073a">destroyChildren()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/df2/class_suffix_tree_a53f11f24941cc1d58315bd52b111c643.html#a53f11f24941cc1d58315bd52b111c643">clear()</a>, <a class="el" href="../../d7/df2/class_suffix_tree_a4df26d22a1a982ddfbd918cbdcdd073a.html#a4df26d22a1a982ddfbd918cbdcdd073a">destroyChildren()</a>, and <a class="el" href="../../d7/df2/class_suffix_tree_a4b63778b1af0b2c4f3acd12be8bce777.html#a4b63778b1af0b2c4f3acd12be8bce777">~SuffixTree()</a>.</p>
 
@@ -126,7 +125,7 @@ $(document).ready(function(){initNavTree('d7/df2/class_suffix_tree_a4df26d22a1a9
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/df2/class_suffix_tree.html">SuffixTree</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

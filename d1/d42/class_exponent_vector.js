@@ -13,7 +13,7 @@ var class_exponent_vector =
     [ "is_one", "d1/d42/class_exponent_vector_a65a04b59a501051a7829b8ba821f815c.html#a65a04b59a501051a7829b8ba821f815c", null ],
     [ "lcm", "d1/d42/class_exponent_vector_ad4cda35460c2f0bb90cb3e4ebef89fd7.html#ad4cda35460c2f0bb90cb3e4ebef89fd7", null ],
     [ "lex_compare", "d1/d42/class_exponent_vector_aaf3ab59a27dcbe0cd250e3772ddb50f4.html#aaf3ab59a27dcbe0cd250e3772ddb50f4", null ],
-    [ "mask", "d1/d42/class_exponent_vector_a292fb8e5b195e405a33e78b110c0bf30.html#a292fb8e5b195e405a33e78b110c0bf30", null ],
+    [ "mask", "d1/d42/class_exponent_vector_a780eb909540afdaac7b978e3399ad874.html#a780eb909540afdaac7b978e3399ad874", null ],
     [ "mult", "d1/d42/class_exponent_vector_a47b39fdd909b303b27b83f4824dc991b.html#a47b39fdd909b303b27b83f4824dc991b", null ],
     [ "multpower", "d1/d42/class_exponent_vector_a7bfed1521d991702add19554926b42ef.html#a7bfed1521d991702add19554926b42ef", null ],
     [ "one", "d1/d42/class_exponent_vector_a24dde5f55d42af2189ea1601cabf72c9.html#a24dde5f55d42af2189ea1601cabf72c9", null ],

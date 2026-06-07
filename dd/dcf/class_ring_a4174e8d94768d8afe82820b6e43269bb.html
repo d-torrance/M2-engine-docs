@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a4174e8d94768d8afe82
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Ring::vec_text_out </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> Ring::vec_text_out </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../da/d40/classbuffer.html">buffer</a> &amp;&#160;</td>
           <td class="paramname"><em>o</em>, </td>
@@ -104,26 +104,26 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a4174e8d94768d8afe82
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/ddd/structvecterm.html">vecterm</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/ddd/structvecterm.html">vecterm</a> *&#160;</td>
           <td class="paramname"><em>v</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d9/db9/classbool.html">bool</a>&#160;</td>
-          <td class="paramname"><em>p_one</em> = <code>true</code>, </td>
+          <td class="paramname"><em>p_one</em> = <code><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">true</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d9/db9/classbool.html">bool</a>&#160;</td>
-          <td class="paramname"><em>p_plus</em> = <code>false</code>, </td>
+          <td class="paramname"><em>p_plus</em> = <code><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">false</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d9/db9/classbool.html">bool</a>&#160;</td>
-          <td class="paramname"><em>p_parens</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>p_parens</em> = <code><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">false</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -137,23 +137,24 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a4174e8d94768d8afe82
 <div class="fragment"><div class="line"><span class="lineno">  298</span>{</div>
 <div class="line"><span class="lineno">  299</span>  <span class="keywordflow">if</span> (v == <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">  300</span>    {</div>
-<div class="line"><span class="lineno">  301</span>      o &lt;&lt; <span class="stringliteral">&quot;0&quot;</span>;</div>
+<div class="line"><span class="lineno">  301</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <span class="stringliteral">&quot;0&quot;</span>;</div>
 <div class="line"><span class="lineno">  302</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  303</span>    }</div>
 <div class="line"><span class="lineno">  304</span> </div>
-<div class="line"><span class="lineno">  305</span>  p_one = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  305</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">p_one</a> = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  306</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_struct" href="../../d6/ddd/structvecterm.html">vecterm</a> *t = v; t != <span class="keyword">nullptr</span>; t = t-&gt;<a class="code hl_variable" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">next</a>)</div>
 <div class="line"><span class="lineno">  307</span>    {</div>
-<div class="line"><span class="lineno">  308</span>      this-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a7681f099a40a51225f38f66386820c39.html#a7681f099a40a51225f38f66386820c39">elem_text_out</a>(o, t-&gt;coeff, p_one, p_plus, p_parens);</div>
-<div class="line"><span class="lineno">  309</span>      o &lt;&lt; <span class="stringliteral">&quot;&lt;&quot;</span> &lt;&lt; t-&gt;comp &lt;&lt; <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
-<div class="line"><span class="lineno">  310</span>      p_plus = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  308</span>      this-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a7681f099a40a51225f38f66386820c39.html#a7681f099a40a51225f38f66386820c39">elem_text_out</a>(o, t-&gt;coeff, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">p_one</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">p_plus</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">p_parens</a>);</div>
+<div class="line"><span class="lineno">  309</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">o</a> &lt;&lt; <span class="stringliteral">&quot;&lt;&quot;</span> &lt;&lt; t-&gt;comp &lt;&lt; <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
+<div class="line"><span class="lineno">  310</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">p_plus</a> = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  311</span>    }</div>
 <div class="line"><span class="lineno">  312</span>}</div>
 <div class="ttc" id="aclass_ring_a7681f099a40a51225f38f66386820c39_html_a7681f099a40a51225f38f66386820c39"><div class="ttname"><a href="../../dd/dcf/class_ring_a7681f099a40a51225f38f66386820c39.html#a7681f099a40a51225f38f66386820c39">Ring::elem_text_out</a></div><div class="ttdeci">virtual void elem_text_out(buffer &amp;o, const ring_elem f, bool p_one=true, bool p_plus=false, bool p_parens=false) const =0</div></div>
-<div class="ttc" id="astructvecterm_a0097010847a0593f115ad08738a72b3a_html_a0097010847a0593f115ad08738a72b3a"><div class="ttname"><a href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">vecterm::next</a></div><div class="ttdeci">vec next</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00120">ringelem.hpp:120</a></div></div>
-<div class="ttc" id="astructvecterm_html"><div class="ttname"><a href="../../d6/ddd/structvecterm.html">vecterm</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00118">ringelem.hpp:119</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
+<div class="ttc" id="astructvecterm_a0097010847a0593f115ad08738a72b3a_html_a0097010847a0593f115ad08738a72b3a"><div class="ttname"><a href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">vecterm::next</a></div><div class="ttdeci">vec next</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00120">ringelem.hpp:120</a></div></div>
+<div class="ttc" id="astructvecterm_html"><div class="ttname"><a href="../../d6/ddd/structvecterm.html">vecterm</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00118">ringelem.hpp:119</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dd/dcf/class_ring_a7681f099a40a51225f38f66386820c39.html#a7681f099a40a51225f38f66386820c39">elem_text_out()</a>, and <a class="el" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">vec::next</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../dd/dcf/class_ring_a7681f099a40a51225f38f66386820c39.html#a7681f099a40a51225f38f66386820c39">elem_text_out()</a>, and <a class="el" href="../../d6/ddd/structvecterm_a0097010847a0593f115ad08738a72b3a.html#a0097010847a0593f115ad08738a72b3a">vec::next</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d00/debug_8cpp_a1814e17d2619d9711b864278a91be7ee.html#a1814e17d2619d9711b864278a91be7ee">dvec()</a>, <a class="el" href="../../d9/d4a/class_f4_g_b_a2a125eb5b91e9fd168e2a1e689972e1e.html#a2a125eb5b91e9fd168e2a1e689972e1e">F4GB::show_gb_array()</a>, <a class="el" href="../../d3/d16/class_gauss_elim_computation_ae08293d4d0c21012884d0226f87868ad.html#ae08293d4d0c21012884d0226f87868ad">GaussElimComputation::text_out()</a>, and <a class="el" href="../../d8/d76/class_hermite_computation_a31662941ebf429ccb37bf61f6522356e.html#a31662941ebf429ccb37bf61f6522356e">HermiteComputation::text_out()</a>.</p>
 
@@ -165,7 +166,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_a4174e8d94768d8afe82
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

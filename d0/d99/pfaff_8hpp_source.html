@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/pfaff.hpp Source File</title>
+<title>Macaulay2 Engine: /home/runner/work/M2-engine-docs/M2-engine-docs/M2/Macaulay2/e/computations/pfaff.hpp Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -99,11 +99,11 @@ $(document).ready(function(){initNavTree('d0/d99/pfaff_8hpp_source.html','../../
 <div class="contents">
 <a href="../../d0/d99/pfaff_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright 1996 Michael E. Stillman.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef _pfaff_hh_</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define _pfaff_hh_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef M2_COMPUTATIONS_PFAFF_HH_</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define M2_COMPUTATIONS_PFAFF_HH_</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/dce/matrix_8hpp.html">matrix.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../d2/d80/matrix-con_8hpp.html">matrix-con.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/dce/matrix_8hpp.html">matrices/matrix.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../d2/d80/matrix-con_8hpp.html">matrices/matrix-con.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="../../d3/d7a/class_matrix_constructor.html">MatrixConstructor</a>;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('d0/d99/pfaff_8hpp_source.html','../../
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../dc/df6/class_pfaffian_computation_ae467213cdd993ea7c5bf4c6356cdc41f.html#ae467213cdd993ea7c5bf4c6356cdc41f">   25</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../dc/df6/class_pfaffian_computation_ae467213cdd993ea7c5bf4c6356cdc41f.html#ae467213cdd993ea7c5bf4c6356cdc41f">done</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../dc/df6/class_pfaffian_computation_a51067a968e1e5fb68d16cf25e80f7f90.html#a51067a968e1e5fb68d16cf25e80f7f90">   26</a></span>  <span class="keywordtype">size_t</span> *<a class="code hl_variable" href="../../dc/df6/class_pfaffian_computation_a51067a968e1e5fb68d16cf25e80f7f90.html#a51067a968e1e5fb68d16cf25e80f7f90">row_set</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code hl_function" href="../../dc/df6/class_pfaffian_computation_a0b3dcc18cdfc3e0ca6fff9af0840abc9.html#a0b3dcc18cdfc3e0ca6fff9af0840abc9">calc_pfaff</a>(<span class="keywordtype">size_t</span> *r, <span class="keywordtype">int</span> <a class="code hl_variable" href="../../dc/df6/class_pfaffian_computation_ad7f2deb0306c4da8887f153bee88111f.html#ad7f2deb0306c4da8887f153bee88111f">p</a>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> <a class="code hl_function" href="../../dc/df6/class_pfaffian_computation_a0b3dcc18cdfc3e0ca6fff9af0840abc9.html#a0b3dcc18cdfc3e0ca6fff9af0840abc9">calc_pfaff</a>(<span class="keywordtype">size_t</span> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">r</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="../../dc/df6/class_pfaffian_computation_ad7f2deb0306c4da8887f153bee88111f.html#ad7f2deb0306c4da8887f153bee88111f">p</a>);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="comment">// Compute the pfaffian of the minor with rows</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="comment">// and columns r[0]..r[p-1]</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
@@ -163,17 +163,18 @@ $(document).ready(function(){initNavTree('d0/d99/pfaff_8hpp_source.html','../../
 <div class="ttc" id="aclass_pfaffian_computation_af43812eafc842cc83b3a0c1b046f4555_html_af43812eafc842cc83b3a0c1b046f4555"><div class="ttname"><a href="../../dc/df6/class_pfaffian_computation_af43812eafc842cc83b3a0c1b046f4555.html#af43812eafc842cc83b3a0c1b046f4555">PfaffianComputation::~PfaffianComputation</a></div><div class="ttdeci">~PfaffianComputation()</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d9b/pfaff_8cpp_source.html#l00026">pfaff.cpp:26</a></div></div>
 <div class="ttc" id="aclass_pfaffian_computation_html"><div class="ttname"><a href="../../dc/df6/class_pfaffian_computation.html">PfaffianComputation</a></div><div class="ttdoc">Computation of pfaffians of a skew symmetric matrix.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d99/pfaff_8hpp_source.html#l00017">pfaff.hpp:18</a></div></div>
 <div class="ttc" id="aclass_ring_html"><div class="ttname"><a href="../../dd/dcf/class_ring.html">Ring</a></div><div class="ttdoc">xxx xxx xxx</div><div class="ttdef"><b>Definition</b> <a href="../../db/d10/ring_8hpp_source.html#l00065">ring.hpp:66</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="amatrix-con_8hpp_html"><div class="ttname"><a href="../../d2/d80/matrix-con_8hpp.html">matrix-con.hpp</a></div></div>
 <div class="ttc" id="amatrix_8hpp_html"><div class="ttname"><a href="../../df/dce/matrix_8hpp.html">matrix.hpp</a></div></div>
 <div class="ttc" id="astructour__new__delete_html"><div class="ttname"><a href="../../da/dcc/structour__new__delete.html">our_new_delete</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d94/newdelete_8hpp_source.html#l00070">newdelete.hpp:71</a></div></div>
-<div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc9/ringelem_8hpp_source.html#l00050">ringelem.hpp:51</a></div></div>
+<div class="ttc" id="aunionring__elem_html"><div class="ttname"><a href="../../d5/d64/unionring__elem.html">ring_elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/rings_2ringelem_8hpp_source.html#l00050">ringelem.hpp:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../d0/d99/pfaff_8hpp.html">pfaff.hpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:03 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_60bef5ef80d1b23e796a2c1efebb5ba5.html">computations</a></li><li class="navelem"><a class="el" href="../../d0/d99/pfaff_8hpp.html">pfaff.hpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

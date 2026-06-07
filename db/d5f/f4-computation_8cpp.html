@@ -101,22 +101,22 @@ $(document).ready(function(){initNavTree('db/d5f/f4-computation_8cpp.html','../.
 <code>#include &quot;<a class="el" href="../../d7/dfc/f4-types_8hpp_source.html">f4/f4-types.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/d35/f4_8hpp_source.html">f4/f4.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/d0a/moninfo_8hpp_source.html">f4/moninfo.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d2/d80/matrix-con_8hpp_source.html">matrix-con.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d80/matrix-con_8hpp_source.html">matrices/matrix-con.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrices/matrix.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/d2c/mem_8hpp_source.html">mem.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/dd0/monoid_8hpp_source.html">monoid.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d6c/polyring_8hpp_source.html">polyring.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d10/ring_8hpp_source.html">ring.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/dc9/ringelem_8hpp_source.html">ringelem.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d6c/polyring_8hpp_source.html">rings/polyring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d10/ring_8hpp_source.html">rings/ring.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/dec/rings_2ringelem_8hpp_source.html">rings/ringelem.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d5c/text-io_8hpp_source.html">text-io.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d0/d3f/util_8hpp_source.html">util.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/df1/_vector_arithmetic_8hpp_source.html">VectorArithmetic.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/df2/vector-arithmetic_8hpp_source.html">basic-rings/vector-arithmetic.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../db/d5f/f4-computation_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ace48e412e5278417f6684766fd9193f8" id="r_ace48e412e5278417f6684766fd9193f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/ded/class_g_b_computation.html">GBComputation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5f/f4-computation_8cpp_ace48e412e5278417f6684766fd9193f8.html#ace48e412e5278417f6684766fd9193f8">createF4GB</a> (const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *m, <a class="el" href="../../de/d28/m2-types_8h_a7070aa7b07cda16d387ba6be4bd917fa.html#a7070aa7b07cda16d387ba6be4bd917fa">M2_bool</a> collect_syz, <a class="el" href="../../d1/da0/classint.html">int</a> n_rows_to_keep, <a class="el" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a> gb_weights, <a class="el" href="../../d1/da0/classint.html">int</a> strategy, <a class="el" href="../../de/d28/m2-types_8h_a7070aa7b07cda16d387ba6be4bd917fa.html#a7070aa7b07cda16d387ba6be4bd917fa">M2_bool</a> use_max_degree, <a class="el" href="../../d1/da0/classint.html">int</a> max_degree, <a class="el" href="../../d1/da0/classint.html">int</a> numThreads)</td></tr>
+<tr class="memitem:ace48e412e5278417f6684766fd9193f8" id="r_ace48e412e5278417f6684766fd9193f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/ded/class_g_b_computation.html">GBComputation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5f/f4-computation_8cpp_ace48e412e5278417f6684766fd9193f8.html#ace48e412e5278417f6684766fd9193f8">createF4GB</a> (<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *m, <a class="el" href="../../de/d28/m2-types_8h_a7070aa7b07cda16d387ba6be4bd917fa.html#a7070aa7b07cda16d387ba6be4bd917fa">M2_bool</a> collect_syz, <a class="el" href="../../d1/da0/classint.html">int</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">n_rows_to_keep</a>, <a class="el" href="../../d8/dc2/class_m2__arrayint.html">M2_arrayint</a> gb_weights, <a class="el" href="../../d1/da0/classint.html">int</a> strategy, <a class="el" href="../../de/d28/m2-types_8h_a7070aa7b07cda16d387ba6be4bd917fa.html#a7070aa7b07cda16d387ba6be4bd917fa">M2_bool</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">use_max_degree</a>, <a class="el" href="../../d1/da0/classint.html">int</a> max_degree, <a class="el" href="../../d1/da0/classint.html">int</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">numThreads</a>)</td></tr>
 <tr class="separator:ace48e412e5278417f6684766fd9193f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -125,7 +125,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_8ed8434bc3d991323934987a3489e746.html">f4</a></li><li class="navelem"><a class="el" href="../../db/d5f/f4-computation_8cpp.html">f4-computation.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:04 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('dd/d98/table_8h_a04c67f9edc736a0eec082
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Table_map </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> Table_map </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d6/d47/struct_table___t.html">Table_T</a> *&#160;</td>
           <td class="paramname"><em>table</em>, </td>
@@ -107,13 +107,13 @@ $(document).ready(function(){initNavTree('dd/d98/table_8h_a04c67f9edc736a0eec082
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void &#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> &#160;</td>
           <td class="paramname"><em>apply</em>const void *key, void **value, void *cl, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> *&#160;</td>
           <td class="paramname"><em>cl</em>&#160;</td>
         </tr>
         <tr>
@@ -133,27 +133,27 @@ $(document).ready(function(){initNavTree('dd/d98/table_8h_a04c67f9edc736a0eec082
 <div class="fragment"><div class="line"><span class="lineno">   96</span>{</div>
 <div class="line"><span class="lineno">   97</span>  <span class="keywordtype">int</span> i;</div>
 <div class="line"><span class="lineno">   98</span><span class="preprocessor">#ifndef NDEBUG</span></div>
-<div class="line"><span class="lineno">   99</span>  <span class="keywordtype">unsigned</span> stamp;</div>
+<div class="line"><span class="lineno">   99</span>  <span class="keywordtype">unsigned</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">stamp</a>;</div>
 <div class="line"><span class="lineno">  100</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  101</span>  <span class="keyword">struct </span>binding *<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>;</div>
-<div class="line"><span class="lineno">  102</span>  assert(table);</div>
-<div class="line"><span class="lineno">  103</span>  assert(apply);</div>
+<div class="line"><span class="lineno">  101</span>  <span class="keyword">struct </span>binding *p;</div>
+<div class="line"><span class="lineno">  102</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">assert</a>(table);</div>
+<div class="line"><span class="lineno">  103</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">assert</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">apply</a>);</div>
 <div class="line"><span class="lineno">  104</span><span class="preprocessor">#ifndef NDEBUG</span></div>
-<div class="line"><span class="lineno">  105</span>  stamp = table-&gt;<a class="code hl_variable" href="../../d6/d47/struct_table___t_ade4ed766967faa1006c345c6916b162c.html#ade4ed766967faa1006c345c6916b162c">timestamp</a>;</div>
+<div class="line"><span class="lineno">  105</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">stamp</a> = table-&gt;<a class="code hl_variable" href="../../d6/d47/struct_table___t_ade4ed766967faa1006c345c6916b162c.html#ade4ed766967faa1006c345c6916b162c">timestamp</a>;</div>
 <div class="line"><span class="lineno">  106</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">  107</span>  <span class="keywordflow">for</span> (i = 0; i &lt; table-&gt;<a class="code hl_variable" href="../../d6/d47/struct_table___t_a9f6169c7e43a593939e8d16f823d2b6b.html#a9f6169c7e43a593939e8d16f823d2b6b">size</a>; i++)</div>
-<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">for</span> (<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = table-&gt;<a class="code hl_variable" href="../../d6/d47/struct_table___t_a58f4f9a250d412283e36772646c54d41.html#a58f4f9a250d412283e36772646c54d41">buckets</a>[i]; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>; <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a> = <a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;link)</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">for</span> (p = table-&gt;<a class="code hl_variable" href="../../d6/d47/struct_table___t_a58f4f9a250d412283e36772646c54d41.html#a58f4f9a250d412283e36772646c54d41">buckets</a>[i]; p; p = p-&gt;link)</div>
 <div class="line"><span class="lineno">  109</span>      {</div>
-<div class="line"><span class="lineno">  110</span>        apply(<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;key, &amp;<a class="code hl_variable" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>-&gt;value, cl);</div>
-<div class="line"><span class="lineno">  111</span>        assert(table-&gt;<a class="code hl_variable" href="../../d6/d47/struct_table___t_ade4ed766967faa1006c345c6916b162c.html#ade4ed766967faa1006c345c6916b162c">timestamp</a> == stamp);</div>
+<div class="line"><span class="lineno">  110</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">apply</a>(p-&gt;key, &amp;p-&gt;value, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">cl</a>);</div>
+<div class="line"><span class="lineno">  111</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">assert</a>(table-&gt;<a class="code hl_variable" href="../../d6/d47/struct_table___t_ade4ed766967faa1006c345c6916b162c.html#ade4ed766967faa1006c345c6916b162c">timestamp</a> == <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">stamp</a>);</div>
 <div class="line"><span class="lineno">  112</span>      }</div>
 <div class="line"><span class="lineno">  113</span>}</div>
-<div class="ttc" id="agodbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552_html_a533391314665d6bf1b5575e9a9cd8552"><div class="ttname"><a href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a></div><div class="ttdeci">int p</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d12/godbolt_test_8cpp_source.html#l00010">godboltTest.cpp:10</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="astruct_table___t_a58f4f9a250d412283e36772646c54d41_html_a58f4f9a250d412283e36772646c54d41"><div class="ttname"><a href="../../d6/d47/struct_table___t_a58f4f9a250d412283e36772646c54d41.html#a58f4f9a250d412283e36772646c54d41">Table_T::buckets</a></div><div class="ttdeci">struct Table_T::binding ** buckets</div></div>
 <div class="ttc" id="astruct_table___t_a9f6169c7e43a593939e8d16f823d2b6b_html_a9f6169c7e43a593939e8d16f823d2b6b"><div class="ttname"><a href="../../d6/d47/struct_table___t_a9f6169c7e43a593939e8d16f823d2b6b.html#a9f6169c7e43a593939e8d16f823d2b6b">Table_T::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d33/table_8c_source.html#l00016">table.c:16</a></div></div>
 <div class="ttc" id="astruct_table___t_ade4ed766967faa1006c345c6916b162c_html_ade4ed766967faa1006c345c6916b162c"><div class="ttname"><a href="../../d6/d47/struct_table___t_ade4ed766967faa1006c345c6916b162c.html#ade4ed766967faa1006c345c6916b162c">Table_T::timestamp</a></div><div class="ttdeci">unsigned timestamp</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d33/table_8c_source.html#l00020">table.c:20</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d12/godbolt_test_8cpp_a533391314665d6bf1b5575e9a9cd8552.html#a533391314665d6bf1b5575e9a9cd8552">p</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
 
 </div>
 </div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('dd/d98/table_8h_a04c67f9edc736a0eec082
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dd/d98/table_8h.html">table.h</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

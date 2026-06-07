@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('d6/def/class_word_table_a7a60e3ce32929
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void WordTable::subwords </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> WordTable::subwords </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d3/da0/class_word.html">Word</a>&#160;</td>
           <td class="paramname"><em>word</em>, </td>
@@ -119,21 +119,22 @@ $(document).ready(function(){initNavTree('d6/def/class_word_table_a7a60e3ce32929
 <div class="fragment"><div class="line"><span class="lineno">  120</span>{</div>
 <div class="line"><span class="lineno">  121</span>  <span class="comment">// this command returns a pair (i,j) where word i in the table appears</span></div>
 <div class="line"><span class="lineno">  122</span>  <span class="comment">// in position j of word.</span></div>
-<div class="line"><span class="lineno">  123</span>  std::vector&lt;int&gt; start_indices;</div>
+<div class="line"><span class="lineno">  123</span>  std::vector&lt;int&gt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">start_indices</a>;</div>
 <div class="line"><span class="lineno">  124</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; <a class="code hl_variable" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>.size(); ++i)</div>
 <div class="line"><span class="lineno">  125</span>    {</div>
-<div class="line"><span class="lineno">  126</span>      start_indices.clear();</div>
-<div class="line"><span class="lineno">  127</span>      <a class="code hl_function" href="../../d6/def/class_word_table_a35265a6b2f65427ce3ea4a4c4da071b8.html#a35265a6b2f65427ce3ea4a4c4da071b8">subwordPositions</a>(<a class="code hl_variable" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>[i], <a class="code hl_variable" href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a>, start_indices);</div>
-<div class="line"><span class="lineno">  128</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : start_indices)</div>
-<div class="line"><span class="lineno">  129</span>        output.push_back(<a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::make_pair(i,j));</div>
+<div class="line"><span class="lineno">  126</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">start_indices</a>.clear();</div>
+<div class="line"><span class="lineno">  127</span>      <a class="code hl_function" href="../../d6/def/class_word_table_a35265a6b2f65427ce3ea4a4c4da071b8.html#a35265a6b2f65427ce3ea4a4c4da071b8">subwordPositions</a>(<a class="code hl_variable" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>[i], <a class="code hl_variable" href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">start_indices</a>);</div>
+<div class="line"><span class="lineno">  128</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">start_indices</a>)</div>
+<div class="line"><span class="lineno">  129</span>        output.push_back(<a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">make_pair</a>(i,j));</div>
 <div class="line"><span class="lineno">  130</span>    }</div>
 <div class="line"><span class="lineno">  131</span>}</div>
 <div class="ttc" id="a_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e_html_ad7ff07a5d062e08684d658ddd7ebe35e"><div class="ttname"><a href="../../d2/dc0/_n_c_groebner_test_8cpp_ad7ff07a5d062e08684d658ddd7ebe35e.html#ad7ff07a5d062e08684d658ddd7ebe35e">word</a></div><div class="ttdeci">std::vector&lt; int &gt; word</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dc0/_n_c_groebner_test_8cpp_source.html#l00063">NCGroebnerTest.cpp:63</a></div></div>
 <div class="ttc" id="aclass_word_table_a35265a6b2f65427ce3ea4a4c4da071b8_html_a35265a6b2f65427ce3ea4a4c4da071b8"><div class="ttname"><a href="../../d6/def/class_word_table_a35265a6b2f65427ce3ea4a4c4da071b8.html#a35265a6b2f65427ce3ea4a4c4da071b8">WordTable::subwordPositions</a></div><div class="ttdeci">static void subwordPositions(Word word1, Word word2, std::vector&lt; int &gt; &amp;result_start_indices)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d61/_word_table_8cpp_source.html#l00038">WordTable.cpp:38</a></div></div>
 <div class="ttc" id="aclass_word_table_a894f7b53057ea6290b3b15d5c97d2e4d_html_a894f7b53057ea6290b3b15d5c97d2e4d"><div class="ttname"><a href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">WordTable::mMonomials</a></div><div class="ttdeci">std::vector&lt; Word &gt; mMonomials</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dd8/_word_table_8hpp_source.html#l00112">WordTable.hpp:112</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="../../d8/dcc/namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d6/def/class_word_table_a894f7b53057ea6290b3b15d5c97d2e4d.html#a894f7b53057ea6290b3b15d5c97d2e4d">mMonomials</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/dc0/_n_c_groebner_test_8cpp_a5d896181a8440bda3e183105adf3f255.html#a5d896181a8440bda3e183105adf3f255">TEST()</a>, <a class="el" href="../../d2/dc0/_n_c_groebner_test_8cpp_a57f05c805b50f38e4e6389299d81d36f.html#a57f05c805b50f38e4e6389299d81d36f">TEST()</a>, <a class="el" href="../../d2/dc0/_n_c_groebner_test_8cpp_a00c9e6091933592c76e0a46c29759ada.html#a00c9e6091933592c76e0a46c29759ada">TEST()</a>, and <a class="el" href="../../d2/dc0/_n_c_groebner_test_8cpp_a698ed831bdc06c66d1ca2855f1f9e744.html#a698ed831bdc06c66d1ca2855f1f9e744">TEST()</a>.</p>
 
@@ -145,7 +146,7 @@ $(document).ready(function(){initNavTree('d6/def/class_word_table_a7a60e3ce32929
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/def/class_word_table.html">WordTable</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

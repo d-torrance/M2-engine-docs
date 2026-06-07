@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_aa5474e4319c97c0bc7e
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Ring::vec_degree_of_var </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> Ring::vec_degree_of_var </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d1/da0/classint.html">int</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_aa5474e4319c97c0bc7e
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const vec&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> vec&#160;</td>
           <td class="paramname"><em>v</em>, </td>
         </tr>
         <tr>
@@ -134,19 +134,20 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_aa5474e4319c97c0bc7e
 <div class="line"><span class="lineno">  711</span>      <a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>(<span class="stringliteral">&quot;attempting to find degree of zero vector&quot;</span>);</div>
 <div class="line"><span class="lineno">  712</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  713</span>    }</div>
-<div class="line"><span class="lineno">  714</span>  <a class="code hl_function" href="../../dd/dcf/class_ring_a4e183811e66298270c5f9dd77277f578.html#a4e183811e66298270c5f9dd77277f578">degree_of_var</a>(n, v-&gt;coeff, lo, hi);</div>
-<div class="line"><span class="lineno">  715</span>  <span class="keywordflow">for</span> (vec w = v-&gt;next; w != <span class="keyword">nullptr</span>; w = w-&gt;next)</div>
+<div class="line"><span class="lineno">  714</span>  <a class="code hl_function" href="../../dd/dcf/class_ring_a4e183811e66298270c5f9dd77277f578.html#a4e183811e66298270c5f9dd77277f578">degree_of_var</a>(n, v-&gt;coeff, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lo</a>, hi);</div>
+<div class="line"><span class="lineno">  715</span>  <span class="keywordflow">for</span> (vec <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a> = v-&gt;next; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a> != <span class="keyword">nullptr</span>; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a>-&gt;next)</div>
 <div class="line"><span class="lineno">  716</span>    {</div>
-<div class="line"><span class="lineno">  717</span>      <span class="keywordtype">int</span> lo1, hi1;</div>
-<div class="line"><span class="lineno">  718</span>      <a class="code hl_function" href="../../dd/dcf/class_ring_a4e183811e66298270c5f9dd77277f578.html#a4e183811e66298270c5f9dd77277f578">degree_of_var</a>(n, w-&gt;coeff, lo1, hi1);</div>
-<div class="line"><span class="lineno">  719</span>      <span class="keywordflow">if</span> (lo1 &lt; lo) lo = lo1;</div>
-<div class="line"><span class="lineno">  720</span>      <span class="keywordflow">if</span> (hi1 &gt; hi) hi = hi1;</div>
+<div class="line"><span class="lineno">  717</span>      <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lo1</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">hi1</a>;</div>
+<div class="line"><span class="lineno">  718</span>      <a class="code hl_function" href="../../dd/dcf/class_ring_a4e183811e66298270c5f9dd77277f578.html#a4e183811e66298270c5f9dd77277f578">degree_of_var</a>(n, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">w</a>-&gt;coeff, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lo1</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">hi1</a>);</div>
+<div class="line"><span class="lineno">  719</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lo1</a> &lt; <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lo</a>) <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lo</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lo1</a>;</div>
+<div class="line"><span class="lineno">  720</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">hi1</a> &gt; hi) hi = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">hi1</a>;</div>
 <div class="line"><span class="lineno">  721</span>    }</div>
 <div class="line"><span class="lineno">  722</span>}</div>
-<div class="ttc" id="aclass_ring_a4e183811e66298270c5f9dd77277f578_html_a4e183811e66298270c5f9dd77277f578"><div class="ttname"><a href="../../dd/dcf/class_ring_a4e183811e66298270c5f9dd77277f578.html#a4e183811e66298270c5f9dd77277f578">Ring::degree_of_var</a></div><div class="ttdeci">virtual void degree_of_var(int n, const ring_elem a, int &amp;lo, int &amp;hi) const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d2b/ring_8cpp_source.html#l00368">ring.cpp:368</a></div></div>
+<div class="ttc" id="aclass_ring_a4e183811e66298270c5f9dd77277f578_html_a4e183811e66298270c5f9dd77277f578"><div class="ttname"><a href="../../dd/dcf/class_ring_a4e183811e66298270c5f9dd77277f578.html#a4e183811e66298270c5f9dd77277f578">Ring::degree_of_var</a></div><div class="ttdeci">virtual void degree_of_var(int n, const ring_elem a, int &amp;lo, int &amp;hi) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d00/rings_2ring_8cpp_source.html#l00368">ring.cpp:368</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67_html_ac9bcbe19995a8140cd4ec61773cd6e67"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a></div><div class="ttdeci">const int ERROR</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00055">m2-mem.cpp:55</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dd/dcf/class_ring_a4e183811e66298270c5f9dd77277f578.html#a4e183811e66298270c5f9dd77277f578">degree_of_var()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../dd/dcf/class_ring_a4e183811e66298270c5f9dd77277f578.html#a4e183811e66298270c5f9dd77277f578">degree_of_var()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_ac9bcbe19995a8140cd4ec61773cd6e67.html#ac9bcbe19995a8140cd4ec61773cd6e67">ERROR</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/d3f/class_matrix_ace2262c3df62223cd641a9e9ecd08dfb.html#ace2262c3df62223cd641a9e9ecd08dfb">Matrix::divide_by_var()</a>.</p>
 
@@ -158,7 +159,7 @@ $(document).ready(function(){initNavTree('dd/dcf/class_ring_aa5474e4319c97c0bc7e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dcf/class_ring.html">Ring</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

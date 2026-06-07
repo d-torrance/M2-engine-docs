@@ -101,19 +101,19 @@ $(document).ready(function(){initNavTree('d6/dfe/class_g_binhom__comp_a243e48e72
         <tr>
           <td class="memname"><a class="el" href="../../de/d28/m2-types_8h_a7070aa7b07cda16d387ba6be4bd917fa.html#a7070aa7b07cda16d387ba6be4bd917fa">M2_bool</a> GBinhom_comp::matrix_lift </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> *&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> **&#160;</td>
           <td class="paramname"><em>result_remainder</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a> **&#160;</td>
           <td class="paramname"><em>result_quotient</em>&#160;</td>
         </tr>
         <tr>
@@ -134,13 +134,14 @@ $(document).ready(function(){initNavTree('d6/dfe/class_g_binhom__comp_a243e48e72
 <p class="definition">Definition at line <a class="el" href="../../d6/db9/gb-sugarless_8cpp_source.html#l00862">862</a> of file <a class="el" href="../../d6/db9/gb-sugarless_8cpp_source.html">gb-sugarless.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  865</span>{</div>
 <div class="line"><span class="lineno">  866</span>  <a class="code hl_function" href="../../d6/dfe/class_g_binhom__comp_accd421642f1d062d8c0349dd9b8f4eba.html#accd421642f1d062d8c0349dd9b8f4eba">minimalize_gb</a>();</div>
-<div class="line"><span class="lineno">  867</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_a69ee045c8883b580b9365fae231da8bb.html#a69ee045c8883b580b9365fae231da8bb">minimal_gb</a>-&gt;<a class="code hl_function" href="../../d9/d3f/class_reduced_g_b_ac8eb52e0c0f0f993b8bdbab0eeaed7ed.html#ac8eb52e0c0f0f993b8bdbab0eeaed7ed">matrix_lift</a>(m, result_remainder, result_quotient);</div>
+<div class="line"><span class="lineno">  867</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d6/dfe/class_g_binhom__comp_a69ee045c8883b580b9365fae231da8bb.html#a69ee045c8883b580b9365fae231da8bb">minimal_gb</a>-&gt;<a class="code hl_function" href="../../d9/d3f/class_reduced_g_b_ac8eb52e0c0f0f993b8bdbab0eeaed7ed.html#ac8eb52e0c0f0f993b8bdbab0eeaed7ed">matrix_lift</a>(m, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_remainder</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_quotient</a>);</div>
 <div class="line"><span class="lineno">  868</span>}</div>
 <div class="ttc" id="aclass_g_binhom__comp_a69ee045c8883b580b9365fae231da8bb_html_a69ee045c8883b580b9365fae231da8bb"><div class="ttname"><a href="../../d6/dfe/class_g_binhom__comp_a69ee045c8883b580b9365fae231da8bb.html#a69ee045c8883b580b9365fae231da8bb">GBinhom_comp::minimal_gb</a></div><div class="ttdeci">ReducedGB * minimal_gb</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d91/gb-sugarless_8hpp_source.html#l00044">gb-sugarless.hpp:44</a></div></div>
 <div class="ttc" id="aclass_g_binhom__comp_accd421642f1d062d8c0349dd9b8f4eba_html_accd421642f1d062d8c0349dd9b8f4eba"><div class="ttname"><a href="../../d6/dfe/class_g_binhom__comp_accd421642f1d062d8c0349dd9b8f4eba.html#accd421642f1d062d8c0349dd9b8f4eba">GBinhom_comp::minimalize_gb</a></div><div class="ttdeci">void minimalize_gb()</div><div class="ttdef"><b>Definition</b> <a href="../../d6/db9/gb-sugarless_8cpp_source.html#l00837">gb-sugarless.cpp:837</a></div></div>
 <div class="ttc" id="aclass_reduced_g_b_ac8eb52e0c0f0f993b8bdbab0eeaed7ed_html_ac8eb52e0c0f0f993b8bdbab0eeaed7ed"><div class="ttname"><a href="../../d9/d3f/class_reduced_g_b_ac8eb52e0c0f0f993b8bdbab0eeaed7ed.html#ac8eb52e0c0f0f993b8bdbab0eeaed7ed">ReducedGB::matrix_lift</a></div><div class="ttdeci">virtual M2_bool matrix_lift(const Matrix *m, const Matrix **result_remainder, const Matrix **result_quotient)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d7c/reducedgb_8cpp_source.html#l00155">reducedgb.cpp:155</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d9/d3f/class_reduced_g_b_ac8eb52e0c0f0f993b8bdbab0eeaed7ed.html#ac8eb52e0c0f0f993b8bdbab0eeaed7ed">ReducedGB::matrix_lift()</a>, <a class="el" href="../../d6/dfe/class_g_binhom__comp_a69ee045c8883b580b9365fae231da8bb.html#a69ee045c8883b580b9365fae231da8bb">minimal_gb</a>, and <a class="el" href="../../d6/dfe/class_g_binhom__comp_accd421642f1d062d8c0349dd9b8f4eba.html#accd421642f1d062d8c0349dd9b8f4eba">minimalize_gb()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d9/d3f/class_reduced_g_b_ac8eb52e0c0f0f993b8bdbab0eeaed7ed.html#ac8eb52e0c0f0f993b8bdbab0eeaed7ed">ReducedGB::matrix_lift()</a>, <a class="el" href="../../d6/dfe/class_g_binhom__comp_a69ee045c8883b580b9365fae231da8bb.html#a69ee045c8883b580b9365fae231da8bb">minimal_gb</a>, and <a class="el" href="../../d6/dfe/class_g_binhom__comp_accd421642f1d062d8c0349dd9b8f4eba.html#accd421642f1d062d8c0349dd9b8f4eba">minimalize_gb()</a>.</p>
 
 </div>
 </div>
@@ -150,7 +151,7 @@ $(document).ready(function(){initNavTree('d6/dfe/class_g_binhom__comp_a243e48e72
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dfe/class_g_binhom__comp.html">GBinhom_comp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:06 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:14 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

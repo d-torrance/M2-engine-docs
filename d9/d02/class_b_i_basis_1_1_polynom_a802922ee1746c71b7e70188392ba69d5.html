@@ -95,12 +95,12 @@ $(document).ready(function(){initNavTree('d9/d02/class_b_i_basis_1_1_polynom_a80
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MonomType &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a>&lt; MonomType &gt; &amp; <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">BIBasis::Polynom</a>&lt; MonomType &gt;::operator+= </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt; &amp; <a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">BIBasis::Polynom</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &gt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">::operator</a>+= </td>
           <td>(</td>
-          <td class="paramtype">const MonomType &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a> &amp;&#160;</td>
           <td class="paramname"><em>newMonom</em></td><td>)</td>
           <td></td>
         </tr>
@@ -109,28 +109,28 @@ template&lt;typename MonomType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d7e/polynom_8hpp_source.html#l00233">233</a> of file <a class="el" href="../../dc/d7e/polynom_8hpp_source.html">polynom.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  234</span>    {</div>
-<div class="line"><span class="lineno">  235</span>        MonomType** position = <span class="keyword">const_cast&lt;</span>MonomType**<span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d9/d02/class_b_i_basis_1_1_polynom_ae7aecc7aab69483b371c091d053e75de.html#ae7aecc7aab69483b371c091d053e75de">Find</a>(newMonom));</div>
-<div class="line"><span class="lineno">  236</span>        MonomType* tmpMonom = 0;</div>
+<div class="line"><span class="lineno">  235</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a>** <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">position</a> = <span class="keyword">const_cast&lt;</span><a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a>**<span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d9/d02/class_b_i_basis_1_1_polynom_ae7aecc7aab69483b371c091d053e75de.html#ae7aecc7aab69483b371c091d053e75de">Find</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newMonom</a>));</div>
+<div class="line"><span class="lineno">  236</span>        <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a>* <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpMonom</a> = 0;</div>
 <div class="line"><span class="lineno">  237</span> </div>
-<div class="line"><span class="lineno">  238</span>        <span class="keywordflow">if</span> (!position)</div>
+<div class="line"><span class="lineno">  238</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">position</a>)</div>
 <div class="line"><span class="lineno">  239</span>        {</div>
-<div class="line"><span class="lineno">  240</span>            tmpMonom = <span class="keyword">new</span> MonomType(newMonom);</div>
-<div class="line"><span class="lineno">  241</span>            tmpMonom-&gt;Next = <a class="code hl_variable" href="../../d9/d02/class_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c.html#a4c2ec185d6e040f76691dde6f091b11c">MonomListHead</a>;</div>
-<div class="line"><span class="lineno">  242</span>            <a class="code hl_variable" href="../../d9/d02/class_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c.html#a4c2ec185d6e040f76691dde6f091b11c">MonomListHead</a> = tmpMonom;</div>
+<div class="line"><span class="lineno">  240</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpMonom</a> = <span class="keyword">new</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newMonom</a>);</div>
+<div class="line"><span class="lineno">  241</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpMonom</a>-&gt;Next = <a class="code hl_variable" href="../../d9/d02/class_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c.html#a4c2ec185d6e040f76691dde6f091b11c">MonomListHead</a>;</div>
+<div class="line"><span class="lineno">  242</span>            <a class="code hl_variable" href="../../d9/d02/class_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c.html#a4c2ec185d6e040f76691dde6f091b11c">MonomListHead</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpMonom</a>;</div>
 <div class="line"><span class="lineno">  243</span>        }</div>
 <div class="line"><span class="lineno">  244</span>        <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  245</span>        {</div>
-<div class="line"><span class="lineno">  246</span>            <span class="keywordflow">if</span> (*position &amp;&amp; **position == newMonom)</div>
+<div class="line"><span class="lineno">  246</span>            <span class="keywordflow">if</span> (*<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">position</a> &amp;&amp; **<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">position</a> == <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newMonom</a>)</div>
 <div class="line"><span class="lineno">  247</span>            {</div>
-<div class="line"><span class="lineno">  248</span>                tmpMonom = *position;</div>
-<div class="line"><span class="lineno">  249</span>                *position = (*position)-&gt;Next;</div>
-<div class="line"><span class="lineno">  250</span>                <span class="keyword">delete</span> tmpMonom;</div>
+<div class="line"><span class="lineno">  248</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpMonom</a> = *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">position</a>;</div>
+<div class="line"><span class="lineno">  249</span>                *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">position</a> = (*position)-&gt;Next;</div>
+<div class="line"><span class="lineno">  250</span>                <span class="keyword">delete</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpMonom</a>;</div>
 <div class="line"><span class="lineno">  251</span>            }</div>
 <div class="line"><span class="lineno">  252</span>            <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  253</span>            {</div>
-<div class="line"><span class="lineno">  254</span>                tmpMonom = <span class="keyword">new</span> MonomType(newMonom);</div>
-<div class="line"><span class="lineno">  255</span>                tmpMonom-&gt;Next = (*position)-&gt;Next;</div>
-<div class="line"><span class="lineno">  256</span>                (*position)-&gt;Next = tmpMonom;</div>
+<div class="line"><span class="lineno">  254</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpMonom</a> = <span class="keyword">new</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">MonomType</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newMonom</a>);</div>
+<div class="line"><span class="lineno">  255</span>                <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpMonom</a>-&gt;Next = (*position)-&gt;Next;</div>
+<div class="line"><span class="lineno">  256</span>                (*position)-&gt;Next = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">tmpMonom</a>;</div>
 <div class="line"><span class="lineno">  257</span>            }</div>
 <div class="line"><span class="lineno">  258</span>        }</div>
 <div class="line"><span class="lineno">  259</span> </div>
@@ -138,7 +138,10 @@ template&lt;typename MonomType &gt; </div>
 <div class="line"><span class="lineno">  261</span>    }</div>
 <div class="ttc" id="aclass_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c_html_a4c2ec185d6e040f76691dde6f091b11c"><div class="ttname"><a href="../../d9/d02/class_b_i_basis_1_1_polynom_a4c2ec185d6e040f76691dde6f091b11c.html#a4c2ec185d6e040f76691dde6f091b11c">BIBasis::Polynom::MonomListHead</a></div><div class="ttdeci">MonomType * MonomListHead</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7e/polynom_8hpp_source.html#l00022">polynom.hpp:22</a></div></div>
 <div class="ttc" id="aclass_b_i_basis_1_1_polynom_ae7aecc7aab69483b371c091d053e75de_html_ae7aecc7aab69483b371c091d053e75de"><div class="ttname"><a href="../../d9/d02/class_b_i_basis_1_1_polynom_ae7aecc7aab69483b371c091d053e75de.html#ae7aecc7aab69483b371c091d053e75de">BIBasis::Polynom::Find</a></div><div class="ttdeci">const MonomType *const * Find(const MonomType &amp;monom) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7e/polynom_8hpp_source.html#l00631">polynom.hpp:631</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -147,7 +150,7 @@ template&lt;typename MonomType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d30/namespace_b_i_basis.html">BIBasis</a></li><li class="navelem"><a class="el" href="../../d9/d02/class_b_i_basis_1_1_polynom.html">Polynom</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

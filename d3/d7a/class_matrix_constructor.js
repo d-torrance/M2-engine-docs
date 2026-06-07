@@ -13,10 +13,10 @@ var class_matrix_constructor =
     [ "set_entry", "d3/d7a/class_matrix_constructor_a719118a871e65c356db8ea6ce844d6ce.html#a719118a871e65c356db8ea6ce844d6ce", null ],
     [ "set_matrix_degree", "d3/d7a/class_matrix_constructor_ac6c2e0c52452ce346de61918511be7e7.html#ac6c2e0c52452ce346de61918511be7e7", null ],
     [ "to_matrix", "d3/d7a/class_matrix_constructor_a2ff836da11f7fe8a125a7aa73ee95651.html#a2ff836da11f7fe8a125a7aa73ee95651", null ],
+    [ "VECTOR", "d3/d7a/class_matrix_constructor_ad4a49ae607ed9bd913a4b7976a9d22f7.html#ad4a49ae607ed9bd913a4b7976a9d22f7", null ],
     [ "cols", "d3/d7a/class_matrix_constructor_a260e0af1f647ac4dd1a1812729606510.html#a260e0af1f647ac4dd1a1812729606510", null ],
     [ "cols_frozen", "d3/d7a/class_matrix_constructor_a6ba8ad8779ae7c3d54cc8e33df4be327.html#a6ba8ad8779ae7c3d54cc8e33df4be327", null ],
     [ "deg", "d3/d7a/class_matrix_constructor_addae00d99ef00f3584e4861f22152eb0.html#addae00d99ef00f3584e4861f22152eb0", null ],
-    [ "entries", "d3/d7a/class_matrix_constructor_a25d3da9d8cccaa323d6eee00c4b191a5.html#a25d3da9d8cccaa323d6eee00c4b191a5", null ],
     [ "R", "d3/d7a/class_matrix_constructor_a06f7dd15c1dd284d38ef931831c8dde0.html#a06f7dd15c1dd284d38ef931831c8dde0", null ],
     [ "rows", "d3/d7a/class_matrix_constructor_a24c8a0da5c860a5d5b976c5754e57615.html#a24c8a0da5c860a5d5b976c5754e57615", null ]
 ];

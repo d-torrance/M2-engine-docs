@@ -95,13 +95,13 @@ $(document).ready(function(){initNavTree('da/d22/class_s_l_p_a102f09c2794f81eee9
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Field &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">class</a> Field &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../da/d22/class_s_l_p.html">SLP</a>&lt; Field &gt;::relative_to_absolute </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> <a class="el" href="../../da/d22/class_s_l_p.html">SLP</a>&lt; Field &gt;::relative_to_absolute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d1/da0/classint.html">int</a> &amp;&#160;</td>
           <td class="paramname"><em>aa</em>, </td>
@@ -125,19 +125,20 @@ template&lt;class Field &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da0/_n_a_g_8hpp_source.html#l00456">456</a> of file <a class="el" href="../../d8/da0/_n_a_g_8hpp_source.html">NAG.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  459</span>  {</div>
-<div class="line"><span class="lineno">  460</span>    <span class="keywordflow">if</span> (aa &lt; 0)</div>
-<div class="line"><span class="lineno">  461</span>      aa = cur_node + aa;</div>
-<div class="line"><span class="lineno">  462</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (aa &lt; <a class="code hl_define" href="../../d8/da0/_n_a_g_8hpp_a2a876dd761d8964c985698abccc212dd.html#a2a876dd761d8964c985698abccc212dd">CONST_OFFSET</a>)</div>
-<div class="line"><span class="lineno">  463</span>      aa = <a class="code hl_variable" href="../../da/d22/class_s_l_p_ae83d3f5bbcfd655a3f0fafd47af54ff2.html#ae83d3f5bbcfd655a3f0fafd47af54ff2">num_consts</a> + aa;  <span class="comment">// an input</span></div>
-<div class="line"><span class="lineno">  464</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  465</span>      aa -= <a class="code hl_define" href="../../d8/da0/_n_a_g_8hpp_a2a876dd761d8964c985698abccc212dd.html#a2a876dd761d8964c985698abccc212dd">CONST_OFFSET</a>;  <span class="comment">// a constant</span></div>
-<div class="line"><span class="lineno">  466</span>  }</div>
-<div class="ttc" id="a_n_a_g_8hpp_a2a876dd761d8964c985698abccc212dd_html_a2a876dd761d8964c985698abccc212dd"><div class="ttname"><a href="../../d8/da0/_n_a_g_8hpp_a2a876dd761d8964c985698abccc212dd.html#a2a876dd761d8964c985698abccc212dd">CONST_OFFSET</a></div><div class="ttdeci">#define CONST_OFFSET</div><div class="ttdef"><b>Definition</b> <a href="../../d8/da0/_n_a_g_8hpp_source.html#l00391">NAG.hpp:391</a></div></div>
-<div class="ttc" id="aclass_s_l_p_ae83d3f5bbcfd655a3f0fafd47af54ff2_html_ae83d3f5bbcfd655a3f0fafd47af54ff2"><div class="ttname"><a href="../../da/d22/class_s_l_p_ae83d3f5bbcfd655a3f0fafd47af54ff2.html#ae83d3f5bbcfd655a3f0fafd47af54ff2">SLP::num_consts</a></div><div class="ttdeci">int num_consts</div><div class="ttdef"><b>Definition</b> <a href="../../d8/da0/_n_a_g_8hpp_source.html#l00430">NAG.hpp:430</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d8/da0/_n_a_g_8hpp_source.html#l00485">485</a> of file <a class="el" href="../../d8/da0/_n_a_g_8hpp_source.html">NAG.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  488</span>  {</div>
+<div class="line"><span class="lineno">  489</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">aa</a> &lt; 0)</div>
+<div class="line"><span class="lineno">  490</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">aa</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">cur_node</a> + <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">aa</a>;</div>
+<div class="line"><span class="lineno">  491</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">aa</a> &lt; <a class="code hl_define" href="../../d8/da0/_n_a_g_8hpp_a2a876dd761d8964c985698abccc212dd.html#a2a876dd761d8964c985698abccc212dd">CONST_OFFSET</a>)</div>
+<div class="line"><span class="lineno">  492</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">aa</a> = <a class="code hl_variable" href="../../da/d22/class_s_l_p_ae83d3f5bbcfd655a3f0fafd47af54ff2.html#ae83d3f5bbcfd655a3f0fafd47af54ff2">num_consts</a> + <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">aa</a>;  <span class="comment">// an input</span></div>
+<div class="line"><span class="lineno">  493</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  494</span>      <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">aa</a> -= <a class="code hl_define" href="../../d8/da0/_n_a_g_8hpp_a2a876dd761d8964c985698abccc212dd.html#a2a876dd761d8964c985698abccc212dd">CONST_OFFSET</a>;  <span class="comment">// a constant</span></div>
+<div class="line"><span class="lineno">  495</span>  }</div>
+<div class="ttc" id="a_n_a_g_8hpp_a2a876dd761d8964c985698abccc212dd_html_a2a876dd761d8964c985698abccc212dd"><div class="ttname"><a href="../../d8/da0/_n_a_g_8hpp_a2a876dd761d8964c985698abccc212dd.html#a2a876dd761d8964c985698abccc212dd">CONST_OFFSET</a></div><div class="ttdeci">#define CONST_OFFSET</div><div class="ttdef"><b>Definition</b> <a href="../../d8/da0/_n_a_g_8hpp_source.html#l00418">NAG.hpp:418</a></div></div>
+<div class="ttc" id="aclass_s_l_p_ae83d3f5bbcfd655a3f0fafd47af54ff2_html_ae83d3f5bbcfd655a3f0fafd47af54ff2"><div class="ttname"><a href="../../da/d22/class_s_l_p_ae83d3f5bbcfd655a3f0fafd47af54ff2.html#ae83d3f5bbcfd655a3f0fafd47af54ff2">SLP::num_consts</a></div><div class="ttdeci">int num_consts</div><div class="ttdef"><b>Definition</b> <a href="../../d8/da0/_n_a_g_8hpp_source.html#l00459">NAG.hpp:459</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/da0/_n_a_g_8hpp_a2a876dd761d8964c985698abccc212dd.html#a2a876dd761d8964c985698abccc212dd">CONST_OFFSET</a>, and <a class="el" href="../../da/d22/class_s_l_p_ae83d3f5bbcfd655a3f0fafd47af54ff2.html#ae83d3f5bbcfd655a3f0fafd47af54ff2">SLP&lt; Field &gt;::num_consts</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d8/da0/_n_a_g_8hpp_a2a876dd761d8964c985698abccc212dd.html#a2a876dd761d8964c985698abccc212dd">CONST_OFFSET</a>, and <a class="el" href="../../da/d22/class_s_l_p_ae83d3f5bbcfd655a3f0fafd47af54ff2.html#ae83d3f5bbcfd655a3f0fafd47af54ff2">SLP&lt; Field &gt;::num_consts</a>.</p>
 
 </div>
 </div>
@@ -147,7 +148,7 @@ template&lt;class Field &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d22/class_s_l_p.html">SLP</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:08 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:16 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

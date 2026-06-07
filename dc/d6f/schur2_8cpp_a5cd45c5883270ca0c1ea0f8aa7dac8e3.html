@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('dc/d6f/schur2_8cpp_a5cd45c5883270ca0c1
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void to_varpower </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> to_varpower </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d3/dc2/schur2_8hpp_aca873c74b0b403ca494c84086283196e.html#aca873c74b0b403ca494c84086283196e">const_schur_partition</a>&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -119,38 +119,39 @@ $(document).ready(function(){initNavTree('dc/d6f/schur2_8cpp_a5cd45c5883270ca0c1
 <div class="fragment"><div class="line"><span class="lineno">  649</span>{</div>
 <div class="line"><span class="lineno">  650</span>  <span class="keywordtype">int</span> len = a[0];</div>
 <div class="line"><span class="lineno">  651</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.resize(2 * len);</div>
-<div class="line"><span class="lineno">  652</span>  <span class="keywordtype">int</span> *result_vp = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.data();</div>
-<div class="line"><span class="lineno">  653</span>  <span class="keywordtype">int</span> *orig_result_vp = result_vp;</div>
-<div class="line"><span class="lineno">  654</span>  result_vp++;</div>
+<div class="line"><span class="lineno">  652</span>  <span class="keywordtype">int</span> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_vp</a> = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.data();</div>
+<div class="line"><span class="lineno">  653</span>  <span class="keywordtype">int</span> *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">orig_result_vp</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_vp</a>;</div>
+<div class="line"><span class="lineno">  654</span>  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_vp</a>++;</div>
 <div class="line"><span class="lineno">  655</span> </div>
 <div class="line"><span class="lineno">  656</span>  <span class="keywordflow">if</span> (len &gt; 1)</div>
 <div class="line"><span class="lineno">  657</span>    {</div>
 <div class="line"><span class="lineno">  658</span>      <span class="keywordtype">int</span> v = a[1];</div>
-<div class="line"><span class="lineno">  659</span>      <span class="keywordtype">int</span> e = 1;</div>
+<div class="line"><span class="lineno">  659</span>      <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a> = 1;</div>
 <div class="line"><span class="lineno">  660</span> </div>
 <div class="line"><span class="lineno">  661</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i &lt; len; i++)</div>
 <div class="line"><span class="lineno">  662</span>        {</div>
 <div class="line"><span class="lineno">  663</span>          <span class="keywordflow">if</span> (v == a[i])</div>
-<div class="line"><span class="lineno">  664</span>            e++;</div>
+<div class="line"><span class="lineno">  664</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>++;</div>
 <div class="line"><span class="lineno">  665</span>          <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  666</span>            {</div>
-<div class="line"><span class="lineno">  667</span>              *result_vp++ = v;</div>
-<div class="line"><span class="lineno">  668</span>              *result_vp++ = e;</div>
+<div class="line"><span class="lineno">  667</span>              *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_vp</a>++ = v;</div>
+<div class="line"><span class="lineno">  668</span>              *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_vp</a>++ = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>;</div>
 <div class="line"><span class="lineno">  669</span>              v = a[i];</div>
-<div class="line"><span class="lineno">  670</span>              e = 1;</div>
+<div class="line"><span class="lineno">  670</span>              <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a> = 1;</div>
 <div class="line"><span class="lineno">  671</span>            }</div>
 <div class="line"><span class="lineno">  672</span>        }</div>
-<div class="line"><span class="lineno">  673</span>      *result_vp++ = v;</div>
-<div class="line"><span class="lineno">  674</span>      *result_vp++ = e;</div>
+<div class="line"><span class="lineno">  673</span>      *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_vp</a>++ = v;</div>
+<div class="line"><span class="lineno">  674</span>      *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_vp</a>++ = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">e</a>;</div>
 <div class="line"><span class="lineno">  675</span>    }</div>
 <div class="line"><span class="lineno">  676</span> </div>
-<div class="line"><span class="lineno">  677</span>  <span class="keywordtype">int</span> newlen = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(result_vp - orig_result_vp);</div>
-<div class="line"><span class="lineno">  678</span>  *orig_result_vp = newlen;</div>
-<div class="line"><span class="lineno">  679</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.resize(newlen);</div>
+<div class="line"><span class="lineno">  677</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newlen</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">result_vp</a> - <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">orig_result_vp</a>);</div>
+<div class="line"><span class="lineno">  678</span>  *<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">orig_result_vp</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newlen</a>;</div>
+<div class="line"><span class="lineno">  679</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>.resize(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">newlen</a>);</div>
 <div class="line"><span class="lineno">  680</span>}</div>
 <div class="ttc" id="am2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b_html_aeace12b3a5c753d4ece1a0e89acb729b"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a></div><div class="ttdeci">VALGRIND_MAKE_MEM_DEFINED &amp; result(result)</div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/da2/class_schur_ring2_abbde84b578a5bd8fa27fb5e552a63adf.html#abbde84b578a5bd8fa27fb5e552a63adf">SchurRing2::list_form()</a>.</p>
 
@@ -161,8 +162,8 @@ $(document).ready(function(){initNavTree('dc/d6f/schur2_8cpp_a5cd45c5883270ca0c1
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dc/d6f/schur2_8cpp.html">schur2.cpp</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:05 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_aaa4fe7948ee75e10b7bc8344bb4d077.html">schur-rings</a></li><li class="navelem"><a class="el" href="../../dc/d6f/schur2_8cpp.html">schur2.cpp</a></li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:12 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

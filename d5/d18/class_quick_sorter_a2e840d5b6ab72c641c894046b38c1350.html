@@ -95,13 +95,13 @@ $(document).ready(function(){initNavTree('d5/d18/class_quick_sorter_a2e840d5b6ab
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Sorter &gt; </div>
+template&lt;<a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">typename</a> <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Sorter</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d5/d18/class_quick_sorter.html">QuickSorter</a>&lt; Sorter &gt;::sort </td>
+          <td class="memname"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">void</a> <a class="el" href="../../d5/d18/class_quick_sorter.html">QuickSorter</a>&lt; <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">Sorter</a> &gt;::sort </td>
           <td>(</td>
           <td class="paramtype">long&#160;</td>
           <td class="paramname"><em>lo</em>, </td>
@@ -127,16 +127,19 @@ template&lt;typename Sorter &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d3b/monsort_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../df/d3b/monsort_8hpp_source.html">monsort.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   85</span>{</div>
-<div class="line"><span class="lineno">   86</span>  <span class="keywordflow">if</span> (lo &lt; hi)</div>
+<div class="line"><span class="lineno">   86</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lo</a> &lt; hi)</div>
 <div class="line"><span class="lineno">   87</span>    {</div>
-<div class="line"><span class="lineno">   88</span>      <span class="keywordtype">long</span> q = <a class="code hl_function" href="../../d5/d18/class_quick_sorter_ad5a455e7df88dc3930411e58282ae75f.html#ad5a455e7df88dc3930411e58282ae75f">sort_partition</a>(lo, hi);</div>
-<div class="line"><span class="lineno">   89</span>      <a class="code hl_function" href="../../d5/d18/class_quick_sorter_a2e840d5b6ab72c641c894046b38c1350.html#a2e840d5b6ab72c641c894046b38c1350">sort</a>(lo, q);</div>
-<div class="line"><span class="lineno">   90</span>      <a class="code hl_function" href="../../d5/d18/class_quick_sorter_a2e840d5b6ab72c641c894046b38c1350.html#a2e840d5b6ab72c641c894046b38c1350">sort</a>(q + 1, hi);</div>
+<div class="line"><span class="lineno">   88</span>      <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a> = <a class="code hl_function" href="../../d5/d18/class_quick_sorter_ad5a455e7df88dc3930411e58282ae75f.html#ad5a455e7df88dc3930411e58282ae75f">sort_partition</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lo</a>, hi);</div>
+<div class="line"><span class="lineno">   89</span>      <a class="code hl_function" href="../../d5/d18/class_quick_sorter_a2e840d5b6ab72c641c894046b38c1350.html#a2e840d5b6ab72c641c894046b38c1350">sort</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">lo</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a>);</div>
+<div class="line"><span class="lineno">   90</span>      <a class="code hl_function" href="../../d5/d18/class_quick_sorter_a2e840d5b6ab72c641c894046b38c1350.html#a2e840d5b6ab72c641c894046b38c1350">sort</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">q</a> + 1, hi);</div>
 <div class="line"><span class="lineno">   91</span>    }</div>
 <div class="line"><span class="lineno">   92</span>}</div>
 <div class="ttc" id="aclass_quick_sorter_a2e840d5b6ab72c641c894046b38c1350_html_a2e840d5b6ab72c641c894046b38c1350"><div class="ttname"><a href="../../d5/d18/class_quick_sorter_a2e840d5b6ab72c641c894046b38c1350.html#a2e840d5b6ab72c641c894046b38c1350">QuickSorter::sort</a></div><div class="ttdeci">void sort(long lo, long hi)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3b/monsort_8hpp_source.html#l00084">monsort.hpp:84</a></div></div>
 <div class="ttc" id="aclass_quick_sorter_ad5a455e7df88dc3930411e58282ae75f_html_ad5a455e7df88dc3930411e58282ae75f"><div class="ttname"><a href="../../d5/d18/class_quick_sorter_ad5a455e7df88dc3930411e58282ae75f.html#ad5a455e7df88dc3930411e58282ae75f">QuickSorter::sort_partition</a></div><div class="ttdeci">long sort_partition(long lo, long hi)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3b/monsort_8hpp_source.html#l00054">monsort.hpp:54</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -145,7 +148,7 @@ template&lt;typename Sorter &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d18/class_quick_sorter.html">QuickSorter</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:07 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:15 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

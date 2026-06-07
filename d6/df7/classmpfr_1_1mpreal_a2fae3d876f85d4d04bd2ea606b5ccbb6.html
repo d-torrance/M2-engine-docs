@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_a2fae3d876f
         <tr>
           <td class="memname">std::string mpfr::mpreal::toString </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">const</a> std::string &amp;&#160;</td>
           <td class="paramname"><em>format</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -115,25 +115,26 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_a2fae3d876f
 
 <p class="definition">Definition at line <a class="el" href="../../d9/de1/mpreal_8h_source.html#l01754">1754</a> of file <a class="el" href="../../d9/de1/mpreal_8h_source.html">mpreal.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1755</span>{</div>
-<div class="line"><span class="lineno"> 1756</span>    <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a> = NULL;</div>
-<div class="line"><span class="lineno"> 1757</span>    std::string out;</div>
+<div class="line"><span class="lineno"> 1756</span>    <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">NULL</a>;</div>
+<div class="line"><span class="lineno"> 1757</span>    std::string <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">out</a>;</div>
 <div class="line"><span class="lineno"> 1758</span> </div>
-<div class="line"><span class="lineno"> 1759</span>    <span class="keywordflow">if</span>( !format.empty() )</div>
+<div class="line"><span class="lineno"> 1759</span>    <span class="keywordflow">if</span>( !<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">format</a>.empty() )</div>
 <div class="line"><span class="lineno"> 1760</span>    {</div>
-<div class="line"><span class="lineno"> 1761</span>        <span class="keywordflow">if</span>(!(mpfr_asprintf(&amp;<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>, format.c_str(), <a class="code hl_function" href="../../d6/df7/classmpfr_1_1mpreal_a566f64ca066c54923d19c11d6c3d15cd.html#a566f64ca066c54923d19c11d6c3d15cd">mpfr_srcptr</a>()) &lt; 0))</div>
+<div class="line"><span class="lineno"> 1761</span>        <span class="keywordflow">if</span>(!(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpfr_asprintf</a>(&amp;<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>, <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">format</a>.c_str(), <a class="code hl_function" href="../../d6/df7/classmpfr_1_1mpreal_a566f64ca066c54923d19c11d6c3d15cd.html#a566f64ca066c54923d19c11d6c3d15cd">mpfr_srcptr</a>()) &lt; 0))</div>
 <div class="line"><span class="lineno"> 1762</span>        {</div>
-<div class="line"><span class="lineno"> 1763</span>            out = std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
+<div class="line"><span class="lineno"> 1763</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">out</a> = std::string(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
 <div class="line"><span class="lineno"> 1764</span> </div>
-<div class="line"><span class="lineno"> 1765</span>            mpfr_free_str(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
+<div class="line"><span class="lineno"> 1765</span>            <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">mpfr_free_str</a>(<a class="code hl_variable" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>);</div>
 <div class="line"><span class="lineno"> 1766</span>        }</div>
 <div class="line"><span class="lineno"> 1767</span>    }</div>
 <div class="line"><span class="lineno"> 1768</span> </div>
-<div class="line"><span class="lineno"> 1769</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno"> 1769</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">out</a>;</div>
 <div class="line"><span class="lineno"> 1770</span>}</div>
 <div class="ttc" id="aclassmpfr_1_1mpreal_a566f64ca066c54923d19c11d6c3d15cd_html_a566f64ca066c54923d19c11d6c3d15cd"><div class="ttname"><a href="../../d6/df7/classmpfr_1_1mpreal_a566f64ca066c54923d19c11d6c3d15cd.html#a566f64ca066c54923d19c11d6c3d15cd">mpfr::mpreal::mpfr_srcptr</a></div><div class="ttdeci">::mpfr_srcptr mpfr_srcptr() const</div><div class="ttdef"><b>Definition</b> <a href="../../d9/de1/mpreal_8h_source.html#l01742">mpreal.h:1742</a></div></div>
 <div class="ttc" id="am2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5_html_a2fc91f4e89bc37f261db820d231da2e5"><div class="ttname"><a href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a></div><div class="ttdeci">void size_t s</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcc/m2-mem_8cpp_source.html#l00271">m2-mem.cpp:271</a></div></div>
+<div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/df7/classmpfr_1_1mpreal_a566f64ca066c54923d19c11d6c3d15cd.html#a566f64ca066c54923d19c11d6c3d15cd">mpfr_srcptr()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>.</p>
+<p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>, <a class="el" href="../../d6/df7/classmpfr_1_1mpreal_a566f64ca066c54923d19c11d6c3d15cd.html#a566f64ca066c54923d19c11d6c3d15cd">mpfr_srcptr()</a>, and <a class="el" href="../../d4/dcc/m2-mem_8cpp_a2fc91f4e89bc37f261db820d231da2e5.html#a2fc91f4e89bc37f261db820d231da2e5">s</a>.</p>
 
 </div>
 </div>
@@ -143,7 +144,7 @@ $(document).ready(function(){initNavTree('d6/df7/classmpfr_1_1mpreal_a2fae3d876f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d02/namespacempfr.html">mpfr</a></li><li class="navelem"><a class="el" href="../../d6/df7/classmpfr_1_1mpreal.html">mpreal</a></li>
-    <li class="footer">Generated on Sun May 31 2026 04:43:09 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 7 2026 04:48:17 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

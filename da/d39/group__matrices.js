@@ -88,10 +88,10 @@ var group__matrices =
       [ "set_entry", "d3/d7a/class_matrix_constructor_a719118a871e65c356db8ea6ce844d6ce.html#a719118a871e65c356db8ea6ce844d6ce", null ],
       [ "set_matrix_degree", "d3/d7a/class_matrix_constructor_ac6c2e0c52452ce346de61918511be7e7.html#ac6c2e0c52452ce346de61918511be7e7", null ],
       [ "to_matrix", "d3/d7a/class_matrix_constructor_a2ff836da11f7fe8a125a7aa73ee95651.html#a2ff836da11f7fe8a125a7aa73ee95651", null ],
+      [ "VECTOR", "d3/d7a/class_matrix_constructor_ad4a49ae607ed9bd913a4b7976a9d22f7.html#ad4a49ae607ed9bd913a4b7976a9d22f7", null ],
       [ "cols", "d3/d7a/class_matrix_constructor_a260e0af1f647ac4dd1a1812729606510.html#a260e0af1f647ac4dd1a1812729606510", null ],
       [ "cols_frozen", "d3/d7a/class_matrix_constructor_a6ba8ad8779ae7c3d54cc8e33df4be327.html#a6ba8ad8779ae7c3d54cc8e33df4be327", null ],
       [ "deg", "d3/d7a/class_matrix_constructor_addae00d99ef00f3584e4861f22152eb0.html#addae00d99ef00f3584e4861f22152eb0", null ],
-      [ "entries", "d3/d7a/class_matrix_constructor_a25d3da9d8cccaa323d6eee00c4b191a5.html#a25d3da9d8cccaa323d6eee00c4b191a5", null ],
       [ "R", "d3/d7a/class_matrix_constructor_a06f7dd15c1dd284d38ef931831c8dde0.html#a06f7dd15c1dd284d38ef931831c8dde0", null ],
       [ "rows", "d3/d7a/class_matrix_constructor_a24c8a0da5c860a5d5b976c5754e57615.html#a24c8a0da5c860a5d5b976c5754e57615", null ]
     ] ],
@@ -115,7 +115,7 @@ var group__matrices =
         [ "M", "d2/d54/class_matrix_1_1iterator_a4a1a040f1f1e92f42d576b04ce192b49.html#a4a1a040f1f1e92f42d576b04ce192b49", null ],
         [ "v", "d2/d54/class_matrix_1_1iterator_a2a9766b0c2a41331b114be9e905d324c.html#a2a9766b0c2a41331b114be9e905d324c", null ]
       ] ],
-      [ "Matrix", "d6/d3f/class_matrix_af09ebf5b6398dbae10cb696620da7a1c.html#af09ebf5b6398dbae10cb696620da7a1c", null ],
+      [ "Matrix", "d6/d3f/class_matrix_a6d2f108b075f1abe1c9e17a9057636e6.html#a6d2f108b075f1abe1c9e17a9057636e6", null ],
       [ "auto_reduce", "d6/d3f/class_matrix_a51da2242500927ed75c85ac920d50eed.html#a51da2242500927ed75c85ac920d50eed", null ],
       [ "basis", "d6/d3f/class_matrix_ae50f6a2e816d7a9a4f92ab92415f0826.html#ae50f6a2e816d7a9a4f92ab92415f0826", null ],
       [ "clean", "d6/d3f/class_matrix_a3b6756621170dc71e85d96865f1d1f34.html#a3b6756621170dc71e85d96865f1d1f34", null ],
