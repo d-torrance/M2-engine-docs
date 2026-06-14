@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('d7/d9a/class_det_computation_a3a5289dd
 <p class="definition">Definition at line <a class="el" href="../../d9/d40/det_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../d9/d40/det_8cpp_source.html">det.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   95</span>{</div>
 <div class="line"><span class="lineno">   96</span>  <span class="comment">// Traverse through matrix entries, find nonzero entries</span></div>
-<div class="line"><span class="lineno">   97</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nonzero</a> = -1;</div>
+<div class="line"><span class="lineno">   97</span>  <span class="keywordtype">int</span> nonzero = -1;</div>
 <div class="line"><span class="lineno">   98</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../d7/d9a/class_det_computation_ae83c2e8b3837ef8312f7a6e51c4360cf.html#ae83c2e8b3837ef8312f7a6e51c4360cf">M</a>-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a7d4293b74029beb92af3d47fdcb7c18c.html#a7d4293b74029beb92af3d47fdcb7c18c">n_rows</a>(); ++i)</div>
 <div class="line"><span class="lineno">   99</span>    {</div>
 <div class="line"><span class="lineno">  100</span>      <span class="keywordtype">bool</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">flag</a> = <span class="keyword">false</span>;</div>
@@ -126,10 +126,10 @@ $(document).ready(function(){initNavTree('d7/d9a/class_det_computation_a3a5289dd
 <div class="line"><span class="lineno">  105</span>              <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">flag</a>)</div>
 <div class="line"><span class="lineno">  106</span>                {</div>
 <div class="line"><span class="lineno">  107</span>                  <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">flag</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  108</span>                  <a class="code hl_variable" href="../../d7/d9a/class_det_computation_a211d3dc537ff5c46d0a83379b6bf5abf.html#a211d3dc537ff5c46d0a83379b6bf5abf">dynamic_cache</a>[0][++<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nonzero</a>] = {};</div>
-<div class="line"><span class="lineno">  109</span>                  <a class="code hl_variable" href="../../d7/d9a/class_det_computation_ad4e7178f329a1cef1067a0c44f4ab395.html#ad4e7178f329a1cef1067a0c44f4ab395">row_lookup</a>[i] = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nonzero</a>;</div>
+<div class="line"><span class="lineno">  108</span>                  <a class="code hl_variable" href="../../d7/d9a/class_det_computation_a211d3dc537ff5c46d0a83379b6bf5abf.html#a211d3dc537ff5c46d0a83379b6bf5abf">dynamic_cache</a>[0][++nonzero] = {};</div>
+<div class="line"><span class="lineno">  109</span>                  <a class="code hl_variable" href="../../d7/d9a/class_det_computation_ad4e7178f329a1cef1067a0c44f4ab395.html#ad4e7178f329a1cef1067a0c44f4ab395">row_lookup</a>[i] = nonzero;</div>
 <div class="line"><span class="lineno">  110</span>                }</div>
-<div class="line"><span class="lineno">  111</span>              <a class="code hl_variable" href="../../d7/d9a/class_det_computation_a211d3dc537ff5c46d0a83379b6bf5abf.html#a211d3dc537ff5c46d0a83379b6bf5abf">dynamic_cache</a>[0][<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">nonzero</a>][{{i}, {j}}] = <a class="code hl_variable" href="../../d7/d9a/class_det_computation_ae83c2e8b3837ef8312f7a6e51c4360cf.html#ae83c2e8b3837ef8312f7a6e51c4360cf">M</a>-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i, j);</div>
+<div class="line"><span class="lineno">  111</span>              <a class="code hl_variable" href="../../d7/d9a/class_det_computation_a211d3dc537ff5c46d0a83379b6bf5abf.html#a211d3dc537ff5c46d0a83379b6bf5abf">dynamic_cache</a>[0][nonzero][{{i}, {j}}] = <a class="code hl_variable" href="../../d7/d9a/class_det_computation_ae83c2e8b3837ef8312f7a6e51c4360cf.html#ae83c2e8b3837ef8312f7a6e51c4360cf">M</a>-&gt;<a class="code hl_function" href="../../d6/d3f/class_matrix_a0dd3516d8526ad736fe69848aacd1406.html#a0dd3516d8526ad736fe69848aacd1406">elem</a>(i, j);</div>
 <div class="line"><span class="lineno">  112</span>            }</div>
 <div class="line"><span class="lineno">  113</span>        }</div>
 <div class="line"><span class="lineno">  114</span>    }</div>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('d7/d9a/class_det_computation_a3a5289dd
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d9a/class_det_computation.html">DetComputation</a></li>
-    <li class="footer">Generated on Sun Jun 7 2026 04:48:13 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jun 14 2026 04:58:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

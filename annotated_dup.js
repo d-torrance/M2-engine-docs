@@ -24,6 +24,10 @@ var annotated_dup =
       [ "overflow_exception", "db/df5/structexc_1_1overflow__exception.html", "db/df5/structexc_1_1overflow__exception" ]
     ] ],
     [ "M2", "d7/d82/namespace_m2.html", [
+      [ "cytools", "d2/d6d/namespace_m2_1_1cytools.html", [
+        [ "LatticePointsNormalizResult", "d7/d7e/struct_m2_1_1cytools_1_1_lattice_points_normaliz_result.html", "d7/d7e/struct_m2_1_1cytools_1_1_lattice_points_normaliz_result" ],
+        [ "LatticePointsResult", "d0/de7/struct_m2_1_1cytools_1_1_lattice_points_result.html", "d0/de7/struct_m2_1_1cytools_1_1_lattice_points_result" ]
+      ] ],
       [ "ARingCC", "d1/dfa/class_m2_1_1_a_ring_c_c.html", "d1/dfa/class_m2_1_1_a_ring_c_c" ],
       [ "ARingCCC", "d6/de1/class_m2_1_1_a_ring_c_c_c.html", "d6/de1/class_m2_1_1_a_ring_c_c_c" ],
       [ "ARingCCi", "d0/d25/class_m2_1_1_a_ring_c_ci.html", "d0/d25/class_m2_1_1_a_ring_c_ci" ],
@@ -116,8 +120,8 @@ var annotated_dup =
     [ "cc_doubles_struct", "db/dae/structcc__doubles__struct.html", "db/dae/structcc__doubles__struct" ],
     [ "CC_struct", "d3/d66/struct_c_c__struct.html", "d3/d66/struct_c_c__struct" ],
     [ "cc_struct", "de/d31/structcc__struct.html", "de/d31/structcc__struct" ],
-    [ "cci_struct", "d7/dd4/structcci__struct.html", "d7/dd4/structcci__struct" ],
     [ "CCi_struct", "de/dd7/struct_c_ci__struct.html", "de/dd7/struct_c_ci__struct" ],
+    [ "cci_struct", "d7/dd4/structcci__struct.html", "d7/dd4/structcci__struct" ],
     [ "CCimutable_struct", "d0/d78/struct_c_cimutable__struct.html", "d0/d78/struct_c_cimutable__struct" ],
     [ "CCmutable_struct", "d6/ddb/struct_c_cmutable__struct.html", "d6/ddb/struct_c_cmutable__struct" ],
     [ "ChineseRemainder", "d0/d4e/class_chinese_remainder.html", "d0/d4e/class_chinese_remainder" ],
@@ -131,6 +135,7 @@ var annotated_dup =
     [ "ComplexField", "d5/d7d/class_complex_field.html", "d5/d7d/class_complex_field" ],
     [ "Computation", "d6/dea/class_computation.html", "d6/dea/class_computation" ],
     [ "ConcreteVectorArithmetic", "d7/d23/class_concrete_vector_arithmetic.html", "d7/d23/class_concrete_vector_arithmetic" ],
+    [ "ConeResult", "d5/d22/struct_cone_result.html", "d5/d22/struct_cone_result" ],
     [ "ConstZipIterator", "da/dfd/class_const_zip_iterator.html", "da/dfd/class_const_zip_iterator" ],
     [ "DegreeZeroMapGenerator", "de/df3/class_degree_zero_map_generator.html", "de/df3/class_degree_zero_map_generator" ],
     [ "DetComputation", "d7/d9a/class_det_computation.html", "d7/d9a/class_det_computation" ],
@@ -347,7 +352,7 @@ var annotated_dup =
     [ "PointArray", "d2/dbf/class_point_array.html", "d2/dbf/class_point_array" ],
     [ "POLY", "d0/d03/struct_p_o_l_y.html", "d0/d03/struct_p_o_l_y" ],
     [ "polyheap", "d3/d5a/classpolyheap.html", "d3/d5a/classpolyheap" ],
-    [ "Polynomial", "d6/db7/class_polynomial.html", "d6/db7/class_polynomial" ],
+    [ "Polynomial", "df/d41/struct_polynomial.html", "df/d41/struct_polynomial" ],
     [ "PolynomialHeap", "d7/d5e/class_polynomial_heap.html", "d7/d5e/class_polynomial_heap" ],
     [ "PolynomialRing", "d5/d58/class_polynomial_ring.html", "d5/d58/class_polynomial_ring" ],
     [ "PolyRing", "d3/dfc/class_poly_ring.html", "d3/dfc/class_poly_ring" ],
@@ -457,6 +462,7 @@ var annotated_dup =
     [ "vecHeap", "d1/d2c/classvec_heap.html", "d1/d2c/classvec_heap" ],
     [ "VectorArithmetic", "d1/df6/class_vector_arithmetic.html", "d1/df6/class_vector_arithmetic" ],
     [ "VectorArithmeticStats", "d6/d59/class_vector_arithmetic_stats.html", "d6/d59/class_vector_arithmetic_stats" ],
+    [ "VectorHash", "d5/d30/struct_vector_hash.html", "d5/d30/struct_vector_hash" ],
     [ "WeylAlgebra", "dd/dc2/class_weyl_algebra.html", "dd/dc2/class_weyl_algebra" ],
     [ "WeylAlgebraTest", "dc/d0b/class_weyl_algebra_test.html", "dc/d0b/class_weyl_algebra_test" ],
     [ "WeylAlgebraTestAccessor", "d8/dff/class_weyl_algebra_test_accessor.html", "d8/dff/class_weyl_algebra_test_accessor" ],

@@ -4,6 +4,7 @@ var dir_8a97dbb03e513ea63050801abc9266fe =
     [ "basic-rings", "dir_7f73dd9b679374feae0ed3aba3b0188d.html", "dir_7f73dd9b679374feae0ed3aba3b0188d" ],
     [ "bibasis", "dir_6d3e1fc03a2c0fe268d053df8b4dd308.html", "dir_6d3e1fc03a2c0fe268d053df8b4dd308" ],
     [ "computations", "dir_60bef5ef80d1b23e796a2c1efebb5ba5.html", "dir_60bef5ef80d1b23e796a2c1efebb5ba5" ],
+    [ "cytools", "dir_b7ef04e25658d25f13e567116a39270b.html", "dir_b7ef04e25658d25f13e567116a39270b" ],
     [ "f4", "dir_8ed8434bc3d991323934987a3489e746.html", "dir_8ed8434bc3d991323934987a3489e746" ],
     [ "free-modules", "dir_431d1b980273be940b30ee54fb743d62.html", "dir_431d1b980273be940b30ee54fb743d62" ],
     [ "gb-f4", "dir_46c62c7923ec94477cb2a52e63da755a.html", "dir_46c62c7923ec94477cb2a52e63da755a" ],

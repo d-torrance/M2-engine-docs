@@ -14,11 +14,13 @@ var searchData=
   ['betti_2ehpp_11',['betti.hpp',['../d7/d41/betti_8hpp.html',1,'']]],
   ['bibasis_2ecpp_12',['bibasis.cpp',['../d9/db0/bibasis_8cpp.html',1,'']]],
   ['bibasis_2ehpp_13',['bibasis.hpp',['../d8/df2/bibasis_8hpp.html',1,'']]],
-  ['brp_2dgb_2ecpp_14',['BRP-gb.cpp',['../db/d48/_b_r_p-gb_8cpp.html',1,'']]],
-  ['brp_2dinterface_2ecpp_15',['BRP-interface.cpp',['../d8/d6e/_b_r_p-interface_8cpp.html',1,'']]],
-  ['brp_2dtest_2ecpp_16',['BRP-test.cpp',['../d1/d7f/_b_r_p-test_8cpp.html',1,'']]],
-  ['brp_2ecpp_17',['BRP.cpp',['../d6/d47/_b_r_p_8cpp.html',1,'']]],
-  ['brp_2ehpp_18',['BRP.hpp',['../d7/ddf/_b_r_p_8hpp.html',1,'']]],
-  ['buffer_2ecpp_19',['buffer.cpp',['../dd/d85/buffer_8cpp.html',1,'']]],
-  ['buffer_2ehpp_20',['buffer.hpp',['../da/d1d/buffer_8hpp.html',1,'']]]
+  ['box_5fenum_2ec_14',['box_enum.c',['../d7/dd1/box__enum_8c.html',1,'']]],
+  ['box_5fenum_2eh_15',['box_enum.h',['../db/d61/box__enum_8h.html',1,'']]],
+  ['brp_2dgb_2ecpp_16',['BRP-gb.cpp',['../db/d48/_b_r_p-gb_8cpp.html',1,'']]],
+  ['brp_2dinterface_2ecpp_17',['BRP-interface.cpp',['../d8/d6e/_b_r_p-interface_8cpp.html',1,'']]],
+  ['brp_2dtest_2ecpp_18',['BRP-test.cpp',['../d1/d7f/_b_r_p-test_8cpp.html',1,'']]],
+  ['brp_2ecpp_19',['BRP.cpp',['../d6/d47/_b_r_p_8cpp.html',1,'']]],
+  ['brp_2ehpp_20',['BRP.hpp',['../d7/ddf/_b_r_p_8hpp.html',1,'']]],
+  ['buffer_2ecpp_21',['buffer.cpp',['../dd/d85/buffer_8cpp.html',1,'']]],
+  ['buffer_2ehpp_22',['buffer.hpp',['../da/d1d/buffer_8hpp.html',1,'']]]
 ];

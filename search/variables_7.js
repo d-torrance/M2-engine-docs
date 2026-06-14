@@ -12,7 +12,7 @@ var searchData=
   ['gb_5fcomp_5fnewpairs_9',['GB_COMP_NEWPAIRS',['../d7/d0a/gb-homog2_8hpp_a25db298a4be0865d3ef8ad63a5bac52a.html#a25db298a4be0865d3ef8ad63a5bac52a',1,'gb-homog2.hpp']]],
   ['gb_5fcomp_5fs_5fpairs_10',['GB_COMP_S_PAIRS',['../d7/d0a/gb-homog2_8hpp_aeb91212cb174b8ce0f42471b733fdb91.html#aeb91212cb174b8ce0f42471b733fdb91',1,'gb-homog2.hpp']]],
   ['gb_5finwwg_11',['gb_inwwG',['../df/dab/class_g_b_walker_a541c9af30e308dbde1252f5aab4eebbc.html#a541c9af30e308dbde1252f5aab4eebbc',1,'GBWalker']]],
-  ['gb_5flist_12',['gb_list',['../d3/d16/class_gauss_elim_computation_a953424d4627a5e8bf81ae5e2333605e3.html#a953424d4627a5e8bf81ae5e2333605e3',1,'GaussElimComputation::gb_list'],['../d8/d76/class_hermite_computation_ab2a39fa582d94959275b6e7b0f8ddccb.html#ab2a39fa582d94959275b6e7b0f8ddccb',1,'HermiteComputation::GB_list']]],
+  ['gb_5flist_12',['gb_list',['../d8/d76/class_hermite_computation_ab2a39fa582d94959275b6e7b0f8ddccb.html#ab2a39fa582d94959275b6e7b0f8ddccb',1,'HermiteComputation::GB_list'],['../d3/d16/class_gauss_elim_computation_a953424d4627a5e8bf81ae5e2333605e3.html#a953424d4627a5e8bf81ae5e2333605e3',1,'GaussElimComputation::gb_list']]],
   ['gb_5fring_5f_13',['gb_ring_',['../d5/d58/class_polynomial_ring_ae00cf1588bf0dce374a8660d8ab5190e.html#ae00cf1588bf0dce374a8660d8ab5190e',1,'PolynomialRing']]],
   ['gb_5fweights_14',['gb_weights',['../d0/d91/classgb_a_a982462bdfc5997d9221c8504d01079db.html#a982462bdfc5997d9221c8504d01079db',1,'gbA']]],
   ['gbasis_15',['GBasis',['../d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis_a2699399d6811282ef4b261b37131ea03.html#a2699399d6811282ef4b261b37131ea03',1,'BIBasis::BooleanInvolutiveBasis']]],
