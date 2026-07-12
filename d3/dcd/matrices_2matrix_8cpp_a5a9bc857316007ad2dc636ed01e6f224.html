@@ -161,17 +161,20 @@ $(document).ready(function(){initNavTree('d3/dcd/matrices_2matrix_8cpp_a5a9bc857
 <div class="line"><span class="lineno"> 1837</span>              M-&gt;<a class="code hl_function" href="../../d9/db1/class_monoid_af796c73504cb5e1cdb2737b73468eb04.html#af796c73504cb5e1cdb2737b73468eb04">from_expvector</a>(exp, mon);</div>
 <div class="line"><span class="lineno"> 1838</span>              <a class="code hl_union" href="../../d5/d64/unionring__elem.html">ring_elem</a> t = P-&gt;<a class="code hl_function" href="../../d5/d58/class_polynomial_ring_a98b2e44941716f33a2f2f2d9e2344983.html#a98b2e44941716f33a2f2f2d9e2344983">make_flat_term</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">h</a>.coeff, mon);</div>
 <div class="line"><span class="lineno"> 1839</span>              vec v = P-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a2ab579eb49ebe28eed42e2a083c96c03.html#a2ab579eb49ebe28eed42e2a083c96c03">make_vec</a>(val - 1, t);</div>
-<div class="line"><span class="lineno"> 1840</span>              v-&gt;next = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
-<div class="line"><span class="lineno"> 1841</span>              <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = v;</div>
-<div class="line"><span class="lineno"> 1842</span>            }</div>
-<div class="line"><span class="lineno"> 1843</span>        }</div>
-<div class="line"><span class="lineno"> 1844</span>    }</div>
-<div class="line"><span class="lineno"> 1845</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(exp);</div>
-<div class="line"><span class="lineno"> 1846</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">scratch_exp</a>);</div>
-<div class="line"><span class="lineno"> 1847</span>  M-&gt;<a class="code hl_function" href="../../d9/db1/class_monoid_a879b583be62c5c95d1f2a0da056894c3.html#a879b583be62c5c95d1f2a0da056894c3">remove</a>(mon);</div>
-<div class="line"><span class="lineno"> 1848</span>  P-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a5c7f6a3a5258e114dae1e8010598739e.html#a5c7f6a3a5258e114dae1e8010598739e">vec_sort</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>);</div>
-<div class="line"><span class="lineno"> 1849</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
-<div class="line"><span class="lineno"> 1850</span>}</div>
+<div class="line"><span class="lineno"> 1840</span>              <span class="keywordflow">if</span> (v != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 1841</span>                {</div>
+<div class="line"><span class="lineno"> 1842</span>                  v-&gt;next = <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
+<div class="line"><span class="lineno"> 1843</span>                  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a> = v;</div>
+<div class="line"><span class="lineno"> 1844</span>                }</div>
+<div class="line"><span class="lineno"> 1845</span>            }</div>
+<div class="line"><span class="lineno"> 1846</span>        }</div>
+<div class="line"><span class="lineno"> 1847</span>    }</div>
+<div class="line"><span class="lineno"> 1848</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(exp);</div>
+<div class="line"><span class="lineno"> 1849</span>  <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_a1c6306973edadb50294a656e3927fcba.html#a1c6306973edadb50294a656e3927fcba">freemem</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">scratch_exp</a>);</div>
+<div class="line"><span class="lineno"> 1850</span>  M-&gt;<a class="code hl_function" href="../../d9/db1/class_monoid_a879b583be62c5c95d1f2a0da056894c3.html#a879b583be62c5c95d1f2a0da056894c3">remove</a>(mon);</div>
+<div class="line"><span class="lineno"> 1851</span>  P-&gt;<a class="code hl_function" href="../../dd/dcf/class_ring_a5c7f6a3a5258e114dae1e8010598739e.html#a5c7f6a3a5258e114dae1e8010598739e">vec_sort</a>(<a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>);</div>
+<div class="line"><span class="lineno"> 1852</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/dcc/m2-mem_8cpp_aeace12b3a5c753d4ece1a0e89acb729b.html#aeace12b3a5c753d4ece1a0e89acb729b">result</a>;</div>
+<div class="line"><span class="lineno"> 1853</span>}</div>
 <div class="ttc" id="a_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12_html_aec09fab2f897ff3d8346961f38331d12"><div class="ttname"><a href="../../da/db0/_exponent_vector_8hpp_aec09fab2f897ff3d8346961f38331d12.html#aec09fab2f897ff3d8346961f38331d12">exponents_t</a></div><div class="ttdeci">exponents::Exponents exponents_t</div><div class="ttdef"><b>Definition</b> <a href="../../da/db0/_exponent_vector_8hpp_source.html#l00277">ExponentVector.hpp:277</a></div></div>
 <div class="ttc" id="aclass_free_module_a4d2867218464947a9455e8533f6f8e51_html_a4d2867218464947a9455e8533f6f8e51"><div class="ttname"><a href="../../d6/df0/class_free_module_a4d2867218464947a9455e8533f6f8e51.html#a4d2867218464947a9455e8533f6f8e51">FreeModule::get_ring</a></div><div class="ttdeci">const Ring * get_ring() const</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dcb/freemod_8hpp_source.html#l00052">freemod.hpp:52</a></div></div>
 <div class="ttc" id="aclass_monoid_a134514e900a32c809126bf4dd6c891c4_html_a134514e900a32c809126bf4dd6c891c4"><div class="ttname"><a href="../../d9/db1/class_monoid_a134514e900a32c809126bf4dd6c891c4.html#a134514e900a32c809126bf4dd6c891c4">Monoid::to_expvector</a></div><div class="ttdeci">void to_expvector(const_monomial m, exponents_t result_exp) const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d5c/monoid_8cpp_source.html#l00747">monoid.cpp:747</a></div></div>
@@ -209,7 +212,7 @@ $(document).ready(function(){initNavTree('d3/dcd/matrices_2matrix_8cpp_a5a9bc857
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_a195fad32e4faef0d2b7c053c6e5eee0.html">matrices</a></li><li class="navelem"><a class="el" href="../../d3/dcd/matrices_2matrix_8cpp.html">matrix.cpp</a></li>
-    <li class="footer">Generated on Sun Jul 5 2026 04:11:36 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Jul 12 2026 03:40:57 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
