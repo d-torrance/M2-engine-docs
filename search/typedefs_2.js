@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['cc_5fdoubles_5fptr_0',['cc_doubles_ptr',['../dc/dec/rings_2ringelem_8hpp_a4594734eccf5cafe9efe0c6f10033c1d.html#a4594734eccf5cafe9efe0c6f10033c1d',1,'ringelem.hpp']]],
-  ['cc_5fdoubles_5fsrcptr_1',['cc_doubles_srcptr',['../dc/dec/rings_2ringelem_8hpp_acb643c14d91da1672bddeb106a658d14.html#acb643c14d91da1672bddeb106a658d14',1,'ringelem.hpp']]],
-  ['cc_5fptr_2',['cc_ptr',['../dc/dec/rings_2ringelem_8hpp_a4fc9613c51458feac620985131522c86.html#a4fc9613c51458feac620985131522c86',1,'ringelem.hpp']]],
-  ['cc_5fsrcptr_3',['cc_srcptr',['../dc/dec/rings_2ringelem_8hpp_ac41157afaee715b7ffc149faaba9d28e.html#ac41157afaee715b7ffc149faaba9d28e',1,'ringelem.hpp']]],
-  ['cci_5fptr_4',['cci_ptr',['../dc/dec/rings_2ringelem_8hpp_a3bd2aa6c8901770b7dde28ba6632bb0c.html#a3bd2aa6c8901770b7dde28ba6632bb0c',1,'ringelem.hpp']]],
-  ['cci_5fsrcptr_5',['cci_srcptr',['../dc/dec/rings_2ringelem_8hpp_ace048798efa4909b65cc9258352a79e9.html#ace048798efa4909b65cc9258352a79e9',1,'ringelem.hpp']]],
+  ['cc_5fdoubles_5fptr_0',['cc_doubles_ptr',['../da/d67/rings_2_ring_elem_8hpp_a4594734eccf5cafe9efe0c6f10033c1d.html#a4594734eccf5cafe9efe0c6f10033c1d',1,'ringelem.hpp']]],
+  ['cc_5fdoubles_5fsrcptr_1',['cc_doubles_srcptr',['../da/d67/rings_2_ring_elem_8hpp_acb643c14d91da1672bddeb106a658d14.html#acb643c14d91da1672bddeb106a658d14',1,'ringelem.hpp']]],
+  ['cc_5fptr_2',['cc_ptr',['../da/d67/rings_2_ring_elem_8hpp_a4fc9613c51458feac620985131522c86.html#a4fc9613c51458feac620985131522c86',1,'ringelem.hpp']]],
+  ['cc_5fsrcptr_3',['cc_srcptr',['../da/d67/rings_2_ring_elem_8hpp_ac41157afaee715b7ffc149faaba9d28e.html#ac41157afaee715b7ffc149faaba9d28e',1,'ringelem.hpp']]],
+  ['cci_5fptr_4',['cci_ptr',['../da/d67/rings_2_ring_elem_8hpp_a3bd2aa6c8901770b7dde28ba6632bb0c.html#a3bd2aa6c8901770b7dde28ba6632bb0c',1,'ringelem.hpp']]],
+  ['cci_5fsrcptr_5',['cci_srcptr',['../da/d67/rings_2_ring_elem_8hpp_ace048798efa4909b65cc9258352a79e9.html#ace048798efa4909b65cc9258352a79e9',1,'ringelem.hpp']]],
   ['coeffconstiterator_6',['coeffConstIterator',['../df/d41/struct_polynomial_a684ecf1a135b9659d7850e8646f15929.html#a684ecf1a135b9659d7850e8646f15929',1,'Polynomial']]],
   ['coefficient_7',['coefficient',['../de/d95/class_basic_poly_list_stream_collector_a622b26371d21fe9631dc7ad103ee9cda.html#a622b26371d21fe9631dc7ad103ee9cda',1,'BasicPolyListStreamCollector::Coefficient'],['../da/db5/namespacenewf4_afa6b35b3cce14e136f3b2052603a7935.html#afa6b35b3cce14e136f3b2052603a7935',1,'newf4::Coefficient'],['../d6/d02/class_matrix_stream_a4ed406748875a0dbfe8f1af3d9c3ef67.html#a4ed406748875a0dbfe8f1af3d9c3ef67',1,'MatrixStream::Coefficient'],['../d7/d35/classnewf4_1_1_polynomial_list_stream_collector_acc96c05705083d99c61a5b01d236adb2.html#acc96c05705083d99c61a5b01d236adb2',1,'newf4::PolynomialListStreamCollector::Coefficient']]],
   ['coeffiterator_8',['coeffiterator',['../d6/d58/classnewf4_1_1_polynomial_1_1_polynomial_iterator_a79da53efd84ae179f51d6be7b9dcab42.html#a79da53efd84ae179f51d6be7b9dcab42',1,'newf4::Polynomial::PolynomialIterator::CoeffIterator'],['../df/d41/struct_polynomial_ad5b49abc7a9fd654f4619d6a64262a6a.html#ad5b49abc7a9fd654f4619d6a64262a6a',1,'Polynomial::coeffIterator']]],

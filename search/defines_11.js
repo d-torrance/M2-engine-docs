@@ -5,8 +5,8 @@ var searchData=
   ['thresh_2',['THRESH',['../df/d3b/monsort_8hpp_a0656018abfc9fa2821827415f5d5ea57.html#a0656018abfc9fa2821827415f5d5ea57',1,'monsort.hpp']]],
   ['time_3',['TIME',['../d5/d05/timing_8hpp_a40ee0070225dce08ec51411d10accc20.html#a40ee0070225dce08ec51411d10accc20',1,'timing.hpp']]],
   ['tower_5fpolynomial_5fval_4',['TOWER_POLYNOMIAL_VAL',['../de/d5c/tower_8cpp_a6e6fff5c064e4333210c0afaaaa8ab1e.html#a6e6fff5c064e4333210c0afaaaa8ab1e',1,'tower.cpp']]],
-  ['tower_5fringelem_5',['TOWER_RINGELEM',['../dc/dec/rings_2ringelem_8hpp_a1803b45d6c9cd803ee8f0cd04fbf586a.html#a1803b45d6c9cd803ee8f0cd04fbf586a',1,'ringelem.hpp']]],
-  ['tower_5fval_6',['TOWER_VAL',['../dc/dec/rings_2ringelem_8hpp_aa78206e01eb49432b509c2907cdfcbd9.html#aa78206e01eb49432b509c2907cdfcbd9',1,'ringelem.hpp']]],
+  ['tower_5fringelem_5',['TOWER_RINGELEM',['../da/d67/rings_2_ring_elem_8hpp_a1803b45d6c9cd803ee8f0cd04fbf586a.html#a1803b45d6c9cd803ee8f0cd04fbf586a',1,'ringelem.hpp']]],
+  ['tower_5fval_6',['TOWER_VAL',['../da/d67/rings_2_ring_elem_8hpp_aa78206e01eb49432b509c2907cdfcbd9.html#aa78206e01eb49432b509c2907cdfcbd9',1,'ringelem.hpp']]],
   ['trapchk_7',['TRAPCHK',['../db/d07/m2-mem_8h_adaf6556f73c67c45dc41be78630bbaa8.html#adaf6556f73c67c45dc41be78630bbaa8',1,'m2-mem.h']]],
   ['trapchk_5fsize_8',['TRAPCHK_SIZE',['../db/d07/m2-mem_8h_a393a016545bf2c4123e8a462013c5dee.html#a393a016545bf2c4123e8a462013c5dee',1,'m2-mem.h']]],
   ['try_9',['TRY',['../da/d49/exceptions_8hpp_ad2746371528bdf15c3910b7bf217dac0.html#ad2746371528bdf15c3910b7bf217dac0',1,'exceptions.hpp']]]
