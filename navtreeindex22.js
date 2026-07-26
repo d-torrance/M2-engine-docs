@@ -1,7 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"d6/d10/class_f4_monomial_lookup_table_t_ad6b3e8a449e8e94e3b228e09ac36ecf5.html#ad6b3e8a449e8e94e3b228e09ac36ecf5":[5,0,90,10],
-"d6/d10/class_f4_monomial_lookup_table_t_addb674c0f30ebdc8585d9850f974621c.html#addb674c0f30ebdc8585d9850f974621c":[5,0,90,27],
 "d6/d10/class_f4_monomial_lookup_table_t_ae92f905fbe47c87c0de68fd3bcd5cdb4.html#ae92f905fbe47c87c0de68fd3bcd5cdb4":[5,0,90,15],
 "d6/d10/class_f4_monomial_lookup_table_t_afccf1e6c1e76ee5f4cdc881e27ad423f.html#afccf1e6c1e76ee5f4cdc881e27ad423f":[5,0,90,14],
 "d6/d10/class_f4_monomial_lookup_table_t_afffba38dfb969875f4642ace7a7de3d4.html#afffba38dfb969875f4642ace7a7de3d4":[5,0,90,26],
@@ -249,5 +247,7 @@ var NAVTREEINDEX22 =
 "d6/d42/class_fraction_field_a5bd7c69918ae200dd3b2ea3957da8517.html#a5bd7c69918ae200dd3b2ea3957da8517":[5,0,100,19],
 "d6/d42/class_fraction_field_a5cbad3580b3d3147552f3aa515b4d200.html#a5cbad3580b3d3147552f3aa515b4d200":[5,0,100,46],
 "d6/d42/class_fraction_field_a650c87ab0fbfd6fd6aac5fd1f43343a5.html#a650c87ab0fbfd6fd6aac5fd1f43343a5":[5,0,100,14],
-"d6/d42/class_fraction_field_a6b31efd1b127a96642c6e3e8f97531f1.html#a6b31efd1b127a96642c6e3e8f97531f1":[5,0,100,53]
+"d6/d42/class_fraction_field_a6b31efd1b127a96642c6e3e8f97531f1.html#a6b31efd1b127a96642c6e3e8f97531f1":[5,0,100,53],
+"d6/d42/class_fraction_field_a6b6b2351e9af44d4b7fd2a0d4242fb33.html#a6b6b2351e9af44d4b7fd2a0d4242fb33":[5,0,100,30],
+"d6/d42/class_fraction_field_a6e7d1c216476bb5a25dee812517634bf.html#a6e7d1c216476bb5a25dee812517634bf":[5,0,100,3]
 };

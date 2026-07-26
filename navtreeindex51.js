@@ -1,5 +1,11 @@
 var NAVTREEINDEX51 =
 {
+"dc/dec/rings_2ringelem_8hpp_ae8a8b1a5e976663d49e3f3b5a3f77ce3.html#ae8a8b1a5e976663d49e3f3b5a3f77ce3":[6,0,0,0,19,23,20],
+"dc/dec/rings_2ringelem_8hpp_af9bac62e2d632a9591e4db48aaa8ebd6.html#af9bac62e2d632a9591e4db48aaa8ebd6":[6,0,0,0,19,23,7],
+"dc/dec/rings_2ringelem_8hpp_afea72c39052b53d15e7acad8d36847c1.html#afea72c39052b53d15e7acad8d36847c1":[6,0,0,0,19,23,25],
+"dc/dec/rings_2ringelem_8hpp_source.html":[6,0,0,0,19,23],
+"dc/df6/class_pfaffian_computation.html":[3,3,4],
+"dc/df6/class_pfaffian_computation_a030d878549e94839c152d75c57bd7d26.html#a030d878549e94839c152d75c57bd7d26":[3,3,4,12],
 "dc/df6/class_pfaffian_computation_a0b3dcc18cdfc3e0ca6fff9af0840abc9.html#a0b3dcc18cdfc3e0ca6fff9af0840abc9":[3,3,4,4],
 "dc/df6/class_pfaffian_computation_a1b3e37420a67db7b0c07f698ffdedbf6.html#a1b3e37420a67db7b0c07f698ffdedbf6":[3,3,4,3],
 "dc/df6/class_pfaffian_computation_a39f627393808bc0853c7390963b75e6b.html#a39f627393808bc0853c7390963b75e6b":[3,3,4,6],
@@ -243,11 +249,5 @@ var NAVTREEINDEX51 =
 "dd/d3a/classbinomial__ring_af4e2b5b8474c3ab6e4365caa76a29c40.html#af4e2b5b8474c3ab6e4365caa76a29c40":[5,0,18,1],
 "dd/d3a/classbinomial__ring_af75b5b37af7acc904f290f277039c7af.html#af75b5b37af7acc904f290f277039c7af":[5,0,18,34],
 "dd/d3a/classbinomial__ring_afa39ce59a1943dfdbf464c5975179a46.html#afa39ce59a1943dfdbf464c5975179a46":[5,0,18,27],
-"dd/d3a/classbinomial__ring_afc5a1f4987c1b24aff7b7e34feefc76e.html#afc5a1f4987c1b24aff7b7e34feefc76e":[5,0,18,47],
-"dd/d3a/classbinomial__ring_aff46f692c41b324b6ca6e97857cd0390.html#aff46f692c41b324b6ca6e97857cd0390":[5,0,18,2],
-"dd/d40/struct_homotopy_algorithm_3_01_m2_1_1_a_ring_c_c_01_4.html":[5,0,154],
-"dd/d40/struct_homotopy_algorithm_3_01_m2_1_1_a_ring_c_c_01_4_a08b3fac2a2895e2b90128b7728f65e33.html#a08b3fac2a2895e2b90128b7728f65e33":[5,0,154,0],
-"dd/d41/_z_zp_8cpp.html":[6,0,0,0,19,36],
-"dd/d41/_z_zp_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9":[6,0,0,0,19,36,2],
-"dd/d41/_z_zp_8cpp_aaac226e2362493e94aadfa5fe9cad553.html#aaac226e2362493e94aadfa5fe9cad553":[6,0,0,0,19,36,0]
+"dd/d3a/classbinomial__ring_afc5a1f4987c1b24aff7b7e34feefc76e.html#afc5a1f4987c1b24aff7b7e34feefc76e":[5,0,18,47]
 };
