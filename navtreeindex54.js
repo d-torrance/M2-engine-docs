@@ -1,11 +1,5 @@
 var NAVTREEINDEX54 =
 {
-"dd/dc2/class_weyl_algebra_af1f27c4f20e41e9de1d6a65f437e01f5.html#af1f27c4f20e41e9de1d6a65f437e01f5":[5,0,371,33],
-"dd/dc4/class_naive_dedup_queue_configuration.html":[5,0,235],
-"dd/dc4/class_naive_dedup_queue_configuration_a037493bdf4298556154e3201a5bd30f2.html#a037493bdf4298556154e3201a5bd30f2":[5,0,235,7],
-"dd/dc4/class_naive_dedup_queue_configuration_a0618b82c7c5691fd6c5fce60773dcce1.html#a0618b82c7c5691fd6c5fce60773dcce1":[5,0,235,5],
-"dd/dc4/class_naive_dedup_queue_configuration_a1bbe4dfc58783f7bd86e0ac705327d27.html#a1bbe4dfc58783f7bd86e0ac705327d27":[5,0,235,13],
-"dd/dc4/class_naive_dedup_queue_configuration_a317463a2a1a8b9ef125b76544db07fd4.html#a317463a2a1a8b9ef125b76544db07fd4":[5,0,235,3],
 "dd/dc4/class_naive_dedup_queue_configuration_a448b099193558462fe0d6344c8691ac2.html#a448b099193558462fe0d6344c8691ac2":[5,0,235,9],
 "dd/dc4/class_naive_dedup_queue_configuration_a454682b0070177d35022af763f621ff5.html#a454682b0070177d35022af763f621ff5":[5,0,235,12],
 "dd/dc4/class_naive_dedup_queue_configuration_a45ac1a8a36cb9c0df59f88c21be47198.html#a45ac1a8a36cb9c0df59f88c21be47198":[5,0,235,8],
@@ -249,5 +243,11 @@ var NAVTREEINDEX54 =
 "dd/dcf/class_ring_a61515513c778acee662326896bd29a3d.html#a61515513c778acee662326896bd29a3d":[3,0,24,102],
 "dd/dcf/class_ring_a61d4bfd2af05a757e3e23b584db70704.html#a61d4bfd2af05a757e3e23b584db70704":[3,0,24,196],
 "dd/dcf/class_ring_a627647d4e37d375a95f7308fa57565aa.html#a627647d4e37d375a95f7308fa57565aa":[3,0,24,80],
-"dd/dcf/class_ring_a628d0257ad367b9e87ae6706e531b95e.html#a628d0257ad367b9e87ae6706e531b95e":[3,0,24,42]
+"dd/dcf/class_ring_a628d0257ad367b9e87ae6706e531b95e.html#a628d0257ad367b9e87ae6706e531b95e":[3,0,24,42],
+"dd/dcf/class_ring_a629f09fa842540aca946bcec51719ca4.html#a629f09fa842540aca946bcec51719ca4":[3,0,24,202],
+"dd/dcf/class_ring_a62bb710ec47481354070de00bb2dcddb.html#a62bb710ec47481354070de00bb2dcddb":[3,0,24,94],
+"dd/dcf/class_ring_a633e1853e941b3db3efdcfa957f5a9dd.html#a633e1853e941b3db3efdcfa957f5a9dd":[3,0,24,25],
+"dd/dcf/class_ring_a646e4db68d5b10caab4320b9a2fd1713.html#a646e4db68d5b10caab4320b9a2fd1713":[3,0,24,44],
+"dd/dcf/class_ring_a648505f7067ef8840614df6824a8e2db.html#a648505f7067ef8840614df6824a8e2db":[3,0,24,45],
+"dd/dcf/class_ring_a66a508d54f7fdfe02cf64121f6106236.html#a66a508d54f7fdfe02cf64121f6106236":[3,0,24,22]
 };

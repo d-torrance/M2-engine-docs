@@ -25,8 +25,8 @@ var searchData=
   ['ringtype_22',['ringtype',['../df/dcd/class_l_u_util_a146b080d865ee903448d25bde77905ea.html#a146b080d865ee903448d25bde77905ea',1,'LUUtil::RingType'],['../df/d1c/class_d_mat_l_uin_place_ae67bd07187516fd9ff4817a0813ea955.html#ae67bd07187516fd9ff4817a0813ea955',1,'DMatLUinPlace::RingType'],['../d7/d2b/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_q_q_01_4_a90df4aa0c62c3aa4527c323d2398c19c.html#a90df4aa0c62c3aa4527c323d2398c19c',1,'DMatLinAlg&lt; M2::ARingQQ &gt;::RingType'],['../dc/d87/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_01_4_a1cb288572220bad462e23cc70c6fccad.html#a1cb288572220bad462e23cc70c6fccad',1,'DMatLinAlg&lt; M2::ARingZZpFFPACK &gt;::RingType'],['../d1/d10/class_d_mat_lin_alg_3_01_m2_1_1_a_ring_z_zp_flint_01_4_a85d2c17664ca210324c24726d3bcf281.html#a85d2c17664ca210324c24726d3bcf281',1,'DMatLinAlg&lt; M2::ARingZZpFlint &gt;::RingType']]],
   ['row_5farray_23',['row_array',['../d8/dce/structcoefficient__matrix_ab03419b3e54c3d64cbed6b3cba9e5074.html#ab03419b3e54c3d64cbed6b3cba9e5074',1,'coefficient_matrix']]],
   ['rowsvector_24',['RowsVector',['../d0/d92/class_n_c_f4_a87f6bbcc77500dabf881ea8a64382c10.html#a87f6bbcc77500dabf881ea8a64382c10',1,'NCF4']]],
-  ['rrielement_25',['RRielement',['../dc/dec/rings_2ringelem_8hpp_ae8a8b1a5e976663d49e3f3b5a3f77ce3.html#ae8a8b1a5e976663d49e3f3b5a3f77ce3',1,'ringelem.hpp']]],
-  ['rrimutable_26',['RRimutable',['../dc/dec/rings_2ringelem_8hpp_a1de7e1c108cab3f167b1824f0650ec74.html#a1de7e1c108cab3f167b1824f0650ec74',1,'ringelem.hpp']]],
-  ['rrrelement_27',['RRRelement',['../dc/dec/rings_2ringelem_8hpp_a5e9cb9214c045fe4d410b3823042f3ea.html#a5e9cb9214c045fe4d410b3823042f3ea',1,'ringelem.hpp']]],
-  ['rrrmutable_28',['RRRmutable',['../dc/dec/rings_2ringelem_8hpp_a059c72b6789888407f38bf1e472c6b0b.html#a059c72b6789888407f38bf1e472c6b0b',1,'ringelem.hpp']]]
+  ['rrielement_25',['RRielement',['../da/d67/rings_2_ring_elem_8hpp_ae8a8b1a5e976663d49e3f3b5a3f77ce3.html#ae8a8b1a5e976663d49e3f3b5a3f77ce3',1,'ringelem.hpp']]],
+  ['rrimutable_26',['RRimutable',['../da/d67/rings_2_ring_elem_8hpp_a1de7e1c108cab3f167b1824f0650ec74.html#a1de7e1c108cab3f167b1824f0650ec74',1,'ringelem.hpp']]],
+  ['rrrelement_27',['RRRelement',['../da/d67/rings_2_ring_elem_8hpp_a5e9cb9214c045fe4d410b3823042f3ea.html#a5e9cb9214c045fe4d410b3823042f3ea',1,'ringelem.hpp']]],
+  ['rrrmutable_28',['RRRmutable',['../da/d67/rings_2_ring_elem_8hpp_a059c72b6789888407f38bf1e472c6b0b.html#a059c72b6789888407f38bf1e472c6b0b',1,'ringelem.hpp']]]
 ];
