@@ -1,5 +1,6 @@
 var NAVTREEINDEX45 =
 {
+"da/de0/class_s_mat_a48110aa95cecfef371c30e741acb947c.html#a48110aa95cecfef371c30e741acb947c":[5,0,335,31],
 "da/de0/class_s_mat_a7098992a4486efef28b7ad882f6c43f2.html#a7098992a4486efef28b7ad882f6c43f2":[5,0,335,24],
 "da/de0/class_s_mat_a7d0c8559c818c3d2a0b963ca423e9878.html#a7d0c8559c818c3d2a0b963ca423e9878":[5,0,335,63],
 "da/de0/class_s_mat_a7e3ebd45db7f1cdcc0d37735da56e514.html#a7e3ebd45db7f1cdcc0d37735da56e514":[5,0,335,57],
@@ -78,14 +79,14 @@ var NAVTREEINDEX45 =
 "da/dfe/struct_eigen_types_ae6dcf70b11b72d77054476977f5dc6a3.html#ae6dcf70b11b72d77054476977f5dc6a3":[5,0,62,3],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct.html":[4,0,4,8],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct.html":[5,0,2,7],
-"db/d05/struct_m2_1_1_a_ring_polynomial_struct_a552ba3616f5b4a33fa777ade2e344eaa.html#a552ba3616f5b4a33fa777ade2e344eaa":[4,0,4,8,1],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_a552ba3616f5b4a33fa777ade2e344eaa.html#a552ba3616f5b4a33fa777ade2e344eaa":[5,0,2,7,1],
-"db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c":[4,0,4,8,2],
+"db/d05/struct_m2_1_1_a_ring_polynomial_struct_a552ba3616f5b4a33fa777ade2e344eaa.html#a552ba3616f5b4a33fa777ade2e344eaa":[4,0,4,8,1],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c":[5,0,2,7,2],
-"db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9":[4,0,4,8,3],
+"db/d05/struct_m2_1_1_a_ring_polynomial_struct_a8713184b110ed41dc09c92872f37275c.html#a8713184b110ed41dc09c92872f37275c":[4,0,4,8,2],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9":[5,0,2,7,3],
-"db/d05/struct_m2_1_1_a_ring_polynomial_struct_ad92345b7b933d2a73d1619ac95c1580b.html#ad92345b7b933d2a73d1619ac95c1580b":[4,0,4,8,0],
+"db/d05/struct_m2_1_1_a_ring_polynomial_struct_aa917f1eab2223cdd8c8bd21fedd58db9.html#aa917f1eab2223cdd8c8bd21fedd58db9":[4,0,4,8,3],
 "db/d05/struct_m2_1_1_a_ring_polynomial_struct_ad92345b7b933d2a73d1619ac95c1580b.html#ad92345b7b933d2a73d1619ac95c1580b":[5,0,2,7,0],
+"db/d05/struct_m2_1_1_a_ring_polynomial_struct_ad92345b7b933d2a73d1619ac95c1580b.html#ad92345b7b933d2a73d1619ac95c1580b":[4,0,4,8,0],
 "db/d06/_weyl_algebra_test_8cpp.html":[6,0,0,0,23,41],
 "db/d06/_weyl_algebra_test_8cpp_a26e136642e4270beada72376fe521756.html#a26e136642e4270beada72376fe521756":[6,0,0,0,23,41,7],
 "db/d06/_weyl_algebra_test_8cpp_a305af390957db9f50906c59cd06b7352.html#a305af390957db9f50906c59cd06b7352":[6,0,0,0,23,41,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX45 =
 "db/d26/class_minimal_primes_a1ada5c52885eb44c2f2cbeced61b9ee7.html#a1ada5c52885eb44c2f2cbeced61b9ee7":[5,0,193,25],
 "db/d26/class_minimal_primes_a397a5901fa2003b5141e719b5daeb661.html#a397a5901fa2003b5141e719b5daeb661":[5,0,193,9],
 "db/d26/class_minimal_primes_a40c53554971e151547ab725df8431124.html#a40c53554971e151547ab725df8431124":[5,0,193,26],
-"db/d26/class_minimal_primes_a76a5e89815952f734be446d7028ebbd6.html#a76a5e89815952f734be446d7028ebbd6":[5,0,193,0],
-"db/d26/class_minimal_primes_a79849a596566edd55af92c87aa02d279.html#a79849a596566edd55af92c87aa02d279":[5,0,193,17]
+"db/d26/class_minimal_primes_a76a5e89815952f734be446d7028ebbd6.html#a76a5e89815952f734be446d7028ebbd6":[5,0,193,0]
 };

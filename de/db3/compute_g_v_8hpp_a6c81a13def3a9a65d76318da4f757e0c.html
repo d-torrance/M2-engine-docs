@@ -104,19 +104,19 @@ $(document).ready(function(){initNavTree('de/db3/compute_g_v_8hpp_a6c81a13def3a9
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/db3/compute_g_v_8hpp_source.html#l00081">81</a> of file <a class="el" href="../../de/db3/compute_g_v_8hpp_source.html">computeGV.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>{</div>
-<div class="line"><span class="lineno">   83</span><span class="preprocessor">#ifdef __linux__</span></div>
-<div class="line"><span class="lineno">   84</span>  <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pages</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">sysconf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">_SC_AVPHYS_PAGES</a>);</div>
-<div class="line"><span class="lineno">   85</span>  <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">page_size</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">sysconf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">_SC_PAGE_SIZE</a>);</div>
-<div class="line"><span class="lineno">   86</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pages</a> * <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">page_size</a>;</div>
-<div class="line"><span class="lineno">   87</span><span class="preprocessor">#elif __APPLE__</span></div>
-<div class="line"><span class="lineno">   88</span>  <span class="comment">// While I think of a better solution</span></div>
-<div class="line"><span class="lineno">   89</span>  <span class="keywordflow">return</span> 1000000;</div>
-<div class="line"><span class="lineno">   90</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">   91</span>  <span class="keywordflow">return</span> 1000000;</div>
-<div class="line"><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">   93</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/db3/compute_g_v_8hpp_source.html#l00082">82</a> of file <a class="el" href="../../de/db3/compute_g_v_8hpp_source.html">computeGV.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>{</div>
+<div class="line"><span class="lineno">   84</span><span class="preprocessor">#ifdef __linux__</span></div>
+<div class="line"><span class="lineno">   85</span>  <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pages</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">sysconf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">_SC_AVPHYS_PAGES</a>);</div>
+<div class="line"><span class="lineno">   86</span>  <span class="keywordtype">long</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">page_size</a> = <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">sysconf</a>(<a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">_SC_PAGE_SIZE</a>);</div>
+<div class="line"><span class="lineno">   87</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">pages</a> * <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">page_size</a>;</div>
+<div class="line"><span class="lineno">   88</span><span class="preprocessor">#elif __APPLE__</span></div>
+<div class="line"><span class="lineno">   89</span>  <span class="comment">// While I think of a better solution</span></div>
+<div class="line"><span class="lineno">   90</span>  <span class="keywordflow">return</span> 1000000;</div>
+<div class="line"><span class="lineno">   91</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">   92</span>  <span class="keywordflow">return</span> 1000000;</div>
+<div class="line"><span class="lineno">   93</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">   94</span>}</div>
 <div class="ttc" id="amat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca_html_a74cc79c6ebb813de1ea8c131ada987ca"><div class="ttname"><a href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices</a></div><div class="ttdeci">static void concatenateMatrices(const Mat &amp;A, const Mat &amp;B, Mat &amp;C)</div><div class="ttdef"><b>Definition</b> <a href="../../da/df0/mat-util_8hpp_source.html#l00061">mat-util.hpp:61</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">concatenateMatrices()</a>.</p>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('de/db3/compute_g_v_8hpp_a6c81a13def3a9
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_b7ef04e25658d25f13e567116a39270b.html">cytools</a></li><li class="navelem"><a class="el" href="../../de/db3/compute_g_v_8hpp.html">computeGV.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 13 2026 04:57:10 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Sep 20 2026 04:40:19 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

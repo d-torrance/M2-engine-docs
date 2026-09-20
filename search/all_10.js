@@ -54,7 +54,7 @@ var searchData=
   ['pointermorecomparator_51',['PointerMoreComparator',['../d1/d63/class_b_i_basis_1_1_pointer_more_comparator.html',1,'BIBasis']]],
   ['pointers_52',['pointers',['../d4/dcc/m2-mem_8cpp_a443169e6c5c2fb0e32f14083fb46ee24.html#a443169e6c5c2fb0e32f14083fb46ee24',1,'m2-mem.cpp']]],
   ['points_53',['points',['../d7/d7e/struct_m2_1_1cytools_1_1_lattice_points_normaliz_result_a2b1395d17a31b36a04935e6d7e2df553.html#a2b1395d17a31b36a04935e6d7e2df553',1,'M2::cytools::LatticePointsNormalizResult::points'],['../d0/de7/struct_m2_1_1cytools_1_1_lattice_points_result_a0a72ce91459d375267b05de9f144a0db.html#a0a72ce91459d375267b05de9f144a0db',1,'M2::cytools::LatticePointsResult::points']]],
-  ['poly_54',['poly',['../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30',1,'Poly:&#160;Polynomial.hpp'],['../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809',1,'POLY:&#160;poly.cpp'],['../d0/d03/struct_p_o_l_y.html',1,'POLY']]],
+  ['poly_54',['poly',['../d3/d96/poly_8cpp_af4c97ae01895f6d3290e9c2ec19a5809.html#af4c97ae01895f6d3290e9c2ec19a5809',1,'POLY:&#160;poly.cpp'],['../db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30',1,'Poly:&#160;Polynomial.hpp'],['../d0/d03/struct_p_o_l_y.html',1,'POLY']]],
   ['poly_2ecpp_55',['poly.cpp',['../d3/d96/poly_8cpp.html',1,'']]],
   ['poly_2ehpp_56',['poly.hpp',['../d4/dc0/poly_8hpp.html',1,'']]],
   ['poly_5fauto_5freduce_57',['poly_auto_reduce',['../d0/d91/classgb_a_a16721a0073e05f81a50360b6599985b6.html#a16721a0073e05f81a50360b6599985b6',1,'gbA']]],
