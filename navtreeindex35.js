@@ -1,5 +1,6 @@
 var NAVTREEINDEX35 =
 {
+"d8/d7f/fractionfree_l_u_8cpp_source.html":[6,0,0,0,56],
 "d8/d84/structparsing__error.html":[5,0,252],
 "d8/d84/structparsing__error_ab27c4399273e3b93e42bf7adb113e902.html#ab27c4399273e3b93e42bf7adb113e902":[5,0,252,0],
 "d8/d90/_g_b_f4_computation_8cpp.html":[6,0,0,0,7,2],
@@ -101,8 +102,8 @@ var NAVTREEINDEX35 =
 "d8/da4/class_monomial_hash_and_eq_fixed_size_a91fbf27a8ee07b5e481cd0b42211b273.html#a91fbf27a8ee07b5e481cd0b42211b273":[5,0,210,0],
 "d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4.html":[5,0,3,0,1],
 "d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4.html":[4,0,6,0,1],
-"d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4_a92a6d09db86c0989d04fb4abd2ad709f.html#a92a6d09db86c0989d04fb4abd2ad709f":[4,0,6,0,1,0],
 "d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4_a92a6d09db86c0989d04fb4abd2ad709f.html#a92a6d09db86c0989d04fb4abd2ad709f":[5,0,3,0,1,0],
+"d8/da4/structmpfr_1_1internal_1_1result__type_3_01double_01_4_a92a6d09db86c0989d04fb4abd2ad709f.html#a92a6d09db86c0989d04fb4abd2ad709f":[4,0,6,0,1,0],
 "d8/da8/monoid_8h.html":[6,0,0,0,9,23],
 "d8/da8/monoid_8h_a13d3bdee365b150ed6cbd411d3a30490.html#a13d3bdee365b150ed6cbd411d3a30490":[6,0,0,0,9,23,1],
 "d8/da8/monoid_8h_a25e745854bb9731fa5256456333e014c.html#a25e745854bb9731fa5256456333e014c":[6,0,0,0,9,23,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX35 =
 "d8/db5/namespace_matrix_ops_afeb433b0052beec8982e7d67a96c20de.html#afeb433b0052beec8982e7d67a96c20de":[4,0,5,99],
 "d8/db5/namespace_matrix_ops_aff0b8ec82914bed23b63bf8226374434.html#aff0b8ec82914bed23b63bf8226374434":[4,0,5,104],
 "d8/dbd/structengine___raw_matrix_pair__struct.html":[5,0,72],
-"d8/dbd/structengine___raw_matrix_pair__struct_a0adce69f5fed93a055051b767a798033.html#a0adce69f5fed93a055051b767a798033":[5,0,72,0],
-"d8/dbd/structengine___raw_matrix_pair__struct_a689bc75a54cde9f13106e15a82e82087.html#a689bc75a54cde9f13106e15a82e82087":[5,0,72,1]
+"d8/dbd/structengine___raw_matrix_pair__struct_a0adce69f5fed93a055051b767a798033.html#a0adce69f5fed93a055051b767a798033":[5,0,72,0]
 };
