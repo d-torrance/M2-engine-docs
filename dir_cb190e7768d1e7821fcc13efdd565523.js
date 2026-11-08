@@ -37,6 +37,7 @@ var dir_cb190e7768d1e7821fcc13efdd565523 =
     [ "RingTowerTest.cpp", "dc/d71/_ring_tower_test_8cpp.html", "dc/d71/_ring_tower_test_8cpp" ],
     [ "RingZZpTest.cpp", "de/d85/_ring_z_zp_test_8cpp.html", "de/d85/_ring_z_zp_test_8cpp" ],
     [ "RingZZTest.cpp", "db/dc4/_ring_z_z_test_8cpp.html", "db/dc4/_ring_z_z_test_8cpp" ],
+    [ "SMatZZpTest.cpp", "dd/d4f/_s_mat_z_zp_test_8cpp.html", "dd/d4f/_s_mat_z_zp_test_8cpp" ],
     [ "SubsetTest.cpp", "d8/da9/_subset_test_8cpp.html", "d8/da9/_subset_test_8cpp" ],
     [ "testMain.cpp", "d7/de0/test_main_8cpp.html", "d7/de0/test_main_8cpp" ],
     [ "util-polyring-creation.cpp", "d2/d70/util-polyring-creation_8cpp.html", "d2/d70/util-polyring-creation_8cpp" ],

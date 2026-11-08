@@ -123,17 +123,17 @@ var NAVTREEINDEX =
 "dc/dad/class_suffix_tree_node_a1d23481ff6c7f78e3421acc4b9918ea3.html#a1d23481ff6c7f78e3421acc4b9918ea3",
 "dc/df6/class_pfaffian_computation.html",
 "dd/d41/_z_zp_8cpp_a5ad190417a478c3f15fa01ef9ee9bac9.html#a5ad190417a478c3f15fa01ef9ee9bac9",
-"dd/d91/_ring_c_c_c_test_8cpp_a94b1ae029624b5cfcaabc7a6456fea24.html#a94b1ae029624b5cfcaabc7a6456fea24",
-"dd/dc4/class_naive_dedup_queue_configuration_a1bbe4dfc58783f7bd86e0ac705327d27.html#a1bbe4dfc58783f7bd86e0ac705327d27",
-"dd/dcf/class_ring_a648505f7067ef8840614df6824a8e2db.html#a648505f7067ef8840614df6824a8e2db",
-"dd/df1/class_m2_1_1_a_ring_g_f_m2_ae5983acfc60e528835372231d7c94ef4.html#ae5983acfc60e528835372231d7c94ef4",
-"de/d48/class_overlap_table_a7f1ff015855fbe347cf63b2b88a8fb0c.html#a7f1ff015855fbe347cf63b2b88a8fb0c",
-"de/db3/compute_g_v_8hpp_a7d159dab84c4236fccc4013e218a81ce.html#a7d159dab84c4236fccc4013e218a81ce",
-"de/df4/aring-translate_8hpp.html#a0145c910aa1eda20cf30ca74fecbf71f",
-"df/d3c/mutable-matrix_8h_a30157171325b048890ebb135274ee636.html#a30157171325b048890ebb135274ee636",
-"df/da2/class_schur_ring2_ad8f2b44dcc4ca35f9e71729fd3210512.html#ad8f2b44dcc4ca35f9e71729fd3210512",
-"df/ddb/class_monomial_ideal_a2262f6f897a77a8c122f6c28622fd271.html#a2262f6f897a77a8c122f6c28622fd271",
-"globals_f.html"
+"dd/d91/_ring_c_c_c_test_8cpp_a21f998c6906b8a509310d5f2123adc8b.html#a21f998c6906b8a509310d5f2123adc8b",
+"dd/dc2/class_weyl_algebra_af1f27c4f20e41e9de1d6a65f437e01f5.html#af1f27c4f20e41e9de1d6a65f437e01f5",
+"dd/dcf/class_ring_a629f09fa842540aca946bcec51719ca4.html#a629f09fa842540aca946bcec51719ca4",
+"dd/df1/class_m2_1_1_a_ring_g_f_m2_ace6e4fae3d5f400556beaa73bc8d4d01.html#ace6e4fae3d5f400556beaa73bc8d4d01",
+"de/d48/class_overlap_table_a2cffabf6dbfe37c56e67b2956df79833.html#a2cffabf6dbfe37c56e67b2956df79833",
+"de/db3/compute_g_v_8hpp_a7082f392a07e7b28393967a871cc1485.html#a7082f392a07e7b28393967a871cc1485",
+"de/df3/class_degree_zero_map_generator_ad2c750087c24d292712a6f3636e7e629.html#ad2c750087c24d292712a6f3636e7e629",
+"df/d3c/mutable-matrix_8h_a1520d24d84cd7bb19fa99c75f927fdb3.html#a1520d24d84cd7bb19fa99c75f927fdb3",
+"df/da2/class_schur_ring2_acc5125946258aa054ee2afb765e30a9e.html#acc5125946258aa054ee2afb765e30a9e",
+"df/ddb/class_monomial_ideal_a16af5f4af8950976e8d6c3b494d324b4.html#a16af5f4af8950976e8d6c3b494d324b4",
+"globals_defs.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,9 @@
 var NAVTREEINDEX62 =
 {
+"df/ddb/class_monomial_ideal_a16af5f4af8950976e8d6c3b494d324b4.html#a16af5f4af8950976e8d6c3b494d324b4":[5,0,213,53],
+"df/ddb/class_monomial_ideal_a197ba5780c7ea0c2cecab5e59769229b.html#a197ba5780c7ea0c2cecab5e59769229b":[5,0,213,48],
+"df/ddb/class_monomial_ideal_a1a4164d03f8dd942f6f0966c299d7821.html#a1a4164d03f8dd942f6f0966c299d7821":[5,0,213,25],
+"df/ddb/class_monomial_ideal_a208ece04128e0b81caecd3292e17a944.html#a208ece04128e0b81caecd3292e17a944":[5,0,213,39],
 "df/ddb/class_monomial_ideal_a2262f6f897a77a8c122f6c28622fd271.html#a2262f6f897a77a8c122f6c28622fd271":[5,0,213,34],
 "df/ddb/class_monomial_ideal_a2329e34a15c63d4a840e6304e9db8c6d.html#a2329e34a15c63d4a840e6304e9db8c6d":[5,0,213,30],
 "df/ddb/class_monomial_ideal_a25e6cb756df072e473862d918776db0f.html#a25e6cb756df072e473862d918776db0f":[5,0,213,41],
@@ -124,8 +128,8 @@ var NAVTREEINDEX62 =
 "functions_enum.html":[5,3,4],
 "functions_eval.html":[5,3,5],
 "functions_f.html":[5,3,0,6],
-"functions_func.html":[5,3,1,0],
 "functions_func.html":[5,3,1],
+"functions_func.html":[5,3,1,0],
 "functions_func_b.html":[5,3,1,1],
 "functions_func_c.html":[5,3,1,2],
 "functions_func_d.html":[5,3,1,3],
@@ -162,8 +166,8 @@ var NAVTREEINDEX62 =
 "functions_p.html":[5,3,0,16],
 "functions_q.html":[5,3,0,17],
 "functions_r.html":[5,3,0,18],
-"functions_rela.html":[5,3,6],
 "functions_rela.html":[5,3,6,0],
+"functions_rela.html":[5,3,6],
 "functions_rela_b.html":[5,3,6,1],
 "functions_rela_c.html":[5,3,6,2],
 "functions_rela_d.html":[5,3,6,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX62 =
 "globals_a.html":[6,1,0,1],
 "globals_b.html":[6,1,0,2],
 "globals_c.html":[6,1,0,3],
-"globals_d.html":[6,1,0,4],
-"globals_defs.html":[6,1,6],
-"globals_e.html":[6,1,0,5],
-"globals_enum.html":[6,1,4],
-"globals_eval.html":[6,1,5]
+"globals_d.html":[6,1,0,4]
 };

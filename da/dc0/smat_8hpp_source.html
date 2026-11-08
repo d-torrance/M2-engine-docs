@@ -567,7 +567,7 @@ $(document).ready(function(){initNavTree('da/dc0/smat_8hpp_source.html','../../'
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CoeffRing&gt;</div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span><span class="keywordtype">void</span> <a class="code hl_function" href="../../da/de0/class_s_mat_a28e171f810fcbf15838bf1b89c7101bf.html#a28e171f810fcbf15838bf1b89c7101bf">SMat&lt;CoeffRing&gt;::vec_negate</a>(sparsevec *&amp;v)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>  <span class="keywordflow">for</span> (sparsevec *p = v; p-&gt;next != <a class="code hl_function" href="../../da/df0/mat-util_8hpp_a74cc79c6ebb813de1ea8c131ada987ca.html#a74cc79c6ebb813de1ea8c131ada987ca">NULL</a>; p = p-&gt;next)</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>  <span class="keywordflow">for</span> (sparsevec *p = v; p != <span class="keyword">nullptr</span>; p = p-&gt;next)</div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    ring().negate(p-&gt;coeff, p-&gt;coeff);</div>
 <div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>}</div>
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span> </div>
@@ -1402,7 +1402,7 @@ $(document).ready(function(){initNavTree('da/dc0/smat_8hpp_source.html','../../'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_6ccedff4b006e6d394d1e0ec11f5a7a2.html">Macaulay2</a></li><li class="navelem"><a class="el" href="../../dir_8a97dbb03e513ea63050801abc9266fe.html">e</a></li><li class="navelem"><a class="el" href="../../dir_9f3f5f379b00f30bd571e387e5b438c1.html">basic-mutable-matrices</a></li><li class="navelem"><a class="el" href="../../da/dc0/smat_8hpp.html">smat.hpp</a></li>
-    <li class="footer">Generated on Sun Nov 1 2026 05:44:43 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Nov 8 2026 05:45:46 for Macaulay2 Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
