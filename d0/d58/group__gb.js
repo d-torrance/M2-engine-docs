@@ -23,7 +23,6 @@ var group__gb =
       [ "start_computation", "d3/d16/class_gauss_elim_computation_ad04e59468cc16a96bbb4ca40ad8355cc.html#ad04e59468cc16a96bbb4ca40ad8355cc", null ],
       [ "stop_conditions_ok", "d3/d16/class_gauss_elim_computation_aed6651f281d0cb4a1b968478a6beda47.html#aed6651f281d0cb4a1b968478a6beda47", null ],
       [ "text_out", "d3/d16/class_gauss_elim_computation_ae08293d4d0c21012884d0226f87868ad.html#ae08293d4d0c21012884d0226f87868ad", null ],
-      [ "VECTOR", "d3/d16/class_gauss_elim_computation_a53727a358a7193f8990fa66a999fd9e3.html#a53727a358a7193f8990fa66a999fd9e3", null ],
       [ "collect_syz", "d3/d16/class_gauss_elim_computation_a63d6a2c5ea83892786bc49b9ffcc9de1.html#a63d6a2c5ea83892786bc49b9ffcc9de1", null ],
       [ "Fsyz", "d3/d16/class_gauss_elim_computation_ae57fb809102382d36adfb56e2bc72032.html#ae57fb809102382d36adfb56e2bc72032", null ],
       [ "gb_list", "d3/d16/class_gauss_elim_computation_a953424d4627a5e8bf81ae5e2333605e3.html#a953424d4627a5e8bf81ae5e2333605e3", null ],
@@ -34,7 +33,8 @@ var group__gb =
       [ "n_syz", "d3/d16/class_gauss_elim_computation_a4e30bfd17b6af64a88e4314edf2cdec6.html#a4e30bfd17b6af64a88e4314edf2cdec6", null ],
       [ "R", "d3/d16/class_gauss_elim_computation_ad754dada3214923c91cab07229b9ca41.html#ad754dada3214923c91cab07229b9ca41", null ],
       [ "reduce_list", "d3/d16/class_gauss_elim_computation_a8bae230119a91e0378fea0ca6e53e5cd.html#a8bae230119a91e0378fea0ca6e53e5cd", null ],
-      [ "row", "d3/d16/class_gauss_elim_computation_ade2dc330016614ce2c5ac19e827f1def.html#ade2dc330016614ce2c5ac19e827f1def", null ]
+      [ "row", "d3/d16/class_gauss_elim_computation_ade2dc330016614ce2c5ac19e827f1def.html#ade2dc330016614ce2c5ac19e827f1def", null ],
+      [ "syz_list", "d3/d16/class_gauss_elim_computation_a861742000ce9941336f182a4851cc6d3.html#a861742000ce9941336f182a4851cc6d3", null ]
     ] ],
     [ "GBDeclared", "d8/d26/class_g_b_declared.html", [
       [ "GBDeclared", "d8/d26/class_g_b_declared_af0018cd7db9cea6dc0f1934f76b281ac.html#af0018cd7db9cea6dc0f1934f76b281ac", null ],
@@ -127,9 +127,9 @@ var group__gb =
         [ "lcm", "df/deb/structgb_a_1_1spair_ae7e4e7d73304e53c397bae44a104c30c.html#ae7e4e7d73304e53c397bae44a104c30c", null ],
         [ "lead_of_spoly", "df/deb/structgb_a_1_1spair_a3131f9edd238fe3875744632137e84d1.html#a3131f9edd238fe3875744632137e84d1", null ],
         [ "next", "df/deb/structgb_a_1_1spair_a63af054141ecb87ea7628d4bb737d233.html#a63af054141ecb87ea7628d4bb737d233", null ],
-        [ "pair", "df/deb/structgb_a_1_1spair_a80bb9e36c1401c4ed6ae73c4444c7424.html#a80bb9e36c1401c4ed6ae73c4444c7424", null ],
+        [ "pair", "df/deb/structgb_a_1_1spair_a361199109ded06f7916195726b3a3711.html#a361199109ded06f7916195726b3a3711", null ],
         [ "type", "df/deb/structgb_a_1_1spair_abbad1085113eb96a786b77893d63e4f0.html#abbad1085113eb96a786b77893d63e4f0", null ],
-        [ "x", "df/deb/structgb_a_1_1spair_a61c75b22957355385867e46df8f377e3.html#a61c75b22957355385867e46df8f377e3", null ]
+        [ "x", "df/deb/structgb_a_1_1spair_ad8f512448e3f961730233d669fbba668.html#ad8f512448e3f961730233d669fbba668", null ]
       ] ],
       [ "SPairSet", "d9/dad/structgb_a_1_1_s_pair_set.html", [
         [ "SPairSet", "d9/dad/structgb_a_1_1_s_pair_set_a35c023b32cf2e089d6af88c354556db4.html#a35c023b32cf2e089d6af88c354556db4", null ],
@@ -555,7 +555,7 @@ var group__gb =
       [ "monorder2", "df/dab/class_g_b_walker_a5ee1e63ed9ca0f6d4ea3728c22188591.html#a5ee1e63ed9ca0f6d4ea3728c22188591", null ],
       [ "next_to_reduce", "df/dab/class_g_b_walker_a24d16518c6f3c3e22ad619f72247e346.html#a24d16518c6f3c3e22ad619f72247e346", null ],
       [ "R", "df/dab/class_g_b_walker_ad8709849db165cc26c693e024d542f64.html#ad8709849db165cc26c693e024d542f64", null ],
-      [ "state", "df/dab/class_g_b_walker_a5ea068b9b4502650543009b27f6f60a2.html#a5ea068b9b4502650543009b27f6f60a2", null ],
+      [ "state", "df/dab/class_g_b_walker_a3440cc9c3800d6525cd8d92008c57334.html#a3440cc9c3800d6525cd8d92008c57334", null ],
       [ "ww", "df/dab/class_g_b_walker_aa33bf94fccac102946c200fee868a2d6.html#aa33bf94fccac102946c200fee868a2d6", null ]
     ] ],
     [ "HermiteComputation", "d8/d76/class_hermite_computation.html", [
@@ -584,14 +584,14 @@ var group__gb =
       [ "start_computation", "d8/d76/class_hermite_computation_a49e74d40b4ee508a4f37f14e70ea0557.html#a49e74d40b4ee508a4f37f14e70ea0557", null ],
       [ "stop_conditions_ok", "d8/d76/class_hermite_computation_a6eea8fe9d4a7a1b59c38d04deb415f7c.html#a6eea8fe9d4a7a1b59c38d04deb415f7c", null ],
       [ "text_out", "d8/d76/class_hermite_computation_a31662941ebf429ccb37bf61f6522356e.html#a31662941ebf429ccb37bf61f6522356e", null ],
-      [ "VECTOR", "d8/d76/class_hermite_computation_aabf0f4cd1209fac3fae4c5063020ccf0.html#aabf0f4cd1209fac3fae4c5063020ccf0", null ],
-      [ "VECTOR", "d8/d76/class_hermite_computation_aff9d45bcc8ab5956d5faa3a32cd4c81a.html#aff9d45bcc8ab5956d5faa3a32cd4c81a", null ],
       [ "collect_syz", "d8/d76/class_hermite_computation_a8c6901609e2f305955a890442c4a59fa.html#a8c6901609e2f305955a890442c4a59fa", null ],
       [ "Fsyz", "d8/d76/class_hermite_computation_a6cc8e86f4949619b2c2a4ac73d5d644b.html#a6cc8e86f4949619b2c2a4ac73d5d644b", null ],
       [ "GB_list", "d8/d76/class_hermite_computation_ab2a39fa582d94959275b6e7b0f8ddccb.html#ab2a39fa582d94959275b6e7b0f8ddccb", null ],
       [ "gens", "d8/d76/class_hermite_computation_a8f3b83e3d517935a89ff457714a59347.html#a8f3b83e3d517935a89ff457714a59347", null ],
+      [ "initial", "d8/d76/class_hermite_computation_ab3c47a739eed5001f2ecf1d2ff31ef90.html#ab3c47a739eed5001f2ecf1d2ff31ef90", null ],
       [ "n_comps_per_syz", "d8/d76/class_hermite_computation_a1e1b8ff45ae263271c22e51e30cd344f.html#a1e1b8ff45ae263271c22e51e30cd344f", null ],
       [ "n_gb", "d8/d76/class_hermite_computation_a410ca40db2d428ef11f5bcb8b1223299.html#a410ca40db2d428ef11f5bcb8b1223299", null ],
-      [ "row", "d8/d76/class_hermite_computation_ae972e9abb549c747e78ba1d54a384441.html#ae972e9abb549c747e78ba1d54a384441", null ]
+      [ "row", "d8/d76/class_hermite_computation_ae972e9abb549c747e78ba1d54a384441.html#ae972e9abb549c747e78ba1d54a384441", null ],
+      [ "syz_list", "d8/d76/class_hermite_computation_a2034ec558d7fab12ad1fd3b7f8c1fe46.html#a2034ec558d7fab12ad1fd3b7f8c1fe46", null ]
     ] ]
 ];

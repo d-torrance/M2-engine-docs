@@ -15,10 +15,10 @@ var class_mutable_complex =
     [ "prune_unit", "dc/d43/class_mutable_complex_a41a88801029c2b5e920badd39ec055c8.html#a41a88801029c2b5e920badd39ec055c8", null ],
     [ "text_out", "dc/d43/class_mutable_complex_a81691d923c3e0c91a897c4acd0d03eb8.html#a81691d923c3e0c91a897c4acd0d03eb8", null ],
     [ "mBetti", "dc/d43/class_mutable_complex_a2313d1b55df6677b1ee59cc6a850c317.html#a2313d1b55df6677b1ee59cc6a850c317", null ],
-    [ "mDegrees", "dc/d43/class_mutable_complex_a0ebd120cb13717790f675dfd9f326329.html#a0ebd120cb13717790f675dfd9f326329", null ],
-    [ "mDifferential", "dc/d43/class_mutable_complex_a5f210566fcfe113381c3d13f0d98acab.html#a5f210566fcfe113381c3d13f0d98acab", null ],
+    [ "mDegrees", "dc/d43/class_mutable_complex_a6e9d8cffcaa75a4bb3626ee65be781df.html#a6e9d8cffcaa75a4bb3626ee65be781df", null ],
+    [ "mDifferential", "dc/d43/class_mutable_complex_aef2f02002131d45f68ff6335377d7521.html#aef2f02002131d45f68ff6335377d7521", null ],
     [ "mLocalRing", "dc/d43/class_mutable_complex_aac016b32100d81887387e3bff68b736f.html#aac016b32100d81887387e3bff68b736f", null ],
-    [ "mMorphisms", "dc/d43/class_mutable_complex_afb93cb3a45f1a6e4602bf59b2c6a9fd7.html#afb93cb3a45f1a6e4602bf59b2c6a9fd7", null ],
+    [ "mMorphisms", "dc/d43/class_mutable_complex_a86915b9f1fa8027682f8c120b8630418.html#a86915b9f1fa8027682f8c120b8630418", null ],
     [ "mPolynomialRing", "dc/d43/class_mutable_complex_aea90c4f31c8871ff17b0fd20b2ea0b71.html#aea90c4f31c8871ff17b0fd20b2ea0b71", null ],
     [ "mRing", "dc/d43/class_mutable_complex_aa278c6cadaf85ef858b2e990aef432dc.html#aa278c6cadaf85ef858b2e990aef432dc", null ]
 ];

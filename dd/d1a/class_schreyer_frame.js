@@ -1,7 +1,7 @@
 var class_schreyer_frame =
 [
-    [ "Frame", "d7/df5/struct_schreyer_frame_1_1_frame.html", "d7/df5/struct_schreyer_frame_1_1_frame" ],
     [ "Level", "da/d4d/struct_schreyer_frame_1_1_level.html", "da/d4d/struct_schreyer_frame_1_1_level" ],
+    [ "Frame", "d7/df5/struct_schreyer_frame_1_1_frame.html", "d7/df5/struct_schreyer_frame_1_1_frame" ],
     [ "FrameElement", "dd/d1a/class_schreyer_frame_a2e81a03992e5beca83586384f3200cfb.html#a2e81a03992e5beca83586384f3200cfb", null ],
     [ "PreElement", "dd/d1a/class_schreyer_frame_a97e22ca66b82e2d964e946b04c31e667.html#a97e22ca66b82e2d964e946b04c31e667", null ],
     [ "SchreyerFrame", "dd/d1a/class_schreyer_frame_a2680bfa79a065a38e3728b6134018f53.html#a2680bfa79a065a38e3728b6134018f53", null ],
@@ -65,7 +65,7 @@ var class_schreyer_frame =
     [ "mPreElements", "dd/d1a/class_schreyer_frame_a803e4c66c3792b11795a901776f071a3.html#a803e4c66c3792b11795a901776f071a3", null ],
     [ "mRing", "dd/d1a/class_schreyer_frame_aade03acdae318baa488ee4b2740751fe.html#aade03acdae318baa488ee4b2740751fe", null ],
     [ "mSlantedDegree", "dd/d1a/class_schreyer_frame_a617664b1f1b1a3d48bb5f52331d5af58.html#a617664b1f1b1a3d48bb5f52331d5af58", null ],
-    [ "mState", "dd/d1a/class_schreyer_frame_ae63912f872f513f8e26e5ed91e848123.html#ae63912f872f513f8e26e5ed91e848123", null ],
+    [ "mState", "dd/d1a/class_schreyer_frame_a70a8838945c8512927a3e91d8e237348.html#a70a8838945c8512927a3e91d8e237348", null ],
     [ "mVarpowers", "dd/d1a/class_schreyer_frame_a82b98218613dfaea7fb9c942ede5d020.html#a82b98218613dfaea7fb9c942ede5d020", null ],
     [ "timeClearMatrix", "dd/d1a/class_schreyer_frame_afe5e85a4fd10cf1e579af052371a5f24.html#afe5e85a4fd10cf1e579af052371a5f24", null ],
     [ "timeComputeRanks", "dd/d1a/class_schreyer_frame_a57668cdf8358f43c408e957850c7ef83.html#a57668cdf8358f43c408e957850c7ef83", null ],

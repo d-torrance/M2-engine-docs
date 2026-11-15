@@ -2,7 +2,7 @@ var _polynomial_8hpp =
 [
     [ "Monom", "dd/d21/struct_monom.html", "dd/d21/struct_monom" ],
     [ "ModuleMonom", "d9/d8a/class_module_monom.html", "d9/d8a/class_module_monom" ],
-    [ "Polynomial< CoefficientRingType >::const_iterator", "d3/d58/class_polynomial_1_1const__iterator.html", "d3/d58/class_polynomial_1_1const__iterator" ],
+    [ "Polynomial&lt; CoefficientRingType &gt;::const_iterator", "d3/d58/class_polynomial_1_1const__iterator.html", "d3/d58/class_polynomial_1_1const__iterator" ],
     [ "CoefficientRingType", "db/dc3/struct_coefficient_ring_type.html", "db/dc3/struct_coefficient_ring_type" ],
     [ "ConstPolyList", "db/d99/_polynomial_8hpp_a80a194ce0dfa5aa6521f4035725c628a.html#a80a194ce0dfa5aa6521f4035725c628a", null ],
     [ "Poly", "db/d99/_polynomial_8hpp_aa2e1f459d90ab6e50fc0b8c642dceb30.html#aa2e1f459d90ab6e50fc0b8c642dceb30", null ],

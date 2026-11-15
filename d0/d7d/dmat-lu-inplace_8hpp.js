@@ -1,7 +1,9 @@
 var dmat_lu_inplace_8hpp =
 [
-    [ "LUUtil< RT >", "df/dcd/class_l_u_util.html", "df/dcd/class_l_u_util" ],
-    [ "DMatLUinPlace< RT >", "df/d1c/class_d_mat_l_uin_place.html", "df/d1c/class_d_mat_l_uin_place" ],
+    [ "LUUtil&lt; RT &gt;", "df/dcd/class_l_u_util.html", "df/dcd/class_l_u_util" ],
+    [ "DMatLUinPlace&lt; RT &gt;", "df/d1c/class_d_mat_l_uin_place.html", "df/d1c/class_d_mat_l_uin_place" ],
+    [ "fill_from_lapack_array", "d0/d7d/dmat-lu-inplace_8hpp_ae48c10b495ee0250224ba9fc8741fde2.html#ae48c10b495ee0250224ba9fc8741fde2", null ],
     [ "fill_from_lapack_array", "d0/d7d/dmat-lu-inplace_8hpp_a480bc96c84fc68bf689e889b1f65ae70.html#a480bc96c84fc68bf689e889b1f65ae70", null ],
+    [ "make_lapack_array", "d0/d7d/dmat-lu-inplace_8hpp_a4fb05baef8ff7f8ecdd0f05cbce2b31e.html#a4fb05baef8ff7f8ecdd0f05cbce2b31e", null ],
     [ "make_lapack_array", "d0/d7d/dmat-lu-inplace_8hpp_a1d9fe790cb0cb4f0fe5ec99737d82ed4.html#a1d9fe790cb0cb4f0fe5ec99737d82ed4", null ]
 ];

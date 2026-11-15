@@ -1,8 +1,8 @@
 var classbinomial_g_b =
 [
     [ "gbmin_elem", "db/dee/structbinomial_g_b_1_1gbmin__elem.html", "db/dee/structbinomial_g_b_1_1gbmin__elem" ],
-    [ "iterator", "d7/dbd/classbinomial_g_b_1_1iterator.html", "d7/dbd/classbinomial_g_b_1_1iterator" ],
     [ "monomial_list", "d6/d0d/structbinomial_g_b_1_1monomial__list.html", "d6/d0d/structbinomial_g_b_1_1monomial__list" ],
+    [ "iterator", "d7/dbd/classbinomial_g_b_1_1iterator.html", "d7/dbd/classbinomial_g_b_1_1iterator" ],
     [ "binomialGB", "d6/d05/classbinomial_g_b_a0890f9edefe9b6e02968aae45ac42944.html#a0890f9edefe9b6e02968aae45ac42944", null ],
     [ "~binomialGB", "d6/d05/classbinomial_g_b_ac280f0a76dc9e79b1a0f429c2953959d.html#ac280f0a76dc9e79b1a0f429c2953959d", null ],
     [ "begin", "d6/d05/classbinomial_g_b_a12eca205a36b0c007dc4cb6756d67e01.html#a12eca205a36b0c007dc4cb6756d67e01", null ],

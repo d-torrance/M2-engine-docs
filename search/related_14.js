@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zeta_0',['zeta',['../d6/df7/classmpfr_1_1mpreal_af22889e1fbd93f0e0de9fe9a5aaff66f.html#af22889e1fbd93f0e0de9fe9a5aaff66f',1,'mpfr::mpreal']]]
+  ['zeta_0',['zeta',['../d6/df7/classmpfr_1_1mpreal_a1f201d4c165a12e67a51ebc396bbf7f3.html#a1f201d4c165a12e67a51ebc396bbf7f3',1,'mpfr::mpreal']]]
 ];

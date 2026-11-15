@@ -1,8 +1,8 @@
 var classbinomial__s__pair__set =
 [
     [ "s_pair_degree_list", "d2/d2f/structbinomial__s__pair__set_1_1s__pair__degree__list.html", "d2/d2f/structbinomial__s__pair__set_1_1s__pair__degree__list" ],
-    [ "s_pair_elem", "d8/db2/structbinomial__s__pair__set_1_1s__pair__elem.html", "d8/db2/structbinomial__s__pair__set_1_1s__pair__elem" ],
     [ "s_pair_lcm_list", "d0/d2a/structbinomial__s__pair__set_1_1s__pair__lcm__list.html", "d0/d2a/structbinomial__s__pair__set_1_1s__pair__lcm__list" ],
+    [ "s_pair_elem", "d8/db2/structbinomial__s__pair__set_1_1s__pair__elem.html", "d8/db2/structbinomial__s__pair__set_1_1s__pair__elem" ],
     [ "binomial_s_pair_set", "d1/d7e/classbinomial__s__pair__set_a7b960208ebdbd67168485da01fdad6a4.html#a7b960208ebdbd67168485da01fdad6a4", null ],
     [ "~binomial_s_pair_set", "d1/d7e/classbinomial__s__pair__set_a2f17184e39cf390ab2bb056fc53b1b7f.html#a2f17184e39cf390ab2bb056fc53b1b7f", null ],
     [ "enlarge", "d1/d7e/classbinomial__s__pair__set_acd26d583d97a86a5b89b57974a9b0a7f.html#acd26d583d97a86a5b89b57974a9b0a7f", null ],

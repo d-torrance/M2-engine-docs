@@ -22,7 +22,6 @@ var class_gauss_elim_computation =
     [ "start_computation", "d3/d16/class_gauss_elim_computation_ad04e59468cc16a96bbb4ca40ad8355cc.html#ad04e59468cc16a96bbb4ca40ad8355cc", null ],
     [ "stop_conditions_ok", "d3/d16/class_gauss_elim_computation_aed6651f281d0cb4a1b968478a6beda47.html#aed6651f281d0cb4a1b968478a6beda47", null ],
     [ "text_out", "d3/d16/class_gauss_elim_computation_ae08293d4d0c21012884d0226f87868ad.html#ae08293d4d0c21012884d0226f87868ad", null ],
-    [ "VECTOR", "d3/d16/class_gauss_elim_computation_a53727a358a7193f8990fa66a999fd9e3.html#a53727a358a7193f8990fa66a999fd9e3", null ],
     [ "collect_syz", "d3/d16/class_gauss_elim_computation_a63d6a2c5ea83892786bc49b9ffcc9de1.html#a63d6a2c5ea83892786bc49b9ffcc9de1", null ],
     [ "Fsyz", "d3/d16/class_gauss_elim_computation_ae57fb809102382d36adfb56e2bc72032.html#ae57fb809102382d36adfb56e2bc72032", null ],
     [ "gb_list", "d3/d16/class_gauss_elim_computation_a953424d4627a5e8bf81ae5e2333605e3.html#a953424d4627a5e8bf81ae5e2333605e3", null ],
@@ -33,5 +32,6 @@ var class_gauss_elim_computation =
     [ "n_syz", "d3/d16/class_gauss_elim_computation_a4e30bfd17b6af64a88e4314edf2cdec6.html#a4e30bfd17b6af64a88e4314edf2cdec6", null ],
     [ "R", "d3/d16/class_gauss_elim_computation_ad754dada3214923c91cab07229b9ca41.html#ad754dada3214923c91cab07229b9ca41", null ],
     [ "reduce_list", "d3/d16/class_gauss_elim_computation_a8bae230119a91e0378fea0ca6e53e5cd.html#a8bae230119a91e0378fea0ca6e53e5cd", null ],
-    [ "row", "d3/d16/class_gauss_elim_computation_ade2dc330016614ce2c5ac19e827f1def.html#ade2dc330016614ce2c5ac19e827f1def", null ]
+    [ "row", "d3/d16/class_gauss_elim_computation_ade2dc330016614ce2c5ac19e827f1def.html#ade2dc330016614ce2c5ac19e827f1def", null ],
+    [ "syz_list", "d3/d16/class_gauss_elim_computation_a861742000ce9941336f182a4851cc6d3.html#a861742000ce9941336f182a4851cc6d3", null ]
 ];

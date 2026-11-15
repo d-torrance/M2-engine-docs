@@ -5,7 +5,7 @@ var searchData=
   ['self_5ftype_2',['self_type',['../d3/d58/class_polynomial_1_1const__iterator_ab1a21447a940788f1159e86da1804f1a.html#ab1a21447a940788f1159e86da1804f1a',1,'Polynomial::const_iterator']]],
   ['set_3',['Set',['../dc/dd8/class_ints_set_a47dd342a4c6e83a049278a953eea5d00.html#a47dd342a4c6e83a049278a953eea5d00',1,'IntsSet']]],
   ['stt_4',['STT',['../da/d73/class_m2_1_1_a_ring_z_zp_f_f_p_a_c_k_a4b5562c157ad70614cc402adcfb4b08c.html#a4b5562c157ad70614cc402adcfb4b08c',1,'M2::ARingZZpFFPACK']]],
-  ['subdeterminant_5',['Subdeterminant',['../d7/d9a/class_det_computation_a54f081ea6b58cd76f96b7bcd38ed92f1.html#a54f081ea6b58cd76f96b7bcd38ed92f1',1,'DetComputation']]],
+  ['subdeterminant_5',['Subdeterminant',['../d7/d9a/class_det_computation_a3df3ebae4347662b380e1d59886e134e.html#a3df3ebae4347662b380e1d59886e134e',1,'DetComputation']]],
   ['subset_6',['Subset',['../d1/d23/comb_8hpp_a3dbc1effdceb64fb669cf05c4776eec3.html#a3dbc1effdceb64fb669cf05c4776eec3',1,'comb.hpp']]],
-  ['subwordstype_7',['SubwordsType',['../d8/d33/_suffix_tree_8hpp_a6a99312381559b76b9e1be3e9cb6aee7.html#a6a99312381559b76b9e1be3e9cb6aee7',1,'SuffixTree.hpp']]]
+  ['subwordstype_7',['SubwordsType',['../d8/d33/_suffix_tree_8hpp_a8df03337999bb2793c02e3544e970b05.html#a8df03337999bb2793c02e3544e970b05',1,'SuffixTree.hpp']]]
 ];

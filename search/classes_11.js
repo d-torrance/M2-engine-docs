@@ -61,6 +61,6 @@ var searchData=
   ['ringmap_58',['RingMap',['../d6/d6a/class_ring_map.html',1,'']]],
   ['ringqq_59',['RingQQ',['../d4/d85/class_m2_1_1_ring_q_q.html',1,'M2']]],
   ['ringzz_60',['RingZZ',['../d8/d2b/class_ring_z_z.html',1,'']]],
-  ['row_61',['row',['../d9/d66/struct_f4_res_1_1_row.html',1,'F4Res::Row'],['../d8/d29/struct_n_c_f4_1_1_row.html',1,'NCF4::Row'],['../d6/d54/structnewf4_1_1_row.html',1,'newf4::Row']]],
+  ['row_61',['Row',['../d9/d66/struct_f4_res_1_1_row.html',1,'F4Res::Row'],['../d8/d29/struct_n_c_f4_1_1_row.html',1,'NCF4::Row'],['../d6/d54/structnewf4_1_1_row.html',1,'newf4::Row']]],
   ['row_5felem_62',['row_elem',['../dc/d50/structrow__elem.html',1,'']]]
 ];

@@ -4,7 +4,7 @@ var _n_a_g_8hpp =
     [ "PointArray", "d2/dbf/class_point_array.html", "d2/dbf/class_point_array" ],
     [ "complex", "d6/d3b/classcomplex.html", "d6/d3b/classcomplex" ],
     [ "ComplexField", "d5/d7d/class_complex_field.html", "d5/d7d/class_complex_field" ],
-    [ "SLP< Field >", "da/d22/class_s_l_p.html", "da/d22/class_s_l_p" ],
+    [ "SLP&lt; Field &gt;", "da/d22/class_s_l_p.html", "da/d22/class_s_l_p" ],
     [ "StraightLineProgram", "d5/df6/class_straight_line_program.html", "d5/df6/class_straight_line_program" ],
     [ "Solution", "da/dc2/struct_solution.html", "da/dc2/struct_solution" ],
     [ "PathTracker", "de/db9/class_path_tracker.html", "de/db9/class_path_tracker" ],

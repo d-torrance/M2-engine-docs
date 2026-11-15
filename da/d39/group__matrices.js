@@ -96,14 +96,6 @@ var group__matrices =
       [ "rows", "d3/d7a/class_matrix_constructor_a24c8a0da5c860a5d5b976c5754e57615.html#a24c8a0da5c860a5d5b976c5754e57615", null ]
     ] ],
     [ "Matrix", "d6/d3f/class_matrix.html", [
-      [ "column_iterator", "de/dfe/class_matrix_1_1column__iterator.html", [
-        [ "column_iterator", "de/dfe/class_matrix_1_1column__iterator_a4f51312e08e3ad2e9a8e1ecccea445d0.html#a4f51312e08e3ad2e9a8e1ecccea445d0", null ],
-        [ "column_iterator", "de/dfe/class_matrix_1_1column__iterator_a7a44247b634e0b32c60b23fe7548b400.html#a7a44247b634e0b32c60b23fe7548b400", null ],
-        [ "operator!=", "de/dfe/class_matrix_1_1column__iterator_affa8ac5d424610b80036c55f393e253f.html#affa8ac5d424610b80036c55f393e253f", null ],
-        [ "operator*", "de/dfe/class_matrix_1_1column__iterator_a2c2782cf52ee3c0db6b94ab6ec84bb26.html#a2c2782cf52ee3c0db6b94ab6ec84bb26", null ],
-        [ "operator++", "de/dfe/class_matrix_1_1column__iterator_a9b06737b5799aa25429eb11dda0abb14.html#a9b06737b5799aa25429eb11dda0abb14", null ],
-        [ "v", "de/dfe/class_matrix_1_1column__iterator_ad106daf626a989ae26920ff13e44196e.html#ad106daf626a989ae26920ff13e44196e", null ]
-      ] ],
       [ "iterator", "d2/d54/class_matrix_1_1iterator.html", [
         [ "iterator", "d2/d54/class_matrix_1_1iterator_aac8f97a0f55a9764f19bffb15fdc80d4.html#aac8f97a0f55a9764f19bffb15fdc80d4", null ],
         [ "entry", "d2/d54/class_matrix_1_1iterator_a8690e9693c819c21f5e3e9869b2d5cbd.html#a8690e9693c819c21f5e3e9869b2d5cbd", null ],
@@ -114,6 +106,14 @@ var group__matrices =
         [ "col", "d2/d54/class_matrix_1_1iterator_ada877758e16ddc0835ad5af06a821f8b.html#ada877758e16ddc0835ad5af06a821f8b", null ],
         [ "M", "d2/d54/class_matrix_1_1iterator_a4a1a040f1f1e92f42d576b04ce192b49.html#a4a1a040f1f1e92f42d576b04ce192b49", null ],
         [ "v", "d2/d54/class_matrix_1_1iterator_a2a9766b0c2a41331b114be9e905d324c.html#a2a9766b0c2a41331b114be9e905d324c", null ]
+      ] ],
+      [ "column_iterator", "de/dfe/class_matrix_1_1column__iterator.html", [
+        [ "column_iterator", "de/dfe/class_matrix_1_1column__iterator_a4f51312e08e3ad2e9a8e1ecccea445d0.html#a4f51312e08e3ad2e9a8e1ecccea445d0", null ],
+        [ "column_iterator", "de/dfe/class_matrix_1_1column__iterator_a7a44247b634e0b32c60b23fe7548b400.html#a7a44247b634e0b32c60b23fe7548b400", null ],
+        [ "operator!=", "de/dfe/class_matrix_1_1column__iterator_affa8ac5d424610b80036c55f393e253f.html#affa8ac5d424610b80036c55f393e253f", null ],
+        [ "operator*", "de/dfe/class_matrix_1_1column__iterator_a2c2782cf52ee3c0db6b94ab6ec84bb26.html#a2c2782cf52ee3c0db6b94ab6ec84bb26", null ],
+        [ "operator++", "de/dfe/class_matrix_1_1column__iterator_a9b06737b5799aa25429eb11dda0abb14.html#a9b06737b5799aa25429eb11dda0abb14", null ],
+        [ "v", "de/dfe/class_matrix_1_1column__iterator_ad106daf626a989ae26920ff13e44196e.html#ad106daf626a989ae26920ff13e44196e", null ]
       ] ],
       [ "Matrix", "d6/d3f/class_matrix_a6d2f108b075f1abe1c9e17a9057636e6.html#a6d2f108b075f1abe1c9e17a9057636e6", null ],
       [ "auto_reduce", "d6/d3f/class_matrix_a51da2242500927ed75c85ac920d50eed.html#a51da2242500927ed75c85ac920d50eed", null ],
@@ -201,7 +201,7 @@ var group__matrices =
       [ "mSource", "d6/d3f/class_matrix_a6b3c2679dc6d8ea478a162045779b84d.html#a6b3c2679dc6d8ea478a162045779b84d", null ],
       [ "mTarget", "d6/d3f/class_matrix_af349d1358ba0e85804840c4eeca89ec6.html#af349d1358ba0e85804840c4eeca89ec6", null ]
     ] ],
-    [ "MutableMat< Mat >", "d6/db0/class_mutable_mat.html", [
+    [ "MutableMat&lt; Mat &gt;", "d6/db0/class_mutable_mat.html", [
       [ "CoeffRing", "d6/db0/class_mutable_mat_a171a34ca8f906a05563a461fe22c07a8.html#a171a34ca8f906a05563a461fe22c07a8", null ],
       [ "EigenvalueType", "d6/db0/class_mutable_mat_a2fedb1471d6fc48f36f29615d3c88a0e.html#a2fedb1471d6fc48f36f29615d3c88a0e", null ],
       [ "EigenvectorType", "d6/db0/class_mutable_mat_aab4bc2840080c98a7010ab97d9f62da2.html#aab4bc2840080c98a7010ab97d9f62da2", null ],

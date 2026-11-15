@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['besselj0_0',['besselj0',['../d6/df7/classmpfr_1_1mpreal_ac621d3c47fe08e541bdfdf683591584b.html#ac621d3c47fe08e541bdfdf683591584b',1,'mpfr::mpreal']]],
-  ['besselj1_1',['besselj1',['../d6/df7/classmpfr_1_1mpreal_a0f2d0579979b0debfe5df092b0c74920.html#a0f2d0579979b0debfe5df092b0c74920',1,'mpfr::mpreal']]],
-  ['besseljn_2',['besseljn',['../d6/df7/classmpfr_1_1mpreal_a17832cc4a85391f9c717b13a35fd9b37.html#a17832cc4a85391f9c717b13a35fd9b37',1,'mpfr::mpreal']]],
-  ['bessely0_3',['bessely0',['../d6/df7/classmpfr_1_1mpreal_a7f58635ca88d077d049ceab6d6af9a79.html#a7f58635ca88d077d049ceab6d6af9a79',1,'mpfr::mpreal']]],
-  ['bessely1_4',['bessely1',['../d6/df7/classmpfr_1_1mpreal_aee1c2c077a97dcb04625a598c2fbffac.html#aee1c2c077a97dcb04625a598c2fbffac',1,'mpfr::mpreal']]],
-  ['besselyn_5',['besselyn',['../d6/df7/classmpfr_1_1mpreal_ac8672e04724f57ca557d19114333e52f.html#ac8672e04724f57ca557d19114333e52f',1,'mpfr::mpreal']]],
+  ['besselj0_0',['besselj0',['../d6/df7/classmpfr_1_1mpreal_a4881117771686415a9351c67dc5164e4.html#a4881117771686415a9351c67dc5164e4',1,'mpfr::mpreal']]],
+  ['besselj1_1',['besselj1',['../d6/df7/classmpfr_1_1mpreal_aa12ccf2d8210be54bcd672d5dbffa67b.html#aa12ccf2d8210be54bcd672d5dbffa67b',1,'mpfr::mpreal']]],
+  ['besseljn_2',['besseljn',['../d6/df7/classmpfr_1_1mpreal_ae5cb876c62e33f9d8b51a307b33d6565.html#ae5cb876c62e33f9d8b51a307b33d6565',1,'mpfr::mpreal']]],
+  ['bessely0_3',['bessely0',['../d6/df7/classmpfr_1_1mpreal_aeb40bccf29f01fef9389c474ee3dfb52.html#aeb40bccf29f01fef9389c474ee3dfb52',1,'mpfr::mpreal']]],
+  ['bessely1_4',['bessely1',['../d6/df7/classmpfr_1_1mpreal_ac7a3b57424d113709e4228ee9d7578be.html#ac7a3b57424d113709e4228ee9d7578be',1,'mpfr::mpreal']]],
+  ['besselyn_5',['besselyn',['../d6/df7/classmpfr_1_1mpreal_a9581d8da5769438ec73eb5b268712948.html#a9581d8da5769438ec73eb5b268712948',1,'mpfr::mpreal']]],
   ['binomialgb_6',['binomialGB',['../d7/dbd/classbinomial_g_b_1_1iterator_affd481b157431fb2231e290a751b3ecb.html#affd481b157431fb2231e290a751b3ecb',1,'binomialGB::iterator']]],
   ['binomialgb_5fcomp_7',['binomialGB_comp',['../dd/d3a/classbinomial__ring_a089466c642015d1b8889bdc2e0d76dc2.html#a089466c642015d1b8889bdc2e0d76dc2',1,'binomial_ring']]]
 ];

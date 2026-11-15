@@ -1,7 +1,7 @@
 var searchData=
 [
   ['map_0',['Map',['../dd/d43/_n_c_reduction_8hpp_a3323bceff3e6a898901853c6a56f223a.html#a3323bceff3e6a898901853c6a56f223aa46f3ea056caa3126b91f3f70beea068c',1,'NCReduction.hpp']]],
-  ['matrices_1',['Matrices',['../dd/d1a/class_schreyer_frame_a176e529ba6aa7e530646533a453c6f50.html#a176e529ba6aa7e530646533a453c6f50a0534e6b5579376eda1d407dc8db791cb',1,'SchreyerFrame']]],
+  ['matrices_1',['Matrices',['../dd/d1a/class_schreyer_frame_acd07257770cf24876db6ed77bf82f8e8.html#acd07257770cf24876db6ed77bf82f8e8a0534e6b5579376eda1d407dc8db791cb',1,'SchreyerFrame']]],
   ['mcopy_2',['MCopy',['../d3/dd3/class_s_l_program_a5dcea512aaff0e8dff7653964b1a12e8.html#a5dcea512aaff0e8dff7653964b1a12e8a7b9349f0bf43a064575aa3d8d84cae45',1,'SLProgram']]],
   ['min_5fstep_5ffailed_3',['MIN_STEP_FAILED',['../d0/dc7/_s_l_p-imp_8hpp_a801be40a606301461ff812058569ee3b.html#a801be40a606301461ff812058569ee3badb94e0fd59b502e454978d8c134b427c',1,'SLP-imp.hpp']]],
   ['mingb_4',['MinGB',['../da/db5/namespacenewf4_ae28d864db4655c501feaf1de1c26f8fd.html#ae28d864db4655c501feaf1de1c26f8fda2cc898084720c4007deb757e66a2e5f1',1,'newf4']]],

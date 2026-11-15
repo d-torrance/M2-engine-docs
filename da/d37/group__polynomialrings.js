@@ -1,6 +1,6 @@
 var group__polynomialrings =
 [
-    [ "Polynomial< CoefficientRingType >", "df/d41/struct_polynomial.html", [
+    [ "Polynomial&lt; CoefficientRingType &gt;", "df/d41/struct_polynomial.html", [
       [ "const_iterator", "d3/d58/class_polynomial_1_1const__iterator.html", [
         [ "iterator_category", "d3/d58/class_polynomial_1_1const__iterator_ac6a8d5f4697c0397e8f88a2def6c8ce7.html#ac6a8d5f4697c0397e8f88a2def6c8ce7", null ],
         [ "self_type", "d3/d58/class_polynomial_1_1const__iterator_ab1a21447a940788f1159e86da1804f1a.html#ab1a21447a940788f1159e86da1804f1a", null ],
@@ -48,7 +48,7 @@ var group__polynomialrings =
       [ "nonzero", "df/d41/struct_polynomial_a8493159b9a185b17806434ede59dfcff.html#a8493159b9a185b17806434ede59dfcff", null ]
     ] ],
     [ "TowerPolynomial", "da/dd1/struct_tower_polynomial_struct.html", [
-      [ "arr", "da/dd1/struct_tower_polynomial_struct_a7139af9fb30d1c6d967f311c13d68fea.html#a7139af9fb30d1c6d967f311c13d68fea", null ],
+      [ "arr", "da/dd1/struct_tower_polynomial_struct_a8eb0fe03ae9290e6078573a58c4c857a.html#a8eb0fe03ae9290e6078573a58c4c857a", null ],
       [ "deg", "da/dd1/struct_tower_polynomial_struct_aac31bcfd8540080d4495e9ab24fe4a67.html#aac31bcfd8540080d4495e9ab24fe4a67", null ],
       [ "ints", "da/dd1/struct_tower_polynomial_struct_adebe500398be3c3148d0f1210335dde7.html#adebe500398be3c3148d0f1210335dde7", null ],
       [ "len", "da/dd1/struct_tower_polynomial_struct_aa3f1876f3e4724e082392bfc5aa0c81e.html#aa3f1876f3e4724e082392bfc5aa0c81e", null ],

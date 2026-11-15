@@ -1,6 +1,6 @@
 var _a_ring_test_8hpp =
 [
-    [ "ARingElementGenerator< RingType >", "df/dc2/class_a_ring_element_generator.html", "df/dc2/class_a_ring_element_generator" ],
+    [ "ARingElementGenerator&lt; RingType &gt;", "df/dc2/class_a_ring_element_generator.html", "df/dc2/class_a_ring_element_generator" ],
     [ "fromStream", "de/d59/_a_ring_test_8hpp_a8b21b151847791794532fa994ff1b78a.html#a8b21b151847791794532fa994ff1b78a", null ],
     [ "getElement", "de/d59/_a_ring_test_8hpp_abfba126d094aba21386022c26fbc3b85.html#abfba126d094aba21386022c26fbc3b85", null ],
     [ "ringName", "de/d59/_a_ring_test_8hpp_aed865d319365c090f84bd7fd38400807.html#aed865d319365c090f84bd7fd38400807", null ],

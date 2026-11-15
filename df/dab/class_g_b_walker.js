@@ -39,6 +39,6 @@ var class_g_b_walker =
     [ "monorder2", "df/dab/class_g_b_walker_a5ee1e63ed9ca0f6d4ea3728c22188591.html#a5ee1e63ed9ca0f6d4ea3728c22188591", null ],
     [ "next_to_reduce", "df/dab/class_g_b_walker_a24d16518c6f3c3e22ad619f72247e346.html#a24d16518c6f3c3e22ad619f72247e346", null ],
     [ "R", "df/dab/class_g_b_walker_ad8709849db165cc26c693e024d542f64.html#ad8709849db165cc26c693e024d542f64", null ],
-    [ "state", "df/dab/class_g_b_walker_a5ea068b9b4502650543009b27f6f60a2.html#a5ea068b9b4502650543009b27f6f60a2", null ],
+    [ "state", "df/dab/class_g_b_walker_a3440cc9c3800d6525cd8d92008c57334.html#a3440cc9c3800d6525cd8d92008c57334", null ],
     [ "ww", "df/dab/class_g_b_walker_aa33bf94fccac102946c200fee868a2d6.html#aa33bf94fccac102946c200fee868a2d6", null ]
 ];

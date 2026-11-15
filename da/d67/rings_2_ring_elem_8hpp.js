@@ -6,7 +6,7 @@ var rings_2_ring_elem_8hpp =
     [ "ring_elem", "d5/d64/unionring__elem.html", "d5/d64/unionring__elem" ],
     [ "Nterm", "d0/dbc/struct_nterm.html", "d0/dbc/struct_nterm" ],
     [ "vec", "d6/ddd/structvecterm.html", "d6/ddd/structvecterm" ],
-    [ "TermIterator< T >", "d9/d6d/struct_term_iterator.html", "d9/d6d/struct_term_iterator" ],
+    [ "TermIterator&lt; T &gt;", "d9/d6d/struct_term_iterator.html", "d9/d6d/struct_term_iterator" ],
     [ "BIGCC_IM", "da/d67/rings_2_ring_elem_8hpp_af9bac62e2d632a9591e4db48aaa8ebd6.html#af9bac62e2d632a9591e4db48aaa8ebd6", null ],
     [ "BIGCC_RE", "da/d67/rings_2_ring_elem_8hpp_a077ed2ed9749aaaf0966997a1c7b7e8d.html#a077ed2ed9749aaaf0966997a1c7b7e8d", null ],
     [ "MPQ_VAL", "da/d67/rings_2_ring_elem_8hpp_a763804a1f716888d0f6362e483ca41c3.html#a763804a1f716888d0f6362e483ca41c3", null ],

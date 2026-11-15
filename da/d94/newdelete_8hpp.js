@@ -13,6 +13,6 @@ var newdelete_8hpp =
     [ "newitem_atomic", "da/d94/newdelete_8hpp_ae4d3d94fd4f58d5b758f6a8c7d6eaecd.html#ae4d3d94fd4f58d5b758f6a8c7d6eaecd", null ],
     [ "newitem_clear", "da/d94/newdelete_8hpp_ae4e0c7f394be58658f7a3b039f23fe57.html#ae4e0c7f394be58658f7a3b039f23fe57", null ],
     [ "VECTOR", "da/d94/newdelete_8hpp_a5eb7456054852de52b377090e128822e.html#a5eb7456054852de52b377090e128822e", null ],
-    [ "gc_vector", "da/d94/newdelete_8hpp_a2f57de967a25a07781a4d50fa2cc1a1b.html#a2f57de967a25a07781a4d50fa2cc1a1b", null ],
+    [ "gc_vector", "da/d94/newdelete_8hpp_a372d8395e2d40d72e37f3f32375dd58a.html#a372d8395e2d40d72e37f3f32375dd58a", null ],
     [ "cleanup", "da/d94/newdelete_8hpp_ad38fe33a33b16397111c18ee7e216f81.html#ad38fe33a33b16397111c18ee7e216f81", null ]
 ];

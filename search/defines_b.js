@@ -4,7 +4,7 @@ var searchData=
   ['mathicgb_5fno_5ftbb_1',['MATHICGB_NO_TBB',['../d7/d61/m2tbb_8hpp_ab836e47429fb1a5d9e5a02faf06d596d.html#ab836e47429fb1a5d9e5a02faf06d596d',1,'m2tbb.hpp']]],
   ['matrix_2',['Matrix',['../d2/dc2/factory_8cpp_a9570374e3dbc873595100dae1e584459.html#a9570374e3dbc873595100dae1e584459',1,'factory.cpp']]],
   ['max_3',['max',['../d1/df6/polyroots_8cpp_affe776513b24d84b39af8ab0930fef7f.html#affe776513b24d84b39af8ab0930fef7f',1,'polyroots.cpp']]],
-  ['max_5fexp_4',['max_exp',['../da/d90/hilb_8cpp_aca29a1e29b43877403defc1a4dbce1cc.html#aca29a1e29b43877403defc1a4dbce1cc',1,'MAX_EXP:&#160;hilb.cpp'],['../d7/daf/_exponent_list_8cpp_aca29a1e29b43877403defc1a4dbce1cc.html#aca29a1e29b43877403defc1a4dbce1cc',1,'MAX_EXP:&#160;ExponentList.cpp']]],
+  ['max_5fexp_4',['MAX_EXP',['../da/d90/hilb_8cpp_aca29a1e29b43877403defc1a4dbce1cc.html#aca29a1e29b43877403defc1a4dbce1cc',1,'MAX_EXP:&#160;hilb.cpp'],['../d7/daf/_exponent_list_8cpp_aca29a1e29b43877403defc1a4dbce1cc.html#aca29a1e29b43877403defc1a4dbce1cc',1,'MAX_EXP:&#160;ExponentList.cpp']]],
   ['max_5fnum_5fpath_5ftrackers_5',['MAX_NUM_PATH_TRACKERS',['../d8/da0/_n_a_g_8hpp_afbc8e5a5490b031473e59212502d45b1.html#afbc8e5a5490b031473e59212502d45b1',1,'NAG.hpp']]],
   ['max_5fnum_5fslps_6',['MAX_NUM_SLPs',['../d8/da0/_n_a_g_8hpp_a3b459698b72e732226ac23564f95e69b.html#a3b459698b72e732226ac23564f95e69b',1,'NAG.hpp']]],
   ['max_5fvar_7',['MAX_VAR',['../d7/daf/_exponent_list_8cpp_adf2d7fec5bf033328e64fdedea22e341.html#adf2d7fec5bf033328e64fdedea22e341',1,'ExponentList.cpp']]],

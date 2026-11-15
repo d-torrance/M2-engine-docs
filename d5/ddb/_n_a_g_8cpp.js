@@ -20,5 +20,7 @@ var _n_a_g_8cpp =
     [ "rawRefinePT", "d5/ddb/_n_a_g_8cpp_ab1aedd27e25d476c92acab8f45a90595.html#ab1aedd27e25d476c92acab8f45a90595", null ],
     [ "rawSetParametersPT", "d5/ddb/_n_a_g_8cpp_a144f6c640f53c40cce1148d368b79ba7.html#a144f6c640f53c40cce1148d368b79ba7", null ],
     [ "solve_via_lapack", "d5/ddb/_n_a_g_8cpp_a561f4f4a11f716a1f9db494b58c21faf.html#a561f4f4a11f716a1f9db494b58c21faf", null ],
-    [ "solve_via_lapack_without_transposition", "d5/ddb/_n_a_g_8cpp_abd7f9525036738b3fb62270e9e9d6b46.html#abd7f9525036738b3fb62270e9e9d6b46", null ]
+    [ "solve_via_lapack_without_transposition", "d5/ddb/_n_a_g_8cpp_abd7f9525036738b3fb62270e9e9d6b46.html#abd7f9525036738b3fb62270e9e9d6b46", null ],
+    [ "SLP< Field >::catalog", "d5/ddb/_n_a_g_8cpp_a482ae8c4fc6c7eb2ffc8d276d99da487.html#a482ae8c4fc6c7eb2ffc8d276d99da487", null ],
+    [ "SLP< Field >::num_slps", "d5/ddb/_n_a_g_8cpp_aa32731ee425cb7c79c965a649bacd0f3.html#aa32731ee425cb7c79c965a649bacd0f3", null ]
 ];

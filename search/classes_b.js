@@ -1,8 +1,8 @@
 var searchData=
 [
   ['lapack_0',['Lapack',['../df/dd6/class_lapack.html',1,'']]],
-  ['latticepointsnormalizresult_1',['LatticePointsNormalizResult',['../d7/d7e/struct_m2_1_1cytools_1_1_lattice_points_normaliz_result.html',1,'M2::cytools']]],
-  ['latticepointsresult_2',['LatticePointsResult',['../d0/de7/struct_m2_1_1cytools_1_1_lattice_points_result.html',1,'M2::cytools']]],
+  ['latticepointsnormalizresult_1',['LatticePointsNormalizResult',['../d0/da7/struct_lattice_points_normaliz_result.html',1,'LatticePointsNormalizResult'],['../d7/d7e/struct_m2_1_1cytools_1_1_lattice_points_normaliz_result.html',1,'M2::cytools::LatticePointsNormalizResult']]],
+  ['latticepointsresult_2',['LatticePointsResult',['../d9/d25/struct_lattice_points_result.html',1,'LatticePointsResult'],['../d0/de7/struct_m2_1_1cytools_1_1_lattice_points_result.html',1,'M2::cytools::LatticePointsResult']]],
   ['launcher_3',['Launcher',['../d7/d07/class_b_i_basis_1_1_launcher.html',1,'BIBasis']]],
   ['level_4',['Level',['../da/d4d/struct_schreyer_frame_1_1_level.html',1,'SchreyerFrame']]],
   ['lex_5',['lex',['../d2/dfa/structlex.html',1,'']]],

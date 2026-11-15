@@ -1,5 +1,9 @@
 var _lattice_points_test_8cpp =
 [
+    [ "LatticePointsResult", "d9/d25/struct_lattice_points_result.html", "d9/d25/struct_lattice_points_result" ],
+    [ "LatticePointsNormalizResult", "d0/da7/struct_lattice_points_normaliz_result.html", "d0/da7/struct_lattice_points_normaliz_result" ],
+    [ "latticePoints", "d5/d4a/_lattice_points_test_8cpp_a27db91d9837370da9e7e174bb812b1de.html#a27db91d9837370da9e7e174bb812b1de", null ],
+    [ "latticePointsNormaliz", "d5/d4a/_lattice_points_test_8cpp_a3a6da2fb371dbe07c96574808a8f7675.html#a3a6da2fb371dbe07c96574808a8f7675", null ],
     [ "TEST", "d5/d4a/_lattice_points_test_8cpp_a3bab7bba974bcd52348028433dd772ea.html#a3bab7bba974bcd52348028433dd772ea", null ],
     [ "TEST", "d5/d4a/_lattice_points_test_8cpp_a50208abd5488e4408590c81d885bfdd9.html#a50208abd5488e4408590c81d885bfdd9", null ],
     [ "TEST", "d5/d4a/_lattice_points_test_8cpp_a1a69e512d65ba6386252064be94f6d26.html#a1a69e512d65ba6386252064be94f6d26", null ],

@@ -1,8 +1,8 @@
 var namespacempfr =
 [
     [ "internal", "df/d50/namespacempfr_1_1internal.html", "df/d50/namespacempfr_1_1internal" ],
-    [ "conversion_overflow", "d3/d03/classmpfr_1_1conversion__overflow.html", "d3/d03/classmpfr_1_1conversion__overflow" ],
     [ "mpreal", "d6/df7/classmpfr_1_1mpreal.html", "d6/df7/classmpfr_1_1mpreal" ],
+    [ "conversion_overflow", "d3/d03/classmpfr_1_1conversion__overflow.html", "d3/d03/classmpfr_1_1conversion__overflow" ],
     [ "abs", "d1/d02/namespacempfr_afc874fdb8d9abcf6bb3f2fbda3f6871e.html#afc874fdb8d9abcf6bb3f2fbda3f6871e", null ],
     [ "acos", "d1/d02/namespacempfr_ab50f7ca633e0ba847eebcd0977233a3b.html#ab50f7ca633e0ba847eebcd0977233a3b", null ],
     [ "acosh", "d1/d02/namespacempfr_afaada35e47536c677a2a2bbc5a023c7e.html#afaada35e47536c677a2a2bbc5a023c7e", null ],
@@ -112,9 +112,9 @@ var namespacempfr =
     [ "lround", "d1/d02/namespacempfr_a6f14f6e9859887e519753ac5f6d68ec3.html#a6f14f6e9859887e519753ac5f6d68ec3", null ],
     [ "machine_epsilon", "d1/d02/namespacempfr_a4d2633de84f95416aad750374673e2b1.html#a4d2633de84f95416aad750374673e2b1", null ],
     [ "machine_epsilon", "d1/d02/namespacempfr_ab72db36dfba03626c173e0beb84b49e8.html#ab72db36dfba03626c173e0beb84b49e8", null ],
-    [ "max", "d1/d02/namespacempfr_a004935036c2970cebb55e20e22edb67e.html#a004935036c2970cebb55e20e22edb67e", null ],
+    [ "max", "d1/d02/namespacempfr_ae57381bd76b4ad9209851ffb3eb9903c.html#ae57381bd76b4ad9209851ffb3eb9903c", null ],
     [ "maxval", "d1/d02/namespacempfr_ac5d52f3ecbedf807efc1815b836d587e.html#ac5d52f3ecbedf807efc1815b836d587e", null ],
-    [ "min", "d1/d02/namespacempfr_a99795794b6c0ff9088d119bf301402ed.html#a99795794b6c0ff9088d119bf301402ed", null ],
+    [ "min", "d1/d02/namespacempfr_a2af1d07e9af8f34253c984e1deab55b8.html#a2af1d07e9af8f34253c984e1deab55b8", null ],
     [ "minval", "d1/d02/namespacempfr_a55c33a2e33adf3ed6f1cdca5536d8f8f.html#a55c33a2e33adf3ed6f1cdca5536d8f8f", null ],
     [ "mod", "d1/d02/namespacempfr_a72f898c4c4121c65bce3952534ec77be.html#a72f898c4c4121c65bce3952534ec77be", null ],
     [ "modf", "d1/d02/namespacempfr_ab3d576a0281f699cfe1aa186dd95522f.html#ab3d576a0281f699cfe1aa186dd95522f", null ],

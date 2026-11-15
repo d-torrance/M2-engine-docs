@@ -14,7 +14,7 @@ var class_nmi__node =
     [ "header", "d0/d1b/class_nmi__node_a65a29bd8f0fdd90bec177633799df680.html#a65a29bd8f0fdd90bec177633799df680", null ],
     [ "left", "d0/d1b/class_nmi__node_ae2befbf07282794d61187602fd3092dd.html#ae2befbf07282794d61187602fd3092dd", null ],
     [ "right", "d0/d1b/class_nmi__node_afc6cf5fea312d00f38e18facd1588fb5.html#afc6cf5fea312d00f38e18facd1588fb5", null ],
-    [ "tag", "d0/d1b/class_nmi__node_af3a80105629d0a8e901f6915dadab0e7.html#af3a80105629d0a8e901f6915dadab0e7", null ],
-    [ "val", "d0/d1b/class_nmi__node_aa00552b66c98f75d547f7093ceda8de8.html#aa00552b66c98f75d547f7093ceda8de8", null ],
+    [ "tag", "d0/d1b/class_nmi__node_a5ff57d4afcb0989f02c6305bcf00a67c.html#a5ff57d4afcb0989f02c6305bcf00a67c", null ],
+    [ "val", "d0/d1b/class_nmi__node_a4c837afe7ffac7352ff88819a8d89d26.html#a4c837afe7ffac7352ff88819a8d89d26", null ],
     [ "var", "d0/d1b/class_nmi__node_ae09a420bc38824b7a24107684db6544e.html#ae09a420bc38824b7a24107684db6544e", null ]
 ];

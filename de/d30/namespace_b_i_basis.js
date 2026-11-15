@@ -1,7 +1,7 @@
 var namespace_b_i_basis =
 [
-    [ "BooleanInvolutiveBasis", "d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis.html", "d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis" ],
     [ "FastAllocator", "d1/df2/class_b_i_basis_1_1_fast_allocator.html", "d1/df2/class_b_i_basis_1_1_fast_allocator" ],
+    [ "BooleanInvolutiveBasis", "d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis.html", "d7/d7e/class_b_i_basis_1_1_boolean_involutive_basis" ],
     [ "JanetTree", "d2/d19/class_b_i_basis_1_1_janet_tree.html", "d2/d19/class_b_i_basis_1_1_janet_tree" ],
     [ "Launcher", "d7/d07/class_b_i_basis_1_1_launcher.html", "d7/d07/class_b_i_basis_1_1_launcher" ],
     [ "Monom", "d4/d58/class_b_i_basis_1_1_monom.html", "d4/d58/class_b_i_basis_1_1_monom" ],
@@ -15,5 +15,7 @@ var namespace_b_i_basis =
     [ "SettingsManager", "dd/dbf/class_b_i_basis_1_1_settings_manager.html", "dd/dbf/class_b_i_basis_1_1_settings_manager" ],
     [ "Triple", "da/d09/class_b_i_basis_1_1_triple.html", "da/d09/class_b_i_basis_1_1_triple" ],
     [ "TSet", "d3/d5c/class_b_i_basis_1_1_t_set.html", "d3/d5c/class_b_i_basis_1_1_t_set" ],
-    [ "GetSettingsManager", "de/d30/namespace_b_i_basis_a83c38bea9fdc24752e5b0abcbe7d1b05.html#a83c38bea9fdc24752e5b0abcbe7d1b05", null ]
+    [ "GetSettingsManager", "de/d30/namespace_b_i_basis_a83c38bea9fdc24752e5b0abcbe7d1b05.html#a83c38bea9fdc24752e5b0abcbe7d1b05", null ],
+    [ "Polynom< MonomType >::Allocator", "de/d30/namespace_b_i_basis_ad4c7f13a40454d473babca6397a6f02b.html#ad4c7f13a40454d473babca6397a6f02b", null ],
+    [ "Polynom< MonomType >::UniteMonom", "de/d30/namespace_b_i_basis_a51c2400bb330b50a038dfbd6151d084d.html#a51c2400bb330b50a038dfbd6151d084d", null ]
 ];

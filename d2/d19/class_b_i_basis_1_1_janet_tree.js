@@ -1,8 +1,8 @@
 var class_b_i_basis_1_1_janet_tree =
 [
+    [ "Node", "df/da3/struct_b_i_basis_1_1_janet_tree_1_1_node.html", "df/da3/struct_b_i_basis_1_1_janet_tree_1_1_node" ],
     [ "ConstIterator", "df/da9/class_b_i_basis_1_1_janet_tree_1_1_const_iterator.html", "df/da9/class_b_i_basis_1_1_janet_tree_1_1_const_iterator" ],
     [ "Iterator", "d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator.html", "d3/d61/class_b_i_basis_1_1_janet_tree_1_1_iterator" ],
-    [ "Node", "df/da3/struct_b_i_basis_1_1_janet_tree_1_1_node.html", "df/da3/struct_b_i_basis_1_1_janet_tree_1_1_node" ],
     [ "JanetTree", "d2/d19/class_b_i_basis_1_1_janet_tree_a104f9d340719181d8eb27f9e70bd195b.html#a104f9d340719181d8eb27f9e70bd195b", null ],
     [ "~JanetTree", "d2/d19/class_b_i_basis_1_1_janet_tree_aa20eed73a393647ca7b48207b41306ac.html#aa20eed73a393647ca7b48207b41306ac", null ],
     [ "Clear", "d2/d19/class_b_i_basis_1_1_janet_tree_a07594e495f4747db9ff4da9ab14b256c.html#a07594e495f4747db9ff4da9ab14b256c", null ],

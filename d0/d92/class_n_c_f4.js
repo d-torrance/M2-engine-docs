@@ -1,13 +1,13 @@
 var class_n_c_f4 =
 [
-    [ "Column", "d8/dcb/struct_n_c_f4_1_1_column.html", "d8/dcb/struct_n_c_f4_1_1_column" ],
-    [ "NCF4Stats", "d8/df0/struct_n_c_f4_1_1_n_c_f4_stats.html", "d8/df0/struct_n_c_f4_1_1_n_c_f4_stats" ],
     [ "PreRow", "df/d6f/struct_n_c_f4_1_1_pre_row.html", "df/d6f/struct_n_c_f4_1_1_pre_row" ],
     [ "Row", "d8/d29/struct_n_c_f4_1_1_row.html", "d8/d29/struct_n_c_f4_1_1_row" ],
+    [ "Column", "d8/dcb/struct_n_c_f4_1_1_column.html", "d8/dcb/struct_n_c_f4_1_1_column" ],
+    [ "NCF4Stats", "d8/df0/struct_n_c_f4_1_1_n_c_f4_stats.html", "d8/df0/struct_n_c_f4_1_1_n_c_f4_stats" ],
     [ "ColumnsVector", "d0/d92/class_n_c_f4_acac1e113bb3a0b6f9c197172e4268206.html#acac1e113bb3a0b6f9c197172e4268206", null ],
     [ "MonomialHash", "d0/d92/class_n_c_f4_a61de8bda25502ffd11f14794c65718f1.html#a61de8bda25502ffd11f14794c65718f1", null ],
     [ "PreRowFeeder", "d0/d92/class_n_c_f4_a29aed07e436ffd6d9dcf11de82a4d0e0.html#a29aed07e436ffd6d9dcf11de82a4d0e0", null ],
-    [ "RowsVector", "d0/d92/class_n_c_f4_a87f6bbcc77500dabf881ea8a64382c10.html#a87f6bbcc77500dabf881ea8a64382c10", null ],
+    [ "RowsVector", "d0/d92/class_n_c_f4_a7b69e8119a5575c8d1eda37a9a232876.html#a7b69e8119a5575c8d1eda37a9a232876", null ],
     [ "PreRowType", "d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40", [
       [ "ReducerPreRow", "d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40ab2af009459984d359f5e64f8a1d92655", null ],
       [ "OverlapPreRow", "d0/d92/class_n_c_f4_a51df58acce453ffcd976d4bdfb5e8d40.html#a51df58acce453ffcd976d4bdfb5e8d40a8c937e82dbbfc9c9651ff09f66ec7667", null ],

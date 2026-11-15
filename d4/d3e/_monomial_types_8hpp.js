@@ -1,9 +1,9 @@
 var _monomial_types_8hpp =
 [
-    [ "ComponentIndex", "d4/d3e/_monomial_types_8hpp.html#a9c63eff160edfbf313b35025dd3f6d8f", null ],
-    [ "HashInt", "d4/d3e/_monomial_types_8hpp.html#aa3033eff96fc49a7330f9cdf71270848", null ],
-    [ "Index", "d4/d3e/_monomial_types_8hpp.html#a292dfd02556ea38ec7a1e671eb22550a", null ],
-    [ "MonomialIndex", "d4/d3e/_monomial_types_8hpp.html#aa53c22a18387a790899581022df4b433", null ],
-    [ "MonomialInt", "d4/d3e/_monomial_types_8hpp.html#a32041ac7b6f89f7d5bd6973a45ab9eb7", null ],
-    [ "MonomialMask", "d4/d3e/_monomial_types_8hpp.html#aed55435a08f3392ccfd373b510a01d2e", null ]
+    [ "newf4::ComponentIndex", "da/db5/namespacenewf4_a7d1132cbbbc46ccb470b32940b1ed4fa.html#a7d1132cbbbc46ccb470b32940b1ed4fa", null ],
+    [ "newf4::HashInt", "da/db5/namespacenewf4_a31d40ce79f2399c9bf4f0c3846f6e04a.html#a31d40ce79f2399c9bf4f0c3846f6e04a", null ],
+    [ "newf4::Index", "da/db5/namespacenewf4_a365f1a6336bfa6a997de0b85c2e3e195.html#a365f1a6336bfa6a997de0b85c2e3e195", null ],
+    [ "newf4::MonomialIndex", "da/db5/namespacenewf4_aba19c95e568814516ee6fac87ffeaee2.html#aba19c95e568814516ee6fac87ffeaee2", null ],
+    [ "newf4::MonomialInt", "da/db5/namespacenewf4_af26c6bab86460d2ca94e3ba54f65eac2.html#af26c6bab86460d2ca94e3ba54f65eac2", null ],
+    [ "newf4::MonomialMask", "da/db5/namespacenewf4_afd3339ebe18e9dc2d4e025b6ca053ec6.html#afd3339ebe18e9dc2d4e025b6ca053ec6", null ]
 ];

@@ -2,6 +2,7 @@ var class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4 =
 [
     [ "ACoeffRing", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a858301e6946062be8c5b010575faa69f.html#a858301e6946062be8c5b010575faa69f", null ],
     [ "CoeffRing", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_ac3053269505723b9527fb0a7fbc08b1d.html#ac3053269505723b9527fb0a7fbc08b1d", null ],
+    [ "Element", "da/dc3/class_d_mat_ab01d6e06ca7c9ba9ba767ab3947e2de0.html#ab01d6e06ca7c9ba9ba767ab3947e2de0", null ],
     [ "ElementType", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a5a11d32733ff3420e4baa63ce2677d93.html#a5a11d32733ff3420e4baa63ce2677d93", null ],
     [ "DMat", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a0b970a1a7d22f203aacfc6358fd083ab.html#a0b970a1a7d22f203aacfc6358fd083ab", null ],
     [ "DMat", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a4daaa9881b58414928b5aedc351a15e1.html#a4daaa9881b58414928b5aedc351a15e1", null ],
@@ -15,9 +16,13 @@ var class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4 =
     [ "numRows", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a40597a7a471a9a654974b50e1be1ee60.html#a40597a7a471a9a654974b50e1be1ee60", null ],
     [ "resize", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a1a8f0233f6087ab1827c9c4332050055.html#a1a8f0233f6087ab1827c9c4332050055", null ],
     [ "ring", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a68c3b8749decf647950a172d5c589b52.html#a68c3b8749decf647950a172d5c589b52", null ],
+    [ "rowMajorArray", "da/dc3/class_d_mat_aea59563009327a673da4d7321f520e35.html#aea59563009327a673da4d7321f520e35", null ],
     [ "swap", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a79db652c9a64d68055b94554f95cd324.html#a79db652c9a64d68055b94554f95cd324", null ],
     [ "unsafeArray", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a967a2de1b41a7e9f5046d1b341458863.html#a967a2de1b41a7e9f5046d1b341458863", null ],
     [ "unsafeArray", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a4881319bad0332299057a3e0685a9f0f.html#a4881319bad0332299057a3e0685a9f0f", null ],
     [ "mArray", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a7b1e3cf8f9349a79796e1715d3e42cc2.html#a7b1e3cf8f9349a79796e1715d3e42cc2", null ],
-    [ "mRing", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a526f5575f9fc70bad63d6e0b9ae2ab46.html#a526f5575f9fc70bad63d6e0b9ae2ab46", null ]
+    [ "mNumColumns", "da/dc3/class_d_mat_a2a075af3a9dd6d0509df6b7a46318746.html#a2a075af3a9dd6d0509df6b7a46318746", null ],
+    [ "mNumRows", "da/dc3/class_d_mat_a6d1ff369db27b5aa3b2a8c98e50ce907.html#a6d1ff369db27b5aa3b2a8c98e50ce907", null ],
+    [ "mRing", "d2/da8/class_d_mat_3_01_m2_1_1_a_ring_z_z_01_4_a526f5575f9fc70bad63d6e0b9ae2ab46.html#a526f5575f9fc70bad63d6e0b9ae2ab46", null ],
+    [ "mRowPointers", "da/dc3/class_d_mat_a38f628377c19730bf5388a467ee7561a.html#a38f628377c19730bf5388a467ee7561a", null ]
 ];

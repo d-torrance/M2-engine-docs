@@ -5,7 +5,7 @@ var monomial_collection_8hpp =
     [ "ModuleMonomEq", "d7/dd4/class_module_monom_eq.html", "d7/dd4/class_module_monom_eq" ],
     [ "ModuleMonomDefaultConfigOrig", "dd/d04/class_module_monom_default_config_orig.html", "dd/d04/class_module_monom_default_config_orig" ],
     [ "ModuleMonomDefaultConfig", "d0/df9/class_module_monom_default_config.html", "d0/df9/class_module_monom_default_config" ],
-    [ "IntsSet< Configuration >", "dc/dd8/class_ints_set.html", "dc/dd8/class_ints_set" ],
+    [ "IntsSet&lt; Configuration &gt;", "dc/dd8/class_ints_set.html", "dc/dd8/class_ints_set" ],
     [ "ModuleMonomialSet", "d3/d60/monomial-collection_8hpp_a3ff66fa0172547637ea18786761e8241.html#a3ff66fa0172547637ea18786761e8241", null ],
     [ "operator<<", "d3/d60/monomial-collection_8hpp_a988ceb02c6ac96ebac9cc45101ef2645.html#a988ceb02c6ac96ebac9cc45101ef2645", null ],
     [ "PRINT_ELEMENTS", "d3/d60/monomial-collection_8hpp_ae2d5a7b8a878b1841b7fedcacd32d1b3.html#ae2d5a7b8a878b1841b7fedcacd32d1b3", null ],
