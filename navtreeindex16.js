@@ -1,12 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"d4/d20/structlocal__elem.html":[5,0,169],
-"d4/d20/structlocal__elem_a398f2508d5dd3c9032578a7ef31a2214.html#a398f2508d5dd3c9032578a7ef31a2214":[5,0,169,1],
-"d4/d20/structlocal__elem_aa47f44be56afa9ff7d04cc589c89e5a5.html#aa47f44be56afa9ff7d04cc589c89e5a5":[5,0,169,0],
-"d4/d23/dpoly_8cpp.html":[6,0,0,0,19,0],
-"d4/d23/dpoly_8cpp_a11987044555d1530ddbe5e81a94aa94e.html#a11987044555d1530ddbe5e81a94aa94e":[6,0,0,0,19,0,9],
-"d4/d23/dpoly_8cpp_a4c9ebcbf6ffd685b701190a7740640b8.html#a4c9ebcbf6ffd685b701190a7740640b8":[6,0,0,0,19,0,5],
-"d4/d23/dpoly_8cpp_a4deffad5cd385f1e583b4b9309b66813.html#a4deffad5cd385f1e583b4b9309b66813":[6,0,0,0,19,0,6],
 "d4/d23/dpoly_8cpp_a79ac923d61d8281dc6259934ef644006.html#a79ac923d61d8281dc6259934ef644006":[6,0,0,0,19,0,0],
 "d4/d23/dpoly_8cpp_a807d6f34b589b7e024561a56fab03386.html#a807d6f34b589b7e024561a56fab03386":[6,0,0,0,19,0,1],
 "d4/d23/dpoly_8cpp_a88b1fa1be148af7af651f86d908cacbb.html#a88b1fa1be148af7af651f86d908cacbb":[6,0,0,0,19,0,11],
@@ -39,9 +32,9 @@ var NAVTREEINDEX16 =
 "d4/d33/geovec_8hpp_source.html":[6,0,0,0,19,6],
 "d4/d37/_g_f_8hpp.html":[6,0,0,0,19,8],
 "d4/d37/_g_f_8hpp_source.html":[6,0,0,0,19,8],
-"d4/d38/monordering_8hpp.html":[6,0,0,0,11,13],
-"d4/d38/monordering_8hpp_ac8e6aec63b8db19052ae6ed45d4540f0.html#ac8e6aec63b8db19052ae6ed45d4540f0":[6,0,0,0,11,13,1],
-"d4/d38/monordering_8hpp_source.html":[6,0,0,0,11,13],
+"d4/d38/monordering_8hpp.html":[6,0,0,0,11,14],
+"d4/d38/monordering_8hpp_ac8e6aec63b8db19052ae6ed45d4540f0.html#ac8e6aec63b8db19052ae6ed45d4540f0":[6,0,0,0,11,14,1],
+"d4/d38/monordering_8hpp_source.html":[6,0,0,0,11,14],
 "d4/d3a/_s_l_p_8cpp.html":[6,0,0,0,22,2],
 "d4/d3a/_s_l_p_8cpp_source.html":[6,0,0,0,22,2],
 "d4/d3d/_s_pairs_8hpp.html":[6,0,0,0,7,18],
@@ -249,5 +242,12 @@ var NAVTREEINDEX16 =
 "d4/d89/lattice__points_8hpp.html":[6,0,0,0,4,9],
 "d4/d89/lattice__points_8hpp_source.html":[6,0,0,0,4,9],
 "d4/d92/class_schreyer_order.html":[5,0,322],
-"d4/d92/class_schreyer_order_a0b0c8135b7d6fc921b94b5b838446d91.html#a0b0c8135b7d6fc921b94b5b838446d91":[5,0,322,3]
+"d4/d92/class_schreyer_order_a0b0c8135b7d6fc921b94b5b838446d91.html#a0b0c8135b7d6fc921b94b5b838446d91":[5,0,322,3],
+"d4/d92/class_schreyer_order_a1a1b42bb5a9f479c35ab3bec03ba01ab.html#a1a1b42bb5a9f479c35ab3bec03ba01ab":[5,0,322,25],
+"d4/d92/class_schreyer_order_a290ad66df8330f298002757d76c57592.html#a290ad66df8330f298002757d76c57592":[5,0,322,24],
+"d4/d92/class_schreyer_order_a290c78a741cebb0f30712d002845dea2.html#a290c78a741cebb0f30712d002845dea2":[5,0,322,17],
+"d4/d92/class_schreyer_order_a2c118e53f9fdebc14c1c55545d18af09.html#a2c118e53f9fdebc14c1c55545d18af09":[5,0,322,13],
+"d4/d92/class_schreyer_order_a3208fb78670aa565bdb57b28a3d36c2c.html#a3208fb78670aa565bdb57b28a3d36c2c":[5,0,322,7],
+"d4/d92/class_schreyer_order_a36106f60d98ac77110e8b8beb0114792.html#a36106f60d98ac77110e8b8beb0114792":[5,0,322,11],
+"d4/d92/class_schreyer_order_a3ede03c89f6de48af0dfbceccfe9d430.html#a3ede03c89f6de48af0dfbceccfe9d430":[5,0,322,2]
 };

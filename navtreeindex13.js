@@ -1,15 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"d3/d42/class_d_poly_a1870403a62e5878c85eaca64f575e9f8.html#a1870403a62e5878c85eaca64f575e9f8":[3,0,2,2,42],
-"d3/d42/class_d_poly_a18d6cc101ee86a8db644b988bc2c25ba.html#a18d6cc101ee86a8db644b988bc2c25ba":[3,0,2,2,68],
-"d3/d42/class_d_poly_a1ba2665f6bf03d9146267f5153124bc2.html#a1ba2665f6bf03d9146267f5153124bc2":[3,0,2,2,57],
-"d3/d42/class_d_poly_a210d2eeeaecf38259887816043c1a822.html#a210d2eeeaecf38259887816043c1a822":[3,0,2,2,7],
-"d3/d42/class_d_poly_a232da3095c55b911f62ad03f3b9df108.html#a232da3095c55b911f62ad03f3b9df108":[3,0,2,2,47],
-"d3/d42/class_d_poly_a273334e06cb4624ff90d202fd68d5ddb.html#a273334e06cb4624ff90d202fd68d5ddb":[3,0,2,2,54],
-"d3/d42/class_d_poly_a289de7ac1f07c1a5f68eea5c58d214f5.html#a289de7ac1f07c1a5f68eea5c58d214f5":[3,0,2,2,51],
-"d3/d42/class_d_poly_a2f56942fe6577e7c42bae14c3736f3c5.html#a2f56942fe6577e7c42bae14c3736f3c5":[3,0,2,2,10],
-"d3/d42/class_d_poly_a319303b982dc70c41000829862673ef5.html#a319303b982dc70c41000829862673ef5":[3,0,2,2,1],
-"d3/d42/class_d_poly_a34777f03671ca38ee96502a9c27d84cd.html#a34777f03671ca38ee96502a9c27d84cd":[3,0,2,2,16],
 "d3/d42/class_d_poly_a35d1e0a7f445d460ea02f0e73561f2bb.html#a35d1e0a7f445d460ea02f0e73561f2bb":[3,0,2,2,63],
 "d3/d42/class_d_poly_a3742f8db2692d89b615216334978e878.html#a3742f8db2692d89b615216334978e878":[3,0,2,2,70],
 "d3/d42/class_d_poly_a3c1566e0129d8351fee99a821e2c3615.html#a3c1566e0129d8351fee99a821e2c3615":[3,0,2,2,31],
@@ -91,8 +81,8 @@ var NAVTREEINDEX13 =
 "d3/d4a/structmpfr_1_1internal_1_1result__type_3_01mpreal_01_4.html":[5,0,3,0,1],
 "d3/d4a/structmpfr_1_1internal_1_1result__type_3_01mpreal_01_4_a93829229088337909346602fe503bbb0.html#a93829229088337909346602fe503bbb0":[4,0,6,0,1,0],
 "d3/d4a/structmpfr_1_1internal_1_1result__type_3_01mpreal_01_4_a93829229088337909346602fe503bbb0.html#a93829229088337909346602fe503bbb0":[5,0,3,0,1,0],
-"d3/d55/montable_z_z_8hpp.html":[6,0,0,0,11,19],
-"d3/d55/montable_z_z_8hpp_source.html":[6,0,0,0,11,19],
+"d3/d55/montable_z_z_8hpp.html":[6,0,0,0,11,20],
+"d3/d55/montable_z_z_8hpp_source.html":[6,0,0,0,11,20],
 "d3/d57/class_memory_block.html":[5,0,193],
 "d3/d57/class_memory_block_a18a3ac120f1cf2669df90751df54a613.html#a18a3ac120f1cf2669df90751df54a613":[5,0,193,4],
 "d3/d57/class_memory_block_a1af2edbe97a10dcf54f8b8b631d608ef.html#a1af2edbe97a10dcf54f8b8b631d608ef":[5,0,193,1],
@@ -249,5 +239,15 @@ var NAVTREEINDEX13 =
 "d3/d7a/class_matrix_constructor_a311858d44ddec547261944efff8a2d06.html#a311858d44ddec547261944efff8a2d06":[3,2,1,6],
 "d3/d7a/class_matrix_constructor_a418a0d0eb18db95c00be9bf1999fdedc.html#a418a0d0eb18db95c00be9bf1999fdedc":[3,2,1,2],
 "d3/d7a/class_matrix_constructor_a66338637400fc34b573d35d09649ba86.html#a66338637400fc34b573d35d09649ba86":[3,2,1,9],
-"d3/d7a/class_matrix_constructor_a6ba8ad8779ae7c3d54cc8e33df4be327.html#a6ba8ad8779ae7c3d54cc8e33df4be327":[3,2,1,15]
+"d3/d7a/class_matrix_constructor_a6ba8ad8779ae7c3d54cc8e33df4be327.html#a6ba8ad8779ae7c3d54cc8e33df4be327":[3,2,1,15],
+"d3/d7a/class_matrix_constructor_a6cac2dfdd6d7e76cb4be7ce3862fcaf6.html#a6cac2dfdd6d7e76cb4be7ce3862fcaf6":[3,2,1,3],
+"d3/d7a/class_matrix_constructor_a719118a871e65c356db8ea6ce844d6ce.html#a719118a871e65c356db8ea6ce844d6ce":[3,2,1,10],
+"d3/d7a/class_matrix_constructor_a82cd5af150336ac9a4cb9c5670e4c0ea.html#a82cd5af150336ac9a4cb9c5670e4c0ea":[3,2,1,4],
+"d3/d7a/class_matrix_constructor_a8bf39add6186eddbfee5c00d357eb42f.html#a8bf39add6186eddbfee5c00d357eb42f":[3,2,1,7],
+"d3/d7a/class_matrix_constructor_aa8054180ed82e06d84d6ad190c8062e2.html#aa8054180ed82e06d84d6ad190c8062e2":[3,2,1,0],
+"d3/d7a/class_matrix_constructor_ac6c2e0c52452ce346de61918511be7e7.html#ac6c2e0c52452ce346de61918511be7e7":[3,2,1,11],
+"d3/d7a/class_matrix_constructor_ac740b10a84a3ba4d3e910dd7ae3a16bb.html#ac740b10a84a3ba4d3e910dd7ae3a16bb":[3,2,1,8],
+"d3/d7a/class_matrix_constructor_ac77f4b54729dae9555130631d866f3ba.html#ac77f4b54729dae9555130631d866f3ba":[3,2,1,1],
+"d3/d7a/class_matrix_constructor_ad4a49ae607ed9bd913a4b7976a9d22f7.html#ad4a49ae607ed9bd913a4b7976a9d22f7":[3,2,1,13],
+"d3/d7a/class_matrix_constructor_addae00d99ef00f3584e4861f22152eb0.html#addae00d99ef00f3584e4861f22152eb0":[3,2,1,16]
 };

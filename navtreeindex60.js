@@ -1,5 +1,11 @@
 var NAVTREEINDEX60 =
 {
+"df/dd6/class_lapack_ae74929f5765934037c3f3f8551c83754.html#ae74929f5765934037c3f3f8551c83754":[5,0,164,28],
+"df/dd6/class_lapack_ae85ead8d2367ef4fa7fdb3c485a8b907.html#ae85ead8d2367ef4fa7fdb3c485a8b907":[5,0,164,3],
+"df/dd6/class_lapack_ae8b10ebb47dd9df4fb4117f08be717ab.html#ae8b10ebb47dd9df4fb4117f08be717ab":[5,0,164,20],
+"df/dd6/class_lapack_aebe1abd61e93256a3ddd1d139f8f2a9a.html#aebe1abd61e93256a3ddd1d139f8f2a9a":[5,0,164,18],
+"df/dd6/class_lapack_af7d6c27c379f82c1fba790462e3d5a44.html#af7d6c27c379f82c1fba790462e3d5a44":[5,0,164,24],
+"df/dd6/class_lapack_afdd7668545160c61895bc35b9fc24605.html#afdd7668545160c61895bc35b9fc24605":[5,0,164,35],
 "df/dd9/res-schreyer-frame_8hpp.html":[6,0,0,0,20,23],
 "df/dd9/res-schreyer-frame_8hpp_source.html":[6,0,0,0,20,23],
 "df/ddb/class_monomial_ideal.html":[5,0,215],
@@ -243,11 +249,5 @@ var NAVTREEINDEX60 =
 "functions_vars_q.html":[5,3,2,17],
 "functions_vars_r.html":[5,3,2,18],
 "functions_vars_s.html":[5,3,2,19],
-"functions_vars_t.html":[5,3,2,20],
-"functions_vars_u.html":[5,3,2,21],
-"functions_vars_v.html":[5,3,2,22],
-"functions_vars_w.html":[5,3,2,23],
-"functions_vars_x.html":[5,3,2,24],
-"functions_vars_y.html":[5,3,2,25],
-"functions_vars_z.html":[5,3,2,26]
+"functions_vars_t.html":[5,3,2,20]
 };

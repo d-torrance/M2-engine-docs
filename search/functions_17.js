@@ -23,7 +23,5 @@ var searchData=
   ['wordweight_20',['wordWeight',['../dc/da6/class_free_monoid_a10885378b575a7862b4da3390be2a599.html#a10885378b575a7862b4da3390be2a599',1,'FreeMonoid']]],
   ['wordwithdata_21',['WordWithData',['../d2/d05/class_word_with_data_a4b70338a48eee86db04d28dc3dd28d13.html#a4b70338a48eee86db04d28dc3dd28d13',1,'WordWithData::WordWithData()'],['../d2/d05/class_word_with_data_a63ca8c6336ba6a027ac6682198fdc7d3.html#a63ca8c6336ba6a027ac6682198fdc7d3',1,'WordWithData::WordWithData(const int *begin, const int *end, int ecartDegree, int heftDegree)']]],
   ['wordwithdatatable_22',['WordWithDataTable',['../dd/d60/class_word_with_data_table_a17339754793154c3b91b547ff876539b.html#a17339754793154c3b91b547ff876539b',1,'WordWithDataTable']]],
-  ['wrapperfrobbyalexanderdual_23',['wrapperFrobbyAlexanderDual',['../d9/db6/monomial-ideal_8cpp_a0c99b1bfe85ace39ed31c13a9d025988.html#a0c99b1bfe85ace39ed31c13a9d025988',1,'monomial-ideal.cpp']]],
-  ['write_5frow_24',['write_row',['../d1/df6/monomial-ordering_8cpp_a4a08ed997ffe4ea6f8424401fc6112bf.html#a4a08ed997ffe4ea6f8424401fc6112bf',1,'monomial-ordering.cpp']]],
-  ['write_5fweights_25',['write_weights',['../d1/df6/monomial-ordering_8cpp_a321ce80a4888d1d505bc7b5e9e7ab5f1.html#a321ce80a4888d1d505bc7b5e9e7ab5f1',1,'monomial-ordering.cpp']]]
+  ['wrapperfrobbyalexanderdual_23',['wrapperFrobbyAlexanderDual',['../d9/db6/monomial-ideal_8cpp_a0c99b1bfe85ace39ed31c13a9d025988.html#a0c99b1bfe85ace39ed31c13a9d025988',1,'monomial-ideal.cpp']]]
 ];

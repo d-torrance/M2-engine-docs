@@ -1,5 +1,11 @@
 var NAVTREEINDEX40 =
 {
+"da/d01/classdoubling__stash_af3d73df22e2bdde7a2c6822403dc5a48.html#af3d73df22e2bdde7a2c6822403dc5a48":[5,0,58,3],
+"da/d09/class_b_i_basis_1_1_triple.html":[4,0,0,13],
+"da/d09/class_b_i_basis_1_1_triple.html":[5,0,0,13],
+"da/d09/class_b_i_basis_1_1_triple_a13b57ddc86c7a10457440058fffb5679.html#a13b57ddc86c7a10457440058fffb5679":[4,0,0,13,9],
+"da/d09/class_b_i_basis_1_1_triple_a13b57ddc86c7a10457440058fffb5679.html#a13b57ddc86c7a10457440058fffb5679":[5,0,0,13,9],
+"da/d09/class_b_i_basis_1_1_triple_a182d4f2d6c02147dfcd882b57f4b8301.html#a182d4f2d6c02147dfcd882b57f4b8301":[4,0,0,13,6],
 "da/d09/class_b_i_basis_1_1_triple_a182d4f2d6c02147dfcd882b57f4b8301.html#a182d4f2d6c02147dfcd882b57f4b8301":[5,0,0,13,6],
 "da/d09/class_b_i_basis_1_1_triple_a32436e467e8f0f7b093b6b2fea5c0e00.html#a32436e467e8f0f7b093b6b2fea5c0e00":[4,0,0,13,12],
 "da/d09/class_b_i_basis_1_1_triple_a32436e467e8f0f7b093b6b2fea5c0e00.html#a32436e467e8f0f7b093b6b2fea5c0e00":[5,0,0,13,12],
@@ -243,11 +249,5 @@ var NAVTREEINDEX40 =
 "da/d48/class_m2_1_1_a_ring_tower_a217d63badc74661c24f82268447b420e.html#a217d63badc74661c24f82268447b420e":[3,0,15,15],
 "da/d48/class_m2_1_1_a_ring_tower_a24ad2630738dd353d65cb1308759f8ca.html#a24ad2630738dd353d65cb1308759f8ca":[3,0,15,18],
 "da/d48/class_m2_1_1_a_ring_tower_a2a6f831d2673929fd3ffdf4cc3960846.html#a2a6f831d2673929fd3ffdf4cc3960846":[3,0,15,60],
-"da/d48/class_m2_1_1_a_ring_tower_a2febb48bda66d2a3f150a8591c7e1967.html#a2febb48bda66d2a3f150a8591c7e1967":[3,0,15,52],
-"da/d48/class_m2_1_1_a_ring_tower_a3193fda24a34681a3cfc631059f0d2e2.html#a3193fda24a34681a3cfc631059f0d2e2":[3,0,15,23],
-"da/d48/class_m2_1_1_a_ring_tower_a38231ea8fcbaf31d1db3002f31728074.html#a38231ea8fcbaf31d1db3002f31728074":[3,0,15,70],
-"da/d48/class_m2_1_1_a_ring_tower_a3d7f4bf454b3d8de60cbc966c3533a31.html#a3d7f4bf454b3d8de60cbc966c3533a31":[3,0,15,72],
-"da/d48/class_m2_1_1_a_ring_tower_a3ef665836d2e2452a9023fd6c2ab7d91.html#a3ef665836d2e2452a9023fd6c2ab7d91":[3,0,15,49],
-"da/d48/class_m2_1_1_a_ring_tower_a3feea750428bc7b933c17c51dfb68624.html#a3feea750428bc7b933c17c51dfb68624":[3,0,15,12],
-"da/d48/class_m2_1_1_a_ring_tower_a485ad88771a14a1c3f4c9974b8db9bdf.html#a485ad88771a14a1c3f4c9974b8db9bdf":[3,0,15,43]
+"da/d48/class_m2_1_1_a_ring_tower_a2febb48bda66d2a3f150a8591c7e1967.html#a2febb48bda66d2a3f150a8591c7e1967":[3,0,15,52]
 };

@@ -111,13 +111,9 @@ $(function(){initNavTree('d7/d7c/class_monomial_orderings_a9a5d7d75ef6fd16b96ec6
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/df6/monomial-ordering_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../d1/df6/monomial-ordering_8cpp_source.html">monomial-ordering.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  117</span>{</div>
-<div class="line"><span class="lineno">  118</span>  std::vector&lt;int&gt; w;</div>
-<div class="line"><span class="lineno">  119</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nvars; i++) w.push_back(1);</div>
-<div class="line"><span class="lineno">  120</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#a9a5d7d75ef6fd16b96ec638995657323">GRevLex4</a>(w);</div>
-<div class="line"><span class="lineno">  121</span>}</div>
-<div class="ttc" id="aclass_monomial_orderings_a9a5d7d75ef6fd16b96ec638995657323_html_a9a5d7d75ef6fd16b96ec638995657323"><div class="ttname"><a href="#a9a5d7d75ef6fd16b96ec638995657323">MonomialOrderings::GRevLex4</a></div><div class="ttdeci">static MonomialOrdering * GRevLex4(int nvars)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/df6/monomial-ordering_8cpp_source.html#l00116">monomial-ordering.cpp:116</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d80/monordering_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../d3/d80/monordering_8cpp_source.html">monordering.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  124</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#a9a5d7d75ef6fd16b96ec638995657323">GRevLex4</a>(std::vector&lt;int&gt;(nvars, 1)); }</div>
+<div class="ttc" id="aclass_monomial_orderings_a9a5d7d75ef6fd16b96ec638995657323_html_a9a5d7d75ef6fd16b96ec638995657323"><div class="ttname"><a href="#a9a5d7d75ef6fd16b96ec638995657323">MonomialOrderings::GRevLex4</a></div><div class="ttdeci">static MonomialOrdering * GRevLex4(int nvars)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d80/monordering_8cpp_source.html#l00124">monordering.cpp:124</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a9a5d7d75ef6fd16b96ec638995657323">GRevLex4()</a>.</p>
 

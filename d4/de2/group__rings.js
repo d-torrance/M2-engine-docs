@@ -1079,6 +1079,7 @@ var group__rings =
       [ "coerceToNonnegativeLongInteger", "d6/d13/class_m2_1_1_a_ring_z_zp_ad2a8b25714df3560e614ccf893e5c224.html#ad2a8b25714df3560e614ccf893e5c224", null ],
       [ "compare_elems", "d6/d13/class_m2_1_1_a_ring_z_zp_af73b88783e4edb520bf6f751cc170767.html#af73b88783e4edb520bf6f751cc170767", null ],
       [ "computeHashValue", "d6/d13/class_m2_1_1_a_ring_z_zp_a39edba0d1ec30e3e5d2143ad4f04c10e.html#a39edba0d1ec30e3e5d2143ad4f04c10e", null ],
+      [ "copy", "d6/d13/class_m2_1_1_a_ring_z_zp_a725e74d68124c2ea1de0c6d5a3485a56.html#a725e74d68124c2ea1de0c6d5a3485a56", null ],
       [ "divide", "d6/d13/class_m2_1_1_a_ring_z_zp_ad1803d2b9feefa5d83df39033be9fda0.html#ad1803d2b9feefa5d83df39033be9fda0", null ],
       [ "elem_text_out", "d6/d13/class_m2_1_1_a_ring_z_zp_a6b0820a61a850c54364ef48d0fe14a52.html#a6b0820a61a850c54364ef48d0fe14a52", null ],
       [ "eval", "d6/d13/class_m2_1_1_a_ring_z_zp_af9ad1acef41c14c9792fbfbb9a513908.html#af9ad1acef41c14c9792fbfbb9a513908", null ],
@@ -1140,7 +1141,8 @@ var group__rings =
         [ "operator[]", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array_ab5298c09be8f19380290e92baf5c2216.html#ab5298c09be8f19380290e92baf5c2216", null ],
         [ "mData", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array_ac210298f90699b6d08d8f0c7abc412ee.html#ac210298f90699b6d08d8f0c7abc412ee", null ],
         [ "mSize", "d2/dae/class_m2_1_1_simple_a_ring_1_1_element_array_a02fabcbb13ad7fa8b323d1109f44e74d.html#a02fabcbb13ad7fa8b323d1109f44e74d", null ]
-      ] ]
+      ] ],
+      [ "copy", "de/db5/class_m2_1_1_simple_a_ring_a0e40253cec70f19d3f5fefd1a88ab86b.html#a0e40253cec70f19d3f5fefd1a88ab86b", null ]
     ] ],
     [ "GF", "d1/d35/class_g_f.html", [
       [ "GF", "d1/d35/class_g_f_ac4d6faaca82a84382b803d3f7a137349.html#ac4d6faaca82a84382b803d3f7a137349", null ],

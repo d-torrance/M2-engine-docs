@@ -1,12 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"d3/dcd/matrices_2matrix_8cpp_ab98e0e3a363839f466cfbc454ee61917.html#ab98e0e3a363839f466cfbc454ee61917":[6,0,0,0,10,9,3],
-"d3/dcd/matrices_2matrix_8cpp_source.html":[6,0,0,0,10,9],
-"d3/dd1/_quotient_ring_test_8cpp.html":[6,0,0,0,23,26],
-"d3/dd1/_quotient_ring_test_8cpp_a52c8f67cf745b246dff09f8a42867a5d.html#a52c8f67cf745b246dff09f8a42867a5d":[6,0,0,0,23,26,1],
-"d3/dd1/_quotient_ring_test_8cpp_a5457777f847918a6d1a2616eaff08813.html#a5457777f847918a6d1a2616eaff08813":[6,0,0,0,23,26,2],
-"d3/dd1/_quotient_ring_test_8cpp_a9dbdf0c7aa33ccb823d9c6181d9d835d.html#a9dbdf0c7aa33ccb823d9c6181d9d835d":[6,0,0,0,23,26,0],
-"d3/dd1/_quotient_ring_test_8cpp_acab7e8df527637c67b94c23f1def9728.html#acab7e8df527637c67b94c23f1def9728":[6,0,0,0,23,26,3],
 "d3/dd1/_quotient_ring_test_8cpp_source.html":[6,0,0,0,23,26],
 "d3/dd1/class_g_b_ring_weyl.html":[5,0,131],
 "d3/dd1/class_g_b_ring_weyl_a2b0d09ebef1ba3835185179cff024643.html#a2b0d09ebef1ba3835185179cff024643":[5,0,131,1],
@@ -249,5 +242,12 @@ var NAVTREEINDEX15 =
 "d4/d1b/classnewf4_1_1_polynomial_ae8b0a94c1ae2fc704873412e8008ba98.html#ae8b0a94c1ae2fc704873412e8008ba98":[4,0,7,13,1],
 "d4/d1b/classnewf4_1_1_polynomial_ae8b0a94c1ae2fc704873412e8008ba98.html#ae8b0a94c1ae2fc704873412e8008ba98":[5,0,4,13,1],
 "d4/d1b/classnewf4_1_1_polynomial_aeba21eaeec18776d01965da27492dd14.html#aeba21eaeec18776d01965da27492dd14":[4,0,7,13,10],
-"d4/d1b/classnewf4_1_1_polynomial_aeba21eaeec18776d01965da27492dd14.html#aeba21eaeec18776d01965da27492dd14":[5,0,4,13,10]
+"d4/d1b/classnewf4_1_1_polynomial_aeba21eaeec18776d01965da27492dd14.html#aeba21eaeec18776d01965da27492dd14":[5,0,4,13,10],
+"d4/d20/structlocal__elem.html":[5,0,169],
+"d4/d20/structlocal__elem_a398f2508d5dd3c9032578a7ef31a2214.html#a398f2508d5dd3c9032578a7ef31a2214":[5,0,169,1],
+"d4/d20/structlocal__elem_aa47f44be56afa9ff7d04cc589c89e5a5.html#aa47f44be56afa9ff7d04cc589c89e5a5":[5,0,169,0],
+"d4/d23/dpoly_8cpp.html":[6,0,0,0,19,0],
+"d4/d23/dpoly_8cpp_a11987044555d1530ddbe5e81a94aa94e.html#a11987044555d1530ddbe5e81a94aa94e":[6,0,0,0,19,0,9],
+"d4/d23/dpoly_8cpp_a4c9ebcbf6ffd685b701190a7740640b8.html#a4c9ebcbf6ffd685b701190a7740640b8":[6,0,0,0,19,0,5],
+"d4/d23/dpoly_8cpp_a4deffad5cd385f1e583b4b9309b66813.html#a4deffad5cd385f1e583b4b9309b66813":[6,0,0,0,19,0,6]
 };

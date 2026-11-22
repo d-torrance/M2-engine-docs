@@ -1,5 +1,14 @@
 var NAVTREEINDEX35 =
 {
+"d8/da3/classres2__poly_a74447e59b4e2b5bc55a0f487808faaf0.html#a74447e59b4e2b5bc55a0f487808faaf0":[5,0,288,9],
+"d8/da3/classres2__poly_a827c974e863d87609fedc5ce243ce2a4.html#a827c974e863d87609fedc5ce243ce2a4":[5,0,288,20],
+"d8/da3/classres2__poly_a873f762a53f7956e6ef946ec911b8007.html#a873f762a53f7956e6ef946ec911b8007":[5,0,288,12],
+"d8/da3/classres2__poly_a8a7a5bcdbbf5cfceb0719d08965e91a7.html#a8a7a5bcdbbf5cfceb0719d08965e91a7":[5,0,288,21],
+"d8/da3/classres2__poly_a9a448a7d6fd08ad95517cdee9b8036ad.html#a9a448a7d6fd08ad95517cdee9b8036ad":[5,0,288,24],
+"d8/da3/classres2__poly_aaa0820701e2b8222abfd9ac065aa1b01.html#aaa0820701e2b8222abfd9ac065aa1b01":[5,0,288,3],
+"d8/da3/classres2__poly_ab4543dfb2a4c57fa7c74894c8b0edcce.html#ab4543dfb2a4c57fa7c74894c8b0edcce":[5,0,288,13],
+"d8/da3/classres2__poly_ac8ef5989943eaf25e7cfa8de8288a6a0.html#ac8ef5989943eaf25e7cfa8de8288a6a0":[5,0,288,6],
+"d8/da3/classres2__poly_addf3005e0aa27758dc538b66bdb8fce1.html#addf3005e0aa27758dc538b66bdb8fce1":[5,0,288,15],
 "d8/da3/classres2__poly_ae295a497f5f3048294a372288b875150.html#ae295a497f5f3048294a372288b875150":[5,0,288,28],
 "d8/da3/classres2__poly_ae5248b570138fe16fdcf6d4540b08b94.html#ae5248b570138fe16fdcf6d4540b08b94":[5,0,288,11],
 "d8/da3/classres2__poly_ae6662f68f8fc195feca6cc4e53e8e585.html#ae6662f68f8fc195feca6cc4e53e8e585":[5,0,288,25],
@@ -240,14 +249,5 @@ var NAVTREEINDEX35 =
 "d8/ded/class_naive_dedup_polynomial_heap_a025a578b10e92ea02c57f0c2158b1f87.html#a025a578b10e92ea02c57f0c2158b1f87":[5,0,236,7],
 "d8/ded/class_naive_dedup_polynomial_heap_a163c877296fc63cacb879759da828660.html#a163c877296fc63cacb879759da828660":[5,0,236,9],
 "d8/ded/class_naive_dedup_polynomial_heap_a25e1b9424d1316816276309250b3cf76.html#a25e1b9424d1316816276309250b3cf76":[5,0,236,15],
-"d8/ded/class_naive_dedup_polynomial_heap_a289e041948fbef8d514322237e2c9003.html#a289e041948fbef8d514322237e2c9003":[5,0,236,11],
-"d8/ded/class_naive_dedup_polynomial_heap_a2c66603b9d03f1292f807e96edd83c29.html#a2c66603b9d03f1292f807e96edd83c29":[5,0,236,6],
-"d8/ded/class_naive_dedup_polynomial_heap_a34588e5b9c451b4a7a445b553e9cd03c.html#a34588e5b9c451b4a7a445b553e9cd03c":[5,0,236,10],
-"d8/ded/class_naive_dedup_polynomial_heap_a3c6358d3bc5978ed708fd260028dbb03.html#a3c6358d3bc5978ed708fd260028dbb03":[5,0,236,1],
-"d8/ded/class_naive_dedup_polynomial_heap_a3e534a50fcea8d45e6413d074b594b50.html#a3e534a50fcea8d45e6413d074b594b50":[5,0,236,16],
-"d8/ded/class_naive_dedup_polynomial_heap_a8f7afe4c0cedf8a3ad4ff5661d729e15.html#a8f7afe4c0cedf8a3ad4ff5661d729e15":[5,0,236,8],
-"d8/ded/class_naive_dedup_polynomial_heap_a903481418fc5ac9907a6758ea4d72775.html#a903481418fc5ac9907a6758ea4d72775":[5,0,236,4],
-"d8/ded/class_naive_dedup_polynomial_heap_a9af779c64bee0be92f05d8dc09c17fce.html#a9af779c64bee0be92f05d8dc09c17fce":[5,0,236,5],
-"d8/ded/class_naive_dedup_polynomial_heap_aa2987cf6716d2f0d33c65bf44c44083f.html#aa2987cf6716d2f0d33c65bf44c44083f":[5,0,236,12],
-"d8/ded/class_naive_dedup_polynomial_heap_aa8a5f3764ae17e620bf5ee3ff26ffba5.html#aa8a5f3764ae17e620bf5ee3ff26ffba5":[5,0,236,0]
+"d8/ded/class_naive_dedup_polynomial_heap_a289e041948fbef8d514322237e2c9003.html#a289e041948fbef8d514322237e2c9003":[5,0,236,11]
 };
